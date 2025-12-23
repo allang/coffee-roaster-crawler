@@ -55,6 +55,7 @@ Rules:
 - Some pages will not be in english. Translate all names and attributes to english. 
 - YOU MAY NOT guess about the attributes. 
 - Your output must be pure JSON because it will be parsed by a computer.
+- The image being saved should be of the product. Prefer the image with the coffee name in the image asset path that is the largest image available. It must be the product image, not the roaster logo or other images.
 
 The page content is:
 "${content}"

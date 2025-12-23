@@ -64,7 +64,12 @@ async function filterRoastersForCrawling(roasters) {
     return !recentlyRunEntityIds.has(roaster.id);
   });
 
-  logger.success('Filter', `${eligible.length}/${roasters.length} roasters eligible for crawling`);
+  for (let i = eligible.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [eligible[i], eligible[j]] = [eligible[j], eligible[i]];
+  }
+
+  logger.success('Filter', `${eligible.length}/${roasters.length} roasters eligible for crawling (randomized)`);
 
   return eligible;
 }
