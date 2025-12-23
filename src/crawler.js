@@ -40,7 +40,7 @@ async function detectPlatform(websiteUrl) {
 }
 
 async function crawlRoaster(roaster, blacklistTerms) {
-  logger.header(`Starting Crawl: ${roaster.name}`);
+  logger.headerWhite(`Starting Crawl: ${roaster.name}`);
   logger.info('Crawl', 'Roaster details', {
     id: roaster.id,
     website: roaster.website_url,

@@ -2,6 +2,7 @@ const colors = {
   reset: '\x1b[0m',
   bold: '\x1b[1m',
   gray: '\x1b[90m',
+  white: '\x1b[37m',
   red: '\x1b[31m',
   green: '\x1b[32m',
   yellow: '\x1b[33m',
@@ -62,6 +63,12 @@ const logger = {
   header(title) {
     console.log('');
     console.log(`${colors.bold}${colors.cyan}═══ ${title} ═══${colors.reset}`);
+    console.log('');
+  },
+
+  headerWhite(title) {
+    console.log('');
+    console.log(`${colors.bold}${colors.white}═══ ${title} ═══${colors.reset}`);
     console.log('');
   },
 };
