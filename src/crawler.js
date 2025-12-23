@@ -10,7 +10,7 @@ const { config } = require('./config');
 const globalLogger = require('./logger');
 const { createScopedLogger } = require('./logger');
 
-const PARALLEL_ROASTERS = 2;
+const PARALLEL_ROASTERS = 3;
 
 async function detectPlatform(websiteUrl, log) {
   log.info('Platform', `Detecting platform for: ${websiteUrl}`);
