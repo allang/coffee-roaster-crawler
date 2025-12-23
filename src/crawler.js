@@ -8,6 +8,9 @@ const { createCrawlRun, completeCrawlRun, failCrawlRun } = require('./crawlRuns'
 const { bfsCrawl } = require('./bfsCrawler');
 const { config } = require('./config');
 const logger = require('./logger');
+const pLimit = require('p-limit');
+
+const PARALLEL_ROASTERS = 2;
 
 async function detectPlatform(websiteUrl) {
   logger.info('Platform', `Detecting platform for: ${websiteUrl}`);
@@ -226,21 +229,24 @@ async function runCrawler() {
     return { success: true, roastersCrawled: 0 };
   }
 
-  const results = [];
+  const limit = pLimit(PARALLEL_ROASTERS);
+  logger.info('Crawler', `Running ${PARALLEL_ROASTERS} roasters in parallel`);
 
-  for (const roaster of eligibleRoasters) {
-    try {
-      const result = await crawlRoaster(roaster, blacklistTerms);
-      results.push(result);
+  const crawlPromises = eligibleRoasters.map(roaster =>
+    limit(async () => {
+      try {
+        const result = await crawlRoaster(roaster, blacklistTerms);
+        logger.divider();
+        return result;
+      } catch (error) {
+        logger.error('Crawler', `Failed to crawl ${roaster.name}`, { error: error.message });
+        logger.divider();
+        return { success: false, roasterName: roaster.name, error: error.message };
+      }
+    })
+  );
 
-      await delay(config.crawler.requestDelayMs * 2);
-    } catch (error) {
-      logger.error('Crawler', `Failed to crawl ${roaster.name}`, { error: error.message });
-      results.push({ success: false, roasterName: roaster.name, error: error.message });
-    }
-
-    logger.divider();
-  }
+  const results = await Promise.all(crawlPromises);
 
   logger.header('Crawl Summary');
   
