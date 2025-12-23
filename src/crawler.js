@@ -4,6 +4,7 @@ const { UrlAccumulator } = require('./urlAccumulator');
 const { getBlacklistTerms, filterUrlsWithBlacklist } = require('./blacklist');
 const { getKnownPagesForEntity, saveBlacklistedPages, filterOutKnownUrls } = require('./knownPages');
 const { visitAllPages } = require('./pageVisitor');
+const { createCrawlRun, completeCrawlRun, failCrawlRun } = require('./crawlRuns');
 const { config } = require('./config');
 const logger = require('./logger');
 
@@ -54,6 +55,8 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const accumulator = new UrlAccumulator(roaster.id, roaster.name);
 
   const platformInfo = await detectPlatform(roaster.website_url);
+
+  const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
   logger.info('Crawl', 'Platform detection complete', platformInfo);
 
   await delay(config.crawler.requestDelayMs);
@@ -117,31 +120,44 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   let visitResults = { visited: 0, coffeeFound: 0, irrelevant: 0, errors: 0 };
 
-  if (newUrls.length > 0) {
-    logger.header('Visiting Pages & GPT Classification');
-    visitResults = await visitAllPages(roaster.id, newUrls, accumulator);
-    
-    logger.success('Crawl', 'Page visiting complete', {
-      visited: visitResults.visited,
-      coffeeFound: visitResults.coffeeFound,
-      irrelevant: visitResults.irrelevant,
-      errors: visitResults.errors,
-    });
-  }
+  try {
+    if (newUrls.length > 0) {
+      logger.header('Visiting Pages & GPT Classification');
+      visitResults = await visitAllPages(roaster.id, newUrls, accumulator);
+      
+      logger.success('Crawl', 'Page visiting complete', {
+        visited: visitResults.visited,
+        coffeeFound: visitResults.coffeeFound,
+        irrelevant: visitResults.irrelevant,
+        errors: visitResults.errors,
+      });
+    }
 
-  return {
-    success: true,
-    roasterId: roaster.id,
-    roasterName: roaster.name,
-    platform: platformInfo,
-    sitemapUrl,
-    stats: accumulator.getStats(),
-    visitResults,
-  };
+    const stats = accumulator.getStats();
+    await completeCrawlRun(crawlRun.id, {
+      pagesDiscovered: stats.total || 0,
+      pagesVisited: visitResults.visited || 0,
+      pagesSentToGpt: visitResults.visited || 0,
+      coffeesFound: visitResults.coffeeFound || 0,
+    });
+
+    return {
+      success: true,
+      roasterId: roaster.id,
+      roasterName: roaster.name,
+      platform: platformInfo,
+      sitemapUrl,
+      stats,
+      visitResults,
+    };
+  } catch (error) {
+    await failCrawlRun(crawlRun.id, error.message);
+    throw error;
+  }
 }
 
 async function runCrawler() {
-  const { getRoastersWithCrawlState, filterRoastersForCrawling } = require('./roasters');
+  const { getRoasterEntities, filterRoastersForCrawling } = require('./roasters');
 
   logger.header('Coffee Roaster Crawler Starting');
   logger.info('Crawler', `Started at: ${new Date().toISOString()}`);
@@ -149,7 +165,7 @@ async function runCrawler() {
 
   const blacklistTerms = await getBlacklistTerms();
 
-  const roasters = await getRoastersWithCrawlState();
+  const roasters = await getRoasterEntities();
   
   if (roasters.length === 0) {
     logger.warn('Crawler', 'No roasters found in database');
