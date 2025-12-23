@@ -1,2 +1,8 @@
 [agent]
 expertMode = true
+
+[userenv]
+
+[userenv.shared]
+NEXT_PUBLIC_SUPABASE_URL = "https://gtlipifdfyugiwpxvuse.supabase.co"
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY = "sb_publishable_mi79a8jYxxEykGM1dEp4CA_IzC3XCQe"
