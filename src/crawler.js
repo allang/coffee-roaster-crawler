@@ -61,12 +61,20 @@ async function crawlRoaster(roaster) {
     logger.info('Crawl', 'Starting sitemap crawl');
     const sitemapResult = await crawlSitemap(sitemapUrl);
 
-    logger.success('Crawl', 'Sitemap crawl complete', {
-      urlsFound: sitemapResult.urls.length,
-      sitemapsVisited: sitemapResult.sitemaps.length,
-    });
+    if (sitemapResult.error) {
+      logger.error('Crawl', 'Sitemap crawl failed', { error: sitemapResult.error });
+    }
 
-    accumulator.addUrlsFromSitemap(sitemapResult.urls);
+    if (sitemapResult.urls.length > 0) {
+      logger.success('Crawl', 'Sitemap crawl complete', {
+        urlsFound: sitemapResult.urls.length,
+        sitemapsVisited: sitemapResult.sitemaps.length,
+        hasErrors: !!sitemapResult.error,
+      });
+      accumulator.addUrlsFromSitemap(sitemapResult.urls);
+    } else if (!sitemapResult.error) {
+      logger.warn('Crawl', 'Sitemap crawl returned no URLs');
+    }
 
     for (const sitemap of sitemapResult.sitemaps) {
       logger.debug('Crawl', `Sitemap visited: ${sitemap.url}`, { type: sitemap.type });

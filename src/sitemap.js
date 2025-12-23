@@ -108,6 +108,8 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
   const allUrls = [...urls];
   const allSitemaps = [{ url: sitemapUrl, type: childSitemaps.length > 0 ? 'master' : 'child' }];
 
+  const errors = [];
+  
   for (const childUrl of childSitemaps) {
     if (visited.size >= config.crawler.maxSitemapsPerEntity) {
       logger.warn('Sitemap', `Reached max sitemaps limit (${config.crawler.maxSitemapsPerEntity})`);
@@ -117,11 +119,21 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
     await delay(config.crawler.requestDelayMs);
 
     const childResult = await crawlSitemap(childUrl, visited);
+    
+    if (childResult.error) {
+      logger.warn('Sitemap', `Child sitemap failed: ${childUrl}`, { error: childResult.error });
+      errors.push({ url: childUrl, error: childResult.error });
+    }
+    
     allUrls.push(...childResult.urls);
     allSitemaps.push(...childResult.sitemaps);
   }
 
-  return { urls: allUrls, sitemaps: allSitemaps };
+  return { 
+    urls: allUrls, 
+    sitemaps: allSitemaps,
+    childErrors: errors.length > 0 ? errors : undefined,
+  };
 }
 
 async function discoverSitemapUrl(websiteUrl) {
