@@ -1,5 +1,5 @@
 const { getSupabase } = require('./supabase');
-const logger = require('./logger');
+const globalLogger = require('./logger');
 const { downloadAndSaveImage } = require('./imageDownloader');
 
 function generateSlug(name) {
@@ -39,7 +39,8 @@ function parseWeightGrams(weightStr) {
   }
 }
 
-async function saveProduct(entityId, productData, sourceUrl) {
+async function saveProduct(entityId, productData, sourceUrl, log = null) {
+  const logger = log || globalLogger;
   const supabase = getSupabase();
   const now = new Date().toISOString();
 
@@ -102,23 +103,23 @@ async function saveProduct(entityId, productData, sourceUrl) {
   }
 
   if (productData.variant_prices && productData.variant_prices.length > 0) {
-    await saveVariants(productId, productData.variant_prices, productData.default_price);
+    await saveVariants(productId, productData.variant_prices, productData.default_price, logger);
   } else if (productData.default_price) {
-    await saveVariants(productId, [], productData.default_price);
+    await saveVariants(productId, [], productData.default_price, logger);
   }
 
   if (productData.attributes) {
-    await saveCoffeeFacts(productId, productData.attributes);
+    await saveCoffeeFacts(productId, productData.attributes, logger);
 
     if (productData.attributes.product_image_url) {
-      await downloadAndSaveImage(productId, productData.attributes.product_image_url);
+      await downloadAndSaveImage(productId, productData.attributes.product_image_url, logger);
     }
   }
 
   return productId;
 }
 
-async function saveVariants(productId, variantPrices, defaultPrice) {
+async function saveVariants(productId, variantPrices, defaultPrice, logger) {
   const supabase = getSupabase();
 
   const { error: deleteError } = await supabase
@@ -165,7 +166,7 @@ async function saveVariants(productId, variantPrices, defaultPrice) {
   }
 }
 
-async function saveCoffeeFacts(productId, attributes) {
+async function saveCoffeeFacts(productId, attributes, logger) {
   const supabase = getSupabase();
 
   const { error: deleteError } = await supabase

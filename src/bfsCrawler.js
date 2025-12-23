@@ -1,6 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const logger = require('./logger');
+const globalLogger = require('./logger');
 const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage, getKnownPagesForEntity, saveBlacklistedPages } = require('./knownPages');
 const { saveProduct } = require('./productSaver');
@@ -99,7 +99,8 @@ async function fetchPageAndLinks(url) {
   }
 }
 
-async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator) {
+async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = null) {
+  const logger = log || globalLogger;
   const visited = new Set();
   const knownPages = await getKnownPagesForEntity(entityId);
   const queue = [startUrl];
@@ -195,7 +196,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator) {
 
     if (result.is_coffee_page === true && result.product) {
       try {
-        await saveProduct(entityId, result.product, url);
+        await saveProduct(entityId, result.product, url, logger);
         await saveKnownPage(entityId, url, 'coffee', {
           classification: result,
           classifiedAt: now,

@@ -1,6 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const logger = require('./logger');
+const globalLogger = require('./logger');
 const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage } = require('./knownPages');
 const { saveProduct } = require('./productSaver');
@@ -64,11 +64,11 @@ async function fetchPageContent(url) {
 
 const GPT_DELAY_MS = 500;
 
-async function visitAndClassifyPage(entityId, url, accumulator) {
+async function visitAndClassifyPage(entityId, url, accumulator, log) {
   const fetchResult = await fetchPageContent(url);
 
   if (!fetchResult.success) {
-    logger.warn('Visitor', `Failed to fetch: ${url}`, { error: fetchResult.error });
+    log.warn('Visitor', `Failed to fetch: ${url}`, { error: fetchResult.error });
     accumulator.markVisited(url);
     return { visited: true, classified: false, error: fetchResult.error };
   }
@@ -80,7 +80,7 @@ async function visitAndClassifyPage(entityId, url, accumulator) {
   const classification = await classifyPage(fetchResult.content, url);
 
   if (classification.error) {
-    logger.warn('Visitor', `Classification error for ${url}`, { error: classification.error });
+    log.warn('Visitor', `Classification error for ${url}`, { error: classification.error });
     return { visited: true, classified: false, error: classification.error };
   }
 
@@ -99,7 +99,7 @@ async function visitAndClassifyPage(entityId, url, accumulator) {
 
   if (result.is_coffee_page === true && result.product) {
     try {
-      await saveProduct(entityId, result.product, url);
+      await saveProduct(entityId, result.product, url, log);
       
       await saveKnownPage(entityId, url, 'coffee', {
         classification: result,
@@ -107,10 +107,10 @@ async function visitAndClassifyPage(entityId, url, accumulator) {
         classifiedBy: MODEL,
       });
 
-      logger.success('Visitor', `Found coffee: ${result.product.name}`);
+      log.success('Visitor', `Found coffee: ${result.product.name}`);
       return { visited: true, classified: true, isCoffee: true, product: result.product };
     } catch (error) {
-      logger.error('Visitor', `Failed to save product from ${url}`, { error: error.message });
+      log.error('Visitor', `Failed to save product from ${url}`, { error: error.message });
       return { visited: true, classified: true, isCoffee: true, error: error.message };
     }
   }
@@ -124,7 +124,8 @@ async function visitAndClassifyPage(entityId, url, accumulator) {
   return { visited: true, classified: true, isCoffee: false };
 }
 
-async function visitAllPages(entityId, urls, accumulator) {
+async function visitAllPages(entityId, urls, accumulator, log = null) {
+  const logger = log || globalLogger;
   const results = {
     visited: 0,
     coffeeFound: 0,
@@ -135,7 +136,7 @@ async function visitAllPages(entityId, urls, accumulator) {
   for (const entry of urls) {
     const url = typeof entry === 'object' ? entry.url : entry;
 
-    const result = await visitAndClassifyPage(entityId, url, accumulator);
+    const result = await visitAndClassifyPage(entityId, url, accumulator, logger);
     results.visited++;
 
     if (result.error) {

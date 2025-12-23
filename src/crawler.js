@@ -7,39 +7,40 @@ const { visitAllPages } = require('./pageVisitor');
 const { createCrawlRun, completeCrawlRun, failCrawlRun } = require('./crawlRuns');
 const { bfsCrawl } = require('./bfsCrawler');
 const { config } = require('./config');
-const logger = require('./logger');
+const globalLogger = require('./logger');
+const { createScopedLogger } = require('./logger');
 
 const PARALLEL_ROASTERS = 2;
 
-async function detectPlatform(websiteUrl) {
-  logger.info('Platform', `Detecting platform for: ${websiteUrl}`);
+async function detectPlatform(websiteUrl, log) {
+  log.info('Platform', `Detecting platform for: ${websiteUrl}`);
 
   const { fetchUrl } = require('./sitemap');
   const result = await fetchUrl(websiteUrl);
 
   if (!result.success) {
-    logger.warn('Platform', 'Could not fetch website for platform detection');
+    log.warn('Platform', 'Could not fetch website for platform detection');
     return { platform: 'unknown', confidence: 0 };
   }
 
   const html = result.data.toLowerCase();
 
   if (html.includes('shopify') || html.includes('cdn.shopify.com')) {
-    logger.success('Platform', 'Detected: Shopify');
+    log.success('Platform', 'Detected: Shopify');
     return { platform: 'shopify', confidence: 0.9 };
   }
 
   if (html.includes('woocommerce') || html.includes('wp-content')) {
-    logger.success('Platform', 'Detected: WooCommerce');
+    log.success('Platform', 'Detected: WooCommerce');
     return { platform: 'woocommerce', confidence: 0.8 };
   }
 
   if (html.includes('squarespace')) {
-    logger.success('Platform', 'Detected: Squarespace');
+    log.success('Platform', 'Detected: Squarespace');
     return { platform: 'squarespace', confidence: 0.85 };
   }
 
-  logger.info('Platform', 'Platform: Unknown/Custom');
+  log.info('Platform', 'Platform: Unknown/Custom');
   return { platform: 'custom', confidence: 0.5 };
 }
 
@@ -61,29 +62,28 @@ function ensureHttps(url) {
 
 async function crawlRoaster(roaster, blacklistTerms) {
   const roasterSlug = generateSlug(roaster.name);
-  logger.setRoasterSlug(roasterSlug);
+  const log = createScopedLogger(roasterSlug);
   
-  logger.headerWhite(`Starting Crawl: ${roaster.name}`);
+  log.headerWhite(`Starting Crawl: ${roaster.name}`);
   
   if (!roaster.website_url) {
-    logger.error('Crawl', 'No website URL for roaster, skipping');
-    logger.clearRoasterSlug();
+    log.error('Crawl', 'No website URL for roaster, skipping');
     return { success: false, error: 'No website URL' };
   }
 
   const websiteUrl = ensureHttps(roaster.website_url);
   
-  logger.info('Crawl', 'Roaster details', {
+  log.info('Crawl', 'Roaster details', {
     id: roaster.id,
     website: websiteUrl,
   });
 
-  const accumulator = new UrlAccumulator(roaster.id, roaster.name);
+  const accumulator = new UrlAccumulator(roaster.id, roaster.name, log);
 
-  const platformInfo = await detectPlatform(websiteUrl);
+  const platformInfo = await detectPlatform(websiteUrl, log);
 
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
-  logger.info('Crawl', 'Platform detection complete', platformInfo);
+  log.info('Crawl', 'Platform detection complete', platformInfo);
 
   await delay(config.crawler.requestDelayMs);
 
@@ -93,11 +93,11 @@ async function crawlRoaster(roaster, blacklistTerms) {
     const sitemapResult = await crawlSitemap(sitemapUrl);
 
     if (sitemapResult.error) {
-      logger.error('Crawl', 'Sitemap crawl failed', { error: sitemapResult.error });
+      log.error('Crawl', 'Sitemap crawl failed', { error: sitemapResult.error });
     }
 
     if (sitemapResult.urls.length > 0) {
-      logger.success('Crawl', 'Sitemap crawl complete', {
+      log.success('Crawl', 'Sitemap crawl complete', {
         urlsFound: sitemapResult.urls.length,
         sitemapsVisited: sitemapResult.sitemaps.length,
         hasErrors: !!sitemapResult.error,
@@ -106,7 +106,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
       const { passed, blacklisted } = filterUrlsWithBlacklist(sitemapResult.urls, blacklistTerms);
       
       if (blacklisted.length > 0) {
-        logger.info('Blacklist', `Filtered ${blacklisted.length} URLs matching blacklist terms`);
+        log.info('Blacklist', `Filtered ${blacklisted.length} URLs matching blacklist terms`);
         for (const entry of blacklisted) {
           accumulator.addUrl(entry.url, 'sitemap', null, {
             blacklisted: true,
@@ -117,14 +117,14 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
       accumulator.addUrlsFromSitemap(passed);
     } else if (!sitemapResult.error) {
-      logger.warn('Crawl', 'Sitemap crawl returned no URLs');
+      log.warn('Crawl', 'Sitemap crawl returned no URLs');
     }
 
   } else {
-    logger.info('Crawl', 'No sitemap found, using BFS crawling');
+    log.info('Crawl', 'No sitemap found, using BFS crawling');
     accumulator.addUrl(websiteUrl, 'manual');
     
-    const bfsResults = await bfsCrawl(roaster.id, websiteUrl, blacklistTerms, accumulator);
+    const bfsResults = await bfsCrawl(roaster.id, websiteUrl, blacklistTerms, accumulator, log);
     
     const stats = accumulator.getStats();
     await completeCrawlRun(crawlRun.id, {
@@ -134,7 +134,6 @@ async function crawlRoaster(roaster, blacklistTerms) {
       coffeesFound: bfsResults.coffeeFound || 0,
     });
 
-    logger.clearRoasterSlug();
     return {
       success: true,
       roasterId: roaster.id,
@@ -147,13 +146,13 @@ async function crawlRoaster(roaster, blacklistTerms) {
   }
 
   const knownUrls = await getKnownPagesForEntity(roaster.id);
-  logger.info('KnownPages', `Found ${knownUrls.size} known pages for this roaster`);
+  log.info('KnownPages', `Found ${knownUrls.size} known pages for this roaster`);
 
   const unvisitedAll = accumulator.getUnvisitedUrls();
   const { unknown: newUrls, known: skippedUrls } = filterOutKnownUrls(unvisitedAll, knownUrls);
 
   if (skippedUrls.length > 0) {
-    logger.info('KnownPages', `Skipping ${skippedUrls.length} already known pages`);
+    log.info('KnownPages', `Skipping ${skippedUrls.length} already known pages`);
   }
 
   const blacklistedEntries = accumulator.getAllUrls().filter(u => u.blacklisted);
@@ -163,16 +162,16 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   accumulator.printSummary();
 
-  logger.info('Crawl', `New pages to visit and classify: ${newUrls.length}`);
+  log.info('Crawl', `New pages to visit and classify: ${newUrls.length}`);
 
   let visitResults = { visited: 0, coffeeFound: 0, irrelevant: 0, errors: 0 };
 
   try {
     if (newUrls.length > 0) {
-      logger.header('Visiting Pages & GPT Classification');
-      visitResults = await visitAllPages(roaster.id, newUrls, accumulator);
+      log.header('Visiting Pages & GPT Classification');
+      visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log);
       
-      logger.success('Crawl', 'Page visiting complete', {
+      log.success('Crawl', 'Page visiting complete', {
         visited: visitResults.visited,
         coffeeFound: visitResults.coffeeFound,
         irrelevant: visitResults.irrelevant,
@@ -188,7 +187,6 @@ async function crawlRoaster(roaster, blacklistTerms) {
       coffeesFound: visitResults.coffeeFound || 0,
     });
 
-    logger.clearRoasterSlug();
     return {
       success: true,
       roasterId: roaster.id,
@@ -200,7 +198,6 @@ async function crawlRoaster(roaster, blacklistTerms) {
     };
   } catch (error) {
     await failCrawlRun(crawlRun.id, error.message);
-    logger.clearRoasterSlug();
     throw error;
   }
 }
@@ -208,39 +205,37 @@ async function crawlRoaster(roaster, blacklistTerms) {
 async function runCrawler() {
   const { getRoasterEntities, filterRoastersForCrawling } = require('./roasters');
 
-  logger.header('Coffee Roaster Crawler Starting');
-  logger.info('Crawler', `Started at: ${new Date().toISOString()}`);
-  logger.divider();
+  globalLogger.header('Coffee Roaster Crawler Starting');
+  globalLogger.info('Crawler', `Started at: ${new Date().toISOString()}`);
+  globalLogger.divider();
 
   const blacklistTerms = await getBlacklistTerms();
 
   const roasters = await getRoasterEntities();
   
   if (roasters.length === 0) {
-    logger.warn('Crawler', 'No roasters found in database');
+    globalLogger.warn('Crawler', 'No roasters found in database');
     return { success: true, roastersCrawled: 0 };
   }
 
   const eligibleRoasters = await filterRoastersForCrawling(roasters);
 
   if (eligibleRoasters.length === 0) {
-    logger.warn('Crawler', 'No roasters eligible for crawling (all within 24h cooldown)');
+    globalLogger.warn('Crawler', 'No roasters eligible for crawling (all within 24h cooldown)');
     return { success: true, roastersCrawled: 0 };
   }
 
   const pLimit = (await import('p-limit')).default;
   const limit = pLimit(PARALLEL_ROASTERS);
-  logger.info('Crawler', `Running ${PARALLEL_ROASTERS} roasters in parallel`);
+  globalLogger.info('Crawler', `Running ${PARALLEL_ROASTERS} roasters in parallel`);
 
   const crawlPromises = eligibleRoasters.map(roaster =>
     limit(async () => {
       try {
         const result = await crawlRoaster(roaster, blacklistTerms);
-        logger.divider();
         return result;
       } catch (error) {
-        logger.error('Crawler', `Failed to crawl ${roaster.name}`, { error: error.message });
-        logger.divider();
+        globalLogger.error('Crawler', `Failed to crawl ${roaster.name}`, { error: error.message });
         return { success: false, roasterName: roaster.name, error: error.message };
       }
     })
@@ -248,19 +243,19 @@ async function runCrawler() {
 
   const results = await Promise.all(crawlPromises);
 
-  logger.header('Crawl Summary');
+  globalLogger.header('Crawl Summary');
   
   const successful = results.filter(r => r.success);
   const failed = results.filter(r => !r.success);
 
-  logger.info('Summary', 'Overall Results', {
+  globalLogger.info('Summary', 'Overall Results', {
     totalRoasters: eligibleRoasters.length,
     successful: successful.length,
     failed: failed.length,
   });
 
   for (const result of successful) {
-    logger.success('Summary', `${result.roasterName}`, {
+    globalLogger.success('Summary', `${result.roasterName}`, {
       platform: result.platform?.platform,
       urlsDiscovered: result.stats?.total || 0,
       pagesVisited: result.visitResults?.visited || 0,
@@ -269,7 +264,7 @@ async function runCrawler() {
   }
 
   for (const result of failed) {
-    logger.error('Summary', `${result.roasterName}: ${result.error}`);
+    globalLogger.error('Summary', `${result.roasterName}: ${result.error}`);
   }
 
   return { success: true, roastersCrawled: successful.length, results };

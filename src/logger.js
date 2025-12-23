@@ -19,75 +19,67 @@ const LOG_LEVELS = {
 
 const currentLevel = LOG_LEVELS[process.env.LOG_LEVEL?.toUpperCase()] ?? LOG_LEVELS.DEBUG;
 
-let currentRoasterSlug = null;
-
-function setRoasterSlug(slug) {
-  currentRoasterSlug = slug;
-}
-
-function clearRoasterSlug() {
-  currentRoasterSlug = null;
-}
-
-function getRoasterPrefix() {
-  return currentRoasterSlug ? `${currentRoasterSlug}\t\t` : '';
-}
-
 function formatMessage(level, context, message, data) {
   const prefix = context ? `[${context}]` : '';
   const dataStr = data ? ` ${JSON.stringify(data)}` : '';
   return `${level} ${prefix} ${message}${dataStr}`;
 }
 
-const logger = {
-  setRoasterSlug,
-  clearRoasterSlug,
+function createScopedLogger(slug) {
+  const prefix = slug ? `${slug}\t\t` : '';
 
-  debug(context, message, data) {
-    if (currentLevel <= LOG_LEVELS.DEBUG) {
-      console.log(`${getRoasterPrefix()}${colors.gray}${formatMessage('DEBUG', context, message, data)}${colors.reset}`);
-    }
-  },
+  return {
+    debug(context, message, data) {
+      if (currentLevel <= LOG_LEVELS.DEBUG) {
+        console.log(`${prefix}${colors.gray}${formatMessage('DEBUG', context, message, data)}${colors.reset}`);
+      }
+    },
 
-  info(context, message, data) {
-    if (currentLevel <= LOG_LEVELS.INFO) {
-      console.log(`${getRoasterPrefix()}${colors.blue}\t${formatMessage('INFO', context, message, data)}${colors.reset}`);
-    }
-  },
+    info(context, message, data) {
+      if (currentLevel <= LOG_LEVELS.INFO) {
+        console.log(`${prefix}${colors.blue}\t${formatMessage('INFO', context, message, data)}${colors.reset}`);
+      }
+    },
 
-  success(context, message, data) {
-    if (currentLevel <= LOG_LEVELS.INFO) {
-      console.log(`${getRoasterPrefix()}${colors.green}\t\t${formatMessage('SUCCESS', context, message, data)}${colors.reset}`);
-    }
-  },
+    success(context, message, data) {
+      if (currentLevel <= LOG_LEVELS.INFO) {
+        console.log(`${prefix}${colors.green}\t\t${formatMessage('SUCCESS', context, message, data)}${colors.reset}`);
+      }
+    },
 
-  warn(context, message, data) {
-    if (currentLevel <= LOG_LEVELS.WARN) {
-      console.log(`${getRoasterPrefix()}${colors.yellow}${formatMessage('WARN', context, message, data)}${colors.reset}`);
-    }
-  },
+    warn(context, message, data) {
+      if (currentLevel <= LOG_LEVELS.WARN) {
+        console.log(`${prefix}${colors.yellow}${formatMessage('WARN', context, message, data)}${colors.reset}`);
+      }
+    },
 
-  error(context, message, data) {
-    if (currentLevel <= LOG_LEVELS.ERROR) {
-      console.log(`${getRoasterPrefix()}${colors.red}${formatMessage('ERROR', context, message, data)}${colors.reset}`);
-    }
-  },
+    error(context, message, data) {
+      if (currentLevel <= LOG_LEVELS.ERROR) {
+        console.log(`${prefix}${colors.red}${formatMessage('ERROR', context, message, data)}${colors.reset}`);
+      }
+    },
 
-  divider() {
-    console.log(`${getRoasterPrefix()}${colors.gray}${'─'.repeat(60)}${colors.reset}`);
-  },
+    divider() {
+      console.log(`${prefix}${colors.gray}${'─'.repeat(60)}${colors.reset}`);
+    },
 
-  header(title) {
-    console.log('');
-    console.log(`${getRoasterPrefix()}${colors.bold}${colors.cyan}═══ ${title} ═══${colors.reset}`);
-    console.log('');
-  },
+    header(title) {
+      console.log('');
+      console.log(`${prefix}${colors.bold}${colors.cyan}═══ ${title} ═══${colors.reset}`);
+      console.log('');
+    },
 
-  headerWhite(title) {
-    console.log('');
-    console.log(`${getRoasterPrefix()}${colors.bold}${colors.white}═══ ${title} ═══${colors.reset}`);
-    console.log('');
-  },
+    headerWhite(title) {
+      console.log('');
+      console.log(`${prefix}${colors.bold}${colors.white}═══ ${title} ═══${colors.reset}`);
+      console.log('');
+    },
+  };
+}
+
+const globalLogger = createScopedLogger(null);
+
+module.exports = {
+  ...globalLogger,
+  createScopedLogger,
 };
-
-module.exports = logger;

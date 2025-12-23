@@ -1,9 +1,10 @@
-const logger = require('./logger');
+const globalLogger = require('./logger');
 
 class UrlAccumulator {
-  constructor(entityId, entityName) {
+  constructor(entityId, entityName, log = null) {
     this.entityId = entityId;
     this.entityName = entityName;
+    this.log = log || globalLogger;
     this.urls = new Map();
     this.stats = {
       discovered: 0,
@@ -50,7 +51,7 @@ class UrlAccumulator {
   }
 
   addUrlsFromSitemap(sitemapUrls) {
-    logger.info('Accumulator', `Adding ${sitemapUrls.length} URLs from sitemap`);
+    this.log.info('Accumulator', `Adding ${sitemapUrls.length} URLs from sitemap`);
     
     let added = 0;
     for (const entry of sitemapUrls) {
@@ -63,7 +64,7 @@ class UrlAccumulator {
       }
     }
 
-    logger.success('Accumulator', `Added ${added} new URLs (${sitemapUrls.length - added} duplicates)`);
+    this.log.success('Accumulator', `Added ${added} new URLs (${sitemapUrls.length - added} duplicates)`);
     return added;
   }
 
@@ -123,9 +124,9 @@ class UrlAccumulator {
 
   printSummary() {
     const stats = this.getStats();
-    logger.header(`URL Accumulator Summary: ${this.entityName}`);
-    logger.info('Stats', 'URL Statistics', stats);
-    logger.divider();
+    this.log.header(`URL Accumulator Summary: ${this.entityName}`);
+    this.log.info('Stats', 'URL Statistics', stats);
+    this.log.divider();
   }
 }
 

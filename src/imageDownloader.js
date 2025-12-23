@@ -1,12 +1,14 @@
 const { getSupabase } = require('./supabase');
-const logger = require('./logger');
+const globalLogger = require('./logger');
 const axios = require('axios');
 const crypto = require('crypto');
 const path = require('path');
 
 const BUCKET_NAME = 'assets';
 
-async function downloadAndSaveImage(productId, imageUrl) {
+async function downloadAndSaveImage(productId, imageUrl, log = null) {
+  const logger = log || globalLogger;
+  
   if (!imageUrl) {
     return null;
   }
@@ -43,7 +45,7 @@ async function downloadAndSaveImage(productId, imageUrl) {
       .single();
 
     if (existingAsset) {
-      await linkProductMedia(productId, existingAsset.id);
+      await linkProductMedia(productId, existingAsset.id, logger);
       logger.info('ImageDownloader', `Reused existing asset: ${contentHash}`);
       return existingAsset.id;
     }
@@ -80,7 +82,7 @@ async function downloadAndSaveImage(productId, imageUrl) {
       return null;
     }
 
-    await linkProductMedia(productId, mediaAsset.id);
+    await linkProductMedia(productId, mediaAsset.id, logger);
     logger.success('ImageDownloader', `Saved image: ${fileName}`);
     return mediaAsset.id;
 
@@ -90,7 +92,7 @@ async function downloadAndSaveImage(productId, imageUrl) {
   }
 }
 
-async function linkProductMedia(productId, mediaAssetId) {
+async function linkProductMedia(productId, mediaAssetId, logger) {
   const supabase = getSupabase();
 
   const { data: existingLink } = await supabase
