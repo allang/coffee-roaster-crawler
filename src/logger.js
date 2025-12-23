@@ -39,7 +39,7 @@ const logger = {
 
   success(context, message, data) {
     if (currentLevel <= LOG_LEVELS.INFO) {
-      console.log(`${colors.green}${formatMessage('SUCCESS', context, message, data)}${colors.reset}`);
+      console.log(`\t${colors.green}${formatMessage('SUCCESS', context, message, data)}${colors.reset}`);
     }
   },
 
