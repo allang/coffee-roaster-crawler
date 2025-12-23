@@ -41,6 +41,8 @@ async function fetchPageContent(url) {
   }
 }
 
+const GPT_DELAY_MS = 500;
+
 async function visitAndClassifyPage(entityId, url, accumulator) {
   const fetchResult = await fetchPageContent(url);
 
@@ -51,6 +53,8 @@ async function visitAndClassifyPage(entityId, url, accumulator) {
   }
 
   accumulator.markVisited(url);
+
+  await delay(GPT_DELAY_MS);
 
   const classification = await classifyPage(fetchResult.content, url);
 
