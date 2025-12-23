@@ -24,8 +24,29 @@ async function fetchPageContent(url) {
     const title = $('title').text().trim();
     const bodyText = $('body').text().replace(/\s+/g, ' ').trim();
 
-    const contentLength = bodyText.length;
-    const truncatedContent = bodyText.substring(0, 15000);
+    const images = [];
+    $('img').each((i, el) => {
+      const src = $(el).attr('src') || $(el).attr('data-src');
+      const alt = $(el).attr('alt') || '';
+      if (src && !src.startsWith('data:')) {
+        let absoluteSrc = src;
+        if (src.startsWith('//')) {
+          absoluteSrc = 'https:' + src;
+        } else if (src.startsWith('/')) {
+          const urlObj = new URL(url);
+          absoluteSrc = urlObj.origin + src;
+        }
+        images.push({ src: absoluteSrc, alt });
+      }
+    });
+
+    const imageSection = images.length > 0
+      ? '\n\nPRODUCT IMAGES:\n' + images.slice(0, 10).map(img => `- ${img.src} (alt: ${img.alt})`).join('\n')
+      : '';
+
+    const fullContent = bodyText + imageSection;
+    const contentLength = fullContent.length;
+    const truncatedContent = fullContent.substring(0, 15000);
 
     return {
       success: true,

@@ -1,5 +1,6 @@
 const { getSupabase } = require('./supabase');
 const logger = require('./logger');
+const { downloadAndSaveImage } = require('./imageDownloader');
 
 function generateSlug(name) {
   return name
@@ -108,6 +109,10 @@ async function saveProduct(entityId, productData, sourceUrl) {
 
   if (productData.attributes) {
     await saveCoffeeFacts(productId, productData.attributes);
+
+    if (productData.attributes.product_image_url) {
+      await downloadAndSaveImage(productId, productData.attributes.product_image_url);
+    }
   }
 
   return productId;
