@@ -18,14 +18,10 @@ const LOG_LEVELS = {
 
 const currentLevel = LOG_LEVELS[process.env.LOG_LEVEL?.toUpperCase()] ?? LOG_LEVELS.DEBUG;
 
-function timestamp() {
-  return new Date().toISOString();
-}
-
 function formatMessage(level, context, message, data) {
   const prefix = context ? `[${context}]` : '';
   const dataStr = data ? ` ${JSON.stringify(data)}` : '';
-  return `${timestamp()} ${level} ${prefix} ${message}${dataStr}`;
+  return `${level} ${prefix} ${message}${dataStr}`;
 }
 
 const logger = {
