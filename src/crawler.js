@@ -36,8 +36,8 @@ async function detectPlatform(websiteUrl, log) {
   }
 
   if (html.includes('squarespace')) {
-    log.success('Platform', 'Detected: Squarespace');
-    return { platform: 'squarespace', confidence: 0.85 };
+    log.success('Platform', 'Detected: Squarespace (recorded as custom)');
+    return { platform: 'custom', confidence: 0.85 };
   }
 
   log.info('Platform', 'Platform: Unknown/Custom');
