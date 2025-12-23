@@ -5,6 +5,7 @@ const { getBlacklistTerms, filterUrlsWithBlacklist } = require('./blacklist');
 const { getKnownPagesForEntity, saveBlacklistedPages, filterOutKnownUrls } = require('./knownPages');
 const { visitAllPages } = require('./pageVisitor');
 const { createCrawlRun, completeCrawlRun, failCrawlRun } = require('./crawlRuns');
+const { bfsCrawl } = require('./bfsCrawler');
 const { config } = require('./config');
 const logger = require('./logger');
 
@@ -40,28 +41,51 @@ async function detectPlatform(websiteUrl) {
   return { platform: 'custom', confidence: 0.5 };
 }
 
-async function crawlRoaster(roaster, blacklistTerms) {
-  logger.headerWhite(`Starting Crawl: ${roaster.name}`);
-  logger.info('Crawl', 'Roaster details', {
-    id: roaster.id,
-    website: roaster.website_url,
-  });
+function generateSlug(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .substring(0, 30);
+}
 
+function ensureHttps(url) {
+  if (!url) return url;
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url;
+  }
+  return 'https://' + url;
+}
+
+async function crawlRoaster(roaster, blacklistTerms) {
+  const roasterSlug = generateSlug(roaster.name);
+  logger.setRoasterSlug(roasterSlug);
+  
+  logger.headerWhite(`Starting Crawl: ${roaster.name}`);
+  
   if (!roaster.website_url) {
     logger.error('Crawl', 'No website URL for roaster, skipping');
+    logger.clearRoasterSlug();
     return { success: false, error: 'No website URL' };
   }
 
+  const websiteUrl = ensureHttps(roaster.website_url);
+  
+  logger.info('Crawl', 'Roaster details', {
+    id: roaster.id,
+    website: websiteUrl,
+  });
+
   const accumulator = new UrlAccumulator(roaster.id, roaster.name);
 
-  const platformInfo = await detectPlatform(roaster.website_url);
+  const platformInfo = await detectPlatform(websiteUrl);
 
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
   logger.info('Crawl', 'Platform detection complete', platformInfo);
 
   await delay(config.crawler.requestDelayMs);
 
-  const sitemapUrl = await discoverSitemapUrl(roaster.website_url);
+  const sitemapUrl = await discoverSitemapUrl(websiteUrl);
 
   if (sitemapUrl) {
     const sitemapResult = await crawlSitemap(sitemapUrl);
@@ -95,8 +119,29 @@ async function crawlRoaster(roaster, blacklistTerms) {
     }
 
   } else {
-    logger.warn('Crawl', 'No sitemap found, would need to use BFS crawling');
-    accumulator.addUrl(roaster.website_url, 'manual');
+    logger.info('Crawl', 'No sitemap found, using BFS crawling');
+    accumulator.addUrl(websiteUrl, 'manual');
+    
+    const bfsResults = await bfsCrawl(roaster.id, websiteUrl, blacklistTerms, accumulator);
+    
+    const stats = accumulator.getStats();
+    await completeCrawlRun(crawlRun.id, {
+      pagesDiscovered: bfsResults.linksDiscovered || 0,
+      pagesVisited: bfsResults.visited || 0,
+      pagesSentToGpt: bfsResults.visited || 0,
+      coffeesFound: bfsResults.coffeeFound || 0,
+    });
+
+    logger.clearRoasterSlug();
+    return {
+      success: true,
+      roasterId: roaster.id,
+      roasterName: roaster.name,
+      platform: platformInfo,
+      sitemapUrl: null,
+      stats,
+      visitResults: bfsResults,
+    };
   }
 
   const knownUrls = await getKnownPagesForEntity(roaster.id);
@@ -141,6 +186,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
       coffeesFound: visitResults.coffeeFound || 0,
     });
 
+    logger.clearRoasterSlug();
     return {
       success: true,
       roasterId: roaster.id,
@@ -152,6 +198,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
     };
   } catch (error) {
     await failCrawlRun(crawlRun.id, error.message);
+    logger.clearRoasterSlug();
     throw error;
   }
 }

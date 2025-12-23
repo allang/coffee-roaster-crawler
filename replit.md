@@ -18,21 +18,23 @@ This crawler:
 
 ```
 src/
-  config.js        - Configuration and environment validation
-  logger.js        - Colorful logging utility with levels
-  supabase.js      - Supabase client initialization
-  roasters.js      - Functions to fetch and filter roaster entities
-  crawlRuns.js     - Crawl run tracking (create, complete, fail)
-  blacklist.js     - Blacklist term loading and URL filtering
-  knownPages.js    - Known pages management and filtering
-  gptClassifier.js - GPT-4o-mini classification for coffee pages
-  productSaver.js  - Save products and variants to database
-  pageVisitor.js   - Fetch pages and orchestrate classification
-  sitemap.js       - Sitemap discovery and parsing
+  config.js         - Configuration and environment validation
+  logger.js         - Colorful logging with roaster slug prefix
+  supabase.js       - Supabase client initialization
+  roasters.js       - Functions to fetch and filter roaster entities
+  crawlRuns.js      - Crawl run tracking (create, complete, fail)
+  blacklist.js      - Blacklist term loading and URL filtering
+  knownPages.js     - Known pages management and filtering
+  gptClassifier.js  - GPT-4o-mini classification for coffee pages
+  productSaver.js   - Save products and variants to database
+  pageVisitor.js    - Fetch pages and orchestrate classification
+  sitemap.js        - Sitemap discovery and parsing
+  bfsCrawler.js     - BFS crawling for non-sitemap sites
   urlAccumulator.js - URL collection and deduplication
-  crawler.js       - Main crawling logic
-  ascii/           - ASCII art for start/end of crawl
-index.js           - Entry point
+  crawler.js        - Main crawling logic
+  imageDownloader.js - Download product images to Supabase storage
+  ascii/            - ASCII art for start/end of crawl
+index.js            - Entry point
 ```
 
 ## Environment Variables
@@ -63,6 +65,10 @@ Each crawl is logged to the `crawl_runs` table with:
 
 ## Recent Changes
 
+- 2025-12-23: Added BFS crawling for non-Shopify sites without sitemaps
+- 2025-12-23: Added roaster slug prefix to all console logs for easier debugging
+- 2025-12-23: Added image downloading to Supabase storage with media_assets/product_media linking
+- 2025-12-23: Added metadata JSONB column for storing all product attributes
 - 2025-12-23: Added crawl_runs table logging with 24h cooldown enforcement
 - 2025-12-23: Added GPT-4o-mini classification for coffee product pages
 - 2025-12-23: Added known pages filtering to skip already-crawled URLs

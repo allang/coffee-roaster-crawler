@@ -7,6 +7,7 @@ const config = {
     requestDelayMs: 500,
     requestTimeoutMs: 30000,
     maxSitemapsPerEntity: 50,
+    maxBfsPages: 200,
     userAgent: 'CoffeeCrawler/1.0 (+https://example.com/bot)',
   },
 };

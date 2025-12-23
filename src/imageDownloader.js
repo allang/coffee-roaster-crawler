@@ -86,19 +86,31 @@ async function downloadAndSaveImage(productId, imageUrl) {
 async function linkProductMedia(productId, mediaAssetId) {
   const supabase = getSupabase();
 
+  const { data: existingLink } = await supabase
+    .from('product_media')
+    .select('product_id')
+    .eq('product_id', productId)
+    .eq('media_asset_id', mediaAssetId)
+    .single();
+
+  if (existingLink) {
+    return true;
+  }
+
   const { error } = await supabase
     .from('product_media')
-    .upsert({
+    .insert({
       product_id: productId,
       media_asset_id: mediaAssetId,
       sort_order: 0,
-    }, {
-      onConflict: 'product_id,media_asset_id',
     });
 
   if (error) {
     logger.warn('ImageDownloader', 'Failed to link product_media', { error: error.message });
+    return false;
   }
+  
+  return true;
 }
 
 function getExtensionFromContentType(contentType) {
