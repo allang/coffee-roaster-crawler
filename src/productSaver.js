@@ -44,6 +44,14 @@ async function saveProduct(entityId, productData, sourceUrl) {
 
   const slug = generateSlug(productData.name);
 
+  const metadata = productData.attributes ? { ...productData.attributes } : {};
+  if (productData.default_price) {
+    metadata.default_price = productData.default_price;
+  }
+  if (productData.variant_prices && productData.variant_prices.length > 0) {
+    metadata.variant_prices = productData.variant_prices;
+  }
+
   const productRecord = {
     entity_id: entityId,
     slug: slug,
@@ -53,6 +61,7 @@ async function saveProduct(entityId, productData, sourceUrl) {
     is_active: true,
     first_seen_at: now,
     last_seen_at: now,
+    metadata: metadata,
   };
 
   const { data: existingProduct, error: fetchError } = await supabase
@@ -67,7 +76,7 @@ async function saveProduct(entityId, productData, sourceUrl) {
   if (existingProduct) {
     const { error: updateError } = await supabase
       .from('products')
-      .update({ last_seen_at: now, source_url: sourceUrl })
+      .update({ last_seen_at: now, source_url: sourceUrl, metadata: metadata })
       .eq('id', existingProduct.id);
 
     if (updateError) {
