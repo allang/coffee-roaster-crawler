@@ -6,22 +6,25 @@ A Node.js crawler for discovering coffee products from roaster websites.
 
 This crawler:
 1. Fetches roaster entities from Supabase database
-2. Detects the platform (Shopify, WooCommerce, etc.)
-3. Discovers and crawls sitemaps
-4. Accumulates URLs for visiting
+2. Loads blacklist terms to filter unwanted URLs
+3. Detects the platform (Shopify, WooCommerce, etc.)
+4. Discovers and crawls sitemaps
+5. Filters URLs against blacklist terms
+6. Accumulates URLs for visiting
 
 ## Project Structure
 
 ```
 src/
-  config.js      - Configuration and environment validation
-  logger.js      - Colorful logging utility with levels
-  supabase.js    - Supabase client initialization
-  roasters.js    - Functions to fetch and filter roaster entities
-  sitemap.js     - Sitemap discovery and parsing
+  config.js        - Configuration and environment validation
+  logger.js        - Colorful logging utility with levels
+  supabase.js      - Supabase client initialization
+  roasters.js      - Functions to fetch and filter roaster entities
+  blacklist.js     - Blacklist term loading and URL filtering
+  sitemap.js       - Sitemap discovery and parsing
   urlAccumulator.js - URL collection and deduplication
-  crawler.js     - Main crawling logic
-index.js         - Entry point
+  crawler.js       - Main crawling logic
+index.js           - Entry point
 ```
 
 ## Environment Variables
@@ -38,4 +41,5 @@ node index.js
 
 ## Recent Changes
 
+- 2025-12-23: Added blacklist filtering from crawl_blacklist_terms table
 - 2025-12-23: Initial crawler implementation with sitemap support

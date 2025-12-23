@@ -1,0 +1,318 @@
+# Requirements
+
+This document describes the intent, structure, and usage of the Every Coffee database schema, including the current Row Level Security (RLS) posture and Realtime expectations in Supabase.
+
+---
+
+## Core Design Principles
+
+- **Entities are role-based**  
+  There is no hard “type” on `entities`. Roles live in `entity_roles`, and a single entity can be both a roaster and a café.
+
+- **Crawl-first and append-only where it matters**  
+  The system assumes data is imperfect, partial, and changing. `product_observations` is append-only to preserve history and enable reprocessing.
+
+- **Top-level pages ≠ physical locations**  
+  “New York City” is a navigable hub (directory page). “123 Main St” is a physical address. These are separate tables.
+
+- **Graph relationships over bespoke join tables**  
+  Cross-linking between pages is handled through a generic graph (`entity_links`). This is the backbone of internal linking and “related” modules.
+
+- **Normalize only when it creates leverage**  
+  Raw text is preserved (claims, descriptions). Normalization is layered on via canonical terms and derived tags.
+
+---
+
+## Schema Overview (Current)
+
+### 1) Entities & Roles
+
+#### `entities`
+
+Canonical record for a page-worthy business/brand.
+
+Key fields:
+
+- `slug` (unique): stable URL key
+- `name`
+- `website_url`
+- `description_raw`, `description_html`
+
+#### `entity_roles`
+
+Role assignments for an entity:
+
+- `roaster`
+- `cafe`
+
+An entity can have multiple roles (composite PK `(entity_id, role)`).
+
+**Change vs prior version:** `entities.entity_type` does not exist; roles are the only typing mechanism.
+
+---
+
+### 2) Locations (Hubs vs Physical)
+
+#### `location_hubs`
+
+Top-level directory nodes:
+
+- City pages (e.g., New York City)
+- Origin pages (e.g., Ethiopia)
+- Neighborhood / region / country
+
+Supports hierarchy via `parent_hub_id` for nested navigation.
+
+#### `entity_locations`
+
+Physical locations for an entity:
+
+- Address fields
+- `lat/lng`
+- optional linkage to `location_hubs` via `location_hub_id`
+- one optional primary location per entity (partial unique index)
+
+**Naming intent:**
+
+- `location_hubs` = the “container/directory page”
+- `entity_locations` = the “this entity is located here” representation
+
+---
+
+### 3) Products, Variants, and Pricing
+
+#### `products`
+
+Represents the product page:
+
+- belongs to one entity
+- `slug` is unique per entity (`unique(entity_id, slug)`)
+- `product_type` currently constrained to: `coffee`, `merch`, `other`
+- crawl bookkeeping: `source_url`, `is_active`, `first_seen_at`, `last_seen_at`
+
+#### `product_variants`
+
+Represents multiple prices primarily via **weight-based variants**:
+
+- `weight_g` (normalized grams)
+- `price_cents`, `currency`
+- availability
+
+**Change vs prior direction:** Pricing is explicitly modeled as multiple rows per product by weight (and optionally other variant distinctions via `variant_name`). This is the supported mechanism for “one product with multiple prices based on weight.”
+
+---
+
+### 4) Media
+
+#### `media_assets`
+
+Canonical registry of images:
+
+- unique `url`
+- optional `content_hash` for dedupe
+
+#### `product_media`
+
+Ordered association of images to products:
+
+- `(product_id, media_asset_id)` PK
+- `sort_order`
+
+---
+
+### 5) Coffee-Specific Attributes (Optional 1:1)
+
+#### `coffee_facts`
+
+Optional coffee-only extension:
+
+- `origin_hub_id` (links to `location_hubs` for origin pages)
+- `process`, `variety`, `elevation_m`, `roast_level`
+- `tasting_notes_raw` (roaster’s notes as-is)
+
+This allows partial extraction without forcing product-wide null columns.
+
+---
+
+### 6) Flavor System
+
+Flavor is modeled as raw → canonical → search-mapped.
+
+#### `product_flavor_claims`
+
+Raw roaster claims (verbatim-ish):
+
+- `raw_text`
+- `source` (`crawl` | `manual`)
+
+#### `flavor_terms`
+
+Canonical taxonomy:
+
+- `slug`, `display_name`
+- `term_type`: `note` | `category` | `attribute`
+- optional hierarchy via `parent_term_id` (blueberry → berry → fruity)
+
+#### `product_flavor_tags`
+
+Normalized tags for filtering and related pages:
+
+- `(product_id, flavor_term_id)` PK
+- `confidence` 0..1
+- `evidence` jsonb for model output / matching audit
+
+#### `search_term_mappings`
+
+Maps user search vocabulary to canonical terms:
+
+- `query_text` (what user types)
+- `flavor_term_id` (canonical target)
+- `weight` for ranking
+- `source`: `model` | `manual` | `logs`
+
+**Intent:** users search “blueberry”; system can retrieve via canonical mapping even if internal tags are broader.
+
+---
+
+### 7) Graph Links (“Spider Web”)
+
+#### `entity_links`
+
+Generic edge store connecting objects:
+
+- `from_kind`, `from_id`
+- `to_kind`, `to_id`
+- `link_type` (controlled vocabulary you define)
+- `source`: `derived` | `manual` | `model`
+
+Supported kinds currently constrained to:
+
+- `entity`
+- `product`
+- `location_hub`
+- `flavor_term`
+
+**Change vs earlier pillars:** Brewing methods/equipment are not yet modeled as tables; when you add them later you can extend this constraint or introduce new kinds.
+
+---
+
+### 8) Crawling & Change Tracking
+
+#### `crawl_sources`
+
+Per-entity crawl config:
+
+- `base_url`
+- `crawl_strategy` (`html`, `rss`, `shopify`, `woocommerce`, `other`)
+- `enabled`
+
+#### `crawl_runs`
+
+Execution log:
+
+- status (`ok`, `partial`, `failed`)
+- timings
+- `stats` jsonb, `error`
+
+#### `source_pages`
+
+Optional audit trail of fetched URLs and fingerprints:
+
+- `url`
+- `content_hash`
+
+#### `product_observations`
+
+Append-only snapshots of what was observed for a product at a crawl time:
+
+- `payload` jsonb (structured scrape output)
+- optional denorm fields: `availability`, `min_price_cents`, `max_price_cents`, `currency`
+
+**Primary use cases:**
+
+- compute “latest offerings”
+- detect changes over time
+- re-run extraction/modeling without re-crawling
+
+---
+
+## RLS Policies (Current)
+
+### RLS is enabled on every table.
+
+All tables have `ALTER TABLE ... ENABLE ROW LEVEL SECURITY`.
+
+### Read policy: Public (anonymous) SELECT on all tables
+
+Every table has a policy:
+
+- **FOR SELECT**
+- **USING (true)**
+
+Meaning:
+
+- Anyone (including anon) can read all rows from all tables.
+
+### Write policy: Authenticated users can INSERT/UPDATE/DELETE on all tables
+
+Every table has a policy:
+
+- **FOR ALL**
+- **TO authenticated**
+- **USING (true)**
+- **WITH CHECK (true)**
+
+Meaning:
+
+- Any logged-in user can write anything to any table.
+
+**Important implication:** This is permissive by design. It assumes:
+
+- your app does not expose authenticated writes broadly, or
+- you primarily write via server/service role, or
+- you will add admin/editor constraints later.
+
+If you want “no client writes,” remove these write policies and only mutate via service role.
+
+---
+
+## Realtime Posture (Current)
+
+- Replica identity is set to `FULL` for every table (so updates/deletes have enough row data to publish).
+- Each table is added to the `supabase_realtime` publication.
+
+Meaning:
+
+- All tables are eligible for Realtime broadcasts.
+- RLS still applies to what clients can receive.
+
+---
+
+## What Changed Recently
+
+1. **Removed entity typing from `entities`**
+
+   - No `entity_type`; roles are only represented via `entity_roles`.
+
+2. **Pricing model clarified**
+
+   - `product_variants` is the canonical structure for multi-price products based on `weight_g`.
+
+3. **Removed brewing/equipment tables for now**
+
+   - Those pillars are not represented as tables yet. Internal linking is still supported through `entity_links`.
+
+4. **RLS + Realtime made explicit**
+   - RLS enabled everywhere, public read everywhere, authenticated write everywhere.
+   - Realtime enabled everywhere via publication membership and replica identity.
+
+---
+
+## Expected Build Order
+
+1. Entities + Roles
+2. Products + Variants
+3. Location Hubs + Entity Locations
+4. Cafés (via roles + locations)
+5. Flavor normalization and search
+6. Graph link expansion via `entity_links`

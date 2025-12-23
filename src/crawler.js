@@ -1,6 +1,7 @@
 const { getSupabase } = require('./supabase');
 const { discoverSitemapUrl, crawlSitemap, delay } = require('./sitemap');
 const { UrlAccumulator } = require('./urlAccumulator');
+const { getBlacklistTerms, filterUrlsWithBlacklist } = require('./blacklist');
 const { config } = require('./config');
 const logger = require('./logger');
 
@@ -36,7 +37,7 @@ async function detectPlatform(websiteUrl) {
   return { platform: 'custom', confidence: 0.5 };
 }
 
-async function crawlRoaster(roaster) {
+async function crawlRoaster(roaster, blacklistTerms) {
   logger.header(`Starting Crawl: ${roaster.name}`);
   logger.info('Crawl', 'Roaster details', {
     id: roaster.id,
@@ -70,7 +71,20 @@ async function crawlRoaster(roaster) {
         sitemapsVisited: sitemapResult.sitemaps.length,
         hasErrors: !!sitemapResult.error,
       });
-      accumulator.addUrlsFromSitemap(sitemapResult.urls);
+
+      const { passed, blacklisted } = filterUrlsWithBlacklist(sitemapResult.urls, blacklistTerms);
+      
+      if (blacklisted.length > 0) {
+        logger.info('Blacklist', `Filtered ${blacklisted.length} URLs matching blacklist terms`);
+        for (const entry of blacklisted) {
+          accumulator.addUrl(entry.url, 'sitemap', null, {
+            blacklisted: true,
+            blacklistedMatch: entry.blacklistedMatch,
+          });
+        }
+      }
+
+      accumulator.addUrlsFromSitemap(passed);
     } else if (!sitemapResult.error) {
       logger.warn('Crawl', 'Sitemap crawl returned no URLs');
     }
@@ -103,6 +117,8 @@ async function runCrawler() {
   logger.info('Crawler', `Started at: ${new Date().toISOString()}`);
   logger.divider();
 
+  const blacklistTerms = await getBlacklistTerms();
+
   const roasters = await getRoastersWithCrawlState();
   
   if (roasters.length === 0) {
@@ -121,7 +137,7 @@ async function runCrawler() {
 
   for (const roaster of eligibleRoasters) {
     try {
-      const result = await crawlRoaster(roaster);
+      const result = await crawlRoaster(roaster, blacklistTerms);
       results.push(result);
 
       await delay(config.crawler.requestDelayMs * 2);

@@ -1,0 +1,409 @@
+# Crawler DB
+
+This document explains the crawler-focused tables and how they support the crawler flow.
+
+The crawler DB is a **control-plane**. It does three things:
+
+1. decides **which roasters to crawl**
+2. manages the **URL corpus** (known vs unknown, skip lists, blacklist rules)
+3. records **run history + GPT classifications** so pages are not repeatedly sent to GPT
+
+---
+
+## Tables (Crawler Schema)
+
+### `entity_crawl_state`
+
+**One row per entity** that stores crawl recency + platform/sitemap detection.
+
+Used for:
+
+- filtering out roasters crawled in the last 24 hours
+- tracking whether a roaster is Shopify
+- recording last-crawled timestamps when a run completes
+
+Key fields:
+
+- `platform` (`unknown|shopify|woocommerce|custom|other`)
+- `platform_detected_at`, `platform_confidence`
+- `has_sitemap`, `master_sitemap_url`, `sitemap_checked_at`
+- `first_crawled_at`
+- `last_crawled_at` (**the 24h exclusion source of truth**)
+- `allow_crawl` (manual kill switch)
+
+---
+
+### `crawl_runs`
+
+**One row per crawl execution** of a single entity.
+
+Used for:
+
+- tying together run-scoped URL discovery and GPT classifications
+- storing counters for monitoring and debugging
+- keeping a durable history of run outcomes
+
+Key fields:
+
+- `entity_id`
+- `status` (`queued|running|completed|failed`)
+- `platform` (record which branch the run took)
+- counters: `pages_discovered`, `pages_visited`, `pages_sent_to_gpt`, `coffees_found`
+- `meta` (JSON dump for crawler metrics / tracing)
+
+---
+
+### `crawl_run_urls`
+
+**Run-scoped URL corpus** (the BFS/queue list that grows during a run).
+
+Used for:
+
+- “growing list of URLs until all URLs have been visited”
+- preventing duplicates within a run
+- storing blacklist decisions within a run
+
+Key fields:
+
+- `crawl_run_id`, `entity_id`
+- `url`
+- discovery: `discovered_via` (`sitemap|dom_links|manual`), `discovered_from_url`
+- blacklist: `blacklisted`, `blacklisted_match`
+- progress: `visited`, `visited_at`
+- GPT routing: `sent_to_gpt`, `gpt_requested_at`
+
+Important: this table is **ephemeral by run**. It is not the durable “known page” store.
+
+---
+
+### `known_pages`
+
+**Durable per-entity URL registry** (the source of truth for “known pages”).
+
+Used for:
+
+- removing known pages before visiting / GPT
+- remembering pages to skip permanently
+- remembering pages classified as irrelevant or coffee
+- ensuring pages are not sent to GPT repeatedly
+
+Key fields:
+
+- `entity_id`, `url` (unique pair)
+- `status` (`unknown|skip|irrelevant|coffee|processed`)
+  - `skip` = never fetch/classify again (blacklist/manual/robots)
+  - `irrelevant` = GPT said no coffee here
+  - `coffee` = GPT said coffee content exists (and extraction succeeded)
+  - `processed` = used for link expansion / already handled (classification optional)
+- `reason`, `blacklisted_match`
+- classification audit: `last_classified_at`, `last_classified_by`, `classification` (JSON)
+- fetch audit: `last_fetched_at`, `last_status_code`, `last_content_hash`
+- discovery audit: `first_seen_at`, `last_seen_at`, `times_seen`
+
+---
+
+### `page_classifications`
+
+**Append-only log of GPT calls** (what was sent and what came back).
+
+Used for:
+
+- auditing model output over time
+- debugging extraction regressions
+- replaying/validating JSON responses
+
+Key fields:
+
+- `crawl_run_id`, `entity_id`, `url`
+- `model` (e.g. `gpt-5.1-mini`)
+- `has_coffee` (boolean decision)
+- `classification` (`coffee|irrelevant` typically)
+- `response_json` (the full structured JSON from the prompt)
+- `error`
+
+Important: `known_pages` stores the durable final decision; `page_classifications` is the immutable ledger.
+
+---
+
+### `crawl_blacklist_terms`
+
+**Config table** for URL substring blacklist terms.
+
+Used for:
+
+- filtering discovered URLs before visiting
+- writing skipped URLs into `known_pages(status='skip')`
+
+Key fields:
+
+- `term` (substring match)
+- `enabled`
+
+---
+
+### `entity_sitemaps`
+
+**Tracks sitemap URLs per entity**, especially for Shopify master sitemap fanout.
+
+Used for:
+
+- Shopify: master sitemap → child sitemaps → URL listing
+- keeping last status codes / fetch timestamps for sitemap health
+
+Key fields:
+
+- `entity_id`
+- `sitemap_url`
+- `sitemap_type` (`master|child|unknown`)
+- `last_fetched_at`, `last_status_code`
+
+---
+
+## How the DB Supports the Crawler Flow
+
+### Step 1: Get all roaster entities
+
+Query `entities` joined to `entity_roles`:
+
+- select entities where `entity_roles.role = 'roaster'`
+
+`entity_roles` is the canonical “roaster” indicator.
+
+---
+
+### Step 2: Remove roasters crawled in the last 24 hours
+
+Use `entity_crawl_state.last_crawled_at`:
+
+- exclude entities where `last_crawled_at >= now() - interval '24 hours'`
+- treat null `last_crawled_at` as “never crawled” (keep)
+
+Optional additional filter:
+
+- `allow_crawl = true`
+
+---
+
+### Step 3: If roaster is new (never crawled), detect Shopify
+
+A roaster is “new” when:
+
+- no row in `entity_crawl_state`, or
+- row exists but `first_crawled_at` and `platform_detected_at` are null
+
+Crawler action:
+
+- detect platform in code
+- upsert `entity_crawl_state.platform`, `platform_detected_at`, `platform_confidence`
+
+---
+
+## Shopify Branch (Step 4)
+
+### 4.1 Crawl all associated sitemaps (from the master sitemap) and get all pages listed
+
+DB writes:
+
+- update `entity_crawl_state.has_sitemap`, `master_sitemap_url`, `sitemap_checked_at`
+- upsert into `entity_sitemaps`:
+  - one row for master sitemap
+  - rows for child sitemaps discovered
+- insert discovered URLs into `crawl_run_urls` with:
+  - `discovered_via = 'sitemap'`
+
+### 4.2 Remove known pages
+
+Known = any URL present in `known_pages` for that entity.
+
+Crawler behavior:
+
+- before visiting, left-join `crawl_run_urls` to `known_pages`
+- only keep URLs where `known_pages` row does not exist
+
+### 4.3 Remove pages that match blacklisted terms
+
+Blacklist terms come from `crawl_blacklist_terms` (enabled only).
+
+Crawler behavior:
+
+- string-match URLs against enabled terms
+- mark `crawl_run_urls.blacklisted=true` and store `blacklisted_match`
+- do not visit blacklisted URLs
+
+### 4.4 Save removed pages as known pages to be skipped
+
+For each blacklisted URL, upsert `known_pages`:
+
+- `status = 'skip'`
+- `reason = 'blacklist'`
+- `blacklisted_match = <term>`
+
+### 4.5 Visit unknown pages (not known + not blacklisted)
+
+As each page is fetched:
+
+- mark `crawl_run_urls.visited=true`, `visited_at=now()`
+- optionally update `known_pages.last_fetched_at/status/content_hash` for visibility
+
+#### 4.5.1 Send DOM to GPT 5.1 mini for coffee JSON
+
+Write an append-only row to `page_classifications`:
+
+- `model='gpt-5.1-mini'`
+- `requested_at`
+- later `response_at`, `has_coffee`, `classification`, `response_json`
+
+#### 4.5.2 If irrelevant, save as known page
+
+Upsert `known_pages` for that URL:
+
+- `status='irrelevant'`
+- `last_classified_by='gpt-5.1-mini'`
+- `classification=<response_json>`
+- `last_classified_at=now()`
+
+#### 4.5.3 If coffee page, save coffee + mark as known
+
+Crawler writes to product tables:
+
+- insert/update `products` for the roaster entity
+- insert/update `product_variants` for weights/prices
+- insert/update `coffee_facts` as available
+- (optionally) flavor tables
+
+Then upsert `known_pages`:
+
+- `status='coffee'`
+- `classification=<response_json>`
+- `last_classified_at=now()`
+
+### 4.6 After all pages complete, save last crawled timestamp
+
+Update `entity_crawl_state`:
+
+- `first_crawled_at` if null
+- `last_crawled_at=now()`
+- `total_crawl_runs = total_crawl_runs + 1`
+- optionally `last_crawl_status = 'completed'`
+
+Also finalize `crawl_runs`:
+
+- set `status='completed'`, `finished_at=now()`
+- set counters
+
+---
+
+## Non-Shopify Branch (Step 5)
+
+### 5.0 Seed
+
+Start from `entity_crawl_state.homepage_url` in code (or `entities.website_url`).
+Create a `crawl_runs` row and insert the homepage into `crawl_run_urls`:
+
+- `discovered_via='manual'` or `dom_links` (your call)
+
+### 5.1 Ignore pages with blacklisted terms
+
+Same as Shopify branch:
+
+- compare against `crawl_blacklist_terms`
+- mark `crawl_run_urls.blacklisted=true`
+- upsert `known_pages(status='skip')` for blacklisted URLs
+
+### 5.2 Visit each page
+
+Rule difference for non-Shopify:
+
+- if the page is already known, **do not GPT it**
+- but still fetch it to gather more links
+
+DB usage:
+
+- `known_pages` is the “should we GPT” gate
+- `crawl_run_urls` is the run’s BFS list
+
+For known pages:
+
+- fetch
+- extract URLs from DOM
+- insert new URLs into `crawl_run_urls` (if not already in run)
+- apply blacklist filtering to newly added URLs (mark blacklisted + upsert skip)
+
+### 5.3 For unknown pages, send to GPT and then store as known
+
+If URL not present in `known_pages`:
+
+- fetch DOM
+- insert `page_classifications` row and run GPT
+
+#### 5.3.1 If page has a coffee, save coffee and associate with roaster
+
+Write to:
+
+- `products`, `product_variants`, `coffee_facts` (and optional flavor tables)
+
+#### 5.3.2 Gather all URLs and add to run corpus
+
+Insert into `crawl_run_urls` as discovered.
+Blacklist filter them and persist skips.
+
+#### 5.3.3 Save this page as known so it won’t be sent to GPT again
+
+Upsert `known_pages`:
+
+- `status='coffee'` or `status='irrelevant'`
+- store model JSON in `classification`
+
+### 5.4 Continue until all URLs visited
+
+Crawler repeatedly selects from `crawl_run_urls`:
+
+- `visited=false AND blacklisted=false`
+- visit, mark visited, extract, insert more URLs
+- stop when no unvisited URLs remain
+
+### 5.5 Mark roaster as crawled
+
+Same as Shopify:
+
+- update `entity_crawl_state.last_crawled_at=now()`
+- finalize `crawl_runs`
+
+---
+
+## Practical Gates (What the DB is used for)
+
+### “Should I crawl this roaster?”
+
+- `entity_roles` to identify roasters
+- `entity_crawl_state.last_crawled_at` to enforce 24h cooldown
+- `entity_crawl_state.allow_crawl` to hard-exclude
+
+### “Should I visit this URL?”
+
+- `crawl_run_urls.blacklisted` (run-specific)
+- plus blacklist term check at insertion time
+
+### “Should I send this URL to GPT?”
+
+- if exists in `known_pages` → **do not GPT**
+- else → **GPT and then upsert known_pages**
+
+### “Which URLs did we already learn about permanently?”
+
+- `known_pages` is the durable inventory
+
+### “What did GPT say last time?”
+
+- `known_pages.classification` for latest
+- `page_classifications` for full history
+
+---
+
+## Notes / Intentional Choices
+
+- `known_pages` is the long-term memory that prevents expensive repeated GPT calls.
+- `crawl_run_urls` is the short-term, per-run BFS/queue state that supports link graph expansion.
+- `page_classifications` is append-only so you can compare model behavior over time.
+- `crawl_blacklist_terms` centralizes skip logic and makes it configurable without code deploys.
+- `entity_sitemaps` supports Shopify’s sitemap fanout pattern and makes sitemap health visible.
