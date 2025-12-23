@@ -77,19 +77,30 @@ async function getRecentCrawlRuns(entityIds) {
   const supabase = getSupabase();
   const cutoff = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
 
-  const { data, error } = await supabase
-    .from('crawl_runs')
-    .select('entity_id, status, finished_at')
-    .in('entity_id', entityIds)
-    .in('status', ['completed', 'running'])
-    .gte('created_at', cutoff);
+  const BATCH_SIZE = 50;
+  const allResults = [];
 
-  if (error) {
-    logger.error('CrawlRuns', 'Failed to fetch recent crawl runs', { error: error.message });
-    throw error;
+  for (let i = 0; i < entityIds.length; i += BATCH_SIZE) {
+    const batch = entityIds.slice(i, i + BATCH_SIZE);
+    
+    const { data, error } = await supabase
+      .from('crawl_runs')
+      .select('entity_id, status, finished_at')
+      .in('entity_id', batch)
+      .in('status', ['completed', 'running'])
+      .gte('created_at', cutoff);
+
+    if (error) {
+      logger.error('CrawlRuns', 'Failed to fetch recent crawl runs', { error: error.message });
+      throw error;
+    }
+
+    if (data) {
+      allResults.push(...data);
+    }
   }
 
-  return data || [];
+  return allResults;
 }
 
 module.exports = {
