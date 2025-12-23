@@ -8,7 +8,6 @@ const { createCrawlRun, completeCrawlRun, failCrawlRun } = require('./crawlRuns'
 const { bfsCrawl } = require('./bfsCrawler');
 const { config } = require('./config');
 const logger = require('./logger');
-const pLimit = require('p-limit');
 
 const PARALLEL_ROASTERS = 2;
 
@@ -229,6 +228,7 @@ async function runCrawler() {
     return { success: true, roastersCrawled: 0 };
   }
 
+  const pLimit = (await import('p-limit')).default;
   const limit = pLimit(PARALLEL_ROASTERS);
   logger.info('Crawler', `Running ${PARALLEL_ROASTERS} roasters in parallel`);
 
