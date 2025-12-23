@@ -33,13 +33,13 @@ const logger = {
 
   info(context, message, data) {
     if (currentLevel <= LOG_LEVELS.INFO) {
-      console.log(`${colors.blue}${formatMessage('INFO', context, message, data)}${colors.reset}`);
+      console.log(`\t${colors.blue}${formatMessage('INFO', context, message, data)}${colors.reset}`);
     }
   },
 
   success(context, message, data) {
     if (currentLevel <= LOG_LEVELS.INFO) {
-      console.log(`\t${colors.green}${formatMessage('SUCCESS', context, message, data)}${colors.reset}`);
+      console.log(`\t\t${colors.green}${formatMessage('SUCCESS', context, message, data)}${colors.reset}`);
     }
   },
 
