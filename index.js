@@ -1,8 +1,22 @@
+const fs = require('fs');
+const path = require('path');
 const { validateConfig } = require('./src/config');
 const { runCrawler } = require('./src/crawler');
 const logger = require('./src/logger');
 
+function displayAsciiArt(filename) {
+  try {
+    const filePath = path.join(__dirname, 'src', 'ascii', filename);
+    const art = fs.readFileSync(filePath, 'utf8');
+    if (art.trim()) {
+      console.log(art);
+    }
+  } catch (err) {
+  }
+}
+
 async function main() {
+  displayAsciiArt('start.txt');
   logger.header('Coffee Roaster Crawler');
   logger.info('Main', 'Initializing...');
 
@@ -30,6 +44,8 @@ async function main() {
       
       logger.info('Main', 'Total URLs discovered across all roasters', { count: totalUrls });
     }
+
+    displayAsciiArt('end.txt');
 
   } catch (error) {
     logger.error('Main', 'Crawler failed', { 
