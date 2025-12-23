@@ -1,3 +1,4 @@
+modules = ["nodejs-20"]
 [agent]
 expertMode = true
 
@@ -6,3 +7,29 @@ expertMode = true
 [userenv.shared]
 NEXT_PUBLIC_SUPABASE_URL = "https://gtlipifdfyugiwpxvuse.supabase.co"
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY = "sb_publishable_mi79a8jYxxEykGM1dEp4CA_IzC3XCQe"
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Crawler"
+
+[[workflows.workflow]]
+name = "Crawler"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node index.js"
+
+[workflows.workflow.metadata]
+outputType = "console"
