@@ -22,6 +22,7 @@ src/
   logger.js        - Colorful logging utility with levels
   supabase.js      - Supabase client initialization
   roasters.js      - Functions to fetch and filter roaster entities
+  crawlRuns.js     - Crawl run tracking (create, complete, fail)
   blacklist.js     - Blacklist term loading and URL filtering
   knownPages.js    - Known pages management and filtering
   gptClassifier.js - GPT-4o-mini classification for coffee pages
@@ -30,6 +31,7 @@ src/
   sitemap.js       - Sitemap discovery and parsing
   urlAccumulator.js - URL collection and deduplication
   crawler.js       - Main crawling logic
+  ascii/           - ASCII art for start/end of crawl
 index.js           - Entry point
 ```
 
@@ -46,8 +48,22 @@ index.js           - Entry point
 node index.js
 ```
 
+## Crawl Run Tracking
+
+Each crawl is logged to the `crawl_runs` table with:
+- Status (running/completed/failed)
+- Platform detected
+- Pages discovered, visited, sent to GPT
+- Coffees found
+- Start/finish timestamps
+
+**24h Cooldown**: Roasters with a completed/running crawl in the last 24 hours are skipped.
+
+**Allow Crawl Flag**: Roasters with `entity_crawl_state.allow_crawl=false` are skipped. Missing entries default to allowed.
+
 ## Recent Changes
 
+- 2025-12-23: Added crawl_runs table logging with 24h cooldown enforcement
 - 2025-12-23: Added GPT-4o-mini classification for coffee product pages
 - 2025-12-23: Added known pages filtering to skip already-crawled URLs
 - 2025-12-23: Added product saving to database with variants and coffee facts
