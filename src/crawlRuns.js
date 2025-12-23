@@ -27,7 +27,7 @@ async function createCrawlRun(entityId, platform = 'unknown') {
 async function completeCrawlRun(crawlRunId, stats) {
   const supabase = getSupabase();
 
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from('crawl_runs')
     .update({
       status: 'completed',
@@ -37,9 +37,7 @@ async function completeCrawlRun(crawlRunId, stats) {
       pages_sent_to_gpt: stats.pagesSentToGpt || 0,
       coffees_found: stats.coffeesFound || 0,
     })
-    .eq('id', crawlRunId)
-    .select()
-    .single();
+    .eq('id', crawlRunId);
 
   if (error) {
     logger.error('CrawlRuns', 'Failed to complete crawl run', { error: error.message });
@@ -47,22 +45,20 @@ async function completeCrawlRun(crawlRunId, stats) {
   }
 
   logger.success('CrawlRuns', `Completed crawl run: ${crawlRunId}`);
-  return data;
+  return { id: crawlRunId };
 }
 
 async function failCrawlRun(crawlRunId, errorMessage) {
   const supabase = getSupabase();
 
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from('crawl_runs')
     .update({
       status: 'failed',
       finished_at: new Date().toISOString(),
       error: errorMessage,
     })
-    .eq('id', crawlRunId)
-    .select()
-    .single();
+    .eq('id', crawlRunId);
 
   if (error) {
     logger.error('CrawlRuns', 'Failed to mark crawl run as failed', { error: error.message });
@@ -70,7 +66,7 @@ async function failCrawlRun(crawlRunId, errorMessage) {
   }
 
   logger.warn('CrawlRuns', `Marked crawl run as failed: ${crawlRunId}`);
-  return data;
+  return { id: crawlRunId };
 }
 
 async function getRecentCrawlRuns(entityIds) {
