@@ -2,6 +2,8 @@ const { getSupabase } = require('./supabase');
 const { discoverSitemapUrl, crawlSitemap, delay } = require('./sitemap');
 const { UrlAccumulator } = require('./urlAccumulator');
 const { getBlacklistTerms, filterUrlsWithBlacklist } = require('./blacklist');
+const { getKnownPagesForEntity, saveBlacklistedPages, filterOutKnownUrls } = require('./knownPages');
+const { visitAllPages } = require('./pageVisitor');
 const { config } = require('./config');
 const logger = require('./logger');
 
@@ -94,11 +96,39 @@ async function crawlRoaster(roaster, blacklistTerms) {
     accumulator.addUrl(roaster.website_url, 'manual');
   }
 
+  const knownUrls = await getKnownPagesForEntity(roaster.id);
+  logger.info('KnownPages', `Found ${knownUrls.size} known pages for this roaster`);
+
+  const unvisitedAll = accumulator.getUnvisitedUrls();
+  const { unknown: newUrls, known: skippedUrls } = filterOutKnownUrls(unvisitedAll, knownUrls);
+
+  if (skippedUrls.length > 0) {
+    logger.info('KnownPages', `Skipping ${skippedUrls.length} already known pages`);
+  }
+
+  const blacklistedEntries = accumulator.getAllUrls().filter(u => u.blacklisted);
+  if (blacklistedEntries.length > 0) {
+    await saveBlacklistedPages(roaster.id, blacklistedEntries);
+  }
+
   accumulator.printSummary();
 
-  const unvisited = accumulator.getUnvisitedUrls();
-  logger.info('Crawl', `URLs ready for visiting: ${unvisited.length}`);
-  
+  logger.info('Crawl', `New pages to visit and classify: ${newUrls.length}`);
+
+  let visitResults = { visited: 0, coffeeFound: 0, irrelevant: 0, errors: 0 };
+
+  if (newUrls.length > 0) {
+    logger.header('Visiting Pages & GPT Classification');
+    visitResults = await visitAllPages(roaster.id, newUrls, accumulator);
+    
+    logger.success('Crawl', 'Page visiting complete', {
+      visited: visitResults.visited,
+      coffeeFound: visitResults.coffeeFound,
+      irrelevant: visitResults.irrelevant,
+      errors: visitResults.errors,
+    });
+  }
+
   return {
     success: true,
     roasterId: roaster.id,
@@ -106,7 +136,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
     platform: platformInfo,
     sitemapUrl,
     stats: accumulator.getStats(),
-    urls: accumulator.getAllUrls(),
+    visitResults,
   };
 }
 
@@ -163,7 +193,9 @@ async function runCrawler() {
   for (const result of successful) {
     logger.success('Summary', `${result.roasterName}`, {
       platform: result.platform?.platform,
-      urlsFound: result.stats?.total || 0,
+      urlsDiscovered: result.stats?.total || 0,
+      pagesVisited: result.visitResults?.visited || 0,
+      coffeesFound: result.visitResults?.coffeeFound || 0,
     });
   }
 

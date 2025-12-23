@@ -1,0 +1,188 @@
+const { getSupabase } = require('./supabase');
+const logger = require('./logger');
+
+function generateSlug(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .substring(0, 100);
+}
+
+function parsePriceCents(priceStr) {
+  if (!priceStr) return null;
+  const cleaned = priceStr.replace(/[^0-9.]/g, '');
+  const parsed = parseFloat(cleaned);
+  if (isNaN(parsed)) return null;
+  return Math.round(parsed * 100);
+}
+
+function parseWeightGrams(weightStr) {
+  if (!weightStr) return null;
+  const lower = weightStr.toLowerCase();
+  
+  const match = lower.match(/([\d.]+)\s*(g|kg|oz|lb|lbs|gram|grams|kilogram|kilograms|ounce|ounces|pound|pounds)/);
+  if (!match) return null;
+
+  const value = parseFloat(match[1]);
+  const unit = match[2];
+
+  if (unit.startsWith('kg') || unit.startsWith('kilo')) {
+    return Math.round(value * 1000);
+  } else if (unit.startsWith('oz') || unit.startsWith('ounce')) {
+    return Math.round(value * 28.35);
+  } else if (unit.startsWith('lb') || unit.startsWith('pound')) {
+    return Math.round(value * 453.59);
+  } else {
+    return Math.round(value);
+  }
+}
+
+async function saveProduct(entityId, productData, sourceUrl) {
+  const supabase = getSupabase();
+  const now = new Date().toISOString();
+
+  const slug = generateSlug(productData.name);
+
+  const productRecord = {
+    entity_id: entityId,
+    slug: slug,
+    name: productData.name,
+    product_type: 'coffee',
+    source_url: sourceUrl,
+    is_active: true,
+    first_seen_at: now,
+    last_seen_at: now,
+  };
+
+  const { data: existingProduct, error: fetchError } = await supabase
+    .from('products')
+    .select('id')
+    .eq('entity_id', entityId)
+    .eq('slug', slug)
+    .single();
+
+  let productId;
+
+  if (existingProduct) {
+    const { error: updateError } = await supabase
+      .from('products')
+      .update({ last_seen_at: now, source_url: sourceUrl })
+      .eq('id', existingProduct.id);
+
+    if (updateError) {
+      logger.error('ProductSaver', 'Failed to update product', { error: updateError.message });
+      throw updateError;
+    }
+    productId = existingProduct.id;
+    logger.info('ProductSaver', `Updated existing product: ${productData.name}`);
+  } else {
+    const { data: newProduct, error: insertError } = await supabase
+      .from('products')
+      .insert(productRecord)
+      .select('id')
+      .single();
+
+    if (insertError) {
+      logger.error('ProductSaver', 'Failed to insert product', { error: insertError.message });
+      throw insertError;
+    }
+    productId = newProduct.id;
+    logger.success('ProductSaver', `Created new product: ${productData.name}`);
+  }
+
+  if (productData.variant_prices && productData.variant_prices.length > 0) {
+    await saveVariants(productId, productData.variant_prices, productData.default_price);
+  } else if (productData.default_price) {
+    await saveVariants(productId, [], productData.default_price);
+  }
+
+  if (productData.attributes) {
+    await saveCoffeeFacts(productId, productData.attributes);
+  }
+
+  return productId;
+}
+
+async function saveVariants(productId, variantPrices, defaultPrice) {
+  const supabase = getSupabase();
+
+  const { error: deleteError } = await supabase
+    .from('product_variants')
+    .delete()
+    .eq('product_id', productId);
+
+  if (deleteError) {
+    logger.warn('ProductSaver', 'Failed to clear old variants', { error: deleteError.message });
+  }
+
+  const variants = [];
+
+  if (variantPrices.length > 0) {
+    for (const [weight, price] of variantPrices) {
+      variants.push({
+        product_id: productId,
+        variant_name: weight,
+        weight_g: parseWeightGrams(weight),
+        price_cents: parsePriceCents(price),
+        currency: 'USD',
+        availability: 'in_stock',
+      });
+    }
+  } else if (defaultPrice) {
+    variants.push({
+      product_id: productId,
+      variant_name: 'default',
+      weight_g: null,
+      price_cents: parsePriceCents(defaultPrice),
+      currency: 'USD',
+      availability: 'in_stock',
+    });
+  }
+
+  if (variants.length > 0) {
+    const { error: insertError } = await supabase
+      .from('product_variants')
+      .insert(variants);
+
+    if (insertError) {
+      logger.warn('ProductSaver', 'Failed to save variants', { error: insertError.message });
+    }
+  }
+}
+
+async function saveCoffeeFacts(productId, attributes) {
+  const supabase = getSupabase();
+
+  const { error: deleteError } = await supabase
+    .from('coffee_facts')
+    .delete()
+    .eq('product_id', productId);
+
+  if (deleteError) {
+    logger.warn('ProductSaver', 'Failed to clear old coffee facts', { error: deleteError.message });
+  }
+
+  const facts = {
+    product_id: productId,
+    process: attributes.varietal || null,
+    variety: attributes.varietal || null,
+    roast_level: attributes.roast_darkness || null,
+    tasting_notes_raw: attributes.flavor_notes ? attributes.flavor_notes.join(', ') : null,
+  };
+
+  const { error: insertError } = await supabase
+    .from('coffee_facts')
+    .insert(facts);
+
+  if (insertError) {
+    logger.warn('ProductSaver', 'Failed to save coffee facts', { error: insertError.message });
+  }
+}
+
+module.exports = {
+  saveProduct,
+  generateSlug,
+  parsePriceCents,
+  parseWeightGrams,
+};

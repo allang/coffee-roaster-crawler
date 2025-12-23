@@ -10,7 +10,9 @@ This crawler:
 3. Detects the platform (Shopify, WooCommerce, etc.)
 4. Discovers and crawls sitemaps
 5. Filters URLs against blacklist terms
-6. Accumulates URLs for visiting
+6. Removes already known pages to avoid re-crawling
+7. Visits unknown pages and sends DOM to GPT-4o-mini for classification
+8. Saves coffee products to database and marks pages as known
 
 ## Project Structure
 
@@ -21,6 +23,10 @@ src/
   supabase.js      - Supabase client initialization
   roasters.js      - Functions to fetch and filter roaster entities
   blacklist.js     - Blacklist term loading and URL filtering
+  knownPages.js    - Known pages management and filtering
+  gptClassifier.js - GPT-4o-mini classification for coffee pages
+  productSaver.js  - Save products and variants to database
+  pageVisitor.js   - Fetch pages and orchestrate classification
   sitemap.js       - Sitemap discovery and parsing
   urlAccumulator.js - URL collection and deduplication
   crawler.js       - Main crawling logic
@@ -31,6 +37,7 @@ index.js           - Entry point
 
 - `NEXT_PUBLIC_SUPABASE_URL` - Supabase project URL
 - `SUPABASE_SERVICE_ROLE_KEY` - Supabase service role key (secret)
+- `OPENAI_API_KEY` - OpenAI API key for GPT classification (secret)
 - `LOG_LEVEL` - Optional: DEBUG, INFO, WARN, ERROR (default: DEBUG)
 
 ## Running
@@ -41,5 +48,8 @@ node index.js
 
 ## Recent Changes
 
+- 2025-12-23: Added GPT-4o-mini classification for coffee product pages
+- 2025-12-23: Added known pages filtering to skip already-crawled URLs
+- 2025-12-23: Added product saving to database with variants and coffee facts
 - 2025-12-23: Added blacklist filtering from crawl_blacklist_terms table
 - 2025-12-23: Initial crawler implementation with sitemap support
