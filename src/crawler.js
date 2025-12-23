@@ -58,7 +58,6 @@ async function crawlRoaster(roaster) {
   const sitemapUrl = await discoverSitemapUrl(roaster.website_url);
 
   if (sitemapUrl) {
-    logger.info('Crawl', 'Starting sitemap crawl');
     const sitemapResult = await crawlSitemap(sitemapUrl);
 
     if (sitemapResult.error) {
@@ -76,9 +75,6 @@ async function crawlRoaster(roaster) {
       logger.warn('Crawl', 'Sitemap crawl returned no URLs');
     }
 
-    for (const sitemap of sitemapResult.sitemaps) {
-      logger.debug('Crawl', `Sitemap visited: ${sitemap.url}`, { type: sitemap.type });
-    }
   } else {
     logger.warn('Crawl', 'No sitemap found, would need to use BFS crawling');
     accumulator.addUrl(roaster.website_url, 'manual');
@@ -89,16 +85,6 @@ async function crawlRoaster(roaster) {
   const unvisited = accumulator.getUnvisitedUrls();
   logger.info('Crawl', `URLs ready for visiting: ${unvisited.length}`);
   
-  if (unvisited.length > 0) {
-    logger.debug('Crawl', 'Sample of URLs to visit:');
-    unvisited.slice(0, 10).forEach((u, i) => {
-      logger.debug('Crawl', `  ${i + 1}. ${u.url}`);
-    });
-    if (unvisited.length > 10) {
-      logger.debug('Crawl', `  ... and ${unvisited.length - 10} more`);
-    }
-  }
-
   return {
     success: true,
     roasterId: roaster.id,

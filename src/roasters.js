@@ -24,13 +24,6 @@ async function getRoasterEntities() {
 
   logger.success('Roasters', `Found ${roasters.length} roaster entities`);
 
-  for (const roaster of roasters) {
-    logger.debug('Roasters', `  - ${roaster.name}`, { 
-      id: roaster.id, 
-      website: roaster.website_url 
-    });
-  }
-
   return roasters;
 }
 
@@ -96,27 +89,22 @@ async function filterRoastersForCrawling(roasters) {
     const state = roaster.crawlState;
 
     if (!state) {
-      logger.debug('Filter', `${roaster.name}: ELIGIBLE (never crawled)`);
       return true;
     }
 
     if (state.allow_crawl === false) {
-      logger.debug('Filter', `${roaster.name}: SKIPPED (allow_crawl=false)`);
       return false;
     }
 
     if (!state.last_crawled_at) {
-      logger.debug('Filter', `${roaster.name}: ELIGIBLE (no last_crawled_at)`);
       return true;
     }
 
     const lastCrawled = new Date(state.last_crawled_at);
     if (lastCrawled < cutoff) {
-      logger.debug('Filter', `${roaster.name}: ELIGIBLE (last crawled ${lastCrawled.toISOString()})`);
       return true;
     }
 
-    logger.debug('Filter', `${roaster.name}: SKIPPED (crawled within 24h)`);
     return false;
   });
 

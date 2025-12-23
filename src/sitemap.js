@@ -6,8 +6,6 @@ const logger = require('./logger');
 const parser = new xml2js.Parser({ explicitArray: false });
 
 async function fetchUrl(url) {
-  logger.debug('HTTP', `Fetching: ${url}`);
-  
   try {
     const response = await axios.get(url, {
       timeout: config.crawler.requestTimeoutMs,
@@ -16,11 +14,6 @@ async function fetchUrl(url) {
         'Accept': 'application/xml, text/xml, */*',
       },
       maxRedirects: 5,
-    });
-
-    logger.debug('HTTP', `Response: ${response.status}`, { 
-      contentType: response.headers['content-type'],
-      size: response.data?.length || 0 
     });
 
     return { success: true, data: response.data, status: response.status };
@@ -59,7 +52,6 @@ function extractUrlsFromSitemap(parsedXml) {
         childSitemaps.push(loc);
       }
     }
-    logger.debug('Sitemap', `Found ${childSitemaps.length} child sitemaps in index`);
   }
 
   if (parsedXml.urlset?.url) {
@@ -78,7 +70,6 @@ function extractUrlsFromSitemap(parsedXml) {
         });
       }
     }
-    logger.debug('Sitemap', `Found ${urls.length} URLs in urlset`);
   }
 
   return { urls, childSitemaps };
@@ -88,7 +79,6 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
   logger.info('Sitemap', `Crawling sitemap: ${sitemapUrl}`);
 
   if (visited.has(sitemapUrl)) {
-    logger.debug('Sitemap', 'Already visited this sitemap, skipping');
     return { urls: [], sitemaps: [] };
   }
   visited.add(sitemapUrl);
@@ -149,7 +139,6 @@ async function discoverSitemapUrl(websiteUrl) {
   ];
 
   for (const candidate of candidates) {
-    logger.debug('Sitemap', `Trying: ${candidate}`);
     const result = await fetchUrl(candidate);
     
     if (result.success && result.data?.includes('<?xml')) {

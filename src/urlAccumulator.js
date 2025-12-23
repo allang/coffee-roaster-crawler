@@ -17,7 +17,6 @@ class UrlAccumulator {
     const normalizedUrl = this.normalizeUrl(url);
     
     if (!normalizedUrl) {
-      logger.debug('Accumulator', `Invalid URL skipped: ${url}`);
       return false;
     }
 
