@@ -82,6 +82,11 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   const platformInfo = await detectPlatform(websiteUrl, log);
 
+  if (platformInfo.confidence === 0) {
+    log.error('Crawl', 'Website unreachable, skipping this roaster');
+    return { success: false, error: 'Website unreachable' };
+  }
+
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
   log.info('Crawl', 'Platform detection complete', platformInfo);
 
