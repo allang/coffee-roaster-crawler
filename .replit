@@ -34,3 +34,7 @@ args = "node index.js"
 
 [workflows.workflow.metadata]
 outputType = "console"
+
+[deployment]
+deploymentTarget = "scheduled"
+run = ["node", "index.js"]
