@@ -83,8 +83,8 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const platformInfo = await detectPlatform(websiteUrl, log);
 
   if (platformInfo.confidence === 0) {
-    log.error('Crawl', 'Website unreachable, skipping this roaster');
-    return { success: false, error: 'Website unreachable' };
+    log.warn('Crawl', 'Website unreachable, will retry later');
+    return { success: false, error: 'Website unreachable', retryable: true, roasterName: roaster.name };
   }
 
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
@@ -234,29 +234,65 @@ async function runCrawler() {
   const limit = pLimit(PARALLEL_ROASTERS);
   globalLogger.info('Crawler', `Running ${PARALLEL_ROASTERS} roasters in parallel`);
 
-  const crawlPromises = eligibleRoasters.map(roaster =>
-    limit(async () => {
-      try {
-        const result = await crawlRoaster(roaster, blacklistTerms);
-        return result;
-      } catch (error) {
-        globalLogger.error('Crawler', `Failed to crawl ${roaster.name}`, { error: error.message });
-        return { success: false, roasterName: roaster.name, error: error.message };
+  const allResults = [];
+  const retryQueue = [];
+
+  async function crawlWithRetryTracking(roaster) {
+    try {
+      const result = await crawlRoaster(roaster, blacklistTerms);
+      if (result.retryable) {
+        return { ...result, roaster };
       }
-    })
+      return result;
+    } catch (error) {
+      globalLogger.error('Crawler', `Failed to crawl ${roaster.name}`, { error: error.message });
+      return { success: false, roasterName: roaster.name, error: error.message };
+    }
+  }
+
+  const crawlPromises = eligibleRoasters.map(roaster =>
+    limit(() => crawlWithRetryTracking(roaster))
   );
 
-  const results = await Promise.all(crawlPromises);
+  const firstPassResults = await Promise.all(crawlPromises);
+
+  for (const result of firstPassResults) {
+    if (result.retryable && result.roaster) {
+      retryQueue.push(result.roaster);
+    } else {
+      allResults.push(result);
+    }
+  }
+
+  if (retryQueue.length > 0) {
+    globalLogger.header('Retrying Unreachable Sites');
+    globalLogger.info('Retry', `${retryQueue.length} sites to retry`);
+
+    const retryPromises = retryQueue.map(roaster =>
+      limit(() => crawlWithRetryTracking(roaster))
+    );
+
+    const retryResults = await Promise.all(retryPromises);
+
+    for (const result of retryResults) {
+      if (result.retryable) {
+        allResults.push({ ...result, error: 'Website unreachable after retry' });
+      } else {
+        allResults.push(result);
+      }
+    }
+  }
 
   globalLogger.header('Crawl Summary');
   
-  const successful = results.filter(r => r.success);
-  const failed = results.filter(r => !r.success);
+  const successful = allResults.filter(r => r.success);
+  const failed = allResults.filter(r => !r.success);
 
   globalLogger.info('Summary', 'Overall Results', {
     totalRoasters: eligibleRoasters.length,
     successful: successful.length,
     failed: failed.length,
+    retriedSites: retryQueue.length,
   });
 
   for (const result of successful) {
@@ -272,7 +308,7 @@ async function runCrawler() {
     globalLogger.error('Summary', `${result.roasterName}: ${result.error}`);
   }
 
-  return { success: true, roastersCrawled: successful.length, results };
+  return { success: true, roastersCrawled: successful.length, results: allResults };
 }
 
 module.exports = {
