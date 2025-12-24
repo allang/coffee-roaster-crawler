@@ -1,6 +1,11 @@
 const axios = require('axios');
+const https = require('https');
 const cheerio = require('cheerio');
 const globalLogger = require('./logger');
+
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false,
+});
 const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage } = require('./knownPages');
 const { saveProduct } = require('./productSaver');
@@ -15,6 +20,7 @@ async function fetchPageContent(url) {
         'User-Agent': 'Mozilla/5.0 (compatible; CoffeeCrawler/1.0)',
         'Accept': 'text/html,application/xhtml+xml',
       },
+      httpsAgent,
     });
 
     const $ = cheerio.load(response.data);

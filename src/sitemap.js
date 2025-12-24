@@ -1,9 +1,14 @@
 const axios = require('axios');
+const https = require('https');
 const xml2js = require('xml2js');
 const { config } = require('./config');
 const logger = require('./logger');
 
 const parser = new xml2js.Parser({ explicitArray: false });
+
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false,
+});
 
 async function fetchUrl(url) {
   try {
@@ -14,6 +19,7 @@ async function fetchUrl(url) {
         'Accept': 'application/xml, text/xml, */*',
       },
       maxRedirects: 5,
+      httpsAgent,
     });
 
     return { success: true, data: response.data, status: response.status };

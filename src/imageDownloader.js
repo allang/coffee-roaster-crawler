@@ -1,8 +1,13 @@
 const { getSupabase } = require('./supabase');
 const globalLogger = require('./logger');
 const axios = require('axios');
+const https = require('https');
 const crypto = require('crypto');
 const path = require('path');
+
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false,
+});
 
 const BUCKET_NAME = 'assets';
 
@@ -29,6 +34,7 @@ async function downloadAndSaveImage(productId, imageUrl, log = null) {
         'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
         'Referer': normalizedUrl,
       },
+      httpsAgent,
     });
 
     const buffer = Buffer.from(response.data);
