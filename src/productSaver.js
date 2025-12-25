@@ -178,12 +178,20 @@ async function saveCoffeeFacts(productId, attributes, logger) {
     logger.warn('ProductSaver', 'Failed to clear old coffee facts', { error: deleteError.message });
   }
 
+  const flavorNotes = attributes.flavor_notes;
+  let tastingNotesRaw = null;
+  if (Array.isArray(flavorNotes)) {
+    tastingNotesRaw = flavorNotes.join(', ');
+  } else if (typeof flavorNotes === 'string') {
+    tastingNotesRaw = flavorNotes;
+  }
+
   const facts = {
     product_id: productId,
     process: attributes.varietal || null,
     variety: attributes.varietal || null,
     roast_level: attributes.roast_darkness || null,
-    tasting_notes_raw: attributes.flavor_notes ? attributes.flavor_notes.join(', ') : null,
+    tasting_notes_raw: tastingNotesRaw,
   };
 
   const { error: insertError } = await supabase
