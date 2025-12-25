@@ -22,6 +22,7 @@ function buildPrompt(content) {
         "name": "Name of the coffee",
         "default_price":  "$20.00",
         "variant_prices": [["250g", "$20.00"], ["100g", "$12.00"] , ["1lb", "$60.00"]],
+        "variant_price_currency": "USD",
         "attributes": {
             "origin_type": "Single Origin",
             "country_of_origin": "Ethiopia",

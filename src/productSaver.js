@@ -102,10 +102,11 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
     logger.success('ProductSaver', `Created new product: ${productData.name}`);
   }
 
+  const currency = productData.variant_price_currency || 'USD';
   if (productData.variant_prices && productData.variant_prices.length > 0) {
-    await saveVariants(productId, productData.variant_prices, productData.default_price, logger);
+    await saveVariants(productId, productData.variant_prices, productData.default_price, currency, logger);
   } else if (productData.default_price) {
-    await saveVariants(productId, [], productData.default_price, logger);
+    await saveVariants(productId, [], productData.default_price, currency, logger);
   }
 
   if (productData.attributes) {
@@ -119,7 +120,7 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
   return productId;
 }
 
-async function saveVariants(productId, variantPrices, defaultPrice, logger) {
+async function saveVariants(productId, variantPrices, defaultPrice, currency, logger) {
   const supabase = getSupabase();
 
   const { error: deleteError } = await supabase
@@ -140,7 +141,7 @@ async function saveVariants(productId, variantPrices, defaultPrice, logger) {
         variant_name: weight,
         weight_g: parseWeightGrams(weight),
         price_cents: parsePriceCents(price),
-        currency: 'USD',
+        currency: currency,
         availability: 'in_stock',
       });
     }
@@ -150,7 +151,7 @@ async function saveVariants(productId, variantPrices, defaultPrice, logger) {
       variant_name: 'default',
       weight_g: null,
       price_cents: parsePriceCents(defaultPrice),
-      currency: 'USD',
+      currency: currency,
       availability: 'in_stock',
     });
   }
