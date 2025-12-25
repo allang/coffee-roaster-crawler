@@ -18,23 +18,24 @@ This crawler:
 
 ```
 src/
-  config.js         - Configuration and environment validation
-  logger.js         - Colorful logging with roaster slug prefix
-  supabase.js       - Supabase client initialization
-  roasters.js       - Functions to fetch and filter roaster entities
-  crawlRuns.js      - Crawl run tracking (create, complete, fail)
-  blacklist.js      - Blacklist term loading and URL filtering
-  knownPages.js     - Known pages management and filtering
-  gptClassifier.js  - GPT-4o-mini classification for coffee pages
-  productSaver.js   - Save products and variants to database
-  pageVisitor.js    - Fetch pages and orchestrate classification
-  sitemap.js        - Sitemap discovery and parsing
-  bfsCrawler.js     - BFS crawling for non-sitemap sites
-  urlAccumulator.js - URL collection and deduplication
-  crawler.js        - Main crawling logic
+  config.js          - Configuration and environment validation
+  logger.js          - Colorful logging with roaster slug prefix
+  supabase.js        - Supabase client initialization
+  roasters.js        - Functions to fetch and filter roaster entities
+  crawlRuns.js       - Crawl run tracking (create, complete, fail)
+  blacklist.js       - Blacklist term loading and URL filtering
+  knownPages.js      - Known pages management and filtering
+  gptClassifier.js   - GPT-4o-mini classification for coffee pages
+  shopifyProduct.js  - Fetch Shopify product JSON for variant prices
+  productSaver.js    - Save products and variants to database
+  pageVisitor.js     - Fetch pages and orchestrate classification
+  sitemap.js         - Sitemap discovery and parsing
+  bfsCrawler.js      - BFS crawling for non-sitemap sites
+  urlAccumulator.js  - URL collection and deduplication
+  crawler.js         - Main crawling logic
   imageDownloader.js - Download product images to Supabase storage
-  ascii/            - ASCII art for start/end of crawl
-index.js            - Entry point
+  ascii/             - ASCII art for start/end of crawl
+index.js             - Entry point
 ```
 
 ## Environment Variables
@@ -65,6 +66,11 @@ Each crawl is logged to the `crawl_runs` table with:
 
 ## Recent Changes
 
+- 2025-12-25: Added Shopify product JSON fetching for accurate variant prices
+- 2025-12-25: Merge GPT classification with Shopify JSON data (prefer JSON for prices, GPT for flavor notes)
+- 2025-12-25: Added retry queue for unreachable sites (retried at end of crawl)
+- 2025-12-25: Bypass SSL certificate validation for misconfigured sites
+- 2025-12-25: Parallel crawling now runs 4 roasters simultaneously
 - 2025-12-23: Added BFS crawling for non-Shopify sites without sitemaps
 - 2025-12-23: Added roaster slug prefix to all console logs for easier debugging
 - 2025-12-23: Added image downloading to Supabase storage with media_assets/product_media linking
