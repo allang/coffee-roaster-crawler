@@ -174,7 +174,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   try {
     if (newUrls.length > 0) {
       log.header('Visiting Pages & GPT Classification');
-      visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log);
+      visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log, platformInfo.platform);
       
       log.success('Crawl', 'Page visiting complete', {
         visited: visitResults.visited,

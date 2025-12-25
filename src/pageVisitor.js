@@ -11,6 +11,7 @@ const { saveKnownPage } = require('./knownPages');
 const { saveProduct } = require('./productSaver');
 const { delay } = require('./sitemap');
 const { config } = require('./config');
+const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
 
 async function fetchPageContent(url) {
   try {
@@ -70,7 +71,7 @@ async function fetchPageContent(url) {
 
 const GPT_DELAY_MS = 500;
 
-async function visitAndClassifyPage(entityId, url, accumulator, log) {
+async function visitAndClassifyPage(entityId, url, accumulator, log, platform = 'unknown') {
   const fetchResult = await fetchPageContent(url);
 
   if (!fetchResult.success) {
@@ -80,6 +81,14 @@ async function visitAndClassifyPage(entityId, url, accumulator, log) {
   }
 
   accumulator.markVisited(url);
+
+  let shopifyJson = null;
+  if (platform === 'shopify' && isShopifyProductUrl(url)) {
+    shopifyJson = await fetchShopifyProductJson(url, log);
+    if (shopifyJson.success) {
+      log.info('Visitor', `Got Shopify JSON with ${shopifyJson.data.variants.length} variants`);
+    }
+  }
 
   await delay(GPT_DELAY_MS);
 
@@ -105,16 +114,24 @@ async function visitAndClassifyPage(entityId, url, accumulator, log) {
 
   if (result.is_coffee_page === true && result.product) {
     try {
-      await saveProduct(entityId, result.product, url, log);
+      let productToSave = result.product;
+      
+      if (shopifyJson && shopifyJson.success) {
+        productToSave = mergeGptAndJsonData(result.product, shopifyJson);
+        log.info('Visitor', `Merged GPT + JSON data for: ${productToSave.name}`);
+      }
+      
+      await saveProduct(entityId, productToSave, url, log);
       
       await saveKnownPage(entityId, url, 'coffee', {
         classification: result,
+        shopifyJson: shopifyJson?.success ? shopifyJson.data : null,
         classifiedAt: now,
         classifiedBy: MODEL,
       });
 
-      log.success('Visitor', `Found coffee: ${result.product.name}`);
-      return { visited: true, classified: true, isCoffee: true, product: result.product };
+      log.success('Visitor', `Found coffee: ${productToSave.name}`);
+      return { visited: true, classified: true, isCoffee: true, product: productToSave };
     } catch (error) {
       log.error('Visitor', `Failed to save product from ${url}`, { error: error.message });
       return { visited: true, classified: true, isCoffee: true, error: error.message };
@@ -130,7 +147,7 @@ async function visitAndClassifyPage(entityId, url, accumulator, log) {
   return { visited: true, classified: true, isCoffee: false };
 }
 
-async function visitAllPages(entityId, urls, accumulator, log = null) {
+async function visitAllPages(entityId, urls, accumulator, log = null, platform = 'unknown') {
   const logger = log || globalLogger;
   const results = {
     visited: 0,
@@ -142,7 +159,7 @@ async function visitAllPages(entityId, urls, accumulator, log = null) {
   for (const entry of urls) {
     const url = typeof entry === 'object' ? entry.url : entry;
 
-    const result = await visitAndClassifyPage(entityId, url, accumulator, logger);
+    const result = await visitAndClassifyPage(entityId, url, accumulator, logger, platform);
     results.visited++;
 
     if (result.error) {
