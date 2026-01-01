@@ -21,6 +21,7 @@ src/
   config.js          - Configuration and environment validation
   logger.js          - Colorful logging with roaster slug prefix
   supabase.js        - Supabase client initialization
+  httpClient.js      - Centralized HTTP client with browser headers and backoff
   roasters.js        - Functions to fetch and filter roaster entities
   crawlRuns.js       - Crawl run tracking (create, complete, fail)
   blacklist.js       - Blacklist term loading and URL filtering
@@ -66,6 +67,12 @@ Each crawl is logged to the `crawl_runs` table with:
 
 ## Recent Changes
 
+- 2026-01-01: Centralized HTTP client (httpClient.js) with realistic Chrome browser headers
+- 2026-01-01: Added Sec-Fetch-*, Accept-Language, Accept-Encoding headers to reduce bot detection
+- 2026-01-01: Exponential backoff on 403/429/5xx errors with configurable retries
+- 2026-01-01: Jittered delays between requests (random variation around base delay)
+- 2026-01-01: Respect Retry-After header when present
+- 2026-01-01: Store variant_price_currency to product_variants currency column
 - 2025-12-25: Added Shopify product JSON fetching for accurate variant prices
 - 2025-12-25: Merge GPT classification with Shopify JSON data (prefer JSON for prices, GPT for flavor notes)
 - 2025-12-25: Added retry queue for unreachable sites (retried at end of crawl)

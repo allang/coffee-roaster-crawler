@@ -1,7 +1,6 @@
 const axios = require('axios');
-const https = require('https');
-const { CookieJar } = require('tough-cookie');
-const { wrapper } = require('axios-cookiejar-support');
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const CHROME_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
@@ -49,56 +48,17 @@ const IMAGE_HEADERS = {
   'Sec-Fetch-Site': 'cross-site',
 };
 
-const httpsAgent = new https.Agent({
-  rejectUnauthorized: false,
-});
-
-const cookieJars = new Map();
-
-function getCookieJar(domain) {
-  if (!cookieJars.has(domain)) {
-    cookieJars.set(domain, new CookieJar());
-  }
-  return cookieJars.get(domain);
-}
-
-function getDomain(url) {
-  try {
-    return new URL(url).hostname;
-  } catch {
-    return 'unknown';
-  }
-}
-
-function createClient(url, headerType = 'browser') {
-  const domain = getDomain(url);
-  const jar = getCookieJar(domain);
-  
-  let headers;
+function getHeadersForType(headerType) {
   switch (headerType) {
     case 'json':
-      headers = { ...JSON_HEADERS };
-      break;
+      return { ...JSON_HEADERS };
     case 'xml':
-      headers = { ...XML_HEADERS };
-      break;
+      return { ...XML_HEADERS };
     case 'image':
-      headers = { ...IMAGE_HEADERS };
-      break;
+      return { ...IMAGE_HEADERS };
     default:
-      headers = { ...BROWSER_HEADERS };
+      return { ...BROWSER_HEADERS };
   }
-  
-  const client = wrapper(axios.create({
-    headers,
-    httpsAgent,
-    timeout: 30000,
-    maxRedirects: 10,
-    jar,
-    withCredentials: true,
-  }));
-  
-  return client;
 }
 
 function jitteredDelay(baseMs, jitterMs = null) {
@@ -145,15 +105,17 @@ async function fetchWithBackoff(url, options = {}) {
     logger = null,
   } = options;
   
-  const client = createClient(url, headerType);
+  const baseHeaders = getHeadersForType(headerType);
   
   const requestConfig = {
     timeout: options.timeout || 30000,
     responseType: options.responseType || 'text',
+    maxRedirects: 10,
+    headers: { ...baseHeaders },
   };
   
   if (referer) {
-    requestConfig.headers = { Referer: referer };
+    requestConfig.headers.Referer = referer;
   }
   
   let lastError;
@@ -161,7 +123,7 @@ async function fetchWithBackoff(url, options = {}) {
   
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     try {
-      const response = await client.get(url, requestConfig);
+      const response = await axios.get(url, requestConfig);
       return {
         success: true,
         data: response.data,
@@ -177,24 +139,19 @@ async function fetchWithBackoff(url, options = {}) {
         logger.warn('HTTP', `Attempt ${attempt + 1}/${maxRetries + 1} failed for ${url}`, { status, message });
       }
       
-      if (status === 403 || status === 429) {
+      const shouldRetry = status === 403 || status === 429 || status >= 500 || status === 0;
+      
+      if (shouldRetry && attempt < maxRetries) {
         const retryAfterMs = parseRetryAfter(error.response?.headers || {});
-        const waitTime = retryAfterMs || Math.min(backoffMs, maxBackoffMs);
+        const baseWaitTime = retryAfterMs || Math.min(backoffMs, maxBackoffMs);
+        const jitteredWaitTime = jitteredDelay(baseWaitTime, Math.floor(baseWaitTime * 0.3));
         
-        if (attempt < maxRetries) {
-          if (logger) {
-            logger.info('HTTP', `Backing off for ${waitTime}ms before retry`);
-          }
-          await delay(waitTime);
-          backoffMs *= 2;
+        if (logger) {
+          logger.info('HTTP', `Backing off for ${jitteredWaitTime}ms before retry`);
         }
-      } else if (status >= 500 || status === 0) {
-        if (attempt < maxRetries) {
-          const waitTime = Math.min(backoffMs, maxBackoffMs);
-          await delay(waitTime);
-          backoffMs *= 2;
-        }
-      } else {
+        await delay(jitteredWaitTime);
+        backoffMs *= 2;
+      } else if (!shouldRetry) {
         break;
       }
     }
@@ -223,25 +180,15 @@ async function fetchImage(url, options = {}) {
   return fetchWithBackoff(url, { ...options, headerType: 'image', responseType: 'arraybuffer' });
 }
 
-function clearCookieJar(domain) {
-  if (domain) {
-    cookieJars.delete(domain);
-  } else {
-    cookieJars.clear();
-  }
-}
-
 module.exports = {
   fetchHtml,
   fetchJson,
   fetchXml,
   fetchImage,
   fetchWithBackoff,
-  createClient,
   jitteredDelay,
   jitteredSleep,
   delay,
-  clearCookieJar,
   CHROME_UA,
   BROWSER_HEADERS,
   JSON_HEADERS,
