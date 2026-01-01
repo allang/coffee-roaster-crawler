@@ -48,6 +48,7 @@ function buildPrompt(content) {
 Rules:
 - All JSON values for "product" should be strings.
 - When there are no variant prices, return an empty array
+- Use the clues on the page to determine the variant_price_currency, including the currency symbol, domain TLD, language, and other clues.
 - The origin_type can be Single Origin or Blend.
 - The "brew_as" field should default to "filter" unless the product page specifies the brew method or type. All types are: Espresso, Filter, and Cold Brew.
 - Some values will not be found on the page. Mark them as null instead of using a blank string.
