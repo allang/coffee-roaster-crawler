@@ -1,17 +1,12 @@
-const axios = require('axios');
-const https = require('https');
 const cheerio = require('cheerio');
 const globalLogger = require('./logger');
 
-const httpsAgent = new https.Agent({
-  rejectUnauthorized: false,
-});
 const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage, getKnownPagesForEntity, saveBlacklistedPages } = require('./knownPages');
 const { saveProduct } = require('./productSaver');
 const { filterUrlsWithBlacklist } = require('./blacklist');
-const { delay } = require('./sitemap');
 const { config } = require('./config');
+const { fetchHtml, jitteredSleep } = require('./httpClient');
 
 const GPT_DELAY_MS = 500;
 
@@ -44,18 +39,22 @@ function normalizeUrl(url, baseUrl) {
   }
 }
 
-async function fetchPageAndLinks(url) {
-  try {
-    const response = await axios.get(url, {
-      timeout: 15000,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; CoffeeCrawler/1.0)',
-        'Accept': 'text/html,application/xhtml+xml',
-      },
-      httpsAgent,
-    });
+async function fetchPageAndLinks(url, referer = null) {
+  const result = await fetchHtml(url, { 
+    timeout: 15000,
+    referer,
+  });
 
-    const $ = cheerio.load(response.data);
+  if (!result.success) {
+    return {
+      success: false,
+      error: result.error,
+      links: [],
+    };
+  }
+
+  try {
+    const $ = cheerio.load(result.data);
     
     const links = [];
     $('a[href]').each((i, el) => {
@@ -127,6 +126,8 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
   logger.info('BFS', `Starting URL: ${startUrl}`);
   logger.info('BFS', `Max pages: ${MAX_PAGES}`);
 
+  let lastUrl = null;
+
   while (queue.length > 0 && results.visited < MAX_PAGES) {
     const url = queue.shift();
     
@@ -134,9 +135,10 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
     visited.add(url);
     accumulator.markVisited(url);
 
-    await delay(config.crawler.requestDelayMs);
+    await jitteredSleep(config.crawler.requestDelayMs);
 
-    const fetchResult = await fetchPageAndLinks(url);
+    const fetchResult = await fetchPageAndLinks(url, lastUrl);
+    lastUrl = url;
 
     if (!fetchResult.success) {
       logger.warn('BFS', `Failed to fetch: ${url}`, { error: fetchResult.error });
@@ -177,7 +179,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
       continue;
     }
 
-    await delay(GPT_DELAY_MS);
+    await jitteredSleep(GPT_DELAY_MS);
 
     const classification = await classifyPage(fetchResult.content, url);
     const now = new Date().toISOString();

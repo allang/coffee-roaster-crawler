@@ -1,13 +1,7 @@
 const { getSupabase } = require('./supabase');
 const globalLogger = require('./logger');
-const axios = require('axios');
-const https = require('https');
 const crypto = require('crypto');
-const path = require('path');
-
-const httpsAgent = new https.Agent({
-  rejectUnauthorized: false,
-});
+const { fetchImage } = require('./httpClient');
 
 const BUCKET_NAME = 'assets';
 
@@ -26,21 +20,20 @@ async function downloadAndSaveImage(productId, imageUrl, log = null) {
   const supabase = getSupabase();
 
   try {
-    const response = await axios.get(normalizedUrl, {
-      responseType: 'arraybuffer',
+    const result = await fetchImage(normalizedUrl, {
       timeout: 30000,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
-        'Referer': normalizedUrl,
-      },
-      httpsAgent,
+      referer: normalizedUrl,
     });
 
-    const buffer = Buffer.from(response.data);
+    if (!result.success) {
+      logger.warn('ImageDownloader', `Failed to download image: ${result.error}`, { url: normalizedUrl.substring(0, 100) });
+      return null;
+    }
+
+    const buffer = Buffer.from(result.data);
     const contentHash = crypto.createHash('md5').update(buffer).digest('hex');
 
-    const contentType = response.headers['content-type'] || 'image/jpeg';
+    const contentType = result.headers['content-type'] || 'image/jpeg';
     const ext = getExtensionFromContentType(contentType);
     const fileName = `products/${productId}/${contentHash}${ext}`;
 

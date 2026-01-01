@@ -1,36 +1,24 @@
-const axios = require('axios');
-const https = require('https');
 const xml2js = require('xml2js');
 const { config } = require('./config');
 const logger = require('./logger');
+const { fetchXml, jitteredSleep } = require('./httpClient');
 
 const parser = new xml2js.Parser({ explicitArray: false });
 
-const httpsAgent = new https.Agent({
-  rejectUnauthorized: false,
-});
-
 async function fetchUrl(url) {
-  try {
-    const response = await axios.get(url, {
-      timeout: config.crawler.requestTimeoutMs,
-      headers: {
-        'User-Agent': config.crawler.userAgent,
-        'Accept': 'application/xml, text/xml, */*',
-      },
-      maxRedirects: 5,
-      httpsAgent,
-    });
-
-    return { success: true, data: response.data, status: response.status };
-  } catch (error) {
-    const status = error.response?.status || 0;
+  const result = await fetchXml(url, { 
+    timeout: config.crawler.requestTimeoutMs,
+    logger,
+  });
+  
+  if (!result.success) {
     logger.warn('HTTP', `Failed to fetch ${url}`, { 
-      status, 
-      message: error.message 
+      status: result.status, 
+      message: result.error 
     });
-    return { success: false, error: error.message, status };
   }
+  
+  return result;
 }
 
 async function parseSitemapXml(xmlContent) {
@@ -112,7 +100,7 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
       break;
     }
 
-    await delay(config.crawler.requestDelayMs);
+    await jitteredSleep(config.crawler.requestDelayMs);
 
     const childResult = await crawlSitemap(childUrl, visited);
     
@@ -152,15 +140,11 @@ async function discoverSitemapUrl(websiteUrl) {
       return candidate;
     }
 
-    await delay(config.crawler.requestDelayMs);
+    await jitteredSleep(config.crawler.requestDelayMs);
   }
 
   logger.warn('Sitemap', 'No sitemap found at common locations');
   return null;
-}
-
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 module.exports = {
@@ -169,5 +153,4 @@ module.exports = {
   extractUrlsFromSitemap,
   crawlSitemap,
   discoverSitemapUrl,
-  delay,
 };

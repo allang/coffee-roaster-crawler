@@ -1,10 +1,5 @@
-const axios = require('axios');
-const https = require('https');
 const globalLogger = require('./logger');
-
-const httpsAgent = new https.Agent({
-  rejectUnauthorized: false,
-});
+const { fetchJson } = require('./httpClient');
 
 function isShopifyProductUrl(url) {
   try {
@@ -43,32 +38,28 @@ async function fetchShopifyProductJson(url, log = null) {
     return { success: false, error: 'Could not construct JSON URL' };
   }
 
-  try {
-    const response = await axios.get(jsonUrl, {
-      timeout: 15000,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; CoffeeCrawler/1.0)',
-        'Accept': 'application/json',
-      },
-      httpsAgent,
-    });
+  const result = await fetchJson(jsonUrl, {
+    timeout: 15000,
+    referer: url,
+  });
 
-    if (!response.data || !response.data.product) {
-      return { success: false, error: 'Invalid product JSON response' };
-    }
-
-    const product = response.data.product;
-    logger.info('ShopifyJSON', `Fetched product: ${product.title}`);
-
-    return {
-      success: true,
-      data: parseShopifyProduct(product),
-      raw: product,
-    };
-  } catch (error) {
-    logger.warn('ShopifyJSON', `Failed to fetch: ${jsonUrl}`, { error: error.message });
-    return { success: false, error: error.message };
+  if (!result.success) {
+    logger.warn('ShopifyJSON', `Failed to fetch: ${jsonUrl}`, { error: result.error });
+    return { success: false, error: result.error };
   }
+
+  if (!result.data || !result.data.product) {
+    return { success: false, error: 'Invalid product JSON response' };
+  }
+
+  const product = result.data.product;
+  logger.info('ShopifyJSON', `Fetched product: ${product.title}`);
+
+  return {
+    success: true,
+    data: parseShopifyProduct(product),
+    raw: product,
+  };
 }
 
 function parseShopifyProduct(product) {

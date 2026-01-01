@@ -1,5 +1,6 @@
 const { getSupabase } = require('./supabase');
-const { discoverSitemapUrl, crawlSitemap, delay } = require('./sitemap');
+const { discoverSitemapUrl, crawlSitemap } = require('./sitemap');
+const { jitteredSleep } = require('./httpClient');
 const { UrlAccumulator } = require('./urlAccumulator');
 const { getBlacklistTerms, filterUrlsWithBlacklist } = require('./blacklist');
 const { getKnownPagesForEntity, saveBlacklistedPages, filterOutKnownUrls } = require('./knownPages');
@@ -90,7 +91,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
   log.info('Crawl', 'Platform detection complete', platformInfo);
 
-  await delay(config.crawler.requestDelayMs);
+  await jitteredSleep(config.crawler.requestDelayMs);
 
   const sitemapUrl = await discoverSitemapUrl(websiteUrl);
 

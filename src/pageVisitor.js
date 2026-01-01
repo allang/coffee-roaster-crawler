@@ -1,30 +1,28 @@
-const axios = require('axios');
-const https = require('https');
 const cheerio = require('cheerio');
 const globalLogger = require('./logger');
 
-const httpsAgent = new https.Agent({
-  rejectUnauthorized: false,
-});
 const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage } = require('./knownPages');
 const { saveProduct } = require('./productSaver');
-const { delay } = require('./sitemap');
 const { config } = require('./config');
 const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
+const { fetchHtml, jitteredSleep } = require('./httpClient');
 
-async function fetchPageContent(url) {
+async function fetchPageContent(url, referer = null) {
+  const result = await fetchHtml(url, { 
+    timeout: 15000,
+    referer,
+  });
+
+  if (!result.success) {
+    return {
+      success: false,
+      error: result.error,
+    };
+  }
+
   try {
-    const response = await axios.get(url, {
-      timeout: 15000,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; CoffeeCrawler/1.0)',
-        'Accept': 'text/html,application/xhtml+xml',
-      },
-      httpsAgent,
-    });
-
-    const $ = cheerio.load(response.data);
+    const $ = cheerio.load(result.data);
 
     $('script, style, nav, footer, header, noscript, iframe').remove();
 
@@ -90,7 +88,7 @@ async function visitAndClassifyPage(entityId, url, accumulator, log, platform = 
     }
   }
 
-  await delay(GPT_DELAY_MS);
+  await jitteredSleep(GPT_DELAY_MS);
 
   const classification = await classifyPage(fetchResult.content, url);
 
@@ -170,7 +168,7 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
       results.irrelevant++;
     }
 
-    await delay(config.crawler.requestDelayMs);
+    await jitteredSleep(config.crawler.requestDelayMs);
   }
 
   return results;
