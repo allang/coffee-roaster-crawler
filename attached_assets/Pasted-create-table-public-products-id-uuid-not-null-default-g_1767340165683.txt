@@ -1,0 +1,73 @@
+create table public.products (
+  id uuid not null default gen_random_uuid (),
+  entity_id uuid not null,
+  slug text not null,
+  name text not null,
+  product_type text not null default 'coffee'::text,
+  description_raw text null,
+  description_html text null,
+  source_url text null,
+  is_active boolean not null default true,
+  first_seen_at timestamp with time zone null,
+  last_seen_at timestamp with time zone null,
+  created_at timestamp with time zone not null default now(),
+  updated_at timestamp with time zone not null default now(),
+  metadata jsonb null,
+  country_of_origin text GENERATED ALWAYS as (
+    NULLIF(
+      TRIM(
+        both
+        from
+          (metadata ->> 'country_of_origin'::text)
+      ),
+      ''::text
+    )
+  ) STORED null,
+  origin_region text GENERATED ALWAYS as (
+    NULLIF(
+      TRIM(
+        both
+        from
+          (metadata ->> 'origin_region'::text)
+      ),
+      ''::text
+    )
+  ) STORED null,
+  constraint products_pkey primary key (id),
+  constraint products_entity_id_fkey foreign KEY (entity_id) references entities (id) on delete CASCADE,
+  constraint products_type_check check (
+    (
+      product_type = any (
+        array['coffee'::text, 'merch'::text, 'other'::text]
+      )
+    )
+  )
+) TABLESPACE pg_default;
+
+create unique INDEX IF not exists products_entity_slug_uniq on public.products using btree (entity_id, slug) TABLESPACE pg_default;
+
+create index IF not exists products_entity_idx on public.products using btree (entity_id) TABLESPACE pg_default;
+
+create index IF not exists products_active_idx on public.products using btree (is_active) TABLESPACE pg_default;
+
+create index IF not exists products_last_seen_idx on public.products using btree (last_seen_at desc) TABLESPACE pg_default;
+
+create index IF not exists products_coffee_country_active_idx on public.products using btree (country_of_origin, last_seen_at desc) TABLESPACE pg_default
+where
+  (
+    (product_type = 'coffee'::text)
+    and (is_active = true)
+    and (country_of_origin is not null)
+  );
+
+create index IF not exists products_coffee_country_slug_idx on public.products using btree (country_of_origin, slug) TABLESPACE pg_default
+where
+  (
+    (product_type = 'coffee'::text)
+    and (is_active = true)
+    and (country_of_origin is not null)
+  );
+
+create trigger set_updated_at_products BEFORE
+update on products for EACH row
+execute FUNCTION set_updated_at ();
