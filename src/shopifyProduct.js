@@ -127,6 +127,8 @@ function mergeGptAndJsonData(gptProduct, jsonData) {
     default_price: json.variants.length > 0 ? json.variants[0].price : gptProduct.default_price,
     variant_prices: variantPrices.length > 0 ? variantPrices : gptProduct.variant_prices,
     variant_price_currency: gptProduct.variant_price_currency || 'USD',
+    description_html: json.description || null,
+    description_raw: json.descriptionText || null,
     attributes: {
       ...gptAttributes,
       product_image_url: json.mainImage || gptAttributes.product_image_url,
