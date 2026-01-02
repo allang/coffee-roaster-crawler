@@ -54,10 +54,6 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
     metadata.variant_prices = productData.variant_prices;
   }
 
-  const gptDescription = productData.attributes?.description || null;
-  const gptShortDescription = productData.attributes?.short_description || null;
-  const gptNanoDescription = productData.attributes?.nano_description || null;
-
   const productRecord = {
     entity_id: entityId,
     slug: slug,
@@ -70,9 +66,6 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
     metadata: metadata,
     description_html: productData.description_html || null,
     description_raw: productData.description_raw || null,
-    description: gptDescription,
-    short_description: gptShortDescription,
-    nano_description: gptNanoDescription,
   };
 
   const { data: existingProduct, error: fetchError } = await supabase
@@ -93,9 +86,6 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
         metadata: metadata,
         description_html: productData.description_html || null,
         description_raw: productData.description_raw || null,
-        description: gptDescription,
-        short_description: gptShortDescription,
-        nano_description: gptNanoDescription,
       })
       .eq('id', existingProduct.id);
 
