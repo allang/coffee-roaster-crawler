@@ -2,10 +2,21 @@ const OpenAI = require("openai");
 const logger = require("./logger");
 
 const MODEL = "gpt-4o-mini";
+const MAX_RETRIES = 5;
+const INITIAL_BACKOFF_MS = 1000;
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function jitteredDelay(baseMs, jitterMs) {
+  const jitter = Math.floor(Math.random() * jitterMs * 2) - jitterMs;
+  return Math.max(100, baseMs + jitter);
+}
 
 function buildPrompt(content) {
   return `You are CoffeeWebsiteExtractorGPT. Analyze the included product page from a coffee website and return data in perfectly formatted JSON. Here are the rules:
@@ -67,35 +78,53 @@ Extracted JSON data:`;
 
 async function classifyPage(pageContent, url) {
   const prompt = buildPrompt(pageContent);
+  let backoffMs = INITIAL_BACKOFF_MS;
 
-  try {
-    const response = await openai.chat.completions.create({
-      model: MODEL,
-      messages: [{ role: "user", content: prompt }],
-      temperature: 0.1,
-      max_tokens: 2000,
-    });
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      const response = await openai.chat.completions.create({
+        model: MODEL,
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.1,
+        max_tokens: 2000,
+      });
 
-    const text = response.choices[0]?.message?.content?.trim();
+      const text = response.choices[0]?.message?.content?.trim();
 
-    if (!text) {
-      return { error: "Empty response from GPT" };
+      if (!text) {
+        return { error: "Empty response from GPT" };
+      }
+
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) {
+        return { error: "No JSON found in response", rawResponse: text };
+      }
+
+      const parsed = JSON.parse(jsonMatch[0]);
+      return { success: true, data: parsed };
+    } catch (error) {
+      if (error instanceof SyntaxError) {
+        return { error: "Failed to parse JSON response", details: error.message };
+      }
+
+      const status = error.status || error.code || 0;
+      const isRateLimited = status === 429 || error.message?.includes('rate') || error.message?.includes('429');
+      const isServerError = status >= 500;
+
+      if ((isRateLimited || isServerError) && attempt < MAX_RETRIES) {
+        const waitTime = jitteredDelay(backoffMs, Math.floor(backoffMs * 0.3));
+        logger.warn("GPT", `Rate limited or server error, retrying in ${waitTime}ms (attempt ${attempt + 1}/${MAX_RETRIES})`, { url });
+        await delay(waitTime);
+        backoffMs *= 2;
+        continue;
+      }
+
+      logger.error("GPT", "Classification failed", { url, error: error.message });
+      return { error: error.message };
     }
-
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) {
-      return { error: "No JSON found in response", rawResponse: text };
-    }
-
-    const parsed = JSON.parse(jsonMatch[0]);
-    return { success: true, data: parsed };
-  } catch (error) {
-    if (error instanceof SyntaxError) {
-      return { error: "Failed to parse JSON response", details: error.message };
-    }
-    logger.error("GPT", "Classification failed", { url, error: error.message });
-    return { error: error.message };
   }
+
+  return { error: "Max retries exceeded" };
 }
 
 module.exports = {

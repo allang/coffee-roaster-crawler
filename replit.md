@@ -67,6 +67,8 @@ Each crawl is logged to the `crawl_runs` table with:
 
 ## Recent Changes
 
+- 2026-01-03: Added OpenAI rate limit handling with exponential backoff (5 retries, 1s-32s)
+- 2026-01-03: Increased parallel roasters from 4 to 8
 - 2026-01-02: Added description columns: description_html, description_raw, description, short_description, nano_description
 - 2026-01-01: Centralized HTTP client (httpClient.js) with realistic Chrome browser headers
 - 2026-01-01: Added Sec-Fetch-*, Accept-Language, Accept-Encoding headers to reduce bot detection
