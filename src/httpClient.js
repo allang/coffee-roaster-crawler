@@ -18,12 +18,27 @@ async function initProxyPool() {
   }
 
   try {
-    const response = await axios.get(`${WEBSHARE_API_BASE}/proxy/list/?mode=direct&page_size=100`, {
-      headers: { 'Authorization': `Token ${apiKey}` },
-      timeout: 10000,
-    });
+    const allProxies = [];
+    let page = 1;
+    const pageSize = 100;
+    
+    while (true) {
+      const response = await axios.get(`${WEBSHARE_API_BASE}/proxy/list/`, {
+        headers: { 'Authorization': `Token ${apiKey}` },
+        params: { page, page_size: pageSize, mode: 'direct' },
+        timeout: 10000,
+      });
 
-    proxyPool = response.data.results || [];
+      const results = response.data.results || [];
+      allProxies.push(...results);
+      
+      if (!response.data.next) {
+        break;
+      }
+      page++;
+    }
+
+    proxyPool = allProxies;
     proxyPoolInitialized = true;
     console.log(`[Proxy] Loaded ${proxyPool.length} proxies from Webshare`);
     return proxyPool.length > 0;
