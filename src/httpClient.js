@@ -144,7 +144,7 @@ function parseRetryAfter(headers) {
 async function fetchWithBackoff(url, options = {}) {
   const {
     headerType = 'browser',
-    maxRetries = 3,
+    maxRetries = 1,
     initialBackoffMs = 2000,
     maxBackoffMs = 30000,
     referer = null,
