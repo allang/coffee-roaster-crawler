@@ -1,6 +1,6 @@
 const { getSupabase } = require('./supabase');
 const { discoverSitemapUrl, crawlSitemap } = require('./sitemap');
-const { jitteredSleep } = require('./httpClient');
+const { jitteredSleep, initProxyPool } = require('./httpClient');
 const { UrlAccumulator } = require('./urlAccumulator');
 const { getBlacklistTerms, filterUrlsWithBlacklist } = require('./blacklist');
 const { getKnownPagesForEntity, saveBlacklistedPages, filterOutKnownUrls } = require('./knownPages');
@@ -214,6 +214,8 @@ async function runCrawler() {
   globalLogger.header('Coffee Roaster Crawler Starting');
   globalLogger.info('Crawler', `Started at: ${new Date().toISOString()}`);
   globalLogger.divider();
+
+  await initProxyPool();
 
   const blacklistTerms = await getBlacklistTerms();
 

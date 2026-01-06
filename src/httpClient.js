@@ -4,6 +4,52 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const CHROME_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
+const WEBSHARE_API_BASE = 'https://proxy.webshare.io/api/v2';
+let proxyPool = [];
+let proxyIndex = 0;
+let proxyPoolInitialized = false;
+
+async function initProxyPool() {
+  const apiKey = process.env.WEBSHARE_API_KEY;
+  if (!apiKey) {
+    console.warn('[Proxy] WEBSHARE_API_KEY not set, proxy fallback disabled');
+    return false;
+  }
+
+  try {
+    const response = await axios.get(`${WEBSHARE_API_BASE}/proxy/list/?mode=direct&page_size=100`, {
+      headers: { 'Authorization': `Token ${apiKey}` },
+      timeout: 10000,
+    });
+
+    proxyPool = response.data.results || [];
+    proxyPoolInitialized = true;
+    console.log(`[Proxy] Loaded ${proxyPool.length} proxies from Webshare`);
+    return proxyPool.length > 0;
+  } catch (error) {
+    console.error('[Proxy] Failed to load proxy pool:', error.message);
+    return false;
+  }
+}
+
+function getNextProxy() {
+  if (proxyPool.length === 0) return null;
+  const proxy = proxyPool[proxyIndex % proxyPool.length];
+  proxyIndex++;
+  return {
+    host: proxy.proxy_address,
+    port: proxy.port,
+    auth: {
+      username: proxy.username,
+      password: proxy.password,
+    },
+  };
+}
+
+function hasProxies() {
+  return proxyPool.length > 0;
+}
+
 const BROWSER_HEADERS = {
   'User-Agent': CHROME_UA,
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -103,6 +149,7 @@ async function fetchWithBackoff(url, options = {}) {
     maxBackoffMs = 30000,
     referer = null,
     logger = null,
+    useProxyFallback = true,
   } = options;
   
   const baseHeaders = getHeadersForType(headerType);
@@ -157,6 +204,31 @@ async function fetchWithBackoff(url, options = {}) {
     }
   }
   
+  if (useProxyFallback && hasProxies()) {
+    const proxy = getNextProxy();
+    if (proxy) {
+      if (logger) {
+        logger.info('HTTP', `Trying with proxy fallback for ${url}`);
+      }
+      
+      try {
+        const proxyConfig = { ...requestConfig, proxy };
+        const response = await axios.get(url, proxyConfig);
+        return {
+          success: true,
+          data: response.data,
+          status: response.status,
+          headers: response.headers,
+          usedProxy: true,
+        };
+      } catch (proxyError) {
+        if (logger) {
+          logger.warn('HTTP', `Proxy fallback also failed for ${url}`, { error: proxyError.message });
+        }
+      }
+    }
+  }
+  
   return {
     success: false,
     error: lastError?.message || 'Request failed',
@@ -189,6 +261,8 @@ module.exports = {
   jitteredDelay,
   jitteredSleep,
   delay,
+  initProxyPool,
+  hasProxies,
   CHROME_UA,
   BROWSER_HEADERS,
   JSON_HEADERS,
