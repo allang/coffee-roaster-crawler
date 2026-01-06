@@ -1,4 +1,5 @@
 const axios = require('axios');
+const { HttpsProxyAgent } = require('https-proxy-agent');
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
@@ -32,18 +33,12 @@ async function initProxyPool() {
   }
 }
 
-function getNextProxy() {
+function getNextProxyAgent() {
   if (proxyPool.length === 0) return null;
   const proxy = proxyPool[proxyIndex % proxyPool.length];
   proxyIndex++;
-  return {
-    host: proxy.proxy_address,
-    port: proxy.port,
-    auth: {
-      username: proxy.username,
-      password: proxy.password,
-    },
-  };
+  const proxyUrl = `http://${proxy.username}:${proxy.password}@${proxy.proxy_address}:${proxy.port}`;
+  return new HttpsProxyAgent(proxyUrl);
 }
 
 function hasProxies() {
@@ -205,15 +200,23 @@ async function fetchWithBackoff(url, options = {}) {
   }
   
   if (useProxyFallback && hasProxies()) {
-    const proxy = getNextProxy();
-    if (proxy) {
+    const proxyAgent = getNextProxyAgent();
+    if (proxyAgent) {
       if (logger) {
         logger.info('HTTP', `Trying with proxy fallback for ${url}`);
       }
       
       try {
-        const proxyConfig = { ...requestConfig, proxy };
+        const proxyConfig = { 
+          ...requestConfig, 
+          httpsAgent: proxyAgent,
+          httpAgent: proxyAgent,
+          proxy: false,
+        };
         const response = await axios.get(url, proxyConfig);
+        if (logger) {
+          logger.success('HTTP', `Proxy fallback succeeded for ${url}`);
+        }
         return {
           success: true,
           data: response.data,
