@@ -2,6 +2,25 @@ const { getSupabase } = require('./supabase');
 const globalLogger = require('./logger');
 const { downloadAndSaveImage } = require('./imageDownloader');
 
+function sanitizeNullStrings(obj) {
+  if (obj === null || obj === undefined) return obj;
+  if (obj === 'null' || obj === 'NULL') return null;
+  if (Array.isArray(obj)) {
+    return obj.map(sanitizeNullStrings);
+  }
+  if (typeof obj === 'object') {
+    const result = {};
+    for (const [key, value] of Object.entries(obj)) {
+      result[key] = sanitizeNullStrings(value);
+    }
+    return result;
+  }
+  if (typeof obj === 'string' && (obj === 'null' || obj === 'NULL')) {
+    return null;
+  }
+  return obj;
+}
+
 function generateSlug(name) {
   return name
     .toLowerCase()
@@ -44,28 +63,29 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
   const supabase = getSupabase();
   const now = new Date().toISOString();
 
-  const slug = generateSlug(productData.name);
+  const sanitizedData = sanitizeNullStrings(productData);
+  const slug = generateSlug(sanitizedData.name);
 
-  const metadata = productData.attributes ? { ...productData.attributes } : {};
-  if (productData.default_price) {
-    metadata.default_price = productData.default_price;
+  const metadata = sanitizedData.attributes ? { ...sanitizedData.attributes } : {};
+  if (sanitizedData.default_price) {
+    metadata.default_price = sanitizedData.default_price;
   }
-  if (productData.variant_prices && productData.variant_prices.length > 0) {
-    metadata.variant_prices = productData.variant_prices;
+  if (sanitizedData.variant_prices && sanitizedData.variant_prices.length > 0) {
+    metadata.variant_prices = sanitizedData.variant_prices;
   }
 
   const productRecord = {
     entity_id: entityId,
     slug: slug,
-    name: productData.name,
+    name: sanitizedData.name,
     product_type: 'coffee',
     source_url: sourceUrl,
     is_active: true,
     first_seen_at: now,
     last_seen_at: now,
     metadata: metadata,
-    description_html: productData.description_html || null,
-    description_raw: productData.description_raw || null,
+    description_html: sanitizedData.description_html || null,
+    description_raw: sanitizedData.description_raw || null,
   };
 
   const { data: existingProduct, error: fetchError } = await supabase
@@ -84,8 +104,8 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
         last_seen_at: now,
         source_url: sourceUrl,
         metadata: metadata,
-        description_html: productData.description_html || null,
-        description_raw: productData.description_raw || null,
+        description_html: sanitizedData.description_html || null,
+        description_raw: sanitizedData.description_raw || null,
       })
       .eq('id', existingProduct.id);
 
@@ -94,7 +114,7 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
       throw updateError;
     }
     productId = existingProduct.id;
-    logger.info('ProductSaver', `Updated existing product: ${productData.name}`);
+    logger.info('ProductSaver', `Updated existing product: ${sanitizedData.name}`);
   } else {
     const { data: newProduct, error: insertError } = await supabase
       .from('products')
@@ -107,21 +127,21 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
       throw insertError;
     }
     productId = newProduct.id;
-    logger.success('ProductSaver', `Created new product: ${productData.name}`);
+    logger.success('ProductSaver', `Created new product: ${sanitizedData.name}`);
   }
 
-  const currency = productData.variant_price_currency || 'USD';
-  if (productData.variant_prices && productData.variant_prices.length > 0) {
-    await saveVariants(productId, productData.variant_prices, productData.default_price, currency, logger);
-  } else if (productData.default_price) {
-    await saveVariants(productId, [], productData.default_price, currency, logger);
+  const currency = sanitizedData.variant_price_currency || 'USD';
+  if (sanitizedData.variant_prices && sanitizedData.variant_prices.length > 0) {
+    await saveVariants(productId, sanitizedData.variant_prices, sanitizedData.default_price, currency, logger);
+  } else if (sanitizedData.default_price) {
+    await saveVariants(productId, [], sanitizedData.default_price, currency, logger);
   }
 
-  if (productData.attributes) {
-    await saveCoffeeFacts(productId, productData.attributes, logger);
+  if (sanitizedData.attributes) {
+    await saveCoffeeFacts(productId, sanitizedData.attributes, logger);
 
-    if (productData.attributes.product_image_url) {
-      await downloadAndSaveImage(productId, productData.attributes.product_image_url, logger);
+    if (sanitizedData.attributes.product_image_url) {
+      await downloadAndSaveImage(productId, sanitizedData.attributes.product_image_url, logger);
     }
   }
 
