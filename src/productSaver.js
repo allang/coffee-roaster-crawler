@@ -64,6 +64,12 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
   const now = new Date().toISOString();
 
   const sanitizedData = sanitizeNullStrings(productData);
+  
+  if (!sanitizedData.name || typeof sanitizedData.name !== 'string') {
+    logger.warn('ProductSaver', 'Product has no valid name, skipping', { sourceUrl });
+    return null;
+  }
+  
   const slug = generateSlug(sanitizedData.name);
 
   const metadata = sanitizedData.attributes ? { ...sanitizedData.attributes } : {};
