@@ -67,6 +67,7 @@ Each crawl is logged to the `crawl_runs` table with:
 
 ## Recent Changes
 
+- 2026-01-08: Fixed memory issue by reducing parallel roasters from 8 to 4 and adding BFS queue limit (500)
 - 2026-01-08: Configured scheduled deployment to run crawler every hour
 - 2026-01-08: Added sanitizeNullStrings helper to convert string "null" values to actual null
 - 2026-01-06: Added Webshare proxy pagination to load all available proxies

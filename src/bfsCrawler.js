@@ -121,6 +121,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
   };
 
   const MAX_PAGES = config.crawler.maxBfsPages || 200;
+  const MAX_QUEUE_SIZE = 500;
 
   logger.header('BFS Crawl Starting');
   logger.info('BFS', `Starting URL: ${startUrl}`);
@@ -167,7 +168,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
     }
 
     for (const entry of passed) {
-      if (!visited.has(entry.url) && !queue.includes(entry.url)) {
+      if (!visited.has(entry.url) && !queue.includes(entry.url) && queue.length < MAX_QUEUE_SIZE) {
         queue.push(entry.url);
         accumulator.addUrl(entry.url, 'dom_link', url);
         results.linksDiscovered++;

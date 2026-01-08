@@ -1,0 +1,23 @@
+alegria-coffee-roasters         INFO [BFS] Known page, skipping GPT: https://alegriamall.com/
+alegria-coffee-roasters         INFO [BFS] Known page, skipping GPT: https://alegriamall.com/member/agreement.html
+
+<--- Last few GCs --->
+
+[98:0x2d88abc0]    44198 ms: Scavenge (reduce) 2047.1 (2080.5) -> 2046.9 (2081.2) MB, 6.11 / 0.00 ms  (average mu = 0.394, current mu = 0.375) allocation failure; 
+[98:0x2d88abc0]    45710 ms: Mark-Compact (reduce) 2047.7 (2081.2) -> 2047.3 (2081.7) MB, 1388.48 / 0.00 ms  (+ 136.1 ms in 18 steps since start of marking, biggest step 32.9 ms, walltime since start of marking 1541 ms) (average mu = 0.336, current mu = 0
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0xaa132b node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 2: 0xe74030 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 3: 0xe7443b v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 4: 0x10aaaa7  [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 5: 0x10c36d9 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 6: 0x109b36c v8::internal::HeapAllocator::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 7: 0x109c984 v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 8: 0x107b617 v8::internal::Factory::NewFillerObject(int, v8::internal::AllocationAlignment, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+ 9: 0x14f8630 v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/nix/store/lz7iav1hd92jbv44zf2rdd7b2mj23536-nodejs-20.19.3/bin/node]
+10: 0x7f1e07699ef6 
