@@ -67,6 +67,9 @@ Each crawl is logged to the `crawl_runs` table with:
 
 ## Recent Changes
 
+- 2026-01-08: Configured scheduled deployment to run crawler every hour
+- 2026-01-08: Added sanitizeNullStrings helper to convert string "null" values to actual null
+- 2026-01-06: Added Webshare proxy pagination to load all available proxies
 - 2026-01-06: Added Webshare proxy fallback for unreachable sites after retries
 - 2026-01-03: Added OpenAI rate limit handling with exponential backoff (5 retries, 1s-32s)
 - 2026-01-03: Increased parallel roasters from 4 to 8
