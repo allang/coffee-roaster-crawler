@@ -8,24 +8,38 @@ async function getRoasterEntities() {
 
   logger.info('Roasters', 'Querying entities with role=roaster');
 
-  const { data: roasters, error } = await supabase
-    .from('entities')
-    .select(`
-      id,
-      name,
-      website_url,
-      entity_roles!inner (role)
-    `)
-    .eq('entity_roles.role', 'roaster');
+  const allRoasters = [];
+  const pageSize = 1000;
+  let offset = 0;
+  
+  while (true) {
+    const { data: roasters, error } = await supabase
+      .from('entities')
+      .select(`
+        id,
+        name,
+        website_url,
+        entity_roles!inner (role)
+      `)
+      .eq('entity_roles.role', 'roaster')
+      .range(offset, offset + pageSize - 1);
 
-  if (error) {
-    logger.error('Roasters', 'Failed to fetch roasters', { error: error.message });
-    throw error;
+    if (error) {
+      logger.error('Roasters', 'Failed to fetch roasters', { error: error.message });
+      throw error;
+    }
+
+    allRoasters.push(...roasters);
+    
+    if (roasters.length < pageSize) {
+      break;
+    }
+    offset += pageSize;
   }
 
-  logger.success('Roasters', `Found ${roasters.length} roaster entities`);
+  logger.success('Roasters', `Found ${allRoasters.length} roaster entities`);
 
-  return roasters;
+  return allRoasters;
 }
 
 async function filterRoastersForCrawling(roasters) {
