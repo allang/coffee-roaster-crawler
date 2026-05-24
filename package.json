@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@replit/connectors-sdk": "^0.4.1",
     "@supabase/supabase-js": "^2.89.0",
     "axios": "^1.13.2",
     "axios-cookiejar-support": "^6.0.5",
