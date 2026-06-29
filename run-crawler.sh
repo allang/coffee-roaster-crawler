@@ -12,7 +12,7 @@ if ! mkdir "$LOCK_DIR" 2>/dev/null; then
     rm -rf "$LOCK_DIR"
     mkdir "$LOCK_DIR"
   else
-    echo "$(date -Is) crawler already running; skipping"
+    echo "$(date '+%Y-%m-%dT%H:%M:%S%z') crawler already running; skipping"
     exit 0
   fi
 fi
