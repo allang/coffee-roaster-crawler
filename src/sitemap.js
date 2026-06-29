@@ -1,20 +1,26 @@
 const xml2js = require('xml2js');
 const { config } = require('./config');
 const logger = require('./logger');
-const { fetchXml, jitteredSleep } = require('./httpClient');
+const { fetchHtml, fetchXml, jitteredSleep, buildUrlVariants } = require('./httpClient');
 
 const parser = new xml2js.Parser({ explicitArray: false });
 
-async function fetchUrl(url) {
-  const result = await fetchXml(url, { 
+async function fetchUrl(url, options = {}) {
+  const {
+    contentType = 'xml',
+    useUrlFallback = false,
+  } = options;
+  const fetcher = contentType === 'html' ? fetchHtml : fetchXml;
+  const result = await fetcher(url, {
     timeout: config.crawler.requestTimeoutMs,
     logger,
+    useUrlFallback,
   });
   
   if (!result.success) {
-    logger.warn('HTTP', `Failed to fetch ${url}`, { 
-      status: result.status, 
-      message: result.error 
+    logger.warn('HTTP', `Failed to fetch ${url}`, {
+      status: result.status,
+      message: result.error
     });
   }
   
@@ -124,13 +130,17 @@ async function discoverSitemapUrl(websiteUrl) {
   logger.info('Sitemap', `Discovering sitemap for: ${websiteUrl}`);
 
   const baseUrl = websiteUrl.replace(/\/$/, '');
+  const baseUrls = [...new Set(buildUrlVariants(baseUrl).map(candidate => candidate.replace(/\/$/, '')))];
   
-  const candidates = [
-    `${baseUrl}/sitemap.xml`,
-    `${baseUrl}/sitemap_index.xml`,
-    `${baseUrl}/sitemap-index.xml`,
-    `${baseUrl}/sitemap1.xml`,
-  ];
+  const candidates = [];
+  for (const base of baseUrls) {
+    candidates.push(
+      `${base}/sitemap.xml`,
+      `${base}/sitemap_index.xml`,
+      `${base}/sitemap-index.xml`,
+      `${base}/sitemap1.xml`,
+    );
+  }
 
   for (const candidate of candidates) {
     const result = await fetchUrl(candidate);

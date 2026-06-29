@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { validateConfig } = require('./src/config');
-const { runCrawler } = require('./src/crawler');
 const logger = require('./src/logger');
 
 function displayAsciiArt(filename) {
@@ -29,6 +28,11 @@ async function main() {
   }
 
   try {
+    const { getOpenAIConfigSummary } = require('./src/gptClassifier');
+    const { runCrawler } = require('./src/crawler');
+
+    logger.info('OpenAI', 'Configuration summary', getOpenAIConfigSummary());
+
     const result = await runCrawler();
     
     logger.header('Crawler Finished');

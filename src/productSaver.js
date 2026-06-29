@@ -1,6 +1,7 @@
 const { getSupabase } = require('./supabase');
 const globalLogger = require('./logger');
 const { downloadAndSaveImage } = require('./imageDownloader');
+const { updateProductAvailability } = require('./availability');
 
 function sanitizeNullStrings(obj) {
   if (obj === null || obj === undefined) return obj;
@@ -58,7 +59,7 @@ function parseWeightGrams(weightStr) {
   }
 }
 
-async function saveProduct(entityId, productData, sourceUrl, log = null) {
+async function saveProduct(entityId, productData, sourceUrl, log = null, options = {}) {
   const logger = log || globalLogger;
   const supabase = getSupabase();
   const now = new Date().toISOString();
@@ -149,6 +150,10 @@ async function saveProduct(entityId, productData, sourceUrl, log = null) {
     if (sanitizedData.attributes.product_image_url) {
       await downloadAndSaveImage(productId, sanitizedData.attributes.product_image_url, logger);
     }
+  }
+
+  if (options.availability) {
+    await updateProductAvailability(productId, options.availability, now, logger);
   }
 
   return productId;

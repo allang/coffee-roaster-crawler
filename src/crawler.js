@@ -10,14 +10,18 @@ const { bfsCrawl } = require('./bfsCrawler');
 const { config } = require('./config');
 const globalLogger = require('./logger');
 const { createScopedLogger } = require('./logger');
+const { reconcileRoasterAvailability } = require('./availability');
 
-const PARALLEL_ROASTERS = 4;
+const PARALLEL_ROASTERS = Number(process.env.PARALLEL_ROASTERS || 1);
 
 async function detectPlatform(websiteUrl, log) {
   log.info('Platform', `Detecting platform for: ${websiteUrl}`);
 
   const { fetchUrl } = require('./sitemap');
-  const result = await fetchUrl(websiteUrl);
+  const result = await fetchUrl(websiteUrl, {
+    contentType: 'html',
+    useUrlFallback: true,
+  });
 
   if (!result.success) {
     log.warn('Platform', 'Could not fetch website for platform detection');
@@ -28,21 +32,21 @@ async function detectPlatform(websiteUrl, log) {
 
   if (html.includes('shopify') || html.includes('cdn.shopify.com')) {
     log.success('Platform', 'Detected: Shopify');
-    return { platform: 'shopify', confidence: 0.9 };
+    return { platform: 'shopify', confidence: 0.9, finalUrl: result.finalUrl || websiteUrl };
   }
 
   if (html.includes('woocommerce') || html.includes('wp-content')) {
     log.success('Platform', 'Detected: WooCommerce');
-    return { platform: 'woocommerce', confidence: 0.8 };
+    return { platform: 'woocommerce', confidence: 0.8, finalUrl: result.finalUrl || websiteUrl };
   }
 
   if (html.includes('squarespace')) {
     log.success('Platform', 'Detected: Squarespace (recorded as custom)');
-    return { platform: 'custom', confidence: 0.85 };
+    return { platform: 'custom', confidence: 0.85, finalUrl: result.finalUrl || websiteUrl };
   }
 
   log.info('Platform', 'Platform: Unknown/Custom');
-  return { platform: 'custom', confidence: 0.5 };
+  return { platform: 'custom', confidence: 0.5, finalUrl: result.finalUrl || websiteUrl };
 }
 
 function generateSlug(name) {
@@ -88,12 +92,17 @@ async function crawlRoaster(roaster, blacklistTerms) {
     return { success: false, error: 'Website unreachable', retryable: true, roasterName: roaster.name };
   }
 
+  const effectiveWebsiteUrl = platformInfo.finalUrl || websiteUrl;
+  if (effectiveWebsiteUrl !== websiteUrl) {
+    log.info('Crawl', 'Using fetched canonical URL', { original: websiteUrl, finalUrl: effectiveWebsiteUrl });
+  }
+
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
   log.info('Crawl', 'Platform detection complete', platformInfo);
 
   await jitteredSleep(config.crawler.requestDelayMs);
 
-  const sitemapUrl = await discoverSitemapUrl(websiteUrl);
+  const sitemapUrl = await discoverSitemapUrl(effectiveWebsiteUrl);
 
   if (sitemapUrl) {
     const sitemapResult = await crawlSitemap(sitemapUrl);
@@ -128,9 +137,16 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   } else {
     log.info('Crawl', 'No sitemap found, using BFS crawling');
-    accumulator.addUrl(websiteUrl, 'manual');
+    accumulator.addUrl(effectiveWebsiteUrl, 'manual');
     
-    const bfsResults = await bfsCrawl(roaster.id, websiteUrl, blacklistTerms, accumulator, log);
+    const bfsResults = await bfsCrawl(
+      roaster.id,
+      effectiveWebsiteUrl,
+      blacklistTerms,
+      accumulator,
+      log,
+      platformInfo.platform
+    );
     
     const stats = accumulator.getStats();
     await completeCrawlRun(crawlRun.id, {
@@ -139,6 +155,21 @@ async function crawlRoaster(roaster, blacklistTerms) {
       pagesSentToGpt: bfsResults.visited || 0,
       coffeesFound: bfsResults.coffeeFound || 0,
     });
+
+    if (bfsResults.inventoryComplete) {
+      await reconcileRoasterAvailability({
+        entityId: roaster.id,
+        surfaceUrls: accumulator.getAllUrls().map(entry => entry.url),
+        platform: platformInfo.platform,
+        log,
+      });
+    } else {
+      log.warn('Availability', 'Skipping reconciliation because BFS inventory surface was incomplete', {
+        errors: bfsResults.errors,
+        queueRemaining: bfsResults.queueRemaining,
+        quotaExceeded: bfsResults.quotaExceeded,
+      });
+    }
 
     return {
       success: true,
@@ -192,6 +223,20 @@ async function crawlRoaster(roaster, blacklistTerms) {
       pagesSentToGpt: visitResults.visited || 0,
       coffeesFound: visitResults.coffeeFound || 0,
     });
+
+    if (sitemapResult.urls.length > 0 && !sitemapResult.error) {
+      await reconcileRoasterAvailability({
+        entityId: roaster.id,
+        surfaceUrls: accumulator.getAllUrls().map(entry => entry.url),
+        platform: platformInfo.platform,
+        log,
+      });
+    } else {
+      log.warn('Availability', 'Skipping reconciliation because sitemap inventory surface was incomplete', {
+        urlsFound: sitemapResult.urls.length,
+        hasError: !!sitemapResult.error,
+      });
+    }
 
     return {
       success: true,

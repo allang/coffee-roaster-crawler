@@ -3,6 +3,9 @@ const config = {
     url: process.env.NEXT_PUBLIC_SUPABASE_URL,
     serviceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
   },
+  openai: {
+    apiKey: process.env.OPENAI_API_KEY,
+  },
   crawler: {
     requestDelayMs: 500,
     requestTimeoutMs: 30000,
@@ -16,6 +19,7 @@ function validateConfig() {
   const missing = [];
   if (!config.supabase.url) missing.push('NEXT_PUBLIC_SUPABASE_URL');
   if (!config.supabase.serviceRoleKey) missing.push('SUPABASE_SERVICE_ROLE_KEY');
+  if (!config.openai.apiKey) missing.push('OPENAI_API_KEY');
   
   if (missing.length > 0) {
     throw new Error(`Missing required environment variables: ${missing.join(', ')}`);

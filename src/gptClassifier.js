@@ -1,13 +1,31 @@
 const OpenAI = require("openai");
+const crypto = require("crypto");
 const logger = require("./logger");
 
-const MODEL = "gpt-4o-mini";
+const MODEL = process.env.OPENAI_MODEL || "gpt-5-mini";
 const MAX_RETRIES = 5;
 const INITIAL_BACKOFF_MS = 1000;
+const MAX_OUTPUT_TOKENS = Number(process.env.OPENAI_MAX_OUTPUT_TOKENS || 2000);
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+
+let quotaExhausted = false;
+
+function fingerprint(value) {
+  if (!value) return null;
+  return crypto.createHash("sha256").update(value).digest("hex").slice(0, 12);
+}
+
+function getOpenAIConfigSummary() {
+  return {
+    model: MODEL,
+    maxOutputTokens: MAX_OUTPUT_TOKENS,
+    keySet: !!process.env.OPENAI_API_KEY,
+    keyFingerprint: fingerprint(process.env.OPENAI_API_KEY),
+  };
+}
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -77,17 +95,32 @@ Extracted JSON data:`;
 }
 
 async function classifyPage(pageContent, url) {
+  if (quotaExhausted) {
+    return {
+      error: "OpenAI quota exceeded earlier in this process",
+      quotaExceeded: true,
+      skipped: true,
+    };
+  }
+
   const prompt = buildPrompt(pageContent);
   let backoffMs = INITIAL_BACKOFF_MS;
 
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
-      const response = await openai.chat.completions.create({
+      const request = {
         model: MODEL,
         messages: [{ role: "user", content: prompt }],
-        temperature: 0.1,
-        max_tokens: 2000,
-      });
+      };
+
+      if (MODEL.startsWith('gpt-5')) {
+        request.max_completion_tokens = MAX_OUTPUT_TOKENS;
+      } else {
+        request.temperature = 0.1;
+        request.max_tokens = MAX_OUTPUT_TOKENS;
+      }
+
+      const response = await openai.chat.completions.create(request);
 
       const text = response.choices[0]?.message?.content?.trim();
 
@@ -107,9 +140,24 @@ async function classifyPage(pageContent, url) {
         return { error: "Failed to parse JSON response", details: error.message };
       }
 
-      const status = error.status || error.code || 0;
-      const isRateLimited = status === 429 || error.message?.includes('rate') || error.message?.includes('429');
+      const status = error.status || error.statusCode || 0;
+      const message = error.message || '';
+      const lowerMessage = message.toLowerCase();
+      const errorCode = String(error.code || error.error?.code || '').toLowerCase();
+      const errorType = String(error.type || error.error?.type || '').toLowerCase();
+      const isQuotaExceeded =
+        errorCode === 'insufficient_quota' ||
+        errorType === 'insufficient_quota' ||
+        lowerMessage.includes('exceeded your current quota') ||
+        lowerMessage.includes('insufficient_quota');
+      const isRateLimited = status === 429 || lowerMessage.includes('rate') || lowerMessage.includes('429');
       const isServerError = status >= 500;
+
+      if (isQuotaExceeded) {
+        quotaExhausted = true;
+        logger.error("GPT", "Classification stopped: OpenAI quota exceeded", { url });
+        return { error: message, quotaExceeded: true };
+      }
 
       if ((isRateLimited || isServerError) && attempt < MAX_RETRIES) {
         const waitTime = jitteredDelay(backoffMs, Math.floor(backoffMs * 0.3));
@@ -129,5 +177,6 @@ async function classifyPage(pageContent, url) {
 
 module.exports = {
   classifyPage,
+  getOpenAIConfigSummary,
   MODEL,
 };

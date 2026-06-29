@@ -7,6 +7,7 @@ const { saveProduct } = require('./productSaver');
 const { config } = require('./config');
 const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
 const { fetchHtml, jitteredSleep } = require('./httpClient');
+const { detectProductAvailability } = require('./availability');
 
 async function fetchPageContent(url, referer = null) {
   const result = await fetchHtml(url, { 
@@ -51,13 +52,17 @@ async function fetchPageContent(url, referer = null) {
 
     const fullContent = bodyText + imageSection;
     const contentLength = fullContent.length;
-    const truncatedContent = fullContent.substring(0, 15000);
+    const maxClassificationChars = Number(process.env.CLASSIFIER_MAX_CHARS || 6000);
+    const truncatedContent = fullContent.substring(0, maxClassificationChars);
 
     return {
       success: true,
       title,
       content: truncatedContent,
       fullLength: contentLength,
+      html: result.data,
+      status: result.status,
+      finalUrl: result.finalUrl || url,
     };
   } catch (error) {
     return {
@@ -94,7 +99,12 @@ async function visitAndClassifyPage(entityId, url, accumulator, log, platform = 
 
   if (classification.error) {
     log.warn('Visitor', `Classification error for ${url}`, { error: classification.error });
-    return { visited: true, classified: false, error: classification.error };
+    return {
+      visited: true,
+      classified: false,
+      error: classification.error,
+      quotaExceeded: classification.quotaExceeded,
+    };
   }
 
   const result = classification.data;
@@ -118,18 +128,35 @@ async function visitAndClassifyPage(entityId, url, accumulator, log, platform = 
         productToSave = mergeGptAndJsonData(result.product, shopifyJson);
         log.info('Visitor', `Merged GPT + JSON data for: ${productToSave.name}`);
       }
+
+      const availability = detectProductAvailability({
+        html: fetchResult.html,
+        status: fetchResult.status,
+        sourceUrl: url,
+        finalUrl: fetchResult.finalUrl,
+        shopifyProduct: shopifyJson?.success ? shopifyJson.raw : null,
+        allowPriceOnly: true,
+      });
       
-      await saveProduct(entityId, productToSave, url, log);
+      const productId = await saveProduct(entityId, productToSave, url, log, { availability });
       
       await saveKnownPage(entityId, url, 'coffee', {
         classification: result,
         shopifyJson: shopifyJson?.success ? shopifyJson.data : null,
+        availability,
         classifiedAt: now,
         classifiedBy: MODEL,
       });
 
       log.success('Visitor', `Found coffee: ${productToSave.name}`);
-      return { visited: true, classified: true, isCoffee: true, product: productToSave };
+      return {
+        visited: true,
+        classified: true,
+        isCoffee: true,
+        product: productToSave,
+        productId,
+        availability,
+      };
     } catch (error) {
       log.error('Visitor', `Failed to save product from ${url}`, { error: error.message });
       return { visited: true, classified: true, isCoffee: true, error: error.message };
@@ -162,6 +189,10 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
 
     if (result.error) {
       results.errors++;
+      if (result.quotaExceeded) {
+        logger.error('Visitor', 'Stopping page classification because OpenAI quota is exhausted');
+        break;
+      }
     } else if (result.isCoffee) {
       results.coffeeFound++;
     } else {

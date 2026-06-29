@@ -7,6 +7,8 @@ const { saveProduct } = require('./productSaver');
 const { filterUrlsWithBlacklist } = require('./blacklist');
 const { config } = require('./config');
 const { fetchHtml, jitteredSleep } = require('./httpClient');
+const { detectProductAvailability } = require('./availability');
+const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
 
 const GPT_DELAY_MS = 500;
 
@@ -39,10 +41,11 @@ function normalizeUrl(url, baseUrl) {
   }
 }
 
-async function fetchPageAndLinks(url, referer = null) {
+async function fetchPageAndLinks(url, referer = null, options = {}) {
   const result = await fetchHtml(url, { 
     timeout: 15000,
     referer,
+    useUrlFallback: options.useUrlFallback || false,
   });
 
   if (!result.success) {
@@ -54,12 +57,13 @@ async function fetchPageAndLinks(url, referer = null) {
   }
 
   try {
+    const effectiveUrl = result.finalUrl || url;
     const $ = cheerio.load(result.data);
     
     const links = [];
     $('a[href]').each((i, el) => {
       const href = $(el).attr('href');
-      const normalized = normalizeUrl(href, url);
+      const normalized = normalizeUrl(href, effectiveUrl);
       if (normalized) {
         links.push(normalized);
       }
@@ -77,7 +81,7 @@ async function fetchPageAndLinks(url, referer = null) {
         if (src.startsWith('//')) {
           absoluteSrc = 'https:' + src;
         } else if (src.startsWith('/')) {
-          const urlObj = new URL(url);
+          const urlObj = new URL(effectiveUrl);
           absoluteSrc = urlObj.origin + src;
         }
         images.push({ src: absoluteSrc, alt });
@@ -93,6 +97,9 @@ async function fetchPageAndLinks(url, referer = null) {
     return {
       success: true,
       content,
+      html: result.data,
+      status: result.status,
+      finalUrl: effectiveUrl,
       links: [...new Set(links)],
     };
   } catch (error) {
@@ -104,7 +111,7 @@ async function fetchPageAndLinks(url, referer = null) {
   }
 }
 
-async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = null) {
+async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = null, platform = 'unknown') {
   const logger = log || globalLogger;
   const visited = new Set();
   const knownPages = await getKnownPagesForEntity(entityId);
@@ -118,6 +125,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
     errors: 0,
     linksDiscovered: 0,
     blacklisted: 0,
+    quotaExceeded: false,
   };
 
   const MAX_PAGES = config.crawler.maxBfsPages || 200;
@@ -138,8 +146,11 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
 
     await jitteredSleep(config.crawler.requestDelayMs);
 
-    const fetchResult = await fetchPageAndLinks(url, lastUrl);
-    lastUrl = url;
+    const fetchResult = await fetchPageAndLinks(url, lastUrl, { useUrlFallback: url === startUrl });
+    if (fetchResult.finalUrl && fetchResult.finalUrl !== url) {
+      logger.info('BFS', 'Using fetched canonical URL', { original: url, finalUrl: fetchResult.finalUrl });
+    }
+    lastUrl = fetchResult.finalUrl || url;
 
     if (!fetchResult.success) {
       logger.warn('BFS', `Failed to fetch: ${url}`, { error: fetchResult.error });
@@ -188,6 +199,11 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
     if (classification.error) {
       logger.warn('BFS', `Classification error: ${url}`, { error: classification.error });
       results.errors++;
+      if (classification.quotaExceeded) {
+        logger.error('BFS', 'Stopping BFS classification because OpenAI quota is exhausted');
+        results.quotaExceeded = true;
+        break;
+      }
       continue;
     }
 
@@ -205,13 +221,34 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
 
     if (result.is_coffee_page === true && result.product) {
       try {
-        await saveProduct(entityId, result.product, url, logger);
+        let productToSave = result.product;
+        let shopifyJson = null;
+
+        if (platform === 'shopify' && isShopifyProductUrl(url)) {
+          shopifyJson = await fetchShopifyProductJson(url, logger);
+          if (shopifyJson.success) {
+            productToSave = mergeGptAndJsonData(result.product, shopifyJson);
+          }
+        }
+
+        const availability = detectProductAvailability({
+          html: fetchResult.html,
+          status: fetchResult.status,
+          sourceUrl: url,
+          finalUrl: fetchResult.finalUrl,
+          shopifyProduct: shopifyJson?.success ? shopifyJson.raw : null,
+          allowPriceOnly: true,
+        });
+
+        await saveProduct(entityId, productToSave, url, logger, { availability });
         await saveKnownPage(entityId, url, 'coffee', {
           classification: result,
+          shopifyJson: shopifyJson?.success ? shopifyJson.data : null,
+          availability,
           classifiedAt: now,
           classifiedBy: MODEL,
         });
-        logger.success('BFS', `Found coffee: ${result.product.name}`);
+        logger.success('BFS', `Found coffee: ${productToSave.name}`);
         results.coffeeFound++;
       } catch (error) {
         logger.error('BFS', `Failed to save product: ${url}`, { error: error.message });
@@ -244,6 +281,13 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
     blacklisted: results.blacklisted,
     queueRemaining: queue.length,
   });
+
+  results.queueRemaining = queue.length;
+  results.inventoryComplete =
+    queue.length === 0 &&
+    results.errors === 0 &&
+    results.quotaExceeded === false &&
+    results.visited < MAX_PAGES;
 
   return results;
 }
