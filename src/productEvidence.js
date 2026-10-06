@@ -47,7 +47,7 @@ function productAvailability(input = {}) {
     } catch { return result('unknown', 'invalid_source_url'); }
   }
   if (input.shopifyProduct?.variants?.length) {
-    const variants = input.shopifyProduct.variants.map(v => ({ source_id: v.id == null ? null : String(v.id), title: v.title, state: v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : 'unknown', evidence: [{ source: 'shopify_product_json', available: v.available ?? null }], checkedAt }));
+    const variants = input.shopifyProduct.variants.map(v => ({ source_id: v.id == null ? null : String(v.id), title: v.title, state: v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : 'unknown', evidence: [{ source: v._availability_source || 'shopify_product_json', available: v.available ?? null }], checkedAt }));
     return result(aggregateStates(variants.map(v => v.state)), 'shopify_exact_variants', [{ source: 'shopify_product_json', product_id: input.shopifyProduct.id }], variants);
   }
   const product = structuredProduct(input.html, input.sourceUrl);
