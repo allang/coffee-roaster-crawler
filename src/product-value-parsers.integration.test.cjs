@@ -19,7 +19,7 @@ test('transactional saver retains prices, exact variants and stable IDs across c
     await saveProduct(owner,product,url,log,{...options,checkedAt:'2026-10-06T14:01:00Z'});
     assert.equal((await pg.query('select count(*)::int n from catalog_change_events')).rows[0].n,1);
     const changed={...product,name:'Ethiopia — Banko',variant_prices:[['250g / whole bean','13,00€'],['250g / espresso','13,00€']]};
-    assert.equal(await saveProduct(owner,changed,url+'?utm_source=test',log,options),id);
+    assert.equal(await saveProduct(owner,changed,url+'?utm_source=test',log,{...options,checkedAt:'2026-10-06T14:02:00Z'}),id);
     const second=await pg.query('select * from product_variants order by id');
     assert.deepEqual(second.rows.map(v=>v.id),first.rows.map(v=>v.id));assert(second.rows.every(v=>v.price_minor_units===1300));
     const facts=(await pg.query('select * from coffee_facts')).rows[0];assert.equal(facts.process,'Washed');assert.equal(facts.variety,'Heirloom');

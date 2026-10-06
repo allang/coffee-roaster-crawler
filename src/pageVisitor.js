@@ -132,6 +132,7 @@ function addExtractionMetrics(results,result) {
     results.aiUsage.prompt_tokens += result.usage.prompt_tokens || 0;
     results.aiUsage.completion_tokens += result.usage.completion_tokens || 0;
     results.aiUsage.cached_tokens += result.usage.prompt_tokens_details?.cached_tokens || 0;
+    results.aiUsage.unreported_calls += Math.max(0,(result.aiCalls || 0)-1);
   } else if(result.aiCalls) results.aiUsage.unreported_calls += result.aiCalls;
 }
 function extractionMetrics() { return {aiCalls:0,cacheHits:0,structuredPages:0,marketChecks:0,aiUsage:{prompt_tokens:0,completion_tokens:0,cached_tokens:0,unreported_calls:0}}; }

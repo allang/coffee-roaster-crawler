@@ -44,3 +44,9 @@ test('malformed/error responses are never cached as irrelevant products',async()
     const r=await extractPage({page:{url,html:'<p>Unknown</p>',content:'Unknown'},classify:async()=>response,model,now});assert(r.error);assert.equal(r.cache,undefined);
   }
 });
+test('retried requests without usage remain explicitly unreported even when final response reports tokens',()=>{
+  const {addExtractionMetrics,extractionMetrics}=require('../src/pageVisitor');
+  const metrics=extractionMetrics();
+  addExtractionMetrics(metrics,{aiCalls:3,usage:{prompt_tokens:50,completion_tokens:10}});
+  assert.equal(metrics.aiCalls,3);assert.equal(metrics.aiUsage.unreported_calls,2);assert.equal(metrics.aiUsage.prompt_tokens,50);
+});

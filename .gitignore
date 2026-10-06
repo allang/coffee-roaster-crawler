@@ -12,3 +12,6 @@ logs/
 src/*.pre-*
 src/**/crawl-status.json
 src/**/*.plist
+
+supabase/.temp/
+supabase/.branches/
