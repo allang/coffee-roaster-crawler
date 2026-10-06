@@ -32,3 +32,13 @@ At each milestone, read issue and all linked PR conversation/review comments bef
 - Default `npm test` covers reusable import/validation/parser tests; historical evidence-bound runs are separately documented without claiming they passed.
 
 - Reusable baseline verification after portability fixes: **139/139 pass**, 0 skipped, 0 failed; `git diff --check` and `bash -n run-crawler.sh` pass. No network crawler or production database write executed.
+
+## 2026-10-06 — normalization and stock evidence
+
+- Preservation published as `98f5aeaceea95016f0d5f7a1131ad71867d5c3c2`, PR https://github.com/allang/coffee-roaster-crawler/pull/2. Read issue/PR comments after push and before this milestone; no reviewer findings.
+- Added deterministic amount/currency parser with locale grouping, ISO currency precision, exact integer conversion, overflow/range rejection and unknown ambiguous currencies. Separate display titles preserve source titles and acronym/distinctive casing; source URLs/native variant identity underpin keys.
+- Added versioned tasting taxonomy with hierarchical categories; every source phrase is retained including unmapped/uncertain notes.
+- Product-scoped JSON-LD/Shopify availability evidence includes check time and variant states; global stock text/prices and missing variant flags produce unknown. Definitive HTTP 404/410 produces removed.
+- Read-only production REST schema inspection grounded integration in actual columns; no production writes. Existing price_cents historical semantics require explicit new minor-unit/exponent fields rather than silently reinterpreting old rows.
+- Verification: **164/164 reusable tests pass**, including 25 normalization/evidence regressions; working diff whitespace check passes. These pure helpers will be wired into both crawler paths and persistence in the next milestone.
+- Seven inherited archival trailing-blank-line warnings in the preservation commit were not removed; no functional archival rewrites made.
