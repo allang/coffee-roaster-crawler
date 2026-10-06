@@ -99,6 +99,9 @@ begin
       if candidate_count > 1 then raise exception 'Ambiguous legacy variant adoption'; end if;
       if candidate_count = 1 then select * into old_variant from public.product_variants where product_id=product.id and source_key is null and variant_name=v->>'variant_name' and weight_g is not distinct from (v->>'weight_g')::integer for update; end if;
     end if;
+    -- A live API check can be newer than the product watermark. Keep its entire
+    -- variant observation; seen_keys still records this variant's presence.
+    if old_variant.id is not null and checked < old_variant.availability_checked_at then continue; end if;
     variant_id := coalesce(old_variant.id,(v->>'id')::uuid);
     variant := jsonb_populate_record(null::public.product_variants,v || jsonb_build_object('id',variant_id,'product_id',product.id));
     market_changed := market_changed or old_variant.id is null or row(old_variant.price_minor_units,old_variant.currency,old_variant.currency_exponent,old_variant.availability_state) is distinct from row(variant.price_minor_units,variant.currency,variant.currency_exponent,variant.availability_state);
@@ -107,13 +110,18 @@ begin
         case when variant.availability_state='in_stock' then 'in_stock' else 'unknown' end,variant.availability_state,variant.availability_evidence,checked,variant.provenance)
       on conflict (id) do update set source_key=excluded.source_key,merchant_variant_id=excluded.merchant_variant_id,variant_name=excluded.variant_name,weight_g=excluded.weight_g,price_cents=excluded.price_cents,
         price_minor_units=excluded.price_minor_units,price_amount=excluded.price_amount,currency=excluded.currency,currency_exponent=excluded.currency_exponent,price_raw=excluded.price_raw,
-        availability=excluded.availability,availability_state=excluded.availability_state,availability_evidence=excluded.availability_evidence,availability_checked_at=excluded.availability_checked_at,provenance=excluded.provenance;
+        availability=excluded.availability,availability_state=excluded.availability_state,availability_evidence=excluded.availability_evidence,availability_checked_at=excluded.availability_checked_at,provenance=excluded.provenance
+      where product_variants.availability_checked_at is null or product_variants.availability_checked_at <= excluded.availability_checked_at;
   end loop;
   if payload->>'variants_complete'='true' then
-    update public.product_variants set availability_state='removed',availability='unknown',availability_checked_at=checked,
-      availability_evidence='[{"source":"complete_native_variant_inventory","reason":"variant_not_seen"}]'
-      where product_id=product.id and source_key is not null and not(source_key=any(seen_keys)) and availability_state <> 'removed';
-    if found then market_changed := true; end if;
+    for old_variant in select * from public.product_variants
+      where product_id=product.id and source_key is not null and not(source_key=any(seen_keys))
+        and (availability_checked_at is null or availability_checked_at <= checked) for update loop
+      market_changed := market_changed or old_variant.availability_state is distinct from 'removed';
+      update public.product_variants set availability_state='removed',availability='unknown',availability_checked_at=checked,
+        availability_evidence='[{"source":"complete_native_variant_inventory","reason":"variant_not_seen"}]'
+        where id=old_variant.id;
+    end loop;
   end if;
   f := jsonb_populate_record(null::public.coffee_facts,coalesce(payload->'facts','{}'));
   insert into public.coffee_facts(product_id,process,variety,elevation_m,roast_level,tasting_notes_raw,decaf)
@@ -128,7 +136,8 @@ end;
 $$;
 create or replace function public.update_catalog_availability_v1(product_id uuid, observation jsonb) returns void
 language plpgsql security invoker set search_path=public,pg_temp as $$
-declare prior text; prior_checked timestamptz; v jsonb; changed boolean; state text := observation->>'state'; checked timestamptz := (observation->>'checkedAt')::timestamptz;
+declare prior text; prior_checked timestamptz; v jsonb; observed_variant public.product_variants%rowtype;
+  changed boolean; state text := observation->>'state'; checked timestamptz := (observation->>'checkedAt')::timestamptz;
 begin
   select availability_state,availability_checked_at into prior,prior_checked from public.products where id=product_id for update;
   if not found then raise exception 'Product missing for stock refresh'; end if;
@@ -138,15 +147,22 @@ begin
     availability_reason=observation->>'reason',availability_evidence=coalesce(observation->'evidence','[]'),availability_checked_at=checked,
     availability_last_seen_at=case when state='in_stock' then checked else availability_last_seen_at end where id=product_id;
   for v in select value from jsonb_array_elements(coalesce(observation->'variants','[]')) loop
-    update public.product_variants pv set availability_state=v->>'state',availability_evidence=v->'evidence',availability_checked_at=checked,
-      availability=case when v->>'state'='in_stock' then 'in_stock' else 'unknown' end
-      where pv.product_id=update_catalog_availability_v1.product_id and merchant_variant_id=v->>'source_id' and availability_state is distinct from v->>'state';
-    if found then changed:=true; end if;
+    for observed_variant in select * from public.product_variants pv
+      where pv.product_id=update_catalog_availability_v1.product_id and merchant_variant_id=v->>'source_id'
+        and (availability_checked_at is null or availability_checked_at <= checked) for update loop
+      changed := changed or observed_variant.availability_state is distinct from v->>'state';
+      update public.product_variants set availability_state=v->>'state',availability_evidence=coalesce(v->'evidence','[]'),availability_checked_at=checked,
+        availability=case when v->>'state'='in_stock' then 'in_stock' else 'unknown' end where id=observed_variant.id;
+    end loop;
   end loop;
   if state='removed' then
-    update public.product_variants pv set availability_state='removed',availability='unknown',availability_checked_at=checked,availability_evidence=coalesce(observation->'evidence','[]')
-      where pv.product_id=update_catalog_availability_v1.product_id and availability_state <> 'removed';
-    if found then changed:=true; end if;
+    for observed_variant in select * from public.product_variants pv
+      where pv.product_id=update_catalog_availability_v1.product_id
+        and (availability_checked_at is null or availability_checked_at <= checked) for update loop
+      changed := changed or observed_variant.availability_state is distinct from 'removed';
+      update public.product_variants set availability_state='removed',availability='unknown',availability_checked_at=checked,
+        availability_evidence=coalesce(observation->'evidence','[]') where id=observed_variant.id;
+    end loop;
   end if;
   if changed then insert into public.catalog_change_events(product_id,content_changed,market_changed,observed_at) values(product_id,false,true,checked); end if;
 end;
