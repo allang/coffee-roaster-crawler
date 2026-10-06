@@ -7,8 +7,11 @@ const SYMBOLS = { '€': 'EUR', '£': 'GBP', 'Kč': 'CZK', '₩': 'KRW', '₹': 
 const NORMALIZATION_VERSION = 'coffee-v1';
 
 function currencyCode(value) {
-  const code = SYMBOLS[String(value || '').trim()] || String(value || '').trim().toUpperCase();
-  return CURRENCIES.has(code) ? code : null;
+  const raw=String(value || '').trim();
+  const code = SYMBOLS[raw] || raw.toUpperCase();
+  if(CURRENCIES.has(code)) return code;
+  const parts=raw.split(/\s+/).map(v=>SYMBOLS[v] || v.toUpperCase());
+  return parts.length>1 && parts.every(v=>CURRENCIES.has(v)) && new Set(parts).size===1 ? parts[0] : null;
 }
 
 // Return amount AND currency. Never assume USD for an ambiguous "$" or a bare number.

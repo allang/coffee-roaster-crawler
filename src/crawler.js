@@ -106,6 +106,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   const sitemapUrl = await discoverSitemapUrl(effectiveWebsiteUrl);
   let sitemapResult = null;
+  const observed = new Map();
 
   if (sitemapUrl) {
     sitemapResult = await crawlSitemap(sitemapUrl);
@@ -148,14 +149,16 @@ async function crawlRoaster(roaster, blacklistTerms) {
       blacklistTerms,
       accumulator,
       log,
-      platformInfo.platform
+      platformInfo.platform,
+      {observed}
     );
     
     const stats = accumulator.getStats();
     await completeCrawlRun(crawlRun.id, {
       pagesDiscovered: bfsResults.linksDiscovered || 0,
       pagesVisited: bfsResults.visited || 0,
-      pagesSentToGpt: bfsResults.visited || 0,
+      pagesSentToGpt: bfsResults.aiCalls || 0,
+      metrics: bfsResults,
       coffeesFound: bfsResults.coffeeFound || 0,
     });
 
@@ -165,6 +168,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
         surfaceUrls: accumulator.getAllUrls().map(entry => entry.url),
         platform: platformInfo.platform,
         log,
+        observed,
       });
     } else {
       log.warn('Availability', 'Skipping reconciliation because BFS inventory surface was incomplete', {
@@ -189,10 +193,12 @@ async function crawlRoaster(roaster, blacklistTerms) {
   log.info('KnownPages', `Found ${knownUrls.size} known pages for this roaster`);
 
   const unvisitedAll = accumulator.getUnvisitedUrls();
-  const { unknown: newUrls, known: skippedUrls } = filterOutKnownUrls(unvisitedAll, knownUrls);
+  const eligibleUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status!=='skip');
+  const newUrls=eligibleUrls;
+  const skippedUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status==='skip');
 
   if (skippedUrls.length > 0) {
-    log.info('KnownPages', `Skipping ${skippedUrls.length} already known pages`);
+    log.info('KnownPages', `Skipping ${skippedUrls.length} explicitly excluded pages`);
   }
 
   const blacklistedEntries = accumulator.getAllUrls().filter(u => u.blacklisted);
@@ -208,7 +214,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
     if (newUrls.length > 0) {
       log.header('Visiting Pages & GPT Classification');
-      visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log, platformInfo.platform);
+      visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log, platformInfo.platform, {knownPages:knownUrls,observed});
       
       log.success('Crawl', 'Page visiting complete', {
         visited: visitResults.visited,
@@ -222,16 +228,18 @@ async function crawlRoaster(roaster, blacklistTerms) {
     await completeCrawlRun(crawlRun.id, {
       pagesDiscovered: stats.total || 0,
       pagesVisited: visitResults.visited || 0,
-      pagesSentToGpt: visitResults.visited || 0,
+      pagesSentToGpt: visitResults.aiCalls || 0,
+      metrics: visitResults,
       coffeesFound: visitResults.coffeeFound || 0,
     });
 
-    if (sitemapResult && sitemapResult.urls.length > 0 && !sitemapResult.error) {
+    if (sitemapResult && sitemapResult.urls.length > 0 && sitemapResult.inventoryComplete && visitResults.errors === 0) {
       await reconcileRoasterAvailability({
         entityId: roaster.id,
         surfaceUrls: accumulator.getAllUrls().map(entry => entry.url),
         platform: platformInfo.platform,
         log,
+        observed,
       });
     } else {
       log.warn('Availability', 'Skipping reconciliation because sitemap inventory surface was incomplete', {

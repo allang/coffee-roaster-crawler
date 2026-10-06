@@ -8,11 +8,12 @@ const INITIAL_BACKOFF_MS = 1000;
 const MAX_OUTPUT_TOKENS = Number(process.env.OPENAI_MAX_OUTPUT_TOKENS || 2000);
 const REQUEST_TIMEOUT_MS = Number(process.env.OPENAI_REQUEST_TIMEOUT_MS || 180000);
 
-const openai = new OpenAI({
+let openai;
+function getOpenAI() { return openai ||= new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   timeout: REQUEST_TIMEOUT_MS,
   maxRetries: 0,
-});
+}); }
 
 let quotaExhausted = false;
 
@@ -49,8 +50,8 @@ function buildPrompt(content) {
 
 3. If this is a product page for a coffee (e.g., a coffee bag, cold brew, instant coffee, etc..), you should return  perfectly formatted JSON using the following example:
 
-    { 
-      "is_coffee_page": true, 
+    {
+      "is_coffee_page": true,
       "product": {
         "name": "Name of the coffee",
         "default_price":  "$20.00",
@@ -62,6 +63,7 @@ function buildPrompt(content) {
             "origin_region": "Yirgacheffe",
             "is_decaf": false,
             "varietal": "Wush Wush",
+            "process": "Washed",
             "flavor_notes": ["Blueberry", "Vanilla", "Cotton Candy"],
             "grind_size_offered": ["whole bean", "espresso"],
             "altitude": "1500masl",
@@ -71,24 +73,24 @@ function buildPrompt(content) {
             "description": "The general description of the coffee as provided by the roaster",
             "short_description": "A summarized description of the coffee",
             "nano_description": "A very small description of the coffee",
-            "harvest_date": "12/2025"
+            "harvest_date": "12/2025",
             "product_image_url": "https://example.com/image.jpg"
         }
-      }  
+      }
     }
 
 
 Rules:
-- All JSON values for "product" should be strings.
+- Preserve the original product name and source tasting-note wording. Use actual JSON booleans and arrays for typed attributes.
 - When there are no variant prices, return an empty array
-- Use the clues on the page to determine the variant_price_currency, including the currency symbol, domain TLD, language, and other clues.
+- Use the clues on the page to determine the variant_price_currency, using explicit ISO codes or unambiguous symbols. Ambiguous $/¥ and missing currency must be null; never infer USD or currency from language/TLD.
 - The origin_type can be Single Origin or Blend.
-- The "brew_as" field should default to "filter" unless the product page specifies the brew method or type. All types are: Espresso, Filter, and Cold Brew.
+- The "brew_as" field must be null unless the product page specifies the brew method or type. All types are: Espresso, Filter, and Cold Brew.
 - Some values will not be found on the page. Mark them as null instead of using a blank string.
 - For "short_description", summarize the roaster's description. Limit the description to 400 chars.
 - For "nano_description", limit the description to 100 chars.
-- Some pages will not be in english. Translate all names and attributes to english. 
-- YOU MAY NOT guess about the attributes. 
+- Some pages will not be in english. Preserve original names and attribute wording; do not translate the source product title.
+- YOU MAY NOT guess about the attributes.
 - Your output must be pure JSON because it will be parsed by a computer.
 - The image being saved should be of the product. Prefer the image with the coffee name in the image asset path that is the largest image available. It must be the product image, not the roaster logo or other images.
 
@@ -109,6 +111,7 @@ async function classifyPage(pageContent, url) {
 
   const prompt = buildPrompt(pageContent);
   let backoffMs = INITIAL_BACKOFF_MS;
+  let aiCalls=0, usage=null;
 
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
@@ -124,24 +127,26 @@ async function classifyPage(pageContent, url) {
         request.max_tokens = MAX_OUTPUT_TOKENS;
       }
 
-      const response = await openai.chat.completions.create(request);
+      aiCalls++;
+      const response = await getOpenAI().chat.completions.create(request);
+      usage = response.usage || null;
 
       const text = response.choices[0]?.message?.content?.trim();
 
       if (!text) {
-        return { error: "Empty response from GPT" };
+        return { error: "Empty response from GPT", aiCalls, usage };
       }
 
       const jsonMatch = text.match(/\{[\s\S]*\}/);
       if (!jsonMatch) {
-        return { error: "No JSON found in response", rawResponse: text };
+        return { error: "No JSON found in response", rawResponse: text, aiCalls, usage };
       }
 
       const parsed = JSON.parse(jsonMatch[0]);
-      return { success: true, data: parsed };
+      return { success: true, data: parsed, aiCalls, usage };
     } catch (error) {
       if (error instanceof SyntaxError) {
-        return { error: "Failed to parse JSON response", details: error.message };
+        return { error: "Failed to parse JSON response", details: error.message, aiCalls, usage };
       }
 
       const status = error.status || error.statusCode || 0;
@@ -165,7 +170,7 @@ async function classifyPage(pageContent, url) {
       if (isQuotaExceeded) {
         quotaExhausted = true;
         logger.error("GPT", "Classification stopped: OpenAI quota exceeded", { url });
-        return { error: message, quotaExceeded: true };
+        return { error: message, quotaExceeded: true, aiCalls, usage };
       }
 
       if ((isRateLimited || isServerError || isTimeout) && attempt < MAX_RETRIES) {
@@ -180,11 +185,11 @@ async function classifyPage(pageContent, url) {
       }
 
       logger.error("GPT", "Classification failed", { url, error: error.message });
-      return { error: error.message };
+      return { error: error.message, aiCalls, usage };
     }
   }
 
-  return { error: "Max retries exceeded" };
+  return { error: "Max retries exceeded", aiCalls, usage };
 }
 
 module.exports = {

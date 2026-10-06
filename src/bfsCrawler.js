@@ -1,7 +1,8 @@
 const cheerio = require('cheerio');
 const globalLogger = require('./logger');
 
-const { classifyPage, MODEL } = require('./gptClassifier');
+const { processFetchedPage, addExtractionMetrics, extractionMetrics } = require('./pageVisitor');
+const { canonicalProductUrl } = require('./catalogNormalization');
 const { saveKnownPage, getKnownPagesForEntity, saveBlacklistedPages } = require('./knownPages');
 const { saveProduct } = require('./productSaver');
 const { filterUrlsWithBlacklist } = require('./blacklist');
@@ -12,33 +13,8 @@ const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = re
 
 const GPT_DELAY_MS = 500;
 
-function normalizeUrl(url, baseUrl) {
-  try {
-    if (!url) return null;
-    if (url.startsWith('#') || url.startsWith('javascript:') || url.startsWith('mailto:') || url.startsWith('tel:')) {
-      return null;
-    }
-    
-    const base = new URL(baseUrl);
-    
-    if (url.startsWith('//')) {
-      return 'https:' + url;
-    }
-    if (url.startsWith('/')) {
-      return base.origin + url;
-    }
-    if (url.startsWith('http')) {
-      const urlObj = new URL(url);
-      if (urlObj.hostname !== base.hostname) {
-        return null;
-      }
-      return url.split('#')[0].split('?')[0];
-    }
-    
-    return new URL(url, baseUrl).href.split('#')[0].split('?')[0];
-  } catch {
-    return null;
-  }
+function normalizeUrl(url,baseUrl) {
+  try { const parsed=new URL(url,baseUrl),base=new URL(baseUrl);if(parsed.hostname!==base.hostname)return null;const normalized=new URL(canonicalProductUrl(parsed.href));normalized.hostname=parsed.hostname;return normalized.href; } catch {return null;}
 }
 
 async function fetchPageAndLinks(url, referer = null, options = {}) {
@@ -52,6 +28,7 @@ async function fetchPageAndLinks(url, referer = null, options = {}) {
     return {
       success: false,
       error: result.error,
+      status: result.status,
       links: [],
     };
   }
@@ -92,7 +69,7 @@ async function fetchPageAndLinks(url, referer = null, options = {}) {
       ? '\n\nPRODUCT IMAGES:\n' + images.slice(0, 10).map(img => `- ${img.src} (alt: ${img.alt})`).join('\n')
       : '';
 
-    const content = (bodyText + imageSection).substring(0, 15000);
+    const content = (bodyText + imageSection).substring(0,Number(process.env.CLASSIFIER_MAX_CHARS || 15000));
 
     return {
       success: true,
@@ -111,7 +88,7 @@ async function fetchPageAndLinks(url, referer = null, options = {}) {
   }
 }
 
-async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = null, platform = 'unknown') {
+async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = null, platform = 'unknown', options={}) {
   const logger = log || globalLogger;
   const visited = new Set();
   const knownPages = await getKnownPagesForEntity(entityId);
@@ -126,6 +103,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
     linksDiscovered: 0,
     blacklisted: 0,
     quotaExceeded: false,
+    ...extractionMetrics(),
   };
 
   const MAX_PAGES = config.crawler.maxBfsPages || 200;
@@ -140,7 +118,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
   while (queue.length > 0 && results.visited < MAX_PAGES) {
     const url = queue.shift();
     
-    if (visited.has(url)) continue;
+    if (visited.has(url) || knownPages.get(url)?.status==='skip') continue;
     visited.add(url);
     accumulator.markVisited(url);
 
@@ -154,6 +132,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
 
     if (!fetchResult.success) {
       logger.warn('BFS', `Failed to fetch: ${url}`, { error: fetchResult.error });
+      try { await processFetchedPage(entityId,url,fetchResult,logger,platform,{...options,knownPage:knownPages.get(url)}); } catch {}
       results.errors++;
       continue;
     }
@@ -186,83 +165,16 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
       }
     }
 
-    if (knownPages.has(url)) {
-      logger.info('BFS', `Known page, skipping GPT: ${url}`);
-      continue;
-    }
-
-    await jitteredSleep(GPT_DELAY_MS);
-
-    const classification = await classifyPage(fetchResult.content, url);
-    const now = new Date().toISOString();
-
-    if (classification.error) {
-      logger.warn('BFS', `Classification error: ${url}`, { error: classification.error });
+    let result;
+    try { result=await processFetchedPage(entityId,url,fetchResult,logger,platform,{...options,knownPage:knownPages.get(url)}); }
+    catch(error) { result={error:error.message}; }
+    addExtractionMetrics(results,result);
+    if(result.error) {
       results.errors++;
-      if (classification.quotaExceeded) {
-        logger.error('BFS', 'Stopping BFS classification because OpenAI quota is exhausted');
-        results.quotaExceeded = true;
-        break;
-      }
-      continue;
-    }
+      if(result.quotaExceeded) { results.quotaExceeded=true; break; }
+    } else if(result.isCoffee) results.coffeeFound++;
+    else results.irrelevant++;
 
-    const result = classification.data;
-
-    if (result.is_coffee_page === false || result.is_product === false) {
-      await saveKnownPage(entityId, url, 'irrelevant', {
-        classification: result,
-        classifiedAt: now,
-        classifiedBy: MODEL,
-      });
-      results.irrelevant++;
-      continue;
-    }
-
-    if (result.is_coffee_page === true && result.product) {
-      try {
-        let productToSave = result.product;
-        let shopifyJson = null;
-
-        if (platform === 'shopify' && isShopifyProductUrl(url)) {
-          shopifyJson = await fetchShopifyProductJson(url, logger);
-          if (shopifyJson.success) {
-            productToSave = mergeGptAndJsonData(result.product, shopifyJson);
-          }
-        }
-
-        const availability = detectProductAvailability({
-          html: fetchResult.html,
-          status: fetchResult.status,
-          sourceUrl: url,
-          finalUrl: fetchResult.finalUrl,
-          shopifyProduct: shopifyJson?.success ? shopifyJson.raw : null,
-          allowPriceOnly: true,
-        });
-
-        await saveProduct(entityId, productToSave, url, logger, { availability });
-        await saveKnownPage(entityId, url, 'coffee', {
-          classification: result,
-          shopifyJson: shopifyJson?.success ? shopifyJson.data : null,
-          availability,
-          classifiedAt: now,
-          classifiedBy: MODEL,
-        });
-        logger.success('BFS', `Found coffee: ${productToSave.name}`);
-        results.coffeeFound++;
-      } catch (error) {
-        logger.error('BFS', `Failed to save product: ${url}`, { error: error.message });
-        results.errors++;
-      }
-      continue;
-    }
-
-    await saveKnownPage(entityId, url, 'irrelevant', {
-      classification: result,
-      classifiedAt: now,
-      classifiedBy: MODEL,
-    });
-    results.irrelevant++;
   }
 
   if (blacklistedEntries.length > 0) {

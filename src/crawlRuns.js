@@ -52,6 +52,7 @@ async function completeCrawlRun(crawlRunId, stats) {
       pages_visited: stats.pagesVisited || 0,
       pages_sent_to_gpt: stats.pagesSentToGpt || 0,
       coffees_found: stats.coffeesFound || 0,
+      meta: stats.metrics ? {extraction:stats.metrics} : {},
     })
     .eq('id', crawlRunId);
 

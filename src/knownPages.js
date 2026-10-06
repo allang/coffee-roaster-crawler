@@ -4,18 +4,13 @@ const logger = require('./logger');
 async function getKnownPagesForEntity(entityId) {
   const supabase = getSupabase();
 
-  const { data, error } = await supabase
-    .from('known_pages')
-    .select('url')
-    .eq('entity_id', entityId);
-
-  if (error) {
-    logger.error('KnownPages', 'Failed to fetch known pages', { error: error.message });
-    throw error;
+  const known = new Map();
+  for (let offset=0;;offset+=500) {
+    const {data,error}=await supabase.from('known_pages').select('url,status,classification,last_fetched_at,first_seen_at,times_seen').eq('entity_id',entityId).order('id').range(offset,offset+499);
+    if(error) throw error;
+    for(const page of data || []) known.set(page.url,page);
+    if((data || []).length<500) return known;
   }
-
-  const knownUrls = new Set(data.map(p => p.url));
-  return knownUrls;
 }
 
 async function saveKnownPage(entityId, url, status, options = {}) {
@@ -28,11 +23,14 @@ async function saveKnownPage(entityId, url, status, options = {}) {
     reason: options.reason || null,
     blacklisted_match: options.blacklistedMatch || null,
     classification: options.classification || null,
+    last_fetched_at: options.fetchedAt || new Date().toISOString(),
+    last_status_code: options.statusCode || null,
+    last_content_hash: options.contentHash || null,
     last_classified_at: options.classifiedAt || null,
     last_classified_by: options.classifiedBy || null,
-    first_seen_at: new Date().toISOString(),
+    first_seen_at: options.firstSeenAt || new Date().toISOString(),
     last_seen_at: new Date().toISOString(),
-    times_seen: 1,
+    times_seen: options.timesSeen || 1,
   };
 
   const { error } = await supabase

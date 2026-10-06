@@ -1,239 +1,70 @@
+'use strict';
 const { getSupabase } = require('./supabase');
 const globalLogger = require('./logger');
 const { downloadAndSaveImage } = require('./imageDownloader');
-const { updateProductAvailability } = require('./availability');
 const { parsePriceCents, parseWeightGrams } = require('./product-value-parsers.cjs');
-
-function sanitizeNullStrings(obj) {
-  if (obj === null || obj === undefined) return obj;
-  if (obj === 'null' || obj === 'NULL') return null;
-  if (Array.isArray(obj)) {
-    return obj.map(sanitizeNullStrings);
-  }
-  if (typeof obj === 'object') {
-    const result = {};
-    for (const [key, value] of Object.entries(obj)) {
-      result[key] = sanitizeNullStrings(value);
-    }
-    return result;
-  }
-  if (typeof obj === 'string' && (obj === 'null' || obj === 'NULL')) {
-    return null;
-  }
-  return obj;
+const { normalizeProduct, canonicalProductUrl, stableKey, stableUuid } = require('./catalogNormalization');
+function generateSlug(name) { return String(name).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,80) || 'coffee'; }
+function sanitizeNullStrings(value) {
+  if (value === 'null' || value === 'NULL') return null;
+  if (Array.isArray(value)) return value.map(sanitizeNullStrings);
+  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,sanitizeNullStrings(v)]));
+  return value;
 }
-
-function generateSlug(name) {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .substring(0, 100);
+async function findExistingProduct(db,entityId,sourceUrl,key) {
+  const {data:known,error}=await db.from('products').select('id,slug,source_url,source_key').eq('entity_id',entityId).eq('source_key',key).maybeSingle();
+  if(error) throw error;
+  if(known) return known;
+  const matches=[];
+  for(let offset=0;;offset+=500) {
+    const {data,error:readError}=await db.from('products').select('id,slug,source_url,source_key').eq('entity_id',entityId).order('id').range(offset,offset+499);
+    if(readError) throw readError;
+    for(const row of data || []) { try { if(canonicalProductUrl(row.source_url)===sourceUrl) matches.push(row); } catch {} }
+    if((data || []).length<500) break;
+  }
+  if(matches.length>1) throw new Error('Multiple legacy products share source identity; review before adoption');
+  return matches[0] || null;
 }
-
-async function saveProduct(entityId, productData, sourceUrl, log = null, options = {}) {
-  const logger = log || globalLogger;
-  const supabase = getSupabase();
-  const now = new Date().toISOString();
-
-  const sanitizedData = sanitizeNullStrings(productData);
-  
-  if (!sanitizedData.name || typeof sanitizedData.name !== 'string') {
-    logger.warn('ProductSaver', 'Product has no valid name, skipping', { sourceUrl });
-    return null;
-  }
-  
-  const slug = generateSlug(sanitizedData.name);
-
-  const metadata = sanitizedData.attributes ? { ...sanitizedData.attributes } : {};
-  if (sanitizedData.default_price) {
-    metadata.default_price = sanitizedData.default_price;
-  }
-  if (sanitizedData.variant_prices && sanitizedData.variant_prices.length > 0) {
-    metadata.variant_prices = sanitizedData.variant_prices;
-  }
-
-  const productRecord = {
-    entity_id: entityId,
-    slug: slug,
-    name: sanitizedData.name,
-    product_type: 'coffee',
-    source_url: sourceUrl,
-    is_active: true,
-    first_seen_at: now,
-    last_seen_at: now,
-    metadata: metadata,
-    description_html: sanitizedData.description_html || null,
-    description_raw: sanitizedData.description_raw || null,
-  };
-
-  const { data: existingProduct, error: fetchError } = await supabase
-    .from('products')
-    .select('id')
-    .eq('entity_id', entityId)
-    .eq('slug', slug)
-    .single();
-
-  let productId;
-
-  if (existingProduct) {
-    const { error: updateError } = await supabase
-      .from('products')
-      .update({
-        last_seen_at: now,
-        source_url: sourceUrl,
-        metadata: metadata,
-        description_html: sanitizedData.description_html || null,
-        description_raw: sanitizedData.description_raw || null,
-      })
-      .eq('id', existingProduct.id);
-
-    if (updateError) {
-      logger.error('ProductSaver', 'Failed to update product', { error: updateError.message });
-      throw updateError;
-    }
-    productId = existingProduct.id;
-    logger.info('ProductSaver', `Updated existing product: ${sanitizedData.name}`);
-  } else {
-    const { data: newProduct, error: insertError } = await supabase
-      .from('products')
-      .insert(productRecord)
-      .select('id')
-      .single();
-
-    if (insertError) {
-      logger.error('ProductSaver', 'Failed to insert product', { error: insertError.message });
-      throw insertError;
-    }
-    productId = newProduct.id;
-    logger.success('ProductSaver', `Created new product: ${sanitizedData.name}`);
-  }
-
-  const sourceCurrency = sanitizedData.variant_price_currency || 'USD';
-  // A euro symbol is unambiguous, but the database requires the ISO code.
-  // Do not infer codes for ambiguous symbols such as $ or change other values.
-  const currency = typeof sourceCurrency === 'string' && sourceCurrency.trim() === '€'
-    ? 'EUR'
-    : sourceCurrency;
-  if (sanitizedData.variant_prices && sanitizedData.variant_prices.length > 0) {
-    await saveVariants(productId, sanitizedData.variant_prices, sanitizedData.default_price, currency, logger);
-  } else if (sanitizedData.default_price) {
-    await saveVariants(productId, [], sanitizedData.default_price, currency, logger);
-  }
-
-  if (sanitizedData.attributes) {
-    await saveCoffeeFacts(productId, sanitizedData.attributes, logger);
-
-    if (sanitizedData.attributes.product_image_url) {
-      await downloadAndSaveImage(productId, sanitizedData.attributes.product_image_url, logger);
-    }
-  }
-
-  if (options.availability) {
-    await updateProductAvailability(productId, options.availability, now, logger);
-  }
-
+function catalogPayload(entityId, product, sourceUrl, existing, availability, now) {
+  const normalized=normalizeProduct(sanitizeNullStrings(product),sourceUrl);
+  const sourceKey=stableKey(entityId,normalized.source_url);
+  const id=existing?.id || stableUuid(entityId,normalized.source_url);
+  const attrs=Object.fromEntries(Object.entries(normalized.attributes || {}).filter(([k,v])=>v!=null));
+  const variants=normalized.variants.map(v=>{
+    const native=v.source_id==null ? null : String(v.source_id);
+    const key=stableKey(native ? ['native',native] : ['label',v.title.normalize('NFKC').trim(),v.sku || null]);
+    const evidence=availability?.variants?.find(e=>native!=null && String(e.source_id)===native);
+    const state=availability?.state==='removed'?'removed':evidence?.state || v.availability;
+    return {id:stableUuid(id,key),source_key:key,merchant_variant_id:native,variant_name:v.title,weight_g:v.weight_g,
+      price_cents:parsePriceCents(v.money.amount),price_minor_units:v.money.minorUnits,price_amount:v.money.amount,currency:v.money.currency,currency_exponent:v.money.exponent,price_raw:String(v.money.raw ?? ''),
+      availability_state:state,availability_evidence:evidence?.evidence || [{source:'extracted_variant',state}],availability_checked_at:now,
+      provenance:{source_url:normalized.source_url,merchant_variant_id:native,money_reason:v.money.reason}};
+  });
+  if(new Set(variants.map(v=>v.source_key)).size!==variants.length) throw new Error('Duplicate source variant identity');
+  const notes=normalized.tasting_notes;
+  const productAvailability=availability ? {...availability,state:availability.state || (availability.isAvailable===true?'in_stock':availability.isAvailable===false?'sold_out':'unknown')} : {state:'unknown',isAvailable:null,reason:'not_checked',evidence:[]};
+  return { product:{id,entity_id:entityId,slug:existing?.slug || `${generateSlug(normalized.original_title)}-${sourceKey.slice(0,10)}`,source_url:normalized.source_url,source_key:sourceKey,
+    adopted_source_url:existing?.source_url || null,original_title:normalized.original_title,display_title:normalized.display_title,name:normalized.original_title,
+    description_html:normalized.description_html || null,description_raw:normalized.description_raw || null,
+    metadata:{...attrs,_normalization:{version:normalized.normalization_version,tasting_notes:notes,source_product_id:normalized.source_product_id || null}},
+    availability_state:productAvailability.state,availability_reason:productAvailability.reason,availability_evidence:productAvailability.evidence || [],checked_at:now},
+    variants,variants_complete:normalized.variants_complete===true,
+    facts:{process:attrs.process || attrs.processing_method || null,variety:attrs.varietal || null,roast_level:attrs.roast_darkness || null,decaf:typeof attrs.is_decaf==='boolean'?attrs.is_decaf:null,
+      elevation_m:/^\d+(?:\s*(?:m|masl))?$/i.test(String(attrs.altitude || ''))?parseInt(attrs.altitude):null,tasting_notes_raw:Array.isArray(notes.source)?notes.source.join(', '):typeof notes.source==='string'?notes.source:null} };
+}
+async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
+  const logger=log || globalLogger, db=options.db || getSupabase();
+  if(typeof productData?.name!=='string' || !productData.name.trim()) {logger.warn('ProductSaver','Product has no valid name, skipping',{sourceUrl});return null;}
+  const canonical=canonicalProductUrl(sourceUrl), key=stableKey(entityId,canonical);
+  const existing=await findExistingProduct(db,entityId,canonical,key);
+  const payload=catalogPayload(entityId,productData,sourceUrl,existing,options.availability,options.checkedAt || new Date().toISOString());
+  const {data,error}=await db.rpc('save_catalog_product_v1',{payload});
+  if(error) throw error; // No destructive legacy fallback if migration is absent.
+  const productId=data?.product_id;
+  if(!productId) throw new Error('Catalog transaction returned no product ID');
+  const image=productData.attributes?.product_image_url;
+  if(image) await (options.downloadImage || downloadAndSaveImage)(productId,image,logger);
+  logger.info('ProductSaver','Saved catalog product',{productId,contentChanged:data.content_changed,marketChanged:data.market_changed});
   return productId;
 }
-
-async function saveVariants(productId, variantPrices, defaultPrice, currency, logger) {
-  const supabase = getSupabase();
-
-  const { error: deleteError } = await supabase
-    .from('product_variants')
-    .delete()
-    .eq('product_id', productId);
-
-  if (deleteError) {
-    logger.warn('ProductSaver', 'Failed to clear old variants', { error: deleteError.message });
-  }
-
-  const variants = [];
-  const variantKeys = new Set();
-
-  if (variantPrices.length > 0) {
-    for (const [weight, price] of variantPrices) {
-      const weightGrams = parseWeightGrams(weight);
-      const variantKey = weightGrams === null
-        ? `name:${String(weight).trim().toLowerCase()}`
-        : `weight:${weightGrams}`;
-
-      if (variantKeys.has(variantKey)) {
-        continue;
-      }
-      variantKeys.add(variantKey);
-
-      variants.push({
-        product_id: productId,
-        variant_name: weight,
-        weight_g: weightGrams,
-        price_cents: parsePriceCents(price),
-        currency: currency,
-        availability: 'in_stock',
-      });
-    }
-  } else if (defaultPrice) {
-    variants.push({
-      product_id: productId,
-      variant_name: 'default',
-      weight_g: null,
-      price_cents: parsePriceCents(defaultPrice),
-      currency: currency,
-      availability: 'in_stock',
-    });
-  }
-
-  if (variants.length > 0) {
-    const { error: insertError } = await supabase
-      .from('product_variants')
-      .insert(variants);
-
-    if (insertError) {
-      logger.warn('ProductSaver', 'Failed to save variants', { error: insertError.message });
-    }
-  }
-}
-
-async function saveCoffeeFacts(productId, attributes, logger) {
-  const supabase = getSupabase();
-
-  const { error: deleteError } = await supabase
-    .from('coffee_facts')
-    .delete()
-    .eq('product_id', productId);
-
-  if (deleteError) {
-    logger.warn('ProductSaver', 'Failed to clear old coffee facts', { error: deleteError.message });
-  }
-
-  const flavorNotes = attributes.flavor_notes;
-  let tastingNotesRaw = null;
-  if (Array.isArray(flavorNotes)) {
-    tastingNotesRaw = flavorNotes.join(', ');
-  } else if (typeof flavorNotes === 'string') {
-    tastingNotesRaw = flavorNotes;
-  }
-
-  const facts = {
-    product_id: productId,
-    process: attributes.varietal || null,
-    variety: attributes.varietal || null,
-    roast_level: attributes.roast_darkness || null,
-    tasting_notes_raw: tastingNotesRaw,
-  };
-
-  const { error: insertError } = await supabase
-    .from('coffee_facts')
-    .insert(facts);
-
-  if (insertError) {
-    logger.warn('ProductSaver', 'Failed to save coffee facts', { error: insertError.message });
-  }
-}
-
-module.exports = {
-  saveProduct,
-  generateSlug,
-  parsePriceCents,
-  parseWeightGrams,
-};
+module.exports={saveProduct,generateSlug,parsePriceCents,parseWeightGrams,catalogPayload,findExistingProduct,sanitizeNullStrings};

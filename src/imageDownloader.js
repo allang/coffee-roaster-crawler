@@ -4,8 +4,9 @@ const crypto = require('crypto');
 const { fetchImage } = require('./httpClient');
 
 const BUCKET_NAME = 'assets';
+const IMAGE_TTL_MS=7*86400_000;
 
-async function downloadAndSaveImage(productId, imageUrl, log = null) {
+async function downloadAndSaveImage(productId, imageUrl, log = null, options={}) {
   const logger = log || globalLogger;
   
   if (!imageUrl) {
@@ -17,10 +18,23 @@ async function downloadAndSaveImage(productId, imageUrl, log = null) {
     normalizedUrl = 'https:' + imageUrl;
   }
 
-  const supabase = getSupabase();
+  const supabase = options.db || getSupabase();
 
   try {
-    const result = await fetchImage(normalizedUrl, {
+    const {data:cached,error:cacheError}=await supabase.from('media_source_cache').select('media_asset_id,checked_at').eq('source_url',normalizedUrl).maybeSingle();
+    if(cacheError) throw cacheError;
+    const age=Date.now()-Date.parse(cached?.checked_at);
+    if(cached && age>=0 && age<IMAGE_TTL_MS) {
+      if(await linkProductMedia(productId,cached.media_asset_id,logger,supabase)) return cached.media_asset_id;
+      return null;
+    }
+    const cacheAndLink=async assetId=>{
+      if(!await linkProductMedia(productId,assetId,logger,supabase)) return null;
+      const {error}=await supabase.from('media_source_cache').upsert({source_url:normalizedUrl,media_asset_id:assetId,checked_at:new Date().toISOString()},{onConflict:'source_url'});
+      if(error) throw error;
+      return assetId;
+    };
+    const result = await (options.fetchImage || fetchImage)(normalizedUrl, {
       timeout: 30000,
       referer: normalizedUrl,
     });
@@ -44,9 +58,9 @@ async function downloadAndSaveImage(productId, imageUrl, log = null) {
       .single();
 
     if (existingAsset) {
-      await linkProductMedia(productId, existingAsset.id, logger);
+      const linked=await cacheAndLink(existingAsset.id);
       logger.info('ImageDownloader', `Reused existing asset: ${contentHash}`);
-      return existingAsset.id;
+      return linked;
     }
 
     const { error: uploadError } = await supabase.storage
@@ -81,9 +95,9 @@ async function downloadAndSaveImage(productId, imageUrl, log = null) {
       return null;
     }
 
-    await linkProductMedia(productId, mediaAsset.id, logger);
+    const linked=await cacheAndLink(mediaAsset.id);
     logger.success('ImageDownloader', `Saved image: ${fileName}`);
-    return mediaAsset.id;
+    return linked;
 
   } catch (error) {
     logger.warn('ImageDownloader', `Failed to download image: ${error.message}`, { url: normalizedUrl.substring(0, 100) });
@@ -91,8 +105,7 @@ async function downloadAndSaveImage(productId, imageUrl, log = null) {
   }
 }
 
-async function linkProductMedia(productId, mediaAssetId, logger) {
-  const supabase = getSupabase();
+async function linkProductMedia(productId, mediaAssetId, logger, supabase=getSupabase()) {
 
   const { data: existingLink } = await supabase
     .from('product_media')

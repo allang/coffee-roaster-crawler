@@ -14,6 +14,7 @@ for (const [raw, options, amount, currency, minor] of [
   ['12.50', {}, '12.50', null, null],
   ['US$12.50', {}, '12.50', 'USD', 1250],
   ['usd 12.50', {}, '12.50', 'USD', 1250],
+  ['12.50', {currency:'EUR €'}, '12.50', 'EUR', 1250],
 ]) test(`money ${raw}`, () => { const value = parseMoney(raw,options); assert.equal(value.amount,amount); assert.equal(value.currency,currency); assert.equal(value.minorUnits,minor); });
 for (const [raw,options,reason] of [
   ['$12.00', {}, 'unknown_currency'], ['USD 12-20', {}, 'missing_or_range_price'], ['JPY 1.20', {}, 'currency_precision'],

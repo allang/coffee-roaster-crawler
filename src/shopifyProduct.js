@@ -64,6 +64,7 @@ async function fetchShopifyProductJson(url, log = null) {
 
 function parseShopifyProduct(product) {
   const variants = (product.variants || []).map(v => ({
+    id: v.id == null ? null : String(v.id),
     title: v.title,
     price: v.price,
     priceCents: Math.round(parseFloat(v.price) * 100),
@@ -72,6 +73,8 @@ function parseShopifyProduct(product) {
     sku: v.sku,
     available: v.available,
     compareAtPrice: v.compare_at_price,
+    currency: product.currency || null,
+    weightGrams: v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null),
   }));
 
   const images = (product.images || []).map(img => ({
@@ -82,13 +85,15 @@ function parseShopifyProduct(product) {
   const mainImage = images.length > 0 ? images[0].src : null;
 
   return {
+    id: product.id == null ? null : String(product.id),
+    currency: product.currency || null,
     title: product.title,
     handle: product.handle,
     description: product.body_html || '',
     descriptionText: stripHtml(product.body_html || ''),
     vendor: product.vendor,
     productType: product.product_type,
-    tags: product.tags ? product.tags.split(', ') : [],
+    tags: Array.isArray(product.tags) ? product.tags : product.tags ? product.tags.split(/,\s*/) : [],
     variants,
     images,
     mainImage,
@@ -126,7 +131,9 @@ function mergeGptAndJsonData(gptProduct, jsonData) {
     name: json.title || gptProduct.name,
     default_price: json.variants.length > 0 ? json.variants[0].price : gptProduct.default_price,
     variant_prices: variantPrices.length > 0 ? variantPrices : gptProduct.variant_prices,
-    variant_price_currency: gptProduct.variant_price_currency || 'USD',
+    variant_price_currency: json.currency || gptProduct.variant_price_currency || null,
+    variants: json.variants.map(v => ({ source_id:v.id, title:v.title, price:v.price, currency:json.currency || gptProduct.variant_price_currency || null, available:v.available, weight_g:v.weightGrams, sku:v.sku, locale:'en-US' })),
+    variants_complete: true,
     description_html: json.description || null,
     description_raw: json.descriptionText || null,
     attributes: {

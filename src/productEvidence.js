@@ -27,7 +27,7 @@ function structuredProduct(html, sourceUrl) {
 
 function schemaAvailability(value) {
   const state = String(value || '').split('/').pop().toLowerCase();
-  if (['instock', 'limitedavailability', 'onlineonly'].includes(state)) return 'in_stock';
+  if (['instock', 'limitedavailability'].includes(state)) return 'in_stock';
   if (['outofstock', 'soldout', 'discontinued'].includes(state)) return 'sold_out';
   return 'unknown'; // PreOrder/BackOrder do not prove immediate stock.
 }

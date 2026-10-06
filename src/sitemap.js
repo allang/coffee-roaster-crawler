@@ -79,7 +79,7 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
   logger.info('Sitemap', `Crawling sitemap: ${sitemapUrl}`);
 
   if (visited.has(sitemapUrl)) {
-    return { urls: [], sitemaps: [] };
+    return { urls: [], sitemaps: [], inventoryComplete:true };
   }
   visited.add(sitemapUrl);
 
@@ -99,10 +99,12 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
   const allSitemaps = [{ url: sitemapUrl, type: childSitemaps.length > 0 ? 'master' : 'child' }];
 
   const errors = [];
+  let truncated = false;
   
   for (const childUrl of childSitemaps) {
     if (visited.size >= config.crawler.maxSitemapsPerEntity) {
       logger.warn('Sitemap', `Reached max sitemaps limit (${config.crawler.maxSitemapsPerEntity})`);
+      truncated = true;
       break;
     }
 
@@ -110,7 +112,7 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
 
     const childResult = await crawlSitemap(childUrl, visited);
     
-    if (childResult.error) {
+    if (childResult.error || childResult.inventoryComplete === false) {
       logger.warn('Sitemap', `Child sitemap failed: ${childUrl}`, { error: childResult.error });
       errors.push({ url: childUrl, error: childResult.error });
     }
@@ -123,6 +125,7 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
     urls: allUrls, 
     sitemaps: allSitemaps,
     childErrors: errors.length > 0 ? errors : undefined,
+    inventoryComplete: !truncated && errors.length === 0,
   };
 }
 
