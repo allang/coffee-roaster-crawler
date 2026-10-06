@@ -23,7 +23,7 @@ Verify these gates on staging:
 3. `is_available` can now be null. Consumers must use `availability_state` and stock timestamps/evidence, treating unknown as unverified. Existing rows start unknown until observed; do not bulk-mark them in stock.
 4. Native inventories retire missing variants only when complete. Child-sitemap errors/truncation and page errors prevent inventory reconciliation. Missing sitemap membership alone does not remove a product.
 5. Cache invalidates on changed content, model, extractor version, or seven-day semantic expiry. Market overlays refresh every processed page; image URLs revalidate after seven days. Bump EXTRACTION_VERSION for semantic prompt/parser changes.
-6. Content/market changes emit durable catalog_change_events for the API worker. Unchanged refreshes do not emit changes; stock-only updates emit market events. Older observations cannot overwrite fresher state.
+6. Content/market changes emit durable catalog_change_events for the API worker. Unchanged successful stock/removal checks advance timestamp/evidence without extra events. Give a variant a newer timestamp than its product, then test an intermediate older stock-only/full-save/inventory-removal observation: that variant's stock, money and evidence must remain unchanged while eligible siblings update. Both removal paths guard each variant independently; actual accepted state/price changes emit market events.
 7. Trigger simulated failures during catalog writes to verify rollback and bounded error handling. A missing RPC/schema is a hard failure; the code does not fall back to delete/reinsert.
 
 ## Future rollout, monitoring and rollback

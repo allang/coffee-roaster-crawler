@@ -10,7 +10,7 @@ The reproducible comparison uses actual functions from preserved baseline commit
 |---|---:|---:|---|
 | Paired amount/currency and ISO minor-unit correctness | 3/8 cases | 8/8 cases | Decimal comma/grouping, unknown $, dirty EUR label, JPY/KWD, range rejection. Legacy hundredths are compared with the new explicit ISO minor-unit field; historical price_cents is not silently reinterpreted. |
 | Product-scoped availability correctness | 2/7 cases | 7/7 cases | Unknown/missing stock, unrelated recommended product, exact native stock, removal. |
-| Reusable regression suite | 139 pass before new tests | 183 pass after changes | Includes local Postgres migrations/RPCs, permissions, rollback, stale writes, legacy IDs/media/facts and both crawler paths. |
+| Reusable regression suite | 139 pass before new tests | 187 pass after changes | Includes local Postgres migrations/RPCs, permissions, rollback, independent variant stale guards/freshness, legacy IDs/media/facts and both crawler paths. |
 | Attribute coverage on shared-flow fixtures | Contract formerly extracted through AI | Every populated contract field retained in both paths | 17 named attributes include typed decaf, process versus variety, descriptions, harvest, notes and original image source. Null fields remain unknown; no claim of new real-merchant coverage. |
 | Exact same-weight grind variants | Legacy saver collapsed by weight | Both fixture variants retained | Stable source IDs survive stock/price refresh and title edits. |
 | Repeat image source requests | Legacy checks hashes after download | One download/upload across two requests | Local Postgres and simulated image transport; stale cache downloads again without another upload. |
@@ -18,6 +18,8 @@ The reproducible comparison uses actual functions from preserved baseline commit
 | Warm semantic fixture with changed price/stock | Known pages skipped semantic work | 0 additional classifier invocations; price/stock updated | Both sitemap and BFS exercised with simulated classifier and HTTP transport. |
 
 The comparison invocation recorded approximately 90 ms locally. This is a CPU/VM fixture comparison, **not crawl duration**. The integrated suite runs in a few seconds locally; hardware/load affect that duration. The earlier broad historical run passed 321/352; evidence-bound scripts need private local historical snapshots/schema artifacts. Those tests are retained separately as `npm run test:historical`, with no claim that the broad historical suite passes in a clean clone. A fixture-timestamp regression at `fe69660a4130062c4be44a6a652267d72bbfb643` was corrected without weakening stale-write rejection; see WORK_LOG.md.
+
+Cloud review correction `2c8bea9678423f13df769ccf7a1dc0ff1e5af622` adds four local SQL regressions which failed before the fix and pass afterward: unchanged native stock advances evidence/time without extra events, and stock-only/full-save/both removal paths preserve variants newer than the product watermark. Full suite 187/187, 3.48s, with both CI runs passing. This extends correctness evidence; the money/availability comparison measurements above are unchanged, and no production performance gain is inferred.
 
 ## Measured read-only production baseline
 
