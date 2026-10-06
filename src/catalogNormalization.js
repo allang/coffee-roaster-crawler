@@ -127,7 +127,7 @@ function normalizeProduct(product, sourceUrl) {
   const normalized = variants.map(v => ({
     ...v, source_id: v.source_id ?? v.id ?? null, title: v.title || 'default',
     weight_g: v.weight_g ?? parseWeightGrams(v.title),
-    money: parseMoney(v.price, { currency: v.currency || product.variant_price_currency, locale: v.locale || product.price_locale }),
+    money: parseMoney(v.price, { currency: Object.hasOwn(v,'currency') ? v.currency : product.variant_price_currency, locale: v.locale || product.price_locale }),
     availability: v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : v.availability || 'unknown',
   }));
   return { ...product, original_title: product.original_title || product.name, display_title: displayTitle(product.name, attributes), variants: normalized,

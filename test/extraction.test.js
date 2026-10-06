@@ -55,3 +55,23 @@ test('AI fallback cannot invent native product/variant identities or complete in
  const r=await extractPage({page:{url,html:'<p>Coffee</p>',content:'Coffee'},classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',source_product_id:'invented',variants_complete:true,variants:[{id:'fake',source_id:'fake',title:'250g',price:'12',currency:'EUR'}]}}}),model,now});
  assert.equal(r.data.product.source_product_id,null);assert.equal(r.data.product.variants[0].source_id,null);assert.equal(r.data.product.variants_complete,false);
 });
+
+test('unpaired native numeric prices never borrow currency from page offers or inferred classification',async()=>{
+ const {normalizeProduct}=require('../src/catalogNormalization'),native={id:1,title:'Coffee',currency:null,variants:[{id:'11',title:'250g',price:'24.00',sku:'native-sku'}]};
+ const result=await extractPage({page:page({price:'18.00'}),shopifyJson:{success:true,data:native},classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',variant_price_currency:'USD'}}}),model,now});
+ const v=normalizeProduct(result.data.product,url).variants[0];assert.equal(v.price,'24.00');assert.equal(v.money.currency,null);assert.equal(v.money.minorUnits,null);
+ const {mergeGptAndJsonData}=require('../src/shopifyProduct');assert.equal(mergeGptAndJsonData({variant_price_currency:'GBP'}, {success:true,data:native}).variants[0].currency,null);
+});
+test('exact native-variant JSON-LD offer preserves its own amount/currency and conflicting offers remain unknown',()=>{
+ const {structuredExtraction}=require('../src/extraction'),{normalizeProduct}=require('../src/catalogNormalization');
+ const native={id:1,title:'Coffee',variants:[{id:'11',title:'250g',price:'24.00',sku:'sku-11'},{id:'12',title:'500g',price:'40.00',sku:'sku-12'}]};
+ const make=offers=>({url,html:`<script type="application/ld+json">${JSON.stringify({'@type':'Product',url,name:'Coffee',offers})}</script>`});
+ const offer={url:url+'?variant=11',sku:'sku-11',price:'18.00',priceCurrency:'EUR'};
+ let p=structuredExtraction(make([offer]),{success:true,data:native}).product,v=normalizeProduct(p,url).variants;
+ assert.equal(v[0].source_id,'11');assert.equal(v[0].money.minorUnits,1800);assert.equal(v[0].money.currency,'EUR');assert.equal(v[0].price_source,'jsonld_exact_variant_offer');assert.equal(v[1].money.currency,null);
+ p=structuredExtraction(make([offer,{...offer,price:'19',priceCurrency:'GBP'}]),{success:true,data:native}).product;assert.equal(normalizeProduct(p,url).variants[0].money.currency,null);
+});
+test('explicit unknown variant currency does not inherit another offer currency while legacy bulk pairs still work',()=>{
+ const {normalizeProduct}=require('../src/catalogNormalization');const p=normalizeProduct({name:'Coffee',variant_price_currency:'EUR',variants:[{title:'unknown',price:'12',currency:null},{title:'legacy',price:'12'}]},url);
+ assert.equal(p.variants[0].money.currency,null);assert.equal(p.variants[0].money.minorUnits,null);assert.equal(p.variants[1].money.minorUnits,1200);
+});

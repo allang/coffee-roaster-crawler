@@ -1,5 +1,5 @@
 module.exports = {
-  "observed_at": "2026-10-06T13:54:30.935Z",
+  "observed_at": "2026-10-06T15:28:58.916Z",
   "baseline_commit": "98f5aeaceea95016f0d5f7a1131ad71867d5c3c2",
   "scope": "Offline deterministic money/availability fixtures; actual application functions, simulated database transport; not a representative merchant sample",
   "money": {
@@ -208,7 +208,7 @@ module.exports = {
       }
     ]
   },
-  "elapsed_ms": 87.867,
+  "elapsed_ms": 87.773,
   "actual_paid_ai_requests": 0,
   "actual_paid_ai_tokens": 0,
   "production_crawl_duration": null,

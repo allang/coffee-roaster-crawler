@@ -27,9 +27,18 @@ function structuredExtraction(page, shopifyJson) {
   if (native?.vendor) attributes.vendor = native.vendor;
   if (native?.tags?.length) attributes.tags = native.tags;
   const offers = [schema?.offers || []].flat().filter(o => o && o['@type'] !== 'AggregateOffer' && o.price != null && (!o.url || sameProduct(o.url,page.finalUrl || page.url)));
-  const $ = cheerio.load(page.html || '');
-  const currency = native?.currency || offers[0]?.priceCurrency || $('meta[property="product:price:currency"]').attr('content') || null;
-  const variants = native?.variants?.length ? native.variants.map(v => ({ source_id:v.id, title:v.title, price:v.price, currency:v.currency || currency, available:v.available, weight_g:v.weightGrams, sku:v.sku, locale:'en-US' })) : offers.map(o => ({ source_id:o.sku || o['@id'] || null, title:o.name || o.sku || 'default', price:o.price, currency:o.priceCurrency, availability:require('./productEvidence').schemaAvailability(o.availability), locale:'en-US', source_url:o.url }));
+  // Amount and currency must come from one proven price source. Page/meta currency
+  // does not establish the currency of a separate native numeric payload.
+  const currency = native ? native.currency || null : offers[0]?.priceCurrency || null;
+  const variants = native?.variants?.length ? native.variants.map(v => {
+    const matches=offers.filter(o=>{
+      let selected=null;try{selected=o.url?new URL(o.url,page.url).searchParams.get('variant'):null;}catch{return false;}
+      if(selected!=null)return selected===String(v.id)&&(!o.sku||!v.sku||String(o.sku)===String(v.sku));
+      return v.sku && String(o.sku)===String(v.sku) && native.variants.filter(other=>String(other.sku)===String(v.sku)).length===1;
+    });
+    const paired=!(v.currency || native.currency)&&matches.length===1&&matches[0].priceCurrency?matches[0]:null;
+    return { source_id:v.id,title:v.title,price:paired?paired.price:v.price,currency:paired?paired.priceCurrency:v.currency || native.currency || null,price_source:paired?'jsonld_exact_variant_offer':'shopify_product_json',available:v.available,weight_g:v.weightGrams,sku:v.sku,locale:'en-US' };
+  }) : offers.map(o => ({ source_id:o.sku || o['@id'] || null, title:o.name || o.sku || 'default', price:o.price, currency:o.priceCurrency || null, availability:require('./productEvidence').schemaAvailability(o.availability), locale:'en-US', source_url:o.url }));
   const product = { name, attributes, variants, variant_prices:variants.map(v=>[v.title,v.price]), variant_price_currency:currency, description_html:descriptionHtml || null, description_raw:description || null, source_product_id:native?.id || schema?.productID || null, variants_complete:native?.variantsComplete===true };
   const coffee = /\b(?:coffee|roasted|espresso)\b/i.test(`${native?.productType || ''} ${schema?.category || ''} ${name} ${description}`) && !/\b(?:green coffee|rohkaffee|cascara|grinder|mug|equipment|gift card)\b/i.test(`${name} ${native?.productType || ''}`);
   // Skip semantic AI only when a source supplies the full attribute contract explicitly.
