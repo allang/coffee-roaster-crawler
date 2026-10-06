@@ -74,6 +74,15 @@ async function fetchPageContent(url, referer = null) {
 
 const GPT_DELAY_MS = 500;
 
+function isClearlyNonCoffeeProduct(product) {
+  const name = String(product?.name || '').trim();
+
+  return /\b(?:green coffee|rohkaffee)\b/i.test(name)
+    || /^cascara(?:\b|[\s,–—-])/i.test(name)
+    || /^hibiscus(?:\b|[\s,–—-])/i.test(name)
+    || /\bflor de jamaica\b/i.test(name);
+}
+
 async function visitAndClassifyPage(entityId, url, accumulator, log, platform = 'unknown') {
   const fetchResult = await fetchPageContent(url);
 
@@ -121,6 +130,17 @@ async function visitAndClassifyPage(entityId, url, accumulator, log, platform = 
   }
 
   if (result.is_coffee_page === true && result.product) {
+    if (isClearlyNonCoffeeProduct(result.product)) {
+      await saveKnownPage(entityId, url, 'irrelevant', {
+        reason: 'clear_non_coffee_product',
+        classification: result,
+        classifiedAt: now,
+        classifiedBy: MODEL,
+      });
+      log.info('Visitor', `Rejected clearly non-coffee product: ${result.product.name}`);
+      return { visited: true, classified: true, isCoffee: false };
+    }
+
     try {
       let productToSave = result.product;
       
@@ -180,33 +200,52 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
     irrelevant: 0,
     errors: 0,
   };
+  const configuredPageConcurrency = Number(process.env.CRAWLER_PAGE_CONCURRENCY || 1);
+  const pageConcurrency = Number.isFinite(configuredPageConcurrency)
+    ? Math.max(1, Math.floor(configuredPageConcurrency))
+    : 1;
+  let nextIndex = 0;
+  let stopForQuota = false;
 
-  for (const entry of urls) {
-    const url = typeof entry === 'object' ? entry.url : entry;
-
-    const result = await visitAndClassifyPage(entityId, url, accumulator, logger, platform);
-    results.visited++;
-
-    if (result.error) {
-      results.errors++;
-      if (result.quotaExceeded) {
-        logger.error('Visitor', 'Stopping page classification because OpenAI quota is exhausted');
-        break;
+  async function worker() {
+    while (!stopForQuota) {
+      const entryIndex = nextIndex++;
+      if (entryIndex >= urls.length) {
+        return;
       }
-    } else if (result.isCoffee) {
-      results.coffeeFound++;
-    } else {
-      results.irrelevant++;
-    }
 
-    await jitteredSleep(config.crawler.requestDelayMs);
+      const entry = urls[entryIndex];
+      const url = typeof entry === 'object' ? entry.url : entry;
+      const result = await visitAndClassifyPage(entityId, url, accumulator, logger, platform);
+      results.visited++;
+
+      if (result.error) {
+        results.errors++;
+        if (result.quotaExceeded) {
+          stopForQuota = true;
+          logger.error('Visitor', 'Stopping page classification because OpenAI quota is exhausted');
+        }
+      } else if (result.isCoffee) {
+        results.coffeeFound++;
+      } else {
+        results.irrelevant++;
+      }
+
+      if (!stopForQuota) {
+        await jitteredSleep(config.crawler.requestDelayMs);
+      }
+    }
   }
+
+  const workerCount = Math.min(pageConcurrency, Math.max(1, urls.length));
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
 
   return results;
 }
 
 module.exports = {
   fetchPageContent,
+  isClearlyNonCoffeeProduct,
   visitAndClassifyPage,
   visitAllPages,
 };

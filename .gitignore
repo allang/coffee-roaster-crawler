@@ -6,3 +6,9 @@ node_modules/
 
 .crawler.lock/
 logs/
+.state/
+
+# Historical local snapshots and runtime/scheduler state are preserved outside Git.
+src/*.pre-*
+src/**/crawl-status.json
+src/**/*.plist

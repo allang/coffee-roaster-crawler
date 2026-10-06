@@ -6,9 +6,12 @@ const MODEL = process.env.OPENAI_MODEL || "gpt-5-mini";
 const MAX_RETRIES = 5;
 const INITIAL_BACKOFF_MS = 1000;
 const MAX_OUTPUT_TOKENS = Number(process.env.OPENAI_MAX_OUTPUT_TOKENS || 2000);
+const REQUEST_TIMEOUT_MS = Number(process.env.OPENAI_REQUEST_TIMEOUT_MS || 180000);
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
+  timeout: REQUEST_TIMEOUT_MS,
+  maxRetries: 0,
 });
 
 let quotaExhausted = false;
@@ -22,6 +25,7 @@ function getOpenAIConfigSummary() {
   return {
     model: MODEL,
     maxOutputTokens: MAX_OUTPUT_TOKENS,
+    requestTimeoutMs: REQUEST_TIMEOUT_MS,
     keySet: !!process.env.OPENAI_API_KEY,
     keyFingerprint: fingerprint(process.env.OPENAI_API_KEY),
   };
@@ -145,6 +149,11 @@ async function classifyPage(pageContent, url) {
       const lowerMessage = message.toLowerCase();
       const errorCode = String(error.code || error.error?.code || '').toLowerCase();
       const errorType = String(error.type || error.error?.type || '').toLowerCase();
+      const isTimeout =
+        errorCode === 'etimedout' ||
+        errorCode === 'econnaborted' ||
+        lowerMessage.includes('timed out') ||
+        lowerMessage.includes('timeout');
       const isQuotaExceeded =
         errorCode === 'insufficient_quota' ||
         errorType === 'insufficient_quota' ||
@@ -159,9 +168,12 @@ async function classifyPage(pageContent, url) {
         return { error: message, quotaExceeded: true };
       }
 
-      if ((isRateLimited || isServerError) && attempt < MAX_RETRIES) {
+      if ((isRateLimited || isServerError || isTimeout) && attempt < MAX_RETRIES) {
         const waitTime = jitteredDelay(backoffMs, Math.floor(backoffMs * 0.3));
-        logger.warn("GPT", `Rate limited or server error, retrying in ${waitTime}ms (attempt ${attempt + 1}/${MAX_RETRIES})`, { url });
+        logger.warn("GPT", `Transient classification error, retrying in ${waitTime}ms (attempt ${attempt + 1}/${MAX_RETRIES})`, {
+          url,
+          error: message,
+        });
         await delay(waitTime);
         backoffMs *= 2;
         continue;

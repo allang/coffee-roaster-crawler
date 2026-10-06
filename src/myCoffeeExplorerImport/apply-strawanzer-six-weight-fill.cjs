@@ -1,0 +1,101 @@
+'use strict';
+// Six null-only weight PATCHes. No product saver, INSERT, DELETE or crawl pipeline.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const ROOT='/Users/allan/.openclaw/workspace/coffee-roaster-crawler',STATE=ROOT+'/.state/my-coffee-explorer/2026-09-26',ORIGIN='https://gtlipifdfyugiwpxvuse.supabase.co';
+const TAG='strawanzer-six-weight-fill',PLAN_DIR='product-seed-strawanzer-paced-preview',PLAN_FILE='minimal-whole-bean-weight-fill-plan.json',PLAN_SHA='d955597b87fcd7ecbb786eae71a202dd5f85692a0b4d326a68d27ab42e4ee8cc';
+const BASE=__dirname===ROOT+'/src/myCoffeeExplorerImport'?STATE:__dirname,OWNER='88e5874a-7be1-4bd6-984a-39356b4c5458',CLAIM='5e20095e-8ab9-43b5-acff-ec9efc25d371';
+const INDEX_FILE='production-variant-unique-index-verification-1004.json',INDEX_SHA='d9c7c98d0c44ba8dc74350d4fd02ab9978eb9a9476f1340370b48d6e4791821c';
+const VARIANT_FIELDS=['id','product_id','variant_name','weight_g','price_cents','currency','availability','created_at','updated_at'];
+const sha=x=>crypto.createHash('sha256').update(x).digest('hex'),stamp=()=>new Date().toISOString(),canonical=x=>JSON.stringify(x,(_,v)=>v&&typeof v==='object'&&!Array.isArray(v)?Object.fromEntries(Object.keys(v).sort().map(k=>[k,v[k]])):v),same=(a,b)=>canonical(a)===canonical(b),sorted=x=>x.map(canonical).sort();
+function must(ok,code){if(!ok)throw Object.assign(Error(code),{code});}
+function diag(e){return{code:String(e.code||'verification_failed').replace(/[^A-Za-z0-9_:-]/g,'').slice(0,90),...(Number.isInteger(e.httpStatus)?{httpStatus:e.httpStatus}:{}),...(/^[A-Z0-9]{1,16}$/.test(e.dbCode||'')?{databaseCode:e.dbCode}:{})};}
+function sync(dir){const fd=fs.openSync(dir,'r');try{fs.fsyncSync(fd);}finally{fs.closeSync(fd);}}
+function save(file,value){const fd=fs.openSync(file,'wx',0o600);try{fs.writeFileSync(fd,JSON.stringify(value,null,2)+'\n');fs.fsyncSync(fd);}finally{fs.closeSync(fd);}sync(path.dirname(file));}
+function variantShape(r){must(same(Object.keys(r).sort(),[...VARIANT_FIELDS].sort()),'variant_schema_changed');}
+function exact(rows,expected,key,code){must(rows.length===expected.length,code+'_count');for(const e of expected){const found=rows.filter(r=>key(r)===key(e));must(found.length===1,code+'_key');must(same(Object.fromEntries(Object.keys(e).map(k=>[k,found[0][k]])),e),code+'_changed');}}
+function validatePlan(p){
+ must(p.owner.entity_id===OWNER&&p.owner.website_url==='https://strawanzer-kaffee.de/'&&p.products.length===2&&p.patches.length===6&&p.preserved_variant_rows.length===12,'plan_scope');
+ must(same(p.patches.map(q=>[q.variant_id,q.changes.weight_g]),[['6d787411-a4a1-4c62-b655-69981795f00b',250],['57e63ec2-2aa1-41b4-bbc5-ea504e3d5796',500],['ac43f297-9e68-43f9-9d5f-4721aaabd04c',1000],['392f2322-dea8-4f9b-851f-684782b5265d',250],['d42f924a-71bf-4bd6-858f-83212cd94fce',500],['27251e77-cc0a-4c72-8b20-820b861dd7e7',1000]]),'patch_scope');
+ for(const q of p.patches){variantShape(q.before);must(q.before.id===q.variant_id&&q.before.product_id===q.product_id&&q.before.weight_g===null&&q.before.variant_name===q.changes.weight_g+' Gramm / Ganze Bohnen'&&same(Object.keys(q.changes),['weight_g']),'patch_binding');}
+ must(p.baseline.variants.length===18&&p.baseline.variants.every(r=>r.weight_g===null),'baseline_variants');
+ exact(p.baseline.variants.filter(r=>p.patches.some(q=>q.variant_id===r.id)),p.patches.map(q=>q.before),r=>r.id,'patch_baseline');
+ must(p.baseline.claim.id===CLAIM&&p.baseline.claim.status==='complete','claim_binding');
+}
+function loadPlan(base=BASE){
+ const indexBytes=fs.readFileSync(path.join(base,INDEX_FILE));must(sha(indexBytes)===INDEX_SHA,'index_receipt_hash');const index=JSON.parse(indexBytes);must(index.project==='gtlipifdfyugiwpxvuse'&&index.indisunique&&index.indisvalid&&index.indisready&&index.definition==='CREATE UNIQUE INDEX product_variants_unique_weight_per_product ON public.product_variants USING btree (product_id, weight_g) WHERE (weight_g IS NOT NULL)','index_receipt_scope');
+ const dir=path.join(base,PLAN_DIR),raw=fs.readFileSync(path.join(dir,PLAN_FILE));must(sha(raw)===PLAN_SHA,'plan_hash');const p=JSON.parse(raw),data={};
+ for(const[f,h]of Object.entries(p.pins)){const bytes=fs.readFileSync(path.join(dir,f));must(sha(bytes)===h,'evidence_hash');data[f]=JSON.parse(bytes);}
+ const manifest=data['manifest.json'];must(manifest.targets.length===1&&manifest.targets[0].entity_id===OWNER,'manifest_owner');
+ p.baseline={variants:data['pilot-variant-label-readback.json'].rows,products:data['pilot-public-readback.json'].products,sources:manifest.targets[0].source_ids,claim:{id:data['live-pilot-0939/checkpoint.json'].claims[OWNER].runId,status:data['live-pilot-0939/checkpoint.json'].claims[OWNER].status}};
+ must(p.baseline.sources.length===1&&p.baseline.sources[0].source==='my_coffee_explorer'&&p.baseline.sources[0].source_id==='roaster:public-catalog:strawanzer-kaffee.de','source_binding');validatePlan(p);return p;
+}
+const PROBES=new Set(['roles','sources','sourceBindings','crawlState','sourceProducts','variants','facts','media','knownPages']);
+function descriptor(kind,p,offset=0){
+ must(Number.isInteger(offset)&&offset>=0&&offset<100,'invalid_offset');const ids=p.products.map(t=>t.product_id).sort(),urls=p.products.map(t=>t.source_url),q=new URLSearchParams({select:'*',limit:'100'});let table,method='GET',body;
+ const eq=(k,v)=>q.set(k,v===null?'is.null':'eq.'+String(v)),list=(k,v)=>q.set(k,'in.('+v.join(',')+')');
+ if(kind==='owner'){table='entities';eq('id',OWNER);q.set('order','id.asc');}
+ else if(kind==='roles'||kind==='sources'){table=kind==='roles'?'entity_roles':'entity_source_ids';eq('entity_id',OWNER);q.set('order',kind==='roles'?'entity_id.asc,role.asc':'id.asc');}
+ else if(kind==='sourceBindings'){table='entity_source_ids';eq('source',p.baseline.sources[0].source);eq('source_id',p.baseline.sources[0].source_id);q.set('order','id.asc');}
+ else if(kind==='canonicalOut'||kind==='canonicalIn'){table='entity_attributes';eq('attribute_key','canonical_roaster_entity_id');eq(kind==='canonicalOut'?'entity_id':'attribute_value',OWNER);q.set('limit','1');}
+ else if(kind==='crawlState'){table='entity_crawl_state';eq('entity_id',OWNER);q.set('order','entity_id.asc');}
+ else if(kind==='activeClaims'){table='crawl_runs';eq('entity_id',OWNER);eq('status','running');q.set('limit','1');}
+ else if(kind==='claim'){table='crawl_runs';eq('id',CLAIM);q.set('order','id.asc');}
+ else if(kind==='parents'){table='products';list('id',ids);q.set('order','id.asc');}
+ else if(kind==='sourceProducts'){table='products';list('source_url',urls);q.set('select','id,entity_id,source_url');q.set('order','id.asc');}
+ else if(kind==='variants'||kind==='facts'||kind==='media'){table=kind==='variants'?'product_variants':kind==='facts'?'coffee_facts':'product_media';list('product_id',ids);q.set('order',kind==='variants'?'id.asc':kind==='facts'?'product_id.asc':'product_id.asc,media_asset_id.asc');}
+ else if(kind==='assets'){table='media_assets';list('id',p.baseline.products.flatMap(t=>t.product_media.map(m=>m.media_asset_id)));q.set('order','id.asc');}
+ else if(kind==='knownPages'){table='known_pages';eq('entity_id',OWNER);list('url',urls);q.set('order','url.asc');}
+ else if(/^patch[0-5]$/.test(kind)){must(offset===0,'patch_offset');const patch=p.patches[Number(kind.slice(5))];table='product_variants';method='PATCH';body=patch.changes;q.delete('limit');for(const[k,v]of Object.entries(patch.before))eq(k,v);}
+ else throw Object.assign(Error('request_out_of_scope'),{code:'request_out_of_scope'});
+ if(offset){must(PROBES.has(kind),'offset_out_of_scope');q.set('offset',String(offset));q.set('limit','1');}return{kind,offset,method,url:ORIGIN+'/rest/v1/'+table+'?'+q,body};
+}
+async function responseText(r){must(r.body?.getReader,'streaming_body_required');const reader=r.body.getReader(),parts=[];let size=0;try{for(;;){const{done,value}=await reader.read();if(done)break;size+=value.length;must(size<=4*1024*1024,'response_too_large');parts.push(Buffer.from(value));}return Buffer.concat(parts).toString('utf8');}finally{reader.releaseLock();}}
+function createClient({plan,key,allowWrites=false,delegate=globalThis.fetch.bind(globalThis),event=()=>{},checkLock=()=>{},now=Date.now,wait=ms=>new Promise(r=>setTimeout(r,ms))}){
+ let active=false,stopped=false,count=0,finished=null;const writes=new Set(),started=now();return{get requests(){return count;},async request(kind,offset=0){let timer,admitted=false;try{
+  must(!active&&!stopped,'transport_stopped_or_concurrent');must(count<110&&now()-started<20*60*1000,'request_or_time_bound');const d=descriptor(kind,plan,offset),writing=d.method!=='GET';must(!writing||allowWrites,'preview_write_refused');must(!writes.has(kind),'mutation_retry_forbidden');checkLock();active=true;admitted=true;
+  while(finished!==null&&now()-finished<500){must(!stopped&&now()-started<20*60*1000,'transport_stopped_or_time_bound');await wait(500-(now()-finished));}must(!stopped,'transport_stopped');checkLock();count++;if(writing)writes.add(kind);
+  event({event:'request_intent',request:count,kind,offset,method:d.method,descriptor_sha256:sha(canonical(d))});const abort=new AbortController();timer=setTimeout(()=>abort.abort(),20000);
+  const r=await delegate(d.url,{method:d.method,headers:{apikey:key,Authorization:'Bearer '+key,Accept:'application/json',...(writing?{'Content-Type':'application/json',Prefer:'return=representation'}:{})},redirect:'error',signal:abort.signal,...(writing?{body:JSON.stringify(d.body)}:{})});must(r&&!r.redirected&&(!r.url||new URL(r.url).origin===ORIGIN),'response_origin_redirect');const text=await responseText(r),jsonType=/^application\/json(?:;|$)/i.test(r.headers.get('content-type')||'');
+  if(!(writing?[200]:[200,206]).includes(r.status)){const e=Object.assign(Error('database_http_error'),{code:'database_http_error',httpStatus:r.status});try{e.dbCode=JSON.parse(text).code;}catch{}if(kind==='crawlState'&&r.status===404&&e.dbCode==='PGRST205'&&jsonType){event({event:'optional_crawl_state_table_absent',request:count,allow_crawl_data_available:false,permission_inferred:false});return[];}throw e;}
+  must(jsonType,'response_content_type');const rows=JSON.parse(text);must(Array.isArray(rows)&&rows.length<100,'response_shape_or_bound');if(!writing){const m=/^(?:(\d+)-(\d+)|\*)\/(?:\d+|\*)$/.exec(r.headers.get('content-range')||'');must(m&&(rows.length?Number(m[1])===offset&&Number(m[2])-Number(m[1])+1===rows.length:m[1]===undefined),'content_range');}event({event:'request_result',request:count,kind,offset,status:r.status,rows});return rows;
+ }catch(e){stopped=true;event({event:'request_failure',kind,offset,...diag(e)});throw e;}finally{clearTimeout(timer);if(admitted){finished=now();active=false;}}}};
+}
+async function readCollection(c,kind){const rows=await c.request(kind);if(PROBES.has(kind)&&rows.length)must((await c.request(kind,rows.length)).length===0,'nonempty_continuation:'+kind);return rows;}
+async function inspect(c,p){const out={};for(const k of ['owner','roles','sources','sourceBindings','canonicalOut','canonicalIn','crawlState','activeClaims','parents','sourceProducts','variants','facts','media','assets','knownPages','claim']){out[k]=await readCollection(c,k);if(['canonicalOut','canonicalIn','activeClaims'].includes(k))must(!out[k].length,k+'_conflict');}return out;}
+function validateVariants(rows,expected){rows.forEach(variantShape);must(same(sorted(rows),sorted(expected)),'variant_baseline_changed');const nonnull=rows.filter(r=>r.weight_g!==null);must(new Set(nonnull.map(r=>r.product_id+':'+r.weight_g)).size===nonnull.length,'weight_pair_conflict');}
+function validateBefore(b,p){
+ exact(b.owner,[{id:OWNER,name:p.owner.name,website_url:p.owner.website_url}],r=>r.id,'owner');must(b.roles.length&&b.roles.every(r=>r.entity_id===OWNER)&&b.roles.some(r=>r.role==='roaster'),'roaster_role');must(b.sources.every(r=>r.entity_id===OWNER),'source_owner');
+ exact(b.sourceBindings,[{entity_id:OWNER,...p.baseline.sources[0]}],r=>r.source+':'+r.source_id,'source_binding');must(b.sources.some(r=>same(r,b.sourceBindings[0])),'source_collection_binding');
+ for(const k of ['canonicalOut','canonicalIn','activeClaims'])must(!b[k].length,k+'_conflict');must(b.crawlState.every(r=>r.entity_id===OWNER&&r.allow_crawl!==false),'crawl_permission_denied');
+ exact(b.parents,p.products.map(t=>({id:t.product_id,entity_id:OWNER,name:t.name,source_url:t.source_url})),r=>r.id,'parent');must(b.parents.every(r=>r.is_active===true&&r.metadata&&typeof r.metadata==='object'),'parent_state');
+ exact(b.sourceProducts,p.products.map(t=>({id:t.product_id,entity_id:OWNER,source_url:t.source_url})),r=>r.id,'source_products');validateVariants(b.variants,p.baseline.variants);
+ exact(b.facts,p.baseline.products.map(t=>({product_id:t.id,...t.coffee_facts})),r=>r.product_id,'facts');exact(b.media,p.baseline.products.flatMap(t=>t.product_media.map(m=>({product_id:t.id,...m}))),r=>r.product_id+':'+r.media_asset_id,'media');
+ exact(b.assets,p.baseline.products.flatMap(t=>t.product_media.map(m=>({id:m.media_asset_id}))),r=>r.id,'assets');exact(b.knownPages,p.products.map(t=>({entity_id:OWNER,url:t.source_url,status:'coffee'})),r=>r.url,'known_pages');
+ // The runner checkpoint says "complete"; its backend persists "completed".
+ exact(b.claim,[{id:CLAIM,entity_id:OWNER,status:'completed',pages_visited:2,coffees_found:2}],r=>r.id,'claim');
+}
+function validatePreview(v,p,at=Date.now()){must(v.status==='preview_complete'&&v.plan_sha256===PLAN_SHA&&v.helper_sha256===sha(fs.readFileSync(__filename))&&v.before,'preview_binding');must(at-Date.parse(v.at)>=0&&at-Date.parse(v.at)<15*60*1000,'preview_expired');validateBefore(v.before,p);}
+function patchedVariant(row,q){variantShape(row);for(const[k,v]of Object.entries({...q.before,...q.changes}))if(k!=='updated_at')must(same(row[k],v),'variant_preservation:'+k);must(Number.isFinite(Date.parse(row.updated_at))&&Date.parse(row.updated_at)>=Date.parse(q.before.updated_at),'updated_at_invalid');}
+async function prewrite(c,p,b,expected){
+ must(!(await c.request('activeClaims')).length,'active_owner_claim');must(same(sorted(await c.request('parents')),sorted(b.parents)),'prewrite_parent_changed');must(same(sorted(await readCollection(c,'sourceBindings')),sorted(b.sourceBindings)),'prewrite_source_changed');
+ must(!(await c.request('canonicalOut')).length&&!(await c.request('canonicalIn')).length,'prewrite_canonical_conflict');validateVariants(await readCollection(c,'variants'),expected);
+}
+async function execute({client,plan,mode='preview',preview,append=()=>{},checkLock=()=>{}}){
+ must(mode==='preview'||mode==='apply','invalid_mode');if(mode==='apply')validatePreview(preview,plan);const before=await inspect(client,plan);validateBefore(before,plan);append({event:'before_complete',before});
+ if(mode==='preview')return{at:stamp(),status:'preview_complete',plan_sha256:PLAN_SHA,helper_sha256:sha(fs.readFileSync(__filename)),before,requests:client.requests,writes:0};
+ must(same(before,preview.before),'fresh_context_changed');validatePreview(preview,plan);const returned=[],expected=structuredClone(before.variants);
+ for(let i=0;i<6;i++){await prewrite(client,plan,before,expected);validatePreview(preview,plan);checkLock();const q=plan.patches[i],kind='patch'+i;append({event:'mutation_attempt_no_retry',kind,expected:q});const rows=await client.request(kind);must(rows.length===1,'weight_cas_not_one');patchedVariant(rows[0],q);returned.push(rows[0]);expected[expected.findIndex(r=>r.id===q.variant_id)]=rows[0];append({event:'mutation_returned',kind,rows});}
+ const after=await inspect(client,plan);for(const k of Object.keys(before))if(k!=='variants')must(same(sorted(after[k]),sorted(before[k])),k+'_preservation');validateVariants(after.variants,expected);append({event:'after_verified',after});return{at:stamp(),status:'six_weight_fill_verified',plan_sha256:PLAN_SHA,helper_sha256:sha(fs.readFileSync(__filename)),requests:client.requests,patch_rows:6,insert_rows:0,delete_rows:0,unchanged_variant_rows:12,before,patch_returned:returned,after,known_page_changes:0,crawl_changes:0};
+}
+function acquireLock(file){const fd=fs.openSync(file,'wx',0o600),stat=fs.fstatSync(fd),text=JSON.stringify({pid:process.pid,scope:TAG,token:crypto.randomUUID(),at:stamp()});fs.writeSync(fd,text);fs.fsyncSync(fd);sync(path.dirname(file));const check=()=>{const s=fs.lstatSync(file);must(s.isFile()&&!s.isSymbolicLink()&&s.ino===stat.ino&&s.dev===stat.dev&&fs.readFileSync(file,'utf8')===text,'lock_ownership_lost');};return{check,release(){try{check();fs.unlinkSync(file);sync(path.dirname(file));}finally{fs.closeSync(fd);}}};}
+function cli(args){if(!args.length||same(args,['--check']))return{mode:'check'};if(same(args,['--preview']))return{mode:'preview'};must(args.length===4&&args[0]==='--apply'&&/^[a-f0-9]{64}$/.test(args[2])&&args[3]==='--confirm-six-weight-fills','invalid_cli');return{mode:'apply',previewFile:args[1],previewSha:args[2]};}
+async function main(){const opts=cli(process.argv.slice(2)),plan=loadPlan();if(opts.mode==='check'){console.log(JSON.stringify({status:'offline_check_pass',plan_sha256:PLAN_SHA,patches:6,preserved:12,networkRequests:0}));return;}
+ must(fs.realpathSync(process.cwd())===ROOT&&fs.realpathSync(__dirname)===ROOT+'/src/myCoffeeExplorerImport','production_runtime_required');must(new URL(process.env.NEXT_PUBLIC_SUPABASE_URL||'').href===ORIGIN+'/','database_origin');const key=process.env.SUPABASE_SERVICE_ROLE_KEY;must(typeof key==='string'&&key.length>20,'credentials_missing');let preview;
+ if(opts.mode==='apply'){const f=fs.realpathSync(opts.previewFile);must(path.dirname(path.dirname(f))===STATE&&new RegExp('^'+TAG+'-preview-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$').test(path.basename(path.dirname(f)))&&path.basename(f)==='result.json','preview_path');const raw=fs.readFileSync(f);must(sha(raw)===opts.previewSha,'preview_hash');preview=JSON.parse(raw);validatePreview(preview,plan);}
+ const locks=[],dir=STATE+'/'+TAG+(opts.mode==='apply'?'-apply':'-preview-'+crypto.randomUUID());let fd;const tls=process.env.NODE_TLS_REJECT_UNAUTHORIZED;
+ try{locks.push(acquireLock(ROOT+'/.state/my-coffee-explorer/apply.lock'));locks.push(acquireLock(ROOT+'/.state/my-coffee-explorer/.product-only-entity-locks/'+OWNER+'.lock'));const checkLock=()=>locks.forEach(l=>l.check());fs.mkdirSync(dir,{mode:0o700});sync(STATE);save(path.join(dir,'reservation.json'),{at:stamp(),mode:opts.mode,plan_sha256:PLAN_SHA,helper_sha256:sha(fs.readFileSync(__filename)),preview_sha256:opts.previewSha||null,owner:OWNER,retries:0});fd=fs.openSync(path.join(dir,'events.ndjson'),'wx',0o600);fs.fsyncSync(fd);sync(dir);let stopped=false;
+ const append=e=>{must(!stopped,'journal_latched_stop');try{const b=Buffer.from(JSON.stringify({at:stamp(),...e})+'\n');let n=0;while(n<b.length)n+=fs.writeSync(fd,b,n,b.length-n);fs.fsyncSync(fd);}catch(e){stopped=true;throw e;}};process.env.NODE_TLS_REJECT_UNAUTHORIZED='1';const client=createClient({plan,key,allowWrites:opts.mode==='apply',event:append,checkLock});const result=await execute({client,plan,mode:opts.mode,preview,append,checkLock});save(path.join(dir,'result.json'),result);console.log(JSON.stringify({status:result.status,directory:dir,sha256:sha(fs.readFileSync(path.join(dir,'result.json')))}));
+ }catch(e){if(fd!==undefined)try{save(path.join(dir,'failure.json'),{at:stamp(),status:'stopped_review_required',error:diag(e),warning:'Any attempted PATCH may have committed. No retry or rollback; separate exact read-only reconciliation is required.'});}catch{}throw e;}finally{if(fd!==undefined)fs.closeSync(fd);if(tls===undefined)delete process.env.NODE_TLS_REJECT_UNAUTHORIZED;else process.env.NODE_TLS_REJECT_UNAUTHORIZED=tls;let failure;for(const l of locks.reverse())try{l.release();}catch(e){failure=e;}if(failure)throw failure;}
+}
+module.exports={ROOT,STATE,ORIGIN,TAG,PLAN_DIR,PLAN_FILE,PLAN_SHA,INDEX_FILE,INDEX_SHA,OWNER,CLAIM,VARIANT_FIELDS,sha,same,canonical,loadPlan,validatePlan,descriptor,createClient,readCollection,inspect,validateBefore,validateVariants,patchedVariant,validatePreview,execute,acquireLock,cli,main};
+if(require.main===module)main().catch(e=>{console.error(JSON.stringify(diag(e)));process.exitCode=1;});

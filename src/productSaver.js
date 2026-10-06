@@ -2,6 +2,7 @@ const { getSupabase } = require('./supabase');
 const globalLogger = require('./logger');
 const { downloadAndSaveImage } = require('./imageDownloader');
 const { updateProductAvailability } = require('./availability');
+const { parsePriceCents, parseWeightGrams } = require('./product-value-parsers.cjs');
 
 function sanitizeNullStrings(obj) {
   if (obj === null || obj === undefined) return obj;
@@ -28,35 +29,6 @@ function generateSlug(name) {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
     .substring(0, 100);
-}
-
-function parsePriceCents(priceStr) {
-  if (!priceStr) return null;
-  const cleaned = priceStr.replace(/[^0-9.]/g, '');
-  const parsed = parseFloat(cleaned);
-  if (isNaN(parsed)) return null;
-  return Math.round(parsed * 100);
-}
-
-function parseWeightGrams(weightStr) {
-  if (!weightStr) return null;
-  const lower = weightStr.toLowerCase();
-  
-  const match = lower.match(/([\d.]+)\s*(g|kg|oz|lb|lbs|gram|grams|kilogram|kilograms|ounce|ounces|pound|pounds)/);
-  if (!match) return null;
-
-  const value = parseFloat(match[1]);
-  const unit = match[2];
-
-  if (unit.startsWith('kg') || unit.startsWith('kilo')) {
-    return Math.round(value * 1000);
-  } else if (unit.startsWith('oz') || unit.startsWith('ounce')) {
-    return Math.round(value * 28.35);
-  } else if (unit.startsWith('lb') || unit.startsWith('pound')) {
-    return Math.round(value * 453.59);
-  } else {
-    return Math.round(value);
-  }
 }
 
 async function saveProduct(entityId, productData, sourceUrl, log = null, options = {}) {
@@ -137,7 +109,12 @@ async function saveProduct(entityId, productData, sourceUrl, log = null, options
     logger.success('ProductSaver', `Created new product: ${sanitizedData.name}`);
   }
 
-  const currency = sanitizedData.variant_price_currency || 'USD';
+  const sourceCurrency = sanitizedData.variant_price_currency || 'USD';
+  // A euro symbol is unambiguous, but the database requires the ISO code.
+  // Do not infer codes for ambiguous symbols such as $ or change other values.
+  const currency = typeof sourceCurrency === 'string' && sourceCurrency.trim() === '€'
+    ? 'EUR'
+    : sourceCurrency;
   if (sanitizedData.variant_prices && sanitizedData.variant_prices.length > 0) {
     await saveVariants(productId, sanitizedData.variant_prices, sanitizedData.default_price, currency, logger);
   } else if (sanitizedData.default_price) {
@@ -172,13 +149,24 @@ async function saveVariants(productId, variantPrices, defaultPrice, currency, lo
   }
 
   const variants = [];
+  const variantKeys = new Set();
 
   if (variantPrices.length > 0) {
     for (const [weight, price] of variantPrices) {
+      const weightGrams = parseWeightGrams(weight);
+      const variantKey = weightGrams === null
+        ? `name:${String(weight).trim().toLowerCase()}`
+        : `weight:${weightGrams}`;
+
+      if (variantKeys.has(variantKey)) {
+        continue;
+      }
+      variantKeys.add(variantKey);
+
       variants.push({
         product_id: productId,
         variant_name: weight,
-        weight_g: parseWeightGrams(weight),
+        weight_g: weightGrams,
         price_cents: parsePriceCents(price),
         currency: currency,
         availability: 'in_stock',

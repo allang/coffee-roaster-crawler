@@ -2,6 +2,10 @@ const { getSupabase } = require('./supabase');
 const { getRecentCrawlRuns } = require('./crawlRuns');
 const logger = require('./logger');
 
+function hasOfficialWebsite(roaster) {
+  return Boolean(roaster?.website_url && String(roaster.website_url).trim());
+}
+
 async function getRoasterEntities() {
   logger.header('Fetching Roaster Entities');
   const supabase = getSupabase();
@@ -62,6 +66,11 @@ async function filterRoastersForCrawling(roasters) {
       .filter(s => s.allow_crawl === false)
       .map(s => s.entity_id)
   );
+  const missingWebsiteEntityIds = new Set(
+    roasters
+      .filter(roaster => !hasOfficialWebsite(roaster))
+      .map(roaster => roaster.id)
+  );
 
   const recentRuns = await getRecentCrawlRuns(roasterIds);
   const recentlyRunEntityIds = new Set(recentRuns.map(r => r.entity_id));
@@ -70,9 +79,12 @@ async function filterRoastersForCrawling(roasters) {
   if (disabledEntityIds.size > 0) {
     logger.info('Filter', `${disabledEntityIds.size} roasters have crawling disabled`);
   }
+  if (missingWebsiteEntityIds.size > 0) {
+    logger.info('Filter', `${missingWebsiteEntityIds.size} roasters have no official website and will be skipped`);
+  }
 
   const eligible = roasters.filter(roaster => {
-    if (disabledEntityIds.has(roaster.id)) {
+    if (disabledEntityIds.has(roaster.id) || missingWebsiteEntityIds.has(roaster.id)) {
       return false;
     }
     return !recentlyRunEntityIds.has(roaster.id);
@@ -89,6 +101,7 @@ async function filterRoastersForCrawling(roasters) {
 }
 
 module.exports = {
+  hasOfficialWebsite,
   getRoasterEntities,
   filterRoastersForCrawling,
 };

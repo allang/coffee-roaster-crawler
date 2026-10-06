@@ -5,7 +5,7 @@ const { UrlAccumulator } = require('./urlAccumulator');
 const { getBlacklistTerms, filterUrlsWithBlacklist } = require('./blacklist');
 const { getKnownPagesForEntity, saveBlacklistedPages, filterOutKnownUrls } = require('./knownPages');
 const { visitAllPages } = require('./pageVisitor');
-const { createCrawlRun, completeCrawlRun, failCrawlRun } = require('./crawlRuns');
+const { createCrawlRun, completeCrawlRun, failCrawlRun, waitForCrawlAdmission } = require('./crawlRuns');
 const { bfsCrawl } = require('./bfsCrawler');
 const { config } = require('./config');
 const globalLogger = require('./logger');
@@ -66,6 +66,7 @@ function ensureHttps(url) {
 }
 
 async function crawlRoaster(roaster, blacklistTerms) {
+  await waitForCrawlAdmission();
   const roasterSlug = generateSlug(roaster.name);
   const log = createScopedLogger(roasterSlug);
   
@@ -100,12 +101,14 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
   log.info('Crawl', 'Platform detection complete', platformInfo);
 
+  try {
   await jitteredSleep(config.crawler.requestDelayMs);
 
   const sitemapUrl = await discoverSitemapUrl(effectiveWebsiteUrl);
+  let sitemapResult = null;
 
   if (sitemapUrl) {
-    const sitemapResult = await crawlSitemap(sitemapUrl);
+    sitemapResult = await crawlSitemap(sitemapUrl);
 
     if (sitemapResult.error) {
       log.error('Crawl', 'Sitemap crawl failed', { error: sitemapResult.error });
@@ -203,7 +206,6 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   let visitResults = { visited: 0, coffeeFound: 0, irrelevant: 0, errors: 0 };
 
-  try {
     if (newUrls.length > 0) {
       log.header('Visiting Pages & GPT Classification');
       visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log, platformInfo.platform);
@@ -224,7 +226,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
       coffeesFound: visitResults.coffeeFound || 0,
     });
 
-    if (sitemapResult.urls.length > 0 && !sitemapResult.error) {
+    if (sitemapResult && sitemapResult.urls.length > 0 && !sitemapResult.error) {
       await reconcileRoasterAvailability({
         entityId: roaster.id,
         surfaceUrls: accumulator.getAllUrls().map(entry => entry.url),
@@ -233,8 +235,8 @@ async function crawlRoaster(roaster, blacklistTerms) {
       });
     } else {
       log.warn('Availability', 'Skipping reconciliation because sitemap inventory surface was incomplete', {
-        urlsFound: sitemapResult.urls.length,
-        hasError: !!sitemapResult.error,
+        urlsFound: sitemapResult?.urls.length || 0,
+        hasError: !!sitemapResult?.error,
       });
     }
 

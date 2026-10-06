@@ -126,10 +126,22 @@ async function crawlSitemap(sitemapUrl, visited = new Set()) {
   };
 }
 
+function getSitemapBaseUrl(websiteUrl) {
+  try {
+    return new URL(websiteUrl).origin;
+  } catch {
+    return websiteUrl.replace(/[?#].*$/, '').replace(/\/+$/, '');
+  }
+}
+
+function looksLikeSitemapXml(content) {
+  return typeof content === 'string' && /<(?:urlset|sitemapindex)\b/i.test(content);
+}
+
 async function discoverSitemapUrl(websiteUrl) {
   logger.info('Sitemap', `Discovering sitemap for: ${websiteUrl}`);
 
-  const baseUrl = websiteUrl.replace(/\/$/, '');
+  const baseUrl = getSitemapBaseUrl(websiteUrl);
   const baseUrls = [...new Set(buildUrlVariants(baseUrl).map(candidate => candidate.replace(/\/$/, '')))];
   
   const candidates = [];
@@ -145,7 +157,7 @@ async function discoverSitemapUrl(websiteUrl) {
   for (const candidate of candidates) {
     const result = await fetchUrl(candidate);
     
-    if (result.success && result.data?.includes('<?xml')) {
+    if (result.success && looksLikeSitemapXml(result.data)) {
       logger.success('Sitemap', `Found valid sitemap at: ${candidate}`);
       return candidate;
     }
@@ -163,4 +175,6 @@ module.exports = {
   extractUrlsFromSitemap,
   crawlSitemap,
   discoverSitemapUrl,
+  getSitemapBaseUrl,
+  looksLikeSitemapXml,
 };

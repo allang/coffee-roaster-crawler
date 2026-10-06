@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test test/*.test.js src/*.test.cjs",
+    "test:historical": "node --test test/*.test.js src/*.test.cjs src/myCoffeeExplorerImport/*.test.js src/myCoffeeExplorerImport/*.test.cjs"
   },
   "keywords": [],
   "author": "",
