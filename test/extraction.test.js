@@ -50,3 +50,8 @@ test('retried requests without usage remain explicitly unreported even when fina
   addExtractionMetrics(metrics,{aiCalls:3,usage:{prompt_tokens:50,completion_tokens:10}});
   assert.equal(metrics.aiCalls,3);assert.equal(metrics.aiUsage.unreported_calls,2);assert.equal(metrics.aiUsage.prompt_tokens,50);
 });
+
+test('AI fallback cannot invent native product/variant identities or complete inventory evidence',async()=>{
+ const r=await extractPage({page:{url,html:'<p>Coffee</p>',content:'Coffee'},classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',source_product_id:'invented',variants_complete:true,variants:[{id:'fake',source_id:'fake',title:'250g',price:'12',currency:'EUR'}]}}}),model,now});
+ assert.equal(r.data.product.source_product_id,null);assert.equal(r.data.product.variants[0].source_id,null);assert.equal(r.data.product.variants_complete,false);
+});

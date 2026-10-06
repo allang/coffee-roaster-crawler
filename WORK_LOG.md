@@ -75,3 +75,10 @@ At each milestone, read issue and all linked PR conversation/review comments bef
 - Crawler now fetches locale-preserving Ajax stock and joins only matching product/native variant IDs; original decimal price/title/body fields remain intact. Evidence identifies Ajax as the stock source. Complete inventory is asserted only when matching uncapped Ajax IDs exactly cover the priced JSON list; missing/capped/inconsistent inventories do not retire variants.
 - Verification: **178/178 tests pass** (2.40 seconds). Three new regressions verify ID binding, preserving JPY-style decimal JSON price despite different Ajax integer price, locale URLs and incomplete/capped inventory. No live merchant request, production write or original checkout modification.
 - Additional Ajax I/O is intentional for stock correctness; production crawl latency/cost impact remains unmeasured. Documentation: https://shopify.dev/docs/api/ajax/reference/product and https://shopify.dev/docs/api/liquid/objects/variant.
+
+## 2026-10-06 — native product identity and source retrieval follow-up
+
+- Shopify endpoint follow-up SHA: `951a09c7477e870c184a58401df9c27b860f3049`. After-push issue/both-PR comments checked: no findings.
+- Source-native product IDs now anchor product identity when verified source extraction supplies them, so handle/title changes retain product and variant IDs. Legacy URL matches still adopt existing IDs; unsupported/missing native identities retain stable canonical URL keys. AI-only extraction cannot invent native IDs or complete-inventory evidence.
+- Retrieval source_url preserves the observed www hostname while a separate canonical key/metadata retains normalized identity. This avoids turning valid merchant source URLs into a different origin before the API's strict same-origin verifier; identity does not come from display titles.
+- Verification: **180/180 tests pass**, including real SQL native-ID handle-change preservation, observed retrieval host, and rejection of invented AI identity/completeness. Original running checkout remains untouched.

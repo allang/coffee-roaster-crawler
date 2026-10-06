@@ -72,3 +72,16 @@ test('zero/three-decimal currencies have explicit minor units; unknown/range nev
     assert.equal(p.variants[0].availability_state,'unknown');
   }
 });
+
+test('native product identity survives source-handle changes while retrieval URL preserves observed www host',async()=>{
+ const pg=await catalogDb();try{
+   await pg.query('insert into entities(id) values($1)',[owner]);const options={db:supabaseAdapter(pg),checkedAt:'2026-10-06T14:00:00Z'};
+   const product={name:'Coffee',source_product_id:'900',variants:[{source_id:'901',title:'250g',price:'12',currency:'EUR'}]};
+   const first=await saveProduct(owner,product,'https://www.shop.test/products/old-handle',log,options);
+   assert.equal((await pg.query('select source_url from products')).rows[0].source_url,'https://www.shop.test/products/old-handle');
+   const variants=(await pg.query('select id from product_variants')).rows;
+   const second=await saveProduct(owner,{...product,name:'Renamed coffee'},'https://www.shop.test/products/new-handle',log,{...options,checkedAt:'2026-10-06T14:01:00Z'});
+   assert.equal(first,second);assert.deepEqual((await pg.query('select id from product_variants')).rows,variants);
+   assert.equal((await pg.query('select count(*)::int n from products')).rows[0].n,1);
+ }finally{await pg.close();}
+});

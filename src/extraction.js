@@ -46,10 +46,15 @@ function semanticHash(page, structured) {
   return stableKey(structured.semantic,$('title').text(),$('body').text().replace(/\s+/g,' ').trim());
 }
 function mergeSourceProduct(extracted, structured) {
-  if (!structured.product) return extracted;
+  if (!structured.product) {
+    const result={...extracted,source_product_id:null,variants_complete:false};
+    if(Array.isArray(result.variants))result.variants=result.variants.map(v=>({...v,source_id:null,id:null}));
+    return result;
+  }
   const source = structured.product;
   const merged = { ...extracted, ...Object.fromEntries(Object.entries(source).filter(([k,v]) => v != null && !(Array.isArray(v) && v.length===0))), attributes:{ ...(extracted.attributes || {}), ...source.attributes } };
   // A native endpoint lacking currency cannot turn an inferred currency into a fact.
+  merged.source_product_id=source.source_product_id || null;
   if (source.variants?.length) merged.variant_price_currency = source.variant_price_currency;
   return merged;
 }

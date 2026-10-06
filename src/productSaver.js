@@ -25,10 +25,16 @@ async function findExistingProduct(db,entityId,sourceUrl,key) {
   if(matches.length>1) throw new Error('Multiple legacy products share source identity; review before adoption');
   return matches[0] || null;
 }
+function productSourceKey(entityId,product,sourceUrl) {
+  const native=product?.source_product_id;
+  const valid=typeof native==='string' && native.trim() && native.length<=200 && native!=='null' || typeof native==='number' && Number.isSafeInteger(native) && native>0;
+  return stableKey(entityId,valid ? ['native',String(native)] : ['url',canonicalProductUrl(sourceUrl)]);
+}
+function retrievalUrl(sourceUrl) {const original=new URL(sourceUrl),url=new URL(canonicalProductUrl(sourceUrl));url.hostname=original.hostname;return url.href;}
 function catalogPayload(entityId, product, sourceUrl, existing, availability, now) {
   const normalized=normalizeProduct(sanitizeNullStrings(product),sourceUrl);
-  const sourceKey=stableKey(entityId,normalized.source_url);
-  const id=existing?.id || stableUuid(entityId,normalized.source_url);
+  const sourceKey=productSourceKey(entityId,normalized,sourceUrl);
+  const id=existing?.id || stableUuid(entityId,sourceKey);
   const attrs=Object.fromEntries(Object.entries(normalized.attributes || {}).filter(([k,v])=>v!=null));
   const variants=normalized.variants.map(v=>{
     const native=v.source_id==null ? null : String(v.source_id);
@@ -43,10 +49,10 @@ function catalogPayload(entityId, product, sourceUrl, existing, availability, no
   if(new Set(variants.map(v=>v.source_key)).size!==variants.length) throw new Error('Duplicate source variant identity');
   const notes=normalized.tasting_notes;
   const productAvailability=availability ? {...availability,state:availability.state || (availability.isAvailable===true?'in_stock':availability.isAvailable===false?'sold_out':'unknown')} : {state:'unknown',isAvailable:null,reason:'not_checked',evidence:[]};
-  return { product:{id,entity_id:entityId,slug:existing?.slug || `${generateSlug(normalized.original_title)}-${sourceKey.slice(0,10)}`,source_url:normalized.source_url,source_key:sourceKey,
+  return { product:{id,entity_id:entityId,slug:existing?.slug || `${generateSlug(normalized.original_title)}-${sourceKey.slice(0,10)}`,source_url:retrievalUrl(sourceUrl),source_key:sourceKey,
     adopted_source_url:existing?.source_url || null,original_title:normalized.original_title,display_title:normalized.display_title,name:normalized.original_title,
     description_html:normalized.description_html || null,description_raw:normalized.description_raw || null,
-    metadata:{...attrs,_normalization:{version:normalized.normalization_version,tasting_notes:notes,source_product_id:normalized.source_product_id || null}},
+    metadata:{...attrs,_normalization:{version:normalized.normalization_version,tasting_notes:notes,source_product_id:normalized.source_product_id || null,canonical_source_url:normalized.source_url}},
     availability_state:productAvailability.state,availability_reason:productAvailability.reason,availability_evidence:productAvailability.evidence || [],checked_at:now},
     variants,variants_complete:normalized.variants_complete===true,
     facts:{process:attrs.process || attrs.processing_method || null,variety:attrs.varietal || null,roast_level:attrs.roast_darkness || null,decaf:typeof attrs.is_decaf==='boolean'?attrs.is_decaf:null,
@@ -55,7 +61,7 @@ function catalogPayload(entityId, product, sourceUrl, existing, availability, no
 async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   const logger=log || globalLogger, db=options.db || getSupabase();
   if(typeof productData?.name!=='string' || !productData.name.trim()) {logger.warn('ProductSaver','Product has no valid name, skipping',{sourceUrl});return null;}
-  const canonical=canonicalProductUrl(sourceUrl), key=stableKey(entityId,canonical);
+  const canonical=canonicalProductUrl(sourceUrl), key=productSourceKey(entityId,productData,sourceUrl);
   const existing=await findExistingProduct(db,entityId,canonical,key);
   const payload=catalogPayload(entityId,productData,sourceUrl,existing,options.availability,options.checkedAt || new Date().toISOString());
   const {data,error}=await db.rpc('save_catalog_product_v1',{payload});
@@ -67,4 +73,4 @@ async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   logger.info('ProductSaver','Saved catalog product',{productId,contentChanged:data.content_changed,marketChanged:data.market_changed});
   return productId;
 }
-module.exports={saveProduct,generateSlug,parsePriceCents,parseWeightGrams,catalogPayload,findExistingProduct,sanitizeNullStrings};
+module.exports={saveProduct,generateSlug,parsePriceCents,parseWeightGrams,catalogPayload,findExistingProduct,sanitizeNullStrings,productSourceKey,retrievalUrl};
