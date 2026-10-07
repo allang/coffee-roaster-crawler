@@ -1,8 +1,8 @@
 # Every Coffee implementation handoff — 2026-10-06
 
-All three original code workstreams were completed on pushed review branches without deployment. The user later separately authorized a local crawler pause/update/run and its required catalog migration on 2026-10-06 EDT: that migration is now applied and the reviewed crawler release installed, with a matched first/cached benchmark in progress before resuming the existing schedule. See [WORK_LOG.md](../WORK_LOG.md) for this later action and results as available. The implementation evidence below describes the original pre-rollout handoff. PRs remain unmerged; API/service deployment, live purchase workers and real purchases remain outside the new local crawler authorization. The original issue remains the authoritative goal: https://github.com/allang/coffee-roaster-crawler/issues/1.
+All three original code workstreams were completed on pushed review branches without deployment. The user later separately authorized a local crawler pause/update/run and its required catalog migration on 2026-10-06 EDT. That migration is applied; corrected crawler source `30748a20ac66f90d3f121b7298b65631fede6e49` passes 190/190 supported tests and is running on the unchanged local schedule. The matched ten-roaster comparison and separate corrected-merchant validation are complete: see [LOCAL_RUN_REPORT.md](LOCAL_RUN_REPORT.md) for measurements, failures, retention, estimates and limits. The implementation evidence below describes the original pre-rollout handoff. PRs remain unmerged; API/service deployment, live purchase workers and real purchases remain outside the local crawler authorization. The original issue remains authoritative: https://github.com/allang/coffee-roaster-crawler/issues/1.
 
-## Repositories, review and tested source commits
+## Original handoff repositories, review and tested source commits
 
 | Workstream | Repository / PR | Resolving source SHA | Verification |
 |---|---|---|---|
@@ -64,7 +64,7 @@ Completion here means prepared implementation and relevant local/CI evidence und
 
 Planning estimates: at an assumed 5–10 active minutes per purchase and 50% utilization, one slot supports the arithmetic average of 100/week, 1–2 for 1,000/week, 5–10 for 5,000/week and 10–20 for 10,000/week. No distributed/hardware capacity measurement supports those figures yet. A token extrapolation from one mock case is explicitly a fixture estimate, not a dollar forecast.
 
-Production crawl duration/cost/after-coverage, real feed latency, live native checkout coverage, live purchase/intervention/duplicate/settlement/fulfillment rates and container deployment are unavailable. Broad historical crawler tests remain separate: earlier 321/352 pass with missing private evidence/schema artifacts; the supported 187-test suite passes clean CI. No report claims an unchanged historical suite fully passes.
+At the original handoff, production crawl duration/cost/after-coverage were unavailable; the later authorized [local run report](LOCAL_RUN_REPORT.md) now supplies bounded crawler measurements and explicitly separates the benchmark release from the corrected source. Real feed latency, broad live native checkout coverage, purchase/intervention/duplicate/settlement/fulfillment rates and container deployment remain unavailable in this original evidence. The independent local API/website integration is tracked separately in issue #1 and their PR #3; this crawler report does not certify it. Broad historical crawler tests remain separate: earlier 321/352 pass with missing private evidence/schema artifacts; the current supported 190-test suite passes. No report claims an unchanged historical suite fully passes.
 
 ## Cloud review corrections
 

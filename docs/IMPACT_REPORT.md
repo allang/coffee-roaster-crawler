@@ -1,6 +1,6 @@
 # Crawler impact report — 2026-10-06
 
-Scope and authorization: https://github.com/allang/coffee-roaster-crawler/issues/1. These changes are on a review branch and remain undeployed. The production crawler still uses its original checkout.
+Scope and authorization: https://github.com/allang/coffee-roaster-crawler/issues/1. This report records the original pre-rollout offline/read-only evidence. The user later explicitly authorized the crawler-only catalog migration and local update/run; those actions and the completed live comparison are recorded separately in [LOCAL_RUN_REPORT.md](LOCAL_RUN_REPORT.md). The corrected crawler is now running on its unchanged local schedule. Fixture measurements below remain fixture measurements.
 
 ## Measured offline correctness and coverage
 
@@ -25,13 +25,13 @@ Cloud review correction `2c8bea9678423f13df769ccf7a1dc0ff1e5af622` adds four loc
 
 `catalog-baseline-summary.cjs` records an aggregate-only convenience sample of the 100 most recently seen active coffees at 2026-10-06T13:49:13Z. There were 167 variants, 154 non-null legacy prices (92.2%), 112 non-null weights (67.1%), 79 products with origin metadata and 83 with tasting-note metadata. Currency values included the malformed `EUR €`. All 167 variants were labelled `in_stock` by the old schema. These labels are **not verified live stock** and should not be treated as a purchasing benchmark. No raw rows or credentials were published.
 
-Production after-coverage is unavailable while this branch stays undeployed. Titles remain original for identity/audit; separate display titles, versioned note categories and raw unmapped phrases are available after an authorized rollout. Legacy ambiguous identities require manual resolution rather than automatic merges.
+At this original pre-rollout cutoff, production after-coverage was unavailable; the later local run report contains the measured cohort coverage. Titles remain original for identity/audit; separate display titles, versioned note categories and raw unmapped phrases are available after an authorized rollout. Legacy ambiguous identities require manual resolution rather than automatic merges.
 
 ## Actual AI usage, estimates and unavailable measurements
 
 Actual paid AI requests/tokens during this offline verification: **0 / 0**. Simulated classifier counters in tests prove accounting and routing, not production model quality or billed cost. Crawl metrics now store request/retry counts and API-reported prompt/completion/cache tokens in `crawl_runs.meta.extraction`; retries lacking a usage response stay explicitly unreported. Usage shape follows the [OpenAI Chat Completions reference](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create).
 
-Production crawl duration, actual production AI requests/tokens/cost and percentage savings are **unavailable**. Existing visited-page counters are not reliable AI-call evidence. Do not infer 100% savings from a complete structured fixture. Expected directional benefits are fewer classification calls for unchanged/fully structured pages, no duplicate image downloads within the cache lifetime, and fewer destructive database operations. These are hypotheses until a controlled, authorized rollout measures them.
+At the original pre-rollout cutoff, production crawl duration, actual AI requests/tokens/cost and percentage savings were **unavailable**. The later local run report records actual requests/tokens and observed duration differences; billing savings remain unavailable. Existing visited-page counters are not reliable AI-call evidence. Do not infer 100% savings from a complete structured fixture. Expected directional benefits are fewer classification calls for unchanged/fully structured pages, no duplicate image downloads within the cache lifetime, and fewer destructive database operations. These are hypotheses until a controlled, authorized rollout measures them.
 
 For a future measured cost report: chargeable uncached prompt tokens × input rate + cached prompt tokens × cache rate + completion tokens × output rate, each per million tokens. Use current rates for the actual model/tier and state the observation window. Missing usage means an incomplete cost estimate. No numeric production savings estimate is claimed here.
 
@@ -39,7 +39,7 @@ Feed and purchasing fixtures are now reported in the linked API and purchasing r
 
 ## Remaining limitations and deployment gates
 
-Use DEPLOYMENT.md before any separately authorized staging/production action. PGlite validates actual SQL/PLpgSQL behavior; it is not a Supabase integration or multi-host concurrency benchmark. Current merchant fixtures do not prove broad storefront coverage, AI semantic correctness or live price/stock accuracy. Currency evidence remains unknown where merchant JSON/HTML does not provide it. Generic pages without product-scoped evidence remain unknown rather than being guessed available. The first deployment needs the additive migration and consumers updated to use `price_minor_units`, `currency_exponent` and `availability_state`. Public catalog RLS policies/roles must be checked in staging; no production policy changes were made.
+Use DEPLOYMENT.md before any separately authorized staging/production action. PGlite validates actual SQL/PLpgSQL behavior; it is not a Supabase integration or multi-host concurrency benchmark. Current merchant fixtures do not prove broad storefront coverage, AI semantic correctness or live price/stock accuracy. Currency evidence remains unknown where merchant JSON/HTML does not provide it. Generic pages without product-scoped evidence remain unknown rather than being guessed available. Deployment to another environment needs the additive migration and consumers updated to use `price_minor_units`, `currency_exponent` and `availability_state`. Public catalog RLS policies/roles must be checked in staging; no production policy changes were made.
 
 The Shopify stock follow-up passed 178 tests before the identity/source-pairing follow-ups. Shopify stock flags are joined from the documented locale-aware Ajax endpoint by exact product/variant ID. Its monetary integers are not mixed with decimal product JSON prices; capped/mismatched lists cannot prove retirement. This adds a stock GET, so overall production crawl latency/cost remains unmeasured. See the [Ajax Product reference](https://shopify.dev/docs/api/ajax/reference/product) and [variant monetary representation](https://shopify.dev/docs/api/liquid/objects/variant).
 
