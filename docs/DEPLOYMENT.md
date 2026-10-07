@@ -12,6 +12,8 @@ Create a distinct staging Supabase project or local database using a structural 
 
 Required server-only staging variables follow `.env.example`: NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, OPENAI_API_KEY and optionally OPENAI_MODEL. Despite its legacy prefix, the service role key must never enter a frontend. Retain the configured model until separately changed. Tune page concurrency conservatively (default one), use the existing crawl delay/proxy settings, and verify merchant request policies. Keep staging credentials separate from the running crawler.
 
+Keep TLS certificate verification enabled. Merchant HTTP support no longer changes the process-wide TLS validation setting, which also affects authenticated OpenAI/Supabase requests. A certificate error must defer the fetch and retain prior catalog evidence; fix the site's certificate/trust chain instead of setting `NODE_TLS_REJECT_UNAUTHORIZED=0`.
+
 ## Staging migration and compatibility checks
 
 Review `supabase/migrations/20261006134031_catalog_refresh_v1.sql`. It adds source identity, title, currency precision, normalized availability/evidence, a catalog event outbox, image source cache, and transactional service-role-only RPCs. It was applied to the existing crawler catalog only after the later explicit authorization above; no repository command auto-applies it. Check target migration history before applying it to a different environment.

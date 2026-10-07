@@ -4,6 +4,18 @@ const cheerio = require('cheerio');
 const { canonicalProductUrl } = require('./catalogNormalization');
 function types(node) { return [node?.['@type']].flat().map(v => String(v).split('/').pop()); }
 function sameProduct(a, b) { try { return canonicalProductUrl(new URL(a, b).href) === canonicalProductUrl(b); } catch { return false; } }
+function offerVariantId(offer, sourceUrl) {
+  // A selector supplied by this product's offer identifies the variant even when
+  // the merchant omits SKU/name. Never infer it from AI output or another product.
+  if (offer.url && !sameProduct(offer.url, sourceUrl)) return null;
+  const existing = offer.sku || offer['@id'];
+  if (existing) return existing; // Keep identities already adopted from explicit identifiers.
+  if (offer.url) {
+    const selected = new URL(offer.url, sourceUrl).searchParams.getAll('variant');
+    if (selected.length === 1 && /^[1-9]\d{0,39}$/.test(selected[0])) return selected[0];
+  }
+  return null;
+}
 function structuredProduct(html, sourceUrl) {
   const $ = cheerio.load(html || '');
   const nodes = [];
@@ -53,7 +65,7 @@ function productAvailability(input = {}) {
   const product = structuredProduct(input.html, input.sourceUrl);
   if (product) {
     const offers = [product.offers || []].flat();
-    const variants = offers.filter(o => o && (!o.url || sameProduct(o.url, input.sourceUrl))).map(o => ({ source_id: o.sku || o['@id'] || null, title: o.name || null, state: schemaAvailability(o.availability), evidence: [{ source: 'product_jsonld_offer', availability: o.availability ?? null }], checkedAt }));
+    const variants = offers.filter(o => o && (!o.url || sameProduct(o.url, input.sourceUrl))).map(o => ({ source_id: offerVariantId(o,input.sourceUrl), title: o.name || null, state: schemaAvailability(o.availability), evidence: [{ source: 'product_jsonld_offer', url:o.url || null, availability: o.availability ?? null }], checkedAt }));
     return result(aggregateStates(variants.map(v => v.state)), 'product_scoped_structured_data', [{ source: 'product_jsonld', name: product.name }], variants);
   }
   const $ = cheerio.load(input.html || '');
@@ -72,4 +84,4 @@ function productAvailability(input = {}) {
   return result('unknown', 'product_stock_evidence_missing');
 }
 
-module.exports = { structuredProduct, schemaAvailability, aggregateStates, productAvailability, sameProduct };
+module.exports = { structuredProduct, schemaAvailability, aggregateStates, productAvailability, sameProduct, offerVariantId };

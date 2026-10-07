@@ -3,6 +3,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const {catalogDb} = require('./catalogDb');
 const {catalogPayload} = require('../src/productSaver');
+const {structuredExtraction} = require('../src/extraction');
+const {productAvailability} = require('../src/productEvidence');
 
 const owner = '11111111-1111-4111-8111-111111111111';
 const times = ['2026-10-06T14:00:00Z', '2026-10-06T14:01:00Z', '2026-10-06T14:02:00Z', '2026-10-06T14:03:00Z', '2026-10-06T14:04:00Z'];
@@ -31,6 +33,36 @@ async function newerVariant(pg) {
     currency='KWD', currency_exponent=3, price_raw='1.500', provenance=$3 where merchant_variant_id='v1'`,
     [times[2], [{source: 'newer_api_observation'}], {last_live_verification: 'newer_api_observation'}]);
 }
+
+test('same-label JSON-LD offers retain exact URL variant identities across reordered refreshes', async () => {
+  const pg = await catalogDb(), url = 'https://shop.test/products/coffee';
+  const offer = (id, price, stock='InStock') => ({url:url+'?variant='+id,price,priceCurrency:'NZD',availability:'https://schema.org/'+stock});
+  const make = (offers, checkedAt) => {
+    const html = `<script type="application/ld+json">${JSON.stringify({'@type':'Product',url,name:'Coffee',offers})}</script>`;
+    return catalogPayload(owner, structuredExtraction({url,html}, {success:false}).product, url, null,
+      productAvailability({sourceUrl:url,html,checkedAt}), checkedAt);
+  };
+  try {
+    await pg.query('insert into entities(id) values($1)', [owner]);
+    const initial = make([offer('11',18),offer('12',18,'OutOfStock'),offer('13',65)], times[0]);
+    assert.deepEqual(initial.variants.map(v=>v.merchant_variant_id), ['11','12','13']);
+    assert.equal(initial.variants_complete, false);
+    assert(initial.variants.every(v=>v.weight_g==null)); // Absent labels/weights are not inferred.
+    await pg.query('select save_catalog_product_v1($1)', [initial]);
+    const before = (await pg.query('select * from product_variants order by merchant_variant_id')).rows;
+    const refreshed = make([offer('13',66),offer('11',18),offer('12',18)], times[1]);
+    await pg.query('select save_catalog_product_v1($1)', [refreshed]);
+    const after = (await pg.query('select * from product_variants order by merchant_variant_id')).rows;
+    assert.equal(after.length,3);
+    assert.deepEqual(after.map(v=>v.id),before.map(v=>v.id));
+    assert.deepEqual(after.map(v=>v.created_at),before.map(v=>v.created_at));
+    assert.deepEqual(after.map(v=>v.price_minor_units),[1800,1800,6600]);
+    assert(after.every(v=>v.currency==='NZD'&&v.currency_exponent===2));
+    assert.equal(after[1].availability_state,'in_stock');
+    assert(after.every(v=>v.availability_evidence[0].source==='product_jsonld_offer'));
+    assert(after.every(v=>Date.parse(v.availability_checked_at)===Date.parse(times[1])));
+  } finally {await pg.close();}
+});
 
 test('identical native stock checks advance variant evidence and timestamps without outbox events', async () => {
   const {pg, payload, refresh, variant, eventCount} = await fixture();

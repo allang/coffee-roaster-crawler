@@ -75,3 +75,17 @@ test('explicit unknown variant currency does not inherit another offer currency 
  const {normalizeProduct}=require('../src/catalogNormalization');const p=normalizeProduct({name:'Coffee',variant_price_currency:'EUR',variants:[{title:'unknown',price:'12',currency:null},{title:'legacy',price:'12'}]},url);
  assert.equal(p.variants[0].money.currency,null);assert.equal(p.variants[0].money.minorUnits,null);assert.equal(p.variants[1].money.minorUnits,1200);
 });
+
+test('JSON-LD selector identity is product-scoped and conflicting duplicate offers remain rejected',()=>{
+ const {structuredExtraction}=require('../src/extraction'),{catalogPayload}=require('../src/productSaver');
+ const make=offers=>({url,html:`<script type="application/ld+json">${JSON.stringify({'@type':'Product',url,name:'Coffee',offers})}</script>`});
+ const offer={url:url+'?variant=11',price:18,priceCurrency:'NZD'};
+ const p=structuredExtraction(make([offer,{...offer,url:'https://other.test/products/coffee?variant=99'}]),null).product;
+ assert.deepEqual(p.variants.map(v=>v.source_id),['11']);
+ assert.equal(structuredExtraction(make([{...offer,sku:'sku-11'}]),null).product.variants[0].source_id,'sku-11');
+ assert.equal(structuredExtraction(make([{...offer,'@id':'offer-11'}]),null).product.variants[0].source_id,'offer-11');
+ const ambiguous=structuredExtraction(make([{...offer,url:url+'?variant=11&variant=12'}]),null).product;
+ assert.equal(ambiguous.variants[0].source_id,null);
+ const conflict=structuredExtraction(make([offer,{...offer,price:19,priceCurrency:'USD'}]),null).product;
+ assert.throws(()=>catalogPayload('11111111-1111-4111-8111-111111111111',conflict,url,null,null,new Date().toISOString()),/Duplicate source variant identity/);
+});

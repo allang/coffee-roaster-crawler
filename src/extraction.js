@@ -1,7 +1,7 @@
 'use strict';
 const cheerio = require('cheerio');
 const { stableKey } = require('./catalogNormalization');
-const { structuredProduct, sameProduct } = require('./productEvidence');
+const { structuredProduct, sameProduct, offerVariantId } = require('./productEvidence');
 const EXTRACTION_VERSION = 'extract-v1';
 const CACHE_TTL_MS = 7 * 86400_000;
 const ATTRIBUTES = ['origin_type','country_of_origin','origin_region','is_decaf','varietal','process','flavor_notes','grind_size_offered','altitude','brew_as','roast_darkness','producer','description','short_description','nano_description','harvest_date','product_image_url'];
@@ -38,7 +38,7 @@ function structuredExtraction(page, shopifyJson) {
     });
     const paired=!(v.currency || native.currency)&&matches.length===1&&matches[0].priceCurrency?matches[0]:null;
     return { source_id:v.id,title:v.title,price:paired?paired.price:v.price,currency:paired?paired.priceCurrency:v.currency || native.currency || null,price_source:paired?'jsonld_exact_variant_offer':'shopify_product_json',available:v.available,weight_g:v.weightGrams,sku:v.sku,locale:'en-US' };
-  }) : offers.map(o => ({ source_id:o.sku || o['@id'] || null, title:o.name || o.sku || 'default', price:o.price, currency:o.priceCurrency || null, availability:require('./productEvidence').schemaAvailability(o.availability), locale:'en-US', source_url:o.url }));
+  }) : offers.map(o => ({ source_id:offerVariantId(o,page.finalUrl || page.url), title:o.name || o.sku || 'default', price:o.price, currency:o.priceCurrency || null, availability:require('./productEvidence').schemaAvailability(o.availability), locale:'en-US', source_url:o.url }));
   const product = { name, attributes, variants, variant_prices:variants.map(v=>[v.title,v.price]), variant_price_currency:currency, description_html:descriptionHtml || null, description_raw:description || null, source_product_id:native?.id || schema?.productID || null, variants_complete:native?.variantsComplete===true };
   const coffee = /\b(?:coffee|roasted|espresso)\b/i.test(`${native?.productType || ''} ${schema?.category || ''} ${name} ${description}`) && !/\b(?:green coffee|rohkaffee|cascara|grinder|mug|equipment|gift card)\b/i.test(`${name} ${native?.productType || ''}`);
   // Skip semantic AI only when a source supplies the full attribute contract explicitly.
