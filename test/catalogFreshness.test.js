@@ -3,7 +3,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const {catalogDb} = require('./catalogDb');
 const {catalogPayload} = require('../src/productSaver');
-const {structuredExtraction} = require('../src/extraction');
+const {structuredExtraction, extractPage} = require('../src/extraction');
 const {productAvailability} = require('../src/productEvidence');
 
 const owner = '11111111-1111-4111-8111-111111111111';
@@ -33,6 +33,36 @@ async function newerVariant(pg) {
     currency='KWD', currency_exponent=3, price_raw='1.500', provenance=$3 where merchant_variant_id='v1'`,
     [times[2], [{source: 'newer_api_observation'}], {last_live_verification: 'newer_api_observation'}]);
 }
+
+test('fresh HTML-only fallback updates the same variant without promoting cached stock to fresh evidence', async () => {
+  const pg=await catalogDb(),url='https://shop.test/products/html-coffee',model='fixture-model';
+  const page=(price,button)=>({url,finalUrl:url,status:200,html:`<main><h1>Coffee</h1><p>Washed coffee beans</p><div class="price">$${price}</div><form id="product-form"><button>${button}</button></form></main>`,content:`Coffee $${price} ${button}`});
+  const classify=price=>async()=>({data:{is_coffee_page:true,product:{name:'Coffee',attributes:{process:'Washed'},variants:[{title:'250g',price,currency:'USD',available:true}]}}});
+  const payload=(extraction,p,checkedAt)=>catalogPayload(owner,extraction.data.product,url,null,productAvailability({sourceUrl:url,html:p.html,checkedAt}),checkedAt);
+  try {
+    await pg.query('insert into entities(id) values($1)',[owner]);
+    const firstPage=page('10','Add to cart'),initial=await extractPage({page:firstPage,classify:classify('10'),model,now:Date.parse(times[0])});
+    // A legacy v1 cache/row may already contain this unsupported availability.
+    initial.cache.product.variants[0].available=true;
+    const legacy={...initial,data:initial.cache};
+    await pg.query('select save_catalog_product_v1($1)',[payload(legacy,firstPage,times[0])]);
+    const before=(await pg.query('select * from product_variants')).rows[0];
+    assert.equal(before.availability_state,'in_stock');assert.equal(before.price_minor_units,1000);
+    const currentPage=page('20','Sold out');
+    const current=await extractPage({page:currentPage,cache:initial.cache,classify:classify('20'),model,now:Date.parse(times[1])});
+    await pg.query('select save_catalog_product_v1($1)',[payload(current,currentPage,times[1])]);
+    const rows=(await pg.query('select * from product_variants')).rows;
+    assert.equal(rows.length,1);assert.equal(rows[0].id,before.id);assert.deepEqual(rows[0].created_at,before.created_at);
+    assert.equal(rows[0].price_minor_units,2000);assert.equal(rows[0].currency,'USD');assert.equal(rows[0].availability_state,'unknown');
+    assert.equal(Date.parse(rows[0].availability_checked_at),Date.parse(times[1]));
+    assert.equal((await pg.query('select availability_state from products')).rows[0].availability_state,'sold_out');
+    assert.equal((await pg.query('select count(*)::int n from catalog_change_events')).rows[0].n,2);
+    const again=await extractPage({page:currentPage,cache:current.cache,classify:classify('20'),model,now:Date.parse(times[2])});
+    await pg.query('select save_catalog_product_v1($1)',[payload(again,currentPage,times[2])]);
+    assert.equal((await pg.query('select count(*)::int n from catalog_change_events')).rows[0].n,2);
+    assert.equal(Date.parse((await pg.query('select availability_checked_at from product_variants')).rows[0].availability_checked_at),Date.parse(times[2]));
+  } finally {await pg.close();}
+});
 
 test('same-label JSON-LD offers retain exact URL variant identities across reordered refreshes', async () => {
   const pg = await catalogDb(), url = 'https://shop.test/products/coffee';

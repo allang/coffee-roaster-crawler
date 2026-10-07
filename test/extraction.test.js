@@ -89,3 +89,54 @@ test('JSON-LD selector identity is product-scoped and conflicting duplicate offe
  const conflict=structuredExtraction(make([offer,{...offer,price:19,priceCurrency:'USD'}]),null).product;
  assert.throws(()=>catalogPayload('11111111-1111-4111-8111-111111111111',conflict,url,null,null,new Date().toISOString()),/Duplicate source variant identity/);
 });
+
+function unstructuredPage(price,stock,withSchema=false) {
+ const schema=withSchema?`<script type="application/ld+json">${JSON.stringify({'@type':'Product',url,name:'Coffee',category:'coffee',description:'Coffee beans'})}</script>`:'';
+ return {url,finalUrl:url,status:200,html:`<title>Coffee</title><main><h1>Coffee</h1><p>Coffee beans</p><div class="price">$${price}</div><form id="product-form"><button>${stock}</button></form></main>${schema}`,content:`Coffee beans $${price} ${stock}`};
+}
+test('HTML-only coffee re-extracts current prices instead of refreshing cached market values',async()=>{
+ const {catalogPayload}=require('../src/productSaver'),{productAvailability}=require('../src/productEvidence');
+ const make=price=>({data:{is_coffee_page:true,product:{name:'Coffee',attributes:{process:'Washed'},variants:[{title:'250g',price,currency:'USD',available:true}]}}});
+ const initial=await extractPage({page:unstructuredPage('10','Add to cart'),classify:async()=>make('10'),model,now});
+ // Simulate the installed v1 cache, including its unsupported stock claim.
+ initial.cache.product.variants[0].available=true;
+ let calls=0;const current=unstructuredPage('20','Sold out');
+ const result=await extractPage({page:current,cache:initial.cache,classify:async()=>{calls++;return make('20');},model,now:now+60000});
+ assert.equal(result.semanticHash,initial.semanticHash);assert.equal(result.mode,'ai');assert.equal(calls,1);assert.equal(result.aiCalls,1);
+ const checkedAt=new Date(now+60000).toISOString();
+ const payload=catalogPayload('11111111-1111-4111-8111-111111111111',result.data.product,url,null,productAvailability({sourceUrl:url,html:current.html,checkedAt}),checkedAt);
+ assert.equal(payload.variants[0].price_minor_units,2000);assert.equal(payload.variants[0].currency,'USD');
+ assert.equal(payload.product.availability_state,'sold_out');assert.equal(payload.variants[0].availability_state,'unknown');
+ assert.equal(payload.variants[0].availability_checked_at,checkedAt);assert.equal(result.data.product.attributes.process,'Washed');
+});
+test('named structured products without offers cannot reuse cached variant, legacy-pair or default prices',async()=>{
+ const {normalizeProduct}=require('../src/catalogNormalization');
+ const shapes=[price=>({variants:[{title:'250g',price,currency:'USD',available:true,id:'invented'}]}),price=>({variant_prices:[['250g',price]],variant_price_currency:'USD'}),price=>({default_price:price,variant_price_currency:'USD'})];
+ for(const shape of shapes) {
+  const classify=price=>async()=>({data:{is_coffee_page:true,product:{name:'Coffee',...shape(price),source_product_id:'invented',variants_complete:true}}});
+  const initial=await extractPage({page:unstructuredPage('10','Add to cart',true),classify:classify('10'),model,now});
+  const result=await extractPage({page:unstructuredPage('20','Sold out',true),cache:initial.cache,classify:classify('20'),model,now:now+60000});
+  assert.equal(result.semanticHash,initial.semanticHash);assert.equal(result.mode,'ai');assert.equal(result.aiCalls,1);
+  const variant=normalizeProduct(result.data.product,url).variants[0];
+  assert.equal(variant.money.minorUnits,2000);assert.equal(variant.availability,'unknown');assert.equal(variant.source_id,null);
+  assert.equal(result.data.product.variants_complete,false);assert.equal(result.data.product.source_product_id,null);
+ }
+});
+test('failed current market fallback cannot return a stale cached product as successful extraction',async()=>{
+ const initial=await extractPage({page:unstructuredPage('10','Add to cart'),classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',variant_prices:[['250g','10']],variant_price_currency:'USD'}}}),model,now});
+ const result=await extractPage({page:unstructuredPage('20','Sold out'),cache:initial.cache,classify:async()=>({error:'fixture extraction failure',aiCalls:1}),model,now:now+60000});
+ assert.equal(result.error,'fixture extraction failure');assert.equal(result.data,undefined);assert.equal(result.cache,undefined);assert.equal(result.aiCalls,1);
+});
+test('a complete semantic attribute contract still needs fresh fallback when current offers are absent',async()=>{
+ const initial=await extractPage({page:page(),classify:async()=>{throw Error('Unexpected AI');},model,now});
+ const current=page();const json=current.html.match(/<script type="application\/ld\+json">(.*?)<\/script>/)[1],schema=JSON.parse(json);
+ delete schema.offers;current.html=current.html.replace(json,JSON.stringify(schema)).replace('</main>','<div class="price">$20</div></main>');
+ const result=await extractPage({page:current,cache:initial.cache,classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',variants:[{title:'250g',price:'20',currency:'USD',available:true}]}}}),model,now:now+60000});
+ assert.equal(result.semanticHash,initial.semanticHash);assert.equal(result.structured.complete,true);assert.equal(result.mode,'ai');assert.equal(result.aiCalls,1);
+ assert.equal(result.data.product.variants[0].price,'20');assert.equal(result.data.product.variants[0].availability,'unknown');
+});
+test('irrelevant pages retain semantic cache reuse without a structured variant overlay',async()=>{
+ const initial=await extractPage({page:unstructuredPage('10','Add to cart'),classify:async()=>({data:{is_product:false,is_coffee_page:false}}),model,now});
+ const result=await extractPage({page:unstructuredPage('20','Sold out'),cache:initial.cache,classify:async()=>{throw Error('Unexpected AI');},model,now:now+60000});
+ assert.equal(result.mode,'cache');assert.equal(result.aiCalls,0);assert.equal(result.data.is_coffee_page,false);
+});

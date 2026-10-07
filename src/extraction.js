@@ -55,11 +55,13 @@ function semanticHash(page, structured) {
   return stableKey(structured.semantic,$('title').text(),$('body').text().replace(/\s+/g,' ').trim());
 }
 function mergeSourceProduct(extracted, structured) {
-  if (!structured.product) {
-    const result={...extracted,source_product_id:null,variants_complete:false};
-    if(Array.isArray(result.variants))result.variants=result.variants.map(v=>({...v,source_id:null,id:null}));
-    return result;
+  if (!structured.product?.variants?.length) {
+    // Fresh AI can extract price text, but cannot prove a native identity,
+    // complete inventory or exact variant stock without current source evidence.
+    extracted={...extracted,source_product_id:null,variants_complete:false};
+    if(Array.isArray(extracted.variants))extracted.variants=extracted.variants.map(v=>({...v,source_id:null,id:null,available:null,availability:'unknown'}));
   }
+  if (!structured.product) return extracted;
   const source = structured.product;
   const merged = { ...extracted, ...Object.fromEntries(Object.entries(source).filter(([k,v]) => v != null && !(Array.isArray(v) && v.length===0))), attributes:{ ...(extracted.attributes || {}), ...source.attributes } };
   // A native endpoint lacking currency cannot turn an inferred currency into a fact.
@@ -75,9 +77,13 @@ async function extractPage({ page, shopifyJson, cache, classify, model, now = Da
   const prior = cache?._extraction;
   let data, mode, usage = null, aiCalls = 0;
   const age = now-Date.parse(prior?.extracted_at);
-  if (prior?.version===EXTRACTION_VERSION && prior.model===model && prior.semantic_hash===hash && age>=0 && age<CACHE_TTL_MS && validClassification(cache)) {
+  const hasCurrentVariants = structured.product?.variants?.length > 0;
+  // HTML price/stock changes intentionally do not invalidate semanticHash. A
+  // coffee cache is safe only when live variants replace its market fields.
+  const canReuseCache = cache?.is_coffee_page!==true || hasCurrentVariants;
+  if (canReuseCache && prior?.version===EXTRACTION_VERSION && prior.model===model && prior.semantic_hash===hash && age>=0 && age<CACHE_TTL_MS && validClassification(cache)) {
     data = { ...cache }; delete data._extraction; mode='cache';
-  } else if (structured.complete) {
+  } else if (structured.complete && hasCurrentVariants) {
     data = { is_product:true,is_coffee_page:true,product:structured.product }; mode='structured';
   } else {
     const response = await classify(page.content, page.url);
