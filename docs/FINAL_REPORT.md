@@ -1,6 +1,6 @@
 # Every Coffee implementation handoff — 2026-10-06
 
-All three authorized code workstreams are complete on pushed review branches. They remain unmerged and undeployed. No production migration, running-crawler replacement, live purchase worker or real purchase occurred. The original issue remains the authoritative goal: https://github.com/allang/coffee-roaster-crawler/issues/1.
+All three original code workstreams were completed on pushed review branches without deployment. The user later separately authorized a local crawler pause/update/run and its required catalog migration on 2026-10-06 EDT: that migration is now applied and the reviewed crawler release installed, with a matched first/cached benchmark in progress before resuming the existing schedule. See [WORK_LOG.md](../WORK_LOG.md) for this later action and results as available. The implementation evidence below describes the original pre-rollout handoff. PRs remain unmerged; API/service deployment, live purchase workers and real purchases remain outside the new local crawler authorization. The original issue remains the authoritative goal: https://github.com/allang/coffee-roaster-crawler/issues/1.
 
 ## Repositories, review and tested source commits
 

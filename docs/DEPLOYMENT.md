@@ -1,6 +1,8 @@
-# Crawler deployment preparation — no deployment performed
+# Crawler rollout and deployment instructions
 
-The current Mac Mini crawler, launch agents, locks, logs and credentials are untouched. Do not run `index.js` or `run-crawler.sh` from the review checkout against production. This document describes a **future separately authorized** rollout; creating this PR does not authorize it.
+The original review preparation did not authorize production changes. On 2026-10-06 EDT the user separately authorized a temporary local crawler pause/update/run and its required catalog migration. Migration `20261006134031` is now applied and recorded in the crawler's production catalog; reviewed release `f96b06d23239a22a3e4d1de0ef6bc796ee927298` is installed in the original Mac checkout. A matched ten-roaster first/cached benchmark is in progress before resuming its existing launch schedule. See [WORK_LOG.md](../WORK_LOG.md) for preservation, exact permission/schema checks and results as they become available. Do not reapply that recorded migration to this catalog.
+
+The instructions below remain the preparation/reference gates for another environment or future rollout. Creating the PR alone never authorizes deployment. API/service deployment, purchase-worker activation and real purchases remain outside this local crawler authorization.
 
 ## Prerequisites and local verification
 
@@ -12,7 +14,7 @@ Required server-only staging variables follow `.env.example`: NEXT_PUBLIC_SUPABA
 
 ## Staging migration and compatibility checks
 
-Review `supabase/migrations/20261006134031_catalog_refresh_v1.sql`. It adds source identity, title, currency precision, normalized availability/evidence, a catalog event outbox, image source cache, and transactional service-role-only RPCs. This migration is **not applied to production** and no command auto-applies it.
+Review `supabase/migrations/20261006134031_catalog_refresh_v1.sql`. It adds source identity, title, currency precision, normalized availability/evidence, a catalog event outbox, image source cache, and transactional service-role-only RPCs. It was applied to the existing crawler catalog only after the later explicit authorization above; no repository command auto-applies it. Check target migration history before applying it to a different environment.
 
 After separately authorizing staging setup, use the Supabase CLI appropriate to that project to apply the reviewed migration. Verify it against the actual schema, not only the test fixture. Inspect advisors, existing grants and RLS policies. New internal outbox/cache tables have RLS and no anon/authenticated access; public RPC execution is revoked and granted only to service_role. RPCs use SECURITY INVOKER. Do not grant public execution to work around a permission error.
 
@@ -28,7 +30,7 @@ Verify these gates on staging:
 
 ## Future rollout, monitoring and rollback
 
-Only after explicit rollout authorization, a passing staging comparison and PR review should an operator choose a maintenance window, back up catalog/schema, snapshot the running source/launch configuration, and point the existing launcher at the reviewed release. Stop/swap/restart actions are intentionally not included in this run. Leave Mac Mini ownership and current scheduling intact until that decision.
+For a future rollout, obtain explicit authorization, compare staging and review findings, back up catalog/schema, and snapshot running source/launch configuration before pointing the existing launcher at the reviewed release. The separately authorized 2026-10-06 local rollout and benchmark are recorded in WORK_LOG.md; they do not authorize additional deployment actions. Preserve Mac Mini ownership and scheduling when resuming it.
 
 Measure the same merchant/product cohort before and after: origin/process/variety/notes/weight/price coverage, exact stock checks, elapsed crawl time, request counts, real API tokens, errors, cache hits, DB changes and image downloads. Inspect `crawl_runs.meta.extraction` and distinguish unreported retry usage. Alert on rising unknown currency/stock, missing RPCs, adoption conflicts and partial inventories. Do not compare only completely structured products.
 
