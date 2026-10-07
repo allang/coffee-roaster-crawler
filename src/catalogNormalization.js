@@ -2,6 +2,7 @@
 
 const crypto = require('node:crypto');
 const { parseWeightGrams } = require('./product-value-parsers.cjs');
+const {PROCESSING_VERSION,processingForProduct}=require('./coffeeProcessing');
 const CURRENCIES = new Set(Intl.supportedValuesOf('currency'));
 const SYMBOLS = { '€': 'EUR', '£': 'GBP', 'Kč': 'CZK', '₩': 'KRW', '₹': 'INR', '₽': 'RUB', '₺': 'TRY', '₫': 'VND', '₪': 'ILS', '₴': 'UAH', '₦': 'NGN', 'S$': 'SGD', 'CA$': 'CAD', 'C$': 'CAD', 'A$': 'AUD', 'AU$': 'AUD', 'US$': 'USD', 'NZ$': 'NZD' };
 const NORMALIZATION_VERSION = 'coffee-v1';
@@ -121,7 +122,8 @@ function stableUuid(...parts) {
 }
 
 function normalizeProduct(product, sourceUrl) {
-  const attributes = product.attributes || {};
+  const processing=product._processing?.version===PROCESSING_VERSION?product._processing:processingForProduct(product);
+  const attributes = {...(product.attributes || {}),process:processing.process,process_methods:processing.process_methods,is_coferment:processing.is_coferment,coferment_ingredients:processing.coferment_ingredients};
   const variants = product.variants || (product.variant_prices || []).map(([title, price]) => ({ title, price }));
   if (!variants.length && product.default_price != null) variants.push({ title: 'default', price: product.default_price });
   const normalized = variants.map(v => ({
@@ -130,7 +132,7 @@ function normalizeProduct(product, sourceUrl) {
     money: parseMoney(v.price, { currency: Object.hasOwn(v,'currency') ? v.currency : product.variant_price_currency, locale: v.locale || product.price_locale }),
     availability: v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : v.availability || 'unknown',
   }));
-  return { ...product, original_title: product.original_title || product.name, display_title: displayTitle(product.name, attributes), variants: normalized,
+  return { ...product,attributes,processing, original_title: product.original_title || product.name, display_title: displayTitle(product.name, attributes), variants: normalized,
     normalization_version: NORMALIZATION_VERSION, source_url: canonicalProductUrl(sourceUrl), tasting_notes: tastingNotes(attributes.flavor_notes) };
 }
 

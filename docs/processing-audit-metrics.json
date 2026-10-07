@@ -1,0 +1,114 @@
+{
+  "captured_at": "2026-10-07T14:53:12.116Z",
+  "selection": "latest 1000 coffee products by created_at DESC, id DESC; non-atomic read-only capture",
+  "source_counts": {
+    "coffee_products": 131464,
+    "active_coffee_products": 131464,
+    "variants": 174165,
+    "null_process_facts": 71809
+  },
+  "counts": {
+    "coffees": 1000,
+    "roasters": 57,
+    "missing_process": 665,
+    "process_candidates_from_retained_source": 0,
+    "coferment_disclosed_in_retained_source": 1,
+    "coferment_ingredients_disclosed": 0,
+    "missing_origin": 337,
+    "process_field_disagreements": 0,
+    "variants": 1858,
+    "money_complete": 1442,
+    "money_incomplete": 416,
+    "money_arithmetic_mismatch": 0,
+    "money_currency_precision_mismatch": 0,
+    "coffees_with_review_flags": 791
+  },
+  "estimates": [
+    {
+      "coffees": 1000,
+      "usd_low": 3.125,
+      "usd_high": 8.75,
+      "model": "gpt-5-mini",
+      "calls_per_coffee": 1,
+      "retry_reserve": 0.25,
+      "input_tokens_per_coffee": [
+        2000,
+        4000
+      ],
+      "billed_output_tokens_per_coffee": [
+        1000,
+        3000
+      ],
+      "rates_usd_per_million": {
+        "input": 0.25,
+        "output": 2
+      },
+      "pricing_checked": "2026-10-07",
+      "pricing_url": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+      "assumption": "uncached one-call-per-product re-extraction; not a hard spending cap; excludes proxy/bandwidth/runtime/human review"
+    },
+    {
+      "coffees": 10000,
+      "usd_low": 31.25,
+      "usd_high": 87.5,
+      "model": "gpt-5-mini",
+      "calls_per_coffee": 1,
+      "retry_reserve": 0.25,
+      "input_tokens_per_coffee": [
+        2000,
+        4000
+      ],
+      "billed_output_tokens_per_coffee": [
+        1000,
+        3000
+      ],
+      "rates_usd_per_million": {
+        "input": 0.25,
+        "output": 2
+      },
+      "pricing_checked": "2026-10-07",
+      "pricing_url": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+      "assumption": "uncached one-call-per-product re-extraction; not a hard spending cap; excludes proxy/bandwidth/runtime/human review"
+    },
+    {
+      "coffees": 131464,
+      "usd_low": 410.825,
+      "usd_high": 1150.31,
+      "model": "gpt-5-mini",
+      "calls_per_coffee": 1,
+      "retry_reserve": 0.25,
+      "input_tokens_per_coffee": [
+        2000,
+        4000
+      ],
+      "billed_output_tokens_per_coffee": [
+        1000,
+        3000
+      ],
+      "rates_usd_per_million": {
+        "input": 0.25,
+        "output": 2
+      },
+      "pricing_checked": "2026-10-07",
+      "pricing_url": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+      "assumption": "uncached one-call-per-product re-extraction; not a hard spending cap; excludes proxy/bandwidth/runtime/human review"
+    }
+  ],
+  "model_calls": 0,
+  "database_writes": 0,
+  "limits": [
+    "Retained source proposals require source review before correction; no automatic apply mode.",
+    "Field presence, quoted disclosures and money arithmetic do not prove current merchant prices or correct origin.",
+    "A recent non-atomic sample is not representative of the full catalog."
+  ],
+  "fresh_source_check": {
+    "selected_candidates_per_round": 4,
+    "verification_rounds": 2,
+    "merchant_get_requests": 4,
+    "valid_product_json_responses": 4,
+    "distinct_products_checked": 2,
+    "unsupported_url_shapes_skipped_per_round": 2,
+    "ai_calls": 0,
+    "database_writes": 0
+  }
+}

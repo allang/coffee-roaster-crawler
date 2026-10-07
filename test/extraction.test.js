@@ -27,9 +27,10 @@ test('fresh price/stock overlays preserve cached semantics; content/version/mode
 test('partial structured data falls back to AI without losing full coffee attribute coverage',async()=>{
   const p=page();p.html=p.html.replace(/"additionalProperty":\[[\s\S]*?\],"offers"/, '"offers"');
   const attributes=Object.fromEntries(ATTRIBUTES.map(k=>[k,`source-${k}`]));
+  Object.assign(attributes,{process:'Anaerobic Natural',process_methods:['natural','anaerobic'],is_coferment:null,coferment_ingredients:[]});
   const r=await extractPage({page:p,classify:async()=>({data:{is_coffee_page:true,product:{name:'Original',attributes}},usage:{prompt_tokens:50,completion_tokens:10},aiCalls:1}),model,now});
   assert.equal(r.mode,'ai');assert.equal(r.aiCalls,1);assert.equal(r.usage.prompt_tokens,50);
-  for(const k of ATTRIBUTES.filter(k=>k!=='description')) assert.equal(r.data.product.attributes[k],attributes[k]);
+  for(const k of ATTRIBUTES.filter(k=>k!=='description')) assert.deepEqual(r.data.product.attributes[k],attributes[k]);
   assert.equal(r.data.product.name,'COFFEE');assert.equal(r.data.product.variants[0].currency,'EUR');
 });
 test('native Shopify data preserves exact IDs/stock/weights and never defaults currency',async()=>{
@@ -139,4 +140,26 @@ test('irrelevant pages retain semantic cache reuse without a structured variant 
  const initial=await extractPage({page:unstructuredPage('10','Add to cart'),classify:async()=>({data:{is_product:false,is_coffee_page:false}}),model,now});
  const result=await extractPage({page:unstructuredPage('20','Sold out'),cache:initial.cache,classify:async()=>{throw Error('Unexpected AI');},model,now:now+60000});
  assert.equal(result.mode,'cache');assert.equal(result.aiCalls,0);assert.equal(result.data.is_coffee_page,false);
+});
+
+test('current own-product processing survives the classifier input truncation',async()=>{
+ const {catalogPayload}=require('../src/productSaver');
+ const native={id:'1',title:'Coffee',currency:'USD',description:'<p>'+('Coffee story. '.repeat(650))+'</p><p>Process: Anaerobic Natural</p><p>This coffee is co-fermented with watermelon.</p>',variants:[{id:'11',title:'250g',price:'20',available:true}]};
+ const p={url,html:'<main><h1>Coffee</h1></main>',content:'Coffee story. '.repeat(400).slice(0,6000),status:200};
+ const result=await extractPage({page:p,shopifyJson:{success:true,data:native},classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',attributes:{process:null,flavor_notes:['Watermelon']}}}}),model,now});
+ const payload=catalogPayload('11111111-1111-4111-8111-111111111111',result.data.product,url,null,null,new Date(now).toISOString());
+ assert.equal(payload.facts.process,'Anaerobic Natural');assert.deepEqual(payload.facts.process_methods,['natural','anaerobic']);
+ assert.equal(payload.facts.is_coferment,true);assert.deepEqual(payload.facts.coferment_ingredients,['watermelon']);
+});
+test('null structured processing cannot erase a fresh explicit AI process claim',async()=>{
+ const schema={'@type':'Product',url,name:'Coffee',additionalProperty:[{name:'process',value:null}],offers:{price:20,priceCurrency:'USD'}};
+ const p={url,html:`<main><h1>Coffee</h1><p>Process: Washed</p></main><script type="application/ld+json">${JSON.stringify(schema)}</script>`,content:'Coffee. Process: Washed'};
+ const r=await extractPage({page:p,classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',attributes:{process:'Washed'}}}}),model,now});
+ assert.equal(r.data.product.attributes.process,'Washed');
+});
+test('current product attributes outside a short schema description supplement extraction',async()=>{
+ const schema={'@type':'Product',url,name:'Coffee',description:'Coffee beans',offers:{price:20,priceCurrency:'USD'}};
+ const p={url,html:`<main><h1>Coffee</h1><table class="woocommerce-product-attributes"><tr><td>Process</td><td>Anaerobic Natural</td></tr></table></main><script type="application/ld+json">${JSON.stringify(schema)}</script>`,content:'Coffee beans'};
+ const r=await extractPage({page:p,classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',attributes:{process:null}}}}),model,now});
+ assert.equal(r.data.product.attributes.process,'Anaerobic Natural');assert.deepEqual(r.data.product.attributes.process_methods,['natural','anaerobic']);
 });

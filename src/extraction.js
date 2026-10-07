@@ -2,10 +2,11 @@
 const cheerio = require('cheerio');
 const { stableKey } = require('./catalogNormalization');
 const { structuredProduct, sameProduct, offerVariantId } = require('./productEvidence');
-const EXTRACTION_VERSION = 'extract-v1';
+const {processingForProduct,scopedDescription}=require('./coffeeProcessing');
+const EXTRACTION_VERSION = 'extract-v2-processing';
 const CACHE_TTL_MS = 7 * 86400_000;
-const ATTRIBUTES = ['origin_type','country_of_origin','origin_region','is_decaf','varietal','process','flavor_notes','grind_size_offered','altitude','brew_as','roast_darkness','producer','description','short_description','nano_description','harvest_date','product_image_url'];
-const PROPERTY_ALIASES = { origin:'country_of_origin', country:'country_of_origin', region:'origin_region', variety:'varietal', processing:'process', processing_method:'process', tasting_notes:'flavor_notes', roast_level:'roast_darkness', elevation:'altitude', decaf:'is_decaf' };
+const ATTRIBUTES = ['origin_type','country_of_origin','origin_region','is_decaf','varietal','process','process_methods','is_coferment','coferment_ingredients','flavor_notes','grind_size_offered','altitude','brew_as','roast_darkness','producer','description','short_description','nano_description','harvest_date','product_image_url'];
+const PROPERTY_ALIASES = { origin:'country_of_origin', country:'country_of_origin', region:'origin_region', variety:'varietal', processing:'process', processing_method:'process', coffee_processing:'process', proceso:'process', aufbereitung:'process', co_ferment:'is_coferment', co_fermentation:'is_coferment', coferment:'is_coferment', processing_methods:'process_methods', tasting_notes:'flavor_notes', roast_level:'roast_darkness', elevation:'altitude', decaf:'is_decaf' };
 function stripHtml(html) { const $ = cheerio.load(html || ''); return $.text().replace(/\s+/g,' ').trim(); }
 
 function structuredExtraction(page, shopifyJson) {
@@ -63,7 +64,7 @@ function mergeSourceProduct(extracted, structured) {
   }
   if (!structured.product) return extracted;
   const source = structured.product;
-  const merged = { ...extracted, ...Object.fromEntries(Object.entries(source).filter(([k,v]) => v != null && !(Array.isArray(v) && v.length===0))), attributes:{ ...(extracted.attributes || {}), ...source.attributes } };
+  const merged = { ...extracted, ...Object.fromEntries(Object.entries(source).filter(([k,v]) => v != null && !(Array.isArray(v) && v.length===0))), attributes:{ ...(extracted.attributes || {}), ...Object.fromEntries(Object.entries(source.attributes).filter(([,v])=>v!=null)) } };
   // A native endpoint lacking currency cannot turn an inferred currency into a fact.
   merged.source_product_id=source.source_product_id || null;
   if (source.variants?.length) merged.variant_price_currency = source.variant_price_currency;
@@ -92,7 +93,15 @@ async function extractPage({ page, shopifyJson, cache, classify, model, now = Da
     if (!validClassification(response.data)) return { error:'Invalid extraction classification',mode:'ai',aiCalls,semanticHash:hash,usage:response.usage };
     data = response.data; usage=response.usage || null; mode='ai';
   }
-  if (data.product) data = { ...data,product:mergeSourceProduct(data.product,structured) };
+  if (data.product) {
+    const product=mergeSourceProduct(data.product,structured);
+    // Rebuild processing from the current product's untruncated native/schema or
+    // scoped description, even when the semantic classification was cached.
+    const sourceText=[structured.product?.description_html,scopedDescription(page.html)].filter(Boolean).join('\n');
+    product._processing=processingForProduct(product,{sourceText:sourceText||undefined,sourceAttributes:structured.product?.attributes,title:structured.product?.name,source:shopifyJson?.success?'shopify_product_description':'product_scoped_description'});
+    product.attributes={...(product.attributes||{}),process:product._processing.process,process_methods:product._processing.process_methods,is_coferment:product._processing.is_coferment,coferment_ingredients:product._processing.coferment_ingredients};
+    data={...data,product};
+  }
   const extraction = { version:EXTRACTION_VERSION,model,semantic_hash:hash,extracted_at:mode==='cache' ? prior.extracted_at : new Date(now).toISOString(),last_market_checked_at:new Date(now).toISOString(),mode,usage };
   return { data,mode,aiCalls,usage,semanticHash:hash,cache:{ ...data,_extraction:extraction },structured };
 }

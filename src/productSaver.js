@@ -48,14 +48,15 @@ function catalogPayload(entityId, product, sourceUrl, existing, availability, no
   });
   if(new Set(variants.map(v=>v.source_key)).size!==variants.length) throw new Error('Duplicate source variant identity');
   const notes=normalized.tasting_notes;
+  const processingEvidence={...normalized.processing.evidence,source_url:retrievalUrl(sourceUrl)};
   const productAvailability=availability ? {...availability,state:availability.state || (availability.isAvailable===true?'in_stock':availability.isAvailable===false?'sold_out':'unknown')} : {state:'unknown',isAvailable:null,reason:'not_checked',evidence:[]};
   return { product:{id,entity_id:entityId,slug:existing?.slug || `${generateSlug(normalized.original_title)}-${sourceKey.slice(0,10)}`,source_url:retrievalUrl(sourceUrl),source_key:sourceKey,
     adopted_source_url:existing?.source_url || null,original_title:normalized.original_title,display_title:normalized.display_title,name:normalized.original_title,
     description_html:normalized.description_html || null,description_raw:normalized.description_raw || null,
-    metadata:{...attrs,_normalization:{version:normalized.normalization_version,tasting_notes:notes,source_product_id:normalized.source_product_id || null,canonical_source_url:normalized.source_url}},
+    metadata:{...attrs,is_coferment:normalized.processing.is_coferment,_normalization:{version:normalized.normalization_version,tasting_notes:notes,processing:processingEvidence,source_product_id:normalized.source_product_id || null,canonical_source_url:normalized.source_url}},
     availability_state:productAvailability.state,availability_reason:productAvailability.reason,availability_evidence:productAvailability.evidence || [],checked_at:now},
     variants,variants_complete:normalized.variants_complete===true,
-    facts:{process:attrs.process || attrs.processing_method || null,variety:attrs.varietal || null,roast_level:attrs.roast_darkness || null,decaf:typeof attrs.is_decaf==='boolean'?attrs.is_decaf:null,
+    facts:{process:normalized.processing.process,process_methods:normalized.processing.process_methods,is_coferment:normalized.processing.is_coferment,coferment_ingredients:normalized.processing.coferment_ingredients,processing_evidence:processingEvidence,variety:attrs.varietal || null,roast_level:attrs.roast_darkness || null,decaf:typeof attrs.is_decaf==='boolean'?attrs.is_decaf:null,
       elevation_m:/^\d+(?:\s*(?:m|masl))?$/i.test(String(attrs.altitude || ''))?parseInt(attrs.altitude):null,tasting_notes_raw:Array.isArray(notes.source)?notes.source.join(', '):typeof notes.source==='string'?notes.source:null} };
 }
 async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
@@ -64,7 +65,7 @@ async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   const canonical=canonicalProductUrl(sourceUrl), key=productSourceKey(entityId,productData,sourceUrl);
   const existing=await findExistingProduct(db,entityId,canonical,key);
   const payload=catalogPayload(entityId,productData,sourceUrl,existing,options.availability,options.checkedAt || new Date().toISOString());
-  const {data,error}=await db.rpc('save_catalog_product_v1',{payload});
+  const {data,error}=await db.rpc('save_catalog_product_v2',{payload});
   if(error) throw error; // No destructive legacy fallback if migration is absent.
   const productId=data?.product_id;
   if(!productId) throw new Error('Catalog transaction returned no product ID');

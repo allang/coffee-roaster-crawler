@@ -64,6 +64,9 @@ function buildPrompt(content) {
             "is_decaf": false,
             "varietal": "Wush Wush",
             "process": "Washed",
+            "process_methods": ["washed"],
+            "is_coferment": null,
+            "coferment_ingredients": [],
             "flavor_notes": ["Blueberry", "Vanilla", "Cotton Candy"],
             "grind_size_offered": ["whole bean", "espresso"],
             "altitude": "1500masl",
@@ -85,6 +88,9 @@ Rules:
 - When there are no variant prices, return an empty array
 - Use the clues on the page to determine the variant_price_currency, using explicit ISO codes or unambiguous symbols. Ambiguous $/¥ and missing currency must be null; never infer USD or currency from language/TLD.
 - The origin_type can be Single Origin or Blend.
+- Record the full source processing phrase in process, including natural/washed/honey and fermentation details such as anaerobic, carbonic maceration or thermal shock. Do not collapse "anaerobic natural" to only "natural". process_methods is an array of explicitly reported methods; missing process is null and missing methods are [].
+- is_coferment is true only when this coffee explicitly discloses co-fermentation, false only when it explicitly says it is not co-fermented, and null when undisclosed. Anaerobic/natural processing, yeast inoculation, infusion and fruity tasting notes alone do not establish co-fermentation. coferment_ingredients lists only materials explicitly added during this coffee's disclosed co-fermentation; tasting notes are not ingredients. Unknown ingredients are []. Preserve source wording.
+- Extract origin and processing only for this product, not related coffees, the roaster's address or navigation. Keep blends/multiple origins explicit; do not guess a producing country from the merchant's location, language, domain or coffee variety.
 - The "brew_as" field must be null unless the product page specifies the brew method or type. All types are: Espresso, Filter, and Cold Brew.
 - Some values will not be found on the page. Mark them as null instead of using a blank string.
 - For "short_description", summarize the roaster's description. Limit the description to 400 chars.
