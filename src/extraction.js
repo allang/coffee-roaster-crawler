@@ -3,6 +3,7 @@ const cheerio = require('cheerio');
 const { stableKey } = require('./catalogNormalization');
 const { structuredProduct, sameProduct, offerVariantId, primaryShopifyPreorders } = require('./productEvidence');
 const {processingForProduct,scopedDescription}=require('./coffeeProcessing');
+const {primaryProductImage}=require('./productImages');
 const EXTRACTION_VERSION = 'extract-v2-processing';
 const CACHE_TTL_MS = 7 * 86400_000;
 const ATTRIBUTES = ['origin_type','country_of_origin','origin_region','is_decaf','varietal','process','process_methods','is_coferment','coferment_ingredients','flavor_notes','grind_size_offered','altitude','brew_as','roast_darkness','producer','description','short_description','nano_description','harvest_date','product_image_url'];
@@ -12,16 +13,16 @@ function stripHtml(html) { const $ = cheerio.load(html || ''); return $.text().r
 function structuredExtraction(page, shopifyJson) {
   const schema = page.sourceProduct || structuredProduct(page.html, page.finalUrl || page.url);
   const native = shopifyJson?.success ? shopifyJson.data : null;
+  const image=primaryProductImage({html:page.html,url:page.finalUrl || page.url,sourceProduct:schema,native});
   const name = native?.title || schema?.name;
-  if (!name) return { product:null, complete:false, semantic:null };
+  if (!name) return { product:null, complete:false, semantic:null,image };
   const attributes = {};
   for (const p of [schema?.additionalProperty || []].flat()) {
     const key = String(p?.name || p?.propertyID || '').trim().toLowerCase().replace(/[\s-]+/g,'_');
     const mapped = PROPERTY_ALIASES[key] || key;
     if (ATTRIBUTES.includes(mapped)) attributes[mapped] = p.value;
   }
-  const image = native?.mainImage || [schema?.image].flat()[0];
-  if (image) attributes.product_image_url = typeof image === 'string' ? image : image.url;
+  if (image.url) {attributes.product_image_url=image.url;attributes._image_evidence=image.evidence;}
   const descriptionHtml = native?.description || schema?.description || '';
   const description = stripHtml(descriptionHtml);
   if (description) { attributes.original_description = description; attributes.description ??= description; }
@@ -50,7 +51,7 @@ function structuredExtraction(page, shopifyJson) {
   const complete = coffee && ATTRIBUTES.filter(k=>k!=='product_image_url').every(k => Object.hasOwn(attributes,k));
   // Structured price/stock changes do not invalidate semantic extraction; description/fact changes do.
   const semantic = { name,descriptionHtml,attributes,nativeTags:native?.tags || [],productType:native?.productType || schema?.category || null };
-  return { product, complete, semantic, coffee };
+  return { product, complete, semantic, coffee,image };
 }
 
 function semanticHash(page, structured) {
@@ -59,6 +60,12 @@ function semanticHash(page, structured) {
   return stableKey(structured.semantic,$('title').text(),$('body').text().replace(/\s+/g,' ').trim());
 }
 function mergeSourceProduct(extracted, structured) {
+  // Photos always come from fresh primary-product evidence. Neither a model nor
+  // a cached classification can supply an invented/truncated image URL.
+  const attributes={...(extracted.attributes || {})};
+  delete attributes.product_image_url;delete attributes._image_evidence;
+  if(structured.image?.url){attributes.product_image_url=structured.image.url;attributes._image_evidence=structured.image.evidence;}
+  extracted={...extracted,attributes};
   if (!structured.product?.variants?.length) {
     // Fresh AI can extract price text, but cannot prove a native identity,
     // complete inventory or exact variant stock without current source evidence.

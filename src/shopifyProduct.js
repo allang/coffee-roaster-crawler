@@ -163,11 +163,12 @@ function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=
   }));
 
   const images = (product.images || []).map(img => ({
-    src: img.src,
-    alt: img.alt || product.title,
-  }));
+    src: typeof img==='string'?img:img?.src || img?.url || img?.contentUrl,
+    alt: img?.alt || product.title,
+  })).filter(img=>typeof img.src==='string' && img.src.trim());
 
-  const mainImage = images.length > 0 ? images[0].src : null;
+  const primary=product.image || product.featured_image;
+  const mainImage=(typeof primary==='string'?primary:primary?.src || primary?.url || primary?.contentUrl) || images[0]?.src || null;
 
   return {
     id: product.id == null ? null : String(product.id),

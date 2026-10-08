@@ -69,8 +69,15 @@ async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   if(error) throw error; // No destructive legacy fallback if migration is absent.
   const productId=data?.product_id;
   if(!productId) throw new Error('Catalog transaction returned no product ID');
+  if(data.stale_observation_ignored)return productId;
   const image=productData.attributes?.product_image_url;
-  if(image) await (options.downloadImage || downloadAndSaveImage)(productId,image,logger);
+  if(image) {
+    const assetId=await (options.downloadImage || downloadAndSaveImage)(productId,image,logger,{db,sourceUrl});
+    if(assetId) {
+      const {error:imageError}=await db.from('products').update({original_image_url:image}).eq('id',productId);
+      if(imageError)logger.warn('ProductSaver','Photo linked but source URL could not be saved',{productId,error:imageError.message});
+    } else logger.warn('ProductSaver','Catalog saved with unresolved photo; retry needed',{productId,sourceUrl});
+  }
   logger.info('ProductSaver','Saved catalog product',{productId,contentChanged:data.content_changed,marketChanged:data.market_changed});
   return productId;
 }
