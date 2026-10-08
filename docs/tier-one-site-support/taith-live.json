@@ -317,24 +317,9 @@
   "prohibited_requests": 0,
   "passed": true,
   "frontend_asset_requests": [
-    {
-      "method": "GET",
-      "url": "https://assets.squarespace.com/universal/scripts-compressed/commerce-d0e0f1d6d8eaf552-min.en-US.js",
-      "status": 200,
-      "at": "2026-10-08T06:49:32.109Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.9398cd2fdbdb94e0cc35ffb564c3685c.js",
-      "status": 200,
-      "at": "2026-10-08T06:49:32.588Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/product-list.29d07ade73f83edf54de.js",
-      "status": 200,
-      "at": "2026-10-08T06:50:22.370Z"
-    }
+    {"method":"GET","url":"https://assets.squarespace.com/universal/scripts-compressed/commerce-d0e0f1d6d8eaf552-min.en-US.js","status":200,"at":"2026-10-08T06:49:32.109Z"},
+    {"method":"GET","url":"https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.9398cd2fdbdb94e0cc35ffb564c3685c.js","status":200,"at":"2026-10-08T06:49:32.588Z"},
+    {"method":"GET","url":"https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/product-list.29d07ade73f83edf54de.js","status":200,"at":"2026-10-08T06:50:22.370Z"}
   ],
   "global_inventory_complete": false,
   "published_inventory_complete": true,
@@ -456,16 +441,8 @@
     "note": "The public page has capacity for the declared collection count. Native JSON, primary frontend context, rendered card identities and the independent sitemap agree on all 49 published customer products. The cause of the separate 187-item collection metadata count is not inferred; no nonpublic record is accessed."
   },
   "frontend_contract_evidence": [
-    {
-      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.9398cd2fdbdb94e0cc35ffb564c3685c.js",
-      "sha256": "6cf9ed88d42120123844d70239cb12762d41778705905eade12d861ef4ecc5ba",
-      "observed": "Public page script maps ProductList to the observed product-list chunk."
-    },
-    {
-      "url": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/product-list.29d07ade73f83edf54de.js",
-      "sha256": "61080837d4f9517acb12becaa56c630b1562d8e06823fe81668185040e1da291",
-      "observed": "ProductList renders supplied context.items by index. No catalogue load-more or pagination request exists in this controller."
-    }
+    {"url":"https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.9398cd2fdbdb94e0cc35ffb564c3685c.js","sha256":"6cf9ed88d42120123844d70239cb12762d41778705905eade12d861ef4ecc5ba","observed":"Public page script maps ProductList to the observed product-list chunk."},
+    {"url":"https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/product-list.29d07ade73f83edf54de.js","sha256":"61080837d4f9517acb12becaa56c630b1562d8e06823fe81668185040e1da291","observed":"ProductList renders supplied context.items by index. No catalogue load-more or pagination request exists in this controller."}
   ],
   "primary_product_sources": [
     {"url":"https://taithcoffee.com/shop/p/wilderlazo-natural-geisha-colombia-972kn-4ep8s-nz6cz","product_id":"6ac4c23402acf35de8622f87","native_description_field":"item.excerpt","description_sha256":"2860d44aa3306b5ef41db985b9714a5ee313f2032a13963716ee74afbcb52435","native_image_field":"item.items[0].assetUrl","image_url":"https://images.squarespace-cdn.com/content/v1/62b053a90054ab18d94673b6/9c61c2ff-0d2a-49db-a51a-cbca435208ea/smaller+no+background+2026_Summer_lerida_0001_a.png","primary_gallery_match":true,"native_thumbnail_differs":false,"variant_ids":["0c1a2dc3-e2de-49f0-808e-f3b0f25544c2","5a3adb57-ea74-49a7-beeb-5011c4b9faba"]},
@@ -503,33 +480,11 @@
     {"url":"https://taithcoffee.com/shop/p/de-la-tierra-washed-decaf-washed-decaf-castillo-colombia","product_id":"6820a352623510610e70a0aa","native_description_field":"item.excerpt","description_sha256":"287b8b754fdc5d7b83e7cc1421e370b2f5690f33adb23f4a3728eb5e797ff12e","native_image_field":"item.items[0].assetUrl","image_url":"https://images.squarespace-cdn.com/content/v1/62b053a90054ab18d94673b6/833bb32e-e58b-4bf9-b136-f8e91721b070/El+Placer+Decaf+Taith+Coffee.JPG","primary_gallery_match":true,"native_thumbnail_differs":false,"variant_ids":["9b239fc3-367e-4d95-867b-dbbbe4f6eb73","17ce2928-7b05-45a8-8ba0-39e13239fc52"]}
   ],
   "pagination_probes": [
-    {
-      "url": "https://taithcoffee.com/shop?format=json&offset=49",
-      "status": 200,
-      "items": 19,
-      "reported_items": 187,
-      "pagination": {
-        "pageSize": 200,
-        "prevPage": true,
-        "prevPageOffset": 48,
-        "prevPageUrl": "/shop?offset=48&reversePaginate=true"
-      }
-    },
-    {
-      "url": "https://taithcoffee.com/shop?format=json&offset=187",
-      "status": 200,
-      "items": null,
-      "reported_items": 187,
-      "pagination": {
-        "pageSize": 200
-      }
-    }
+    {"url":"https://taithcoffee.com/shop?format=json&offset=49","status":200,"items":19,"reported_items":187,"pagination":{"pageSize":200,"prevPage":true,"prevPageOffset":48,"prevPageUrl":"/shop?offset=48&reversePaginate=true"}},
+    {"url":"https://taithcoffee.com/shop?format=json&offset=187","status":200,"items":null,"reported_items":187,"pagination":{"pageSize":200}}
   ],
   "merchant_limitations": [
-    {
-      "kind": "published_inventory_scope",
-      "note": "Complete published customer inventory is proven independently of collection.itemCount. Global absence reconciliation remains disabled; this does not prove the state or removal of nonpublic or previously saved products."
-    }
+    {"kind":"published_inventory_scope","note":"Complete published customer inventory is proven independently of collection.itemCount. Global absence reconciliation remains disabled; this does not prove the state or removal of nonpublic or previously saved products."}
   ],
   "verification": {
     "local_tests_passed": 259,
