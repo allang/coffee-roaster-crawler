@@ -10,6 +10,7 @@ function allowed(value,hosts) {
 }
 const RETRY_STATUSES=new Set([429,502,503,504]);
 const MAX_RETRIES=3,MAX_ELAPSED_MS=60000,INITIAL_BACKOFF_MS=2000,MAX_BACKOFF_MS=15000,MAX_RETRY_AFTER_MS=30000;
+const MAX_COOLDOWN_WAIT_MS=300000,MAX_COOLDOWN_RESUMPTIONS=3;
 function boundedNumber(value,fallback,maximum,minimum=0) {
   return Number.isFinite(value) && value>=minimum?Math.min(Math.floor(value),maximum):fallback;
 }
@@ -28,6 +29,7 @@ function abortable(action,signal) {
   });
 }
 function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,maxRetries=MAX_RETRIES,maxElapsedMs=MAX_ELAPSED_MS,
+  resumeCooldowns=false,maxCooldownWaitMs=MAX_COOLDOWN_WAIT_MS,maxCooldownResumptions=MAX_COOLDOWN_RESUMPTIONS,
   fetch:fetchImpl=(...args)=>fetch(...args),lookup:lookupImpl=(...args)=>dns.lookup(...args),
   sleep:sleepImpl=ms=>new Promise(resolve=>setTimeout(resolve,ms)),now:nowImpl=Date.now}={}) {
   delayMs=boundedNumber(delayMs,500,MAX_ELAPSED_MS);
@@ -35,16 +37,23 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
   maxBytes=boundedNumber(maxBytes,4*1024*1024,Number.MAX_SAFE_INTEGER,1);
   maxRetries=boundedNumber(maxRetries,MAX_RETRIES,MAX_RETRIES);
   maxElapsedMs=boundedNumber(maxElapsedMs,MAX_ELAPSED_MS,MAX_ELAPSED_MS,1);
-  const requests=[],cooldowns=new Map();let last=null,queue=Promise.resolve();
+  maxCooldownWaitMs=boundedNumber(maxCooldownWaitMs,MAX_COOLDOWN_WAIT_MS,MAX_COOLDOWN_WAIT_MS);
+  maxCooldownResumptions=boundedNumber(maxCooldownResumptions,MAX_COOLDOWN_RESUMPTIONS,MAX_COOLDOWN_RESUMPTIONS);
+  resumeCooldowns=resumeCooldowns===true;
+  const requests=[],returnedErrors=[],cooldownEvents=[],cooldowns=new Map(),hostDelays=new Map();let last=null,queue=Promise.resolve(),cooldownWaitedMs=0,cooldownResumptions=0;
   function destination(value){const url=allowed(value,profile.hosts);const prefix=profile.host_path_prefixes?.[url.hostname];if(prefix && ![prefix].flat().some(p=>url.pathname.startsWith(p)))throw Error('Unverified catalog path');return url;}
   async function read(initial,options,started) {
     let url=initial,attempt=null,retries=0,hops=0,attempts=0;
     const remaining=()=>maxElapsedMs-(nowImpl()-started);
-    const failure=(error,extra={})=>({success:false,error,finalUrl:url.href,...(attempt?.status!=null?{status:attempt.status}:{}),attempts,retries,...extra});
+    const failure=(error,extra={})=>{
+      const state=cooldowns.get(url.hostname);
+      return {success:false,error,finalUrl:url.href,...(attempt?.status!=null?{status:attempt.status}:{}),attempts,retries,
+        ...(state?{cooldown:{host:url.hostname,...state,remainingMs:Math.max(0,state.nextAt-nowImpl())}}:{}),...extra};
+    };
     try {
       while(hops<5) {
         url=destination(url.href);
-        const state=cooldowns.get(url.hostname),pause=Math.max(0,(last===null?0:last+delayMs)-nowImpl(),(state?.nextAt || 0)-nowImpl());
+        const state=cooldowns.get(url.hostname),spacing=Math.max(delayMs,hostDelays.get(url.hostname)||0),pause=Math.max(0,(last===null?0:last+spacing)-nowImpl(),(state?.nextAt || 0)-nowImpl());
         if(remaining()<=0)return failure('Merchant read time budget exhausted',{retryStopped:'time_limit'});
         if(pause>=remaining())return failure('Merchant cooldown exceeds read time budget',{retryStopped:'time_limit'});
         if(pause>0)await sleepImpl(pause);
@@ -82,8 +91,9 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
           const retryDelay=Math.max(backoff,retryAfter || 0);
           // Preserve even an excessive finite Retry-After in host state. Later
           // reads fail closed or wait fully; they never bypass an exhausted read.
-          cooldowns.set(url.hostname,{failures,nextAt:nowImpl()+retryDelay});
+          cooldowns.set(url.hostname,{failures,nextAt:nowImpl()+retryDelay,retryAfterMs:retryAfter,status:result.status});
           attempt.retryDelayMs=retryDelay;
+          if(result.headers.get('retry-after')!=null)attempt.retryAfter=result.headers.get('retry-after');
           if(retryAfter!==null)attempt.retryAfterMs=retryAfter;
           const stop=retries>=maxRetries?'retry_limit':retryAfter>MAX_RETRY_AFTER_MS?'retry_after_limit':retryDelay>=remaining()?'time_limit':null;
           if(stop){attempt.retryStopped=stop;return failure('HTTP '+result.status,{retryStopped:stop});}
@@ -101,12 +111,32 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
   }
   async function fetchHtml(value,options={}) {
     let initial;try{initial=destination(value);}catch(error){return {success:false,error:error.message};}
-    const started=nowImpl(),result=queue.then(()=>read(initial,options,started));
+    const started=nowImpl(),result=queue.then(async()=>{
+      let response=await read(initial,options,resumeCooldowns?nowImpl():started),resumed=0;
+      while(resumeCooldowns && !response.success && response.cooldown?.retryAfterMs>MAX_RETRY_AFTER_MS && response.cooldown.remainingMs>0) {
+        const wait=response.cooldown.remainingMs;
+        if(cooldownResumptions>=maxCooldownResumptions || wait>maxCooldownWaitMs-cooldownWaitedMs) {
+          response={...response,merchantCooldownExceeded:true,cooldownRecovery:{waitedMs:cooldownWaitedMs,resumptions:cooldownResumptions,stopped:cooldownResumptions>=maxCooldownResumptions?'resumption_limit':'total_wait_limit'}};
+          break;
+        }
+        cooldownResumptions++;resumed++;cooldownWaitedMs+=wait;
+        const spacing=Math.min(5000,Math.max(2000,(hostDelays.get(response.cooldown.host)||1000)*2));
+        hostDelays.set(response.cooldown.host,spacing);
+        cooldownEvents.push({url:response.finalUrl,host:response.cooldown.host,waitMs:wait,resumeAt:response.cooldown.nextAt,status:response.cooldown.status,retryAfterMs:response.cooldown.retryAfterMs,requestSpacingMs:spacing});
+        await sleepImpl(wait);
+        // A new bounded read revalidates the URL, DNS and every redirect. Host
+        // cooldown is retained; no request is sent before the merchant deadline.
+        response=await read(initial,options,nowImpl());
+      }
+      if(resumed)response={...response,cooldownResumptions:resumed};
+      if(!response.success)returnedErrors.push({url:initial.href,...response});
+      return response;
+    });
     // Serialize a reader's merchant requests so queued calls observe a throttle
     // before dispatching, while rejected reads cannot poison the queue.
     queue=result.then(()=>undefined,()=>undefined);
     return result;
   }
-  return {fetchHtml,requests};
+  return {fetchHtml,requests,returnedErrors,cooldownEvents,getCooldownFailure:()=>returnedErrors.findLast(result=>result.merchantCooldownExceeded)||null};
 }
 module.exports={allowed,createReader};

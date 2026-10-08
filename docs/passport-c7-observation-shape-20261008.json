@@ -1,0 +1,79 @@
+{
+  "historical_c7": {
+    "source_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+    "run_id": "c7f38e4d-99b3-4c1b-841c-0dd3f307d1e0",
+    "status": "failed",
+    "terminal_visitor_counts": {
+      "visited": 255,
+      "coffees": 98,
+      "errors": 157
+    },
+    "successful_saves": 98,
+    "save_errors": 0,
+    "request_keys": [
+      "at",
+      "classification_scope",
+      "method",
+      "model_response",
+      "status",
+      "url"
+    ],
+    "last_failed_merchant_request": {
+      "at": "2026-10-08T18:26:46.114Z",
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+      "status": 503
+    },
+    "merchant_requests_after_last_failure": 0,
+    "response_headers_retained": false,
+    "reader_requests_retained": false,
+    "returned_reader_errors_retained": false,
+    "historical_retry_after": null,
+    "historical_individual_error_attribution": "unavailable; do not infer all 157 causes"
+  },
+  "separate_diagnostic_probe": {
+    "checked_at": "2026-10-08T18:32:07.441Z",
+    "mode": "single-guarded-primary-get-diagnostic-no-ai-or-catalog-writes",
+    "observations": [
+      {
+        "at": "2026-10-08T18:32:07.440Z",
+        "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+        "status": 503,
+        "retry_after": "123",
+        "server_date": "Thu, 08 Oct 2026 18:32:07 GMT",
+        "content_type": "application/json"
+      }
+    ],
+    "result": {
+      "success": false,
+      "status": 503,
+      "error": "HTTP 503",
+      "retryStopped": "retry_limit"
+    },
+    "reader_requests": [
+      {
+        "method": "GET",
+        "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+        "status": 503,
+        "at": "2026-10-08T18:32:07.274Z",
+        "attempt": 1,
+        "retry": 0,
+        "retryDelayMs": 123000,
+        "retryAfterMs": 123000,
+        "retryStopped": "retry_limit"
+      }
+    ],
+    "historical_retry_after_recorded": false,
+    "historical_157_individual_errors_recorded": false
+  },
+  "next_observer_contract": {
+    "requests": "global fetch observations with raw allowlisted response headers; model usage only, no model content",
+    "merchant_wire_requests": "reader_id/read_id correlated GET responses and retry-after/date/content-type",
+    "readers": "all actual createReader.requests fields, snapshotted after settlement and during active waits",
+    "reader_results": "every fetchHtml returned error or success, including zero-attempt cooldown failures, unknown future metadata and thrown exceptions; body omitted with hash/length",
+    "visits": "actual normal planned URLs/returned aggregates; errors, residual deferrals or unvisited/incomplete pages fail before completion/reconciliation",
+    "page_events": "structured Visitor/error/deferred events emitted by the reviewed source",
+    "normal_run_succeeded": "normal full-discovery pipeline gate only",
+    "full_catalog_readback_passed": "false until separate source/ID/variant/money/stock/fact/photo validation"
+  }
+}

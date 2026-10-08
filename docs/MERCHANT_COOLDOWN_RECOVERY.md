@@ -1,0 +1,15 @@
+# Recover normal inventory reads after a long merchant cooldown
+
+Passport's last full normal run failed after 98 successful coffee saves. The retained wire ledger ended with HTTP503 and cannot prove its historical Retry-After or all 157 returned page-error causes. A separate guarded live diagnostic did retain HTTP503 with Retry-After123 seconds. The old bounded reader correctly refused to wait beyond its read budget, but subsequent pages inherited that cooldown and failed without another merchant request.
+
+Normal crawls of registered site profiles now permit a separate, bounded cooldown pause before starting a new guarded read. A123-second Retry-After is fully honored; the next read receives its own60-second active budget. Queued reads also start their active budget when dispatched. The ordinary reader and dry-run tools retain their original behavior unless cooldown resumption is explicitly enabled.
+
+The complete merchant reader permits at most three long resumptions and300seconds total additional cooldown waiting. Per active read, the existing three-retry limit,60-second maximum elapsed time, request timeout, body-size cap and redirect limit remain. A failed read without a long finite Retry-After does not gain another retry batch. After a long cooldown, same-host request spacing increases to two, four and finally five seconds to reduce renewed pressure. Each resumed read revalidates allowed HTTPS destinations, prohibited paths and public DNS; no host cooldown is cleared to force a request.
+
+If the reader exhausts its cooldown allowance, page visiting stops. Untouched pages are counted as deferred and remain unverified. Registered inventory with errors or deferred pages fails before completion or omission reconciliation, even if the error counter were zero. Existing records and caches remain available for a later full run. Model, concurrency, catalog payloads and database schema are unchanged.
+
+Reader evidence includes the selected Retry-After value, exact attempts, cooldown waits/spacing and returned errors. Visitor logs include URL, returned status/cause and cooldown reason. The prepared Passport observer retains these events, actual wire response headers and zero-wire failures, and gates normal completion on the complete discovered URL set. Pipeline success is separate from a full native SKU/price/stock/photo readback.
+
+Validation:468local tests passed, including actual reader simulations of a123-second recovery, concurrent queued native reads, shared wait/resumption caps, post-wait DNS rejection, unchanged ordinary retry limits, visitor stop without model/database activity, and failure before completion/reconciliation. The historical failed run remains failed. A new normal full Passport run with its final readback is required for live completion; fixtures and the historical successful subset do not prove that result.
+
+The separate native variant weight compatibility migration remains unapplied pending human approval. This source update includes no production DDL or purchase.
