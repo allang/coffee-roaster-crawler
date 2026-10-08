@@ -2,10 +2,10 @@
   "source_repository": "allang/everycoffee",
   "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
   "source_csv_sha256": "1c48452a21ced84ebebffb2d144b2b093a23abe16f3a15e6ba2f28c373651e02",
-  "reviewed_mapping_sha256": "0db05e5d0b1dbd87b6a5434bfd9ced03f386eac5062b4d1a76b3f1b733c65f86",
+  "reviewed_mapping_sha256": "e78da0261c143c7d6c1cb9d894be92a66da7d91c24c06e5b04ae696ffe0a5cfc",
   "entity_counts": {
     "1": 69,
-    "2": 27,
+    "2": 29,
     "3": 418,
     "4": 0,
     "9": 9
@@ -86,6 +86,7 @@
     {"entity_id":"21c5f5b9-ee86-47d4-8e19-96a95723c96d","tier":3,"name":"Vice City Bean"},
     {"entity_id":"21fd9a7b-5d94-46a3-9db2-bd27d8803432","tier":1,"name":"Moonwake Coffee Roasters"},
     {"entity_id":"230ba1f7-6e7e-4ad5-b63e-e5d3081f9522","tier":3,"name":"Little Waves Coffee Roasters"},
+    {"entity_id":"23bca0e3-978f-430c-a307-ec815a1a42ae","tier":2,"name":"Klatch Coffee"},
     {"entity_id":"24cb3507-1482-453d-b86c-c8b6d4d3e943","tier":3,"name":"Genesis Coffee Roasters"},
     {"entity_id":"258c1eb4-6bf8-45c8-8a99-aee3c0078bed","tier":3,"name":"Ligature Coffee"},
     {"entity_id":"25ebfeb7-7959-4a40-8883-30dacd78660f","tier":3,"name":"Coffee With Dongze"},
@@ -271,6 +272,7 @@
     {"entity_id":"7b9bba3a-d037-46b8-a27f-7849ba5f181f","tier":1,"name":"Thankfully Coffee"},
     {"entity_id":"7c6bdbd5-e667-406b-aadf-97e408c4fe6b","tier":1,"name":"Little Wolf Coffee"},
     {"entity_id":"7d69dc6d-0abf-46a7-9b17-ce26239104b8","tier":3,"name":"Northbound Coffee Roasters"},
+    {"entity_id":"7d74081f-e742-4158-ada6-c67dcd7430f9","tier":2,"name":"Klatch Coffee"},
     {"entity_id":"7ebc8699-79fe-4b55-9fc2-d2be1776404b","tier":3,"name":"Disciple Coffee Roasters"},
     {"entity_id":"7f7e9bee-b550-4873-bd16-a53b8700da99","tier":3,"name":"James Gourmet Coffee Roasters"},
     {"entity_id":"8023b559-a195-4b60-a410-ba6a45a832b1","tier":3,"name":"94 Celcius"},

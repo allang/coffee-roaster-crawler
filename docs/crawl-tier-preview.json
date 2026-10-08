@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-10-08T06:20:21.772Z",
+  "checked_at": "2026-10-08T07:27:30.162Z",
   "mode": "read-only-crawl-order-preview",
   "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
   "total_roasters": 9152,
-  "eligible_roasters": 8473,
+  "eligible_roasters": 8470,
   "production_writes": 0,
   "phases": [
     {
@@ -14,7 +14,7 @@
     {
       "tier": 2,
       "label": "Tier 2",
-      "count": 27
+      "count": 29
     },
     {
       "tier": 3,
@@ -29,7 +29,7 @@
     {
       "tier": null,
       "label": "Remaining roasters",
-      "count": 7962
+      "count": 7957
     }
   ],
   "tier_one_roasters": [
