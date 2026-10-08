@@ -41,6 +41,8 @@ At **16:55:07.745 UTC**, new logs contained zero `ERROR`/fatal/failed-run entrie
 
 The human-authorized hourly readiness heartbeat was removed after this requested code installation and startup verification; it will not keep restarting the crawler. Prepared schema application remains a separate authorized action.
 
+Later full normal Passport recovery on this installed source ended failed at 18:28 UTC: **255 visited /98 saved /157 errors**, after a primary 503 response; the exact prefixed-pouch case passed. The fresh successful subset verifies98 coffees/216 native AUD SKUs/65 decoded/hash-matching images; it does not satisfy full coverage. [Actual terminal attempt and diagnostic limits](MAC_MINI_PASSPORT_RECOVERY_ATTEMPT_20261008.md). The dated full-hour runtime receipt above remains a separate earlier observation.
+
 ## Actual preceding full-hour health
 
 The prior human-forced restart at **15:41:48.177 UTC** ran the earlier main `28de9b5`. Observation after the full hour at **16:52:33 UTC** recorded:
