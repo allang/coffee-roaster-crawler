@@ -1,0 +1,1100 @@
+{
+  "name": "Colorfull",
+  "checked_at": "2026-10-08T04:01:27.781Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://colorfullcoffee.com/products/baklava-popsicle-decaf",
+      "https://colorfullcoffee.com/products/black-forest-decaf",
+      "https://colorfullcoffee.com/products/blueberry-bomb-pie",
+      "https://colorfullcoffee.com/products/chocolate-wafer-espresso",
+      "https://colorfullcoffee.com/products/cinnamon-toast-decaf",
+      "https://colorfullcoffee.com/products/guava-java-decaf",
+      "https://colorfullcoffee.com/products/guava-java-single-origin",
+      "https://colorfullcoffee.com/products/orange-cake",
+      "https://colorfullcoffee.com/products/sakura-blend",
+      "https://colorfullcoffee.com/products/strawberries-cream-espresso",
+      "https://colorfullcoffee.com/products/strawberry-coulis-espresso",
+      "https://colorfullcoffee.com/products/tarte-tatin-blend",
+      "https://colorfullcoffee.com/products/the-pink-honey-blend",
+      "https://colorfullcoffee.com/products/java-geisha"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/all/products.json",
+        "page": 1,
+        "products": 14,
+        "coffeeProducts": 14
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://colorfullcoffee.com/products/baklava-popsicle-decaf",
+      "title": "Baklava Popsicle - Decaf Blend",
+      "source_product_id": "9568123093160",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "55871271960744",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 20,
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/black-forest-decaf",
+      "title": "BLACK FOREST - DECAF",
+      "source_product_id": "9228396167336",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54890444816552",
+          "title": "200g",
+          "weight_g": 200,
+          "money": {
+            "raw": 22,
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54890444849320",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 86,
+            "amount": "86.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [
+          "dehydrated strawberries",
+          "afterwards being sent off for decaffeination"
+        ],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": "This coffee from Sebastian Ramirez is both co-fermented and decaffeinated, meaning that it is not going to taste like your usual cup of coffee, let alone decaf.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": [
+            {
+              "source": "product_description",
+              "quote": "fermentation with dehydrated strawberries, afterwards being sent off for decaffeination",
+              "value": "dehydrated strawberries"
+            },
+            {
+              "source": "product_description",
+              "quote": "fermentation with dehydrated strawberries, afterwards being sent off for decaffeination",
+              "value": "afterwards being sent off for decaffeination"
+            }
+          ]
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/blueberry-bomb-pie",
+      "title": "BLUEBERRY BOMB! PIE 2.0",
+      "source_product_id": "9171903348904",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54790974570664",
+          "title": "200g",
+          "weight_g": 200,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54790974603432",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 82,
+            "amount": "82.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/chocolate-wafer-espresso",
+      "title": "CHOCOLATE WAFER - ESPRESSO",
+      "source_product_id": "8944027271336",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "52425185427624",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 18,
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "52425185460392",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 52,
+            "amount": "52.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/cinnamon-toast-decaf",
+      "title": "Cinnamon Toast - Decaf",
+      "source_product_id": "9586905284776",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "55912341274792",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19,
+            "amount": "19.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55912341307560",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 56,
+            "amount": "56.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/guava-java-decaf",
+      "title": "Guava Java - Decaf",
+      "source_product_id": "9506412363944",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "55750307905704",
+          "title": "200g",
+          "weight_g": 200,
+          "money": {
+            "raw": 19,
+            "amount": "19.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55750307938472",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 75,
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/guava-java-single-origin",
+      "title": "Guava Java - Single Origin",
+      "source_product_id": "9506400567464",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "55750293815464",
+          "title": "200g",
+          "weight_g": 200,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55750297780392",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 81,
+            "amount": "81.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/orange-cake",
+      "title": "ORANGE MARMALADE SHORTBREAD - DECAF",
+      "source_product_id": "8762985349288",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "51014461751464",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19,
+            "amount": "19.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51014461784232",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 56,
+            "amount": "56.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/sakura-blend",
+      "title": "SAKURA - BLEND",
+      "source_product_id": "9373281845416",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "55375009841320",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19,
+            "amount": "19.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55375009874088",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 56,
+            "amount": "56.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": "Sakura is the dark roast of our new Co-Ferment Trio.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/strawberries-cream-espresso",
+      "title": "Strawberries & Cream - Espresso",
+      "source_product_id": "9586905088168",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "55912350875816",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 22,
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55912350908584",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 65,
+            "amount": "65.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/strawberry-coulis-espresso",
+      "title": "STRAWBERRY COULIS - ESPRESSO",
+      "source_product_id": "9171622854824",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54790987382952",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 18,
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54790987415720",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 54,
+            "amount": "54.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/tarte-tatin-blend",
+      "title": "TARTE-TATIN - BLEND",
+      "source_product_id": "9373278175400",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "55375008235688",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 18,
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55375008268456",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 54,
+            "amount": "54.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": "Tarte-Tatin is the medium roast of our Co-Ferment Trio",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "Tarte-Tatin is a blend of an out-of-this world Colombian peach co-ferment from Edwin Noreña, and a sweet and nutty Brazil natural from Eduardo Pereira.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": " This coffee is the most tame of the Co-Ferment trio, with plenty of body and a more traditional bitter-sweet structure.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/the-pink-honey-blend",
+      "title": "The Pink Honey - Blend",
+      "source_product_id": "10320494788776",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "56074068230312",
+          "title": "200g",
+          "weight_g": 200,
+          "money": {
+            "raw": 18,
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56074068263080",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://colorfullcoffee.com/products/java-geisha",
+      "title": "VANILLA MARSHMALLOW",
+      "source_product_id": "8762994720936",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "51014405849256",
+          "title": "200g",
+          "weight_g": 200,
+          "money": {
+            "raw": 22,
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51014405882024",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 86,
+            "amount": "86.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": " Crafted with the expertise of two visionary producers—Wilder Lazo’s cutting-edge co-fermentation at Finca La Dinastía and Wilton Benitez’s eco-conscious techniques at Granja Paraíso 92—this is a coffee that celebrates both sustainability and unparalleled quality.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/collections/all/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:01:06.342Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/collections/all/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:01:06.694Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/baklava-popsicle-decaf",
+      "status": 200,
+      "at": "2026-10-08T04:01:07.323Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/baklava-popsicle-decaf.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:07.730Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/baklava-popsicle-decaf.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:08.278Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/black-forest-decaf",
+      "status": 200,
+      "at": "2026-10-08T04:01:08.843Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/black-forest-decaf.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:09.193Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/black-forest-decaf.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:09.686Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/blueberry-bomb-pie",
+      "status": 200,
+      "at": "2026-10-08T04:01:10.270Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/blueberry-bomb-pie.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:10.741Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/blueberry-bomb-pie.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:11.259Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/chocolate-wafer-espresso",
+      "status": 200,
+      "at": "2026-10-08T04:01:11.783Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/chocolate-wafer-espresso.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:12.196Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/chocolate-wafer-espresso.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:12.706Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/cinnamon-toast-decaf",
+      "status": 200,
+      "at": "2026-10-08T04:01:13.232Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/cinnamon-toast-decaf.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:13.720Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/cinnamon-toast-decaf.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:14.254Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/guava-java-decaf",
+      "status": 200,
+      "at": "2026-10-08T04:01:14.741Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/guava-java-decaf.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:15.190Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/guava-java-decaf.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:15.703Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/guava-java-single-origin",
+      "status": 200,
+      "at": "2026-10-08T04:01:16.236Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/guava-java-single-origin.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:16.732Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/guava-java-single-origin.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:17.264Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/orange-cake",
+      "status": 200,
+      "at": "2026-10-08T04:01:17.720Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/orange-cake.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:18.273Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/orange-cake.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:18.741Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/sakura-blend",
+      "status": 200,
+      "at": "2026-10-08T04:01:19.313Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/sakura-blend.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:19.833Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/sakura-blend.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:20.210Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/strawberries-cream-espresso",
+      "status": 200,
+      "at": "2026-10-08T04:01:20.777Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/strawberries-cream-espresso.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:21.220Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/strawberries-cream-espresso.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:21.746Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/strawberry-coulis-espresso",
+      "status": 200,
+      "at": "2026-10-08T04:01:22.269Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/strawberry-coulis-espresso.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:22.791Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/strawberry-coulis-espresso.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:23.320Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/tarte-tatin-blend",
+      "status": 200,
+      "at": "2026-10-08T04:01:23.842Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/tarte-tatin-blend.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:24.214Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/tarte-tatin-blend.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:24.718Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/the-pink-honey-blend",
+      "status": 200,
+      "at": "2026-10-08T04:01:25.250Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/the-pink-honey-blend.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:25.747Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/the-pink-honey-blend.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:26.222Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/java-geisha",
+      "status": 200,
+      "at": "2026-10-08T04:01:26.764Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/java-geisha.json",
+      "status": 200,
+      "at": "2026-10-08T04:01:27.271Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products/java-geisha.js",
+      "status": 200,
+      "at": "2026-10-08T04:01:27.732Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "entity_ids": [
+    "f4635ada-5e28-4376-9b38-a1256113d34d"
+  ],
+  "identity_blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection."
+}

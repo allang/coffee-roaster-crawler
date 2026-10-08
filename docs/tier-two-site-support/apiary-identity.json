@@ -1,0 +1,28 @@
+{
+  "merchant_name": "Apiary Coffee Co.",
+  "entity_id": null,
+  "identity_status": "unmatched",
+  "merchant_url": "https://apiary.coffee/",
+  "about_url": "https://apiary.coffee/pages/about",
+  "evidence": [
+    "Official about page identifies Apiary Coffee Co. and describes its roasting and DMV community.",
+    "Public coffee collection frontpage is titled Apiary Coffee and described as All current specialty coffee offerings.",
+    "Reviewed read-only coverage audit contains no matching database ID."
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/",
+      "status": 200,
+      "at": "2026-10-08T03:59:50.019Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products.json?limit=250&page=1",
+      "status": 200,
+      "at": "2026-10-08T03:59:50.520Z"
+    }
+  ],
+  "production_writes": 0,
+  "prohibited_requests": 0
+}

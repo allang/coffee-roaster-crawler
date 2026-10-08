@@ -1,0 +1,27 @@
+{
+  "identity_status": "ambiguous",
+  "candidate_entity_ids": [
+    "23bca0e3-978f-430c-a307-ec815a1a42ae",
+    "7d74081f-e742-4158-ada6-c67dcd7430f9"
+  ],
+  "recommended_roaster_candidate": "7d74081f-e742-4158-ada6-c67dcd7430f9",
+  "assignment_made": false,
+  "evidence": [
+    {
+      "url": "https://www.klatchcoffee.com/pages/rancho-cucamonga",
+      "success": false,
+      "error": "Unverified destination",
+      "explanation": "Cafe URL redirects to cafes.klatchcoffee.com ordering. Guarded inventory reader refuses this unreviewed ordering host. Merchant root is the online roasted-coffee store; database assignment still requires parent review."
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.klatchcoffee.com/pages/rancho-cucamonga",
+      "status": 301,
+      "at": "2026-10-08T04:02:54.024Z"
+    }
+  ],
+  "production_writes": 0,
+  "prohibited_requests": 0
+}

@@ -8,6 +8,12 @@ function profileFor(roaster) {
 async function discoverSiteProducts(roaster,{fetchHtml}={}) {
   const profile=profileFor(roaster);
   if(!profile)return {supported:false,urls:[],complete:false};
+  return discoverProfileProducts(roaster,profile,fetchHtml);
+}
+// Merchant-only inspection can verify a reviewed storefront before its database
+// owner is resolved. Normal crawler registration still requires an exact ID.
+async function discoverProfileProducts(roaster,profile,fetchHtml) {
+  if(!profiles.includes(profile) || !profile.hosts.includes(new URL(roaster.website_url).hostname))throw Error('Unreviewed inspection profile');
   if(['shopify','nuxt_shopify'].includes(profile.adapter))return require('./shopifyDiscovery').discoverShopifyProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='square')return require('./square').discoverSquareProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='cafe24')return require('./domDiscovery').discoverDomProducts(roaster,profile,fetchHtml);
@@ -39,4 +45,4 @@ async function discoverSiteProducts(roaster,{fetchHtml}={}) {
   }
   return {supported:true,urls:[...urls],complete:urls.size>0,evidence};
 }
-module.exports={profileFor,discoverSiteProducts};
+module.exports={profileFor,discoverSiteProducts,discoverProfileProducts};

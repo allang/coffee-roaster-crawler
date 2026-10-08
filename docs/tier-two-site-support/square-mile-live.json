@@ -1,0 +1,863 @@
+{
+  "name": "Square Mile",
+  "checked_at": "2026-10-08T04:09:09.498Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "298c93c5-cdeb-45b0-9407-8c02b470f0d8"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://shop.squaremilecoffee.com/products/red-brick",
+      "https://shop.squaremilecoffee.com/products/los-arcos",
+      "https://shop.squaremilecoffee.com/products/chepsangor",
+      "https://shop.squaremilecoffee.com/products/sweetshop-1",
+      "https://shop.squaremilecoffee.com/products/decaf-espresso",
+      "https://shop.squaremilecoffee.com/products/san-miguel-urias",
+      "https://shop.squaremilecoffee.com/products/shoondhisa",
+      "https://shop.squaremilecoffee.com/products/el-urraco",
+      "https://shop.squaremilecoffee.com/products/half-caff",
+      "https://shop.squaremilecoffee.com/products/the-filter-blend",
+      "https://shop.squaremilecoffee.com/products/decaf-filter-2"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/coffee/products.json",
+        "page": 1,
+        "products": 11,
+        "coffeeProducts": 11
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://shop.squaremilecoffee.com/products/red-brick",
+      "title": "Red Brick",
+      "source_product_id": "16117172404606",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "58158997963134",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 15.25,
+            "amount": "15.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 1525,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58158997995902",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 40.75,
+            "amount": "40.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 4075,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58158998028670",
+          "title": "2kg",
+          "weight_g": 2000,
+          "money": {
+            "raw": 78.75,
+            "amount": "78.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 7875,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/los-arcos",
+      "title": "Los Arcos",
+      "source_product_id": "15988677935486",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "57635471360382",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 18.25,
+            "amount": "18.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 1825,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57635471393150",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 46.75,
+            "amount": "46.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 4675,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/chepsangor",
+      "title": "Chepsangor",
+      "source_product_id": "16053896970622",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "57873617944958",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 25.75,
+            "amount": "25.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 2575,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57873617977726",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 67,
+            "amount": "67.00",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/sweetshop-1",
+      "title": "Sweetshop",
+      "source_product_id": "16109393183102",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "58131738132862",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 22.75,
+            "amount": "22.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 2275,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58131738165630",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 57,
+            "amount": "57.00",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 5700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/decaf-espresso",
+      "title": "Decaf Espresso",
+      "source_product_id": "16055653499262",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "57895953596798",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 17.25,
+            "amount": "17.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 1725,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57895953629566",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 45.75,
+            "amount": "45.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 4575,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/san-miguel-urias",
+      "title": "San Miguel Urias",
+      "source_product_id": "16112028713342",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "58142781112702",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 21.25,
+            "amount": "21.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 2125,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58142781145470",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 53,
+            "amount": "53.00",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/shoondhisa",
+      "title": "Shoondhisa",
+      "source_product_id": "16105711796606",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "58115463774590",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 25.75,
+            "amount": "25.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 2575,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58115463807358",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 67,
+            "amount": "67.00",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/el-urraco",
+      "title": "El Urraco",
+      "source_product_id": "16092416082302",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "58054853591422",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 21.25,
+            "amount": "21.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 2125,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58054853624190",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 53,
+            "amount": "53.00",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/half-caff",
+      "title": "Half Caff",
+      "source_product_id": "16099139649918",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "58084462166398",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 23.25,
+            "amount": "23.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 2325,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58084462199166",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 58.5,
+            "amount": "58.50",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 5850,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/the-filter-blend",
+      "title": "The Filter Blend",
+      "source_product_id": "16050630066558",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "57861522063742",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 17.25,
+            "amount": "17.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 1725,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57861522096510",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 45.75,
+            "amount": "45.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 4575,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://shop.squaremilecoffee.com/products/decaf-filter-2",
+      "title": "Decaf Filter",
+      "source_product_id": "16061279633790",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "57918169252222",
+          "title": "350g",
+          "weight_g": 350,
+          "money": {
+            "raw": 17.25,
+            "amount": "17.25",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 1725,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57918169284990",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 45.75,
+            "amount": "45.75",
+            "currency": "GBP",
+            "exponent": 2,
+            "minorUnits": 4575,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/collections/coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:08:51.600Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/collections/coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:08:51.958Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/red-brick",
+      "status": 200,
+      "at": "2026-10-08T04:08:52.529Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/red-brick.json",
+      "status": 200,
+      "at": "2026-10-08T04:08:52.985Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/red-brick.js",
+      "status": 200,
+      "at": "2026-10-08T04:08:54.507Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/los-arcos",
+      "status": 200,
+      "at": "2026-10-08T04:08:54.830Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/los-arcos.json",
+      "status": 200,
+      "at": "2026-10-08T04:08:55.263Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/los-arcos.js",
+      "status": 200,
+      "at": "2026-10-08T04:08:55.794Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/chepsangor",
+      "status": 200,
+      "at": "2026-10-08T04:08:56.334Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/chepsangor.json",
+      "status": 200,
+      "at": "2026-10-08T04:08:56.836Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/chepsangor.js",
+      "status": 200,
+      "at": "2026-10-08T04:08:57.359Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/sweetshop-1",
+      "status": 200,
+      "at": "2026-10-08T04:08:57.884Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/sweetshop-1.json",
+      "status": 200,
+      "at": "2026-10-08T04:08:58.280Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/sweetshop-1.js",
+      "status": 200,
+      "at": "2026-10-08T04:08:58.805Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/decaf-espresso",
+      "status": 200,
+      "at": "2026-10-08T04:08:59.305Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/decaf-espresso.json",
+      "status": 200,
+      "at": "2026-10-08T04:08:59.784Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/decaf-espresso.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:00.301Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/san-miguel-urias",
+      "status": 200,
+      "at": "2026-10-08T04:09:00.847Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/san-miguel-urias.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:01.292Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/san-miguel-urias.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:01.809Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/shoondhisa",
+      "status": 200,
+      "at": "2026-10-08T04:09:02.319Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/shoondhisa.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:02.793Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/shoondhisa.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:03.332Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/el-urraco",
+      "status": 200,
+      "at": "2026-10-08T04:09:03.914Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/el-urraco.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:04.403Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/el-urraco.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:04.915Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/half-caff",
+      "status": 200,
+      "at": "2026-10-08T04:09:05.486Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/half-caff.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:05.928Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/half-caff.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:06.479Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/the-filter-blend",
+      "status": 200,
+      "at": "2026-10-08T04:09:07.023Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/the-filter-blend.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:07.415Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/the-filter-blend.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:07.910Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/decaf-filter-2",
+      "status": 200,
+      "at": "2026-10-08T04:09:08.489Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/decaf-filter-2.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:08.956Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/decaf-filter-2.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:09.472Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

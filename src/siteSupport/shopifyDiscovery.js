@@ -1,6 +1,7 @@
 'use strict';
-const excluded=/\b(?:gift\s*card|subscription|wholesale|equipment|brewer|paper\s*filter|grinder|cup|mug|thermos|trousers?|shirts?|hoodie|hat|cap|book|cascara|green coffee)\b/i;
+const excluded=/\b(?:(?:e[-\s]?)?gift\s*(?:cards?|vouchers?|certificates?)|subscription|wholesale|equipment|brewer|paper\s*filter|grinder|cup|mug|thermos|trousers?|shirts?|hoodie|hat|cap|book|cascara|green coffee)\b/i;
 function retailCoffee(product,profile) {
+  if(profile.exclude_product_ids?.includes(String(product.id)))return false;
   const type=String(product.product_type || ''),title=String(product.title || '');
   if(profile.exclude_handles?.includes(product.handle))return false;
   const tags=Array.isArray(product.tags)?product.tags.join(' '):String(product.tags || '');
@@ -8,6 +9,7 @@ function retailCoffee(product,profile) {
   // Exclude subscription products by their title/type, not a second sales channel.
   if(excluded.test(type+' '+title) || /\bwholesale[-_\s]+only\b/i.test(tags))return false;
   if(profile.coffee_content_pattern && !new RegExp(profile.coffee_content_pattern,'i').test(product.body_html || ''))return false;
+  if(profile.strict_coffee_product_types)return profile.coffee_product_types?.includes(type)===true;
   return profile.coffee_product_types?.includes(type) || profile.coffee_handles?.includes(product.handle) || /\b(?:coffee|espresso|roasted beans|instant)\b/i.test(type);
 }
 async function discoverShopifyProducts(roaster,profile,fetchHtml) {
@@ -30,6 +32,14 @@ async function discoverShopifyProducts(roaster,profile,fetchHtml) {
       // as proof of exhaustion. Fail closed if a cursor/page limit is reached.
     }
     if(!exhausted)return {supported:true,urls:[...urls],complete:false,error:'Shopify inventory page limit reached',evidence};
+  }
+  for(const path of profile.additional_product_paths || []) {
+    const url=new URL(path,roaster.website_url);
+    if(!/^\/products\/[a-z0-9][a-z0-9-]*$/i.test(url.pathname) || !profile.hosts.includes(url.hostname))return {supported:true,urls:[...urls],complete:false,error:'Unreviewed additional product path',evidence};
+    const response=await fetchHtml(url.href+'.json');let product;
+    if(response.success && profile.hosts.includes(new URL(response.finalUrl || url).hostname))try{product=JSON.parse(response.data).product;}catch{}
+    if(!product || product.id==null || '/products/'+product.handle!==url.pathname || !retailCoffee(product,profile))return {supported:true,urls:[...urls],complete:false,error:'Featured coffee identity unavailable',evidence};
+    urls.add(url.href);evidence.push({listing:path,products:1,coffeeProducts:1});anyProducts=true;
   }
   return {supported:true,urls:[...urls],complete:anyProducts && urls.size>0,evidence};
 }

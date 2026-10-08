@@ -1,0 +1,4578 @@
+{
+  "name": "Onyx",
+  "checked_at": "2026-10-08T04:06:22.905Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://onyxcoffeelab.com/products/monarch",
+      "https://onyxcoffeelab.com/products/geometry",
+      "https://onyxcoffeelab.com/products/southern-weather",
+      "https://onyxcoffeelab.com/products/tropical-weather",
+      "https://onyxcoffeelab.com/products/cold-brew",
+      "https://onyxcoffeelab.com/products/power-nap",
+      "https://onyxcoffeelab.com/products/red-collaboration",
+      "https://onyxcoffeelab.com/products/usa-cycling",
+      "https://onyxcoffeelab.com/products/kenya-kagunyu-aa",
+      "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26",
+      "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa",
+      "https://onyxcoffeelab.com/products/honduras-fredy-perez",
+      "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26",
+      "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26",
+      "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26",
+      "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26",
+      "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha",
+      "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1",
+      "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26",
+      "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26",
+      "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1",
+      "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso",
+      "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez",
+      "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26",
+      "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment",
+      "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha",
+      "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio",
+      "https://onyxcoffeelab.com/products/eclipse",
+      "https://onyxcoffeelab.com/products/sources",
+      "https://onyxcoffeelab.com/products/circadian",
+      "https://onyxcoffeelab.com/products/instant-tropical-weather",
+      "https://onyxcoffeelab.com/products/instant-geometry",
+      "https://onyxcoffeelab.com/products/instant-southern-weather",
+      "https://onyxcoffeelab.com/products/instant-monarch",
+      "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio",
+      "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage",
+      "https://onyxcoffeelab.com/products/blend-discovery-box",
+      "https://onyxcoffeelab.com/products/discovery-box",
+      "https://onyxcoffeelab.com/products/blend-box",
+      "https://onyxcoffeelab.com/products/catalog-box",
+      "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection",
+      "https://onyxcoffeelab.com/products/2026-advent-calendar"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/coffee/products.json",
+        "page": 1,
+        "products": 30,
+        "coffeeProducts": 30
+      },
+      {
+        "listing": "/collections/instant-coffee/products.json",
+        "page": 1,
+        "products": 5,
+        "coffeeProducts": 5
+      },
+      {
+        "listing": "/collections/special/products.json",
+        "page": 1,
+        "products": 8,
+        "coffeeProducts": 5
+      },
+      {
+        "listing": "/collections/cometeer/products.json",
+        "page": 1,
+        "products": 1,
+        "coffeeProducts": 1
+      },
+      {
+        "listing": "/products/2026-advent-calendar",
+        "products": 1,
+        "coffeeProducts": 1
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://onyxcoffeelab.com/products/monarch",
+      "title": "Monarch",
+      "source_product_id": "4478727356514",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42331808989282",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31861823176802",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "21.50",
+            "amount": "21.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2150,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31861823209570",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "58.50",
+            "amount": "58.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5850,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31861823242338",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "122.00",
+            "amount": "122.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41211277049954",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "114.00",
+            "amount": "114.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41211277082722",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "864.00",
+            "amount": "864.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 86400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/geometry",
+      "title": "Geometry",
+      "source_product_id": "4479043502178",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42332385673314",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862717677666",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "22.50",
+            "amount": "22.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2250,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862717710434",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "59.50",
+            "amount": "59.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5950,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862717743202",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "124.00",
+            "amount": "124.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41271828807778",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41271828840546",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "960.00",
+            "amount": "960.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 96000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/southern-weather",
+      "title": "Southern Weather",
+      "source_product_id": "4479039766626",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42332392489058",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862699917410",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "21.50",
+            "amount": "21.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2150,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862699950178",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "56.50",
+            "amount": "56.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5650,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862699982946",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41271841390690",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "114.00",
+            "amount": "114.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41271841423458",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "848.00",
+            "amount": "848.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 84800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/tropical-weather",
+      "title": "Tropical Weather",
+      "source_product_id": "4479041405026",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42332397994082",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862710173794",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "24.50",
+            "amount": "24.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2450,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862710206562",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.50",
+            "amount": "68.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6850,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862710239330",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "146.00",
+            "amount": "146.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 14600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41271801774178",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "132.00",
+            "amount": "132.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41271801806946",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1056.00",
+            "amount": "1056.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 105600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/cold-brew",
+      "title": "Cold Brew",
+      "source_product_id": "4485401313378",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42331820032098",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31888816078946",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "21.50",
+            "amount": "21.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2150,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31888816111714",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "56.50",
+            "amount": "56.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5650,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31888816144482",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "118.00",
+            "amount": "118.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40911412658274",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "114.00",
+            "amount": "114.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40911412691042",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "832.00",
+            "amount": "832.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 83200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/power-nap",
+      "title": "Power Nap",
+      "source_product_id": "4479042912354",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42332388786274",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862716760162",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "24.50",
+            "amount": "24.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2450,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862716792930",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.50",
+            "amount": "68.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6850,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31862716825698",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "138.00",
+            "amount": "138.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40911400829026",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "132.00",
+            "amount": "132.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40911400861794",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "992.00",
+            "amount": "992.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 99200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/red-collaboration",
+      "title": "Seasonal East Africa - (PRODUCT)RED",
+      "source_product_id": "7377854595170",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42163475742818",
+          "title": "8oz",
+          "weight_g": 227,
+          "money": {
+            "raw": "24.00",
+            "amount": "24.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/usa-cycling",
+      "title": "USA Cycling",
+      "source_product_id": "7466220945506",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42347075436642",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/kenya-kagunyu-aa",
+      "title": "Kenya Kagunyu AA",
+      "source_product_id": "7787697471586",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "43289724059746",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "100.00",
+            "amount": "100.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26",
+      "title": "El Salvador Santa Rosa Honey",
+      "source_product_id": "7751438958690",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43289714786402",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "9.50",
+            "amount": "9.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 950,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43289714819170",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "33.00",
+            "amount": "33.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43289714851938",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "96.50",
+            "amount": "96.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9650,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43289714884706",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "234.00",
+            "amount": "234.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 23400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43289714917474",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "197.50",
+            "amount": "197.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 19750,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43289714950242",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1872.00",
+            "amount": "1872.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 187200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa",
+      "title": "Kenya Kamunyaka AA",
+      "source_product_id": "7766798467170",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43286232596578",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "7.00",
+            "amount": "7.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43286232629346",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "26.00",
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43286232662114",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "70.00",
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43286232694882",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "162.00",
+            "amount": "162.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 16200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43286232727650",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "148.20",
+            "amount": "148.20",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 14820,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43286232760418",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1231.20",
+            "amount": "1231.20",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 123120,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/honduras-fredy-perez",
+      "title": "Honduras Fredy Perez",
+      "source_product_id": "7764560969826",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43246934753378",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43246934786146",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "26.00",
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43246934818914",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.00",
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43246934851682",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "160.00",
+            "amount": "160.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 16000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43246934884450",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "148.20",
+            "amount": "148.20",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 14820,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43246934917218",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1216.00",
+            "amount": "1216.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 121600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26",
+      "title": "El Salvador Santa Rosa",
+      "source_product_id": "7751438794850",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43228118417506",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "9.50",
+            "amount": "9.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 950,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228118450274",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "33.00",
+            "amount": "33.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228118483042",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "96.50",
+            "amount": "96.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9650,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228118515810",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "234.00",
+            "amount": "234.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 23400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228118548578",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "197.50",
+            "amount": "197.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 19750,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228118581346",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1872.00",
+            "amount": "1872.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 187200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26",
+      "title": "Ethiopia Mullugeta Muntasha Natural",
+      "source_product_id": "7766813212770",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43228176777314",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "9.50",
+            "amount": "9.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 950,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228176810082",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "35.00",
+            "amount": "35.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228176842850",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "103.00",
+            "amount": "103.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228176875618",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "250.00",
+            "amount": "250.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 25000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228176908386",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "210.00",
+            "amount": "210.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 21000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228176941154",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "2002.00",
+            "amount": "2002.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 200200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26",
+      "title": "Costa Rica Las Lajas Natural",
+      "source_product_id": "7760796680290",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43220447756386",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "9.50",
+            "amount": "9.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 950,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43220447789154",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "33.50",
+            "amount": "33.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3350,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43220447821922",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "98.00",
+            "amount": "98.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43220447854690",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "238.50",
+            "amount": "238.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 23850,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43220447887458",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "201.00",
+            "amount": "201.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 20100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43220447920226",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1906.50",
+            "amount": "1906.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 190650,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26",
+      "title": "Ecuador La Papaya Anaerobic",
+      "source_product_id": "7751437484130",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43228095414370",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "9.00",
+            "amount": "9.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228095447138",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228095479906",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228095512674",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "200.00",
+            "amount": "200.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228095545442",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "216.60",
+            "amount": "216.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 21660,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43228095578210",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1520.00",
+            "amount": "1520.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 152000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha",
+      "title": "Mexico Oaxaca Yogondoy Gesha",
+      "source_product_id": "7747085860962",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43226010746978",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "9.00",
+            "amount": "9.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43226010779746",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43226010812514",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43226010845282",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "200.00",
+            "amount": "200.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43226010878050",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "216.60",
+            "amount": "216.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 21660,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1",
+      "title": "Ethiopia Agaro Yukro G1",
+      "source_product_id": "7736979030114",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43160568168546",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43160568201314",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "26.00",
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43160568234082",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.00",
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43160568266850",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "160.00",
+            "amount": "160.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 16000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43160568299618",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "148.20",
+            "amount": "148.20",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 14820,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43160568332386",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1216.00",
+            "amount": "1216.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 121600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26",
+      "title": "Panama Savage Coffees Gesha",
+      "source_product_id": "7751437615202",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43208072593506",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43208072626274",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "90.00",
+            "amount": "90.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43208072659042",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "180.00",
+            "amount": "180.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 18000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43208072691810",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "450.00",
+            "amount": "450.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 45000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43208072724578",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "513.00",
+            "amount": "513.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 51300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43208072757346",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "3420.00",
+            "amount": "3420.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 342000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26",
+      "title": "Ecuador Jose Jijon",
+      "source_product_id": "7704792006754",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43113331064930",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43113331097698",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "90.00",
+            "amount": "90.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43113331032162",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "180.00",
+            "amount": "180.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 18000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1",
+      "title": "Ethiopia Korma Kontoma G1",
+      "source_product_id": "7422417174626",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "42332385247330",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "8.00",
+            "amount": "8.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42236016066658",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "26.00",
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42236016099426",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "75.00",
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42236016132194",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "160.00",
+            "amount": "160.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 16000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42236016164962",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "148.20",
+            "amount": "148.20",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 14820,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42236016197730",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1216.00",
+            "amount": "1216.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 121600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso",
+      "title": "Colombia Altos de Quitumpamba Chiroso",
+      "source_product_id": "7736978374754",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43124200767586",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "11.00",
+            "amount": "11.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43124200800354",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "52.00",
+            "amount": "52.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43124200833122",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "140.00",
+            "amount": "140.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 14000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43124200865890",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "260.00",
+            "amount": "260.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 26000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43124200898658",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "296.40",
+            "amount": "296.40",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 29640,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43124200931426",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1976.00",
+            "amount": "1976.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 197600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez",
+      "title": "Decaf Colombia Sebastian Ramirez Red Fruits",
+      "source_product_id": "7620224090210",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42966561423458",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "8.00",
+            "amount": "8.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42966561456226",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42966561488994",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42966561521762",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "200.00",
+            "amount": "200.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42966561554530",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "216.60",
+            "amount": "216.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 21660,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42966561587298",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1520.00",
+            "amount": "1520.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 152000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": "cer with the addition of fruit within the fermentation process, and this particular coffee has been co-fermented with red fruits, imparting a strong flavor of fruit throughout the drinking experience.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26",
+      "title": "Peru La Margarita Gesha",
+      "source_product_id": "7538441977954",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42842298613858",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42842298646626",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "70.00",
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42842298679394",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "128.00",
+            "amount": "128.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42842298712162",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "190.00",
+            "amount": "190.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42842298744930",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "420.00",
+            "amount": "420.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 42000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment",
+      "title": "Decaf Colombia El Vergel Co-Ferment",
+      "source_product_id": "7516265676898",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42651961983074",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "9.00",
+            "amount": "9.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42651962015842",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42651962048610",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42651962081378",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "200.00",
+            "amount": "200.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42651962114146",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "216.60",
+            "amount": "216.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 21660,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42651962146914",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1520.00",
+            "amount": "1520.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 152000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_title",
+              "quote": "Decaf Colombia El Vergel Co-Ferment",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": " Inoculated fermentations and co-fermentations have exploded in popularity within Colombia, and Forest Coffee leads the charge with this melon co-ferment.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha",
+      "title": "Colombia Brayan Smith Gesha",
+      "source_product_id": "7491247669346",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42550798680162",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "8.00",
+            "amount": "8.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42550798712930",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "40.00",
+            "amount": "40.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42550798745698",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42550798778466",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "200.00",
+            "amount": "200.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42550798811234",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "228.00",
+            "amount": "228.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 22800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42550798844002",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1520.00",
+            "amount": "1520.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 152000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio",
+      "title": "Decaf Colombia Inzá San Antonio",
+      "source_product_id": "6963257409634",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42332053799010",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "7.00",
+            "amount": "7.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40624612802658",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "24.50",
+            "amount": "24.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2450,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40624612835426",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.50",
+            "amount": "68.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6850,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40624612868194",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "146.00",
+            "amount": "146.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 14600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40912003268706",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "132.00",
+            "amount": "132.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40912003301474",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "1056.00",
+            "amount": "1056.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 105600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/eclipse",
+      "title": "Eclipse",
+      "source_product_id": "4486021152866",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42332054454370",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "6.00",
+            "amount": "6.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31891087884386",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "22.50",
+            "amount": "22.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2250,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31891087917154",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "60.50",
+            "amount": "60.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6050,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "31891087949922",
+          "title": "5lbs",
+          "weight_g": 2268,
+          "money": {
+            "raw": "126.00",
+            "amount": "126.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40911276310626",
+          "title": "10oz Case Pack (6)",
+          "weight_g": 283,
+          "money": {
+            "raw": "120.00",
+            "amount": "120.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40911276343394",
+          "title": "5lbs Case Pack (8)",
+          "weight_g": 2268,
+          "money": {
+            "raw": "896.00",
+            "amount": "896.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 89600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/sources",
+      "title": "Sources",
+      "source_product_id": "7218479530082",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42580457029730",
+          "title": "2lbs",
+          "weight_g": 907,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/circadian",
+      "title": "Colombia Las Moras",
+      "source_product_id": "7620223598690",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43032474812514",
+          "title": "8oz / Decaf",
+          "weight_g": 227,
+          "money": {
+            "raw": "20.00",
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937556578",
+          "title": "8oz / 25%",
+          "weight_g": 227,
+          "money": {
+            "raw": "20.00",
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937622114",
+          "title": "8oz / 50%",
+          "weight_g": 227,
+          "money": {
+            "raw": "20.00",
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937687650",
+          "title": "8oz / 75%",
+          "weight_g": 227,
+          "money": {
+            "raw": "20.00",
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937753186",
+          "title": "8oz / Full Caf",
+          "weight_g": 227,
+          "money": {
+            "raw": "20.00",
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43032474648674",
+          "title": "2lbs / Decaf",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.00",
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937523810",
+          "title": "2lbs / 25%",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.00",
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937589346",
+          "title": "2lbs / 50%",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.00",
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937654882",
+          "title": "2lbs / 75%",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.00",
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43079937720418",
+          "title": "2lbs / Full Caf",
+          "weight_g": 907,
+          "money": {
+            "raw": "68.00",
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/instant-tropical-weather",
+      "title": "Instant Tropical Weather",
+      "source_product_id": "7292396634210",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "41777014734946",
+          "title": "6 Packets",
+          "weight_g": null,
+          "money": {
+            "raw": "17.50",
+            "amount": "17.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1750,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41776751345762",
+          "title": "Case Pack (6x6)",
+          "weight_g": null,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/instant-geometry",
+      "title": "Instant Geometry",
+      "source_product_id": "7292396863586",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "41777015488610",
+          "title": "6 Packets",
+          "weight_g": null,
+          "money": {
+            "raw": "17.50",
+            "amount": "17.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1750,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41776745873506",
+          "title": "Case Pack (6x6)",
+          "weight_g": null,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/instant-southern-weather",
+      "title": "Instant Southern Weather",
+      "source_product_id": "7292396929122",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "41777014997090",
+          "title": "6 Packets",
+          "weight_g": null,
+          "money": {
+            "raw": "17.50",
+            "amount": "17.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1750,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41776608706658",
+          "title": "Case Pack (6x6)",
+          "weight_g": null,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/instant-monarch",
+      "title": "Instant Monarch",
+      "source_product_id": "7292396011618",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "41777015357538",
+          "title": "6 Packets",
+          "weight_g": null,
+          "money": {
+            "raw": "17.50",
+            "amount": "17.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1750,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41772646924386",
+          "title": "Case Pack (6x6)",
+          "weight_g": null,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio",
+      "title": "Instant Decaf Colombia Inzá San Antonio",
+      "source_product_id": "7292652945506",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "41777018208354",
+          "title": "6 Packets",
+          "weight_g": null,
+          "money": {
+            "raw": "17.50",
+            "amount": "17.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1750,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41763120250978",
+          "title": "Case Pack (6x6)",
+          "weight_g": null,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage",
+      "title": "Producer Experience Box - Jamison Savage",
+      "source_product_id": "7506859393122",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42861224886370",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "70.00",
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/blend-discovery-box",
+      "title": "Blend Discovery Box",
+      "source_product_id": "7442893078626",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42273508458594",
+          "title": "2 x 3oz",
+          "weight_g": null,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/discovery-box",
+      "title": "Discovery Box",
+      "source_product_id": "7463098024034",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43103134285922",
+          "title": "2oz",
+          "weight_g": 57,
+          "money": {
+            "raw": "37.00",
+            "amount": "37.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/blend-box",
+      "title": "Blend Box",
+      "source_product_id": "4481598128226",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43015182647394",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": "75.00",
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/catalog-box",
+      "title": "Catalog Box",
+      "source_product_id": "7442895601762",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42344613806178",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": "70.00",
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection",
+      "title": "The Onyx Cometeer Collection",
+      "source_product_id": "7526243631202",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42631328956514",
+          "title": "Default Variant",
+          "weight_g": null,
+          "money": {
+            "raw": "122.00",
+            "amount": "122.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar",
+      "title": "2026 Advent Calendar",
+      "source_product_id": "7773746823266",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43221087649890",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": "189.00",
+            "amount": "189.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 18900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:05:14.755Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:05:15.079Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/instant-coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:05:15.580Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/instant-coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:05:16.106Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/special/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:05:16.629Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/special/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:05:17.048Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/cometeer/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:05:17.552Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/cometeer/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:05:18.043Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:18.558Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/monarch",
+      "status": 200,
+      "at": "2026-10-08T04:05:19.254Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/monarch.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:19.612Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/monarch.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:20.111Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/geometry",
+      "status": 200,
+      "at": "2026-10-08T04:05:20.829Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/geometry.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:21.131Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/geometry.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:21.635Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/southern-weather",
+      "status": 200,
+      "at": "2026-10-08T04:05:22.394Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/southern-weather.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:22.707Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/southern-weather.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:23.200Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/tropical-weather",
+      "status": 200,
+      "at": "2026-10-08T04:05:23.970Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/tropical-weather.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:24.282Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/tropical-weather.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:24.806Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/cold-brew",
+      "status": 200,
+      "at": "2026-10-08T04:05:25.445Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/cold-brew.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:25.817Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/cold-brew.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:26.324Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/power-nap",
+      "status": 200,
+      "at": "2026-10-08T04:05:26.959Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/power-nap.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:27.330Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/power-nap.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:27.861Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/red-collaboration",
+      "status": 200,
+      "at": "2026-10-08T04:05:28.535Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/red-collaboration.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:28.816Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/red-collaboration.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:29.369Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/usa-cycling",
+      "status": 200,
+      "at": "2026-10-08T04:05:30.012Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/usa-cycling.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:30.422Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/usa-cycling.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:30.843Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/kenya-kagunyu-aa",
+      "status": 200,
+      "at": "2026-10-08T04:05:31.495Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/kenya-kagunyu-aa.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:31.870Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/kenya-kagunyu-aa.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:32.359Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:32.953Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:33.407Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:33.937Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa",
+      "status": 200,
+      "at": "2026-10-08T04:05:34.512Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:34.871Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:35.373Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/honduras-fredy-perez",
+      "status": 200,
+      "at": "2026-10-08T04:05:36.055Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/honduras-fredy-perez.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:36.377Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/honduras-fredy-perez.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:36.853Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:37.604Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:37.902Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:38.415Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:39.176Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:39.428Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:39.925Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:40.576Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:40.948Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:41.450Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:42.066Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:42.490Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:43.011Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha",
+      "status": 200,
+      "at": "2026-10-08T04:05:43.634Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:44.078Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:44.463Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1",
+      "status": 200,
+      "at": "2026-10-08T04:05:45.164Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:45.471Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:45.998Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:46.641Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:47.041Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:47.568Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:48.120Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:48.490Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:48.990Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1",
+      "status": 200,
+      "at": "2026-10-08T04:05:49.664Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:49.995Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:50.469Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso",
+      "status": 200,
+      "at": "2026-10-08T04:05:51.121Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:51.488Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:51.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez",
+      "status": 200,
+      "at": "2026-10-08T04:05:52.621Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:53.023Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:53.514Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26",
+      "status": 200,
+      "at": "2026-10-08T04:05:54.164Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:54.523Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:55.041Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment",
+      "status": 200,
+      "at": "2026-10-08T04:05:55.743Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:56.009Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:56.525Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha",
+      "status": 200,
+      "at": "2026-10-08T04:05:57.164Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:57.545Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:58.049Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio",
+      "status": 200,
+      "at": "2026-10-08T04:05:58.770Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio.json",
+      "status": 200,
+      "at": "2026-10-08T04:05:59.096Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio.js",
+      "status": 200,
+      "at": "2026-10-08T04:05:59.619Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/eclipse",
+      "status": 200,
+      "at": "2026-10-08T04:06:00.200Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/eclipse.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:00.548Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/eclipse.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:01.099Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/sources",
+      "status": 200,
+      "at": "2026-10-08T04:06:01.717Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/sources.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:02.055Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/sources.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:02.565Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/circadian",
+      "status": 200,
+      "at": "2026-10-08T04:06:03.178Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/circadian.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:03.579Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/circadian.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:04.106Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-tropical-weather",
+      "status": 200,
+      "at": "2026-10-08T04:06:04.753Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-tropical-weather.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:05.040Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-tropical-weather.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:05.546Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-geometry",
+      "status": 200,
+      "at": "2026-10-08T04:06:06.262Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-geometry.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:06.764Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-geometry.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:07.294Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-southern-weather",
+      "status": 200,
+      "at": "2026-10-08T04:06:07.894Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-southern-weather.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:08.361Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-southern-weather.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:08.852Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-monarch",
+      "status": 200,
+      "at": "2026-10-08T04:06:09.582Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-monarch.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:10.109Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-monarch.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:10.497Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio",
+      "status": 200,
+      "at": "2026-10-08T04:06:11.168Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:11.554Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:12.064Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage",
+      "status": 200,
+      "at": "2026-10-08T04:06:12.727Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:13.067Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:13.554Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/blend-discovery-box",
+      "status": 200,
+      "at": "2026-10-08T04:06:14.191Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/blend-discovery-box.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:14.551Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/blend-discovery-box.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:15.075Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/discovery-box",
+      "status": 200,
+      "at": "2026-10-08T04:06:15.760Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/discovery-box.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:16.106Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/discovery-box.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:16.596Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/blend-box",
+      "status": 200,
+      "at": "2026-10-08T04:06:17.277Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/blend-box.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:17.670Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/blend-box.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:18.147Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/catalog-box",
+      "status": 200,
+      "at": "2026-10-08T04:06:18.827Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/catalog-box.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:19.256Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/catalog-box.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:19.749Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection",
+      "status": 200,
+      "at": "2026-10-08T04:06:20.441Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:20.813Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:21.302Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar",
+      "status": 200,
+      "at": "2026-10-08T04:06:21.953Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.json",
+      "status": 200,
+      "at": "2026-10-08T04:06:22.318Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.js",
+      "status": 200,
+      "at": "2026-10-08T04:06:22.845Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "entity_ids": [
+    "b765bee5-9622-4735-a948-7816736da3e5"
+  ],
+  "identity_blocker": null
+}

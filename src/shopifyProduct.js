@@ -7,7 +7,14 @@ const {parseWeightGrams}=require('./product-value-parsers.cjs');
 function labelWeight(value) {
   // Roast-date suffixes do not change the explicitly labelled net coffee size.
   value=String(value || '').replace(/\s*-\s*\d{1,2}\/\d{1,2}\s*$/,'');
+  // Merchant packaging labels also use gm for gram; never a shipping mass.
+  value=String(value || '').replace(/(\d)\s*gm\b/gi,'$1g');
   const direct=parseWeightGrams(value);if(direct!=null)return direct;
+  const packaged=value.match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\(\s*(\d+)\s*[x×]\s*(\d+(?:\.\d+)?)\s*(g|kg)\s+vac\s*seal(?:ed)?\s+pouch(?:es)?\s*\)\s*$/i);
+  if(packaged) {
+    const total=parseWeightGrams(packaged[1]+packaged[2]),perPouch=parseWeightGrams(packaged[4]+packaged[5]),count=Number(packaged[3]);
+    return total && perPouch && count>0 && count<=1000 && total===count*perPouch?total:null;
+  }
   const dual=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\(\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\)\s*$/i);
   const reverse=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\(\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\)\s*$/i);
   if(!dual && !reverse)return null;
@@ -98,12 +105,17 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
   const ajaxUrl=new URL(jsonUrl);ajaxUrl.pathname=ajaxUrl.pathname.replace(/\.json$/,'.js');
   const ajax=await fetch(ajaxUrl.href,{timeout:15000,referer:url});
   product=mergeShopifyStock(product,ajax.success?ajax.data:null);
+  const profile=lookupRegisteredProfile(url);
+  if(profile?.exclude_variant_title_pattern) {
+    const excluded=new RegExp(profile.exclude_variant_title_pattern,'i'),variants=product.variants.filter(v=>!excluded.test(String(v.title || '')));
+    if(variants.length!==product.variants.length)product={...product,variants,_variants_complete:false};
+  }
 
   logger.info('ShopifyJSON', `Fetched product: ${product.title}`);
 
   return {
     success: true,
-    data: parseShopifyProduct(product,{preferLabelWeight:registered,netWeightUnproven:registeredProfile?.ambiguous_net_weight_handles?.includes(product.handle)}),
+    data: parseShopifyProduct(product,registeredWeightOptions(url,product)),
     raw: product,
   };
 }
@@ -120,7 +132,20 @@ function mergeShopifyStock(product,ajax) {
   return {...product,variants,_variants_complete:complete};
 }
 
-function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=false}={}) {
+function registeredWeightOptions(url,product) {
+  const profile=lookupRegisteredProfile(url);
+  return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle)};
+}
+function lookupRegisteredProfile(url) {return require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname));}
+function explicitCoffeeWeight(html) {
+  const $=cheerio.load(html || ''),weights=[];
+  $('p,li').each((_,el)=>{
+    const text=$(el).text().trim();
+    if(/^(?:net\s*(?:weight)?\s*[:：]?\s*)?\d+(?:\.\d+)?\s*(?:g|kg|oz|lbs?)\s+(?:of\s+)?(?:whole\s*bean|roasted|ground)?\s*coffee\.?$/i.test(text))weights.push(labelWeight(text));
+  });
+  return weights.length===1?weights[0]:null;
+}
+function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=false,singleVariantDescriptionWeight=false}={}) {
   const variants = (product.variants || []).map(v => ({
     id: v.id == null ? null : String(v.id),
     title: v.title,
@@ -133,7 +158,7 @@ function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=
     availabilitySource:v._availability_source || 'shopify_product_json',
     compareAtPrice: v.compare_at_price,
     currency: product.currency || null,
-    weightGrams: netWeightUnproven?null:preferLabelWeight?(labelWeight(v.title) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
+    weightGrams: netWeightUnproven?null:preferLabelWeight?(labelWeight(v.title) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
     shippingWeightGrams:v.grams ?? null,
   }));
 
@@ -211,6 +236,7 @@ function mergeGptAndJsonData(gptProduct, jsonData) {
 
 module.exports = {
   labelWeight,
+  explicitCoffeeWeight,
   exactAnalyticsMarket,
   mergeShopifyStock,
   isShopifyProductUrl,

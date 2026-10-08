@@ -1,0 +1,87 @@
+{
+  "url": "https://apiary.coffee/products/ejo-heza-women-washed-bourbon",
+  "product": {
+    "id": 10237266460973,
+    "title": "Ejo Heza Women's Group | Washed Bourbon",
+    "handle": "ejo-heza-women-washed-bourbon",
+    "body_html": "<p><strong>Ejo Heza</strong>, meaning “bright tomorrow” in Kinyarwanda, is the name of the women’s group from the Kopakama Cooperative in the Rutsiro district of Rwanda. Incredibly complex and washed with care and precision, we get notes of red berries, rose-like florals, and the sweetness of brown sugar. We’re thrilled to offer this coffee from these women, our first release from Rwanda and through our friends at Artisan Coffee Imports. <br></p>\n<p><strong>Origin</strong><span> | Rutsiro, Rwanda</span></p>\n<p><strong>Producer</strong><span> | Ejo Heza Women’s Group</span></p>\n<p><span><strong>Cooperative</strong></span><span> | Kopakama</span></p>\n<p><strong>Process</strong><span> | Fully Washed</span></p>\n<p><strong>Variety</strong><span> | Bourbon</span></p>\n<p><strong>Elevation</strong><span> | 1650-1900 masl</span></p>\n<p><span>250g Whole Bean Coffee</span></p>",
+    "published_at": "2026-04-13T12:21:52-04:00",
+    "created_at": "2026-03-17T11:17:34-04:00",
+    "updated_at": "2026-10-07T23:59:50-04:00",
+    "vendor": "Apiary Coffee Co.",
+    "product_type": "",
+    "tags": [],
+    "variants": [
+      {
+        "id": 51920873226541,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "ACCRB00007",
+        "requires_shipping": true,
+        "taxable": false,
+        "featured_image": null,
+        "available": true,
+        "price": "27.00",
+        "grams": 264,
+        "compare_at_price": null,
+        "position": 2,
+        "product_id": 10237266460973,
+        "created_at": "2026-03-17T11:17:34-04:00",
+        "updated_at": "2026-10-07T23:59:50-04:00"
+      }
+    ],
+    "images": [
+      {
+        "id": 53700997742893,
+        "created_at": "2026-03-17T15:58:21-04:00",
+        "position": 1,
+        "updated_at": "2026-03-17T15:58:30-04:00",
+        "product_id": 10237266460973,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0900/7117/1373/files/Copy_of_IMG_1031.jpg?v=1773777510",
+        "width": 750,
+        "height": 1000
+      },
+      {
+        "id": 53700935614765,
+        "created_at": "2026-03-17T15:43:17-04:00",
+        "position": 2,
+        "updated_at": "2026-03-17T15:58:30-04:00",
+        "product_id": 10237266460973,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0900/7117/1373/files/EH_Portrait_2022.jpg?v=1773777510",
+        "width": 750,
+        "height": 497
+      }
+    ],
+    "options": [
+      {
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Default Title"
+        ]
+      }
+    ]
+  },
+  "analytics_currency": "USD",
+  "analytics_product": {
+    "id": 10237266460973,
+    "gid": "gid://shopify/Product/10237266460973",
+    "vendor": "Apiary Coffee Co.",
+    "type": "",
+    "handle": "ejo-heza-women-washed-bourbon",
+    "variants": [
+      {
+        "id": 51920873226541,
+        "price": 2700,
+        "name": "Ejo Heza Women's Group | Washed Bourbon",
+        "public_title": null,
+        "sku": "ACCRB00007"
+      }
+    ],
+    "remote": false
+  }
+}

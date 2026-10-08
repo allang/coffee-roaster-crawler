@@ -35,8 +35,8 @@
       "entity_ids": [],
       "identity_drift": [],
       "candidates": [],
-      "status": "pending",
-      "evidence": null,
+      "status": "implemented_verified_identity_or_role_blocked",
+      "evidence": "apiary-live.json",
       "coverage": {
         "all_time_coffees": 0,
         "seen_or_buyable_30d": 0,
@@ -45,7 +45,12 @@
         "currently_available_recent": 0,
         "latest_sighting": null,
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 6,
+      "verified_variants": 6,
+      "prohibited_requests": 0,
+      "production_writes": 0,
+      "blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment."
     },
     {
       "name": "Ceremony",
@@ -101,12 +106,20 @@
     },
     {
       "name": "Colorfull",
-      "identity_status": "unmatched",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "f4635ada-5e28-4376-9b38-a1256113d34d"
+      ],
       "identity_drift": [],
-      "candidates": [],
-      "status": "pending",
-      "evidence": null,
+      "candidates": [
+        {
+          "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+          "website_url": "https://colorfullcoffee.com",
+          "name": "Colorfull Coffee"
+        }
+      ],
+      "status": "implemented_verified_identity_or_role_blocked",
+      "evidence": "colorfull-live.json",
       "coverage": {
         "all_time_coffees": 0,
         "seen_or_buyable_30d": 0,
@@ -115,7 +128,13 @@
         "currently_available_recent": 0,
         "latest_sighting": null,
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 14,
+      "verified_variants": 27,
+      "prohibited_requests": 0,
+      "production_writes": 0,
+      "blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection.",
+      "identity_evidence": "colorfull-identity.json"
     },
     {
       "name": "Fathers",
@@ -160,8 +179,8 @@
           "name": "Klatch Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "implemented_verified_identity_or_role_blocked",
+      "evidence": "klatch-live.json",
       "coverage": {
         "all_time_coffees": 45,
         "seen_or_buyable_30d": 0,
@@ -170,7 +189,12 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-11T11:30:05.943000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 43,
+      "verified_variants": 475,
+      "prohibited_requests": 0,
+      "production_writes": 0,
+      "blocker": "Two audit candidates represent merchant root and Rancho Cucamonga cafe. No entity association until parent identity review."
     },
     {
       "name": "Koppi",
@@ -290,8 +314,8 @@
           "name": "Obscure Coffee Roasters"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "blocked_merchant_inventory",
+      "evidence": "obscure-blocker.json",
       "coverage": {
         "all_time_coffees": 0,
         "seen_or_buyable_30d": 0,
@@ -300,7 +324,8 @@
         "currently_available_recent": 0,
         "latest_sighting": null,
         "null_sighting_timestamps": 0
-      }
+      },
+      "blocker": "Public catalog exposes only two subscriptions; Single Origin, Blends and Collabs categories each report zero products. Empty reconciliation disabled."
     },
     {
       "name": "Onyx",
@@ -316,8 +341,8 @@
           "name": "Onyx Coffee Lab"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "implemented_verified",
+      "evidence": "onyx-live.json",
       "coverage": {
         "all_time_coffees": 676,
         "seen_or_buyable_30d": 0,
@@ -326,16 +351,29 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-10T06:26:21.611000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 42,
+      "verified_variants": 176,
+      "prohibited_requests": 0,
+      "production_writes": 0,
+      "blocker": null
     },
     {
       "name": "Onyx Tonics",
-      "identity_status": "unmatched",
-      "entity_ids": [],
+      "identity_status": "matched_cafe_only",
+      "entity_ids": [
+        "9106cd47-0112-4ee6-834b-fac38fe97374"
+      ],
       "identity_drift": [],
-      "candidates": [],
-      "status": "pending",
-      "evidence": null,
+      "candidates": [
+        {
+          "entity_id": "9106cd47-0112-4ee6-834b-fac38fe97374",
+          "website_url": null,
+          "name": "Onyx Tonics"
+        }
+      ],
+      "status": "blocked_merchant_not_roaster",
+      "evidence": "onyx-tonics-blocker.json",
       "coverage": {
         "all_time_coffees": 0,
         "seen_or_buyable_30d": 0,
@@ -344,7 +382,8 @@
         "currently_available_recent": 0,
         "latest_sighting": null,
         "null_sighting_timestamps": 0
-      }
+      },
+      "blocker": "Cafe-only catalog entity; official multi-roaster coffee bar, no identifiable priced own-coffee inventory."
     },
     {
       "name": "Passport",
@@ -352,8 +391,8 @@
       "entity_ids": [],
       "identity_drift": [],
       "candidates": [],
-      "status": "pending",
-      "evidence": null,
+      "status": "implemented_verified_identity_or_role_blocked",
+      "evidence": "passport-live.json",
       "coverage": {
         "all_time_coffees": 0,
         "seen_or_buyable_30d": 0,
@@ -362,7 +401,13 @@
         "currently_available_recent": 0,
         "latest_sighting": null,
         "null_sighting_timestamps": 0
-      }
+      },
+      "identity_evidence": "passport-identity.json",
+      "blocker": "Pinned tier source places Passport in Brisbane; official merchant verified. Reviewed coverage audit still supplies no database entity ID.",
+      "verified_coffee_products": 255,
+      "verified_variants": 529,
+      "prohibited_requests": 0,
+      "production_writes": 0
     },
     {
       "name": "PERC",
@@ -404,8 +449,8 @@
           "name": "Pilgrim Roasters"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "implemented_verified",
+      "evidence": "pilgrim-live.json",
       "coverage": {
         "all_time_coffees": 0,
         "seen_or_buyable_30d": 0,
@@ -414,7 +459,12 @@
         "currently_available_recent": 0,
         "latest_sighting": null,
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 7,
+      "verified_variants": 16,
+      "prohibited_requests": 0,
+      "production_writes": 0,
+      "blocker": null
     },
     {
       "name": "Square Mile",
@@ -430,8 +480,8 @@
           "name": "Square Mile"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "implemented_verified",
+      "evidence": "square-mile-live.json",
       "coverage": {
         "all_time_coffees": 29,
         "seen_or_buyable_30d": 0,
@@ -440,7 +490,12 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-13T18:24:54.048000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 11,
+      "verified_variants": 23,
+      "prohibited_requests": 0,
+      "production_writes": 0,
+      "blocker": null
     },
     {
       "name": "Three Marks",

@@ -443,5 +443,146 @@
       "s20260713cf43960c3e7d4",
       "s2026071370e1388d2b2b4"
     ]
+  },
+  {
+    "name": "Apiary",
+    "entity_ids": [],
+    "hosts": [
+      "apiary.coffee",
+      "www.apiary.coffee"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/frontpage/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "single_variant_description_weight": true,
+    "identity_blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment."
+  },
+  {
+    "name": "Colorfull",
+    "entity_ids": [
+      "f4635ada-5e28-4376-9b38-a1256113d34d"
+    ],
+    "hosts": [
+      "colorfullcoffee.com",
+      "www.colorfullcoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "",
+      "Blend",
+      "decaf"
+    ],
+    "identity_blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection."
+  },
+  {
+    "name": "Klatch",
+    "entity_ids": [],
+    "hosts": [
+      "www.klatchcoffee.com",
+      "klatchcoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/all-coffees/products.json"
+    ],
+    "coffee_product_types": [
+      "Single Origin",
+      "Pearl Reserve",
+      "Blends",
+      "Espresso"
+    ],
+    "identity_blocker": "Two audit candidates represent merchant root and Rancho Cucamonga cafe. No entity association until parent identity review."
+  },
+  {
+    "name": "Onyx",
+    "entity_ids": [
+      "b765bee5-9622-4735-a948-7816736da3e5"
+    ],
+    "hosts": [
+      "onyxcoffeelab.com",
+      "www.onyxcoffeelab.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/instant-coffee/products.json",
+      "/collections/special/products.json",
+      "/collections/cometeer/products.json"
+    ],
+    "additional_product_paths": [
+      "/products/2026-advent-calendar"
+    ],
+    "coffee_product_types": [
+      "Coffee",
+      "Box Set",
+      "Boxset",
+      "",
+      "Preset Box"
+    ],
+    "exclude_product_ids": [
+      "7462950862946"
+    ]
+  },
+  {
+    "name": "Pilgrim",
+    "entity_ids": [
+      "07704a04-9b9c-488e-a126-31d7258ed219"
+    ],
+    "hosts": [
+      "pilgrimroasters.com",
+      "www.pilgrimroasters.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/whole-bean-coffee/products.json",
+      "/collections/roger-urena-collection/products.json"
+    ],
+    "coffee_product_types": [
+      "",
+      "Whole Beans",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Square Mile",
+    "entity_ids": [
+      "298c93c5-cdeb-45b0-9407-8c02b470f0d8"
+    ],
+    "hosts": [
+      "shop.squaremilecoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "coffee_product_types": [
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Passport",
+    "entity_ids": [],
+    "hosts": [
+      "passportcoffee.com.au",
+      "www.passportcoffee.com.au"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "Coffee",
+      "Blend"
+    ],
+    "strict_coffee_product_types": true,
+    "exclude_variant_title_pattern": "^Vac Sealed Pouch Option \\(per pouch\\)$",
+    "identity_blocker": "Pinned tier source places Passport in Brisbane; official merchant verified. Reviewed coverage audit still supplies no database entity ID."
   }
 ]

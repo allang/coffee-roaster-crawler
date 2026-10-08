@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-10-08T04:07:28.022Z",
+  "name": "Passport",
+  "identity_status": "unmatched",
+  "entity_id": null,
+  "assignment_made": false,
+  "blocker": "Database entity identity remains unresolved. Pinned tier-source evidence resolves intended merchant to Passport Specialty Coffee in Brisbane, Australia; distinct Arizona merchant must not be substituted.",
+  "evidence": [
+    {
+      "url": "https://passportcoffee.com.au/pages/about-us",
+      "title": "About us– Passport Specialty Coffee Roaster",
+      "name": "Passport Specialty Coffee",
+      "location": "Northgate, Brisbane, Queensland, Australia",
+      "primary_content": " Home About us Our Philosophy We value every step in the coffee process. From producer, through trader, to us as roasters, to cafes, through baristas and into your cup, .every step is valuable and requires knowledge, skill and effort to keep the chain of custody intact. Our Mission We endeavour for every customer to have the best possible experience they can. Making coffee should not be more complicated than a year 12 science experiment, it should be an easy and relaxing process. We have by sourced the worlds highest quality beans and expertly roasted them so that you can extract the flavour easily and just enjoy great coffee. Who We Are Aaron has over 30 years’ experience in the hospitality industry and 15 years in Specialty Coffee. He has owned cafes and managed national coffee roasting brands, and at the end of day, would rather be face to face with everyday customers, sharing his passion for amazing coffee. He started Passport Specialty Coffee for one reason only…..to roast and drink the type of coffee he loved. Uncompromised. Unapologetic. Unwavering. And if other people liked to drink these same coffees, great, he loves helping them to explore the flavours and processes themselves as well. What Customer Say About Us “ These guys are the best roasters in Brisbane! No competition. I didn’t know how much others are over-roasting their beans till I tried this coffee. Highly recommend the Departure blend if you want to experience how well roasted coffee beans should taste. Their single origins are outstanding too and have a solid socially responsible backstory that I like a lot. Worth traveling for. ” The FergusonsCustomer “ You guys Rock, placed my order yesterday and it arrived this morning. ” Peter EnglandCustomer “ I discovered Passport coffee about a year ago and it's the best coffee I've ever had. The staff are really friendly and happy to share their in-depth knowledge of coffee roasting if you're interested. There are tables if you want to drink at the store, or you can obviously purcahsed as take-away. I've started purchasing beans (in winter) and cold-brew (in summer) to drink at home. I can highly recommend for anyone who likes good coffee. ” Poppy OwenCustomer "
+    },
+    {
+      "url": "https://passportcoffee.com/pages/about-us",
+      "title": "\n      Our Story\n – WHOLESALE Passport Coffee & Tea ",
+      "name": "Passport Coffee & Tea",
+      "location": "Scottsdale, Arizona, USA",
+      "primary_content": " Access DeniedIMPORTANT! If you’re a store owner, please make sure you have Customer accounts enabled in your Store Admin, as you have customer based locks set up with EasyLockdown app. Enable Customer Accounts Our Story Since 1983, our mission has been to search out small farms, promote socially responsible projects, and provide coffees that cross social and economic boundaries. All our coffees are roasted to order and custom blended. We roast our beans using the air roasting method. Air roasting brings art and science together to achieve the perfect cup of coffee. Our handcrafted teas are created using full leaf teas and botanicals from all over the world. Our family mission extends beyond our offices as we are committed to contributing time and resources to many local community projects. Promoting socially responsible coffees through the support of small farms and co-ops that hand pick the best coffees is what sets us apart! We offer a selection of coffees from which proceeds are reinvested in fair-trade negotiations, improved pay for farmers, and supporting vital infrastructure initiatives such as clean water wells in coffee farming communities. The coffee community unites friends, workers, and families from diverse backgrounds. Our family business offers fresh micro-roasted coffees from the best farms in the world so everyone can experience the decades of tradition imparted to each and every cup. A number of our coffee blends are inspired by cities we visited overseas, a tribute to fond memories drinking coffee and meeting people in the coffee community. Having traveled widely abroad in search of the best coffees and teas the world has to offer, we put our passport stamp on our favorites. More than 34 years later we are still dedicated to bringing you the highest quality, taste, and traditions from around the world. The Brecheisen Family---Ric, Judy, Tres, Ann, TJ, and David Invalid password Enter "
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/pages/about-us",
+      "status": 200,
+      "at": "2026-10-08T04:07:27.714Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com/pages/about-us",
+      "status": 200,
+      "at": "2026-10-08T04:07:27.959Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "tier_source_evidence": {
+    "source_file": "everycoffee-roaster-tiers/data/pourover-roaster-mentions.csv",
+    "rows": [
+      {
+        "source_id": "S19",
+        "source_url": "https://www.reddit.com/r/pourover/comments/1lt7ilv/",
+        "relevance": "Passport Coffee explicitly called an Australian roaster."
+      },
+      {
+        "source_id": "S30",
+        "source_url": "https://www.reddit.com/r/pourover/comments/1sqftqc/",
+        "relevance": "Passport and The Maillard Project explicitly placed in Brisbane."
+      }
+    ]
+  },
+  "merchant_resolved": true,
+  "merchant_url": "https://passportcoffee.com.au"
+}

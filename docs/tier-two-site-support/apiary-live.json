@@ -1,0 +1,423 @@
+{
+  "name": "Apiary",
+  "checked_at": "2026-10-08T04:00:42.878Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://apiary.coffee/products/ejo-heza-women-washed-bourbon",
+      "https://apiary.coffee/products/sebastian-ramirez-pink-bourbon-copy",
+      "https://apiary.coffee/products/nicolas-angela-honey-red-catuai",
+      "https://apiary.coffee/products/finca-el-vergel-colombia",
+      "https://apiary.coffee/products/qunqana-honey-heirloom",
+      "https://apiary.coffee/products/sebastian-ramirez-washed-pink-bourbon"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/frontpage/products.json",
+        "page": 1,
+        "products": 6,
+        "coffeeProducts": 6
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://apiary.coffee/products/ejo-heza-women-washed-bourbon",
+      "title": "Ejo Heza Women's Group | Washed Bourbon",
+      "source_product_id": "10237266460973",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "51920873226541",
+          "title": "Default Title",
+          "weight_g": 250,
+          "money": {
+            "raw": "27.00",
+            "amount": "27.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "| Fully Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "| Fully Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://apiary.coffee/products/sebastian-ramirez-pink-bourbon-copy",
+      "title": "Sebastian Ramirez | White Honey Geisha",
+      "source_product_id": "10165368684845",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "51642669629741",
+          "title": "Default Title",
+          "weight_g": 100,
+          "money": {
+            "raw": "35.00",
+            "amount": "35.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "| Carbonic Maceration White Honey",
+        "process_methods": [
+          "honey",
+          "carbonic_maceration"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "| Carbonic Maceration White Honey"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://apiary.coffee/products/nicolas-angela-honey-red-catuai",
+      "title": "Nicolas & Angela | Red Catuai",
+      "source_product_id": "10159380988205",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "51628205900077",
+          "title": "Default Title",
+          "weight_g": 250,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "| Honey",
+        "process_methods": [
+          "honey"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "| Honey"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://apiary.coffee/products/finca-el-vergel-colombia",
+      "title": "Finca El Vergel | Magnum Sidra",
+      "source_product_id": "9919862079789",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "50370410381613",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": "30.00",
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "| Natural Mosto Anaerobic",
+        "process_methods": [
+          "natural",
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "| Natural Mosto Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://apiary.coffee/products/qunqana-honey-heirloom",
+      "title": "Qunqana | Ethiopian Heirloom",
+      "source_product_id": "9870475165997",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "50206851989805",
+          "title": "Default Title",
+          "weight_g": 250,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "| Honey",
+        "process_methods": [
+          "honey"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "| Honey"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://apiary.coffee/products/sebastian-ramirez-washed-pink-bourbon",
+      "title": "Sebastian Ramirez | Pink Bourbon",
+      "source_product_id": "9870473986349",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "50206847893805",
+          "title": "Default Title",
+          "weight_g": 250,
+          "money": {
+            "raw": "27.00",
+            "amount": "27.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "| Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "| Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/collections/frontpage/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:00:33.350Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/collections/frontpage/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:00:33.780Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/ejo-heza-women-washed-bourbon",
+      "status": 200,
+      "at": "2026-10-08T04:00:34.418Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/ejo-heza-women-washed-bourbon.json",
+      "status": 200,
+      "at": "2026-10-08T04:00:34.849Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/ejo-heza-women-washed-bourbon.js",
+      "status": 200,
+      "at": "2026-10-08T04:00:35.280Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/sebastian-ramirez-pink-bourbon-copy",
+      "status": 200,
+      "at": "2026-10-08T04:00:35.813Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/sebastian-ramirez-pink-bourbon-copy.json",
+      "status": 200,
+      "at": "2026-10-08T04:00:36.301Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/sebastian-ramirez-pink-bourbon-copy.js",
+      "status": 200,
+      "at": "2026-10-08T04:00:36.787Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/nicolas-angela-honey-red-catuai",
+      "status": 200,
+      "at": "2026-10-08T04:00:37.435Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/nicolas-angela-honey-red-catuai.json",
+      "status": 200,
+      "at": "2026-10-08T04:00:37.890Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/nicolas-angela-honey-red-catuai.js",
+      "status": 200,
+      "at": "2026-10-08T04:00:38.384Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/finca-el-vergel-colombia",
+      "status": 200,
+      "at": "2026-10-08T04:00:38.831Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/finca-el-vergel-colombia.json",
+      "status": 200,
+      "at": "2026-10-08T04:00:39.296Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/finca-el-vergel-colombia.js",
+      "status": 200,
+      "at": "2026-10-08T04:00:39.809Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/qunqana-honey-heirloom",
+      "status": 200,
+      "at": "2026-10-08T04:00:40.333Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/qunqana-honey-heirloom.json",
+      "status": 200,
+      "at": "2026-10-08T04:00:40.854Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/qunqana-honey-heirloom.js",
+      "status": 200,
+      "at": "2026-10-08T04:00:41.373Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/sebastian-ramirez-washed-pink-bourbon",
+      "status": 200,
+      "at": "2026-10-08T04:00:41.969Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/sebastian-ramirez-washed-pink-bourbon.json",
+      "status": 200,
+      "at": "2026-10-08T04:00:42.313Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/products/sebastian-ramirez-washed-pink-bourbon.js",
+      "status": 200,
+      "at": "2026-10-08T04:00:42.818Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "entity_ids": [],
+  "identity_blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment."
+}

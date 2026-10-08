@@ -3,7 +3,7 @@
 // Merchant GET-only inspection. This module never loads a DB client or AI client.
 const fs=require('node:fs');
 const profiles=require('./profiles.json');
-const {discoverSiteProducts}=require('./discovery');
+const {discoverProfileProducts}=require('./discovery');
 const {createReader}=require('./network');
 const {structuredExtraction}=require('../extraction');
 const {normalizeProduct}=require('../catalogNormalization');
@@ -21,7 +21,7 @@ async function main() {
   const name=process.argv[2],output=process.argv[3];
   const profile=profiles.find(p=>p.name.toLowerCase()===String(name).toLowerCase());
   if(!profile)throw Error('Usage: node src/siteSupport/cli.js SITE [OUTPUT.json]; site must have a reviewed profile');
-  const reader=createReader(profile),roaster={id:profile.entity_ids[0],website_url:profile.bootstrap_url || 'https://'+profile.hosts[0]},discovery=await discoverSiteProducts(roaster,reader),products=[],errors=[],unavailableProducts=[];
+  const reader=createReader(profile),roaster={id:profile.entity_ids[0],website_url:profile.bootstrap_url || 'https://'+profile.hosts[0]},discovery=await discoverProfileProducts(roaster,profile,reader.fetchHtml),products=[],errors=[],unavailableProducts=[];
   if(discovery.error)errors.push({stage:'discovery',error:discovery.error});
   else if(!discovery.complete)errors.push({stage:'discovery',error:'Inventory discovery incomplete'});
   for(const url of discovery.urls) {
@@ -38,12 +38,13 @@ async function main() {
     const product=normalizeProduct(structured.product,url),availability=productAvailability({html:page.data,sourceProduct,status:200,sourceUrl:url,finalUrl:page.finalUrl,shopifyProduct:native?.success?native.raw:null});
     const failures=inspectionErrors(product,availability);if(failures.length){errors.push({url,error:failures.join('; ')});continue;}
     const priced=product.variants.filter(v=>v.money.minorUnits!=null && v.money.currency);
-    if(!priced.length){errors.push({url,error:'No proven currency and price'});continue;}
+    if(!priced.length || priced.length!==product.variants.length){errors.push({url,error:'Exact currency and price missing for one or more variants'});continue;}
+    if(!product.source_product_id || product.variants.some(v=>!v.source_id)){errors.push({url,error:'Exact product or variant identity missing'});continue;}
     products.push({url,title:product.name,source_product_id:product.source_product_id,state:availability.state,variants:product.variants.map(v=>({id:v.source_id,title:v.title,weight_g:v.weight_g,money:v.money,state:v.availability,price_source:v.price_source})),processing:product.processing,description_present:Boolean(product.description_raw),image_present:Boolean(product.attributes?.product_image_url)});
     console.log('PASS '+product.name+' ('+priced.length+' priced variants, '+availability.state+')');
     }catch(error){errors.push({url,error:error.message});}
   }
-  const report={name:profile.name,checked_at:new Date().toISOString(),mode:'merchant-get-only-dry-run',discovery,products,unavailable_products:unavailableProducts,errors,requests:reader.requests,production_writes:0,ai_calls:0,prohibited_requests:0,passed:products.length>0 && !errors.length};
+  const report={name:profile.name,checked_at:new Date().toISOString(),mode:'merchant-get-only-dry-run',entity_ids:profile.entity_ids,identity_blocker:profile.identity_blocker || null,discovery,products,unavailable_products:unavailableProducts,errors,requests:reader.requests,production_writes:0,ai_calls:0,prohibited_requests:0,passed:discovery.complete===true && products.length>0 && !errors.length};
   if(output)fs.writeFileSync(output,JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify({name:profile.name,coffee_products:products.length,errors:errors.length,passed:report.passed,production_writes:0}));
   if(!report.passed)process.exitCode=1;
