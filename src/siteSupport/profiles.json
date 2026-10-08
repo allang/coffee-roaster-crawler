@@ -483,7 +483,9 @@
   },
   {
     "name": "Klatch",
-    "entity_ids": [],
+    "entity_ids": [
+      "7d74081f-e742-4158-ada6-c67dcd7430f9"
+    ],
     "hosts": [
       "www.klatchcoffee.com",
       "klatchcoffee.com"
@@ -498,7 +500,7 @@
       "Blends",
       "Espresso"
     ],
-    "identity_blocker": "Two audit candidates represent merchant root and Rancho Cucamonga cafe. No entity association until parent identity review."
+    "identity_review": "Existing root merchant record owns all 45 saved coffees and matches the official Klatch store. The separate Rancho Cucamonga cafe record remains separate and is not an inventory owner in this profile."
   },
   {
     "name": "Onyx",

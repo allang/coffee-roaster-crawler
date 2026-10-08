@@ -175,8 +175,11 @@
     },
     {
       "name": "Klatch",
-      "identity_status": "ambiguous",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "23bca0e3-978f-430c-a307-ec815a1a42ae",
+        "7d74081f-e742-4158-ada6-c67dcd7430f9"
+      ],
       "identity_drift": [],
       "candidates": [
         {
@@ -190,7 +193,7 @@
           "name": "Klatch Coffee"
         }
       ],
-      "status": "implemented_verified_identity_or_role_blocked",
+      "status": "implemented_verified",
       "evidence": "klatch-live.json",
       "coverage": {
         "all_time_coffees": 45,
@@ -205,7 +208,9 @@
       "verified_variants": 475,
       "prohibited_requests": 0,
       "production_writes": 0,
-      "blocker": "Two audit candidates represent merchant root and Rancho Cucamonga cafe. No entity association until parent identity review."
+      "blocker": null,
+      "registered_inventory_entity_id": "7d74081f-e742-4158-ada6-c67dcd7430f9",
+      "identity_evidence": "klatch-identity.json"
     },
     {
       "name": "Koppi",

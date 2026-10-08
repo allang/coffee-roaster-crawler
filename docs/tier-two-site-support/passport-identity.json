@@ -54,5 +54,51 @@
     ]
   },
   "merchant_resolved": true,
-  "merchant_url": "https://passportcoffee.com.au"
+  "merchant_url": "https://passportcoffee.com.au",
+  "fresh_catalog_check_at": "2026-10-08T07:41:18.374996+00:00",
+  "fresh_existing_candidate_readback": [
+    {
+      "id": "16f532e3-7928-48a6-bd74-edda0eac0e9e",
+      "name": "Passport Cafe",
+      "slug": "passport-cafe-osm-osm-way-264217518",
+      "website_url": null,
+      "primary_location": null,
+      "entity_roles": []
+    },
+    {
+      "id": "b5eda9a9-d4cf-4ed0-8be5-94f62159b4f2",
+      "name": "Passport Coffee & Tea",
+      "slug": "passport-coffee-tea-osm-osm-way-309663758",
+      "website_url": null,
+      "primary_location": null,
+      "entity_roles": [
+        {
+          "role": "cafe"
+        }
+      ]
+    }
+  ],
+  "fresh_existing_candidate_locations": [
+    {
+      "entity_id": "16f532e3-7928-48a6-bd74-edda0eac0e9e",
+      "label": null,
+      "address1": null,
+      "city": null,
+      "region": null,
+      "country": null,
+      "lat": 31.7693546333333,
+      "lng": -106.444231077778
+    },
+    {
+      "entity_id": "b5eda9a9-d4cf-4ed0-8be5-94f62159b4f2",
+      "label": null,
+      "address1": "7585 East Gray Road",
+      "city": "Scottsdale",
+      "region": "AZ",
+      "country": "US",
+      "lat": 33.6123752333333,
+      "lng": -111.918117222222
+    }
+  ],
+  "catalog_proposal": "catalog-repair-proposals.json"
 }

@@ -1,27 +1,96 @@
 {
-  "identity_status": "ambiguous",
-  "candidate_entity_ids": [
+  "checked_at": "2026-10-08T07:26:34.334961+00:00",
+  "source_name": "Klatch",
+  "tier": 2,
+  "identity_status": "verified_same_brand_multiple_entities",
+  "existing_brand_entity_ids": [
     "23bca0e3-978f-430c-a307-ec815a1a42ae",
     "7d74081f-e742-4158-ada6-c67dcd7430f9"
   ],
-  "recommended_roaster_candidate": "7d74081f-e742-4158-ada6-c67dcd7430f9",
-  "assignment_made": false,
-  "evidence": [
+  "registered_inventory_entity_id": "7d74081f-e742-4158-ada6-c67dcd7430f9",
+  "catalog_identity_readback": [
     {
-      "url": "https://www.klatchcoffee.com/pages/rancho-cucamonga",
-      "success": false,
-      "error": "Unverified destination",
-      "explanation": "Cafe URL redirects to cafes.klatchcoffee.com ordering. Guarded inventory reader refuses this unreviewed ordering host. Merchant root is the online roasted-coffee store; database assignment still requires parent review."
+      "id": "23bca0e3-978f-430c-a307-ec815a1a42ae",
+      "name": "Klatch Coffee",
+      "slug": "klatch-coffee-osm-osm-node-6199365605",
+      "website_url": "https://www.klatchcoffee.com/pages/rancho-cucamonga",
+      "primary_location": "Rancho Cucamonga, California, US",
+      "entity_roles": [
+        {
+          "role": "cafe"
+        },
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "7d74081f-e742-4158-ada6-c67dcd7430f9",
+      "name": "Klatch Coffee",
+      "slug": "klatch-coffee-osm-osm-node-12443497791",
+      "website_url": "https://www.klatchcoffee.com/",
+      "primary_location": null,
+      "entity_roles": [
+        {
+          "role": "cafe"
+        },
+        {
+          "role": "roaster"
+        }
+      ]
     }
   ],
+  "saved_coffee_counts": {
+    "7d74081f-e742-4158-ada6-c67dcd7430f9": 45,
+    "23bca0e3-978f-430c-a307-ec815a1a42ae": 0
+  },
+  "identity_evidence": [
+    {
+      "url": "https://www.klatchcoffee.com/",
+      "canonical": "https://www.klatchcoffee.com/",
+      "homepage_links_named_cafe": true,
+      "body_sha256": "d1f9f61a0f38c007a2b64af52cedc2eb1f91d315f99c7a935826e5e57a0aceb7"
+    },
+    {
+      "url": "https://www.klatchcoffee.com/pages/all-about-family",
+      "declared_business": "Family coffee company based in Southern California that sources, roasts and brews its own coffee.",
+      "primary_text_sha256": "b5c7b96625101e48851e99a05bcdbd8e30649325a44ad51c160e0c14dc2bf8b8"
+    },
+    {
+      "url": "https://www.klatchcoffee.com/pages/locations",
+      "canonical": "https://www.klatchcoffee.com/pages/locations",
+      "scope": "Official brand cafe locations and ordering information."
+    }
+  ],
+  "registration_policy": "Only the existing merchant-root inventory owner is registered in the reviewed source adapter. The cafe remains separate; no coffee is moved or copied to it. Both verified same-brand roaster IDs retain the user-assigned tier in the dry-run mapping.",
   "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.klatchcoffee.com/",
+      "status": 200,
+      "at": "2026-10-08T07:18:45.183Z"
+    },
     {
       "method": "GET",
       "url": "https://www.klatchcoffee.com/pages/rancho-cucamonga",
       "status": 301,
-      "at": "2026-10-08T04:02:54.024Z"
+      "at": "2026-10-08T07:18:45.748Z",
+      "error": "Unverified destination"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.klatchcoffee.com/pages/all-about-family",
+      "status": 200,
+      "at": "2026-10-08T07:19:46.138Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.klatchcoffee.com/pages/locations",
+      "status": 200,
+      "at": "2026-10-08T07:19:46.640Z"
     }
   ],
   "production_writes": 0,
+  "ai_calls": 0,
   "prohibited_requests": 0
 }
