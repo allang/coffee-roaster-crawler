@@ -9,12 +9,21 @@ const {structuredExtraction}=require('../extraction');
 const {normalizeProduct}=require('../catalogNormalization');
 const {productAvailability}=require('../productEvidence');
 const {fetchShopifyProductJson}=require('../shopifyProduct');
+function inspectionErrors(product,availability) {
+  const errors=[];
+  if(!product.source_product_id)errors.push('Exact product identity missing');
+  if(!product.variants.length || product.variants.some(v=>!v.source_id) || new Set(product.variants.map(v=>String(v.source_id))).size!==product.variants.length)errors.push('Exact unique variant identities missing');
+  if(product.variants.some(v=>v.money.minorUnits==null || !v.money.currency))errors.push('Exact paired price and currency missing for a variant');
+  if(availability.state==='unknown' || product.variants.some(v=>v.availability==='unknown'))errors.push('Exact stock evidence missing');
+  return errors;
+}
 async function main() {
   const name=process.argv[2],output=process.argv[3];
   const profile=profiles.find(p=>p.name.toLowerCase()===String(name).toLowerCase());
   if(!profile)throw Error('Usage: node src/siteSupport/cli.js SITE [OUTPUT.json]; site must have a reviewed profile');
-  const reader=createReader(profile),roaster={id:profile.entity_ids[0],website_url:'https://'+profile.hosts[0]},discovery=await discoverSiteProducts(roaster,reader),products=[],errors=[],unavailableProducts=[];
+  const reader=createReader(profile),roaster={id:profile.entity_ids[0],website_url:profile.bootstrap_url || 'https://'+profile.hosts[0]},discovery=await discoverSiteProducts(roaster,reader),products=[],errors=[],unavailableProducts=[];
   if(discovery.error)errors.push({stage:'discovery',error:discovery.error});
+  else if(!discovery.complete)errors.push({stage:'discovery',error:'Inventory discovery incomplete'});
   for(const url of discovery.urls) {
     const page=await reader.fetchHtml(url);
     if(!page.success){errors.push({url,error:page.error});continue;}
@@ -23,10 +32,11 @@ async function main() {
     try {
     const jsonFetch=async value=>{const response=await reader.fetchHtml(value);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid product JSON'};}};
     const native=profile.adapter==='shopify'?await fetchShopifyProductJson(url,null,{fetchJson:jsonFetch}):null;
-    const sourceProduct=profile.adapter==='square'?await require('./square').fetchSquareProduct(page.data,url,profile,reader.fetchHtml):profile.adapter==='subbly'?await require('./subbly').fetchSubblyProduct(page.data,url,profile,reader.fetchHtml):null;
+    const sourceProduct=profile.adapter==='square'?await require('./square').fetchSquareProduct(page.data,url,profile,reader.fetchHtml):profile.adapter==='subbly'?await require('./subbly').fetchSubblyProduct(page.data,url,profile,reader.fetchHtml):profile.adapter==='nuxt_shopify'?await require('./nuxtShopify').fetchNuxtShopifyProduct(page.data,url,profile,reader.fetchHtml):profile.adapter==='imweb'?await require('./imweb').fetchImwebProduct(page.data,url,profile,reader.fetchHtml):null;
     const structured=structuredExtraction({html:page.data,sourceProduct,url,finalUrl:page.finalUrl},native);
-    if(!structured.product || !(structured.coffee || profile.coffee_collection_verified || native?.success && profile.coffee_product_types?.includes(native.data.productType))){errors.push({url,error:'Exact coffee product data missing'});continue;}
+    if(!structured.product || !(structured.coffee || profile.coffee_collection_verified || native?.success && (profile.coffee_product_types?.includes(native.data.productType) || profile.coffee_handles?.includes(native.data.handle)))){errors.push({url,error:'Exact coffee product data missing'});continue;}
     const product=normalizeProduct(structured.product,url),availability=productAvailability({html:page.data,sourceProduct,status:200,sourceUrl:url,finalUrl:page.finalUrl,shopifyProduct:native?.success?native.raw:null});
+    const failures=inspectionErrors(product,availability);if(failures.length){errors.push({url,error:failures.join('; ')});continue;}
     const priced=product.variants.filter(v=>v.money.minorUnits!=null && v.money.currency);
     if(!priced.length){errors.push({url,error:'No proven currency and price'});continue;}
     products.push({url,title:product.name,source_product_id:product.source_product_id,state:availability.state,variants:product.variants.map(v=>({id:v.source_id,title:v.title,weight_g:v.weight_g,money:v.money,state:v.availability,price_source:v.price_source})),processing:product.processing,description_present:Boolean(product.description_raw),image_present:Boolean(product.attributes?.product_image_url)});
@@ -39,4 +49,4 @@ async function main() {
   if(!report.passed)process.exitCode=1;
 }
 if(require.main===module)main().catch(error=>{console.error(error.message);process.exitCode=1;});
-module.exports={main};
+module.exports={main,inspectionErrors};

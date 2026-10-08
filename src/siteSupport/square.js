@@ -40,7 +40,7 @@ async function discoverSquareProducts(roaster,profile,fetchHtml) {
       const items=await paged(url.href,fetchHtml);
       for(const item of items) {
         if(item.owner_id!==profile.square_owner_id || !item.categoryIds?.includes(category))throw Error('Square product belongs to a different merchant/category');
-        if(item.visibility!=='visible' || item.only_subscribable || /gift\s*card|subscription/i.test(item.name))continue;
+        if(item.visibility!=='visible' || item.only_subscribable || require('./shopifyDiscovery').excluded.test(item.name))continue;
         const link=new URL(item.absolute_site_link);
         if(!profile.hosts.includes(link.hostname) || !/^\/product\/[^/]+\/[a-z0-9]+\/?$/i.test(link.pathname))throw Error('Square source URL mismatch');
         urls.add(link.href);
@@ -60,7 +60,9 @@ async function fetchSquareProduct(html,sourceUrl,profile,fetchHtml) {
   const offers=skus.map(s=>{
     const knownSoldOut=s.sold_out===true;
     const buyable=s.sold_out===false && s.sellable===true && s.fulfillable===true && s.fulfillment?.methods?.shipping===true && product.preordering?.shipping===false;
-    return {'@type':'Offer','@id':s.id,name:s.name,sku:s.id,_merchant_sku:s.sku || null,url:sourceUrl,price:s.price?.current,priceCurrency:merchant.currency,availability:knownSoldOut?'https://schema.org/OutOfStock':buyable?'https://schema.org/InStock':null};
+    const size=require('../shopifyProduct').labelWeight(s.name),hasSize=/\d\s*(?:g|kg|oz|lbs?)\b/i.test(s.name || '');
+    const netWeight=size ?? (hasSize?null:require('./netWeight').explicitNetWeight(product.short_description,product.name));
+    return {'@type':'Offer','@id':s.id,name:s.name,sku:s.id,_merchant_sku:s.sku || null,_net_weight_g:netWeight,url:sourceUrl,price:s.price?.current,priceCurrency:merchant.currency,availability:knownSoldOut?'https://schema.org/OutOfStock':buyable?'https://schema.org/InStock':null};
   });
   return {'@type':'Product',url:sourceUrl,productID:product.id,name:product.name,description:product.short_description || '',category:product.category?.data?.name || '',image:product.images?.data?.[0]?.absolute_url || product.thumbnail?.data?.absolute_url,offers,_variants_complete:true,_market_source:'square_public_catalog_skus'};
 }

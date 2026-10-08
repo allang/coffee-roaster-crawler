@@ -5,6 +5,8 @@ const {jsonLiteral}=require('./siteSupport/jsonLiteral');
 const {parseMoney}=require('./catalogNormalization');
 const {parseWeightGrams}=require('./product-value-parsers.cjs');
 function labelWeight(value) {
+  // Roast-date suffixes do not change the explicitly labelled net coffee size.
+  value=String(value || '').replace(/\s*-\s*\d{1,2}\/\d{1,2}\s*$/,'');
   const direct=parseWeightGrams(value);if(direct!=null)return direct;
   const dual=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\(\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\)\s*$/i);
   const reverse=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\(\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\)\s*$/i);
@@ -88,6 +90,9 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
   }
 
   let product = result.data.product;
+  const registeredProfile=require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname)),registered=Boolean(registeredProfile);
+  const handle=decodeURIComponent(new URL(url).pathname.match(/\/products\/([^/]+)\/?$/)?.[1] || '');
+  if(registered && (product.handle!==handle || !/^[1-9]\d*$/.test(String(product.id || ''))))return {success:false,error:'Exact registered Shopify product identity mismatch'};
   // Public product.json may omit sellability. Ajax supplies exact-ID stock flags;
   // its presentment-currency price integers are deliberately not merged here.
   const ajaxUrl=new URL(jsonUrl);ajaxUrl.pathname=ajaxUrl.pathname.replace(/\.json$/,'.js');
@@ -98,7 +103,7 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
 
   return {
     success: true,
-    data: parseShopifyProduct(product,{preferLabelWeight:require('./siteSupport/profiles.json').some(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname))}),
+    data: parseShopifyProduct(product,{preferLabelWeight:registered,netWeightUnproven:registeredProfile?.ambiguous_net_weight_handles?.includes(product.handle)}),
     raw: product,
   };
 }
@@ -115,7 +120,7 @@ function mergeShopifyStock(product,ajax) {
   return {...product,variants,_variants_complete:complete};
 }
 
-function parseShopifyProduct(product,{preferLabelWeight=false}={}) {
+function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=false}={}) {
   const variants = (product.variants || []).map(v => ({
     id: v.id == null ? null : String(v.id),
     title: v.title,
@@ -128,7 +133,7 @@ function parseShopifyProduct(product,{preferLabelWeight=false}={}) {
     availabilitySource:v._availability_source || 'shopify_product_json',
     compareAtPrice: v.compare_at_price,
     currency: product.currency || null,
-    weightGrams: preferLabelWeight?(labelWeight(v.title) ?? (product.variants.length===1?labelWeight(product.title):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
+    weightGrams: netWeightUnproven?null:preferLabelWeight?(labelWeight(v.title) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
     shippingWeightGrams:v.grams ?? null,
   }));
 

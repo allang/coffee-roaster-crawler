@@ -1,0 +1,5883 @@
+{
+  "name": "Obadiah",
+  "checked_at": "2026-10-08T04:11:39.579Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://obadiahcoffee.com/products/aquiares-estate",
+      "https://obadiahcoffee.com/products/aramosa-laurina",
+      "https://obadiahcoffee.com/products/banko-gotiti",
+      "https://obadiahcoffee.com/products/bochesa",
+      "https://obadiahcoffee.com/products/bombe",
+      "https://obadiahcoffee.com/products/chelin-geisha",
+      "https://obadiahcoffee.com/products/chelin-honey-sidra",
+      "https://obadiahcoffee.com/products/chelin-pack",
+      "https://obadiahcoffee.com/products/comparative-pack",
+      "https://obadiahcoffee.com/products/el-mirador",
+      "https://obadiahcoffee.com/products/el-obraje",
+      "https://obadiahcoffee.com/products/el-ocaso",
+      "https://obadiahcoffee.com/products/eliza",
+      "https://obadiahcoffee.com/products/etago",
+      "https://obadiahcoffee.com/products/fruit-pack",
+      "https://obadiahcoffee.com/products/fuyan",
+      "https://obadiahcoffee.com/products/gaharo-washed",
+      "https://obadiahcoffee.com/products/gaitania",
+      "https://obadiahcoffee.com/products/gicherori",
+      "https://obadiahcoffee.com/products/gisheke",
+      "https://obadiahcoffee.com/products/gitwe",
+      "https://obadiahcoffee.com/products/green-land",
+      "https://obadiahcoffee.com/products/haru",
+      "https://obadiahcoffee.com/products/kamuchege",
+      "https://obadiahcoffee.com/products/karimikui",
+      "https://obadiahcoffee.com/products/kiandu-ab",
+      "https://obadiahcoffee.com/products/kibingo",
+      "https://obadiahcoffee.com/products/kigeri-steeped-coffee",
+      "https://obadiahcoffee.com/products/tak-koke",
+      "https://obadiahcoffee.com/products/la-cabana",
+      "https://obadiahcoffee.com/products/sul-de-minas-steeped-coffee",
+      "https://obadiahcoffee.com/products/la-divisa",
+      "https://obadiahcoffee.com/products/la-hacienda",
+      "https://obadiahcoffee.com/products/la-pastora",
+      "https://obadiahcoffee.com/products/lalesa",
+      "https://obadiahcoffee.com/products/moe-htet-estate",
+      "https://obadiahcoffee.com/products/musozi",
+      "https://obadiahcoffee.com/products/ngila",
+      "https://obadiahcoffee.com/products/nossa-senhora-de-fatima",
+      "https://obadiahcoffee.com/products/obadiah-flor",
+      "https://obadiahcoffee.com/products/ojo-de-agua",
+      "https://obadiahcoffee.com/products/palco",
+      "https://obadiahcoffee.com/products/pantano",
+      "https://obadiahcoffee.com/products/pascoal-set",
+      "https://obadiahcoffee.com/products/piedra-azul",
+      "https://obadiahcoffee.com/products/popayan-reserve-colombia-decaf",
+      "https://obadiahcoffee.com/products/red-dragon-estate",
+      "https://obadiahcoffee.com/products/rwamatamu-natural",
+      "https://obadiahcoffee.com/products/rwamatamu-washed",
+      "https://obadiahcoffee.com/products/san-francisco",
+      "https://obadiahcoffee.com/products/san-ignacio",
+      "https://obadiahcoffee.com/products/santa-colomba",
+      "https://obadiahcoffee.com/products/santa-colomba-steeped-coffee",
+      "https://obadiahcoffee.com/products/santa-luz",
+      "https://obadiahcoffee.com/products/santo-antonio",
+      "https://obadiahcoffee.com/products/sao-matheus",
+      "https://obadiahcoffee.com/products/seasonal-pack",
+      "https://obadiahcoffee.com/products/shantawene",
+      "https://obadiahcoffee.com/products/shikankoni",
+      "https://obadiahcoffee.com/products/shyira",
+      "https://obadiahcoffee.com/products/shyira-anoxic-natural",
+      "https://obadiahcoffee.com/products/sipi-falls",
+      "https://obadiahcoffee.com/products/sirinya",
+      "https://obadiahcoffee.com/products/sul-de-minas",
+      "https://obadiahcoffee.com/products/sumatra-pack",
+      "https://obadiahcoffee.com/products/the-lady",
+      "https://obadiahcoffee.com/products/tinamit-honey",
+      "https://obadiahcoffee.com/products/tinamit-natural",
+      "https://obadiahcoffee.com/products/winter-pack",
+      "https://obadiahcoffee.com/products/yunlan-estate"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/all/products.json",
+        "page": 1,
+        "products": 50,
+        "coffeeProducts": 40
+      },
+      {
+        "listing": "/collections/all/products.json",
+        "page": 2,
+        "products": 37,
+        "coffeeProducts": 30
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://obadiahcoffee.com/products/aquiares-estate",
+      "title": "Aquiares Estate",
+      "source_product_id": "8364335399066",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "45257613377690",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 23.58,
+            "amount": "23.58",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2358,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45257613410458",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 50.54,
+            "amount": "50.54",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5054,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45257613443226",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 82.21,
+            "amount": "82.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8221,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/aramosa-laurina",
+      "title": "Aramosa & Laurina",
+      "source_product_id": "8260089249946",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "44974188298394",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 21.56,
+            "amount": "21.56",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2156,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44974495203482",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 45.15,
+            "amount": "45.15",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4515,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44974188363930",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 76.14,
+            "amount": "76.14",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7614,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/banko-gotiti",
+      "title": "Banko Gotiti",
+      "source_product_id": "8367913926810",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "45271873159322",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.88,
+            "amount": "19.88",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1988,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45271873192090",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 37.06,
+            "amount": "37.06",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3706,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45271873224858",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 67.38,
+            "amount": "67.38",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6738,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/bochesa",
+      "title": "Bochesa",
+      "source_product_id": "16282019463555",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62522733166979",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 25.27,
+            "amount": "25.27",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2527,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62522733199747",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62522733232515",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 86.25,
+            "amount": "86.25",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8625,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/bombe",
+      "title": "Bombe",
+      "source_product_id": "14993814028675",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "54911987057027",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.21,
+            "amount": "20.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2021,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54911987089795",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 39.08,
+            "amount": "39.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3908,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54911987122563",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 66.03,
+            "amount": "66.03",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6603,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/chelin-geisha",
+      "title": "Chelin Geisha",
+      "source_product_id": "15018638541187",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "54991234924931",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 24.93,
+            "amount": "24.93",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2493,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54991234957699",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 56.6,
+            "amount": "56.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5660,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54991234990467",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 95.01,
+            "amount": "95.01",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9501,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/chelin-honey-sidra",
+      "title": "Chelin Honey Sidra",
+      "source_product_id": "8321179943066",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "45132962201754",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 25.6,
+            "amount": "25.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2560,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45132962234522",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 59.3,
+            "amount": "59.30",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5930,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45132962267290",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 101.07,
+            "amount": "101.07",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10107,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/chelin-pack",
+      "title": "Chelin Pack",
+      "source_product_id": "15039879152003",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55073676689795",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 45.15,
+            "amount": "45.15",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4515,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/comparative-pack",
+      "title": "Comparative Pack",
+      "source_product_id": "7932171747482",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43961344884890",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 36.66,
+            "amount": "36.66",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3666,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/el-mirador",
+      "title": "El Mirador",
+      "source_product_id": "15273589440899",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55858607128963",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 21.23,
+            "amount": "21.23",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2123,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55858607161731",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55858607194499",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 70.08,
+            "amount": "70.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7008,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/el-obraje",
+      "title": "El Obraje",
+      "source_product_id": "16081662411139",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58427767259523",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.26,
+            "amount": "24.26",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2426,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58427767292291",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58427767325059",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 78.16,
+            "amount": "78.16",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7816,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/el-ocaso",
+      "title": "El Ocaso",
+      "source_product_id": "15095801708931",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55241614819715",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 21.9,
+            "amount": "21.90",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2190,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55241614852483",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55241614885251",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 70.75,
+            "amount": "70.75",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7075,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/eliza",
+      "title": "Eliza",
+      "source_product_id": "8201069691034",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "44818598527130",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 26.28,
+            "amount": "26.28",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2628,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44818598559898",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 90.29,
+            "amount": "90.29",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9029,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/etago",
+      "title": "Etago",
+      "source_product_id": "15202813673859",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55494655148419",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 21.56,
+            "amount": "21.56",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2156,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55494655181187",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55494655213955",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 69.07,
+            "amount": "69.07",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6907,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/fruit-pack",
+      "title": "Fruit Pack",
+      "source_product_id": "7932235677850",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43961419235482",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 53.37,
+            "amount": "53.37",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5337,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/fuyan",
+      "title": "Fuyan",
+      "source_product_id": "7987182207130",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "44125090119834",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.54,
+            "amount": "19.54",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1954,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54962261131651",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44125090152602",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 66.71,
+            "amount": "66.71",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6671,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/gaharo-washed",
+      "title": "Gaharo Washed",
+      "source_product_id": "16072706785667",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58403816702339",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.93,
+            "amount": "24.93",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2493,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58403816735107",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 41.78,
+            "amount": "41.78",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4178,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58403816767875",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 86.25,
+            "amount": "86.25",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8625,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/gaitania",
+      "title": "Gaitania",
+      "source_product_id": "8367920611482",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "45271899734170",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 21.56,
+            "amount": "21.56",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2156,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45271899766938",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 41.78,
+            "amount": "41.78",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4178,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45271899799706",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 74.12,
+            "amount": "74.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7412,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/gicherori",
+      "title": "Gicherori",
+      "source_product_id": "16303096463747",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62572326486403",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.59,
+            "amount": "24.59",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2459,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62572326519171",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 41.78,
+            "amount": "41.78",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4178,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62572326551939",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 78.16,
+            "amount": "78.16",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7816,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/gisheke",
+      "title": "Gisheke",
+      "source_product_id": "8007662534810",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "44215919247514",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 21.56,
+            "amount": "21.56",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2156,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54911953109379",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 39.08,
+            "amount": "39.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3908,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44215919280282",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 70.08,
+            "amount": "70.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7008,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/gitwe",
+      "title": "Gitwe",
+      "source_product_id": "16072789229955",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "58404042408323",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 25.27,
+            "amount": "25.27",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2527,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58404042441091",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 41.78,
+            "amount": "41.78",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4178,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58404042473859",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 87.6,
+            "amount": "87.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8760,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/green-land",
+      "title": "Green Land",
+      "source_product_id": "15910931104131",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "57836936495491",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 23.25,
+            "amount": "23.25",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2325,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57836936528259",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57836936561027",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 80.86,
+            "amount": "80.86",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8086,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/haru",
+      "title": "Haru",
+      "source_product_id": "16110448902531",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "62045831954819",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.26,
+            "amount": "24.26",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2426,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62045831987587",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62045832020355",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 79.51,
+            "amount": "79.51",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7951,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/kamuchege",
+      "title": "Kamuchege",
+      "source_product_id": "16294148309379",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62540635177347",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.59,
+            "amount": "24.59",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2459,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62540635210115",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62540635242883",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 78.16,
+            "amount": "78.16",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7816,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/karimikui",
+      "title": "Karimikui",
+      "source_product_id": "14680962924931",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "53257878602115",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.89,
+            "amount": "20.89",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2089,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53257878634883",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 37.73,
+            "amount": "37.73",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3773,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53257878667651",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 66.37,
+            "amount": "66.37",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6637,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/kiandu-ab",
+      "title": "Kiandu AB",
+      "source_product_id": "15505047978371",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "56959300075907",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.89,
+            "amount": "20.89",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2089,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56959300108675",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 41.78,
+            "amount": "41.78",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4178,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56959300141443",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 72.77,
+            "amount": "72.77",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7277,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/kibingo",
+      "title": "Kibingo",
+      "source_product_id": "15273588261251",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55858600608131",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.21,
+            "amount": "20.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2021,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55858600640899",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55858600673667",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 70.08,
+            "amount": "70.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7008,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/kigeri-steeped-coffee",
+      "title": "Kigeri - Steeped Coffee",
+      "source_product_id": "16075903435139",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58412078596483",
+          "title": "Single Bag",
+          "weight_g": null,
+          "money": {
+            "raw": 3.71,
+            "amount": "3.71",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 371,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58412078629251",
+          "title": "Bundle (Five Bags)",
+          "weight_g": null,
+          "money": {
+            "raw": 15.16,
+            "amount": "15.16",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1516,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/tak-koke",
+      "title": "Koke",
+      "source_product_id": "16088611815811",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58448936862083",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 26.95,
+            "amount": "26.95",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2695,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/la-cabana",
+      "title": "La Cabana",
+      "source_product_id": "15978271670659",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58086038602115",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 25.27,
+            "amount": "25.27",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2527,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58086038634883",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58086038667651",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 0,
+            "amount": "0.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 0,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/sul-de-minas-steeped-coffee",
+      "title": "La Cabana - Steeped Coffee",
+      "source_product_id": "16003746267523",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58164454883715",
+          "title": "Single Bag",
+          "weight_g": null,
+          "money": {
+            "raw": 4.04,
+            "amount": "4.04",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 404,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58164454916483",
+          "title": "Bundle (Five Bags)",
+          "weight_g": null,
+          "money": {
+            "raw": 16.17,
+            "amount": "16.17",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1617,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/la-divisa",
+      "title": "La Divisa",
+      "source_product_id": "15298874802563",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55996546417027",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 25.6,
+            "amount": "25.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2560,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55996546449795",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 61.99,
+            "amount": "61.99",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6199,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55996546482563",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 105.11,
+            "amount": "105.11",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10511,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/la-hacienda",
+      "title": "La Hacienda",
+      "source_product_id": "15308146278787",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "56055842144643",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 23.25,
+            "amount": "23.25",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2325,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56055842177411",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 45.82,
+            "amount": "45.82",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4582,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56055842210179",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 76.81,
+            "amount": "76.81",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7681,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/la-pastora",
+      "title": "La Pastora",
+      "source_product_id": "14800405234051",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "53272752456067",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 23.58,
+            "amount": "23.58",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2358,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53272752488835",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 49.86,
+            "amount": "49.86",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4986,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53272752521603",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 83.55,
+            "amount": "83.55",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8355,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/lalesa",
+      "title": "Lalesa",
+      "source_product_id": "16246531719555",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62368182632835",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 25.27,
+            "amount": "25.27",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2527,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62368182665603",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62368182698371",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 86.25,
+            "amount": "86.25",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8625,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/moe-htet-estate",
+      "title": "Moe Htet Estate",
+      "source_product_id": "15234589393283",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55653431705987",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.88,
+            "amount": "19.88",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1988,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55653431738755",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 39.08,
+            "amount": "39.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3908,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55653431771523",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 63.34,
+            "amount": "63.34",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6334,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/musozi",
+      "title": "Musozi",
+      "source_product_id": "15801327812995",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "57580689392003",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 23.92,
+            "amount": "23.92",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2392,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57580689424771",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 44.47,
+            "amount": "44.47",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4447,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57580689457539",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 78.16,
+            "amount": "78.16",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7816,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/ngila",
+      "title": "Ngila",
+      "source_product_id": "15949072990595",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "57988302537091",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.93,
+            "amount": "24.93",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2493,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57988302569859",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 44.47,
+            "amount": "44.47",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4447,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57988302602627",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 78.16,
+            "amount": "78.16",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7816,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/nossa-senhora-de-fatima",
+      "title": "Nossa Senhora de Fatima",
+      "source_product_id": "16303148302723",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62572696109443",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 25.6,
+            "amount": "25.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2560,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62572696142211",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 53.9,
+            "amount": "53.90",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5390,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62572696174979",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 107.81,
+            "amount": "107.81",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10781,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/obadiah-flor",
+      "title": "Obadiah - Flòr",
+      "source_product_id": "15428615569795",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "56694212854147",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 86.25,
+            "amount": "86.25",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8625,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/ojo-de-agua",
+      "title": "Ojo de Agua",
+      "source_product_id": "14680964039043",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "53257879912835",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.21,
+            "amount": "20.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2021,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53257879945603",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 37.73,
+            "amount": "37.73",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3773,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53257879978371",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 67.04,
+            "amount": "67.04",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6704,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/palco",
+      "title": "Palco",
+      "source_product_id": "8260084826266",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "44974181318810",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 29.65,
+            "amount": "29.65",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2965,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44974585282714",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 71.42,
+            "amount": "71.42",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7142,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44974181351578",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 126.68,
+            "amount": "126.68",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12668,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/pantano",
+      "title": "Pantano",
+      "source_product_id": "15234704376195",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55654535594371",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.21,
+            "amount": "20.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2021,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55654535627139",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 39.75,
+            "amount": "39.75",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3975,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55654535659907",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 70.08,
+            "amount": "70.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7008,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/pascoal-set",
+      "title": "Pascoal Set",
+      "source_product_id": "8262358532250",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "44978554011802",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 43.8,
+            "amount": "43.80",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4380,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/piedra-azul",
+      "title": "Piedra Azul",
+      "source_product_id": "14825791750531",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "53275638530435",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.88,
+            "amount": "19.88",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1988,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53275638563203",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 37.73,
+            "amount": "37.73",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3773,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53275638595971",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 64.69,
+            "amount": "64.69",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6469,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/popayan-reserve-colombia-decaf",
+      "title": "Popayan Reserve, Colombia (Decaf)",
+      "source_product_id": "7885478920346",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "43813145837722",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 18.19,
+            "amount": "18.19",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1819,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53263920923011",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 36.39,
+            "amount": "36.39",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3639,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "43813145870490",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 60.31,
+            "amount": "60.31",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6031,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/red-dragon-estate",
+      "title": "Red Dragon Estate",
+      "source_product_id": "15637036597635",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "57342363107715",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 26.95,
+            "amount": "26.95",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2695,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57342363140483",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 47.17,
+            "amount": "47.17",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4717,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57342363173251",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 86.25,
+            "amount": "86.25",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8625,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/rwamatamu-natural",
+      "title": "Rwamatamu Natural",
+      "source_product_id": "15202815017347",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55494665601411",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 21.56,
+            "amount": "21.56",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2156,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55494665634179",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55494665666947",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 69.07,
+            "amount": "69.07",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6907,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/rwamatamu-washed",
+      "title": "Rwamatamu Washed",
+      "source_product_id": "15202814886275",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55494664946051",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 22.24,
+            "amount": "22.24",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2224,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55494664978819",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55494665011587",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 70.08,
+            "amount": "70.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7008,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/san-francisco",
+      "title": "San Francisco",
+      "source_product_id": "14825790341507",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "53275635974531",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.21,
+            "amount": "20.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2021,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53275636007299",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 39.08,
+            "amount": "39.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3908,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53275636040067",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 65.36,
+            "amount": "65.36",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6536,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/san-ignacio",
+      "title": "San Ignacio",
+      "source_product_id": "15040409862531",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55075797434755",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.2,
+            "amount": "19.20",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1920,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55075797467523",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 36.39,
+            "amount": "36.39",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3639,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55075797500291",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 60.64,
+            "amount": "60.64",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6064,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/santa-colomba",
+      "title": "Santa Colomba",
+      "source_product_id": "7597111214234",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "42882352709786",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 16.17,
+            "amount": "16.17",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1617,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45128078885018",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 39.08,
+            "amount": "39.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3908,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42882352742554",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 54.58,
+            "amount": "54.58",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5458,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/santa-colomba-steeped-coffee",
+      "title": "Santa Colomba - Steeped Coffee",
+      "source_product_id": "16355776856451",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62716905914755",
+          "title": "Single Bag",
+          "weight_g": null,
+          "money": {
+            "raw": 3.71,
+            "amount": "3.71",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 371,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62716905947523",
+          "title": "Bundle (Six Bags)",
+          "weight_g": null,
+          "money": {
+            "raw": 17.18,
+            "amount": "17.18",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1718,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/santa-luz",
+      "title": "Santa Luz",
+      "source_product_id": "15389607133571",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "56490750083459",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.55,
+            "amount": "20.55",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2055,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56490750116227",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56490750148995",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 67.38,
+            "amount": "67.38",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6738,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/santo-antonio",
+      "title": "Santo Antonio",
+      "source_product_id": "15040412221827",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55075807658371",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 20.21,
+            "amount": "20.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2021,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55075807691139",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 37.73,
+            "amount": "37.73",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3773,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55075807723907",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 64.69,
+            "amount": "64.69",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6469,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/sao-matheus",
+      "title": "Sao Matheus",
+      "source_product_id": "15978212655491",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58085875319171",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 22.91,
+            "amount": "22.91",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2291,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58085875351939",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 0,
+            "amount": "0.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 0,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58085875384707",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 80.86,
+            "amount": "80.86",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8086,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/seasonal-pack",
+      "title": "Seasonal Pack",
+      "source_product_id": "7932238921882",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "43961422774426",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 64.15,
+            "amount": "64.15",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6415,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/shantawene",
+      "title": "Shantawene",
+      "source_product_id": "15583299404163",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "57186816000387",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 22.91,
+            "amount": "22.91",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2291,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57186816033155",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 48.51,
+            "amount": "48.51",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4851,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57186816065923",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 83.55,
+            "amount": "83.55",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8355,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/shikankoni",
+      "title": "Shikankoni",
+      "source_product_id": "15594381508995",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "57224038941059",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.88,
+            "amount": "19.88",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1988,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57224038973827",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 39.08,
+            "amount": "39.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3908,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57224039006595",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 72.77,
+            "amount": "72.77",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7277,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/shyira",
+      "title": "Shyira",
+      "source_product_id": "15178316415363",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "55325278929283",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 24.26,
+            "amount": "24.26",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2426,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55325278962051",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 45.82,
+            "amount": "45.82",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4582,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "55325278994819",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 85.57,
+            "amount": "85.57",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8557,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/shyira-anoxic-natural",
+      "title": "Shyira Anoxic Natural",
+      "source_product_id": "15987957367171",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "58122817798531",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 28.3,
+            "amount": "28.30",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2830,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58122817831299",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 59.3,
+            "amount": "59.30",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5930,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "58122817864067",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 110.51,
+            "amount": "110.51",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11051,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/sipi-falls",
+      "title": "Sipi Falls",
+      "source_product_id": "8351996280986",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "45215183241370",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.54,
+            "amount": "19.54",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1954,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45215183274138",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 37.73,
+            "amount": "37.73",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3773,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45215183306906",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 65.7,
+            "amount": "65.70",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6570,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/sirinya",
+      "title": "Sirinya",
+      "source_product_id": "14800759095683",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "53273328058755",
+          "title": "150g",
+          "weight_g": 150,
+          "money": {
+            "raw": 23.58,
+            "amount": "23.58",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2358,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53273328091523",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 51.21,
+            "amount": "51.21",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5121,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53273328124291",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 84.9,
+            "amount": "84.90",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8490,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/sul-de-minas",
+      "title": "Sul De Minas",
+      "source_product_id": "15467403182467",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "56828894085507",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 19.88,
+            "amount": "19.88",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1988,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56828894118275",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "56828894151043",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 70.08,
+            "amount": "70.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7008,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/sumatra-pack",
+      "title": "Sumatra Pack",
+      "source_product_id": "15352410636675",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "56321079771523",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 39.08,
+            "amount": "39.08",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3908,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/the-lady",
+      "title": "The Lady",
+      "source_product_id": "14993812980099",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "54911980929411",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 21.9,
+            "amount": "21.90",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2190,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54911980962179",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 41.78,
+            "amount": "41.78",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4178,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54911980994947",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 71.42,
+            "amount": "71.42",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7142,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/tinamit-honey",
+      "title": "Tinamit Honey",
+      "source_product_id": "16347664679299",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62694516687235",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.93,
+            "amount": "24.93",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2493,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62694516720003",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 41.78,
+            "amount": "41.78",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4178,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62694516752771",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 78.16,
+            "amount": "78.16",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7816,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/tinamit-natural",
+      "title": "Tinamit Natural",
+      "source_product_id": "16347688731011",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "62694582452611",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24.59,
+            "amount": "24.59",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2459,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62694582485379",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 40.43,
+            "amount": "40.43",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4043,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "62694582518147",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 75.47,
+            "amount": "75.47",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7547,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/winter-pack",
+      "title": "Winter Pack",
+      "source_product_id": "14843308081539",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "53288323350915",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 40.09,
+            "amount": "40.09",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4009,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://obadiahcoffee.com/products/yunlan-estate",
+      "title": "Yunlan Estate",
+      "source_product_id": "15770852032899",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "57496902566275",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 25.6,
+            "amount": "25.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2560,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57496902599043",
+          "title": "500g",
+          "weight_g": 500,
+          "money": {
+            "raw": 43.12,
+            "amount": "43.12",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4312,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "57496902631811",
+          "title": "1kg",
+          "weight_g": 1000,
+          "money": {
+            "raw": 80.86,
+            "amount": "80.86",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8086,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/collections/all/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:09:52.885Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/collections/all/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:09:53.388Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/collections/all/products.json?limit=50&page=3",
+      "status": 200,
+      "at": "2026-10-08T04:09:53.889Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/aquiares-estate",
+      "status": 200,
+      "at": "2026-10-08T04:09:54.390Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/aquiares-estate.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:54.892Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/aquiares-estate.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:55.394Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/aramosa-laurina",
+      "status": 200,
+      "at": "2026-10-08T04:09:55.897Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/aramosa-laurina.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:56.397Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/aramosa-laurina.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:56.899Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/banko-gotiti",
+      "status": 200,
+      "at": "2026-10-08T04:09:57.401Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/banko-gotiti.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:57.903Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/banko-gotiti.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:58.405Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/bochesa",
+      "status": 200,
+      "at": "2026-10-08T04:09:58.906Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/bochesa.json",
+      "status": 200,
+      "at": "2026-10-08T04:09:59.406Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/bochesa.js",
+      "status": 200,
+      "at": "2026-10-08T04:09:59.907Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/bombe",
+      "status": 200,
+      "at": "2026-10-08T04:10:00.409Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/bombe.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:00.911Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/bombe.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:01.412Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-geisha",
+      "status": 200,
+      "at": "2026-10-08T04:10:01.914Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-geisha.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:02.416Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-geisha.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:02.916Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-honey-sidra",
+      "status": 200,
+      "at": "2026-10-08T04:10:03.416Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-honey-sidra.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:03.918Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-honey-sidra.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:04.420Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-pack",
+      "status": 200,
+      "at": "2026-10-08T04:10:04.923Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-pack.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:05.425Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/chelin-pack.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:05.928Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/comparative-pack",
+      "status": 200,
+      "at": "2026-10-08T04:10:06.430Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/comparative-pack.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:06.932Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/comparative-pack.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:07.433Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-mirador",
+      "status": 200,
+      "at": "2026-10-08T04:10:07.934Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-mirador.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:08.436Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-mirador.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:08.939Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-obraje",
+      "status": 200,
+      "at": "2026-10-08T04:10:09.441Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-obraje.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:09.942Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-obraje.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:10.444Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-ocaso",
+      "status": 200,
+      "at": "2026-10-08T04:10:10.946Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-ocaso.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:11.547Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/el-ocaso.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:12.047Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/eliza",
+      "status": 200,
+      "at": "2026-10-08T04:10:12.549Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/eliza.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:13.050Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/eliza.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:13.552Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/etago",
+      "status": 200,
+      "at": "2026-10-08T04:10:14.053Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/etago.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:14.556Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/etago.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:15.057Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/fruit-pack",
+      "status": 200,
+      "at": "2026-10-08T04:10:15.558Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/fruit-pack.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:16.061Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/fruit-pack.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:16.564Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/fuyan",
+      "status": 200,
+      "at": "2026-10-08T04:10:17.065Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/fuyan.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:17.566Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/fuyan.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:18.069Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gaharo-washed",
+      "status": 200,
+      "at": "2026-10-08T04:10:18.571Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gaharo-washed.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:19.073Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gaharo-washed.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:19.574Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gaitania",
+      "status": 200,
+      "at": "2026-10-08T04:10:20.075Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gaitania.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:20.577Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gaitania.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:21.079Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gicherori",
+      "status": 200,
+      "at": "2026-10-08T04:10:21.581Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gicherori.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:22.083Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gicherori.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:22.585Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gisheke",
+      "status": 200,
+      "at": "2026-10-08T04:10:23.087Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gisheke.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:23.589Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gisheke.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:24.090Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gitwe",
+      "status": 200,
+      "at": "2026-10-08T04:10:24.592Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gitwe.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:25.094Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/gitwe.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:25.597Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/green-land",
+      "status": 200,
+      "at": "2026-10-08T04:10:26.098Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/green-land.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:26.600Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/green-land.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:27.102Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/haru",
+      "status": 200,
+      "at": "2026-10-08T04:10:27.604Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/haru.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:28.107Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/haru.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:28.609Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kamuchege",
+      "status": 200,
+      "at": "2026-10-08T04:10:29.111Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kamuchege.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:29.613Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kamuchege.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:30.114Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/karimikui",
+      "status": 200,
+      "at": "2026-10-08T04:10:30.615Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/karimikui.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:31.118Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/karimikui.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:31.621Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kiandu-ab",
+      "status": 200,
+      "at": "2026-10-08T04:10:32.122Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kiandu-ab.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:32.625Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kiandu-ab.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:33.127Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kibingo",
+      "status": 200,
+      "at": "2026-10-08T04:10:33.629Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kibingo.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:34.131Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kibingo.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:34.634Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kigeri-steeped-coffee",
+      "status": 200,
+      "at": "2026-10-08T04:10:35.136Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kigeri-steeped-coffee.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:35.639Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/kigeri-steeped-coffee.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:36.140Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tak-koke",
+      "status": 200,
+      "at": "2026-10-08T04:10:36.642Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tak-koke.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:37.145Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tak-koke.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:37.647Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-cabana",
+      "status": 200,
+      "at": "2026-10-08T04:10:38.149Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-cabana.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:38.650Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-cabana.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:39.152Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sul-de-minas-steeped-coffee",
+      "status": 200,
+      "at": "2026-10-08T04:10:39.654Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sul-de-minas-steeped-coffee.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:40.156Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sul-de-minas-steeped-coffee.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:40.656Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-divisa",
+      "status": 200,
+      "at": "2026-10-08T04:10:41.159Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-divisa.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:41.661Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-divisa.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:42.163Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-hacienda",
+      "status": 200,
+      "at": "2026-10-08T04:10:42.665Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-hacienda.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:43.168Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-hacienda.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:43.671Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-pastora",
+      "status": 200,
+      "at": "2026-10-08T04:10:44.172Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-pastora.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:44.674Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/la-pastora.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:45.176Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/lalesa",
+      "status": 200,
+      "at": "2026-10-08T04:10:45.677Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/lalesa.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:46.180Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/lalesa.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:46.683Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/moe-htet-estate",
+      "status": 200,
+      "at": "2026-10-08T04:10:47.185Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/moe-htet-estate.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:47.687Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/moe-htet-estate.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:48.189Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/musozi",
+      "status": 200,
+      "at": "2026-10-08T04:10:48.691Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/musozi.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:49.193Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/musozi.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:49.695Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/ngila",
+      "status": 200,
+      "at": "2026-10-08T04:10:50.195Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/ngila.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:50.697Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/ngila.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:51.200Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/nossa-senhora-de-fatima",
+      "status": 200,
+      "at": "2026-10-08T04:10:51.702Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/nossa-senhora-de-fatima.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:52.204Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/nossa-senhora-de-fatima.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:52.706Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/obadiah-flor",
+      "status": 200,
+      "at": "2026-10-08T04:10:53.208Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/obadiah-flor.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:53.708Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/obadiah-flor.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:54.210Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/ojo-de-agua",
+      "status": 200,
+      "at": "2026-10-08T04:10:54.712Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/ojo-de-agua.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:55.214Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/ojo-de-agua.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:55.715Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/palco",
+      "status": 200,
+      "at": "2026-10-08T04:10:56.217Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/palco.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:56.719Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/palco.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:57.221Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/pantano",
+      "status": 200,
+      "at": "2026-10-08T04:10:57.723Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/pantano.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:58.225Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/pantano.js",
+      "status": 200,
+      "at": "2026-10-08T04:10:58.728Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/pascoal-set",
+      "status": 200,
+      "at": "2026-10-08T04:10:59.231Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/pascoal-set.json",
+      "status": 200,
+      "at": "2026-10-08T04:10:59.733Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/pascoal-set.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:00.235Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/piedra-azul",
+      "status": 200,
+      "at": "2026-10-08T04:11:00.736Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/piedra-azul.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:01.239Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/piedra-azul.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:01.741Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/popayan-reserve-colombia-decaf",
+      "status": 200,
+      "at": "2026-10-08T04:11:02.243Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/popayan-reserve-colombia-decaf.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:02.745Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/popayan-reserve-colombia-decaf.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:03.247Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/red-dragon-estate",
+      "status": 200,
+      "at": "2026-10-08T04:11:03.749Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/red-dragon-estate.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:04.251Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/red-dragon-estate.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:04.753Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/rwamatamu-natural",
+      "status": 200,
+      "at": "2026-10-08T04:11:05.255Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/rwamatamu-natural.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:05.757Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/rwamatamu-natural.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:06.258Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/rwamatamu-washed",
+      "status": 200,
+      "at": "2026-10-08T04:11:06.760Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/rwamatamu-washed.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:07.263Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/rwamatamu-washed.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:07.766Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/san-francisco",
+      "status": 200,
+      "at": "2026-10-08T04:11:08.267Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/san-francisco.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:08.770Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/san-francisco.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:09.272Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/san-ignacio",
+      "status": 200,
+      "at": "2026-10-08T04:11:09.774Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/san-ignacio.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:10.276Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/san-ignacio.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:10.777Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-colomba",
+      "status": 200,
+      "at": "2026-10-08T04:11:11.279Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-colomba.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:11.781Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-colomba.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:12.283Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-colomba-steeped-coffee",
+      "status": 200,
+      "at": "2026-10-08T04:11:12.785Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-colomba-steeped-coffee.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:13.287Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-colomba-steeped-coffee.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:13.789Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-luz",
+      "status": 200,
+      "at": "2026-10-08T04:11:14.291Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-luz.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:14.794Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santa-luz.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:15.296Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santo-antonio",
+      "status": 200,
+      "at": "2026-10-08T04:11:15.798Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santo-antonio.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:16.299Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/santo-antonio.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:16.801Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sao-matheus",
+      "status": 200,
+      "at": "2026-10-08T04:11:17.303Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sao-matheus.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:17.805Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sao-matheus.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:18.308Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/seasonal-pack",
+      "status": 200,
+      "at": "2026-10-08T04:11:18.809Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/seasonal-pack.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:19.312Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/seasonal-pack.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:19.814Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shantawene",
+      "status": 200,
+      "at": "2026-10-08T04:11:20.316Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shantawene.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:20.818Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shantawene.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:21.320Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shikankoni",
+      "status": 200,
+      "at": "2026-10-08T04:11:21.821Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shikankoni.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:22.323Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shikankoni.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:22.825Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shyira",
+      "status": 200,
+      "at": "2026-10-08T04:11:23.327Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shyira.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:23.829Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shyira.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:24.331Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shyira-anoxic-natural",
+      "status": 200,
+      "at": "2026-10-08T04:11:24.831Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shyira-anoxic-natural.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:25.333Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/shyira-anoxic-natural.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:25.833Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sipi-falls",
+      "status": 200,
+      "at": "2026-10-08T04:11:26.334Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sipi-falls.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:26.836Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sipi-falls.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:27.337Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sirinya",
+      "status": 200,
+      "at": "2026-10-08T04:11:27.838Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sirinya.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:28.340Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sirinya.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:28.841Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sul-de-minas",
+      "status": 200,
+      "at": "2026-10-08T04:11:29.342Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sul-de-minas.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:29.844Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sul-de-minas.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:30.346Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sumatra-pack",
+      "status": 200,
+      "at": "2026-10-08T04:11:30.848Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sumatra-pack.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:31.351Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/sumatra-pack.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:31.853Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/the-lady",
+      "status": 200,
+      "at": "2026-10-08T04:11:32.355Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/the-lady.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:32.856Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/the-lady.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:33.358Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tinamit-honey",
+      "status": 200,
+      "at": "2026-10-08T04:11:33.861Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tinamit-honey.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:34.364Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tinamit-honey.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:34.867Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tinamit-natural",
+      "status": 200,
+      "at": "2026-10-08T04:11:35.367Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tinamit-natural.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:35.869Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/tinamit-natural.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:36.371Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/winter-pack",
+      "status": 200,
+      "at": "2026-10-08T04:11:36.871Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/winter-pack.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:37.374Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/winter-pack.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:37.875Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/yunlan-estate",
+      "status": 200,
+      "at": "2026-10-08T04:11:38.378Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/yunlan-estate.json",
+      "status": 200,
+      "at": "2026-10-08T04:11:38.880Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://obadiahcoffee.com/products/yunlan-estate.js",
+      "status": 200,
+      "at": "2026-10-08T04:11:39.382Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

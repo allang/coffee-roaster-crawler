@@ -30,17 +30,26 @@ function structuredProduct(html, sourceUrl) {
   });
   const products = nodes.filter(n => types(n).some(t => ['Product', 'IndividualProduct', 'ProductGroup'].includes(t)));
   const exact = products.filter(p => (p.url || p['@id']) && sameProduct(p.url || p['@id'], sourceUrl));
-  if (exact.length === 1) return flattenProductGroup(exact[0],sourceUrl);
+  if (exact.length === 1) return cafe24Description(flattenProductGroup(exact[0],sourceUrl),$,sourceUrl);
   if (exact.length > 1) return null;
   const title = $('main h1, h1').first().text().trim().toLocaleLowerCase('en');
   const named = products.filter(p => !p.url && !p['@id'] && title && String(p.name || '').trim().toLocaleLowerCase('en') === title);
-  if(named.length===1)return flattenProductGroup(named[0],sourceUrl);
+  if(named.length===1)return cafe24Description(flattenProductGroup(named[0],sourceUrl),$,sourceUrl);
   const canonical=$('link[rel="canonical"]').attr('href');
   const offered=canonical && sameProduct(canonical,sourceUrl)?products.filter(p=>{
     const offers=[p.offers || []].flat();
     return !p.url && !p['@id'] && offers.length>0 && offers.every(o=>o.url && sameProduct(o.url,sourceUrl));
   }):[];
-  return offered.length===1?flattenProductGroup(offered[0],sourceUrl):require('./siteSupport/headlessShopify').headlessShopifyProduct(html,sourceUrl);
+  return offered.length===1?cafe24Description(flattenProductGroup(offered[0],sourceUrl),$,sourceUrl):require('./siteSupport/headlessShopify').headlessShopifyProduct(html,sourceUrl);
+}
+function cafe24Description(product,$,sourceUrl) {
+  if(!product || product.description)return product;
+  const profile=require('./siteSupport/profiles.json').find(p=>p.adapter==='cafe24' && p.hosts.includes(new URL(sourceUrl).hostname));
+  if(!profile)return product;
+  const detail=$('#prdDetail > .cont');
+  if(detail.length!==1)return product;
+  const primary=detail.clone();primary.find('script,style,iframe,form,.menu,.relation').remove();
+  return {...product,description:primary.html() || '',_description_source:'cafe24_primary_detail_content'};
 }
 function flattenProductGroup(product,sourceUrl) {
   if(!types(product).includes('ProductGroup')) {
@@ -53,7 +62,9 @@ function flattenProductGroup(product,sourceUrl) {
   for(const variant of product.hasVariant) {
     const memberOffers=[variant.offers || []].flat();
     if(!memberOffers.length || memberOffers.some(o=>!o.url || !sameProduct(o.url,sourceUrl)))return null;
-    for(const offer of memberOffers)offers.push({...offer,sku:variant.sku || offer.sku,name:variant.name});
+    const sizes=[variant.additionalProperty || []].flat().filter(p=>/^(?:net[_\s-]*weight|size|용량|내용량)$/i.test(p?.name || p?.propertyID || '')).map(p=>require('./shopifyProduct').labelWeight(p.value));
+    const netWeight=sizes.length && sizes.every(v=>v!=null) && new Set(sizes).size===1?sizes[0]:null;
+    for(const offer of memberOffers)offers.push({...offer,sku:variant.sku || offer.sku,name:variant.name,_net_weight_g:netWeight});
   }
   return {...product,productID:product.productID || product.productGroupID,description:product.description || product.hasVariant[0].description,image:product.image || product.hasVariant[0].image,offers,_market_source:'product_group_exact_variant_offers'};
 }

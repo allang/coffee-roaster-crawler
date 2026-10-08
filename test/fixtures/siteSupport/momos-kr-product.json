@@ -1,0 +1,311 @@
+{
+  "url": "https://momos.co.kr/shop_view?idx=4183",
+  "store": {
+    "@type": "OnlineStore",
+    "name": "모모스커피",
+    "url": "https://momos.co.kr",
+    "hasShippingService": {
+      "@type": "ShippingService",
+      "name": "배송 템플릿 A",
+      "fulfillmentType": "FulfillmentTypeDelivery",
+      "shippingConditions": [
+        {
+          "@type": "ShippingConditions",
+          "shippingOrigin": {
+            "@type": "DefinedRegion",
+            "addressCountry": "KR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "KR"
+          },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 2500,
+            "currency": "KRW"
+          },
+          "freeShippingThreshold": {
+            "@type": "MonetaryAmount",
+            "value": 40000,
+            "currency": "KRW"
+          }
+        }
+      ]
+    }
+  },
+  "primary": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "원두 시즈널 블렌드 가을 온기",
+    "image": [
+      "https://cdn.imweb.me/thumbnail/20260918/779e74aea0874afd.png"
+    ],
+    "description": "골든 건포도, 감, 메이플 시럽, 루이보스차, 깊은상품 정보고시노트골든 건포도의 향미와 감의 산미, 메이플 시럽의 단맛과 루이보스티의 여운이 어우러진 커피식품유형커피제조원 및 판매원모모스커피 / 부... ",
+    "sku": "CFE1459",
+    "brand": {
+      "@type": "Brand",
+      "name": "모모스커피"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 24000,
+      "priceCurrency": "KRW",
+      "url": "https://momos.co.kr/shop_view/?idx=4183",
+      "availability": "http://schema.org/InStock"
+    }
+  },
+  "native": {
+    "idx": 4183,
+    "site_code": "S2026022396690869a4918",
+    "code": "s20260713f944d1d0af054",
+    "name": "원두 시즈널 블렌드 가을 온기",
+    "price": 24000,
+    "price_none": false,
+    "options": [
+      {
+        "site_code": "S2026022396690869a4918",
+        "prod_code": "s20260713f944d1d0af054",
+        "type": "default",
+        "code": "O20260908c1d9035544eaf",
+        "name": "분쇄옵션",
+        "value_list": {
+          "O2026090848fedcec56e7d": "(분쇄하지않음)홀빈",
+          "O20260908bc2b22645fb96": "(분쇄된원두)핸드드립용",
+          "O20260908de68790963337": "(분쇄된원두)커피메이커용",
+          "O2026090851d5553e68222": "(분쇄된원두)가정용더치",
+          "O20260908eebe2d57a1cc1": "(분쇄된원두)모카포트용",
+          "O20260908a801f660c7b50": "(분쇄된원두)에스프레소머신용"
+        },
+        "is_require": true
+      },
+      {
+        "site_code": "S2026022396690869a4918",
+        "prod_code": "s20260713f944d1d0af054",
+        "type": "default",
+        "code": "O2026090873a30d5e7f818",
+        "name": "중량",
+        "value_list": {
+          "O20260908b479aab056b96": "200g",
+          "O202609089b07ba3f6995e": "500g"
+        },
+        "is_require": true
+      }
+    ],
+    "options_detail": [
+      {
+        "code": "od202609082ffc61237d08c",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O2026090848fedcec56e7d",
+          "O20260908b479aab056b96"
+        ],
+        "stock_sku": "CFE1459",
+        "price": "24000",
+        "stock": 9582,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908dd8e6c70f9d25",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O2026090848fedcec56e7d",
+          "O202609089b07ba3f6995e"
+        ],
+        "stock_sku": "CFE1460",
+        "price": "48000",
+        "stock": 9782,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908cbe10a8a6b17e",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908bc2b22645fb96",
+          "O20260908b479aab056b96"
+        ],
+        "stock_sku": "CFE1459A",
+        "price": "24000",
+        "stock": 9968,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908d6745d34f14b7",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908bc2b22645fb96",
+          "O202609089b07ba3f6995e"
+        ],
+        "stock_sku": "CFE1460A",
+        "price": "48000",
+        "stock": 9984,
+        "status": "SALE"
+      },
+      {
+        "code": "od202609082a483b8bb0dd4",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908de68790963337",
+          "O20260908b479aab056b96"
+        ],
+        "stock_sku": "CFE1459B",
+        "price": "24000",
+        "stock": 9992,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908a58e79e6896ce",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908de68790963337",
+          "O202609089b07ba3f6995e"
+        ],
+        "stock_sku": "CFE1460B",
+        "price": "48000",
+        "stock": 9998,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908ee3e9c3c873e1",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O2026090851d5553e68222",
+          "O20260908b479aab056b96"
+        ],
+        "stock_sku": "CFE1459C",
+        "price": "24000",
+        "stock": 9998,
+        "status": "SALE"
+      },
+      {
+        "code": "od202609085531e9fedcda4",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O2026090851d5553e68222",
+          "O202609089b07ba3f6995e"
+        ],
+        "stock_sku": "CFE1460C",
+        "price": "48000",
+        "stock": 9996,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908ace143ea07872",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908eebe2d57a1cc1",
+          "O20260908b479aab056b96"
+        ],
+        "stock_sku": "CFE1459D",
+        "price": "24000",
+        "stock": 9993,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908a189660a02647",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908eebe2d57a1cc1",
+          "O202609089b07ba3f6995e"
+        ],
+        "stock_sku": "CFE1460D",
+        "price": "48000",
+        "stock": 9999,
+        "status": "SALE"
+      },
+      {
+        "code": "od202609081d8f777774499",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908a801f660c7b50",
+          "O20260908b479aab056b96"
+        ],
+        "stock_sku": "CFE1459E",
+        "price": "24000",
+        "stock": 9997,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260908ded10769755ac",
+        "prod_code": "s20260713f944d1d0af054",
+        "option_code_list": [
+          "O20260908c1d9035544eaf",
+          "O2026090873a30d5e7f818"
+        ],
+        "value_code_list": [
+          "O20260908a801f660c7b50",
+          "O202609089b07ba3f6995e"
+        ],
+        "stock_sku": "CFE1460E",
+        "price": "48000",
+        "stock": 9998,
+        "status": "SALE"
+      }
+    ],
+    "prod_status": "sale",
+    "prod_soldout_status": "sale",
+    "deliv_data": [
+      {
+        "parcel": true
+      }
+    ],
+    "stock_use": true,
+    "stock_unlimit": true,
+    "stock_no_option": 0,
+    "simple_content": "<div class=\"tms-product-info\"><table style=\"width: 100%;\"><tbody><tr><td style=\"width: 100.0000%;\"><p>골든 건포도, 감, 메이플 시럽, 루이보스차, 깊은</p></td></tr></tbody></table></div><div class=\"tms-product-tab tms-product-tab-desc active\"><h3 style=\"margin-top: 32px;\">상품 정보고시</h3><table style=\"width: 100%;\"><tbody><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>노트</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>골든 건포도의 향미와 감의 산미, 메이플 시럽의 단맛과 루이보스티의 여운이 어우러진 커피</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>식품유형</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>커피</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>제조원 및 판매원</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>모모스커피 / 부산광역시 영도구 봉래나루로 160</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>제조일자</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>해당 제품은 주말 또는 도서산간지역의 배송일을 포함하여 발송일로부터 1일에서 최대 7일 전 가공 상품으로 수령하실 수 있습니다.</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>소비기한</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>제조일로부터 1년</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>내용량</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>200 g / 500 g</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>원재료명 및 함량</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>커피원두 100 %</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>반품 및 교환</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>구입처 및 제조원</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>고객 상담 전화</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>051-512-7036</p></td></tr></tbody></table></div>",
+    "deleted": false,
+    "prod_type": "normal",
+    "use_pre_sale": false,
+    "use_period_discount": false,
+    "preSaleInfo": {
+      "enabled": false,
+      "startsAt": null,
+      "endsAt": null,
+      "isUpcoming": false,
+      "evaluatedAt": "2026-10-08T13:18:55+09:00"
+    }
+  }
+}

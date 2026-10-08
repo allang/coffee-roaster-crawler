@@ -192,5 +192,256 @@
     ],
     "formatter_path": "/_next/static/chunks/1c2d9mkz_9smt.js",
     "coffee_collection_verified": true
+  },
+  {
+    "name": "Hydrangea",
+    "entity_ids": [
+      "535be893-1831-4443-b5e3-c79c09080eb2"
+    ],
+    "hosts": [
+      "hydrangea.coffee",
+      "www.hydrangea.coffee"
+    ],
+    "listing_paths": [
+      "/collections/active/products.json",
+      "/collections/rested-coffee/products.json",
+      "/collections/preorder/products.json",
+      "/collections/auction/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "exclude_handles": [
+      "sub",
+      "2-bag-roasters-choice"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "ILSE",
+    "entity_ids": [
+      "8f69eeb4-2d62-4aea-8024-d2855b01e593"
+    ],
+    "hosts": [
+      "ilsecoffee.com",
+      "www.ilsecoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/all-products/products.json",
+      "/collections/sample-menu/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "coffee_content_pattern": "\\b(?:coffees?|espresso|decaffeinated)\\b",
+    "adapter": "shopify"
+  },
+  {
+    "name": "Leaves",
+    "entity_ids": [
+      "18db48af-6c9c-4449-9d66-535c5260e2b5"
+    ],
+    "hosts": [
+      "leavescoffee.jp",
+      "www.leavescoffee.jp",
+      "shop.leavescoffee.jp"
+    ],
+    "host_path_prefixes": {
+      "shop.leavescoffee.jp": [
+        "/collections/",
+        "/products/"
+      ]
+    },
+    "listing_origin": "https://shop.leavescoffee.jp",
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "stock_origin": "https://shop.leavescoffee.jp",
+    "product_path": "/en/products/",
+    "canonical_product_path": "/products/",
+    "adapter": "nuxt_shopify"
+  },
+  {
+    "name": "Loquat",
+    "entity_ids": [
+      "69c2bf90-4751-41d1-a454-16c1d87ffd11"
+    ],
+    "hosts": [
+      "www.loquatcoffee.com",
+      "loquatcoffee.com",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": "/app/store/api/v28/editor/users/131307555/sites/668499860283954434/products"
+    },
+    "adapter": "square",
+    "square_owner_id": "131307555",
+    "square_site_id": "668499860283954434",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "E2NAAAIQSSCHVFYWD4T727FT",
+      "KUG4WZSQNAUUKMRVRR6YLA6H",
+      "NWKUXIOCAZFQDTAL25UWFZFO",
+      "E3XVEYJ7HYHXNCA5EPY5JZHN",
+      "2Z4QE75K7YW5IGAYYQDP5XGQ",
+      "D7X7CXRRYRH6TZVVK33DMH6V",
+      "WNUKDKQEMXQ6EX2VLMF2463M"
+    ],
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Luminous",
+    "entity_ids": [
+      "16d40b29-b263-4d7a-a6a4-0b339325fc30"
+    ],
+    "hosts": [
+      "www.loveluminous.coffee",
+      "loveluminous.coffee"
+    ],
+    "listing_paths": [
+      "/collections/dropstore/products.json",
+      "/collections/lumi-xl/products.json"
+    ],
+    "coffee_product_types": [
+      "drop-store"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Monogram",
+    "entity_ids": [
+      "5d02543f-ff9d-471b-af2b-cc6c8400e546"
+    ],
+    "hosts": [
+      "monogramcoffee.com",
+      "www.monogramcoffee.com"
+    ],
+    "listing_paths": [
+      "/en-us/collections/all-coffees/products.json"
+    ],
+    "product_path": "/en-us/products/",
+    "canonical_product_path": "/products/",
+    "coffee_product_types": [
+      "Whole Bean"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Namusairo",
+    "entity_ids": [
+      "cbabf44d-1bfa-4212-a0f0-858c55019b91"
+    ],
+    "hosts": [
+      "namusairo.com",
+      "www.namusairo.com"
+    ],
+    "listing_paths": [
+      "/product/list.html?cate_no=91",
+      "/product/list.html?cate_no=113",
+      "/product/list.html?cate_no=114"
+    ],
+    "product_link_selector": ".xans-product-listnormal .thumbnail a[href^=\"/product/\"]",
+    "coffee_collection_verified": true,
+    "exclude_name_pattern": "드립체어",
+    "adapter": "cafe24"
+  },
+  {
+    "name": "Obadiah",
+    "entity_ids": [
+      "058d58c7-c655-40fe-a651-02b8f0593a89"
+    ],
+    "hosts": [
+      "obadiahcoffee.com",
+      "www.obadiahcoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "Comparative Pack",
+      "Fruit Pack",
+      "Seasonal Pack"
+    ],
+    "coffee_handles": [
+      "chelin-pack",
+      "kigeri-steeped-coffee",
+      "sul-de-minas-steeped-coffee",
+      "pascoal-set",
+      "santa-colomba-steeped-coffee",
+      "winter-pack"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "ONA",
+    "entity_ids": [
+      "11c63e61-c185-4fea-a049-127af7daafbf"
+    ],
+    "hosts": [
+      "onacoffee.com.au",
+      "www.onacoffee.com.au"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/ready-to-brew/products.json",
+      "/collections/special-release/products.json",
+      "/collections/rare-coffee/products.json",
+      "/collections/reserve/products.json"
+    ],
+    "adapter": "shopify",
+    "ambiguous_net_weight_handles": [
+      "milk-blend-bundle"
+    ]
+  },
+  {
+    "name": "Momos",
+    "entity_ids": [
+      "c2941ba0-1481-4b69-b800-0d911f2797c3"
+    ],
+    "hosts": [
+      "momos.co.kr",
+      "www.momos.co.kr",
+      "en.momos.co.kr",
+      "office.momos.co.kr"
+    ],
+    "host_path_prefixes": {
+      "office.momos.co.kr": "/api/public/products"
+    },
+    "bootstrap_url": "https://momos.co.kr",
+    "market_scope": "KR",
+    "market_currency": "KRW",
+    "catalog_origin": "https://office.momos.co.kr",
+    "imweb_site_code": "S2026022396690869a4918",
+    "imweb_brand": "모모스커피",
+    "product_api_path": "/ajax/oms/OMS_get_product.cm",
+    "listing_paths": [
+      "/CoffeeBeans",
+      "/LargePacks",
+      "/dripBag",
+      "/InstantCoffee",
+      "/CoffeeTeaBag",
+      "/Capsule",
+      "/ColdBrew"
+    ],
+    "listing_categories": {
+      "/CoffeeBeans": "s20260625015da49977c2f",
+      "/LargePacks": "s2026082469204b44dece1",
+      "/dripBag": "s20260625fd45c45870c49",
+      "/InstantCoffee": "s20260714322491b8b5ebb",
+      "/CoffeeTeaBag": "s20260714eaaca212f326d",
+      "/Capsule": "s202606257ca6d52578c82",
+      "/ColdBrew": "s20260625860cb806cc823"
+    },
+    "coffee_collection_verified": true,
+    "adapter": "imweb",
+    "reconcile_omissions": false,
+    "imweb_product_brands": [
+      "모모스커피",
+      "자체브랜드"
+    ],
+    "exclude_product_codes": [
+      "s20260713cf43960c3e7d4",
+      "s2026071370e1388d2b2b4"
+    ]
   }
 ]

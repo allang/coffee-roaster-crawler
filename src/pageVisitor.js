@@ -62,6 +62,8 @@ async function fetchPageContent(url, referer = null, options = {}) {
     const soft404=detectProductAvailability({html:result.data,status:result.status,sourceUrl:url,finalUrl:result.finalUrl}).reason==='product_soft_404';
     if(!soft404 && options.siteProfile?.adapter==='square'){sourceProduct=await require('./siteSupport/square').fetchSquareProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='subbly'){sourceProduct=await require('./siteSupport/subbly').fetchSubblyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='nuxt_shopify'){sourceProduct=await require('./siteSupport/nuxtShopify').fetchNuxtShopifyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='imweb'){sourceProduct=await require('./siteSupport/imweb').fetchImwebProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     return {
       success: true,
       sourceProduct,
@@ -113,7 +115,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
     return {visited:true,classified:false,error:fetchResult.error,aiCalls:0};
   }
   let shopifyJson=null;
-  if(platform==='shopify' && isShopifyProductUrl(url)) shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
+  if(platform==='shopify' && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
   const classification=await extractPage({page:{...fetchResult,url},shopifyJson,cache:known?.classification,classify:classifyPage,model:MODEL});
   const metrics={aiCalls:classification.aiCalls || 0,usage:classification.usage,mode:classification.mode};
   if(classification.error) return {visited:true,classified:false,error:classification.error,quotaExceeded:classification.quotaExceeded,...metrics};

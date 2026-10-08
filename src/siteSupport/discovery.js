@@ -8,10 +8,11 @@ function profileFor(roaster) {
 async function discoverSiteProducts(roaster,{fetchHtml}={}) {
   const profile=profileFor(roaster);
   if(!profile)return {supported:false,urls:[],complete:false};
-  if(profile.adapter==='shopify')return require('./shopifyDiscovery').discoverShopifyProducts(roaster,profile,fetchHtml);
+  if(['shopify','nuxt_shopify'].includes(profile.adapter))return require('./shopifyDiscovery').discoverShopifyProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='square')return require('./square').discoverSquareProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='cafe24')return require('./domDiscovery').discoverDomProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='subbly')return require('./subbly').discoverSubblyProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='imweb')return require('./imweb').discoverImwebProducts(roaster,profile,fetchHtml);
   const urls=new Set(),evidence=[];
   for(const path of profile.listing_paths) {
     const url=new URL(path,roaster.website_url).href,result=await fetchHtml(url);

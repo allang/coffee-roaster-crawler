@@ -227,8 +227,9 @@
           "name": " Hydrangea Coffee Roasters"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "hydrangea-live.json",
+      "coffee_products": 32
     },
     {
       "name": "ILSE",
@@ -243,8 +244,9 @@
           "name": "Ilse"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "ilse-live.json",
+      "coffee_products": 9
     },
     {
       "name": "Leaves",
@@ -259,8 +261,9 @@
           "name": "Leaves Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "leaves-live.json",
+      "coffee_products": 11
     },
     {
       "name": "Loquat",
@@ -275,8 +278,9 @@
           "name": "Loquat Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "loquat-live.json",
+      "coffee_products": 25
     },
     {
       "name": "Loveless",
@@ -310,8 +314,9 @@
           "name": "Luminous Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "luminous-live.json",
+      "coffee_products": 21
     },
     {
       "name": "Luna",
@@ -345,8 +350,12 @@
           "name": "Momos Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "momos-kr-live.json",
+      "note": "Official Korean KRW retail market only. Configured English storefront remains blocked by CERT_HAS_EXPIRED; no international offer/identity adoption or omission-based reconciliation from Korean evidence.",
+      "coffee_products": 62,
+      "market_scope": "KR",
+      "market_limitation_evidence": "momos-live.json"
     },
     {
       "name": "Monogram",
@@ -361,8 +370,9 @@
           "name": "Monogram Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "monogram-live.json",
+      "coffee_products": 38
     },
     {
       "name": "Namusairo",
@@ -377,8 +387,9 @@
           "name": "Namusairo"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "namusairo-live.json",
+      "coffee_products": 54
     },
     {
       "name": "Obadiah",
@@ -393,8 +404,9 @@
           "name": "Obadiah"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "obadiah-live.json",
+      "coffee_products": 70
     },
     {
       "name": "ONA",
@@ -409,8 +421,9 @@
           "name": "ONA Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "ona-live.json",
+      "coffee_products": 36
     },
     {
       "name": "Passenger",

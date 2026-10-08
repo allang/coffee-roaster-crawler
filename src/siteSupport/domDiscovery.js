@@ -12,8 +12,10 @@ async function discoverDomProducts(roaster,profile,fetchHtml) {
         const $=cheerio.load(response.data),links=$(profile.product_link_selector).filter((_,e)=>!profile.exclude_name_pattern || !new RegExp(profile.exclude_name_pattern,'i').test($(e).closest('li').find('.name').text())).map((_,e)=>$(e).attr('href')).get();
         for(const href of links) {
           const product=new URL(href.replace(/&amp;/g,'&'),base);
-          if(!profile.hosts.includes(product.hostname) || !product.searchParams.get('product_no'))throw Error('Invalid merchant product link');
-          product.searchParams.delete('cate_no');product.searchParams.delete('display_group');urls.add(product.href);
+          const number=product.searchParams.get('product_no') || product.pathname.match(/^\/product\/[^/]+\/([1-9]\d+)(?:\/|$)/)?.[1];
+          if(!profile.hosts.includes(product.hostname) || !/^[1-9]\d*$/.test(number || ''))throw Error('Invalid merchant product link');
+          // Category/display aliases are one native product, not extra inventory.
+          product.pathname='/product/detail.html';product.search='';product.hash='';product.searchParams.set('product_no',number);urls.add(product.href);
         }
         evidence.push({listing:next,products:links.length});
         const active=$('.xans-product-normalpaging ol a.this').first();

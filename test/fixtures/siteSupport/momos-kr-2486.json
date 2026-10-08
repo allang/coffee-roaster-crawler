@@ -1,0 +1,408 @@
+{
+  "url": "https://momos.co.kr/shop_view?idx=2486",
+  "store": {
+    "@type": "OnlineStore",
+    "name": "모모스커피",
+    "url": "https://momos.co.kr",
+    "hasShippingService": {
+      "@type": "ShippingService",
+      "name": "배송 템플릿 A",
+      "fulfillmentType": "FulfillmentTypeDelivery",
+      "shippingConditions": [
+        {
+          "@type": "ShippingConditions",
+          "shippingOrigin": {
+            "@type": "DefinedRegion",
+            "addressCountry": "KR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "KR"
+          },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 2500,
+            "currency": "KRW"
+          },
+          "freeShippingThreshold": {
+            "@type": "MonetaryAmount",
+            "value": 40000,
+            "currency": "KRW"
+          }
+        }
+      ]
+    }
+  },
+  "primary": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "원두 에스쇼콜라",
+    "image": [
+      "https://cdn.imweb.me/thumbnail/20260911/c5e475f7dce6424e.png",
+      "https://cdn.imweb.me/thumbnail/20260911/c0925ae75c944f18.png"
+    ],
+    "description": "다크 초콜릿, 묵직한, 깨끗한, 크림같은상품 정보고시노트다크초콜릿을 한입 베어먹은 듯한 묵직함과 깔끔한 단맛, 크림 같은 부드러운 질감이 매력적인 커피식품유형커피 제조원 및 판매원모모스커피 / 부산... ",
+    "brand": {
+      "@type": "Brand",
+      "name": "자체브랜드"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 15000,
+      "priceCurrency": "KRW",
+      "url": "https://momos.co.kr/shop_view/?idx=2486",
+      "availability": "http://schema.org/InStock"
+    }
+  },
+  "native": {
+    "idx": 2486,
+    "site_code": "S2026022396690869a4918",
+    "code": "s202607137a7f32faef574",
+    "name": "원두 에스쇼콜라",
+    "price": 15000,
+    "price_none": false,
+    "options": [
+      {
+        "site_code": "S2026022396690869a4918",
+        "prod_code": "s202607137a7f32faef574",
+        "type": "default",
+        "code": "O20260713d95e9c89d83c4",
+        "name": "분쇄옵션",
+        "value_list": {
+          "O202607136712eba105b54": "(분쇄하지않음)홀빈",
+          "O202607137fc9335b061a4": "(분쇄된원두)핸드드립용",
+          "O20260713db13cd0acc694": "(분쇄된원두)커피메이커용",
+          "O2026071300c1f61b69e54": "(분쇄된원두)가정용더치용",
+          "O202607133acbfc2080ad4": "(분쇄된원두)모카포트용",
+          "O20260713fbb638f966cb4": "(분쇄된원두)에스프레소머신용"
+        },
+        "is_require": true
+      },
+      {
+        "site_code": "S2026022396690869a4918",
+        "prod_code": "s202607137a7f32faef574",
+        "type": "default",
+        "code": "O202607139fc624f2d0894",
+        "name": "중량",
+        "value_list": {
+          "O202607139df3112d07d94": "200g",
+          "O20260713da4fc7a8fbf24": "500g",
+          "O202607132513757db0024": "1kg"
+        },
+        "is_require": true
+      }
+    ],
+    "options_detail": [
+      {
+        "code": "od20260713e6c528ef13de4",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607136712eba105b54",
+          "O202607139df3112d07d94"
+        ],
+        "stock_sku": "P00000DD00BE",
+        "price": 15000,
+        "stock": 9364,
+        "status": "SALE"
+      },
+      {
+        "code": "od202607134e2aa1ea00624",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607136712eba105b54",
+          "O20260713da4fc7a8fbf24"
+        ],
+        "stock_sku": "P00000DD00BF",
+        "price": 30000,
+        "stock": 9568,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713cc8adb4f906d4",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607136712eba105b54",
+          "O202607132513757db0024"
+        ],
+        "stock_sku": "P00000DD00BG",
+        "price": 48000,
+        "stock": 9530,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713cc8eb4f6b4f84",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607137fc9335b061a4",
+          "O202607139df3112d07d94"
+        ],
+        "stock_sku": "P00000DD00BH",
+        "price": 15000,
+        "stock": 9930,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713f6573b1332934",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607137fc9335b061a4",
+          "O20260713da4fc7a8fbf24"
+        ],
+        "stock_sku": "P00000DD00BI",
+        "price": 30000,
+        "stock": 9955,
+        "status": "SALE"
+      },
+      {
+        "code": "od202607136dba2d51bb184",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607137fc9335b061a4",
+          "O202607132513757db0024"
+        ],
+        "stock_sku": "P00000DD00BJ",
+        "price": 48000,
+        "stock": 9982,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713d552d5b4eee14",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O20260713db13cd0acc694",
+          "O202607139df3112d07d94"
+        ],
+        "stock_sku": "P00000DD00BK",
+        "price": 15000,
+        "stock": 9985,
+        "status": "SALE"
+      },
+      {
+        "code": "od202607130a8b86ea35d94",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O20260713db13cd0acc694",
+          "O20260713da4fc7a8fbf24"
+        ],
+        "stock_sku": "P00000DD00BL",
+        "price": 30000,
+        "stock": 9981,
+        "status": "SALE"
+      },
+      {
+        "code": "od202607133e7790725f264",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O20260713db13cd0acc694",
+          "O202607132513757db0024"
+        ],
+        "stock_sku": "P00000DD00BM",
+        "price": 48000,
+        "stock": 9992,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713dcc323f570ba4",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O2026071300c1f61b69e54",
+          "O202607139df3112d07d94"
+        ],
+        "stock_sku": "P00000DD00BN",
+        "price": 15000,
+        "stock": 9996,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713786d624eed584",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O2026071300c1f61b69e54",
+          "O20260713da4fc7a8fbf24"
+        ],
+        "stock_sku": "P00000DD00BO",
+        "price": 30000,
+        "stock": 9995,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713e854fc4fbc2e4",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O2026071300c1f61b69e54",
+          "O202607132513757db0024"
+        ],
+        "stock_sku": "P00000DD00BP",
+        "price": 48000,
+        "stock": 9995,
+        "status": "SALE"
+      },
+      {
+        "code": "od202607130bf6bfed99534",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607133acbfc2080ad4",
+          "O202607139df3112d07d94"
+        ],
+        "stock_sku": "P00000DD00BQ",
+        "price": 15000,
+        "stock": 9983,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713565f28aac4774",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607133acbfc2080ad4",
+          "O20260713da4fc7a8fbf24"
+        ],
+        "stock_sku": "P00000DD00BR",
+        "price": 30000,
+        "stock": 9993,
+        "status": "SALE"
+      },
+      {
+        "code": "od202607131b8dda85b2384",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O202607133acbfc2080ad4",
+          "O202607132513757db0024"
+        ],
+        "stock_sku": "P00000DD00BS",
+        "price": 48000,
+        "stock": 9999,
+        "status": "SALE"
+      },
+      {
+        "code": "od202607134787ed832c434",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O20260713fbb638f966cb4",
+          "O202607139df3112d07d94"
+        ],
+        "stock_sku": "P00000DD00BT",
+        "price": 15000,
+        "stock": 9987,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713c9fe8e1655604",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O20260713fbb638f966cb4",
+          "O20260713da4fc7a8fbf24"
+        ],
+        "stock_sku": "P00000DD00BU",
+        "price": 30000,
+        "stock": 9994,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260713d77b53ee779b4",
+        "prod_code": "s202607137a7f32faef574",
+        "option_code_list": [
+          "O20260713d95e9c89d83c4",
+          "O202607139fc624f2d0894"
+        ],
+        "value_code_list": [
+          "O20260713fbb638f966cb4",
+          "O202607132513757db0024"
+        ],
+        "stock_sku": "P00000DD00BV",
+        "price": 48000,
+        "stock": 9997,
+        "status": "SALE"
+      }
+    ],
+    "prod_status": "sale",
+    "prod_soldout_status": "sale",
+    "deliv_data": [
+      {
+        "parcel": true
+      }
+    ],
+    "stock_use": true,
+    "stock_unlimit": true,
+    "stock_no_option": 0,
+    "simple_content": "<div class=\"tms-product-info\"><table style=\"width: 100%;\"><tbody><tr><td style=\"width: 100.0000%;\"><p>다크 초콜릿, 묵직한, 깨끗한, 크림같은</p></td></tr></tbody></table></div><div class=\"tms-product-tab tms-product-tab-desc active\"><h3 style=\"margin-top: 32px;\">상품 정보고시</h3><table style=\"width: 100%;\"><tbody><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>노트</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>다크초콜릿을 한입 베어먹은 듯한 묵직함과 깔끔한 단맛, 크림 같은 부드러운 질감이 매력적인 커피</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>식품유형</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>커피&nbsp;</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>제조원 및 판매원</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>모모스커피 / 부산광역시 영도구 봉래나루로 160</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>제조일자</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>해당 제품은 주말 또는 도서산간지역의 배송일을 포함하여 주문일로부터 1일에서 최대 4일 전 가공 상품으로 수령하실 수 있습니다.</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>소비기한</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>제조일로부터 1년</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>내용량</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>200 g / 500 g / 1 kg</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>원재료명 및 함량</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>커피원두 100 %</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>반품 및 교환</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>구입처 및 제조원</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>고객 상담 전화</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>051-512-7036</p></td></tr></tbody></table></div>",
+    "deleted": false,
+    "prod_type": "normal",
+    "use_pre_sale": false,
+    "use_period_discount": false,
+    "preSaleInfo": {
+      "enabled": false,
+      "startsAt": null,
+      "endsAt": null,
+      "isUpcoming": false,
+      "evaluatedAt": "2026-10-08T13:27:55+09:00"
+    }
+  }
+}

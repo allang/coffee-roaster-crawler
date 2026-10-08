@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-10-08T04:29:24.243Z",
+  "results": [
+    {
+      "name": "Hydrangea",
+      "complete": true,
+      "urls": 32,
+      "added": [],
+      "removed": [],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://hydrangea.coffee/collections/active/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:08.838Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://hydrangea.coffee/collections/active/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:09.420Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://hydrangea.coffee/collections/rested-coffee/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:09.922Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://hydrangea.coffee/collections/rested-coffee/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:10.424Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://hydrangea.coffee/collections/preorder/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:10.927Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://hydrangea.coffee/collections/auction/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:11.427Z"
+        }
+      ]
+    },
+    {
+      "name": "ILSE",
+      "complete": true,
+      "urls": 9,
+      "added": [],
+      "removed": [],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://ilsecoffee.com/collections/all-products/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:11.656Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://ilsecoffee.com/collections/all-products/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:12.158Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://ilsecoffee.com/collections/sample-menu/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:12.660Z"
+        }
+      ]
+    },
+    {
+      "name": "Leaves",
+      "complete": true,
+      "urls": 11,
+      "added": [],
+      "removed": [],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://shop.leavescoffee.jp/collections/coffee/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:20.111Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://shop.leavescoffee.jp/collections/coffee/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:20.614Z"
+        }
+      ]
+    },
+    {
+      "name": "Luminous",
+      "complete": true,
+      "urls": 21,
+      "added": [],
+      "removed": [],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://www.loveluminous.coffee/collections/dropstore/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:20.745Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://www.loveluminous.coffee/collections/dropstore/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:21.246Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://www.loveluminous.coffee/collections/lumi-xl/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:21.748Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://www.loveluminous.coffee/collections/lumi-xl/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:22.250Z"
+        }
+      ]
+    },
+    {
+      "name": "Monogram",
+      "complete": true,
+      "urls": 38,
+      "added": [],
+      "removed": [],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://monogramcoffee.com/en-us/collections/all-coffees/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:22.376Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://monogramcoffee.com/en-us/collections/all-coffees/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:22.877Z"
+        }
+      ]
+    },
+    {
+      "name": "Obadiah",
+      "complete": true,
+      "urls": 70,
+      "added": [],
+      "removed": [],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://obadiahcoffee.com/collections/all/products.json?limit=50&page=1",
+          "status": 200,
+          "at": "2026-10-08T04:29:23.056Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://obadiahcoffee.com/collections/all/products.json?limit=50&page=2",
+          "status": 200,
+          "at": "2026-10-08T04:29:23.559Z"
+        },
+        {
+          "method": "GET",
+          "url": "https://obadiahcoffee.com/collections/all/products.json?limit=50&page=3",
+          "status": 200,
+          "at": "2026-10-08T04:29:24.060Z"
+        }
+      ]
+    }
+  ],
+  "production_writes": 0,
+  "prohibited_requests": 0
+}
