@@ -3,6 +3,13 @@
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
 
+## 2026-10-08 — held exact updated worker after confirmed Lucienne listing contamination
+
+- Coordinating thread independently confirmed Squarespace ProductList/canonicalshop/non-product markup onLucienne merch plus genuineproduct discoverylinks; currentworker’s exactscopedlog binds the repeatedcategory/home saves. At **21:42:44.798 UTC**, suspended exact **Node72253 in stateT**, preserving launcher-lock72242/originalcwd/sourcec42ca29/configuration/process/cache while a small tested Squarespace listing guard and KILO correction are prepared. No source/data/schema update or secondrestart atthishold.
+- Fully returned genuineproduct-path checkpoint **beb964eb-f92f-44b9-901f-e31b93f30889**, RisaraldaMilanLogan, `/shop/p/risaralda-milan-logan`, productseen21:42:43.124/updated44.586552; known-page **a7bed7a7-1161-48c0-9863-7834eaffe7a6**,HTTP200/fetched43.124/saved44.605. Inspector verified catalog/photo+known-page awaits returned/no nextpage beforeSIGSTOP. Luciennecd4bf39b retainedrunningwhileprocessheld,11 actualsaveevents (not11verifiedcoffees). No price/stock/native-SKU certification or catalogcleanup claimed. PendingDDLsunaltered/unapplied;watchdog2700s retained androotowns promptcorrection/resume+existinghourfollowupretiming.
+- [Installation and latest held-state report](docs/MAC_MINI_AIRSHIP_SOURCE_INSTALL_20261008.md)/[receipt](docs/mac-mini-airship-source-install-20261008.json) preserve bothdatedstates. Earlier installdocumentation02dc8adb bothCIpassed; final heldstate documentationSHA/CI/prepost40reviews followinissue1/PR6. No unrelatedworkstreams/newautomation/purchases.
+
+
 ## 2026-10-08 — merged Airship source installed at a fully saved checkpoint
 
 - Fast-forwarded the original clean checkout from `99721e64fe8440e7cc3c68054c412fef5230c8a2` to merged main **c42ca29d484d10047810a2bd52175bf5df0ef330**, preserving remote history, private files, configuration, launcher, caches and prior checkpoints. Controlled stop **21:30:17.290 UTC**, resume request **21:32:21.100 UTC**, actual startup **21:32:21.308 UTC**, **123.810s** pause. Sole resumed Node **72253** / launcher-lock-LaunchAgent **72242**, original cwd, one roaster/page worker, original **5400s** schedule. Current tier1 phase started with53 eligible owners.

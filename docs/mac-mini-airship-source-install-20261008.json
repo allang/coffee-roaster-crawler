@@ -819,5 +819,63 @@
       "settings": 0,
       "migrations": 0
     }
-  }
+  },
+  "subsequent_operator_hold": {
+    "held_at": "2026-10-08T21:42:44.798Z",
+    "source_sha": "c42ca29d484d10047810a2bd52175bf5df0ef330",
+    "node_pid": 72253,
+    "launcher_lock_pid": 72242,
+    "state": "T",
+    "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+    "current_run": {
+      "id": "cd4bf39b-41ee-444d-8dc8-3ee34ce34b0c",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "status": "running",
+      "started_at": "2026-10-08T21:32:41.195+00:00",
+      "finished_at": null,
+      "error": null
+    },
+    "checkpoint": {
+      "function": "processFetchedPage",
+      "line": 160,
+      "catalog_transaction_returned": true,
+      "known_page_write_returned": true,
+      "next_page_not_admitted": true,
+      "product": {
+        "id": "beb964eb-f92f-44b9-901f-e31b93f30889",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "Lucienne x Glitch | Risaralda Milan \"Logan\" — PLAY DEAD. DRINK COFFEE.",
+        "source_url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+        "last_seen_at": "2026-10-08T21:42:43.124+00:00",
+        "updated_at": "2026-10-08T21:42:44.586552+00:00"
+      },
+      "known_page": {
+        "id": "a7bed7a7-1161-48c0-9863-7834eaffe7a6",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T21:42:43.124+00:00",
+        "last_status_code": 200,
+        "last_seen_at": "2026-10-08T21:42:44.605+00:00"
+      }
+    },
+    "confirmed_scope": "Stop further confirmed Lucienne homepage/category contamination pending tested Squarespace guard and explicit KILO normalization correction; preserve exact process and all records.",
+    "actual_successful_save_log_events": 11,
+    "env_unchanged": true,
+    "plist_unchanged": true,
+    "launcher_unchanged": true,
+    "failed_passport_receipt_unchanged": true,
+    "process_settings_lock_preserved": true,
+    "debugger_paused_before_SIGSTOP": true,
+    "temporary_loopback_inspector_active_until_old_process_reload": true,
+    "run_row_changed": false,
+    "production_writes": 0,
+    "migrations": 0,
+    "settings_changes": 0,
+    "catalog_cleanup": 0,
+    "purchases": 0,
+    "watchdog_stall_timeout_seconds": 2700,
+    "existing_hour_followup": "Coordinating thread scheduled6:33Eastern after21:32resume; retime only after confirmed correction resume."
+  },
+  "latest_runtime_state": "same installed c42ca29 worker held in OS state T after fully returned product/known-page checkpoint pending confirmed listing guard and KILO parser correction"
 }
