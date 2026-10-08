@@ -90,5 +90,7 @@
       "url": "https://www.briocoffeeworks.com"
     }
   ],
-  "intended_source_clarification": "Asked the user whether the intended tier-two entry is this Burlington cafe or a different roaster; no reply or source substitution."
+  "intended_source_clarification": "Proceeding with the exact named Burlington business after the user requested unblocking. Official business evidence and existing cafe role agree; no invented roaster role or products.",
+  "resolution": "verified_non_roaster_cafe_no_online_bean_catalog",
+  "remaining_blocker": false
 }

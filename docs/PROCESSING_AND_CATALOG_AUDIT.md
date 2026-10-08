@@ -2,7 +2,7 @@
 
 The crawler correction is prepared on `codex/issue-1-crawler` / PR #2. It preserves full reported processing wording, adds searchable methods and separate co-ferment disclosure, and fixes two reproduced processing losses: details beyond the configured 6,000-character classifier input and null structured attributes overwriting fresh non-null extraction. The semantic prompt/parser contract is now `extract-v2-processing`; old semantic caches re-extract once rather than conceal missing fields.
 
-This is review preparation. The running checkout is still at `d676de561005c90ecf96af123d20068374e6af88` / source `30748a20ac66f90d3f121b7298b65631fede6e49`. The previous cache/security correction `08fb0025f0973fca4901c552ef73cea72c764740` was positively re-reviewed in issuecomment-6037918271 but remains uninstalled. This new processing change also requires its separate additive migration before installation. No new production migration, bulk correction, paid model call or crawler restart occurred in this follow-up.
+This is review preparation. The running checkout is still at `d676de561005c90ecf96af123d20068374e6af88` / source `30748a20ac66f90d3f121b7298b65631fede6e49`. The previous cache/security correction `08fb0025f0973fca4901c552ef73cea72c764740` was positively re-reviewed in issuecomment-6037918271 but remains uninstalled. The October 8 compatibility follow-up also supports the installed transactional v1 catalog saver, retaining normalized processing in product metadata until the separate additive migration is installed. No new production migration, bulk correction, paid model call or crawler restart occurred in this follow-up.
 
 ## Where to find the data
 
@@ -31,6 +31,19 @@ select p.id, p.name, f.process, p.metadata->>'country_of_origin' as country, p.s
 from products p join coffee_facts f on f.product_id = p.id
 where f.process ilike '%natural%' or f.process ilike '%anaerob%';
 ```
+
+With the compatible crawler update, new observations also retain normalized methods, co-ferment tri-state and disclosed ingredients in `products.metadata`, with their versioned source evidence in `metadata->_normalization->processing`. They can be queried before typed processing columns are installed:
+
+```sql
+select p.id, p.name, f.process, p.metadata->'process_methods' as methods,
+       p.metadata->'is_coferment' as coferment,
+       p.metadata->'coferment_ingredients' as ingredients,
+       p.metadata#>'{_normalization,processing}' as evidence
+from products p join coffee_facts f on f.product_id = p.id
+where p.metadata->'process_methods' @> '["anaerobic"]'::jsonb;
+```
+
+Existing rows without these metadata fields remain unverified until revisited. Metadata queries do not have the new typed-column indexes. After applying the additive migration, restart the crawler so it detects and uses v2; this does not automatically backfill typed fields from prior metadata.
 
 After applying the reviewed processing migration:
 
@@ -99,6 +112,10 @@ I recommend first reviewing a recent 1,000-coffee batch. Recover exact retained 
 
 Review `supabase/migrations/20261007145506_coffee_processing_v1.sql`. The original applied `20261006134031_catalog_refresh_v1.sql` is unchanged. The additive migration initializes new methods/ingredients as empty and co-ferment as unknown, without inventing facts or reclassifying old rows. GIN method and partial co-ferment indexes support the queries above. Existing table grants/RLS are preserved; the new `save_catalog_product_v2` wrapper is SECURITY INVOKER and executable only by service_role. It reuses the tested v1 transaction/stale-variant guards; any processing failure rolls back product/variant changes too. Older source observations cannot overwrite newer processing. Repeated unchanged saves produce no extra catalog event.
 
-The prepared crawler now requires `save_catalog_product_v2`. Apply the new migration only with separate production authorization, verify schema/permissions and source gates, then use the established temporary pause/update/lockfile-install/test/resume procedure. Do not install the new saver against a catalog lacking that RPC; it deliberately fails rather than silently drop the new fields. Future SDK consumers may ignore metadata extensions, but displaying/filtering co-ferments in an API/UI requires adopting the new contract; those independent services were not changed here.
+The crawler prefers `save_catalog_product_v2`. A precise PostgREST `PGRST202` stating that `public.save_catalog_product_v2(payload)` is missing selects the already installed transactional `save_catalog_product_v1` instead. This preserves full process wording in `coffee_facts.process` and the complete normalized processing/evidence metadata in the same product/variant transaction. It logs the pending typed-column mode once per database client and detects capability again after restart. Permission errors, validation failures, unavailable databases and other missing functions remain hard failures; neither path deletes/reinserts catalog records. Missing v1 also fails. This compatible path needs the original catalog-refresh migration, which is already applied; it does not apply SQL or create typed columns automatically.
+
+Apply the optional processing migration only with target authorization and verified schema/permissions, then restart so the matching v2 contract is selected. Use the established temporary pause/update/lockfile-install/test/resume procedure and preserve the existing schedule/configuration. Future SDK consumers may ignore metadata extensions, but displaying/filtering co-ferments in an API/UI requires adopting the new contract; those independent services were not changed here.
+
+The four compatibility regressions exercise the actual reviewed v1 SQL against the previous schema: service-role saves, raw process plus methods/true-false-unknown disclosure/ingredients/source evidence, stable product/variant IDs and creation timestamps, retained media/unrelated metadata, fresh market values, unchanged events, stale observations and full transaction rollback. They also verify v2 remains preferred on the new schema and reject unrelated RPC/schema/permission/validation errors. These are offline schema compatibility checks; live crawler installation and source verification remain separate.
 
 **213/213 supported tests pass**. Coverage includes truncation/null-erasure regressions, overlapping methods, multilingual labels, ingredient/taste separation, explicit/unknown/conflicting disclosures, original-source contrasts, scoped table/description data, actual SQL stable IDs/rollback/stale writes/search queries, service_role success and authenticated denial. Prompt/parser changes invalidate the previous semantic cache once. No after-change live crawl speed, model token usage, population extraction success rate or full-catalog source accuracy is claimed.

@@ -199,5 +199,6 @@
     "Published exact .txt size/value and combination IDs with complete retail scope, or authoritative merchant export; accessible Korean inventory is separately needed for domestic scope."
   ],
   "deployment_gate": "User explicitly requires all tier-one and missing tier-two roaster products resolved before Mac mini update. This condition is not met.",
-  "recurrence_audit": "The same catalog-write authorization and .txt public-data barriers remained in the preceding two goal continuations and are revalidated here. Safe source preparation is complete for the available data; no current live worker/process is waiting to finish."
+  "recurrence_audit": "The same catalog-write authorization and .txt public-data barriers remained in the preceding two goal continuations and are revalidated here. Safe source preparation is complete for the available data; no current live worker/process is waiting to finish.",
+  "historical_note": "This blocker audit predates the user instruction to unblock yourself. See docs/crawler-unblocking-progress.json for subsequent changes."
 }

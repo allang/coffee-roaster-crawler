@@ -17,8 +17,8 @@
           "name": "txt Coffee"
         }
       ],
-      "status": "blocked",
-      "evidence": "txt-followup-live.json",
+      "status": "implemented_verified_partial_product_scope",
+      "evidence": "txt-registered-live.json",
       "coverage": {
         "all_time_coffees": 12,
         "seen_or_buyable_30d": 0,
@@ -28,12 +28,7 @@
         "latest_sighting": "2026-08-22T09:36:00.492000+00:00",
         "null_sighting_timestamps": 0
       },
-      "blockers": [
-        "Fresh official Korean Naver read returns HTTP 429; complete domestic retail inventory is unavailable.",
-        "All seven published English coffees are sold out. Product codes and English USD base prices are verified, but size value IDs and exact priced native combinations are omitted from public option responses.",
-        "English active unit u2025091568c79f6d083ba is paired to USD by primary offers and native price-map entries; other unit prices remain unpaired and unused. No English/Korean inventory equivalence or global absence authority is established.",
-        "External input required: public native option/value and priced combination IDs with complete retail scope, or an authoritative merchant export; accessible official Korean inventory is separately required for domestic completeness."
-      ],
+      "blockers": [],
       "followup_checked_at": "2026-10-08T07:43:07.353Z",
       "verified_english_product_codes": [
         "s20260717b4233092c4221",
@@ -45,15 +40,26 @@
         "s20250210cd2290c6f82db"
       ],
       "english_native_variants_verified": false,
-      "domestic_inventory_complete": false
+      "domestic_inventory_complete": false,
+      "coffee_products": 7,
+      "note": "Seven official English products have exact native product identities, paired USD base offers, primary photos and sold-out state. Variant identities and domestic coverage remain incomplete; no variants invented, historical variants preserved and omission reconciliation disabled.",
+      "remaining_scope_limits": [
+        "Domestic Naver inventory returns HTTP 429; no English/Korean equivalence asserted.",
+        "The public sold-out option responses omit exact weight/combination IDs; variant set is intentionally incomplete."
+      ],
+      "production_crawl_evidence": "txt-production-crawl-first.json",
+      "production_coffees_saved": 7,
+      "production_photos_verified": 7
     },
     {
       "name": "Apiary",
-      "identity_status": "unmatched",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "a95c27e7-d466-4553-a4d0-3c1297bea0fa"
+      ],
       "identity_drift": [],
       "candidates": [],
-      "status": "implemented_verified_identity_or_role_blocked",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "apiary-live.json",
       "coverage": {
         "all_time_coffees": 0,
@@ -68,7 +74,9 @@
       "verified_variants": 6,
       "prohibited_requests": 0,
       "production_writes": 0,
-      "blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment."
+      "blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment.",
+      "identity_evidence": "../catalog-repair-apply-result.json",
+      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending."
     },
     {
       "name": "Ceremony",
@@ -140,7 +148,7 @@
           "name": "Colorfull Coffee"
         }
       ],
-      "status": "implemented_verified_identity_or_role_blocked",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "colorfull-live.json",
       "coverage": {
         "all_time_coffees": 0,
@@ -156,7 +164,8 @@
       "prohibited_requests": 0,
       "production_writes": 0,
       "blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection.",
-      "identity_evidence": "colorfull-identity.json"
+      "identity_evidence": "../catalog-repair-apply-result.json",
+      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending."
     },
     {
       "name": "Fathers",
@@ -415,7 +424,7 @@
           "name": "Onyx Tonics"
         }
       ],
-      "status": "blocked_merchant_not_roaster",
+      "status": "verified_no_roaster_catalog",
       "evidence": "onyx-tonics-blocker.json",
       "coverage": {
         "all_time_coffees": 0,
@@ -426,15 +435,19 @@
         "latest_sighting": null,
         "null_sighting_timestamps": 0
       },
-      "blocker": "Cafe-only catalog entity; official multi-roaster coffee bar, no identifiable priced own-coffee inventory."
+      "blocker": "Cafe-only catalog entity; official multi-roaster coffee bar, no identifiable priced own-coffee inventory.",
+      "note": "Resolved as the Burlington multi-roaster cafe. No online bean catalog or roaster role; excluded from roaster crawling without substituting Onyx Coffee Lab.",
+      "blockers": []
     },
     {
       "name": "Passport",
-      "identity_status": "unmatched",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "c978d995-9310-4c54-945b-5211ccdddf7a"
+      ],
       "identity_drift": [],
       "candidates": [],
-      "status": "implemented_verified_identity_or_role_blocked",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "passport-live.json",
       "coverage": {
         "all_time_coffees": 0,
@@ -445,12 +458,13 @@
         "latest_sighting": null,
         "null_sighting_timestamps": 0
       },
-      "identity_evidence": "passport-identity.json",
+      "identity_evidence": "../catalog-repair-apply-result.json",
       "blocker": "Pinned tier source places Passport in Brisbane; official merchant verified. Reviewed coverage audit still supplies no database entity ID.",
       "verified_coffee_products": 255,
       "verified_variants": 529,
       "prohibited_requests": 0,
-      "production_writes": 0
+      "production_writes": 0,
+      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending."
     },
     {
       "name": "PERC",

@@ -1,0 +1,580 @@
+{
+  "checked_at": "2026-10-08T13:19:26.578Z",
+  "mode": "production-public-product-scope-crawl",
+  "entity_id": "c4814d81-a3e7-4a8d-86c5-b0fac2146b84",
+  "passed": true,
+  "result": {
+    "success": true,
+    "roasterId": "c4814d81-a3e7-4a8d-86c5-b0fac2146b84",
+    "roasterName": "txt Coffee",
+    "platform": {
+      "platform": "custom",
+      "confidence": 0.5,
+      "finalUrl": "https://txtcoffeeen.imweb.me/"
+    },
+    "sitemapUrl": null,
+    "stats": {
+      "discovered": 7,
+      "fromSitemap": 0,
+      "fromDomLinks": 0,
+      "duplicatesSkipped": 0,
+      "total": 7,
+      "visited": 7,
+      "unvisited": 0,
+      "blacklisted": 0
+    },
+    "visitResults": {
+      "visited": 7,
+      "coffeeFound": 7,
+      "irrelevant": 0,
+      "errors": 0,
+      "aiCalls": 0,
+      "cacheHits": 0,
+      "structuredPages": 7,
+      "structuredProductOnlyPages": 7,
+      "marketChecks": 7,
+      "aiUsage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cached_tokens": 0,
+        "unreported_calls": 0
+      },
+      "partialInventory": true,
+      "inventoryComplete": false,
+      "inventoryScope": "published_english_homepage_and_coffee_collection",
+      "omissionReconciliation": false
+    }
+  },
+  "run": {
+    "id": "f350355a-8046-4f98-a9c1-7b2e8cf5e128",
+    "status": "completed",
+    "started_at": "2026-10-08T13:19:01.382+00:00",
+    "finished_at": "2026-10-08T13:19:26.271+00:00",
+    "coffees_found": 7,
+    "pages_sent_to_gpt": 0,
+    "error": null,
+    "meta": {
+      "extraction": {
+        "errors": 0,
+        "aiCalls": 0,
+        "aiUsage": {
+          "cached_tokens": 0,
+          "prompt_tokens": 0,
+          "unreported_calls": 0,
+          "completion_tokens": 0
+        },
+        "visited": 7,
+        "cacheHits": 0,
+        "irrelevant": 0,
+        "coffeeFound": 7,
+        "marketChecks": 7,
+        "inventoryScope": "published_english_homepage_and_coffee_collection",
+        "structuredPages": 7,
+        "partialInventory": true,
+        "inventoryComplete": false,
+        "omissionReconciliation": false,
+        "structuredProductOnlyPages": 7
+      }
+    }
+  },
+  "products": [
+    {
+      "id": "2d688f42-fada-5835-b522-4cdfa08f6f7d",
+      "name": "Drip Bags 15g x 6 (Melting Blend)",
+      "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=202",
+      "source_key": "bd2b3e37efcf69ad8d104ddce6fb1a7cb3be24f438a7067d3aa1aaac93026a86",
+      "last_seen_at": "2026-10-08T13:19:24.598+00:00",
+      "is_available": false,
+      "metadata": {
+        "description": "Farm & Region: La Naranja, Huabal, Cajamarca, PeruVariety: CaturraProcessing: Fully WashedApple, plum, bro...",
+        "is_coferment": null,
+        "_normalization": {
+          "version": "coffee-v1",
+          "processing": {
+            "process": null,
+            "version": "processing-v1",
+            "coferment": [],
+            "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=202",
+            "ingredients": [],
+            "coferment_conflict": false
+          },
+          "tasting_notes": {
+            "notes": [],
+            "source": null,
+            "version": "tasting-v1"
+          },
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s20250210cd2290c6f82db",
+          "canonical_source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=202"
+        },
+        "_product_offer": {
+          "price": 12,
+          "state": "sold_out",
+          "source": "txt_imweb_primary_product_offer",
+          "currency": "USD",
+          "unit_code": "u2025091568c79f6d083ba",
+          "source_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=202",
+          "minor_units": 1200,
+          "availability": "http://schema.org/OutOfStock",
+          "required_options": 1,
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s20250210cd2290c6f82db",
+          "native_product_code": "s20250210cd2290c6f82db",
+          "public_product_index": 202,
+          "variant_identity_complete": false
+        },
+        "_image_evidence": {
+          "source": "adapter_primary_product",
+          "product_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=202",
+          "product_name": "Drip Bags 15g x 6 (Melting Blend)Sold out"
+        },
+        "_market_context": {
+          "scope": "published_english_product",
+          "currency": "USD",
+          "site_code": "S201809265bab93e020b92",
+          "unit_code": "u2025091568c79f6d083ba",
+          "inventory_complete": false,
+          "variant_identity_complete": false,
+          "domestic_inventory_complete": false
+        },
+        "process_methods": [],
+        "product_image_url": "https://cdn-optimized.imweb.me/upload/S201809265bab93e020b92/6914918965c2c.jpg?w=750",
+        "original_description": "Farm & Region: La Naranja, Huabal, Cajamarca, PeruVariety: CaturraProcessing: Fully WashedApple, plum, bro...",
+        "coferment_ingredients": []
+      },
+      "product_media": [
+        {
+          "media_assets": {
+            "url": "https://gtlipifdfyugiwpxvuse.supabase.co/storage/v1/object/public/assets/products/2d688f42-fada-5835-b522-4cdfa08f6f7d/a120a8044d43de22973bc16363e67798.webp"
+          }
+        }
+      ],
+      "product_variants": []
+    },
+    {
+      "id": "fecdec46-fb7e-5eff-a685-75480727c3c0",
+      "name": "Panama Adaura Lorayne Geisha HW",
+      "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=181",
+      "source_key": "48596afde70fb5db14d33c9fcf7843727ab1d8a2f2d006be48245c014efb8bf1",
+      "last_seen_at": "2026-10-08T13:19:20.796+00:00",
+      "is_available": false,
+      "metadata": {
+        "description": "Farm & Region: Santa Teresa, San José, Costa RicaVariety: GeishaProcessing: Fully WashedJasmine, le...",
+        "is_coferment": null,
+        "_normalization": {
+          "version": "coffee-v1",
+          "processing": {
+            "process": null,
+            "version": "processing-v1",
+            "coferment": [],
+            "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=181",
+            "ingredients": [],
+            "coferment_conflict": false
+          },
+          "tasting_notes": {
+            "notes": [],
+            "source": null,
+            "version": "tasting-v1"
+          },
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285baddf165dcf8",
+          "canonical_source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=181"
+        },
+        "_product_offer": {
+          "price": 26,
+          "state": "sold_out",
+          "source": "txt_imweb_primary_product_offer",
+          "currency": "USD",
+          "unit_code": "u2025091568c79f6d083ba",
+          "source_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=181",
+          "minor_units": 2600,
+          "availability": "http://schema.org/OutOfStock",
+          "required_options": 1,
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285baddf165dcf8",
+          "native_product_code": "s201809285baddf165dcf8",
+          "public_product_index": 181,
+          "variant_identity_complete": false
+        },
+        "_image_evidence": {
+          "source": "adapter_primary_product",
+          "product_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=181",
+          "product_name": "Panama Adaura Lorayne Geisha HWSold out"
+        },
+        "_market_context": {
+          "scope": "published_english_product",
+          "currency": "USD",
+          "site_code": "S201809265bab93e020b92",
+          "unit_code": "u2025091568c79f6d083ba",
+          "inventory_complete": false,
+          "variant_identity_complete": false,
+          "domestic_inventory_complete": false
+        },
+        "process_methods": [],
+        "product_image_url": "https://cdn-optimized.imweb.me/upload/S201809265bab93e020b92/9d65eea7fa269.jpg?w=750",
+        "original_description": "Farm & Region: Santa Teresa, San José, Costa RicaVariety: GeishaProcessing: Fully WashedJasmine, le...",
+        "coferment_ingredients": []
+      },
+      "product_media": [
+        {
+          "media_assets": {
+            "url": "https://gtlipifdfyugiwpxvuse.supabase.co/storage/v1/object/public/assets/products/fecdec46-fb7e-5eff-a685-75480727c3c0/7cdf64badaaf0eebb692806e9d8eb0a1.webp"
+          }
+        }
+      ],
+      "product_variants": []
+    },
+    {
+      "id": "11429fe8-6554-5e48-bc13-44a259040d56",
+      "name": "Panama Chevas Fresa Geisha YN",
+      "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=183",
+      "source_key": "4001185f914e9e6129acdeec1fa2e6a90a54eab93eeb2befae57b202a156da49",
+      "last_seen_at": "2026-10-08T13:19:17.332+00:00",
+      "is_available": false,
+      "metadata": {
+        "description": "Farm & Region: La Palma y El Tucán, Zipacón, ColombiaVariety: SidraProcessing: pH Clarity Wa...",
+        "is_coferment": null,
+        "_normalization": {
+          "version": "coffee-v1",
+          "processing": {
+            "process": null,
+            "version": "processing-v1",
+            "coferment": [],
+            "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=183",
+            "ingredients": [],
+            "coferment_conflict": false
+          },
+          "tasting_notes": {
+            "notes": [],
+            "source": null,
+            "version": "tasting-v1"
+          },
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285bade24d832f7",
+          "canonical_source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=183"
+        },
+        "_product_offer": {
+          "price": 26,
+          "state": "sold_out",
+          "source": "txt_imweb_primary_product_offer",
+          "currency": "USD",
+          "unit_code": "u2025091568c79f6d083ba",
+          "source_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=183",
+          "minor_units": 2600,
+          "availability": "http://schema.org/OutOfStock",
+          "required_options": 1,
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285bade24d832f7",
+          "native_product_code": "s201809285bade24d832f7",
+          "public_product_index": 183,
+          "variant_identity_complete": false
+        },
+        "_image_evidence": {
+          "source": "adapter_primary_product",
+          "product_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=183",
+          "product_name": "Panama Chevas Fresa Geisha YNSold out"
+        },
+        "_market_context": {
+          "scope": "published_english_product",
+          "currency": "USD",
+          "site_code": "S201809265bab93e020b92",
+          "unit_code": "u2025091568c79f6d083ba",
+          "inventory_complete": false,
+          "variant_identity_complete": false,
+          "domestic_inventory_complete": false
+        },
+        "process_methods": [],
+        "product_image_url": "https://cdn-optimized.imweb.me/upload/S201809265bab93e020b92/af9fdd170ee3b.jpg?w=750",
+        "original_description": "Farm & Region: La Palma y El Tucán, Zipacón, ColombiaVariety: SidraProcessing: pH Clarity Wa...",
+        "coferment_ingredients": []
+      },
+      "product_media": [
+        {
+          "media_assets": {
+            "url": "https://gtlipifdfyugiwpxvuse.supabase.co/storage/v1/object/public/assets/products/11429fe8-6554-5e48-bc13-44a259040d56/bc3cff0668ccb28e6b7a433e7b946ceb.webp"
+          }
+        }
+      ],
+      "product_variants": []
+    },
+    {
+      "id": "22dd8fed-9008-5015-b69a-1eb1ec2db167",
+      "name": "Colombia El Obraje Geisha",
+      "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=184",
+      "source_key": "01463195c0a2a3ad4ed1e20b881d2db0b115034b69a6a5919e6979fe0d025444",
+      "last_seen_at": "2026-10-08T13:19:14.409+00:00",
+      "is_available": false,
+      "metadata": {
+        "description": "Farm & Region: Oma, Gesha Village, West Omoi, EthiopiaVariety: Gesha 1931Processing: NaturalCitron, cranbe...",
+        "is_coferment": null,
+        "_normalization": {
+          "version": "coffee-v1",
+          "processing": {
+            "process": null,
+            "version": "processing-v1",
+            "coferment": [],
+            "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=184",
+            "ingredients": [],
+            "coferment_conflict": false
+          },
+          "tasting_notes": {
+            "notes": [],
+            "source": null,
+            "version": "tasting-v1"
+          },
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285bade2f766ea8",
+          "canonical_source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=184"
+        },
+        "_product_offer": {
+          "price": 20,
+          "state": "sold_out",
+          "source": "txt_imweb_primary_product_offer",
+          "currency": "USD",
+          "unit_code": "u2025091568c79f6d083ba",
+          "source_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=184",
+          "minor_units": 2000,
+          "availability": "http://schema.org/OutOfStock",
+          "required_options": 1,
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285bade2f766ea8",
+          "native_product_code": "s201809285bade2f766ea8",
+          "public_product_index": 184,
+          "variant_identity_complete": false
+        },
+        "_image_evidence": {
+          "source": "adapter_primary_product",
+          "product_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=184",
+          "product_name": "Colombia El Obraje GeishaSold out"
+        },
+        "_market_context": {
+          "scope": "published_english_product",
+          "currency": "USD",
+          "site_code": "S201809265bab93e020b92",
+          "unit_code": "u2025091568c79f6d083ba",
+          "inventory_complete": false,
+          "variant_identity_complete": false,
+          "domestic_inventory_complete": false
+        },
+        "process_methods": [],
+        "product_image_url": "https://cdn-optimized.imweb.me/upload/S201809265bab93e020b92/d9990c7cb7f95.jpg?w=750",
+        "original_description": "Farm & Region: Oma, Gesha Village, West Omoi, EthiopiaVariety: Gesha 1931Processing: NaturalCitron, cranbe...",
+        "coferment_ingredients": []
+      },
+      "product_media": [
+        {
+          "media_assets": {
+            "url": "https://gtlipifdfyugiwpxvuse.supabase.co/storage/v1/object/public/assets/products/22dd8fed-9008-5015-b69a-1eb1ec2db167/e7b19399faf6b6bc5e10676320813fb3.webp"
+          }
+        }
+      ],
+      "product_variants": []
+    },
+    {
+      "id": "3d79f94f-ed42-5ab5-aeff-1655b30aaaed",
+      "name": "Ethiopia Karamo Bura AH",
+      "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=180",
+      "source_key": "361a0d18177cb27168a8949e973fd0f849f880f8aa4f841e15f2ce11b0651d02",
+      "last_seen_at": "2026-10-08T13:19:11.841+00:00",
+      "is_available": false,
+      "metadata": {
+        "description": "Farm & Region: Gondo, Murang’a, KenyaVarieties: SL-28, SL-34, Ruiru-11, BatianProcessing: Fully Wash...",
+        "is_coferment": null,
+        "_normalization": {
+          "version": "coffee-v1",
+          "processing": {
+            "process": null,
+            "version": "processing-v1",
+            "coferment": [],
+            "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=180",
+            "ingredients": [],
+            "coferment_conflict": false
+          },
+          "tasting_notes": {
+            "notes": [],
+            "source": null,
+            "version": "tasting-v1"
+          },
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809275bacc98d5f798",
+          "canonical_source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=180"
+        },
+        "_product_offer": {
+          "price": 20,
+          "state": "sold_out",
+          "source": "txt_imweb_primary_product_offer",
+          "currency": "USD",
+          "unit_code": "u2025091568c79f6d083ba",
+          "source_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=180",
+          "minor_units": 2000,
+          "availability": "http://schema.org/OutOfStock",
+          "required_options": 1,
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809275bacc98d5f798",
+          "native_product_code": "s201809275bacc98d5f798",
+          "public_product_index": 180,
+          "variant_identity_complete": false
+        },
+        "_image_evidence": {
+          "source": "adapter_primary_product",
+          "product_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=180",
+          "product_name": "Ethiopia Karamo Bura AHSold out"
+        },
+        "_market_context": {
+          "scope": "published_english_product",
+          "currency": "USD",
+          "site_code": "S201809265bab93e020b92",
+          "unit_code": "u2025091568c79f6d083ba",
+          "inventory_complete": false,
+          "variant_identity_complete": false,
+          "domestic_inventory_complete": false
+        },
+        "process_methods": [],
+        "product_image_url": "https://cdn-optimized.imweb.me/upload/S201809265bab93e020b92/702b348fa8429.jpg?w=750",
+        "original_description": "Farm & Region: Gondo, Murang’a, KenyaVarieties: SL-28, SL-34, Ruiru-11, BatianProcessing: Fully Wash...",
+        "coferment_ingredients": []
+      },
+      "product_media": [
+        {
+          "media_assets": {
+            "url": "https://gtlipifdfyugiwpxvuse.supabase.co/storage/v1/object/public/assets/products/3d79f94f-ed42-5ab5-aeff-1655b30aaaed/0692dc04482bd3fdeb9039e7d71311a0.webp"
+          }
+        }
+      ],
+      "product_variants": []
+    },
+    {
+      "id": "09ab6357-aaad-5bac-9c6e-d9e3c13398cb",
+      "name": "Ethiopia Arbegona",
+      "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=182",
+      "source_key": "8b2efda0fdcdc7e6f061e9716802d425b27a675bd491e616ee6764b09dcd0f13",
+      "last_seen_at": "2026-10-08T13:19:08.85+00:00",
+      "is_available": false,
+      "metadata": {
+        "description": "Farm & Region: La Naranja, Huabal, Cajamarca, PeruVariety: CaturraProcessing: Fully WashedApple, plum, bro...",
+        "is_coferment": null,
+        "_normalization": {
+          "version": "coffee-v1",
+          "processing": {
+            "process": null,
+            "version": "processing-v1",
+            "coferment": [],
+            "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=182",
+            "ingredients": [],
+            "coferment_conflict": false
+          },
+          "tasting_notes": {
+            "notes": [],
+            "source": null,
+            "version": "tasting-v1"
+          },
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285bade00dec890",
+          "canonical_source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=182"
+        },
+        "_product_offer": {
+          "price": 12,
+          "state": "sold_out",
+          "source": "txt_imweb_primary_product_offer",
+          "currency": "USD",
+          "unit_code": "u2025091568c79f6d083ba",
+          "source_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=182",
+          "minor_units": 1200,
+          "availability": "http://schema.org/OutOfStock",
+          "required_options": 1,
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s201809285bade00dec890",
+          "native_product_code": "s201809285bade00dec890",
+          "public_product_index": 182,
+          "variant_identity_complete": false
+        },
+        "_image_evidence": {
+          "source": "adapter_primary_product",
+          "product_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=182",
+          "product_name": "Ethiopia ArbegonaSold out"
+        },
+        "_market_context": {
+          "scope": "published_english_product",
+          "currency": "USD",
+          "site_code": "S201809265bab93e020b92",
+          "unit_code": "u2025091568c79f6d083ba",
+          "inventory_complete": false,
+          "variant_identity_complete": false,
+          "domestic_inventory_complete": false
+        },
+        "process_methods": [],
+        "product_image_url": "https://cdn-optimized.imweb.me/upload/S201809265bab93e020b92/5fd7d835d8524.jpg?w=750",
+        "original_description": "Farm & Region: La Naranja, Huabal, Cajamarca, PeruVariety: CaturraProcessing: Fully WashedApple, plum, bro...",
+        "coferment_ingredients": []
+      },
+      "product_media": [
+        {
+          "media_assets": {
+            "url": "https://gtlipifdfyugiwpxvuse.supabase.co/storage/v1/object/public/assets/products/09ab6357-aaad-5bac-9c6e-d9e3c13398cb/cf930f19fb4bd86c4e512b883bc94d6f.webp"
+          }
+        }
+      ],
+      "product_variants": []
+    },
+    {
+      "id": "d4644763-15a1-5e3c-88fa-38a4b2a01c83",
+      "name": "Melting Blend",
+      "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=207",
+      "source_key": "a6e24c4a66e3ecb196612144b1d702cd756f100471140df4cef92d2df4902b1c",
+      "last_seen_at": "2026-10-08T13:19:04.493+00:00",
+      "is_available": false,
+      "metadata": {
+        "description": "Farm & Region: La Naranja, Huabal, Cajamarca, PeruVariety: CaturraProcessing: Fully WashedApple, plum, bro...",
+        "is_coferment": null,
+        "_normalization": {
+          "version": "coffee-v1",
+          "processing": {
+            "process": null,
+            "version": "processing-v1",
+            "coferment": [],
+            "source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=207",
+            "ingredients": [],
+            "coferment_conflict": false
+          },
+          "tasting_notes": {
+            "notes": [],
+            "source": null,
+            "version": "tasting-v1"
+          },
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s20260717b4233092c4221",
+          "canonical_source_url": "https://txtcoffeeen.imweb.me/shop_view?idx=207"
+        },
+        "_product_offer": {
+          "price": 10,
+          "state": "sold_out",
+          "source": "txt_imweb_primary_product_offer",
+          "currency": "USD",
+          "unit_code": "u2025091568c79f6d083ba",
+          "source_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+          "minor_units": 1000,
+          "availability": "http://schema.org/OutOfStock",
+          "required_options": 2,
+          "source_product_id": "imweb:EN:S201809265bab93e020b92:u2025091568c79f6d083ba:s20260717b4233092c4221",
+          "native_product_code": "s20260717b4233092c4221",
+          "public_product_index": 207,
+          "variant_identity_complete": false
+        },
+        "_image_evidence": {
+          "source": "adapter_primary_product",
+          "product_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+          "product_name": "Melting BlendNEWSold out"
+        },
+        "_market_context": {
+          "scope": "published_english_product",
+          "currency": "USD",
+          "site_code": "S201809265bab93e020b92",
+          "unit_code": "u2025091568c79f6d083ba",
+          "inventory_complete": false,
+          "variant_identity_complete": false,
+          "domestic_inventory_complete": false
+        },
+        "process_methods": [],
+        "product_image_url": "https://cdn-optimized.imweb.me/upload/S201809265bab93e020b92/0652737b3f5e4.jpg?w=750",
+        "original_description": "Farm & Region: La Naranja, Huabal, Cajamarca, PeruVariety: CaturraProcessing: Fully WashedApple, plum, bro...",
+        "coferment_ingredients": []
+      },
+      "product_media": [
+        {
+          "media_assets": {
+            "url": "https://gtlipifdfyugiwpxvuse.supabase.co/storage/v1/object/public/assets/products/e521be96-b0b0-4f83-b23b-a5f9c0c2b34d/983b689cb127b9496dcf9fd34be11be4.webp"
+          }
+        }
+      ],
+      "product_variants": []
+    }
+  ],
+  "scope": "Published English products only; complete domestic inventory and native option identities remain unknown; no omissions or invented variants."
+}

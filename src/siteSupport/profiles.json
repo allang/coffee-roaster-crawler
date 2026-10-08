@@ -446,7 +446,9 @@
   },
   {
     "name": "Apiary",
-    "entity_ids": [],
+    "entity_ids": [
+      "a95c27e7-d466-4553-a4d0-3c1297bea0fa"
+    ],
     "hosts": [
       "apiary.coffee",
       "www.apiary.coffee"
@@ -458,8 +460,7 @@
     "coffee_product_types": [
       ""
     ],
-    "single_variant_description_weight": true,
-    "identity_blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment."
+    "single_variant_description_weight": true
   },
   {
     "name": "Colorfull",
@@ -478,8 +479,7 @@
       "",
       "Blend",
       "decaf"
-    ],
-    "identity_blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection."
+    ]
   },
   {
     "name": "Klatch",
@@ -579,7 +579,9 @@
   },
   {
     "name": "Passport",
-    "entity_ids": [],
+    "entity_ids": [
+      "c978d995-9310-4c54-945b-5211ccdddf7a"
+    ],
     "hosts": [
       "passportcoffee.com.au",
       "www.passportcoffee.com.au"
@@ -594,7 +596,8 @@
     ],
     "strict_coffee_product_types": true,
     "exclude_variant_title_pattern": "^Vac Sealed Pouch Option \\(per pouch\\)$",
-    "identity_blocker": "Pinned tier source places Passport in Brisbane; official merchant verified. Reviewed coverage audit still supplies no database entity ID."
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
   },
   {
     "name": "DAK Coffee Roasters",
@@ -755,7 +758,9 @@
   },
   {
     "name": "Aery",
-    "entity_ids": [],
+    "entity_ids": [
+      "2dbf0bf9-9067-425a-aebc-a828a912e353"
+    ],
     "hosts": [
       "aerycoffee.com",
       "www.aerycoffee.com"
@@ -1236,5 +1241,34 @@
     "reconcile_omissions": false,
     "inventory_authorizes_global_absence": false,
     "coffee_collection_verified": true
+  },
+  {
+    "name": ".txt",
+    "entity_ids": [
+      "c4814d81-a3e7-4a8d-86c5-b0fac2146b84"
+    ],
+    "hosts": [
+      "txtcoffee.kr",
+      "www.txtcoffee.kr",
+      "txtcoffeeen.imweb.me"
+    ],
+    "adapter": "txt_imweb",
+    "allow_partial_inventory": true,
+    "bootstrap_url": "https://txtcoffeeen.imweb.me/",
+    "listing_paths": [
+      "/",
+      "/coffeesubscriptions"
+    ],
+    "imweb_brand": ".txt",
+    "imweb_site_code": "S201809265bab93e020b92",
+    "imweb_unit_code": "u2025091568c79f6d083ba",
+    "market_scope": "EN",
+    "market_currency": "USD",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "exclude_product_codes": [
+      "s201809305bb0c5bb629c1",
+      "s201809305bb0da446aa56"
+    ]
   }
 ]

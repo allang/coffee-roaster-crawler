@@ -4,6 +4,25 @@ const globalLogger = require('./logger');
 const { downloadAndSaveImage } = require('./imageDownloader');
 const { parsePriceCents, parseWeightGrams } = require('./product-value-parsers.cjs');
 const { normalizeProduct, canonicalProductUrl, stableKey, stableUuid } = require('./catalogNormalization');
+// Older production catalogs already have the transactional v1 saver. It keeps
+// normalized processing and source evidence in product metadata until the typed
+// processing migration is installed. Detect capability once per client/restart.
+const metadataProcessingClients = new WeakSet();
+function missingProcessingRpc(error) {
+  return error?.code === 'PGRST202' &&
+    /^Could not find the function public\.save_catalog_product_v2\(payload\) in the schema cache$/.test(error.message || '');
+}
+async function saveCatalog(db,payload,logger) {
+  if(metadataProcessingClients.has(db))return db.rpc('save_catalog_product_v1',{payload});
+  const result=await db.rpc('save_catalog_product_v2',{payload});
+  if(!missingProcessingRpc(result.error))return result;
+  const compatible=await db.rpc('save_catalog_product_v1',{payload});
+  if(!compatible.error && compatible.data?.product_id) {
+    metadataProcessingClients.add(db);
+    logger.warn('ProductSaver','Processing v2 RPC is unavailable; normalized methods, co-ferment and source evidence are retained in product metadata');
+  }
+  return compatible;
+}
 function generateSlug(name) { return String(name).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,80) || 'coffee'; }
 function sanitizeNullStrings(value) {
   if (value === 'null' || value === 'NULL') return null;
@@ -65,8 +84,8 @@ async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   const canonical=canonicalProductUrl(sourceUrl), key=productSourceKey(entityId,productData,sourceUrl);
   const existing=await findExistingProduct(db,entityId,canonical,key);
   const payload=catalogPayload(entityId,productData,sourceUrl,existing,options.availability,options.checkedAt || new Date().toISOString());
-  const {data,error}=await db.rpc('save_catalog_product_v2',{payload});
-  if(error) throw error; // No destructive legacy fallback if migration is absent.
+  const {data,error}=await saveCatalog(db,payload,logger);
+  if(error) throw error; // Both supported savers are transactional; never delete/reinsert.
   const productId=data?.product_id;
   if(!productId) throw new Error('Catalog transaction returned no product ID');
   if(data.stale_observation_ignored)return productId;

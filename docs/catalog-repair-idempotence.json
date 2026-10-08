@@ -1,0 +1,196 @@
+{
+  "checked_at": "2026-10-08T13:00:10.104850+00:00",
+  "authorization": "User requested Unblock yourself after the reviewed catalog and photo changes were presented as blockers; proceeding with those concrete repairs. Mac mini deployment remains separately gated.",
+  "scope": "Three reviewed new entities and the missing Colorfull roaster role; no product/tier writes or entity merges.",
+  "results": [
+    {
+      "source_name": "Aery",
+      "desired_tier": 1,
+      "entity_id": "2dbf0bf9-9067-425a-aebc-a828a912e353",
+      "operation": "reused_exact_reviewed_entity",
+      "roaster_role_added": false,
+      "verified_entity": {
+        "id": "2dbf0bf9-9067-425a-aebc-a828a912e353",
+        "slug": "aery-coffee",
+        "name": "Aery Coffee",
+        "website_url": "https://aerycoffee.com/",
+        "description_raw": null,
+        "description_html": null,
+        "created_at": "2026-10-08T12:57:07.061766+00:00",
+        "updated_at": "2026-10-08T12:57:07.061766+00:00",
+        "short_description": null,
+        "enriched_at": null,
+        "contact": {},
+        "logo_url": null,
+        "primary_brand_color": null,
+        "secondary_brand_color": null,
+        "tertiary_brand_color": null,
+        "primary_location": "3-4F, 47 Jungang-daero, Jung-gu, Busan, Republic of Korea",
+        "location_hub_id": null,
+        "google_place_id": null,
+        "specialty_score": 0.0,
+        "category_confidence": null,
+        "brand_name": null,
+        "route_id": 137693,
+        "name_slug": "aery-coffee",
+        "entity_roles": [
+          {
+            "role": "roaster"
+          }
+        ]
+      },
+      "official_evidence": {
+        "official_url": "https://aerycoffee.com/brand/story.html"
+      },
+      "fields_preserved": true
+    },
+    {
+      "source_name": "Apiary",
+      "desired_tier": 2,
+      "entity_id": "a95c27e7-d466-4553-a4d0-3c1297bea0fa",
+      "operation": "reused_exact_reviewed_entity",
+      "roaster_role_added": false,
+      "verified_entity": {
+        "id": "a95c27e7-d466-4553-a4d0-3c1297bea0fa",
+        "slug": "apiary-coffee-co",
+        "name": "Apiary Coffee Co.",
+        "website_url": "https://apiary.coffee/",
+        "description_raw": null,
+        "description_html": null,
+        "created_at": "2026-10-08T12:57:08.050547+00:00",
+        "updated_at": "2026-10-08T12:57:08.050547+00:00",
+        "short_description": null,
+        "enriched_at": null,
+        "contact": {},
+        "logo_url": null,
+        "primary_brand_color": null,
+        "secondary_brand_color": null,
+        "tertiary_brand_color": null,
+        "primary_location": null,
+        "location_hub_id": null,
+        "google_place_id": null,
+        "specialty_score": 0.0,
+        "category_confidence": null,
+        "brand_name": null,
+        "route_id": 137694,
+        "name_slug": "apiary-coffee-co",
+        "entity_roles": [
+          {
+            "role": "roaster"
+          }
+        ]
+      },
+      "official_evidence": {
+        "official_url": "https://apiary.coffee/pages/about",
+        "checked_at": "2026-10-08T07:38:46.265Z",
+        "body_sha256": "949b6b2f050638146de794c36165313d6ac436cf0f36b7a12d035b973aa35ecf",
+        "verified_business": "Official about page describes its own roasting and the coffee producer relationships.",
+        "catalog_search": "No name or website containing apiary across all existing entities; proposed slug has no collision."
+      },
+      "fields_preserved": true
+    },
+    {
+      "source_name": "Passport",
+      "desired_tier": 2,
+      "entity_id": "c978d995-9310-4c54-945b-5211ccdddf7a",
+      "operation": "reused_exact_reviewed_entity",
+      "roaster_role_added": false,
+      "verified_entity": {
+        "id": "c978d995-9310-4c54-945b-5211ccdddf7a",
+        "slug": "passport-specialty-coffee",
+        "name": "Passport Specialty Coffee",
+        "website_url": "https://passportcoffee.com.au/",
+        "description_raw": null,
+        "description_html": null,
+        "created_at": "2026-10-08T12:57:09.127076+00:00",
+        "updated_at": "2026-10-08T12:57:09.127076+00:00",
+        "short_description": null,
+        "enriched_at": null,
+        "contact": {},
+        "logo_url": null,
+        "primary_brand_color": null,
+        "secondary_brand_color": null,
+        "tertiary_brand_color": null,
+        "primary_location": "49 Toombul Rd, Northgate 4013, Brisbane, Australia",
+        "location_hub_id": null,
+        "google_place_id": null,
+        "specialty_score": 0.0,
+        "category_confidence": null,
+        "brand_name": null,
+        "route_id": 137695,
+        "name_slug": "passport-specialty-coffee",
+        "entity_roles": [
+          {
+            "role": "roaster"
+          }
+        ]
+      },
+      "official_evidence": {
+        "official_url": "https://passportcoffee.com.au/",
+        "checked_at": "2026-10-08T07:33:41.941Z",
+        "body_sha256": "05afc7b60abba87137b5658679d783c296919411774f01c6b4e9ecd699cdaa1e",
+        "verified_business": "Official Brisbane/Northgate merchant root identifies the roastery and exact street address.",
+        "excluded_existing_candidate_ids": [
+          "16f532e3-7928-48a6-bd74-edda0eac0e9e",
+          "b5eda9a9-d4cf-4ed0-8be5-94f62159b4f2"
+        ],
+        "catalog_search": "Existing Passport candidates have US/Western Hemisphere locations and no matching official domain; proposed slug has no collision."
+      },
+      "fields_preserved": true
+    },
+    {
+      "source_name": "Colorfull",
+      "desired_tier": 2,
+      "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+      "operation": "preserved_existing_entity",
+      "roaster_role_added": false,
+      "verified_entity": {
+        "id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+        "slug": "colorfull-coffee",
+        "name": "Colorfull Coffee",
+        "website_url": "https://colorfullcoffee.com",
+        "description_raw": "Colorfull Coffee is a collective of experienced coffee consumers who, after sampling 173 coffees, chose to build coffees they love through blending rather than relying on single-origin finds. They emphasize ripe fruit notes, a clean elegant mouthfeel, and balanced cups; blends are central because they felt single-origins didn't match their goals. The brand also promotes community engagement via a Discord for brewing discussion and exclusive perks.",
+        "description_html": null,
+        "created_at": "2025-12-23T22:07:59.257404+00:00",
+        "updated_at": "2026-03-14T19:44:33.667679+00:00",
+        "short_description": "Colorfull Coffee Corp crafts blend-forward coffees built after sampling 173 lots to create bright, fruit-forward, well-balanced cups. They focus on expert sourcing and roasting, sell direct via an online shop, and cultivate a community through Discord and Instagram to celebrate playful, colorful coffee.",
+        "enriched_at": "2026-01-04T13:37:37.003337+00:00",
+        "contact": {
+          "email": "support@colorfullcoffee.com",
+          "other": [
+            "https://discord.gg/JS9pp5fedT",
+            "https://www.facebook.com/people/Colorfull-Coffee/100054666104634/"
+          ],
+          "facebook": "https://www.facebook.com/people/Colorfull-Coffee/100054666104634/",
+          "instagram": "@colorfull"
+        },
+        "logo_url": null,
+        "primary_brand_color": null,
+        "secondary_brand_color": null,
+        "tertiary_brand_color": null,
+        "primary_location": "Canadian Roasting Society; 3780 Saint-Patrick St., Montreal, Quebec H4E 1A2",
+        "location_hub_id": "63a88b97-3085-4af8-9656-4d78b68d1a4f",
+        "google_place_id": null,
+        "specialty_score": 0.0,
+        "category_confidence": null,
+        "brand_name": null,
+        "route_id": 645,
+        "name_slug": "colorfull-coffee",
+        "entity_roles": [
+          {
+            "role": "roaster"
+          }
+        ]
+      },
+      "official_evidence": {
+        "official_url": "https://colorfullcoffee.com/pages/about",
+        "checked_at": "2026-10-08T07:33:41.941Z",
+        "body_sha256": "704e16cebc0eaebe96249f00a3373fd44ddc63c6caf015e6b7d4e741cd9014b4",
+        "verified_business": "Official about page explicitly identifies a coffee roasting company; exact domain matches the existing entity."
+      },
+      "fields_preserved": true
+    }
+  ],
+  "write_requests": 0,
+  "complete": true
+}

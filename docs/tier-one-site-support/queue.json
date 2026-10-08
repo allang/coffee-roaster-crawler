@@ -4,13 +4,15 @@
   "rows": [
     {
       "name": "Aery",
-      "identity_status": "unmatched",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "2dbf0bf9-9067-425a-aebc-a828a912e353"
+      ],
       "candidates": [],
-      "status": "blocked_catalog_identity",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "aery-live.json",
-      "note": "Merchant-only Cafe24 parser passed all 18 coffees with native item IDs, paired USD prices, stock states, explicit net sizes and native image descriptions. Reviewed profile has entity_ids=[]; normal registration remains blocked. No owner invented.",
-      "identity_evidence": "aery-blocker.json",
+      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "identity_evidence": "../catalog-repair-apply-result.json",
       "coffee_products": 18
     },
     {

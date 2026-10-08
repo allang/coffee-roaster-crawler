@@ -12,12 +12,14 @@ function stripHtml(html) { const $ = cheerio.load(html || ''); return $.text().r
 
 function structuredExtraction(page, shopifyJson) {
   const schema = page.sourceProduct || structuredProduct(page.html, page.finalUrl || page.url);
+  const productOnly=require('./productEvidence').productOnlyOffer(page.sourceProduct,page.finalUrl || page.url);
   let native = shopifyJson?.success ? shopifyJson.data : null;
   if(native){let host;try{host=new URL(page.finalUrl || page.url).hostname;}catch{}const profile=require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(host));native=require('./siteSupport/shopifyPageFields').shopifyPageFields(page.html,native,schema,profile);}
   const image=primaryProductImage({html:page.html,url:page.finalUrl || page.url,sourceProduct:schema,native});
   const name = native?.title || schema?.name;
   if (!name) return { product:null, complete:false, semantic:null,image };
   const attributes = {};
+  if(productOnly){attributes._product_offer=productOnly;attributes._market_context=schema._market_context;}
   for (const p of [schema?.additionalProperty || []].flat()) {
     const key = String(p?.name || p?.propertyID || '').trim().toLowerCase().replace(/[\s-]+/g,'_');
     const mapped = PROPERTY_ALIASES[key] || key;
@@ -47,7 +49,7 @@ function structuredExtraction(page, shopifyJson) {
     const analytics=!(v.currency || native.currency || paired)?analyticsMarket.get(String(v.id)):null;
     return { source_id:v.id,title:v.title,price:paired?paired.price:analytics?analytics.price:v.price,currency:paired?paired.priceCurrency:analytics?analytics.currency:v.currency || native.currency || null,price_source:paired?'jsonld_exact_variant_offer':analytics?analytics.source:'shopify_product_json',available:preorders.has(String(v.id))?null:v.available,weight_g:v.weightGrams,sku:v.sku,locale:'en-US' };
   }) : offers.map(o => ({ source_id:offerVariantId(o,page.finalUrl || page.url), title:o.name || o.sku || 'default', price:o.price, currency:o.priceCurrency || null, weight_g:o._net_weight_g,availability:require('./productEvidence').schemaAvailability(o.availability), stock_evidence:{availability:o.availability || null,...(o._stock_evidence || {})},locale:'en-US', source_url:o.url,price_source:schema?._market_source || 'product_scoped_jsonld_offer' }));
-  const product = { name, attributes, variants, variant_prices:variants.map(v=>[v.title,v.price]), variant_price_currency:currency, description_html:descriptionHtml || null, description_raw:description || null, source_product_id:native?.id || schema?.productID || null, variants_complete:native?.variantsComplete===true || !native && schema?._variants_complete===true };
+  const product = { name, attributes, variants, variant_prices:variants.map(v=>[v.title,v.price]), variant_price_currency:currency, description_html:descriptionHtml || null, description_raw:description || null, source_product_id:native?.id || schema?.productID || null, variants_complete:native?.variantsComplete===true || !native && schema?._variants_complete===true,...(productOnly?{_product_only:true}:{}) };
   const coffee = /\b(?:coffee|roasted|espresso)\b/i.test(`${native?.productType || ''} ${schema?.category || ''} ${name} ${description}`) && !/\b(?:green coffee|rohkaffee|cascara|grinder|mug|equipment|gift card)\b/i.test(`${name} ${native?.productType || ''}`);
   // Skip semantic AI only when a source supplies the full attribute contract explicitly.
   // Partial structured data still contributes trustworthy prices/variants and falls back for descriptions/facts.
@@ -81,6 +83,12 @@ function mergeSourceProduct(extracted, structured) {
   // A native endpoint lacking currency cannot turn an inferred currency into a fact.
   merged.source_product_id=source.source_product_id || null;
   if (source.variants?.length) merged.variant_price_currency = source.variant_price_currency;
+  if(source._product_only===true) {
+    // A proven product offer is not a selectable size/grind combination. Never
+    // save a model or cached label as a variant when native IDs are unavailable.
+    merged.variants=[];merged.variant_prices=[];merged.variants_complete=false;
+    merged.variant_price_currency=null;delete merged.default_price;
+  }
   return merged;
 }
 function validClassification(value) { return value && typeof value === 'object' && (value.is_product === false || value.is_coffee_page === false || (value.is_coffee_page === true && value.product && typeof value.product.name === 'string' && value.product.name.trim())); }
@@ -94,11 +102,15 @@ async function extractPage({ page, shopifyJson, cache, classify, model, now = Da
   const hasCurrentVariants = structured.product?.variants?.length > 0;
   // HTML price/stock changes intentionally do not invalidate semanticHash. A
   // coffee cache is safe only when live variants replace its market fields.
-  const canReuseCache = cache?.is_coffee_page!==true || hasCurrentVariants;
+  const canReuseCache = cache?.is_coffee_page!==true || hasCurrentVariants || structured.product?._product_only===true;
   if (canReuseCache && prior?.version===EXTRACTION_VERSION && prior.model===model && prior.semantic_hash===hash && age>=0 && age<CACHE_TTL_MS && validClassification(cache)) {
     data = { ...cache }; delete data._extraction; mode='cache';
   } else if (structured.complete && hasCurrentVariants) {
     data = { is_product:true,is_coffee_page:true,product:structured.product }; mode='structured';
+  } else if(structured.coffee && structured.product?._product_only===true) {
+    // Reviewed native product-only coverage needs no semantic model. Leave
+    // unpublished coffee facts unset; save only the proved product/offer/photo.
+    data = {is_product:true,is_coffee_page:true,product:structured.product};mode='structured_product_only';
   } else {
     const response = await classify(page.content, page.url);
     aiCalls = response.aiCalls ?? (response.skipped ? 0 : 1);

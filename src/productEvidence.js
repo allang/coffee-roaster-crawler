@@ -104,6 +104,12 @@ function primaryShopifyPreorders(html,sourceUrl,native) {
   return result;
 }
 
+function productOnlyOffer(product,sourceUrl) {
+  const offer=product?._product_offer;
+  if(product?._product_only!==true || product._market_source!=='txt_imweb_primary_product_offer' || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.currency!=='USD' || offer.variant_identity_complete!==false)return null;
+  const money=require('./catalogNormalization').parseMoney(offer.price,{currency:offer.currency});
+  return money.minorUnits!=null && money.minorUnits===offer.minor_units && schemaAvailability(offer.availability)===offer.state && ['in_stock','sold_out'].includes(offer.state)?offer:null;
+}
 function productAvailability(input = {}) {
   const checkedAt = input.checkedAt || new Date().toISOString();
   const result = (state, reason, evidence = [], variants = []) => ({ state, isAvailable: state === 'in_stock' ? true : ['sold_out', 'removed'].includes(state) ? false : null, reason, evidence, variants, checkedAt });
@@ -124,6 +130,8 @@ function productAvailability(input = {}) {
     return result(aggregateStates(variants.map(v => v.state)), preorders.size?'primary_product_preorder':'shopify_exact_variants', [{ source: 'shopify_product_json', product_id: input.shopifyProduct.id },...preorders.values()], variants);
   }
   const product = input.sourceProduct || structuredProduct(input.html, input.sourceUrl);
+  const productOffer=productOnlyOffer(input.sourceProduct,input.sourceUrl);
+  if(productOffer)return result(productOffer.state,'native_primary_product_offer_without_variant_ids',[{...productOffer}],[]);
   if (product) {
     const offers = [product.offers || []].flat();
     const variants = offers.filter(o => o && (!o.url || sameProduct(o.url, input.sourceUrl))).map(o => ({ source_id: offerVariantId(o,input.sourceUrl), title: o.name || null, state: schemaAvailability(o.availability), evidence: [{ source: product._market_source || 'product_jsonld_offer', url:o.url || null, availability: o.availability ?? null,...(o._stock_evidence?{merchant_stock:o._stock_evidence}:{}) }], checkedAt }));
@@ -145,4 +153,4 @@ function productAvailability(input = {}) {
   return result('unknown', 'product_stock_evidence_missing');
 }
 
-module.exports = { structuredProduct, schemaAvailability, aggregateStates, productAvailability, primaryShopifyPreorders, sameProduct, offerVariantId };
+module.exports = { structuredProduct, schemaAvailability, aggregateStates, productAvailability, primaryShopifyPreorders, sameProduct, offerVariantId,productOnlyOffer };

@@ -115,7 +115,9 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
   for(const url of siteDiscovery.urls)accumulator.addUrl(url,'site-support');
   const verifiedEmpty=verifiedEmptyInventory(siteProfile,siteDiscovery);
-  if(siteDiscovery.error || siteDiscovery.supported && (!siteDiscovery.complete || !siteDiscovery.urls.length && !verifiedEmpty))throw new Error('Supported merchant discovery failed: '+(siteDiscovery.error || 'Incomplete or empty reviewed coffee inventory'));
+  const partialScope=require('./siteSupport/txt').partialScopeAllowed(siteProfile,siteDiscovery);
+  if(siteDiscovery.error || siteDiscovery.supported && (!siteDiscovery.complete && !partialScope || !siteDiscovery.urls.length && !verifiedEmpty))throw new Error('Supported merchant discovery failed: '+(siteDiscovery.error || 'Incomplete or empty reviewed coffee inventory'));
+  if(partialScope)log.info('Crawl','Reading the reviewed public English product scope; inventory and variants remain incomplete',{inventoryScope:siteDiscovery.inventory_scope,products:siteDiscovery.urls.length});
   if(verifiedEmpty) {
     const stats=accumulator.getStats(),visitResults={visited:0,coffeeFound:0,irrelevant:0,errors:0,aiCalls:0,verifiedEmptyInventory:true,inventoryScope:siteDiscovery.inventory_scope};
     await completeCrawlRun(crawlRun.id,{pagesDiscovered:0,pagesVisited:0,pagesSentToGpt:0,coffeesFound:0,metrics:visitResults});
@@ -247,6 +249,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
     }
 
     if(siteDiscovery.supported && visitResults.errors>0)throw new Error('Registered merchant product verification failed: '+visitResults.errors+' page error(s)');
+    if(partialScope)visitResults={...visitResults,partialInventory:true,inventoryComplete:false,inventoryScope:siteDiscovery.inventory_scope,omissionReconciliation:false};
     const stats = accumulator.getStats();
     await completeCrawlRun(crawlRun.id, {
       pagesDiscovered: stats.total || 0,

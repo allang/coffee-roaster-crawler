@@ -118,7 +118,8 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
     return { success: false, error: 'Invalid product JSON response' };
   }
 
-  let product = result.data.product;
+  let product = {...result.data.product};
+  delete product._reviewed_accessory_subset; // Proof comes from this verified fetch, never merchant JSON.
   const registeredProfile=require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname)),registered=Boolean(registeredProfile);
   const handle=decodeURIComponent(new URL(url).pathname.replace(/\/$/,'').split('/').at(-1));
   const identity=v=>typeof v==='number'?Number.isSafeInteger(v)&&v>0:typeof v==='string'&&/^[1-9]\d*$/.test(v);
@@ -130,8 +131,15 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
   product=mergeShopifyStock(product,ajax.success?ajax.data:null);
   const profile=lookupRegisteredProfile(url);
   if(profile?.exclude_variant_title_pattern) {
-    const excluded=new RegExp(profile.exclude_variant_title_pattern,'i'),variants=product.variants.filter(v=>!excluded.test(String(v.title || '')));
-    if(variants.length!==product.variants.length)product={...product,variants,_variants_complete:false};
+    const excluded=new RegExp(profile.exclude_variant_title_pattern,'i'),variants=product.variants.filter(v=>!excluded.test(String(v.title || ''))),accessories=product.variants.filter(v=>excluded.test(String(v.title || '')));
+    if(accessories.length) {
+      const proof=product._variants_complete===true && variants.length?{
+        version:'shopify-reviewed-accessory-subset-v1',profile_name:profile.name,pattern:profile.exclude_variant_title_pattern,
+        product_id:String(product.id),original_variant_ids:product.variants.map(v=>String(v.id)),
+        retained_variant_ids:variants.map(v=>String(v.id)),excluded_variants:accessories.map(v=>({id:String(v.id),title:v.title})),
+      }:null;
+      product={...product,variants,_variants_complete:false,...(proof?{_reviewed_accessory_subset:proof}:{})};
+    }
   }
 
   logger.info('ShopifyJSON', `Fetched product: ${product.title}`);
@@ -160,6 +168,18 @@ function registeredWeightOptions(url,product) {
   return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle),descriptionWeightPrefixes:profile?.description_net_weight_prefixes || [],variantSizePrefix:profile?.variant_size_prefix,variantSizePatterns:profile?.variant_size_patterns,variantPriceSuffix:profile?.variant_price_suffix,fixedRetailBagLabel:profile?.fixed_retail_bag_label,bundleNetWeightProductIds:profile?.bundle_net_weight_product_ids};
 }
 function lookupRegisteredProfile(url) {return require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname));}
+function verifiedShopifyVariantScope(result,url) {
+  if(!result?.success)return false;
+  if(result.data?.variantsComplete===true)return true;
+  const profile=lookupRegisteredProfile(url),proof=result.raw?._reviewed_accessory_subset;
+  if(!profile?.exclude_variant_title_pattern || proof?.version!=='shopify-reviewed-accessory-subset-v1' || proof.profile_name!==profile.name || proof.pattern!==profile.exclude_variant_title_pattern || proof.product_id!==result.data?.id || proof.product_id!==String(result.raw?.id))return false;
+  const original=proof.original_variant_ids,retained=result.data?.variants,raw=result.raw?.variants,excluded=proof.excluded_variants,pattern=new RegExp(profile.exclude_variant_title_pattern,'i');
+  if(!Array.isArray(original) || !original.length || original.length>=250 || new Set(original).size!==original.length || !Array.isArray(retained) || !retained.length || !Array.isArray(raw) || raw.length!==retained.length || !Array.isArray(excluded) || !excluded.length || !excluded.every(v=>pattern.test(String(v.title || ''))))return false;
+  const ids=retained.map(v=>v.id),rawIds=raw.map(v=>String(v.id)),combined=[...ids,...excluded.map(v=>v.id)];
+  return JSON.stringify(ids)===JSON.stringify(proof.retained_variant_ids) && JSON.stringify(ids)===JSON.stringify(rawIds) &&
+    new Set(combined).size===original.length && combined.length===original.length && combined.every(id=>original.includes(id)) &&
+    retained.every(v=>!pattern.test(String(v.title || '')) && typeof v.available==='boolean' && v.availabilitySource==='shopify_ajax_product_js');
+}
 function explicitCoffeeWeight(html) {
   const $=cheerio.load(html || ''),weights=[];
   $('p,li').each((_,el)=>{
@@ -207,6 +227,7 @@ function parseShopifyProduct(product,{netWeightUnproven=false,singleVariantDescr
   return {
     id: product.id == null ? null : String(product.id),
     variantsComplete: product._variants_complete===true,
+    reviewedAccessorySubset:product._reviewed_accessory_subset || null,
     currency: product.currency || null,
     title: product.title,
     handle: product.handle,
@@ -279,6 +300,7 @@ module.exports = {
   isShopifyProductUrl,
   getProductJsonUrl,
   fetchShopifyProductJson,
+  verifiedShopifyVariantScope,
   parseShopifyProduct,
   mergeGptAndJsonData,
   stripHtml,

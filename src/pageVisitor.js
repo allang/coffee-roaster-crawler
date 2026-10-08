@@ -64,6 +64,7 @@ async function fetchPageContent(url, referer = null, options = {}) {
     if(!soft404 && options.siteProfile?.adapter==='subbly'){sourceProduct=await require('./siteSupport/subbly').fetchSubblyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='nuxt_shopify'){sourceProduct=await require('./siteSupport/nuxtShopify').fetchNuxtShopifyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='imweb'){sourceProduct=await require('./siteSupport/imweb').fetchImwebProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='txt_imweb' && /^\/(?:shop_view|coffeesubscriptions)\/?$/.test(new URL(result.finalUrl || url).pathname) && new URL(result.finalUrl || url).searchParams.has('idx')){sourceProduct=require('./siteSupport/txt').txtProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='woocommerce' && require('./siteSupport/woocommerce').productPathMatches(result.finalUrl || url,options.siteProfile)){sourceProduct=await require('./siteSupport/woocommerce').fetchWooProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='hydrogen' && /^\/products\/[^/]+\/?$/.test(new URL(result.finalUrl || url).pathname)){sourceProduct=require('./siteSupport/hydrogen').hydrogenProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='wix' && new URL(result.finalUrl || url).pathname.startsWith(options.siteProfile.product_path)){sourceProduct=require('./siteSupport/wix').wixProduct(result.data,result.finalUrl || url,options.siteProfile);}
@@ -123,13 +124,17 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
   }
   let shopifyJson=null;
   if((platform==='shopify' || options.siteProfile?.adapter==='shopify') && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
-  if(options.siteProfile?.adapter==='shopify' && (!shopifyJson?.success || !shopifyJson.data.variantsComplete))return {visited:true,classified:false,error:'Registered Shopify source incomplete: '+(shopifyJson?.error || 'incomplete SKU set'),aiCalls:0};
+  if(options.siteProfile?.adapter==='shopify' && !require('./shopifyProduct').verifiedShopifyVariantScope(shopifyJson,url))return {visited:true,classified:false,error:'Registered Shopify source incomplete: '+(shopifyJson?.error || 'incomplete SKU set'),aiCalls:0};
   const classification=await extractPage({page:{...fetchResult,url},shopifyJson,cache:known?.classification,classify:classifyPage,model:MODEL});
   const metrics={aiCalls:classification.aiCalls || 0,usage:classification.usage,mode:classification.mode};
   if(classification.error) return {visited:true,classified:false,error:classification.error,quotaExceeded:classification.quotaExceeded,...metrics};
   const result=classification.data;
   const now=new Date().toISOString();
   const coffee=result.is_coffee_page===true && result.product && !isClearlyNonCoffeeProduct(result.product);
+  if(coffee && shopifyJson?.data?.reviewedAccessorySubset) {
+    const normalized=require('./catalogNormalization').normalizeProduct(result.product,url),nativeIds=shopifyJson.data.variants.map(v=>v.id);
+    if(normalized.variants_complete!==false || normalized.variants.length!==nativeIds.length || normalized.variants.some(v=>!nativeIds.includes(String(v.source_id)) || v.money.minorUnits==null || !v.money.currency || !['in_stock','sold_out'].includes(v.availability)))return {visited:true,classified:true,error:'Reviewed accessory subset lacks exact current coffee SKU money or stock',...metrics};
+  }
   let productId, availability;
   try {
   if(coffee) {
@@ -138,7 +143,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
     if(!productId) return {visited:true,classified:true,error:'Product persistence skipped',...metrics};
     options.observed?.set(canonicalProductUrl(url),availability);
   }
-  await saveKnownPage(entityId,url,coffee?'coffee':'irrelevant',{classification:classification.cache,classifiedAt:classification.cache._extraction.extracted_at,classifiedBy:classification.mode==='structured'?'structured-v1':MODEL,fetchedAt:now,statusCode:fetchResult.status,contentHash:classification.semanticHash,firstSeenAt:known?.first_seen_at,timesSeen:(known?.times_seen || 0)+1});
+  await saveKnownPage(entityId,url,coffee?'coffee':'irrelevant',{classification:classification.cache,classifiedAt:classification.cache._extraction.extracted_at,classifiedBy:classification.mode==='structured_product_only'?'structured-product-only-v1':classification.mode==='structured'?'structured-v1':MODEL,fetchedAt:now,statusCode:fetchResult.status,contentHash:classification.semanticHash,firstSeenAt:known?.first_seen_at,timesSeen:(known?.times_seen || 0)+1});
   return {visited:true,classified:true,isCoffee:Boolean(coffee),product:coffee?result.product:undefined,productId,availability,...metrics};
   } catch(error) { return {visited:true,classified:true,error:error.message,...metrics}; }
 }
@@ -151,7 +156,8 @@ async function visitAndClassifyPage(entityId,url,accumulator,log,platform='unkno
 function addExtractionMetrics(results,result) {
   results.aiCalls += result.aiCalls || 0;
   results.cacheHits += result.mode==='cache'?1:0;
-  results.structuredPages += result.mode==='structured'?1:0;
+  results.structuredPages += ['structured','structured_product_only'].includes(result.mode)?1:0;
+  results.structuredProductOnlyPages += result.mode==='structured_product_only'?1:0;
   results.marketChecks += result.availability?1:0;
   if(result.usage) {
     results.aiUsage.prompt_tokens += result.usage.prompt_tokens || 0;
@@ -160,7 +166,7 @@ function addExtractionMetrics(results,result) {
     results.aiUsage.unreported_calls += Math.max(0,(result.aiCalls || 0)-1);
   } else if(result.aiCalls) results.aiUsage.unreported_calls += result.aiCalls;
 }
-function extractionMetrics() { return {aiCalls:0,cacheHits:0,structuredPages:0,marketChecks:0,aiUsage:{prompt_tokens:0,completion_tokens:0,cached_tokens:0,unreported_calls:0}}; }
+function extractionMetrics() { return {aiCalls:0,cacheHits:0,structuredPages:0,structuredProductOnlyPages:0,marketChecks:0,aiUsage:{prompt_tokens:0,completion_tokens:0,cached_tokens:0,unreported_calls:0}}; }
 
 async function visitAllPages(entityId, urls, accumulator, log = null, platform = 'unknown', options={}) {
   const logger = log || globalLogger;
