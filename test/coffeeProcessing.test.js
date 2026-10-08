@@ -60,6 +60,25 @@ test('uncertain processes retain raw wording without definite taxonomy and Unico
  const p=make('',{process:'Possibly anaerobic natural?'});assert.equal(p.process,'Possibly anaerobic natural?');assert.deepEqual(p.process_methods,[]);
  assert.equal(make('<p>Co\u2011fermented with watermelon.</p>').is_coferment,true);
 });
+
+test('negated processing labels retain raw wording without adding denied methods',()=>{
+ for(const raw of ['Non-anaerobic washed','Washed, not anaerobic','Washed without anaerobic fermentation','Nicht anaerob, gewaschen','Washed instead of natural']){
+  const value=make('<p>Process: '+raw+'</p>');assert.equal(value.process,raw);assert.deepEqual(value.process_methods,['washed']);
+ }
+ assert.deepEqual(make('<p>Process: Not washed or natural</p>').process_methods,[]);
+ assert.deepEqual(make('<p>Process: Natural, not honey</p>').process_methods,['natural']);
+});
+test('positive contrast and a later explicit method survive processing negation',()=>{
+ assert.deepEqual(make('<p>Process: Not only washed but also anaerobic</p>').process_methods,['washed','anaerobic']);
+ assert.deepEqual(make('<p>Process: Not washed, but washed after anaerobic fermentation</p>').process_methods,['washed','anaerobic']);
+});
+test('a denied distinctive method in the product title is not an affirmative process',()=>{
+ for(const title of ['Non-anaerobic Coffee','Coffee without thermal shock','Not carbonic maceration Coffee']){
+  const value=processingForProduct({name:title,attributes:{}});assert.equal(value.process,null);assert.deepEqual(value.process_methods,[]);
+ }
+ assert.deepEqual(processingForProduct({name:'Double Anaerobic Coffee',attributes:{}}).process_methods,['anaerobic']);
+});
+
 test('processing SQL save is atomic, stable, stale-guarded and avoids unchanged events',async()=>{
  const pg=await catalogDb(),owner='11111111-1111-4111-8111-111111111111',url='https://shop.test/products/coffee';
  const payload=(coferment,time)=>catalogPayload(owner,{name:'Coffee',description_html:`<p>Process: Anaerobic Natural</p><p>${coferment?'Co-fermented with watermelon.':'Not co-fermented.'}</p>`,variants:[{id:'11',title:'250g',price:'20',currency:'USD',available:true}]},url,null,{state:'in_stock',evidence:[]},time);
