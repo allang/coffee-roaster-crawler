@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "plan_id": "lucienne-invalid-listings-20261008",
+  "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+  "checked_at": "2026-10-08T21:45:57.474Z",
+  "records": [
+    {
+      "id": "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "2d549eff3f5150bb4ef502dd51ad27b8"
+    },
+    {
+      "id": "22db6043-5cc5-5826-9847-d388dc7db71c",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/origin/papua-new-guinea",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "2c6d978c3705f288322335d3f8223247"
+    },
+    {
+      "id": "568e0bef-25dc-5f49-8456-05980c8f47b8",
+      "name": "Apollon\u2019s Gold",
+      "source_url": "https://www.lucienne.coffee/home",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "5560d85b8cadcabcd21d198ad1028303"
+    },
+    {
+      "id": "78675df8-b2bf-55eb-8208-bf970436c19c",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/origin/tanzania",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "052be03917acdad72ab26d1b4cbc4620"
+    },
+    {
+      "id": "7881e94b-ddc8-5cab-81fb-039e91698d9b",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/origin/honduras",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "09f283276aeb60e409e89fa59fd4876a"
+    },
+    {
+      "id": "8588e0e8-ca4c-4ccb-9258-24a444dc4c9c",
+      "name": "Lat Pan Pin Jasmine Anaerobic Honey Catuai",
+      "source_url": "https://lucienne.coffee/shop/origin/myanmar",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "e540d90ace94fb63d3e9031fd24c6fa4"
+    },
+    {
+      "id": "c7b18af1-b201-5b55-bc23-424d309855f8",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/merch",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "ebaa714d954f9a8ba38fcd77e7d9ddbf"
+    },
+    {
+      "id": "cc2031ca-cad8-4e20-9c67-d052f2df5bb9",
+      "name": "El Diamante Advanced Process Pink Bourbon",
+      "source_url": "https://lucienne.coffee/shop/roaster/thoughtful",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "3abb542b17f111307efbd253d9173e30"
+    },
+    {
+      "id": "ed547f99-14a0-4d3f-bbd4-213709578e1b",
+      "name": "La Esmeralda Semi Washed Ext Ferment Pink Bourbon",
+      "source_url": "https://lucienne.coffee/shop/roaster/peculiar",
+      "reason": "catalog_listing_without_primary_product",
+      "before_fingerprint": "0e4db32fa9cf85a00b433067904413a9"
+    }
+  ],
+  "fields_changed": [
+    "is_active",
+    "metadata._source_repair"
+  ],
+  "preserve": "All product and linked records retained; no IDs, slugs, prices, weights, photos, availability or schema changes."
+}

@@ -9,6 +9,7 @@ function labelWeight(value) {
   value=String(value || '').replace(/\s*-\s*\d{1,2}\/\d{1,2}\s*$/,'');
   // Merchant packaging labels also use gm for gram; never a shipping mass.
   value=String(value || '').replace(/(\d)\s*gm\b/gi,'$1g');
+  value=value.replace(/(\d+(?:\.\d+)?)\s*kilos?\b/gi,'$1 kg');
   const direct=parseWeightGrams(value);if(direct!=null)return direct;
   const packaged=value.match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\(\s*(\d+)\s*[x×]\s*(\d+(?:\.\d+)?)\s*(g|kg)\s+vac\s*seal(?:ed)?\s+pouch(?:es)?\s*\)\s*$/i);
   if(packaged) {
