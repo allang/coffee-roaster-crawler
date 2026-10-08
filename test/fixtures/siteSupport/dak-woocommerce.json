@@ -1,0 +1,479 @@
+{
+  "product": {
+    "id": 7748,
+    "name": "Milky Cake",
+    "slug": "milky-cake",
+    "parent": 0,
+    "type": "variable",
+    "variation": "",
+    "permalink": "https://www.dakcoffeeroasters.com/product/milky-cake/",
+    "sku": "COF-MILKY",
+    "description": "<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-csuQGl ckeXDr\">\n<div class=\"StyledBox-sc-13pk1d4-0 ehClyn sc-caSCKo lfLVbb\">\n<p data-pm-slice=\"1 1 []\">Milky Cake has been with us since 2021 and has become one of our bestsellers. Originally developed with Cata Export and Diego Samuel Bermudez at Finca El Paraíso in Colombia, it’s an advanced anaerobic washed Castillo with a profile that’s hard to mistake for anything else. Vanilla cake, pistachio, cardamom and honey, with a creamy sweetness that works as filter, espresso or with milk.</p>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-hzDkRC cWvuCl\" tabindex=\"0\"></div>\n</div>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-cMljjf kQRqJb\" tabindex=\"0\"></div>\n</div>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-cMljjf kQRqJb\" tabindex=\"0\"></div>\n</div>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-cMljjf kQRqJb\" tabindex=\"0\"></div>\n</div>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-cMljjf kQRqJb\" tabindex=\"0\"></div>\n</div>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-cMljjf kQRqJb\" tabindex=\"0\"></div>\n</div>\n</div>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-cMljjf kQRqJb\" tabindex=\"0\"></div>\n</div>\n</div>\n<div class=\"StyledBox-sc-13pk1d4-0 cLlFgz\">\n<div class=\"StyledBox-sc-13pk1d4-0 NlqKE sc-cMljjf kQRqJb\" tabindex=\"0\"></div>\n</div>",
+    "short_description": "",
+    "prices": {
+      "price": "2195",
+      "regular_price": "2195",
+      "sale_price": "2195",
+      "price_range": {
+        "min_amount": "2195",
+        "max_amount": "7920"
+      },
+      "currency_code": "EUR",
+      "currency_symbol": "€",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ",",
+      "currency_thousand_separator": ".",
+      "currency_prefix": "€",
+      "currency_suffix": ""
+    },
+    "images": [
+      {
+        "id": 7751,
+        "src": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png",
+        "thumbnail": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x450.png",
+        "srcset": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png 2560w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-571x400.png 571w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1024x717.png 1024w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-768x538.png 768w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1536x1075.png 1536w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-2048x1434.png 2048w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x420.png 600w",
+        "sizes": "(max-width: 2560px) 100vw, 2560px",
+        "thumbnail_srcset": "",
+        "thumbnail_sizes": "(max-width: 600px) 100vw, 600px",
+        "name": "Milky Cake_Render_Front_89x89",
+        "alt": ""
+      }
+    ],
+    "categories": [
+      {
+        "id": 42,
+        "name": "Espresso",
+        "slug": "espresso",
+        "link": "https://www.dakcoffeeroasters.com/product-category/coffee/espresso/"
+      },
+      {
+        "id": 43,
+        "name": "Filter",
+        "slug": "filter",
+        "link": "https://www.dakcoffeeroasters.com/product-category/coffee/filter/"
+      }
+    ],
+    "attributes": [
+      {
+        "id": 30,
+        "name": "Flavor Profile",
+        "taxonomy": "pa_flavor-profile",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 289,
+            "name": "Sweet",
+            "slug": "sweet"
+          },
+          {
+            "id": 284,
+            "name": "Unusual",
+            "slug": "unusual"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Origin",
+        "taxonomy": "pa_origin",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 67,
+            "name": "Colombia",
+            "slug": "colombia"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Region",
+        "taxonomy": "pa_region",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 372,
+            "name": "Cauca",
+            "slug": "cauca"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "name": "Producer / Farm",
+        "taxonomy": null,
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 0,
+            "name": "Produced by Finca El Paraíso",
+            "slug": "Produced by Finca El Paraíso"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Harvest",
+        "taxonomy": "pa_harvest",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 112,
+            "name": "2026",
+            "slug": "2026"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Tasting notes",
+        "taxonomy": "pa_tasting-notes",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 24,
+            "name": "Cardamom",
+            "slug": "cardamom"
+          },
+          {
+            "id": 25,
+            "name": "Pistachio",
+            "slug": "pistachio"
+          },
+          {
+            "id": 26,
+            "name": "Vanilla Cake",
+            "slug": "vanilla-cake"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Altitude",
+        "taxonomy": "pa_altitude",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 405,
+            "name": "1920masl",
+            "slug": "1920masl"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Varietal",
+        "taxonomy": "pa_varietal",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 51,
+            "name": "Castillo",
+            "slug": "castillo"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Process",
+        "taxonomy": "pa_process",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 374,
+            "name": "Advanced Fermentation",
+            "slug": "advanced-fermentation"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "name": "Intervention Level",
+        "taxonomy": null,
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 0,
+            "name": "High",
+            "slug": "High"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Weight",
+        "taxonomy": "pa_weight",
+        "has_variations": true,
+        "terms": [
+          {
+            "id": 21,
+            "name": "1kg",
+            "slug": "1kg",
+            "default": false
+          },
+          {
+            "id": 28,
+            "name": "250g",
+            "slug": "250g",
+            "default": true
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Roast Profile",
+        "taxonomy": "pa_roast-profile",
+        "has_variations": true,
+        "terms": [
+          {
+            "id": 18,
+            "name": "Espresso",
+            "slug": "espresso",
+            "default": false
+          },
+          {
+            "id": 19,
+            "name": "Filter",
+            "slug": "filter",
+            "default": true
+          }
+        ]
+      }
+    ],
+    "variations": [
+      {
+        "id": 8755,
+        "attributes": [
+          {
+            "name": "Weight",
+            "value": "1kg"
+          },
+          {
+            "name": "Roast Profile",
+            "value": "espresso"
+          }
+        ]
+      },
+      {
+        "id": 8756,
+        "attributes": [
+          {
+            "name": "Weight",
+            "value": "250g"
+          },
+          {
+            "name": "Roast Profile",
+            "value": "espresso"
+          }
+        ]
+      },
+      {
+        "id": 7749,
+        "attributes": [
+          {
+            "name": "Weight",
+            "value": "250g"
+          },
+          {
+            "name": "Roast Profile",
+            "value": "filter"
+          }
+        ]
+      },
+      {
+        "id": 7750,
+        "attributes": [
+          {
+            "name": "Weight",
+            "value": "1kg"
+          },
+          {
+            "name": "Roast Profile",
+            "value": "filter"
+          }
+        ]
+      }
+    ],
+    "is_in_stock": true,
+    "is_purchasable": true,
+    "is_on_backorder": false
+  },
+  "variants": [
+    {
+      "id": 8755,
+      "name": "Milky Cake",
+      "slug": "milky-cake",
+      "parent": 7748,
+      "type": "variation",
+      "variation": "Weight: 1kg, Roast Profile: Espresso",
+      "permalink": "https://www.dakcoffeeroasters.com/product/milky-cake/?attribute_pa_weight=1kg&attribute_pa_roast-profile=espresso",
+      "sku": "COF-MILKY",
+      "description": "",
+      "short_description": "",
+      "prices": {
+        "price": "7920",
+        "regular_price": "7920",
+        "sale_price": "7920",
+        "price_range": null,
+        "currency_code": "EUR",
+        "currency_symbol": "€",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ",",
+        "currency_thousand_separator": ".",
+        "currency_prefix": "€",
+        "currency_suffix": ""
+      },
+      "images": [
+        {
+          "id": 7751,
+          "src": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png",
+          "thumbnail": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x450.png",
+          "srcset": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png 2560w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-571x400.png 571w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1024x717.png 1024w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-768x538.png 768w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1536x1075.png 1536w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-2048x1434.png 2048w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x420.png 600w",
+          "sizes": "(max-width: 2560px) 100vw, 2560px",
+          "thumbnail_srcset": "",
+          "thumbnail_sizes": "(max-width: 600px) 100vw, 600px",
+          "name": "Milky Cake_Render_Front_89x89",
+          "alt": ""
+        }
+      ],
+      "categories": [],
+      "attributes": [],
+      "variations": [],
+      "is_in_stock": true,
+      "is_purchasable": true,
+      "is_on_backorder": false
+    },
+    {
+      "id": 8756,
+      "name": "Milky Cake",
+      "slug": "milky-cake-2",
+      "parent": 7748,
+      "type": "variation",
+      "variation": "Weight: 250g, Roast Profile: Espresso",
+      "permalink": "https://www.dakcoffeeroasters.com/product/milky-cake/?attribute_pa_weight=250g&attribute_pa_roast-profile=espresso",
+      "sku": "COF-MILKY",
+      "description": "",
+      "short_description": "",
+      "prices": {
+        "price": "2195",
+        "regular_price": "2195",
+        "sale_price": "2195",
+        "price_range": null,
+        "currency_code": "EUR",
+        "currency_symbol": "€",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ",",
+        "currency_thousand_separator": ".",
+        "currency_prefix": "€",
+        "currency_suffix": ""
+      },
+      "images": [
+        {
+          "id": 7751,
+          "src": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png",
+          "thumbnail": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x450.png",
+          "srcset": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png 2560w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-571x400.png 571w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1024x717.png 1024w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-768x538.png 768w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1536x1075.png 1536w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-2048x1434.png 2048w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x420.png 600w",
+          "sizes": "(max-width: 2560px) 100vw, 2560px",
+          "thumbnail_srcset": "",
+          "thumbnail_sizes": "(max-width: 600px) 100vw, 600px",
+          "name": "Milky Cake_Render_Front_89x89",
+          "alt": ""
+        }
+      ],
+      "categories": [],
+      "attributes": [],
+      "variations": [],
+      "is_in_stock": true,
+      "is_purchasable": true,
+      "is_on_backorder": false
+    },
+    {
+      "id": 7749,
+      "name": "Milky Cake",
+      "slug": "jazz-fruits-250g-268",
+      "parent": 7748,
+      "type": "variation",
+      "variation": "Weight: 250g, Roast Profile: Filter",
+      "permalink": "https://www.dakcoffeeroasters.com/product/milky-cake/?attribute_pa_weight=250g&attribute_pa_roast-profile=filter",
+      "sku": "COF-MILKY",
+      "description": "",
+      "short_description": "",
+      "prices": {
+        "price": "2195",
+        "regular_price": "2195",
+        "sale_price": "2195",
+        "price_range": null,
+        "currency_code": "EUR",
+        "currency_symbol": "€",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ",",
+        "currency_thousand_separator": ".",
+        "currency_prefix": "€",
+        "currency_suffix": ""
+      },
+      "images": [
+        {
+          "id": 7751,
+          "src": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png",
+          "thumbnail": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x450.png",
+          "srcset": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png 2560w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-571x400.png 571w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1024x717.png 1024w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-768x538.png 768w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1536x1075.png 1536w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-2048x1434.png 2048w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x420.png 600w",
+          "sizes": "(max-width: 2560px) 100vw, 2560px",
+          "thumbnail_srcset": "",
+          "thumbnail_sizes": "(max-width: 600px) 100vw, 600px",
+          "name": "Milky Cake_Render_Front_89x89",
+          "alt": ""
+        }
+      ],
+      "categories": [],
+      "attributes": [],
+      "variations": [],
+      "is_in_stock": true,
+      "is_purchasable": true,
+      "is_on_backorder": false
+    },
+    {
+      "id": 7750,
+      "name": "Milky Cake",
+      "slug": "jazz-fruits-1kg-19",
+      "parent": 7748,
+      "type": "variation",
+      "variation": "Weight: 1kg, Roast Profile: Filter",
+      "permalink": "https://www.dakcoffeeroasters.com/product/milky-cake/?attribute_pa_weight=1kg&attribute_pa_roast-profile=filter",
+      "sku": "COF-MILKY",
+      "description": "",
+      "short_description": "",
+      "prices": {
+        "price": "7920",
+        "regular_price": "7920",
+        "sale_price": "7920",
+        "price_range": null,
+        "currency_code": "EUR",
+        "currency_symbol": "€",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ",",
+        "currency_thousand_separator": ".",
+        "currency_prefix": "€",
+        "currency_suffix": ""
+      },
+      "images": [
+        {
+          "id": 7751,
+          "src": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png",
+          "thumbnail": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x450.png",
+          "srcset": "https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-scaled.png 2560w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-571x400.png 571w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1024x717.png 1024w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-768x538.png 768w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-1536x1075.png 1536w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-2048x1434.png 2048w, https://d1j9xh2330ho4m.cloudfront.net/uploads/2026/09/Milky-Cake_Render_Front_89x89-600x420.png 600w",
+          "sizes": "(max-width: 2560px) 100vw, 2560px",
+          "thumbnail_srcset": "",
+          "thumbnail_sizes": "(max-width: 600px) 100vw, 600px",
+          "name": "Milky Cake_Render_Front_89x89",
+          "alt": ""
+        }
+      ],
+      "categories": [],
+      "attributes": [],
+      "variations": [],
+      "is_in_stock": true,
+      "is_purchasable": true,
+      "is_on_backorder": false
+    }
+  ]
+}

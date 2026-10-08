@@ -1,0 +1,243 @@
+{
+  "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-cherry-madness-espresso",
+  "product": {
+    "id": 8224941670561,
+    "title": "Colombia Campo Hermoso \"Cherry Madness\" ESPRESSO",
+    "body_html": "<p><strong>Origin :<span> </span></strong>Colombia<br><strong>Region:</strong><span>  Circasia, Quindio<br></span><strong>Altitude:</strong><span> 1650</span><br><strong>Producer:</strong><span> Edwin Norena, Campo Hermoso<br></span><strong>Variety:</strong><span> Caturra<br></span><strong>Process:</strong><span> Carbonic Maceration, Black Honey, Yeast Mosto</span></p>\n<p><span><strong>Tasting notes:</strong> Jammy and sweet with notes of strawberry, cherry, florals and red jelly.</span></p>\n<p><span>Finca Campo Hermoso is located in the department of Quindío, proudly offering three generations of coffee growers hard work. Edwin Noreña, is not only a third-generation farmer, but also a Q grader and an agroindustrial engineer. He saw the need to revamp the coffee producing model early on and has since used his expertise to do just that, entering specialty facing markets. </span></p>\n<p><span>Finca Campo Hermoso produces high quality, innovative coffees which have been used in competitions giving Campo Hermoso international recognition. Edwin is one of many small producers that work with the Santuario Project. The Santuario Project isolates exceptional lots from their producing partners and work with clients abroad to create beautiful results.</span></p>\n<p>Cherries with more than 18° Brix are harvested, cleaned and subjected to carbonic maceration for 72 hours.</p>\n<p>After pulping to a black honey level, the mosto is extracted and fermented with yeast for 48 hours. This starter is infused into the coffee, for another 48 hours.</p>\n<p>The coffee is dried in the sun on African beds for 15 days, stabilized for 8 days.</p>\n<p>After 10 to 15 days of final stabilization, the coffee is cupped.</p>\n<!---->",
+    "vendor": "Passport Specialty Coffee",
+    "product_type": "Coffee",
+    "created_at": "2025-04-25T10:29:07+10:00",
+    "handle": "colombia-campo-hermoso-cherry-madness-espresso",
+    "updated_at": "2026-10-08T14:10:25+10:00",
+    "published_at": "2026-09-08T12:38:34+10:00",
+    "template_suffix": "",
+    "published_scope": "web",
+    "tags": "aeropress, anaerobic, anaerobic natural, best specialty coffee, black honey, bourbon, brisbane coffee, brisbane specialty coffee, campo hermoso, carbonic maceration, cherry madness, coffee, coffee roaster, colombia, espresso, ferment, fermented coffee, floral, fruity, funky, limited edition, mosto, Passport Coffee, Passport Specialty Coffee, roaster, santuario project, single origin, single origin espresso, specialty coffee, yeast, yeast fermentation",
+    "variants": [
+      {
+        "id": 46920408465569,
+        "product_id": 8224941670561,
+        "title": "100gm",
+        "price": "30.00",
+        "sku": null,
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "100gm",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-08-24T15:44:34+10:00",
+        "updated_at": "2026-10-08T14:10:25+10:00",
+        "taxable": false,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      },
+      {
+        "id": 44911293333665,
+        "product_id": 8224941670561,
+        "title": "250gm",
+        "price": "57.00",
+        "sku": null,
+        "position": 2,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "250gm",
+        "option2": null,
+        "option3": null,
+        "created_at": "2025-04-25T10:29:07+10:00",
+        "updated_at": "2026-10-08T14:10:25+10:00",
+        "taxable": false,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      },
+      {
+        "id": 44911293366433,
+        "product_id": 8224941670561,
+        "title": "1KG",
+        "price": "203.00",
+        "sku": null,
+        "position": 3,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "1KG",
+        "option2": null,
+        "option3": null,
+        "created_at": "2025-04-25T10:29:07+10:00",
+        "updated_at": "2026-10-08T14:10:25+10:00",
+        "taxable": false,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      },
+      {
+        "id": 47898674561185,
+        "product_id": 8224941670561,
+        "title": "Vac Sealed Pouch Option (per pouch)",
+        "price": "3.00",
+        "sku": null,
+        "position": 4,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "Vac Sealed Pouch Option (per pouch)",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-09-21T12:27:31+10:00",
+        "updated_at": "2026-10-08T14:10:25+10:00",
+        "taxable": false,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      }
+    ],
+    "options": [
+      {
+        "id": 10442373202081,
+        "product_id": 8224941670561,
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "100gm",
+          "250gm",
+          "1KG",
+          "Vac Sealed Pouch Option (per pouch)"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 41286517162145,
+        "product_id": 8224941670561,
+        "position": 1,
+        "created_at": "2025-04-25T10:26:36+10:00",
+        "updated_at": "2025-04-25T10:26:37+10:00",
+        "alt": null,
+        "width": 4160,
+        "height": 2340,
+        "src": "https://cdn.shopify.com/s/files/1/0199/7399/6644/files/COLCampoHermosogeneral.jpg?v=1745540797",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 41286517162145,
+      "product_id": 8224941670561,
+      "position": 1,
+      "created_at": "2025-04-25T10:26:36+10:00",
+      "updated_at": "2025-04-25T10:26:37+10:00",
+      "alt": null,
+      "width": 4160,
+      "height": 2340,
+      "src": "https://cdn.shopify.com/s/files/1/0199/7399/6644/files/COLCampoHermosogeneral.jpg?v=1745540797",
+      "variant_ids": []
+    }
+  },
+  "ajax": {
+    "id": 8224941670561,
+    "variants": [
+      {
+        "id": 46920408465569,
+        "available": true
+      },
+      {
+        "id": 44911293333665,
+        "available": true
+      },
+      {
+        "id": 44911293366433,
+        "available": true
+      },
+      {
+        "id": 47898674561185,
+        "available": true
+      }
+    ]
+  },
+  "analytics_currency": "AUD",
+  "analytics_product": {
+    "id": 8224941670561,
+    "gid": "gid://shopify/Product/8224941670561",
+    "vendor": "Passport Specialty Coffee",
+    "type": "Coffee",
+    "handle": "colombia-campo-hermoso-cherry-madness-espresso",
+    "variants": [
+      {
+        "id": 46920408465569,
+        "price": 3000,
+        "name": "Colombia Campo Hermoso \"Cherry Madness\" ESPRESSO - 100gm",
+        "public_title": "100gm",
+        "sku": null
+      },
+      {
+        "id": 44911293333665,
+        "price": 5700,
+        "name": "Colombia Campo Hermoso \"Cherry Madness\" ESPRESSO - 250gm",
+        "public_title": "250gm",
+        "sku": null
+      },
+      {
+        "id": 44911293366433,
+        "price": 20300,
+        "name": "Colombia Campo Hermoso \"Cherry Madness\" ESPRESSO - 1KG",
+        "public_title": "1KG",
+        "sku": null
+      },
+      {
+        "id": 47898674561185,
+        "price": 300,
+        "name": "Colombia Campo Hermoso \"Cherry Madness\" ESPRESSO - Vac Sealed Pouch Option (per pouch)",
+        "public_title": "Vac Sealed Pouch Option (per pouch)",
+        "sku": null
+      }
+    ],
+    "remote": false
+  }
+}

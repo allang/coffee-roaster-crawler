@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-08T04:41:32.623Z",
+  "mode": "merchant-get-only-dry-run",
+  "source_url": "https://onyxcoffeelab.com/products/2026-advent-calendar",
+  "product_id": "7773746823266",
+  "variant_id": "43221087649890",
+  "canonical": "https://onyxcoffeelab.com/products/2026-advent-calendar",
+  "primary_control": {
+    "selector": "main > .sections > section#hero > .text > button.button",
+    "text": "Pre-Order Now"
+  },
+  "variant_control": {
+    "selector": "main button.atc[data-variant-id]",
+    "variant_id": "43221087649890",
+    "label": "Add to Cart"
+  },
+  "native_json_has_available": false,
+  "ajax_sellability": true,
+  "unrelated_product_banner": {
+    "source_url": "https://onyxcoffeelab.com/products/monarch",
+    "href": "/products/2026-advent-calendar",
+    "label": "Pre-Order Now"
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar",
+      "status": 200,
+      "at": "2026-10-08T04:41:30.842Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.json",
+      "status": 200,
+      "at": "2026-10-08T04:41:31.129Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.js",
+      "status": 200,
+      "at": "2026-10-08T04:41:31.643Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/monarch",
+      "status": 200,
+      "at": "2026-10-08T04:41:32.338Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0
+}

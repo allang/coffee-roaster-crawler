@@ -1,0 +1,331 @@
+{
+  "specials": [
+    {
+      "id": 10330684260467,
+      "title": "Oopsie Washed Gesha Blend - Sufaypata x El Roble",
+      "handle": "oopsie-washed-gesha-blend-sufaypata-x-el-roble",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "new",
+        "specials",
+        "terroir"
+      ]
+    }
+  ],
+  "terroir": [
+    {
+      "id": 8163917037683,
+      "title": "Alo Tuke Natural 74158",
+      "handle": "alo-tuke-natural-74158",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "bestseller",
+        "coffee",
+        "coffee beans"
+      ]
+    },
+    {
+      "id": 8206054031475,
+      "title": "Finca Deborah Iridescence CM Washed Green Tip Gesha",
+      "handle": "finca-deborah-iridesence-cm-washed-gesha",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "bestseller",
+        "coffee",
+        "coffee beans",
+        "list_on_shop",
+        "low_stock",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8310077554803,
+      "title": "El Turpial Semi-Washed SL28",
+      "handle": "el-turpial-semi-washed-sl28",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "low_stock",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8263223017587,
+      "title": "Mate Matewos Red Honey 74158",
+      "handle": "mate-matewos-red-honey-74158",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8271391522931,
+      "title": "La Curva Washed Castillo",
+      "handle": "la-curva-washed-castillo-villa-nueva",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8201008185459,
+      "title": "Autumn Amber Low Temperature Natural Catimor & Typica",
+      "handle": "autumn-amber-low-temperature-natural-catimor-typica",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans"
+      ]
+    },
+    {
+      "id": 8258605580403,
+      "title": "Sufaypata Washed Gesha",
+      "handle": "sufaypata-washed-gesha",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "low_stock",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8344355733619,
+      "title": "El Mirador Natural Gesha",
+      "handle": "el-mirador-natural-gesha",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "terroir"
+      ]
+    },
+    {
+      "id": 9052895445107,
+      "title": "Shoondhisa Anaerobic Natural 74110 & 74112",
+      "handle": "shoondhisa-anaerobic-natural",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8317035118707,
+      "title": "Finca La Roca 48h Washed Gesha",
+      "handle": "jorge-rojas-48h-washed-gesha",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "new",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8369980375155,
+      "title": "El Roble - Washed Gesha",
+      "handle": "el-roble-washed-gesha",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "new",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8824772853875,
+      "title": "Demeka Becha Bona Zuria Layered Ferment",
+      "handle": "becha-village-bona-zuria-layered-ferment-74158-74165-74112-74110-74140",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "new",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8392181612659,
+      "title": "Bare Bona Zuria White Honey",
+      "handle": "bare-bona-zuria-white-honey-74158-74112-74110-7440",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "new",
+        "terroir"
+      ]
+    },
+    {
+      "id": 8387180298355,
+      "title": "Fugi Kiyonza Hill - Washed Red Bourbon",
+      "handle": "fugi-kiyonza-hill-washed-red-bourbon",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "new",
+        "terroir"
+      ]
+    }
+  ],
+  "process": [
+    {
+      "id": 7898326401139,
+      "title": "Finca Milan Nitrogen Washed Co-Ferment Caturra",
+      "handle": "finca-milan-nitrogen-washed-caturra",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "bestseller",
+        "coffee",
+        "coffee beans"
+      ]
+    },
+    {
+      "id": 8202020126835,
+      "title": "Lat Pan Pin Jasmine Anaerobic Honey Catuai",
+      "handle": "lat-pan-pin-jasmine-anaerobic-honey-catuai",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "coffee",
+        "coffee beans",
+        "low_stock"
+      ]
+    },
+    {
+      "id": 8105267691635,
+      "title": "El Diamante Advanced Process Pink Bourbon",
+      "handle": "el-diamante-washed-thermal-shock-pink-bourbon",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "bestseller",
+        "coffee",
+        "coffee beans",
+        "list_on_shop"
+      ]
+    },
+    {
+      "id": 8345877119091,
+      "title": "Finca Anaya - Advanced Washed Typica Mejorado",
+      "handle": "finca-anaya-advanced-washed-typica-mejorado",
+      "product_type": "Coffee Beans",
+      "tags": [
+        "bestseller",
+        "coffee",
+        "coffee beans",
+        "process"
+      ]
+    }
+  ],
+  "variant_example": {
+    "id": 8163917037683,
+    "title": "Alo Tuke Natural 74158",
+    "handle": "alo-tuke-natural-74158",
+    "product_type": "Coffee Beans",
+    "tags": [
+      "bestseller",
+      "coffee",
+      "coffee beans"
+    ],
+    "options": [
+      {
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "120g",
+          "240g",
+          "2lb",
+          "2GOOD2GO_0814_240g"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 44208188391539,
+        "title": "120g",
+        "option1": "120g",
+        "option2": null,
+        "option3": null,
+        "sku": "2025_25_120g_ret",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "price": "25.00",
+        "grams": 170,
+        "compare_at_price": null,
+        "position": 1,
+        "product_id": 8163917037683,
+        "created_at": "2026-01-04T13:09:24-05:00",
+        "updated_at": "2026-10-08T00:12:27-04:00"
+      },
+      {
+        "id": 44208188424307,
+        "title": "240g",
+        "option1": "240g",
+        "option2": null,
+        "option3": null,
+        "sku": "2025_25_240g_ret",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "30.00",
+        "grams": 290,
+        "compare_at_price": null,
+        "position": 2,
+        "product_id": 8163917037683,
+        "created_at": "2026-01-04T13:09:24-05:00",
+        "updated_at": "2026-10-08T00:12:27-04:00"
+      },
+      {
+        "id": 44208188457075,
+        "title": "2lb",
+        "option1": "2lb",
+        "option2": null,
+        "option3": null,
+        "sku": "2025_25_2lb_ret",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "80.00",
+        "grams": 1100,
+        "compare_at_price": null,
+        "position": 3,
+        "product_id": 8163917037683,
+        "created_at": "2026-01-04T13:09:24-05:00",
+        "updated_at": "2026-10-08T00:12:27-04:00"
+      },
+      {
+        "id": 48940262916211,
+        "title": "2GOOD2GO_0814_240g",
+        "option1": "2GOOD2GO_0814_240g",
+        "option2": null,
+        "option3": null,
+        "sku": "2025_25_240g_2g2g",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "price": "20.00",
+        "grams": 170,
+        "compare_at_price": null,
+        "position": 4,
+        "product_id": 8163917037683,
+        "created_at": "2026-09-23T00:30:34-04:00",
+        "updated_at": "2026-10-08T00:12:27-04:00"
+      }
+    ]
+  }
+}

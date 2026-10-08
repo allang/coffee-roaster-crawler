@@ -1,0 +1,82 @@
+{
+  "url": "https://ilsecoffee.com/products/ecuador-jose-pepe-jijon-2026",
+  "analytics": {
+    "currency": "USD",
+    "product": {
+      "id": 8137992994918,
+      "handle": "ecuador-jose-pepe-jijon-2026",
+      "variants": [
+        {
+          "id": 46537918775398,
+          "price": 2900
+        },
+        {
+          "id": 46537918808166,
+          "price": 5500
+        },
+        {
+          "id": 46537918840934,
+          "price": 17000
+        }
+      ]
+    }
+  },
+  "product": {
+    "id": 8137992994918,
+    "title": "Ecuador | Jose & Pepe Jijon & Francisco Vintimilla",
+    "handle": "ecuador-jose-pepe-jijon-2026",
+    "body_html": "<p class=\"PDq2pG_selectionAnchorContainer\">Fincas del Putushio is an incredible farm in Ecuador's southern region of Loja. Run by José Jijón, his father Pepe, and Francisco Vintimilla, the farm focuses on growing Mejorado at the extreme altitude of 2,222 MASL. This lot, harvested in June 2026, is a pristine expression of one of our favorite varieties. The cup is crisp and refined, with notes of white flower, green apple, nectarine, and lingering peach. The acidity is high and well integrated, giving us an elegant cup with layers of florals and a long, sweet finish. This is a beautiful coffee.<span class=\"PDq2pG_selectionAnchor\"></span></p>\n<p>This is our fourth year working with the Jijón family, and it's a joy to have their coffee back on our menu. Pepe and his son José are deeply passionate about coffee and equally committed to the planet, practicing biodynamic and organic farming that works in harmony with the earth. Each lot is unique, reflecting the time, place, and many hands involved in its careful production. At their new farm in Putushio, the focus is on producing extraordinary washed coffees that showcase both variety and terroir.</p>\n<p dir=\"ltr\"><span>Cherries are picked at peak ripeness and depulped the same day. The seeds are then washed thoroughly with spring water and then sent to dry on shaded raised beds for 30 days.</span></p>",
+    "product_type": "",
+    "vendor": "Ilse Coffee",
+    "tags": "",
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0152/2565/1254/files/jose_pepe_c31e7957-e8c7-4b5e-bb89-26d8f70bc449.jpg?v=1786542469"
+      }
+    ],
+    "variants": [
+      {
+        "id": 46537918775398,
+        "title": "125g",
+        "price": "29.00",
+        "grams": 300,
+        "weight": 300,
+        "weight_unit": "g"
+      },
+      {
+        "id": 46537918808166,
+        "title": "250g",
+        "price": "55.00",
+        "grams": 340,
+        "weight": 340,
+        "weight_unit": "g"
+      },
+      {
+        "id": 46537918840934,
+        "title": "2lb",
+        "price": "170.00",
+        "grams": 907,
+        "weight": 2,
+        "weight_unit": "lb"
+      }
+    ]
+  },
+  "ajax": {
+    "id": 8137992994918,
+    "variants": [
+      {
+        "id": 46537918775398,
+        "available": false
+      },
+      {
+        "id": 46537918808166,
+        "available": true
+      },
+      {
+        "id": 46537918840934,
+        "available": true
+      }
+    ]
+  },
+  "schema": null
+}

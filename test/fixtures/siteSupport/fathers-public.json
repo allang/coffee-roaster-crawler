@@ -1,0 +1,1702 @@
+{
+  "url": "https://fathers.cz/kava/espresso/minas",
+  "listingProps": {
+    "template": "ProductsListing",
+    "tenant": {
+      "locale": "cs",
+      "defaultCurrency": "CZK",
+      "prefix": ""
+    },
+    "currency": "CZK",
+    "pricingLevel": "B2c",
+    "destinationCountry": "Czechia",
+    "selectedCategory": "Coffee",
+    "products": [
+      {
+        "id": "f22ffadb-7524-4e3f-be5b-5e6e00f16e65",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "etiopie-lalesa",
+        "variants": [
+          {
+            "id": "099db7fa",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "d96595d9",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "3f106e40",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "354ea213-c521-4684-8282-a65e9403103b",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "minas",
+        "variants": [
+          {
+            "id": "25622f6a",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "c2ff1a7e",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "b2992439",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "f5176494-cb63-4837-bd6e-25d03d0b35e8",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "kolumbie-el-diviso-ombligon",
+        "variants": [
+          {
+            "id": "6074c3ee",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "0cbecbe1-31a0-43b6-87a5-d0a7d38e8598",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "kolumbie-chapata-esp",
+        "variants": [
+          {
+            "id": "9577413b",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "31932717",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "cba64b77",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "4f1fde2e-377b-4c3d-9a8a-030c50ad2669",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "kolumbie-chapata",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "1d7d7996-f9b2-4e19-96ad-bbe25e6b165e",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "etiopie-bensa-ayla-filter",
+        "variants": [
+          {
+            "id": "3a8a8375",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "f5fc13d7",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "8495b07a",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "121d31f0-cb99-4cde-aabc-c7e2cfc27db4",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "etiopie-bensa-ayla",
+        "variants": [
+          {
+            "id": "82a959b2",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "50585132",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4b1a9d6c",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "4690e3ab-55c5-4011-bdd4-ad4f61e12bc6",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "uganda-namugowa",
+        "variants": [
+          {
+            "id": "ccf71801",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a0046fbf",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "f56d91b9",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "37609975-128e-463f-8a1e-a6ba8add1091",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "espnamugowa",
+        "variants": [
+          {
+            "id": "9c720b21",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "986dac29",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "40b677ad",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "8d1a4e83-2bb5-4fdd-9d89-73123823de96",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "nikaragua-los-papales",
+        "variants": [
+          {
+            "id": "fc55edb1",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "214f872d",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "bf97ad3c",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "b9b31744-a586-4193-9a61-5f11b3d12aff",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "letni-mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "e81db928",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "b9b31744-a586-4193-9a61-5f11b3d12aff",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "letni-mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "e81db928",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "1c50445b-edb0-45ef-989c-fc1ebf9dfde6",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "kolumbie-el-diviso",
+        "variants": [
+          {
+            "id": "7abead93",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "4b1730b9-13f2-4c5b-87ae-ee544c015506",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "etiopie-kabira",
+        "variants": [
+          {
+            "id": "3343a12d",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "f898c18f",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4a1d78e8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "ca558142-7f3c-461b-842b-96c513b00b9c",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "kabira",
+        "variants": [
+          {
+            "id": "003b6468",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "12e672b0",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "6601c658",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "ed531b35-fa3b-4d5d-9ce7-4dd68b3ee15a",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "guatemala-granada",
+        "variants": [
+          {
+            "id": "24a0e1d0",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a1e84945",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "1642535d",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "2f727fac-0c76-4d14-84de-a99e958ea4d9",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "granada",
+        "variants": [
+          {
+            "id": "d4289950",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "68ede147",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "9c7717ce",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "8e1ebf27-0d59-4e9e-8f88-65bc33c89ffe",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "sample-box",
+        "variants": [
+          {
+            "id": "de60eb7e",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "acb70b37-2531-4329-bd0b-e0126bb74245",
+        "active": true,
+        "subcategoryId": "689be60c-3336-431a-8c4f-a7364c459d4d",
+        "urlSlug_cs": "drip-bag-beshasha-etiopie",
+        "variants": [
+          {
+            "id": "08818b3a",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "1078ea4a-4662-470a-bb44-12d40b3952e6",
+        "active": true,
+        "subcategoryId": "689be60c-3336-431a-8c4f-a7364c459d4d",
+        "urlSlug_cs": "drip-bag-inza-kolumbie",
+        "variants": [
+          {
+            "id": "eebca50e",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "d08f4795-5aaf-4d72-b31b-525f4172ae67",
+        "active": true,
+        "subcategoryId": "689be60c-3336-431a-8c4f-a7364c459d4d",
+        "urlSlug_cs": "drip-bag-roger-chilcon-peru",
+        "variants": [
+          {
+            "id": "5bfa2f52",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "c017eee2-d780-4a36-8a76-57fbcc0f732e",
+        "active": true,
+        "subcategoryId": "689be60c-3336-431a-8c4f-a7364c459d4d",
+        "urlSlug_cs": "drip-bag-san-antonio-peru",
+        "variants": [
+          {
+            "id": "88f7431d",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "8b539495-f1d0-4af5-b15d-93151948b081",
+        "active": true,
+        "subcategoryId": "689be60c-3336-431a-8c4f-a7364c459d4d",
+        "urlSlug_cs": "drip-bag-mix",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "d97d4424",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "533f1d6d-6940-41e0-adf9-c216928f8521",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "guatemala-el-buho",
+        "variants": [
+          {
+            "id": "b2b9ab08",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "124cf7a1",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "0249cf77",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "23158794-bd81-490e-970f-162deb258e2d",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "uganda-zebigi",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "109826a6-744f-4c9c-9516-fa1ca35716fc",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "uganda-zebigi",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "f6778121-d8f9-4881-b458-22792f575e15",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "brazilie-julia-campos",
+        "variants": [
+          {
+            "id": "965cf983",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "143b70f2",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "5d55ba9a",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "7c39652f-b18e-4174-80d8-922330a59dac",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "brazilie-juliacampos-espresso",
+        "variants": [
+          {
+            "id": "0d63f142",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "e7d238ea",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "5e0f7eab",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "241f93bc-ee9b-490c-8df8-3c0bb0568faa",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "etiopie-chelbesa",
+        "variants": [
+          {
+            "id": "b3a7ab2f",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "d90b90f5",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4408b21f",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "17201be2-b116-49a1-a3d4-ef7c5b60ad44",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "etiopie-chelbesa",
+        "variants": [
+          {
+            "id": "b3a7ab2f",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "d90b90f5",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4408b21f",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5bb54595-24ab-4b50-8bc6-02b585af8363",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "etiopie-edn-pineapple",
+        "variants": [
+          {
+            "id": "116c63fc",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "31a2303d-f904-46e1-9758-a680e44f0e5a",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "inmaculada-tasting-box",
+        "variants": [
+          {
+            "id": "9c26774b",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "4272ab24-e91d-4e1a-8027-9e6fd08115f8",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "etiopie-beshasha",
+        "variants": [
+          {
+            "id": "c15c90d0",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4b71e022",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "e1542c1c",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "8ea13b0d-4b2f-4f9f-ba09-a2bb3b614c3e",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "etiopie-beshasha-espresso",
+        "variants": [
+          {
+            "id": "0bde39de",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "114ea1f0",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "811851d5",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "155c3caa-560c-47da-9313-f4f9e2676c69",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "brazilie-cafeina",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "54d8ec64-5098-402d-b484-556d0317ca56",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "mothers-blend",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "6ba2a7cd-4cee-4a0f-976c-8a379b5aa878",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "indonesie-ijen",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "f62174a8-1c0a-48ea-b21d-99b6a540ec06",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "decaf-atunkaa-kolumbie",
+        "variants": [
+          {
+            "id": "b3a7ab2f",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "d90b90f5",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4408b21f",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "62990869-2355-4095-959a-72d5f3f1754b",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "decaf-atunkaa-kolumbie",
+        "variants": [
+          {
+            "id": "b3a7ab2f",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "d90b90f5",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4408b21f",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "96cae04b-4c66-49e9-9d63-f94896873e3a",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "kolumbie-inza",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "d0a40d1a-be3b-45a8-8855-a534d643ffe6",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "kolumbie-inza",
+        "variants": [
+          {
+            "id": "a8bb8bab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2e5c16ce",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a4ade0f8",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "bd093220-3df3-4c64-b0e2-c66d2c71f4a9",
+        "active": true,
+        "subcategoryId": "82236761-fab3-4de7-8a43-dc6b5b204f5c",
+        "urlSlug_cs": "docasne-tetovacky",
+        "variants": [
+          {
+            "id": "1435f3b1",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "14499afa-0acb-4d54-a478-82273c4f8097",
+        "active": true,
+        "subcategoryId": "b0d327bb-f964-4811-9fb9-1e9debdb5d7d",
+        "urlSlug_cs": "tricko-fathers",
+        "variants": [
+          {
+            "id": "4b3dc0f2",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a16be54e",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "37bef00d",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "ef4a4271",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4e4a3228",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "2bc4e267-61b8-4ca9-8e83-075d4960c96d",
+        "active": true,
+        "subcategoryId": "b0d327bb-f964-4811-9fb9-1e9debdb5d7d",
+        "urlSlug_cs": "tricko-fathers-s-dlouhym-rukavem",
+        "variants": [
+          {
+            "id": "4b3dc0f2",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a16be54e",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "37bef00d",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "ef4a4271",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4e4a3228",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "69f6226c-14a1-4e5f-b0bc-7414a8772952",
+        "active": true,
+        "subcategoryId": "b0d327bb-f964-4811-9fb9-1e9debdb5d7d",
+        "urlSlug_cs": "mikina-fathers",
+        "variants": [
+          {
+            "id": "4b3dc0f2",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a16be54e",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "37bef00d",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "ef4a4271",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "4e4a3228",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "730b0bc1-5cb0-4c43-8bd3-837301189623",
+        "active": true,
+        "subcategoryId": "82236761-fab3-4de7-8a43-dc6b5b204f5c",
+        "urlSlug_cs": "platenka-kavovy-svet",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5bbd43cc-3de8-40f2-adde-1497610f39f1",
+        "active": true,
+        "subcategoryId": "82236761-fab3-4de7-8a43-dc6b5b204f5c",
+        "urlSlug_cs": "platenka-bara-idesova",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5e8a6b5b-fb2b-4839-9156-745b43d6f9f5",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5e8a6b5b-fb2b-4839-9156-745b43d6f9f5",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5e8a6b5b-fb2b-4839-9156-745b43d6f9f5",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5e8a6b5b-fb2b-4839-9156-745b43d6f9f5",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5e8a6b5b-fb2b-4839-9156-745b43d6f9f5",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "5e8a6b5b-fb2b-4839-9156-745b43d6f9f5",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "mothers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "e1feb4ba-191d-44d9-8862-e7c3aa2027d8",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "fathers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "e1feb4ba-191d-44d9-8862-e7c3aa2027d8",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "fathers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "e1feb4ba-191d-44d9-8862-e7c3aa2027d8",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "fathers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "e1feb4ba-191d-44d9-8862-e7c3aa2027d8",
+        "active": true,
+        "subcategoryId": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "urlSlug_cs": "fathers-ksiltovka",
+        "variants": [
+          {
+            "id": "da2840c2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "2fafce3e-60ab-4032-b400-0acc9f8cf8ff",
+        "active": true,
+        "subcategoryId": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "urlSlug_cs": "fathers-x-p3l1-cappuccino",
+        "variants": [
+          {
+            "id": "a50a7f92",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "ef036016",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "d280d33a-3942-4223-b8bf-eb2dce277a0f",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "cuppingova-lzice",
+        "variants": [
+          {
+            "id": "9d8e2911",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "d8c53015-5dfd-4de1-ab47-24c8513624fe",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "kinto-konvicka",
+        "variants": [
+          {
+            "id": "1b854142",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "f50c7d72",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "44165c08-89bc-441f-873c-010b9253b82d",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "kinto-kulata-konvicka",
+        "variants": [
+          {
+            "id": "7f511226",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "89654a09",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "de37d174-05dc-46c8-b685-160c1b59c2ab",
+        "active": true,
+        "subcategoryId": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "urlSlug_cs": "kinto-termohrnek",
+        "variants": [
+          {
+            "id": "ffa60e89",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "9f804a77",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "de37d174-05dc-46c8-b685-160c1b59c2ab",
+        "active": true,
+        "subcategoryId": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "urlSlug_cs": "kinto-termohrnek",
+        "variants": [
+          {
+            "id": "ffa60e89",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "9f804a77",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "b76be149-e9ad-4e28-ada3-2e564451ad43",
+        "active": true,
+        "subcategoryId": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "urlSlug_cs": "kinto-termoska",
+        "variants": [
+          {
+            "id": "65c63235",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "fa11829e",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "b76be149-e9ad-4e28-ada3-2e564451ad43",
+        "active": true,
+        "subcategoryId": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "urlSlug_cs": "kinto-termoska",
+        "variants": [
+          {
+            "id": "65c63235",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "fa11829e",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "58d77337-a6f1-465b-91aa-e92c60019e90",
+        "active": true,
+        "subcategoryId": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "urlSlug_cs": "kinto-popruh-na-termosku",
+        "variants": [
+          {
+            "id": "4925fb82",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "c5c8f7cb",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "58d77337-a6f1-465b-91aa-e92c60019e90",
+        "active": true,
+        "subcategoryId": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "urlSlug_cs": "kinto-popruh-na-termosku",
+        "variants": [
+          {
+            "id": "4925fb82",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "c5c8f7cb",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "cf42a4fe-5ca6-4460-9df9-dc09e16243f7",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "solo-dripper",
+        "variants": [
+          {
+            "id": "bf246f12",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "cf42a4fe-5ca6-4460-9df9-dc09e16243f7",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "solo-dripper",
+        "variants": [
+          {
+            "id": "bf246f12",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "cf42a4fe-5ca6-4460-9df9-dc09e16243f7",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "solo-dripper",
+        "variants": [
+          {
+            "id": "bf246f12",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "cf42a4fe-5ca6-4460-9df9-dc09e16243f7",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "solo-dripper",
+        "variants": [
+          {
+            "id": "bf246f12",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "cf42a4fe-5ca6-4460-9df9-dc09e16243f7",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "solo-dripper",
+        "variants": [
+          {
+            "id": "bf246f12",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "cf42a4fe-5ca6-4460-9df9-dc09e16243f7",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "solo-dripper",
+        "variants": [
+          {
+            "id": "bf246f12",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "cf42a4fe-5ca6-4460-9df9-dc09e16243f7",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "solo-dripper",
+        "variants": [
+          {
+            "id": "bf246f12",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "9546de91-1dd6-49b6-8860-3faad42720bd",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "aeropress-go",
+        "variants": [
+          {
+            "id": "5a7e141f",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "666e49c3-172e-471a-bb92-3e8ffc867373",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "hario-v60-dripper",
+        "variants": [
+          {
+            "id": "5a53ae7f",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "ab7cf16e",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "83d3725c",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "b0402851-7e22-4bc1-89ff-e5f448a64e23",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "timemore-mini-espresso-vaha",
+        "variants": [
+          {
+            "id": "a994d67a",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "59cdbbe2-bc87-4aeb-a05d-d7087cefdd07",
+        "active": true,
+        "subcategoryId": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "urlSlug_cs": "timemore-mlynek-c3s-pro",
+        "variants": [
+          {
+            "id": "d152ed3c",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "543968e9-607a-4cd4-a694-7490ae2a8469",
+        "active": true,
+        "subcategoryId": "7d87c240-4617-4517-9bf7-dcab35e29cb8",
+        "urlSlug_cs": "hario-v60-filtry",
+        "variants": [
+          {
+            "id": "e72253ab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "c7a4373d",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "31fa3431",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "deb1677a-e0ff-41a8-b45d-8349ec16b332",
+        "active": true,
+        "subcategoryId": "7d87c240-4617-4517-9bf7-dcab35e29cb8",
+        "urlSlug_cs": "moccamaster-filtry",
+        "variants": [
+          {
+            "id": "ac0d9a45",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "3a31e8b5",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "416b33cc-358e-4ce8-952f-f277b55e1b47",
+        "active": true,
+        "subcategoryId": "7d87c240-4617-4517-9bf7-dcab35e29cb8",
+        "urlSlug_cs": "aeropress-filtry",
+        "variants": [
+          {
+            "id": "3b17303c",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "4370c53f-b695-4237-bf53-1970d398a24a",
+        "active": true,
+        "subcategoryId": "acb1b4cb-2552-4d29-ae2e-455fe45c2f36",
+        "urlSlug_cs": "espazzola",
+        "variants": [
+          {
+            "id": "4ef3545a",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "0ffe6248-1057-48c6-9594-d4280b9c8c59",
+        "active": true,
+        "subcategoryId": "acb1b4cb-2552-4d29-ae2e-455fe45c2f36",
+        "urlSlug_cs": "liquid-dezcal-na-odvapneni",
+        "variants": [
+          {
+            "id": "89b5cb5e",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "8d0d567a-5985-45c0-a9bf-3b74b5a61488",
+        "active": true,
+        "subcategoryId": "7d87c240-4617-4517-9bf7-dcab35e29cb8",
+        "urlSlug_cs": "solo-wave-daily-filtry",
+        "variants": [
+          {
+            "id": "39703100",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "99e9fddc-b573-4ebe-95c0-7d088399c09e",
+        "active": true,
+        "subcategoryId": "7d87c240-4617-4517-9bf7-dcab35e29cb8",
+        "urlSlug_cs": "fellow-flat-bottom-batch-brew-filtry-pro-aiden",
+        "variants": [
+          {
+            "id": "98dd01ae",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "b8680ea1-1a1c-4113-9b84-afa7885b7545",
+        "active": true,
+        "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "urlSlug_cs": "nikaragua-tierra-linda",
+        "variants": [
+          {
+            "id": "c951a3e1",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "bcb87af2",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "8580501c",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "e18da74e-7222-472b-849e-60c4212fb276",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "nikaragua-bethania",
+        "variants": [
+          {
+            "id": "b2c637e6",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "a2fa4074",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "432c8ef2",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      },
+      {
+        "id": "8f504fd1-1138-4ed4-b773-c6d7383507ce",
+        "active": true,
+        "subcategoryId": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "urlSlug_cs": "tierralinda",
+        "variants": [
+          {
+            "id": "48fc05a2",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "2686b2ab",
+            "visibilityScope": "B2cAndB2b"
+          },
+          {
+            "id": "50a34210",
+            "visibilityScope": "B2cAndB2b"
+          }
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "d2ce391c-976d-406f-a52b-4855303d3f35",
+        "active": true,
+        "category": "Coffee"
+      },
+      {
+        "id": "67ff30ae-622c-4443-bcd2-affb54f55781",
+        "active": true,
+        "category": "Coffee"
+      },
+      {
+        "id": "b0d327bb-f964-4811-9fb9-1e9debdb5d7d",
+        "active": true,
+        "category": "Merch"
+      },
+      {
+        "id": "1dc88c69-ac2f-4b40-84b2-417e87c7e251",
+        "active": true,
+        "category": "Merch"
+      },
+      {
+        "id": "82236761-fab3-4de7-8a43-dc6b5b204f5c",
+        "active": true,
+        "category": "Merch"
+      },
+      {
+        "id": "3e963e82-d5eb-4715-b040-98ca37f2e2bc",
+        "active": true,
+        "category": "Accessory"
+      },
+      {
+        "id": "7d87c240-4617-4517-9bf7-dcab35e29cb8",
+        "active": true,
+        "category": "Accessory"
+      },
+      {
+        "id": "f0366a7e-6a2a-43f0-a830-bfe70ff6c986",
+        "active": true,
+        "category": "Accessory"
+      },
+      {
+        "id": "bd2eecdc-b993-4fdd-be85-da24044c945c",
+        "active": true,
+        "category": "Coffee"
+      },
+      {
+        "id": "689be60c-3336-431a-8c4f-a7364c459d4d",
+        "active": true,
+        "category": "Coffee"
+      },
+      {
+        "id": "acb1b4cb-2552-4d29-ae2e-455fe45c2f36",
+        "active": true,
+        "category": "Accessory"
+      },
+      {
+        "id": "2869ffd5-f752-41fc-8ae7-d73bf40e21e8",
+        "active": true,
+        "category": "Accessory"
+      }
+    ]
+  },
+  "cards": "<article><a href=\"/kava/filtr/etiopie-lalesa\"></a><a href=\"/kava/filtr/etiopie-lalesa\"></a><select name=\"variants-f22ffadb-7524-4e3f-be5b-5e6e00f16e65\"><option value=\"099db7fa\"></option><option value=\"d96595d9\"></option><option value=\"3f106e40\"></option></select></article><article><a href=\"/kava/espresso/minas\"></a><a href=\"/kava/espresso/minas\"></a><select name=\"variants-354ea213-c521-4684-8282-a65e9403103b\"><option value=\"25622f6a\"></option><option value=\"c2ff1a7e\"></option><option value=\"b2992439\"></option></select></article><article><a href=\"/kava/filtr/kolumbie-el-diviso-ombligon\"></a><a href=\"/kava/filtr/kolumbie-el-diviso-ombligon\"></a><select name=\"variants-f5176494-cb63-4837-bd6e-25d03d0b35e8\"><option value=\"6074c3ee\"></option></select></article><article><a href=\"/kava/espresso/kolumbie-chapata-esp\"></a><a href=\"/kava/espresso/kolumbie-chapata-esp\"></a><select name=\"variants-0cbecbe1-31a0-43b6-87a5-d0a7d38e8598\"><option value=\"9577413b\"></option><option value=\"31932717\"></option><option value=\"cba64b77\"></option></select></article><article><a href=\"/kava/filtr/kolumbie-chapata\"></a><a href=\"/kava/filtr/kolumbie-chapata\"></a><select name=\"variants-4f1fde2e-377b-4c3d-9a8a-030c50ad2669\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/filtr/etiopie-bensa-ayla-filter\"></a><a href=\"/kava/filtr/etiopie-bensa-ayla-filter\"></a><select name=\"variants-1d7d7996-f9b2-4e19-96ad-bbe25e6b165e\"><option value=\"3a8a8375\"></option><option value=\"f5fc13d7\"></option><option value=\"8495b07a\"></option></select></article><article><a href=\"/kava/espresso/etiopie-bensa-ayla\"></a><a href=\"/kava/espresso/etiopie-bensa-ayla\"></a><select name=\"variants-121d31f0-cb99-4cde-aabc-c7e2cfc27db4\"><option value=\"82a959b2\"></option><option value=\"50585132\"></option><option value=\"4b1a9d6c\"></option></select></article><article><a href=\"/kava/filtr/uganda-namugowa\"></a><a href=\"/kava/filtr/uganda-namugowa\"></a><select name=\"variants-4690e3ab-55c5-4011-bdd4-ad4f61e12bc6\"><option value=\"ccf71801\"></option><option value=\"a0046fbf\"></option><option value=\"f56d91b9\"></option></select></article><article><a href=\"/kava/espresso/espnamugowa\"></a><a href=\"/kava/espresso/espnamugowa\"></a><select name=\"variants-37609975-128e-463f-8a1e-a6ba8add1091\"><option value=\"9c720b21\"></option><option value=\"986dac29\"></option><option value=\"40b677ad\"></option></select></article><article><a href=\"/kava/espresso/nikaragua-los-papales\"></a><a href=\"/kava/espresso/nikaragua-los-papales\"></a><select name=\"variants-8d1a4e83-2bb5-4fdd-9d89-73123823de96\"><option value=\"fc55edb1\"></option><option value=\"214f872d\"></option><option value=\"bf97ad3c\"></option></select></article><article><a href=\"/kava/filtr/kolumbie-el-diviso\"></a><a href=\"/kava/filtr/kolumbie-el-diviso\"></a><select name=\"variants-1c50445b-edb0-45ef-989c-fc1ebf9dfde6\"><option value=\"7abead93\"></option></select></article><article><a href=\"/kava/filtr/etiopie-kabira\"></a><a href=\"/kava/filtr/etiopie-kabira\"></a><select name=\"variants-4b1730b9-13f2-4c5b-87ae-ee544c015506\"><option value=\"3343a12d\"></option><option value=\"f898c18f\"></option><option value=\"4a1d78e8\"></option></select></article><article><a href=\"/kava/espresso/kabira\"></a><a href=\"/kava/espresso/kabira\"></a><select name=\"variants-ca558142-7f3c-461b-842b-96c513b00b9c\"><option value=\"003b6468\"></option><option value=\"12e672b0\"></option><option value=\"6601c658\"></option></select></article><article><a href=\"/kava/filtr/guatemala-granada\"></a><a href=\"/kava/filtr/guatemala-granada\"></a><select name=\"variants-ed531b35-fa3b-4d5d-9ce7-4dd68b3ee15a\"><option value=\"24a0e1d0\"></option><option value=\"a1e84945\"></option><option value=\"1642535d\"></option></select></article><article><a href=\"/kava/espresso/granada\"></a><a href=\"/kava/espresso/granada\"></a><select name=\"variants-2f727fac-0c76-4d14-84de-a99e958ea4d9\"><option value=\"d4289950\"></option><option value=\"68ede147\"></option><option value=\"9c7717ce\"></option></select></article><article><a href=\"/kava/filtr/sample-box\"></a><a href=\"/kava/filtr/sample-box\"></a><select name=\"variants-8e1ebf27-0d59-4e9e-8f88-65bc33c89ffe\"><option value=\"de60eb7e\"></option></select></article><article><a href=\"/kava/dripbagy/drip-bag-beshasha-etiopie\"></a><a href=\"/kava/dripbagy/drip-bag-beshasha-etiopie\"></a><select name=\"variants-acb70b37-2531-4329-bd0b-e0126bb74245\"><option value=\"08818b3a\"></option></select></article><article><a href=\"/kava/dripbagy/drip-bag-inza-kolumbie\"></a><a href=\"/kava/dripbagy/drip-bag-inza-kolumbie\"></a><select name=\"variants-1078ea4a-4662-470a-bb44-12d40b3952e6\"><option value=\"eebca50e\"></option></select></article><article><a href=\"/kava/dripbagy/drip-bag-roger-chilcon-peru\"></a><a href=\"/kava/dripbagy/drip-bag-roger-chilcon-peru\"></a><select name=\"variants-d08f4795-5aaf-4d72-b31b-525f4172ae67\"><option value=\"5bfa2f52\"></option></select></article><article><a href=\"/kava/dripbagy/drip-bag-san-antonio-peru\"></a><a href=\"/kava/dripbagy/drip-bag-san-antonio-peru\"></a><select name=\"variants-c017eee2-d780-4a36-8a76-57fbcc0f732e\"><option value=\"88f7431d\"></option></select></article><article><a href=\"/kava/dripbagy/drip-bag-mix\"></a><a href=\"/kava/dripbagy/drip-bag-mix\"></a><select name=\"variants-8b539495-f1d0-4af5-b15d-93151948b081\"><option value=\"a8bb8bab\"></option><option value=\"d97d4424\"></option></select></article><article><a href=\"/kava/espresso/guatemala-el-buho\"></a><a href=\"/kava/espresso/guatemala-el-buho\"></a><select name=\"variants-533f1d6d-6940-41e0-adf9-c216928f8521\"><option value=\"b2b9ab08\"></option><option value=\"124cf7a1\"></option><option value=\"0249cf77\"></option></select></article><article><a href=\"/kava/filtr/uganda-zebigi\"></a><a href=\"/kava/filtr/uganda-zebigi\"></a><select name=\"variants-23158794-bd81-490e-970f-162deb258e2d\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/espresso/uganda-zebigi\"></a><a href=\"/kava/espresso/uganda-zebigi\"></a><select name=\"variants-109826a6-744f-4c9c-9516-fa1ca35716fc\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/filtr/brazilie-julia-campos\"></a><a href=\"/kava/filtr/brazilie-julia-campos\"></a><select name=\"variants-f6778121-d8f9-4881-b458-22792f575e15\"><option value=\"965cf983\"></option><option value=\"143b70f2\"></option><option value=\"5d55ba9a\"></option></select></article><article><a href=\"/kava/espresso/brazilie-juliacampos-espresso\"></a><a href=\"/kava/espresso/brazilie-juliacampos-espresso\"></a><select name=\"variants-7c39652f-b18e-4174-80d8-922330a59dac\"><option value=\"0d63f142\"></option><option value=\"e7d238ea\"></option><option value=\"5e0f7eab\"></option></select></article><article><a href=\"/kava/espresso/etiopie-chelbesa\"></a><a href=\"/kava/espresso/etiopie-chelbesa\"></a><select name=\"variants-241f93bc-ee9b-490c-8df8-3c0bb0568faa\"><option value=\"b3a7ab2f\"></option><option value=\"d90b90f5\"></option><option value=\"4408b21f\"></option></select></article><article><a href=\"/kava/filtr/etiopie-chelbesa\"></a><a href=\"/kava/filtr/etiopie-chelbesa\"></a><select name=\"variants-17201be2-b116-49a1-a3d4-ef7c5b60ad44\"><option value=\"b3a7ab2f\"></option><option value=\"d90b90f5\"></option><option value=\"4408b21f\"></option></select></article><article><a href=\"/kava/filtr/etiopie-edn-pineapple\"></a><a href=\"/kava/filtr/etiopie-edn-pineapple\"></a><select name=\"variants-5bb54595-24ab-4b50-8bc6-02b585af8363\"><option value=\"116c63fc\"></option></select></article><article><a href=\"/kava/filtr/inmaculada-tasting-box\"></a><a href=\"/kava/filtr/inmaculada-tasting-box\"></a><select name=\"variants-31a2303d-f904-46e1-9758-a680e44f0e5a\"><option value=\"9c26774b\"></option></select></article><article><a href=\"/kava/filtr/etiopie-beshasha\"></a><a href=\"/kava/filtr/etiopie-beshasha\"></a><select name=\"variants-4272ab24-e91d-4e1a-8027-9e6fd08115f8\"><option value=\"c15c90d0\"></option><option value=\"4b71e022\"></option><option value=\"e1542c1c\"></option></select></article><article><a href=\"/kava/espresso/etiopie-beshasha-espresso\"></a><a href=\"/kava/espresso/etiopie-beshasha-espresso\"></a><select name=\"variants-8ea13b0d-4b2f-4f9f-ba09-a2bb3b614c3e\"><option value=\"0bde39de\"></option><option value=\"114ea1f0\"></option><option value=\"811851d5\"></option></select></article><article><a href=\"/kava/espresso/brazilie-cafeina\"></a><a href=\"/kava/espresso/brazilie-cafeina\"></a><select name=\"variants-155c3caa-560c-47da-9313-f4f9e2676c69\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/espresso/mothers-blend\"></a><a href=\"/kava/espresso/mothers-blend\"></a><select name=\"variants-54d8ec64-5098-402d-b484-556d0317ca56\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/espresso/indonesie-ijen\"></a><a href=\"/kava/espresso/indonesie-ijen\"></a><select name=\"variants-6ba2a7cd-4cee-4a0f-976c-8a379b5aa878\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/espresso/decaf-atunkaa-kolumbie\"></a><a href=\"/kava/espresso/decaf-atunkaa-kolumbie\"></a><select name=\"variants-f62174a8-1c0a-48ea-b21d-99b6a540ec06\"><option value=\"b3a7ab2f\"></option><option value=\"d90b90f5\"></option><option value=\"4408b21f\"></option></select></article><article><a href=\"/kava/filtr/decaf-atunkaa-kolumbie\"></a><a href=\"/kava/filtr/decaf-atunkaa-kolumbie\"></a><select name=\"variants-62990869-2355-4095-959a-72d5f3f1754b\"><option value=\"b3a7ab2f\"></option><option value=\"d90b90f5\"></option><option value=\"4408b21f\"></option></select></article><article><a href=\"/kava/espresso/kolumbie-inza\"></a><a href=\"/kava/espresso/kolumbie-inza\"></a><select name=\"variants-96cae04b-4c66-49e9-9d63-f94896873e3a\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/filtr/kolumbie-inza\"></a><a href=\"/kava/filtr/kolumbie-inza\"></a><select name=\"variants-d0a40d1a-be3b-45a8-8855-a534d643ffe6\"><option value=\"a8bb8bab\"></option><option value=\"2e5c16ce\"></option><option value=\"a4ade0f8\"></option></select></article><article><a href=\"/kava/espresso/nikaragua-tierra-linda\"></a><a href=\"/kava/espresso/nikaragua-tierra-linda\"></a><select name=\"variants-b8680ea1-1a1c-4113-9b84-afa7885b7545\"><option value=\"c951a3e1\"></option><option value=\"bcb87af2\"></option><option value=\"8580501c\"></option></select></article><article><a href=\"/kava/filtr/nikaragua-bethania\"></a><a href=\"/kava/filtr/nikaragua-bethania\"></a><select name=\"variants-e18da74e-7222-472b-849e-60c4212fb276\"><option value=\"b2c637e6\"></option><option value=\"a2fa4074\"></option><option value=\"432c8ef2\"></option></select></article><article><a href=\"/kava/filtr/tierralinda\"></a><a href=\"/kava/filtr/tierralinda\"></a><select name=\"variants-8f504fd1-1138-4ed4-b773-c6d7383507ce\"><option value=\"48fc05a2\"></option><option value=\"2686b2ab\"></option><option value=\"50a34210\"></option></select></article>",
+  "productProps": {
+    "template": "ProductDetail",
+    "tenant": {
+      "locale": "cs",
+      "defaultCurrency": "CZK",
+      "prefix": ""
+    },
+    "currency": "CZK",
+    "pricingLevel": "B2c",
+    "destinationCountry": "Czechia",
+    "product": {
+      "id": "354ea213-c521-4684-8282-a65e9403103b",
+      "active": true,
+      "subcategoryId": "d2ce391c-976d-406f-a52b-4855303d3f35",
+      "urlSlug_cs": "minas",
+      "name": {
+        "cs": "Brazílie - Minas",
+        "en": "Brazil -Minas"
+      },
+      "description": {
+        "en": "<p><i>A reliable espresso with <strong>low acidity and a strong,</strong> creamy body. It’s the most traditional coffee in our range. Classic, balanced and ideal for everyday drinking. In the cup, you’ll find notes of <strong>almonds, sour cherries, dark chocolate and sweet tobacco.</strong></i></p><p><i>It works especially well in <strong>automatic espresso machines</strong>, making it a great choice for offices, businesses and homes looking for a full-bodied, creamy cup with a classic flavour profile.</i></p><p><i><strong>Country:</strong> Brazil</i><br><i><strong>Region:</strong> Carmo De Cachoeira, Sul De Minas</i><br><i><strong>Processing station:</strong> Caixa De Fruta</i><br><i><strong>Altitude:</strong> 900–1100 m above sea level</i><br><i><strong>Variety:</strong> mix of varieties</i><br><i><strong>Processing:</strong> natural</i><br><i><strong>Taste profile:</strong> almonds, sour cherries, dark chocolate, sweet tobacco</i></p>",
+        "cs": "<p><i>Spolehlivé espresso <strong>s nízkou aciditou,</strong> silným a krémovým tělem. Je to nejkonzervativnější káva z naší nabídky, vyvážená a ideální pro každodenní pití. V chuti najdete tóny <strong>mandlí, višní, tmavé čokolády a sladkého tabáku.</strong></i></p><p><i>Skvěle funguje v <strong>automatických espresso kávovarech</strong>, a proto se hodí i do kanceláří, provozů i domácností, kde chcete jednoduše připravit plný, krémový šálek s klasickým chuťovým profilem.</i></p><p><i><strong>Země:</strong> Brazílie</i><br><i><strong>Region:</strong> Carmo De Cachoeira, Sul De Minas</i><br><i><strong>Zpracovatelský závod:</strong> Caixa De Fruta</i><br><i><strong>Nad. výška:</strong> 900 – 1100 m n.m.</i><br><i><strong>Odrůda:</strong> mix odrůd</i><br><i><strong>Zpracování:</strong> suché</i><br><i><strong>Chuťový profil:</strong> mandle, višně, tmavá čokoláda, sladký tabák</i><br><i><strong>Typ kávy:</strong> pražená zrnková káva, arabika</i></p>"
+      },
+      "disclosures": {
+        "cs": [
+          {
+            "title": "Příprava",
+            "content": "<p>Tuto kávu pražíme na espresso. Je vhodná především <strong>do automatických kávovarů</strong>, ale skvěle funguje i v pákových espresso kávovarech a pro domácí přípravu.</p>"
+          },
+          {
+            "content": "<p>Cocatrel Cooperative bylo založeno v roce 1961 v Tres Pontas a nyní se rozrostlo na druhé největší družstvo v Brazílii. Jeho součástí je více než 6 000 členů a mají 11 různých nákupních míst po celém regionu. Veškerá káva je elektronicky označena a zaznamenána při dodání.<br><br>Ten umožňuje plnou sledovatelnost všech káv, aby pěstitelé přesně věděli, kde konkrétně se ta jejich káva nachází. Více než 50 % členů družstva pěstuje kávu na pozemcích o rozloze menší než 10 ha. Naše káva pochází z pobočky družstva s názvem Cocatrel Direct Trade, která pracuje na získávání nejlepších káv z celé kooperativy. Caixa De Fruta, což v překladu znamená „Krabice ovoce“, je směsí káv složené převážně z jedné konkrétní oblasti zvané Carmo De Cachoeira.&nbsp;<br>&nbsp;</p>",
+            "title": "Příběh farmy a stanice"
+          },
+          {
+            "content": "<p>Všechny kávy, které jsou součástí Caixy, se suší ve statických boxech. Jedná se o 1 m hluboké boxy o objemu 15000 litrů, což odpovídá 25-30 pytlům zelené kávy. Boxy mají ve spodní části větrací mřížku, která umožňuje cirkulaci vzduchu zespodu nahoru přes sušící se kávu. Zavedeny jsou dva teploměry, které v rozdílných hloubkách kontrolují teplotu, aby byla stabilní a vždy pod 40 °C. Označují se jako statické, protože káva zůstává stále v boxech a během sušení se neotáčí.&nbsp;</p><p>Po vysušení se káva nechá 1-2 týdny uležet, než se vyloupe. Tato metoda přináší do šálku ovocnější a výraznější profil než ten, který máme většinou s brazilskou kávou spojený.</p>",
+            "title": "Jak se káva zpracovává?"
+          }
+        ],
+        "en": [
+          {
+            "title": "Brewing",
+            "content": "<p>We roast this coffee for espresso. It is especially well suited to automatic coffee machines, but also works beautifully in traditional espresso machines and for home brewing.</p>"
+          },
+          {
+            "content": "<p>Cocatrel Cooperative was founded in 1961 in Tres Pontas and has now grown into the second-largest cooperative in Brazil. The cooperative has more than 6,000 members and 11 different collecting locations throughout the region. All coffee is electronically marked and recorded on delivery using a unique QR code that allows full traceability of all coffees so growers know exactly where their coffee is. More than 50% of the cooperative members grow coffee on plots of less than 10 hectares. Our coffee comes from a branch of the cooperative called Cocatrel Direct Trade, which works to obtain the best coffees from the entire cooperative. Caixa De Fruta, which means “Box of Fruit”, is a blend of coffees mainly from one specific area called Carmo De Cachoeira. The coffee is selected for its profile of red fruit and creamy milk chocolate.</p>",
+            "title": "Story of the farm and station"
+          },
+          {
+            "content": "<p>All coffees that are part of Caixa are dried in static boxes. These are 1 m deep boxes with a volume of 15,000 liters, which corresponds to 25-30 bags of green coffee. The boxes have a ventilation grille at the bottom, which allows air to circulate from the bottom up through the drying coffee. Two thermometers at different depths are introduced to ensure a stable temperature, always below 40 ° C. They are called static because the coffee still stays in the boxes and does not rotate during drying.&nbsp;</p><p>After drying, the coffee is left to rest for about 1-2 weeks before it is peeled in the dry mill. This method brings a more fruity and distinctive profile to the cup than the one we have associated with Brazilian coffee.</p>",
+            "title": "Processing"
+          }
+        ]
+      },
+      "variants": [
+        {
+          "id": "25622f6a",
+          "label": {
+            "cs": "250 g",
+            "en": "250g"
+          },
+          "weightInGrams": 250,
+          "visibilityScope": "B2cAndB2b",
+          "prices": {
+            "CZK": {
+              "12": {
+                "price": {
+                  "taxRate": 12,
+                  "withoutTax": 267.72,
+                  "withTax": 299.85
+                },
+                "countries": [
+                  "Czechia",
+                  "Sweden"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "c2ff1a7e",
+          "label": {
+            "en": "1kg",
+            "cs": "1 kg"
+          },
+          "weightInGrams": 1000,
+          "visibilityScope": "B2cAndB2b",
+          "prices": {
+            "CZK": {
+              "12": {
+                "price": {
+                  "taxRate": 12,
+                  "withoutTax": 931.2,
+                  "withTax": 1042.94
+                },
+                "countries": [
+                  "Czechia",
+                  "Sweden"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "b2992439",
+          "label": {
+            "en": "2kg",
+            "cs": "2 kg"
+          },
+          "weightInGrams": 2000,
+          "visibilityScope": "B2cAndB2b",
+          "prices": {
+            "CZK": {
+              "12": {
+                "price": {
+                  "taxRate": 12,
+                  "withoutTax": 1862.4,
+                  "withTax": 2085.89
+                },
+                "countries": [
+                  "Czechia",
+                  "Sweden"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "subcategory": {
+      "id": "d2ce391c-976d-406f-a52b-4855303d3f35",
+      "category": "Coffee"
+    },
+    "pagePath": {
+      "cs": "/kava/espresso/minas",
+      "en": "/en/coffee/espresso/minas"
+    }
+  },
+  "group": {
+    "@type": "ProductGroup",
+    "name": "Brazílie - Minas",
+    "description": "Brazilská výběrová káva s nízkou aciditou a tóny mandlí, višní, tmavé čokolády a sladkého tabáku. Pražená na espresso, ideální do automatických kávovarů.",
+    "url": "https://fathers.cz/kava/espresso/minas",
+    "image": [
+      "https://storage.fathers.cz/500x0/products/variants.0.photo/minas-250g-eb613f04-258d-4a51-ba33-cd7d9c4811df.jpg.webp?hash=6ac2b2e27af35329543945928961c166380f3ed4",
+      "https://upload.fathers.cz/500x0/products/gallery.3.photo/img-3492-4f5c50a2-46e2-4237-a6ed-cd8dd256663a.jpg.webp?hash=a58d0f2a9e073b0f2d6a716b822e3bb80c4ba67b",
+      "https://upload.fathers.cz/500x0/products/gallery.2.photo/img-8514-3b488207-b75b-4d7c-b7b8-e32e12cd27ac.jpg.webp?hash=f9aa85ba18373ac90cb9a226d36c2ae97ed7d103",
+      "https://upload.fathers.cz/500x0/products/gallery.1.photo/dario-11-af720d06-0f22-4652-b75a-2f57dac4b370.jpg.webp?hash=b3ae8cb1da53fed660e1fc1f08630ba7fb4a9666",
+      "https://upload.fathers.cz/500x0/products/gallery.4.photo/salto-5-0cdb29a2-f1d9-45df-bbb7-c0f1df63d5f6.jpg.webp?hash=13913d8c3f3f79c9c76d1cfe7cd65be9e943cea7"
+    ],
+    "productGroupID": "354ea213-c521-4684-8282-a65e9403103b",
+    "hasVariant": [
+      {
+        "name": "Brazílie - Minas",
+        "sku": "354ea213-c521-4684-8282-a65e9403103b::25622f6a",
+        "weight": {
+          "@type": "QuantitativeValue",
+          "value": 250,
+          "unitCode": "GRM"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": 299.85,
+          "priceCurrency": "CZK",
+          "url": "https://fathers.cz/kava/espresso/minas"
+        }
+      },
+      {
+        "name": "Brazílie - Minas",
+        "sku": "354ea213-c521-4684-8282-a65e9403103b::c2ff1a7e",
+        "weight": {
+          "@type": "QuantitativeValue",
+          "value": 1000,
+          "unitCode": "GRM"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": 1042.94,
+          "priceCurrency": "CZK",
+          "url": "https://fathers.cz/kava/espresso/minas?variant=c2ff1a7e"
+        }
+      },
+      {
+        "name": "Brazílie - Minas",
+        "sku": "354ea213-c521-4684-8282-a65e9403103b::b2992439",
+        "weight": {
+          "@type": "QuantitativeValue",
+          "value": 2000,
+          "unitCode": "GRM"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": 2085.89,
+          "priceCurrency": "CZK",
+          "url": "https://fathers.cz/kava/espresso/minas?variant=b2992439"
+        }
+      }
+    ]
+  },
+  "heading": "Brazílie - Minas"
+}

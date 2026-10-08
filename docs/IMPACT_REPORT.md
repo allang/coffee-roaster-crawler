@@ -1,0 +1,48 @@
+# Crawler impact report — 2026-10-06
+
+Scope and authorization: https://github.com/allang/coffee-roaster-crawler/issues/1. This report records the original pre-rollout offline/read-only evidence. The user later explicitly authorized the crawler-only catalog migration and local update/run; those actions and the completed live comparison are recorded separately in [LOCAL_RUN_REPORT.md](LOCAL_RUN_REPORT.md). The corrected crawler is now running on its unchanged local schedule. Fixture measurements below remain fixture measurements.
+
+## Measured offline correctness and coverage
+
+The reproducible comparison uses actual functions from preserved baseline commit `98f5aeaceea95016f0d5f7a1131ad71867d5c3c2` and current code. Database transports in that comparison are simulated. Fixtures target known failure modes; they are not a representative merchant sample. Run `node scripts/compare-fixtures.cjs` from a full-history checkout. Detailed observations are in `fixture-comparison.cjs`.
+
+| Metric | Preserved baseline | Proposed code | Evidence / limit |
+|---|---:|---:|---|
+| Paired amount/currency and ISO minor-unit correctness | 3/8 cases | 8/8 cases | Decimal comma/grouping, unknown $, dirty EUR label, JPY/KWD, range rejection. Legacy hundredths are compared with the new explicit ISO minor-unit field; historical price_cents is not silently reinterpreted. |
+| Product-scoped availability correctness | 2/7 cases | 7/7 cases | Unknown/missing stock, unrelated recommended product, exact native stock, removal. |
+| Reusable regression suite | 139 pass before new tests | 187 pass after changes | Includes local Postgres migrations/RPCs, permissions, rollback, independent variant stale guards/freshness, legacy IDs/media/facts and both crawler paths. |
+| Attribute coverage on shared-flow fixtures | Contract formerly extracted through AI | Every populated contract field retained in both paths | 17 named attributes include typed decaf, process versus variety, descriptions, harvest, notes and original image source. Null fields remain unknown; no claim of new real-merchant coverage. |
+| Exact same-weight grind variants | Legacy saver collapsed by weight | Both fixture variants retained | Stable source IDs survive stock/price refresh and title edits. |
+| Repeat image source requests | Legacy checks hashes after download | One download/upload across two requests | Local Postgres and simulated image transport; stale cache downloads again without another upload. |
+| Full structured attribute fixture | AI route required by old orchestration | 0 classifier invocations | Complete source contract only. Partial contracts still fall back to AI. |
+| Warm semantic fixture with changed price/stock | Known pages skipped semantic work | 0 additional classifier invocations; price/stock updated | Both sitemap and BFS exercised with simulated classifier and HTTP transport. |
+
+The comparison invocation recorded approximately 90 ms locally. This is a CPU/VM fixture comparison, **not crawl duration**. The integrated suite runs in a few seconds locally; hardware/load affect that duration. The earlier broad historical run passed 321/352; evidence-bound scripts need private local historical snapshots/schema artifacts. Those tests are retained separately as `npm run test:historical`, with no claim that the broad historical suite passes in a clean clone. A fixture-timestamp regression at `fe69660a4130062c4be44a6a652267d72bbfb643` was corrected without weakening stale-write rejection; see WORK_LOG.md.
+
+Cloud review correction `2c8bea9678423f13df769ccf7a1dc0ff1e5af622` adds four local SQL regressions which failed before the fix and pass afterward: unchanged native stock advances evidence/time without extra events, and stock-only/full-save/both removal paths preserve variants newer than the product watermark. Full suite 187/187, 3.48s, with both CI runs passing. This extends correctness evidence; the money/availability comparison measurements above are unchanged, and no production performance gain is inferred.
+
+## Measured read-only production baseline
+
+`catalog-baseline-summary.cjs` records an aggregate-only convenience sample of the 100 most recently seen active coffees at 2026-10-06T13:49:13Z. There were 167 variants, 154 non-null legacy prices (92.2%), 112 non-null weights (67.1%), 79 products with origin metadata and 83 with tasting-note metadata. Currency values included the malformed `EUR €`. All 167 variants were labelled `in_stock` by the old schema. These labels are **not verified live stock** and should not be treated as a purchasing benchmark. No raw rows or credentials were published.
+
+At this original pre-rollout cutoff, production after-coverage was unavailable; the later local run report contains the measured cohort coverage. Titles remain original for identity/audit; separate display titles, versioned note categories and raw unmapped phrases are available after an authorized rollout. Legacy ambiguous identities require manual resolution rather than automatic merges.
+
+## Actual AI usage, estimates and unavailable measurements
+
+Actual paid AI requests/tokens during this offline verification: **0 / 0**. Simulated classifier counters in tests prove accounting and routing, not production model quality or billed cost. Crawl metrics now store request/retry counts and API-reported prompt/completion/cache tokens in `crawl_runs.meta.extraction`; retries lacking a usage response stay explicitly unreported. Usage shape follows the [OpenAI Chat Completions reference](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create).
+
+At the original pre-rollout cutoff, production crawl duration, actual AI requests/tokens/cost and percentage savings were **unavailable**. The later local run report records actual requests/tokens and observed duration differences; billing savings remain unavailable. Existing visited-page counters are not reliable AI-call evidence. Do not infer 100% savings from a complete structured fixture. Expected directional benefits are fewer classification calls for unchanged/fully structured pages, no duplicate image downloads within the cache lifetime, and fewer destructive database operations. These are hypotheses until a controlled, authorized rollout measures them.
+
+For a future measured cost report: chargeable uncached prompt tokens × input rate + cached prompt tokens × cache rate + completion tokens × output rate, each per million tokens. Use current rates for the actual model/tier and state the observation window. Missing usage means an incomplete cost estimate. No numeric production savings estimate is claimed here.
+
+Feed and purchasing fixtures are now reported in the linked API and purchasing repositories and the consolidated FINAL_REPORT.md. Production latency and real purchasing success remain unavailable; no real order is authorized in this implementation run.
+
+## Remaining limitations and deployment gates
+
+Use DEPLOYMENT.md before any separately authorized staging/production action. PGlite validates actual SQL/PLpgSQL behavior; it is not a Supabase integration or multi-host concurrency benchmark. Current merchant fixtures do not prove broad storefront coverage, AI semantic correctness or live price/stock accuracy. Currency evidence remains unknown where merchant JSON/HTML does not provide it. Generic pages without product-scoped evidence remain unknown rather than being guessed available. Deployment to another environment needs the additive migration and consumers updated to use `price_minor_units`, `currency_exponent` and `availability_state`. Public catalog RLS policies/roles must be checked in staging; no production policy changes were made.
+
+The Shopify stock follow-up passed 178 tests before the identity/source-pairing follow-ups. Shopify stock flags are joined from the documented locale-aware Ajax endpoint by exact product/variant ID. Its monetary integers are not mixed with decimal product JSON prices; capped/mismatched lists cannot prove retirement. This adds a stock GET, so overall production crawl latency/cost remains unmeasured. See the [Ajax Product reference](https://shopify.dev/docs/api/ajax/reference/product) and [variant monetary representation](https://shopify.dev/docs/api/liquid/objects/variant).
+
+Native-source identity follow-up passes 180 tests: product/native variant IDs survive product handle/title changes, observed www retrieval URLs remain intact, and AI-only output cannot invent native identity or complete inventories.
+
+Final source-pairing audit passes 183 tests. Numeric native prices without their own currency never borrow page/meta or inferred currency. An exact unique variant URL/SKU offer supplies its own amount and currency together; conflicting/unmatched offers remain unknown, with raw price retained. Explicit unknown variant currency cannot inherit another offer currency. This may increase honest unknowns where source pairing is absent; no production price-coverage increase is claimed.

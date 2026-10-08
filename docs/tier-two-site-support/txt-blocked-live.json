@@ -1,0 +1,341 @@
+{
+  "name": ".txt",
+  "checked_at": "2026-10-08T04:41:00.919Z",
+  "mode": "merchant-read-only-dry-run",
+  "status": "blocked",
+  "official_shop_link": "https://smartstore.naver.com/txtcoffee",
+  "official_english_link_host": "txtcoffeeen.imweb.me",
+  "domestic_status": 429,
+  "domestic_error": "HTTP 429",
+  "blockers": [
+    "Official Korean Naver retail inventory still returns HTTP 429.",
+    "English public option reads succeed, but sold-out dependent weight values omit native value identifiers (onclick return false). Exact priced variant identities cannot be reconstructed from anonymous size/price labels without invention.",
+    "Official English link and matching business registration establish merchant identity, not English/Korean inventory or product identity equivalence."
+  ],
+  "option_source_excerpt": "Published frontend loadOption POST reads /shop/load_option.cm with type=prod, prod_idx, product edit timestamp, and previously published SELECT option/value IDs. No cart, order, account or customer action was called.",
+  "requests": [
+    {"method":"GET","url":"https://txtcoffee.kr/","status":200,"at":"2026-10-08T03:59:44.490Z"},
+    {"method":"GET","url":"https://smartstore.naver.com/txtcoffee","status":429,"at":"2026-10-08T04:00:04.156Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/","status":200,"at":"2026-10-08T04:00:05.041Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=207","status":200,"at":"2026-10-08T04:01:12.397Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=182","status":200,"at":"2026-10-08T04:01:13.448Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=180","status":200,"at":"2026-10-08T04:01:14.516Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=184","status":200,"at":"2026-10-08T04:01:15.352Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=183","status":200,"at":"2026-10-08T04:01:16.498Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=181","status":200,"at":"2026-10-08T04:01:17.590Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=202","status":200,"at":"2026-10-08T04:01:18.928Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=190","status":200,"at":"2026-10-08T04:01:20.171Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=191","status":200,"at":"2026-10-08T04:01:21.102Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/js/site_shop/site_shop.js?1791369969","status":200,"at":"2026-10-08T04:01:21.636Z"},
+    {"method":"GET","url":"https://smartstore.naver.com/txtcoffee","status":429,"at":"2026-10-08T04:01:23.000Z"},
+    {"method":"GET","url":"https://txtcoffee.kr/","status":200,"at":"2026-10-08T04:30:06.583Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/","status":200,"at":"2026-10-08T04:30:07.816Z"},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=207","status":200,"at":"2026-10-08T04:30:08.814Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:30:09.296Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"207","__":"1787129219"}},
+    {"method":"GET","url":"https://smartstore.naver.com/txtcoffee","status":429,"at":"2026-10-08T04:30:10.218Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:32:42.974Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"207","__":"1787129219","selected_require_options[0][value_type]":"SELECT","selected_require_options[0][option_code]":"O202607171591bd85be394","selected_require_options[0][value_code]":"O202607170105af2781a52"}},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:32:43.310Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"207","__":"1787129219","selected_require_options[0][value_type]":"SELECT","selected_require_options[0][option_code]":"O202607171591bd85be394","selected_require_options[0][value_code]":"O202607171622da333b5ed"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=207","status":200,"at":"2026-10-08T04:34:14.870Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:15.588Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"207","__":"1787129219"}},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:15.903Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"207","__":"1787129219","selected_require_options[0][value_type]":"SELECT","selected_require_options[0][option_code]":"O202607171591bd85be394","selected_require_options[0][value_code]":"O202607170105af2781a52"}},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:16.630Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"207","__":"1787129219","selected_require_options[0][value_type]":"SELECT","selected_require_options[0][option_code]":"O202607171591bd85be394","selected_require_options[0][value_code]":"O202607171622da333b5ed"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=182","status":200,"at":"2026-10-08T04:34:17.431Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:18.204Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"182","__":"1779859309"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=180","status":200,"at":"2026-10-08T04:34:19.083Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:19.946Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"180","__":"1787129190"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=184","status":200,"at":"2026-10-08T04:34:20.621Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:21.473Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"184","__":"1785134876"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=183","status":200,"at":"2026-10-08T04:34:22.403Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:22.924Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"183","__":"1785134880"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=181","status":200,"at":"2026-10-08T04:34:23.797Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:24.308Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"181","__":"1786085680"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=202","status":200,"at":"2026-10-08T04:34:25.122Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:34:25.861Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"202","__":"1787129224"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=207","status":200,"at":"2026-10-08T04:40:51.831Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:40:52.352Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"207","__":"1787129219"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=182","status":200,"at":"2026-10-08T04:40:53.157Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:40:53.636Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"182","__":"1779859309"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=180","status":200,"at":"2026-10-08T04:40:54.279Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:40:54.928Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"180","__":"1787129190"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=184","status":200,"at":"2026-10-08T04:40:55.705Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:40:56.467Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"184","__":"1785134876"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=183","status":200,"at":"2026-10-08T04:40:57.350Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:40:57.870Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"183","__":"1785134880"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=181","status":200,"at":"2026-10-08T04:40:58.621Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:40:59.286Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"181","__":"1786085680"}},
+    {"method":"GET","url":"https://txtcoffeeen.imweb.me/shop_view/?idx=202","status":200,"at":"2026-10-08T04:41:00.336Z"},
+    {"method":"POST","url":"https://txtcoffeeen.imweb.me/shop/load_option.cm","status":200,"at":"2026-10-08T04:41:00.917Z","purpose":"public_product_options","body":{"type":"prod","prod_idx":"202","__":"1787129224"}}
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "revisited_at": "2026-10-08T04:34:25.863Z",
+  "authorized_readonly_option_lookup": true,
+  "verified_business_identity": {
+    "official_link_href": "https://txtcoffeeen.imweb.me/auth/access_control.cm",
+    "registration_primary": [
+      "288-07-00706"
+    ],
+    "registration_english": [
+      "288-07-00706"
+    ],
+    "same_owner": "이수환"
+  },
+  "english_public_option_reads": [
+    {
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+      "title": "Melting Blend",
+      "source_product_id": "s20260717b4233092c4221",
+      "public_product_index": 207,
+      "required_option_count": 2,
+      "is_soldout": true,
+      "base_offer": {
+        "price": 10,
+        "currency": "USD",
+        "stock": "http://schema.org/OutOfStock"
+      },
+      "initial_option_rows": [
+        {
+          "id": "O202607171591bd85be394",
+          "value": "O202607170105af2781a52",
+          "label": "Filter",
+          "product": 207
+        },
+        {
+          "id": "O202607171591bd85be394",
+          "value": "O202607171622da333b5ed",
+          "label": "Espresso",
+          "product": 207
+        }
+      ],
+      "dependent_options": [
+        {
+          "first_option": {
+            "id": "O202607171591bd85be394",
+            "value": "O202607170105af2781a52",
+            "label": "Filter",
+            "product": 207
+          },
+          "groups": [
+            "Type *",
+            "Net weight *"
+          ],
+          "rows": [
+            {
+              "label": "150g $10.00 (Out of stock)",
+              "published_selector": "return false;",
+              "blocked": true
+            },
+            {
+              "label": "400g $18.00 (Out of stock)",
+              "published_selector": "return false;",
+              "blocked": true
+            },
+            {
+              "label": "850g $34.00 (Out of stock)",
+              "published_selector": "return false;",
+              "blocked": true
+            }
+          ],
+          "initial_type_value_ids_present": 2,
+          "dependent_weight_value_ids_present": 0
+        },
+        {
+          "first_option": {
+            "id": "O202607171591bd85be394",
+            "value": "O202607171622da333b5ed",
+            "label": "Espresso",
+            "product": 207
+          },
+          "groups": [
+            "Type *",
+            "Net weight *"
+          ],
+          "rows": [
+            {
+              "label": "150g $10.00 (Out of stock)",
+              "published_selector": "return false;",
+              "blocked": true
+            },
+            {
+              "label": "400g $18.00 (Out of stock)",
+              "published_selector": "return false;",
+              "blocked": true
+            },
+            {
+              "label": "850g $34.00 (Out of stock)",
+              "published_selector": "return false;",
+              "blocked": true
+            }
+          ],
+          "initial_type_value_ids_present": 2,
+          "dependent_weight_value_ids_present": 0
+        }
+      ],
+      "initial_published_rows": [
+        {
+          "label": "Filter",
+          "published_selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607170105af2781a52', 'Filter',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+          "blocked": true
+        },
+        {
+          "label": "Espresso",
+          "published_selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607171622da333b5ed', 'Espresso',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+          "blocked": true
+        }
+      ],
+      "initial_native_value_ids_present": 2,
+      "checked_at": "2026-10-08T04:40:52.363Z"
+    },
+    {
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=182",
+      "title": "Ethiopia Arbegona",
+      "source_product_id": "s201809285bade00dec890",
+      "public_product_index": 182,
+      "required_option_count": 1,
+      "is_soldout": true,
+      "base_offer": {
+        "price": 12,
+        "currency": "USD",
+        "stock": "http://schema.org/OutOfStock"
+      },
+      "initial_option_rows": [],
+      "dependent_options": [],
+      "initial_published_rows": [
+        {
+          "label": "150g $12.00 (Out of stock)",
+          "blocked": true
+        }
+      ],
+      "initial_native_value_ids_present": 0,
+      "checked_at": "2026-10-08T04:40:53.638Z"
+    },
+    {
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=180",
+      "title": "Ethiopia Karamo Bura AH",
+      "source_product_id": "s201809275bacc98d5f798",
+      "public_product_index": 180,
+      "required_option_count": 1,
+      "is_soldout": true,
+      "base_offer": {
+        "price": 20,
+        "currency": "USD",
+        "stock": "http://schema.org/OutOfStock"
+      },
+      "initial_option_rows": [],
+      "dependent_options": [],
+      "initial_published_rows": [
+        {
+          "label": "150g $20.00 (Out of stock)",
+          "published_selector": "return false;",
+          "blocked": true
+        }
+      ],
+      "initial_native_value_ids_present": 0,
+      "checked_at": "2026-10-08T04:40:54.930Z"
+    },
+    {
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=184",
+      "title": "Colombia El Obraje Geisha",
+      "source_product_id": "s201809285bade2f766ea8",
+      "public_product_index": 184,
+      "required_option_count": 1,
+      "is_soldout": true,
+      "base_offer": {
+        "price": 20,
+        "currency": "USD",
+        "stock": "http://schema.org/OutOfStock"
+      },
+      "initial_option_rows": [],
+      "dependent_options": [],
+      "initial_published_rows": [
+        {
+          "label": "105g $20.00 (Out of stock)",
+          "blocked": true
+        }
+      ],
+      "initial_native_value_ids_present": 0,
+      "checked_at": "2026-10-08T04:40:56.469Z"
+    },
+    {
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=183",
+      "title": "Panama Chevas Fresa Geisha YN",
+      "source_product_id": "s201809285bade24d832f7",
+      "public_product_index": 183,
+      "required_option_count": 1,
+      "is_soldout": true,
+      "base_offer": {
+        "price": 26,
+        "currency": "USD",
+        "stock": "http://schema.org/OutOfStock"
+      },
+      "initial_option_rows": [],
+      "dependent_options": [],
+      "initial_published_rows": [
+        {
+          "label": "60g $26.00 (Out of stock)",
+          "published_selector": "return false;",
+          "blocked": true
+        }
+      ],
+      "initial_native_value_ids_present": 0,
+      "checked_at": "2026-10-08T04:40:57.871Z"
+    },
+    {
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=181",
+      "title": "Panama Adaura Lorayne Geisha HW",
+      "source_product_id": "s201809285baddf165dcf8",
+      "public_product_index": 181,
+      "required_option_count": 1,
+      "is_soldout": true,
+      "base_offer": {
+        "price": 26,
+        "currency": "USD",
+        "stock": "http://schema.org/OutOfStock"
+      },
+      "initial_option_rows": [],
+      "dependent_options": [],
+      "initial_published_rows": [
+        {
+          "label": "60g $26.00 (Out of stock)",
+          "published_selector": "return false;",
+          "blocked": true
+        }
+      ],
+      "initial_native_value_ids_present": 0,
+      "checked_at": "2026-10-08T04:40:59.288Z"
+    },
+    {
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=202",
+      "title": "Drip Bags 15g x 6 (Melting Blend)",
+      "source_product_id": "s20250210cd2290c6f82db",
+      "public_product_index": 202,
+      "required_option_count": 1,
+      "is_soldout": true,
+      "base_offer": {
+        "price": 12,
+        "currency": "USD",
+        "stock": "http://schema.org/OutOfStock"
+      },
+      "initial_option_rows": [],
+      "dependent_options": [],
+      "initial_published_rows": [
+        {
+          "label": "1박스(6개입) $12.00 (Out of stock)",
+          "blocked": true
+        }
+      ],
+      "initial_native_value_ids_present": 0,
+      "checked_at": "2026-10-08T04:41:00.919Z"
+    }
+  ],
+  "revisited_domestic_status": {
+    "status": 429,
+    "error": "HTTP 429"
+  },
+  "english_public_coffee_count": 7,
+  "non_coffee_items_excluded": [
+    ".txt Pencil",
+    ".txt Memo Pad"
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "products": [
+    {
+      "id": 4375251517580,
+      "title": "Rosegold Espresso",
+      "handle": "rosegold-espresso",
+      "product_type": "Espresso",
+      "tags": [
+        "African",
+        "Blend",
+        "Central American",
+        "Chocolate",
+        "classic",
+        "Coffee",
+        "Espresso",
+        "South American",
+        "Subscriptions"
+      ]
+    },
+    {
+      "id": 8506904281243,
+      "title": "Caramel Chimera - Drip Blend",
+      "handle": "caramel-chimera-drip-blend",
+      "product_type": "Coffee",
+      "tags": [
+        "Blend",
+        "Catalog",
+        "Chocolate",
+        "classic",
+        "Coffee",
+        "South American",
+        "Subscriptions",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9383806927003,
+      "title": "Todos Santos - Washed Community Lot - Hueuetenango, Guatemala",
+      "handle": "todos-santos-washed-community-lot-hueuetenango-guatemala",
+      "product_type": "Coffee",
+      "tags": [
+        "Catalog",
+        "Central American",
+        "Chocolate",
+        "Citrus",
+        "classic",
+        "Coffee",
+        "Espresso",
+        "Field Blend",
+        "Juicy",
+        "Single Origin",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9173057765531,
+      "title": "Kamavindi Select - Washed Field Blend - Embu, Kenya",
+      "handle": "kamavindi-select-washed-field-blend-embu-kenya",
+      "product_type": "Coffee",
+      "tags": [
+        "Acidic",
+        "African",
+        "Catalog",
+        "Citrus",
+        "classic",
+        "Coffee",
+        "cuttingedge",
+        "East African",
+        "Field Blend",
+        "Floral",
+        "Fruity",
+        "Juicy",
+        "Kenyan",
+        "Single Origin",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9383623753883,
+      "title": "Yenser Urán - Anaerobic Natural Chiroso - Urrao, Colombia *Roasted 10/6/26*",
+      "handle": "yenser-uran-natural-chiroso-urrao-colombia",
+      "product_type": "Coffee",
+      "tags": [
+        "Catalog",
+        "Citrus",
+        "Coffee",
+        "Colombia",
+        "cuttingedge",
+        "Espresso",
+        "Floral",
+        "Fruity",
+        "natural",
+        "RARE",
+        "Single Origin",
+        "South American",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9383898185883,
+      "title": "Janyn Escobar - Washed Gesha - Huehuetenango, Guatemala *Roasted 9/29/26*",
+      "handle": "janyn-escobar-washed-gesha-huehuetenango-guatemala",
+      "product_type": "Coffee",
+      "tags": [
+        "Catalog",
+        "Central American",
+        "Chocolate",
+        "Citrus",
+        "classic",
+        "Coffee",
+        "Floral",
+        "Gesha",
+        "RARE",
+        "Single Origin",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9383840284827,
+      "title": "Passiflora - Semi-Washed Passionfruit Co-ferment - Palestina, Colombia *Roasted 10/6/26*",
+      "handle": "passiflora-passionfruit-co-ferment-tolima-colombia",
+      "product_type": "Coffee",
+      "tags": [
+        "Acidic",
+        "Catalog",
+        "Citrus",
+        "Coffee",
+        "Colombia",
+        "cuttingedge",
+        "Floral",
+        "Fruity",
+        "Juicy",
+        "natural",
+        "RARE",
+        "Single Origin",
+        "South American",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9383592755355,
+      "title": "Danche Station - Washed Wolisho & Kurume - Gedeb Zone, Ethiopia",
+      "handle": "danche-station-washed-wolisho-kurume-gedeb-zone-ethiopia",
+      "product_type": "Coffee",
+      "tags": [
+        "Catalog",
+        "Citrus",
+        "classic",
+        "Coffee",
+        "East African",
+        "Ethiopia",
+        "Floral",
+        "Single Origin",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9337157386395,
+      "title": "Danche Station - Natural Wolisho & Kurume - Gedeb Zone, Ethiopia *Roasted 10/6/26*",
+      "handle": "danche-station-natural-wolisho-kurume-gedeb-zone-ethiopia",
+      "product_type": "Coffee",
+      "tags": [
+        "African",
+        "Catalog",
+        "Citrus",
+        "classic",
+        "Coffee",
+        "East African",
+        "Ethiopia",
+        "Floral",
+        "Juicy",
+        "natural",
+        "Single Origin",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 9021523001499,
+      "title": "San Francisco & Ozolotepec - Washed Community Lot - Sierra Sur, Mexico *Roasted 10/6/26*",
+      "handle": "san-francisco-ozolotepec-washed-community-lot-sierra-sur-mexico",
+      "product_type": "Coffee",
+      "tags": [
+        "Catalog",
+        "Central American",
+        "Chocolate",
+        "Citrus",
+        "classic",
+        "Coffee",
+        "Espresso",
+        "Field Blend",
+        "Floral",
+        "Single Origin"
+      ]
+    },
+    {
+      "id": 9077500444827,
+      "title": "Yessica Parra - Natural Gesha - Pitalito, Colombia",
+      "handle": "yessica-parra-natural-gesha-pitalito-colombia",
+      "product_type": "Coffee",
+      "tags": [
+        "Acidic",
+        "Catalog",
+        "Citrus",
+        "Coffee",
+        "Colombia",
+        "Floral",
+        "Fruity",
+        "Gesha",
+        "Juicy",
+        "natural",
+        "RARE",
+        "Single Origin",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 8174501855387,
+      "title": "Pink Guava Moon - E.A. Decaf - Huila, Colombia",
+      "handle": "tokuma-decaf-agaro-ethiopia",
+      "product_type": "Coffee",
+      "tags": [
+        "Blend",
+        "Catalog",
+        "Citrus",
+        "Coffee",
+        "Decaf",
+        "Ethiopia",
+        "wholesale"
+      ]
+    },
+    {
+      "id": 8394099851419,
+      "title": "Strong & Tiny",
+      "handle": "strong-tiny",
+      "product_type": "",
+      "tags": [
+        "Coffee",
+        "daytime",
+        "wholesale",
+        "wholesale-only"
+      ]
+    },
+    {
+      "id": 8394100113563,
+      "title": "Darling",
+      "handle": "darling",
+      "product_type": "",
+      "tags": [
+        "Coffee",
+        "daytime",
+        "wholesale",
+        "wholesale-only"
+      ]
+    },
+    {
+      "id": 8394100408475,
+      "title": "Daybreak",
+      "handle": "daybreak",
+      "product_type": "",
+      "tags": [
+        "Coffee",
+        "textbook",
+        "wholesale",
+        "wholesale-only"
+      ]
+    },
+    {
+      "id": 8394100768923,
+      "title": "Blackout",
+      "handle": "blackout",
+      "product_type": "",
+      "tags": [
+        "Coffee",
+        "textbook",
+        "wholesale",
+        "wholesale-only"
+      ]
+    },
+    {
+      "id": 8394103095451,
+      "title": "TCB 5lb",
+      "handle": "tcb",
+      "product_type": "",
+      "tags": [
+        "Coffee",
+        "textbook",
+        "wholesale",
+        "wholesale-only"
+      ]
+    },
+    {
+      "id": 8830650351771,
+      "title": "Gift card",
+      "handle": "loopz-gift-card",
+      "product_type": "Gift Cards",
+      "tags": [
+        "Catalog",
+        "Coffee"
+      ]
+    }
+  ]
+}

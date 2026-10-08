@@ -1,0 +1,115 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict');
+const {primaryProductImage,sameImageProduct,imageUrl}=require('../src/productImages');
+const {extractPage}=require('../src/extraction');
+const {imageFormat,validateImage,fetchSourceImage}=require('../src/sourceImage');
+const {inspectPhoto,applyPhoto}=require('../src/photoRepair');
+const {catalogDb,supabaseAdapter}=require('./catalogDb');
+const {saveProduct}=require('../src/productSaver');
+const {downloadAndSaveImage}=require('../src/imageDownloader');
+const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAEUlEQVQImWMoDtQpDtRhgFAAG2oDwc8b69cAAAAASUVORK5CYII=','base64');
+const log=new Proxy({},{get:()=>()=>{}}),url='https://shop.test/products/ethiopia',image='https://images.test/ethiopia.png';
+const schema=p=>`<script type="application/ld+json">${JSON.stringify(p)}</script>`;
+const html=schema({'@type':'Product',url:url+'?Roast=Espresso&Size=250gr',name:'Ethiopia',image:[{'@type':'ImageObject',contentUrl:image}],offers:{url,sku:'250',price:'18',priceCurrency:'EUR'}});
+test('primary photo survives Shopify option URLs and does not alter query-based merchant identity',()=>{
+ assert.equal(primaryProductImage({html,url}).url,image);
+ assert.equal(sameImageProduct('https://shop.test/shop_view?idx=2','https://shop.test/shop_view?idx=1'),false);
+ assert.equal(sameImageProduct('https://shop.test/en-us/products/ethiopia','https://shop.test/en-kr/products/ethiopia'),true);
+ assert.equal(imageUrl('/photos/bag.png',url),'https://shop.test/photos/bag.png');
+ assert.equal(imageUrl('https://example.com/invented.jpg',url),null);
+ const parsed=require('../src/shopifyProduct').parseShopifyProduct({title:'Coffee',images:['//images.test/second.png'],image:{src:image}});
+ assert.equal(parsed.mainImage,image);assert.equal(parsed.images[0].src,'//images.test/second.png');
+ assert.equal(primaryProductImage({url,native:{handle:'recommendation',mainImage:image}}).url,null);
+});
+test('Open Graph fallback requires a product-bound page; conflicting products and generated cards stay unresolved',()=>{
+ const meta=`<meta property="og:type" content="product"><meta property="og:url" content="${url}"><meta property="og:image" content="http://images.test/bag.png">`;
+ assert.equal(primaryProductImage({html:meta,url}).url,'https://images.test/bag.png');
+ assert.equal(primaryProductImage({html:meta.replace(url,'https://shop.test/'),url}).url,null);
+ assert.equal(primaryProductImage({html:meta+'<meta property="og:image:type" content="image/svg+xml">',url}).url,null);
+ assert.equal(primaryProductImage({html:meta+schema({'@type':'Product',url,image})+schema({'@type':'Product',url,image:'https://images.test/other.png'}),url}).reason,'ambiguous_primary_product_images');
+ assert.equal(primaryProductImage({html:schema({'@type':'Product',url:'https://shop.test/products/recommendation',image}),url}).url,null);
+});
+test('fresh photos override invented classification even without structured prices or an image in truncated text',async()=>{
+ const result=await extractPage({page:{url,html,content:'Coffee text only'},model:'fixture',classify:async()=>({data:{is_coffee_page:true,product:{name:'Ethiopia',attributes:{product_image_url:'https://example.com/fake.jpg'}}}})});
+ assert.equal(result.data.product.attributes.product_image_url,image);
+ const absent=await extractPage({page:{url,html:'<p>Coffee</p>',content:'Coffee'},model:'fixture',classify:async()=>({data:{is_coffee_page:true,product:{name:'Ethiopia',attributes:{product_image_url:image}}}})});
+ assert.equal(absent.data.product.attributes.product_image_url,undefined);
+});
+test('photo repair reads a captured Subbly primary image absent from schema and rejects invalid native product evidence',async()=>{
+ const f=require('./fixtures/siteSupport/hatch-subbly.json'),profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='Hatch');
+ const {merchantPhotoReader}=require('../scripts/repair-tier-one-photos'),source='https://hatchcrafted.com/shop/starlight';
+ const flight=p=>'<script>self.__next_f.push('+JSON.stringify([1,'10:'+JSON.stringify({product:p})+'\n'])+')</script>';
+ const page=f.primary+'<script src="'+profile.formatter_path+'"></script>'+flight(f.product);
+ const entity={id:profile.entity_ids[0],website_url:'https://hatchcrafted.com'},product={id:'existing-product',entity_id:entity.id,name:'Starlight',source_url:source};
+ const reader=html=>merchantPhotoReader(entity,{fetchHtml:async requested=>({success:true,status:200,finalUrl:requested,data:new URL(requested).pathname===profile.formatter_path?f.formatter:html})});
+ assert.equal(primaryProductImage({html:page,url:source}).url,null);
+ const result=await inspectPhoto(product,{fetchPage:reader(page),fetchImage:async()=>({success:true,data:png})});
+ assert.equal(result.status,'ready');assert.equal(result.image_url,f.product.images[0].url);assert.equal(result.image_evidence.source,'adapter_primary_product');assert.equal(result.width,2);
+ for(const bad of [page+flight(f.product),page.replace('Starlight</h1>','Another</h1>'),page.replace('CA$25.00','CA$99.00')]){
+  const held=await inspectPhoto(product,{fetchPage:reader(bad),fetchImage:async()=>{throw Error('Unverified native photo must not be fetched');}});
+  assert.equal(held.status,'held');assert.match(held.reason,/Native product photo verification failed/);
+ }
+});
+test('image verification accepts real image bytes and blocks HTML and prohibited paths before requesting',async()=>{
+ assert.equal(imageFormat(png).contentType,'image/png');assert.equal(imageFormat(Buffer.from('<html>Not an image</html>')),null);
+ const response=await fetchSourceImage('https://shop.test/terms/photo.png');assert.equal(response.success,false);assert.match(response.error,/Prohibited/);
+ const held=await inspectPhoto({id:'p',name:'Kenya',source_url:url},{fetchPage:async()=>({success:true,data:html}),fetchImage:async()=>{throw Error('Unrelated coffee photo must not be fetched');}});
+ assert.equal(held.reason,'current_product_title_requires_review');
+ const redirected=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html,finalUrl:'https://shop.test/products/decaf-ethiopia'}),fetchImage:async()=>{throw Error('Different product must not be fetched');}});
+ assert.equal(redirected.reason,'product_redirect_requires_identity_review');
+ const sameUrlDifferentCoffee=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html.replace('"name":"Ethiopia"','"name":"Decaf Ethiopia"'),finalUrl:url}),fetchImage:async()=>{throw Error('Added decaf term must remain unresolved');}});
+ assert.equal(sameUrlDifferentCoffee.reason,'current_product_title_requires_review');
+ const truncated=Buffer.concat([png.subarray(0,8),Buffer.alloc(4)]);
+ assert.equal(await validateImage(truncated),null);assert.equal((await validateImage(png)).width,2);
+ const corrupt=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html}),fetchImage:async()=>({success:true,data:truncated})});assert.equal(corrupt.reason,'invalid_image_body');
+ const namedPage='<main><h1>Ethiopia</h1></main>'+schema({'@type':'Product',name:'Ethiopia',image,offers:{price:'18',priceCurrency:'EUR'}});
+ const named=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:namedPage,finalUrl:url}),fetchImage:async()=>({success:true,data:png})});assert.equal(named.status,'ready');
+ const alias=require('../data/coffee-photo-title-aliases.json')[0],aliasPage=schema({'@type':'Product',url:alias.source_url,name:alias.current_title,image});
+ const aliasProduct={id:alias.product_id,entity_id:alias.entity_id,name:alias.stored_title,source_url:alias.source_url};
+ const aliasDependencies={fetchPage:async()=>({success:true,data:aliasPage,finalUrl:alias.source_url}),fetchImage:async()=>({success:true,data:png})};
+ assert.equal((await inspectPhoto(aliasProduct,aliasDependencies)).status,'ready');
+ assert.equal((await inspectPhoto({...aliasProduct,entity_id:'different-owner'},aliasDependencies)).status,'held');
+ const hatchAlias=require('../data/coffee-photo-title-aliases.json').find(a=>a.native_product_id),hatchProduct={id:hatchAlias.product_id,entity_id:hatchAlias.entity_id,name:hatchAlias.stored_title,source_url:hatchAlias.source_url};
+ const native=id=>({success:true,data:'<main><h1>'+hatchAlias.current_title+'</h1></main>',finalUrl:hatchAlias.source_url,sourceProduct:{'@type':'Product',url:hatchAlias.source_url,productID:id,name:hatchAlias.current_title,image}});
+ assert.equal((await inspectPhoto(hatchProduct,{fetchPage:async()=>native(hatchAlias.native_product_id),fetchImage:async()=>({success:true,data:png})})).status,'ready');
+ const changedNative=await inspectPhoto(hatchProduct,{fetchPage:async()=>native('another-product'),fetchImage:async()=>{throw Error('A title alias cannot accept a different native product ID');}});
+ assert.equal(changedNative.status,'held');assert.equal(changedNative.reason,'current_product_title_requires_review');
+});
+test('catalog save stores a real photo, repairs existing records idempotently and preserves a present photo',async()=>{
+ const pg=await catalogDb();try {
+  const owner='11111111-1111-4111-8111-111111111111';await pg.query('insert into entities(id) values($1)',[owner]);
+  const db=supabaseAdapter(pg);let uploads=0,referer;
+  db.storage={from(){return {async upload(){uploads++;return {error:null};},getPublicUrl(){return {data:{publicUrl:'https://storage.test/bag.png'}};}};}};
+  const fetchImage=async(_url,options)=>{referer=options?.referer;return {success:true,data:png,headers:{'content-type':'text/plain'}};};
+  const product={name:'Ethiopia',source_product_id:'123',attributes:{product_image_url:image},variants:[{source_id:'250',title:'250g',price:'18',currency:'EUR'}]};
+  const id=await saveProduct(owner,product,url,log,{db,downloadImage:(id,src,logger,options)=>downloadAndSaveImage(id,src,logger,{...options,fetchImage})});
+  assert.equal(referer,url);assert.equal(uploads,1);
+  let row=(await pg.query('select * from products where id=$1',[id])).rows[0];assert.equal(row.original_image_url,image);
+  assert.equal((await pg.query('select count(*)::int n from product_media where product_id=$1',[id])).rows[0].n,1);
+  await pg.query('delete from product_media where product_id=$1',[id]);
+  const fetchPage=async()=>({success:true,data:html,finalUrl:url});
+  const entry=await inspectPhoto(row,{fetchPage,fetchImage});assert.equal(entry.status,'ready');
+  // Nested production reads are supplied from the same disposable SQL database.
+  const repairDb={...db,from(table){if(table==='products')return {...db.from(table),select(fields){if(!fields.includes('product_media'))return db.from(table).select(fields);return {eq(_key,id){return {async single(){const data=(await pg.query('select * from products where id=$1',[id])).rows[0];data.product_media=(await pg.query('select a.url from product_media p join media_assets a on a.id=p.media_asset_id where p.product_id=$1',[id])).rows.map(a=>({media_assets:a}));return {data,error:null};}};}};}};return db.from(table);}};
+  assert.equal((await applyPhoto(entry,{db:repairDb,fetchPage,fetchImage,log})).status,'repaired');
+  assert.equal((await applyPhoto(entry,{db:repairDb,fetchPage,fetchImage,log})).status,'already_has_photo');
+  assert.equal(uploads,1);assert.equal((await pg.query('select count(*)::int n from media_assets')).rows[0].n,1);
+  await pg.query('delete from product_media where product_id=$1',[id]);await pg.query('update products set original_image_url=null where id=$1',[id]);
+  const cacheFailDb={...repairDb,from(table){if(table==='media_source_cache')return {...repairDb.from(table),upsert(){return Promise.resolve({error:Error('fixture cache write failed')});}};return repairDb.from(table);}};
+  assert.equal((await applyPhoto(entry,{db:cacheFailDb,fetchPage,fetchImage,log})).status,'repaired');
+  await pg.query('delete from product_media where product_id=$1',[id]);await pg.query('update products set original_image_url=null where id=$1',[id]);
+  const finalStepFailDb={...repairDb,from(table){if(table==='products')return {...repairDb.from(table),update(){return {eq(){return Promise.resolve({error:Error('fixture final URL write failed')});}};}};return repairDb.from(table);}};
+  await assert.rejects(()=>applyPhoto(entry,{db:finalStepFailDb,fetchPage,fetchImage,log}),/final URL write failed/);
+  assert.equal((await applyPhoto(entry,{db:repairDb,fetchPage,fetchImage,log})).status,'source_url_repaired');
+  assert.equal((await pg.query('select original_image_url from products where id=$1',[id])).rows[0].original_image_url,image);
+  await pg.query('delete from product_media where product_id=$1',[id]);await pg.query("update products set original_image_url='https://images.test/old-broken.png' where id=$1",[id]);
+  const staleUrlEntry={...entry,prior_image_url:'https://images.test/old-broken.png'};
+  await assert.rejects(()=>applyPhoto(staleUrlEntry,{db:finalStepFailDb,fetchPage,fetchImage,log}),/final URL write failed/);
+  assert.equal((await applyPhoto(staleUrlEntry,{db:repairDb,fetchPage,fetchImage,log})).status,'source_url_repaired');
+  await pg.query("update products set original_image_url='https://images.test/concurrent-valid.png' where id=$1",[id]);
+  assert.equal((await applyPhoto(staleUrlEntry,{db:repairDb,fetchPage,fetchImage,log})).status,'already_has_photo');
+  assert.equal((await pg.query('select original_image_url from products where id=$1',[id])).rows[0].original_image_url,'https://images.test/concurrent-valid.png');
+  await assert.rejects(()=>applyPhoto({...entry,entity_id:'other-owner'},{db:repairDb,fetchPage,fetchImage,log}),/identity changed/);
+  const invalid=await downloadAndSaveImage(id,'https://images.test/error.png',log,{db,fetchImage:async()=>({success:true,data:Buffer.from('<html>error</html>'),headers:{'content-type':'image/png'}})});assert.equal(invalid,null);
+ } finally {await pg.close();}
+});

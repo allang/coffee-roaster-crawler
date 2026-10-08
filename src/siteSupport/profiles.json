@@ -1,0 +1,1274 @@
+[
+  {
+    "name": "April",
+    "entity_ids": [
+      "3a71024e-eb30-4778-927b-580e3bc3b62e"
+    ],
+    "hosts": [
+      "aprilcoffeeroasters.com",
+      "www.aprilcoffeeroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/everything"
+    ],
+    "adapter": "headless_shopify",
+    "product_path": "/product/",
+    "canonical_product_path": "/products/",
+    "pagination_path": "/api/collections/products"
+  },
+  {
+    "name": "Black & White",
+    "entity_ids": [
+      "01896836-e6ff-498e-b78c-e17d0d127e42"
+    ],
+    "hosts": [
+      "blackwhiteroasters.com",
+      "www.blackwhiteroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/specialty-instant-coffee/products.json"
+    ],
+    "coffee_product_types": [
+      "Retail SO",
+      "Retail YR"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Botz",
+    "entity_ids": [
+      "9b08c3d9-f580-41ae-a394-0cd3225bb3c0"
+    ],
+    "hosts": [
+      "botz-coffee.com",
+      "www.botz-coffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Coffee Collective",
+    "entity_ids": [
+      "39a6bb46-ad09-41ee-84e5-54320d2263d7"
+    ],
+    "hosts": [
+      "coffeecollective.dk",
+      "www.coffeecollective.dk"
+    ],
+    "listing_paths": [
+      "/collections/filter-coffee/products.json",
+      "/collections/espresso/products.json"
+    ],
+    "coffee_product_types": [
+      "new"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Coffee Project NY",
+    "entity_ids": [
+      "9cb13308-0d7a-4d02-a558-9bda11f5dd97"
+    ],
+    "hosts": [
+      "coffeeprojectnyshop.square.site",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": "/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products"
+    },
+    "adapter": "square",
+    "square_owner_id": "131058801",
+    "square_site_id": "587606771285215089",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "4RUAPU3ER5KEKLNO27T7E5QS",
+      "RBMDOSN6HDOUNAHO57CHBASF"
+    ]
+  },
+  {
+    "name": "Flower Child",
+    "entity_ids": [
+      "5690d1b7-4082-43d6-8032-d3a92618e8f9"
+    ],
+    "hosts": [
+      "flowerchildcoffee.com",
+      "www.flowerchildcoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/active-coffee/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Fritz Coffee Company",
+    "entity_ids": [
+      "602c3d3e-a765-476f-bcd8-219519a8234f"
+    ],
+    "hosts": [
+      "fritz.co.kr",
+      "www.fritz.co.kr"
+    ],
+    "adapter": "cafe24",
+    "listing_paths": [
+      "/product/list.html?cate_no=48"
+    ],
+    "product_link_selector": ".xans-product-listnormal a[href*=\"product_no=\"]",
+    "coffee_collection_verified": true,
+    "exclude_name_pattern": "종이\\s*가방"
+  },
+  {
+    "name": "Frukt",
+    "entity_ids": [
+      "33768274-dc08-4e98-9afd-61a20cd07d88"
+    ],
+    "hosts": [
+      "www.frukt.coffee",
+      "frukt.coffee"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/rare/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Goût & Co",
+    "entity_ids": [
+      "da072aaf-038c-4761-bd7e-a22f2383ebc8"
+    ],
+    "hosts": [
+      "goutandco.com",
+      "www.goutandco.com"
+    ],
+    "listing_paths": [
+      "/collections/keep-update/products.json",
+      "/collections/ultra-light-roast/products.json",
+      "/collections/recommend-for-modern-espresso/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "H&S",
+    "entity_ids": [
+      "e00c05fa-623e-4284-adfc-420e81dd472c"
+    ],
+    "hosts": [
+      "hscoffeeroasters.com",
+      "www.hscoffeeroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Hatch",
+    "entity_ids": [
+      "973e6bc5-2f7c-4213-ba81-27fa025ce64d"
+    ],
+    "hosts": [
+      "hatchcrafted.com",
+      "www.hatchcrafted.com"
+    ],
+    "adapter": "subbly",
+    "listing_paths": [
+      "/shop/tag/foundation",
+      "/shop/tag/seasonal",
+      "/shop/tag/premium",
+      "/shop/tag/peak",
+      "/shop/tag/instant"
+    ],
+    "formatter_path": "/_next/static/chunks/1c2d9mkz_9smt.js",
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Hydrangea",
+    "entity_ids": [
+      "535be893-1831-4443-b5e3-c79c09080eb2"
+    ],
+    "hosts": [
+      "hydrangea.coffee",
+      "www.hydrangea.coffee"
+    ],
+    "listing_paths": [
+      "/collections/active/products.json",
+      "/collections/rested-coffee/products.json",
+      "/collections/preorder/products.json",
+      "/collections/auction/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "exclude_handles": [
+      "sub",
+      "2-bag-roasters-choice"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "ILSE",
+    "entity_ids": [
+      "8f69eeb4-2d62-4aea-8024-d2855b01e593"
+    ],
+    "hosts": [
+      "ilsecoffee.com",
+      "www.ilsecoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/all-products/products.json",
+      "/collections/sample-menu/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "coffee_content_pattern": "\\b(?:coffees?|espresso|decaffeinated)\\b",
+    "adapter": "shopify"
+  },
+  {
+    "name": "Leaves",
+    "entity_ids": [
+      "18db48af-6c9c-4449-9d66-535c5260e2b5"
+    ],
+    "hosts": [
+      "leavescoffee.jp",
+      "www.leavescoffee.jp",
+      "shop.leavescoffee.jp"
+    ],
+    "host_path_prefixes": {
+      "shop.leavescoffee.jp": [
+        "/collections/",
+        "/products/"
+      ]
+    },
+    "listing_origin": "https://shop.leavescoffee.jp",
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "stock_origin": "https://shop.leavescoffee.jp",
+    "product_path": "/en/products/",
+    "canonical_product_path": "/products/",
+    "adapter": "nuxt_shopify"
+  },
+  {
+    "name": "Loquat",
+    "entity_ids": [
+      "69c2bf90-4751-41d1-a454-16c1d87ffd11"
+    ],
+    "hosts": [
+      "www.loquatcoffee.com",
+      "loquatcoffee.com",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": "/app/store/api/v28/editor/users/131307555/sites/668499860283954434/products"
+    },
+    "adapter": "square",
+    "square_owner_id": "131307555",
+    "square_site_id": "668499860283954434",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "E2NAAAIQSSCHVFYWD4T727FT",
+      "KUG4WZSQNAUUKMRVRR6YLA6H",
+      "NWKUXIOCAZFQDTAL25UWFZFO",
+      "E3XVEYJ7HYHXNCA5EPY5JZHN",
+      "2Z4QE75K7YW5IGAYYQDP5XGQ",
+      "D7X7CXRRYRH6TZVVK33DMH6V",
+      "WNUKDKQEMXQ6EX2VLMF2463M"
+    ],
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Luminous",
+    "entity_ids": [
+      "16d40b29-b263-4d7a-a6a4-0b339325fc30"
+    ],
+    "hosts": [
+      "www.loveluminous.coffee",
+      "loveluminous.coffee"
+    ],
+    "listing_paths": [
+      "/collections/dropstore/products.json",
+      "/collections/lumi-xl/products.json"
+    ],
+    "coffee_product_types": [
+      "drop-store"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Monogram",
+    "entity_ids": [
+      "5d02543f-ff9d-471b-af2b-cc6c8400e546"
+    ],
+    "hosts": [
+      "monogramcoffee.com",
+      "www.monogramcoffee.com"
+    ],
+    "listing_paths": [
+      "/en-us/collections/all-coffees/products.json"
+    ],
+    "product_path": "/en-us/products/",
+    "canonical_product_path": "/products/",
+    "coffee_product_types": [
+      "Whole Bean"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Namusairo",
+    "entity_ids": [
+      "cbabf44d-1bfa-4212-a0f0-858c55019b91"
+    ],
+    "hosts": [
+      "namusairo.com",
+      "www.namusairo.com"
+    ],
+    "listing_paths": [
+      "/product/list.html?cate_no=91",
+      "/product/list.html?cate_no=113",
+      "/product/list.html?cate_no=114"
+    ],
+    "product_link_selector": ".xans-product-listnormal .thumbnail a[href^=\"/product/\"]",
+    "coffee_collection_verified": true,
+    "exclude_name_pattern": "드립체어",
+    "adapter": "cafe24"
+  },
+  {
+    "name": "Obadiah",
+    "entity_ids": [
+      "058d58c7-c655-40fe-a651-02b8f0593a89"
+    ],
+    "hosts": [
+      "obadiahcoffee.com",
+      "www.obadiahcoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "Comparative Pack",
+      "Fruit Pack",
+      "Seasonal Pack"
+    ],
+    "coffee_handles": [
+      "chelin-pack",
+      "kigeri-steeped-coffee",
+      "sul-de-minas-steeped-coffee",
+      "pascoal-set",
+      "santa-colomba-steeped-coffee",
+      "winter-pack"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "ONA",
+    "entity_ids": [
+      "11c63e61-c185-4fea-a049-127af7daafbf"
+    ],
+    "hosts": [
+      "onacoffee.com.au",
+      "www.onacoffee.com.au"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/ready-to-brew/products.json",
+      "/collections/special-release/products.json",
+      "/collections/rare-coffee/products.json",
+      "/collections/reserve/products.json"
+    ],
+    "adapter": "shopify",
+    "ambiguous_net_weight_handles": [
+      "milk-blend-bundle"
+    ]
+  },
+  {
+    "name": "Momos",
+    "entity_ids": [
+      "c2941ba0-1481-4b69-b800-0d911f2797c3"
+    ],
+    "hosts": [
+      "momos.co.kr",
+      "www.momos.co.kr",
+      "en.momos.co.kr",
+      "office.momos.co.kr"
+    ],
+    "host_path_prefixes": {
+      "office.momos.co.kr": "/api/public/products"
+    },
+    "bootstrap_url": "https://momos.co.kr",
+    "market_scope": "KR",
+    "market_currency": "KRW",
+    "catalog_origin": "https://office.momos.co.kr",
+    "imweb_site_code": "S2026022396690869a4918",
+    "imweb_brand": "모모스커피",
+    "product_api_path": "/ajax/oms/OMS_get_product.cm",
+    "listing_paths": [
+      "/CoffeeBeans",
+      "/LargePacks",
+      "/dripBag",
+      "/InstantCoffee",
+      "/CoffeeTeaBag",
+      "/Capsule",
+      "/ColdBrew"
+    ],
+    "listing_categories": {
+      "/CoffeeBeans": "s20260625015da49977c2f",
+      "/LargePacks": "s2026082469204b44dece1",
+      "/dripBag": "s20260625fd45c45870c49",
+      "/InstantCoffee": "s20260714322491b8b5ebb",
+      "/CoffeeTeaBag": "s20260714eaaca212f326d",
+      "/Capsule": "s202606257ca6d52578c82",
+      "/ColdBrew": "s20260625860cb806cc823"
+    },
+    "coffee_collection_verified": true,
+    "adapter": "imweb",
+    "reconcile_omissions": false,
+    "imweb_product_brands": [
+      "모모스커피",
+      "자체브랜드"
+    ],
+    "exclude_product_codes": [
+      "s20260713cf43960c3e7d4",
+      "s2026071370e1388d2b2b4"
+    ]
+  },
+  {
+    "name": "Apiary",
+    "entity_ids": [
+      "a95c27e7-d466-4553-a4d0-3c1297bea0fa"
+    ],
+    "hosts": [
+      "apiary.coffee",
+      "www.apiary.coffee"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/frontpage/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "single_variant_description_weight": true
+  },
+  {
+    "name": "Colorfull",
+    "entity_ids": [
+      "f4635ada-5e28-4376-9b38-a1256113d34d"
+    ],
+    "hosts": [
+      "colorfullcoffee.com",
+      "www.colorfullcoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "",
+      "Blend",
+      "decaf"
+    ]
+  },
+  {
+    "name": "Klatch",
+    "entity_ids": [
+      "7d74081f-e742-4158-ada6-c67dcd7430f9"
+    ],
+    "hosts": [
+      "www.klatchcoffee.com",
+      "klatchcoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/all-coffees/products.json"
+    ],
+    "coffee_product_types": [
+      "Single Origin",
+      "Pearl Reserve",
+      "Blends",
+      "Espresso"
+    ],
+    "identity_review": "Existing root merchant record owns all 45 saved coffees and matches the official Klatch store. The separate Rancho Cucamonga cafe record remains separate and is not an inventory owner in this profile."
+  },
+  {
+    "name": "Onyx",
+    "entity_ids": [
+      "b765bee5-9622-4735-a948-7816736da3e5"
+    ],
+    "hosts": [
+      "onyxcoffeelab.com",
+      "www.onyxcoffeelab.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/instant-coffee/products.json",
+      "/collections/special/products.json",
+      "/collections/cometeer/products.json"
+    ],
+    "additional_product_paths": [
+      "/products/2026-advent-calendar"
+    ],
+    "coffee_product_types": [
+      "Coffee",
+      "Box Set",
+      "Boxset",
+      "",
+      "Preset Box"
+    ],
+    "exclude_product_ids": [
+      "7462950862946"
+    ],
+    "preorder_rules": [
+      {
+        "product_id": "7773746823266",
+        "handle": "2026-advent-calendar",
+        "variant_id": "43221087649890",
+        "control_selector": "main > .sections > section#hero > .text > button.button",
+        "variant_control_selector": "main button.atc[data-variant-id]"
+      }
+    ]
+  },
+  {
+    "name": "Pilgrim",
+    "entity_ids": [
+      "07704a04-9b9c-488e-a126-31d7258ed219"
+    ],
+    "hosts": [
+      "pilgrimroasters.com",
+      "www.pilgrimroasters.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/whole-bean-coffee/products.json",
+      "/collections/roger-urena-collection/products.json"
+    ],
+    "coffee_product_types": [
+      "",
+      "Whole Beans",
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Square Mile",
+    "entity_ids": [
+      "298c93c5-cdeb-45b0-9407-8c02b470f0d8"
+    ],
+    "hosts": [
+      "shop.squaremilecoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "coffee_product_types": [
+      "Coffee"
+    ]
+  },
+  {
+    "name": "Passport",
+    "entity_ids": [
+      "c978d995-9310-4c54-945b-5211ccdddf7a"
+    ],
+    "hosts": [
+      "passportcoffee.com.au",
+      "www.passportcoffee.com.au"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "Coffee",
+      "Blend"
+    ],
+    "strict_coffee_product_types": true,
+    "exclude_variant_title_pattern": "^Vac Sealed Pouch Option \\(per pouch\\)$",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "DAK Coffee Roasters",
+    "entity_ids": [
+      "11a426df-0146-4a5c-a123-ef7725c13926"
+    ],
+    "hosts": [
+      "www.dakcoffeeroasters.com",
+      "dakcoffeeroasters.com"
+    ],
+    "adapter": "woocommerce",
+    "catalog_path": "/wp-json/wc/store/v1/products",
+    "coffee_category_ids": [
+      42,
+      43
+    ]
+  },
+  {
+    "name": "Loveless",
+    "entity_ids": [
+      "281aa870-2867-465c-9594-d7764c9273f6",
+      "d85c4ca3-b86e-43b6-8822-aaef6472126a"
+    ],
+    "hosts": [
+      "lovelesscoffees.coffee",
+      "www.lovelesscoffees.coffee"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffees/products.json"
+    ]
+  },
+  {
+    "name": "Luna",
+    "entity_ids": [
+      "e30e68df-7843-408b-8df0-2ae01df471d9"
+    ],
+    "hosts": [
+      "enjoylunacoffee.com",
+      "www.enjoylunacoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffees/products.json"
+    ]
+  },
+  {
+    "name": "Passenger",
+    "entity_ids": [
+      "7557d44c-5584-42cf-a644-aafe9720bd16"
+    ],
+    "hosts": [
+      "drinkpassenger.com",
+      "www.drinkpassenger.com"
+    ],
+    "adapter": "hydrogen",
+    "listing_paths": [
+      "/collections/coffee"
+    ],
+    "collection_route": "routes/_page.collections.$handle",
+    "product_route": "routes/_page.products.$handle",
+    "variant_option_query_keys": [
+      "Size"
+    ]
+  },
+  {
+    "name": "Tanat",
+    "entity_ids": [
+      "51dd9f88-a88e-4a2b-911f-2b85348dcbc7"
+    ],
+    "hosts": [
+      "tanat.coffee",
+      "www.tanat.coffee"
+    ],
+    "adapter": "woocommerce",
+    "catalog_path": "/wp-json/wc/store/v1/products",
+    "catalog_category_id": 18,
+    "catalog_page_size": 50,
+    "coffee_category_ids": [
+      18
+    ],
+    "product_path": "/boutique/"
+  },
+  {
+    "name": "Tandem",
+    "entity_ids": [
+      "86089fc8-6ecc-4620-ac4c-b570990d1c22"
+    ],
+    "hosts": [
+      "www.tandemcoffee.com",
+      "tandemcoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffees/products.json"
+    ]
+  },
+  {
+    "name": "The Picky Chemist",
+    "entity_ids": [
+      "962401c8-ef7b-4044-9894-b03590b5445b"
+    ],
+    "hosts": [
+      "en.thepickychemist.com",
+      "thepickychemist.com",
+      "www.thepickychemist.com"
+    ],
+    "adapter": "wix",
+    "listing_paths": [
+      "/boutique"
+    ],
+    "product_path": "/product-page/",
+    "wix_listing_key": "initialData_default_TPASection_kx5ubzyk_default",
+    "wix_coffee_category_id": "f97fd6ca-0f7b-d6d2-2b28-0f6b3dd3c4bf",
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Thoughtful Coffee",
+    "entity_ids": [
+      "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680"
+    ],
+    "hosts": [
+      "thoughtfulcoffee.co",
+      "www.thoughtfulcoffee.co"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/specials/products.json",
+      "/collections/terroir/products.json",
+      "/collections/process/products.json"
+    ]
+  },
+  {
+    "name": "XLIII",
+    "entity_ids": [
+      "a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6"
+    ],
+    "hosts": [
+      "xliiicoffee.com",
+      "www.xliiicoffee.com"
+    ],
+    "adapter": "woocommerce",
+    "catalog_path": "/wp-json/wc/store/v1/products",
+    "catalog_page_size": 50,
+    "catalog_query": {
+      "lang": "en"
+    },
+    "coffee_category_ids": [
+      15,
+      613,
+      2507
+    ],
+    "coffee_catalog_verified": true,
+    "product_path": "/en/product/",
+    "net_weight_row_selector": "main.single-product .info-product .list-info li",
+    "exclude_name_pattern": "^specialty coffee experience$",
+    "description_selector": "main.single-product .info-product .inner-info-product"
+  },
+  {
+    "name": "Aery",
+    "entity_ids": [
+      "2dbf0bf9-9067-425a-aebc-a828a912e353"
+    ],
+    "hosts": [
+      "aerycoffee.com",
+      "www.aerycoffee.com"
+    ],
+    "adapter": "cafe24",
+    "listing_paths": [
+      "/category/shop/67/"
+    ],
+    "product_link_selector": ".xans-product-listnormal a[name^=\"anchorBoxName_\"]",
+    "seo_product_links": true,
+    "require_pagination": true,
+    "cafe24_native_single_items": true,
+    "coffee_collection_verified": true,
+    "product_name_selector": "[spec=\"prd_name\"]",
+    "exclude_name_pattern": "\\bUFO\\s+Dripper\\b",
+    "description_image_hosts": [
+      "ecimg.cafe24img.com"
+    ]
+  },
+  {
+    "name": "Ceremony",
+    "entity_ids": [
+      "a73b9e3e-6110-44b3-8ec2-38179748bdb3"
+    ],
+    "hosts": [
+      "ceremonycoffee.com",
+      "www.ceremonycoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/instant-coffee/products.json"
+    ],
+    "coffee_product_types": [
+      "Single Origin",
+      "Blend",
+      "Decaf",
+      ""
+    ],
+    "exclude_product_tags": [
+      "Subscription"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Color",
+    "entity_ids": [
+      "ba87eb89-0123-4514-a6aa-c34f93517785"
+    ],
+    "hosts": [
+      "colorroasters.com",
+      "www.colorroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/coffee-archive/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Fathers",
+    "entity_ids": [
+      "3085f41e-ba6e-45a7-a0db-0a4b44947c39"
+    ],
+    "hosts": [
+      "fathers.cz",
+      "www.fathers.cz"
+    ],
+    "listing_paths": [
+      "/kava"
+    ],
+    "adapter": "fathers"
+  },
+  {
+    "name": "Koppi",
+    "entity_ids": [
+      "674d177b-8a5b-4f71-9e6b-ebe6786a11fa"
+    ],
+    "hosts": [
+      "koppi.se",
+      "www.koppi.se"
+    ],
+    "listing_paths": [
+      "/collections/frontpage/products.json",
+      "/collections/filter-coffee/products.json",
+      "/collections/espresso/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "La Cabra",
+    "entity_ids": [
+      "629484c3-f41d-4be9-af1a-fd87918dd0bf"
+    ],
+    "hosts": [
+      "lacabra.com",
+      "www.lacabra.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/favourites/products.json",
+      "/collections/single-serve-coffee/products.json",
+      "/collections/bundles-gifts/products.json",
+      "/collections/all-products/products.json"
+    ],
+    "coffee_product_types": [
+      "Steeped",
+      "Single Serve"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Modcup",
+    "entity_ids": [
+      "7b7a8922-fa26-47bc-a387-49bbd8770d5e"
+    ],
+    "hosts": [
+      "www.modcup.com",
+      "modcup.com"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/featured-coffees/products.json"
+    ],
+    "coffee_product_types": [
+      "Single Origin",
+      "Experimental",
+      "Modern Blend",
+      "Traditional Blend",
+      "decaf",
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Mother Tongue",
+    "entity_ids": [
+      "17442c49-1626-4402-8d08-b692f7bed90c"
+    ],
+    "hosts": [
+      "mothertongue.coffee",
+      "www.mothertongue.coffee"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/all/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "PERC",
+    "entity_ids": [
+      "c9427dad-2a06-4f42-90eb-ebaa227dcba2"
+    ],
+    "hosts": [
+      "perccoffee.com",
+      "www.perccoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/coffee-archive/products.json",
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "coffee_product_types_by_listing": {
+      "/collections/all/products.json": []
+    },
+    "exclude_name_pattern": "^(?:Gift box - (?:Ceramic|Travel)|Third Wave Water(?: Single Packet)?)$",
+    "adapter": "shopify"
+  },
+  {
+    "name": "Three Marks",
+    "entity_ids": [
+      "917cac27-8a74-464a-8790-b6083bccde72"
+    ],
+    "hosts": [
+      "www.threemarkscoffee.com",
+      "threemarkscoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/cafe/products.json",
+      "/collections/coffee/products.json",
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "CAFÉ WHITE LABEL",
+      "CAFÉ SPECIAL LABEL",
+      "Single Serve"
+    ],
+    "description_net_weight_prefixes": [
+      "Suggested for Filter,"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Prodigal",
+    "entity_ids": [
+      "a1a8a40f-c7e1-40f3-a8e5-5cdfbf169f7b"
+    ],
+    "hosts": [
+      "getprodigal.com",
+      "www.getprodigal.com"
+    ],
+    "listing_paths": [
+      "/collections/roasted-coffee/products.json",
+      "/collections/sold-out/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Round Hill",
+    "entity_ids": [
+      "0cc38dcc-655c-4a7d-b956-f27a3165b310"
+    ],
+    "hosts": [
+      "roundhillroastery.com",
+      "www.roundhillroastery.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "S&W Craft Roasting",
+    "entity_ids": [
+      "0a56b341-2fff-4c4f-af41-347b3e8425f5"
+    ],
+    "hosts": [
+      "www.swroasting.coffee",
+      "swroasting.coffee",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": "/app/store/api/v28/editor/users/144301722/sites/609617072503030687/products"
+    },
+    "adapter": "square",
+    "square_owner_id": "144301722",
+    "square_site_id": "609617072503030687",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "exclude_product_ids": [
+      "KUMZXGORXJB7TWGJU7MY5AV2",
+      "NVDMPMLDAK6BZ7QEDI6MBAJL"
+    ],
+    "coffee_collection_verified": true,
+    "exclude_sku_ids": [
+      "TMWZVP4I4JTPWQPNZKDOKZIB"
+    ]
+  },
+  {
+    "name": "September",
+    "entity_ids": [
+      "8b9eb5a0-b53e-4ca1-94fc-86a854f26659"
+    ],
+    "hosts": [
+      "september.coffee",
+      "www.september.coffee"
+    ],
+    "listing_paths": [
+      "/en-us/collections/coffee/products.json",
+      "/en-us/collections/garage-sale/products.json",
+      "/en-us/collections/archived/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "exclude_product_ids": [
+      "6851952803938"
+    ],
+    "adapter": "shopify",
+    "primary_fields": {
+      "description_selector": ".product-info-new",
+      "net_weight_selector": ".product-form__custom-liquid .right-side-info .quantity",
+      "native_description_net_weight": true,
+      "fixed_weight_style_values": [
+        "Filter",
+        "Espresso"
+      ],
+      "fixed_weight_option_names": [
+        "Roasted"
+      ]
+    },
+    "product_path": "/en-us/products/",
+    "canonical_product_path": "/products/",
+    "market": "US",
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "SEY",
+    "entity_ids": [
+      "0abbc586-467e-4bfe-b431-248941145733"
+    ],
+    "hosts": [
+      "www.seycoffee.com",
+      "seycoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/archived-coffees/products.json"
+    ],
+    "coffee_product_types": [
+      "Coffees"
+    ],
+    "adapter": "shopify",
+    "primary_fields": {
+      "identity_source": "exact_native_analytics",
+      "description_selectors": [
+        ".coffee_keyInfo_shortBlurb",
+        ".coffee_technicalDetails",
+        ".coffee_longBlurb"
+      ],
+      "only_when_native_description_empty": true
+    }
+  },
+  {
+    "name": "Shoebox",
+    "entity_ids": [
+      "82b540d1-53c7-48ed-916c-dc3e662addc1"
+    ],
+    "hosts": [
+      "shoebox.coffee",
+      "www.shoebox.coffee"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/archive/products.json",
+      "/collections/garage-sale/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify",
+    "variant_size_prefix": "BC",
+    "exclude_product_ids": [
+      "10062862811428"
+    ],
+    "variant_price_suffix": true,
+    "fixed_retail_bag_label": true,
+    "variant_size_patterns": [
+      "^Drum - (.+)$",
+      "^Loring s15 - OTL (.+)$"
+    ]
+  },
+  {
+    "name": "Substance",
+    "entity_ids": [
+      "c9cc734b-ffbf-44ae-b682-c056f3635922"
+    ],
+    "hosts": [
+      "www.substancecafe.com",
+      "substancecafe.com"
+    ],
+    "adapter": "woocommerce_store",
+    "store_api_path": "/wp-json/wc/store/v1/products",
+    "coffee_category_ids": [
+      "19"
+    ],
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Subtext",
+    "entity_ids": [
+      "f3f3a834-d7e4-4804-890c-4bdff564e498"
+    ],
+    "hosts": [
+      "www.subtext.coffee",
+      "subtext.coffee"
+    ],
+    "listing_paths": [
+      "/collections/filter-coffee-beans/products.json",
+      "/collections/espresso-coffee-beans/products.json",
+      "/collections/reserve-coffee-beans/products.json",
+      "/collections/rested-coffee/products.json",
+      "/collections/rested-coffee-1/products.json",
+      "/collections/discountable-filter/products.json",
+      "/collections/discountable-espresso/products.json",
+      "/collections/discountable-reserve/products.json",
+      "/collections/archive/products.json"
+    ],
+    "adapter": "shopify",
+    "bundle_net_weight_product_ids": [
+      "8906952179925"
+    ]
+  },
+  {
+    "name": "Sweven",
+    "entity_ids": [
+      "405de73b-b707-46bb-a0e2-dbeb3218f542"
+    ],
+    "hosts": [
+      "swevencoffee.co.uk",
+      "www.swevencoffee.co.uk"
+    ],
+    "listing_paths": [
+      "/collections/frontpage/products.json",
+      "/collections/microlot/products.json",
+      "/collections/coffee/products.json"
+    ],
+    "adapter": "shopify",
+    "exclude_product_ids": [
+      "15691259642240"
+    ],
+    "variant_size_patterns": [
+      "^(.+) / (?:Filter|Espresso)$"
+    ]
+  },
+  {
+    "name": "Taith",
+    "entity_ids": [
+      "5d931414-8d9a-43e7-ba25-e3269884cde8"
+    ],
+    "hosts": [
+      "taithcoffee.com",
+      "www.taithcoffee.com"
+    ],
+    "adapter": "squarespace",
+    "squarespace_website_id": "62b053a90054ab18d94673b6",
+    "squarespace_collection_id": "62b05b82973de96d399c5e83",
+    "coffee_category_id": "62b09e2d187fc259cb29224d",
+    "listing_path": "/shop",
+    "inventory_authorizes_global_absence": false,
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Obscure Coffee Roasters",
+    "entity_ids": [
+      "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9"
+    ],
+    "hosts": [
+      "www.obscure.coffee",
+      "obscure.coffee",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": [
+        "/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products",
+        "/app/store/api/v28/editor/users/144235705/sites/548590792698639093/categories"
+      ]
+    },
+    "adapter": "square",
+    "square_owner_id": "144235705",
+    "square_site_id": "548590792698639093",
+    "square_merchant_id": "MLBNPWAMGBDSD",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "ECYHW4NO4B2UAMZCHDHGWWMV",
+      "OGQYIRO4AD6ROQIE2EC25RNO",
+      "Z3AQOJNJKNUM3KP6RNG2HBWG"
+    ],
+    "coffee_categories": [
+      {
+        "id": "ECYHW4NO4B2UAMZCHDHGWWMV",
+        "name": "Blends",
+        "site_category_id": "3",
+        "parent": ""
+      },
+      {
+        "id": "OGQYIRO4AD6ROQIE2EC25RNO",
+        "name": "Collabs",
+        "site_category_id": "4",
+        "parent": "ECYHW4NO4B2UAMZCHDHGWWMV"
+      },
+      {
+        "id": "Z3AQOJNJKNUM3KP6RNG2HBWG",
+        "name": "Single Origin",
+        "site_category_id": "2",
+        "parent": ""
+      }
+    ],
+    "public_catalog_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "coffee_collection_verified": true
+  },
+  {
+    "name": ".txt",
+    "entity_ids": [
+      "c4814d81-a3e7-4a8d-86c5-b0fac2146b84"
+    ],
+    "hosts": [
+      "txtcoffee.kr",
+      "www.txtcoffee.kr",
+      "txtcoffeeen.imweb.me"
+    ],
+    "adapter": "txt_imweb",
+    "allow_partial_inventory": true,
+    "bootstrap_url": "https://txtcoffeeen.imweb.me/",
+    "listing_paths": [
+      "/",
+      "/coffeesubscriptions"
+    ],
+    "imweb_brand": ".txt",
+    "imweb_site_code": "S201809265bab93e020b92",
+    "imweb_unit_code": "u2025091568c79f6d083ba",
+    "market_scope": "EN",
+    "market_currency": "USD",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "exclude_product_codes": [
+      "s201809305bb0c5bb629c1",
+      "s201809305bb0da446aa56"
+    ]
+  }
+]

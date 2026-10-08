@@ -1,0 +1,40 @@
+{
+  "product": {
+    "id": 244191,
+    "slug": "starlight",
+    "type": "one_time",
+    "name": "Starlight",
+    "giftCard": false,
+    "digital": false,
+    "bundleId": null,
+    "variants": [
+      {
+        "id": 250163,
+        "name": "300g",
+        "price": 2500,
+        "priceScheme": {
+          "type": "flat_price",
+          "amount": 2500
+        },
+        "stockCount": 1986
+      },
+      {
+        "id": 250164,
+        "name": "2kg",
+        "price": 14500,
+        "priceScheme": {
+          "type": "flat_price",
+          "amount": 14500
+        },
+        "stockCount": 497
+      }
+    ],
+    "images": [
+      {
+        "url": "https://hatchcrafted.com/starlight.png"
+      }
+    ]
+  },
+  "primary": "<main><div><h1 class=\"text-[22px] sm:text-[24px] md:text-[26px] leading-tight text-[#433B35] font-brown-std-bold mb-1 sm:mb-2\">Starlight</h1><div><p class=\"text-[14px] sm:text-[16px] text-[#A67F58] font-brown-std mb-1\">CA$25.00</p></div><div class=\"rich-text mb-4 sm:mb-6 text-[14px] sm:text-[15px] text-[#433B35] font-brown-std leading-relaxed\"><div><div><p>Starlight is the one that tastes like where it came from. A single origin rather than a blend, currently Ethiopia Duromina Washing Station, washed, with florals, stonefruit, and crisp citrus running the whole way through. <br>We roast it light-medium, modern rather than traditional, which keeps the origin character intact instead of burying it under development. That means it wants a longer ratio than you're probably used to. We pull it at 1:2.5. Open it up and it comes alive, juicy and bright with real clarity, where a tight ristretto shot just chokes it. Same idea on filter, give it room.<br><br>On our bar: 18g in, 43-45g out, 93°C, landing around 23-28 seconds. Water at 70ppm.<br>Your grinder, water, and machine will move this. <br>Start here, then adjust to taste.</p></div></div><div><div class=\"mt-4 pt-4\"><div class=\"w-full border-t border-[#A67F58] mb-4\"></div><p class=\"text-[#A67F58] font-brown-std-regular-custom mb-1 italic\">Origin:</p></div></div><div><div><p>Ethiopia</p></div></div><div><div class=\"mt-4 pt-4\"><div class=\"w-full border-t border-[#A67F58] mb-4\"></div><p class=\"text-[#A67F58] font-brown-std-regular-custom mb-1 italic\">Roast Profile:</p></div></div><div><div><p>Light-Medium Roast</p></div></div><div><div class=\"mt-4 pt-4\"><div class=\"w-full border-t border-[#A67F58] mb-4\"></div><p class=\"text-[#A67F58] font-brown-std-regular-custom mb-1 italic\">Reminds us of:</p></div></div><div><div><p>Floral, Stonefruit, Citrus</p></div></div><div><div class=\"mt-4 pt-4\"><div class=\"w-full border-t border-[#A67F58] mb-4\"></div><p class=\"text-[#A67F58] font-brown-std-regular-custom mb-1 italic\">Brew:</p></div></div><div><div><p>Espresso and Filter</p></div></div><div><div class=\"mt-4 pt-4\"><div class=\"w-full border-t border-[#A67F58] mb-4\"></div><p class=\"text-[#A67F58] font-brown-std-regular-custom mb-1 italic\">Core Coffee Offering:</p></div></div><div><div><p>Starlight - The lively one<br>Supernova - The easy one<br>Gamma - The rewarding one<br>Blackout - The bold one</p></div></div></div></div></main>",
+  "formatter": "formatAmount:(t,r)=>e.number(t/100,{style:\"currency\",currency:\"CAD\"})"
+}

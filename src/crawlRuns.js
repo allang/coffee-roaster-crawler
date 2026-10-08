@@ -1,10 +1,20 @@
 const { getSupabase } = require('./supabase');
 const logger = require('./logger');
+const { createCooldown, createOwnerProbe } = require('./crawlRunCooldown');
+
+const cooldown = createCooldown({
+  probe: createOwnerProbe({ getConfig: () => require('./config').config.supabase }),
+  onEvent: event => logger.warn('CrawlRunCooldown', event.kind, event),
+});
+const waitForCrawlAdmission = () => cooldown.waitForAdmission();
 
 async function createCrawlRun(entityId, platform = 'unknown') {
+  await waitForCrawlAdmission();
   const supabase = getSupabase();
 
-  const { data, error } = await supabase
+  let response;
+  try {
+    response = await supabase
     .from('crawl_runs')
     .insert({
       entity_id: entityId,
@@ -14,8 +24,14 @@ async function createCrawlRun(entityId, platform = 'unknown') {
     })
     .select()
     .single();
+  } catch (error) {
+    cooldown.recordCreateFailure(entityId, error);
+    throw error; // Never replay a POST whose commit outcome may be unknown.
+  }
+  const { data, error, status } = response;
 
   if (error) {
+    cooldown.recordCreateFailure(entityId, error, status);
     logger.error('CrawlRuns', 'Failed to create crawl run', { error: error.message });
     throw error;
   }
@@ -36,6 +52,7 @@ async function completeCrawlRun(crawlRunId, stats) {
       pages_visited: stats.pagesVisited || 0,
       pages_sent_to_gpt: stats.pagesSentToGpt || 0,
       coffees_found: stats.coffeesFound || 0,
+      meta: stats.metrics ? {extraction:stats.metrics} : {},
     })
     .eq('id', crawlRunId);
 
@@ -100,6 +117,7 @@ async function getRecentCrawlRuns(entityIds) {
 }
 
 module.exports = {
+  waitForCrawlAdmission,
   createCrawlRun,
   completeCrawlRun,
   failCrawlRun,

@@ -1,0 +1,211 @@
+{
+  "checked_at": "2026-10-08T04:03:46.135Z",
+  "name": "Obscure Coffee Roasters",
+  "entity_id": "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9",
+  "mode": "merchant-get-only-dry-run",
+  "evidence": [
+    {
+      "url": "https://www.obscure.coffee/shop/single-origin/2",
+      "success": true,
+      "categories": {
+        "2": {
+          "site_category_id": "2",
+          "name": "Single Origin",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/single-origin/2"
+        },
+        "3": {
+          "site_category_id": "3",
+          "name": "Blends",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/blends/3"
+        },
+        "4": {
+          "site_category_id": "4",
+          "name": "Collabs",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/collabs/4"
+        }
+      },
+      "products": {}
+    },
+    {
+      "url": "https://www.obscure.coffee/shop/blends/3",
+      "success": true,
+      "categories": {
+        "2": {
+          "site_category_id": "2",
+          "name": "Single Origin",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/single-origin/2"
+        },
+        "3": {
+          "site_category_id": "3",
+          "name": "Blends",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/blends/3"
+        },
+        "4": {
+          "site_category_id": "4",
+          "name": "Collabs",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/collabs/4"
+        }
+      },
+      "products": {}
+    },
+    {
+      "url": "https://www.obscure.coffee/shop/collabs/4",
+      "success": true,
+      "categories": {
+        "2": {
+          "site_category_id": "2",
+          "name": "Single Origin",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/single-origin/2"
+        },
+        "3": {
+          "site_category_id": "3",
+          "name": "Blends",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/blends/3"
+        },
+        "4": {
+          "site_category_id": "4",
+          "name": "Collabs",
+          "updated_date": "2025-08-07T03:56:10+00:00",
+          "permalink": "",
+          "site_link": "/shop/collabs/4"
+        }
+      },
+      "products": {}
+    },
+    {
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=2&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+      "data": [],
+      "meta": {
+        "pagination": {
+          "total": 0,
+          "count": 0,
+          "per_page": 100,
+          "current_page": 1,
+          "total_pages": 1,
+          "links": []
+        }
+      }
+    },
+    {
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=3&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+      "data": [],
+      "meta": {
+        "pagination": {
+          "total": 0,
+          "count": 0,
+          "per_page": 100,
+          "current_page": 1,
+          "total_pages": 1,
+          "links": []
+        }
+      }
+    },
+    {
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=4&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+      "data": [],
+      "meta": {
+        "pagination": {
+          "total": 0,
+          "count": 0,
+          "per_page": 100,
+          "current_page": 1,
+          "total_pages": 1,
+          "links": []
+        }
+      }
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.obscure.coffee/shop/single-origin/2",
+      "status": 200,
+      "at": "2026-10-08T04:03:43.914Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.obscure.coffee/shop/blends/3",
+      "status": 200,
+      "at": "2026-10-08T04:03:44.358Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.obscure.coffee/shop/collabs/4",
+      "status": 200,
+      "at": "2026-10-08T04:03:44.723Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=2&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T04:03:45.186Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=3&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T04:03:45.623Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=4&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T04:03:46.133Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?include=images,media_files,discounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T04:25:13.322Z"
+    }
+  ],
+  "production_writes": 0,
+  "prohibited_requests": 0,
+  "inventory_summary": {
+    "published_products": [
+      {
+        "id": "5SAKYFYMFKYDPRXKJXY4SYYK",
+        "name": "Coffee Discovery Subscription (Local Pick-up Only)",
+        "absolute_site_link": "https://www.obscure.coffee/product/roasters-choice-sub/120",
+        "visibility": "visible",
+        "only_subscribable": true,
+        "description": "***Local pick-up at our café in Bushwick, Brooklyn***<br/><strong>For shipping, please use </strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.obscure.coffee/product/roasters-choice-sub/46?cp=true&amp;sa=true&amp;sbp=false&amp;q=false\"><strong>this link.</strong></a><br/><br><br/>Receive a bag of a surprise coffee every month. This is an excellent opportunity for people curious about trying different coffee origins and processes. Most of these coffees will be either subscription exclusives or unreleased coffees so you&#39;ll get first dibs! You will also receive extra information about the coffee, photos of the producer/farm, and a brew profile for the Fellow Aiden brewer.<br/><br><br/>Some coffees previously featured as part of our subscription:<br/>Colombia - Diego Bermudez Thermal Shock Anaerobic Castillo (Lychee)<br/>Honduras - Mario Mejia Natural Pacas<br/>Colombia - Jaime Nuñez Washed Purple Caturra<br/>México - Red 5 de Diciembre Washed Field Blend<br/><br><br/>Members of our subscription also get 10% off on other website purchases. Coffee will be ready for pick up between the third and fourth week of the month you sign up on. If you happen to sign up after that month&#39;s subscription coffee is roasted, your first bag will be available the following month. Please wait for our pick up confirmation email before you come to the shop to pick up your coffee.<br/>"
+      },
+      {
+        "id": "KN5S5WN2KI2T6UJBA3637XWF",
+        "name": "Coffee Discovery Subscription",
+        "absolute_site_link": "https://www.obscure.coffee/product/roasters-choice-sub/46",
+        "visibility": "visible",
+        "only_subscribable": true,
+        "description": "Receive a bag of a surprise coffee every month. This is an excellent opportunity for people curious about trying different coffee origins and processes. Most of these coffees will be either subscription exclusives or unreleased coffees so you&#39;ll get first dibs! You will also receive extra information about the coffee and photos of the producer/farm.<br/><br><br/>Some coffees previously featured as part of our subscription:<br/>Colombia - Diego Bermudez Thermal Shock Anaerobic Castillo (Lychee)<br/>Honduras - Mario Mejia Natural Pacas<br/>Colombia - Jaime Nuñez Washed Purple Caturra<br/>México - Red 5 de Diciembre Washed Field Blend<br/><br><br/>Members of our subscription also get 10% off on other website purchases. Orders ship between the third and fourth week of the month you sign up. If you happen to sign up after that month&#39;s subscriptions go out, you will receive the first bag the following month.<br/><br><br/><strong>This listing is for shipping only. For free local pick-up, please use </strong><a target=\"_blank\" rel=\"noreferrer noopener nofollow\" href=\"https://www.obscure.coffee/product/roasters-choice-sub/120?cp=true&amp;sa=true&amp;sbp=false&amp;q=false\"><strong>this link.</strong></a><br/>"
+      }
+    ],
+    "pagination": {
+      "total": 2,
+      "count": 2,
+      "per_page": 100,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": []
+    },
+    "source_url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?include=images,media_files,discounts&excluded_fulfillment=dine_in&page=1&per_page=100",
+    "checked_at": "2026-10-08T04:25:13.326Z"
+  },
+  "blocker": "Public store exposes only two Coffee Discovery Subscription products, no one-time retail coffee products. Each advertised Single Origin/Blends/Collabs category explicitly returns total=0. This is not authority to reconcile absent coffees; no registered empty-inventory adapter was enabled."
+}

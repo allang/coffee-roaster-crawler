@@ -1,0 +1,67 @@
+{
+  "url": "https://www.seycoffee.com/products/villa-maria",
+  "html": "<link rel=\"canonical\" href=\"https://www.seycoffee.com/products/villa-maria\"><script>window.ShopifyAnalytics.meta.currency = \"USD\"; var meta = {\"product\":{\"id\":4529272946784,\"gid\":\"gid://shopify/Product/4529272946784\",\"vendor\":\"SEY COFFEE\",\"type\":\"Coffees\",\"handle\":\"villa-maria\",\"variants\":[{\"id\":31886302150752,\"price\":2000,\"name\":\"2020 Carmen Aragon; Villa Maria - Colombia\",\"public_title\":null,\"sku\":\"\"}],\"remote\":false}};</script><div class=\"coffee_keyInfo_shortBlurb\">\n                              <p><style type=\"text/css\"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></style>This lovely lot has red currants throughout; ripe strawberry and soft stone fruit with a sparkling Kenya-like acidity.</p>            \n          </div><section class=\"coffee_details coffee_technicalDetails\">\n          <div class=\"coffee_technicalDetails_details\">\n            \n            <div class=\"coffee_technicalDetails_detail\">\n                <span class=\"coffee_technicalDetails_detail_title\">VARIETAL</span>\n                <p class=\"coffee_technicalDetails_detail_description\">V. Colombia, Castillo, Caturra</p>\n            </div>\n            \n            <div class=\"coffee_technicalDetails_detail\">\n                <span class=\"coffee_technicalDetails_detail_title\">REGION</span>\n                <p class=\"coffee_technicalDetails_detail_description\">Tolima</p>\n            </div>\n            \n            <div class=\"coffee_technicalDetails_detail\">\n                <span class=\"coffee_technicalDetails_detail_title\">ALTITUDE</span>\n                <p class=\"coffee_technicalDetails_detail_description\">1,804 masl</p>\n            </div>\n            \n            <div class=\"coffee_technicalDetails_detail\">\n                <span class=\"coffee_technicalDetails_detail_title\">HARVEST</span>\n                <p class=\"coffee_technicalDetails_detail_description\">July, 2019</p>\n            </div>\n            \n            <div class=\"coffee_technicalDetails_detail\">\n                <span class=\"coffee_technicalDetails_detail_title\">PROCESSING</span>\n                <p class=\"coffee_technicalDetails_detail_description\">Hand picked at peak ripeness. Floated. Depulped. Dry fermented for 18 hours. Dried on raised beds.</p>\n            </div>\n            \n          </div>\n      </section><section class=\"coffee_details coffee_longBlurb\">\n                          <h2><style type=\"text/css\"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></style>ABOUT CARMEN ARAGON</h2><p>This is our first year working with Carmen Aragon. She is a producer very near Jesus Antonio Saavedra in the San Antonio mountains of Tolima. We were introduced to her coffee through our exporting partners Fairfield Trading while in Buesaco, Colombia last fall, and her coffee immediately jumped off the buying tables. We couldn't be more excited to present this coffee for the first time this season.</p><h2><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->ABOUT THIS FIELD BLEND</h2><p>This is a field blend of the three most commonly grown varieties in Colombia: Castillo, Variety Colombia, and Caturra. Both Castillo and V. Colombia are Catimor hybrids, which give them high disease resistance. Caturra, on the other hand, is a natural mutation of Bourbon, and is very susceptible to disease.</p>            \n      </section>",
+  "product": {
+    "id": 4529272946784,
+    "title": "2020 Carmen Aragon; Villa Maria - Colombia",
+    "handle": "villa-maria",
+    "body_html": "",
+    "product_type": "Coffees",
+    "variants": [
+      {
+        "id": 31886302150752,
+        "product_id": 4529272946784,
+        "title": "Default Title",
+        "price": "20.00",
+        "sku": "",
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "created_at": "2020-03-04T15:11:24-05:00",
+        "updated_at": "2026-10-08T00:55:19-04:00",
+        "taxable": true,
+        "barcode": null,
+        "grams": 318,
+        "image_id": null,
+        "weight": 0.7,
+        "weight_unit": "lb",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "USD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      }
+    ],
+    "images": [
+      {
+        "id": 15199848693856,
+        "product_id": 4529272946784,
+        "position": 1,
+        "created_at": "2020-03-04T15:11:24-05:00",
+        "updated_at": "2020-03-04T15:11:24-05:00",
+        "alt": null,
+        "width": 1865,
+        "height": 1876,
+        "src": "https://cdn.shopify.com/s/files/1/0002/6352/0281/products/carmen.png?v=1583352684",
+        "variant_ids": []
+      }
+    ]
+  },
+  "ajax": {
+    "id": 4529272946784,
+    "variants": [
+      {
+        "id": 31886302150752,
+        "available": false
+      }
+    ]
+  }
+}

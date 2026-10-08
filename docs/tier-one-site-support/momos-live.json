@@ -1,0 +1,75 @@
+{
+  "name": "Momos",
+  "checked_at": "2026-10-08T03:56:50.973Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": false,
+    "urls": [],
+    "complete": false,
+    "error": "Configured English merchant TLS certificate has expired"
+  },
+  "products": [],
+  "errors": [
+    {
+      "url": "https://en.momos.co.kr/",
+      "success": false,
+      "error": "fetch failed (CERT_HAS_EXPIRED)",
+      "final_url": "https://en.momos.co.kr/"
+    },
+    {
+      "url": "https://en.momos.co.kr/category/coffee/42",
+      "success": false,
+      "error": "fetch failed (CERT_HAS_EXPIRED)",
+      "final_url": "https://en.momos.co.kr/category/coffee/42"
+    },
+    {
+      "url": "https://en.momos.co.kr/product/search.html",
+      "success": false,
+      "error": "fetch failed (CERT_HAS_EXPIRED)",
+      "final_url": "https://en.momos.co.kr/product/search.html"
+    },
+    {
+      "url": "https://en.momos.co.kr/",
+      "success": false,
+      "error": "fetch failed (CERT_HAS_EXPIRED)",
+      "final_url": "https://en.momos.co.kr/"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://en.momos.co.kr/",
+      "status": null,
+      "at": "2026-10-08T03:56:49.501Z",
+      "error": "fetch failed (CERT_HAS_EXPIRED)"
+    },
+    {
+      "method": "GET",
+      "url": "https://en.momos.co.kr/category/coffee/42",
+      "status": null,
+      "at": "2026-10-08T03:56:50.002Z",
+      "error": "fetch failed (CERT_HAS_EXPIRED)"
+    },
+    {
+      "method": "GET",
+      "url": "https://en.momos.co.kr/product/search.html",
+      "status": null,
+      "at": "2026-10-08T03:56:50.503Z",
+      "error": "fetch failed (CERT_HAS_EXPIRED)"
+    },
+    {
+      "method": "GET",
+      "url": "https://en.momos.co.kr/",
+      "status": null,
+      "at": "2026-10-08T04:35:26.519Z",
+      "error": "fetch failed (CERT_HAS_EXPIRED)"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": false,
+  "blocker": "Configured international en.momos.co.kr still fails authenticated HTTPS with CERT_HAS_EXPIRED. Separate official domestic KRW coverage is verified in momos-kr-live.json; it cannot establish international USD offers, stock or variant identities. Korean market omissions do not authorize English-market reconciliation.",
+  "rechecked_at": "2026-10-08T04:35:27.018Z",
+  "domestic_evidence": "momos-kr-live.json"
+}

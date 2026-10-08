@@ -1,0 +1,753 @@
+{
+  "source": "tier-one coffee coverage audit 2026-10-07",
+  "scope_names": 41,
+  "rows": [
+    {
+      "name": "Aery",
+      "identity_status": "matched",
+      "entity_ids": [
+        "2dbf0bf9-9067-425a-aebc-a828a912e353"
+      ],
+      "candidates": [],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "aery-live.json",
+      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "identity_evidence": "../catalog-repair-apply-result.json",
+      "coffee_products": 18
+    },
+    {
+      "name": "April",
+      "identity_status": "matched",
+      "entity_ids": [
+        "3a71024e-eb30-4778-927b-580e3bc3b62e"
+      ],
+      "candidates": [
+        {
+          "entity_id": "3a71024e-eb30-4778-927b-580e3bc3b62e",
+          "website_url": "https://www.aprilcoffeeroasters.com",
+          "name": "April"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "april-live.json",
+      "coffee_products": 21
+    },
+    {
+      "name": "Black & White",
+      "identity_status": "matched",
+      "entity_ids": [
+        "01896836-e6ff-498e-b78c-e17d0d127e42"
+      ],
+      "candidates": [
+        {
+          "entity_id": "01896836-e6ff-498e-b78c-e17d0d127e42",
+          "website_url": "https://www.blackwhiteroasters.com",
+          "name": "Black & White Coffee Roasters"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "black-white-live.json",
+      "coffee_products": 20
+    },
+    {
+      "name": "Botz",
+      "identity_status": "matched",
+      "entity_ids": [
+        "9b08c3d9-f580-41ae-a394-0cd3225bb3c0"
+      ],
+      "candidates": [
+        {
+          "entity_id": "9b08c3d9-f580-41ae-a394-0cd3225bb3c0",
+          "website_url": "https://botz-coffee.com",
+          "name": "Botz Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "botz-live.json",
+      "coffee_products": 1,
+      "note": "One current coffee listing; merchant explicitly reports sold out. Do not turn it into in-stock inventory."
+    },
+    {
+      "name": "Coffee Collective",
+      "identity_status": "matched",
+      "entity_ids": [
+        "39a6bb46-ad09-41ee-84e5-54320d2263d7"
+      ],
+      "candidates": [
+        {
+          "entity_id": "39a6bb46-ad09-41ee-84e5-54320d2263d7",
+          "website_url": "https://coffeecollective.dk",
+          "name": "Coffee Collective"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "coffee-collective-live.json",
+      "coffee_products": 21
+    },
+    {
+      "name": "Coffee Project NY",
+      "identity_status": "matched",
+      "entity_ids": [
+        "9cb13308-0d7a-4d02-a558-9bda11f5dd97"
+      ],
+      "candidates": [
+        {
+          "entity_id": "9cb13308-0d7a-4d02-a558-9bda11f5dd97",
+          "website_url": "https://coffeeprojectnyshop.square.site",
+          "name": "Coffee Project"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "coffee-project-ny-live.json",
+      "coffee_products": 24
+    },
+    {
+      "name": "DAK Coffee Roasters",
+      "identity_status": "matched",
+      "entity_ids": [
+        "11a426df-0146-4a5c-a123-ef7725c13926"
+      ],
+      "candidates": [
+        {
+          "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
+          "website_url": "https://www.dakcoffeeroasters.com/",
+          "name": "Dak"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "dak-live.json",
+      "coffee_products": 23,
+      "note": "DAK is the unique exact dakcoffeeroasters.com roaster; the short catalog name Dak required manual review. Official about page confirms Amsterdam, Netherlands. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
+    },
+    {
+      "name": "Flower Child",
+      "identity_status": "matched",
+      "entity_ids": [
+        "5690d1b7-4082-43d6-8032-d3a92618e8f9"
+      ],
+      "candidates": [
+        {
+          "entity_id": "5690d1b7-4082-43d6-8032-d3a92618e8f9",
+          "website_url": "https://flowerchildcoffee.com",
+          "name": "Flower Child"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "flower-child-live.json",
+      "coffee_products": 7,
+      "note": "One stale active-collection entry has a primary soft-404 heading. It is not imported or treated as buyable from cached JSON."
+    },
+    {
+      "name": "Fritz Coffee Company",
+      "identity_status": "matched",
+      "entity_ids": [
+        "602c3d3e-a765-476f-bcd8-219519a8234f"
+      ],
+      "candidates": [
+        {
+          "entity_id": "602c3d3e-a765-476f-bcd8-219519a8234f",
+          "website_url": "https://fritz.co.kr",
+          "name": "Fritz"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "fritz-live.json",
+      "coffee_products": 29
+    },
+    {
+      "name": "Frukt",
+      "identity_status": "matched",
+      "entity_ids": [
+        "33768274-dc08-4e98-9afd-61a20cd07d88"
+      ],
+      "candidates": [
+        {
+          "entity_id": "33768274-dc08-4e98-9afd-61a20cd07d88",
+          "website_url": "https://www.frukt.coffee",
+          "name": "Frukt"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "frukt-live.json",
+      "coffee_products": 14
+    },
+    {
+      "name": "Goût & Co",
+      "identity_status": "matched",
+      "entity_ids": [
+        "da072aaf-038c-4761-bd7e-a22f2383ebc8"
+      ],
+      "candidates": [
+        {
+          "entity_id": "da072aaf-038c-4761-bd7e-a22f2383ebc8",
+          "website_url": "https://goutandco.com/",
+          "name": "Gout and Co"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "gout-co-live.json",
+      "coffee_products": 55
+    },
+    {
+      "name": "H&S",
+      "identity_status": "matched",
+      "entity_ids": [
+        "e00c05fa-623e-4284-adfc-420e81dd472c"
+      ],
+      "candidates": [
+        {
+          "entity_id": "e00c05fa-623e-4284-adfc-420e81dd472c",
+          "website_url": "https://hscoffeeroasters.com",
+          "name": "H&S Coffee Roasters"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "hs-live.json",
+      "coffee_products": 21
+    },
+    {
+      "name": "Hatch",
+      "identity_status": "matched",
+      "entity_ids": [
+        "973e6bc5-2f7c-4213-ba81-27fa025ce64d"
+      ],
+      "candidates": [
+        {
+          "entity_id": "973e6bc5-2f7c-4213-ba81-27fa025ce64d",
+          "website_url": "https://www.hatchcrafted.com",
+          "name": "Hatch Specialty Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "hatch-live.json",
+      "coffee_products": 29,
+      "note": "Next.js/Subbly storefront: five reviewed coffee categories; exact native variants with current CAD formatter and primary display corroboration; subscriptions and gift cards excluded."
+    },
+    {
+      "name": "Hydrangea",
+      "identity_status": "matched",
+      "entity_ids": [
+        "535be893-1831-4443-b5e3-c79c09080eb2"
+      ],
+      "candidates": [
+        {
+          "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+          "website_url": "https://hydrangea.coffee",
+          "name": " Hydrangea Coffee Roasters"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "hydrangea-live.json",
+      "coffee_products": 32
+    },
+    {
+      "name": "ILSE",
+      "identity_status": "matched",
+      "entity_ids": [
+        "8f69eeb4-2d62-4aea-8024-d2855b01e593"
+      ],
+      "candidates": [
+        {
+          "entity_id": "8f69eeb4-2d62-4aea-8024-d2855b01e593",
+          "website_url": "https://ilsecoffee.com/",
+          "name": "Ilse"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "ilse-live.json",
+      "coffee_products": 9
+    },
+    {
+      "name": "Leaves",
+      "identity_status": "matched",
+      "entity_ids": [
+        "18db48af-6c9c-4449-9d66-535c5260e2b5"
+      ],
+      "candidates": [
+        {
+          "entity_id": "18db48af-6c9c-4449-9d66-535c5260e2b5",
+          "website_url": "https://leavescoffee.jp/en",
+          "name": "Leaves Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "leaves-live.json",
+      "coffee_products": 11
+    },
+    {
+      "name": "Loquat",
+      "identity_status": "matched",
+      "entity_ids": [
+        "69c2bf90-4751-41d1-a454-16c1d87ffd11"
+      ],
+      "candidates": [
+        {
+          "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+          "website_url": "https://www.loquatcoffee.com/",
+          "name": "Loquat Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "loquat-live.json",
+      "coffee_products": 25
+    },
+    {
+      "name": "Loveless",
+      "identity_status": "matched",
+      "entity_ids": [
+        "281aa870-2867-465c-9594-d7764c9273f6",
+        "d85c4ca3-b86e-43b6-8822-aaef6472126a"
+      ],
+      "candidates": [
+        {
+          "entity_id": "281aa870-2867-465c-9594-d7764c9273f6",
+          "website_url": "https://lovelesscoffees.coffee/",
+          "name": "Loveless Coffees"
+        },
+        {
+          "entity_id": "d85c4ca3-b86e-43b6-8822-aaef6472126a",
+          "website_url": "https://lovelesscoffees.coffee",
+          "name": "Loveless Coffees"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "loveless-live.json",
+      "coffee_products": 12,
+      "note": "Official Loveless Coffees store confirms 86 Central Ave, Brooklyn. Both existing roaster-role records share that official brand/domain; no entity merge. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_same_brand_multiple_entities",
+      "identity_evidence": "tier-one-identity-review.json"
+    },
+    {
+      "name": "Luminous",
+      "identity_status": "matched",
+      "entity_ids": [
+        "16d40b29-b263-4d7a-a6a4-0b339325fc30"
+      ],
+      "candidates": [
+        {
+          "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+          "website_url": "https://www.loveluminous.coffee",
+          "name": "Luminous Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "luminous-live.json",
+      "coffee_products": 21
+    },
+    {
+      "name": "Luna",
+      "identity_status": "matched",
+      "entity_ids": [
+        "e30e68df-7843-408b-8df0-2ae01df471d9"
+      ],
+      "candidates": [
+        {
+          "entity_id": "2442b266-fb8c-43f6-a7e5-589c6bf94bc5",
+          "website_url": "https://lunacafe.com/",
+          "name": "Luna Coffee Roasters"
+        },
+        {
+          "entity_id": "e30e68df-7843-408b-8df0-2ae01df471d9",
+          "website_url": "https://enjoylunacoffee.com",
+          "name": "Luna Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "luna-live.json",
+      "coffee_products": 6,
+      "note": "Source CSV specifies Canada; the mention ledger explicitly says Luna Canada. The enjoylunacoffee.com entity is in Maple Ridge, BC; lunacafe.com in Wisconsin is a different brand and excluded. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
+    },
+    {
+      "name": "Momos",
+      "identity_status": "matched",
+      "entity_ids": [
+        "c2941ba0-1481-4b69-b800-0d911f2797c3"
+      ],
+      "candidates": [
+        {
+          "entity_id": "c2941ba0-1481-4b69-b800-0d911f2797c3",
+          "website_url": "https://en.momos.co.kr",
+          "name": "Momos Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "momos-kr-live.json",
+      "note": "Official Korean KRW retail market only. Configured English storefront remains blocked by CERT_HAS_EXPIRED; no international offer/identity adoption or omission-based reconciliation from Korean evidence.",
+      "coffee_products": 62,
+      "market_scope": "KR",
+      "market_limitation_evidence": "momos-live.json"
+    },
+    {
+      "name": "Monogram",
+      "identity_status": "matched",
+      "entity_ids": [
+        "5d02543f-ff9d-471b-af2b-cc6c8400e546"
+      ],
+      "candidates": [
+        {
+          "entity_id": "5d02543f-ff9d-471b-af2b-cc6c8400e546",
+          "website_url": "https://monogramcoffee.com",
+          "name": "Monogram Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "monogram-live.json",
+      "coffee_products": 38
+    },
+    {
+      "name": "Namusairo",
+      "identity_status": "matched",
+      "entity_ids": [
+        "cbabf44d-1bfa-4212-a0f0-858c55019b91"
+      ],
+      "candidates": [
+        {
+          "entity_id": "cbabf44d-1bfa-4212-a0f0-858c55019b91",
+          "website_url": "https://namusairo.com",
+          "name": "Namusairo"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "namusairo-live.json",
+      "coffee_products": 54
+    },
+    {
+      "name": "Obadiah",
+      "identity_status": "matched",
+      "entity_ids": [
+        "058d58c7-c655-40fe-a651-02b8f0593a89"
+      ],
+      "candidates": [
+        {
+          "entity_id": "058d58c7-c655-40fe-a651-02b8f0593a89",
+          "website_url": "https://obadiahcoffee.com",
+          "name": "Obadiah"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "obadiah-live.json",
+      "coffee_products": 70
+    },
+    {
+      "name": "ONA",
+      "identity_status": "matched",
+      "entity_ids": [
+        "11c63e61-c185-4fea-a049-127af7daafbf"
+      ],
+      "candidates": [
+        {
+          "entity_id": "11c63e61-c185-4fea-a049-127af7daafbf",
+          "website_url": "https://onacoffee.com.au",
+          "name": "ONA Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "ona-live.json",
+      "coffee_products": 36
+    },
+    {
+      "name": "Passenger",
+      "identity_status": "matched",
+      "entity_ids": [
+        "7557d44c-5584-42cf-a644-aafe9720bd16"
+      ],
+      "candidates": [
+        {
+          "entity_id": "4e4926f4-fdab-4e69-b28a-0f067b2b6720",
+          "website_url": "https://www.passenger-coffee.de",
+          "name": "Passenger Coffee"
+        },
+        {
+          "entity_id": "7557d44c-5584-42cf-a644-aafe9720bd16",
+          "website_url": "https://drinkpassenger.com",
+          "name": "Passenger"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "passenger-live.json",
+      "coffee_products": 24,
+      "note": "Source CSV specifies United States and the mention ledger explicitly names Lancaster, Pennsylvania. Official drinkpassenger.com locations confirm Lancaster; the German passenger-coffee.de brand is excluded. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
+    },
+    {
+      "name": "Prodigal",
+      "identity_status": "matched",
+      "entity_ids": [
+        "a1a8a40f-c7e1-40f3-a8e5-5cdfbf169f7b"
+      ],
+      "candidates": [
+        {
+          "entity_id": "a1a8a40f-c7e1-40f3-a8e5-5cdfbf169f7b",
+          "website_url": "https://getprodigal.com/",
+          "name": "Prodigal"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "prodigal-live.json",
+      "coffee_products": 22
+    },
+    {
+      "name": "Round Hill",
+      "identity_status": "matched",
+      "entity_ids": [
+        "0cc38dcc-655c-4a7d-b956-f27a3165b310"
+      ],
+      "candidates": [
+        {
+          "entity_id": "0cc38dcc-655c-4a7d-b956-f27a3165b310",
+          "website_url": "https://roundhillroastery.com",
+          "name": "Round Hill"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "round-hill-live.json",
+      "coffee_products": 13
+    },
+    {
+      "name": "S&W Craft Roasting",
+      "identity_status": "matched",
+      "entity_ids": [
+        "0a56b341-2fff-4c4f-af41-347b3e8425f5"
+      ],
+      "candidates": [
+        {
+          "entity_id": "0a56b341-2fff-4c4f-af41-347b3e8425f5",
+          "website_url": "https://www.swroasting.coffee",
+          "name": "S&W Craft Roasting"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "sw-live.json",
+      "coffee_products": 153,
+      "note": "All four public coffee categories including archives. Exact tip, cascara item and cascara sample SKU excluded; remaining sample SKU subset does not retire omitted variants."
+    },
+    {
+      "name": "September",
+      "identity_status": "matched",
+      "entity_ids": [
+        "8b9eb5a0-b53e-4ca1-94fc-86a854f26659"
+      ],
+      "candidates": [
+        {
+          "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+          "website_url": "https://september.coffee/",
+          "name": "September Coffee"
+        }
+      ],
+      "status": "implemented_with_documented_market_blocker",
+      "evidence": "september-live.json",
+      "coffee_products": 386,
+      "note": "Complete US-market current/archive inventory. One surviving Canadian cache product (La Muralla #2) lacks a primary page, description and proven current price/currency; report documents the blocker. US inventory never authorizes global absence reconciliation. Explicit bag sizes only; ambiguous historical weights remain null."
+    },
+    {
+      "name": "SEY",
+      "identity_status": "matched",
+      "entity_ids": [
+        "0abbc586-467e-4bfe-b431-248941145733"
+      ],
+      "candidates": [
+        {
+          "entity_id": "0abbc586-467e-4bfe-b431-248941145733",
+          "website_url": "https://www.seycoffee.com/",
+          "name": "Sey"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "sey-live.json",
+      "coffee_products": 866,
+      "note": "Six current coffees and full public archive; overlapping collection identities deduplicated. Exact USD SKU offers and stock; archived sold-out records retained."
+    },
+    {
+      "name": "Shoebox",
+      "identity_status": "matched",
+      "entity_ids": [
+        "82b540d1-53c7-48ed-916c-dc3e662addc1"
+      ],
+      "candidates": [
+        {
+          "entity_id": "82b540d1-53c7-48ed-916c-dc3e662addc1",
+          "website_url": "https://shoebox.coffee",
+          "name": "shoebox.coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "shoebox-live.json",
+      "coffee_products": 137,
+      "note": "Current/archive inventory deduplicated and seasoning beans excluded by exact ID. All137 coffees explicitly sold out. Explicit batch/drum, garage-sale and roast-date bag labels only; unlabelled OTL variants retain unset weight."
+    },
+    {
+      "name": "Substance",
+      "identity_status": "matched",
+      "entity_ids": [
+        "c9cc734b-ffbf-44ae-b682-c056f3635922"
+      ],
+      "candidates": [
+        {
+          "entity_id": "c9cc734b-ffbf-44ae-b682-c056f3635922",
+          "website_url": "https://www.substancecafe.com/",
+          "name": "Substance Cafe"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "substance-live.json",
+      "coffee_products": 50,
+      "note": "Public WooCommerce coffee category19 includes10 in-stock and40 sold-out simple products. Product ID and page wrapper bind exact EUR minor amounts and stock; short-description net contents used independently of shipping weight. Books and filters excluded by category."
+    },
+    {
+      "name": "Subtext",
+      "identity_status": "matched",
+      "entity_ids": [
+        "f3f3a834-d7e4-4804-890c-4bdff564e498"
+      ],
+      "candidates": [
+        {
+          "entity_id": "f3f3a834-d7e4-4804-890c-4bdff564e498",
+          "website_url": "https://www.subtext.coffee",
+          "name": "Subtext Coffee Roasters"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "subtext-live.json",
+      "coffee_products": 19,
+      "note": "Filter, espresso, reserve, both rested and discountable collections are paginated/deduplicated; public archive collection is empty. Exact CAD SKU price/stock and explicit bag-size labels. Seasonal Sample Box explicit 4 × 80g coffee bags establishes 320g net coffee; shipping and water-sachet weight are ignored."
+    },
+    {
+      "name": "Sweven",
+      "identity_status": "matched",
+      "entity_ids": [
+        "405de73b-b707-46bb-a0e2-dbeb3218f542"
+      ],
+      "candidates": [
+        {
+          "entity_id": "405de73b-b707-46bb-a0e2-dbeb3218f542",
+          "website_url": "https://www.swevencoffee.co.uk/",
+          "name": "Sweven "
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "sweven-live.json",
+      "coffee_products": 9,
+      "note": "Frontpage, microlot and rare coffee collections are deduplicated. Magazine and subscriptions excluded. Exact GBP offers and compatible imperial/metric bag labels; filter/espresso SKU identities and sold-out stock preserved."
+    },
+    {
+      "name": "Taith",
+      "identity_status": "matched",
+      "entity_ids": [
+        "5d931414-8d9a-43e7-ba25-e3269884cde8"
+      ],
+      "candidates": [
+        {
+          "entity_id": "5d931414-8d9a-43e7-ba25-e3269884cde8",
+          "website_url": "https://taithcoffee.com",
+          "name": "Taith Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "taith-live.json",
+      "coffee_products": 33,
+      "note": "Complete published customer inventory verified: 49 public products / 33 coffees / 64 exact native GBP SKUs. Native JSON, published frontend records, rendered IDs and sitemap agree; configured pageSize 999 covers declared itemCount 187. All coffee descriptions and primary-gallery image sources verified. A stale Magma thumbnail is replaced by the current native/gallery image. Global absence reconciliation remains disabled."
+    },
+    {
+      "name": "Tanat",
+      "identity_status": "matched",
+      "entity_ids": [
+        "51dd9f88-a88e-4a2b-911f-2b85348dcbc7"
+      ],
+      "candidates": [
+        {
+          "entity_id": "51dd9f88-a88e-4a2b-911f-2b85348dcbc7",
+          "website_url": "https://tanat.coffee",
+          "name": "TANAT COFFEE"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "tanat-live.json",
+      "coffee_products": 64,
+      "note": "Complete Store API coffee category 18: 67 entries across two pages, 3 recurring subscriptions excluded. Native wildcard grind remains one variant. Explicit sold-out lots and backorders preserved."
+    },
+    {
+      "name": "Tandem",
+      "identity_status": "matched",
+      "entity_ids": [
+        "86089fc8-6ecc-4620-ac4c-b570990d1c22"
+      ],
+      "candidates": [
+        {
+          "entity_id": "86089fc8-6ecc-4620-ac4c-b570990d1c22",
+          "website_url": "https://www.tandemcoffee.com",
+          "name": "Tandem Coffee Roasters"
+        },
+        {
+          "entity_id": "f2710b37-9816-4474-86be-4dd15b4220fd",
+          "website_url": "https://tandemcc.com/",
+          "name": "Tandem"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "tandem-live.json",
+      "coffee_products": 18,
+      "note": "Mention S22 names Kambarare; the exact official tandemcoffee.com Kambarare product and official Portland roastery establish the intended Maine brand. tandemcc.com in South Carolina is a different business and excluded. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
+    },
+    {
+      "name": "The Picky Chemist",
+      "identity_status": "matched",
+      "entity_ids": [
+        "962401c8-ef7b-4044-9894-b03590b5445b"
+      ],
+      "candidates": [
+        {
+          "entity_id": "962401c8-ef7b-4044-9894-b03590b5445b",
+          "website_url": "https://en.thepickychemist.com",
+          "name": "The Picky Chemist"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "picky-chemist-live.json",
+      "note": "Wix current shop category complete: 5 coffees, 14 native UUID offers, all explicitly sold out. Net sizes from native Poids/current title; separate Archive excluded.",
+      "coffee_products": 5
+    },
+    {
+      "name": "Thoughtful Coffee",
+      "identity_status": "matched",
+      "entity_ids": [
+        "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680"
+      ],
+      "candidates": [
+        {
+          "entity_id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+          "website_url": "https://thoughtfulcoffee.co",
+          "name": "thoughtful coffee nyc"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "thoughtful-live.json",
+      "note": "Current Special/Terroir/Process retail collections complete: 19 coffees, including sold-out Finca Milan. Native Size fields used, shipping mass ignored.",
+      "coffee_products": 19
+    },
+    {
+      "name": "XLIII",
+      "identity_status": "matched",
+      "entity_ids": [
+        "a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6"
+      ],
+      "candidates": [
+        {
+          "entity_id": "a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6",
+          "website_url": "https://xliiicoffee.com/en/",
+          "name": "XLIII Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "xliii-live.json",
+      "note": "Full English Woo catalog complete: 166 packaged coffees, including public 100 g and sold-out listings; native VND exponent 0. Seven legacy sold-out net weights stay unknown. Two subscriptions and one tasting reservation excluded.",
+      "coffee_products": 166
+    }
+  ]
+}

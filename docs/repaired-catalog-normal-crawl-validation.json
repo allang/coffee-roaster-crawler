@@ -1,0 +1,2300 @@
+{
+  "version": 1,
+  "mode": "normal-crawler-repaired-owners",
+  "status": "failed",
+  "started_at": "2026-10-08T13:20:07.482Z",
+  "finished_at": "2026-10-08T13:20:56.327Z",
+  "owners": [
+    {
+      "name": "Aery",
+      "entity_id": "2dbf0bf9-9067-425a-aebc-a828a912e353"
+    },
+    {
+      "name": "Apiary",
+      "entity_id": "a95c27e7-d466-4553-a4d0-3c1297bea0fa"
+    },
+    {
+      "name": "Colorfull",
+      "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d"
+    }
+  ],
+  "concurrency": 2,
+  "page_concurrency": 1,
+  "source_commit": "354da0b5bf9546c8baf3ba1a71e966cce1d5c5aa",
+  "source_hashes": {
+    "src/crawler.js": "63263a534f9db71fca75341a9e1c11dd2570d926e05c04b78d07a99f6660429b",
+    "src/extraction.js": "e8c6271d93e6a0bd827b63baf4c12fd17b4cdd40222041e49a1d50b5ac909e6d",
+    "src/productSaver.js": "419d93f733d261205be548def40540c17c35210c2ee224161b8a2d8c9a08f3a2",
+    "src/pageVisitor.js": "9a383c2b9dc8ad805e488c0f08fe8a2608a9b218b4d11d203565c7bb1526e617",
+    "src/shopifyProduct.js": "c193a99f47acbde37af611d46bac230288f55d0c51c692601a85925dbe7c6de1",
+    "src/productEvidence.js": "89d62130d52d67a779defd494466d7d5ccb36703267270beee572a72c012684c",
+    "src/siteSupport/profiles.json": "75392104a92d97b837fa4dfa1bd95f8094577434fb2a68a50e72de8794192c54"
+  },
+  "results": [
+    {
+      "name": "Aery",
+      "entity_id": "2dbf0bf9-9067-425a-aebc-a828a912e353",
+      "started_at": "2026-10-08T13:20:08.389Z",
+      "status": "failed",
+      "before": {
+        "products": [],
+        "variants": [],
+        "media": []
+      },
+      "error": "Registered merchant product verification failed: 18 page error(s)",
+      "after": {
+        "products": [],
+        "variants": [],
+        "media": []
+      },
+      "finished_at": "2026-10-08T13:20:48.819Z"
+    },
+    {
+      "name": "Apiary",
+      "entity_id": "a95c27e7-d466-4553-a4d0-3c1297bea0fa",
+      "started_at": "2026-10-08T13:20:08.390Z",
+      "status": "failed",
+      "before": {
+        "products": [],
+        "variants": [],
+        "media": []
+      },
+      "error": "Registered merchant product verification failed: 6 page error(s)",
+      "after": {
+        "products": [],
+        "variants": [],
+        "media": []
+      },
+      "finished_at": "2026-10-08T13:20:23.121Z"
+    },
+    {
+      "name": "Colorfull",
+      "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+      "started_at": "2026-10-08T13:20:23.123Z",
+      "status": "failed",
+      "before": {
+        "products": [
+          {
+            "id": "2e1c83d8-44a3-43b6-97b4-d179d1f482bd",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "tropical-splash",
+            "name": "Tropical Splash",
+            "source_url": "https://colorfullcoffee.com/products/wilton-benitez-tropical-splash",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:59.141328+00:00",
+            "first_seen_at": "2025-12-24T00:49:59.041+00:00",
+            "last_seen_at": "2025-12-24T00:49:59.041+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Wilton Benitez",
+              "varietal": null,
+              "description": "This natural process Tabi comes from Granja El Paraiso 92, grown by Wilton Benitez. This is one of the cleanest naturally processed Colombians you will find, as the typical funk has been instead replaced with fruit-like sweetness. In the cup you can find a smoothy of sweet tropical fruit, tart berry notes, and a marshmallowy mouthfeel that last from sip to sip.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Floral Honey",
+                "Papaya",
+                "Raspberry Smoothie"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ]
+              ],
+              "nano_description": "Sweet tropical fruit and tart berry notes in a smooth mouthfeel.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/tropical_splash_2048x.jpg?v=1761577005",
+              "short_description": "A clean natural Colombian coffee with sweet tropical fruit and tart berry notes.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "31639cf0-c99e-47c8-8124-e1b96f5c6ca5",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "candy-blast",
+            "name": "CANDY BLAST",
+            "source_url": "https://colorfullcoffee.com/collections/frontpage",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:19.766349+00:00",
+            "first_seen_at": "2025-12-24T00:48:19.682+00:00",
+            "last_seen_at": "2025-12-24T00:51:11.675+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": null,
+              "producer": null,
+              "varietal": null,
+              "description": null,
+              "origin_type": null,
+              "flavor_notes": null,
+              "harvest_date": null,
+              "default_price": "$28.00",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": null,
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/candy_blast_1_{width}x.jpg?v=1761600219",
+              "short_description": null,
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "strawberry-coulis-espresso",
+            "name": "STRAWBERRY COULIS - ESPRESSO",
+            "source_url": "https://colorfullcoffee.com/products/strawberry-coulis-espresso",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:23.577034+00:00",
+            "first_seen_at": "2025-12-24T00:50:23.467+00:00",
+            "last_seen_at": "2025-12-24T00:50:23.467+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "Espresso",
+              "altitude": null,
+              "is_decaf": "false",
+              "producer": "Wilton Benitez",
+              "varietal": "Red Bourbon",
+              "description": "This single-origin espresso is a washed red bourbon from Finca El Paraiso 92. Sweet, syrupy, and floral, this fruit-forward coffee is a fun modern espresso. Either on its own or in milk, you can expect notes of strawberries, rose petals, and just the right amount of chocolate and roast.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Strawberry Jam",
+                "Chocolate Raspberry",
+                "Rose Petals"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Finca El Paraiso 92",
+              "roast_darkness": "medium",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "Sweet, syrupy espresso with strawberry and chocolate notes.",
+              "country_of_origin": "Nicaragua",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/strawberry_coulis_1_800x.jpg?v=1761594323",
+              "short_description": "A washed red bourbon espresso with sweet, floral notes of strawberries and chocolate.",
+              "grind_size_offered": [
+                "espresso"
+              ]
+            }
+          },
+          {
+            "id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "corner-brownie-decaf",
+            "name": "CORNER BROWNIE - DECAF",
+            "source_url": "https://colorfullcoffee.com/products/corner-brownie-decaf",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:42.705896+00:00",
+            "first_seen_at": "2025-12-24T00:50:42.621+00:00",
+            "last_seen_at": "2025-12-24T00:50:42.621+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Espresso",
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": true,
+              "producer": "Sebasti\u00e1n",
+              "varietal": "Castillo",
+              "description": "A more traditional decaf offering, this coffee offers a full-bodied cup with rich notes of milk chocolate, brown sugar, and a splash of plum-like acidity. It shines in milk and espresso, maintaining much of its original character through the sugar cane decaffeination process.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Milk Chocolate",
+                "Brown Sugar",
+                "Plum"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "Medium",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$null"
+                ]
+              ],
+              "nano_description": "Traditional decaf with rich flavors.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/corner_brownie_decaf_2_800x.jpg?v=1762889331",
+              "short_description": "A full-bodied decaf with notes of milk chocolate, brown sugar, and plum-like acidity.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "vanilla-marshmallow",
+            "name": "VANILLA MARSHMALLOW",
+            "source_url": "https://colorfullcoffee.com/products/java-geisha",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:54.724016+00:00",
+            "first_seen_at": "2025-12-24T00:48:54.634+00:00",
+            "last_seen_at": "2025-12-24T00:48:54.634+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": "1480-2100masl",
+              "is_decaf": "false",
+              "producer": "Wilder Lazo, Wilton Benitez",
+              "varietal": "Geisha, Java",
+              "description": "This exceptional blend combines Colombia's finest coffees: Finca La Dinast\u00eda\u2019s Geisha Lemongrass and El Para\u00edso 92\u2019s Java P-14. It offers a bold, complex cup with vibrant acidity and smooth sweetness, crafted with sustainability and quality in mind.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Pavlova",
+                "Marshmallows",
+                "Vanilla",
+                "Floral",
+                "Sweet"
+              ],
+              "harvest_date": "08/2024",
+              "default_price": "$20.00",
+              "origin_region": "Huila, Cauca",
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "200g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$null"
+                ]
+              ],
+              "nano_description": "A refined Colombian coffee blend with vibrant flavors.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/vanilla_mashmallow_cupcakes_1200x.jpg?v=1761572436",
+              "short_description": "A refined blend of Geisha Lemongrass and Java P-14, showcasing vibrant acidity and smooth sweetness.",
+              "grind_size_offered": [
+                "whole bean",
+                "espresso"
+              ]
+            }
+          },
+          {
+            "id": "843326be-9ebd-451e-a04d-c5d4c1c989b7",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "blueberry-bomb-pie",
+            "name": "BLUEBERRY BOMB! PIE",
+            "source_url": "https://colorfullcoffee.com/products/blueberry-bomb-pie",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:34.325452+00:00",
+            "first_seen_at": "2025-12-24T00:50:34.208+00:00",
+            "last_seen_at": "2025-12-24T00:50:34.208+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": "false",
+              "producer": "Mullugeta Muntasha",
+              "varietal": null,
+              "description": "Produced by CoE winning Mullugeta Muntasha, this sun-dried anaerobic coffee is light-bodied with intense notes of baked blueberries, syrupy orange compote, and fragrant elderberries. It is recommended to rest for 3 to 4 weeks for optimal expression.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Baked Blueberries",
+                "Syrupy Orange Compote",
+                "Fragrant Elderberries"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Sidama",
+              "roast_darkness": "ultra light",
+              "variant_prices": [
+                [
+                  "200g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  null
+                ]
+              ],
+              "nano_description": "Light-bodied coffee with berry-forward flavors.",
+              "country_of_origin": "Ethiopia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/blueberry_bomb_pie_{width}x.jpg?v=1762879188",
+              "short_description": "A light-bodied coffee with intense notes of baked blueberries and syrupy orange compote.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "88ab7340-a641-4623-b18d-13d400048e29",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "orange-marmalade-shortbread-decaf",
+            "name": "ORANGE MARMALADE SHORTBREAD - DECAF",
+            "source_url": "https://colorfullcoffee.com/products/orange-cake",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:36.690382+00:00",
+            "first_seen_at": "2025-12-24T00:48:36.613+00:00",
+            "last_seen_at": "2025-12-24T00:48:36.613+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": "1900-2100 masl",
+              "is_decaf": "true",
+              "producer": "Wilton Benitez",
+              "varietal": "Red Bourbon",
+              "description": "This lively decaf coffee from Wilton Benitez has zero hints of decaf taste. It will delight you and soothe you into slumber or a peaceful afternoon. Enjoy the flavors of lemon, orange blossom, and marmalade.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "lemon",
+                "orange blossom",
+                "marmalade"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Cauca",
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  null
+                ]
+              ],
+              "nano_description": "Lively decaf with citrus notes.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/orange_marmalade_decaf_1_{width}x.jpg?v=1761600027",
+              "short_description": "A lively decaf coffee with notes of lemon, orange blossom, and marmalade.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "a9565793-dccb-457a-bcd3-faa827ec655b",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "los-nogales-typica-low-caf",
+            "name": "LOS NOGALES - TYPICA LOW CAF",
+            "source_url": "https://colorfullcoffee.com/products/los-nogales-typica-low-caf",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:12.552849+00:00",
+            "first_seen_at": "2025-12-24T00:50:12.45+00:00",
+            "last_seen_at": "2025-12-24T00:50:12.45+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Espresso",
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Los Nogales",
+              "varietal": null,
+              "description": "Get ready for a strange one. Not quite caffeinated, and not fully decaffeinated, this is the Low Caf Typica from the award winning Los Nogales farm. This coffee contains just under 5% of caffeine you would find in regular coffee. The coffee is equal parts fruity and funky, with a rich banana candy note from start to end. There is a sticky and sirupy mouthfeel that coats your pallet, that balances well with the finer tea like notes of the coffee.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Banana Candy",
+                "Bubblegum",
+                "Black Tea"
+              ],
+              "harvest_date": null,
+              "default_price": "$0.00",
+              "origin_region": null,
+              "roast_darkness": "medium",
+              "nano_description": "Low Caf Typica with banana candy notes and a sirupy mouthfeel.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/los_nogales_low_caf_{width}x.jpg?v=1761576997",
+              "short_description": "A unique Low Caf Typica coffee with fruity and funky notes, featuring banana candy and a sirupy mouthfeel.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "lychee-peachy-2-0-blend",
+            "name": "Lychee-Peachy 2.0 - BLEND",
+            "source_url": "https://colorfullcoffee.com/collections/blends",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:28.898194+00:00",
+            "first_seen_at": "2025-12-24T00:48:28.822+00:00",
+            "last_seen_at": "2025-12-24T00:51:18.478+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": null,
+              "varietal": null,
+              "description": "A delightful blend featuring lychee and peach flavors, perfect for a refreshing cup.",
+              "origin_type": "Blend",
+              "flavor_notes": null,
+              "harvest_date": null,
+              "default_price": "$28.50",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": "A delightful lychee and peach blend.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/lychee_peachy_1_1_800x.jpg?v=1763295445",
+              "short_description": "A refreshing blend with lychee and peach flavors.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "bc81b6e8-0fb9-42e3-9874-ef1f10bba6a4",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "honey-moon",
+            "name": "HONEY MOON",
+            "source_url": "https://colorfullcoffee.com/products/sebastian-ramirez-honey-moon",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:22.330516+00:00",
+            "first_seen_at": "2025-12-24T00:49:22.241+00:00",
+            "last_seen_at": "2025-12-24T00:49:22.241+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "Filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Sebastian Ramirez",
+              "varietal": "Gesha",
+              "description": "This white honey Gesha comes from Sebastian Ramirez and the El Placer coffee farms project. Boasting a wonderfully floral, complex and sweet cups, this is one of the most impressive coffees we've had all year.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Earl Grey Tea",
+                "Champagne Wine",
+                "Lychee"
+              ],
+              "harvest_date": null,
+              "default_price": "$0.00",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": "Floral and sweet Gesha coffee with distinct tasting notes.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/honey_moon_1_{width}x.jpg?v=1763493005",
+              "short_description": "A floral and complex white honey Gesha with notes of earl grey tea, Champagne wine, and lychee.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "berry-custard-tart-half-caf",
+            "name": "Berry Custard Tart - Half Caf",
+            "source_url": "https://colorfullcoffee.com/products/half-caf-2x-red-bourbon",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:45.206909+00:00",
+            "first_seen_at": "2025-12-24T00:48:45.113+00:00",
+            "last_seen_at": "2025-12-24T00:48:45.113+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": "1900-2100 masl",
+              "is_decaf": false,
+              "producer": "Wilton Benitez",
+              "varietal": "Red Bourbon",
+              "description": "Introducing Berry Custard Tart, a half-caf blend made by recombining the same lot of Wilton Benitez\u2019s Para\u00edso 92 Red Bourbon from Granja Para\u00edso 92. This blend delivers vibrant notes of berries, red apple, cranberry, and cherry, offering a rich, fruity flavor without the full caffeine load.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Berries",
+                "Red Apple",
+                "Cranberry",
+                "Cherry"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Cauca",
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "Half-caf blend with fruity notes.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/berry_custard_1_800x.jpg?v=1761599928",
+              "short_description": "A half-caf blend with vibrant notes of berries and red apple, offering rich flavor.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "black-forest-decaf",
+            "name": "BLACK FOREST - DECAF",
+            "source_url": "https://colorfullcoffee.com/products/black-forest-decaf",
+            "source_key": null,
+            "created_at": "2025-12-24T00:51:03.819052+00:00",
+            "first_seen_at": "2025-12-24T00:51:03.703+00:00",
+            "last_seen_at": "2025-12-24T00:51:03.703+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": "true",
+              "producer": "Sebastian Ramirez",
+              "varietal": "Caturra",
+              "description": "This coffee from Sebastian Ramirez is both co-fermented and decaffeinated, resulting in a cup that tastes like strawberry jam, rich chocolate mousse, and a hint of liqueur.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Maraschino Cherry",
+                "Strawberry Jam",
+                "Dark Chocolate"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "Medium",
+              "variant_prices": [
+                [
+                  "200g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  null
+                ]
+              ],
+              "nano_description": "Decaf coffee with strawberry and chocolate notes.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/black_forest_1_800x.jpg?v=1765990442",
+              "short_description": "A unique decaf coffee with flavors of strawberry jam and dark chocolate.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "raspbi-tabi",
+            "name": "RASPBI TABI",
+            "source_url": "https://colorfullcoffee.com/products/las-flores-raspbi-tabi",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:49.975821+00:00",
+            "first_seen_at": "2025-12-24T00:49:49.868+00:00",
+            "last_seen_at": "2025-12-24T00:49:49.868+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Diego and Jhoan Vergara",
+              "varietal": "Tabi",
+              "description": "This coffee comes from Las Flores farm, grown by Diego and Jhoan Vergara. This washed Tabi has a beautiful balance of sweetness and tartness, with fun and prickly-like acidity. The thermal shock method adds even more clarity and depth of flavour, emphasizing sweetness.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Raspberry",
+                "Hibiscus",
+                "Candy"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "A light roasted Tabi coffee with raspberry and candy notes.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/raspbi_tabi_1_800x.jpg?v=1761577013",
+              "short_description": "A washed Tabi coffee with a balance of sweetness and tartness, featuring notes of raspberry and hibiscus.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "musumba-lot-3",
+            "name": "Musumba Lot 3",
+            "source_url": "https://colorfullcoffee.com/products/long-miles-musumba-lot-3",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:33.360695+00:00",
+            "first_seen_at": "2025-12-24T00:49:33.257+00:00",
+            "last_seen_at": "2025-12-24T00:49:33.257+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Long Miles Coffee Project",
+              "varietal": null,
+              "description": "This naturally processed coffee comes from the premier Long Miles Coffee Project in Burundi. In this cup you'll find a nice mix of red and purple grapes, black tea, and a good amount of funk!",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Red Grapes",
+                "Purple Grapes",
+                "Black Tea",
+                "Halloween Candy",
+                "Dried Prunes"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "Naturally processed coffee with red grapes and black tea notes.",
+              "country_of_origin": "Burundi",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/musumba_lot3_1_800x.jpg?v=1765992951",
+              "short_description": "A naturally processed coffee from Burundi with notes of red grapes, black tea, and funk.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "chocolate-wafer-espresso",
+            "name": "Chocolate Wafer Espresso",
+            "source_url": "https://colorfullcoffee.com/products/chocolate-wafer-espresso",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:05.74451+00:00",
+            "first_seen_at": "2025-12-24T00:49:05.674+00:00",
+            "last_seen_at": "2025-12-24T00:49:05.674+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "Espresso",
+              "altitude": "1300 - 2100 masl",
+              "is_decaf": "false",
+              "producer": "Wilton Benitez, Escuela de Campo Sierra Negra",
+              "varietal": "Typica, Bourbon, Marsellesa, Obata, Gesha, Java",
+              "description": "Chocolate Wafer Espresso blends exceptional coffees from Mexico and Colombia, featuring rich notes of baklava, butterscotch, and apple pie, with hints of clementine and lemon. Enhanced with a touch of Java varietal, it offers tropical layers of passion fruit and honey, creating a smooth and sweet espresso experience.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Baklava",
+                "Butterscotch",
+                "Apple Pie",
+                "Clementine",
+                "Lemon",
+                "Passion Fruit",
+                "Pineapple",
+                "Honey"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Sierra Negra, Cauca",
+              "roast_darkness": "medium - light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$null"
+                ]
+              ],
+              "nano_description": "Smooth, balanced espresso with tropical and sweet flavors.",
+              "country_of_origin": "Mexico, Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/chocolate_wafer_2_800x.jpg?v=1761577087",
+              "short_description": "A delightful blend of Mexican and Colombian coffees with rich, sweet notes.",
+              "grind_size_offered": [
+                "espresso"
+              ]
+            }
+          },
+          {
+            "id": "f1581d97-0b3b-4e89-9068-07700cf2dd7d",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "bumbleberry-pie-espresso",
+            "name": "BUMBLEBERRY PIE - ESPRESSO",
+            "source_url": "https://colorfullcoffee.com/collections/espresso-coffee",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:14.980824+00:00",
+            "first_seen_at": "2025-12-24T00:49:14.863+00:00",
+            "last_seen_at": "2025-12-24T00:51:27.368+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": null,
+              "varietal": null,
+              "description": "A well-rounded and balanced espresso coffee, recommended to rest for 2 weeks for optimal flavor.",
+              "origin_type": null,
+              "flavor_notes": null,
+              "harvest_date": null,
+              "default_price": "$23.00",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": "Well-rounded espresso, optimal after 2 weeks.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/bumbleberry_pie_{width}x.jpg?v=1761577080",
+              "short_description": "A balanced espresso coffee, best after 2 weeks of resting.",
+              "grind_size_offered": null
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "0f1d64af-d742-4c5d-aa69-64afc65a5a83",
+            "product_id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:50:42.848917+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "183de677-7cfd-4933-afd5-83f3db4a25e9",
+            "product_id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:50:23.728733+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "1d4b025c-bc78-47cf-86b2-ee2387c147af",
+            "product_id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:50.106111+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "2cd9511f-d567-44a0-b02a-f41fed0d6370",
+            "product_id": "f1581d97-0b3b-4e89-9068-07700cf2dd7d",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:51:27.609269+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "2debc1c5-178a-451b-9bcc-c1c388f37e10",
+            "product_id": "bc81b6e8-0fb9-42e3-9874-ef1f10bba6a4",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:49:22.43765+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "48ca1e8a-3b64-4bd1-83c3-8b1a5fac3558",
+            "product_id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:49:50.106111+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "48f77a4e-4979-4ea0-aab2-bc2ee0f7bcba",
+            "product_id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "200g",
+            "created_at": "2025-12-24T00:48:54.823974+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "4b7dc315-e112-47e8-b030-35c1a7aea2e5",
+            "product_id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:48:45.308176+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "541e41fc-fcdb-4832-9358-b50833ea971b",
+            "product_id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:50:42.848917+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "61d6d66b-eaae-4257-affd-445acfabe802",
+            "product_id": "843326be-9ebd-451e-a04d-c5d4c1c989b7",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:50:34.482417+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "623caf54-1077-42e4-bb2b-acfe2779c734",
+            "product_id": "2e1c83d8-44a3-43b6-97b4-d179d1f482bd",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:59.246268+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "649b7b36-0f4b-4402-bf82-209c502bcec6",
+            "product_id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:48:45.308176+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "68dd4bf4-3c0a-490b-9d5f-0cc803cc0b60",
+            "product_id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:51:18.684086+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "704d4805-0ee0-4c7d-a894-f1fd7886e010",
+            "product_id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:05.840775+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "84edcedb-0a13-49d9-af5a-874811fde2ea",
+            "product_id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:49:05.840775+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "85863496-7862-4453-9f60-9b8d7cef896c",
+            "product_id": "843326be-9ebd-451e-a04d-c5d4c1c989b7",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "200g",
+            "created_at": "2025-12-24T00:50:34.482417+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "8dd28ab1-aace-49a6-94c7-d5b5e16ca018",
+            "product_id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:33.468889+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "b7f99cf9-9000-4c3d-aa4b-570035e92b97",
+            "product_id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:48:54.823974+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "bf0ac3c0-6ca7-4b27-a803-2dee2593920a",
+            "product_id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:51:03.951352+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "c175a8d0-1c24-4e08-aec6-2a2a4afa06c2",
+            "product_id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:49:33.468889+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "ca30c9d6-4062-41af-82ef-cacccbd458f4",
+            "product_id": "a9565793-dccb-457a-bcd3-faa827ec655b",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:50:12.724617+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "d52d5e75-5a7e-40c7-8a1e-3a798b622b36",
+            "product_id": "88ab7340-a641-4623-b18d-13d400048e29",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:48:36.800821+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "d650f2c3-78f0-4dc6-ad81-560ef363158e",
+            "product_id": "31639cf0-c99e-47c8-8124-e1b96f5c6ca5",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:51:11.97997+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "d8dce43e-cbd9-4395-8239-e719c0f27b07",
+            "product_id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:50:23.728733+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "e1d1dd40-19f6-44b4-b30d-6da418cbee90",
+            "product_id": "88ab7340-a641-4623-b18d-13d400048e29",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:48:36.800821+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "e390e1dd-000b-47a0-9b6b-cce91bc77f49",
+            "product_id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "200g",
+            "created_at": "2025-12-24T00:51:03.951352+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          }
+        ],
+        "media": [
+          {
+            "product_id": "2e1c83d8-44a3-43b6-97b4-d179d1f482bd",
+            "media_asset_id": "c0221ffb-bf11-436a-b0ef-7186b7c35b54",
+            "sort_order": 0
+          },
+          {
+            "product_id": "31639cf0-c99e-47c8-8124-e1b96f5c6ca5",
+            "media_asset_id": "431d6a17-6d78-4227-939b-9e51b6d53f1d",
+            "sort_order": 0
+          },
+          {
+            "product_id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "media_asset_id": "1ae31a1f-d2de-4d40-8460-b162baba4e4f",
+            "sort_order": 0
+          },
+          {
+            "product_id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "media_asset_id": "47dd1194-ddc8-443b-8a1c-5287bbcae86a",
+            "sort_order": 0
+          },
+          {
+            "product_id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "media_asset_id": "1ea49b95-10a1-4267-b71a-ea0c4207aff4",
+            "sort_order": 0
+          },
+          {
+            "product_id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "media_asset_id": "e7a2a3e8-13f0-4065-baa1-caf1d0501723",
+            "sort_order": 0
+          },
+          {
+            "product_id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "media_asset_id": "a91c3746-4c25-47e6-994c-0a04d424f322",
+            "sort_order": 0
+          },
+          {
+            "product_id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "media_asset_id": "8b43dc4a-d346-4c49-b8bd-c5f1d6d3fc11",
+            "sort_order": 0
+          },
+          {
+            "product_id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "media_asset_id": "fb2400eb-99fd-4a20-a7da-0f9f541a53bf",
+            "sort_order": 0
+          },
+          {
+            "product_id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "media_asset_id": "33950afe-b982-474f-a27a-171b4b2d8a46",
+            "sort_order": 0
+          },
+          {
+            "product_id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "media_asset_id": "9544b19e-4b51-415a-acac-efb8f89d3a53",
+            "sort_order": 0
+          },
+          {
+            "product_id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "media_asset_id": "a1dd0e01-a955-41db-97de-ac4650e0b322",
+            "sort_order": 0
+          },
+          {
+            "product_id": "f1581d97-0b3b-4e89-9068-07700cf2dd7d",
+            "media_asset_id": "7f1ff02b-19fd-4f74-8e8c-25d003a372e5",
+            "sort_order": 0
+          }
+        ]
+      },
+      "error": "Registered merchant product verification failed: 14 page error(s)",
+      "after": {
+        "products": [
+          {
+            "id": "2e1c83d8-44a3-43b6-97b4-d179d1f482bd",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "tropical-splash",
+            "name": "Tropical Splash",
+            "source_url": "https://colorfullcoffee.com/products/wilton-benitez-tropical-splash",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:59.141328+00:00",
+            "first_seen_at": "2025-12-24T00:49:59.041+00:00",
+            "last_seen_at": "2025-12-24T00:49:59.041+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Wilton Benitez",
+              "varietal": null,
+              "description": "This natural process Tabi comes from Granja El Paraiso 92, grown by Wilton Benitez. This is one of the cleanest naturally processed Colombians you will find, as the typical funk has been instead replaced with fruit-like sweetness. In the cup you can find a smoothy of sweet tropical fruit, tart berry notes, and a marshmallowy mouthfeel that last from sip to sip.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Floral Honey",
+                "Papaya",
+                "Raspberry Smoothie"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ]
+              ],
+              "nano_description": "Sweet tropical fruit and tart berry notes in a smooth mouthfeel.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/tropical_splash_2048x.jpg?v=1761577005",
+              "short_description": "A clean natural Colombian coffee with sweet tropical fruit and tart berry notes.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "31639cf0-c99e-47c8-8124-e1b96f5c6ca5",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "candy-blast",
+            "name": "CANDY BLAST",
+            "source_url": "https://colorfullcoffee.com/collections/frontpage",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:19.766349+00:00",
+            "first_seen_at": "2025-12-24T00:48:19.682+00:00",
+            "last_seen_at": "2025-12-24T00:51:11.675+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": null,
+              "producer": null,
+              "varietal": null,
+              "description": null,
+              "origin_type": null,
+              "flavor_notes": null,
+              "harvest_date": null,
+              "default_price": "$28.00",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": null,
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/candy_blast_1_{width}x.jpg?v=1761600219",
+              "short_description": null,
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "strawberry-coulis-espresso",
+            "name": "STRAWBERRY COULIS - ESPRESSO",
+            "source_url": "https://colorfullcoffee.com/products/strawberry-coulis-espresso",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:23.577034+00:00",
+            "first_seen_at": "2025-12-24T00:50:23.467+00:00",
+            "last_seen_at": "2025-12-24T00:50:23.467+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "Espresso",
+              "altitude": null,
+              "is_decaf": "false",
+              "producer": "Wilton Benitez",
+              "varietal": "Red Bourbon",
+              "description": "This single-origin espresso is a washed red bourbon from Finca El Paraiso 92. Sweet, syrupy, and floral, this fruit-forward coffee is a fun modern espresso. Either on its own or in milk, you can expect notes of strawberries, rose petals, and just the right amount of chocolate and roast.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Strawberry Jam",
+                "Chocolate Raspberry",
+                "Rose Petals"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Finca El Paraiso 92",
+              "roast_darkness": "medium",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "Sweet, syrupy espresso with strawberry and chocolate notes.",
+              "country_of_origin": "Nicaragua",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/strawberry_coulis_1_800x.jpg?v=1761594323",
+              "short_description": "A washed red bourbon espresso with sweet, floral notes of strawberries and chocolate.",
+              "grind_size_offered": [
+                "espresso"
+              ]
+            }
+          },
+          {
+            "id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "corner-brownie-decaf",
+            "name": "CORNER BROWNIE - DECAF",
+            "source_url": "https://colorfullcoffee.com/products/corner-brownie-decaf",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:42.705896+00:00",
+            "first_seen_at": "2025-12-24T00:50:42.621+00:00",
+            "last_seen_at": "2025-12-24T00:50:42.621+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Espresso",
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": true,
+              "producer": "Sebasti\u00e1n",
+              "varietal": "Castillo",
+              "description": "A more traditional decaf offering, this coffee offers a full-bodied cup with rich notes of milk chocolate, brown sugar, and a splash of plum-like acidity. It shines in milk and espresso, maintaining much of its original character through the sugar cane decaffeination process.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Milk Chocolate",
+                "Brown Sugar",
+                "Plum"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "Medium",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$null"
+                ]
+              ],
+              "nano_description": "Traditional decaf with rich flavors.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/corner_brownie_decaf_2_800x.jpg?v=1762889331",
+              "short_description": "A full-bodied decaf with notes of milk chocolate, brown sugar, and plum-like acidity.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "vanilla-marshmallow",
+            "name": "VANILLA MARSHMALLOW",
+            "source_url": "https://colorfullcoffee.com/products/java-geisha",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:54.724016+00:00",
+            "first_seen_at": "2025-12-24T00:48:54.634+00:00",
+            "last_seen_at": "2025-12-24T00:48:54.634+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": "1480-2100masl",
+              "is_decaf": "false",
+              "producer": "Wilder Lazo, Wilton Benitez",
+              "varietal": "Geisha, Java",
+              "description": "This exceptional blend combines Colombia's finest coffees: Finca La Dinast\u00eda\u2019s Geisha Lemongrass and El Para\u00edso 92\u2019s Java P-14. It offers a bold, complex cup with vibrant acidity and smooth sweetness, crafted with sustainability and quality in mind.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Pavlova",
+                "Marshmallows",
+                "Vanilla",
+                "Floral",
+                "Sweet"
+              ],
+              "harvest_date": "08/2024",
+              "default_price": "$20.00",
+              "origin_region": "Huila, Cauca",
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "200g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$null"
+                ]
+              ],
+              "nano_description": "A refined Colombian coffee blend with vibrant flavors.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/vanilla_mashmallow_cupcakes_1200x.jpg?v=1761572436",
+              "short_description": "A refined blend of Geisha Lemongrass and Java P-14, showcasing vibrant acidity and smooth sweetness.",
+              "grind_size_offered": [
+                "whole bean",
+                "espresso"
+              ]
+            }
+          },
+          {
+            "id": "843326be-9ebd-451e-a04d-c5d4c1c989b7",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "blueberry-bomb-pie",
+            "name": "BLUEBERRY BOMB! PIE",
+            "source_url": "https://colorfullcoffee.com/products/blueberry-bomb-pie",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:34.325452+00:00",
+            "first_seen_at": "2025-12-24T00:50:34.208+00:00",
+            "last_seen_at": "2025-12-24T00:50:34.208+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": "false",
+              "producer": "Mullugeta Muntasha",
+              "varietal": null,
+              "description": "Produced by CoE winning Mullugeta Muntasha, this sun-dried anaerobic coffee is light-bodied with intense notes of baked blueberries, syrupy orange compote, and fragrant elderberries. It is recommended to rest for 3 to 4 weeks for optimal expression.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Baked Blueberries",
+                "Syrupy Orange Compote",
+                "Fragrant Elderberries"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Sidama",
+              "roast_darkness": "ultra light",
+              "variant_prices": [
+                [
+                  "200g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  null
+                ]
+              ],
+              "nano_description": "Light-bodied coffee with berry-forward flavors.",
+              "country_of_origin": "Ethiopia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/blueberry_bomb_pie_{width}x.jpg?v=1762879188",
+              "short_description": "A light-bodied coffee with intense notes of baked blueberries and syrupy orange compote.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "88ab7340-a641-4623-b18d-13d400048e29",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "orange-marmalade-shortbread-decaf",
+            "name": "ORANGE MARMALADE SHORTBREAD - DECAF",
+            "source_url": "https://colorfullcoffee.com/products/orange-cake",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:36.690382+00:00",
+            "first_seen_at": "2025-12-24T00:48:36.613+00:00",
+            "last_seen_at": "2025-12-24T00:48:36.613+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": "1900-2100 masl",
+              "is_decaf": "true",
+              "producer": "Wilton Benitez",
+              "varietal": "Red Bourbon",
+              "description": "This lively decaf coffee from Wilton Benitez has zero hints of decaf taste. It will delight you and soothe you into slumber or a peaceful afternoon. Enjoy the flavors of lemon, orange blossom, and marmalade.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "lemon",
+                "orange blossom",
+                "marmalade"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Cauca",
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  null
+                ]
+              ],
+              "nano_description": "Lively decaf with citrus notes.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/orange_marmalade_decaf_1_{width}x.jpg?v=1761600027",
+              "short_description": "A lively decaf coffee with notes of lemon, orange blossom, and marmalade.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "a9565793-dccb-457a-bcd3-faa827ec655b",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "los-nogales-typica-low-caf",
+            "name": "LOS NOGALES - TYPICA LOW CAF",
+            "source_url": "https://colorfullcoffee.com/products/los-nogales-typica-low-caf",
+            "source_key": null,
+            "created_at": "2025-12-24T00:50:12.552849+00:00",
+            "first_seen_at": "2025-12-24T00:50:12.45+00:00",
+            "last_seen_at": "2025-12-24T00:50:12.45+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Espresso",
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Los Nogales",
+              "varietal": null,
+              "description": "Get ready for a strange one. Not quite caffeinated, and not fully decaffeinated, this is the Low Caf Typica from the award winning Los Nogales farm. This coffee contains just under 5% of caffeine you would find in regular coffee. The coffee is equal parts fruity and funky, with a rich banana candy note from start to end. There is a sticky and sirupy mouthfeel that coats your pallet, that balances well with the finer tea like notes of the coffee.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Banana Candy",
+                "Bubblegum",
+                "Black Tea"
+              ],
+              "harvest_date": null,
+              "default_price": "$0.00",
+              "origin_region": null,
+              "roast_darkness": "medium",
+              "nano_description": "Low Caf Typica with banana candy notes and a sirupy mouthfeel.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/los_nogales_low_caf_{width}x.jpg?v=1761576997",
+              "short_description": "A unique Low Caf Typica coffee with fruity and funky notes, featuring banana candy and a sirupy mouthfeel.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "lychee-peachy-2-0-blend",
+            "name": "Lychee-Peachy 2.0 - BLEND",
+            "source_url": "https://colorfullcoffee.com/collections/blends",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:28.898194+00:00",
+            "first_seen_at": "2025-12-24T00:48:28.822+00:00",
+            "last_seen_at": "2025-12-24T00:51:18.478+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": null,
+              "varietal": null,
+              "description": "A delightful blend featuring lychee and peach flavors, perfect for a refreshing cup.",
+              "origin_type": "Blend",
+              "flavor_notes": null,
+              "harvest_date": null,
+              "default_price": "$28.50",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": "A delightful lychee and peach blend.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/lychee_peachy_1_1_800x.jpg?v=1763295445",
+              "short_description": "A refreshing blend with lychee and peach flavors.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "bc81b6e8-0fb9-42e3-9874-ef1f10bba6a4",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "honey-moon",
+            "name": "HONEY MOON",
+            "source_url": "https://colorfullcoffee.com/products/sebastian-ramirez-honey-moon",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:22.330516+00:00",
+            "first_seen_at": "2025-12-24T00:49:22.241+00:00",
+            "last_seen_at": "2025-12-24T00:49:22.241+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "Filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Sebastian Ramirez",
+              "varietal": "Gesha",
+              "description": "This white honey Gesha comes from Sebastian Ramirez and the El Placer coffee farms project. Boasting a wonderfully floral, complex and sweet cups, this is one of the most impressive coffees we've had all year.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Earl Grey Tea",
+                "Champagne Wine",
+                "Lychee"
+              ],
+              "harvest_date": null,
+              "default_price": "$0.00",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": "Floral and sweet Gesha coffee with distinct tasting notes.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/honey_moon_1_{width}x.jpg?v=1763493005",
+              "short_description": "A floral and complex white honey Gesha with notes of earl grey tea, Champagne wine, and lychee.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "berry-custard-tart-half-caf",
+            "name": "Berry Custard Tart - Half Caf",
+            "source_url": "https://colorfullcoffee.com/products/half-caf-2x-red-bourbon",
+            "source_key": null,
+            "created_at": "2025-12-24T00:48:45.206909+00:00",
+            "first_seen_at": "2025-12-24T00:48:45.113+00:00",
+            "last_seen_at": "2025-12-24T00:48:45.113+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": "1900-2100 masl",
+              "is_decaf": false,
+              "producer": "Wilton Benitez",
+              "varietal": "Red Bourbon",
+              "description": "Introducing Berry Custard Tart, a half-caf blend made by recombining the same lot of Wilton Benitez\u2019s Para\u00edso 92 Red Bourbon from Granja Para\u00edso 92. This blend delivers vibrant notes of berries, red apple, cranberry, and cherry, offering a rich, fruity flavor without the full caffeine load.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Berries",
+                "Red Apple",
+                "Cranberry",
+                "Cherry"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Cauca",
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "Half-caf blend with fruity notes.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/berry_custard_1_800x.jpg?v=1761599928",
+              "short_description": "A half-caf blend with vibrant notes of berries and red apple, offering rich flavor.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "black-forest-decaf",
+            "name": "BLACK FOREST - DECAF",
+            "source_url": "https://colorfullcoffee.com/products/black-forest-decaf",
+            "source_key": null,
+            "created_at": "2025-12-24T00:51:03.819052+00:00",
+            "first_seen_at": "2025-12-24T00:51:03.703+00:00",
+            "last_seen_at": "2025-12-24T00:51:03.703+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": "true",
+              "producer": "Sebastian Ramirez",
+              "varietal": "Caturra",
+              "description": "This coffee from Sebastian Ramirez is both co-fermented and decaffeinated, resulting in a cup that tastes like strawberry jam, rich chocolate mousse, and a hint of liqueur.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Maraschino Cherry",
+                "Strawberry Jam",
+                "Dark Chocolate"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "Medium",
+              "variant_prices": [
+                [
+                  "200g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  null
+                ]
+              ],
+              "nano_description": "Decaf coffee with strawberry and chocolate notes.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/black_forest_1_800x.jpg?v=1765990442",
+              "short_description": "A unique decaf coffee with flavors of strawberry jam and dark chocolate.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "raspbi-tabi",
+            "name": "RASPBI TABI",
+            "source_url": "https://colorfullcoffee.com/products/las-flores-raspbi-tabi",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:49.975821+00:00",
+            "first_seen_at": "2025-12-24T00:49:49.868+00:00",
+            "last_seen_at": "2025-12-24T00:49:49.868+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Diego and Jhoan Vergara",
+              "varietal": "Tabi",
+              "description": "This coffee comes from Las Flores farm, grown by Diego and Jhoan Vergara. This washed Tabi has a beautiful balance of sweetness and tartness, with fun and prickly-like acidity. The thermal shock method adds even more clarity and depth of flavour, emphasizing sweetness.",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Raspberry",
+                "Hibiscus",
+                "Candy"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "A light roasted Tabi coffee with raspberry and candy notes.",
+              "country_of_origin": "Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/raspbi_tabi_1_800x.jpg?v=1761577013",
+              "short_description": "A washed Tabi coffee with a balance of sweetness and tartness, featuring notes of raspberry and hibiscus.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "musumba-lot-3",
+            "name": "Musumba Lot 3",
+            "source_url": "https://colorfullcoffee.com/products/long-miles-musumba-lot-3",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:33.360695+00:00",
+            "first_seen_at": "2025-12-24T00:49:33.257+00:00",
+            "last_seen_at": "2025-12-24T00:49:33.257+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": [
+                "Filter"
+              ],
+              "altitude": null,
+              "is_decaf": false,
+              "producer": "Long Miles Coffee Project",
+              "varietal": null,
+              "description": "This naturally processed coffee comes from the premier Long Miles Coffee Project in Burundi. In this cup you'll find a nice mix of red and purple grapes, black tea, and a good amount of funk!",
+              "origin_type": "Single Origin",
+              "flavor_notes": [
+                "Red Grapes",
+                "Purple Grapes",
+                "Black Tea",
+                "Halloween Candy",
+                "Dried Prunes"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": null,
+              "roast_darkness": "light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$40.00"
+                ]
+              ],
+              "nano_description": "Naturally processed coffee with red grapes and black tea notes.",
+              "country_of_origin": "Burundi",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/musumba_lot3_1_800x.jpg?v=1765992951",
+              "short_description": "A naturally processed coffee from Burundi with notes of red grapes, black tea, and funk.",
+              "grind_size_offered": null
+            }
+          },
+          {
+            "id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "chocolate-wafer-espresso",
+            "name": "Chocolate Wafer Espresso",
+            "source_url": "https://colorfullcoffee.com/products/chocolate-wafer-espresso",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:05.74451+00:00",
+            "first_seen_at": "2025-12-24T00:49:05.674+00:00",
+            "last_seen_at": "2025-12-24T00:49:05.674+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "Espresso",
+              "altitude": "1300 - 2100 masl",
+              "is_decaf": "false",
+              "producer": "Wilton Benitez, Escuela de Campo Sierra Negra",
+              "varietal": "Typica, Bourbon, Marsellesa, Obata, Gesha, Java",
+              "description": "Chocolate Wafer Espresso blends exceptional coffees from Mexico and Colombia, featuring rich notes of baklava, butterscotch, and apple pie, with hints of clementine and lemon. Enhanced with a touch of Java varietal, it offers tropical layers of passion fruit and honey, creating a smooth and sweet espresso experience.",
+              "origin_type": "Blend",
+              "flavor_notes": [
+                "Baklava",
+                "Butterscotch",
+                "Apple Pie",
+                "Clementine",
+                "Lemon",
+                "Passion Fruit",
+                "Pineapple",
+                "Honey"
+              ],
+              "harvest_date": null,
+              "default_price": "$20.00",
+              "origin_region": "Sierra Negra, Cauca",
+              "roast_darkness": "medium - light",
+              "variant_prices": [
+                [
+                  "250g",
+                  "$20.00"
+                ],
+                [
+                  "1kg",
+                  "$null"
+                ]
+              ],
+              "nano_description": "Smooth, balanced espresso with tropical and sweet flavors.",
+              "country_of_origin": "Mexico, Colombia",
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/chocolate_wafer_2_800x.jpg?v=1761577087",
+              "short_description": "A delightful blend of Mexican and Colombian coffees with rich, sweet notes.",
+              "grind_size_offered": [
+                "espresso"
+              ]
+            }
+          },
+          {
+            "id": "f1581d97-0b3b-4e89-9068-07700cf2dd7d",
+            "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+            "slug": "bumbleberry-pie-espresso",
+            "name": "BUMBLEBERRY PIE - ESPRESSO",
+            "source_url": "https://colorfullcoffee.com/collections/espresso-coffee",
+            "source_key": null,
+            "created_at": "2025-12-24T00:49:14.980824+00:00",
+            "first_seen_at": "2025-12-24T00:49:14.863+00:00",
+            "last_seen_at": "2025-12-24T00:51:27.368+00:00",
+            "original_image_url": null,
+            "availability_state": "unknown",
+            "metadata": {
+              "brew_as": "filter",
+              "altitude": null,
+              "is_decaf": false,
+              "producer": null,
+              "varietal": null,
+              "description": "A well-rounded and balanced espresso coffee, recommended to rest for 2 weeks for optimal flavor.",
+              "origin_type": null,
+              "flavor_notes": null,
+              "harvest_date": null,
+              "default_price": "$23.00",
+              "origin_region": null,
+              "roast_darkness": null,
+              "nano_description": "Well-rounded espresso, optimal after 2 weeks.",
+              "country_of_origin": null,
+              "product_image_url": "https://colorfullcoffee.com/cdn/shop/files/bumbleberry_pie_{width}x.jpg?v=1761577080",
+              "short_description": "A balanced espresso coffee, best after 2 weeks of resting.",
+              "grind_size_offered": null
+            }
+          }
+        ],
+        "variants": [
+          {
+            "id": "0f1d64af-d742-4c5d-aa69-64afc65a5a83",
+            "product_id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:50:42.848917+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "183de677-7cfd-4933-afd5-83f3db4a25e9",
+            "product_id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:50:23.728733+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "1d4b025c-bc78-47cf-86b2-ee2387c147af",
+            "product_id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:50.106111+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "2cd9511f-d567-44a0-b02a-f41fed0d6370",
+            "product_id": "f1581d97-0b3b-4e89-9068-07700cf2dd7d",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:51:27.609269+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "2debc1c5-178a-451b-9bcc-c1c388f37e10",
+            "product_id": "bc81b6e8-0fb9-42e3-9874-ef1f10bba6a4",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:49:22.43765+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "48ca1e8a-3b64-4bd1-83c3-8b1a5fac3558",
+            "product_id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:49:50.106111+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "48f77a4e-4979-4ea0-aab2-bc2ee0f7bcba",
+            "product_id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "200g",
+            "created_at": "2025-12-24T00:48:54.823974+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "4b7dc315-e112-47e8-b030-35c1a7aea2e5",
+            "product_id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:48:45.308176+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "541e41fc-fcdb-4832-9358-b50833ea971b",
+            "product_id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:50:42.848917+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "61d6d66b-eaae-4257-affd-445acfabe802",
+            "product_id": "843326be-9ebd-451e-a04d-c5d4c1c989b7",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:50:34.482417+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "623caf54-1077-42e4-bb2b-acfe2779c734",
+            "product_id": "2e1c83d8-44a3-43b6-97b4-d179d1f482bd",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:59.246268+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "649b7b36-0f4b-4402-bf82-209c502bcec6",
+            "product_id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:48:45.308176+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "68dd4bf4-3c0a-490b-9d5f-0cc803cc0b60",
+            "product_id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:51:18.684086+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "704d4805-0ee0-4c7d-a894-f1fd7886e010",
+            "product_id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:05.840775+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "84edcedb-0a13-49d9-af5a-874811fde2ea",
+            "product_id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:49:05.840775+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "85863496-7862-4453-9f60-9b8d7cef896c",
+            "product_id": "843326be-9ebd-451e-a04d-c5d4c1c989b7",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "200g",
+            "created_at": "2025-12-24T00:50:34.482417+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "8dd28ab1-aace-49a6-94c7-d5b5e16ca018",
+            "product_id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:49:33.468889+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "b7f99cf9-9000-4c3d-aa4b-570035e92b97",
+            "product_id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:48:54.823974+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "bf0ac3c0-6ca7-4b27-a803-2dee2593920a",
+            "product_id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:51:03.951352+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "c175a8d0-1c24-4e08-aec6-2a2a4afa06c2",
+            "product_id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:49:33.468889+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "ca30c9d6-4062-41af-82ef-cacccbd458f4",
+            "product_id": "a9565793-dccb-457a-bcd3-faa827ec655b",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:50:12.724617+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "d52d5e75-5a7e-40c7-8a1e-3a798b622b36",
+            "product_id": "88ab7340-a641-4623-b18d-13d400048e29",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "250g",
+            "created_at": "2025-12-24T00:48:36.800821+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "d650f2c3-78f0-4dc6-ad81-560ef363158e",
+            "product_id": "31639cf0-c99e-47c8-8124-e1b96f5c6ca5",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "default",
+            "created_at": "2025-12-24T00:51:11.97997+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "d8dce43e-cbd9-4395-8239-e719c0f27b07",
+            "product_id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:50:23.728733+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "e1d1dd40-19f6-44b4-b30d-6da418cbee90",
+            "product_id": "88ab7340-a641-4623-b18d-13d400048e29",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "1kg",
+            "created_at": "2025-12-24T00:48:36.800821+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          },
+          {
+            "id": "e390e1dd-000b-47a0-9b6b-cce91bc77f49",
+            "product_id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "source_key": null,
+            "merchant_variant_id": null,
+            "variant_name": "200g",
+            "created_at": "2025-12-24T00:51:03.951352+00:00",
+            "price_minor_units": null,
+            "currency": "USD",
+            "currency_exponent": null,
+            "availability_state": "unknown",
+            "availability_checked_at": null
+          }
+        ],
+        "media": [
+          {
+            "product_id": "2e1c83d8-44a3-43b6-97b4-d179d1f482bd",
+            "media_asset_id": "c0221ffb-bf11-436a-b0ef-7186b7c35b54",
+            "sort_order": 0
+          },
+          {
+            "product_id": "31639cf0-c99e-47c8-8124-e1b96f5c6ca5",
+            "media_asset_id": "431d6a17-6d78-4227-939b-9e51b6d53f1d",
+            "sort_order": 0
+          },
+          {
+            "product_id": "3d92f583-12da-4c2f-81c8-49e1662f6f7d",
+            "media_asset_id": "1ae31a1f-d2de-4d40-8460-b162baba4e4f",
+            "sort_order": 0
+          },
+          {
+            "product_id": "543af476-fce0-4ad1-b530-77ea01443f5c",
+            "media_asset_id": "47dd1194-ddc8-443b-8a1c-5287bbcae86a",
+            "sort_order": 0
+          },
+          {
+            "product_id": "80d1be16-fb94-4bb3-98bf-e2ee0266b69a",
+            "media_asset_id": "1ea49b95-10a1-4267-b71a-ea0c4207aff4",
+            "sort_order": 0
+          },
+          {
+            "product_id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "media_asset_id": "e7a2a3e8-13f0-4065-baa1-caf1d0501723",
+            "sort_order": 0
+          },
+          {
+            "product_id": "a99d163b-04b1-4f89-8b1e-a832e58f208c",
+            "media_asset_id": "a91c3746-4c25-47e6-994c-0a04d424f322",
+            "sort_order": 0
+          },
+          {
+            "product_id": "c1e423d2-10da-43a1-b329-6a08d87116a8",
+            "media_asset_id": "8b43dc4a-d346-4c49-b8bd-c5f1d6d3fc11",
+            "sort_order": 0
+          },
+          {
+            "product_id": "c73f60bd-08fc-413c-bba2-d9cbd8083e4e",
+            "media_asset_id": "fb2400eb-99fd-4a20-a7da-0f9f541a53bf",
+            "sort_order": 0
+          },
+          {
+            "product_id": "c8d3ee28-92a5-460e-ba36-89a40577df35",
+            "media_asset_id": "33950afe-b982-474f-a27a-171b4b2d8a46",
+            "sort_order": 0
+          },
+          {
+            "product_id": "cfa87914-abc4-4135-81b0-a18205d44ab6",
+            "media_asset_id": "9544b19e-4b51-415a-acac-efb8f89d3a53",
+            "sort_order": 0
+          },
+          {
+            "product_id": "e1e19e35-9b4e-4d1c-8850-1ba3d4811c6e",
+            "media_asset_id": "a1dd0e01-a955-41db-97de-ac4650e0b322",
+            "sort_order": 0
+          },
+          {
+            "product_id": "f1581d97-0b3b-4e89-9068-07700cf2dd7d",
+            "media_asset_id": "7f1ff02b-19fd-4f74-8e8c-25d003a372e5",
+            "sort_order": 0
+          }
+        ]
+      },
+      "finished_at": "2026-10-08T13:20:56.247Z"
+    }
+  ],
+  "error_summary": "Local website credential lacks model.request scope; all three crawl runs failed. Products, variants and media are unchanged. No Passport production crawl attempted."
+}

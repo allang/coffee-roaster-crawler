@@ -1,0 +1,109 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProductGroup",
+  "@id": "https://namusairo.com/product/엘플라세르-옴블리곤/1148/",
+  "name": "엘플라세르 옴블리곤",
+  "productGroupID": "cafe24_namusairocoffee_1_1148",
+  "variesBy": [
+    "용량",
+    "분쇄도"
+  ],
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "엘플라세르 옴블리곤 100g-홀빈(갈지않음)",
+      "image": [
+        "https://cafe24img.poxo.com/namusairocoffee/web/product/big/202609/480ef6e5093041094ddf53f6b209b1cf.jpg"
+      ],
+      "description": "",
+      "brand": {
+        "@type": "Brand",
+        "name": "나무사이로"
+      },
+      "sku": "cafe24_namusairocoffee_1_1148_P0000BSE000B",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "용량",
+          "value": "100g"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "분쇄도",
+          "value": "홀빈(갈지않음)"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://namusairo.com/product/엘플라세르-옴블리곤/1148/?item_code=P0000BSE000B",
+        "priceCurrency": "KRW",
+        "price": 12000,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "엘플라세르 옴블리곤 100g-핸드드립",
+      "image": [
+        "https://cafe24img.poxo.com/namusairocoffee/web/product/big/202609/480ef6e5093041094ddf53f6b209b1cf.jpg"
+      ],
+      "description": "",
+      "brand": {
+        "@type": "Brand",
+        "name": "나무사이로"
+      },
+      "sku": "cafe24_namusairocoffee_1_1148_P0000BSE000C",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "용량",
+          "value": "100g"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "분쇄도",
+          "value": "핸드드립"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://namusairo.com/product/엘플라세르-옴블리곤/1148/?item_code=P0000BSE000C",
+        "priceCurrency": "KRW",
+        "price": 12000,
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "엘플라세르 옴블리곤 100g-에스프레소",
+      "image": [
+        "https://cafe24img.poxo.com/namusairocoffee/web/product/big/202609/480ef6e5093041094ddf53f6b209b1cf.jpg"
+      ],
+      "description": "",
+      "brand": {
+        "@type": "Brand",
+        "name": "나무사이로"
+      },
+      "sku": "cafe24_namusairocoffee_1_1148_P0000BSE000D",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "용량",
+          "value": "100g"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "분쇄도",
+          "value": "에스프레소"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://namusairo.com/product/엘플라세르-옴블리곤/1148/?item_code=P0000BSE000D",
+        "priceCurrency": "KRW",
+        "price": 12000,
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ]
+}

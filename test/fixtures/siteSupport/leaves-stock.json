@@ -1,0 +1,16 @@
+{
+  "id": 15797465186377,
+  "handle": "costa-rica-don-eli-1",
+  "variants": [
+    {
+      "id": 56120797823049,
+      "available": true,
+      "price": 3900
+    },
+    {
+      "id": 56120797855817,
+      "available": true,
+      "price": 15500
+    }
+  ]
+}

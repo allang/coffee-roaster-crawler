@@ -1,0 +1,1929 @@
+{
+  "schemaVersion": 1,
+  "scope": "Observed convenience cohort, not a production-wide forecast",
+  "primary": {
+    "startedAt": "2026-10-07T02:24:35.451Z",
+    "finishedAt": "2026-10-07T03:07:45.625Z",
+    "release": "f96b06d23239a22a3e4d1de0ef6bc796ee927298",
+    "settings": {
+      "node": "v22.22.0",
+      "roasterConcurrency": 1,
+      "pageConcurrency": 1,
+      "model": "gpt-5-mini"
+    },
+    "baseline": {
+      "dbSeconds": 2256.051,
+      "visited": 129,
+      "coffeeFound": 69,
+      "discovered": 191,
+      "runs": [
+        {
+          "name": "La Venta Café",
+          "id": "1541ed08-235d-4c0e-9778-eb0afccd1aa8",
+          "started_at": "2026-10-06T12:11:05.248+00:00",
+          "seconds": 113.142,
+          "visited": 6,
+          "coffeeFound": 2
+        },
+        {
+          "name": "Shooke Coffee Roasters",
+          "id": "8c8d1bb6-103a-43aa-9ae3-0226f58ef031",
+          "started_at": "2026-10-05T13:11:37.155+00:00",
+          "seconds": 225.266,
+          "visited": 18,
+          "coffeeFound": 9
+        },
+        {
+          "name": "Kickturn Coffee Roasters",
+          "id": "2f00a6d7-ce65-43ca-a512-d3ac0780eaa5",
+          "started_at": "2026-10-05T12:45:06.105+00:00",
+          "seconds": 141.198,
+          "visited": 13,
+          "coffeeFound": 6
+        },
+        {
+          "name": "Allies Coffee",
+          "id": "0b5c79b9-d38c-4e0c-a991-51ac3e3a2840",
+          "started_at": "2026-10-04T18:25:33.288+00:00",
+          "seconds": 240.382,
+          "visited": 15,
+          "coffeeFound": 7
+        },
+        {
+          "name": "KLETS Coffee Roasters",
+          "id": "01e37f8f-6844-4eed-84f8-4be764f84329",
+          "started_at": "2026-10-04T18:20:54.213+00:00",
+          "seconds": 269.693,
+          "visited": 10,
+          "coffeeFound": 8
+        },
+        {
+          "name": "See-Bohne Kaffeemanufaktur GmbH",
+          "id": "7b90a288-af51-4784-975d-1a68cd921d19",
+          "started_at": "2026-10-06T17:35:11.664+00:00",
+          "seconds": 632.097,
+          "visited": 29,
+          "coffeeFound": 13
+        },
+        {
+          "name": "Clearbrook Coffee Company",
+          "id": "bd1d0ebf-a124-4fc6-8bb9-46b630e099cf",
+          "started_at": "2026-10-02T19:32:25.641+00:00",
+          "seconds": 178.491,
+          "visited": 13,
+          "coffeeFound": 7
+        },
+        {
+          "name": "Talisman Coffee",
+          "id": "ba836c31-a821-4d6a-8838-7d5cd2c46412",
+          "started_at": "2026-10-06T19:38:15.957+00:00",
+          "seconds": 106.238,
+          "visited": 5,
+          "coffeeFound": 5
+        },
+        {
+          "name": "Ombre Coffee",
+          "id": "866575ba-d29e-43b7-a7e0-e976b7ebeda1",
+          "started_at": "2026-10-06T19:34:37.734+00:00",
+          "seconds": 127.504,
+          "visited": 7,
+          "coffeeFound": 5
+        },
+        {
+          "name": "Qualia Coffee",
+          "id": "745be9d8-1a98-4cd9-adb9-1a3e4890e88d",
+          "started_at": "2026-10-06T19:25:43.8+00:00",
+          "seconds": 222.04,
+          "visited": 13,
+          "coffeeFound": 7
+        }
+      ]
+    },
+    "passes": [
+      {
+        "phase": "first",
+        "completed": 10,
+        "elapsedSeconds": 1877.255768791,
+        "fullRoasterSeconds": 1877.242510501,
+        "cpuSeconds": 19.398842000000002,
+        "maxRssKiB": 160480,
+        "http": {
+          "merchant_page": {
+            "requests": 153,
+            "success": 141,
+            "failure": 12,
+            "statuses": {
+              "200": 141,
+              "network_error": 12
+            }
+          },
+          "supabase_rest": {
+            "requests": 624,
+            "success": 576,
+            "failure": 48,
+            "statuses": {
+              "200": 458,
+              "201": 106,
+              "204": 12,
+              "406": 48
+            }
+          },
+          "sitemap": {
+            "requests": 56,
+            "success": 56,
+            "failure": 0,
+            "statuses": {
+              "200": 56
+            }
+          },
+          "openai_http": {
+            "requests": 129,
+            "success": 129,
+            "failure": 0,
+            "statuses": {
+              "200": 129
+            }
+          },
+          "native_product": {
+            "requests": 34,
+            "success": 34,
+            "failure": 0,
+            "statuses": {
+              "200": 34
+            }
+          },
+          "image": {
+            "requests": 51,
+            "success": 47,
+            "failure": 4,
+            "statuses": {
+              "200": 47,
+              "404": 4
+            }
+          },
+          "supabase_storage": {
+            "requests": 22,
+            "success": 22,
+            "failure": 0,
+            "statuses": {
+              "200": 22
+            }
+          }
+        },
+        "metrics": {
+          "visited": 129,
+          "coffeeFound": 62,
+          "irrelevant": 60,
+          "errors": 7,
+          "aiCalls": 129,
+          "cacheHits": 0,
+          "structuredPages": 0,
+          "marketChecks": 62
+        },
+        "usage": {
+          "prompt_tokens": 173140,
+          "completion_tokens": 160188,
+          "cached_tokens": 7552,
+          "unreported_calls": 0
+        },
+        "failedRoasters": 0,
+        "roasters": [
+          {
+            "name": "La Venta Café",
+            "entity_id": "5cb1e1a3-e099-401c-aff9-0c0fff7b0033",
+            "runId": "d8524ed8-97a0-4806-b6d3-f901860e0bbb",
+            "dbSeconds": 66.913,
+            "fullSeconds": 67.530385708,
+            "metrics": {
+              "visited": 6,
+              "coffeeFound": 3,
+              "irrelevant": 3,
+              "errors": 0,
+              "aiCalls": 6,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 3,
+              "aiUsage": {
+                "prompt_tokens": 8300,
+                "completion_tokens": 6643,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Shooke Coffee Roasters",
+            "entity_id": "5d92cad4-fbb6-4fa8-9e4f-953b10a46d6c",
+            "runId": "1ce6ee87-1012-41a6-924a-8f4e77e27d8c",
+            "dbSeconds": 178.143,
+            "fullSeconds": 178.637722167,
+            "metrics": {
+              "visited": 18,
+              "coffeeFound": 9,
+              "irrelevant": 9,
+              "errors": 0,
+              "aiCalls": 18,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 9,
+              "aiUsage": {
+                "prompt_tokens": 21293,
+                "completion_tokens": 21153,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Kickturn Coffee Roasters",
+            "entity_id": "a90d2949-b147-4f90-86b2-442eb641e35c",
+            "runId": "f13dec51-6af2-4971-bc3b-5f636cb2a714",
+            "dbSeconds": 115.434,
+            "fullSeconds": 116.249162583,
+            "metrics": {
+              "visited": 13,
+              "coffeeFound": 6,
+              "irrelevant": 7,
+              "errors": 0,
+              "aiCalls": 13,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 6,
+              "aiUsage": {
+                "prompt_tokens": 18076,
+                "completion_tokens": 12929,
+                "cached_tokens": 1152,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Allies Coffee",
+            "entity_id": "6c379e38-5aba-48be-8dc3-3ae43424002d",
+            "runId": "d3b0dea9-e7e2-4de4-b8c2-34816fa180cf",
+            "dbSeconds": 159.748,
+            "fullSeconds": 161.269433708,
+            "metrics": {
+              "visited": 15,
+              "coffeeFound": 1,
+              "irrelevant": 7,
+              "errors": 7,
+              "aiCalls": 15,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 1,
+              "aiUsage": {
+                "prompt_tokens": 20362,
+                "completion_tokens": 18746,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "KLETS Coffee Roasters",
+            "entity_id": "a65237bc-31f8-448e-a294-111b1da0f846",
+            "runId": "a1fbc45d-28fd-49b8-8afb-5fc63f18a9b9",
+            "dbSeconds": 147.77,
+            "fullSeconds": 148.34889858400007,
+            "metrics": {
+              "visited": 10,
+              "coffeeFound": 8,
+              "irrelevant": 2,
+              "errors": 0,
+              "aiCalls": 10,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 8,
+              "aiUsage": {
+                "prompt_tokens": 17103,
+                "completion_tokens": 19210,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "See-Bohne Kaffeemanufaktur GmbH",
+            "entity_id": "f1482751-6dbd-4db2-9eda-152b94f6825e",
+            "runId": "8a6ea360-a63d-4590-bd79-7f8a64dbe2e2",
+            "dbSeconds": 694.588,
+            "fullSeconds": 709.190530625,
+            "metrics": {
+              "visited": 29,
+              "coffeeFound": 12,
+              "irrelevant": 17,
+              "errors": 0,
+              "aiCalls": 29,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 12,
+              "aiUsage": {
+                "prompt_tokens": 43251,
+                "completion_tokens": 31967,
+                "cached_tokens": 6400,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Clearbrook Coffee Company",
+            "entity_id": "40eb607a-2bb6-45d8-aec1-14b1ad17f1c7",
+            "runId": "ba4cd4f8-90f9-4cf2-aa55-d43b1ffee844",
+            "dbSeconds": 158.285,
+            "fullSeconds": 162.70623120899987,
+            "metrics": {
+              "visited": 13,
+              "coffeeFound": 7,
+              "irrelevant": 6,
+              "errors": 0,
+              "aiCalls": 13,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 7,
+              "aiUsage": {
+                "prompt_tokens": 14743,
+                "completion_tokens": 14774,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Talisman Coffee",
+            "entity_id": "bfb5a47d-44a1-48d2-af08-1395c18db9ec",
+            "runId": "8a2a50a4-1c80-4591-a085-b9207d86ca1c",
+            "dbSeconds": 80.99,
+            "fullSeconds": 81.36951462500006,
+            "metrics": {
+              "visited": 5,
+              "coffeeFound": 4,
+              "irrelevant": 1,
+              "errors": 0,
+              "aiCalls": 5,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 4,
+              "aiUsage": {
+                "prompt_tokens": 6596,
+                "completion_tokens": 9100,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Ombre Coffee",
+            "entity_id": "d8c951aa-ab4f-49b8-a3f8-e7817aa42cdb",
+            "runId": "b0d2b7fe-68cc-49ca-b513-198023b573fb",
+            "dbSeconds": 74.275,
+            "fullSeconds": 74.66413862500013,
+            "metrics": {
+              "visited": 7,
+              "coffeeFound": 5,
+              "irrelevant": 2,
+              "errors": 0,
+              "aiCalls": 7,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 5,
+              "aiUsage": {
+                "prompt_tokens": 8878,
+                "completion_tokens": 9830,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Qualia Coffee",
+            "entity_id": "0686d91c-e3f0-42e0-a96a-2211d23f7ae2",
+            "runId": "97fb34d1-1b09-4286-8f4a-7032e39b5f39",
+            "dbSeconds": 177.002,
+            "fullSeconds": 177.27649266700004,
+            "metrics": {
+              "visited": 13,
+              "coffeeFound": 7,
+              "irrelevant": 6,
+              "errors": 0,
+              "aiCalls": 13,
+              "cacheHits": 0,
+              "structuredPages": 0,
+              "marketChecks": 7,
+              "aiUsage": {
+                "prompt_tokens": 14538,
+                "completion_tokens": 15836,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          }
+        ],
+        "dbSeconds": 1853.1480000000001,
+        "dbRunsMatched": 10,
+        "estimatedModelUsd": 0.3619618
+      },
+      {
+        "phase": "cached",
+        "completed": 10,
+        "elapsedSeconds": 709.3878027920001,
+        "fullRoasterSeconds": 709.3673432900001,
+        "cpuSeconds": 13.163647,
+        "maxRssKiB": 261008,
+        "http": {
+          "merchant_page": {
+            "requests": 141,
+            "success": 141,
+            "failure": 0,
+            "statuses": {
+              "200": 141
+            }
+          },
+          "supabase_rest": {
+            "requests": 420,
+            "success": 420,
+            "failure": 0,
+            "statuses": {
+              "200": 398,
+              "201": 10,
+              "204": 12
+            }
+          },
+          "sitemap": {
+            "requests": 57,
+            "success": 56,
+            "failure": 1,
+            "statuses": {
+              "200": 56,
+              "network_error": 1
+            }
+          },
+          "native_product": {
+            "requests": 34,
+            "success": 34,
+            "failure": 0,
+            "statuses": {
+              "200": 34
+            }
+          },
+          "image": {
+            "requests": 4,
+            "success": 0,
+            "failure": 4,
+            "statuses": {
+              "404": 4
+            }
+          },
+          "openai_http": {
+            "requests": 14,
+            "success": 14,
+            "failure": 0,
+            "statuses": {
+              "200": 14
+            }
+          }
+        },
+        "metrics": {
+          "visited": 129,
+          "coffeeFound": 62,
+          "irrelevant": 60,
+          "errors": 7,
+          "aiCalls": 14,
+          "cacheHits": 115,
+          "structuredPages": 0,
+          "marketChecks": 62
+        },
+        "usage": {
+          "prompt_tokens": 18989,
+          "completion_tokens": 29504,
+          "cached_tokens": 0,
+          "unreported_calls": 0
+        },
+        "failedRoasters": 0,
+        "roasters": [
+          {
+            "name": "La Venta Café",
+            "entity_id": "5cb1e1a3-e099-401c-aff9-0c0fff7b0033",
+            "runId": "6ac04030-295b-429e-82a8-ef99fe9f4bbd",
+            "dbSeconds": 10.435,
+            "fullSeconds": 10.814185999999987,
+            "metrics": {
+              "visited": 6,
+              "coffeeFound": 3,
+              "irrelevant": 3,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 6,
+              "structuredPages": 0,
+              "marketChecks": 3,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Shooke Coffee Roasters",
+            "entity_id": "5d92cad4-fbb6-4fa8-9e4f-953b10a46d6c",
+            "runId": "96a542d8-74a9-44b2-9be4-9b80eb8abc2d",
+            "dbSeconds": 24.482,
+            "fullSeconds": 24.843015292000025,
+            "metrics": {
+              "visited": 18,
+              "coffeeFound": 9,
+              "irrelevant": 9,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 18,
+              "structuredPages": 0,
+              "marketChecks": 9,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Kickturn Coffee Roasters",
+            "entity_id": "a90d2949-b147-4f90-86b2-442eb641e35c",
+            "runId": "210d19b9-88d4-4cd7-99d8-e2feadb48871",
+            "dbSeconds": 19.16,
+            "fullSeconds": 19.682363833000185,
+            "metrics": {
+              "visited": 13,
+              "coffeeFound": 6,
+              "irrelevant": 7,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 13,
+              "structuredPages": 0,
+              "marketChecks": 6,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Allies Coffee",
+            "entity_id": "6c379e38-5aba-48be-8dc3-3ae43424002d",
+            "runId": "d672d639-b838-4a12-a652-7dc840bc2a82",
+            "dbSeconds": 134.77,
+            "fullSeconds": 135.16838195799988,
+            "metrics": {
+              "visited": 15,
+              "coffeeFound": 1,
+              "irrelevant": 7,
+              "errors": 7,
+              "aiCalls": 7,
+              "cacheHits": 8,
+              "structuredPages": 0,
+              "marketChecks": 1,
+              "aiUsage": {
+                "prompt_tokens": 9920,
+                "completion_tokens": 17469,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "KLETS Coffee Roasters",
+            "entity_id": "a65237bc-31f8-448e-a294-111b1da0f846",
+            "runId": "88336ebc-be72-4214-8038-49e6f295b698",
+            "dbSeconds": 17.561,
+            "fullSeconds": 18.045140957999976,
+            "metrics": {
+              "visited": 10,
+              "coffeeFound": 8,
+              "irrelevant": 2,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 10,
+              "structuredPages": 0,
+              "marketChecks": 8,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "See-Bohne Kaffeemanufaktur GmbH",
+            "entity_id": "f1482751-6dbd-4db2-9eda-152b94f6825e",
+            "runId": "41d2344a-7615-45cd-8c96-da6f6af768df",
+            "dbSeconds": 290.854,
+            "fullSeconds": 305.97454812499996,
+            "metrics": {
+              "visited": 29,
+              "coffeeFound": 12,
+              "irrelevant": 17,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 29,
+              "structuredPages": 0,
+              "marketChecks": 12,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Clearbrook Coffee Company",
+            "entity_id": "40eb607a-2bb6-45d8-aec1-14b1ad17f1c7",
+            "runId": "5e665a30-99dc-44ee-8f63-37220fadf12a",
+            "dbSeconds": 135.091,
+            "fullSeconds": 138.72973091599997,
+            "metrics": {
+              "visited": 13,
+              "coffeeFound": 7,
+              "irrelevant": 6,
+              "errors": 0,
+              "aiCalls": 7,
+              "cacheHits": 6,
+              "structuredPages": 0,
+              "marketChecks": 7,
+              "aiUsage": {
+                "prompt_tokens": 9069,
+                "completion_tokens": 12035,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Talisman Coffee",
+            "entity_id": "bfb5a47d-44a1-48d2-af08-1395c18db9ec",
+            "runId": "1d287513-7d37-4225-b514-5ab20da66d58",
+            "dbSeconds": 4.826,
+            "fullSeconds": 5.1361732910000715,
+            "metrics": {
+              "visited": 5,
+              "coffeeFound": 4,
+              "irrelevant": 1,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 5,
+              "structuredPages": 0,
+              "marketChecks": 4,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Ombre Coffee",
+            "entity_id": "d8c951aa-ab4f-49b8-a3f8-e7817aa42cdb",
+            "runId": "44ee13da-5820-4044-8f82-67d8bdb0eaa9",
+            "dbSeconds": 7.392,
+            "fullSeconds": 7.644770041999873,
+            "metrics": {
+              "visited": 7,
+              "coffeeFound": 5,
+              "irrelevant": 2,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 7,
+              "structuredPages": 0,
+              "marketChecks": 5,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          },
+          {
+            "name": "Qualia Coffee",
+            "entity_id": "0686d91c-e3f0-42e0-a96a-2211d23f7ae2",
+            "runId": "40261dbc-48d2-432a-82b4-275e63327342",
+            "dbSeconds": 43.056,
+            "fullSeconds": 43.32903287500003,
+            "metrics": {
+              "visited": 13,
+              "coffeeFound": 7,
+              "irrelevant": 6,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 13,
+              "structuredPages": 0,
+              "marketChecks": 7,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          }
+        ],
+        "dbSeconds": 687.6270000000002,
+        "dbRunsMatched": 10,
+        "estimatedModelUsd": 0.06375525
+      }
+    ],
+    "coverage": {
+      "before": {
+        "counts": {
+          "products": 67,
+          "product_variants": 102,
+          "coffee_facts": 67,
+          "product_media": 59,
+          "known_pages": 190,
+          "catalog_change_events": 0
+        },
+        "products": {
+          "active": 67,
+          "sourceKey": 0,
+          "originalTitle": 0,
+          "displayTitle": 0,
+          "titleChangedForDisplay": 0,
+          "origin": 39,
+          "region": 27,
+          "description": 64,
+          "noteTaxonomy": 0,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 67
+          }
+        },
+        "variants": {
+          "legacyPrice": 85,
+          "legacyCurrency": 102,
+          "normalizedMoney": 0,
+          "priceAmount": 0,
+          "weight": 40,
+          "merchantId": 0,
+          "sourceKey": 0,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 102
+          },
+          "currencies": {
+            "EUR": 24,
+            "USD": 63,
+            "NZD": 14,
+            "EUR (€)": 1
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 10,
+          "variety": 10,
+          "roast": 29,
+          "notes": 50,
+          "decaf": 0,
+          "elevation": 0
+        }
+      },
+      "first": {
+        "counts": {
+          "products": 71,
+          "product_variants": 136,
+          "coffee_facts": 71,
+          "product_media": 85,
+          "known_pages": 191,
+          "catalog_change_events": 62
+        },
+        "products": {
+          "active": 71,
+          "sourceKey": 62,
+          "originalTitle": 62,
+          "displayTitle": 62,
+          "titleChangedForDisplay": 5,
+          "origin": 43,
+          "region": 28,
+          "description": 66,
+          "noteTaxonomy": 62,
+          "freshEvidence": 27,
+          "states": {
+            "in_stock": 14,
+            "unknown": 52,
+            "sold_out": 5
+          }
+        },
+        "variants": {
+          "legacyPrice": 114,
+          "legacyCurrency": 102,
+          "normalizedMoney": 44,
+          "priceAmount": 71,
+          "weight": 43,
+          "merchantId": 10,
+          "sourceKey": 88,
+          "freshEvidence": 88,
+          "states": {
+            "unknown": 119,
+            "in_stock": 9,
+            "sold_out": 8
+          },
+          "currencies": {
+            "EUR": 38,
+            "UNKNOWN": 34,
+            "USD": 50,
+            "NZD": 14
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 33,
+          "variety": 11,
+          "roast": 30,
+          "notes": 54,
+          "decaf": 35,
+          "elevation": 0
+        }
+      },
+      "cached": {
+        "counts": {
+          "products": 71,
+          "product_variants": 139,
+          "coffee_facts": 71,
+          "product_media": 85,
+          "known_pages": 191,
+          "catalog_change_events": 68
+        },
+        "products": {
+          "active": 71,
+          "sourceKey": 62,
+          "originalTitle": 62,
+          "displayTitle": 62,
+          "titleChangedForDisplay": 5,
+          "origin": 43,
+          "region": 28,
+          "description": 66,
+          "noteTaxonomy": 62,
+          "freshEvidence": 27,
+          "states": {
+            "in_stock": 14,
+            "unknown": 52,
+            "sold_out": 5
+          }
+        },
+        "variants": {
+          "legacyPrice": 117,
+          "legacyCurrency": 102,
+          "normalizedMoney": 44,
+          "priceAmount": 74,
+          "weight": 43,
+          "merchantId": 10,
+          "sourceKey": 91,
+          "freshEvidence": 91,
+          "states": {
+            "unknown": 122,
+            "in_stock": 9,
+            "sold_out": 8
+          },
+          "currencies": {
+            "EUR": 38,
+            "UNKNOWN": 37,
+            "USD": 50,
+            "NZD": 14
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 33,
+          "variety": 11,
+          "roast": 30,
+          "notes": 54,
+          "decaf": 36,
+          "elevation": 0
+        }
+      }
+    },
+    "preservation": {
+      "beforeTofirst": {
+        "products": {
+          "before": 67,
+          "retained": 67,
+          "added": 4,
+          "slugUnchanged": 67,
+          "first_seen_atUnchanged": 67,
+          "created_atUnchanged": 67
+        },
+        "product_variants": {
+          "before": 102,
+          "retained": 102,
+          "added": 34
+        },
+        "coffee_facts": {
+          "before": 67,
+          "retained": 67,
+          "added": 4
+        },
+        "known_pages": {
+          "before": 190,
+          "retained": 190,
+          "added": 1
+        },
+        "mediaLinks": {
+          "before": 59,
+          "retained": 59,
+          "added": 26
+        },
+        "variantCreatedAtUnchanged": 102,
+        "unchangedVariantMarketWithNewerCheck": 0
+      },
+      "beforeTocached": {
+        "products": {
+          "before": 67,
+          "retained": 67,
+          "added": 4,
+          "slugUnchanged": 67,
+          "first_seen_atUnchanged": 67,
+          "created_atUnchanged": 67
+        },
+        "product_variants": {
+          "before": 102,
+          "retained": 102,
+          "added": 37
+        },
+        "coffee_facts": {
+          "before": 67,
+          "retained": 67,
+          "added": 4
+        },
+        "known_pages": {
+          "before": 190,
+          "retained": 190,
+          "added": 1
+        },
+        "mediaLinks": {
+          "before": 59,
+          "retained": 59,
+          "added": 26
+        },
+        "variantCreatedAtUnchanged": 102,
+        "unchangedVariantMarketWithNewerCheck": 0
+      },
+      "firstToCached": {
+        "products": {
+          "before": 71,
+          "retained": 71,
+          "added": 0,
+          "slugUnchanged": 71,
+          "first_seen_atUnchanged": 71,
+          "created_atUnchanged": 71
+        },
+        "product_variants": {
+          "before": 136,
+          "retained": 136,
+          "added": 3
+        },
+        "coffee_facts": {
+          "before": 71,
+          "retained": 71,
+          "added": 0
+        },
+        "known_pages": {
+          "before": 191,
+          "retained": 191,
+          "added": 0
+        },
+        "mediaLinks": {
+          "before": 85,
+          "retained": 85,
+          "added": 0
+        },
+        "variantCreatedAtUnchanged": 136,
+        "unchangedVariantMarketWithNewerCheck": 87
+      }
+    },
+    "retainedCoverage": {
+      "before": {
+        "counts": {
+          "products": 67,
+          "product_variants": 102,
+          "coffee_facts": 67,
+          "product_media": 59,
+          "known_pages": 190,
+          "catalog_change_events": 0
+        },
+        "products": {
+          "active": 67,
+          "sourceKey": 0,
+          "originalTitle": 0,
+          "displayTitle": 0,
+          "titleChangedForDisplay": 0,
+          "origin": 39,
+          "region": 27,
+          "description": 64,
+          "noteTaxonomy": 0,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 67
+          }
+        },
+        "variants": {
+          "legacyPrice": 85,
+          "legacyCurrency": 102,
+          "normalizedMoney": 0,
+          "priceAmount": 0,
+          "weight": 40,
+          "merchantId": 0,
+          "sourceKey": 0,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 102
+          },
+          "currencies": {
+            "EUR": 24,
+            "USD": 63,
+            "NZD": 14,
+            "EUR (€)": 1
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 10,
+          "variety": 10,
+          "roast": 29,
+          "notes": 50,
+          "decaf": 0,
+          "elevation": 0
+        }
+      },
+      "first": {
+        "counts": {
+          "products": 67,
+          "product_variants": 102,
+          "coffee_facts": 67,
+          "product_media": 83,
+          "known_pages": 190,
+          "catalog_change_events": 58
+        },
+        "products": {
+          "active": 67,
+          "sourceKey": 58,
+          "originalTitle": 58,
+          "displayTitle": 58,
+          "titleChangedForDisplay": 5,
+          "origin": 41,
+          "region": 28,
+          "description": 64,
+          "noteTaxonomy": 58,
+          "freshEvidence": 27,
+          "states": {
+            "in_stock": 14,
+            "unknown": 48,
+            "sold_out": 5
+          }
+        },
+        "variants": {
+          "legacyPrice": 84,
+          "legacyCurrency": 81,
+          "normalizedMoney": 24,
+          "priceAmount": 41,
+          "weight": 40,
+          "merchantId": 0,
+          "sourceKey": 54,
+          "freshEvidence": 54,
+          "states": {
+            "unknown": 96,
+            "in_stock": 6
+          },
+          "currencies": {
+            "EUR": 25,
+            "USD": 42,
+            "NZD": 14,
+            "UNKNOWN": 21
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 32,
+          "variety": 10,
+          "roast": 29,
+          "notes": 53,
+          "decaf": 32,
+          "elevation": 0
+        }
+      },
+      "cached": {
+        "counts": {
+          "products": 67,
+          "product_variants": 102,
+          "coffee_facts": 67,
+          "product_media": 83,
+          "known_pages": 190,
+          "catalog_change_events": 64
+        },
+        "products": {
+          "active": 67,
+          "sourceKey": 58,
+          "originalTitle": 58,
+          "displayTitle": 58,
+          "titleChangedForDisplay": 5,
+          "origin": 41,
+          "region": 28,
+          "description": 64,
+          "noteTaxonomy": 58,
+          "freshEvidence": 27,
+          "states": {
+            "in_stock": 14,
+            "unknown": 48,
+            "sold_out": 5
+          }
+        },
+        "variants": {
+          "legacyPrice": 85,
+          "legacyCurrency": 81,
+          "normalizedMoney": 24,
+          "priceAmount": 42,
+          "weight": 40,
+          "merchantId": 0,
+          "sourceKey": 54,
+          "freshEvidence": 54,
+          "states": {
+            "unknown": 96,
+            "in_stock": 6
+          },
+          "currencies": {
+            "EUR": 25,
+            "USD": 42,
+            "NZD": 14,
+            "UNKNOWN": 21
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 32,
+          "variety": 10,
+          "roast": 29,
+          "notes": 53,
+          "decaf": 33,
+          "elevation": 0
+        }
+      }
+    },
+    "events": {
+      "before": {
+        "total": 0,
+        "content": 0,
+        "market": 0,
+        "contentOnly": 0,
+        "marketOnly": 0
+      },
+      "first": {
+        "total": 62,
+        "content": 62,
+        "market": 61,
+        "contentOnly": 1,
+        "marketOnly": 0
+      },
+      "cached": {
+        "total": 68,
+        "content": 68,
+        "market": 62,
+        "contentOnly": 6,
+        "marketOnly": 0
+      }
+    }
+  },
+  "changes": {
+    "historicalToFirstRecordedTimePercent": 17.85877180967983,
+    "historicalToCachedRecordedTimePercent": 69.52076881240717,
+    "firstToCachedRecordedTimePercent": 62.89411315232242,
+    "firstToCachedFullWallPercent": 62.211446379048084,
+    "firstToCachedAiCallsPercent": 89.14728682170544,
+    "firstToCachedEstimatedModelUsdPercent": 82.38619379172056,
+    "firstToCachedRestRequestsPercent": 32.692307692307686
+  },
+  "definitions": {
+    "dbSeconds": "Finished minus started from the matched crawl_runs row; excludes initial platform detection and post-completion inventory reconciliation.",
+    "elapsedSeconds": "Observed whole pass wall time, including the full crawlRoaster call.",
+    "estimatedModelUsd": "((input-cachedInput)*0.25 + cachedInput*0.025 + output*2) / 1e6. Published GPT-5 Mini rates, not invoices.",
+    "http": "Axios/fetch attempts during each roaster, including observed retries; setup and evidence snapshot reads excluded. HTTP 406 first-pass REST misses are expected lookup misses.",
+    "maxRssKiB": "Cumulative process peak, shared process across both passes; not isolated pass memory use.",
+    "coverage": "Field presence and observed catalog state, not human-validated accuracy or distinct saleable-product coverage.",
+    "noteTaxonomy": "Presence of the note-normalization record, including records with empty canonical categories.",
+    "freshEvidence": "Checked at or after measurement start, with a nonempty evidence array; includes unknown observations."
+  },
+  "priceReference": {
+    "checkedAtUtc": "2026-10-07",
+    "url": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+    "inputUsdPerMillion": 0.25,
+    "cachedInputUsdPerMillion": 0.025,
+    "outputUsdPerMillion": 2
+  },
+  "correctedReleaseValidation": {
+    "startedAt": "2026-10-07T03:08:32.906Z",
+    "finishedAt": "2026-10-07T03:11:29.844Z",
+    "release": "30748a20ac66f90d3f121b7298b65631fede6e49",
+    "settings": {
+      "node": "v22.22.0",
+      "roasterConcurrency": 1,
+      "pageConcurrency": 1,
+      "model": "gpt-5-mini",
+      "tlsOverride": null
+    },
+    "baseline": {
+      "dbSeconds": 240.382,
+      "visited": 15,
+      "coffeeFound": 7,
+      "discovered": 30,
+      "runs": [
+        {
+          "name": "Allies Coffee",
+          "id": "0b5c79b9-d38c-4e0c-a991-51ac3e3a2840",
+          "started_at": "2026-10-04T18:25:33.288+00:00",
+          "seconds": 240.382,
+          "visited": 15,
+          "coffeeFound": 7
+        }
+      ]
+    },
+    "passes": [
+      {
+        "phase": "first",
+        "completed": 1,
+        "elapsedSeconds": 155.33801204199997,
+        "fullRoasterSeconds": 155.336662334,
+        "cpuSeconds": 2.53868,
+        "maxRssKiB": 158224,
+        "http": {
+          "merchant_page": {
+            "requests": 16,
+            "success": 16,
+            "failure": 0,
+            "statuses": {
+              "200": 16
+            }
+          },
+          "supabase_rest": {
+            "requests": 73,
+            "success": 73,
+            "failure": 0,
+            "statuses": {
+              "200": 64,
+              "201": 8,
+              "204": 1
+            }
+          },
+          "sitemap": {
+            "requests": 7,
+            "success": 7,
+            "failure": 0,
+            "statuses": {
+              "200": 7
+            }
+          },
+          "native_product": {
+            "requests": 8,
+            "success": 8,
+            "failure": 0,
+            "statuses": {
+              "200": 8
+            }
+          },
+          "openai_http": {
+            "requests": 7,
+            "success": 7,
+            "failure": 0,
+            "statuses": {
+              "200": 7
+            }
+          },
+          "image": {
+            "requests": 7,
+            "success": 7,
+            "failure": 0,
+            "statuses": {
+              "200": 7
+            }
+          }
+        },
+        "metrics": {
+          "visited": 15,
+          "coffeeFound": 8,
+          "irrelevant": 7,
+          "errors": 0,
+          "aiCalls": 7,
+          "cacheHits": 8,
+          "structuredPages": 0,
+          "marketChecks": 8
+        },
+        "usage": {
+          "prompt_tokens": 9920,
+          "completion_tokens": 17114,
+          "cached_tokens": 9216,
+          "unreported_calls": 0
+        },
+        "failedRoasters": 0,
+        "roasters": [
+          {
+            "name": "Allies Coffee",
+            "entity_id": "6c379e38-5aba-48be-8dc3-3ae43424002d",
+            "runId": "a8589572-db7b-4838-8d85-4d193e85904d",
+            "dbSeconds": 154.845,
+            "fullSeconds": 155.336662334,
+            "metrics": {
+              "visited": 15,
+              "coffeeFound": 8,
+              "irrelevant": 7,
+              "errors": 0,
+              "aiCalls": 7,
+              "cacheHits": 8,
+              "structuredPages": 0,
+              "marketChecks": 8,
+              "aiUsage": {
+                "prompt_tokens": 9920,
+                "completion_tokens": 17114,
+                "cached_tokens": 9216,
+                "unreported_calls": 0
+              }
+            }
+          }
+        ],
+        "dbSeconds": 154.845,
+        "dbRunsMatched": 1,
+        "estimatedModelUsd": 0.0346344
+      },
+      {
+        "phase": "cached",
+        "completed": 1,
+        "elapsedSeconds": 19.37018525000001,
+        "fullRoasterSeconds": 19.36953483299998,
+        "cpuSeconds": 1.593885,
+        "maxRssKiB": 168176,
+        "http": {
+          "merchant_page": {
+            "requests": 16,
+            "success": 16,
+            "failure": 0,
+            "statuses": {
+              "200": 16
+            }
+          },
+          "supabase_rest": {
+            "requests": 52,
+            "success": 52,
+            "failure": 0,
+            "statuses": {
+              "200": 50,
+              "201": 1,
+              "204": 1
+            }
+          },
+          "sitemap": {
+            "requests": 7,
+            "success": 7,
+            "failure": 0,
+            "statuses": {
+              "200": 7
+            }
+          },
+          "native_product": {
+            "requests": 8,
+            "success": 8,
+            "failure": 0,
+            "statuses": {
+              "200": 8
+            }
+          }
+        },
+        "metrics": {
+          "visited": 15,
+          "coffeeFound": 8,
+          "irrelevant": 7,
+          "errors": 0,
+          "aiCalls": 0,
+          "cacheHits": 15,
+          "structuredPages": 0,
+          "marketChecks": 8
+        },
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "cached_tokens": 0,
+          "unreported_calls": 0
+        },
+        "failedRoasters": 0,
+        "roasters": [
+          {
+            "name": "Allies Coffee",
+            "entity_id": "6c379e38-5aba-48be-8dc3-3ae43424002d",
+            "runId": "380d149f-3f3f-460f-b06b-b1eb5767197a",
+            "dbSeconds": 19.033,
+            "fullSeconds": 19.36953483299998,
+            "metrics": {
+              "visited": 15,
+              "coffeeFound": 8,
+              "irrelevant": 7,
+              "errors": 0,
+              "aiCalls": 0,
+              "cacheHits": 15,
+              "structuredPages": 0,
+              "marketChecks": 8,
+              "aiUsage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "cached_tokens": 0,
+                "unreported_calls": 0
+              }
+            }
+          }
+        ],
+        "dbSeconds": 19.033,
+        "dbRunsMatched": 1,
+        "estimatedModelUsd": 0
+      }
+    ],
+    "coverage": {
+      "before": {
+        "counts": {
+          "products": 8,
+          "product_variants": 15,
+          "coffee_facts": 8,
+          "product_media": 8,
+          "known_pages": 30,
+          "catalog_change_events": 1
+        },
+        "products": {
+          "active": 8,
+          "sourceKey": 1,
+          "originalTitle": 1,
+          "displayTitle": 1,
+          "titleChangedForDisplay": 0,
+          "origin": 7,
+          "region": 4,
+          "description": 7,
+          "noteTaxonomy": 1,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 8
+          }
+        },
+        "variants": {
+          "legacyPrice": 15,
+          "legacyCurrency": 14,
+          "normalizedMoney": 0,
+          "priceAmount": 1,
+          "weight": 14,
+          "merchantId": 0,
+          "sourceKey": 1,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 15
+          },
+          "currencies": {
+            "UNKNOWN": 1,
+            "NZD": 14
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 3,
+          "variety": 2,
+          "roast": 6,
+          "notes": 7,
+          "decaf": 1,
+          "elevation": 0
+        }
+      },
+      "first": {
+        "counts": {
+          "products": 8,
+          "product_variants": 71,
+          "coffee_facts": 8,
+          "product_media": 8,
+          "known_pages": 30,
+          "catalog_change_events": 8
+        },
+        "products": {
+          "active": 8,
+          "sourceKey": 8,
+          "originalTitle": 8,
+          "displayTitle": 8,
+          "titleChangedForDisplay": 0,
+          "origin": 7,
+          "region": 4,
+          "description": 7,
+          "noteTaxonomy": 8,
+          "freshEvidence": 7,
+          "states": {
+            "unknown": 1,
+            "in_stock": 7
+          }
+        },
+        "variants": {
+          "legacyPrice": 71,
+          "legacyCurrency": 70,
+          "normalizedMoney": 56,
+          "priceAmount": 57,
+          "weight": 14,
+          "merchantId": 56,
+          "sourceKey": 57,
+          "freshEvidence": 57,
+          "states": {
+            "unknown": 15,
+            "in_stock": 56
+          },
+          "currencies": {
+            "UNKNOWN": 1,
+            "NZD": 70
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 7,
+          "variety": 2,
+          "roast": 6,
+          "notes": 7,
+          "decaf": 8,
+          "elevation": 0
+        }
+      },
+      "cached": {
+        "counts": {
+          "products": 8,
+          "product_variants": 71,
+          "coffee_facts": 8,
+          "product_media": 8,
+          "known_pages": 30,
+          "catalog_change_events": 8
+        },
+        "products": {
+          "active": 8,
+          "sourceKey": 8,
+          "originalTitle": 8,
+          "displayTitle": 8,
+          "titleChangedForDisplay": 0,
+          "origin": 7,
+          "region": 4,
+          "description": 7,
+          "noteTaxonomy": 8,
+          "freshEvidence": 7,
+          "states": {
+            "unknown": 1,
+            "in_stock": 7
+          }
+        },
+        "variants": {
+          "legacyPrice": 71,
+          "legacyCurrency": 70,
+          "normalizedMoney": 56,
+          "priceAmount": 57,
+          "weight": 14,
+          "merchantId": 56,
+          "sourceKey": 57,
+          "freshEvidence": 57,
+          "states": {
+            "unknown": 15,
+            "in_stock": 56
+          },
+          "currencies": {
+            "UNKNOWN": 1,
+            "NZD": 70
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 7,
+          "variety": 2,
+          "roast": 6,
+          "notes": 7,
+          "decaf": 8,
+          "elevation": 0
+        }
+      }
+    },
+    "preservation": {
+      "beforeTofirst": {
+        "products": {
+          "before": 8,
+          "retained": 8,
+          "added": 0,
+          "slugUnchanged": 8,
+          "first_seen_atUnchanged": 8,
+          "created_atUnchanged": 8
+        },
+        "product_variants": {
+          "before": 15,
+          "retained": 15,
+          "added": 56
+        },
+        "coffee_facts": {
+          "before": 8,
+          "retained": 8,
+          "added": 0
+        },
+        "known_pages": {
+          "before": 30,
+          "retained": 30,
+          "added": 0
+        },
+        "mediaLinks": {
+          "before": 8,
+          "retained": 8,
+          "added": 0
+        },
+        "variantCreatedAtUnchanged": 15,
+        "unchangedVariantMarketWithNewerCheck": 1
+      },
+      "beforeTocached": {
+        "products": {
+          "before": 8,
+          "retained": 8,
+          "added": 0,
+          "slugUnchanged": 8,
+          "first_seen_atUnchanged": 8,
+          "created_atUnchanged": 8
+        },
+        "product_variants": {
+          "before": 15,
+          "retained": 15,
+          "added": 56
+        },
+        "coffee_facts": {
+          "before": 8,
+          "retained": 8,
+          "added": 0
+        },
+        "known_pages": {
+          "before": 30,
+          "retained": 30,
+          "added": 0
+        },
+        "mediaLinks": {
+          "before": 8,
+          "retained": 8,
+          "added": 0
+        },
+        "variantCreatedAtUnchanged": 15,
+        "unchangedVariantMarketWithNewerCheck": 1
+      },
+      "firstToCached": {
+        "products": {
+          "before": 8,
+          "retained": 8,
+          "added": 0,
+          "slugUnchanged": 8,
+          "first_seen_atUnchanged": 8,
+          "created_atUnchanged": 8
+        },
+        "product_variants": {
+          "before": 71,
+          "retained": 71,
+          "added": 0
+        },
+        "coffee_facts": {
+          "before": 8,
+          "retained": 8,
+          "added": 0
+        },
+        "known_pages": {
+          "before": 30,
+          "retained": 30,
+          "added": 0
+        },
+        "mediaLinks": {
+          "before": 8,
+          "retained": 8,
+          "added": 0
+        },
+        "variantCreatedAtUnchanged": 71,
+        "unchangedVariantMarketWithNewerCheck": 57
+      }
+    },
+    "retainedCoverage": {
+      "before": {
+        "counts": {
+          "products": 8,
+          "product_variants": 15,
+          "coffee_facts": 8,
+          "product_media": 8,
+          "known_pages": 30,
+          "catalog_change_events": 1
+        },
+        "products": {
+          "active": 8,
+          "sourceKey": 1,
+          "originalTitle": 1,
+          "displayTitle": 1,
+          "titleChangedForDisplay": 0,
+          "origin": 7,
+          "region": 4,
+          "description": 7,
+          "noteTaxonomy": 1,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 8
+          }
+        },
+        "variants": {
+          "legacyPrice": 15,
+          "legacyCurrency": 14,
+          "normalizedMoney": 0,
+          "priceAmount": 1,
+          "weight": 14,
+          "merchantId": 0,
+          "sourceKey": 1,
+          "freshEvidence": 0,
+          "states": {
+            "unknown": 15
+          },
+          "currencies": {
+            "UNKNOWN": 1,
+            "NZD": 14
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 3,
+          "variety": 2,
+          "roast": 6,
+          "notes": 7,
+          "decaf": 1,
+          "elevation": 0
+        }
+      },
+      "first": {
+        "counts": {
+          "products": 8,
+          "product_variants": 15,
+          "coffee_facts": 8,
+          "product_media": 8,
+          "known_pages": 30,
+          "catalog_change_events": 8
+        },
+        "products": {
+          "active": 8,
+          "sourceKey": 8,
+          "originalTitle": 8,
+          "displayTitle": 8,
+          "titleChangedForDisplay": 0,
+          "origin": 7,
+          "region": 4,
+          "description": 7,
+          "noteTaxonomy": 8,
+          "freshEvidence": 7,
+          "states": {
+            "unknown": 1,
+            "in_stock": 7
+          }
+        },
+        "variants": {
+          "legacyPrice": 15,
+          "legacyCurrency": 14,
+          "normalizedMoney": 0,
+          "priceAmount": 1,
+          "weight": 14,
+          "merchantId": 0,
+          "sourceKey": 1,
+          "freshEvidence": 1,
+          "states": {
+            "unknown": 15
+          },
+          "currencies": {
+            "UNKNOWN": 1,
+            "NZD": 14
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 7,
+          "variety": 2,
+          "roast": 6,
+          "notes": 7,
+          "decaf": 8,
+          "elevation": 0
+        }
+      },
+      "cached": {
+        "counts": {
+          "products": 8,
+          "product_variants": 15,
+          "coffee_facts": 8,
+          "product_media": 8,
+          "known_pages": 30,
+          "catalog_change_events": 8
+        },
+        "products": {
+          "active": 8,
+          "sourceKey": 8,
+          "originalTitle": 8,
+          "displayTitle": 8,
+          "titleChangedForDisplay": 0,
+          "origin": 7,
+          "region": 4,
+          "description": 7,
+          "noteTaxonomy": 8,
+          "freshEvidence": 7,
+          "states": {
+            "unknown": 1,
+            "in_stock": 7
+          }
+        },
+        "variants": {
+          "legacyPrice": 15,
+          "legacyCurrency": 14,
+          "normalizedMoney": 0,
+          "priceAmount": 1,
+          "weight": 14,
+          "merchantId": 0,
+          "sourceKey": 1,
+          "freshEvidence": 1,
+          "states": {
+            "unknown": 15
+          },
+          "currencies": {
+            "UNKNOWN": 1,
+            "NZD": 14
+          }
+        },
+        "facts": {
+          "originHub": 0,
+          "process": 7,
+          "variety": 2,
+          "roast": 6,
+          "notes": 7,
+          "decaf": 8,
+          "elevation": 0
+        }
+      }
+    },
+    "events": {
+      "before": {
+        "total": 1,
+        "content": 1,
+        "market": 1,
+        "contentOnly": 0,
+        "marketOnly": 0
+      },
+      "first": {
+        "total": 8,
+        "content": 8,
+        "market": 8,
+        "contentOnly": 0,
+        "marketOnly": 0
+      },
+      "cached": {
+        "total": 8,
+        "content": 8,
+        "market": 8,
+        "contentOnly": 0,
+        "marketOnly": 0
+      }
+    }
+  },
+  "scheduleRestoration": {
+    "resumedAt": "2026-10-07T03:12:41.665Z",
+    "pausedAt": "2026-10-07T02:18:45Z",
+    "sourceRelease": "30748a20ac66f90d3f121b7298b65631fede6e49",
+    "launchLabel": "com.openclaw.coffee-roaster-crawler",
+    "intervalSeconds": 5400,
+    "configurationByteIdentical": true,
+    "environmentByteIdentical": true,
+    "pauseSeconds": 3236.665,
+    "verifiedAt": "2026-10-07T03:13:17.172Z",
+    "launcherPid": 6569,
+    "nodePid": 6579,
+    "eligibleRoasters": 8316,
+    "roasterConcurrency": 1,
+    "running": true,
+    "singleCrawlerProcess": true,
+    "lockOwnedByLauncher": true
+  },
+  "liveValidationAssertions": {
+    "checkedAt": "2026-10-07T03:12:31.137Z",
+    "release": "30748a20ac66f90d3f121b7298b65631fede6e49",
+    "errorsBothPasses": 0,
+    "pagesEachPass": 15,
+    "coffeePagesEachPass": 8,
+    "cachedAiCalls": 0,
+    "cachedHits": 15,
+    "addedExplicitSelectorVariants": 56,
+    "productsWithEightDistinctSelectors": 7,
+    "existingVariantsRetained": 15,
+    "allNewVariantsHavePairedNzdMoney": true,
+    "missingNewWeightsRemainUnknown": true,
+    "allNewIdsAndCreationTimesStableOnRepeat": true,
+    "newStockChecksAdvanceWithoutChangeEvents": true,
+    "allVariantRowsAfterRepeat": 71
+  },
+  "installedTests": {
+    "count": 190,
+    "passed": 190,
+    "failures": 0,
+    "skipped": 0,
+    "durationSeconds": 4.102811875,
+    "node": "v22.22.0",
+    "sourceRelease": "30748a20ac66f90d3f121b7298b65631fede6e49"
+  }
+}

@@ -28,7 +28,14 @@ async function getBlacklistTerms() {
 }
 
 function matchesBlacklist(url, terms) {
-  const lowerUrl = url.toLowerCase();
+  let lowerUrl;
+
+  try {
+    const parsed = new URL(url);
+    lowerUrl = `${parsed.pathname}${parsed.search}${parsed.hash}`.toLowerCase();
+  } catch {
+    lowerUrl = String(url || '').toLowerCase();
+  }
   
   for (const term of terms) {
     if (lowerUrl.includes(term.toLowerCase())) {

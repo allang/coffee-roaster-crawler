@@ -1,0 +1,163 @@
+{
+  "url": "https://monogramcoffee.com/products/warmth-filter-blend",
+  "analytics": null,
+  "product": {
+    "id": 7187676168245,
+    "title": "Warmth Filter Blend",
+    "handle": "warmth-filter-blend",
+    "body_html": "<p><span>Chocolatey, rich and smooth. Our bestselling blend that tastes just as delicious with or without milk.<br><br><meta charset=\"utf-8\">• Process: Washed<br>• Variety: Blend<br><meta charset=\"utf-8\">• Origin: Central America, South America<br><meta charset=\"utf-8\">• Tasting Notes: Chocolate, Nougat<br><br><a href=\"https://monogramcoffee.com/collections/all-coffees/products/warmth-espresso-blend\">Want this for espresso?</a><br></span><span></span></p>",
+    "product_type": "Whole Bean",
+    "vendor": "Monogram Coffee",
+    "tags": "Badge_Filter, chocolatey comforts, coffee, filter, warmth, whole bean",
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0702/0489/files/warmth-cc-01.webp?v=1789072294"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0702/0489/files/monogram-warmth-blend-coffee-tasting-notes.png?v=1775755326"
+      }
+    ],
+    "variants": [
+      {
+        "id": 42268966125621,
+        "title": "300g",
+        "price": "20.00",
+        "sku": "WARMTH-FILTER-300G",
+        "grams": 300,
+        "weight": 300,
+        "weight_unit": "g"
+      },
+      {
+        "id": 42261193621557,
+        "title": "2LB",
+        "price": "53.50",
+        "sku": "WARMTH-FILTER-2LB",
+        "grams": 907,
+        "weight": 2,
+        "weight_unit": "lb"
+      },
+      {
+        "id": 42261193654325,
+        "title": "5LB",
+        "price": "129.50",
+        "sku": "WARMTH-FILTER-5LB",
+        "grams": 2268,
+        "weight": 5,
+        "weight_unit": "lb"
+      }
+    ]
+  },
+  "ajax": {
+    "id": 7187676168245,
+    "variants": [
+      {
+        "id": 42268966125621,
+        "available": true
+      },
+      {
+        "id": 42261193621557,
+        "available": true
+      },
+      {
+        "id": 42261193654325,
+        "available": true
+      }
+    ]
+  },
+  "schema": {
+    "@context": "http://schema.org/",
+    "@id": "/en-us/products/warmth-filter-blend#product",
+    "@type": "ProductGroup",
+    "brand": {
+      "@type": "Brand",
+      "name": "Monogram Coffee"
+    },
+    "category": "Coffee Beans & Ground Coffee",
+    "description": "Chocolatey, rich and smooth. Our bestselling blend that tastes just as delicious with or without milk.• Process: Washed• Variety: Blend• Origin: Central America, South America• Tasting Notes: Chocolate, NougatWant this for espresso?",
+    "hasVariant": [
+      {
+        "@id": "/en-us/products/warmth-filter-blend?variant=42268966125621#variant",
+        "@type": "Product",
+        "image": "https://monogramcoffee.com/cdn/shop/files/warmth-cc-01.webp?v=1789072294&width=1920",
+        "name": "Warmth Filter Blend - 300g",
+        "offers": {
+          "@id": "/en-us/products/warmth-filter-blend?variant=42268966125621#offer",
+          "@type": "Offer",
+          "availability": "http://schema.org/InStock",
+          "price": "18.00",
+          "priceCurrency": "USD",
+          "url": "https://monogramcoffee.com/en-us/products/warmth-filter-blend?variant=42268966125621"
+        },
+        "sku": "WARMTH-FILTER-300G"
+      },
+      {
+        "@id": "/en-us/products/warmth-filter-blend?variant=42261193621557#variant",
+        "@type": "Product",
+        "image": "https://monogramcoffee.com/cdn/shop/files/warmth-cc-01.webp?v=1789072294&width=1920",
+        "name": "Warmth Filter Blend - 2LB",
+        "offers": {
+          "@id": "/en-us/products/warmth-filter-blend?variant=42261193621557#offer",
+          "@type": "Offer",
+          "availability": "http://schema.org/InStock",
+          "price": "49.00",
+          "priceCurrency": "USD",
+          "url": "https://monogramcoffee.com/en-us/products/warmth-filter-blend?variant=42261193621557"
+        },
+        "sku": "WARMTH-FILTER-2LB"
+      },
+      {
+        "@id": "/en-us/products/warmth-filter-blend?variant=42261193654325#variant",
+        "@type": "Product",
+        "image": "https://monogramcoffee.com/cdn/shop/files/warmth-cc-01.webp?v=1789072294&width=1920",
+        "name": "Warmth Filter Blend - 5LB",
+        "offers": {
+          "@id": "/en-us/products/warmth-filter-blend?variant=42261193654325#offer",
+          "@type": "Offer",
+          "availability": "http://schema.org/InStock",
+          "price": "117.00",
+          "priceCurrency": "USD",
+          "url": "https://monogramcoffee.com/en-us/products/warmth-filter-blend?variant=42261193654325"
+        },
+        "sku": "WARMTH-FILTER-5LB"
+      }
+    ],
+    "name": "Warmth Filter Blend",
+    "productGroupID": "7187676168245",
+    "url": "https://monogramcoffee.com/en-us/products/warmth-filter-blend",
+    "productID": "7187676168245",
+    "image": "https://monogramcoffee.com/cdn/shop/files/warmth-cc-01.webp?v=1789072294&width=1920",
+    "offers": [
+      {
+        "@id": "/en-us/products/warmth-filter-blend?variant=42268966125621#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "18.00",
+        "priceCurrency": "USD",
+        "url": "https://monogramcoffee.com/en-us/products/warmth-filter-blend?variant=42268966125621",
+        "sku": "WARMTH-FILTER-300G",
+        "name": "Warmth Filter Blend - 300g"
+      },
+      {
+        "@id": "/en-us/products/warmth-filter-blend?variant=42261193621557#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "49.00",
+        "priceCurrency": "USD",
+        "url": "https://monogramcoffee.com/en-us/products/warmth-filter-blend?variant=42261193621557",
+        "sku": "WARMTH-FILTER-2LB",
+        "name": "Warmth Filter Blend - 2LB"
+      },
+      {
+        "@id": "/en-us/products/warmth-filter-blend?variant=42261193654325#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "117.00",
+        "priceCurrency": "USD",
+        "url": "https://monogramcoffee.com/en-us/products/warmth-filter-blend?variant=42261193654325",
+        "sku": "WARMTH-FILTER-5LB",
+        "name": "Warmth Filter Blend - 5LB"
+      }
+    ],
+    "_market_source": "product_group_exact_variant_offers"
+  }
+}

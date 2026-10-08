@@ -1,0 +1,169 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProductGroup",
+  "@id": "https://fritz.co.kr/product/프릳츠-디카페인-decaffeinated-200g/982/",
+  "name": "[프릳츠] 디카페인 Decaffeinated 200g",
+  "productGroupID": "cafe24_fritzcompany_1_982",
+  "variesBy": [
+    "Grind 분쇄도",
+    "추가 옵션"
+  ],
+  "hasVariant": [
+    {
+      "@type": "Product",
+      "name": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-파우치 그린",
+      "image": [
+        "https://fritz.co.kr/web/product/big/202607/c123c909348c10eac86b1352d6bda188.jpg"
+      ],
+      "description": "Flavor Notes : 초콜릿, 건무화과, 호두, 당밀의 긴 여운\r\nChocolate, Dried fig, Walnut, Molasses notes finish",
+      "brand": {
+        "@type": "Brand",
+        "name": "프릳츠커피컴퍼니"
+      },
+      "sku": "cafe24_fritzcompany_1_982_P0000BLU00ED",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Grind 분쇄도",
+          "value": "홀빈 (갈지않은원두)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "추가 옵션",
+          "value": "파우치 그린"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://fritz.co.kr/product/프릳츠-디카페인-decaffeinated-200g/982/?item_code=P0000BLU00ED",
+        "priceCurrency": "KRW",
+        "price": 22000,
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 21
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-파우치 레드",
+      "image": [
+        "https://fritz.co.kr/web/product/big/202607/c123c909348c10eac86b1352d6bda188.jpg"
+      ],
+      "description": "Flavor Notes : 초콜릿, 건무화과, 호두, 당밀의 긴 여운\r\nChocolate, Dried fig, Walnut, Molasses notes finish",
+      "brand": {
+        "@type": "Brand",
+        "name": "프릳츠커피컴퍼니"
+      },
+      "sku": "cafe24_fritzcompany_1_982_P0000BLU00EE",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Grind 분쇄도",
+          "value": "홀빈 (갈지않은원두)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "추가 옵션",
+          "value": "파우치 레드"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://fritz.co.kr/product/프릳츠-디카페인-decaffeinated-200g/982/?item_code=P0000BLU00EE",
+        "priceCurrency": "KRW",
+        "price": 22000,
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 21
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-틴케이스 마음",
+      "image": [
+        "https://fritz.co.kr/web/product/big/202607/c123c909348c10eac86b1352d6bda188.jpg"
+      ],
+      "description": "Flavor Notes : 초콜릿, 건무화과, 호두, 당밀의 긴 여운\r\nChocolate, Dried fig, Walnut, Molasses notes finish",
+      "brand": {
+        "@type": "Brand",
+        "name": "프릳츠커피컴퍼니"
+      },
+      "sku": "cafe24_fritzcompany_1_982_P0000BLU00EF",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Grind 분쇄도",
+          "value": "홀빈 (갈지않은원두)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "추가 옵션",
+          "value": "틴케이스 마음"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://fritz.co.kr/product/프릳츠-디카페인-decaffeinated-200g/982/?item_code=P0000BLU00EF",
+        "priceCurrency": "KRW",
+        "price": 22000,
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 21
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-선택안함",
+      "image": [
+        "https://fritz.co.kr/web/product/big/202607/c123c909348c10eac86b1352d6bda188.jpg"
+      ],
+      "description": "Flavor Notes : 초콜릿, 건무화과, 호두, 당밀의 긴 여운\r\nChocolate, Dried fig, Walnut, Molasses notes finish",
+      "brand": {
+        "@type": "Brand",
+        "name": "프릳츠커피컴퍼니"
+      },
+      "sku": "cafe24_fritzcompany_1_982_P0000BLU00EG",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Grind 분쇄도",
+          "value": "홀빈 (갈지않은원두)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "추가 옵션",
+          "value": "선택안함"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://fritz.co.kr/product/프릳츠-디카페인-decaffeinated-200g/982/?item_code=P0000BLU00EG",
+        "priceCurrency": "KRW",
+        "price": 17000,
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 21
+      }
+    }
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "url": "https://fritz.co.kr/product/프릳츠-디카페인-decaffeinated-200g/982/",
+    "priceCurrency": "KRW",
+    "lowPrice": 17000,
+    "highPrice": 22000,
+    "offerCount": 28
+  }
+}

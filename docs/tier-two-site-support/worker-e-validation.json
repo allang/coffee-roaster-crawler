@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-08T04:50:14.327Z",
+  "base_commit": "4eb4482",
+  "node_version": "v22.19.0",
+  "command": "node --test test/*.test.js src/*.test.cjs",
+  "tests": 237,
+  "passed": 237,
+  "failed": 0,
+  "skipped": 0,
+  "unassigned_queue_rows_unchanged": true,
+  "production_writes": 0,
+  "preorder_correction": {
+    "fresh_onyx_products": 42,
+    "immediate_stock_unknown_products": 2,
+    "immediate_stock_unknown_variants": 4,
+    "advent_exact_price_currency_and_identity_preserved": true,
+    "unrelated_merchant_tag_audit": "worker-e-preorder-tag-audit.json"
+  }
+}

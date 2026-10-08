@@ -1,8 +1,6 @@
 const axios = require('axios');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
 const CHROME_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
 const WEBSHARE_API_BASE = 'https://proxy.webshare.io/api/v2';
@@ -274,12 +272,14 @@ async function fetchWithBackoff(url, options = {}) {
     logger = null,
     useProxyFallback = true,
     useUrlFallback = false,
+    proxyAttempts = Number(process.env.CRAWLER_PROXY_ATTEMPTS || 5),
   } = options;
   
   const baseHeaders = getHeadersForType(headerType);
   const candidateUrls = useUrlFallback ? buildUrlVariants(url) : [normalizeFetchUrl(url)];
   const attemptedUrls = [];
   let lastError;
+  let switchToProxyFallback = false;
   
   for (let candidateIndex = 0; candidateIndex < candidateUrls.length; candidateIndex++) {
     const candidateUrl = candidateUrls[candidateIndex];
@@ -338,6 +338,14 @@ async function fetchWithBackoff(url, options = {}) {
           });
         }
 
+        if (status === 429 && useProxyFallback && hasProxies()) {
+          switchToProxyFallback = true;
+          if (logger) {
+            logger.info('HTTP', `Rate limited for ${candidateUrl}; switching to proxy fallback`);
+          }
+          break;
+        }
+
         const shouldRetry = isRetryableStatus(status);
 
         if (shouldRetry && attempt < maxRetries) {
@@ -355,72 +363,88 @@ async function fetchWithBackoff(url, options = {}) {
         }
       }
     }
+
+    if (switchToProxyFallback) {
+      break;
+    }
   }
   
   if (useProxyFallback && hasProxies()) {
     for (let candidateIndex = 0; candidateIndex < candidateUrls.length; candidateIndex++) {
       const candidateUrl = candidateUrls[candidateIndex];
-      const proxyAgent = getNextProxyAgent();
-      if (!proxyAgent) break;
+      const maxProxyAttempts = Math.max(1, Math.floor(proxyAttempts));
 
-      if (logger) {
-        logger.info('HTTP', `Trying with proxy fallback for ${candidateUrl}`);
-      }
+      for (let proxyAttempt = 0; proxyAttempt < maxProxyAttempts; proxyAttempt++) {
+        const proxyAgent = getNextProxyAgent();
+        if (!proxyAgent) break;
 
-      const requestConfig = {
-        timeout: options.timeout || 30000,
-        responseType: options.responseType || 'text',
-        maxRedirects: 10,
-        headers: { ...baseHeaders },
-        httpsAgent: proxyAgent,
-        httpAgent: proxyAgent,
-        proxy: false,
-      };
-
-      if (referer) {
-        requestConfig.headers.Referer = referer;
-      }
-
-      const throttleDelayMs = await paceHost(candidateUrl, true, logger);
-
-      try {
-        const response = await axios.get(candidateUrl, requestConfig);
         if (logger) {
-          logger.success('HTTP', `Proxy fallback succeeded for ${candidateUrl}`);
+          logger.info(
+            'HTTP',
+            `Trying proxy fallback ${proxyAttempt + 1}/${maxProxyAttempts} for ${candidateUrl}`,
+          );
         }
-        return {
-          success: true,
-          data: response.data,
-          status: response.status,
-          headers: response.headers,
-          finalUrl: response.request?.res?.responseUrl || response.config?.url || candidateUrl,
-          usedProxy: true,
-          usedUrlFallback: candidateIndex > 0,
-          attemptedUrls,
+
+        const requestConfig = {
+          timeout: options.timeout || 30000,
+          responseType: options.responseType || 'text',
+          maxRedirects: 10,
+          headers: { ...baseHeaders },
+          httpsAgent: proxyAgent,
+          httpAgent: proxyAgent,
+          proxy: false,
         };
-      } catch (proxyError) {
-        lastError = proxyError;
-        const status = proxyError.response?.status || 0;
-        const message = proxyError.message || 'Unknown error';
-        const failureCategory = classifyFetchFailure(proxyError);
 
-        attemptedUrls.push({
-          url: candidateUrl,
-          attempt: 1,
-          status,
-          message,
-          failureCategory,
-          usedProxy: true,
-          usedUrlFallback: candidateIndex > 0,
-          throttleDelayMs,
-        });
+        if (referer) {
+          requestConfig.headers.Referer = referer;
+        }
 
-        if (logger) {
-          logger.warn('HTTP', `Proxy fallback also failed for ${candidateUrl}`, {
+        const throttleDelayMs = await paceHost(candidateUrl, true, logger);
+
+        try {
+          const response = await axios.get(candidateUrl, requestConfig);
+          if (logger) {
+            logger.success('HTTP', `Proxy fallback succeeded for ${candidateUrl}`);
+          }
+          return {
+            success: true,
+            data: response.data,
+            status: response.status,
+            headers: response.headers,
+            finalUrl: response.request?.res?.responseUrl || response.config?.url || candidateUrl,
+            usedProxy: true,
+            usedUrlFallback: candidateIndex > 0,
+            attemptedUrls,
+          };
+        } catch (proxyError) {
+          lastError = proxyError;
+          const status = proxyError.response?.status || 0;
+          const message = proxyError.message || 'Unknown error';
+          const failureCategory = classifyFetchFailure(proxyError);
+
+          attemptedUrls.push({
+            url: candidateUrl,
+            attempt: proxyAttempt + 1,
             status,
-            error: proxyError.message,
+            message,
             failureCategory,
+            usedProxy: true,
+            usedUrlFallback: candidateIndex > 0,
+            throttleDelayMs,
           });
+
+          if (logger) {
+            logger.warn('HTTP', `Proxy fallback failed for ${candidateUrl}`, {
+              proxyAttempt: proxyAttempt + 1,
+              status,
+              error: proxyError.message,
+              failureCategory,
+            });
+          }
+
+          if (!isRetryableStatus(status)) {
+            break;
+          }
         }
       }
     }

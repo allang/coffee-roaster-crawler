@@ -1,0 +1,96 @@
+{
+  "checked_at": "2026-10-08T04:06:48.586Z",
+  "name": "Onyx Tonics",
+  "entity_id": "9106cd47-0112-4ee6-834b-fac38fe97374",
+  "identity_status": "matched_cafe_only",
+  "merchant_url": "https://www.onyxtonics.com/",
+  "merchant_evidence": {
+    "title": "Onyx Tonics | Specialty Coffee Shop in Burlington, VT",
+    "coffee_scope": "Official site identifies a Burlington VT specialty coffee bar serving a weekly rotation from other local and US roasters; it does not identify itself as a coffee roaster.",
+    "primary_excerpt": "Each week we feature 6+ different single origin coffees from a selection of great local and U.S. based roasters.",
+    "catalog_product_links": []
+  },
+  "blockers": [
+    "Existing catalog entity is cafe-only, with no website. Official merchant describes a multi-roaster coffee bar rather than a coffee roaster.",
+    "Official site exposes no identifiable priced retail coffee inventory. Do not substitute Onyx Coffee Lab or assign another roaster's products."
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.onyxtonics.com/",
+      "status": 200,
+      "at": "2026-10-08T04:06:48.522Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "catalog_evidence": {
+    "source": "Coordinator fresh read-only search across all entities",
+    "location": "Burlington VT",
+    "website_url": null,
+    "role": "cafe only"
+  },
+  "fresh_checked_at": "2026-10-08T09:37:52.428Z",
+  "fresh_homepage_sha256": "0a744c184a2f58b5024e5e1358dafb7437e90d53d5afbf8f25642196e2265aac",
+  "fresh_catalog_readback": {
+    "id": "9106cd47-0112-4ee6-834b-fac38fe97374",
+    "name": "Onyx Tonics",
+    "slug": "onyx-tonics-osm-osm-node-6915495598",
+    "website_url": null,
+    "primary_location": "Burlington, VT, US",
+    "entity_roles": [
+      {
+        "role": "cafe"
+      }
+    ]
+  },
+  "fresh_sitemap": {
+    "checked_at": "2026-10-08T09:51:46.008Z",
+    "sitemap": {
+      "status": 200,
+      "urls": [
+        "https://www.onyxtonics.com/about",
+        "https://www.onyxtonics.com/contact",
+        "https://www.onyxtonics.com/press"
+      ],
+      "body_sha256": "e1152535ee7a65b6eb478d919bbabbf79f1553206e1c4d760487052f1722ad76"
+    },
+    "requests": [
+      {
+        "method": "GET",
+        "url": "https://www.onyxtonics.com/sitemap.xml",
+        "status": 200,
+        "at": "2026-10-08T09:51:45.995Z"
+      }
+    ],
+    "production_writes": 0,
+    "prohibited_requests": 0
+  },
+  "fresh_official_roaster_links": [
+    {
+      "url": "https://www.brandywinecoffeeroasters.com"
+    },
+    {
+      "url": "https://www.broadsheetcoffee.com"
+    },
+    {
+      "url": "https://onyxcoffeelab.com"
+    },
+    {
+      "url": "https://littlewolf.coffee"
+    },
+    {
+      "url": "https://vividcoffee.com"
+    },
+    {
+      "url": "https://www.tandemcoffee.com"
+    },
+    {
+      "url": "https://www.briocoffeeworks.com"
+    }
+  ],
+  "intended_source_clarification": "Proceeding with the exact named Burlington business after the user requested unblocking. Official business evidence and existing cafe role agree; no invented roaster role or products.",
+  "resolution": "verified_non_roaster_cafe_no_online_bean_catalog",
+  "remaining_blocker": false
+}

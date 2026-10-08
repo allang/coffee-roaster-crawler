@@ -1,0 +1,82 @@
+{
+  "name": "Luna",
+  "checked_at": "2026-10-08T04:33:20.352Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://enjoylunacoffee.com/products/marlon-bolanos-aji-washed-huila-colombia",
+      "https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia-copy",
+      "https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia",
+      "https://enjoylunacoffee.com/products/victor-florez-washed-chiroso-urrao-colombia",
+      "https://enjoylunacoffee.com/products/kii-aa-field-blend-washed-kirinyaga-kenya",
+      "https://enjoylunacoffee.com/products/gicherori-aa-field-blend-washed-embu-kenya"
+    ],
+    "complete": true,
+    "evidence": [
+      {"listing":"/collections/coffees/products.json","page":1,"products":6,"coffeeProducts":6}
+    ]
+  },
+  "products": [
+    {"url":"https://enjoylunacoffee.com/products/marlon-bolanos-aji-washed-huila-colombia","title":"Marlon Bolaños (Ají Washed) | Huila, Colombia","source_product_id":"9590637264953","state":"in_stock","variants_complete":true,"variants":[{"id":"48938866212921","title":"250 grams","weight_g":250,"money":{"raw":"24.50","amount":"24.50","currency":"USD","exponent":2,"minorUnits":2450,"reason":null},"state":"in_stock","price_source":"shopify_exact_variant_analytics"},{"id":"48938866245689","title":"1 kilogram","weight_g":1000,"money":{"raw":"78.25","amount":"78.25","currency":"USD","exponent":2,"minorUnits":7825,"reason":null},"state":"in_stock","price_source":"shopify_exact_variant_analytics"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia-copy","title":"Habtamu Fikadu - Chelbesa site (Kurume, Dega & Wolisho) | Gedeb, Ethiopia","source_product_id":"8442777174073","state":"sold_out","variants_complete":true,"variants":[{"id":"46491892121657","title":"250 grams","weight_g":250,"money":{"raw":"24.75","amount":"24.75","currency":"USD","exponent":2,"minorUnits":2475,"reason":null},"state":"sold_out","price_source":"shopify_exact_variant_analytics"},{"id":"46491892154425","title":"1 kilogram","weight_g":1000,"money":{"raw":"79.00","amount":"79.00","currency":"USD","exponent":2,"minorUnits":7900,"reason":null},"state":"sold_out","price_source":"shopify_exact_variant_analytics"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia","title":"Habtamu Fikadu - Danche site (Kurume & Dega) | Gedeb, Ethiopia","source_product_id":"8438275702841","state":"in_stock","variants_complete":true,"variants":[{"id":"46483061080121","title":"250 grams","weight_g":250,"money":{"raw":"24.75","amount":"24.75","currency":"USD","exponent":2,"minorUnits":2475,"reason":null},"state":"in_stock","price_source":"shopify_exact_variant_analytics"},{"id":"46483061112889","title":"1 kilogram","weight_g":1000,"money":{"raw":"79.00","amount":"79.00","currency":"USD","exponent":2,"minorUnits":7900,"reason":null},"state":"in_stock","price_source":"shopify_exact_variant_analytics"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://enjoylunacoffee.com/products/victor-florez-washed-chiroso-urrao-colombia","title":"Victor Florez (Washed Chiroso) | Urrao, Colombia","source_product_id":"8438804906041","state":"in_stock","variants_complete":true,"variants":[{"id":"46483774832697","title":"250 grams / Oct 1st","weight_g":250,"money":{"raw":"23.75","amount":"23.75","currency":"USD","exponent":2,"minorUnits":2375,"reason":null},"state":"sold_out","price_source":"shopify_exact_variant_analytics"},{"id":"46483774865465","title":"1 kilogram / Oct 1st","weight_g":1000,"money":{"raw":"76.00","amount":"76.00","currency":"USD","exponent":2,"minorUnits":7600,"reason":null},"state":"in_stock","price_source":"shopify_exact_variant_analytics"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://enjoylunacoffee.com/products/kii-aa-field-blend-washed-kirinyaga-kenya","title":"Kii AA (Field Blend Washed) | Kirinyaga, Kenya","source_product_id":"8363472584761","state":"sold_out","variants_complete":true,"variants":[{"id":"46267401830457","title":"250 grams / Sept 22nd","weight_g":250,"money":{"raw":"24.50","amount":"24.50","currency":"USD","exponent":2,"minorUnits":2450,"reason":null},"state":"sold_out","price_source":"shopify_exact_variant_analytics"},{"id":"46267401863225","title":"1 kilogram / Sept 22nd","weight_g":1000,"money":{"raw":"78.25","amount":"78.25","currency":"USD","exponent":2,"minorUnits":7825,"reason":null},"state":"sold_out","price_source":"shopify_exact_variant_analytics"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://enjoylunacoffee.com/products/gicherori-aa-field-blend-washed-embu-kenya","title":"Gicherori AA (Field Blend Washed) | Embu, Kenya","source_product_id":"8355340845113","state":"sold_out","variants_complete":true,"variants":[{"id":"46241395540025","title":"250 grams / Sept. 14th","weight_g":250,"money":{"raw":"24.50","amount":"24.50","currency":"USD","exponent":2,"minorUnits":2450,"reason":null},"state":"sold_out","price_source":"shopify_exact_variant_analytics"},{"id":"46241395572793","title":"1 kilogram / Sept. 14th","weight_g":1000,"money":{"raw":"78.25","amount":"78.25","currency":"USD","exponent":2,"minorUnits":7825,"reason":null},"state":"sold_out","price_source":"shopify_exact_variant_analytics"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true}
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {"method":"GET","url":"https://enjoylunacoffee.com/collections/coffees/products.json?limit=50&page=1","status":200,"at":"2026-10-08T04:33:10.928Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/collections/coffees/products.json?limit=50&page=2","status":200,"at":"2026-10-08T04:33:11.284Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/marlon-bolanos-aji-washed-huila-colombia","status":200,"at":"2026-10-08T04:33:11.851Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/marlon-bolanos-aji-washed-huila-colombia.json","status":200,"at":"2026-10-08T04:33:12.313Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/marlon-bolanos-aji-washed-huila-colombia.js","status":200,"at":"2026-10-08T04:33:12.810Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia-copy","status":200,"at":"2026-10-08T04:33:13.350Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia-copy.json","status":200,"at":"2026-10-08T04:33:13.889Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia-copy.js","status":200,"at":"2026-10-08T04:33:14.372Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia","status":200,"at":"2026-10-08T04:33:14.819Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia.json","status":200,"at":"2026-10-08T04:33:15.305Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/habtamu-fikadu-danche-site-kurume-dega-gedeb-ethiopia.js","status":200,"at":"2026-10-08T04:33:15.815Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/victor-florez-washed-chiroso-urrao-colombia","status":200,"at":"2026-10-08T04:33:16.343Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/victor-florez-washed-chiroso-urrao-colombia.json","status":200,"at":"2026-10-08T04:33:16.860Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/victor-florez-washed-chiroso-urrao-colombia.js","status":200,"at":"2026-10-08T04:33:17.386Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/kii-aa-field-blend-washed-kirinyaga-kenya","status":200,"at":"2026-10-08T04:33:17.910Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/kii-aa-field-blend-washed-kirinyaga-kenya.json","status":200,"at":"2026-10-08T04:33:18.432Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/kii-aa-field-blend-washed-kirinyaga-kenya.js","status":200,"at":"2026-10-08T04:33:18.852Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/gicherori-aa-field-blend-washed-embu-kenya","status":200,"at":"2026-10-08T04:33:19.318Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/gicherori-aa-field-blend-washed-embu-kenya.json","status":200,"at":"2026-10-08T04:33:19.814Z"},
+    {"method":"GET","url":"https://enjoylunacoffee.com/products/gicherori-aa-field-blend-washed-embu-kenya.js","status":200,"at":"2026-10-08T04:33:20.314Z"}
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "identity_review": {
+    "audit_status": "ambiguous",
+    "supported_candidate": "e30e68df-7843-408b-8df0-2ae01df471d9",
+    "supported_domain": "enjoylunacoffee.com",
+    "other_candidate": {
+      "entity_id": "2442b266-fb8c-43f6-a7e5-589c6bf94bc5",
+      "domain": "lunacafe.com",
+      "page_title": "Luna Cafe",
+      "distinct_shop_path": "/shop/coffee"
+    },
+    "decision": "No tier identity selection or merging performed."
+  },
+  "identity_requests": [
+    {
+      "method": "GET",
+      "url": "https://enjoylunacoffee.com/",
+      "status": 200,
+      "at": "2026-10-08T03:45:41.831Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://lunacafe.com/",
+      "status": 200,
+      "at": "2026-10-08T03:45:42.292Z"
+    }
+  ]
+}
