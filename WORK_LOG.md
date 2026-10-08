@@ -2,6 +2,13 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — direct-user forced restart on latest main
+
+- Fetched origin and checked the clean original checkout: latest main remains `28de9b55a1c039a5b3581a9595357d0fe4cf1095`, already installed. Fast-forward check confirms up to date; source/dependencies remain identical to the 406/406 installed test run. No redundant broad test or dependency installation. Read all 28 linked issue/PR conversation/inline/review surfaces before this milestone: no new actionable finding.
+- Preserved Git bundle/refs/stash, environment/plist/launcher, current log and process ownership in a new private restart directory. Stopped only launcher 35205 and Node 35215; both exited and released their lock. Only exact interrupted run `ff67ad5b-646b-47a8-bb60-ce3fc399d283` was marked failed with the requested-restart reason. Existing products/checkpoints and the isolated Passport verification remain preserved.
+- Forced a fresh launch through the same LaunchAgent at **15:41:48.177 UTC**, Node startup **15:41:48.552 UTC**. Verified launcher/lock **36917**, exactly one scheduler-owned Node **36926**, original cwd, byte-identical configuration/plist, clean main SHA, one worker, unchanged 5,400-second schedule. New phase tier 1 has 69 eligible roasters; first actual owner `535be893-1831-4443-b5e3-c79c09080eb2` is reviewed tier 1, with fresh running crawl row `090e6f80-37a8-4fb7-a647-f66eaa256d57`. Zero logged errors at 15:42:59.206 UTC. Existing cooldowns remain in force; no global catalog/crawl-state reset.
+- [Restart receipt](docs/mac-mini-restart-20261008.json) and current update report retain the actual new PIDs/time. No schema migration, hosted service deployment or purchase. Documentation milestone stays on `codex/mac-mini-product-verification` / PR #6; exact SHA and post-push checks follow in issue #1. No duplicate follow-up automation created.
+
 ## 2026-10-08 — Mac Mini latest-main installation and bounded product verification
 
 - Fresh human instruction authorized installing latest now and leaving the scheduler running, waiving the earlier final-Passport completion gate for the update. Read all 25 linked issue/PR conversation/inline/review surfaces before activation; no new actionable finding. Merged main `28de9b55a1c039a5b3581a9595357d0fe4cf1095`, tree `2d157172b100eb94ce8f92d7696d5f71cfa500a0`, is identical to tested `003a60c775832a0e938a752129141eda5f01f15f`. Main CI passed; no duplicate source patch.
