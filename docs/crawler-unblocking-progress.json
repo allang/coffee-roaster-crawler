@@ -25,5 +25,12 @@
   "crawler_tests_passed": 368,
   "processing_schema_migration_required_for_runtime": false,
   "native_tier_import_checks_passed": 9,
-  "native_tier_import_checked_ids": 529
+  "native_tier_import_checked_ids": 529,
+  "txt_production_products_saved": 7,
+  "txt_production_photos_saved": 7,
+  "txt_repeat_ids_preserved": true,
+  "txt_repeat_cache_hits": 7,
+  "new_three_normal_crawl_status": "failed safely because the local website model key lacks model.request; product/variant/media state unchanged",
+  "mac_mini_product_verification_dispatched": true,
+  "mac_mini_installation_gate": "No scheduler install/restart until normal product verification succeeds using the existing crawler environment."
 }
