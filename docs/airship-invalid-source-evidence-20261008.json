@@ -1,0 +1,225 @@
+{
+  "checked_at": "2026-10-08T21:10:06.468Z",
+  "pages": [
+    {
+      "id": "08dcd938-5006-547b-a286-ca893e2950fe",
+      "url": "https://www.airshipcoffee.com/collections/medium-roast",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/medium-roast",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "0dbb9261-b54f-59f6-9bba-e00aef1fc23f",
+      "url": "https://www.airshipcoffee.com/shop-by/sweet-balanced",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/shop-by/sweet-balanced",
+      "title": "Sweet & Balanced",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "21a00181-15a5-513f-8553-ff74d0f0ce56",
+      "url": "https://www.airshipcoffee.com/collections/dark-roasty-revival",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/dark-roasty-revival",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "56ba8488-b458-4783-a217-67b48c830f13",
+      "url": "https://www.airshipcoffee.com/collections/sweet-balanced-revival",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/sweet-balanced-revival",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "72f01ab0-01f1-5935-870f-6a50d9a83336",
+      "url": "https://www.airshipcoffee.com/shop-by/dark-and-roasty",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/shop-by/dark-and-roasty",
+      "title": "Dark and Roasty",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "791b99b3-c4e2-5369-b9ea-7d42414d5a7e",
+      "url": "https://www.airshipcoffee.com/shop-by/herbs-and-spice",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/shop-by/herbs-and-spice",
+      "title": "Herbs & Spice",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "7d505c67-aaa3-5baa-b2e4-3df8054046ab",
+      "url": "https://www.airshipcoffee.com/collections/dark-roast",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/dark-roast",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "a364a0f7-b71d-5f2a-bb96-2a515f168e85",
+      "url": "https://www.airshipcoffee.com/collections/coffee",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/coffee",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "a46535f2-de89-5d9d-b3d1-edff403350d3",
+      "url": "https://www.airshipcoffee.com/collections/light-roast",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/light-roast",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "c1af5782-b3ac-575c-a656-7f9eaafb9a8e",
+      "url": "https://www.airshipcoffee.com/shop-by/fruity-floral",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/shop-by/fruity-floral",
+      "title": "Fruity & Floral | Airship Coffee",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "c2ef57e1-f40f-55d3-b107-1ff4ab782dbc",
+      "url": "https://www.airshipcoffee.com/collections/medium-dark-roast",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/medium-dark-roast",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    },
+    {
+      "id": "f65bcd8c-37ac-586f-8051-64502f349684",
+      "url": "https://www.airshipcoffee.com/collections/natural-coffees",
+      "status": 200,
+      "final_url": "https://www.airshipcoffee.com/collections/natural-coffees",
+      "title": "Airship",
+      "hidden_cart": true,
+      "shopyflow": true,
+      "primary_product": false
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/medium-roast",
+      "status": 200,
+      "at": "2026-10-08T21:09:56.797Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/shop-by/sweet-balanced",
+      "status": 200,
+      "at": "2026-10-08T21:09:57.596Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/dark-roasty-revival",
+      "status": 200,
+      "at": "2026-10-08T21:09:59.151Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/sweet-balanced-revival",
+      "status": 200,
+      "at": "2026-10-08T21:09:59.693Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/shop-by/dark-and-roasty",
+      "status": 200,
+      "at": "2026-10-08T21:10:00.371Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/shop-by/herbs-and-spice",
+      "status": 200,
+      "at": "2026-10-08T21:10:01.813Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/dark-roast",
+      "status": 200,
+      "at": "2026-10-08T21:10:02.318Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/coffee",
+      "status": 200,
+      "at": "2026-10-08T21:10:02.823Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/light-roast",
+      "status": 200,
+      "at": "2026-10-08T21:10:03.327Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/shop-by/fruity-floral",
+      "status": 200,
+      "at": "2026-10-08T21:10:04.533Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/medium-dark-roast",
+      "status": 200,
+      "at": "2026-10-08T21:10:05.263Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.airshipcoffee.com/collections/natural-coffees",
+      "status": 200,
+      "at": "2026-10-08T21:10:05.919Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0
+}

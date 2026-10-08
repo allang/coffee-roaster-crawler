@@ -111,7 +111,7 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
 
   if (!result.success) {
     logger.warn('ShopifyJSON', `Failed to fetch: ${jsonUrl}`, { error: result.error });
-    return { ...result, success: false, error: result.error };
+    return { ...result, success: false, sourceStage:'shopify_product_json', error: result.error };
   }
 
   if (!result.data || !result.data.product) {
@@ -128,6 +128,7 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
   // its presentment-currency price integers are deliberately not merged here.
   const ajaxUrl=new URL(jsonUrl);ajaxUrl.pathname=ajaxUrl.pathname.replace(/\.json$/,'.js');
   const ajax=await fetch(ajaxUrl.href,{timeout:15000,referer:url});
+  if(registered && !ajax.success)return {...ajax,success:false,sourceStage:'shopify_product_stock',error:'Shopify stock fetch failed: '+(ajax.error || 'unknown read failure')};
   product=mergeShopifyStock(product,ajax.success?ajax.data:null);
   const profile=lookupRegisteredProfile(url);
   if(profile?.exclude_variant_title_pattern) {

@@ -1,5 +1,19 @@
 [
   {
+    "name": "Airship",
+    "entity_ids": ["8528a70e-2033-4fc5-b5c6-1c5f73c0a989"],
+    "hosts": ["airshipcoffee.com", "www.airshipcoffee.com", "airshipcoffee.myshopify.com"],
+    "adapter": "shopify",
+    "bootstrap_url": "https://airshipcoffee.myshopify.com",
+    "canonical_product_host": "airshipcoffee.com",
+    "listing_paths": ["/products.json"],
+    "coffee_product_types": ["Coffee"],
+    "coffee_handles": ["roasterschoice"],
+    "strict_coffee_product_types": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
     "name": "April",
     "entity_ids": [
       "3a71024e-eb30-4778-927b-580e3bc3b62e"
