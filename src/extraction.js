@@ -1,7 +1,7 @@
 'use strict';
 const cheerio = require('cheerio');
 const { stableKey } = require('./catalogNormalization');
-const { structuredProduct, sameProduct, offerVariantId } = require('./productEvidence');
+const { structuredProduct, sameProduct, offerVariantId, primaryShopifyPreorders } = require('./productEvidence');
 const {processingForProduct,scopedDescription}=require('./coffeeProcessing');
 const EXTRACTION_VERSION = 'extract-v2-processing';
 const CACHE_TTL_MS = 7 * 86400_000;
@@ -32,6 +32,7 @@ function structuredExtraction(page, shopifyJson) {
   // does not establish the currency of a separate native numeric payload.
   const currency = native ? native.currency || null : offers[0]?.priceCurrency || null;
   const analyticsMarket=native?require('./shopifyProduct').exactAnalyticsMarket(page.html,native):new Map();
+  const preorders=native?primaryShopifyPreorders(page.html,page.finalUrl || page.url,native):new Map();
   const variants = native?.variants?.length ? native.variants.map(v => {
     const matches=offers.filter(o=>{
       let selected=null;try{selected=o.url?new URL(o.url,page.url).searchParams.get('variant'):null;}catch{return false;}
@@ -40,7 +41,7 @@ function structuredExtraction(page, shopifyJson) {
     });
     const paired=!(v.currency || native.currency)&&matches.length===1&&matches[0].priceCurrency?matches[0]:null;
     const analytics=!(v.currency || native.currency || paired)?analyticsMarket.get(String(v.id)):null;
-    return { source_id:v.id,title:v.title,price:paired?paired.price:analytics?analytics.price:v.price,currency:paired?paired.priceCurrency:analytics?analytics.currency:v.currency || native.currency || null,price_source:paired?'jsonld_exact_variant_offer':analytics?analytics.source:'shopify_product_json',available:v.available,weight_g:v.weightGrams,sku:v.sku,locale:'en-US' };
+    return { source_id:v.id,title:v.title,price:paired?paired.price:analytics?analytics.price:v.price,currency:paired?paired.priceCurrency:analytics?analytics.currency:v.currency || native.currency || null,price_source:paired?'jsonld_exact_variant_offer':analytics?analytics.source:'shopify_product_json',available:preorders.has(String(v.id))?null:v.available,weight_g:v.weightGrams,sku:v.sku,locale:'en-US' };
   }) : offers.map(o => ({ source_id:offerVariantId(o,page.finalUrl || page.url), title:o.name || o.sku || 'default', price:o.price, currency:o.priceCurrency || null, weight_g:o._net_weight_g,availability:require('./productEvidence').schemaAvailability(o.availability), locale:'en-US', source_url:o.url,price_source:schema?._market_source || 'product_scoped_jsonld_offer' }));
   const product = { name, attributes, variants, variant_prices:variants.map(v=>[v.title,v.price]), variant_price_currency:currency, description_html:descriptionHtml || null, description_raw:description || null, source_product_id:native?.id || schema?.productID || null, variants_complete:native?.variantsComplete===true || !native && schema?._variants_complete===true };
   const coffee = /\b(?:coffee|roasted|espresso)\b/i.test(`${native?.productType || ''} ${schema?.category || ''} ${name} ${description}`) && !/\b(?:green coffee|rohkaffee|cascara|grinder|mug|equipment|gift card)\b/i.test(`${name} ${native?.productType || ''}`);

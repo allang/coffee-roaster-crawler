@@ -79,6 +79,31 @@ function aggregateStates(states) {
   return states.includes('in_stock') ? 'in_stock' : states.length && states.every(s => s === 'sold_out') ? 'sold_out' : 'unknown';
 }
 
+function primaryShopifyPreorders(html,sourceUrl,native) {
+  const result=new Map();let url;
+  try{url=new URL(sourceUrl);}catch{return result;}
+  const profile=require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(url.hostname));
+  const rule=profile?.preorder_rules?.find(r=>url.pathname==='/products/'+r.handle);
+  if(!profile || !native)return result;
+  const tags=Array.isArray(native.tags)?native.tags:String(native.tags || '').split(/,\s*/);
+  const preorder=tags.find(tag=>/^pre[-\s]?order$/i.test(String(tag).trim()));
+  if(preorder && native.id!=null && url.pathname==='/products/'+native.handle) {
+    for(const v of native.variants || [])if(v.id!=null)result.set(String(v.id),{source:'shopify_product_preorder_tag',url:sourceUrl,product_id:String(native.id),variant_id:String(v.id),tag:preorder});
+  }
+  if(!rule)return result;
+  // This reviewed control is product-specific. Global nav banners and other
+  // products' controls cannot override an exact variant's immediate stock.
+  if(String(native.id)!==rule.product_id || native.handle!==rule.handle)throw Error('Reviewed preorder product identity mismatch');
+  const $=cheerio.load(html || ''),canonical=$('link[rel="canonical"]'),controls=$(rule.control_selector);
+  if(canonical.length!==1 || !sameProduct(canonical.attr('href'),sourceUrl) || controls.length!==1)throw Error('Reviewed primary preorder control missing or ambiguous');
+  const text=controls.first().text().replace(/\s+/g,' ').trim();
+  if(!/^pre[-\s]?order(?:\s+now)?$/i.test(text))return result;
+  const variantControls=$(rule.variant_control_selector).filter((_,e)=>$(e).attr('data-variant-id')===rule.variant_id);
+  if(variantControls.length!==1 || native.variants?.length!==1 || String(native.variants[0].id)!==rule.variant_id)throw Error('Reviewed preorder variant binding missing or ambiguous');
+  result.set(rule.variant_id,{source:'primary_product_preorder_control',url:sourceUrl,product_id:rule.product_id,variant_id:rule.variant_id,control_selector:rule.control_selector,variant_control_selector:rule.variant_control_selector,text});
+  return result;
+}
+
 function productAvailability(input = {}) {
   const checkedAt = input.checkedAt || new Date().toISOString();
   const result = (state, reason, evidence = [], variants = []) => ({ state, isAvailable: state === 'in_stock' ? true : ['sold_out', 'removed'].includes(state) ? false : null, reason, evidence, variants, checkedAt });
@@ -94,8 +119,9 @@ function productAvailability(input = {}) {
     } catch { return result('unknown', 'invalid_source_url'); }
   }
   if (input.shopifyProduct?.variants?.length) {
-    const variants = input.shopifyProduct.variants.map(v => ({ source_id: v.id == null ? null : String(v.id), title: v.title, state: v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : 'unknown', evidence: [{ source: v._availability_source || 'shopify_product_json', available: v.available ?? null }], checkedAt }));
-    return result(aggregateStates(variants.map(v => v.state)), 'shopify_exact_variants', [{ source: 'shopify_product_json', product_id: input.shopifyProduct.id }], variants);
+    const preorders=primaryShopifyPreorders(input.html,input.finalUrl || input.sourceUrl,input.shopifyProduct);
+    const variants = input.shopifyProduct.variants.map(v => ({ source_id: v.id == null ? null : String(v.id), title: v.title, state: preorders.has(String(v.id))?'unknown':v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : 'unknown', evidence: [{ source: v._availability_source || 'shopify_product_json', available: v.available ?? null },...[preorders.get(String(v.id))].filter(Boolean)], checkedAt }));
+    return result(aggregateStates(variants.map(v => v.state)), preorders.size?'primary_product_preorder':'shopify_exact_variants', [{ source: 'shopify_product_json', product_id: input.shopifyProduct.id },...preorders.values()], variants);
   }
   const product = input.sourceProduct || structuredProduct(input.html, input.sourceUrl);
   if (product) {
@@ -119,4 +145,4 @@ function productAvailability(input = {}) {
   return result('unknown', 'product_stock_evidence_missing');
 }
 
-module.exports = { structuredProduct, schemaAvailability, aggregateStates, productAvailability, sameProduct, offerVariantId };
+module.exports = { structuredProduct, schemaAvailability, aggregateStates, productAvailability, primaryShopifyPreorders, sameProduct, offerVariantId };

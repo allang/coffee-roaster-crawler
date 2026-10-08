@@ -528,6 +528,15 @@
     ],
     "exclude_product_ids": [
       "7462950862946"
+    ],
+    "preorder_rules": [
+      {
+        "product_id": "7773746823266",
+        "handle": "2026-advent-calendar",
+        "variant_id": "43221087649890",
+        "control_selector": "main > .sections > section#hero > .text > button.button",
+        "variant_control_selector": "main button.atc[data-variant-id]"
+      }
     ]
   },
   {

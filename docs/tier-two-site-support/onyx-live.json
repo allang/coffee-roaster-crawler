@@ -1,7 +1,11 @@
 {
   "name": "Onyx",
-  "checked_at": "2026-10-08T04:06:22.905Z",
+  "checked_at": "2026-10-08T04:47:41.043Z",
   "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "b765bee5-9622-4735-a948-7816736da3e5"
+  ],
+  "identity_blocker": null,
   "discovery": {
     "supported": true,
     "urls": [
@@ -2017,7 +2021,7 @@
       "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26",
       "title": "Ecuador Jose Jijon",
       "source_product_id": "7704792006754",
-      "state": "in_stock",
+      "state": "unknown",
       "variants": [
         {
           "id": "43113331064930",
@@ -2031,7 +2035,7 @@
             "minorUnits": 1800,
             "reason": null
           },
-          "state": "in_stock",
+          "state": "unknown",
           "price_source": "shopify_exact_variant_analytics"
         },
         {
@@ -2046,7 +2050,7 @@
             "minorUnits": 9000,
             "reason": null
           },
-          "state": "in_stock",
+          "state": "unknown",
           "price_source": "shopify_exact_variant_analytics"
         },
         {
@@ -2061,7 +2065,7 @@
             "minorUnits": 18000,
             "reason": null
           },
-          "state": "in_stock",
+          "state": "unknown",
           "price_source": "shopify_exact_variant_analytics"
         }
       ],
@@ -3717,7 +3721,7 @@
       "url": "https://onyxcoffeelab.com/products/2026-advent-calendar",
       "title": "2026 Advent Calendar",
       "source_product_id": "7773746823266",
-      "state": "in_stock",
+      "state": "unknown",
       "variants": [
         {
           "id": "43221087649890",
@@ -3731,7 +3735,7 @@
             "minorUnits": 18900,
             "reason": null
           },
-          "state": "in_stock",
+          "state": "unknown",
           "price_source": "shopify_exact_variant_analytics"
         }
       ],
@@ -3760,819 +3764,815 @@
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/coffee/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T04:05:14.755Z"
+      "at": "2026-10-08T04:46:33.855Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/coffee/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T04:05:15.079Z"
+      "at": "2026-10-08T04:46:34.176Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/instant-coffee/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T04:05:15.580Z"
+      "at": "2026-10-08T04:46:34.700Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/instant-coffee/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T04:05:16.106Z"
+      "at": "2026-10-08T04:46:35.224Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/special/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T04:05:16.629Z"
+      "at": "2026-10-08T04:46:35.655Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/special/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T04:05:17.048Z"
+      "at": "2026-10-08T04:46:36.144Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/cometeer/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T04:05:17.552Z"
+      "at": "2026-10-08T04:46:36.649Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/collections/cometeer/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T04:05:18.043Z"
+      "at": "2026-10-08T04:46:37.129Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.json",
       "status": 200,
-      "at": "2026-10-08T04:05:18.558Z"
+      "at": "2026-10-08T04:46:37.718Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/monarch",
       "status": 200,
-      "at": "2026-10-08T04:05:19.254Z"
+      "at": "2026-10-08T04:46:38.388Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/monarch.json",
       "status": 200,
-      "at": "2026-10-08T04:05:19.612Z"
+      "at": "2026-10-08T04:46:38.762Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/monarch.js",
       "status": 200,
-      "at": "2026-10-08T04:05:20.111Z"
+      "at": "2026-10-08T04:46:39.295Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/geometry",
       "status": 200,
-      "at": "2026-10-08T04:05:20.829Z"
+      "at": "2026-10-08T04:46:39.871Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/geometry.json",
       "status": 200,
-      "at": "2026-10-08T04:05:21.131Z"
+      "at": "2026-10-08T04:46:40.227Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/geometry.js",
       "status": 200,
-      "at": "2026-10-08T04:05:21.635Z"
+      "at": "2026-10-08T04:46:40.760Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/southern-weather",
       "status": 200,
-      "at": "2026-10-08T04:05:22.394Z"
+      "at": "2026-10-08T04:46:41.406Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/southern-weather.json",
       "status": 200,
-      "at": "2026-10-08T04:05:22.707Z"
+      "at": "2026-10-08T04:46:41.738Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/southern-weather.js",
       "status": 200,
-      "at": "2026-10-08T04:05:23.200Z"
+      "at": "2026-10-08T04:46:42.228Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/tropical-weather",
       "status": 200,
-      "at": "2026-10-08T04:05:23.970Z"
+      "at": "2026-10-08T04:46:42.958Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/tropical-weather.json",
       "status": 200,
-      "at": "2026-10-08T04:05:24.282Z"
+      "at": "2026-10-08T04:46:43.249Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/tropical-weather.js",
       "status": 200,
-      "at": "2026-10-08T04:05:24.806Z"
+      "at": "2026-10-08T04:46:43.755Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/cold-brew",
       "status": 200,
-      "at": "2026-10-08T04:05:25.445Z"
+      "at": "2026-10-08T04:46:44.396Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/cold-brew.json",
       "status": 200,
-      "at": "2026-10-08T04:05:25.817Z"
+      "at": "2026-10-08T04:46:44.782Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/cold-brew.js",
       "status": 200,
-      "at": "2026-10-08T04:05:26.324Z"
+      "at": "2026-10-08T04:46:45.236Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/power-nap",
       "status": 200,
-      "at": "2026-10-08T04:05:26.959Z"
+      "at": "2026-10-08T04:46:45.945Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/power-nap.json",
       "status": 200,
-      "at": "2026-10-08T04:05:27.330Z"
+      "at": "2026-10-08T04:46:46.294Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/power-nap.js",
       "status": 200,
-      "at": "2026-10-08T04:05:27.861Z"
+      "at": "2026-10-08T04:46:46.739Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/red-collaboration",
       "status": 200,
-      "at": "2026-10-08T04:05:28.535Z"
+      "at": "2026-10-08T04:46:47.408Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/red-collaboration.json",
       "status": 200,
-      "at": "2026-10-08T04:05:28.816Z"
+      "at": "2026-10-08T04:46:47.800Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/red-collaboration.js",
       "status": 200,
-      "at": "2026-10-08T04:05:29.369Z"
+      "at": "2026-10-08T04:46:48.335Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/usa-cycling",
       "status": 200,
-      "at": "2026-10-08T04:05:30.012Z"
+      "at": "2026-10-08T04:46:48.908Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/usa-cycling.json",
       "status": 200,
-      "at": "2026-10-08T04:05:30.422Z"
+      "at": "2026-10-08T04:46:49.252Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/usa-cycling.js",
       "status": 200,
-      "at": "2026-10-08T04:05:30.843Z"
+      "at": "2026-10-08T04:46:49.773Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/kenya-kagunyu-aa",
       "status": 200,
-      "at": "2026-10-08T04:05:31.495Z"
+      "at": "2026-10-08T04:46:50.397Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/kenya-kagunyu-aa.json",
       "status": 200,
-      "at": "2026-10-08T04:05:31.870Z"
+      "at": "2026-10-08T04:46:50.825Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/kenya-kagunyu-aa.js",
       "status": 200,
-      "at": "2026-10-08T04:05:32.359Z"
+      "at": "2026-10-08T04:46:51.345Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26",
       "status": 200,
-      "at": "2026-10-08T04:05:32.953Z"
+      "at": "2026-10-08T04:46:51.992Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:33.407Z"
+      "at": "2026-10-08T04:46:52.270Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-honey-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:33.937Z"
+      "at": "2026-10-08T04:46:52.771Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa",
       "status": 200,
-      "at": "2026-10-08T04:05:34.512Z"
+      "at": "2026-10-08T04:46:53.444Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa.json",
       "status": 200,
-      "at": "2026-10-08T04:05:34.871Z"
+      "at": "2026-10-08T04:46:53.760Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/kenya-kamunyaka-aa.js",
       "status": 200,
-      "at": "2026-10-08T04:05:35.373Z"
+      "at": "2026-10-08T04:46:54.262Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/honduras-fredy-perez",
       "status": 200,
-      "at": "2026-10-08T04:05:36.055Z"
+      "at": "2026-10-08T04:46:54.915Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/honduras-fredy-perez.json",
       "status": 200,
-      "at": "2026-10-08T04:05:36.377Z"
+      "at": "2026-10-08T04:46:55.267Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/honduras-fredy-perez.js",
       "status": 200,
-      "at": "2026-10-08T04:05:36.853Z"
+      "at": "2026-10-08T04:46:55.787Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26",
       "status": 200,
-      "at": "2026-10-08T04:05:37.604Z"
+      "at": "2026-10-08T04:46:56.496Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:37.902Z"
+      "at": "2026-10-08T04:46:56.835Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/el-salvador-santa-rosa-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:38.415Z"
+      "at": "2026-10-08T04:46:57.336Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26",
       "status": 200,
-      "at": "2026-10-08T04:05:39.176Z"
+      "at": "2026-10-08T04:46:57.991Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:39.428Z"
+      "at": "2026-10-08T04:46:58.312Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-mullugeta-muntasha-natural-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:39.925Z"
+      "at": "2026-10-08T04:46:58.884Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26",
       "status": 200,
-      "at": "2026-10-08T04:05:40.576Z"
+      "at": "2026-10-08T04:46:59.557Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:40.948Z"
+      "at": "2026-10-08T04:46:59.863Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/costa-rica-las-lajas-natural-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:41.450Z"
+      "at": "2026-10-08T04:47:00.371Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26",
       "status": 200,
-      "at": "2026-10-08T04:05:42.066Z"
+      "at": "2026-10-08T04:47:01.103Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:42.490Z"
+      "at": "2026-10-08T04:47:01.438Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ecuador-la-papaya-anaerobic-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:43.011Z"
+      "at": "2026-10-08T04:47:01.845Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha",
       "status": 200,
-      "at": "2026-10-08T04:05:43.634Z"
+      "at": "2026-10-08T04:47:02.490Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha.json",
       "status": 200,
-      "at": "2026-10-08T04:05:44.078Z"
+      "at": "2026-10-08T04:47:02.880Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/mexico-oaxaca-yogondoy-gesha.js",
       "status": 200,
-      "at": "2026-10-08T04:05:44.463Z"
+      "at": "2026-10-08T04:47:03.408Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1",
       "status": 200,
-      "at": "2026-10-08T04:05:45.164Z"
+      "at": "2026-10-08T04:47:04.091Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1.json",
       "status": 200,
-      "at": "2026-10-08T04:05:45.471Z"
+      "at": "2026-10-08T04:47:04.342Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-agaro-yukro-g1.js",
       "status": 200,
-      "at": "2026-10-08T04:05:45.998Z"
+      "at": "2026-10-08T04:47:04.863Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26",
       "status": 200,
-      "at": "2026-10-08T04:05:46.641Z"
+      "at": "2026-10-08T04:47:05.554Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:47.041Z"
+      "at": "2026-10-08T04:47:05.877Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/panama-savage-coffees-gesha-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:47.568Z"
+      "at": "2026-10-08T04:47:06.352Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26",
       "status": 200,
-      "at": "2026-10-08T04:05:48.120Z"
+      "at": "2026-10-08T04:47:07.079Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:48.490Z"
+      "at": "2026-10-08T04:47:07.379Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:48.990Z"
+      "at": "2026-10-08T04:47:07.856Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1",
       "status": 200,
-      "at": "2026-10-08T04:05:49.664Z"
+      "at": "2026-10-08T04:47:08.490Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1.json",
       "status": 200,
-      "at": "2026-10-08T04:05:49.995Z"
+      "at": "2026-10-08T04:47:08.880Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/ethiopia-korma-kontoma-g1.js",
       "status": 200,
-      "at": "2026-10-08T04:05:50.469Z"
+      "at": "2026-10-08T04:47:09.376Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso",
       "status": 200,
-      "at": "2026-10-08T04:05:51.121Z"
+      "at": "2026-10-08T04:47:10.036Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso.json",
       "status": 200,
-      "at": "2026-10-08T04:05:51.488Z"
+      "at": "2026-10-08T04:47:10.360Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/colombia-altos-de-quitumpamba-chiroso.js",
       "status": 200,
-      "at": "2026-10-08T04:05:51.987Z"
+      "at": "2026-10-08T04:47:10.888Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez",
       "status": 200,
-      "at": "2026-10-08T04:05:52.621Z"
+      "at": "2026-10-08T04:47:11.577Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez.json",
       "status": 200,
-      "at": "2026-10-08T04:05:53.023Z"
+      "at": "2026-10-08T04:47:11.905Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-sebastian-ramirez.js",
       "status": 200,
-      "at": "2026-10-08T04:05:53.514Z"
+      "at": "2026-10-08T04:47:12.437Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26",
       "status": 200,
-      "at": "2026-10-08T04:05:54.164Z"
+      "at": "2026-10-08T04:47:13.156Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26.json",
       "status": 200,
-      "at": "2026-10-08T04:05:54.523Z"
+      "at": "2026-10-08T04:47:13.388Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/peru-la-margarita-gesha-26.js",
       "status": 200,
-      "at": "2026-10-08T04:05:55.041Z"
+      "at": "2026-10-08T04:47:13.890Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment",
       "status": 200,
-      "at": "2026-10-08T04:05:55.743Z"
+      "at": "2026-10-08T04:47:14.545Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment.json",
       "status": 200,
-      "at": "2026-10-08T04:05:56.009Z"
+      "at": "2026-10-08T04:47:14.938Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-brayan-alvear-co-ferment.js",
       "status": 200,
-      "at": "2026-10-08T04:05:56.525Z"
+      "at": "2026-10-08T04:47:15.463Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha",
       "status": 200,
-      "at": "2026-10-08T04:05:57.164Z"
+      "at": "2026-10-08T04:47:16.076Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha.json",
       "status": 200,
-      "at": "2026-10-08T04:05:57.545Z"
+      "at": "2026-10-08T04:47:16.629Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/colombia-brayan-smith-gesha.js",
       "status": 200,
-      "at": "2026-10-08T04:05:58.049Z"
+      "at": "2026-10-08T04:47:16.881Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio",
       "status": 200,
-      "at": "2026-10-08T04:05:58.770Z"
+      "at": "2026-10-08T04:47:17.573Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio.json",
       "status": 200,
-      "at": "2026-10-08T04:05:59.096Z"
+      "at": "2026-10-08T04:47:17.948Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/decaf-colombia-inza-san-antonio.js",
       "status": 200,
-      "at": "2026-10-08T04:05:59.619Z"
+      "at": "2026-10-08T04:47:18.456Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/eclipse",
       "status": 200,
-      "at": "2026-10-08T04:06:00.200Z"
+      "at": "2026-10-08T04:47:19.141Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/eclipse.json",
       "status": 200,
-      "at": "2026-10-08T04:06:00.548Z"
+      "at": "2026-10-08T04:47:19.407Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/eclipse.js",
       "status": 200,
-      "at": "2026-10-08T04:06:01.099Z"
+      "at": "2026-10-08T04:47:19.895Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/sources",
       "status": 200,
-      "at": "2026-10-08T04:06:01.717Z"
+      "at": "2026-10-08T04:47:20.572Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/sources.json",
       "status": 200,
-      "at": "2026-10-08T04:06:02.055Z"
+      "at": "2026-10-08T04:47:20.922Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/sources.js",
       "status": 200,
-      "at": "2026-10-08T04:06:02.565Z"
+      "at": "2026-10-08T04:47:21.435Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/circadian",
       "status": 200,
-      "at": "2026-10-08T04:06:03.178Z"
+      "at": "2026-10-08T04:47:22.086Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/circadian.json",
       "status": 200,
-      "at": "2026-10-08T04:06:03.579Z"
+      "at": "2026-10-08T04:47:22.420Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/circadian.js",
       "status": 200,
-      "at": "2026-10-08T04:06:04.106Z"
+      "at": "2026-10-08T04:47:22.977Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-tropical-weather",
       "status": 200,
-      "at": "2026-10-08T04:06:04.753Z"
+      "at": "2026-10-08T04:47:23.602Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-tropical-weather.json",
       "status": 200,
-      "at": "2026-10-08T04:06:05.040Z"
+      "at": "2026-10-08T04:47:23.967Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-tropical-weather.js",
       "status": 200,
-      "at": "2026-10-08T04:06:05.546Z"
+      "at": "2026-10-08T04:47:24.510Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-geometry",
       "status": 200,
-      "at": "2026-10-08T04:06:06.262Z"
+      "at": "2026-10-08T04:47:25.113Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-geometry.json",
       "status": 200,
-      "at": "2026-10-08T04:06:06.764Z"
+      "at": "2026-10-08T04:47:25.440Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-geometry.js",
       "status": 200,
-      "at": "2026-10-08T04:06:07.294Z"
+      "at": "2026-10-08T04:47:25.949Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-southern-weather",
       "status": 200,
-      "at": "2026-10-08T04:06:07.894Z"
+      "at": "2026-10-08T04:47:26.631Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-southern-weather.json",
       "status": 200,
-      "at": "2026-10-08T04:06:08.361Z"
+      "at": "2026-10-08T04:47:27.000Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-southern-weather.js",
       "status": 200,
-      "at": "2026-10-08T04:06:08.852Z"
+      "at": "2026-10-08T04:47:27.425Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-monarch",
       "status": 200,
-      "at": "2026-10-08T04:06:09.582Z"
+      "at": "2026-10-08T04:47:28.130Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-monarch.json",
       "status": 200,
-      "at": "2026-10-08T04:06:10.109Z"
+      "at": "2026-10-08T04:47:28.429Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-monarch.js",
       "status": 200,
-      "at": "2026-10-08T04:06:10.497Z"
+      "at": "2026-10-08T04:47:29.096Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio",
       "status": 200,
-      "at": "2026-10-08T04:06:11.168Z"
+      "at": "2026-10-08T04:47:29.620Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio.json",
       "status": 200,
-      "at": "2026-10-08T04:06:11.554Z"
+      "at": "2026-10-08T04:47:29.967Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/instant-decaf-colombia-inza-san-antonio.js",
       "status": 200,
-      "at": "2026-10-08T04:06:12.064Z"
+      "at": "2026-10-08T04:47:30.456Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage",
       "status": 200,
-      "at": "2026-10-08T04:06:12.727Z"
+      "at": "2026-10-08T04:47:31.044Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage.json",
       "status": 200,
-      "at": "2026-10-08T04:06:13.067Z"
+      "at": "2026-10-08T04:47:31.465Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/producer-experience-box-jamison-savage.js",
       "status": 200,
-      "at": "2026-10-08T04:06:13.554Z"
+      "at": "2026-10-08T04:47:31.993Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/blend-discovery-box",
       "status": 200,
-      "at": "2026-10-08T04:06:14.191Z"
+      "at": "2026-10-08T04:47:32.573Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/blend-discovery-box.json",
       "status": 200,
-      "at": "2026-10-08T04:06:14.551Z"
+      "at": "2026-10-08T04:47:32.934Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/blend-discovery-box.js",
       "status": 200,
-      "at": "2026-10-08T04:06:15.075Z"
+      "at": "2026-10-08T04:47:33.462Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/discovery-box",
       "status": 200,
-      "at": "2026-10-08T04:06:15.760Z"
+      "at": "2026-10-08T04:47:34.092Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/discovery-box.json",
       "status": 200,
-      "at": "2026-10-08T04:06:16.106Z"
+      "at": "2026-10-08T04:47:34.458Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/discovery-box.js",
       "status": 200,
-      "at": "2026-10-08T04:06:16.596Z"
+      "at": "2026-10-08T04:47:34.967Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/blend-box",
       "status": 200,
-      "at": "2026-10-08T04:06:17.277Z"
+      "at": "2026-10-08T04:47:35.618Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/blend-box.json",
       "status": 200,
-      "at": "2026-10-08T04:06:17.670Z"
+      "at": "2026-10-08T04:47:36.029Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/blend-box.js",
       "status": 200,
-      "at": "2026-10-08T04:06:18.147Z"
+      "at": "2026-10-08T04:47:36.508Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/catalog-box",
       "status": 200,
-      "at": "2026-10-08T04:06:18.827Z"
+      "at": "2026-10-08T04:47:37.141Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/catalog-box.json",
       "status": 200,
-      "at": "2026-10-08T04:06:19.256Z"
+      "at": "2026-10-08T04:47:37.484Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/catalog-box.js",
       "status": 200,
-      "at": "2026-10-08T04:06:19.749Z"
+      "at": "2026-10-08T04:47:38.010Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection",
       "status": 200,
-      "at": "2026-10-08T04:06:20.441Z"
+      "at": "2026-10-08T04:47:38.634Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection.json",
       "status": 200,
-      "at": "2026-10-08T04:06:20.813Z"
+      "at": "2026-10-08T04:47:39.055Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/the-onyx-cometeer-collection.js",
       "status": 200,
-      "at": "2026-10-08T04:06:21.302Z"
+      "at": "2026-10-08T04:47:39.460Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/2026-advent-calendar",
       "status": 200,
-      "at": "2026-10-08T04:06:21.953Z"
+      "at": "2026-10-08T04:47:40.142Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.json",
       "status": 200,
-      "at": "2026-10-08T04:06:22.318Z"
+      "at": "2026-10-08T04:47:40.446Z"
     },
     {
       "method": "GET",
       "url": "https://onyxcoffeelab.com/products/2026-advent-calendar.js",
       "status": 200,
-      "at": "2026-10-08T04:06:22.845Z"
+      "at": "2026-10-08T04:47:40.965Z"
     }
   ],
   "production_writes": 0,
   "ai_calls": 0,
   "prohibited_requests": 0,
-  "passed": true,
-  "entity_ids": [
-    "b765bee5-9622-4735-a948-7816736da3e5"
-  ],
-  "identity_blocker": null
+  "passed": true
 }

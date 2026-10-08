@@ -1,0 +1,40 @@
+{
+  "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26",
+  "product": {
+    "id": 7704792006754,
+    "handle": "ecuador-jose-jijon-26",
+    "title": "Ecuador Jose Jijon",
+    "tags": "caffeine:full, coffee, COLOR: White, method:Espresso, method:Filter, origin:Ecuador, Preorder, preorder-ship-date:2026-10-08, process:Dry Washed, profile:modern, type:single origin",
+    "variants": [
+      {
+        "id": 43113331064930,
+        "title": "2oz"
+      },
+      {
+        "id": 43113331097698,
+        "title": "10oz"
+      },
+      {
+        "id": 43113331032162,
+        "title": "2lbs"
+      }
+    ]
+  },
+  "ajax": {
+    "id": 7704792006754,
+    "variants": [
+      {
+        "id": 43113331064930,
+        "available": true
+      },
+      {
+        "id": 43113331097698,
+        "available": true
+      },
+      {
+        "id": 43113331032162,
+        "available": true
+      }
+    ]
+  }
+}

@@ -356,7 +356,10 @@
       "verified_variants": 176,
       "prohibited_requests": 0,
       "production_writes": 0,
-      "blocker": null
+      "blocker": null,
+      "verified_preorder_products": 2,
+      "verified_stock_unknown_variants": 4,
+      "stock_note": "Advent primary preorder control and Ecuador Jose Jijon native Preorder tag establish unknown immediate stock; Ajax sellability is not immediate stock."
     },
     {
       "name": "Onyx Tonics",

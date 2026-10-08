@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-08T04:45:58.679Z",
+  "mode": "merchant-get-only-dry-run",
+  "listing_preorder_products": [
+    {
+      "product_id": "7704792006754",
+      "handle": "ecuador-jose-jijon-26",
+      "title": "Ecuador Jose Jijon",
+      "explicit_preorder_tags": [
+        "Preorder"
+      ]
+    }
+  ],
+  "source_url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26",
+  "product_id": "7704792006754",
+  "tags": "caffeine:full, coffee, COLOR: White, method:Espresso, method:Filter, origin:Ecuador, Preorder, preorder-ship-date:2026-10-08, process:Dry Washed, profile:modern, type:single origin",
+  "variant_ids": [
+    "43113331064930",
+    "43113331097698",
+    "43113331032162"
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:45:56.288Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/instant-coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:45:56.717Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/special/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:45:57.179Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/collections/cometeer/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:45:57.675Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26.json",
+      "status": 200,
+      "at": "2026-10-08T04:45:58.177Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/ecuador-jose-jijon-26.js",
+      "status": 200,
+      "at": "2026-10-08T04:45:58.677Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0
+}
