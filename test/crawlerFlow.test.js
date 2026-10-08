@@ -16,7 +16,7 @@ function modules(db,state) {
       if(name==='./config')return{config:{crawler:{requestDelayMs:0,maxBfsPages:20}}};
       if(name==='./gptClassifier')return{MODEL:'fixture-model',classifyPage:async()=>{state.aiCalls++;return{aiCalls:1,usage:{prompt_tokens:50,completion_tokens:10},data:{is_coffee_page:true,product:state.extracted}};}};
       if(name==='./imageDownloader')return{downloadAndSaveImage:async()=>null};
-      if(name==='./httpClient')return{fetchHtml:async()=>({success:true,data:state.html,status:200,finalUrl:url}),jitteredSleep:async()=>{}};
+      if(name==='./httpClient')return{fetchHtml:async()=>{state.fetchCalls=(state.fetchCalls||0)+1;return state.fetchResult||{success:true,data:state.html,status:200,finalUrl:url};},jitteredSleep:async()=>{}};
       if(name==='./shopifyProduct')return{...nativeRequire(name),fetchShopifyProductJson:async()=>({success:true,raw:state.native,data:parseShopifyProduct(state.native)})};
       if(name.startsWith('./') && !name.endsWith('.cjs') && !name.endsWith('.json'))return load(nativeRequire.resolve(name));
       return nativeRequire(name);
@@ -30,6 +30,16 @@ function fixture() {
   const native={id:123,title:'ETHIOPIA — BANKO',currency:'EUR',product_type:'Coffee',body_html:'<p>Coffee beans from Banko</p>',variants:[{id:1,title:'250g / whole bean',price:'12.00',grams:250,available:true},{id:2,title:'250g / espresso',price:'12.00',grams:250,available:false}]};
   return {aiCalls:0,html:'<main><h1>ETHIOPIA — BANKO</h1><p>Coffee beans from Banko</p></main>',native,extracted:{name:'ETHIOPIA — BANKO',attributes:attrs}};
 }
+test('exhausted merchant cooldown stops unvisited pages and logs the exact returned cause without classifying',async()=>{
+  const state=fixture();state.fetchResult={success:false,status:503,error:'HTTP 503',retryStopped:'retry_after_limit',merchantCooldownExceeded:true,cooldown:{host:'shop.test',retryAfterMs:200000,remainingMs:200000},cooldownRecovery:{waitedMs:200000,resumptions:1,stopped:'total_wait_limit'}};
+  const db={from(){throw Error('No database write during failed reads');}},m=modules(db,state),acc=new m.accumulator(owner,'Fixture',log),errors=[];
+  const logger=new Proxy({error:(...args)=>errors.push(args)},{get:(t,k)=>t[k]||(()=>{})});
+  const urls=[url,url+'-two',url+'-three'];urls.forEach(u=>acc.addUrl(u));
+  const result=await m.visitor.visitAllPages(owner,urls,acc,logger,'shopify');
+  assert.equal(result.visited,1);assert.equal(result.errors,1);assert.equal(result.deferredPages,2);
+  assert.equal(result.inventoryComplete,false);assert.equal(result.aiCalls,0);assert.equal(state.aiCalls,0);assert.equal(state.fetchCalls,1);
+  assert.equal(errors[0][2].url,url);assert.equal(errors[0][2].status,503);assert.equal(errors[0][2].cooldownRecovery.stopped,'total_wait_limit');
+});
 for(const mode of ['sitemap','bfs']) test(`${mode} path persists complete attributes, reuses semantics and refreshes exact variant price/stock`,async()=>{
   const pg=await catalogDb();try{
     await pg.query('insert into entities(id) values($1)',[owner]);const db=supabaseAdapter(pg),state=fixture(),m=modules(db,state),acc=new m.accumulator(owner,'Fixture',log);acc.addUrl(url);

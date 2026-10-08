@@ -90,7 +90,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   const accumulator = new UrlAccumulator(roaster.id, roaster.name, log);
 
-  const siteProfile=profileFor(roaster),siteReader=siteProfile?createReader(siteProfile):null;
+  const siteProfile=profileFor(roaster),siteReader=siteProfile?createReader(siteProfile,{resumeCooldowns:true}):null;
   const entryUrl=siteProfile?.bootstrap_url?allowed(siteProfile.bootstrap_url,siteProfile.hosts).href:websiteUrl;
   if(entryUrl!==websiteUrl)log.info('Platform','Using reviewed merchant market entry point',{website:websiteUrl,entry:entryUrl});
   const platformInfo = await detectPlatform(entryUrl, log,siteReader || {});
@@ -112,7 +112,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   await jitteredSleep(config.crawler.requestDelayMs);
 
   const siteDiscovery=await discoverSiteProducts(siteProfile?{...roaster,website_url:effectiveWebsiteUrl}:roaster,siteReader || {fetchHtml:require('./httpClient').fetchHtml});
-  const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
+  const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,getMerchantCooldownFailure:siteReader.getCooldownFailure,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
   for(const url of siteDiscovery.urls)accumulator.addUrl(url,'site-support');
   const verifiedEmpty=verifiedEmptyInventory(siteProfile,siteDiscovery);
   const partialScope=require('./siteSupport/txt').partialScopeAllowed(siteProfile,siteDiscovery);
@@ -248,7 +248,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
       });
     }
 
-    if(siteDiscovery.supported && visitResults.errors>0)throw new Error('Registered merchant product verification failed: '+visitResults.errors+' page error(s)');
+    if(siteDiscovery.supported && (visitResults.errors>0 || visitResults.deferredPages>0))throw new Error('Registered merchant product verification failed: '+visitResults.errors+' page error(s)'+(visitResults.deferredPages?'; '+visitResults.deferredPages+' page(s) deferred after merchant cooldown':''));
     if(partialScope)visitResults={...visitResults,partialInventory:true,inventoryComplete:false,inventoryScope:siteDiscovery.inventory_scope,omissionReconciliation:false};
     const stats = accumulator.getStats();
     await completeCrawlRun(crawlRun.id, {

@@ -42,6 +42,53 @@ test('429 then 200 actually retries the guarded GET after two seconds and record
   for(const call of f.calls){assert.equal(call.url,url);assert.equal(call.settings.method,'GET');assert.equal(call.settings.redirect,'manual');assert(call.settings.signal instanceof AbortSignal);}
 });
 
+test('normal crawl resumes a 123-second merchant cooldown and reduces later request pressure',async()=>{
+  const f=fixture([{status:503,headers:{'retry-after':'123'}},{status:200},{status:200}],{resumeCooldowns:true});
+  const first=await f.reader.fetchHtml(url),second=await f.reader.fetchHtml(url+'.json');
+  assert(first.success&&second.success);assert.equal(first.cooldownResumptions,1);
+  assert.deepEqual(f.sleeps,[123000,2000]);assert.equal(f.calls[1].at-epoch,123000);assert.equal(f.calls[2].at-f.calls[1].at,2000);
+  assert.equal(f.reader.requests[0].retryAfter,'123');assert.equal(f.reader.returnedErrors.length,0);
+  assert.equal(f.reader.cooldownEvents[0].requestSpacingMs,2000);
+});
+
+test('queued native reads get their own bounded read budget after a resumed merchant wait',async()=>{
+  const f=fixture([{status:503,headers:{'retry-after':'123'}},{status:200},{status:200}],{resumeCooldowns:true});
+  const [html,native]=await Promise.all([f.reader.fetchHtml(url),f.reader.fetchHtml(url+'.json')]);
+  assert(html.success&&native.success);assert.deepEqual(f.calls.map(c=>c.url),[url,url,url+'.json']);
+  assert.equal(f.calls[1].at-epoch,123000);assert.equal(f.calls[2].at-f.calls[1].at,2000);
+});
+
+test('long cooldown waits share the five-minute cap across the entire merchant reader',async()=>{
+  const f=fixture([{status:503,headers:{'retry-after':'200'}},{status:503,headers:{'retry-after':'200'}}],{resumeCooldowns:true});
+  const r=await f.reader.fetchHtml(url);
+  assert.equal(r.success,false);assert.equal(r.merchantCooldownExceeded,true);
+  assert.equal(r.cooldownRecovery.stopped,'total_wait_limit');assert.equal(r.cooldownRecovery.waitedMs,200000);
+  assert.deepEqual(f.sleeps,[200000]);assert.equal(f.calls.length,2);assert.equal(f.reader.returnedErrors.length,1);
+  assert.equal(f.reader.getCooldownFailure().error,'HTTP 503');
+  const following=await f.reader.fetchHtml(url+'/next');assert.equal(following.merchantCooldownExceeded,true);
+  assert.equal(f.calls.length,2);
+});
+
+test('long cooldown resumptions are capped at three even when the wait budget remains',async()=>{
+  const f=fixture(Array.from({length:4},()=>({status:503,headers:{'retry-after':'31'}})),{resumeCooldowns:true});
+  const r=await f.reader.fetchHtml(url);
+  assert.equal(r.merchantCooldownExceeded,true);assert.equal(r.cooldownRecovery.stopped,'resumption_limit');
+  assert.deepEqual(f.sleeps,[31000,31000,31000]);assert.equal(f.calls.length,4);
+  assert.deepEqual(f.reader.cooldownEvents.map(e=>e.requestSpacingMs),[2000,4000,5000]);
+});
+
+test('cooldown resumption rechecks destination and DNS without sending an unsafe request',async()=>{
+  const f=fixture([{status:503,headers:{'retry-after':'123'}}],{resumeCooldowns:true,lookupHook:n=>[{address:n===1?'8.8.8.8':'127.0.0.1',family:4}]});
+  const r=await f.reader.fetchHtml(url);assert.equal(r.success,false);assert.match(r.error,/Nonpublic DNS/);
+  assert.equal(f.calls.length,1);assert.equal(f.lookups.length,2);assert.deepEqual(f.sleeps,[123000]);
+});
+
+test('ordinary exhausted retries without a long Retry-After keep the original attempt bound',async()=>{
+  const f=fixture(Array.from({length:4},()=>({status:503})),{resumeCooldowns:true});
+  const r=await f.reader.fetchHtml(url);assert.equal(r.success,false);assert.equal(r.retryStopped,'retry_limit');
+  assert.equal(f.calls.length,4);assert.equal(f.reader.cooldownEvents.length,0);assert.equal(r.merchantCooldownExceeded,undefined);
+});
+
 test('503 retries stop after four failed attempts with bounded exponential waits and final failure',async()=>{
   const f=fixture(Array.from({length:5},()=>({status:503})));
   const result=await f.reader.fetchHtml(url);
