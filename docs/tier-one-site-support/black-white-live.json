@@ -1,0 +1,2033 @@
+{
+  "name": "Black & White",
+  "checked_at": "2026-10-08T02:26:55.765Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis",
+      "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic",
+      "https://blackwhiteroasters.com/products/r-the-future-halloween-candy",
+      "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical",
+      "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural",
+      "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral",
+      "https://blackwhiteroasters.com/products/r-aricha-washed",
+      "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits",
+      "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara",
+      "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project",
+      "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf",
+      "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural",
+      "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum",
+      "https://blackwhiteroasters.com/products/r-the-new-school-strawberry",
+      "https://blackwhiteroasters.com/products/the-original-1",
+      "https://blackwhiteroasters.com/products/r-decaf-colombia",
+      "https://blackwhiteroasters.com/products/the-natural",
+      "https://blackwhiteroasters.com/products/the-classic",
+      "https://blackwhiteroasters.com/products/the-traditional-1",
+      "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/all-coffee/products.json",
+        "page": 1,
+        "products": 20,
+        "coffeeProducts": 19
+      },
+      {
+        "listing": "/collections/specialty-instant-coffee/products.json",
+        "page": 1,
+        "products": 1,
+        "coffeeProducts": 1
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis",
+      "title": "Finca Deborah - Symbiosis",
+      "source_product_id": "15381641625913",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "67565979304249",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": 32,
+            "amount": "32.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "67565979337017",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 96,
+            "amount": "96.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9600,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic",
+      "title": "Esteban Zamora - Cinnamon Anaerobic",
+      "source_product_id": "15381591523641",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "67565307756857",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "67565307789625",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "67565307822393",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 175,
+            "amount": "175.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": "MEET THE PRODUCER | Esteban Zamora is no stranger to our menu—we've been sharing his cinnamon co-fermented coffees with the world for several seasons now.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-future-halloween-candy",
+      "title": "The Future - Halloween Candy",
+      "source_product_id": "15381563736377",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "67565044629817",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "67565044662585",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "67565044695353",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 175,
+            "amount": "175.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": " been able to showcase excellence in processing techniques, particularly in regard to anaerobic and co-fermentation endeavors.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "re-create all of those fruity, nostalgic flavors, we blended one washed Ethiopian coffee with three co-fermented lots:",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "contributes to that vibrant acidity we associate with all of the candies mentioned above, the three co-fermented coffees give us fruit flavors in spades.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "Processes | Co-ferment | Honey | Washed",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical",
+      "title": "Franky Hoyos - Gesha Tropical",
+      "source_product_id": "10350597275961",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54525051175225",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": 16,
+            "amount": "16.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1600,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54525051207993",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 35,
+            "amount": "35.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54525051240761",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 85,
+            "amount": "85.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54525051273529",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 221,
+            "amount": "221.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 22100,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural",
+      "title": "Gerson Mora - Yellow Pacamara Natural",
+      "source_product_id": "10350606778681",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54525073752377",
+          "title": "100g",
+          "weight_g": 354,
+          "money": {
+            "raw": 14,
+            "amount": "14.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54525073785145",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 30,
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54525073817913",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 77,
+            "amount": "77.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7700,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54525073850681",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 188,
+            "amount": "188.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 18800,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral",
+      "title": "Huver Castillo - Gesha Floral",
+      "source_product_id": "10342484902201",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54479981216057",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54479981248825",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54479981281593",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 175,
+            "amount": "175.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-aricha-washed",
+      "title": "Aricha - Washed",
+      "source_product_id": "10342576914745",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54480424501561",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 26,
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54480424534329",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 68,
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54480424567097",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 170,
+            "amount": "170.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits",
+      "title": "Sebastian Ramirez - Red Fruits",
+      "source_product_id": "10333399843129",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54450320015673",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54450320048441",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54450320081209",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 175,
+            "amount": "175.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": "f fermentation, and today, Sebastián is regarded as a master of advanced processing techniques like co-fermentation and carbonic maceration.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "bastián and his coffees can be accurately described as \"anything but ordinary,\" and this strawberry co-ferment adaptation has always been a testament to that tradition.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "TAKE A SIP | As far as strawberry co-ferments go, this one is pretty much a classic.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "Process | Co-ferment",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara",
+      "title": "Jhonatan Gasca - Thermal Shock Pacamara",
+      "source_product_id": "10327636279609",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54417475404089",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": 14,
+            "amount": "14.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54417475436857",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 30,
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54417475469625",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 77,
+            "amount": "77.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7700,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54417475502393",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 188,
+            "amount": "188.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 18800,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Thermal Shock",
+        "process_methods": [
+          "thermal_shock"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Thermal Shock"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project",
+      "title": "Lasso y Vergara - Community Project",
+      "source_product_id": "10191268938041",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "52825308627257",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 26,
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "52825308660025",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 68,
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "52825308692793",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 170,
+            "amount": "170.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf",
+      "title": "Sebastian Ramirez - Red Fruits Decaf",
+      "source_product_id": "10304679051577",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54320221684025",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54320221716793",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54320221749561",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 175,
+            "amount": "175.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [
+          "a washed lot",
+          "sending it through the EAD process",
+          "we’ve turned that intensity down a notch",
+          "amped up the sweetness"
+        ],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": "f fermentation, and today, Sebastián is regarded as a master of advanced processing techniques like co-fermentation and carbonic maceration.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "bastián and his coffees can be accurately described as \"anything but ordinary,\" and this strawberry co-ferment adaptation has always been a testament to that tradition.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "The original strawberry-cofermented coffee was blended with a traditional washed lot from Sebastián’s farm.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": " By both blending this co-ferment with a washed lot and sending it through the EAD process, we’ve turned that intensity down a notch and amped up the sweetness.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "Process | Co-ferment",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": [
+            {
+              "source": "product_description",
+              "quote": "co-ferment with a washed lot and sending it through the EAD process, we’ve turned that intensity down a notch and amped up the sweetness",
+              "value": "a washed lot"
+            },
+            {
+              "source": "product_description",
+              "quote": "co-ferment with a washed lot and sending it through the EAD process, we’ve turned that intensity down a notch and amped up the sweetness",
+              "value": "sending it through the EAD process"
+            },
+            {
+              "source": "product_description",
+              "quote": "co-ferment with a washed lot and sending it through the EAD process, we’ve turned that intensity down a notch and amped up the sweetness",
+              "value": "we’ve turned that intensity down a notch"
+            },
+            {
+              "source": "product_description",
+              "quote": "co-ferment with a washed lot and sending it through the EAD process, we’ve turned that intensity down a notch and amped up the sweetness",
+              "value": "amped up the sweetness"
+            }
+          ]
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural",
+      "title": "Diego Horta - Anaerobic Natural",
+      "source_product_id": "10299763065145",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54302515298617",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 26,
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54302515331385",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 68,
+            "amount": "68.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54302515364153",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 170,
+            "amount": "170.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum",
+      "title": "Duwancho - Full Spectrum",
+      "source_product_id": "10294768238905",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54273220935993",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "54273220968761",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "sold_out"
+        },
+        {
+          "id": "54273221001529",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 175,
+            "amount": "175.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17500,
+            "reason": null
+          },
+          "state": "sold_out"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-new-school-strawberry",
+      "title": "The New School - Strawberry",
+      "source_product_id": "10275162521913",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "53827474489657",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 22,
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "53827474522425",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 52.5,
+            "amount": "52.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5250,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "53827474555193",
+          "title": "5lb",
+          "weight_g": 2311,
+          "money": {
+            "raw": 117.6,
+            "amount": "117.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11760,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": " our funky friends: anaerobic naturals, advanced processing experiments, and of course: our beloved co-ferments.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": " The minority percentage is then reserved for our party animal friends, the co-ferments.",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "Process | Washed | Co-ferment",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-original-1",
+      "title": "The Original",
+      "source_product_id": "4928302907470",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "32846669611086",
+          "title": "12oz",
+          "weight_g": 425,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "32846669643854",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 50,
+            "amount": "50.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5000,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "32846669676622",
+          "title": "5lb",
+          "weight_g": 2312,
+          "money": {
+            "raw": 112,
+            "amount": "112.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11200,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-decaf-colombia",
+      "title": "Sugarcane Decaf",
+      "source_product_id": "537768460332",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "7003495596076",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7697915346988",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 50,
+            "amount": "50.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5000,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7697915379756",
+          "title": "5lb",
+          "weight_g": 2312,
+          "money": {
+            "raw": 112,
+            "amount": "112.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11200,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Colombian Sugar Cane process more technically known as EA has dramatically changed the landscape of decaf coffee within the specialty market. These coffees offer greater transparency, faster turn arounds, and most importantly improved flavor complexity. Since Colombia is vertically integrated having the decaffeination plant in country it saves time, and ensures that coffees arrive fresher to us an",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Colombian Sugar Cane process more technically known as EA has dramatically changed the landscape of decaf coffee within the specialty market. These coffees offer greater transparency, faster turn arounds, and most importantly improved flavor complexity. Since Colombia is vertically integrated having the decaffeination plant in country it saves time, and ensures that coffees arrive fresher to us an"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-natural",
+      "title": "The Natural",
+      "source_product_id": "537417416748",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "7002057572396",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 22,
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7698467323948",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 52.5,
+            "amount": "52.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5250,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7698467356716",
+          "title": "5lb",
+          "weight_g": 2312,
+          "money": {
+            "raw": 117.6,
+            "amount": "117.60",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11760,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-classic",
+      "title": "The Classic",
+      "source_product_id": "537327992876",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "7001143738412",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7698399526956",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 50,
+            "amount": "50.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5000,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7698399559724",
+          "title": "5lb",
+          "weight_g": 2312,
+          "money": {
+            "raw": 112,
+            "amount": "112.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11200,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-traditional-1",
+      "title": "The Traditional",
+      "source_product_id": "531322798124",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "6979750166572",
+          "title": "12oz",
+          "weight_g": 354,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7698506448940",
+          "title": "2lb",
+          "weight_g": 939,
+          "money": {
+            "raw": 50,
+            "amount": "50.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5000,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "7698506514476",
+          "title": "5lb",
+          "weight_g": 2312,
+          "money": {
+            "raw": 112,
+            "amount": "112.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11200,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee",
+      "title": "Diego Horta Anaerobic Natural - Instant Coffee",
+      "source_product_id": "10354446106937",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "54542806253881",
+          "title": "Default Title",
+          "weight_g": 54,
+          "money": {
+            "raw": 18.5,
+            "amount": "18.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1850,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://blackwhiteroasters.com/collections/all-coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T02:26:04.318Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/collections/all-coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T02:26:04.648Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/collections/specialty-instant-coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T02:26:05.164Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/collections/specialty-instant-coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T02:26:05.695Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis",
+      "status": 301,
+      "at": "2026-10-08T02:26:06.113Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-finca-deborah-symbiosis",
+      "status": 200,
+      "at": "2026-10-08T02:26:06.841Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:07.138Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:07.617Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-finca-deborah-symbiosis.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:08.165Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic",
+      "status": 301,
+      "at": "2026-10-08T02:26:08.610Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic",
+      "status": 200,
+      "at": "2026-10-08T02:26:09.261Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:09.649Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:10.145Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:10.671Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-future-halloween-candy",
+      "status": 301,
+      "at": "2026-10-08T02:26:11.129Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-the-future-halloween-candy",
+      "status": 200,
+      "at": "2026-10-08T02:26:11.797Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-future-halloween-candy.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:12.142Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-future-halloween-candy.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:12.637Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-the-future-halloween-candy.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:13.183Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical",
+      "status": 301,
+      "at": "2026-10-08T02:26:13.653Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/franky-hoyos-gesha-tropical",
+      "status": 200,
+      "at": "2026-10-08T02:26:14.341Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:14.739Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:15.127Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/franky-hoyos-gesha-tropical.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:15.690Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural",
+      "status": 301,
+      "at": "2026-10-08T02:26:16.182Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural",
+      "status": 200,
+      "at": "2026-10-08T02:26:16.867Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:17.227Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:17.631Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:18.175Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral",
+      "status": 301,
+      "at": "2026-10-08T02:26:18.649Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-huver-castillo-gesha-floral",
+      "status": 200,
+      "at": "2026-10-08T02:26:19.338Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:19.649Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:20.150Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-huver-castillo-gesha-floral.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:20.679Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-aricha-washed",
+      "status": 301,
+      "at": "2026-10-08T02:26:21.133Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-aricha-washed",
+      "status": 200,
+      "at": "2026-10-08T02:26:21.821Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-aricha-washed.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:22.166Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-aricha-washed.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:22.623Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-aricha-washed.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:23.183Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits",
+      "status": 301,
+      "at": "2026-10-08T02:26:23.638Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits",
+      "status": 200,
+      "at": "2026-10-08T02:26:24.319Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:24.675Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:25.181Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:25.767Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara",
+      "status": 301,
+      "at": "2026-10-08T02:26:26.238Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara",
+      "status": 200,
+      "at": "2026-10-08T02:26:26.838Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:27.188Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:27.712Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:28.234Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project",
+      "status": 301,
+      "at": "2026-10-08T02:26:28.644Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-lasso-y-vergara-community-project",
+      "status": 200,
+      "at": "2026-10-08T02:26:29.325Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:29.664Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:30.167Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-lasso-y-vergara-community-project.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:30.683Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf",
+      "status": 301,
+      "at": "2026-10-08T02:26:31.168Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf",
+      "status": 200,
+      "at": "2026-10-08T02:26:31.816Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:32.173Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:32.657Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:33.216Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural",
+      "status": 301,
+      "at": "2026-10-08T02:26:33.656Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural",
+      "status": 200,
+      "at": "2026-10-08T02:26:34.315Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:34.692Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:35.163Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:35.778Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum",
+      "status": 301,
+      "at": "2026-10-08T02:26:36.184Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-duwancho-full-spectrum",
+      "status": 200,
+      "at": "2026-10-08T02:26:36.872Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:37.258Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:37.673Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-duwancho-full-spectrum.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:38.218Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-new-school-strawberry",
+      "status": 301,
+      "at": "2026-10-08T02:26:38.722Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-the-new-school-strawberry",
+      "status": 200,
+      "at": "2026-10-08T02:26:39.307Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-new-school-strawberry.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:39.775Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-the-new-school-strawberry.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:40.169Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-the-new-school-strawberry.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:40.716Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-original-1",
+      "status": 301,
+      "at": "2026-10-08T02:26:41.160Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-original-1",
+      "status": 200,
+      "at": "2026-10-08T02:26:41.868Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-original-1.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:42.202Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-original-1.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:42.675Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-original-1.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:43.223Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-decaf-colombia",
+      "status": 301,
+      "at": "2026-10-08T02:26:43.670Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-decaf-colombia",
+      "status": 200,
+      "at": "2026-10-08T02:26:44.350Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-decaf-colombia.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:44.717Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/r-decaf-colombia.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:45.194Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/r-decaf-colombia.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:45.748Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-natural",
+      "status": 301,
+      "at": "2026-10-08T02:26:46.187Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-natural",
+      "status": 200,
+      "at": "2026-10-08T02:26:46.895Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-natural.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:47.213Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-natural.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:47.726Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-natural.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:48.337Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-classic",
+      "status": 301,
+      "at": "2026-10-08T02:26:48.768Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-classic",
+      "status": 200,
+      "at": "2026-10-08T02:26:49.346Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-classic.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:49.739Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-classic.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:50.257Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-classic.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:50.778Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-traditional-1",
+      "status": 301,
+      "at": "2026-10-08T02:26:51.181Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-traditional-1",
+      "status": 200,
+      "at": "2026-10-08T02:26:51.866Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-traditional-1.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:52.226Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/the-traditional-1.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:52.686Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/the-traditional-1.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:53.235Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee",
+      "status": 301,
+      "at": "2026-10-08T02:26:53.696Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee",
+      "status": 200,
+      "at": "2026-10-08T02:26:54.355Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee.json",
+      "status": 200,
+      "at": "2026-10-08T02:26:54.724Z"
+    },
+    {
+      "url": "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee.js",
+      "status": 301,
+      "at": "2026-10-08T02:26:55.205Z"
+    },
+    {
+      "url": "https://www.blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee.js",
+      "status": 200,
+      "at": "2026-10-08T02:26:55.744Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

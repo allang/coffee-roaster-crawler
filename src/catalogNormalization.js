@@ -111,6 +111,8 @@ function canonicalProductUrl(sourceUrl) {
   for (const key of [...url.searchParams.keys()]) if (/^(?:utm_.+|fbclid|gclid|variant)$/.test(key)) url.searchParams.delete(key);
   url.searchParams.sort();
   url.hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+  const profile=require('./siteSupport/profiles.json').find(p=>p.canonical_product_path && p.hosts.includes(url.hostname));
+  if(profile && url.pathname.startsWith(profile.product_path))url.pathname=profile.canonical_product_path+url.pathname.slice(profile.product_path.length);
   url.pathname = url.pathname.replace(/\/+$/, '') || '/';
   return url.href;
 }

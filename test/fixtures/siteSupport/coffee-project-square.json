@@ -1,0 +1,175 @@
+{
+  "context": {
+    "siteData": {
+      "site": {
+        "properties": {
+          "classicSiteID": "587606771285215089"
+        }
+      },
+      "user": {
+        "id": "131058801"
+      }
+    },
+    "storeInfo": {
+      "currency": "USD",
+      "merchant_id": "3BM5VXN8HS90E"
+    }
+  },
+  "product": {
+    "id": "II5YCDXDFBVXQPKQTEZ3XFWG",
+    "owner_id": "131058801",
+    "merchant_id": "3BM5VXN8HS90E",
+    "site_product_id": "520",
+    "absolute_site_link": "https://coffeeprojectnyshop.square.site/product/instant-pods/520",
+    "name": "Instant Coffee Pods",
+    "short_description": "<p>Get the quality of specialty coffee in seconds. Portable and easy to use, simply add an Instant Pod to water for a delicious brew anytime, anywhere.</p><p><br></p><p>This instant coffee features our “Woke Up in New York” blend—it&#39;s the most convenient way to taste our signature house drip without visiting NYC.</p><p><br></p><p>Brew Guide:</p><ol><li><strong>Open</strong> the top seal.</li><li><strong>Pour</strong> coffee powder into hot or cold water.</li><li><strong>Stir</strong> to dissolve and enjoy.</li></ol>",
+    "category": {
+      "data": {
+        "name": "Coffee"
+      }
+    },
+    "thumbnail": {
+      "data": {
+        "owner_id": "131058801",
+        "site_id": "587606771285215089",
+        "id": "TTD33H6XHQL6XUVS2HT7UQE2",
+        "site_product_image_id": "TTD33H6XHQL6XUVS2HT7UQE2",
+        "url": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg",
+        "absolute_url": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg",
+        "urls": {
+          "80": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=80",
+          "160": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=160",
+          "320": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=320",
+          "640": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=640",
+          "1280": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=1280",
+          "2560": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=2560"
+        },
+        "absolute_urls": {
+          "80": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=80",
+          "160": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=160",
+          "320": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=320",
+          "640": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=640",
+          "1280": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=1280",
+          "2560": "https://131058801.cdn6.editmysite.com/uploads/1/3/1/0/131058801/TTD33H6XHQL6XUVS2HT7UQE2.jpeg?width=2560"
+        },
+        "height": 2560,
+        "width": 2560,
+        "format": "jpeg",
+        "created_at": "2024-06-20T16:38:02.32Z",
+        "updated_at": "2024-06-20T16:38:02.278Z"
+      }
+    },
+    "preordering": {
+      "pickup": false,
+      "delivery": false,
+      "shipping": false,
+      "dine_in": false,
+      "manual": false,
+      "download": false
+    }
+  },
+  "skus": {
+    "data": [
+      {
+        "id": "AXB3L4CZH7SV5FKKQBMDB5IF",
+        "owner_id": "131058801",
+        "site_product_id": "520",
+        "product_square_id": "II5YCDXDFBVXQPKQTEZ3XFWG",
+        "name": "20-pack",
+        "sku": "14BB20P",
+        "price": {
+          "current": 29.5,
+          "current_formatted": "$29.50",
+          "current_subunits": 2950,
+          "high": 29.5,
+          "high_formatted": "$29.50",
+          "high_subunits": 2950,
+          "regular": 29.5,
+          "regular_formatted": "$29.50",
+          "regular_subunits": 2950,
+          "sale": null,
+          "sale_formatted": "",
+          "sale_subunits": 0
+        },
+        "sold_out": false,
+        "sellable": true,
+        "fulfillable": true,
+        "fulfillment": {
+          "methods": {
+            "shipping": true,
+            "pickup": true,
+            "delivery": false,
+            "dine_in": false,
+            "manual": false,
+            "download": false
+          },
+          "methods_at_any_location": {
+            "shipping": true,
+            "pickup": true,
+            "delivery": false,
+            "dine_in": false,
+            "manual": false,
+            "download": false
+          }
+        },
+        "inventory": 0,
+        "inventory_tracking_enabled": false
+      },
+      {
+        "id": "M47XF2WKA5ZBJ323HGUKVLV6",
+        "owner_id": "131058801",
+        "site_product_id": "520",
+        "product_square_id": "II5YCDXDFBVXQPKQTEZ3XFWG",
+        "name": "8-pack",
+        "sku": "14BB08P",
+        "price": {
+          "current": 14.75,
+          "current_formatted": "$14.75",
+          "current_subunits": 1475,
+          "high": 14.75,
+          "high_formatted": "$14.75",
+          "high_subunits": 1475,
+          "regular": 14.75,
+          "regular_formatted": "$14.75",
+          "regular_subunits": 1475,
+          "sale": null,
+          "sale_formatted": "",
+          "sale_subunits": 0
+        },
+        "sold_out": true,
+        "sellable": true,
+        "fulfillable": true,
+        "fulfillment": {
+          "methods": {
+            "shipping": true,
+            "pickup": true,
+            "delivery": false,
+            "dine_in": false,
+            "manual": false,
+            "download": false
+          },
+          "methods_at_any_location": {
+            "shipping": true,
+            "pickup": true,
+            "delivery": false,
+            "dine_in": false,
+            "manual": false,
+            "download": false
+          }
+        },
+        "inventory": 0,
+        "inventory_tracking_enabled": true
+      }
+    ],
+    "meta": {
+      "pagination": {
+        "total": 2,
+        "count": 2,
+        "per_page": 100,
+        "current_page": 1,
+        "total_pages": 1,
+        "links": []
+      }
+    }
+  }
+}

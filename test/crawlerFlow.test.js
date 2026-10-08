@@ -18,7 +18,7 @@ function modules(db,state) {
       if(name==='./imageDownloader')return{downloadAndSaveImage:async()=>null};
       if(name==='./httpClient')return{fetchHtml:async()=>({success:true,data:state.html,status:200,finalUrl:url}),jitteredSleep:async()=>{}};
       if(name==='./shopifyProduct')return{...nativeRequire(name),fetchShopifyProductJson:async()=>({success:true,raw:state.native,data:parseShopifyProduct(state.native)})};
-      if(name.startsWith('./') && !name.endsWith('.cjs'))return load(nativeRequire.resolve(name));
+      if(name.startsWith('./') && !name.endsWith('.cjs') && !name.endsWith('.json'))return load(nativeRequire.resolve(name));
       return nativeRequire(name);
     }
     vm.runInThisContext(`(function(require,module,exports){${fs.readFileSync(file,'utf8')}\n})`,{filename:file})(requireMock,module,module.exports);return module.exports;

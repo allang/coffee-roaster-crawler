@@ -11,14 +11,16 @@ const { config } = require('./config');
 const globalLogger = require('./logger');
 const { createScopedLogger } = require('./logger');
 const { reconcileRoasterAvailability } = require('./availability');
+const { discoverSiteProducts, profileFor } = require('./siteSupport/discovery');
+const { createReader } = require('./siteSupport/network');
 
 const PARALLEL_ROASTERS = Number(process.env.PARALLEL_ROASTERS || 1);
 
-async function detectPlatform(websiteUrl, log) {
+async function detectPlatform(websiteUrl, log, options = {}) {
   log.info('Platform', `Detecting platform for: ${websiteUrl}`);
 
   const { fetchUrl } = require('./sitemap');
-  const result = await fetchUrl(websiteUrl, {
+  const result = await (options.fetchHtml || fetchUrl)(websiteUrl, {
     contentType: 'html',
     useUrlFallback: true,
   });
@@ -86,7 +88,8 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   const accumulator = new UrlAccumulator(roaster.id, roaster.name, log);
 
-  const platformInfo = await detectPlatform(websiteUrl, log);
+  const siteProfile=profileFor(roaster),siteReader=siteProfile?createReader(siteProfile):null;
+  const platformInfo = await detectPlatform(websiteUrl, log,siteReader || {});
 
   if (platformInfo.confidence === 0) {
     log.warn('Crawl', 'Website unreachable, will retry later');
@@ -103,6 +106,11 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
   try {
   await jitteredSleep(config.crawler.requestDelayMs);
+
+  const siteDiscovery=await discoverSiteProducts(roaster,siteReader || {fetchHtml:require('./httpClient').fetchHtml});
+  const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
+  for(const url of siteDiscovery.urls)accumulator.addUrl(url,'site-support');
+  if(siteDiscovery.error)throw new Error('Supported merchant discovery failed: '+siteDiscovery.error);
 
   const sitemapUrl = await discoverSitemapUrl(effectiveWebsiteUrl);
   let sitemapResult = null;
@@ -139,7 +147,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
       log.warn('Crawl', 'Sitemap crawl returned no URLs');
     }
 
-  } else {
+  } else if (!siteDiscovery.urls.length) {
     log.info('Crawl', 'No sitemap found, using BFS crawling');
     accumulator.addUrl(effectiveWebsiteUrl, 'manual');
     
@@ -193,7 +201,8 @@ async function crawlRoaster(roaster, blacklistTerms) {
   log.info('KnownPages', `Found ${knownUrls.size} known pages for this roaster`);
 
   const unvisitedAll = accumulator.getUnvisitedUrls();
-  const eligibleUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status!=='skip');
+  const supportedUrls=new Set(siteDiscovery.urls);
+  const eligibleUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status!=='skip' && (!supportedUrls.size || supportedUrls.has(entry.url)));
   const newUrls=eligibleUrls;
   const skippedUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status==='skip');
 
@@ -214,7 +223,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
 
     if (newUrls.length > 0) {
       log.header('Visiting Pages & GPT Classification');
-      visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log, platformInfo.platform, {knownPages:knownUrls,observed});
+      visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log, platformInfo.platform, {knownPages:knownUrls,observed,...siteFetchOptions});
       
       log.success('Crawl', 'Page visiting complete', {
         visited: visitResults.visited,
@@ -233,7 +242,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
       coffeesFound: visitResults.coffeeFound || 0,
     });
 
-    if (sitemapResult && sitemapResult.urls.length > 0 && sitemapResult.inventoryComplete && visitResults.errors === 0) {
+    if (sitemapResult && sitemapResult.urls.length > 0 && sitemapResult.inventoryComplete && visitResults.errors === 0 && (!siteDiscovery.supported || siteDiscovery.complete)) {
       await reconcileRoasterAvailability({
         entityId: roaster.id,
         surfaceUrls: accumulator.getAllUrls().map(entry => entry.url),

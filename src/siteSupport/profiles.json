@@ -1,0 +1,94 @@
+[
+  {
+    "name": "April",
+    "entity_ids": [
+      "3a71024e-eb30-4778-927b-580e3bc3b62e"
+    ],
+    "hosts": [
+      "aprilcoffeeroasters.com",
+      "www.aprilcoffeeroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/everything"
+    ],
+    "adapter": "headless_shopify",
+    "product_path": "/product/",
+    "canonical_product_path": "/products/",
+    "pagination_path": "/api/collections/products"
+  },
+  {
+    "name": "Black & White",
+    "entity_ids": [
+      "01896836-e6ff-498e-b78c-e17d0d127e42"
+    ],
+    "hosts": [
+      "blackwhiteroasters.com",
+      "www.blackwhiteroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/specialty-instant-coffee/products.json"
+    ],
+    "coffee_product_types": [
+      "Retail SO",
+      "Retail YR"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Botz",
+    "entity_ids": [
+      "9b08c3d9-f580-41ae-a394-0cd3225bb3c0"
+    ],
+    "hosts": [
+      "botz-coffee.com",
+      "www.botz-coffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Coffee Collective",
+    "entity_ids": [
+      "39a6bb46-ad09-41ee-84e5-54320d2263d7"
+    ],
+    "hosts": [
+      "coffeecollective.dk",
+      "www.coffeecollective.dk"
+    ],
+    "listing_paths": [
+      "/collections/filter-coffee/products.json",
+      "/collections/espresso/products.json"
+    ],
+    "coffee_product_types": [
+      "new"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Coffee Project NY",
+    "entity_ids": [
+      "9cb13308-0d7a-4d02-a558-9bda11f5dd97"
+    ],
+    "hosts": [
+      "coffeeprojectnyshop.square.site",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": "/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products"
+    },
+    "adapter": "square",
+    "square_owner_id": "131058801",
+    "square_site_id": "587606771285215089",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "4RUAPU3ER5KEKLNO27T7E5QS",
+      "RBMDOSN6HDOUNAHO57CHBASF"
+    ]
+  }
+]

@@ -30,7 +30,7 @@ function productSourceKey(entityId,product,sourceUrl) {
   const valid=typeof native==='string' && native.trim() && native.length<=200 && native!=='null' || typeof native==='number' && Number.isSafeInteger(native) && native>0;
   return stableKey(entityId,valid ? ['native',String(native)] : ['url',canonicalProductUrl(sourceUrl)]);
 }
-function retrievalUrl(sourceUrl) {const original=new URL(sourceUrl),url=new URL(canonicalProductUrl(sourceUrl));url.hostname=original.hostname;return url.href;}
+function retrievalUrl(sourceUrl) {const original=new URL(sourceUrl),url=new URL(canonicalProductUrl(sourceUrl));url.hostname=original.hostname;url.pathname=original.pathname.replace(/\/+$/, '') || '/';return url.href;}
 function catalogPayload(entityId, product, sourceUrl, existing, availability, now) {
   const normalized=normalizeProduct(sanitizeNullStrings(product),sourceUrl);
   const sourceKey=productSourceKey(entityId,normalized,sourceUrl);

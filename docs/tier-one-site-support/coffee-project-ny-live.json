@@ -1,0 +1,1925 @@
+{
+  "name": "Coffee Project NY",
+  "checked_at": "2026-10-08T02:40:53.889Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://coffeeprojectnyshop.square.site/product/decaf-colombia/209",
+      "https://coffeeprojectnyshop.square.site/product/32-degrees-cold-brew/222",
+      "https://coffeeprojectnyshop.square.site/product/-the-retro-espresso/269",
+      "https://coffeeprojectnyshop.square.site/product/teeling-whiskey-irish-coffee-blend/333",
+      "https://coffeeprojectnyshop.square.site/product/ethiopia-hambela-swiss-water-decaf/3LPQH72XJEZU7Q4L2I6QWLO7",
+      "https://coffeeprojectnyshop.square.site/product/ethiopia-alo-tuke-natural/435KPJUGG5J2NDHRJ7KHWJPV",
+      "https://coffeeprojectnyshop.square.site/product/woke-up-in-new-york/51",
+      "https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52",
+      "https://coffeeprojectnyshop.square.site/product/instant-pods/520",
+      "https://coffeeprojectnyshop.square.site/product/thailand-doi-pangkhon-kenya-style-washed/552",
+      "https://coffeeprojectnyshop.square.site/product/ecuador-juan-carlos-velez-sidra-natural/559",
+      "https://coffeeprojectnyshop.square.site/product/ethiopia-guracho-typica/563",
+      "https://coffeeprojectnyshop.square.site/product/colombia-diego-vergara-chiroso-natural/564",
+      "https://coffeeprojectnyshop.square.site/product/mexico-la-joya-samuel-ronzon-lot-81b/B46KRS2DZXR7EKXF2XBDR3TL",
+      "https://coffeeprojectnyshop.square.site/product/coffee-palmer/CJPYIKNJPAST36IB5ZKYOY2D",
+      "https://coffeeprojectnyshop.square.site/product/china-blue-iris-enthusiast-series/E4IEQSMWHPSSP223MTVTVHK3",
+      "https://coffeeprojectnyshop.square.site/product/colombia-sebastian-ramirez-pink-bourbon/JLXJZGWX2GVZVHY36DKX535J",
+      "https://coffeeprojectnyshop.square.site/product/guatemala-gabriela-castaneda-sarchimor/K3FIXVJOZIZD4FKFSJG7US7Y",
+      "https://coffeeprojectnyshop.square.site/product/kenya-gichathaini-ab/NFEBDN2NMVVOVLJELX7XYORI",
+      "https://coffeeprojectnyshop.square.site/product/panama-altieri-dilgo-nasd-gesha-enthusiast-series/OVYTFW6DDPSI76KVMZQ63KG7",
+      "https://coffeeprojectnyshop.square.site/product/colombia-jairo-arcila-wine-yeast-peach-co-ferment/QYD5HAKFPUXWERD5KZZVKTRV",
+      "https://coffeeprojectnyshop.square.site/product/costa-rica-coe-johel-monge-naranjo-enthusiast-series/TND4TOEPAMXMRQL3KJKFVITW",
+      "https://coffeeprojectnyshop.square.site/product/kenya-peter-muchiri-guama-aa/WCWPKF37ZU7UMVMVCEYT7E4J",
+      "https://coffeeprojectnyshop.square.site/product/china-white-orchid-purple-caturra/ZSBLX34CDIZ4JIXYKGQ37ZU7"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "category": "4RUAPU3ER5KEKLNO27T7E5QS",
+        "products": 24
+      },
+      {
+        "category": "RBMDOSN6HDOUNAHO57CHBASF",
+        "products": 2
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/decaf-colombia/209",
+      "title": "Colombia Smallholders Sugarcane Decaf",
+      "source_product_id": "AKAI3HIHBNULEGG2PY37T7TG",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "INDX3NFABX2ZG752PFQKYT5E",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 23,
+            "amount": "23.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "A5WRFY4Y6B4PH3OIPA6TAIL6",
+          "title": "2 lb.",
+          "weight_g": 907,
+          "money": {
+            "raw": 58,
+            "amount": "58.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "FD6XY24WMYZ3U6KJASFLBIK2",
+          "title": "5 lb.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 110,
+            "amount": "110.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Sugarcane Decaffeination",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Sugarcane Decaffeination"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/32-degrees-cold-brew/222",
+      "title": "\"32 Degrees\" Cold Brew",
+      "source_product_id": "LSANEUAVIW3XGYXAGWOUSI4V",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "T53NI3NPMIHQ5MCARDANXIQL",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 24,
+            "amount": "24.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "W72CSONJNJW4KNHEV3IWKGBJ",
+          "title": "2 lb.",
+          "weight_g": 907,
+          "money": {
+            "raw": 58,
+            "amount": "58.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "IUK57HMCKRHOWHUYRYZOW6SK",
+          "title": "5 lb.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 107,
+            "amount": "107.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10700,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/-the-retro-espresso/269",
+      "title": "\"The Retro\" Espresso",
+      "source_product_id": "VVDABETVBG3ZCDM7C2ACP5WO",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "25BMZVMT2FCFJS4EVKPMY66F",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "F5N7CAUAXGZ22HKJAPE52BX4",
+          "title": "2 lb.",
+          "weight_g": 907,
+          "money": {
+            "raw": 55,
+            "amount": "55.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "ICS2I5OUHRMRVM4FTAUZAKYE",
+          "title": "5 lb.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 107,
+            "amount": "107.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10700,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/teeling-whiskey-irish-coffee-blend/333",
+      "title": "Teeling Irish Coffee Collaboration Blend",
+      "source_product_id": "ECSXNEOW4TPIOMPJULBAIPF5",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "XEZX22AAI4ZLEQZT2GRB3OE5",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": 20,
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/ethiopia-hambela-swiss-water-decaf/3LPQH72XJEZU7Q4L2I6QWLO7",
+      "title": "Ethiopia Hambela Swiss Water Decaf",
+      "source_product_id": "3LPQH72XJEZU7Q4L2I6QWLO7",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "6FJYS55IBUXWYOYKYWSSYQDT",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 27,
+            "amount": "27.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "6F7OU53MGLN43ZMRJBAVPTBD",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 75,
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural, Swiss Water Decaf",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural, Swiss Water Decaf"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/ethiopia-alo-tuke-natural/435KPJUGG5J2NDHRJ7KHWJPV",
+      "title": "Ethiopia Alo Tuke Natural",
+      "source_product_id": "435KPJUGG5J2NDHRJ7KHWJPV",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "LCUCUQ6WCBJGZYAKK4J4LX33",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 32,
+            "amount": "32.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "EIMH5HANZDWMQMT3P6RICQGW",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 92,
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/woke-up-in-new-york/51",
+      "title": "\"Woke Up in New York\" House Drip",
+      "source_product_id": "3UGTLZTIB6WRS4FHUB445WKQ",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "UUMPOIK2GNA7XQW7IIEIIIWV",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "775FFTK6PMOBPJA5IVS2N7TX",
+          "title": "2 lb.",
+          "weight_g": 907,
+          "money": {
+            "raw": 55,
+            "amount": "55.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "FAHCYDZTAJ2263STZRMUX2CC",
+          "title": "5 lb.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 107,
+            "amount": "107.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10700,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52",
+      "title": "\"Crowd Pleaser\" House Espresso",
+      "source_product_id": "OZBPLV3PJBG4CHXP4O3O7AZZ",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "QD3CURBKPQ22CFX2OTSUZXGQ",
+          "title": "10oz",
+          "weight_g": 283,
+          "money": {
+            "raw": 21,
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "CHYKKXOMB734SCHII3S5MRIP",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 55,
+            "amount": "55.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "HA2ELEULPHSLJE64XWXJEI4I",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 107,
+            "amount": "107.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10700,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/instant-pods/520",
+      "title": "Instant Coffee Pods",
+      "source_product_id": "II5YCDXDFBVXQPKQTEZ3XFWG",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "AXB3L4CZH7SV5FKKQBMDB5IF",
+          "title": "20-pack",
+          "weight_g": null,
+          "money": {
+            "raw": 29.5,
+            "amount": "29.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2950,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "M47XF2WKA5ZBJ323HGUKVLV6",
+          "title": "8-pack",
+          "weight_g": null,
+          "money": {
+            "raw": 14.75,
+            "amount": "14.75",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1475,
+            "reason": null
+          },
+          "state": "sold_out"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/thailand-doi-pangkhon-kenya-style-washed/552",
+      "title": "Thailand Doi Pangkhon Kenya-Style Washed",
+      "source_product_id": "ATTMGYAICO6YMMG3PFQZENZH",
+      "state": "unknown",
+      "variants": [
+        {
+          "id": "6BYJTTFC5EYJJA5KFRBASVME",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "unknown"
+        },
+        {
+          "id": "GRJAZ6JBWEJUSXVLB3TW3BVY",
+          "title": "2 lb.",
+          "weight_g": 907,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "unknown"
+        },
+        {
+          "id": "2KLP4LXUZKIRYMNHMJPUIWCN",
+          "title": "5 lb.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 150,
+            "amount": "150.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "unknown"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Kenya-Style Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Kenya-Style Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/ecuador-juan-carlos-velez-sidra-natural/559",
+      "title": "Ecuador Juan Carlos Velez Sidra Natural",
+      "source_product_id": "UPQ64SJXLVOHV4OFVUYTIUJQ",
+      "state": "unknown",
+      "variants": [
+        {
+          "id": "JOF5GX2DTGGL6T6HSGS6UYDP",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 25,
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "unknown"
+        },
+        {
+          "id": "K46COCRJVCYBPANC6PVEF5IV",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 70,
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "unknown"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/ethiopia-guracho-typica/563",
+      "title": "Ethiopia Guracho Typica",
+      "source_product_id": "2G3IXPVJILNRZIPLSNG7UTHB",
+      "state": "unknown",
+      "variants": [
+        {
+          "id": "EEOKXNX6WQYHLP76GFRZBW2N",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 24,
+            "amount": "24.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "unknown"
+        },
+        {
+          "id": "JAOYDDTIZO725MARCI64STLH",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 58,
+            "amount": "58.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5800,
+            "reason": null
+          },
+          "state": "unknown"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/colombia-diego-vergara-chiroso-natural/564",
+      "title": "Colombia Diego Vergara Chiroso, Enthusiast Series, Competition Coffee",
+      "source_product_id": "EYACGFM2SXLJADLIKPLOJ5UG",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "O2PY5CDUKYKQLF57672KL4FG",
+          "title": "150 g.",
+          "weight_g": 150,
+          "money": {
+            "raw": 30,
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "sold_out"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/mexico-la-joya-samuel-ronzon-lot-81b/B46KRS2DZXR7EKXF2XBDR3TL",
+      "title": "Mexico La Joya Samuel Ronzón Lot 81B, Enthusiast Series",
+      "source_product_id": "B46KRS2DZXR7EKXF2XBDR3TL",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "JP5YBAGHU6QAS2U7SKLQT5SX",
+          "title": "100 g.",
+          "weight_g": 100,
+          "money": {
+            "raw": 45,
+            "amount": "45.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural-Jade Imperial",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural-Jade Imperial"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/coffee-palmer/CJPYIKNJPAST36IB5ZKYOY2D",
+      "title": "Coffee Palmer",
+      "source_product_id": "CJPYIKNJPAST36IB5ZKYOY2D",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "JLL3VAIHSD4YNNE53TOV3IVI",
+          "title": "1-can",
+          "weight_g": null,
+          "money": {
+            "raw": 5.5,
+            "amount": "5.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 550,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "REQMRD6KV2NVOGKATS3PH7RA",
+          "title": "4-can",
+          "weight_g": null,
+          "money": {
+            "raw": 20,
+            "amount": "20.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/china-blue-iris-enthusiast-series/E4IEQSMWHPSSP223MTVTVHK3",
+      "title": "China Blue Iris, Enthusiast Series",
+      "source_product_id": "E4IEQSMWHPSSP223MTVTVHK3",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "LR2NVDEMYG5VPFBW7GFF7RVY",
+          "title": "150 g.",
+          "weight_g": 150,
+          "money": {
+            "raw": 36,
+            "amount": "36.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "U7RNRVCHUYR3VSL463QTTHRZ",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 195,
+            "amount": "195.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 19500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic Honey, Yeast Inoculated",
+        "process_methods": [
+          "honey",
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Anaerobic Honey, Yeast Inoculated"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/colombia-sebastian-ramirez-pink-bourbon/JLXJZGWX2GVZVHY36DKX535J",
+      "title": "Colombia Sebastian Ramirez Pink Bourbon",
+      "source_product_id": "JLXJZGWX2GVZVHY36DKX535J",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "VXN5O66J2L3S7PSWKSY6BVYT",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 33,
+            "amount": "33.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3300,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "J26QQ4VE7KBL3CUQIXLZQX5E",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 92,
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "HDQYPWVVSSHWMVLXV4HBLJJB",
+          "title": "5 lbs.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 210,
+            "amount": "210.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 21000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed with Yeast Inoculation",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed with Yeast Inoculation"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/guatemala-gabriela-castaneda-sarchimor/K3FIXVJOZIZD4FKFSJG7US7Y",
+      "title": "Guatemala Gabriela Castañeda Sarchimor",
+      "source_product_id": "K3FIXVJOZIZD4FKFSJG7US7Y",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "7K6KYHZE7UHFHQGEEEI76X76",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 25,
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "UJITJMKBNYW5CZEYCRL2IM6W",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 70,
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "FT7MOV2G6Q4U6MBFOZH5NNTZ",
+          "title": "5 lbs.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 115,
+            "amount": "115.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/kenya-gichathaini-ab/NFEBDN2NMVVOVLJELX7XYORI",
+      "title": "Kenya Gichathaini AB",
+      "source_product_id": "NFEBDN2NMVVOVLJELX7XYORI",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "EV724XMZQZLY4OSWBEIHAE3M",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 29,
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "sold_out"
+        },
+        {
+          "id": "BB2QZQZVJXABWOCIGFBJDF6L",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 85,
+            "amount": "85.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "sold_out"
+        },
+        {
+          "id": "FF3R33YOGRRSMMJKHJU2NEDG",
+          "title": "5 lbs.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 195,
+            "amount": "195.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 19500,
+            "reason": null
+          },
+          "state": "sold_out"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/panama-altieri-dilgo-nasd-gesha-enthusiast-series/OVYTFW6DDPSI76KVMZQ63KG7",
+      "title": "Panama Altieri Dilgo NASD Gesha, Enthusiast Series",
+      "source_product_id": "OVYTFW6DDPSI76KVMZQ63KG7",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "HT7ZCSBOBSMIJ3E5ZLIW7JIQ",
+          "title": "15 g.",
+          "weight_g": 15,
+          "money": {
+            "raw": 25,
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "sold_out"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural Anaerobic Slow Dry",
+        "process_methods": [
+          "natural",
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural Anaerobic Slow Dry"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/colombia-jairo-arcila-wine-yeast-peach-co-ferment/QYD5HAKFPUXWERD5KZZVKTRV",
+      "title": "Colombia Jairo Arcila Wine Yeast Peach Co-Ferment",
+      "source_product_id": "QYD5HAKFPUXWERD5KZZVKTRV",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "YCYJEL4URKWCK2RM3RLNELZX",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 38,
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "sold_out"
+        },
+        {
+          "id": "ZILKWVMQSGRV6A2RXX3DXPCE",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 108,
+            "amount": "108.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10800,
+            "reason": null
+          },
+          "state": "sold_out"
+        },
+        {
+          "id": "O25FZPQPOSRNBRAFKNNAYKR7",
+          "title": "5 lbs.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 250,
+            "amount": "250.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 25000,
+            "reason": null
+          },
+          "state": "sold_out"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [
+            {
+              "source": "product_title",
+              "quote": "Colombia Jairo Arcila Wine Yeast Peach Co-Ferment",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/costa-rica-coe-johel-monge-naranjo-enthusiast-series/TND4TOEPAMXMRQL3KJKFVITW",
+      "title": "Costa Rica COE #2 Johel M. Naranjo, Enthusiast Series",
+      "source_product_id": "TND4TOEPAMXMRQL3KJKFVITW",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "FOPT2MQFB7IEOHSZKF4YSYIO",
+          "title": "150 g.",
+          "weight_g": 150,
+          "money": {
+            "raw": 38,
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Experimental",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Experimental"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/kenya-peter-muchiri-guama-aa/WCWPKF37ZU7UMVMVCEYT7E4J",
+      "title": "Kenya Peter Muchiri Guama AA",
+      "source_product_id": "WCWPKF37ZU7UMVMVCEYT7E4J",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "T6LPUIXDMPOY3UISS644YGAA",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 26,
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "SUYAV2WRZYM3NED73FMDD2DB",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 74,
+            "amount": "74.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7400,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "GDUBXPEZCIUALS4F4XPTWXGR",
+          "title": "5 lbs.",
+          "weight_g": 2268,
+          "money": {
+            "raw": 130,
+            "amount": "130.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13000,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://coffeeprojectnyshop.square.site/product/china-white-orchid-purple-caturra/ZSBLX34CDIZ4JIXYKGQ37ZU7",
+      "title": "China White Orchid Purple Caturra",
+      "source_product_id": "ZSBLX34CDIZ4JIXYKGQ37ZU7",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "UOQRXCYIZQ3DT267PZUZGYXQ",
+          "title": "10 oz.",
+          "weight_g": 283,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        },
+        {
+          "id": "4SO26VJMLOZGGEGBNAF5RIFP",
+          "title": "2 lbs.",
+          "weight_g": 907,
+          "money": {
+            "raw": 72,
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "K72 Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "K72 Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/",
+      "status": 200,
+      "at": "2026-10-08T02:40:16.099Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products?categories%5B%5D=4RUAPU3ER5KEKLNO27T7E5QS&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:16.684Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products?categories%5B%5D=RBMDOSN6HDOUNAHO57CHBASF&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:16.966Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/decaf-colombia/209",
+      "status": 200,
+      "at": "2026-10-08T02:40:17.670Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/209?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:17.988Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/209/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:18.477Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/32-degrees-cold-brew/222",
+      "status": 200,
+      "at": "2026-10-08T02:40:19.134Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/222?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:19.500Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/222/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:19.985Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/-the-retro-espresso/269",
+      "status": 200,
+      "at": "2026-10-08T02:40:20.819Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/269?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:21.092Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/269/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:21.526Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/teeling-whiskey-irish-coffee-blend/333",
+      "status": 200,
+      "at": "2026-10-08T02:40:22.173Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/333?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:22.586Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/333/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:23.057Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/ethiopia-hambela-swiss-water-decaf/3LPQH72XJEZU7Q4L2I6QWLO7",
+      "status": 200,
+      "at": "2026-10-08T02:40:24.095Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/3LPQH72XJEZU7Q4L2I6QWLO7?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:24.487Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/3LPQH72XJEZU7Q4L2I6QWLO7/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:24.873Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/ethiopia-alo-tuke-natural/435KPJUGG5J2NDHRJ7KHWJPV",
+      "status": 200,
+      "at": "2026-10-08T02:40:25.540Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/435KPJUGG5J2NDHRJ7KHWJPV?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:25.959Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/435KPJUGG5J2NDHRJ7KHWJPV/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:26.339Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/woke-up-in-new-york/51",
+      "status": 200,
+      "at": "2026-10-08T02:40:27.157Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/51?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:27.378Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/51/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:27.870Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/-crowd-pleaser-house-espresso/52",
+      "status": 200,
+      "at": "2026-10-08T02:40:28.682Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/52?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:28.901Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/52/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:29.413Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/instant-pods/520",
+      "status": 200,
+      "at": "2026-10-08T02:40:30.100Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/520?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:30.509Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/520/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:30.938Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/thailand-doi-pangkhon-kenya-style-washed/552",
+      "status": 200,
+      "at": "2026-10-08T02:40:31.828Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/552?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:32.062Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/552/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:32.551Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/ecuador-juan-carlos-velez-sidra-natural/559",
+      "status": 200,
+      "at": "2026-10-08T02:40:33.232Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/559?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:33.624Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/559/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:34.086Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/ethiopia-guracho-typica/563",
+      "status": 200,
+      "at": "2026-10-08T02:40:34.848Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/563?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:35.086Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/563/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:35.576Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/colombia-diego-vergara-chiroso-natural/564",
+      "status": 200,
+      "at": "2026-10-08T02:40:36.265Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/564?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:36.565Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/564/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:37.070Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/mexico-la-joya-samuel-ronzon-lot-81b/B46KRS2DZXR7EKXF2XBDR3TL",
+      "status": 200,
+      "at": "2026-10-08T02:40:37.697Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/B46KRS2DZXR7EKXF2XBDR3TL?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:38.118Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/B46KRS2DZXR7EKXF2XBDR3TL/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:38.642Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/coffee-palmer/CJPYIKNJPAST36IB5ZKYOY2D",
+      "status": 200,
+      "at": "2026-10-08T02:40:39.204Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/CJPYIKNJPAST36IB5ZKYOY2D?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:39.691Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/CJPYIKNJPAST36IB5ZKYOY2D/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:40.073Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/china-blue-iris-enthusiast-series/E4IEQSMWHPSSP223MTVTVHK3",
+      "status": 200,
+      "at": "2026-10-08T02:40:40.931Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/E4IEQSMWHPSSP223MTVTVHK3?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:41.265Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/E4IEQSMWHPSSP223MTVTVHK3/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:41.686Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/colombia-sebastian-ramirez-pink-bourbon/JLXJZGWX2GVZVHY36DKX535J",
+      "status": 200,
+      "at": "2026-10-08T02:40:42.551Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/JLXJZGWX2GVZVHY36DKX535J?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:42.914Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/JLXJZGWX2GVZVHY36DKX535J/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:43.361Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/guatemala-gabriela-castaneda-sarchimor/K3FIXVJOZIZD4FKFSJG7US7Y",
+      "status": 200,
+      "at": "2026-10-08T02:40:44.038Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/K3FIXVJOZIZD4FKFSJG7US7Y?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:44.410Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/K3FIXVJOZIZD4FKFSJG7US7Y/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:44.934Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/kenya-gichathaini-ab/NFEBDN2NMVVOVLJELX7XYORI",
+      "status": 200,
+      "at": "2026-10-08T02:40:45.513Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/NFEBDN2NMVVOVLJELX7XYORI?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:45.983Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/NFEBDN2NMVVOVLJELX7XYORI/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:46.373Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/panama-altieri-dilgo-nasd-gesha-enthusiast-series/OVYTFW6DDPSI76KVMZQ63KG7",
+      "status": 200,
+      "at": "2026-10-08T02:40:47.103Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/OVYTFW6DDPSI76KVMZQ63KG7?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:47.374Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/OVYTFW6DDPSI76KVMZQ63KG7/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:47.844Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/colombia-jairo-arcila-wine-yeast-peach-co-ferment/QYD5HAKFPUXWERD5KZZVKTRV",
+      "status": 200,
+      "at": "2026-10-08T02:40:48.638Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/QYD5HAKFPUXWERD5KZZVKTRV?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:48.941Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/QYD5HAKFPUXWERD5KZZVKTRV/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:49.359Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/costa-rica-coe-johel-monge-naranjo-enthusiast-series/TND4TOEPAMXMRQL3KJKFVITW",
+      "status": 200,
+      "at": "2026-10-08T02:40:50.181Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/TND4TOEPAMXMRQL3KJKFVITW?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:50.426Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/TND4TOEPAMXMRQL3KJKFVITW/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:50.909Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/kenya-peter-muchiri-guama-aa/WCWPKF37ZU7UMVMVCEYT7E4J",
+      "status": 200,
+      "at": "2026-10-08T02:40:51.582Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/WCWPKF37ZU7UMVMVCEYT7E4J?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:51.938Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/WCWPKF37ZU7UMVMVCEYT7E4J/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:52.441Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://coffeeprojectnyshop.square.site/product/china-white-orchid-purple-caturra/ZSBLX34CDIZ4JIXYKGQ37ZU7",
+      "status": 200,
+      "at": "2026-10-08T02:40:53.073Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/ZSBLX34CDIZ4JIXYKGQ37ZU7?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-08T02:40:53.449Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131058801/sites/587606771285215089/products/ZSBLX34CDIZ4JIXYKGQ37ZU7/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-08T02:40:53.884Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

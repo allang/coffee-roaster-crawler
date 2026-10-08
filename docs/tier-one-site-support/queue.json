@@ -1,0 +1,670 @@
+{
+  "source": "tier-one coffee coverage audit 2026-10-07",
+  "scope_names": 41,
+  "rows": [
+    {
+      "name": "Aery",
+      "identity_status": "unmatched",
+      "entity_ids": [],
+      "candidates": [],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "April",
+      "identity_status": "matched",
+      "entity_ids": [
+        "3a71024e-eb30-4778-927b-580e3bc3b62e"
+      ],
+      "candidates": [
+        {
+          "entity_id": "3a71024e-eb30-4778-927b-580e3bc3b62e",
+          "website_url": "https://www.aprilcoffeeroasters.com",
+          "name": "April"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "april-live.json",
+      "coffee_products": 21
+    },
+    {
+      "name": "Black & White",
+      "identity_status": "matched",
+      "entity_ids": [
+        "01896836-e6ff-498e-b78c-e17d0d127e42"
+      ],
+      "candidates": [
+        {
+          "entity_id": "01896836-e6ff-498e-b78c-e17d0d127e42",
+          "website_url": "https://www.blackwhiteroasters.com",
+          "name": "Black & White Coffee Roasters"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "black-white-live.json",
+      "coffee_products": 20
+    },
+    {
+      "name": "Botz",
+      "identity_status": "matched",
+      "entity_ids": [
+        "9b08c3d9-f580-41ae-a394-0cd3225bb3c0"
+      ],
+      "candidates": [
+        {
+          "entity_id": "9b08c3d9-f580-41ae-a394-0cd3225bb3c0",
+          "website_url": "https://botz-coffee.com",
+          "name": "Botz Coffee"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "botz-live.json",
+      "coffee_products": 1,
+      "note": "One current coffee listing; merchant explicitly reports sold out. Do not turn it into in-stock inventory."
+    },
+    {
+      "name": "Coffee Collective",
+      "identity_status": "matched",
+      "entity_ids": [
+        "39a6bb46-ad09-41ee-84e5-54320d2263d7"
+      ],
+      "candidates": [
+        {
+          "entity_id": "39a6bb46-ad09-41ee-84e5-54320d2263d7",
+          "website_url": "https://coffeecollective.dk",
+          "name": "Coffee Collective"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "coffee-collective-live.json",
+      "coffee_products": 21
+    },
+    {
+      "name": "Coffee Project NY",
+      "identity_status": "matched",
+      "entity_ids": [
+        "9cb13308-0d7a-4d02-a558-9bda11f5dd97"
+      ],
+      "candidates": [
+        {
+          "entity_id": "9cb13308-0d7a-4d02-a558-9bda11f5dd97",
+          "website_url": "https://coffeeprojectnyshop.square.site",
+          "name": "Coffee Project"
+        }
+      ],
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "coffee-project-ny-live.json",
+      "coffee_products": 24
+    },
+    {
+      "name": "DAK Coffee Roasters",
+      "identity_status": "ambiguous",
+      "entity_ids": [],
+      "candidates": [
+        {
+          "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
+          "website_url": "https://www.dakcoffeeroasters.com/",
+          "name": "Dak"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Flower Child",
+      "identity_status": "matched",
+      "entity_ids": [
+        "5690d1b7-4082-43d6-8032-d3a92618e8f9"
+      ],
+      "candidates": [
+        {
+          "entity_id": "5690d1b7-4082-43d6-8032-d3a92618e8f9",
+          "website_url": "https://flowerchildcoffee.com",
+          "name": "Flower Child"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Fritz Coffee Company",
+      "identity_status": "matched",
+      "entity_ids": [
+        "602c3d3e-a765-476f-bcd8-219519a8234f"
+      ],
+      "candidates": [
+        {
+          "entity_id": "602c3d3e-a765-476f-bcd8-219519a8234f",
+          "website_url": "https://fritz.co.kr",
+          "name": "Fritz"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Frukt",
+      "identity_status": "matched",
+      "entity_ids": [
+        "33768274-dc08-4e98-9afd-61a20cd07d88"
+      ],
+      "candidates": [
+        {
+          "entity_id": "33768274-dc08-4e98-9afd-61a20cd07d88",
+          "website_url": "https://www.frukt.coffee",
+          "name": "Frukt"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Goût & Co",
+      "identity_status": "matched",
+      "entity_ids": [
+        "da072aaf-038c-4761-bd7e-a22f2383ebc8"
+      ],
+      "candidates": [
+        {
+          "entity_id": "da072aaf-038c-4761-bd7e-a22f2383ebc8",
+          "website_url": "https://goutandco.com/",
+          "name": "Gout and Co"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "H&S",
+      "identity_status": "matched",
+      "entity_ids": [
+        "e00c05fa-623e-4284-adfc-420e81dd472c"
+      ],
+      "candidates": [
+        {
+          "entity_id": "e00c05fa-623e-4284-adfc-420e81dd472c",
+          "website_url": "https://hscoffeeroasters.com",
+          "name": "H&S Coffee Roasters"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Hatch",
+      "identity_status": "matched",
+      "entity_ids": [
+        "973e6bc5-2f7c-4213-ba81-27fa025ce64d"
+      ],
+      "candidates": [
+        {
+          "entity_id": "973e6bc5-2f7c-4213-ba81-27fa025ce64d",
+          "website_url": "https://www.hatchcrafted.com",
+          "name": "Hatch Specialty Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Hydrangea",
+      "identity_status": "matched",
+      "entity_ids": [
+        "535be893-1831-4443-b5e3-c79c09080eb2"
+      ],
+      "candidates": [
+        {
+          "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+          "website_url": "https://hydrangea.coffee",
+          "name": " Hydrangea Coffee Roasters"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "ILSE",
+      "identity_status": "matched",
+      "entity_ids": [
+        "8f69eeb4-2d62-4aea-8024-d2855b01e593"
+      ],
+      "candidates": [
+        {
+          "entity_id": "8f69eeb4-2d62-4aea-8024-d2855b01e593",
+          "website_url": "https://ilsecoffee.com/",
+          "name": "Ilse"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Leaves",
+      "identity_status": "matched",
+      "entity_ids": [
+        "18db48af-6c9c-4449-9d66-535c5260e2b5"
+      ],
+      "candidates": [
+        {
+          "entity_id": "18db48af-6c9c-4449-9d66-535c5260e2b5",
+          "website_url": "https://leavescoffee.jp/en",
+          "name": "Leaves Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Loquat",
+      "identity_status": "matched",
+      "entity_ids": [
+        "69c2bf90-4751-41d1-a454-16c1d87ffd11"
+      ],
+      "candidates": [
+        {
+          "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+          "website_url": "https://www.loquatcoffee.com/",
+          "name": "Loquat Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Loveless",
+      "identity_status": "ambiguous",
+      "entity_ids": [],
+      "candidates": [
+        {
+          "entity_id": "281aa870-2867-465c-9594-d7764c9273f6",
+          "website_url": "https://lovelesscoffees.coffee/",
+          "name": "Loveless Coffees"
+        },
+        {
+          "entity_id": "d85c4ca3-b86e-43b6-8822-aaef6472126a",
+          "website_url": "https://lovelesscoffees.coffee",
+          "name": "Loveless Coffees"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Luminous",
+      "identity_status": "matched",
+      "entity_ids": [
+        "16d40b29-b263-4d7a-a6a4-0b339325fc30"
+      ],
+      "candidates": [
+        {
+          "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+          "website_url": "https://www.loveluminous.coffee",
+          "name": "Luminous Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Luna",
+      "identity_status": "ambiguous",
+      "entity_ids": [],
+      "candidates": [
+        {
+          "entity_id": "2442b266-fb8c-43f6-a7e5-589c6bf94bc5",
+          "website_url": "https://lunacafe.com/",
+          "name": "Luna Coffee Roasters"
+        },
+        {
+          "entity_id": "e30e68df-7843-408b-8df0-2ae01df471d9",
+          "website_url": "https://enjoylunacoffee.com",
+          "name": "Luna Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Momos",
+      "identity_status": "matched",
+      "entity_ids": [
+        "c2941ba0-1481-4b69-b800-0d911f2797c3"
+      ],
+      "candidates": [
+        {
+          "entity_id": "c2941ba0-1481-4b69-b800-0d911f2797c3",
+          "website_url": "https://en.momos.co.kr",
+          "name": "Momos Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Monogram",
+      "identity_status": "matched",
+      "entity_ids": [
+        "5d02543f-ff9d-471b-af2b-cc6c8400e546"
+      ],
+      "candidates": [
+        {
+          "entity_id": "5d02543f-ff9d-471b-af2b-cc6c8400e546",
+          "website_url": "https://monogramcoffee.com",
+          "name": "Monogram Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Namusairo",
+      "identity_status": "matched",
+      "entity_ids": [
+        "cbabf44d-1bfa-4212-a0f0-858c55019b91"
+      ],
+      "candidates": [
+        {
+          "entity_id": "cbabf44d-1bfa-4212-a0f0-858c55019b91",
+          "website_url": "https://namusairo.com",
+          "name": "Namusairo"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Obadiah",
+      "identity_status": "matched",
+      "entity_ids": [
+        "058d58c7-c655-40fe-a651-02b8f0593a89"
+      ],
+      "candidates": [
+        {
+          "entity_id": "058d58c7-c655-40fe-a651-02b8f0593a89",
+          "website_url": "https://obadiahcoffee.com",
+          "name": "Obadiah"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "ONA",
+      "identity_status": "matched",
+      "entity_ids": [
+        "11c63e61-c185-4fea-a049-127af7daafbf"
+      ],
+      "candidates": [
+        {
+          "entity_id": "11c63e61-c185-4fea-a049-127af7daafbf",
+          "website_url": "https://onacoffee.com.au",
+          "name": "ONA Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Passenger",
+      "identity_status": "ambiguous",
+      "entity_ids": [],
+      "candidates": [
+        {
+          "entity_id": "4e4926f4-fdab-4e69-b28a-0f067b2b6720",
+          "website_url": "https://www.passenger-coffee.de",
+          "name": "Passenger Coffee"
+        },
+        {
+          "entity_id": "7557d44c-5584-42cf-a644-aafe9720bd16",
+          "website_url": "https://drinkpassenger.com",
+          "name": "Passenger"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Prodigal",
+      "identity_status": "matched",
+      "entity_ids": [
+        "a1a8a40f-c7e1-40f3-a8e5-5cdfbf169f7b"
+      ],
+      "candidates": [
+        {
+          "entity_id": "a1a8a40f-c7e1-40f3-a8e5-5cdfbf169f7b",
+          "website_url": "https://getprodigal.com/",
+          "name": "Prodigal"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Round Hill",
+      "identity_status": "matched",
+      "entity_ids": [
+        "0cc38dcc-655c-4a7d-b956-f27a3165b310"
+      ],
+      "candidates": [
+        {
+          "entity_id": "0cc38dcc-655c-4a7d-b956-f27a3165b310",
+          "website_url": "https://roundhillroastery.com",
+          "name": "Round Hill"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "S&W Craft Roasting",
+      "identity_status": "matched",
+      "entity_ids": [
+        "0a56b341-2fff-4c4f-af41-347b3e8425f5"
+      ],
+      "candidates": [
+        {
+          "entity_id": "0a56b341-2fff-4c4f-af41-347b3e8425f5",
+          "website_url": "https://www.swroasting.coffee",
+          "name": "S&W Craft Roasting"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "September",
+      "identity_status": "matched",
+      "entity_ids": [
+        "8b9eb5a0-b53e-4ca1-94fc-86a854f26659"
+      ],
+      "candidates": [
+        {
+          "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+          "website_url": "https://september.coffee/",
+          "name": "September Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "SEY",
+      "identity_status": "matched",
+      "entity_ids": [
+        "0abbc586-467e-4bfe-b431-248941145733"
+      ],
+      "candidates": [
+        {
+          "entity_id": "0abbc586-467e-4bfe-b431-248941145733",
+          "website_url": "https://www.seycoffee.com/",
+          "name": "Sey"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Shoebox",
+      "identity_status": "matched",
+      "entity_ids": [
+        "82b540d1-53c7-48ed-916c-dc3e662addc1"
+      ],
+      "candidates": [
+        {
+          "entity_id": "82b540d1-53c7-48ed-916c-dc3e662addc1",
+          "website_url": "https://shoebox.coffee",
+          "name": "shoebox.coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Substance",
+      "identity_status": "matched",
+      "entity_ids": [
+        "c9cc734b-ffbf-44ae-b682-c056f3635922"
+      ],
+      "candidates": [
+        {
+          "entity_id": "c9cc734b-ffbf-44ae-b682-c056f3635922",
+          "website_url": "https://www.substancecafe.com/",
+          "name": "Substance Cafe"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Subtext",
+      "identity_status": "matched",
+      "entity_ids": [
+        "f3f3a834-d7e4-4804-890c-4bdff564e498"
+      ],
+      "candidates": [
+        {
+          "entity_id": "f3f3a834-d7e4-4804-890c-4bdff564e498",
+          "website_url": "https://www.subtext.coffee",
+          "name": "Subtext Coffee Roasters"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Sweven",
+      "identity_status": "matched",
+      "entity_ids": [
+        "405de73b-b707-46bb-a0e2-dbeb3218f542"
+      ],
+      "candidates": [
+        {
+          "entity_id": "405de73b-b707-46bb-a0e2-dbeb3218f542",
+          "website_url": "https://www.swevencoffee.co.uk/",
+          "name": "Sweven "
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Taith",
+      "identity_status": "matched",
+      "entity_ids": [
+        "5d931414-8d9a-43e7-ba25-e3269884cde8"
+      ],
+      "candidates": [
+        {
+          "entity_id": "5d931414-8d9a-43e7-ba25-e3269884cde8",
+          "website_url": "https://taithcoffee.com",
+          "name": "Taith Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Tanat",
+      "identity_status": "matched",
+      "entity_ids": [
+        "51dd9f88-a88e-4a2b-911f-2b85348dcbc7"
+      ],
+      "candidates": [
+        {
+          "entity_id": "51dd9f88-a88e-4a2b-911f-2b85348dcbc7",
+          "website_url": "https://tanat.coffee",
+          "name": "TANAT COFFEE"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Tandem",
+      "identity_status": "ambiguous",
+      "entity_ids": [],
+      "candidates": [
+        {
+          "entity_id": "86089fc8-6ecc-4620-ac4c-b570990d1c22",
+          "website_url": "https://www.tandemcoffee.com",
+          "name": "Tandem Coffee Roasters"
+        },
+        {
+          "entity_id": "f2710b37-9816-4474-86be-4dd15b4220fd",
+          "website_url": "https://tandemcc.com/",
+          "name": "Tandem"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "The Picky Chemist",
+      "identity_status": "matched",
+      "entity_ids": [
+        "962401c8-ef7b-4044-9894-b03590b5445b"
+      ],
+      "candidates": [
+        {
+          "entity_id": "962401c8-ef7b-4044-9894-b03590b5445b",
+          "website_url": "https://en.thepickychemist.com",
+          "name": "The Picky Chemist"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "Thoughtful Coffee",
+      "identity_status": "matched",
+      "entity_ids": [
+        "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680"
+      ],
+      "candidates": [
+        {
+          "entity_id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+          "website_url": "https://thoughtfulcoffee.co",
+          "name": "thoughtful coffee nyc"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "name": "XLIII",
+      "identity_status": "matched",
+      "entity_ids": [
+        "a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6"
+      ],
+      "candidates": [
+        {
+          "entity_id": "a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6",
+          "website_url": "https://xliiicoffee.com/en/",
+          "name": "XLIII Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null
+    }
+  ]
+}

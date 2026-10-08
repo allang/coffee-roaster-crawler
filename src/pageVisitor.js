@@ -11,8 +11,8 @@ const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = re
 const { fetchHtml, jitteredSleep } = require('./httpClient');
 const { detectProductAvailability } = require('./availability');
 
-async function fetchPageContent(url, referer = null) {
-  const result = await fetchHtml(url, { 
+async function fetchPageContent(url, referer = null, options = {}) {
+  const result = await (options.fetchHtml || fetchHtml)(url, {
     timeout: 15000,
     referer,
   });
@@ -58,10 +58,13 @@ async function fetchPageContent(url, referer = null) {
     const maxClassificationChars = Number(process.env.CLASSIFIER_MAX_CHARS || 15000);
     const truncatedContent = fullContent.substring(0, maxClassificationChars);
 
+    let sourceProduct=null;
+    if(options.siteProfile?.adapter==='square'){sourceProduct=await require('./siteSupport/square').fetchSquareProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     return {
       success: true,
+      sourceProduct,
       title,
-      content: truncatedContent,
+      content: sourceProduct?sourceProduct.name+"\n"+sourceProduct.description:truncatedContent,
       fullLength: contentLength,
       html: result.data,
       status: result.status,
@@ -98,7 +101,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
     return {visited:true,classified:false,error:fetchResult.error,aiCalls:0};
   }
   let shopifyJson=null;
-  if(platform==='shopify' && isShopifyProductUrl(url)) shopifyJson=await fetchShopifyProductJson(url,log);
+  if(platform==='shopify' && isShopifyProductUrl(url)) shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
   const classification=await extractPage({page:{...fetchResult,url},shopifyJson,cache:known?.classification,classify:classifyPage,model:MODEL});
   const metrics={aiCalls:classification.aiCalls || 0,usage:classification.usage,mode:classification.mode};
   if(classification.error) return {visited:true,classified:false,error:classification.error,quotaExceeded:classification.quotaExceeded,...metrics};
@@ -108,7 +111,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
   let productId, availability;
   try {
   if(coffee) {
-    availability=detectProductAvailability({html:fetchResult.html,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl,shopifyProduct:shopifyJson?.success?shopifyJson.raw:null});
+    availability=detectProductAvailability({html:fetchResult.html,sourceProduct:fetchResult.sourceProduct,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl,shopifyProduct:shopifyJson?.success?shopifyJson.raw:null});
     productId=await saveProduct(entityId,result.product,url,log,{availability,checkedAt:now});
     if(!productId) return {visited:true,classified:true,error:'Product persistence skipped',...metrics};
     options.observed?.set(canonicalProductUrl(url),availability);
@@ -118,7 +121,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
   } catch(error) { return {visited:true,classified:true,error:error.message,...metrics}; }
 }
 async function visitAndClassifyPage(entityId,url,accumulator,log,platform='unknown',options={}) {
-  const fetchResult=await fetchPageContent(url);
+  const fetchResult=await fetchPageContent(url,null,options);
   accumulator.markVisited(url);
   try { return await processFetchedPage(entityId,url,fetchResult,log,platform,options); }
   catch(error) { log.error('Visitor','Page processing failed',{url,error:error.message});return {visited:true,error:error.message}; }

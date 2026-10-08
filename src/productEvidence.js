@@ -34,7 +34,7 @@ function structuredProduct(html, sourceUrl) {
   if (exact.length > 1) return null;
   const title = $('main h1, h1').first().text().trim().toLocaleLowerCase('en');
   const named = products.filter(p => !p.url && !p['@id'] && title && String(p.name || '').trim().toLocaleLowerCase('en') === title);
-  return named.length === 1 ? named[0] : null;
+  return named.length === 1 ? named[0] : require('./siteSupport/headlessShopify').headlessShopifyProduct(html,sourceUrl);
 }
 
 function schemaAvailability(value) {
@@ -62,11 +62,11 @@ function productAvailability(input = {}) {
     const variants = input.shopifyProduct.variants.map(v => ({ source_id: v.id == null ? null : String(v.id), title: v.title, state: v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : 'unknown', evidence: [{ source: v._availability_source || 'shopify_product_json', available: v.available ?? null }], checkedAt }));
     return result(aggregateStates(variants.map(v => v.state)), 'shopify_exact_variants', [{ source: 'shopify_product_json', product_id: input.shopifyProduct.id }], variants);
   }
-  const product = structuredProduct(input.html, input.sourceUrl);
+  const product = input.sourceProduct || structuredProduct(input.html, input.sourceUrl);
   if (product) {
     const offers = [product.offers || []].flat();
-    const variants = offers.filter(o => o && (!o.url || sameProduct(o.url, input.sourceUrl))).map(o => ({ source_id: offerVariantId(o,input.sourceUrl), title: o.name || null, state: schemaAvailability(o.availability), evidence: [{ source: 'product_jsonld_offer', url:o.url || null, availability: o.availability ?? null }], checkedAt }));
-    return result(aggregateStates(variants.map(v => v.state)), 'product_scoped_structured_data', [{ source: 'product_jsonld', name: product.name }], variants);
+    const variants = offers.filter(o => o && (!o.url || sameProduct(o.url, input.sourceUrl))).map(o => ({ source_id: offerVariantId(o,input.sourceUrl), title: o.name || null, state: schemaAvailability(o.availability), evidence: [{ source: product._market_source || 'product_jsonld_offer', url:o.url || null, availability: o.availability ?? null }], checkedAt }));
+    return result(aggregateStates(variants.map(v => v.state)), 'product_scoped_structured_data', [{ source: product._market_source || 'product_jsonld', name: product.name }], variants);
   }
   const $ = cheerio.load(input.html || '');
   // Only the primary product's own form can prove stock. Recommended cards/global text cannot.
