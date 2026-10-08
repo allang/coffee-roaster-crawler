@@ -22,6 +22,14 @@ function labelWeight(value) {
   return imperial && metric && Math.abs(imperial-metric)<=Math.max(2,metric*0.02)?metric:null;
 }
 
+function nativeNetWeight(product,variant) {
+  // Size belongs to its native option, independently of grind/roast labels.
+  // Shipping grams and ambiguous multi-bag labels cannot establish net mass.
+  const sizeOptions=(product.options || []).filter(o=>o && /^(?:size|bag size|pack size|weight|labeled weight|net weight|poids|gewicht|format)$/i.test(String(o.name || '').trim()));
+  if(sizeOptions.length){const sizes=sizeOptions.map(o=>{const value=variant['option'+o.position];if(typeof value!=='string' || Array.isArray(o.values) && !o.values.includes(value))return null;const direct=labelWeight(value.replace(/_/g,' '));if(direct!=null)return direct;const encoded=value.match(/^(2good2go(?:_(?:\d{4}|X+))*)_(\d+(?:[.,]\d+)?\s*(?:g|kg|oz|lbs?))$/i);return encoded?labelWeight(encoded[2]):null;});return sizes.length===1?sizes[0]:null;}
+  return labelWeight(variant.title) ?? (product.variants.length===1?labelWeight(product.title):null);
+}
+
 function exactAnalyticsMarket(html,native) {
   const $=cheerio.load(html || ''),candidates=[];
   $('script:not([src])').each((_,element)=>{
@@ -158,7 +166,7 @@ function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=
     availabilitySource:v._availability_source || 'shopify_product_json',
     compareAtPrice: v.compare_at_price,
     currency: product.currency || null,
-    weightGrams: netWeightUnproven?null:preferLabelWeight?(labelWeight(v.title) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
+    weightGrams: netWeightUnproven?null:preferLabelWeight?(nativeNetWeight(product,v) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
     shippingWeightGrams:v.grams ?? null,
   }));
 

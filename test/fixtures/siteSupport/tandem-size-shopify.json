@@ -1,0 +1,44 @@
+{
+  "id": 10327156195574,
+  "title": "Alma Pineda - Cup of Excellence - Honduras",
+  "options": [
+    {
+      "id": 13262078968054,
+      "product_id": 10327156195574,
+      "name": "Labeled Weight",
+      "position": 1,
+      "values": [
+        "8oz",
+        "12oz",
+        "2lb",
+        "5lb"
+      ]
+    },
+    {
+      "id": 13262079000822,
+      "product_id": 10327156195574,
+      "name": "Grind",
+      "position": 2,
+      "values": [
+        "Whole Bean",
+        "Fine (Espresso)",
+        "Medium-Fine (Stovetop)",
+        "Medium (Filter Coffee)",
+        "Medium-Coarse (Immersion)",
+        "Coarse (Cold Brew)"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 51775405916406,
+      "product_id": 10327156195574,
+      "title": "8oz / Medium-Fine (Stovetop)",
+      "option1": "8oz",
+      "option2": "Medium-Fine (Stovetop)",
+      "option3": null,
+      "grams": 363,
+      "price": "49.00"
+    }
+  ]
+}

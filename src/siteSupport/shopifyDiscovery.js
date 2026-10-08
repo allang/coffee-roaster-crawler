@@ -1,5 +1,5 @@
 'use strict';
-const excluded=/\b(?:(?:e[-\s]?)?gift\s*(?:cards?|vouchers?|certificates?)|subscription|wholesale|equipment|brewer|paper\s*filter|grinder|cup|mug|thermos|trousers?|shirts?|hoodie|hat|cap|book|cascara|green coffee)\b/i;
+const excluded=/\b(?:(?:e[-\s]?)?gift\s*(?:cards?|vouchers?|certificates?)|subscription|wholesale|equipment|brewer|paper\s*filter|grinder|cup(?!\s+of\s+excellence)|mug|thermos|trousers?|shirts?|hoodie|hat|cap|book|cascara|green coffee)\b/i;
 function retailCoffee(product,profile) {
   if(profile.exclude_product_ids?.includes(String(product.id)))return false;
   const type=String(product.product_type || ''),title=String(product.title || '');
@@ -7,7 +7,7 @@ function retailCoffee(product,profile) {
   const tags=Array.isArray(product.tags)?product.tags.join(' '):String(product.tags || '');
   // A coffee sold once may also carry a subscription tag (ONA's blends do).
   // Exclude subscription products by their title/type, not a second sales channel.
-  if(excluded.test(type+' '+title) || /\bwholesale[-_\s]+only\b/i.test(tags))return false;
+  if(excluded.test(type+' '+title) || /\bwholesale[-_\s]+only\b/i.test(tags) || !type.trim() && /\bwholesale\b/i.test(tags))return false;
   if(profile.coffee_content_pattern && !new RegExp(profile.coffee_content_pattern,'i').test(product.body_html || ''))return false;
   if(profile.strict_coffee_product_types)return profile.coffee_product_types?.includes(type)===true;
   return profile.coffee_product_types?.includes(type) || profile.coffee_handles?.includes(product.handle) || /\b(?:coffee|espresso|roasted beans|instant)\b/i.test(type);

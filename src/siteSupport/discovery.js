@@ -19,6 +19,9 @@ async function discoverProfileProducts(roaster,profile,fetchHtml) {
   if(profile.adapter==='cafe24')return require('./domDiscovery').discoverDomProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='subbly')return require('./subbly').discoverSubblyProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='imweb')return require('./imweb').discoverImwebProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='woocommerce')return require('./woocommerce').discoverWooProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='hydrogen')return require('./hydrogen').discoverHydrogenProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='wix')return require('./wix').discoverWixProducts(roaster,profile,fetchHtml);
   const urls=new Set(),evidence=[];
   for(const path of profile.listing_paths) {
     const url=new URL(path,roaster.website_url).href,result=await fetchHtml(url);

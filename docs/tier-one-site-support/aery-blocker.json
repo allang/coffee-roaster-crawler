@@ -1,0 +1,240 @@
+{
+  "name": "Aery",
+  "checked_at": "2026-10-08T03:43:48.844Z",
+  "status": "merchant_parser_verified_registration_blocked",
+  "official_merchant": "https://aerycoffee.com",
+  "official_roastery_evidence": "https://aerycoffee.com/brand/story.html",
+  "merchant_location": "Busan, Republic of Korea",
+  "catalog_identity": {
+    "entity_ids": [],
+    "queue_identity_status": "unmatched"
+  },
+  "blocker": "Assigned audit has no catalog owner. Exact-ID profileFor remains gated; no entity is invented or created.",
+  "merchant_listing": "https://aerycoffee.com/category/shop/67/",
+  "observed_coffee_listings": 18,
+  "products": [
+    {
+      "merchant_product_number": "233",
+      "name": "Panama Esmeralda Mural 6NB Natural Geisha",
+      "url": "https://aerycoffee.com/product/panama-esmeralda-mural-6nb-natural-geisha/233/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "231",
+      "name": "Panama Esmeralda  Aguila 5 BANC Anaerobic Natural Geisha",
+      "url": "https://aerycoffee.com/product/panama-esmeralda-aguila-5-banc-anaerobic-natural-geisha/231/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "222",
+      "name": "Ethiopia Gogugu 74110, 74112, 74158 Nautral",
+      "url": "https://aerycoffee.com/product/ethiopia-gogugu-74110-74112-74158-nautral/222/category/67/display/1/",
+      "explicit_size": "150g"
+    },
+    {
+      "merchant_product_number": "220",
+      "name": "Ethiopia Banko Taratu 74110 74112 Washed",
+      "url": "https://aerycoffee.com/product/ethiopia-banko-taratu-74110-74112-washed/220/category/67/display/1/",
+      "explicit_size": "150g"
+    },
+    {
+      "merchant_product_number": "218",
+      "name": "Ecuador Yacuri Typica Mejorado TUEX Natural",
+      "url": "https://aerycoffee.com/product/ecuador-yacuri-typica-mejorado-tuex-natural/218/category/67/display/1/",
+      "explicit_size": "150g"
+    },
+    {
+      "merchant_product_number": "216",
+      "name": "Panama Bambito Estate Yellow Catuai Natural",
+      "url": "https://aerycoffee.com/product/panama-bambito-estate-yellow-catuai-natural/216/category/67/display/1/",
+      "explicit_size": "150g"
+    },
+    {
+      "merchant_product_number": "214",
+      "name": "Panama Lerida Esplendorosa Geisha XO Honey",
+      "url": "https://aerycoffee.com/product/panama-lerida-esplendorosa-geisha-xo-honey/214/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "212",
+      "name": "Panama Esmeralda Mario Abajo 6FB Geisha Cold Fermentation Washed",
+      "url": "https://aerycoffee.com/product/panama-esmeralda-mario-abajo-6fb-geisha-cold-fermentation-washed/212/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "170",
+      "name": "Panama Altieri ALE Geisha Washed",
+      "url": "https://aerycoffee.com/product/panama-altieri-ale-geisha-washed/170/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "205",
+      "name": "Panama Lerida Amelia Geisha Natural 50g",
+      "url": "https://aerycoffee.com/product/panama-lerida-amelia-geisha-natural-50g/205/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "193",
+      "name": "Kenya Karimikui AA Washed",
+      "url": "https://aerycoffee.com/product/kenya-karimikui-aa-washed/193/category/67/display/1/",
+      "explicit_size": "200g"
+    },
+    {
+      "merchant_product_number": "168",
+      "name": "Panama Altieri ROLA Catuai ASD Natural",
+      "url": "https://aerycoffee.com/product/panama-altieri-rola-catuai-asd-natural/168/category/67/display/1/",
+      "explicit_size": "200g"
+    },
+    {
+      "merchant_product_number": "135",
+      "name": "Panama Janson Geisha Natural 26-63",
+      "url": "https://aerycoffee.com/product/panama-janson-geisha-natural-26-63/135/category/67/display/1/",
+      "explicit_size": "100g"
+    },
+    {
+      "merchant_product_number": "210",
+      "name": "Panama Esmeralda Porton 7NB Geisha Natural",
+      "url": "https://aerycoffee.com/product/panama-esmeralda-porton-7nb-geisha-natural/210/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "188",
+      "name": "Panama Janson Geisha Natural 26-112",
+      "url": "https://aerycoffee.com/product/panama-janson-geisha-natural-26-112/188/category/67/display/1/",
+      "explicit_size": "100g"
+    },
+    {
+      "merchant_product_number": "186",
+      "name": "Panama Altieri Alessa Geisha DFM Natural",
+      "url": "https://aerycoffee.com/product/panama-altieri-alessa-geisha-dfm-natural/186/category/67/display/1/",
+      "explicit_size": "50g"
+    },
+    {
+      "merchant_product_number": "204",
+      "name": "Panama Lerida Lerida Estate Geisha Washed 100g",
+      "url": "https://aerycoffee.com/product/panama-lerida-lerida-estate-geisha-washed-100g/204/category/67/display/1/",
+      "explicit_size": "100g"
+    },
+    {
+      "merchant_product_number": "132",
+      "name": "Panama Finca Sophia Heritage Collection Torcaza Geisha Washed",
+      "url": "https://aerycoffee.com/product/panama-finca-sophia-heritage-collection-torcaza-geisha-washed/132/category/67/display/1/",
+      "explicit_size": "30g"
+    }
+  ],
+  "additional_merchant_limitation": "Merchant descriptions are image-based. Native description HTML with guarded published image URLs is preserved in the normal extraction payload. Textual descriptions/facts are not transcribed or guessed.",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/",
+      "status": 200,
+      "at": "2026-10-08T03:39:46.147Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/category/shop/67/",
+      "status": 200,
+      "at": "2026-10-08T03:39:46.876Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/brand/story.html",
+      "status": 200,
+      "at": "2026-10-08T03:39:47.305Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/list.html?cate_no=70",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/list.html?cate_no=71",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/detail.html?product_no=233",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/detail.html?product_no=132",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/list.html?cate_no=70",
+      "status": 301,
+      "at": "2026-10-08T04:45:31.426Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/category/bold/70/",
+      "status": 200,
+      "at": "2026-10-08T04:45:32.011Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/list.html?cate_no=71",
+      "status": 301,
+      "at": "2026-10-08T04:45:32.588Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/category/daily/71/",
+      "status": 200,
+      "at": "2026-10-08T04:45:33.361Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/detail.html?product_no=212",
+      "status": 301,
+      "at": "2026-10-08T04:51:57.003Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/panama-esmeralda-mario-abajo-6fb-geisha-cold-fermentation-washed/212/",
+      "status": 200,
+      "at": "2026-10-08T04:51:57.211Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/detail.html?product_no=205",
+      "status": 301,
+      "at": "2026-10-08T04:51:57.748Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://aerycoffee.com/product/panama-lerida-amelia-geisha-natural-50g/205/",
+      "status": 200,
+      "at": "2026-10-08T04:51:58.570Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "excluded_gear": [
+    {
+      "merchant_product_number": "178",
+      "name": "UFO Dripper Filter 3 Type",
+      "url": "https://aerycoffee.com/product/ufo-dripper-filter-3-type/178/category/67/display/1/",
+      "explicit_size": null
+    },
+    {
+      "merchant_product_number": "177",
+      "name": "UFO Dripper V3 / Black",
+      "url": "https://aerycoffee.com/product/ufo-dripper-v3-black/177/category/67/display/1/",
+      "explicit_size": null
+    },
+    {
+      "merchant_product_number": "203",
+      "name": "[Sold Out] UFO Dripper X MK Studio X aery",
+      "url": "https://aerycoffee.com/product/sold-out-ufo-dripper-x-mk-studio-x-aery/203/category/67/display/1/",
+      "explicit_size": null
+    }
+  ],
+  "evidence_corrected_at": "2026-10-08T04:42:31.234Z",
+  "merchant_parser_status": "implemented_live_dry_run_passed",
+  "merchant_parser_evidence": "aery-live.json"
+}

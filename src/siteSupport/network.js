@@ -5,7 +5,7 @@ function allowed(value,hosts) {
   const url=new URL(value);let path=url.pathname;
   for(let i=0;i<4;i++){try{const next=decodeURIComponent(path);if(next===path)break;path=next;}catch{throw Error('Invalid encoded path');}}
   if(url.protocol!=='https:' || url.username || url.password || url.port || !hosts.includes(url.hostname.toLowerCase()))throw Error('Unverified destination');
-  if(/(?:^|\/)(?:terms(?:-[a-z-]+)?|policies|privacy|legal(?:-[a-z-]+)?|cart|checkout|accounts?|customers|customer_authentication|members?|myshop|orders?|payments|login|admin)(?:[/.]|$)/i.test(path) || /^\/shopinfo\/guide\.html$/i.test(path))throw Error('Prohibited path');
+  if(/(?:^|\/)(?:terms(?:-[^/]*)?|policies|privacy(?:-[^/]*)?|legal(?:-[^/]*)?|cart|basket|checkout|my-account|accounts?|customers|customer_authentication|members?|myshop|orders?|payments|login|admin|wp-admin)(?:[/.]|$)/i.test(path) || /^\/shopinfo\/guide\.html$/i.test(path) || [...url.searchParams.keys()].some(k=>/^(?:add-to-cart|wc-ajax)$/i.test(k)))throw Error('Prohibited path');
   return url;
 }
 function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024}={}) {
@@ -35,7 +35,8 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024}
         if(result.status!==200){await result.body?.cancel();return {success:false,status:result.status,error:'HTTP '+result.status,finalUrl:url.href};}
         const chunks=[];let size=0;
         for await(const chunk of result.body){size+=chunk.length;if(size>maxBytes)throw Error('Response too large');chunks.push(chunk);}
-        return {success:true,status:200,data:Buffer.concat(chunks).toString('utf8'),finalUrl:url.href};
+        const integerHeader=name=>{const value=result.headers.get(name);return /^\d+$/.test(value || '') && Number.isSafeInteger(Number(value))?Number(value):null;};
+        return {success:true,status:200,data:Buffer.concat(chunks).toString('utf8'),finalUrl:url.href,catalogTotal:integerHeader('x-wp-total'),catalogPages:integerHeader('x-wp-totalpages')};
       }
       throw Error('Redirect limit');
     }catch(error){const detail=error.message+(error.cause?.code?' ('+error.cause.code+')':'');if(attempt)attempt.error=detail;return {success:false,error:detail,finalUrl:url.href};}

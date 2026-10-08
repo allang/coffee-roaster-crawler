@@ -117,6 +117,8 @@ function canonicalProductUrl(sourceUrl) {
     const id=url.searchParams.get('product_no') || url.pathname.match(/^\/product\/[^/]+\/([1-9]\d+)\//)?.[1];
     if(id){url.pathname='/product/detail.html';url.search='';url.searchParams.set('product_no',id);}
   }
+  if(profile?.adapter==='woocommerce')for(const key of [...url.searchParams.keys()])if(/^attribute_.+|^variation_id$/.test(key))url.searchParams.delete(key);
+  for(const key of profile?.variant_option_query_keys || [])url.searchParams.delete(key);
   url.pathname = url.pathname.replace(/\/+$/, '') || '/';
   return url.href;
 }

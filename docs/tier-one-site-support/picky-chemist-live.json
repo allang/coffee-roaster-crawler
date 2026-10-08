@@ -1,0 +1,76 @@
+{
+  "name": "The Picky Chemist",
+  "checked_at": "2026-10-08T04:36:46.896Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://en.thepickychemist.com/product-page/copie-de-panama-hacienda-la-esmeralda-lino-5-wb-washed-geisha",
+      "https://en.thepickychemist.com/product-page/copie-de-ethiopia-gesha-village-lot-25-046-surma-honey",
+      "https://en.thepickychemist.com/product-page/ethiopia-gesha-village-lot-26-136-oma-honey",
+      "https://en.thepickychemist.com/product-page/kenya-inoi-kianderi-aa-043-250g",
+      "https://en.thepickychemist.com/product-page/kenya-ruera-estate-pb-031-250g"
+    ],
+    "complete": true,
+    "evidence": [
+      {"listing":"https://en.thepickychemist.com/boutique","category_id":"f97fd6ca-0f7b-d6d2-2b28-0f6b3dd3c4bf","category_name":"En stock","products":5,"total":5}
+    ]
+  },
+  "products": [
+    {"url":"https://en.thepickychemist.com/product-page/copie-de-panama-hacienda-la-esmeralda-lino-5-wb-washed-geisha","title":"Panama - Hacienda La Esmeralda - Trapiche 2 AFB washed Geisha","source_product_id":"a498a140-8280-cdd7-b962-539e07d88737","state":"sold_out","variants_complete":true,"variants":[{"id":"623f2efa-c710-4e0e-91a1-98d8ed72dfa5","title":"Omni-light / 80 g","weight_g":80,"money":{"raw":"48","amount":"48.00","currency":"EUR","exponent":2,"minorUnits":4800,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":-1},"price_source":"wix_primary_exact_variant"},{"id":"ad82e6e0-fe0d-47ac-8828-aebe49ab7d67","title":"Omni-light / 250 g","weight_g":250,"money":{"raw":"140","amount":"140.00","currency":"EUR","exponent":2,"minorUnits":14000,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"},{"id":"73d9e243-7832-4c7e-8fa5-cccb7436397d","title":"Ultra-light / 80 g","weight_g":80,"money":{"raw":"48","amount":"48.00","currency":"EUR","exponent":2,"minorUnits":4800,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"},{"id":"9d7bb431-f429-472a-92fa-dd90a3decd3f","title":"Ultra-light / 250 g","weight_g":250,"money":{"raw":"140","amount":"140.00","currency":"EUR","exponent":2,"minorUnits":14000,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://en.thepickychemist.com/product-page/copie-de-ethiopia-gesha-village-lot-25-046-surma-honey","title":"Ethiopia - Gesha Village - Lot #26/124 - Surma Washed","source_product_id":"642b59ac-2ba0-7c3b-0fee-fe63761964c5","state":"sold_out","variants_complete":true,"variants":[{"id":"0d600a50-0478-4fec-8ae1-9ebf4e5e102b","title":"125 g","weight_g":125,"money":{"raw":"38","amount":"38.00","currency":"EUR","exponent":2,"minorUnits":3800,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"},{"id":"45b02b44-942a-45ae-992f-1ff9972fa29a","title":"250 g","weight_g":250,"money":{"raw":"74","amount":"74.00","currency":"EUR","exponent":2,"minorUnits":7400,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":-1},"price_source":"wix_primary_exact_variant"},{"id":"24c0c02d-eaa6-4519-b6db-7361c464738b","title":"100 g","weight_g":100,"money":{"raw":"32","amount":"32.00","currency":"EUR","exponent":2,"minorUnits":3200,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":-1},"price_source":"wix_primary_exact_variant"},{"id":"f2eecce1-b1d2-469d-9464-acc335ec52d7","title":"60 g","weight_g":60,"money":{"raw":"20","amount":"20.00","currency":"EUR","exponent":2,"minorUnits":2000,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://en.thepickychemist.com/product-page/ethiopia-gesha-village-lot-26-136-oma-honey","title":"Ethiopia - Gesha Village - Lot #26/136 - Oma Honey","source_product_id":"9de703f4-e81a-d7fe-24f5-db2c27e22383","state":"sold_out","variants_complete":true,"variants":[{"id":"04639ef1-4cd9-47dc-99bd-6f1b29807a67","title":"125 g","weight_g":125,"money":{"raw":"38","amount":"38.00","currency":"EUR","exponent":2,"minorUnits":3800,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"},{"id":"8803a9a6-e6c3-412c-873a-7d1795638de5","title":"250 g","weight_g":250,"money":{"raw":"74","amount":"74.00","currency":"EUR","exponent":2,"minorUnits":7400,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"},{"id":"876f6c18-2ac0-4772-9252-4ed1a7f83ead","title":"100 g","weight_g":100,"money":{"raw":"32","amount":"32.00","currency":"EUR","exponent":2,"minorUnits":3200,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":-1},"price_source":"wix_primary_exact_variant"},{"id":"d4d3118f-d129-4b9f-abec-df7281ede595","title":"60 g","weight_g":60,"money":{"raw":"20","amount":"20.00","currency":"EUR","exponent":2,"minorUnits":2000,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://en.thepickychemist.com/product-page/kenya-inoi-kianderi-aa-043-250g","title":"Kenya - Inoi Kianderi AA #043 - 200g","source_product_id":"e0932561-afef-78f6-2e3d-fcb4a662af73","state":"sold_out","variants_complete":true,"variants":[{"id":"66fe22ad-3699-4e88-999c-a46b42f7d821","title":"Kenya - Inoi Kianderi AA #043 - 200g","weight_g":200,"money":{"raw":"24","amount":"24.00","currency":"EUR","exponent":2,"minorUnits":2400,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://en.thepickychemist.com/product-page/kenya-ruera-estate-pb-031-250g","title":"Kenya - Ruera Estate PB #031 - 200g","source_product_id":"9abccbba-2ea8-a250-2866-0665b384ea8b","state":"sold_out","variants_complete":true,"variants":[{"id":"23818ae7-db65-48b8-9c80-cde63435e58e","title":"Kenya - Ruera Estate PB #031 - 200g","weight_g":200,"money":{"raw":"24","amount":"24.00","currency":"EUR","exponent":2,"minorUnits":2400,"reason":null},"state":"sold_out","stock_evidence":{"availability":"https://schema.org/OutOfStock","merchant_status":"out_of_stock","available_for_preorder":false,"quantity":0},"price_source":"wix_primary_exact_variant"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true}
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {"method":"GET","url":"https://en.thepickychemist.com/boutique","status":200,"at":"2026-10-08T04:36:44.159Z"},
+    {"method":"GET","url":"https://en.thepickychemist.com/product-page/copie-de-panama-hacienda-la-esmeralda-lino-5-wb-washed-geisha","status":200,"at":"2026-10-08T04:36:44.603Z"},
+    {"method":"GET","url":"https://en.thepickychemist.com/product-page/copie-de-ethiopia-gesha-village-lot-25-046-surma-honey","status":200,"at":"2026-10-08T04:36:45.089Z"},
+    {"method":"GET","url":"https://en.thepickychemist.com/product-page/ethiopia-gesha-village-lot-26-136-oma-honey","status":200,"at":"2026-10-08T04:36:45.621Z"},
+    {"method":"GET","url":"https://en.thepickychemist.com/product-page/kenya-inoi-kianderi-aa-043-250g","status":200,"at":"2026-10-08T04:36:46.132Z"},
+    {"method":"GET","url":"https://en.thepickychemist.com/product-page/kenya-ruera-estate-pb-031-250g","status":200,"at":"2026-10-08T04:36:46.580Z"}
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "limitations": [
+    "Current shop category En stock declares five products and publishes all five, each with native out-of-stock flags. The separately linked Archive category contains 93 historical entries and is excluded from current inventory.",
+    "Unmanaged optional roast choices share one native productItems UUID; no option variants are synthesized. Explicit current product names declare 200 g even where legacy slugs say 250g."
+  ],
+  "catalog_scope_requests": [
+    {
+      "method": "GET",
+      "url": "https://en.thepickychemist.com/sitemap.xml",
+      "status": 200,
+      "at": "2026-10-08T04:09:07.534Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://en.thepickychemist.com/store-products-sitemap.xml",
+      "status": 200,
+      "at": "2026-10-08T04:09:14.252Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://en.thepickychemist.com/pages-sitemap.xml",
+      "status": 200,
+      "at": "2026-10-08T04:09:14.661Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://en.thepickychemist.com/archive",
+      "status": 200,
+      "at": "2026-10-08T04:09:26.202Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://en.thepickychemist.com/product-page/copie-de-panama-hacienda-la-esmeralda-lino-5-wb-washed-geisha",
+      "status": 200,
+      "at": "2026-10-08T04:09:26.607Z"
+    }
+  ]
+}

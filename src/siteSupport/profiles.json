@@ -593,5 +593,184 @@
     "strict_coffee_product_types": true,
     "exclude_variant_title_pattern": "^Vac Sealed Pouch Option \\(per pouch\\)$",
     "identity_blocker": "Pinned tier source places Passport in Brisbane; official merchant verified. Reviewed coverage audit still supplies no database entity ID."
+  },
+  {
+    "name": "DAK Coffee Roasters",
+    "entity_ids": [
+      "11a426df-0146-4a5c-a123-ef7725c13926"
+    ],
+    "hosts": [
+      "www.dakcoffeeroasters.com",
+      "dakcoffeeroasters.com"
+    ],
+    "adapter": "woocommerce",
+    "catalog_path": "/wp-json/wc/store/v1/products",
+    "coffee_category_ids": [
+      42,
+      43
+    ]
+  },
+  {
+    "name": "Loveless",
+    "entity_ids": [
+      "281aa870-2867-465c-9594-d7764c9273f6",
+      "d85c4ca3-b86e-43b6-8822-aaef6472126a"
+    ],
+    "hosts": [
+      "lovelesscoffees.coffee",
+      "www.lovelesscoffees.coffee"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffees/products.json"
+    ]
+  },
+  {
+    "name": "Luna",
+    "entity_ids": [
+      "e30e68df-7843-408b-8df0-2ae01df471d9"
+    ],
+    "hosts": [
+      "enjoylunacoffee.com",
+      "www.enjoylunacoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffees/products.json"
+    ]
+  },
+  {
+    "name": "Passenger",
+    "entity_ids": [
+      "7557d44c-5584-42cf-a644-aafe9720bd16"
+    ],
+    "hosts": [
+      "drinkpassenger.com",
+      "www.drinkpassenger.com"
+    ],
+    "adapter": "hydrogen",
+    "listing_paths": [
+      "/collections/coffee"
+    ],
+    "collection_route": "routes/_page.collections.$handle",
+    "product_route": "routes/_page.products.$handle",
+    "variant_option_query_keys": [
+      "Size"
+    ]
+  },
+  {
+    "name": "Tanat",
+    "entity_ids": [
+      "51dd9f88-a88e-4a2b-911f-2b85348dcbc7"
+    ],
+    "hosts": [
+      "tanat.coffee",
+      "www.tanat.coffee"
+    ],
+    "adapter": "woocommerce",
+    "catalog_path": "/wp-json/wc/store/v1/products",
+    "catalog_category_id": 18,
+    "catalog_page_size": 50,
+    "coffee_category_ids": [
+      18
+    ],
+    "product_path": "/boutique/"
+  },
+  {
+    "name": "Tandem",
+    "entity_ids": [
+      "86089fc8-6ecc-4620-ac4c-b570990d1c22"
+    ],
+    "hosts": [
+      "www.tandemcoffee.com",
+      "tandemcoffee.com"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/coffees/products.json"
+    ]
+  },
+  {
+    "name": "The Picky Chemist",
+    "entity_ids": [
+      "962401c8-ef7b-4044-9894-b03590b5445b"
+    ],
+    "hosts": [
+      "en.thepickychemist.com",
+      "thepickychemist.com",
+      "www.thepickychemist.com"
+    ],
+    "adapter": "wix",
+    "listing_paths": [
+      "/boutique"
+    ],
+    "product_path": "/product-page/",
+    "wix_listing_key": "initialData_default_TPASection_kx5ubzyk_default",
+    "wix_coffee_category_id": "f97fd6ca-0f7b-d6d2-2b28-0f6b3dd3c4bf",
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Thoughtful Coffee",
+    "entity_ids": [
+      "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680"
+    ],
+    "hosts": [
+      "thoughtfulcoffee.co",
+      "www.thoughtfulcoffee.co"
+    ],
+    "adapter": "shopify",
+    "listing_paths": [
+      "/collections/specials/products.json",
+      "/collections/terroir/products.json",
+      "/collections/process/products.json"
+    ]
+  },
+  {
+    "name": "XLIII",
+    "entity_ids": [
+      "a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6"
+    ],
+    "hosts": [
+      "xliiicoffee.com",
+      "www.xliiicoffee.com"
+    ],
+    "adapter": "woocommerce",
+    "catalog_path": "/wp-json/wc/store/v1/products",
+    "catalog_page_size": 50,
+    "catalog_query": {
+      "lang": "en"
+    },
+    "coffee_category_ids": [
+      15,
+      613,
+      2507
+    ],
+    "coffee_catalog_verified": true,
+    "product_path": "/en/product/",
+    "net_weight_row_selector": "main.single-product .info-product .list-info li",
+    "exclude_name_pattern": "^specialty coffee experience$",
+    "description_selector": "main.single-product .info-product .inner-info-product"
+  },
+  {
+    "name": "Aery",
+    "entity_ids": [],
+    "hosts": [
+      "aerycoffee.com",
+      "www.aerycoffee.com"
+    ],
+    "adapter": "cafe24",
+    "listing_paths": [
+      "/category/shop/67/"
+    ],
+    "product_link_selector": ".xans-product-listnormal a[name^=\"anchorBoxName_\"]",
+    "seo_product_links": true,
+    "require_pagination": true,
+    "cafe24_native_single_items": true,
+    "coffee_collection_verified": true,
+    "product_name_selector": "[spec=\"prd_name\"]",
+    "exclude_name_pattern": "\\bUFO\\s+Dripper\\b",
+    "description_image_hosts": [
+      "ecimg.cafe24img.com"
+    ]
   }
 ]

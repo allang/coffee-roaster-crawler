@@ -126,7 +126,7 @@ function productAvailability(input = {}) {
   const product = input.sourceProduct || structuredProduct(input.html, input.sourceUrl);
   if (product) {
     const offers = [product.offers || []].flat();
-    const variants = offers.filter(o => o && (!o.url || sameProduct(o.url, input.sourceUrl))).map(o => ({ source_id: offerVariantId(o,input.sourceUrl), title: o.name || null, state: schemaAvailability(o.availability), evidence: [{ source: product._market_source || 'product_jsonld_offer', url:o.url || null, availability: o.availability ?? null }], checkedAt }));
+    const variants = offers.filter(o => o && (!o.url || sameProduct(o.url, input.sourceUrl))).map(o => ({ source_id: offerVariantId(o,input.sourceUrl), title: o.name || null, state: schemaAvailability(o.availability), evidence: [{ source: product._market_source || 'product_jsonld_offer', url:o.url || null, availability: o.availability ?? null,...(o._stock_evidence?{merchant_stock:o._stock_evidence}:{}) }], checkedAt }));
     return result(aggregateStates(variants.map(v => v.state)), 'product_scoped_structured_data', [{ source: product._market_source || 'product_jsonld', name: product.name }], variants);
   }
   const $ = cheerio.load(input.html || '');

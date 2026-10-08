@@ -1,0 +1,250 @@
+{
+  "product": {
+    "id": 50836,
+    "name": "Los Lajones Porton [Geisha Natural #6384]",
+    "slug": "los-lajones-porton-geisha-natural-6384",
+    "parent": 0,
+    "type": "variable",
+    "variation": "",
+    "permalink": "https://tanat.coffee/boutique/los-lajones-porton-geisha-natural-6384/",
+    "sku": "PAN-LOSLAJONES-PORTONGN6384",
+    "description": "",
+    "short_description": "<p>Au cœur des montagnes de Boquete, au Panama, Graciano Cruz cultive à Los Lajones des cafés parmi les plus expressifs de la région.</p>\n<p>Ce Geisha #6384 s’exprime avec une belle intensité aromatique. La tasse s’ouvre sur une mangue mûre et juteuse, rapidement accompagnée par la douceur acidulée de la fraise. L’ananas apporte ensuite une fraîcheur tropicale et une acidité vive, donnant beaucoup d’éclat à l’ensemble. En finale, le jasmin vient étirer la tasse sur une dimension florale, délicate et élégante. Le procédé naturel apporte une sucrosité généreuse qui enveloppe les fruits sans masquer la finesse caractéristique du Geisha.</p>\n<p>Une tasse fruitée, florale et lumineuse, où la gourmandise de la mangue et de la fraise rencontre l’éclat de l’ananas et la délicatesse du jasmin.</p>",
+    "prices": {
+      "price": "5990",
+      "regular_price": "5990",
+      "sale_price": "5990",
+      "price_range": null,
+      "currency_code": "EUR",
+      "currency_symbol": "€",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ",",
+      "currency_thousand_separator": " ",
+      "currency_prefix": "",
+      "currency_suffix": " €"
+    },
+    "images": [
+      {
+        "id": 50835,
+        "src": "https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384.webp",
+        "thumbnail": "https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-300x300.webp",
+        "srcset": "https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384.webp 800w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-300x300.webp 300w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-150x150.webp 150w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-768x768.webp 768w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-350x350.webp 350w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-348x348.webp 348w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-600x600.webp 600w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-100x100.webp 100w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-60x60.webp 60w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-320x320.webp 320w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-32x32.webp 32w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-64x64.webp 64w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-uai-360x360.webp 360w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-uai-480x480.webp 480w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-uai-720x720.webp 720w",
+        "sizes": "(max-width: 800px) 100vw, 800px",
+        "name": "Los Lajones Porton [Geisha Natural #6384]",
+        "alt": "Los Lajones Porton [Geisha Natural #6384]"
+      }
+    ],
+    "categories": [
+      {
+        "id": 18,
+        "name": "Cafés",
+        "slug": "cafes",
+        "link": "https://tanat.coffee/categorie-produit/cafes/"
+      },
+      {
+        "id": 41,
+        "name": "Filtre",
+        "slug": "filtre",
+        "link": "https://tanat.coffee/categorie-produit/cafes/filtre/"
+      },
+      {
+        "id": 44,
+        "name": "Competition",
+        "slug": "competition",
+        "link": "https://tanat.coffee/categorie-produit/cafes/competition/"
+      }
+    ],
+    "attributes": [
+      {
+        "id": 7,
+        "name": "Poids",
+        "taxonomy": "pa_poids",
+        "has_variations": true,
+        "terms": [
+          {
+            "id": 164,
+            "name": "100G",
+            "slug": "100g",
+            "default": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Producteur",
+        "taxonomy": "pa_producer",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 1130,
+            "name": "Graciano Cruz",
+            "slug": "graciano-cruz"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Variété",
+        "taxonomy": "pa_varietal",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 252,
+            "name": "Geisha",
+            "slug": "geisha"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Process",
+        "taxonomy": "pa_process",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 17,
+            "name": "Naturel",
+            "slug": "natural"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Mouture",
+        "taxonomy": "pa_mouture",
+        "has_variations": true,
+        "terms": [
+          {
+            "id": 34,
+            "name": "Espresso",
+            "slug": "espresso",
+            "default": false
+          },
+          {
+            "id": 36,
+            "name": "Filtre",
+            "slug": "filtre",
+            "default": false
+          },
+          {
+            "id": 33,
+            "name": "Grains",
+            "slug": "grains",
+            "default": true
+          },
+          {
+            "id": 35,
+            "name": "Italienne",
+            "slug": "italienne",
+            "default": false
+          },
+          {
+            "id": 37,
+            "name": "Piston",
+            "slug": "piston",
+            "default": false
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Score",
+        "taxonomy": "pa_score-exact",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 547,
+            "name": "92",
+            "slug": "92"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Score Catégorie",
+        "taxonomy": "pa_score",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 90,
+            "name": "90 &amp; +",
+            "slug": "90"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Torréfaction",
+        "taxonomy": "pa_torrefaction",
+        "has_variations": false,
+        "terms": [
+          {
+            "id": 66,
+            "name": "Filtre",
+            "slug": "filtre"
+          }
+        ]
+      }
+    ],
+    "variations": [
+      {
+        "id": 50837,
+        "attributes": [
+          {
+            "name": "Poids",
+            "value": "100g"
+          },
+          {
+            "name": "Mouture",
+            "value": null
+          }
+        ]
+      }
+    ],
+    "is_in_stock": true,
+    "is_purchasable": true,
+    "is_on_backorder": true
+  },
+  "variant": {
+    "id": 50837,
+    "name": "Los Lajones Porton [Geisha Natural #6384]",
+    "slug": "los-lajones-porton-geisha-natural-6384-100g",
+    "parent": 50836,
+    "type": "variation",
+    "variation": "Poids: 100G",
+    "permalink": "https://tanat.coffee/boutique/los-lajones-porton-geisha-natural-6384/?attribute_pa_poids=100g",
+    "sku": "PAN-LOSLAJONES-PORTONGN6384-100g",
+    "description": "",
+    "short_description": "",
+    "prices": {
+      "price": "5990",
+      "regular_price": "5990",
+      "sale_price": "5990",
+      "price_range": null,
+      "currency_code": "EUR",
+      "currency_symbol": "€",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ",",
+      "currency_thousand_separator": " ",
+      "currency_prefix": "",
+      "currency_suffix": " €"
+    },
+    "images": [
+      {
+        "id": 50835,
+        "src": "https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384.webp",
+        "thumbnail": "https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-300x300.webp",
+        "srcset": "https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384.webp 800w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-300x300.webp 300w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-150x150.webp 150w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-768x768.webp 768w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-350x350.webp 350w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-348x348.webp 348w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-600x600.webp 600w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-100x100.webp 100w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-60x60.webp 60w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-320x320.webp 320w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-32x32.webp 32w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-64x64.webp 64w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-uai-360x360.webp 360w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-uai-480x480.webp 480w, https://tanat.coffee/wp-content/uploads/2026/10/PAQUETWEB-Lajones6384-uai-720x720.webp 720w",
+        "sizes": "(max-width: 800px) 100vw, 800px",
+        "name": "Los Lajones Porton [Geisha Natural #6384]",
+        "alt": "Los Lajones Porton [Geisha Natural #6384]"
+      }
+    ],
+    "categories": [],
+    "attributes": [],
+    "variations": [],
+    "is_in_stock": true,
+    "is_purchasable": true,
+    "is_on_backorder": true
+  }
+}

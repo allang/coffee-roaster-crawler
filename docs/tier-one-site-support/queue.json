@@ -7,8 +7,11 @@
       "identity_status": "unmatched",
       "entity_ids": [],
       "candidates": [],
-      "status": "pending",
-      "evidence": null
+      "status": "blocked_catalog_identity",
+      "evidence": "aery-live.json",
+      "note": "Merchant-only Cafe24 parser passed all 18 coffees with native item IDs, paired USD prices, stock states, explicit net sizes and native image descriptions. Reviewed profile has entity_ids=[]; normal registration remains blocked. No owner invented.",
+      "identity_evidence": "aery-blocker.json",
+      "coffee_products": 18
     },
     {
       "name": "April",
@@ -107,8 +110,10 @@
           "name": "Dak"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "merchant_verified_identity_unresolved",
+      "evidence": "dak-live.json",
+      "coffee_products": 23,
+      "note": "Verified candidate entity/domain supported. Original ambiguous audit identity is preserved; no tier import or identity merge performed. Exact native Store API variant EUR context."
     },
     {
       "name": "Flower Child",
@@ -298,8 +303,10 @@
           "name": "Loveless Coffees"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "merchant_verified_identity_unresolved",
+      "evidence": "loveless-live.json",
+      "coffee_products": 12,
+      "note": "Two catalog IDs share the verified official domain. Both are eligible for the same merchant parser; duplicate identity selection/merging is unresolved. Three retail coffees explicitly sold out; five wholesale-only products and gift card excluded."
     },
     {
       "name": "Luminous",
@@ -334,8 +341,10 @@
           "name": "Luna Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "merchant_verified_identity_unresolved",
+      "evidence": "luna-live.json",
+      "coffee_products": 6,
+      "note": "enjoylunacoffee.com candidate supported with exact native offers; lunacafe.com is a distinct merchant. Original ambiguous mapping preserved. Three current coffees explicitly sold out."
     },
     {
       "name": "Momos",
@@ -441,8 +450,10 @@
           "name": "Passenger"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "merchant_verified_identity_unresolved",
+      "evidence": "passenger-live.json",
+      "coffee_products": 24,
+      "note": "US candidate drinkpassenger.com supported through complete Hydrogen cursor inventory and exact USD variant offers. German Passenger is distinct. Ambiguous audit mapping preserved. Two Divino Niño variants are explicit backorders."
     },
     {
       "name": "Prodigal",
@@ -617,8 +628,10 @@
           "name": "TANAT COFFEE"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "tanat-live.json",
+      "coffee_products": 64,
+      "note": "Complete Store API coffee category 18: 67 entries across two pages, 3 recurring subscriptions excluded. Native wildcard grind remains one variant. Explicit sold-out lots and backorders preserved."
     },
     {
       "name": "Tandem",
@@ -636,8 +649,10 @@
           "name": "Tandem"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "merchant_verified_identity_unresolved",
+      "evidence": "tandem-live.json",
+      "coffee_products": 18,
+      "note": "Maine candidate verified: 18 retail coffees including Cup of Excellence, instant coffee, and samplers. Original ambiguous audit identity preserved; tandemcc.com redirects outside verified hosts and was not followed."
     },
     {
       "name": "The Picky Chemist",
@@ -652,8 +667,10 @@
           "name": "The Picky Chemist"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "picky-chemist-live.json",
+      "note": "Wix current shop category complete: 5 coffees, 14 native UUID offers, all explicitly sold out. Net sizes from native Poids/current title; separate Archive excluded.",
+      "coffee_products": 5
     },
     {
       "name": "Thoughtful Coffee",
@@ -668,8 +685,10 @@
           "name": "thoughtful coffee nyc"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "thoughtful-live.json",
+      "note": "Current Special/Terroir/Process retail collections complete: 19 coffees, including sold-out Finca Milan. Native Size fields used, shipping mass ignored.",
+      "coffee_products": 19
     },
     {
       "name": "XLIII",
@@ -684,8 +703,10 @@
           "name": "XLIII Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "xliii-live.json",
+      "note": "Full English Woo catalog complete: 166 packaged coffees, including public 100 g and sold-out listings; native VND exponent 0. Seven legacy sold-out net weights stay unknown. Two subscriptions and one tasting reservation excluded.",
+      "coffee_products": 166
     }
   ]
 }

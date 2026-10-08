@@ -64,6 +64,10 @@ async function fetchPageContent(url, referer = null, options = {}) {
     if(!soft404 && options.siteProfile?.adapter==='subbly'){sourceProduct=await require('./siteSupport/subbly').fetchSubblyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='nuxt_shopify'){sourceProduct=await require('./siteSupport/nuxtShopify').fetchNuxtShopifyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='imweb'){sourceProduct=await require('./siteSupport/imweb').fetchImwebProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='woocommerce' && require('./siteSupport/woocommerce').productPathMatches(result.finalUrl || url,options.siteProfile)){sourceProduct=await require('./siteSupport/woocommerce').fetchWooProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='hydrogen' && /^\/products\/[^/]+\/?$/.test(new URL(result.finalUrl || url).pathname)){sourceProduct=require('./siteSupport/hydrogen').hydrogenProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='wix' && new URL(result.finalUrl || url).pathname.startsWith(options.siteProfile.product_path)){sourceProduct=require('./siteSupport/wix').wixProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='cafe24' && options.siteProfile.cafe24_native_single_items && require('./catalogNormalization').canonicalProductUrl(result.finalUrl || url).includes('/product/detail.html?product_no=')){sourceProduct=await require('./siteSupport/cafe24').fetchCafe24Product(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     return {
       success: true,
       sourceProduct,
