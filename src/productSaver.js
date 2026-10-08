@@ -36,9 +36,15 @@ async function findExistingProduct(db,entityId,sourceUrl,key) {
   if(known) return known;
   const matches=[];
   for(let offset=0;;offset+=500) {
-    const {data,error:readError}=await db.from('products').select('id,slug,source_url,source_key').eq('entity_id',entityId).order('id').range(offset,offset+499);
+    const {data,error:readError}=await db.from('products').select('id,slug,source_url,source_key,metadata').eq('entity_id',entityId).order('id').range(offset,offset+499);
     if(readError) throw readError;
-    for(const row of data || []) { try { if(canonicalProductUrl(row.source_url)===sourceUrl) matches.push(row); } catch {} }
+    for(const row of data || []) {
+      // Historical copies retain their IDs, variants and photos after an owner merge.
+      // Only a reviewed duplicate marker excludes a copy from future adoption.
+      const merge=row.metadata?._entity_merge;
+      if(merge?.reason==='duplicate_source_identity' && merge.canonical_product_id && merge.canonical_product_id!==row.id) continue;
+      try { if(canonicalProductUrl(row.source_url)===sourceUrl) matches.push(row); } catch {}
+    }
     if((data || []).length<500) break;
   }
   if(matches.length>1) throw new Error('Multiple legacy products share source identity; review before adoption');

@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-08T18:50:29.457027+00:00",
+  "catalog_roasters_checked": 9150,
+  "tier_one_source_names": 65,
+  "tier_one_canonical_ids": 65,
+  "remaining_official_domain_duplicates": [],
+  "same_name_candidates_for_review": [
+    {
+      "tier_one_name": "Passenger",
+      "canonical_id": "7557d44c-5584-42cf-a644-aafe9720bd16",
+      "candidate": {
+        "id": "4e4926f4-fdab-4e69-b28a-0f067b2b6720",
+        "name": "Passenger Coffee",
+        "slug": "passenger-coffee",
+        "website_url": "https://www.passenger-coffee.de",
+        "primary_location": "Berlin, Germany"
+      },
+      "official_domain_match": false,
+      "normalized_name_match": true,
+      "resolution": "separate_business_previously_verified",
+      "identity_review_names": [
+        "Passenger"
+      ]
+    },
+    {
+      "tier_one_name": "Tandem Coffee Roasters",
+      "canonical_id": "86089fc8-6ecc-4620-ac4c-b570990d1c22",
+      "candidate": {
+        "id": "f2710b37-9816-4474-86be-4dd15b4220fd",
+        "name": "Tandem",
+        "slug": "tandem",
+        "website_url": "https://tandemcc.com/",
+        "primary_location": "Travelers Rest, South Carolina, US"
+      },
+      "official_domain_match": false,
+      "normalized_name_match": true,
+      "resolution": "separate_business_previously_verified",
+      "identity_review_names": [
+        "Tandem"
+      ]
+    },
+    {
+      "tier_one_name": "Luna Coffee",
+      "canonical_id": "e30e68df-7843-408b-8df0-2ae01df471d9",
+      "candidate": {
+        "id": "2442b266-fb8c-43f6-a7e5-589c6bf94bc5",
+        "name": "Luna Coffee Roasters",
+        "slug": "luna-coffee-roasters",
+        "website_url": "https://lunacafe.com/",
+        "primary_location": "De Pere, Wisconsin, US"
+      },
+      "official_domain_match": false,
+      "normalized_name_match": true,
+      "resolution": "separate_business_previously_verified",
+      "identity_review_names": [
+        "Luna"
+      ]
+    }
+  ],
+  "unresolved_same_domain_matches": []
+}

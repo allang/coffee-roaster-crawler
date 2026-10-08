@@ -306,7 +306,6 @@
       "name": "Loveless",
       "identity_status": "matched",
       "entity_ids": [
-        "281aa870-2867-465c-9594-d7764c9273f6",
         "d85c4ca3-b86e-43b6-8822-aaef6472126a"
       ],
       "candidates": [
@@ -324,9 +323,10 @@
       "status": "implemented_live_dry_run_passed",
       "evidence": "loveless-live.json",
       "coffee_products": 12,
-      "note": "Official Loveless Coffees store confirms 86 Central Ave, Brooklyn. Both existing roaster-role records share that official brand/domain; no entity merge. Existing merchant inventory evidence retained; no entity merge or production tier write.",
-      "identity_resolution": "verified_same_brand_multiple_entities",
-      "identity_evidence": "tier-one-identity-review.json"
+      "note": "Human-requested duplicate merge completed. Keep loveless-coffees; previous adapter, all product/variant IDs, photos and crawl history are preserved. See ../../data/tier-one-entity-merges.json.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json",
+      "merge_evidence": "../../data/tier-one-entity-merges.json"
     },
     {
       "name": "Luminous",
