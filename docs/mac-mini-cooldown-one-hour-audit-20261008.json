@@ -1,0 +1,987 @@
+{
+  "checked_at": "2026-10-08T21:10:36.062Z",
+  "readback_finished_at": "2026-10-08T21:10:36.619Z",
+  "actual_resume_at": "2026-10-08T20:09:39.715Z",
+  "elapsed_seconds": 3656.347,
+  "not_before": "2026-10-08T21:09:39.715Z",
+  "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+  "source_tree": "b074d971b2b8945b400b4034050f48061924d4f4",
+  "remote_main_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+  "working_tree_clean": true,
+  "launch_agent_state": "running",
+  "launch_agent_pid": 59662,
+  "launcher_process": {
+    "pid": 59662,
+    "parent_pid": 1,
+    "state": "S",
+    "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+  },
+  "lock_pid": 59662,
+  "crawler_nodes_in_original_checkout": [
+    {
+      "pid": 59674,
+      "parent_pid": 59662,
+      "state": "S",
+      "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+    }
+  ],
+  "scheduler_owned_node_count": 1,
+  "schedule_seconds": 5400,
+  "configured_roaster_workers": 1,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "launcher_unchanged": true,
+  "old_failed_c7_receipt_unchanged": true,
+  "current_phase": {
+    "tier": 1,
+    "roasters": 56
+  },
+  "phase_transitions_since_installation": [
+    {
+      "tier": 1,
+      "roasters": 56
+    }
+  ],
+  "log_modified_at": "2026-10-08T21:10:15.878Z",
+  "log_age_seconds": 20.184341064453125,
+  "runs": [
+    {
+      "id": "b77a2959-7eba-4ac5-8f3e-386b92526f5e",
+      "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+      "status": "completed",
+      "started_at": "2026-10-08T19:52:09.251+00:00",
+      "finished_at": "2026-10-08T20:15:59.299+00:00",
+      "error": null,
+      "pages_discovered": 22,
+      "pages_visited": 20,
+      "pages_sent_to_gpt": 21,
+      "coffees_found": 20,
+      "meta": {
+        "extraction": {
+          "errors": 0,
+          "aiCalls": 21,
+          "aiUsage": {
+            "cached_tokens": 2176,
+            "prompt_tokens": 45868,
+            "reasoning_tokens": 51712,
+            "unreported_calls": 1,
+            "completion_tokens": 65255
+          },
+          "visited": 20,
+          "cacheHits": 0,
+          "irrelevant": 0,
+          "coffeeFound": 20,
+          "marketChecks": 20,
+          "structuredPages": 0,
+          "structuredProductOnlyPages": 0
+        }
+      },
+      "name": "Luminous Coffee",
+      "log_evidence": {
+        "id": "b77a2959-7eba-4ac5-8f3e-386b92526f5e",
+        "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+        "website": "https://www.loveluminous.coffee",
+        "save_events_in_installation_log": 20,
+        "terminal_visitor": {
+          "visited": 20,
+          "coffeeFound": 20,
+          "irrelevant": 0,
+          "errors": 0
+        },
+        "returned_page_errors": [],
+        "severity_entries": []
+      },
+      "started_before_actual_resume": true,
+      "fresh_owner_product_sightings": 12,
+      "latest_product_sighting": {
+        "id": "a9a4f443-ed8b-4159-931f-202ca41e6cc5",
+        "name": "Tier 3",
+        "source_url": "https://www.loveluminous.coffee/products/tier-3",
+        "product_type": "coffee",
+        "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+        "last_seen_at": "2026-10-08T20:15:56.659+00:00",
+        "updated_at": "2026-10-08T20:15:58.890647+00:00"
+      },
+      "terminal_metrics": {
+        "visited": 20,
+        "coffeeFound": 20,
+        "irrelevant": 0,
+        "errors": 0
+      },
+      "terminal_metric_source": "actual terminal visitor log"
+    },
+    {
+      "id": "870b5b0c-ccb9-4a17-9a58-16f318a76ff9",
+      "entity_id": "c2941ba0-1481-4b69-b800-0d911f2797c3",
+      "status": "failed",
+      "started_at": "2026-10-08T20:16:46.135+00:00",
+      "finished_at": "2026-10-08T20:38:00.258+00:00",
+      "error": "Registered merchant product verification failed: 32 page error(s)",
+      "pages_discovered": 0,
+      "pages_visited": 0,
+      "pages_sent_to_gpt": 0,
+      "coffees_found": 0,
+      "meta": {},
+      "name": "Momos Coffee",
+      "log_evidence": {
+        "id": "870b5b0c-ccb9-4a17-9a58-16f318a76ff9",
+        "entity_id": "c2941ba0-1481-4b69-b800-0d911f2797c3",
+        "website": "https://en.momos.co.kr",
+        "save_events_in_installation_log": 25,
+        "terminal_visitor": {
+          "visited": 57,
+          "coffeeFound": 25,
+          "irrelevant": 0,
+          "errors": 32
+        },
+        "returned_page_errors": [
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7450",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7449",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7410",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4183",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4531",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7431",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4243",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4775",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4484",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4788",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4385",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7378",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7379",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7380",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7381",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7392",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4890",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7395",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=2501",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4901",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7365",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4581",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=3320",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=3267",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=3110",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4745",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=3674",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=7363",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4889",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4891",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4902",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://momos.co.kr/shop_view?idx=4903",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          }
+        ],
+        "severity_entries": [
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7450\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7449\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7410\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4183\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4531\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7431\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4243\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4775\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4484\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4788\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4385\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7378\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7379\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7380\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7381\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7392\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4890\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7395\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=2501\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4901\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7365\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4581\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=3320\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=3267\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=3110\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4745\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=3674\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=7363\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4889\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4891\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4902\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "momos-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://momos.co.kr/shop_view?idx=4903\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "WARN [CrawlRuns] Marked crawl run as failed: 870b5b0c-ccb9-4a17-9a58-16f318a76ff9",
+          "ERROR [Crawler] Failed to crawl Momos Coffee {\"error\":\"Registered merchant product verification failed: 32 page error(s)\"}"
+        ]
+      },
+      "started_before_actual_resume": false,
+      "fresh_owner_product_sightings": 25,
+      "latest_product_sighting": {
+        "id": "03360cf3-dd22-5a43-b011-cd4a29195597",
+        "name": "콜드브루 RTD 235ml",
+        "source_url": "https://momos.co.kr/shop_view?idx=2828",
+        "product_type": "coffee",
+        "entity_id": "c2941ba0-1481-4b69-b800-0d911f2797c3",
+        "last_seen_at": "2026-10-08T20:37:57.198+00:00",
+        "updated_at": "2026-10-08T20:37:59.411449+00:00"
+      },
+      "terminal_metrics": {
+        "visited": 57,
+        "coffeeFound": 25,
+        "irrelevant": 0,
+        "errors": 32
+      },
+      "terminal_metric_source": "actual terminal visitor log"
+    },
+    {
+      "id": "7886ad66-2602-4ae1-988d-a8c0e277caaa",
+      "entity_id": "8528a70e-2033-4fc5-b5c6-1c5f73c0a989",
+      "status": "completed",
+      "started_at": "2026-10-08T20:38:00.887+00:00",
+      "finished_at": "2026-10-08T20:50:09.286+00:00",
+      "error": null,
+      "pages_discovered": 46,
+      "pages_visited": 47,
+      "pages_sent_to_gpt": 47,
+      "coffees_found": 26,
+      "meta": {
+        "extraction": {
+          "errors": 0,
+          "aiCalls": 47,
+          "aiUsage": {
+            "cached_tokens": 0,
+            "prompt_tokens": 90443,
+            "reasoning_tokens": 57472,
+            "unreported_calls": 0,
+            "completion_tokens": 67078
+          },
+          "visited": 47,
+          "cacheHits": 0,
+          "irrelevant": 21,
+          "blacklisted": 32,
+          "coffeeFound": 26,
+          "marketChecks": 26,
+          "quotaExceeded": false,
+          "queueRemaining": 0,
+          "linksDiscovered": 46,
+          "structuredPages": 0,
+          "inventoryComplete": true,
+          "structuredProductOnlyPages": 0
+        }
+      },
+      "name": "Airship Coffee",
+      "log_evidence": {
+        "id": "7886ad66-2602-4ae1-988d-a8c0e277caaa",
+        "entity_id": "8528a70e-2033-4fc5-b5c6-1c5f73c0a989",
+        "website": "https://airshipcoffee.com/",
+        "save_events_in_installation_log": 26,
+        "terminal_visitor": null,
+        "returned_page_errors": [],
+        "severity_entries": []
+      },
+      "started_before_actual_resume": false,
+      "fresh_owner_product_sightings": 26,
+      "latest_product_sighting": {
+        "id": "7a987ed3-5eb4-43e2-81e4-19c71b9754ff",
+        "name": "Espresso Series 1",
+        "source_url": "https://www.airshipcoffee.com/products/espresso-series-1",
+        "product_type": "coffee",
+        "entity_id": "8528a70e-2033-4fc5-b5c6-1c5f73c0a989",
+        "last_seen_at": "2026-10-08T20:50:07.669+00:00",
+        "updated_at": "2026-10-08T20:50:09.084776+00:00"
+      },
+      "terminal_metrics": {
+        "visited": 47,
+        "coffeeFound": 26,
+        "irrelevant": 21,
+        "errors": 0
+      },
+      "terminal_metric_source": "finalized database extraction metrics; BFS log also records47visited/26coffees"
+    },
+    {
+      "id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "status": "failed",
+      "started_at": "2026-10-08T20:50:36.704+00:00",
+      "finished_at": "2026-10-08T20:53:52.308+00:00",
+      "error": "Registered merchant product verification failed: 6 page error(s)",
+      "pages_discovered": 0,
+      "pages_visited": 0,
+      "pages_sent_to_gpt": 0,
+      "coffees_found": 0,
+      "meta": {},
+      "name": " Hydrangea Coffee Roasters",
+      "log_evidence": {
+        "id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+        "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+        "website": "https://hydrangea.coffee",
+        "save_events_in_installation_log": 22,
+        "terminal_visitor": {
+          "visited": 28,
+          "coffeeFound": 22,
+          "irrelevant": 0,
+          "errors": 6
+        },
+        "returned_page_errors": [
+          {
+            "url": "https://hydrangea.coffee/products/salma-bermudez",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://hydrangea.coffee/products/rested-gesha-salma-bermudez-finca-el-paraiso",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://hydrangea.coffee/products/castillo-lychee-finca-el-paraiso-copy",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://hydrangea.coffee/products/rested-caturra-semi-washed-finca-el-sendero",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://hydrangea.coffee/products/rested-sl34-sl28-ruiru-11-batian-washed-karinga-ab",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          },
+          {
+            "url": "https://hydrangea.coffee/products/rested-castillo-lulo-washed-finca-santa-monica",
+            "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+          }
+        ],
+        "severity_entries": [
+          "hydrangea-coffee-roasters\t\tERROR [Visitor] Page returned an error {\"url\":\"https://hydrangea.coffee/products/salma-bermudez\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "hydrangea-coffee-roasters\t\tERROR [Visitor] Page returned an error {\"url\":\"https://hydrangea.coffee/products/rested-gesha-salma-bermudez-finca-el-paraiso\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "hydrangea-coffee-roasters\t\tERROR [Visitor] Page returned an error {\"url\":\"https://hydrangea.coffee/products/castillo-lychee-finca-el-paraiso-copy\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "hydrangea-coffee-roasters\t\tERROR [Visitor] Page returned an error {\"url\":\"https://hydrangea.coffee/products/rested-caturra-semi-washed-finca-el-sendero\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "hydrangea-coffee-roasters\t\tERROR [Visitor] Page returned an error {\"url\":\"https://hydrangea.coffee/products/rested-sl34-sl28-ruiru-11-batian-washed-karinga-ab\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "hydrangea-coffee-roasters\t\tERROR [Visitor] Page returned an error {\"url\":\"https://hydrangea.coffee/products/rested-castillo-lulo-washed-finca-santa-monica\",\"error\":\"duplicate key value violates unique constraint \\\"product_variants_unique_weight_per_product\\\"\"}",
+          "WARN [CrawlRuns] Marked crawl run as failed: 35322ed5-182a-45c9-8899-6f0fac1035ca",
+          "ERROR [Crawler] Failed to crawl  Hydrangea Coffee Roasters {\"error\":\"Registered merchant product verification failed: 6 page error(s)\"}"
+        ]
+      },
+      "started_before_actual_resume": false,
+      "fresh_owner_product_sightings": 22,
+      "latest_product_sighting": {
+        "id": "aed0c7bb-a473-5ca6-a4d4-77a12e3440a0",
+        "name": "[Rested] Gesha - Natural DRD - Elida Estate, Lot Vuelta",
+        "source_url": "https://hydrangea.coffee/products/rested-gesha-natural-drd-elida-estate-lot-vuelta",
+        "product_type": "coffee",
+        "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+        "last_seen_at": "2026-10-08T20:53:51.575+00:00",
+        "updated_at": "2026-10-08T20:53:51.927876+00:00"
+      },
+      "terminal_metrics": {
+        "visited": 28,
+        "coffeeFound": 22,
+        "irrelevant": 0,
+        "errors": 6
+      },
+      "terminal_metric_source": "actual terminal visitor log"
+    },
+    {
+      "id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "status": "running",
+      "started_at": "2026-10-08T20:53:53.15+00:00",
+      "finished_at": null,
+      "error": null,
+      "pages_discovered": 0,
+      "pages_visited": 0,
+      "pages_sent_to_gpt": 0,
+      "coffees_found": 0,
+      "meta": {},
+      "name": "September Coffee",
+      "log_evidence": {
+        "id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+        "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+        "website": "https://september.coffee/",
+        "save_events_in_installation_log": 32,
+        "terminal_visitor": null,
+        "returned_page_errors": [
+          {
+            "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026",
+            "error": "Registered Shopify source incomplete: HTTP 500"
+          },
+          {
+            "url": "https://september.coffee/en-us/products/golden-hour",
+            "error": "Registered Shopify source incomplete: incomplete SKU set"
+          },
+          {
+            "url": "https://september.coffee/en-us/products/rung-eto-kii-aa",
+            "error": "Registered Shopify source incomplete: incomplete SKU set"
+          }
+        ],
+        "severity_entries": [
+          "september-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026\",\"error\":\"Registered Shopify source incomplete: HTTP 500\"}",
+          "september-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://september.coffee/en-us/products/golden-hour\",\"error\":\"Registered Shopify source incomplete: incomplete SKU set\"}",
+          "september-coffee\t\tERROR [Visitor] Page returned an error {\"url\":\"https://september.coffee/en-us/products/rung-eto-kii-aa\",\"error\":\"Registered Shopify source incomplete: incomplete SKU set\"}"
+        ]
+      },
+      "started_before_actual_resume": false,
+      "fresh_owner_product_sightings": 32,
+      "latest_product_sighting": {
+        "id": "ea6d375b-5a6a-5bd9-b59b-3a637c39dce6",
+        "name": "Jose Lizardo Cuellar - Geisha",
+        "source_url": "https://september.coffee/en-us/products/jose-lizardo-cuellar-gesha",
+        "product_type": "coffee",
+        "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+        "last_seen_at": "2026-10-08T21:10:09.484+00:00",
+        "updated_at": "2026-10-08T21:10:14.314149+00:00"
+      },
+      "terminal_metrics": null,
+      "terminal_metric_source": null
+    }
+  ],
+  "completed_run_count": 2,
+  "failed_run_count": 2,
+  "terminal_page_error_total": 38,
+  "current_running_runs": [
+    {
+      "id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "name": "September Coffee",
+      "started_at": "2026-10-08T20:53:53.15+00:00",
+      "error": null
+    }
+  ],
+  "latest_coffee_write": {
+    "id": "ea6d375b-5a6a-5bd9-b59b-3a637c39dce6",
+    "name": "Jose Lizardo Cuellar - Geisha",
+    "source_url": "https://september.coffee/en-us/products/jose-lizardo-cuellar-gesha",
+    "product_type": "coffee",
+    "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+    "last_seen_at": "2026-10-08T21:10:09.484+00:00",
+    "updated_at": "2026-10-08T21:10:14.314149+00:00"
+  },
+  "known_momos_index_failure": {
+    "preserved": true,
+    "error_count": 32,
+    "sql_bound_count": 32,
+    "receipt_commit": "fd705ed6a126c6f37bf365b7625ff59a6f9fe77c",
+    "schema_change_pending": true,
+    "last_index_select_at": "2026-10-08T20:41:54.26452+00:00"
+  },
+  "additional_distinct_page_errors": [
+    {
+      "run_id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "url": "https://hydrangea.coffee/products/salma-bermudez",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "run_id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "url": "https://hydrangea.coffee/products/rested-gesha-salma-bermudez-finca-el-paraiso",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "run_id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "url": "https://hydrangea.coffee/products/castillo-lychee-finca-el-paraiso-copy",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "run_id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "url": "https://hydrangea.coffee/products/rested-caturra-semi-washed-finca-el-sendero",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "run_id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "url": "https://hydrangea.coffee/products/rested-sl34-sl28-ruiru-11-batian-washed-karinga-ab",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "run_id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "url": "https://hydrangea.coffee/products/rested-castillo-lulo-washed-finca-santa-monica",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "run_id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "name": "September Coffee",
+      "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026",
+      "error": "Registered Shopify source incomplete: HTTP 500"
+    },
+    {
+      "run_id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "name": "September Coffee",
+      "url": "https://september.coffee/en-us/products/golden-hour",
+      "error": "Registered Shopify source incomplete: incomplete SKU set"
+    },
+    {
+      "run_id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "name": "September Coffee",
+      "url": "https://september.coffee/en-us/products/rung-eto-kii-aa",
+      "error": "Registered Shopify source incomplete: incomplete SKU set"
+    }
+  ],
+  "additional_failed_runs": [
+    {
+      "id": "35322ed5-182a-45c9-8899-6f0fac1035ca",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "error": "Registered merchant product verification failed: 6 page error(s)"
+    }
+  ],
+  "passport_full_readback": {
+    "passed": true,
+    "run_id": "29d25480-cdac-4759-a63d-f5d3afad7cb1",
+    "coffees": 255,
+    "native_skus": 528,
+    "decoded_hash_matching_images": 169,
+    "validated_at": "2026-10-08T20:10:54.280Z",
+    "receipt_commit": "877aaa5619dc628571bc8a3e32fdda0e403c48dd",
+    "revalidated_by_this_audit": false
+  },
+  "actions": {
+    "database_read_only": true,
+    "migrations": 0,
+    "restarts": 0,
+    "signals": 0,
+    "settings_changes": 0,
+    "run_relabeling": 0,
+    "automations": 0,
+    "models": 0,
+    "purchases": 0
+  },
+  "limitations": [
+    "Active-run final counters and returned errors remain unfinalized.",
+    "Save event counts cover each run in the installation log; a run begun before the actual resume can include earlier saves.",
+    "Owner product sightings are progress since actual resume, not full SKU/origin/photo truth certification.",
+    "Index proof is the dated20:41 SELECT; this audit performs no new schema query or migration.",
+    "Known Momos failures are actual new errors and preclude any error-free health claim."
+  ],
+  "airship_source_integrity": {
+    "observed_at": "2026-10-08T20:56:10.685Z",
+    "run_id": "7886ad66-2602-4ae1-988d-a8c0e277caaa",
+    "completed_pipeline_errors": 0,
+    "confirmed_placeholder_count": 7,
+    "current_active_literal_placeholders": [
+      {
+        "id": "08dcd938-5006-547b-a286-ca893e2950fe",
+        "name": "Product Title",
+        "is_active": true,
+        "source_url": "https://www.airshipcoffee.com/collections/medium-roast",
+        "last_seen_at": "2026-10-08T20:43:59.01+00:00"
+      },
+      {
+        "id": "21a00181-15a5-513f-8553-ff74d0f0ce56",
+        "name": "Product Title",
+        "is_active": true,
+        "source_url": "https://www.airshipcoffee.com/collections/dark-roasty-revival",
+        "last_seen_at": "2026-10-08T20:42:41.084+00:00"
+      },
+      {
+        "id": "7d505c67-aaa3-5baa-b2e4-3df8054046ab",
+        "name": "Product Title",
+        "is_active": true,
+        "source_url": "https://www.airshipcoffee.com/collections/dark-roast",
+        "last_seen_at": "2026-10-08T20:42:55.49+00:00"
+      },
+      {
+        "id": "a364a0f7-b71d-5f2a-bb96-2a515f168e85",
+        "name": "Product Title",
+        "is_active": true,
+        "source_url": "https://www.airshipcoffee.com/collections/coffee",
+        "last_seen_at": "2026-10-08T20:41:11.167+00:00"
+      },
+      {
+        "id": "a46535f2-de89-5d9d-b3d1-edff403350d3",
+        "name": "Product Title",
+        "is_active": true,
+        "source_url": "https://www.airshipcoffee.com/collections/light-roast",
+        "last_seen_at": "2026-10-08T20:49:38.427+00:00"
+      },
+      {
+        "id": "c2ef57e1-f40f-55d3-b107-1ff4ab782dbc",
+        "name": "Product Title",
+        "is_active": true,
+        "source_url": "https://www.airshipcoffee.com/collections/medium-dark-roast",
+        "last_seen_at": "2026-10-08T20:41:55.749+00:00"
+      },
+      {
+        "id": "f65bcd8c-37ac-586f-8051-64502f349684",
+        "name": "Product Title",
+        "is_active": true,
+        "source_url": "https://www.airshipcoffee.com/collections/natural-coffees",
+        "last_seen_at": "2026-10-08T20:44:42.525+00:00"
+      }
+    ],
+    "repair_verified_by_this_audit": false,
+    "evidence": "Seven collection imports from cart-template Product Title; distinct from weight index failures"
+  },
+  "catalog_validity_proved": false,
+  "runtime_preserved": true,
+  "crawl_error_free": false,
+  "observed_returned_page_error_total": 41,
+  "fresh_owner_product_sighting_total": 117,
+  "september_error_readback": {
+    "checked_at": "2026-10-08T21:12:35.260Z",
+    "run_id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+    "run_started_at": "2026-10-08T20:53:53.15+00:00",
+    "errors": [
+      {
+        "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026",
+        "error": "Registered Shopify source incomplete: HTTP 500",
+        "native_reason": "HTTP 500",
+        "native_json_endpoint": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026.json",
+        "native_ajax_endpoint": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026.js",
+        "known_page_present": true,
+        "prior_known_exact_url": true,
+        "historical_wire_http_status": null,
+        "historical_reader_cooldown_fields": null,
+        "native_endpoint_binding": "Installed fetchShopifyProductJson fetches exact source URL .json first, then .js for exact-ID stock/SKU completeness. Runtime retained no per-attempt reader ledger.",
+        "actual_native_failure_url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026.json",
+        "logged_native_http_error": 500,
+        "binding": "Exact ShopifyJSON failed-fetch warning URL/error plus Visitor returned message",
+        "known_page": {
+          "id": "a5e726dc-7b95-4260-ad81-3fd5724880a2",
+          "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026",
+          "status": "coffee",
+          "first_seen_at": "2026-09-06T23:11:29.629+00:00",
+          "last_seen_at": "2026-09-06T23:11:29.629+00:00",
+          "last_fetched_at": null,
+          "last_status_code": null,
+          "last_classified_at": "2026-09-06T23:11:29.01+00:00",
+          "last_classified_by": "gpt-5-mini",
+          "times_seen": 1,
+          "cached_product_name": "Jorge Rojas - Colombia Washed Geisha (2026)",
+          "cached_is_coffee_page": true
+        },
+        "exact_source_url_product_match_present": false,
+        "prior_known_scope": "exact known_pages URL only; absence is not proof that the coffee has no product under another canonical/native alias"
+      },
+      {
+        "url": "https://september.coffee/en-us/products/golden-hour",
+        "error": "Registered Shopify source incomplete: incomplete SKU set",
+        "native_reason": "incomplete SKU set",
+        "native_json_endpoint": "https://september.coffee/en-us/products/golden-hour.json",
+        "native_ajax_endpoint": "https://september.coffee/en-us/products/golden-hour.js",
+        "known_page_present": true,
+        "prior_known_exact_url": true,
+        "historical_wire_http_status": null,
+        "historical_reader_cooldown_fields": null,
+        "native_endpoint_binding": "Installed fetchShopifyProductJson fetches exact source URL .json first, then .js for exact-ID stock/SKU completeness. Runtime retained no per-attempt reader ledger.",
+        "known_page": {
+          "id": "3ab2e55c-fa1f-4403-8893-4dd8d02e566c",
+          "url": "https://september.coffee/en-us/products/golden-hour",
+          "status": "coffee",
+          "first_seen_at": "2026-09-06T23:04:22.618+00:00",
+          "last_seen_at": "2026-09-06T23:04:22.618+00:00",
+          "last_fetched_at": null,
+          "last_status_code": null,
+          "last_classified_at": "2026-09-06T23:04:21.833+00:00",
+          "last_classified_by": "gpt-5-mini",
+          "times_seen": 1,
+          "cached_product_name": "Golden Hour",
+          "cached_is_coffee_page": true
+        },
+        "exact_source_url_product_match_present": false,
+        "prior_known_scope": "exact known_pages URL only; absence is not proof that the coffee has no product under another canonical/native alias"
+      },
+      {
+        "url": "https://september.coffee/en-us/products/rung-eto-kii-aa",
+        "error": "Registered Shopify source incomplete: incomplete SKU set",
+        "native_reason": "incomplete SKU set",
+        "native_json_endpoint": "https://september.coffee/en-us/products/rung-eto-kii-aa.json",
+        "native_ajax_endpoint": "https://september.coffee/en-us/products/rung-eto-kii-aa.js",
+        "known_page_present": false,
+        "prior_known_exact_url": false,
+        "historical_wire_http_status": null,
+        "historical_reader_cooldown_fields": null,
+        "native_endpoint_binding": "Installed fetchShopifyProductJson fetches exact source URL .json first, then .js for exact-ID stock/SKU completeness. Runtime retained no per-attempt reader ledger.",
+        "known_page": null,
+        "exact_source_url_product_match_present": false,
+        "prior_known_scope": "exact known_pages URL only; absence is not proof that the coffee has no product under another canonical/native alias"
+      }
+    ]
+  },
+  "september_fresh_native_diagnostic": {
+    "checked_at": "2026-10-08T21:14:05.286Z",
+    "scope": "Fresh bounded GET diagnostics of two SKU-completeness failures, not original-run wire reconstruction",
+    "samples": [
+      {
+        "url": "https://september.coffee/en-us/products/golden-hour",
+        "checked_at": "2026-10-08T21:14:04.279Z",
+        "diagnosis": {
+          "json_product_id": 7724924895330,
+          "json_handle": "golden-hour",
+          "json_variant_ids": [
+            "43018412720226"
+          ],
+          "ajax_product_id": 7724924895330,
+          "ajax_handle": "golden-hour",
+          "ajax_variant_ids": [
+            "43018412720226"
+          ],
+          "identity_match": true,
+          "variants_complete": true,
+          "ajax_available_types": [
+            {
+              "id": 43018412720226,
+              "type": "boolean"
+            }
+          ]
+        },
+        "requests": [
+          {
+            "url": "https://september.coffee/en-us/products/golden-hour.json",
+            "result": {
+              "success": true,
+              "status": 200,
+              "final_url": "https://september.coffee/en-us/products/golden-hour.json"
+            }
+          },
+          {
+            "url": "https://september.coffee/en-us/products/golden-hour.js",
+            "result": {
+              "success": true,
+              "status": 200,
+              "final_url": "https://september.coffee/en-us/products/golden-hour.js"
+            }
+          }
+        ]
+      },
+      {
+        "url": "https://september.coffee/en-us/products/rung-eto-kii-aa",
+        "checked_at": "2026-10-08T21:14:05.286Z",
+        "diagnosis": {
+          "json_product_id": 7806220206178,
+          "json_handle": "rung-eto-kii-aa",
+          "json_variant_ids": [
+            "43350501359714"
+          ],
+          "ajax_product_id": 7806220206178,
+          "ajax_handle": "rung-eto-kii-aa",
+          "ajax_variant_ids": [
+            "43350501359714"
+          ],
+          "identity_match": true,
+          "variants_complete": true,
+          "ajax_available_types": [
+            {
+              "id": 43350501359714,
+              "type": "boolean"
+            }
+          ]
+        },
+        "requests": [
+          {
+            "url": "https://september.coffee/en-us/products/rung-eto-kii-aa.json",
+            "result": {
+              "success": true,
+              "status": 200,
+              "final_url": "https://september.coffee/en-us/products/rung-eto-kii-aa.json"
+            }
+          },
+          {
+            "url": "https://september.coffee/en-us/products/rung-eto-kii-aa.js",
+            "result": {
+              "success": true,
+              "status": 200,
+              "final_url": "https://september.coffee/en-us/products/rung-eto-kii-aa.js"
+            }
+          }
+        ]
+      }
+    ],
+    "reader_requests": [
+      {
+        "method": "GET",
+        "url": "https://september.coffee/en-us/products/golden-hour.json",
+        "status": 200,
+        "at": "2026-10-08T21:14:03.625Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://september.coffee/en-us/products/golden-hour.js",
+        "status": 200,
+        "at": "2026-10-08T21:14:04.129Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://september.coffee/en-us/products/rung-eto-kii-aa.json",
+        "status": 200,
+        "at": "2026-10-08T21:14:04.634Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://september.coffee/en-us/products/rung-eto-kii-aa.js",
+        "status": 200,
+        "at": "2026-10-08T21:14:05.140Z",
+        "attempt": 1,
+        "retry": 0
+      }
+    ],
+    "reader_errors": [],
+    "cooldown_events": [],
+    "models": 0,
+    "database_mutations": 0,
+    "merchant_mutations": 0
+  },
+  "no_historical_error_or_invalid_record_repair_applied": true,
+  "historical_sql_binding_scope": "32 Momos records have exact retained server SQL23505/productUUID/weight/time binding. The six new Hydrangea messages name the same unique index; this audit does not claim fresh retained server bindings for those six.",
+  "post_audit_airship_quarantine": {
+    "checked_at": "2026-10-08T21:16:32.938Z",
+    "coordinating_thread_reported_quarantine_at": "2026-10-08T21:13:43Z",
+    "scope": "Fresh minimal readback of the seven literal-placeholder IDs after the separate coordinating-thread13-record quarantine; no broader repair certification by this audit",
+    "products": [
+      {
+        "id": "08dcd938-5006-547b-a286-ca893e2950fe",
+        "name": "Product Title",
+        "is_active": false,
+        "source_url": "https://www.airshipcoffee.com/collections/medium-roast",
+        "updated_at": "2026-10-08T21:13:42.235038+00:00"
+      },
+      {
+        "id": "21a00181-15a5-513f-8553-ff74d0f0ce56",
+        "name": "Product Title",
+        "is_active": false,
+        "source_url": "https://www.airshipcoffee.com/collections/dark-roasty-revival",
+        "updated_at": "2026-10-08T21:13:42.235038+00:00"
+      },
+      {
+        "id": "7d505c67-aaa3-5baa-b2e4-3df8054046ab",
+        "name": "Product Title",
+        "is_active": false,
+        "source_url": "https://www.airshipcoffee.com/collections/dark-roast",
+        "updated_at": "2026-10-08T21:13:42.235038+00:00"
+      },
+      {
+        "id": "a364a0f7-b71d-5f2a-bb96-2a515f168e85",
+        "name": "Product Title",
+        "is_active": false,
+        "source_url": "https://www.airshipcoffee.com/collections/coffee",
+        "updated_at": "2026-10-08T21:13:42.235038+00:00"
+      },
+      {
+        "id": "a46535f2-de89-5d9d-b3d1-edff403350d3",
+        "name": "Product Title",
+        "is_active": false,
+        "source_url": "https://www.airshipcoffee.com/collections/light-roast",
+        "updated_at": "2026-10-08T21:13:42.235038+00:00"
+      },
+      {
+        "id": "c2ef57e1-f40f-55d3-b107-1ff4ab782dbc",
+        "name": "Product Title",
+        "is_active": false,
+        "source_url": "https://www.airshipcoffee.com/collections/medium-dark-roast",
+        "updated_at": "2026-10-08T21:13:42.235038+00:00"
+      },
+      {
+        "id": "f65bcd8c-37ac-586f-8051-64502f349684",
+        "name": "Product Title",
+        "is_active": false,
+        "source_url": "https://www.airshipcoffee.com/collections/natural-coffees",
+        "updated_at": "2026-10-08T21:13:42.235038+00:00"
+      }
+    ],
+    "seven_literal_records_now_inactive": true,
+    "catalog_mutations_by_this_check": 0,
+    "source_installation_by_this_check": false
+  }
+}
