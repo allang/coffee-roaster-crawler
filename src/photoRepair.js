@@ -26,7 +26,9 @@ async function inspectPhoto(product,{fetchPage,fetchImage}) {
   const sourceProduct=require('./productEvidence').structuredProduct(page.data,finalUrl);
   const image=primaryProductImage({html:page.data,url:finalUrl,sourceProduct});
   if(!image.url)return {...base,status:'held',reason:image.reason};
-  if(!compatibleTitle(product.name,image.evidence.product_name,product.roaster))return {...base,status:'held',reason:'current_product_title_requires_review',current_name:image.evidence.product_name,image_url:image.url};
+  const alias=require('../data/coffee-photo-title-aliases.json').find(a=>a.product_id===product.id && a.entity_id===product.entity_id && a.source_url===product.source_url && a.stored_title===product.name && a.current_title===image.evidence.product_name);
+  if(!compatibleTitle(product.name,image.evidence.product_name,product.roaster) && !alias)return {...base,status:'held',reason:'current_product_title_requires_review',current_name:image.evidence.product_name,image_url:image.url};
+  if(alias)image.evidence.reviewed_title_alias=alias.reason;
   const result=await fetchImage(image.url,{referer:page.finalUrl || product.source_url});
   if(!result.success)return {...base,status:'held',reason:result.error,image_url:image.url};
   const buffer=Buffer.from(result.data),format=await validateImage(buffer);

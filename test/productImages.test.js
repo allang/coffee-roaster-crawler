@@ -49,6 +49,11 @@ test('image verification accepts real image bytes and blocks HTML and prohibited
  const corrupt=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html}),fetchImage:async()=>({success:true,data:truncated})});assert.equal(corrupt.reason,'invalid_image_body');
  const namedPage='<main><h1>Ethiopia</h1></main>'+schema({'@type':'Product',name:'Ethiopia',image,offers:{price:'18',priceCurrency:'EUR'}});
  const named=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:namedPage,finalUrl:url}),fetchImage:async()=>({success:true,data:png})});assert.equal(named.status,'ready');
+ const alias=require('../data/coffee-photo-title-aliases.json')[0],aliasPage=schema({'@type':'Product',url:alias.source_url,name:alias.current_title,image});
+ const aliasProduct={id:alias.product_id,entity_id:alias.entity_id,name:alias.stored_title,source_url:alias.source_url};
+ const aliasDependencies={fetchPage:async()=>({success:true,data:aliasPage,finalUrl:alias.source_url}),fetchImage:async()=>({success:true,data:png})};
+ assert.equal((await inspectPhoto(aliasProduct,aliasDependencies)).status,'ready');
+ assert.equal((await inspectPhoto({...aliasProduct,entity_id:'different-owner'},aliasDependencies)).status,'held');
 });
 test('catalog save stores a real photo, repairs existing records idempotently and preserves a present photo',async()=>{
  const pg=await catalogDb();try {
