@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-10-08T18:38:02.430Z",
+  "authorization": "User requested confirmed tier-one duplicate merges, simpler existing slugs and preservation of previous fixes.",
+  "status": "applied_and_read_back",
+  "tier_one_source_names": 65,
+  "tier_one_canonical_ids": 65,
+  "groups": [
+    {
+      "name": "Loveless",
+      "canonical_id": "d85c4ca3-b86e-43b6-8822-aaef6472126a",
+      "canonical_slug": "loveless-coffees",
+      "duplicate_id": "281aa870-2867-465c-9594-d7764c9273f6",
+      "duplicate_slug": "nyccafelist-loveless-coffees-df6cea",
+      "products": 40,
+      "retained_products": 36,
+      "archived_duplicates": 4
+    },
+    {
+      "name": "Dayglow",
+      "canonical_id": "4a9b314c-d48f-44b1-a9d6-59f70fd38cb4",
+      "canonical_slug": "dayglow-coffee",
+      "duplicate_id": "77a7fc6f-5153-4d71-a0e8-d00c51a052e6",
+      "duplicate_slug": "dayglow-osm-osm-node-7905428421",
+      "products": 280,
+      "retained_products": 195,
+      "archived_duplicates": 85
+    },
+    {
+      "name": "Glitch",
+      "canonical_id": "5421c825-7e29-427b-a0b7-8a7dce98029a",
+      "canonical_slug": "glitch",
+      "duplicate_id": "dcffb77d-4492-4e5b-860f-c78e3540402d",
+      "duplicate_slug": "glitch-coffee-and-roasters",
+      "products": 94,
+      "retained_products": 94,
+      "archived_duplicates": 0
+    },
+    {
+      "name": "Little Wolf",
+      "canonical_id": "b116fcb1-933b-4ac5-b57c-4dae7580da22",
+      "canonical_slug": "little-wolf",
+      "duplicate_id": "7c6bdbd5-e667-406b-aadf-97e408c4fe6b",
+      "duplicate_slug": "little-wolf-coffee-osm-osm-node-9584127038",
+      "products": 73,
+      "retained_products": 54,
+      "archived_duplicates": 19
+    },
+    {
+      "name": "Moonwake",
+      "canonical_id": "21fd9a7b-5d94-46a3-9db2-bd27d8803432",
+      "canonical_slug": "moonwake-coffee-roasters",
+      "duplicate_id": "38371d64-3a44-47f7-a4e8-89ef83968d1e",
+      "duplicate_slug": "moonwake-coffee-roasters-osm-osm-node-13111844361",
+      "products": 295,
+      "retained_products": 150,
+      "archived_duplicates": 145
+    },
+    {
+      "name": "Push X Pull",
+      "canonical_id": "c80ad86e-bd39-4b0a-be8c-b421dc574c4a",
+      "canonical_slug": "push-pull",
+      "duplicate_id": "183c5ec9-7c7c-470d-b098-c2b616ad013b",
+      "duplicate_slug": "push-x-pull-osm-osm-node-6111277805",
+      "products": 102,
+      "retained_products": 94,
+      "archived_duplicates": 8
+    }
+  ],
+  "preservation": {
+    "products": 884,
+    "product_variants": 1688,
+    "existing_product_media": 1163,
+    "additional_existing_photo_links": 1,
+    "coffee_facts": 884,
+    "catalog_schema_changes": 0
+  },
+  "excluded_separate_cafes": "Cafe-only Dayglow branches and the separate Little Wolf cafe remain distinct.",
+  "pending_unrelated_schema_change": "Native variant weight compatibility migration is not part of this operation.",
+  "applied_at": "2026-10-08T18:48:58.355406+00:00",
+  "readback": {
+    "checked_at": "2026-10-08T18:50:29.457027+00:00",
+    "repeat_application_changed_rows": 0,
+    "canonical_entities": 6,
+    "products_preserved": 884,
+    "variant_rows_preserved": 1688,
+    "existing_photo_links_preserved": 1163,
+    "photo_links_after": 1164,
+    "crawl_run_ids_preserved": 821,
+    "location_ids_preserved": 11,
+    "canonical_slugs": [
+      "dayglow-coffee",
+      "glitch",
+      "little-wolf",
+      "loveless-coffees",
+      "moonwake-coffee-roasters",
+      "push-pull"
+    ],
+    "schema_changes": 0
+  }
+}
