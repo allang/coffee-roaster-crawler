@@ -1,7 +1,7 @@
 const { getSupabase } = require('./supabase');
 const globalLogger = require('./logger');
 const crypto = require('crypto');
-const { fetchSourceImage,imageFormat } = require('./sourceImage');
+const { fetchSourceImage,validateImage } = require('./sourceImage');
 const {imageUrl:resolveImageUrl}=require('./productImages');
 
 const BUCKET_NAME = 'assets';
@@ -30,7 +30,7 @@ async function downloadAndSaveImage(productId, imageUrl, log = null, options={})
     const cacheAndLink=async assetId=>{
       if(!await linkProductMedia(productId,assetId,logger,supabase)) return null;
       const {error}=await supabase.from('media_source_cache').upsert({source_url:normalizedUrl,media_asset_id:assetId,checked_at:new Date().toISOString()},{onConflict:'source_url'});
-      if(error) throw error;
+      if(error)logger.warn('ImageDownloader','Photo linked; source cache update failed',{productId,error:error.message});
       return assetId;
     };
     const result = await (options.fetchImage || fetchSourceImage)(normalizedUrl, {
@@ -44,7 +44,7 @@ async function downloadAndSaveImage(productId, imageUrl, log = null, options={})
     }
 
     const buffer = Buffer.from(result.data);
-    const format=imageFormat(buffer);
+    const format=await validateImage(buffer);
     if(!format) {logger.warn('ImageDownloader','Response is not a supported product image',{productId});return null;}
     const contentHash = crypto.createHash('md5').update(buffer).digest('hex');
 
@@ -89,6 +89,7 @@ async function downloadAndSaveImage(productId, imageUrl, log = null, options={})
       .insert({
         url: publicUrl,
         content_hash: contentHash,
+        width:format.width,height:format.height,
       })
       .select('id')
       .single();

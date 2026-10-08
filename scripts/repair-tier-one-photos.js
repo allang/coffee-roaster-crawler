@@ -30,10 +30,15 @@ async function main(args=process.argv.slice(2)) {
   if(mode==='plan') {
     const products=await allRows(db,'products','id,entity_id,name,source_url,product_type,is_active,is_available,last_seen_at,availability_last_seen_at,product_media(media_assets(url))',[...owners.keys()]);productsRead=products.length;
     const cutoff=Date.now()-30*86400_000;
-    const missing=products.filter(p=>p.product_type==='coffee' && !hasPhoto(p) && (!args.includes('--recent') || ['last_seen_at','availability_last_seen_at'].some(k=>Date.parse(p[k])>=cutoff)));
+    const reviewIndex=args.indexOf('--review-plan');
+    const prior=reviewIndex>=0?JSON.parse(fs.readFileSync(args[reviewIndex+1],'utf8')):null;
+    if(prior && (prior.version!==1 || prior.mode!=='read-only-photo-plan' || prior.source_commit!==manifest.source_commit))throw Error('Invalid prior read-only plan');
+    const priorReady=prior?new Set(prior.entries.filter(e=>e.status==='ready').map(e=>e.product_id)):null;
+    if(prior)entries=prior.entries.filter(e=>e.status!=='ready');
+    const missing=products.filter(p=>p.product_type==='coffee' && (priorReady?priorReady.has(p.id):!hasPhoto(p)) && (!args.includes('--recent') || ['last_seen_at','availability_last_seen_at'].some(k=>Date.parse(p[k])>=cutoff)));
     // Sequential within each merchant; different merchants can be checked together.
     const groups=[...new Set(missing.map(p=>p.entity_id))].map(id=>missing.filter(p=>p.entity_id===id));let index=0;
-    await Promise.all(Array.from({length:3},async()=>{while(index<groups.length){const group=groups[index++];for(const product of group){try{entries.push({...await inspectPhoto(product,dependencies(product.entity_id)),roaster:owners.get(product.entity_id)});}catch(error){entries.push({product_id:product.id,entity_id:product.entity_id,source_url:product.source_url,name:product.name,roaster:owners.get(product.entity_id),status:'held',reason:error.message});}}console.log(JSON.stringify({roaster:owners.get(group[0].entity_id),checked:group.length,ready:entries.filter(e=>e.entity_id===group[0].entity_id && e.status==='ready').length}));}}));
+    await Promise.all(Array.from({length:3},async()=>{while(index<groups.length){const group=groups[index++];for(const product of group){try{entries.push({...await inspectPhoto({...product,roaster:owners.get(product.entity_id)},dependencies(product.entity_id)),roaster:owners.get(product.entity_id)});}catch(error){entries.push({product_id:product.id,entity_id:product.entity_id,source_url:product.source_url,name:product.name,roaster:owners.get(product.entity_id),status:'held',reason:error.message});}}console.log(JSON.stringify({roaster:owners.get(group[0].entity_id),checked:group.length,ready:entries.filter(e=>e.entity_id===group[0].entity_id && e.status==='ready').length}));}}));
   } else {
     const plan=JSON.parse(fs.readFileSync(file,'utf8'));
     if(plan.version!==1 || plan.mode!=='read-only-photo-plan' || plan.source_commit!==manifest.source_commit)throw Error('Unrecognized or outdated reviewed photo plan');

@@ -20,19 +20,26 @@ function sameImageProduct(a,b) {
     const left=new URL(canonicalProductUrl(new URL(a,b).href)),right=new URL(canonicalProductUrl(b));
     // Shopify handles identify the product. Size/roast selectors only select its
     // options. Other platforms retain identity-bearing queries (e.g. Imweb idx).
-    if(/^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?products\/[^/]+$/i.test(right.pathname)) {left.search='';right.search='';}
+    if(/^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?products\/[^/]+$/i.test(right.pathname)) {
+      left.search='';right.search='';
+      left.pathname=left.pathname.replace(/^\/[a-z]{2}(?:-[a-z]{2})?\/products\//i,'/products/');
+      right.pathname=right.pathname.replace(/^\/[a-z]{2}(?:-[a-z]{2})?\/products\//i,'/products/');
+    }
     return left.href===right.href;
   }catch{return false;}
 }
 function primaryProductImage({html='',url,sourceProduct,native}={}) {
-  const selected=(value,source,name)=>{const image=imageUrl(value,url);return image?{url:image,evidence:{source,product_url:url,product_name:name || null}}:null;};
+  const $=cheerio.load(html),productHeadings=$('h1.product_title,h1[itemprop="name"]'),headings=productHeadings.length?productHeadings:$('main h1').length?$('main h1'):$('h1');
+  const titles=[...new Set(headings.toArray().map(e=>$(e).text().trim()).filter(Boolean))];
+  const primaryTitle=titles.length===1?titles[0]:null;
+  const selected=(value,source,name)=>{const image=imageUrl(value,url);return image?{url:image,evidence:{source,product_url:url,product_name:primaryTitle || name || null}}:null;};
   let nativeBound=false;
   try {nativeBound=Boolean(native?.handle && decodeURIComponent(new URL(url).pathname.match(/\/products\/([^/]+)\/?$/)?.[1] || '')===native.handle);}catch{}
   const nativeImage=nativeBound?selected(native?.mainImage || native?.images?.map(i=>i.src || i),'native_primary_product',native?.title):null;
   if(nativeImage)return nativeImage;
   const sourceImage=selected(sourceProduct?.image,'adapter_primary_product',sourceProduct?.name);
   if(sourceImage)return sourceImage;
-  const $=cheerio.load(html),nodes=[];
+  const nodes=[];
   $('script[type="application/ld+json"]').each((_,e)=>{try{const values=[JSON.parse($(e).text())].flat();for(const n of values){nodes.push(n,...[n?.['@graph'] || []].flat());if(n?.mainEntity)nodes.push(n.mainEntity);}}catch{}});
   const products=nodes.filter(n=>[n?.['@type']].flat().some(t=>['Product','ProductGroup','IndividualProduct'].includes(String(t).split('/').pop())));
   const exact=products.filter(p=>sameImageProduct(p.url || p['@id'],url) || !p.url && !p['@id'] && [p.offers || []].flat().length && [p.offers].flat().every(o=>sameImageProduct(o.url,url)));

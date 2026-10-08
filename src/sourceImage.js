@@ -12,6 +12,16 @@ function imageFormat(buffer) {
   if(buffer.subarray(4,8).toString()==='ftyp' && /(?:avif|avis)/.test(buffer.subarray(8,32).toString()))return {contentType:'image/avif',extension:'.avif'};
   return null;
 }
+async function validateImage(buffer) {
+  const format=imageFormat(buffer);if(!format)return null;
+  try {
+    const image=require('sharp')(buffer,{failOn:'warning',limitInputPixels:25_000_000});
+    const metadata=await image.metadata();
+    if(!metadata.width || !metadata.height)return null;
+    await image.stats(); // Metadata/magic bytes alone do not prove renderable pixels.
+    return {...format,width:metadata.width,height:metadata.height};
+  }catch{return null;}
+}
 async function fetchSourceImage(value,{referer,timeout=30000,maxBytes=20*1024*1024}={}) {
   let url;const signal=AbortSignal.timeout(timeout);
   try {
@@ -26,11 +36,11 @@ async function fetchSourceImage(value,{referer,timeout=30000,maxBytes=20*1024*10
       if(response.status!==200){await response.body?.cancel();throw Error('Image HTTP '+response.status);}
       const chunks=[];let size=0;
       for await(const chunk of response.body){size+=chunk.length;if(size>maxBytes)throw Error('Image exceeds size limit');chunks.push(chunk);}
-      const buffer=Buffer.concat(chunks),format=imageFormat(buffer);
+      const buffer=Buffer.concat(chunks),format=await validateImage(buffer);
       if(!format)throw Error('Response is not a supported product image');
       return {success:true,data:buffer,headers:{'content-type':format.contentType},finalUrl:url.href};
     }
     throw Error('Image redirect limit');
   }catch(error){return {success:false,error:error.message+(error.cause?.code?' ('+error.cause.code+')':''),finalUrl:url?.href};}
 }
-module.exports={imageFormat,fetchSourceImage};
+module.exports={imageFormat,validateImage,fetchSourceImage};

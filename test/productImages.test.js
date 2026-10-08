@@ -2,18 +2,19 @@
 const test=require('node:test'),assert=require('node:assert/strict');
 const {primaryProductImage,sameImageProduct,imageUrl}=require('../src/productImages');
 const {extractPage}=require('../src/extraction');
-const {imageFormat,fetchSourceImage}=require('../src/sourceImage');
+const {imageFormat,validateImage,fetchSourceImage}=require('../src/sourceImage');
 const {inspectPhoto,applyPhoto}=require('../src/photoRepair');
 const {catalogDb,supabaseAdapter}=require('./catalogDb');
 const {saveProduct}=require('../src/productSaver');
 const {downloadAndSaveImage}=require('../src/imageDownloader');
-const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aZ1sAAAAASUVORK5CYII=','base64');
+const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAEUlEQVQImWMoDtQpDtRhgFAAG2oDwc8b69cAAAAASUVORK5CYII=','base64');
 const log=new Proxy({},{get:()=>()=>{}}),url='https://shop.test/products/ethiopia',image='https://images.test/ethiopia.png';
 const schema=p=>`<script type="application/ld+json">${JSON.stringify(p)}</script>`;
 const html=schema({'@type':'Product',url:url+'?Roast=Espresso&Size=250gr',name:'Ethiopia',image:[{'@type':'ImageObject',contentUrl:image}],offers:{url,sku:'250',price:'18',priceCurrency:'EUR'}});
 test('primary photo survives Shopify option URLs and does not alter query-based merchant identity',()=>{
  assert.equal(primaryProductImage({html,url}).url,image);
  assert.equal(sameImageProduct('https://shop.test/shop_view?idx=2','https://shop.test/shop_view?idx=1'),false);
+ assert.equal(sameImageProduct('https://shop.test/en-us/products/ethiopia','https://shop.test/en-kr/products/ethiopia'),true);
  assert.equal(imageUrl('/photos/bag.png',url),'https://shop.test/photos/bag.png');
  assert.equal(imageUrl('https://example.com/invented.jpg',url),null);
  const parsed=require('../src/shopifyProduct').parseShopifyProduct({title:'Coffee',images:['//images.test/second.png'],image:{src:image}});
@@ -39,6 +40,13 @@ test('image verification accepts real image bytes and blocks HTML and prohibited
  const response=await fetchSourceImage('https://shop.test/terms/photo.png');assert.equal(response.success,false);assert.match(response.error,/Prohibited/);
  const held=await inspectPhoto({id:'p',name:'Kenya',source_url:url},{fetchPage:async()=>({success:true,data:html}),fetchImage:async()=>{throw Error('Unrelated coffee photo must not be fetched');}});
  assert.equal(held.reason,'current_product_title_requires_review');
+ const redirected=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html,finalUrl:'https://shop.test/products/decaf-ethiopia'}),fetchImage:async()=>{throw Error('Different product must not be fetched');}});
+ assert.equal(redirected.reason,'product_redirect_requires_identity_review');
+ const sameUrlDifferentCoffee=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html.replace('"name":"Ethiopia"','"name":"Decaf Ethiopia"'),finalUrl:url}),fetchImage:async()=>{throw Error('Added decaf term must remain unresolved');}});
+ assert.equal(sameUrlDifferentCoffee.reason,'current_product_title_requires_review');
+ const truncated=Buffer.concat([png.subarray(0,8),Buffer.alloc(4)]);
+ assert.equal(await validateImage(truncated),null);assert.equal((await validateImage(png)).width,2);
+ const corrupt=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html}),fetchImage:async()=>({success:true,data:truncated})});assert.equal(corrupt.reason,'invalid_image_body');
 });
 test('catalog save stores a real photo, repairs existing records idempotently and preserves a present photo',async()=>{
  const pg=await catalogDb();try {
@@ -59,6 +67,14 @@ test('catalog save stores a real photo, repairs existing records idempotently an
   assert.equal((await applyPhoto(entry,{db:repairDb,fetchPage,fetchImage,log})).status,'repaired');
   assert.equal((await applyPhoto(entry,{db:repairDb,fetchPage,fetchImage,log})).status,'already_has_photo');
   assert.equal(uploads,1);assert.equal((await pg.query('select count(*)::int n from media_assets')).rows[0].n,1);
+  await pg.query('delete from product_media where product_id=$1',[id]);await pg.query('update products set original_image_url=null where id=$1',[id]);
+  const cacheFailDb={...repairDb,from(table){if(table==='media_source_cache')return {...repairDb.from(table),upsert(){return Promise.resolve({error:Error('fixture cache write failed')});}};return repairDb.from(table);}};
+  assert.equal((await applyPhoto(entry,{db:cacheFailDb,fetchPage,fetchImage,log})).status,'repaired');
+  await pg.query('delete from product_media where product_id=$1',[id]);await pg.query('update products set original_image_url=null where id=$1',[id]);
+  const finalStepFailDb={...repairDb,from(table){if(table==='products')return {...repairDb.from(table),update(){return {eq(){return Promise.resolve({error:Error('fixture final URL write failed')});}};}};return repairDb.from(table);}};
+  await assert.rejects(()=>applyPhoto(entry,{db:finalStepFailDb,fetchPage,fetchImage,log}),/final URL write failed/);
+  assert.equal((await applyPhoto(entry,{db:repairDb,fetchPage,fetchImage,log})).status,'source_url_repaired');
+  assert.equal((await pg.query('select original_image_url from products where id=$1',[id])).rows[0].original_image_url,image);
   await assert.rejects(()=>applyPhoto({...entry,entity_id:'other-owner'},{db:repairDb,fetchPage,fetchImage,log}),/identity changed/);
   const invalid=await downloadAndSaveImage(id,'https://images.test/error.png',log,{db,fetchImage:async()=>({success:true,data:Buffer.from('<html>error</html>'),headers:{'content-type':'image/png'}})});assert.equal(invalid,null);
  } finally {await pg.close();}

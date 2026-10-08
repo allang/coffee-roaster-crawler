@@ -10,7 +10,7 @@ test('durable image URL cache prevents repeat downloads while preserving linked 
     await pg.query('insert into entities(id) values($1)',[owner]);await pg.query("insert into products(id,entity_id,slug,name) values($1,$2,'coffee','Coffee')",[product,owner]);
     const db=supabaseAdapter(pg);let fetches=0,uploads=0;
     db.storage={from(){return{async upload(){uploads++;return{error:null};},getPublicUrl(){return{data:{publicUrl:'https://storage.test/image'}};}};}};
-    const opts={db,fetchImage:async()=>{fetches++;return{success:true,data:Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aZ1sAAAAASUVORK5CYII=','base64'),headers:{'content-type':'image/png'}};}};
+    const opts={db,fetchImage:async()=>{fetches++;return{success:true,data:Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAEUlEQVQImWMoDtQpDtRhgFAAG2oDwc8b69cAAAAASUVORK5CYII=','base64'),headers:{'content-type':'image/png'}};}};
     const first=await downloadAndSaveImage(product,'https://images.test/coffee.png',log,opts);assert(first);
     const second=await downloadAndSaveImage(product,'https://images.test/coffee.png',log,opts);assert.equal(second,first);assert.equal(fetches,1);assert.equal(uploads,1);
     assert.equal((await pg.query('select count(*)::int n from product_media')).rows[0].n,1);
