@@ -1,6 +1,6 @@
 {
   "name": "Airship",
-  "checked_at": "2026-10-08T21:08:12.896Z",
+  "checked_at": "2026-10-08T21:19:05.499Z",
   "mode": "merchant-get-only-dry-run",
   "entity_ids": [
     "8528a70e-2033-4fc5-b5c6-1c5f73c0a989"
@@ -9,6 +9,7 @@
   "discovery": {
     "supported": true,
     "urls": [
+      "https://airshipcoffee.myshopify.com/products/instabuff",
       "https://airshipcoffee.myshopify.com/products/roasterschoice",
       "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series",
       "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras",
@@ -28,7 +29,7 @@
         "listing": "/products.json",
         "page": 1,
         "products": 44,
-        "coffeeProducts": 7
+        "coffeeProducts": 8
       },
       {
         "listing": "/products.json",
@@ -41,6 +42,48 @@
     "inventory_authorizes_global_absence": false
   },
   "products": [
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff",
+      "title": "InstaBuff",
+      "source_product_id": "7293530374179",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "44014599012387",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
     {
       "url": "https://airshipcoffee.myshopify.com/products/roasterschoice",
       "title": "Roaster's Choice",
@@ -2582,7 +2625,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T21:07:52.802Z",
+      "at": "2026-10-08T21:18:44.375Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2590,7 +2633,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T21:07:53.458Z",
+      "at": "2026-10-08T21:18:44.881Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2598,7 +2641,31 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products.json?limit=50&page=3",
       "status": 200,
-      "at": "2026-10-08T21:07:53.962Z",
+      "at": "2026-10-08T21:18:45.386Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff",
+      "status": 200,
+      "at": "2026-10-08T21:18:45.890Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:46.395Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:46.899Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2606,7 +2673,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/roasterschoice",
       "status": 200,
-      "at": "2026-10-08T21:07:54.466Z",
+      "at": "2026-10-08T21:18:47.405Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2614,7 +2681,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/roasterschoice.json",
       "status": 200,
-      "at": "2026-10-08T21:07:55.210Z",
+      "at": "2026-10-08T21:18:47.910Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2622,7 +2689,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/roasterschoice.js",
       "status": 200,
-      "at": "2026-10-08T21:07:55.714Z",
+      "at": "2026-10-08T21:18:48.416Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2630,7 +2697,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series",
       "status": 200,
-      "at": "2026-10-08T21:07:56.217Z",
+      "at": "2026-10-08T21:18:48.921Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2638,7 +2705,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series.json",
       "status": 200,
-      "at": "2026-10-08T21:07:56.722Z",
+      "at": "2026-10-08T21:18:49.425Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2646,7 +2713,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series.js",
       "status": 200,
-      "at": "2026-10-08T21:07:57.227Z",
+      "at": "2026-10-08T21:18:49.928Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2654,7 +2721,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras",
       "status": 200,
-      "at": "2026-10-08T21:07:57.733Z",
+      "at": "2026-10-08T21:18:50.432Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2662,7 +2729,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras.json",
       "status": 200,
-      "at": "2026-10-08T21:07:58.241Z",
+      "at": "2026-10-08T21:18:50.936Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2670,7 +2737,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras.js",
       "status": 200,
-      "at": "2026-10-08T21:07:58.748Z",
+      "at": "2026-10-08T21:18:51.438Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2678,7 +2745,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed",
       "status": 200,
-      "at": "2026-10-08T21:07:59.252Z",
+      "at": "2026-10-08T21:18:51.942Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2686,7 +2753,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed.json",
       "status": 200,
-      "at": "2026-10-08T21:07:59.935Z",
+      "at": "2026-10-08T21:18:52.643Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2694,7 +2761,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed.js",
       "status": 200,
-      "at": "2026-10-08T21:08:00.439Z",
+      "at": "2026-10-08T21:18:53.148Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2702,7 +2769,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend",
       "status": 200,
-      "at": "2026-10-08T21:08:00.946Z",
+      "at": "2026-10-08T21:18:53.651Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2710,7 +2777,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend.json",
       "status": 200,
-      "at": "2026-10-08T21:08:01.450Z",
+      "at": "2026-10-08T21:18:54.155Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2718,7 +2785,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend.js",
       "status": 200,
-      "at": "2026-10-08T21:08:01.955Z",
+      "at": "2026-10-08T21:18:54.660Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2726,7 +2793,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf",
       "status": 200,
-      "at": "2026-10-08T21:08:02.459Z",
+      "at": "2026-10-08T21:18:55.165Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2734,7 +2801,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf.json",
       "status": 200,
-      "at": "2026-10-08T21:08:02.963Z",
+      "at": "2026-10-08T21:18:55.669Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2742,7 +2809,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf.js",
       "status": 200,
-      "at": "2026-10-08T21:08:03.465Z",
+      "at": "2026-10-08T21:18:56.173Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2750,7 +2817,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera",
       "status": 200,
-      "at": "2026-10-08T21:08:03.970Z",
+      "at": "2026-10-08T21:18:56.678Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2758,7 +2825,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera.json",
       "status": 200,
-      "at": "2026-10-08T21:08:04.475Z",
+      "at": "2026-10-08T21:18:57.181Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2766,7 +2833,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera.js",
       "status": 200,
-      "at": "2026-10-08T21:08:04.981Z",
+      "at": "2026-10-08T21:18:57.685Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2774,7 +2841,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere",
       "status": 200,
-      "at": "2026-10-08T21:08:05.485Z",
+      "at": "2026-10-08T21:18:58.189Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2782,7 +2849,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere.json",
       "status": 200,
-      "at": "2026-10-08T21:08:05.990Z",
+      "at": "2026-10-08T21:18:58.693Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2790,7 +2857,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere.js",
       "status": 200,
-      "at": "2026-10-08T21:08:06.494Z",
+      "at": "2026-10-08T21:18:59.197Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2798,7 +2865,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/night-moves",
       "status": 200,
-      "at": "2026-10-08T21:08:06.997Z",
+      "at": "2026-10-08T21:18:59.701Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2806,7 +2873,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/night-moves.json",
       "status": 200,
-      "at": "2026-10-08T21:08:07.555Z",
+      "at": "2026-10-08T21:19:00.247Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2814,7 +2881,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/night-moves.js",
       "status": 200,
-      "at": "2026-10-08T21:08:08.061Z",
+      "at": "2026-10-08T21:19:00.754Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2822,7 +2889,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte",
       "status": 200,
-      "at": "2026-10-08T21:08:08.563Z",
+      "at": "2026-10-08T21:19:01.259Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2830,7 +2897,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte.json",
       "status": 200,
-      "at": "2026-10-08T21:08:09.067Z",
+      "at": "2026-10-08T21:19:01.763Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2838,7 +2905,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte.js",
       "status": 200,
-      "at": "2026-10-08T21:08:09.571Z",
+      "at": "2026-10-08T21:19:02.269Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2846,7 +2913,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso",
       "status": 200,
-      "at": "2026-10-08T21:08:10.078Z",
+      "at": "2026-10-08T21:19:02.775Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2854,7 +2921,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso.json",
       "status": 200,
-      "at": "2026-10-08T21:08:10.583Z",
+      "at": "2026-10-08T21:19:03.280Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2862,7 +2929,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso.js",
       "status": 200,
-      "at": "2026-10-08T21:08:11.087Z",
+      "at": "2026-10-08T21:19:03.789Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2870,7 +2937,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend",
       "status": 200,
-      "at": "2026-10-08T21:08:11.593Z",
+      "at": "2026-10-08T21:19:04.293Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2878,7 +2945,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend.json",
       "status": 200,
-      "at": "2026-10-08T21:08:12.097Z",
+      "at": "2026-10-08T21:19:04.797Z",
       "attempt": 1,
       "retry": 0
     },
@@ -2886,7 +2953,7 @@
       "method": "GET",
       "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend.js",
       "status": 200,
-      "at": "2026-10-08T21:08:12.602Z",
+      "at": "2026-10-08T21:19:05.301Z",
       "attempt": 1,
       "retry": 0
     }
@@ -2898,5 +2965,5 @@
   "partial_support_verified": false,
   "inventory_complete": true,
   "variants_complete": true,
-  "scope_note": "Retail Coffee type plus exact one-time roasterschoice handle from the official declared Shopify store. Hidden/wholesale types and Espresso Series 1 equipment excluded. No global absence reconciliation. Production same-weight index remains unapproved."
+  "scope_note": "Retail Coffee type plus exact one-time roasterschoice and instabuff handles from the official declared Shopify store. Hidden/wholesale types and Espresso Series 1 equipment excluded. Instabuff net weight unknown. No global absence reconciliation. Production same-weight index remains unapproved."
 }

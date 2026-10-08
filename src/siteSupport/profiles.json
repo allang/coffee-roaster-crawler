@@ -8,7 +8,7 @@
     "canonical_product_host": "airshipcoffee.com",
     "listing_paths": ["/products.json"],
     "coffee_product_types": ["Coffee"],
-    "coffee_handles": ["roasterschoice"],
+    "coffee_handles": ["roasterschoice", "instabuff"],
     "strict_coffee_product_types": true,
     "reconcile_omissions": false,
     "inventory_authorizes_global_absence": false

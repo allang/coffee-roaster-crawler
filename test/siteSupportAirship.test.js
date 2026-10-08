@@ -9,10 +9,10 @@ const {fetchShopifyProductJson}=require('../src/shopifyProduct');
 const {structuredExtraction}=require('../src/extraction');
 test('Airship native inventory includes retail coffee and optional one-time choice, excludes machines and partner wholesale',async()=>{
  const coffees=listing.products.filter(p=>retailCoffee(p,profile));
- assert.equal(coffees.length,12);assert(coffees.some(p=>p.handle==='roasterschoice'));
- assert(!coffees.some(p=>p.handle==='espresso-series-1'));assert(coffees.every(p=>p.product_type==='Coffee' || p.handle==='roasterschoice'));
+ assert.equal(coffees.length,13);assert(coffees.some(p=>p.handle==='roasterschoice'));assert(coffees.some(p=>p.handle==='instabuff'));
+ assert(!coffees.some(p=>p.handle==='espresso-series-1'));assert(coffees.every(p=>p.product_type==='Coffee' || ['roasterschoice','instabuff'].includes(p.handle)));
  const reads=[],d=await discoverShopifyProducts({website_url:profile.bootstrap_url},profile,async url=>{reads.push(url);const page=Number(new URL(url).searchParams.get('page'));return {success:true,finalUrl:url,data:JSON.stringify({products:listing.products.slice((page-1)*50,page*50)})};});
- assert.equal(d.complete,true);assert.equal(d.urls.length,12);assert.equal(reads.length,3);assert.equal(d.inventory_authorizes_global_absence,false);assert.equal(profile.reconcile_omissions,false);
+ assert.equal(d.complete,true);assert.equal(d.urls.length,13);assert.equal(reads.length,3);assert.equal(d.inventory_authorizes_global_absence,false);assert.equal(profile.reconcile_omissions,false);
  assert(d.urls.every(u=>u.startsWith(profile.bootstrap_url+'/products/')));
 });
 test('Airship native aliases adopt the existing product URL identity and retain the real retrieval host',()=>{
