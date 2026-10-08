@@ -11,6 +11,7 @@ const { config } = require('./config');
 const globalLogger = require('./logger');
 const { createScopedLogger } = require('./logger');
 const { reconcileRoasterAvailability } = require('./availability');
+const {crawlTierPhases}=require('./crawlTierPlan');
 
 const PARALLEL_ROASTERS = Number(process.env.PARALLEL_ROASTERS || 1);
 
@@ -282,9 +283,6 @@ async function runCrawler() {
   const limit = pLimit(PARALLEL_ROASTERS);
   globalLogger.info('Crawler', `Running ${PARALLEL_ROASTERS} roasters in parallel`);
 
-  const allResults = [];
-  const retryQueue = [];
-
   async function crawlWithRetryTracking(roaster) {
     try {
       const result = await crawlRoaster(roaster, blacklistTerms);
@@ -298,38 +296,12 @@ async function runCrawler() {
     }
   }
 
-  const crawlPromises = eligibleRoasters.map(roaster =>
-    limit(() => crawlWithRetryTracking(roaster))
-  );
-
-  const firstPassResults = await Promise.all(crawlPromises);
-
-  for (const result of firstPassResults) {
-    if (result.retryable && result.roaster) {
-      retryQueue.push(result.roaster);
-    } else {
-      allResults.push(result);
-    }
-  }
-
-  if (retryQueue.length > 0) {
-    globalLogger.header('Retrying Unreachable Sites');
-    globalLogger.info('Retry', `${retryQueue.length} sites to retry`);
-
-    const retryPromises = retryQueue.map(roaster =>
-      limit(() => crawlWithRetryTracking(roaster))
-    );
-
-    const retryResults = await Promise.all(retryPromises);
-
-    for (const result of retryResults) {
-      if (result.retryable) {
-        allResults.push({ ...result, error: 'Website unreachable after retry' });
-      } else {
-        allResults.push(result);
-      }
-    }
-  }
+  const {results:allResults,phases,retriedSites}=await crawlTierPhases(eligibleRoasters,{
+    crawl:crawlWithRetryTracking,limit,
+    onPhaseStart:phase=>{globalLogger.header(`Crawling ${phase.label}`);globalLogger.info('TierOrder','Phase started',{tier:phase.tier,roasters:phase.roasters.length});},
+    onRetry:phase=>globalLogger.info('Retry',`${phase.retryCount} unreachable sites to retry before finishing ${phase.label}`),
+    onPhaseComplete:summary=>globalLogger.info('TierOrder','Phase finished',summary),
+  });
 
   globalLogger.header('Crawl Summary');
   
@@ -340,7 +312,8 @@ async function runCrawler() {
     totalRoasters: eligibleRoasters.length,
     successful: successful.length,
     failed: failed.length,
-    retriedSites: retryQueue.length,
+    retriedSites,
+    phases,
   });
 
   for (const result of successful) {
@@ -356,7 +329,7 @@ async function runCrawler() {
     globalLogger.error('Summary', `${result.roasterName}: ${result.error}`);
   }
 
-  return { success: true, roastersCrawled: successful.length, results: allResults };
+  return { success: true, roastersCrawled: successful.length, results: allResults, phases };
 }
 
 module.exports = {

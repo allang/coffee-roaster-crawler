@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-08T04:02:36.198Z",
+  "mode": "read-only-crawl-order-preview",
+  "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
+  "total_roasters": 9152,
+  "eligible_roasters": 8451,
+  "production_writes": 0,
+  "phases": [
+    {
+      "tier": 1,
+      "label": "Tier 1",
+      "count": 55
+    },
+    {
+      "tier": 2,
+      "label": "Tier 2",
+      "count": 27
+    },
+    {
+      "tier": 3,
+      "label": "Tier 3",
+      "count": 406
+    },
+    {
+      "tier": 9,
+      "label": "Tier 9",
+      "count": 9
+    },
+    {
+      "tier": null,
+      "label": "Remaining roasters",
+      "count": 7954
+    }
+  ],
+  "preface_in_tier_one": true
+}
