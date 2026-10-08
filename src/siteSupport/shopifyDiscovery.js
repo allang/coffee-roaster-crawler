@@ -4,6 +4,8 @@ function retailCoffee(product,profile) {
   if(profile.exclude_product_ids?.includes(String(product.id)))return false;
   const type=String(product.product_type || ''),title=String(product.title || '');
   if(profile.exclude_handles?.includes(product.handle))return false;
+  if(profile.exclude_name_pattern && new RegExp(profile.exclude_name_pattern,'i').test(title))return false;
+  if(profile.exclude_product_tags?.some(tag=>(Array.isArray(product.tags)?product.tags:String(product.tags || '').split(/,\s*/)).includes(tag)))return false;
   const tags=Array.isArray(product.tags)?product.tags.join(' '):String(product.tags || '');
   // A coffee sold once may also carry a subscription tag (ONA's blends do).
   // Exclude subscription products by their title/type, not a second sales channel.
@@ -25,7 +27,8 @@ async function discoverShopifyProducts(roaster,profile,fetchHtml) {
       if(!products.length){exhausted=true;break;}
       anyProducts=true;
       const fingerprint=products.map(p=>p.id).join(',');if(seen.has(fingerprint))return {supported:true,urls:[...urls],complete:false,error:'Shopify collection page repeated',evidence};seen.add(fingerprint);
-      const coffees=products.filter(p=>retailCoffee(p,profile));
+      const listingProfile={...profile,coffee_product_types:profile.coffee_product_types_by_listing?.[path] ?? profile.coffee_product_types};
+      const coffees=products.filter(p=>retailCoffee(p,listingProfile));
       for(const p of coffees){if(!/^[a-z0-9][a-z0-9-]*$/i.test(p.handle))return {supported:true,urls:[],complete:false,error:'Invalid Shopify handle',evidence};urls.add(new URL((profile.product_path || '/products/')+p.handle,roaster.website_url).href);}
       evidence.push({listing:path,page,products:products.length,coffeeProducts:coffees.length});
       // Explicit empty final page avoids treating a merchant's lower response cap

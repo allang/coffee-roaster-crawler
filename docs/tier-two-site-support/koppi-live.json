@@ -1,0 +1,67 @@
+{
+  "name": "Koppi",
+  "checked_at": "2026-10-08T04:42:11.114Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://koppi.se/products/ethiopia-chelbesa-250g",
+      "https://koppi.se/products/colombia-finca-la-fuente-variedad-colombia-250g",
+      "https://koppi.se/products/kenya-thiririka-250g",
+      "https://koppi.se/products/costa-rica-monte-copey-el-alto-yellow-honey-caturra-250g",
+      "https://koppi.se/products/colombia-finca-el-porvenir-omni-250g",
+      "https://koppi.se/products/colombia-finca-el-porvenir-250g",
+      "https://koppi.se/products/espresso-footprints"
+    ],
+    "complete": true,
+    "evidence": [
+      {"listing":"/collections/frontpage/products.json","page":1,"products":12,"coffeeProducts":7},
+      {"listing":"/collections/filter-coffee/products.json","page":1,"products":6,"coffeeProducts":6},
+      {"listing":"/collections/espresso/products.json","page":1,"products":1,"coffeeProducts":1}
+    ]
+  },
+  "products": [
+    {"url":"https://koppi.se/products/ethiopia-chelbesa-250g","title":"Ethiopia - Chelbesa 250g","source_product_id":"11047162773771","state":"in_stock","variants":[{"id":"53385641525515","title":"Whole bean","weight_g":250,"money":{"raw":27,"amount":"27.00","currency":"USD","exponent":2,"minorUnits":2700,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"53385641558283","title":"Ground for filter","weight_g":250,"money":{"raw":27,"amount":"27.00","currency":"USD","exponent":2,"minorUnits":2700,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":"48-72h wet fermentation, washed and dried on raised beds","process_methods":["washed"],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":{"source":"product_description","quote":"48-72h wet fermentation, washed and dried on raised beds"},"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://koppi.se/products/colombia-finca-la-fuente-variedad-colombia-250g","title":"Colombia - Finca La Fuente \"Variedad Colombia\" 250g","source_product_id":"8424253030667","state":"in_stock","variants":[{"id":"44862029168907","title":"Whole bean","weight_g":250,"money":{"raw":26,"amount":"26.00","currency":"USD","exponent":2,"minorUnits":2600,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"44862029201675","title":"Ground for filter","weight_g":250,"money":{"raw":26,"amount":"26.00","currency":"USD","exponent":2,"minorUnits":2600,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":"Fully washed, dried on raised beds","process_methods":["washed"],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":{"source":"product_description","quote":"Fully washed, dried on raised beds"},"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://koppi.se/products/kenya-thiririka-250g","title":"Kenya - Thiririka AA 250g","source_product_id":"11041844363531","state":"in_stock","variants":[{"id":"53367274897675","title":"Whole bean","weight_g":250,"money":{"raw":29,"amount":"29.00","currency":"USD","exponent":2,"minorUnits":2900,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"53367274930443","title":"Ground for filter","weight_g":250,"money":{"raw":29,"amount":"29.00","currency":"USD","exponent":2,"minorUnits":2900,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":"Washed","process_methods":["washed"],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":{"source":"product_description","quote":"Washed"},"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://koppi.se/products/costa-rica-monte-copey-el-alto-yellow-honey-caturra-250g","title":"Costa Rica - Monte Copey \"El Alto\" Yellow Honey Catuai 250g","source_product_id":"10106818363659","state":"in_stock","variants":[{"id":"51176073199883","title":"Whole bean","weight_g":250,"money":{"raw":27,"amount":"27.00","currency":"USD","exponent":2,"minorUnits":2700,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"51176073232651","title":"Ground for filter","weight_g":250,"money":{"raw":27,"amount":"27.00","currency":"USD","exponent":2,"minorUnits":2700,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":"Yellow honey process","process_methods":["honey"],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":{"source":"product_description","quote":"Yellow honey process"},"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://koppi.se/products/colombia-finca-el-porvenir-omni-250g","title":"Colombia - Finca El Porvenir Omni/Espresso 250g","source_product_id":"11033913393419","state":"in_stock","variants":[{"id":"53347006742795","title":"Whole bean","weight_g":250,"money":{"raw":26,"amount":"26.00","currency":"USD","exponent":2,"minorUnits":2600,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"53347006775563","title":"Ground for filter","weight_g":250,"money":{"raw":26,"amount":"26.00","currency":"USD","exponent":2,"minorUnits":2600,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":"36 - 48 h wet fermentation, dried on raised beds","process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":{"source":"product_description","quote":"36 - 48 h wet fermentation, dried on raised beds"},"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://koppi.se/products/colombia-finca-el-porvenir-250g","title":"Colombia - Finca El Porvenir \"Caturra\" 250g","source_product_id":"8454603145483","state":"in_stock","variants":[{"id":"44953767313675","title":"Whole bean","weight_g":250,"money":{"raw":28,"amount":"28.00","currency":"USD","exponent":2,"minorUnits":2800,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"44953767346443","title":"Ground for filter","weight_g":250,"money":{"raw":28,"amount":"28.00","currency":"USD","exponent":2,"minorUnits":2800,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":"36 - 48 h wet fermentation, dried on raised beds","process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":{"source":"product_description","quote":"36 - 48 h wet fermentation, dried on raised beds"},"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://koppi.se/products/espresso-footprints","title":"Espresso - Footprints","source_product_id":"8135016284427","state":"in_stock","variants":[{"id":"44528541630731","title":"250G","weight_g":250,"money":{"raw":22,"amount":"22.00","currency":"USD","exponent":2,"minorUnits":2200,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"44528541663499","title":"1.5KG","weight_g":1500,"money":{"raw":98,"amount":"98.00","currency":"USD","exponent":2,"minorUnits":9800,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true}
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {"method":"GET","url":"https://koppi.se/collections/frontpage/products.json?limit=50&page=1","status":200,"at":"2026-10-08T04:41:58.168Z"},
+    {"method":"GET","url":"https://koppi.se/collections/frontpage/products.json?limit=50&page=2","status":200,"at":"2026-10-08T04:41:58.468Z"},
+    {"method":"GET","url":"https://koppi.se/collections/filter-coffee/products.json?limit=50&page=1","status":200,"at":"2026-10-08T04:41:58.985Z"},
+    {"method":"GET","url":"https://koppi.se/collections/filter-coffee/products.json?limit=50&page=2","status":200,"at":"2026-10-08T04:41:59.454Z"},
+    {"method":"GET","url":"https://koppi.se/collections/espresso/products.json?limit=50&page=1","status":200,"at":"2026-10-08T04:41:59.986Z"},
+    {"method":"GET","url":"https://koppi.se/collections/espresso/products.json?limit=50&page=2","status":200,"at":"2026-10-08T04:42:00.501Z"},
+    {"method":"GET","url":"https://koppi.se/products/ethiopia-chelbesa-250g","status":200,"at":"2026-10-08T04:42:01.106Z"},
+    {"method":"GET","url":"https://koppi.se/products/ethiopia-chelbesa-250g.json","status":200,"at":"2026-10-08T04:42:01.549Z"},
+    {"method":"GET","url":"https://koppi.se/products/ethiopia-chelbesa-250g.js","status":200,"at":"2026-10-08T04:42:02.073Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-la-fuente-variedad-colombia-250g","status":200,"at":"2026-10-08T04:42:02.669Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-la-fuente-variedad-colombia-250g.json","status":200,"at":"2026-10-08T04:42:03.118Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-la-fuente-variedad-colombia-250g.js","status":200,"at":"2026-10-08T04:42:03.479Z"},
+    {"method":"GET","url":"https://koppi.se/products/kenya-thiririka-250g","status":200,"at":"2026-10-08T04:42:04.175Z"},
+    {"method":"GET","url":"https://koppi.se/products/kenya-thiririka-250g.json","status":200,"at":"2026-10-08T04:42:04.473Z"},
+    {"method":"GET","url":"https://koppi.se/products/kenya-thiririka-250g.js","status":200,"at":"2026-10-08T04:42:05.033Z"},
+    {"method":"GET","url":"https://koppi.se/products/costa-rica-monte-copey-el-alto-yellow-honey-caturra-250g","status":200,"at":"2026-10-08T04:42:05.642Z"},
+    {"method":"GET","url":"https://koppi.se/products/costa-rica-monte-copey-el-alto-yellow-honey-caturra-250g.json","status":200,"at":"2026-10-08T04:42:06.006Z"},
+    {"method":"GET","url":"https://koppi.se/products/costa-rica-monte-copey-el-alto-yellow-honey-caturra-250g.js","status":200,"at":"2026-10-08T04:42:06.509Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-el-porvenir-omni-250g","status":200,"at":"2026-10-08T04:42:07.150Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-el-porvenir-omni-250g.json","status":200,"at":"2026-10-08T04:42:07.544Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-el-porvenir-omni-250g.js","status":200,"at":"2026-10-08T04:42:08.060Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-el-porvenir-250g","status":200,"at":"2026-10-08T04:42:08.709Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-el-porvenir-250g.json","status":200,"at":"2026-10-08T04:42:09.061Z"},
+    {"method":"GET","url":"https://koppi.se/products/colombia-finca-el-porvenir-250g.js","status":200,"at":"2026-10-08T04:42:09.595Z"},
+    {"method":"GET","url":"https://koppi.se/products/espresso-footprints","status":200,"at":"2026-10-08T04:42:10.235Z"},
+    {"method":"GET","url":"https://koppi.se/products/espresso-footprints.json","status":200,"at":"2026-10-08T04:42:10.648Z"},
+    {"method":"GET","url":"https://koppi.se/products/espresso-footprints.js","status":200,"at":"2026-10-08T04:42:11.041Z"}
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

@@ -772,5 +772,181 @@
     "description_image_hosts": [
       "ecimg.cafe24img.com"
     ]
+  },
+  {
+    "name": "Ceremony",
+    "entity_ids": [
+      "a73b9e3e-6110-44b3-8ec2-38179748bdb3"
+    ],
+    "hosts": [
+      "ceremonycoffee.com",
+      "www.ceremonycoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/instant-coffee/products.json"
+    ],
+    "coffee_product_types": [
+      "Single Origin",
+      "Blend",
+      "Decaf",
+      ""
+    ],
+    "exclude_product_tags": [
+      "Subscription"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Color",
+    "entity_ids": [
+      "ba87eb89-0123-4514-a6aa-c34f93517785"
+    ],
+    "hosts": [
+      "colorroasters.com",
+      "www.colorroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/coffee-archive/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Fathers",
+    "entity_ids": [
+      "3085f41e-ba6e-45a7-a0db-0a4b44947c39"
+    ],
+    "hosts": [
+      "fathers.cz",
+      "www.fathers.cz"
+    ],
+    "listing_paths": [
+      "/kava"
+    ],
+    "adapter": "fathers"
+  },
+  {
+    "name": "Koppi",
+    "entity_ids": [
+      "674d177b-8a5b-4f71-9e6b-ebe6786a11fa"
+    ],
+    "hosts": [
+      "koppi.se",
+      "www.koppi.se"
+    ],
+    "listing_paths": [
+      "/collections/frontpage/products.json",
+      "/collections/filter-coffee/products.json",
+      "/collections/espresso/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "La Cabra",
+    "entity_ids": [
+      "629484c3-f41d-4be9-af1a-fd87918dd0bf"
+    ],
+    "hosts": [
+      "lacabra.com",
+      "www.lacabra.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/favourites/products.json",
+      "/collections/single-serve-coffee/products.json",
+      "/collections/bundles-gifts/products.json",
+      "/collections/all-products/products.json"
+    ],
+    "coffee_product_types": [
+      "Steeped",
+      "Single Serve"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Modcup",
+    "entity_ids": [
+      "7b7a8922-fa26-47bc-a387-49bbd8770d5e"
+    ],
+    "hosts": [
+      "www.modcup.com",
+      "modcup.com"
+    ],
+    "listing_paths": [
+      "/collections/all-coffee/products.json",
+      "/collections/featured-coffees/products.json"
+    ],
+    "coffee_product_types": [
+      "Single Origin",
+      "Experimental",
+      "Modern Blend",
+      "Traditional Blend",
+      "decaf",
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Mother Tongue",
+    "entity_ids": [
+      "17442c49-1626-4402-8d08-b692f7bed90c"
+    ],
+    "hosts": [
+      "mothertongue.coffee",
+      "www.mothertongue.coffee"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/all/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "PERC",
+    "entity_ids": [
+      "c9427dad-2a06-4f42-90eb-ebaa227dcba2"
+    ],
+    "hosts": [
+      "perccoffee.com",
+      "www.perccoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/coffee-archive/products.json",
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "coffee_product_types_by_listing": {
+      "/collections/all/products.json": []
+    },
+    "exclude_name_pattern": "^(?:Gift box - (?:Ceramic|Travel)|Third Wave Water(?: Single Packet)?)$",
+    "adapter": "shopify"
+  },
+  {
+    "name": "Three Marks",
+    "entity_ids": [
+      "917cac27-8a74-464a-8790-b6083bccde72"
+    ],
+    "hosts": [
+      "www.threemarkscoffee.com",
+      "threemarkscoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/cafe/products.json",
+      "/collections/coffee/products.json",
+      "/collections/all/products.json"
+    ],
+    "coffee_product_types": [
+      "CAFÉ WHITE LABEL",
+      "CAFÉ SPECIAL LABEL",
+      "Single Serve"
+    ],
+    "description_net_weight_prefixes": [
+      "Suggested for Filter,"
+    ],
+    "adapter": "shopify"
   }
 ]

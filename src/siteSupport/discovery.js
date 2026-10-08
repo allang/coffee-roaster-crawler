@@ -22,6 +22,7 @@ async function discoverProfileProducts(roaster,profile,fetchHtml) {
   if(profile.adapter==='woocommerce')return require('./woocommerce').discoverWooProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='hydrogen')return require('./hydrogen').discoverHydrogenProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='wix')return require('./wix').discoverWixProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='fathers')return require('./fathers').discoverFathersProducts(roaster,profile,fetchHtml);
   const urls=new Set(),evidence=[];
   for(const path of profile.listing_paths) {
     const url=new URL(path,roaster.website_url).href,result=await fetchHtml(url);

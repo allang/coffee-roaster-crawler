@@ -17,8 +17,8 @@
           "name": "txt Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "blocked",
+      "evidence": "txt-blocked-live.json",
       "coverage": {
         "all_time_coffees": 12,
         "seen_or_buyable_30d": 0,
@@ -27,7 +27,12 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-22T09:36:00.492000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "blockers": [
+        "Official Korean Naver retail inventory still returns HTTP 429.",
+        "English public option reads succeed, but sold-out dependent weight values omit native value identifiers (onclick return false). Exact priced variant identities cannot be reconstructed from anonymous size/price labels without invention.",
+        "Official English link and matching business registration establish merchant identity, not English/Korean inventory or product identity equivalence."
+      ]
     },
     {
       "name": "Apiary",
@@ -66,8 +71,8 @@
           "name": "Ceremony Coffee Roasters"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "ceremony-live.json",
       "coverage": {
         "all_time_coffees": 25,
         "seen_or_buyable_30d": 0,
@@ -76,7 +81,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-13T18:58:47.186000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 18,
+      "verified_variants": 66
     },
     {
       "name": "Color",
@@ -92,8 +99,8 @@
           "name": "Color"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "color-live.json",
       "coverage": {
         "all_time_coffees": 103,
         "seen_or_buyable_30d": 0,
@@ -102,7 +109,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-22T14:29:17.041000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 29,
+      "verified_variants": 620
     },
     {
       "name": "Colorfull",
@@ -150,8 +159,8 @@
           "name": "Fathers"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "fathers-live.json",
       "coverage": {
         "all_time_coffees": 149,
         "seen_or_buyable_30d": 0,
@@ -160,7 +169,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-27T13:47:50.962000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 42,
+      "verified_variants": 107
     },
     {
       "name": "Klatch",
@@ -210,8 +221,8 @@
           "name": "Koppi"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "koppi-live.json",
       "coverage": {
         "all_time_coffees": 35,
         "seen_or_buyable_30d": 0,
@@ -220,7 +231,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-04T11:21:35.579000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 7,
+      "verified_variants": 14
     },
     {
       "name": "La Cabra",
@@ -236,8 +249,8 @@
           "name": "La Cabra"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "la-cabra-live.json",
       "coverage": {
         "all_time_coffees": 197,
         "seen_or_buyable_30d": 0,
@@ -246,7 +259,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-12T19:31:49.714000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 15,
+      "verified_variants": 25
     },
     {
       "name": "Modcup",
@@ -262,8 +277,8 @@
           "name": "Modcup Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "modcup-live.json",
       "coverage": {
         "all_time_coffees": 42,
         "seen_or_buyable_30d": 0,
@@ -272,7 +287,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-10T20:21:44.950000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 16,
+      "verified_variants": 39
     },
     {
       "name": "Mother Tongue",
@@ -288,8 +305,8 @@
           "name": "Mother Tongue Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "mother-tongue-live.json",
       "coverage": {
         "all_time_coffees": 15,
         "seen_or_buyable_30d": 0,
@@ -298,7 +315,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-06T11:19:45.534000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 9,
+      "verified_variants": 108
     },
     {
       "name": "Obscure Coffee Roasters",
@@ -426,8 +445,8 @@
           "name": "PERC Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "perc-live.json",
       "coverage": {
         "all_time_coffees": 119,
         "seen_or_buyable_30d": 0,
@@ -436,7 +455,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-08-06T13:57:27.819000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 122,
+      "verified_variants": 594
     },
     {
       "name": "Pilgrim",
@@ -514,8 +535,8 @@
           "name": "Three Marks Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null,
+      "status": "verified",
+      "evidence": "three-marks-live.json",
       "coverage": {
         "all_time_coffees": 95,
         "seen_or_buyable_30d": 0,
@@ -524,7 +545,9 @@
         "currently_available_recent": 0,
         "latest_sighting": "2026-06-30T10:37:04.981000+00:00",
         "null_sighting_timestamps": 0
-      }
+      },
+      "verified_coffee_products": 15,
+      "verified_variants": 78
     }
   ]
 }

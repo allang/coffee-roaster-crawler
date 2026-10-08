@@ -68,6 +68,7 @@ async function fetchPageContent(url, referer = null, options = {}) {
     if(!soft404 && options.siteProfile?.adapter==='hydrogen' && /^\/products\/[^/]+\/?$/.test(new URL(result.finalUrl || url).pathname)){sourceProduct=require('./siteSupport/hydrogen').hydrogenProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='wix' && new URL(result.finalUrl || url).pathname.startsWith(options.siteProfile.product_path)){sourceProduct=require('./siteSupport/wix').wixProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='cafe24' && options.siteProfile.cafe24_native_single_items && require('./catalogNormalization').canonicalProductUrl(result.finalUrl || url).includes('/product/detail.html?product_no=')){sourceProduct=await require('./siteSupport/cafe24').fetchCafe24Product(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='fathers'){sourceProduct=require('./siteSupport/fathers').fathersProduct(result.data,result.finalUrl || url,options.siteProfile);}
     return {
       success: true,
       sourceProduct,

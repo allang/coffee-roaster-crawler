@@ -23,7 +23,9 @@ function structuredExtraction(page, shopifyJson) {
     if (ATTRIBUTES.includes(mapped)) attributes[mapped] = p.value;
   }
   if (image.url) {attributes.product_image_url=image.url;attributes._image_evidence=image.evidence;}
-  const descriptionHtml = native?.description || schema?.description || '';
+  const pageDescription=native?require('./siteSupport/threeMarks').threeMarksDescription(page.html,page.finalUrl || page.url,native):null;
+  const descriptions=[native?.description || schema?.description,pageDescription].filter(Boolean);
+  const descriptionHtml = descriptions.filter((value,i)=>!descriptions.slice(0,i).some(prior=>stripHtml(prior)===stripHtml(value))).join('\n');
   const description = stripHtml(descriptionHtml);
   if (description) { attributes.original_description = description; attributes.description ??= description; }
   if (native?.vendor) attributes.vendor = native.vendor;

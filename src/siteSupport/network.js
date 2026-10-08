@@ -5,7 +5,7 @@ function allowed(value,hosts) {
   const url=new URL(value);let path=url.pathname;
   for(let i=0;i<4;i++){try{const next=decodeURIComponent(path);if(next===path)break;path=next;}catch{throw Error('Invalid encoded path');}}
   if(url.protocol!=='https:' || url.username || url.password || url.port || !hosts.includes(url.hostname.toLowerCase()))throw Error('Unverified destination');
-  if(/(?:^|\/)(?:terms(?:-[^/]*)?|policies|privacy(?:-[^/]*)?|legal(?:-[^/]*)?|cart|basket|checkout|my-account|accounts?|customers|customer_authentication|members?|myshop|orders?|payments|login|admin|wp-admin)(?:[/.]|$)/i.test(path) || /^\/shopinfo\/guide\.html$/i.test(path) || [...url.searchParams.keys()].some(k=>/^(?:add-to-cart|wc-ajax)$/i.test(k)))throw Error('Prohibited path');
+  if(/(?:^|\/)(?:terms(?:[-_][^/]*)?|policies|privacy(?:-[^/]*)?|legal(?:-[^/]*)?|agreement|cart|shop_cart|basket|checkout|my-account|shop_mypage|accounts?|customers|customer_authentication|members?|myshop|orders?|payments|login|logout\.cm|auth|admin|wp-admin)(?:[/.;]|$)/i.test(path) || /^\/shopinfo\/guide\.html$/i.test(path) || [...url.searchParams.keys()].some(k=>/^(?:add-to-cart|wc-ajax)$/i.test(k)))throw Error('Prohibited path');
   return url;
 }
 function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024}={}) {

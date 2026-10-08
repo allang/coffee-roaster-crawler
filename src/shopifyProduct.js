@@ -21,6 +21,20 @@ function labelWeight(value) {
   const imperial=parseWeightGrams(dual?dual[1]+dual[2]:reverse[3]+reverse[4]),metric=parseWeightGrams(dual?dual[3]+dual[4]:reverse[1]+reverse[2]);
   return imperial && metric && Math.abs(imperial-metric)<=Math.max(2,metric*0.02)?metric:null;
 }
+function titleNetWeight(product) {
+  const title=String(product.title || ''),sizes=[...title.matchAll(/\b(\d+(?:\.\d+)?\s*(?:kg|g|oz|lbs?))\b/gi)];
+  if(sizes.length!==1 || /\d\s*(?:x|×)|\d\s*(?:bags?|packs?)\b/i.test(title))return null;
+  const suffix=title.match(/(?:^|\s|\()(\d+(?:\.\d+)?\s*(?:kg|g|oz|lbs?))\s*\)?\s*$/i);
+  if(!suffix)return null;
+  // A size declared in the product title applies to multiple grind variants
+  // only when every option is explicitly a grind/preparation choice.
+  if(product.variants?.length>1 && (product.variants.some(v=>labelWeight(v.title)!=null) || !Array.isArray(product.options) || !product.options.length || product.options.some(o=>{
+    const name=typeof o==='string'?o:o.name;
+    const grindValues=Array.isArray(o.values) && o.values.length>0 && o.values.every(v=>/^(?:whole\s*beans?|ground\s+for\s+(?:filter|espresso|french press|aeropress))$/i.test(v));
+    return !/^(?:grind|grinding|preparation|form)$/i.test(name) && !grindValues;
+  })))return null;
+  return labelWeight(suffix[1]);
+}
 
 function nativeNetWeight(product,variant) {
   // Size belongs to its native option, independently of grind/roast labels.
@@ -142,7 +156,7 @@ function mergeShopifyStock(product,ajax) {
 
 function registeredWeightOptions(url,product) {
   const profile=lookupRegisteredProfile(url);
-  return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle)};
+  return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle),descriptionWeightPrefixes:profile?.description_net_weight_prefixes || []};
 }
 function lookupRegisteredProfile(url) {return require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname));}
 function explicitCoffeeWeight(html) {
@@ -153,7 +167,7 @@ function explicitCoffeeWeight(html) {
   });
   return weights.length===1?weights[0]:null;
 }
-function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=false,singleVariantDescriptionWeight=false}={}) {
+function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=false,singleVariantDescriptionWeight=false,descriptionWeightPrefixes=[]}={}) {
   const variants = (product.variants || []).map(v => ({
     id: v.id == null ? null : String(v.id),
     title: v.title,
@@ -166,7 +180,7 @@ function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=
     availabilitySource:v._availability_source || 'shopify_product_json',
     compareAtPrice: v.compare_at_price,
     currency: product.currency || null,
-    weightGrams: netWeightUnproven?null:preferLabelWeight?(nativeNetWeight(product,v) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
+    weightGrams: netWeightUnproven?null:preferLabelWeight?(nativeNetWeight(product,v) ?? titleNetWeight(product) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title,descriptionWeightPrefixes) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
     shippingWeightGrams:v.grams ?? null,
   }));
 
@@ -246,6 +260,7 @@ function mergeGptAndJsonData(gptProduct, jsonData) {
 module.exports = {
   labelWeight,
   explicitCoffeeWeight,
+  titleNetWeight,
   exactAnalyticsMarket,
   mergeShopifyStock,
   isShopifyProductUrl,

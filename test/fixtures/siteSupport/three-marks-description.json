@@ -1,0 +1,183 @@
+{
+  "url": "https://www.threemarkscoffee.com/products/tafese-yaau-g1",
+  "native": {
+    "id": "11099228406097",
+    "variantsComplete": true,
+    "currency": null,
+    "title": "Tafese Yaau",
+    "handle": "tafese-yaau-g1",
+    "description": "",
+    "descriptionText": "",
+    "vendor": "Three Marks Coffee",
+    "productType": "CAFÉ WHITE LABEL",
+    "tags": [
+      "beans"
+    ],
+    "variants": [
+      {
+        "id": "54776087085393",
+        "title": "250g bag / Beans",
+        "price": "15.90",
+        "priceCents": 1590,
+        "weight": 0.25,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "16.00",
+        "currency": null,
+        "weightGrams": 250,
+        "shippingWeightGrams": 250
+      },
+      {
+        "id": "54776087118161",
+        "title": "250g bag / Espresso",
+        "price": "15.90",
+        "priceCents": 1590,
+        "weight": 0.25,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "16.00",
+        "currency": null,
+        "weightGrams": 250,
+        "shippingWeightGrams": 250
+      },
+      {
+        "id": "54776087150929",
+        "title": "250g bag / Moka Pot",
+        "price": "15.90",
+        "priceCents": 1590,
+        "weight": 0.25,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "16.00",
+        "currency": null,
+        "weightGrams": 250,
+        "shippingWeightGrams": 250
+      },
+      {
+        "id": "54776087183697",
+        "title": "250g bag / Pour Over",
+        "price": "15.90",
+        "priceCents": 1590,
+        "weight": 0.25,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "16.00",
+        "currency": null,
+        "weightGrams": 250,
+        "shippingWeightGrams": 250
+      },
+      {
+        "id": "54776087216465",
+        "title": "250g bag / Mocca Master",
+        "price": "15.90",
+        "priceCents": 1590,
+        "weight": 0.25,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "16.00",
+        "currency": null,
+        "weightGrams": 250,
+        "shippingWeightGrams": 250
+      },
+      {
+        "id": "54776087249233",
+        "title": "1Kg bag / Beans",
+        "price": "59.60",
+        "priceCents": 5960,
+        "weight": 1,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "60.00",
+        "currency": null,
+        "weightGrams": 1000,
+        "shippingWeightGrams": 1000
+      },
+      {
+        "id": "54776087282001",
+        "title": "1Kg bag / Espresso",
+        "price": "59.60",
+        "priceCents": 5960,
+        "weight": 1,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "60.00",
+        "currency": null,
+        "weightGrams": 1000,
+        "shippingWeightGrams": 1000
+      },
+      {
+        "id": "54776087314769",
+        "title": "1Kg bag / Moka Pot",
+        "price": "59.60",
+        "priceCents": 5960,
+        "weight": 1,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "60.00",
+        "currency": null,
+        "weightGrams": 1000,
+        "shippingWeightGrams": 1000
+      },
+      {
+        "id": "54776087347537",
+        "title": "1Kg bag / Pour Over",
+        "price": "59.60",
+        "priceCents": 5960,
+        "weight": 1,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "60.00",
+        "currency": null,
+        "weightGrams": 1000,
+        "shippingWeightGrams": 1000
+      },
+      {
+        "id": "54776087380305",
+        "title": "1Kg bag / Mocca Master",
+        "price": "59.60",
+        "priceCents": 5960,
+        "weight": 1,
+        "weightUnit": "kg",
+        "sku": null,
+        "available": true,
+        "availabilitySource": "shopify_ajax_product_js",
+        "compareAtPrice": "60.00",
+        "currency": null,
+        "weightGrams": 1000,
+        "shippingWeightGrams": 1000
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0984/7010/1329/files/FrontalView_78de4d17-a306-4aac-b01a-4aa35a54b0fd.png?v=1790691847",
+        "alt": "Tafese Yaau"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0984/7010/1329/files/LateralView_a6d538fd-a791-4690-af6e-55c3de41a583.png?v=1790691847",
+        "alt": "Tafese Yaau"
+      }
+    ],
+    "mainImage": "https://cdn.shopify.com/s/files/1/0984/7010/1329/files/FrontalView_78de4d17-a306-4aac-b01a-4aa35a54b0fd.png?v=1790691847",
+    "createdAt": "2026-09-02T16:17:23+02:00",
+    "updatedAt": "2026-10-08T06:39:46+02:00"
+  },
+  "html": "<link rel=\"canonical\" href=\"https://www.threemarkscoffee.com/products/tafese-yaau-g1\"><main><div id=\"ProductInformation-template--27107687334225__main\"><h1>Tafese Yaau</h1><input name=\"id\" data-variant-id value=\"54776087085393\"><rte-formatter class=\" spacing-style text-block text-block--AL25YTnlPc3M3TWV2c__text_notas_cafe rte     rte   \" style=\"    --padding-block-start: 12px; --padding-block-end:0px; --padding-inline-start:0px; --padding-inline-end:0px;         --width: fit-content;    --max-width: var(--max-width--body-normal);          \">\n    <p>Strawberry | Jasmine | Peach</p>\n  </rte-formatter>\n<div class=\"tm-accordion-metafield rte\"><div class=\"metafield-rich_text_field\"><p>In Ethiopia’s traditional natural process, ripe coffee cherries are carefully handpicked and dried whole, allowing the fruit to slowly impart its sweetness and character to the beans.<br>\n<br>\nAt Tafese’s Farm, the cherries are sun dried on raised African beds for approximately 15 days, allowing for even airflow and consistent fermentation. Once dried, the coffee is milled locally in Chiri and prepared for its journey to Addis Ababa, where it begins its final leg to international markets.<br>\n<br>\nThis careful drying process enhances the coffee’s fruity sweetness, complexity, and distinctive character.</p><p></p><p></p><p></p></div>\n</div>\n<div class=\"tm-accordion-metafield rte\"><div class=\"metafield-rich_text_field\"><p>In the lush highlands of Chire Woreda, Sidama, lies Tafese’s Farm, where a deep rooted passion for coffee and generations of traditional knowledge come together to produce exceptional coffees.<br>\n<br>\nLocated in Hora Ela Kebele, the farm cultivates the heirloom varieties 74110 and 74112, known for their complexity and adaptability to high altitude environments. Quality begins in the field, where only the ripest, red cherries are carefully handpicked.<br>\n<br>\nThe coffee plants grow alongside false banana and a variety of fruit trees, creating a biodiverse <br>\necosystem that supports healthy soils and contributes to the distinctive character of Tafese’s coffee.<br>\n<br>\nA living ecosystem, carefully nurtured by a farmer whose dedication to quality can be tasted in every cup.</p></div>\n</div>\n<div class=\"tm-accordion-metafield rte\"><div class=\"metafield-rich_text_field\"><p><strong>Variety</strong> 74110, 74112<br>\n<strong>Process</strong> Natural<br>\n<strong>Producer</strong> Tafese Yaau<br>\n<strong>Farm</strong> Tafese's Farm<br>\n<strong>Region</strong> Chire Woreda, Sidama<br>\n<strong>Altitude</strong> 2100 masl</p><p>Suggested for Espresso / Filter</p></div>\n</div></div><section class=\"related\"><div class=\"tm-accordion-metafield\"><p>Unrelated coffee was co-fermented with mango.</p></div></section></main>"
+}
