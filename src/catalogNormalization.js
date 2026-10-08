@@ -112,6 +112,8 @@ function canonicalProductUrl(sourceUrl) {
   url.searchParams.sort();
   url.hostname = url.hostname.toLowerCase().replace(/^www\./, '');
   const profile=require('./siteSupport/profiles.json').find(p=>p.hosts.includes(url.hostname));
+  // Only explicitly reviewed merchant aliases share product URL identity.
+  if(profile?.canonical_product_host && profile.hosts.includes(profile.canonical_product_host) && /^\/products\/[^/]+\/?$/.test(url.pathname))url.hostname=profile.canonical_product_host;
   if(profile?.canonical_product_path && url.pathname.startsWith(profile.product_path))url.pathname=profile.canonical_product_path+url.pathname.slice(profile.product_path.length);
   if(profile?.adapter==='cafe24') {
     const id=url.searchParams.get('product_no') || url.pathname.match(/^\/product\/[^/]+\/([1-9]\d+)\//)?.[1];
