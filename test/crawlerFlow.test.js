@@ -71,3 +71,13 @@ test('merchant soft 404 overrides cached native stock without refreshing product
     assert((await pg.query('select availability_state from product_variants')).rows.every(v=>v.availability_state==='removed'));
   }finally{await pg.close();}
 });
+test('omitted-product reconciliation keeps guarded page reads and lets a primary soft 404 override cached Shopify stock',async()=>{
+  const pg=await catalogDb();try{
+    await pg.query('insert into entities(id) values($1)',[owner]);const state=fixture(),m=modules(supabaseAdapter(pg),state),acc=new m.accumulator(owner,'Fixture',log);
+    acc.addUrl(url);await m.visitor.visitAllPages(owner,[{url}],acc,log,'shopify');
+    const requests=[];
+    const result=await m.availability.reconcileRoasterAvailability({entityId:owner,surfaceUrls:['https://shop.test/products/new'],platform:'shopify',log,
+      fetchPage:async value=>{requests.push(value);return {success:true,html:'<main><h1>Page not found</h1></main>',status:200,finalUrl:value};},fetchJson:async()=>{throw Error('Cached native JSON must not override removal');}});
+    assert.deepEqual(requests,[url]);assert.equal(result.removed,1);assert.equal((await pg.query('select availability_state from products')).rows[0].availability_state,'removed');
+  }finally{await pg.close();}
+});

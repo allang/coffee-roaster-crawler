@@ -59,8 +59,9 @@ async function fetchPageContent(url, referer = null, options = {}) {
     const truncatedContent = fullContent.substring(0, maxClassificationChars);
 
     let sourceProduct=null;
-    if(options.siteProfile?.adapter==='square'){sourceProduct=await require('./siteSupport/square').fetchSquareProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
-    if(options.siteProfile?.adapter==='subbly'){sourceProduct=await require('./siteSupport/subbly').fetchSubblyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    const soft404=detectProductAvailability({html:result.data,status:result.status,sourceUrl:url,finalUrl:result.finalUrl}).reason==='product_soft_404';
+    if(!soft404 && options.siteProfile?.adapter==='square'){sourceProduct=await require('./siteSupport/square').fetchSquareProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='subbly'){sourceProduct=await require('./siteSupport/subbly').fetchSubblyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     return {
       success: true,
       sourceProduct,

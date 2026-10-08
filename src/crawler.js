@@ -110,9 +110,11 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const siteDiscovery=await discoverSiteProducts(roaster,siteReader || {fetchHtml:require('./httpClient').fetchHtml});
   const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
   for(const url of siteDiscovery.urls)accumulator.addUrl(url,'site-support');
-  if(siteDiscovery.error)throw new Error('Supported merchant discovery failed: '+siteDiscovery.error);
+  if(siteDiscovery.error || siteDiscovery.supported && (!siteDiscovery.complete || !siteDiscovery.urls.length))throw new Error('Supported merchant discovery failed: '+(siteDiscovery.error || 'Incomplete or empty reviewed coffee inventory'));
 
-  const sitemapUrl = await discoverSitemapUrl(effectiveWebsiteUrl);
+  // Registered inventories are already reviewed and complete. Do not fall back
+  // to broad sitemaps/BFS or an unguarded reader for these merchants.
+  const sitemapUrl = siteDiscovery.supported?null:await discoverSitemapUrl(effectiveWebsiteUrl);
   let sitemapResult = null;
   const observed = new Map();
 
@@ -242,16 +244,19 @@ async function crawlRoaster(roaster, blacklistTerms) {
       coffeesFound: visitResults.coffeeFound || 0,
     });
 
-    if (sitemapResult && sitemapResult.urls.length > 0 && sitemapResult.inventoryComplete && visitResults.errors === 0 && (!siteDiscovery.supported || siteDiscovery.complete)) {
+    const inventoryComplete=siteDiscovery.supported?siteDiscovery.complete:sitemapResult?.urls.length>0 && sitemapResult.inventoryComplete;
+    if (inventoryComplete && visitResults.errors === 0) {
       await reconcileRoasterAvailability({
         entityId: roaster.id,
-        surfaceUrls: accumulator.getAllUrls().map(entry => entry.url),
+        surfaceUrls: siteDiscovery.supported?siteDiscovery.urls:accumulator.getAllUrls().map(entry => entry.url),
         platform: platformInfo.platform,
         log,
         observed,
+        ...siteFetchOptions,
+        ...(siteReader?{fetchPage:url=>require('./pageVisitor').fetchPageContent(url,null,siteFetchOptions)}:{}),
       });
     } else {
-      log.warn('Availability', 'Skipping reconciliation because sitemap inventory surface was incomplete', {
+      log.warn('Availability', 'Skipping reconciliation because inventory or page checks were incomplete', {
         urlsFound: sitemapResult?.urls.length || 0,
         hasError: !!sitemapResult?.error,
       });

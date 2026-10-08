@@ -7,44 +7,38 @@ const { productAvailability: detectProductAvailability } = require('./productEvi
 const { canonicalProductUrl } = require('./catalogNormalization');
 function normalizeUrlForComparison(url) { try { return canonicalProductUrl(url); } catch { return null; } }
 
-function isIncompleteFetch(result) {
-  if (!result || result.success) return false;
-  if (result.status === 404 || result.status === 410) return false;
-  return ['blocked', 'rate_limited', 'timeout', 'dns', 'network', 'transient_http'].includes(
-    result.failureCategory
-  );
-}
-
-async function checkProductUrlAvailability(product, platform, logger) {
+async function checkProductUrlAvailability(product, platform, logger, options={}) {
   if (!product.source_url) {
     return { checked: true, ...detectProductAvailability({}) };
   }
 
-  let shopifyProduct = null;
-  if (platform === 'shopify' && isShopifyProductUrl(product.source_url)) {
-    const shopifyJson = await fetchShopifyProductJson(product.source_url, logger);
-    if (shopifyJson.success) {
-      shopifyProduct = shopifyJson.raw;
-      return { checked:true, ...detectProductAvailability({ shopifyProduct, sourceUrl:product.source_url }) };
-    }
-  }
-
-  const htmlResult = await fetchHtml(product.source_url, {
+  const htmlResult = options.fetchPage?await options.fetchPage(product.source_url):await (options.fetchHtml || fetchHtml)(product.source_url, {
     timeout: 15000,
     useUrlFallback: true,
     maxRetries: 0,
     logger,
   });
 
-  if (isIncompleteFetch(htmlResult)) {
+  if (!htmlResult.success && ![404,410].includes(htmlResult.status)) {
     return {
       checked: true,
       ...detectProductAvailability({ status:htmlResult.status || 503, sourceUrl:product.source_url }),
     };
   }
 
+  const html=htmlResult.html || htmlResult.data || '',pageState=detectProductAvailability({html,status:htmlResult.status,sourceUrl:product.source_url,finalUrl:htmlResult.finalUrl});
+  if(pageState.state==='removed')return {checked:true,...pageState};
+  // Fetch the actual page before consulting a native endpoint: cached catalog
+  // JSON cannot override a current primary soft 404.
+  let shopifyProduct=null;
+  if(platform==='shopify' && isShopifyProductUrl(product.source_url)){
+    const native=await fetchShopifyProductJson(product.source_url,logger,{fetchJson:options.fetchJson});
+    if(native.success)shopifyProduct=native.raw;
+  }
+
   const detection = detectProductAvailability({
-    html: htmlResult.data || '',
+    html,
+    sourceProduct:htmlResult.sourceProduct,
     status: htmlResult.status,
     sourceUrl: product.source_url,
     finalUrl: htmlResult.finalUrl,
@@ -121,7 +115,7 @@ async function reconcileRoasterAvailability(options) {
   for (const product of products || []) {
     const known = observed.get(normalizeUrlForComparison(product.source_url));
     // Surface absence alone is not removal evidence; verify an omitted URL before changing state.
-    const availability = known || await checkProductUrlAvailability(product, platform, logger);
+    const availability = known || await checkProductUrlAvailability(product, platform, logger,options);
     if (known) { result.reused++; continue; } // Shared extraction already persisted the fresh result.
     if (!availability.checked) continue;
     const update = await updateProductAvailability(product.id,availability,checkedAt,logger);
