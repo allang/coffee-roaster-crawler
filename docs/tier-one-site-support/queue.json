@@ -123,8 +123,10 @@
           "name": "Flower Child"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "flower-child-live.json",
+      "coffee_products": 7,
+      "note": "One stale active-collection entry has a primary soft-404 heading. It is not imported or treated as buyable from cached JSON."
     },
     {
       "name": "Fritz Coffee Company",
@@ -139,8 +141,9 @@
           "name": "Fritz"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "fritz-live.json",
+      "coffee_products": 29
     },
     {
       "name": "Frukt",
@@ -155,8 +158,9 @@
           "name": "Frukt"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "frukt-live.json",
+      "coffee_products": 14
     },
     {
       "name": "Goût & Co",
@@ -171,8 +175,9 @@
           "name": "Gout and Co"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "gout-co-live.json",
+      "coffee_products": 55
     },
     {
       "name": "H&S",
@@ -187,8 +192,9 @@
           "name": "H&S Coffee Roasters"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "hs-live.json",
+      "coffee_products": 21
     },
     {
       "name": "Hatch",

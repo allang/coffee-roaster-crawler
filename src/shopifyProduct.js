@@ -1,5 +1,39 @@
 const globalLogger = require('./logger');
 const { fetchJson } = require('./httpClient');
+const cheerio=require('cheerio');
+const {jsonLiteral}=require('./siteSupport/jsonLiteral');
+const {parseMoney}=require('./catalogNormalization');
+const {parseWeightGrams}=require('./product-value-parsers.cjs');
+function labelWeight(value) {
+  const direct=parseWeightGrams(value);if(direct!=null)return direct;
+  const dual=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\(\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\)\s*$/i);
+  const reverse=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\(\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\)\s*$/i);
+  if(!dual && !reverse)return null;
+  const imperial=parseWeightGrams(dual?dual[1]+dual[2]:reverse[3]+reverse[4]),metric=parseWeightGrams(dual?dual[3]+dual[4]:reverse[1]+reverse[2]);
+  return imperial && metric && Math.abs(imperial-metric)<=Math.max(2,metric*0.02)?metric:null;
+}
+
+function exactAnalyticsMarket(html,native) {
+  const $=cheerio.load(html || ''),candidates=[];
+  $('script:not([src])').each((_,element)=>{
+    const script=$(element).text(),currency=script.match(/\bShopifyAnalytics\.meta\.currency\s*=\s*['"]([A-Z]{3})['"]/);
+    const start=script.match(/\bvar\s+meta\s*=\s*(?=\{)/);if(!currency || !start)return;
+    const meta=jsonLiteral(script,start.index+start[0].length),product=meta?.product;
+    if(String(product?.id)!==String(native.id) || product.handle!==native.handle || !Array.isArray(product.variants))return;
+    candidates.push({currency:currency[1],variants:product.variants});
+  });
+  if(candidates.length!==1)return new Map();
+  const market=candidates[0],result=new Map();
+  for(const variant of native.variants || []) {
+    const matches=market.variants.filter(v=>String(v.id)===String(variant.id));
+    const money=parseMoney(variant.price,{currency:market.currency,locale:'en-US'});
+    // Require the exact variant's declared minor amount to agree with the decimal
+    // native payload. A page's general shop currency alone never proves a price.
+    if(matches.length===1 && Number.isSafeInteger(matches[0].price) && money.minorUnits===matches[0].price)
+      result.set(String(variant.id),{price:variant.price,currency:market.currency,source:'shopify_exact_variant_analytics'});
+  }
+  return result;
+}
 
 function isShopifyProductUrl(url) {
   try {
@@ -64,7 +98,7 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
 
   return {
     success: true,
-    data: parseShopifyProduct(product),
+    data: parseShopifyProduct(product,{preferLabelWeight:require('./siteSupport/profiles.json').some(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname))}),
     raw: product,
   };
 }
@@ -81,7 +115,7 @@ function mergeShopifyStock(product,ajax) {
   return {...product,variants,_variants_complete:complete};
 }
 
-function parseShopifyProduct(product) {
+function parseShopifyProduct(product,{preferLabelWeight=false}={}) {
   const variants = (product.variants || []).map(v => ({
     id: v.id == null ? null : String(v.id),
     title: v.title,
@@ -94,7 +128,8 @@ function parseShopifyProduct(product) {
     availabilitySource:v._availability_source || 'shopify_product_json',
     compareAtPrice: v.compare_at_price,
     currency: product.currency || null,
-    weightGrams: v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null),
+    weightGrams: preferLabelWeight?(labelWeight(v.title) ?? (product.variants.length===1?labelWeight(product.title):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
+    shippingWeightGrams:v.grams ?? null,
   }));
 
   const images = (product.images || []).map(img => ({
@@ -170,6 +205,8 @@ function mergeGptAndJsonData(gptProduct, jsonData) {
 }
 
 module.exports = {
+  labelWeight,
+  exactAnalyticsMarket,
   mergeShopifyStock,
   isShopifyProductUrl,
   getProductJsonUrl,

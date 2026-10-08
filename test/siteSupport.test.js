@@ -11,6 +11,7 @@ const {catalogPayload,findExistingProduct}=require('../src/productSaver');
 const {discoverShopifyProducts}=require('../src/siteSupport/shopifyDiscovery');
 const {fetchSquareProduct,bootstrap}=require('../src/siteSupport/square');
 const {createReader}=require('../src/siteSupport/network');
+const {exactAnalyticsMarket,parseShopifyProduct,labelWeight}=require('../src/shopifyProduct');
 const html=fs.readFileSync(path.join(__dirname,'fixtures/siteSupport/april-product-flight.html'),'utf8');
 const url='https://www.aprilcoffeeroasters.com/product/gesha-village-ethiopia-natural-geisha-oma-142';
 const owner='3a71024e-eb30-4778-927b-580e3bc3b62e';
@@ -83,4 +84,35 @@ test('Square API reader rejects another merchant path and account endpoints with
   const other=await reader.fetchHtml('https://cdn5.editmysite.com/app/store/api/v28/editor/users/other/sites/other/products');assert.equal(other.success,false);
   const account=await reader.fetchHtml('https://coffeeprojectnyshop.square.site/app/accounts/v1/customers/me');assert.equal(account.success,false);
   assert.equal(reader.requests.length,0);
+});
+test('Flower Child currency fallback requires same-script currency, exact product/variant IDs and agreeing decimal/minor prices',()=>{
+  const raw={id:8329939321011,handle:'chelbessa-1',title:'Chelbessa - Landrace',product_type:'Coffee',variants:[{id:44985881198771,title:'250g',price:'26.50',available:true}]};
+  const native=parseShopifyProduct(raw),meta={product:{id:raw.id,handle:raw.handle,variants:[{id:raw.variants[0].id,price:2650}]}};
+  const script='<script>window.ShopifyAnalytics.meta.currency = "USD"; var meta = '+JSON.stringify(meta)+';</script>';
+  assert.equal(exactAnalyticsMarket(script,native).get(String(raw.variants[0].id)).currency,'USD');
+  const source=structuredExtraction({html:script,url:'https://flowerchildcoffee.com/products/chelbessa-1'},{success:true,data:native});
+  assert.equal(source.product.variants[0].currency,'USD');assert.equal(source.product.variants[0].price_source,'shopify_exact_variant_analytics');
+  for(const bad of [script.replace('2650','9999'),script.replace(String(raw.id),'1'),script.replace(String(raw.variants[0].id),'1'),script+script])assert.equal(exactAnalyticsMarket(bad,native).size,0);
+  assert.equal(exactAnalyticsMarket('<script>Shopify.currency={active:"USD"}</script>',native).size,0);
+});
+test('Fritz product groups bind query/canonical paths to exact KRW variants and reject another product offer',()=>{
+  const group=require('./fixtures/siteSupport/fritz-group.json'),url='https://fritz.co.kr/product/detail.html?product_no=982&cate_no=24';
+  const html='<script type="application/ld+json">'+JSON.stringify(group)+'</script>';
+  const source=structuredExtraction({html,url},null),normalized=normalizeProduct(source.product,url);
+  assert.equal(normalized.variants.length,4);assert(normalized.variants.every(v=>v.money.currency==='KRW' && v.money.exponent===0));
+  assert.deepEqual(normalized.variants.map(v=>v.money.minorUnits),[22000,22000,22000,17000]);
+  assert.equal(productAvailability({html,status:200,sourceUrl:url}).state,'in_stock');
+  assert.equal(canonicalProductUrl(group['@id']),canonicalProductUrl(url));
+  const bad=structuredClone(group);bad.hasVariant[0].offers.url='https://fritz.co.kr/product/detail.html?product_no=other';
+  assert.equal(structuredExtraction({html:'<script type="application/ld+json">'+JSON.stringify(bad)+'</script>',url},null).product,null);
+  const simple={'@type':'Product',name:'Instant Coffee',sku:'cafe24_fritzcompany_1_982',offers:{'@type':'Offer',url:group['@id'],price:12000,priceCurrency:'KRW',availability:'https://schema.org/InStock'}};
+  const page='<link rel="canonical" href="'+group['@id']+'"><script type="application/ld+json">'+JSON.stringify(simple)+'</script>';
+  assert.equal(structuredExtraction({html:page,url},null).product.variants[0].source_id,simple.sku);
+});
+test('registered coffee sizes use explicit net-weight labels rather than Shopify shipping mass',()=>{
+  const p=parseShopifyProduct({title:'Coffee',variants:[{id:1,title:'125g / Whole bean',grams:265},{id:2,title:'250g / Filter ground',grams:265}]},{preferLabelWeight:true});
+  assert.deepEqual(p.variants.map(v=>v.weightGrams),[125,250]);assert.deepEqual(p.variants.map(v=>v.shippingWeightGrams),[265,265]);
+  assert.equal(labelWeight('8.8 oz (250g)'),250);assert.equal(labelWeight('8.8 oz (500g)'),null);assert.equal(labelWeight('2 x 250g'),null);
+  assert.equal(labelWeight('125g (4.4oz)'),125);assert.equal(labelWeight('125g (8.8oz)'),null);
+  assert.equal(parseShopifyProduct({title:'Coffee',variants:[{id:1,title:'Default Title',grams:265}]},{preferLabelWeight:true}).variants[0].weightGrams,null);
 });

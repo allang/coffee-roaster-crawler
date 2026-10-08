@@ -59,3 +59,15 @@ test('stock-only transaction emits invalidation and removal reaches every varian
     const e=(await pg.query('select * from catalog_change_events order by id desc')).rows[0];assert.equal(e.content_changed,false);assert.equal(e.market_changed,true);
   } finally{await pg.close();}
 });
+test('merchant soft 404 overrides cached native stock without refreshing product sightings or changing identity/content',async()=>{
+  const pg=await catalogDb();try{
+    await pg.query('insert into entities(id) values($1)',[owner]);const state=fixture(),m=modules(supabaseAdapter(pg),state),acc=new m.accumulator(owner,'Fixture',log);
+    acc.addUrl(url);await m.visitor.visitAllPages(owner,[{url}],acc,log,'shopify');
+    const before=(await pg.query('select id,slug,last_seen_at,name,metadata,description_raw from products')).rows[0];
+    state.html='<main><h1>Page not found</h1><p>Sorry, we could not find this page.</p></main>';state.native.variants[0].available=true;
+    const result=await m.visitor.visitAllPages(owner,[{url}],acc,log,'shopify');assert.equal(result.errors,0);assert.equal(result.coffeeFound,0);assert.equal(state.aiCalls,1);
+    const after=(await pg.query('select id,slug,last_seen_at,name,metadata,description_raw from products')).rows[0];assert.deepEqual(after,before);
+    assert.equal((await pg.query('select availability_state from products')).rows[0].availability_state,'removed');
+    assert((await pg.query('select availability_state from product_variants')).rows.every(v=>v.availability_state==='removed'));
+  }finally{await pg.close();}
+});

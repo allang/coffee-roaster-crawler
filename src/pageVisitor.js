@@ -5,11 +5,11 @@ const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage } = require('./knownPages');
 const { extractPage } = require('./extraction');
 const { canonicalProductUrl } = require('./catalogNormalization');
-const { saveProduct } = require('./productSaver');
+const { saveProduct,findExistingProduct,productSourceKey } = require('./productSaver');
 const { config } = require('./config');
 const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
 const { fetchHtml, jitteredSleep } = require('./httpClient');
-const { detectProductAvailability } = require('./availability');
+const { detectProductAvailability,updateProductAvailability } = require('./availability');
 
 async function fetchPageContent(url, referer = null, options = {}) {
   const result = await (options.fetchHtml || fetchHtml)(url, {
@@ -91,6 +91,16 @@ function isClearlyNonCoffeeProduct(product) {
 
 async function processFetchedPage(entityId, url, fetchResult, log, platform='unknown', options={}) {
   const known=options.knownPage;
+  const pageAvailability=fetchResult.success?detectProductAvailability({html:fetchResult.html,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl}):null;
+  if(pageAvailability?.reason==='product_soft_404') {
+    // An unavailable page cannot refresh product sightings or publish cached API
+    // stock. Update only the existing product's availability, if identified.
+    const source=canonicalProductUrl(url),db=require('./supabase').getSupabase();
+    const existing=await findExistingProduct(db,entityId,source,productSourceKey(entityId,null,source));
+    if(existing)await updateProductAvailability(existing.id,pageAvailability,null,log);
+    options.observed?.set(source,pageAvailability);
+    return {visited:true,classified:false,isCoffee:false,availability:pageAvailability,aiCalls:0,unavailable:true};
+  }
   if (!fetchResult.success) {
     if ([404,410].includes(fetchResult.status) && known?.status==='coffee' && known.classification?.product) {
       const availability=detectProductAvailability({status:fetchResult.status,sourceUrl:url});

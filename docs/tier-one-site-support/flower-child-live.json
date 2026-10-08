@@ -1,0 +1,716 @@
+{
+  "name": "Flower Child",
+  "checked_at": "2026-10-08T03:24:32.799Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://flowerchildcoffee.com/products/mario-mejia-pacamara",
+      "https://flowerchildcoffee.com/products/edgar-gonzalez-chiroso",
+      "https://flowerchildcoffee.com/products/othosololo-honey-landrace",
+      "https://flowerchildcoffee.com/products/decaf-divino",
+      "https://flowerchildcoffee.com/products/danche-2",
+      "https://flowerchildcoffee.com/products/chelbessa-1",
+      "https://flowerchildcoffee.com/products/danche-honey",
+      "https://flowerchildcoffee.com/products/kiamugumo"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/active-coffee/products.json",
+        "page": 1,
+        "products": 8,
+        "coffeeProducts": 8
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://flowerchildcoffee.com/products/mario-mejia-pacamara",
+      "title": "Mario Mejía - Pacamara",
+      "source_product_id": "8621587923123",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "45882906050739",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 24,
+            "amount": "24.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45882906083507",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 60,
+            "amount": "60.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45882906116275",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 150,
+            "amount": "150.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://flowerchildcoffee.com/products/edgar-gonzalez-chiroso",
+      "title": "Edgar Gonzalez - Chiroso",
+      "source_product_id": "8621226426547",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "45881323126963",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 26,
+            "amount": "26.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45881323159731",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 70,
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45881323192499",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 170,
+            "amount": "170.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://flowerchildcoffee.com/products/othosololo-honey-landrace",
+      "title": "Othosololo - Honey Landrace",
+      "source_product_id": "8607825363123",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "45833904750771",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 29,
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45833904783539",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 85,
+            "amount": "85.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45833904816307",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 185,
+            "amount": "185.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 18500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Honey Processed",
+        "process_methods": [
+          "honey"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Honey Processed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://flowerchildcoffee.com/products/decaf-divino",
+      "title": "Decaf Divino",
+      "source_product_id": "8414850711731",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "45258937794739",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 25,
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45258937827507",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 60,
+            "amount": "60.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45258937860275",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 160,
+            "amount": "160.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 16000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Ethyl Acetate Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Ethyl Acetate Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://flowerchildcoffee.com/products/danche-2",
+      "title": "Danche",
+      "source_product_id": "8365013074099",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "45100565233843",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 26.5,
+            "amount": "26.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2650,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45100565266611",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 70,
+            "amount": "70.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "45100565299379",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 165,
+            "amount": "165.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 16500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://flowerchildcoffee.com/products/danche-honey",
+      "title": "Danche - Yellow Honey Process",
+      "source_product_id": "8317791568051",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "44933293015219",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 27.5,
+            "amount": "27.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2750,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44933293047987",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 80,
+            "amount": "80.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44933293080755",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 175,
+            "amount": "175.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Yellow Honey",
+        "process_methods": [
+          "honey"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Yellow Honey"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://flowerchildcoffee.com/products/kiamugumo",
+      "title": "Kiamugumo",
+      "source_product_id": "8296033812659",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "44830610948275",
+          "title": "250g",
+          "weight_g": 250,
+          "money": {
+            "raw": 26.5,
+            "amount": "26.50",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2650,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44830610981043",
+          "title": "2lb",
+          "weight_g": 907,
+          "money": {
+            "raw": 80,
+            "amount": "80.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44830611013811",
+          "title": "5lb",
+          "weight_g": 2268,
+          "money": {
+            "raw": 170,
+            "amount": "170.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [
+    {
+      "url": "https://flowerchildcoffee.com/products/chelbessa-1",
+      "state": "removed",
+      "isAvailable": false,
+      "reason": "product_soft_404",
+      "evidence": [
+        {
+          "source": "primary_product_heading",
+          "heading": "Page not found",
+          "status": 200,
+          "url": "https://flowerchildcoffee.com/products/chelbessa-1"
+        }
+      ],
+      "variants": [],
+      "checkedAt": "2026-10-08T03:24:29.740Z"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/collections/active-coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T03:24:21.323Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/collections/active-coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T03:24:21.758Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/mario-mejia-pacamara",
+      "status": 200,
+      "at": "2026-10-08T03:24:22.329Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/mario-mejia-pacamara.json",
+      "status": 200,
+      "at": "2026-10-08T03:24:22.812Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/mario-mejia-pacamara.js",
+      "status": 200,
+      "at": "2026-10-08T03:24:23.317Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/edgar-gonzalez-chiroso",
+      "status": 200,
+      "at": "2026-10-08T03:24:23.763Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/edgar-gonzalez-chiroso.json",
+      "status": 200,
+      "at": "2026-10-08T03:24:24.257Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/edgar-gonzalez-chiroso.js",
+      "status": 200,
+      "at": "2026-10-08T03:24:24.768Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/othosololo-honey-landrace",
+      "status": 200,
+      "at": "2026-10-08T03:24:25.301Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/othosololo-honey-landrace.json",
+      "status": 200,
+      "at": "2026-10-08T03:24:25.816Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/othosololo-honey-landrace.js",
+      "status": 200,
+      "at": "2026-10-08T03:24:26.217Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/decaf-divino",
+      "status": 200,
+      "at": "2026-10-08T03:24:26.757Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/decaf-divino.json",
+      "status": 200,
+      "at": "2026-10-08T03:24:27.241Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/decaf-divino.js",
+      "status": 200,
+      "at": "2026-10-08T03:24:27.744Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/danche-2",
+      "status": 200,
+      "at": "2026-10-08T03:24:28.309Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/danche-2.json",
+      "status": 200,
+      "at": "2026-10-08T03:24:28.753Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/danche-2.js",
+      "status": 200,
+      "at": "2026-10-08T03:24:29.269Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/chelbessa-1",
+      "status": 200,
+      "at": "2026-10-08T03:24:29.736Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/danche-honey",
+      "status": 200,
+      "at": "2026-10-08T03:24:30.287Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/danche-honey.json",
+      "status": 200,
+      "at": "2026-10-08T03:24:30.743Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/danche-honey.js",
+      "status": 200,
+      "at": "2026-10-08T03:24:31.271Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/kiamugumo",
+      "status": 200,
+      "at": "2026-10-08T03:24:31.827Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/kiamugumo.json",
+      "status": 200,
+      "at": "2026-10-08T03:24:32.239Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://flowerchildcoffee.com/products/kiamugumo.js",
+      "status": 200,
+      "at": "2026-10-08T03:24:32.767Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

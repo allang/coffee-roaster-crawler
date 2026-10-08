@@ -1,6 +1,6 @@
 {
   "name": "Coffee Collective",
-  "checked_at": "2026-10-08T02:31:13.099Z",
+  "checked_at": "2026-10-08T03:24:20.981Z",
   "mode": "merchant-get-only-dry-run",
   "discovery": {
     "supported": true,
@@ -62,7 +62,8 @@
             "minorUnits": 30320,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -100,7 +101,8 @@
             "minorUnits": 13600,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -143,7 +145,8 @@
             "minorUnits": 13200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -181,7 +184,8 @@
             "minorUnits": 12640,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -219,7 +223,8 @@
             "minorUnits": 12720,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -257,7 +262,8 @@
             "minorUnits": 12240,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -295,7 +301,8 @@
             "minorUnits": 12880,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -333,7 +340,8 @@
             "minorUnits": 12800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -371,7 +379,8 @@
             "minorUnits": 13520,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -409,7 +418,8 @@
             "minorUnits": 12720,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -447,7 +457,8 @@
             "minorUnits": 13200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -485,7 +496,8 @@
             "minorUnits": 12400,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -523,7 +535,8 @@
             "minorUnits": 11680,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -561,7 +574,8 @@
             "minorUnits": 12640,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -599,7 +613,8 @@
             "minorUnits": 12080,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -637,7 +652,8 @@
             "minorUnits": 11600,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -675,7 +691,8 @@
             "minorUnits": 36320,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -713,7 +730,8 @@
             "minorUnits": 37360,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -751,7 +769,8 @@
             "minorUnits": 11920,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -789,7 +808,8 @@
             "minorUnits": 13520,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -827,7 +847,8 @@
             "minorUnits": 12240,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -848,342 +869,410 @@
       "image_present": true
     }
   ],
+  "unavailable_products": [],
   "errors": [],
   "requests": [
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/collections/filter-coffee/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T02:30:39.670Z"
+      "at": "2026-10-08T03:23:47.890Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/collections/filter-coffee/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T02:30:39.900Z"
+      "at": "2026-10-08T03:23:48.265Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/collections/espresso/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T02:30:40.422Z"
+      "at": "2026-10-08T03:23:48.794Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/collections/espresso/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T02:30:40.816Z"
+      "at": "2026-10-08T03:23:49.266Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/takesi-gesha-120g",
       "status": 200,
-      "at": "2026-10-08T02:30:41.578Z"
+      "at": "2026-10-08T03:23:49.837Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/takesi-gesha-120g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:41.819Z"
+      "at": "2026-10-08T03:23:50.340Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/takesi-gesha-120g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:42.325Z"
+      "at": "2026-10-08T03:23:50.859Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-anaerobic-200g",
       "status": 200,
-      "at": "2026-10-08T02:30:43.235Z"
+      "at": "2026-10-08T03:23:51.390Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-anaerobic-200g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:43.366Z"
+      "at": "2026-10-08T03:23:51.843Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-anaerobic-200g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:43.855Z"
+      "at": "2026-10-08T03:23:52.405Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/bekele-honey-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:44.520Z"
+      "at": "2026-10-08T03:23:52.928Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/bekele-honey-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:45.666Z"
+      "at": "2026-10-08T03:23:53.420Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/bekele-honey-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:45.802Z"
+      "at": "2026-10-08T03:23:53.874Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:46.527Z"
+      "at": "2026-10-08T03:23:54.377Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:46.862Z"
+      "at": "2026-10-08T03:23:54.885Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:47.371Z"
+      "at": "2026-10-08T03:23:55.408Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kangocho-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:48.163Z"
+      "at": "2026-10-08T03:23:55.932Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kangocho-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:48.291Z"
+      "at": "2026-10-08T03:23:56.361Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kangocho-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:48.879Z"
+      "at": "2026-10-08T03:23:56.851Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/san-jeronimo-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:49.576Z"
+      "at": "2026-10-08T03:23:57.506Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/san-jeronimo-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:49.856Z"
+      "at": "2026-10-08T03:23:57.878Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/san-jeronimo-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:50.384Z"
+      "at": "2026-10-08T03:23:58.358Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-250-g",
       "status": 200,
-      "at": "2026-10-08T02:30:51.206Z"
+      "at": "2026-10-08T03:23:58.891Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-250-g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:51.432Z"
+      "at": "2026-10-08T03:23:59.348Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-250-g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:51.834Z"
+      "at": "2026-10-08T03:23:59.888Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/rodrigo-hoyos-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:52.704Z"
+      "at": "2026-10-08T03:24:00.396Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/rodrigo-hoyos-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:52.837Z"
+      "at": "2026-10-08T03:24:00.877Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/rodrigo-hoyos-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:53.339Z"
+      "at": "2026-10-08T03:24:01.378Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/basha-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:54.089Z"
+      "at": "2026-10-08T03:24:01.901Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/basha-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:54.349Z"
+      "at": "2026-10-08T03:24:02.371Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/basha-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:54.924Z"
+      "at": "2026-10-08T03:24:02.857Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-honey-250-g",
       "status": 200,
-      "at": "2026-10-08T02:30:55.628Z"
+      "at": "2026-10-08T03:24:03.428Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-honey-250-g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:55.835Z"
+      "at": "2026-10-08T03:24:03.893Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-honey-250-g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:56.342Z"
+      "at": "2026-10-08T03:24:04.412Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/gichathaini-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:56.986Z"
+      "at": "2026-10-08T03:24:04.997Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/gichathaini-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:57.377Z"
+      "at": "2026-10-08T03:24:05.375Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/gichathaini-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:57.862Z"
+      "at": "2026-10-08T03:24:05.895Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/familia-ccapa-250g",
       "status": 200,
-      "at": "2026-10-08T02:30:58.517Z"
+      "at": "2026-10-08T03:24:06.419Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/familia-ccapa-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:30:58.877Z"
+      "at": "2026-10-08T03:24:06.943Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/familia-ccapa-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:30:59.412Z"
+      "at": "2026-10-08T03:24:07.467Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-espresso-250g",
       "status": 200,
-      "at": "2026-10-08T02:31:00.348Z"
+      "at": "2026-10-08T03:24:07.989Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-espresso-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:31:00.481Z"
+      "at": "2026-10-08T03:24:08.389Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-espresso-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:31:01.007Z"
+      "at": "2026-10-08T03:24:08.907Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-espresso-250g",
       "status": 200,
-      "at": "2026-10-08T02:31:01.920Z"
+      "at": "2026-10-08T03:24:09.426Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-espresso-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:31:02.056Z"
+      "at": "2026-10-08T03:24:09.879Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/mulugeta-espresso-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:31:02.571Z"
+      "at": "2026-10-08T03:24:10.383Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-espresso-250g",
       "status": 200,
-      "at": "2026-10-08T02:31:03.397Z"
+      "at": "2026-10-08T03:24:10.929Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-espresso-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:31:03.620Z"
+      "at": "2026-10-08T03:24:11.404Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-espresso-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:31:04.143Z"
+      "at": "2026-10-08T03:24:11.902Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/espresso-blend-250g",
       "status": 200,
-      "at": "2026-10-08T02:31:04.853Z"
+      "at": "2026-10-08T03:24:12.450Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/espresso-blend-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:31:05.085Z"
+      "at": "2026-10-08T03:24:12.896Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/espresso-blend-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:31:05.589Z"
+      "at": "2026-10-08T03:24:13.382Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-espresso-1kg",
       "status": 200,
-      "at": "2026-10-08T02:31:06.305Z"
+      "at": "2026-10-08T03:24:13.925Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-espresso-1kg.json",
       "status": 200,
-      "at": "2026-10-08T02:31:06.679Z"
+      "at": "2026-10-08T03:24:14.408Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/kieni-espresso-1kg.js",
       "status": 200,
-      "at": "2026-10-08T02:31:07.162Z"
+      "at": "2026-10-08T03:24:14.905Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-espresso-1kg",
       "status": 200,
-      "at": "2026-10-08T02:31:07.903Z"
+      "at": "2026-10-08T03:24:15.561Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-espresso-1kg.json",
       "status": 200,
-      "at": "2026-10-08T02:31:08.076Z"
+      "at": "2026-10-08T03:24:15.959Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/reshad-espresso-1kg.js",
       "status": 200,
-      "at": "2026-10-08T02:31:08.570Z"
+      "at": "2026-10-08T03:24:16.499Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/familia-lizaraso-espresso-250g",
       "status": 200,
-      "at": "2026-10-08T02:31:09.299Z"
+      "at": "2026-10-08T03:24:16.952Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/familia-lizaraso-espresso-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:31:09.593Z"
+      "at": "2026-10-08T03:24:17.428Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/familia-lizaraso-espresso-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:31:10.101Z"
+      "at": "2026-10-08T03:24:17.953Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/basha-espresso-250g",
       "status": 200,
-      "at": "2026-10-08T02:31:10.827Z"
+      "at": "2026-10-08T03:24:18.477Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/basha-espresso-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:31:11.081Z"
+      "at": "2026-10-08T03:24:19.001Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/basha-espresso-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:31:11.577Z"
+      "at": "2026-10-08T03:24:19.526Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/san-jeronimo-espresso-250g",
       "status": 200,
-      "at": "2026-10-08T02:31:12.406Z"
+      "at": "2026-10-08T03:24:20.048Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/san-jeronimo-espresso-250g.json",
       "status": 200,
-      "at": "2026-10-08T02:31:12.606Z"
+      "at": "2026-10-08T03:24:20.574Z"
     },
     {
+      "method": "GET",
       "url": "https://coffeecollective.dk/products/san-jeronimo-espresso-250g.js",
       "status": 200,
-      "at": "2026-10-08T02:31:13.088Z"
+      "at": "2026-10-08T03:24:20.938Z"
     }
   ],
   "production_writes": 0,

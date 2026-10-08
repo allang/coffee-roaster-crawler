@@ -1,6 +1,6 @@
 {
   "name": "Black & White",
-  "checked_at": "2026-10-08T02:26:55.765Z",
+  "checked_at": "2026-10-08T03:23:45.170Z",
   "mode": "merchant-get-only-dry-run",
   "discovery": {
     "supported": true,
@@ -61,12 +61,13 @@
             "minorUnits": 3200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "67565979337017",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 96,
             "amount": "96.00",
@@ -75,7 +76,8 @@
             "minorUnits": 9600,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -104,7 +106,7 @@
         {
           "id": "67565307756857",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 28,
             "amount": "28.00",
@@ -113,12 +115,13 @@
             "minorUnits": 2800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "67565307789625",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 72,
             "amount": "72.00",
@@ -127,12 +130,13 @@
             "minorUnits": 7200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "67565307822393",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 175,
             "amount": "175.00",
@@ -141,7 +145,8 @@
             "minorUnits": 17500,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -181,7 +186,7 @@
         {
           "id": "67565044629817",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 28,
             "amount": "28.00",
@@ -190,12 +195,13 @@
             "minorUnits": 2800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "67565044662585",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 72,
             "amount": "72.00",
@@ -204,12 +210,13 @@
             "minorUnits": 7200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "67565044695353",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 175,
             "amount": "175.00",
@@ -218,7 +225,8 @@
             "minorUnits": 17500,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -277,12 +285,13 @@
             "minorUnits": 1600,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54525051207993",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 35,
             "amount": "35.00",
@@ -291,12 +300,13 @@
             "minorUnits": 3500,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54525051240761",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 85,
             "amount": "85.00",
@@ -305,12 +315,13 @@
             "minorUnits": 8500,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54525051273529",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 221,
             "amount": "221.00",
@@ -319,7 +330,8 @@
             "minorUnits": 22100,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -348,7 +360,7 @@
         {
           "id": "54525073752377",
           "title": "100g",
-          "weight_g": 354,
+          "weight_g": 100,
           "money": {
             "raw": 14,
             "amount": "14.00",
@@ -357,12 +369,13 @@
             "minorUnits": 1400,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54525073785145",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 30,
             "amount": "30.00",
@@ -371,12 +384,13 @@
             "minorUnits": 3000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54525073817913",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 77,
             "amount": "77.00",
@@ -385,12 +399,13 @@
             "minorUnits": 7700,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54525073850681",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 188,
             "amount": "188.00",
@@ -399,7 +414,8 @@
             "minorUnits": 18800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -428,7 +444,7 @@
         {
           "id": "54479981216057",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 28,
             "amount": "28.00",
@@ -437,12 +453,13 @@
             "minorUnits": 2800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54479981248825",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 72,
             "amount": "72.00",
@@ -451,12 +468,13 @@
             "minorUnits": 7200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54479981281593",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 175,
             "amount": "175.00",
@@ -465,7 +483,8 @@
             "minorUnits": 17500,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -494,7 +513,7 @@
         {
           "id": "54480424501561",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 26,
             "amount": "26.00",
@@ -503,12 +522,13 @@
             "minorUnits": 2600,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54480424534329",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 68,
             "amount": "68.00",
@@ -517,12 +537,13 @@
             "minorUnits": 6800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54480424567097",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 170,
             "amount": "170.00",
@@ -531,7 +552,8 @@
             "minorUnits": 17000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -560,7 +582,7 @@
         {
           "id": "54450320015673",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 28,
             "amount": "28.00",
@@ -569,12 +591,13 @@
             "minorUnits": 2800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54450320048441",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 72,
             "amount": "72.00",
@@ -583,12 +606,13 @@
             "minorUnits": 7200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54450320081209",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 175,
             "amount": "175.00",
@@ -597,7 +621,8 @@
             "minorUnits": 17500,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -656,12 +681,13 @@
             "minorUnits": 1400,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54417475436857",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 30,
             "amount": "30.00",
@@ -670,12 +696,13 @@
             "minorUnits": 3000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54417475469625",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 77,
             "amount": "77.00",
@@ -684,12 +711,13 @@
             "minorUnits": 7700,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54417475502393",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 188,
             "amount": "188.00",
@@ -698,7 +726,8 @@
             "minorUnits": 18800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -732,7 +761,7 @@
         {
           "id": "52825308627257",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 26,
             "amount": "26.00",
@@ -741,12 +770,13 @@
             "minorUnits": 2600,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "52825308660025",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 68,
             "amount": "68.00",
@@ -755,12 +785,13 @@
             "minorUnits": 6800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "52825308692793",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 170,
             "amount": "170.00",
@@ -769,7 +800,8 @@
             "minorUnits": 17000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -798,7 +830,7 @@
         {
           "id": "54320221684025",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 28,
             "amount": "28.00",
@@ -807,12 +839,13 @@
             "minorUnits": 2800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54320221716793",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 72,
             "amount": "72.00",
@@ -821,12 +854,13 @@
             "minorUnits": 7200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54320221749561",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 175,
             "amount": "175.00",
@@ -835,7 +869,8 @@
             "minorUnits": 17500,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -916,7 +951,7 @@
         {
           "id": "54302515298617",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 26,
             "amount": "26.00",
@@ -925,12 +960,13 @@
             "minorUnits": 2600,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54302515331385",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 68,
             "amount": "68.00",
@@ -939,12 +975,13 @@
             "minorUnits": 6800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54302515364153",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 170,
             "amount": "170.00",
@@ -953,7 +990,8 @@
             "minorUnits": 17000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -987,7 +1025,7 @@
         {
           "id": "54273220935993",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 28,
             "amount": "28.00",
@@ -996,12 +1034,13 @@
             "minorUnits": 2800,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54273220968761",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 72,
             "amount": "72.00",
@@ -1010,12 +1049,13 @@
             "minorUnits": 7200,
             "reason": null
           },
-          "state": "sold_out"
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "54273221001529",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 175,
             "amount": "175.00",
@@ -1024,7 +1064,8 @@
             "minorUnits": 17500,
             "reason": null
           },
-          "state": "sold_out"
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1053,7 +1094,7 @@
         {
           "id": "53827474489657",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 22,
             "amount": "22.00",
@@ -1062,12 +1103,13 @@
             "minorUnits": 2200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "53827474522425",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 52.5,
             "amount": "52.50",
@@ -1076,12 +1118,13 @@
             "minorUnits": 5250,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "53827474555193",
           "title": "5lb",
-          "weight_g": 2311,
+          "weight_g": 2268,
           "money": {
             "raw": 117.6,
             "amount": "117.60",
@@ -1090,7 +1133,8 @@
             "minorUnits": 11760,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1135,7 +1179,7 @@
         {
           "id": "32846669611086",
           "title": "12oz",
-          "weight_g": 425,
+          "weight_g": 340,
           "money": {
             "raw": 21,
             "amount": "21.00",
@@ -1144,12 +1188,13 @@
             "minorUnits": 2100,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "32846669643854",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 50,
             "amount": "50.00",
@@ -1158,12 +1203,13 @@
             "minorUnits": 5000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "32846669676622",
           "title": "5lb",
-          "weight_g": 2312,
+          "weight_g": 2268,
           "money": {
             "raw": 112,
             "amount": "112.00",
@@ -1172,7 +1218,8 @@
             "minorUnits": 11200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1201,7 +1248,7 @@
         {
           "id": "7003495596076",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 21,
             "amount": "21.00",
@@ -1210,12 +1257,13 @@
             "minorUnits": 2100,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7697915346988",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 50,
             "amount": "50.00",
@@ -1224,12 +1272,13 @@
             "minorUnits": 5000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7697915379756",
           "title": "5lb",
-          "weight_g": 2312,
+          "weight_g": 2268,
           "money": {
             "raw": 112,
             "amount": "112.00",
@@ -1238,7 +1287,8 @@
             "minorUnits": 11200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1270,7 +1320,7 @@
         {
           "id": "7002057572396",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 22,
             "amount": "22.00",
@@ -1279,12 +1329,13 @@
             "minorUnits": 2200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7698467323948",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 52.5,
             "amount": "52.50",
@@ -1293,12 +1344,13 @@
             "minorUnits": 5250,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7698467356716",
           "title": "5lb",
-          "weight_g": 2312,
+          "weight_g": 2268,
           "money": {
             "raw": 117.6,
             "amount": "117.60",
@@ -1307,7 +1359,8 @@
             "minorUnits": 11760,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1336,7 +1389,7 @@
         {
           "id": "7001143738412",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 21,
             "amount": "21.00",
@@ -1345,12 +1398,13 @@
             "minorUnits": 2100,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7698399526956",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 50,
             "amount": "50.00",
@@ -1359,12 +1413,13 @@
             "minorUnits": 5000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7698399559724",
           "title": "5lb",
-          "weight_g": 2312,
+          "weight_g": 2268,
           "money": {
             "raw": 112,
             "amount": "112.00",
@@ -1373,7 +1428,8 @@
             "minorUnits": 11200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1402,7 +1458,7 @@
         {
           "id": "6979750166572",
           "title": "12oz",
-          "weight_g": 354,
+          "weight_g": 340,
           "money": {
             "raw": 21,
             "amount": "21.00",
@@ -1411,12 +1467,13 @@
             "minorUnits": 2100,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7698506448940",
           "title": "2lb",
-          "weight_g": 939,
+          "weight_g": 907,
           "money": {
             "raw": 50,
             "amount": "50.00",
@@ -1425,12 +1482,13 @@
             "minorUnits": 5000,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         },
         {
           "id": "7698506514476",
           "title": "5lb",
-          "weight_g": 2312,
+          "weight_g": 2268,
           "money": {
             "raw": 112,
             "amount": "112.00",
@@ -1439,7 +1497,8 @@
             "minorUnits": 11200,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1468,7 +1527,7 @@
         {
           "id": "54542806253881",
           "title": "Default Title",
-          "weight_g": 54,
+          "weight_g": null,
           "money": {
             "raw": 18.5,
             "amount": "18.50",
@@ -1477,7 +1536,8 @@
             "minorUnits": 1850,
             "reason": null
           },
-          "state": "in_stock"
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -1503,527 +1563,632 @@
       "image_present": true
     }
   ],
+  "unavailable_products": [],
   "errors": [],
   "requests": [
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/collections/all-coffee/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T02:26:04.318Z"
+      "at": "2026-10-08T03:22:53.750Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/collections/all-coffee/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T02:26:04.648Z"
+      "at": "2026-10-08T03:22:54.059Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/collections/specialty-instant-coffee/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T02:26:05.164Z"
+      "at": "2026-10-08T03:22:54.582Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/collections/specialty-instant-coffee/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T02:26:05.695Z"
+      "at": "2026-10-08T03:22:55.112Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis",
       "status": 301,
-      "at": "2026-10-08T02:26:06.113Z"
+      "at": "2026-10-08T03:22:55.523Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-finca-deborah-symbiosis",
       "status": 200,
-      "at": "2026-10-08T02:26:06.841Z"
+      "at": "2026-10-08T03:22:56.157Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis.json",
       "status": 200,
-      "at": "2026-10-08T02:26:07.138Z"
+      "at": "2026-10-08T03:22:56.525Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-finca-deborah-symbiosis.js",
       "status": 301,
-      "at": "2026-10-08T02:26:07.617Z"
+      "at": "2026-10-08T03:22:57.014Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-finca-deborah-symbiosis.js",
       "status": 200,
-      "at": "2026-10-08T02:26:08.165Z"
+      "at": "2026-10-08T03:22:57.530Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic",
       "status": 301,
-      "at": "2026-10-08T02:26:08.610Z"
+      "at": "2026-10-08T03:22:58.015Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic",
       "status": 200,
-      "at": "2026-10-08T02:26:09.261Z"
+      "at": "2026-10-08T03:22:58.582Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic.json",
       "status": 200,
-      "at": "2026-10-08T02:26:09.649Z"
+      "at": "2026-10-08T03:22:59.039Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic.js",
       "status": 301,
-      "at": "2026-10-08T02:26:10.145Z"
+      "at": "2026-10-08T03:22:59.518Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-esteban-zamora-cinnamon-anaerobic.js",
       "status": 200,
-      "at": "2026-10-08T02:26:10.671Z"
+      "at": "2026-10-08T03:23:00.028Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-the-future-halloween-candy",
       "status": 301,
-      "at": "2026-10-08T02:26:11.129Z"
+      "at": "2026-10-08T03:23:00.526Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-the-future-halloween-candy",
       "status": 200,
-      "at": "2026-10-08T02:26:11.797Z"
+      "at": "2026-10-08T03:23:01.071Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-the-future-halloween-candy.json",
       "status": 200,
-      "at": "2026-10-08T02:26:12.142Z"
+      "at": "2026-10-08T03:23:01.548Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-the-future-halloween-candy.js",
       "status": 301,
-      "at": "2026-10-08T02:26:12.637Z"
+      "at": "2026-10-08T03:23:02.019Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-the-future-halloween-candy.js",
       "status": 200,
-      "at": "2026-10-08T02:26:13.183Z"
+      "at": "2026-10-08T03:23:02.555Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical",
       "status": 301,
-      "at": "2026-10-08T02:26:13.653Z"
+      "at": "2026-10-08T03:23:03.060Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/franky-hoyos-gesha-tropical",
       "status": 200,
-      "at": "2026-10-08T02:26:14.341Z"
+      "at": "2026-10-08T03:23:03.640Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical.json",
       "status": 200,
-      "at": "2026-10-08T02:26:14.739Z"
+      "at": "2026-10-08T03:23:04.107Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/franky-hoyos-gesha-tropical.js",
       "status": 301,
-      "at": "2026-10-08T02:26:15.127Z"
+      "at": "2026-10-08T03:23:04.544Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/franky-hoyos-gesha-tropical.js",
       "status": 200,
-      "at": "2026-10-08T02:26:15.690Z"
+      "at": "2026-10-08T03:23:05.070Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural",
       "status": 301,
-      "at": "2026-10-08T02:26:16.182Z"
+      "at": "2026-10-08T03:23:05.593Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural",
       "status": 200,
-      "at": "2026-10-08T02:26:16.867Z"
+      "at": "2026-10-08T03:23:06.117Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural.json",
       "status": 200,
-      "at": "2026-10-08T02:26:17.227Z"
+      "at": "2026-10-08T03:23:06.643Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural.js",
       "status": 301,
-      "at": "2026-10-08T02:26:17.631Z"
+      "at": "2026-10-08T03:23:07.044Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-gerson-mora-yellow-pacamara-natural.js",
       "status": 200,
-      "at": "2026-10-08T02:26:18.175Z"
+      "at": "2026-10-08T03:23:07.538Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral",
       "status": 301,
-      "at": "2026-10-08T02:26:18.649Z"
+      "at": "2026-10-08T03:23:08.040Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-huver-castillo-gesha-floral",
       "status": 200,
-      "at": "2026-10-08T02:26:19.338Z"
+      "at": "2026-10-08T03:23:08.569Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral.json",
       "status": 200,
-      "at": "2026-10-08T02:26:19.649Z"
+      "at": "2026-10-08T03:23:09.067Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-huver-castillo-gesha-floral.js",
       "status": 301,
-      "at": "2026-10-08T02:26:20.150Z"
+      "at": "2026-10-08T03:23:09.528Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-huver-castillo-gesha-floral.js",
       "status": 200,
-      "at": "2026-10-08T02:26:20.679Z"
+      "at": "2026-10-08T03:23:10.078Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-aricha-washed",
       "status": 301,
-      "at": "2026-10-08T02:26:21.133Z"
+      "at": "2026-10-08T03:23:10.553Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-aricha-washed",
       "status": 200,
-      "at": "2026-10-08T02:26:21.821Z"
+      "at": "2026-10-08T03:23:11.082Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-aricha-washed.json",
       "status": 200,
-      "at": "2026-10-08T02:26:22.166Z"
+      "at": "2026-10-08T03:23:11.577Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-aricha-washed.js",
       "status": 301,
-      "at": "2026-10-08T02:26:22.623Z"
+      "at": "2026-10-08T03:23:12.056Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-aricha-washed.js",
       "status": 200,
-      "at": "2026-10-08T02:26:23.183Z"
+      "at": "2026-10-08T03:23:12.553Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits",
       "status": 301,
-      "at": "2026-10-08T02:26:23.638Z"
+      "at": "2026-10-08T03:23:13.045Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits",
       "status": 200,
-      "at": "2026-10-08T02:26:24.319Z"
+      "at": "2026-10-08T03:23:13.625Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits.json",
       "status": 200,
-      "at": "2026-10-08T02:26:24.675Z"
+      "at": "2026-10-08T03:23:14.088Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits.js",
       "status": 301,
-      "at": "2026-10-08T02:26:25.181Z"
+      "at": "2026-10-08T03:23:14.584Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits.js",
       "status": 200,
-      "at": "2026-10-08T02:26:25.767Z"
+      "at": "2026-10-08T03:23:15.123Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara",
       "status": 301,
-      "at": "2026-10-08T02:26:26.238Z"
+      "at": "2026-10-08T03:23:15.558Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara",
       "status": 200,
-      "at": "2026-10-08T02:26:26.838Z"
+      "at": "2026-10-08T03:23:16.138Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara.json",
       "status": 200,
-      "at": "2026-10-08T02:26:27.188Z"
+      "at": "2026-10-08T03:23:16.613Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara.js",
       "status": 301,
-      "at": "2026-10-08T02:26:27.712Z"
+      "at": "2026-10-08T03:23:17.131Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-jhonatan-gasca-thermal-shock-pacamara.js",
       "status": 200,
-      "at": "2026-10-08T02:26:28.234Z"
+      "at": "2026-10-08T03:23:17.656Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project",
       "status": 301,
-      "at": "2026-10-08T02:26:28.644Z"
+      "at": "2026-10-08T03:23:18.048Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-lasso-y-vergara-community-project",
       "status": 200,
-      "at": "2026-10-08T02:26:29.325Z"
+      "at": "2026-10-08T03:23:18.614Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project.json",
       "status": 200,
-      "at": "2026-10-08T02:26:29.664Z"
+      "at": "2026-10-08T03:23:19.071Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-lasso-y-vergara-community-project.js",
       "status": 301,
-      "at": "2026-10-08T02:26:30.167Z"
+      "at": "2026-10-08T03:23:19.570Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-lasso-y-vergara-community-project.js",
       "status": 200,
-      "at": "2026-10-08T02:26:30.683Z"
+      "at": "2026-10-08T03:23:20.081Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf",
       "status": 301,
-      "at": "2026-10-08T02:26:31.168Z"
+      "at": "2026-10-08T03:23:20.565Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf",
       "status": 200,
-      "at": "2026-10-08T02:26:31.816Z"
+      "at": "2026-10-08T03:23:21.146Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf.json",
       "status": 200,
-      "at": "2026-10-08T02:26:32.173Z"
+      "at": "2026-10-08T03:23:21.599Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf.js",
       "status": 301,
-      "at": "2026-10-08T02:26:32.657Z"
+      "at": "2026-10-08T03:23:22.067Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-sebastian-ramirez-red-fruits-decaf.js",
       "status": 200,
-      "at": "2026-10-08T02:26:33.216Z"
+      "at": "2026-10-08T03:23:22.588Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural",
       "status": 301,
-      "at": "2026-10-08T02:26:33.656Z"
+      "at": "2026-10-08T03:23:23.067Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural",
       "status": 200,
-      "at": "2026-10-08T02:26:34.315Z"
+      "at": "2026-10-08T03:23:23.596Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural.json",
       "status": 200,
-      "at": "2026-10-08T02:26:34.692Z"
+      "at": "2026-10-08T03:23:24.092Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural.js",
       "status": 301,
-      "at": "2026-10-08T02:26:35.163Z"
+      "at": "2026-10-08T03:23:24.565Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-diego-horta-anaerobic-natural.js",
       "status": 200,
-      "at": "2026-10-08T02:26:35.778Z"
+      "at": "2026-10-08T03:23:25.093Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum",
       "status": 301,
-      "at": "2026-10-08T02:26:36.184Z"
+      "at": "2026-10-08T03:23:25.617Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-duwancho-full-spectrum",
       "status": 200,
-      "at": "2026-10-08T02:26:36.872Z"
+      "at": "2026-10-08T03:23:26.183Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum.json",
       "status": 200,
-      "at": "2026-10-08T02:26:37.258Z"
+      "at": "2026-10-08T03:23:26.667Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-duwancho-full-spectrum.js",
       "status": 301,
-      "at": "2026-10-08T02:26:37.673Z"
+      "at": "2026-10-08T03:23:27.092Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-duwancho-full-spectrum.js",
       "status": 200,
-      "at": "2026-10-08T02:26:38.218Z"
+      "at": "2026-10-08T03:23:27.618Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-the-new-school-strawberry",
       "status": 301,
-      "at": "2026-10-08T02:26:38.722Z"
+      "at": "2026-10-08T03:23:28.143Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-the-new-school-strawberry",
       "status": 200,
-      "at": "2026-10-08T02:26:39.307Z"
+      "at": "2026-10-08T03:23:28.670Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-the-new-school-strawberry.json",
       "status": 200,
-      "at": "2026-10-08T02:26:39.775Z"
+      "at": "2026-10-08T03:23:29.193Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-the-new-school-strawberry.js",
       "status": 301,
-      "at": "2026-10-08T02:26:40.169Z"
+      "at": "2026-10-08T03:23:29.580Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-the-new-school-strawberry.js",
       "status": 200,
-      "at": "2026-10-08T02:26:40.716Z"
+      "at": "2026-10-08T03:23:30.097Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-original-1",
       "status": 301,
-      "at": "2026-10-08T02:26:41.160Z"
+      "at": "2026-10-08T03:23:30.577Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-original-1",
       "status": 200,
-      "at": "2026-10-08T02:26:41.868Z"
+      "at": "2026-10-08T03:23:31.123Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-original-1.json",
       "status": 200,
-      "at": "2026-10-08T02:26:42.202Z"
+      "at": "2026-10-08T03:23:31.609Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-original-1.js",
       "status": 301,
-      "at": "2026-10-08T02:26:42.675Z"
+      "at": "2026-10-08T03:23:32.078Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-original-1.js",
       "status": 200,
-      "at": "2026-10-08T02:26:43.223Z"
+      "at": "2026-10-08T03:23:32.628Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-decaf-colombia",
       "status": 301,
-      "at": "2026-10-08T02:26:43.670Z"
+      "at": "2026-10-08T03:23:33.080Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-decaf-colombia",
       "status": 200,
-      "at": "2026-10-08T02:26:44.350Z"
+      "at": "2026-10-08T03:23:33.636Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-decaf-colombia.json",
       "status": 200,
-      "at": "2026-10-08T02:26:44.717Z"
+      "at": "2026-10-08T03:23:34.136Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/r-decaf-colombia.js",
       "status": 301,
-      "at": "2026-10-08T02:26:45.194Z"
+      "at": "2026-10-08T03:23:34.588Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/r-decaf-colombia.js",
       "status": 200,
-      "at": "2026-10-08T02:26:45.748Z"
+      "at": "2026-10-08T03:23:35.114Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-natural",
       "status": 301,
-      "at": "2026-10-08T02:26:46.187Z"
+      "at": "2026-10-08T03:23:35.607Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-natural",
       "status": 200,
-      "at": "2026-10-08T02:26:46.895Z"
+      "at": "2026-10-08T03:23:36.140Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-natural.json",
       "status": 200,
-      "at": "2026-10-08T02:26:47.213Z"
+      "at": "2026-10-08T03:23:36.626Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-natural.js",
       "status": 301,
-      "at": "2026-10-08T02:26:47.726Z"
+      "at": "2026-10-08T03:23:37.143Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-natural.js",
       "status": 200,
-      "at": "2026-10-08T02:26:48.337Z"
+      "at": "2026-10-08T03:23:37.715Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-classic",
       "status": 301,
-      "at": "2026-10-08T02:26:48.768Z"
+      "at": "2026-10-08T03:23:38.106Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-classic",
       "status": 200,
-      "at": "2026-10-08T02:26:49.346Z"
+      "at": "2026-10-08T03:23:38.658Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-classic.json",
       "status": 200,
-      "at": "2026-10-08T02:26:49.739Z"
+      "at": "2026-10-08T03:23:39.156Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-classic.js",
       "status": 301,
-      "at": "2026-10-08T02:26:50.257Z"
+      "at": "2026-10-08T03:23:39.679Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-classic.js",
       "status": 200,
-      "at": "2026-10-08T02:26:50.778Z"
+      "at": "2026-10-08T03:23:40.202Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-traditional-1",
       "status": 301,
-      "at": "2026-10-08T02:26:51.181Z"
+      "at": "2026-10-08T03:23:40.606Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-traditional-1",
       "status": 200,
-      "at": "2026-10-08T02:26:51.866Z"
+      "at": "2026-10-08T03:23:41.158Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-traditional-1.json",
       "status": 200,
-      "at": "2026-10-08T02:26:52.226Z"
+      "at": "2026-10-08T03:23:41.641Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/the-traditional-1.js",
       "status": 301,
-      "at": "2026-10-08T02:26:52.686Z"
+      "at": "2026-10-08T03:23:42.100Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/the-traditional-1.js",
       "status": 200,
-      "at": "2026-10-08T02:26:53.235Z"
+      "at": "2026-10-08T03:23:42.627Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee",
       "status": 301,
-      "at": "2026-10-08T02:26:53.696Z"
+      "at": "2026-10-08T03:23:43.109Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee",
       "status": 200,
-      "at": "2026-10-08T02:26:54.355Z"
+      "at": "2026-10-08T03:23:43.678Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee.json",
       "status": 200,
-      "at": "2026-10-08T02:26:54.724Z"
+      "at": "2026-10-08T03:23:44.128Z"
     },
     {
+      "method": "GET",
       "url": "https://blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee.js",
       "status": 301,
-      "at": "2026-10-08T02:26:55.205Z"
+      "at": "2026-10-08T03:23:44.610Z"
     },
     {
+      "method": "GET",
       "url": "https://www.blackwhiteroasters.com/products/diego-horta-anaerobic-natural-instant-coffee.js",
       "status": 200,
-      "at": "2026-10-08T02:26:55.744Z"
+      "at": "2026-10-08T03:23:45.121Z"
     }
   ],
   "production_writes": 0,

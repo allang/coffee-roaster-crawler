@@ -21,8 +21,16 @@ node src/siteSupport/cli.js Botz /tmp/botz-inspection.json
 npm test
 ```
 
-The regression suite passed 220 checks after the first five integrations. New checks cover live-captured hydration, pagination/repeated cursors, exact identity/price/stock, prohibited paths, legacy product adoption, idempotent local persistence and retail-only Shopify collections. Catalog transactions are tested only in the disposable local fixture database, using reviewed migrations. Full hosted schema parity and live scheduler state remain unverified.
+The regression suite passed 224 checks after the first ten integrations. New checks cover live-captured hydration, pagination/repeated cursors, exact identity/price/stock, prohibited paths, legacy product adoption, idempotent local persistence and retail-only Shopify collections. Catalog transactions are tested only in the disposable local fixture database, using reviewed migrations. Full hosted schema parity and live scheduler state remain unverified.
 
 This is preparation and live-site dry-run verification. Production deployment and imports remain outside the authorization in this chat. The queue remains open until every site is supported and verified, or an explicit merchant/identity blocker has been documented with authoritative evidence.
 
-Verified live dry runs so far: April **21**, Black & White **20**, Botz **1 (sold out)**, Coffee Collective **21**, Coffee Project NY **24** coffee products. Five of 41 names are implemented/verified; the remaining 36 stay in the open queue.
+Verified live dry runs so far: April **21**, Black & White **20**, Botz **1 (sold out)**, Coffee Collective **21**, Coffee Project NY **24** coffee products. Ten of 41 names are implemented/verified; the remaining 31 stay in the open queue.
+
+Flower Child: **7** public coffee products verified; one obsolete listing is a primary soft 404. A fresh unavailable page overrides cached native stock and updates only an already identified product's availability, keeping its ID/slug/content and previous sighting timestamp. Exact-variant analytics metadata can establish currency only when one same-script product/variant tuple agrees with the native decimal price; general shop currency is insufficient.
+
+Fritz Coffee Company: **29** coffee products verified with KRW offers, including single products and ProductGroup variants. Query/canonical paths resolve to the same product number; unrelated offers are rejected. A paper shopping bag is excluded. Native grouped source does not authorize retirement of variants omitted from the published schema.
+
+Frukt: **14** coffee products verified, including explicit sold-out variants. Goût & Co: **55** coffee products verified across its current coffee collections. Registered Shopify adapters prefer explicit net-weight labels over shipping mass; ambiguous/multipack labels remain unset.
+
+H&S: **21** coffee products verified, with compatible metric/imperial size labels parsed as net coffee weight. All earlier registered Shopify live inspections were rerun after the size-label correction and passed.

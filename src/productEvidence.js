@@ -30,11 +30,32 @@ function structuredProduct(html, sourceUrl) {
   });
   const products = nodes.filter(n => types(n).some(t => ['Product', 'IndividualProduct', 'ProductGroup'].includes(t)));
   const exact = products.filter(p => (p.url || p['@id']) && sameProduct(p.url || p['@id'], sourceUrl));
-  if (exact.length === 1) return exact[0];
+  if (exact.length === 1) return flattenProductGroup(exact[0],sourceUrl);
   if (exact.length > 1) return null;
   const title = $('main h1, h1').first().text().trim().toLocaleLowerCase('en');
   const named = products.filter(p => !p.url && !p['@id'] && title && String(p.name || '').trim().toLocaleLowerCase('en') === title);
-  return named.length === 1 ? named[0] : require('./siteSupport/headlessShopify').headlessShopifyProduct(html,sourceUrl);
+  if(named.length===1)return flattenProductGroup(named[0],sourceUrl);
+  const canonical=$('link[rel="canonical"]').attr('href');
+  const offered=canonical && sameProduct(canonical,sourceUrl)?products.filter(p=>{
+    const offers=[p.offers || []].flat();
+    return !p.url && !p['@id'] && offers.length>0 && offers.every(o=>o.url && sameProduct(o.url,sourceUrl));
+  }):[];
+  return offered.length===1?flattenProductGroup(offered[0],sourceUrl):require('./siteSupport/headlessShopify').headlessShopifyProduct(html,sourceUrl);
+}
+function flattenProductGroup(product,sourceUrl) {
+  if(!types(product).includes('ProductGroup')) {
+    const offers=[product.offers || []].flat();
+    if(offers.length===1 && /^cafe24_/.test(product.sku || ''))return {...product,productID:product.productID || product.sku,offers:[{...offers[0],sku:offers[0].sku || product.sku,name:offers[0].name || product.name}]};
+    return product;
+  }
+  if(!Array.isArray(product.hasVariant) || !product.hasVariant.length)return product;
+  const offers=[];
+  for(const variant of product.hasVariant) {
+    const memberOffers=[variant.offers || []].flat();
+    if(!memberOffers.length || memberOffers.some(o=>!o.url || !sameProduct(o.url,sourceUrl)))return null;
+    for(const offer of memberOffers)offers.push({...offer,sku:variant.sku || offer.sku,name:variant.name});
+  }
+  return {...product,productID:product.productID || product.productGroupID,description:product.description || product.hasVariant[0].description,image:product.image || product.hasVariant[0].image,offers,_market_source:'product_group_exact_variant_offers'};
 }
 
 function schemaAvailability(value) {
@@ -52,6 +73,9 @@ function productAvailability(input = {}) {
   const result = (state, reason, evidence = [], variants = []) => ({ state, isAvailable: state === 'in_stock' ? true : ['sold_out', 'removed'].includes(state) ? false : null, reason, evidence, variants, checkedAt });
   if ([404,410].includes(input.status)) return result('removed', 'product_http_removed', [{ source: 'http', status: input.status, url: input.sourceUrl }]);
   if (input.status && input.status !== 200) return result('unknown', 'incomplete_fetch', [{ source: 'http', status: input.status }]);
+  const primary=cheerio.load(input.html || ''),heading=(primary('main h1').first().text() || primary('h1').first().text()).trim();
+  if(input.status===200 && /^(?:page not found|404(?:\s*[-–:]?\s*not found)?|product not found)$/i.test(heading))
+    return result('removed','product_soft_404',[{source:'primary_product_heading',heading,status:200,url:input.sourceUrl}]);
   if (input.sourceUrl && input.finalUrl) {
     try {
       const source = new URL(input.sourceUrl), final = new URL(input.finalUrl);

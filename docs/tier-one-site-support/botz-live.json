@@ -1,6 +1,6 @@
 {
   "name": "Botz",
-  "checked_at": "2026-10-08T02:28:27.688Z",
+  "checked_at": "2026-10-08T03:23:47.502Z",
   "mode": "merchant-get-only-dry-run",
   "discovery": {
     "supported": true,
@@ -27,7 +27,7 @@
         {
           "id": "50014368760085",
           "title": "8.8 oz (250g)",
-          "weight_g": 249,
+          "weight_g": 250,
           "money": {
             "raw": 31,
             "amount": "31.00",
@@ -36,7 +36,8 @@
             "minorUnits": 3100,
             "reason": null
           },
-          "state": "sold_out"
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
         }
       ],
       "processing": {
@@ -62,32 +63,38 @@
       "image_present": true
     }
   ],
+  "unavailable_products": [],
   "errors": [],
   "requests": [
     {
+      "method": "GET",
       "url": "https://botz-coffee.com/collections/coffee/products.json?limit=50&page=1",
       "status": 200,
-      "at": "2026-10-08T02:28:25.697Z"
+      "at": "2026-10-08T03:23:45.589Z"
     },
     {
+      "method": "GET",
       "url": "https://botz-coffee.com/collections/coffee/products.json?limit=50&page=2",
       "status": 200,
-      "at": "2026-10-08T02:28:26.201Z"
+      "at": "2026-10-08T03:23:45.973Z"
     },
     {
+      "method": "GET",
       "url": "https://botz-coffee.com/products/marlon-bolanos",
       "status": 200,
-      "at": "2026-10-08T02:28:26.726Z"
+      "at": "2026-10-08T03:23:46.494Z"
     },
     {
+      "method": "GET",
       "url": "https://botz-coffee.com/products/marlon-bolanos.json",
       "status": 200,
-      "at": "2026-10-08T02:28:27.163Z"
+      "at": "2026-10-08T03:23:46.906Z"
     },
     {
+      "method": "GET",
       "url": "https://botz-coffee.com/products/marlon-bolanos.js",
       "status": 200,
-      "at": "2026-10-08T02:28:27.641Z"
+      "at": "2026-10-08T03:23:47.445Z"
     }
   ],
   "production_writes": 0,

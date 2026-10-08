@@ -1,0 +1,4552 @@
+{
+  "name": "Fritz Coffee Company",
+  "checked_at": "2026-10-08T03:10:16.522Z",
+  "mode": "merchant-get-only-dry-run",
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://fritz.co.kr/product/detail.html?product_no=2099",
+      "https://fritz.co.kr/product/detail.html?product_no=91",
+      "https://fritz.co.kr/product/detail.html?product_no=92",
+      "https://fritz.co.kr/product/detail.html?product_no=93",
+      "https://fritz.co.kr/product/detail.html?product_no=982",
+      "https://fritz.co.kr/product/detail.html?product_no=2100",
+      "https://fritz.co.kr/product/detail.html?product_no=2233",
+      "https://fritz.co.kr/product/detail.html?product_no=2197",
+      "https://fritz.co.kr/product/detail.html?product_no=2234",
+      "https://fritz.co.kr/product/detail.html?product_no=1567",
+      "https://fritz.co.kr/product/detail.html?product_no=1566",
+      "https://fritz.co.kr/product/detail.html?product_no=1569",
+      "https://fritz.co.kr/product/detail.html?product_no=1568",
+      "https://fritz.co.kr/product/detail.html?product_no=1570",
+      "https://fritz.co.kr/product/detail.html?product_no=1623",
+      "https://fritz.co.kr/product/detail.html?product_no=2082",
+      "https://fritz.co.kr/product/detail.html?product_no=175",
+      "https://fritz.co.kr/product/detail.html?product_no=1726",
+      "https://fritz.co.kr/product/detail.html?product_no=174",
+      "https://fritz.co.kr/product/detail.html?product_no=1283",
+      "https://fritz.co.kr/product/detail.html?product_no=1790",
+      "https://fritz.co.kr/product/detail.html?product_no=1716",
+      "https://fritz.co.kr/product/detail.html?product_no=1204",
+      "https://fritz.co.kr/product/detail.html?product_no=991",
+      "https://fritz.co.kr/product/detail.html?product_no=990",
+      "https://fritz.co.kr/product/detail.html?product_no=994",
+      "https://fritz.co.kr/product/detail.html?product_no=179",
+      "https://fritz.co.kr/product/detail.html?product_no=1275",
+      "https://fritz.co.kr/product/detail.html?product_no=1001"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "https://fritz.co.kr/product/list.html?cate_no=48",
+        "products": 87
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2099",
+      "title": "[프릳츠] 퀵커피 6개입",
+      "source_product_id": "cafe24_fritzcompany_1_2099",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_2099",
+          "title": "[프릳츠] 퀵커피 6개입",
+          "weight_g": null,
+          "money": {
+            "raw": 12000,
+            "amount": "12000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=91",
+      "title": "[프릳츠] 올드독 200g",
+      "source_product_id": "cafe24_fritzcompany_1_91",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HM",
+          "title": "[프릳츠] 올드독 200g 홀빈(갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HN",
+          "title": "[프릳츠] 올드독 200g 홀빈(갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HO",
+          "title": "[프릳츠] 올드독 200g 홀빈(갈지않은원두)-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HP",
+          "title": "[프릳츠] 올드독 200g 홀빈(갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HQ",
+          "title": "[프릳츠] 올드독 200g (분쇄)에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HR",
+          "title": "[프릳츠] 올드독 200g (분쇄)에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HS",
+          "title": "[프릳츠] 올드독 200g (분쇄)에스프레소머신-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HT",
+          "title": "[프릳츠] 올드독 200g (분쇄)에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HU",
+          "title": "[프릳츠] 올드독 200g (분쇄)모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HV",
+          "title": "[프릳츠] 올드독 200g (분쇄)모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HW",
+          "title": "[프릳츠] 올드독 200g (분쇄)모카포트-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HX",
+          "title": "[프릳츠] 올드독 200g (분쇄)모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HY",
+          "title": "[프릳츠] 올드독 200g (분쇄)더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00HZ",
+          "title": "[프릳츠] 올드독 200g (분쇄)더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IA",
+          "title": "[프릳츠] 올드독 200g (분쇄)더치커피-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IB",
+          "title": "[프릳츠] 올드독 200g (분쇄)더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IC",
+          "title": "[프릳츠] 올드독 200g (분쇄)드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00ID",
+          "title": "[프릳츠] 올드독 200g (분쇄)드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IE",
+          "title": "[프릳츠] 올드독 200g (분쇄)드립/커피메이커-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IF",
+          "title": "[프릳츠] 올드독 200g (분쇄)드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IG",
+          "title": "[프릳츠] 올드독 200g (분쇄)에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IH",
+          "title": "[프릳츠] 올드독 200g (분쇄)에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00II",
+          "title": "[프릳츠] 올드독 200g (분쇄)에어로프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IJ",
+          "title": "[프릳츠] 올드독 200g (분쇄)에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IK",
+          "title": "[프릳츠] 올드독 200g (분쇄)프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IL",
+          "title": "[프릳츠] 올드독 200g (분쇄)프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IM",
+          "title": "[프릳츠] 올드독 200g (분쇄)프렌치프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_91_P00000DM00IN",
+          "title": "[프릳츠] 올드독 200g (분쇄)프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=92",
+      "title": "[프릳츠] 잘 되어 가시나 200g",
+      "source_product_id": "cafe24_fritzcompany_1_92",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FI",
+          "title": "[프릳츠] 잘 되어 가시나 200g 홀빈(갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FJ",
+          "title": "[프릳츠] 잘 되어 가시나 200g 홀빈(갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FK",
+          "title": "[프릳츠] 잘 되어 가시나 200g 홀빈(갈지않은원두)-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FL",
+          "title": "[프릳츠] 잘 되어 가시나 200g 홀빈(갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FM",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FN",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FO",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에스프레소머신-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FP",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FQ",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FR",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FS",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)모카포트-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FT",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FU",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FV",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FW",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)더치커피-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FX",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FY",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00FZ",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GA",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)드립/커피메이커-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GB",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GC",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GD",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GE",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에어로프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GF",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GG",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GH",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GI",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)프렌치프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_92_P00000DN00GJ",
+          "title": "[프릳츠] 잘 되어 가시나 200g (분쇄)프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=93",
+      "title": "[프릳츠] 서울 시네마 200g",
+      "source_product_id": "cafe24_fritzcompany_1_93",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GP",
+          "title": "[프릳츠] 서울 시네마 200g 홀빈(갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GQ",
+          "title": "[프릳츠] 서울 시네마 200g 홀빈(갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GR",
+          "title": "[프릳츠] 서울 시네마 200g 홀빈(갈지않은원두)-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GS",
+          "title": "[프릳츠] 서울 시네마 200g 홀빈(갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GT",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GU",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GV",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에스프레소머신-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GW",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GX",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GY",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00GZ",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)모카포트-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HA",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HB",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HC",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HD",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)더치커피-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HE",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HF",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HG",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HH",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)드립/커피메이커-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HI",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HJ",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HK",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HL",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에어로프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HM",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HN",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HO",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HP",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)프렌치프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_93_P00000DO00HQ",
+          "title": "[프릳츠] 서울 시네마 200g (분쇄)프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=982",
+      "title": "[프릳츠] 디카페인 Decaffeinated 200g",
+      "source_product_id": "cafe24_fritzcompany_1_982",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00ED",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EE",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EF",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EG",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g 홀빈 (갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EH",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EI",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EJ",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에스프레소머신-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EK",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EL",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EM",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EN",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 모카포트-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EO",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EP",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EQ",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00ER",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 더치커피-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00ES",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00ET",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EU",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EV",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 드립/커피메이커-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EW",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EX",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EY",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00EZ",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에어로프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00FA",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00FB",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00FC",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00FD",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 프렌치프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_982_P0000BLU00FE",
+          "title": "[프릳츠] 디카페인 Decaffeinated 200g (분쇄) 프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 17000,
+            "amount": "17000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 17000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2100",
+      "title": "[프릳츠] Tamana Pink Bourbon Washed",
+      "source_product_id": "cafe24_fritzcompany_1_2100",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000A",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-홀빈 (갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000B",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-홀빈 (갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000C",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-홀빈 (갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000D",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000E",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000F",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000G",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000H",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000I",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000J",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000K",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000L",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000M",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000N",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000O",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000P",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000Q",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000R",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000S",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000T",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2100_P0000DCU000U",
+          "title": "[프릳츠] Tamana Pink Bourbon Washed 200g-(분쇄) 프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2233",
+      "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural",
+      "source_product_id": "cafe24_fritzcompany_1_2233",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000A",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-홀빈(갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000B",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-홀빈(갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000C",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-홀빈(갈지않은원두)-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000D",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-홀빈(갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000E",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000F",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000G",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에스프레소머신-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000H",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000I",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000J",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000K",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)모카포트-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000L",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000M",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000N",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000O",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)더치커피-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000P",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000Q",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000R",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000S",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)드립/커피메이커-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000T",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000U",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000V",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000W",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에어로프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000X",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000Y",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX000Z",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX00BA",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)프렌치프레스-틴케이스 마음",
+          "weight_g": null,
+          "money": {
+            "raw": 24000,
+            "amount": "24000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 24000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2233_P0000DHX00BB",
+          "title": "[프릳츠] Gedeb Lalesa Anaerobic Natural 200g-(분쇄)프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 19000,
+            "amount": "19000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 19000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2197",
+      "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g",
+      "source_product_id": "cafe24_fritzcompany_1_2197",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000A",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-홀빈 (갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000B",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-홀빈 (갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000C",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-홀빈 (갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000D",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000E",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000F",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000G",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000H",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000I",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000J",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000K",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000L",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000M",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000N",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000O",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000P",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000Q",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000R",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000S",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000T",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2197_P0000DGN000U",
+          "title": "[프릳츠] Las Margaritas 26 Geisha Natural 100g 100g-(분쇄) 프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2234",
+      "title": "[프릳츠] Herbazu Typica Honey 100g",
+      "source_product_id": "cafe24_fritzcompany_1_2234",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000A",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-홀빈 (갈지않은원두)-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000B",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-홀빈 (갈지않은원두)-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000C",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-홀빈 (갈지않은원두)-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000D",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 에스프레소머신-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000E",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 에스프레소머신-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000F",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 에스프레소머신-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000G",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 모카포트-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000H",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 모카포트-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000I",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 모카포트-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000J",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 더치커피-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000K",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 더치커피-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000L",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 더치커피-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000M",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 드립/커피메이커-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000N",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 드립/커피메이커-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000O",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 드립/커피메이커-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000P",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 에어로프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000Q",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 에어로프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000R",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 에어로프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000S",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 프렌치프레스-파우치 그린",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000T",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 프렌치프레스-파우치 레드",
+          "weight_g": null,
+          "money": {
+            "raw": 20000,
+            "amount": "20000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 20000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_2234_P0000DHY000U",
+          "title": "[프릳츠] Herbazu Typica Honey 100g 100g-(분쇄) 프렌치프레스-선택안함",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1567",
+      "title": "[프릳츠] 캡슐커피 올드독",
+      "source_product_id": "cafe24_fritzcompany_1_1567",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1567",
+          "title": "[프릳츠] 캡슐커피 올드독",
+          "weight_g": null,
+          "money": {
+            "raw": 9500,
+            "amount": "9500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 9500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1566",
+      "title": "[프릳츠] 캡슐커피 잘 되어 가시나",
+      "source_product_id": "cafe24_fritzcompany_1_1566",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1566",
+          "title": "[프릳츠] 캡슐커피 잘 되어 가시나",
+          "weight_g": null,
+          "money": {
+            "raw": 9500,
+            "amount": "9500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 9500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1569",
+      "title": "[프릳츠] 캡슐커피 싱글 오리진",
+      "source_product_id": "cafe24_fritzcompany_1_1569",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1569",
+          "title": "[프릳츠] 캡슐커피 싱글 오리진",
+          "weight_g": null,
+          "money": {
+            "raw": 9500,
+            "amount": "9500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 9500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1568",
+      "title": "[프릳츠] 캡슐커피 디카페인",
+      "source_product_id": "cafe24_fritzcompany_1_1568",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1568",
+          "title": "[프릳츠] 캡슐커피 디카페인",
+          "weight_g": null,
+          "money": {
+            "raw": 9500,
+            "amount": "9500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 9500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1570",
+      "title": "[프릳츠] 캡슐 종합 세트",
+      "source_product_id": "cafe24_fritzcompany_1_1570",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1570",
+          "title": "[프릳츠] 캡슐 종합 세트",
+          "weight_g": null,
+          "money": {
+            "raw": 18000,
+            "amount": "18000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 18000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1623",
+      "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함)",
+      "source_product_id": "cafe24_fritzcompany_1_1623",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000D",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 싱글오리진-싱글오리진",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000E",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 싱글오리진-잘되어가시나",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000T",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 싱글오리진-올드독",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000U",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 싱글오리진-디카페인",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000H",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 잘되어가시나-싱글오리진",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000I",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 잘되어가시나-잘되어가시나",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000V",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 잘되어가시나-올드독",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000W",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 잘되어가시나-디카페인",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000X",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 올드독-싱글오리진",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000Y",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 올드독-잘되어가시나",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL000Z",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 올드독-올드독",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL00BA",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 올드독-디카페인",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL00BB",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 디카페인-싱글오리진",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL00BC",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 디카페인-잘되어가시나",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL00BD",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 디카페인-올드독",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1623_P0000CKL00BE",
+          "title": "[프릳츠] 캡슐커피와 샷글라스 (쇼핑백 포함) 디카페인-디카페인",
+          "weight_g": null,
+          "money": {
+            "raw": 27500,
+            "amount": "27500",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2082",
+      "title": "[프릳츠] 드립백 싱글오리진",
+      "source_product_id": "cafe24_fritzcompany_1_2082",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_2082",
+          "title": "[프릳츠] 드립백 싱글오리진",
+          "weight_g": null,
+          "money": {
+            "raw": 12000,
+            "amount": "12000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=175",
+      "title": "[프릳츠] 드립백",
+      "source_product_id": "cafe24_fritzcompany_1_175",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_175",
+          "title": "[프릳츠] 드립백",
+          "weight_g": null,
+          "money": {
+            "raw": 12000,
+            "amount": "12000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1726",
+      "title": "[프릳츠] 드립백 디카페인",
+      "source_product_id": "cafe24_fritzcompany_1_1726",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1726",
+          "title": "[프릳츠] 드립백 디카페인",
+          "weight_g": null,
+          "money": {
+            "raw": 12000,
+            "amount": "12000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 12000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=174",
+      "title": "[프릳츠] 티백",
+      "source_product_id": "cafe24_fritzcompany_1_174",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_174",
+          "title": "[프릳츠] 티백",
+          "weight_g": null,
+          "money": {
+            "raw": 10000,
+            "amount": "10000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 10000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1283",
+      "title": "[프릳츠] 드립백 15개입",
+      "source_product_id": "cafe24_fritzcompany_1_1283",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1283",
+          "title": "[프릳츠] 드립백 15개입",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1790",
+      "title": "[프릳츠] 드립백 종합 선물세트 <br>(쇼핑백 포함)",
+      "source_product_id": "cafe24_fritzcompany_1_1790",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1790",
+          "title": "[프릳츠] 드립백 종합 선물세트 <br>(쇼핑백 포함)",
+          "weight_g": null,
+          "money": {
+            "raw": 45000,
+            "amount": "45000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 45000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1716",
+      "title": "[프릳츠] 프릳츠 선물세트 (쇼핑백 포함)",
+      "source_product_id": "cafe24_fritzcompany_1_1716",
+      "state": "sold_out",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1716",
+          "title": "[프릳츠] 프릳츠 선물세트 (쇼핑백 포함)",
+          "weight_g": null,
+          "money": {
+            "raw": 80000,
+            "amount": "80000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 80000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1204",
+      "title": "[프릳츠] 홈 커피 선물세트 (쇼핑백 포함)",
+      "source_product_id": "cafe24_fritzcompany_1_1204",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1204",
+          "title": "[프릳츠] 홈 커피 선물세트 (쇼핑백 포함)",
+          "weight_g": null,
+          "money": {
+            "raw": 22000,
+            "amount": "22000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 22000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=991",
+      "title": "[프릳츠] 콜드브루 골드",
+      "source_product_id": "cafe24_fritzcompany_1_991",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_991",
+          "title": "[프릳츠] 콜드브루 골드",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=990",
+      "title": "[프릳츠] 콜드브루 실버",
+      "source_product_id": "cafe24_fritzcompany_1_990",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_990",
+          "title": "[프릳츠] 콜드브루 실버",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=994",
+      "title": "[프릳츠] 콜드브루 딥슬립(디카페인)",
+      "source_product_id": "cafe24_fritzcompany_1_994",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_994",
+          "title": "[프릳츠] 콜드브루 딥슬립(디카페인)",
+          "weight_g": null,
+          "money": {
+            "raw": 15000,
+            "amount": "15000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 15000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=179",
+      "title": "[프릳츠] 콜드브루 1L",
+      "source_product_id": "cafe24_fritzcompany_1_179",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_179",
+          "title": "[프릳츠] 콜드브루 1L",
+          "weight_g": null,
+          "money": {
+            "raw": 36000,
+            "amount": "36000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 36000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1275",
+      "title": "[프릳츠] 콜드브루와 유리잔 듀오 (쇼핑백 포함)",
+      "source_product_id": "cafe24_fritzcompany_1_1275",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1275_P0000BXB000B",
+          "title": "[프릳츠] 콜드브루와 유리잔 듀오 (쇼핑백 포함) 콜드브루 골드+유리잔",
+          "weight_g": null,
+          "money": {
+            "raw": 27000,
+            "amount": "27000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1275_P0000BXB000C",
+          "title": "[프릳츠] 콜드브루와 유리잔 듀오 (쇼핑백 포함) 콜드브루 실버+유리잔",
+          "weight_g": null,
+          "money": {
+            "raw": 27000,
+            "amount": "27000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        },
+        {
+          "id": "cafe24_fritzcompany_1_1275_P0000BXB000D",
+          "title": "[프릳츠] 콜드브루와 유리잔 듀오 (쇼핑백 포함) 콜드브루 딥슬립+유리잔",
+          "weight_g": null,
+          "money": {
+            "raw": 27000,
+            "amount": "27000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 27000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_group_exact_variant_offers"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    },
+    {
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1001",
+      "title": "[프릳츠] 콜드브루와 유리잔 선물세트 (쇼핑백 포함)",
+      "source_product_id": "cafe24_fritzcompany_1_1001",
+      "state": "in_stock",
+      "variants": [
+        {
+          "id": "cafe24_fritzcompany_1_1001",
+          "title": "[프릳츠] 콜드브루와 유리잔 선물세트 (쇼핑백 포함)",
+          "weight_g": null,
+          "money": {
+            "raw": 41000,
+            "amount": "41000",
+            "currency": "KRW",
+            "exponent": 0,
+            "minorUnits": 41000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "product_scoped_jsonld_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/list.html?cate_no=48",
+      "status": 200,
+      "at": "2026-10-08T03:10:00.607Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2099",
+      "status": 200,
+      "at": "2026-10-08T03:10:01.079Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=91",
+      "status": 200,
+      "at": "2026-10-08T03:10:02.120Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=92",
+      "status": 200,
+      "at": "2026-10-08T03:10:02.721Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=93",
+      "status": 200,
+      "at": "2026-10-08T03:10:03.369Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=982",
+      "status": 200,
+      "at": "2026-10-08T03:10:03.668Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2100",
+      "status": 200,
+      "at": "2026-10-08T03:10:04.407Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2233",
+      "status": 200,
+      "at": "2026-10-08T03:10:04.930Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2197",
+      "status": 200,
+      "at": "2026-10-08T03:10:05.456Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2234",
+      "status": 200,
+      "at": "2026-10-08T03:10:05.978Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1567",
+      "status": 200,
+      "at": "2026-10-08T03:10:06.505Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1566",
+      "status": 200,
+      "at": "2026-10-08T03:10:07.028Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1569",
+      "status": 200,
+      "at": "2026-10-08T03:10:07.555Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1568",
+      "status": 200,
+      "at": "2026-10-08T03:10:08.076Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1570",
+      "status": 200,
+      "at": "2026-10-08T03:10:08.493Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1623",
+      "status": 200,
+      "at": "2026-10-08T03:10:09.021Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=2082",
+      "status": 200,
+      "at": "2026-10-08T03:10:09.652Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=175",
+      "status": 200,
+      "at": "2026-10-08T03:10:10.172Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1726",
+      "status": 200,
+      "at": "2026-10-08T03:10:10.700Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=174",
+      "status": 200,
+      "at": "2026-10-08T03:10:11.222Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1283",
+      "status": 200,
+      "at": "2026-10-08T03:10:11.756Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1790",
+      "status": 200,
+      "at": "2026-10-08T03:10:12.271Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1716",
+      "status": 200,
+      "at": "2026-10-08T03:10:12.796Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1204",
+      "status": 200,
+      "at": "2026-10-08T03:10:13.206Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=991",
+      "status": 200,
+      "at": "2026-10-08T03:10:13.844Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=990",
+      "status": 200,
+      "at": "2026-10-08T03:10:14.368Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=994",
+      "status": 200,
+      "at": "2026-10-08T03:10:14.891Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=179",
+      "status": 200,
+      "at": "2026-10-08T03:10:15.416Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1275",
+      "status": 200,
+      "at": "2026-10-08T03:10:15.940Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fritz.co.kr/product/detail.html?product_no=1001",
+      "status": 200,
+      "at": "2026-10-08T03:10:16.466Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

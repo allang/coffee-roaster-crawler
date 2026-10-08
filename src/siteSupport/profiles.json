@@ -90,5 +90,87 @@
       "4RUAPU3ER5KEKLNO27T7E5QS",
       "RBMDOSN6HDOUNAHO57CHBASF"
     ]
+  },
+  {
+    "name": "Flower Child",
+    "entity_ids": [
+      "5690d1b7-4082-43d6-8032-d3a92618e8f9"
+    ],
+    "hosts": [
+      "flowerchildcoffee.com",
+      "www.flowerchildcoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/active-coffee/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Fritz Coffee Company",
+    "entity_ids": [
+      "602c3d3e-a765-476f-bcd8-219519a8234f"
+    ],
+    "hosts": [
+      "fritz.co.kr",
+      "www.fritz.co.kr"
+    ],
+    "adapter": "cafe24",
+    "listing_paths": [
+      "/product/list.html?cate_no=48"
+    ],
+    "product_link_selector": ".xans-product-listnormal a[href*=\"product_no=\"]",
+    "coffee_collection_verified": true,
+    "exclude_name_pattern": "종이\\s*가방"
+  },
+  {
+    "name": "Frukt",
+    "entity_ids": [
+      "33768274-dc08-4e98-9afd-61a20cd07d88"
+    ],
+    "hosts": [
+      "www.frukt.coffee",
+      "frukt.coffee"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/rare/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Goût & Co",
+    "entity_ids": [
+      "da072aaf-038c-4761-bd7e-a22f2383ebc8"
+    ],
+    "hosts": [
+      "goutandco.com",
+      "www.goutandco.com"
+    ],
+    "listing_paths": [
+      "/collections/keep-update/products.json",
+      "/collections/ultra-light-roast/products.json",
+      "/collections/recommend-for-modern-espresso/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "H&S",
+    "entity_ids": [
+      "e00c05fa-623e-4284-adfc-420e81dd472c"
+    ],
+    "hosts": [
+      "hscoffeeroasters.com",
+      "www.hscoffeeroasters.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "adapter": "shopify"
   }
 ]
