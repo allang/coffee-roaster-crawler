@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-10-08T21:48:40.675023+00:00",
+  "applied": [
+    {
+      "changed": 9,
+      "plan_id": "lucienne-invalid-listings-20261008",
+      "target_count": 9
+    }
+  ],
+  "repeat_dry_run": [
+    {
+      "changed": 0,
+      "plan_id": "lucienne-invalid-listings-20261008",
+      "target_count": 9
+    }
+  ],
+  "all_product_ids_retained": 151,
+  "all_primary_product_page_records_unchanged": 142,
+  "all_eight_child_tables_preserved": true,
+  "child_tables": {
+    "coffee_facts": {
+      "count": 9,
+      "fingerprint": "19b98dc2a908680931ff93e202a1bf14"
+    },
+    "product_media": {
+      "count": 3,
+      "fingerprint": "3414e08bd80a2ce84ebd1d2cad72a0d4"
+    },
+    "product_variants": {
+      "count": 8,
+      "fingerprint": "607323565294a68e658e02e9963fe217"
+    },
+    "purchase_intents": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "product_flavor_tags": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "agent_recommendations": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "catalog_change_events": {
+      "count": 6,
+      "fingerprint": "20454a779dcfdf65d44ec9080445a8ff"
+    },
+    "product_flavor_claims": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "changed_fields": {
+    "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "22db6043-5cc5-5826-9847-d388dc7db71c": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "568e0bef-25dc-5f49-8456-05980c8f47b8": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "78675df8-b2bf-55eb-8208-bf970436c19c": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "7881e94b-ddc8-5cab-81fb-039e91698d9b": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "8588e0e8-ca4c-4ccb-9258-24a444dc4c9c": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "c7b18af1-b201-5b55-bc23-424d309855f8": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "cc2031ca-cad8-4e20-9c67-d052f2df5bb9": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "ed547f99-14a0-4d3f-bbd4-213709578e1b": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ]
+  },
+  "schema_changes": 0
+}

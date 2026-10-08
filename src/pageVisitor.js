@@ -37,7 +37,14 @@ async function fetchPageContent(url, referer = null, options = {}) {
     const hasShopyflowCart = $('[sf-cart-popup]').length > 0 && $('script[data-shop-id]').length > 0;
     $('[sf-cart-popup]').remove();
     const evidenceHtml = $.html();
-    const storefrontShell = hasShopyflowCart && !require('./productEvidence').structuredProduct(evidenceHtml,result.finalUrl || url);
+    const primaryProduct = require('./productEvidence').structuredProduct(evidenceHtml,result.finalUrl || url);
+    const storefrontShell = hasShopyflowCart && !primaryProduct;
+    // A Squarespace native product listing contains real coffee cards, but those
+    // cards never identify the listing itself as a purchasable coffee.
+    const productLists = $('[data-controller="ProductList"]').filter((_,el)=>!$(el).parents('aside,nav,header,footer,.related-products,.recommendations').length);
+    const nativeProductPage = $('article[data-item-id] h1.product-title').length===1;
+    const squarespacePage = $('body').hasClass('sqs-seven-one');
+    const catalogListing = !primaryProduct && !nativeProductPage && (productLists.length>0 || squarespacePage);
 
     $('script, style, nav, footer, header, noscript, iframe').remove();
 
@@ -86,7 +93,7 @@ async function fetchPageContent(url, referer = null, options = {}) {
     return {
       success: true,
       sourceProduct,
-      nonProductReason: storefrontShell ? 'headless_storefront_shell_without_product_identity' : null,
+      nonProductReason: storefrontShell ? 'headless_storefront_shell_without_product_identity' : catalogListing ? 'catalog_listing_without_primary_product' : null,
       title,
       content: sourceProduct?sourceProduct.name+"\n"+sourceProduct.description:truncatedContent,
       fullLength: contentLength,
