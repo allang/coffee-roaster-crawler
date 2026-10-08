@@ -12,7 +12,7 @@ const globalLogger = require('./logger');
 const { createScopedLogger } = require('./logger');
 const { reconcileRoasterAvailability } = require('./availability');
 const { discoverSiteProducts, profileFor } = require('./siteSupport/discovery');
-const { createReader } = require('./siteSupport/network');
+const { createReader,allowed } = require('./siteSupport/network');
 const {crawlTierPhases}=require('./crawlTierPlan');
 
 const PARALLEL_ROASTERS = Number(process.env.PARALLEL_ROASTERS || 1);
@@ -90,14 +90,16 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const accumulator = new UrlAccumulator(roaster.id, roaster.name, log);
 
   const siteProfile=profileFor(roaster),siteReader=siteProfile?createReader(siteProfile):null;
-  const platformInfo = await detectPlatform(websiteUrl, log,siteReader || {});
+  const entryUrl=siteProfile?.bootstrap_url?allowed(siteProfile.bootstrap_url,siteProfile.hosts).href:websiteUrl;
+  if(entryUrl!==websiteUrl)log.info('Platform','Using reviewed merchant market entry point',{website:websiteUrl,entry:entryUrl});
+  const platformInfo = await detectPlatform(entryUrl, log,siteReader || {});
 
   if (platformInfo.confidence === 0) {
     log.warn('Crawl', 'Website unreachable, will retry later');
     return { success: false, error: 'Website unreachable', retryable: true, roasterName: roaster.name };
   }
 
-  const effectiveWebsiteUrl = platformInfo.finalUrl || websiteUrl;
+  const effectiveWebsiteUrl = platformInfo.finalUrl || entryUrl;
   if (effectiveWebsiteUrl !== websiteUrl) {
     log.info('Crawl', 'Using fetched canonical URL', { original: websiteUrl, finalUrl: effectiveWebsiteUrl });
   }
@@ -108,7 +110,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   try {
   await jitteredSleep(config.crawler.requestDelayMs);
 
-  const siteDiscovery=await discoverSiteProducts(roaster,siteReader || {fetchHtml:require('./httpClient').fetchHtml});
+  const siteDiscovery=await discoverSiteProducts(siteProfile?{...roaster,website_url:effectiveWebsiteUrl}:roaster,siteReader || {fetchHtml:require('./httpClient').fetchHtml});
   const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
   for(const url of siteDiscovery.urls)accumulator.addUrl(url,'site-support');
   if(siteDiscovery.error || siteDiscovery.supported && (!siteDiscovery.complete || !siteDiscovery.urls.length))throw new Error('Supported merchant discovery failed: '+(siteDiscovery.error || 'Incomplete or empty reviewed coffee inventory'));
@@ -246,7 +248,8 @@ async function crawlRoaster(roaster, blacklistTerms) {
     });
 
     const inventoryComplete=siteDiscovery.supported?siteDiscovery.complete:sitemapResult?.urls.length>0 && sitemapResult.inventoryComplete;
-    if (inventoryComplete && visitResults.errors === 0) {
+    const marketAllowsReconciliation=siteProfile?.reconcile_omissions!==false && siteProfile?.inventory_authorizes_global_absence!==false;
+    if (inventoryComplete && visitResults.errors === 0 && marketAllowsReconciliation) {
       await reconcileRoasterAvailability({
         entityId: roaster.id,
         surfaceUrls: siteDiscovery.supported?siteDiscovery.urls:accumulator.getAllUrls().map(entry => entry.url),
@@ -257,7 +260,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
         ...(siteReader?{fetchPage:url=>require('./pageVisitor').fetchPageContent(url,null,siteFetchOptions)}:{}),
       });
     } else {
-      log.warn('Availability', 'Skipping reconciliation because inventory or page checks were incomplete', {
+      log.warn('Availability', 'Skipping reconciliation because inventory/page checks were incomplete or the reviewed market forbids omission checks', {
         urlsFound: sitemapResult?.urls.length || 0,
         hasError: !!sitemapResult?.error,
       });
