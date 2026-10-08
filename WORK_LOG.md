@@ -2,6 +2,13 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — Momos English review plan prepared, not applied
+
+- Exact candidate **d5362fe6f7859e955b7f0f3546c82bd8543742e2** prepared **31 products /129 variants /31 facts**, including **25 Korean title pairs**, from the private frozen snapshot. All translation gates passed. Eight focused translation/SQL tests and both candidate CI checks pass.
+- Actual configured gpt-5-mini usage: **40 requests /28130 input /132852 output tokens**, including recovery; zero unreported usage. Native originals remain in existing schema fields and private metadata. Public review contains English proposals and exact ID/source-hash bindings; original full snapshots remain private.
+- **Zero database writes, source installations or migrations.** IDs, prices, weights, stock, photos and original runtime configuration remain unchanged. Fresh frozen-row and ownership guards are required before apply. The canceled heartbeat stays paused. [Report](docs/reviews/MOMOS_TRANSLATION_REVIEW_20261008.md) /[sanitized plan](docs/reviews/momos-translation-review-20261008.json); exact publication SHA, CI and review receipts follow in issue 1.
+
+
 
 ## 2026-10-08 — merged listing guard/KILO correction installed and primary save verified
 
