@@ -1,12 +1,19 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict');
-const {translateProductForSave}=require('../src/productTranslation');
+const {translateProductForSave,validate}=require('../src/productTranslation');
 const {catalogPayload,productSourceKey,saveProduct}=require('../src/productSaver');
 const {catalogDb,supabaseAdapter}=require('./catalogDb');
 const owner='11111111-1111-4111-8111-111111111111',url='https://merchant.test/products/coffee';
 const input={name:'부산 커피 200g',description_raw:'복숭아와 자스민. 200g 원두.',description_html:'<p>복숭아와 자스민. 200g 원두.</p>',attributes:{description:'복숭아와 자스민. 200g 원두.',short_description:'복숭아 커피 200g',flavor_notes:['복숭아','자스민'],is_decaf:false},source_product_id:'123',variants_complete:true,variants:[{source_id:'456',title:'200g 홀빈',weight_g:200,price:'18000',currency:'KRW',available:false}]};
 const dictionary={'부산 커피 200g':'Busan Coffee 200g','복숭아와 자스민. 200g 원두.':'Peach and jasmine. 200g coffee beans.','복숭아 커피 200g':'Peach coffee 200g','복숭아':'Peach','자스민':'Jasmine','200g 홀빈':'200g Whole Bean'};
 const request=async bundle=>({aiCalls:1,usage:{prompt_tokens:20,completion_tokens:10,reported_calls:1},data:{source_language:'ko',translations:bundle.texts.map(t=>({id:t.id,text:dictionary[t.text] || t.text}))}});
+test('number validation separates adjacent pack counts but retains thousands and decimal quantities',()=>{
+ const check=(source,target)=>validate({source_language:'ko',translations:[{id:'option',text:target}]},[{id:'option',text:source}]);
+ assert.doesNotThrow(()=>check('10g×50, 12g×50','10g×50,12g×50'));
+ assert.doesNotThrow(()=>check('1,000g / 1.5kg','1000g / 1.5kg'));
+ assert.throws(()=>check('10g×50, 12g×50','10g×50,12g×40'),/numeric facts/);
+ assert.throws(()=>check('1,000g / 1.5kg','100g / 1.6kg'),/numeric facts/);
+});
 test('English display text retains original schema fields, original tasting notes, native identity and market facts',async()=>{
  const p=await translateProductForSave(input,url,{request});assert.equal(input.name,'부산 커피 200g');assert.equal(p.name,'Busan Coffee 200g');
  const payload=catalogPayload(owner,p,url,null,{state:'sold_out',variants:[{source_id:'456',state:'sold_out',evidence:[]}]},'2026-10-08T22:00:00Z');

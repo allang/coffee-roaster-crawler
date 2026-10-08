@@ -3,7 +3,9 @@ const {stableKey,normalizeProduct}=require('./catalogNormalization');
 const VERSION='english-before-save-v1';
 const TEXT_ATTRIBUTES=['origin_type','country_of_origin','origin_region','varietal','process','coferment_ingredients','flavor_notes','grind_size_offered','brew_as','roast_darkness','producer','description','short_description','nano_description'];
 const foreignScript=/[\p{Script=Hangul}\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Cyrillic}\p{Script=Arabic}\p{Script=Hebrew}\p{Script=Devanagari}\p{Script=Thai}\p{Script=Greek}]/u;
-function numericTokens(text){return (text.match(/\d+(?:[.,]\d+)*/g)||[]).map(s=>s.replace(/[.,]/g,'')).sort();}
+// Commas join a number only in complete thousands groups. In an option such
+// as "10g×50,12g×50", the comma separates two pack quantities.
+function numericTokens(text){return (text.match(/\d{1,3}(?:,\d{3})+(?:\.\d+)?(?!\d)|\d+(?:\.\d+)?/g)||[]).map(s=>s.replace(/[.,]/g,'')).sort();}
 function sourceBundle(product,url){
  const p=normalizeProduct(structuredClone(product),url);
  p.original_title=product.original_title || product.name;
