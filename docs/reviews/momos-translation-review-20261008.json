@@ -35,7 +35,7 @@
   "validation_failures": 0,
   "resolved_initial_false_rejection": 1,
   "retained_responses_reused_without_paid_replay": 24,
-  "final_revalidation_sha": "d5362fe6f7859e955b7f0f3546c82bd8543742e2",
+  "final_revalidation_sha": "9ab64a79f05940ae40b464d20f7e15fb46868791",
   "english_record_changes": [],
   "production_writes": 0,
   "source_installations": 0,
@@ -179,7 +179,7 @@
         "name": "Cold Brew RTD 235ml",
         "display_title": "Cold Brew RTD 235ml",
         "original_title": "콜드브루 RTD 235ml",
-        "description": "Chocolate, dried apple, black tea Product information notice Notes: Chocolate, dried apple, black tea Food type: Coffee Manufacturer and seller Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19 Seller: Momos Keopi / Busan Metropolitan City Yeongdo-gu Bongraenaru-ro 160 Manufacture date: indicated separately Shelf life: 5 months from the date of manufacture Content: 235 ml (calories 10 kcal) Ingredients and contents: Purified water, coffee extract 25% (total caffeine 171 mg) Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm) Returns and exchanges: place of purchase and manufacturer Customer service phone 051-512-7036",
+        "description": "Chocolate, dried apple, black tea Product information notice Notes: Chocolate, dried apple, black tea Food type: Coffee Manufacturer and seller Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19 Seller: Momos Coffee / Busan Metropolitan City Yeongdo-gu Bongraenaru-ro 160 Manufacture date: indicated separately Shelf life: 5 months from the date of manufacture Content: 235 ml (calories 10 kcal) Ingredients and contents: Purified water, coffee extract 25% (total caffeine 171 mg) Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm) Returns and exchanges: place of purchase and manufacturer Customer service phone 051-512-7036",
         "short_description": "Cold Brew RTD 235ml. Notes: Chocolate, dried apple, black tea. Ingredients: Purified water, coffee extract 25% (total caffeine 171 mg). Content 235 ml. Manufacturer: Bihaeibeun.",
         "nano_description": "Cold Brew RTD 235ml — Chocolate, dried apple, black tea. Coffee extract 25%."
       },
@@ -196,7 +196,7 @@
           "Cold Brew"
         ],
         "producer": "Bihaeibeun",
-        "description": "Chocolate, dried apple, black tea Product information notice Notes: Chocolate, dried apple, black tea Food type: Coffee Manufacturer and seller Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19 Seller: Momos Keopi / Busan Metropolitan City Yeongdo-gu Bongraenaru-ro 160 Manufacture date: indicated separately Shelf life: 5 months from the date of manufacture Content: 235 ml (calories 10 kcal) Ingredients and contents: Purified water, coffee extract 25% (total caffeine 171 mg) Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm) Returns and exchanges: place of purchase and manufacturer Customer service phone 051-512-7036",
+        "description": "Chocolate, dried apple, black tea Product information notice Notes: Chocolate, dried apple, black tea Food type: Coffee Manufacturer and seller Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19 Seller: Momos Coffee / Busan Metropolitan City Yeongdo-gu Bongraenaru-ro 160 Manufacture date: indicated separately Shelf life: 5 months from the date of manufacture Content: 235 ml (calories 10 kcal) Ingredients and contents: Purified water, coffee extract 25% (total caffeine 171 mg) Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm) Returns and exchanges: place of purchase and manufacturer Customer service phone 051-512-7036",
         "short_description": "Cold Brew RTD 235ml. Notes: Chocolate, dried apple, black tea. Ingredients: Purified water, coffee extract 25% (total caffeine 171 mg). Content 235 ml. Manufacturer: Bihaeibeun.",
         "nano_description": "Cold Brew RTD 235ml — Chocolate, dried apple, black tea. Coffee extract 25%."
       },
@@ -232,7 +232,7 @@
           },
           {
             "id": "attributes.description",
-            "text": "Chocolate, dried apple, black tea Product information notice Notes: Chocolate, dried apple, black tea Food type: Coffee Manufacturer and seller Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19 Seller: Momos Keopi / Busan Metropolitan City Yeongdo-gu Bongraenaru-ro 160 Manufacture date: indicated separately Shelf life: 5 months from the date of manufacture Content: 235 ml (calories 10 kcal) Ingredients and contents: Purified water, coffee extract 25% (total caffeine 171 mg) Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm) Returns and exchanges: place of purchase and manufacturer Customer service phone 051-512-7036"
+            "text": "Chocolate, dried apple, black tea Product information notice Notes: Chocolate, dried apple, black tea Food type: Coffee Manufacturer and seller Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19 Seller: Momos Coffee / Busan Metropolitan City Yeongdo-gu Bongraenaru-ro 160 Manufacture date: indicated separately Shelf life: 5 months from the date of manufacture Content: 235 ml (calories 10 kcal) Ingredients and contents: Purified water, coffee extract 25% (total caffeine 171 mg) Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm) Returns and exchanges: place of purchase and manufacturer Customer service phone 051-512-7036"
           },
           {
             "id": "attributes.short_description",
@@ -1724,8 +1724,8 @@
         "name": "Capsule Large-capacity Decaffeinated (100 ea)",
         "display_title": "Capsule Large-capacity Decaffeinated (100 ea)",
         "original_title": "캡슐 대용량 디카페인(100개입)",
-        "description": "Without the burden of caffeine, the taste remains the same. Product information Product type: Coffee Manufacturer and distributor Manufacturer: (ju) Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Keopi / Busan Gwangyeok-si Yeongdo-gu Bongnaenaru-ro 160 Manufacturing date: Indicated separately Shelf life: 2 years from manufacturing date Net weight 550 g (5.5 g X 100 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or ingested, exchanges and refunds may be restricted. Customer service phone 051-512-7036",
-        "short_description": "Decaffeinated capsules 100 ea (total 550 g). Coffee beans 100 % used. Manufacturer (ju) Keikonik, Distributor Momos Keopi. Manufacturing date indicated separately, Shelf life 2 years from manufacturing date. Exchanges and refunds may be restricted after opening.",
+        "description": "Without the burden of caffeine, the taste remains the same. Product information Product type: Coffee Manufacturer and distributor Manufacturer: (ju) Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Coffee / Busan Gwangyeok-si Yeongdo-gu Bongnaenaru-ro 160 Manufacturing date: Indicated separately Shelf life: 2 years from manufacturing date Net weight 550 g (5.5 g X 100 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or ingested, exchanges and refunds may be restricted. Customer service phone 051-512-7036",
+        "short_description": "Decaffeinated capsules 100 ea (total 550 g). Coffee beans 100 % used. Manufacturer (ju) Keikonik, Distributor Momos Coffee. Manufacturing date indicated separately, Shelf life 2 years from manufacturing date. Exchanges and refunds may be restricted after opening.",
         "nano_description": "Decaffeinated capsules 100 ea, Coffee beans 100 %, 550 g."
       },
       "english_attributes": {
@@ -1734,8 +1734,8 @@
         "flavor_notes": [],
         "grind_size_offered": [],
         "producer": "(ju) Keikonik",
-        "description": "Without the burden of caffeine, the taste remains the same. Product information Product type: Coffee Manufacturer and distributor Manufacturer: (ju) Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Keopi / Busan Gwangyeok-si Yeongdo-gu Bongnaenaru-ro 160 Manufacturing date: Indicated separately Shelf life: 2 years from manufacturing date Net weight 550 g (5.5 g X 100 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or ingested, exchanges and refunds may be restricted. Customer service phone 051-512-7036",
-        "short_description": "Decaffeinated capsules 100 ea (total 550 g). Coffee beans 100 % used. Manufacturer (ju) Keikonik, Distributor Momos Keopi. Manufacturing date indicated separately, Shelf life 2 years from manufacturing date. Exchanges and refunds may be restricted after opening.",
+        "description": "Without the burden of caffeine, the taste remains the same. Product information Product type: Coffee Manufacturer and distributor Manufacturer: (ju) Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Coffee / Busan Gwangyeok-si Yeongdo-gu Bongnaenaru-ro 160 Manufacturing date: Indicated separately Shelf life: 2 years from manufacturing date Net weight 550 g (5.5 g X 100 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or ingested, exchanges and refunds may be restricted. Customer service phone 051-512-7036",
+        "short_description": "Decaffeinated capsules 100 ea (total 550 g). Coffee beans 100 % used. Manufacturer (ju) Keikonik, Distributor Momos Coffee. Manufacturing date indicated separately, Shelf life 2 years from manufacturing date. Exchanges and refunds may be restricted after opening.",
         "nano_description": "Decaffeinated capsules 100 ea, Coffee beans 100 %, 550 g."
       },
       "translation_cache": {
@@ -1754,11 +1754,11 @@
           },
           {
             "id": "attributes.description",
-            "text": "Without the burden of caffeine, the taste remains the same. Product information Product type: Coffee Manufacturer and distributor Manufacturer: (ju) Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Keopi / Busan Gwangyeok-si Yeongdo-gu Bongnaenaru-ro 160 Manufacturing date: Indicated separately Shelf life: 2 years from manufacturing date Net weight 550 g (5.5 g X 100 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or ingested, exchanges and refunds may be restricted. Customer service phone 051-512-7036"
+            "text": "Without the burden of caffeine, the taste remains the same. Product information Product type: Coffee Manufacturer and distributor Manufacturer: (ju) Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Coffee / Busan Gwangyeok-si Yeongdo-gu Bongnaenaru-ro 160 Manufacturing date: Indicated separately Shelf life: 2 years from manufacturing date Net weight 550 g (5.5 g X 100 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or ingested, exchanges and refunds may be restricted. Customer service phone 051-512-7036"
           },
           {
             "id": "attributes.short_description",
-            "text": "Decaffeinated capsules 100 ea (total 550 g). Coffee beans 100 % used. Manufacturer (ju) Keikonik, Distributor Momos Keopi. Manufacturing date indicated separately, Shelf life 2 years from manufacturing date. Exchanges and refunds may be restricted after opening."
+            "text": "Decaffeinated capsules 100 ea (total 550 g). Coffee beans 100 % used. Manufacturer (ju) Keikonik, Distributor Momos Coffee. Manufacturing date indicated separately, Shelf life 2 years from manufacturing date. Exchanges and refunds may be restricted after opening."
           },
           {
             "id": "attributes.nano_description",
@@ -2699,8 +2699,8 @@
         "name": "Decaffeinated Capsules (10 ea)",
         "display_title": "Decaffeinated Capsules (10 ea)",
         "original_title": "캡슐 디카페인 (10개입)",
-        "description": "Same taste without the caffeine burden Product information notice Food type: Coffee Manufacturer and distributor Manufacturer: (Ju)Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Keopi / Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160 Manufacture date: marked separately on product Expiration date: 2 years from date of manufacture Net weight 50 g(5 g X 10 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or consumed, exchanges and refunds may be limited. Customer service phone 051-512-7036",
-        "short_description": "Decaffeinated capsules 10 ea (50 g, 5 g x 10 ea). Coffee beans 100 %. Manufacturer: (Ju)Keikonik / Distributor: Momos Keopi. Manufacture date: marked separately on product, Expiration date: 2 years from date of manufacture.",
+        "description": "Same taste without the caffeine burden Product information notice Food type: Coffee Manufacturer and distributor Manufacturer: (Ju)Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Coffee / Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160 Manufacture date: marked separately on product Expiration date: 2 years from date of manufacture Net weight 50 g(5 g X 10 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or consumed, exchanges and refunds may be limited. Customer service phone 051-512-7036",
+        "short_description": "Decaffeinated capsules 10 ea (50 g, 5 g x 10 ea). Coffee beans 100 %. Manufacturer: (Ju)Keikonik / Distributor: Momos Coffee. Manufacture date: marked separately on product, Expiration date: 2 years from date of manufacture.",
         "nano_description": "Same taste without the caffeine burden — Decaffeinated Capsules (10 ea, 50 g)."
       },
       "english_attributes": {
@@ -2709,8 +2709,8 @@
         "flavor_notes": [],
         "grind_size_offered": [],
         "producer": "(Ju)Keikonik",
-        "description": "Same taste without the caffeine burden Product information notice Food type: Coffee Manufacturer and distributor Manufacturer: (Ju)Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Keopi / Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160 Manufacture date: marked separately on product Expiration date: 2 years from date of manufacture Net weight 50 g(5 g X 10 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or consumed, exchanges and refunds may be limited. Customer service phone 051-512-7036",
-        "short_description": "Decaffeinated capsules 10 ea (50 g, 5 g x 10 ea). Coffee beans 100 %. Manufacturer: (Ju)Keikonik / Distributor: Momos Keopi. Manufacture date: marked separately on product, Expiration date: 2 years from date of manufacture.",
+        "description": "Same taste without the caffeine burden Product information notice Food type: Coffee Manufacturer and distributor Manufacturer: (Ju)Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Coffee / Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160 Manufacture date: marked separately on product Expiration date: 2 years from date of manufacture Net weight 50 g(5 g X 10 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or consumed, exchanges and refunds may be limited. Customer service phone 051-512-7036",
+        "short_description": "Decaffeinated capsules 10 ea (50 g, 5 g x 10 ea). Coffee beans 100 %. Manufacturer: (Ju)Keikonik / Distributor: Momos Coffee. Manufacture date: marked separately on product, Expiration date: 2 years from date of manufacture.",
         "nano_description": "Same taste without the caffeine burden — Decaffeinated Capsules (10 ea, 50 g)."
       },
       "translation_cache": {
@@ -2729,11 +2729,11 @@
           },
           {
             "id": "attributes.description",
-            "text": "Same taste without the caffeine burden Product information notice Food type: Coffee Manufacturer and distributor Manufacturer: (Ju)Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Keopi / Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160 Manufacture date: marked separately on product Expiration date: 2 years from date of manufacture Net weight 50 g(5 g X 10 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or consumed, exchanges and refunds may be limited. Customer service phone 051-512-7036"
+            "text": "Same taste without the caffeine burden Product information notice Food type: Coffee Manufacturer and distributor Manufacturer: (Ju)Keikonik / Gyeonggi-do Hanam-si Hanam-daero 249beon-gil 20-1, 2nd floor Distributor: Momos Coffee / Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160 Manufacture date: marked separately on product Expiration date: 2 years from date of manufacture Net weight 50 g(5 g X 10 ea) Ingredients and content: Coffee beans 100 % Dimensions 280 x 40 x 40 (mm) Returns and exchanges: If opened and used or consumed, exchanges and refunds may be limited. Customer service phone 051-512-7036"
           },
           {
             "id": "attributes.short_description",
-            "text": "Decaffeinated capsules 10 ea (50 g, 5 g x 10 ea). Coffee beans 100 %. Manufacturer: (Ju)Keikonik / Distributor: Momos Keopi. Manufacture date: marked separately on product, Expiration date: 2 years from date of manufacture."
+            "text": "Decaffeinated capsules 10 ea (50 g, 5 g x 10 ea). Coffee beans 100 %. Manufacturer: (Ju)Keikonik / Distributor: Momos Coffee. Manufacture date: marked separately on product, Expiration date: 2 years from date of manufacture."
           },
           {
             "id": "attributes.nano_description",
@@ -3056,9 +3056,9 @@
         "name": "Decaffeinated Cold Brew Concentrate 500ml",
         "display_title": "Decaffeinated Cold Brew Concentrate 500ml",
         "original_title": "콜드브루 원액 디카페인 500ml",
-        "description": "Apple, Chocolate, Yeot, Jujube Product Information Notice Food type: Coffee Manufacturer and distributor Manufacturer: Bihaeibeun / 682-19 Namcheon-ro, Namcheon-myeon, Gyeongsan-si, Gyeongsangbuk-do Distributor: Momoseu Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Manufacture date: Indicated separately on the product Shelf life: 6 months from manufacture date Net content: 500 ml (energy 70 kcal) Ingredients and contents: Coffee extract 100 % Composition: Colombia 100 % Returns and exchanges: Place of purchase and manufacturer Customer service phone 051-512-7036",
-        "short_description": "Decaffeinated cold brew concentrate 500ml. Made from Colombia 100% coffee extract, with tasting notes of apple, chocolate, yeot, jujube. Manufacturer: Bihaeibeun. Shelf life: 6 months from manufacture date.",
-        "nano_description": "Colombia 100% Decaffeinated Cold Brew Concentrate 500ml — Apple, Chocolate, Yeot, Jujube.",
+        "description": "Apple, Chocolate, malt candy, Jujube Product Information Notice Food type: Coffee Manufacturer and distributor Manufacturer: Bihaeibeun / 682-19 Namcheon-ro, Namcheon-myeon, Gyeongsan-si, Gyeongsangbuk-do Distributor: Momoseu Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Manufacture date: Indicated separately on the product Shelf life: 6 months from manufacture date Net content: 500 ml (energy 70 kcal) Ingredients and contents: Coffee extract 100 % Composition: Colombia 100 % Returns and exchanges: Place of purchase and manufacturer Customer service phone 051-512-7036",
+        "short_description": "Decaffeinated cold brew concentrate 500ml. Made from Colombia 100% coffee extract, with tasting notes of apple, chocolate, malt candy, jujube. Manufacturer: Bihaeibeun. Shelf life: 6 months from manufacture date.",
+        "nano_description": "Colombia 100% Decaffeinated Cold Brew Concentrate 500ml — Apple, Chocolate, malt candy, Jujube.",
         "country_of_origin": "Colombia"
       },
       "english_attributes": {
@@ -3069,7 +3069,7 @@
         "flavor_notes": [
           "Apple",
           "Chocolate",
-          "Yeot",
+          "malt candy",
           "Jujube"
         ],
         "grind_size_offered": [],
@@ -3077,9 +3077,9 @@
           "Cold Brew"
         ],
         "producer": "Bihaeibeun",
-        "description": "Apple, Chocolate, Yeot, Jujube Product Information Notice Food type: Coffee Manufacturer and distributor Manufacturer: Bihaeibeun / 682-19 Namcheon-ro, Namcheon-myeon, Gyeongsan-si, Gyeongsangbuk-do Distributor: Momoseu Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Manufacture date: Indicated separately on the product Shelf life: 6 months from manufacture date Net content: 500 ml (energy 70 kcal) Ingredients and contents: Coffee extract 100 % Composition: Colombia 100 % Returns and exchanges: Place of purchase and manufacturer Customer service phone 051-512-7036",
-        "short_description": "Decaffeinated cold brew concentrate 500ml. Made from Colombia 100% coffee extract, with tasting notes of apple, chocolate, yeot, jujube. Manufacturer: Bihaeibeun. Shelf life: 6 months from manufacture date.",
-        "nano_description": "Colombia 100% Decaffeinated Cold Brew Concentrate 500ml — Apple, Chocolate, Yeot, Jujube."
+        "description": "Apple, Chocolate, malt candy, Jujube Product Information Notice Food type: Coffee Manufacturer and distributor Manufacturer: Bihaeibeun / 682-19 Namcheon-ro, Namcheon-myeon, Gyeongsan-si, Gyeongsangbuk-do Distributor: Momoseu Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Manufacture date: Indicated separately on the product Shelf life: 6 months from manufacture date Net content: 500 ml (energy 70 kcal) Ingredients and contents: Coffee extract 100 % Composition: Colombia 100 % Returns and exchanges: Place of purchase and manufacturer Customer service phone 051-512-7036",
+        "short_description": "Decaffeinated cold brew concentrate 500ml. Made from Colombia 100% coffee extract, with tasting notes of apple, chocolate, malt candy, jujube. Manufacturer: Bihaeibeun. Shelf life: 6 months from manufacture date.",
+        "nano_description": "Colombia 100% Decaffeinated Cold Brew Concentrate 500ml — Apple, Chocolate, malt candy, Jujube."
       },
       "translation_cache": {
         "version": "english-before-save-v1",
@@ -3109,7 +3109,7 @@
           },
           {
             "id": "attributes.flavor_notes.2",
-            "text": "Yeot"
+            "text": "malt candy"
           },
           {
             "id": "attributes.flavor_notes.3",
@@ -3125,15 +3125,15 @@
           },
           {
             "id": "attributes.description",
-            "text": "Apple, Chocolate, Yeot, Jujube Product Information Notice Food type: Coffee Manufacturer and distributor Manufacturer: Bihaeibeun / 682-19 Namcheon-ro, Namcheon-myeon, Gyeongsan-si, Gyeongsangbuk-do Distributor: Momoseu Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Manufacture date: Indicated separately on the product Shelf life: 6 months from manufacture date Net content: 500 ml (energy 70 kcal) Ingredients and contents: Coffee extract 100 % Composition: Colombia 100 % Returns and exchanges: Place of purchase and manufacturer Customer service phone 051-512-7036"
+            "text": "Apple, Chocolate, malt candy, Jujube Product Information Notice Food type: Coffee Manufacturer and distributor Manufacturer: Bihaeibeun / 682-19 Namcheon-ro, Namcheon-myeon, Gyeongsan-si, Gyeongsangbuk-do Distributor: Momoseu Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Manufacture date: Indicated separately on the product Shelf life: 6 months from manufacture date Net content: 500 ml (energy 70 kcal) Ingredients and contents: Coffee extract 100 % Composition: Colombia 100 % Returns and exchanges: Place of purchase and manufacturer Customer service phone 051-512-7036"
           },
           {
             "id": "attributes.short_description",
-            "text": "Decaffeinated cold brew concentrate 500ml. Made from Colombia 100% coffee extract, with tasting notes of apple, chocolate, yeot, jujube. Manufacturer: Bihaeibeun. Shelf life: 6 months from manufacture date."
+            "text": "Decaffeinated cold brew concentrate 500ml. Made from Colombia 100% coffee extract, with tasting notes of apple, chocolate, malt candy, jujube. Manufacturer: Bihaeibeun. Shelf life: 6 months from manufacture date."
           },
           {
             "id": "attributes.nano_description",
-            "text": "Colombia 100% Decaffeinated Cold Brew Concentrate 500ml — Apple, Chocolate, Yeot, Jujube."
+            "text": "Colombia 100% Decaffeinated Cold Brew Concentrate 500ml — Apple, Chocolate, malt candy, Jujube."
           },
           {
             "id": "variants.0.title",
@@ -3577,7 +3577,7 @@
         "name": "Coffee beans Ethiopia Sapo Mosto Anaerobic natural",
         "display_title": "Coffee beans Ethiopia Sapo Mosto Anaerobic natural",
         "original_title": "원두 에티오피아 사포 모스토 무산소 내추럴",
-        "description": "Honeydew, Grape, Marshmallow, Vanilla candy, RefinedProduct information noticeHoneydew, Grape, Marshmallow, Vanilla candy, RefinedFood typeCoffeeManufacturer and sellerMomos Coffee / Busan Metropolitan City, Yeongdo-gu, Bongraenaru-ro 160Manufacture dateThis product may be received as a processed product from 1 day to a maximum of 4 days from the order date, including delivery days such as weekends or island/mountain areas.Shelf life1 year from manufacture dateNet weight100 gIngredients and contentsCoffee beans 100 %CompositionCoffee beans Ethiopia Sapo Mosto Anaerobic natural 100 %Returns and exchangesPlace of purchase and manufacturerCustomer service phone051-512-7036",
+        "description": "Honeydew, grape, marshmallow, vanilla candy, refined. Product information notice. Notes: Honeydew, grape, marshmallow, vanilla candy, refined. Food type: Coffee. Manufacturer and seller: Momos Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Metropolitan City. Manufacture date: The product you receive may have been processed 1 to a maximum of 4 days before the order date, including weekends or delivery days to island and mountainous areas. Shelf life: 1 year from the manufacture date. Net weight: 100 g. Ingredients and contents: Coffee beans 100 %. Composition: Coffee beans Ethiopia Sapo Mosto Anaerobic Natural 100 %. Returns and exchanges: Place of purchase and manufacturer. Customer service phone 051-512-7036.",
         "short_description": "Ethiopia Sapo Mosto Anaerobic natural processed coffee with honeydew, grape, marshmallow, vanilla candy, and refined aroma.",
         "nano_description": "Ethiopia Sapo Mosto Anaerobic natural — Honeydew, Grape, Marshmallow, Vanilla candy.",
         "country_of_origin": "Ethiopia",
@@ -3597,7 +3597,7 @@
           "Refined"
         ],
         "producer": "Momos Coffee",
-        "description": "Honeydew, Grape, Marshmallow, Vanilla candy, RefinedProduct information noticeHoneydew, Grape, Marshmallow, Vanilla candy, RefinedFood typeCoffeeManufacturer and sellerMomos Coffee / Busan Metropolitan City, Yeongdo-gu, Bongraenaru-ro 160Manufacture dateThis product may be received as a processed product from 1 day to a maximum of 4 days from the order date, including delivery days such as weekends or island/mountain areas.Shelf life1 year from manufacture dateNet weight100 gIngredients and contentsCoffee beans 100 %CompositionCoffee beans Ethiopia Sapo Mosto Anaerobic natural 100 %Returns and exchangesPlace of purchase and manufacturerCustomer service phone051-512-7036",
+        "description": "Honeydew, grape, marshmallow, vanilla candy, refined. Product information notice. Notes: Honeydew, grape, marshmallow, vanilla candy, refined. Food type: Coffee. Manufacturer and seller: Momos Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Metropolitan City. Manufacture date: The product you receive may have been processed 1 to a maximum of 4 days before the order date, including weekends or delivery days to island and mountainous areas. Shelf life: 1 year from the manufacture date. Net weight: 100 g. Ingredients and contents: Coffee beans 100 %. Composition: Coffee beans Ethiopia Sapo Mosto Anaerobic Natural 100 %. Returns and exchanges: Place of purchase and manufacturer. Customer service phone 051-512-7036.",
         "short_description": "Ethiopia Sapo Mosto Anaerobic natural processed coffee with honeydew, grape, marshmallow, vanilla candy, and refined aroma.",
         "nano_description": "Ethiopia Sapo Mosto Anaerobic natural — Honeydew, Grape, Marshmallow, Vanilla candy."
       },
@@ -3653,7 +3653,7 @@
           },
           {
             "id": "attributes.description",
-            "text": "Honeydew, Grape, Marshmallow, Vanilla candy, RefinedProduct information noticeHoneydew, Grape, Marshmallow, Vanilla candy, RefinedFood typeCoffeeManufacturer and sellerMomos Coffee / Busan Metropolitan City, Yeongdo-gu, Bongraenaru-ro 160Manufacture dateThis product may be received as a processed product from 1 day to a maximum of 4 days from the order date, including delivery days such as weekends or island/mountain areas.Shelf life1 year from manufacture dateNet weight100 gIngredients and contentsCoffee beans 100 %CompositionCoffee beans Ethiopia Sapo Mosto Anaerobic natural 100 %Returns and exchangesPlace of purchase and manufacturerCustomer service phone051-512-7036"
+            "text": "Honeydew, grape, marshmallow, vanilla candy, refined. Product information notice. Notes: Honeydew, grape, marshmallow, vanilla candy, refined. Food type: Coffee. Manufacturer and seller: Momos Coffee / 160 Bongnaenaru-ro, Yeongdo-gu, Busan Metropolitan City. Manufacture date: The product you receive may have been processed 1 to a maximum of 4 days before the order date, including weekends or delivery days to island and mountainous areas. Shelf life: 1 year from the manufacture date. Net weight: 100 g. Ingredients and contents: Coffee beans 100 %. Composition: Coffee beans Ethiopia Sapo Mosto Anaerobic Natural 100 %. Returns and exchanges: Place of purchase and manufacturer. Customer service phone 051-512-7036."
           },
           {
             "id": "attributes.short_description",
@@ -3813,19 +3813,19 @@
         "name": "Drip bag 7-pack",
         "display_title": "Drip bag 7-pack",
         "original_title": "드립백 7개입",
-        "description": "Convenient anytime, anywhere. Product information notice. Food type: Coffee. Manufacturer and seller: Momos Keopi (Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160). Manufacture date: Indicated separately on the product. Shelf life: 1 year from manufacture date. Net weight: 70 g (10 gX7 ea) / 84 g (12 gX7 ea). Ingredients and content: Coffee beans 100 %. Composition: Shown in the detailed description. Dimensions: 112 x 65 x 130 (mm). Returns and exchanges: Place of purchase and head office. Customer service phone: 051-512-7036.",
-        "short_description": "Convenient coffee drip bag for anytime, anywhere. Net weight 70 g (10 g×7) or 84 g (12 g×7). Manufacturer/seller: Momos Keopi. Shelf life: 1 year from manufacture date. Ingredients: Coffee beans 100%.",
-        "nano_description": "Convenient Momos Keopi drip bag, 7-pack."
+        "description": "Convenient anytime, anywhere. Product information notice. Food type: Coffee. Manufacturer and seller: Momos Coffee (Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160). Manufacture date: Indicated separately on the product. Shelf life: 1 year from manufacture date. Net weight: 70 g (10 gX7 ea) / 84 g (12 gX7 ea). Ingredients and content: Coffee beans 100 %. Composition: Shown in the detailed description. Dimensions: 112 x 65 x 130 (mm). Returns and exchanges: Place of purchase and head office. Customer service phone: 051-512-7036.",
+        "short_description": "Convenient coffee drip bag for anytime, anywhere. Net weight 70 g (10 g×7) or 84 g (12 g×7). Manufacturer/seller: Momos Coffee. Shelf life: 1 year from manufacture date. Ingredients: Coffee beans 100%.",
+        "nano_description": "Convenient Momos Coffee drip bag, 7-pack."
       },
       "english_attributes": {
         "process": null,
         "coferment_ingredients": [],
         "flavor_notes": [],
         "grind_size_offered": [],
-        "producer": "Momos Keopi",
-        "description": "Convenient anytime, anywhere. Product information notice. Food type: Coffee. Manufacturer and seller: Momos Keopi (Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160). Manufacture date: Indicated separately on the product. Shelf life: 1 year from manufacture date. Net weight: 70 g (10 gX7 ea) / 84 g (12 gX7 ea). Ingredients and content: Coffee beans 100 %. Composition: Shown in the detailed description. Dimensions: 112 x 65 x 130 (mm). Returns and exchanges: Place of purchase and head office. Customer service phone: 051-512-7036.",
-        "short_description": "Convenient coffee drip bag for anytime, anywhere. Net weight 70 g (10 g×7) or 84 g (12 g×7). Manufacturer/seller: Momos Keopi. Shelf life: 1 year from manufacture date. Ingredients: Coffee beans 100%.",
-        "nano_description": "Convenient Momos Keopi drip bag, 7-pack."
+        "producer": "Momos Coffee",
+        "description": "Convenient anytime, anywhere. Product information notice. Food type: Coffee. Manufacturer and seller: Momos Coffee (Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160). Manufacture date: Indicated separately on the product. Shelf life: 1 year from manufacture date. Net weight: 70 g (10 gX7 ea) / 84 g (12 gX7 ea). Ingredients and content: Coffee beans 100 %. Composition: Shown in the detailed description. Dimensions: 112 x 65 x 130 (mm). Returns and exchanges: Place of purchase and head office. Customer service phone: 051-512-7036.",
+        "short_description": "Convenient coffee drip bag for anytime, anywhere. Net weight 70 g (10 g×7) or 84 g (12 g×7). Manufacturer/seller: Momos Coffee. Shelf life: 1 year from manufacture date. Ingredients: Coffee beans 100%.",
+        "nano_description": "Convenient Momos Coffee drip bag, 7-pack."
       },
       "translation_cache": {
         "version": "english-before-save-v1",
@@ -3839,19 +3839,19 @@
           },
           {
             "id": "attributes.producer",
-            "text": "Momos Keopi"
+            "text": "Momos Coffee"
           },
           {
             "id": "attributes.description",
-            "text": "Convenient anytime, anywhere. Product information notice. Food type: Coffee. Manufacturer and seller: Momos Keopi (Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160). Manufacture date: Indicated separately on the product. Shelf life: 1 year from manufacture date. Net weight: 70 g (10 gX7 ea) / 84 g (12 gX7 ea). Ingredients and content: Coffee beans 100 %. Composition: Shown in the detailed description. Dimensions: 112 x 65 x 130 (mm). Returns and exchanges: Place of purchase and head office. Customer service phone: 051-512-7036."
+            "text": "Convenient anytime, anywhere. Product information notice. Food type: Coffee. Manufacturer and seller: Momos Coffee (Busan Gwangyeoksi Yeongdo-gu Bongnaenaru-ro 160). Manufacture date: Indicated separately on the product. Shelf life: 1 year from manufacture date. Net weight: 70 g (10 gX7 ea) / 84 g (12 gX7 ea). Ingredients and content: Coffee beans 100 %. Composition: Shown in the detailed description. Dimensions: 112 x 65 x 130 (mm). Returns and exchanges: Place of purchase and head office. Customer service phone: 051-512-7036."
           },
           {
             "id": "attributes.short_description",
-            "text": "Convenient coffee drip bag for anytime, anywhere. Net weight 70 g (10 g×7) or 84 g (12 g×7). Manufacturer/seller: Momos Keopi. Shelf life: 1 year from manufacture date. Ingredients: Coffee beans 100%."
+            "text": "Convenient coffee drip bag for anytime, anywhere. Net weight 70 g (10 g×7) or 84 g (12 g×7). Manufacturer/seller: Momos Coffee. Shelf life: 1 year from manufacture date. Ingredients: Coffee beans 100%."
           },
           {
             "id": "attributes.nano_description",
-            "text": "Convenient Momos Keopi drip bag, 7-pack."
+            "text": "Convenient Momos Coffee drip bag, 7-pack."
           },
           {
             "id": "variants.0.title",
@@ -4003,9 +4003,9 @@
         "name": "Cold Brew RTD Decaffeinated 235ml",
         "display_title": "Cold Brew RTD Decaffeinated 235ml",
         "original_title": "콜드브루 RTD 디카페인 235ml",
-        "description": "Apple, chocolate, yeot, jujube. Product information notice. Food type: Coffee. Manufacturer and seller. Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19. Seller: Momosseukeopi / Busan Metropolitan City Yeongdo-gu Bongnaenaru-ro 160. Manufacture date: indicated separately on product. Shelf life: 5 months from manufacture date. Net content 235 ml (Energy 10 kcal). Ingredients and content: Purified water, coffee extract 25 %. Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm). Returns and exchanges: place of purchase and manufacturer. Customer service phone 051-512-7036.",
-        "short_description": "Decaffeinated Cold Brew RTD 235ml. Apple, chocolate, yeot, jujube flavor. Net content 235ml, Ingredients: purified water·coffee extract 25%. Manufacturer: Bihaeibeun, Seller: Momosseukeopi.",
-        "nano_description": "Decaffeinated Cold Brew RTD 235ml — apple·chocolate·yeot·jujube flavor."
+        "description": "Apple, chocolate, malt candy, jujube. Product information notice. Food type: Coffee. Manufacturer and seller. Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19. Seller: Momos Coffee / Busan Metropolitan City Yeongdo-gu Bongnaenaru-ro 160. Manufacture date: indicated separately on product. Shelf life: 5 months from manufacture date. Net content 235 ml (Energy 10 kcal). Ingredients and content: Purified water, coffee extract 25 %. Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm). Returns and exchanges: place of purchase and manufacturer. Customer service phone 051-512-7036.",
+        "short_description": "Decaffeinated Cold Brew RTD 235ml. Apple, chocolate, malt candy, jujube flavor. Net content 235ml, Ingredients: purified water·coffee extract 25%. Manufacturer: Bihaeibeun, Seller: Momos Coffee.",
+        "nano_description": "Decaffeinated Cold Brew RTD 235ml — apple·chocolate·malt candy·jujube flavor."
       },
       "english_attributes": {
         "process": null,
@@ -4013,7 +4013,7 @@
         "flavor_notes": [
           "apple",
           "chocolate",
-          "yeot",
+          "malt candy",
           "jujube"
         ],
         "grind_size_offered": [],
@@ -4021,9 +4021,9 @@
           "Cold Brew"
         ],
         "producer": "Bihaeibeun",
-        "description": "Apple, chocolate, yeot, jujube. Product information notice. Food type: Coffee. Manufacturer and seller. Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19. Seller: Momosseukeopi / Busan Metropolitan City Yeongdo-gu Bongnaenaru-ro 160. Manufacture date: indicated separately on product. Shelf life: 5 months from manufacture date. Net content 235 ml (Energy 10 kcal). Ingredients and content: Purified water, coffee extract 25 %. Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm). Returns and exchanges: place of purchase and manufacturer. Customer service phone 051-512-7036.",
-        "short_description": "Decaffeinated Cold Brew RTD 235ml. Apple, chocolate, yeot, jujube flavor. Net content 235ml, Ingredients: purified water·coffee extract 25%. Manufacturer: Bihaeibeun, Seller: Momosseukeopi.",
-        "nano_description": "Decaffeinated Cold Brew RTD 235ml — apple·chocolate·yeot·jujube flavor."
+        "description": "Apple, chocolate, malt candy, jujube. Product information notice. Food type: Coffee. Manufacturer and seller. Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19. Seller: Momos Coffee / Busan Metropolitan City Yeongdo-gu Bongnaenaru-ro 160. Manufacture date: indicated separately on product. Shelf life: 5 months from manufacture date. Net content 235 ml (Energy 10 kcal). Ingredients and content: Purified water, coffee extract 25 %. Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm). Returns and exchanges: place of purchase and manufacturer. Customer service phone 051-512-7036.",
+        "short_description": "Decaffeinated Cold Brew RTD 235ml. Apple, chocolate, malt candy, jujube flavor. Net content 235ml, Ingredients: purified water·coffee extract 25%. Manufacturer: Bihaeibeun, Seller: Momos Coffee.",
+        "nano_description": "Decaffeinated Cold Brew RTD 235ml — apple·chocolate·malt candy·jujube flavor."
       },
       "translation_cache": {
         "version": "english-before-save-v1",
@@ -4045,7 +4045,7 @@
           },
           {
             "id": "attributes.flavor_notes.2",
-            "text": "yeot"
+            "text": "malt candy"
           },
           {
             "id": "attributes.flavor_notes.3",
@@ -4061,15 +4061,15 @@
           },
           {
             "id": "attributes.description",
-            "text": "Apple, chocolate, yeot, jujube. Product information notice. Food type: Coffee. Manufacturer and seller. Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19. Seller: Momosseukeopi / Busan Metropolitan City Yeongdo-gu Bongnaenaru-ro 160. Manufacture date: indicated separately on product. Shelf life: 5 months from manufacture date. Net content 235 ml (Energy 10 kcal). Ingredients and content: Purified water, coffee extract 25 %. Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm). Returns and exchanges: place of purchase and manufacturer. Customer service phone 051-512-7036."
+            "text": "Apple, chocolate, malt candy, jujube. Product information notice. Food type: Coffee. Manufacturer and seller. Manufacturer: Bihaeibeun / Gyeongsangbuk-do Gyeongsan-si Namcheon-myeon Namcheon-ro 682-19. Seller: Momos Coffee / Busan Metropolitan City Yeongdo-gu Bongnaenaru-ro 160. Manufacture date: indicated separately on product. Shelf life: 5 months from manufacture date. Net content 235 ml (Energy 10 kcal). Ingredients and content: Purified water, coffee extract 25 %. Specifications - 1 ea 7 x 9 (cm) - 10 ea (box) 33.5 x 13.8 x 10 (cm) - 24 ea (box) 42 x 30 x 10 (cm). Returns and exchanges: place of purchase and manufacturer. Customer service phone 051-512-7036."
           },
           {
             "id": "attributes.short_description",
-            "text": "Decaffeinated Cold Brew RTD 235ml. Apple, chocolate, yeot, jujube flavor. Net content 235ml, Ingredients: purified water·coffee extract 25%. Manufacturer: Bihaeibeun, Seller: Momosseukeopi."
+            "text": "Decaffeinated Cold Brew RTD 235ml. Apple, chocolate, malt candy, jujube flavor. Net content 235ml, Ingredients: purified water·coffee extract 25%. Manufacturer: Bihaeibeun, Seller: Momos Coffee."
           },
           {
             "id": "attributes.nano_description",
-            "text": "Decaffeinated Cold Brew RTD 235ml — apple·chocolate·yeot·jujube flavor."
+            "text": "Decaffeinated Cold Brew RTD 235ml — apple·chocolate·malt candy·jujube flavor."
           },
           {
             "id": "variants.0.title",
@@ -4281,5 +4281,108 @@
         }
       ]
     }
-  ]
+  ],
+  "manual_review": {
+    "corrections": [
+      {
+        "product_id": "03360cf3-dd22-5a43-b011-cd4a29195597",
+        "field": "attributes.description"
+      },
+      {
+        "product_id": "56a8f1fe-c36b-53f4-a93c-a1022386472e",
+        "field": "attributes.description"
+      },
+      {
+        "product_id": "56a8f1fe-c36b-53f4-a93c-a1022386472e",
+        "field": "attributes.short_description"
+      },
+      {
+        "product_id": "81f74035-1d6b-543b-9ac2-64814f327b43",
+        "field": "attributes.description"
+      },
+      {
+        "product_id": "81f74035-1d6b-543b-9ac2-64814f327b43",
+        "field": "attributes.short_description"
+      },
+      {
+        "product_id": "96f62e8b-c8bd-5539-b0e2-331004e93dbd",
+        "field": "attributes.flavor_notes.2"
+      },
+      {
+        "product_id": "96f62e8b-c8bd-5539-b0e2-331004e93dbd",
+        "field": "attributes.description"
+      },
+      {
+        "product_id": "96f62e8b-c8bd-5539-b0e2-331004e93dbd",
+        "field": "attributes.short_description"
+      },
+      {
+        "product_id": "96f62e8b-c8bd-5539-b0e2-331004e93dbd",
+        "field": "attributes.nano_description"
+      },
+      {
+        "product_id": "c1836a09-ddb3-5636-8d00-6a5a262e8ace",
+        "field": "attributes.description"
+      },
+      {
+        "product_id": "d4e091ca-bd53-52ad-ac8a-1fd1020b3307",
+        "field": "attributes.producer"
+      },
+      {
+        "product_id": "d4e091ca-bd53-52ad-ac8a-1fd1020b3307",
+        "field": "attributes.description"
+      },
+      {
+        "product_id": "d4e091ca-bd53-52ad-ac8a-1fd1020b3307",
+        "field": "attributes.short_description"
+      },
+      {
+        "product_id": "d4e091ca-bd53-52ad-ac8a-1fd1020b3307",
+        "field": "attributes.nano_description"
+      },
+      {
+        "product_id": "d68b7175-15a9-5ceb-9a74-fbb084b9d70b",
+        "field": "attributes.flavor_notes.2"
+      },
+      {
+        "product_id": "d68b7175-15a9-5ceb-9a74-fbb084b9d70b",
+        "field": "attributes.description"
+      },
+      {
+        "product_id": "d68b7175-15a9-5ceb-9a74-fbb084b9d70b",
+        "field": "attributes.short_description"
+      },
+      {
+        "product_id": "d68b7175-15a9-5ceb-9a74-fbb084b9d70b",
+        "field": "attributes.nano_description"
+      }
+    ],
+    "reasons": [
+      "Use the known Momos Coffee brand instead of inconsistent romanizations.",
+      "Translate the Korean malt-candy tasting note into English.",
+      "Preserve the source meaning that processing was before the order date."
+    ],
+    "additional_model_calls": 0
+  },
+  "validated_text_fields": 388,
+  "schema_verification": {
+    "generated_from_metadata": [
+      "description",
+      "short_description",
+      "nano_description",
+      "country_of_origin",
+      "origin_region"
+    ],
+    "direct_generated_column_updates": 0,
+    "schema_changes": 0
+  },
+  "rollback_preview": {
+    "products_changed": 31,
+    "variants_changed": 129,
+    "facts_changed": 2,
+    "content_events_planned": 31,
+    "market_changes": 0,
+    "rollback_verified": true,
+    "catalog_changed": false
+  }
 }
