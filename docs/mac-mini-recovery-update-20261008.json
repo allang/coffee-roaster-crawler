@@ -147,5 +147,14 @@
     "limit": "Individual returned page-error causes are not emitted; failed-run database counters are not finalized. These are the previous source and restart, not post-recovery results."
   },
   "schema_preflight_file": "native-variant-weight-production-preflight-20261008.json",
-  "source_dependencies_unchanged": true
+  "source_dependencies_unchanged": true,
+  "previous_failure_cause_resolution": {
+    "checked_at": "2026-10-08T17:10:05.511Z",
+    "source_file": "mac-mini-preceding-save-failures-20261008.json",
+    "hydrangea_23505_weight_conflicts": 6,
+    "taith_23505_weight_conflicts": 5,
+    "all_eleven_owners_bound": true,
+    "not_optional_json404_warnings": true,
+    "migration_applied": false
+  }
 }

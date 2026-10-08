@@ -2,6 +2,12 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — retained database logs resolve all eleven prior save failures
+
+- Read-only Postgres log inspection and product/source-ID binding at **17:10:05.511 UTC** identified all **six Hydrangea + five Taith** preceding page failures as **SQLSTATE 23505** from `save_catalog_product_v1`, citing the global `product_variants_unique_weight_per_product` index. Exact UTC times, product IDs, known weights and source URLs are in [the eleven-event receipt](docs/mac-mini-preceding-save-failures-20261008.json). Existing catalog owners or exact deterministic reviewed native identities bind every event; failed new-product transactions remain rolled back.
+- Distinct from nonfatal optional JSON404 warnings after latest startup. A concurrent 16:06:13 UTC SQLSTATE 57014 sample is not a saver RPC and is not counted among these save failures. Earlier aggregate-only attribution limits are explicitly resolved by later evidence, rather than erased from historical records.
+- Installed code/runtime remains main `0a1cefb760b6d90e4dbde885fcf79a1d8da44438`, launcher/lock 43736 and Node 43745; no extra restart, model call or database mutation. The reviewed compatibility migration remains unapplied pending separate authorization. Read all 31 review surfaces before this follow-up; no new actionable finding. Previous installation/preflight documentation commit `282c471efeb38a7779dcce3f1c6bd26b9494aa76` passed both exact-commit CI runs. The follow-up SHA and checks are logged in issue #1.
+
 ## 2026-10-08 — reviewed recovery main installed on Mac Mini
 
 - Merged recovery PR #7 source `181ca65cd4a0da6ff1c3a5e5b953bbd0afcc0b2b` into ready main `0a1cefb760b6d90e4dbde885fcf79a1d8da44438`; preserved original Git/private configuration/log/process evidence, then fast-forwarded the clean original checkout. No remote overwrite. Reconciled this documentation branch with latest main using a normal merge, preserving both histories.
