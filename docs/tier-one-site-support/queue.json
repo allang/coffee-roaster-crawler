@@ -209,8 +209,10 @@
           "name": "Hatch Specialty Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "hatch-live.json",
+      "coffee_products": 29,
+      "note": "Next.js/Subbly storefront: five reviewed coffee categories; exact native variants with current CAD formatter and primary display corroboration; subscriptions and gift cards excluded."
     },
     {
       "name": "Hydrangea",

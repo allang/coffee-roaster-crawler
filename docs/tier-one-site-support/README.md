@@ -21,11 +21,11 @@ node src/siteSupport/cli.js Botz /tmp/botz-inspection.json
 npm test
 ```
 
-The regression suite passed 224 checks after the first ten integrations. New checks cover live-captured hydration, pagination/repeated cursors, exact identity/price/stock, prohibited paths, legacy product adoption, idempotent local persistence and retail-only Shopify collections. Catalog transactions are tested only in the disposable local fixture database, using reviewed migrations. Full hosted schema parity and live scheduler state remain unverified.
+The regression suite passed 226 checks after the first eleven integrations. New checks cover live-captured hydration, pagination/repeated cursors, exact identity/price/stock, prohibited paths, legacy product adoption, idempotent local persistence and retail-only Shopify collections. Catalog transactions are tested only in the disposable local fixture database, using reviewed migrations. Full hosted schema parity and live scheduler state remain unverified.
 
-This is preparation and live-site dry-run verification. Production deployment and imports remain outside the authorization in this chat. The queue remains open until every site is supported and verified, or an explicit merchant/identity blocker has been documented with authoritative evidence.
+The user has authorized merging the completed changes and updating the current crawler after the site work is complete. Until that gate, validation remains merchant-only dry runs and disposable local database tests. Before installation, verify the running checkout, hosted schema compatibility and scheduler, preserve local work, and retain a rollback path. Completion requires fresh runtime and catalog readback evidence. The queue remains open until every site is supported and verified, or an explicit merchant/identity blocker has been documented with authoritative evidence.
 
-Verified live dry runs so far: April **21**, Black & White **20**, Botz **1 (sold out)**, Coffee Collective **21**, Coffee Project NY **24** coffee products. Ten of 41 names are implemented/verified; the remaining 31 stay in the open queue.
+Verified live dry runs so far: April **21**, Black & White **20**, Botz **1 (sold out)**, Coffee Collective **21**, Coffee Project NY **24** coffee products. Eleven of 41 names are implemented/verified; the remaining 30 are assigned to three parallel review sessions.
 
 Flower Child: **7** public coffee products verified; one obsolete listing is a primary soft 404. A fresh unavailable page overrides cached native stock and updates only an already identified product's availability, keeping its ID/slug/content and previous sighting timestamp. Exact-variant analytics metadata can establish currency only when one same-script product/variant tuple agrees with the native decimal price; general shop currency is insufficient.
 
@@ -34,3 +34,5 @@ Fritz Coffee Company: **29** coffee products verified with KRW offers, including
 Frukt: **14** coffee products verified, including explicit sold-out variants. Goût & Co: **55** coffee products verified across its current coffee collections. Registered Shopify adapters prefer explicit net-weight labels over shipping mass; ambiguous/multipack labels remain unset.
 
 H&S: **21** coffee products verified, with compatible metric/imperial size labels parsed as net coffee weight. All earlier registered Shopify live inspections were rerun after the size-label correction and passed.
+
+Hatch: **29** coffee products verified across five current coffee categories on its new Subbly storefront. Native product/variant identities and flat prices are bound to the primary title/display and a checked merchant formatter contract (CAD, integer cents). Explicit stock counts follow the reviewed storefront behavior, including null for untracked inventory; missing/invalid counts remain unknown. Subscriptions, membership and gift cards are excluded. New formatter versions fail closed for review.

@@ -23,7 +23,7 @@ async function main() {
     try {
     const jsonFetch=async value=>{const response=await reader.fetchHtml(value);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid product JSON'};}};
     const native=profile.adapter==='shopify'?await fetchShopifyProductJson(url,null,{fetchJson:jsonFetch}):null;
-    const sourceProduct=profile.adapter==='square'?await require('./square').fetchSquareProduct(page.data,url,profile,reader.fetchHtml):null;
+    const sourceProduct=profile.adapter==='square'?await require('./square').fetchSquareProduct(page.data,url,profile,reader.fetchHtml):profile.adapter==='subbly'?await require('./subbly').fetchSubblyProduct(page.data,url,profile,reader.fetchHtml):null;
     const structured=structuredExtraction({html:page.data,sourceProduct,url,finalUrl:page.finalUrl},native);
     if(!structured.product || !(structured.coffee || profile.coffee_collection_verified || native?.success && profile.coffee_product_types?.includes(native.data.productType))){errors.push({url,error:'Exact coffee product data missing'});continue;}
     const product=normalizeProduct(structured.product,url),availability=productAvailability({html:page.data,sourceProduct,status:200,sourceUrl:url,finalUrl:page.finalUrl,shopifyProduct:native?.success?native.raw:null});

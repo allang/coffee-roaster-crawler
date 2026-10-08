@@ -172,5 +172,25 @@
       "/collections/coffee/products.json"
     ],
     "adapter": "shopify"
+  },
+  {
+    "name": "Hatch",
+    "entity_ids": [
+      "973e6bc5-2f7c-4213-ba81-27fa025ce64d"
+    ],
+    "hosts": [
+      "hatchcrafted.com",
+      "www.hatchcrafted.com"
+    ],
+    "adapter": "subbly",
+    "listing_paths": [
+      "/shop/tag/foundation",
+      "/shop/tag/seasonal",
+      "/shop/tag/premium",
+      "/shop/tag/peak",
+      "/shop/tag/instant"
+    ],
+    "formatter_path": "/_next/static/chunks/1c2d9mkz_9smt.js",
+    "coffee_collection_verified": true
   }
 ]

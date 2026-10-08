@@ -12,6 +12,7 @@ const {discoverShopifyProducts}=require('../src/siteSupport/shopifyDiscovery');
 const {fetchSquareProduct,bootstrap}=require('../src/siteSupport/square');
 const {createReader}=require('../src/siteSupport/network');
 const {exactAnalyticsMarket,parseShopifyProduct,labelWeight}=require('../src/shopifyProduct');
+const {fetchSubblyProduct,discoverSubblyProducts}=require('../src/siteSupport/subbly');
 const html=fs.readFileSync(path.join(__dirname,'fixtures/siteSupport/april-product-flight.html'),'utf8');
 const url='https://www.aprilcoffeeroasters.com/product/gesha-village-ethiopia-natural-geisha-oma-142';
 const owner='3a71024e-eb30-4778-927b-580e3bc3b62e';
@@ -115,4 +116,29 @@ test('registered coffee sizes use explicit net-weight labels rather than Shopify
   assert.equal(labelWeight('8.8 oz (250g)'),250);assert.equal(labelWeight('8.8 oz (500g)'),null);assert.equal(labelWeight('2 x 250g'),null);
   assert.equal(labelWeight('125g (4.4oz)'),125);assert.equal(labelWeight('125g (8.8oz)'),null);
   assert.equal(parseShopifyProduct({title:'Coffee',variants:[{id:1,title:'Default Title',grams:265}]},{preferLabelWeight:true}).variants[0].weightGrams,null);
+});
+test('captured Hatch Subbly product binds CAD minor prices, native variant stock and net labels to one primary product',async()=>{
+  const fixture=require('./fixtures/siteSupport/hatch-subbly.json'),profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='Hatch'),url='https://hatchcrafted.com/shop/starlight';
+  const page=fixture.primary+'<script src="'+profile.formatter_path+'"></script>'+flight({product:fixture.product}),read=async()=>({success:true,data:fixture.formatter});
+  const source=await fetchSubblyProduct(page,url,profile,read),extracted=structuredExtraction({html:page,url,sourceProduct:source},null),product=normalizeProduct(extracted.product,url);
+  assert.equal(product.source_product_id,'244191');assert.deepEqual(product.variants.map(v=>v.source_id),['250163','250164']);
+  assert.deepEqual(product.variants.map(v=>v.money.currency),['CAD','CAD']);assert.deepEqual(product.variants.map(v=>v.money.minorUnits),[2500,14500]);assert.deepEqual(product.variants.map(v=>v.weight_g),[300,2000]);
+  assert.equal(product.variants_complete,true);assert.match(product.description_raw,/Ethiopia Duromina/);assert.equal(productAvailability({sourceProduct:source,sourceUrl:url}).state,'in_stock');
+  await assert.rejects(fetchSubblyProduct(page+flight({product:fixture.product}),url,profile,read),/ambiguous/);
+  await assert.rejects(fetchSubblyProduct(page.replace('CA$25.00','CA$99.00'),url,profile,read),/disagrees/);
+  await assert.rejects(fetchSubblyProduct(page,url,profile,async()=>({success:true,data:fixture.formatter.replace('CAD','USD')})),/contract changed/);
+  const changed=structuredClone(fixture.product);changed.variants[0].stockCount=0;changed.variants[1].stockCount=null;
+  const mixed=await fetchSubblyProduct(fixture.primary+'<script src="'+profile.formatter_path+'"></script>'+flight({product:changed}),url,profile,read);
+  assert.deepEqual(productAvailability({sourceProduct:mixed,sourceUrl:url}).variants.map(v=>v.state),['sold_out','in_stock']);
+  changed.variants[1].stockCount=-1;
+  const unknown=await fetchSubblyProduct(fixture.primary+'<script src="'+profile.formatter_path+'"></script>'+flight({product:changed}),url,profile,read);
+  assert.equal(productAvailability({sourceProduct:unknown,sourceUrl:url}).state,'unknown');
+});
+test('Subbly reviewed coffee categories exclude subscriptions and gift cards and reject undiscovered pagination',async()=>{
+  const fixture=require('./fixtures/siteSupport/hatch-subbly.json'),profile={hosts:['hatchcrafted.com'],listing_paths:['/shop/tag/foundation']},roaster={website_url:'https://hatchcrafted.com'};
+  const listing='<a href="/shop/starlight">Starlight</a>'+flight([{product:fixture.product},{product:{...fixture.product,id:2,slug:'monthly',type:'subscription'}},{product:{...fixture.product,id:3,slug:'gift',giftCard:true}}]);
+  const fetchHtml=async url=>({success:true,data:listing,finalUrl:url}),result=await discoverSubblyProducts(roaster,profile,fetchHtml);
+  assert.deepEqual(result.urls,['https://hatchcrafted.com/shop/starlight']);assert.equal(result.complete,true);
+  const incomplete=await discoverSubblyProducts(roaster,profile,async url=>({success:true,data:listing+'<a href="?page=2">2</a>',finalUrl:url}));
+  assert.equal(incomplete.complete,false);assert.match(incomplete.error,/pagination/);
 });

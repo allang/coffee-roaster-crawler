@@ -11,6 +11,7 @@ async function discoverSiteProducts(roaster,{fetchHtml}={}) {
   if(profile.adapter==='shopify')return require('./shopifyDiscovery').discoverShopifyProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='square')return require('./square').discoverSquareProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='cafe24')return require('./domDiscovery').discoverDomProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='subbly')return require('./subbly').discoverSubblyProducts(roaster,profile,fetchHtml);
   const urls=new Set(),evidence=[];
   for(const path of profile.listing_paths) {
     const url=new URL(path,roaster.website_url).href,result=await fetchHtml(url);
