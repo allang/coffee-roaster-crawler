@@ -1,0 +1,535 @@
+{
+  "checked_at": "2026-10-08T22:00:55.309Z",
+  "installed_sha": "367acb93caf6b9dacc7efe3f29e25d5cf41bfae6",
+  "installed_tree": "ec45710fe69b8df4c7b73382daedf948d7ac67ad",
+  "worker_source_sha": "367acb93caf6b9dacc7efe3f29e25d5cf41bfae6",
+  "resume_requested_at": "2026-10-08T21:58:10.087Z",
+  "started_at": "2026-10-08T21:58:10.293Z",
+  "original_hold_at": "2026-10-08T21:42:44.798Z",
+  "stopped_at": "2026-10-08T21:57:37.106Z",
+  "hold_to_resume_seconds": 925.289,
+  "stop_to_resume_seconds": 32.981,
+  "launch_agent_state": "running",
+  "launch_agent_pid": 75975,
+  "lock_pid": 75975,
+  "crawler_nodes_in_original_checkout": [
+    {
+      "pid": 75986,
+      "parent_pid": 75975,
+      "state": "S",
+      "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+    }
+  ],
+  "schedule_seconds": 5400,
+  "roaster_workers": 1,
+  "page_workers": 1,
+  "working_tree_clean": true,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "launcher_unchanged": true,
+  "failed_passport_receipt_unchanged": true,
+  "current_phase": {
+    "tier": 1,
+    "roasters": 53
+  },
+  "current_owner": {
+    "id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+    "website": "https://www.loquatcoffee.com/"
+  },
+  "current_run": {
+    "id": "75356f0f-6a97-43d7-b758-3bffb378d67d",
+    "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+    "status": "running",
+    "started_at": "2026-10-08T21:58:29.284+00:00",
+    "finished_at": null,
+    "error": null,
+    "meta": {}
+  },
+  "worker_log_product_ids": [
+    "f049a578-5348-5206-b66e-9f5b1c6e30ca",
+    "1fd0a306-3ccf-5071-9414-7217693ad52d",
+    "6d42476b-7f50-5e38-8cb8-207ae940b1ba",
+    "6188d35e-9557-5e08-b462-d089a0684e8d"
+  ],
+  "post_restart_log_offset": 721419,
+  "fresh_primary_product": {
+    "id": "6188d35e-9557-5e08-b462-d089a0684e8d",
+    "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+    "name": "JANSON HACIENDA 130 GEISHA WASHED",
+    "source_url": "https://www.loquatcoffee.com/product/janson-hacienda-130-geisha-washed/GOYIDGRFUKWNCSTIP4BADOWV",
+    "last_seen_at": "2026-10-08T22:00:03.228+00:00",
+    "updated_at": "2026-10-08T22:00:05.006613+00:00"
+  },
+  "fresh_primary_known_page": {
+    "id": "a1d019f8-302a-46de-af0c-7e799b65a723",
+    "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+    "url": "https://www.loquatcoffee.com/product/janson-hacienda-130-geisha-washed/GOYIDGRFUKWNCSTIP4BADOWV",
+    "status": "coffee",
+    "last_fetched_at": "2026-10-08T22:00:03.228+00:00",
+    "last_status_code": 200,
+    "last_seen_at": "2026-10-08T22:00:05.049+00:00"
+  },
+  "actual_returned_page_errors": [
+    {
+      "url": "https://www.loquatcoffee.com/product/elida-estate-vuelta-centro-geisha-dark-room-dried-washed/2X2HAH4DAA3N7MU7ZRIYTAPC",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "url": "https://www.loquatcoffee.com/product/esmeralda-gigante-3nc-nano-geisha-natural-20g-last-batch-/INRYMWY2NVLCI22FHD4RYEFP",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    },
+    {
+      "url": "https://www.loquatcoffee.com/product/lost-origin-maya-317-yeast-natural-geisha-tri-up-lot-20g-/KFJV2IYZ2A63G5UJBCCMYPZF",
+      "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+    }
+  ],
+  "all_logged_product_rows": [
+    {
+      "id": "1fd0a306-3ccf-5071-9414-7217693ad52d",
+      "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+      "name": "\"TAXI\" BLEND",
+      "source_url": "https://www.loquatcoffee.com/product/-taxi-blend/554",
+      "last_seen_at": "2026-10-08T21:59:29.172+00:00",
+      "updated_at": "2026-10-08T21:59:30.817078+00:00"
+    },
+    {
+      "id": "6188d35e-9557-5e08-b462-d089a0684e8d",
+      "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+      "name": "JANSON HACIENDA 130 GEISHA WASHED",
+      "source_url": "https://www.loquatcoffee.com/product/janson-hacienda-130-geisha-washed/GOYIDGRFUKWNCSTIP4BADOWV",
+      "last_seen_at": "2026-10-08T22:00:03.228+00:00",
+      "updated_at": "2026-10-08T22:00:05.006613+00:00"
+    },
+    {
+      "id": "6d42476b-7f50-5e38-8cb8-207ae940b1ba",
+      "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+      "name": "JANSON HACIENDA 135 GEISHA NATURAL",
+      "source_url": "https://www.loquatcoffee.com/product/janson-hacienda-135-geisha-natural/BYSLC7GP5YLTRPNAZ3OZC6QZ",
+      "last_seen_at": "2026-10-08T21:59:45.297+00:00",
+      "updated_at": "2026-10-08T21:59:47.714876+00:00"
+    },
+    {
+      "id": "f049a578-5348-5206-b66e-9f5b1c6e30ca",
+      "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+      "name": "DECAF MICROLOT - RWANDA NYAMASHEKE NATURAL",
+      "source_url": "https://www.loquatcoffee.com/product/decaf-microlot-rwanda-nyamasheke-natural/259",
+      "last_seen_at": "2026-10-08T21:58:51.353+00:00",
+      "updated_at": "2026-10-08T21:58:54.495878+00:00"
+    }
+  ],
+  "quarantined_listing_rows": [
+    {
+      "id": "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+      "is_active": false,
+      "last_seen_at": "2026-10-08T21:34:56.358+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "22db6043-5cc5-5826-9847-d388dc7db71c",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://www.lucienne.coffee/shop/origin/papua-new-guinea",
+      "is_active": false,
+      "last_seen_at": "2026-10-08T21:36:34.697+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "568e0bef-25dc-5f49-8456-05980c8f47b8",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://www.lucienne.coffee/home",
+      "is_active": false,
+      "last_seen_at": "2026-10-08T21:32:55.309+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "78675df8-b2bf-55eb-8208-bf970436c19c",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://www.lucienne.coffee/shop/origin/tanzania",
+      "is_active": false,
+      "last_seen_at": "2026-10-08T21:37:10.371+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "7881e94b-ddc8-5cab-81fb-039e91698d9b",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://www.lucienne.coffee/shop/origin/honduras",
+      "is_active": false,
+      "last_seen_at": "2026-10-08T21:35:44.451+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "8588e0e8-ca4c-4ccb-9258-24a444dc4c9c",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://lucienne.coffee/shop/origin/myanmar",
+      "is_active": false,
+      "last_seen_at": "2026-03-27T04:16:12.253+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "c7b18af1-b201-5b55-bc23-424d309855f8",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://www.lucienne.coffee/shop/merch",
+      "is_active": false,
+      "last_seen_at": "2026-10-08T21:33:41.754+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "cc2031ca-cad8-4e20-9c67-d052f2df5bb9",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://lucienne.coffee/shop/roaster/thoughtful",
+      "is_active": false,
+      "last_seen_at": "2025-12-24T00:43:45.502+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    },
+    {
+      "id": "ed547f99-14a0-4d3f-bbd4-213709578e1b",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "source_url": "https://lucienne.coffee/shop/roaster/peculiar",
+      "is_active": false,
+      "last_seen_at": "2025-12-24T00:43:29.992+00:00",
+      "updated_at": "2026-10-08T21:48:39.046176+00:00"
+    }
+  ],
+  "quarantined_listings_remain_inactive": true,
+  "interrupted_run": {
+    "id": "cd4bf39b-41ee-444d-8dc8-3ee34ce34b0c",
+    "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+    "status": "failed",
+    "started_at": "2026-10-08T21:32:41.195+00:00",
+    "finished_at": "2026-10-08T21:57:37.106+00:00",
+    "error": "operator_source_update: controlled reload from fully returned held checkpoint to install reviewed Squarespace listing guard and labelled KILO weights at 367acb93caf6b9dacc7efe3f29e25d5cf41bfae6; interrupted Lucienne inventory remains incomplete; all saved rows and separately quarantined listings preserved, no omission reconciliation or migration",
+    "meta": {
+      "operator_source_update": {
+        "held_at": "2026-10-08T21:42:44.798Z",
+        "target_sha": "367acb93caf6b9dacc7efe3f29e25d5cf41bfae6",
+        "checkpoint_url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+        "inventory_complete": false,
+        "checkpoint_product_id": "beb964eb-f92f-44b9-901f-e31b93f30889",
+        "omission_reconciliation": false,
+        "successful_save_log_events": 11
+      }
+    }
+  },
+  "tests": {
+    "total": 477,
+    "pass": 476,
+    "fail": 0,
+    "skipped": 1,
+    "seconds": 10.677269958
+  },
+  "airship": {
+    "products": 13,
+    "native_variants": 146,
+    "known_weight_options": 145,
+    "kilo_options_2000g": 25,
+    "unknown_unlabelled_instant_options": 1,
+    "wire_requests": 42,
+    "errors": 0,
+    "production_writes": 0,
+    "ai_calls": 0
+  },
+  "live_scope_checks": [
+    {
+      "url": "https://www.lucienne.coffee/shop/merch",
+      "status": 200,
+      "non_product_reason": "catalog_listing_without_primary_product",
+      "discovery_links_preserved": true,
+      "cached_false_positive_rejected": true,
+      "ai_calls": 0,
+      "production_writes": 0
+    },
+    {
+      "url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+      "status": 200,
+      "non_product_reason": null,
+      "primary_article_preserved": true,
+      "primary_heading": "Risaralda Milan \"Logan Culturing\" Caturra & Castillo",
+      "ai_calls": 0,
+      "production_writes": 0
+    }
+  ],
+  "preserved": {
+    "profiles": 60,
+    "ledger_total": 524,
+    "tier_one": 65,
+    "lucienne_products": 151,
+    "quarantined_listing_ids": [
+      "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5",
+      "22db6043-5cc5-5826-9847-d388dc7db71c",
+      "568e0bef-25dc-5f49-8456-05980c8f47b8",
+      "78675df8-b2bf-55eb-8208-bf970436c19c",
+      "7881e94b-ddc8-5cab-81fb-039e91698d9b",
+      "8588e0e8-ca4c-4ccb-9258-24a444dc4c9c",
+      "c7b18af1-b201-5b55-bc23-424d309855f8",
+      "cc2031ca-cad8-4e20-9c67-d052f2df5bb9",
+      "ed547f99-14a0-4d3f-bbd4-213709578e1b"
+    ],
+    "lucienne_known_pages": 358,
+    "all_returned_catalog_child_row_values_unchanged": true,
+    "all_returned_known_page_values_unchanged": true,
+    "environment": true,
+    "plist": true,
+    "launcher": true,
+    "failed_passport_receipt": true
+  },
+  "actions": {
+    "migrations": 0,
+    "settings_changes": 0,
+    "catalog_cleanup": 0,
+    "omission_reconciliation": 0,
+    "purchases": 0
+  },
+  "native_lucienne_profile_registered": false,
+  "whole_catalog_validity_proved": false,
+  "whole_run_error_free_proved": false,
+  "installed_runtime_verified": true,
+  "fresh_primary_persisted_checkpoint": true,
+  "normal_primary_source_proof": {
+    "checked_at": "2026-10-08T22:01:37.807Z",
+    "source_sha": "367acb93caf6b9dacc7efe3f29e25d5cf41bfae6",
+    "run_id": "75356f0f-6a97-43d7-b758-3bffb378d67d",
+    "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+    "node_pid": 75986,
+    "launcher_lock_pid": 75975,
+    "post_restart_log_offset": 721419,
+    "logged_product_id": "6188d35e-9557-5e08-b462-d089a0684e8d",
+    "saved_product": {
+      "id": "6188d35e-9557-5e08-b462-d089a0684e8d",
+      "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+      "name": "JANSON HACIENDA 130 GEISHA WASHED",
+      "source_url": "https://www.loquatcoffee.com/product/janson-hacienda-130-geisha-washed/GOYIDGRFUKWNCSTIP4BADOWV",
+      "last_seen_at": "2026-10-08T22:00:03.228+00:00",
+      "updated_at": "2026-10-08T22:00:05.006613+00:00"
+    },
+    "known_page": {
+      "id": "a1d019f8-302a-46de-af0c-7e799b65a723",
+      "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+      "url": "https://www.loquatcoffee.com/product/janson-hacienda-130-geisha-washed/GOYIDGRFUKWNCSTIP4BADOWV",
+      "status": "coffee",
+      "last_fetched_at": "2026-10-08T22:00:03.228+00:00",
+      "last_status_code": 200,
+      "last_seen_at": "2026-10-08T22:00:05.049+00:00"
+    },
+    "profile_name": "Loquat",
+    "adapter": "square",
+    "native_product_id": "GOYIDGRFUKWNCSTIP4BADOWV",
+    "native_title": "JANSON HACIENDA 130 GEISHA WASHED",
+    "native_source_url": "https://www.loquatcoffee.com/product/janson-hacienda-130-geisha-washed/GOYIDGRFUKWNCSTIP4BADOWV",
+    "native_variant_ids": [
+      "X7FQUGTU2R754DMTNC6RYTRF"
+    ],
+    "native_prices": [
+      {
+        "id": "X7FQUGTU2R754DMTNC6RYTRF",
+        "price": 31,
+        "currency": "USD",
+        "weight_g": 60,
+        "availability": "https://schema.org/OutOfStock"
+      }
+    ],
+    "native_primary_identity_matches": true,
+    "actual_runtime_log_binds_saved_id": true,
+    "source_reader_requests": [
+      {
+        "method": "GET",
+        "url": "https://www.loquatcoffee.com/product/janson-hacienda-130-geisha-washed/GOYIDGRFUKWNCSTIP4BADOWV",
+        "status": 200,
+        "at": "2026-10-08T22:01:36.403Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131307555/sites/668499860283954434/products/GOYIDGRFUKWNCSTIP4BADOWV?include=images,options,category,fulfillment&cache-version=2026-03-25",
+        "status": 200,
+        "at": "2026-10-08T22:01:36.908Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/131307555/sites/668499860283954434/products/GOYIDGRFUKWNCSTIP4BADOWV/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+        "status": 200,
+        "at": "2026-10-08T22:01:37.412Z",
+        "attempt": 1,
+        "retry": 0
+      }
+    ],
+    "reader_errors": 0,
+    "merchant_gets": 3,
+    "production_writes": 0,
+    "ai_calls": 0,
+    "purchases": 0,
+    "full_variant_readback_gate_performed": true,
+    "selected_product_native_readback": {
+      "checked_at": "2026-10-08T22:03:30.952Z",
+      "passed": true,
+      "product_id": "6188d35e-9557-5e08-b462-d089a0684e8d",
+      "native_variant_count": 1,
+      "variants": [
+        {
+          "id": "3881b8fe-e447-58f0-a3b5-ece10e9a0382",
+          "merchant_variant_id": "X7FQUGTU2R754DMTNC6RYTRF",
+          "weight_g": 60,
+          "currency": "USD",
+          "price_minor_units": 3100,
+          "price_amount": 31,
+          "availability_state": "sold_out",
+          "availability_checked_at": "2026-10-08T22:00:03.228+00:00"
+        }
+      ],
+      "product_availability_state": "sold_out",
+      "product_is_available": false,
+      "whole_catalog_gate": false
+    }
+  },
+  "old_held_worker_stop": {
+    "stop_requested_at": "2026-10-08T21:57:36.997Z",
+    "stopped_at": "2026-10-08T21:57:37.106Z",
+    "old_node_exited": true,
+    "old_launcher_exited": true,
+    "old_lock_removed": true,
+    "stop_from_confirmed_no_inflight_write_checkpoint": true,
+    "interrupted_run": {
+      "id": "cd4bf39b-41ee-444d-8dc8-3ee34ce34b0c",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "status": "failed",
+      "started_at": "2026-10-08T21:32:41.195+00:00",
+      "finished_at": "2026-10-08T21:57:37.106+00:00",
+      "platform": "custom",
+      "pages_discovered": 0,
+      "pages_visited": 0,
+      "pages_sent_to_gpt": 0,
+      "coffees_found": 0,
+      "error": "operator_source_update: controlled reload from fully returned held checkpoint to install reviewed Squarespace listing guard and labelled KILO weights at 367acb93caf6b9dacc7efe3f29e25d5cf41bfae6; interrupted Lucienne inventory remains incomplete; all saved rows and separately quarantined listings preserved, no omission reconciliation or migration",
+      "meta": {
+        "operator_source_update": {
+          "held_at": "2026-10-08T21:42:44.798Z",
+          "target_sha": "367acb93caf6b9dacc7efe3f29e25d5cf41bfae6",
+          "checkpoint_url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+          "inventory_complete": false,
+          "checkpoint_product_id": "beb964eb-f92f-44b9-901f-e31b93f30889",
+          "omission_reconciliation": false,
+          "successful_save_log_events": 11
+        }
+      },
+      "created_at": "2026-10-08T21:32:41.237413+00:00"
+    },
+    "original_hold_at": "2026-10-08T21:42:44.798Z",
+    "migrations": 0,
+    "catalog_cleanup": 0
+  },
+  "airship_inspection_checked_at": "2026-10-08T21:58:09.323Z",
+  "airship_product_summary": [
+    {
+      "name": "InstaBuff",
+      "native_product_id": "7293530374179",
+      "variants": 1,
+      "known_weight_options": 0,
+      "unknown_weight_options": 1,
+      "image_present": true
+    },
+    {
+      "name": "Roaster's Choice",
+      "native_product_id": "7282620235811",
+      "variants": 15,
+      "known_weight_options": 15,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "The Grape Vine Blend - Airship Harvest Series",
+      "native_product_id": "7185339940899",
+      "variants": 10,
+      "known_weight_options": 10,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Finca Valentina Natural - Honduras",
+      "native_product_id": "7265718698019",
+      "variants": 10,
+      "known_weight_options": 10,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "El Zapote Pacamara Washed - Guatemala",
+      "native_product_id": "7174735331363",
+      "variants": 10,
+      "known_weight_options": 10,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Buffalo Blend",
+      "native_product_id": "10194352323",
+      "variants": 15,
+      "known_weight_options": 15,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Sugar Cane Decaf - Colombia",
+      "native_product_id": "9592863939",
+      "variants": 10,
+      "known_weight_options": 10,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Lake Toba Caldera - Sumatra",
+      "native_product_id": "6962766479395",
+      "variants": 10,
+      "known_weight_options": 10,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Kochere Natural - Ethiopia",
+      "native_product_id": "1377104265251",
+      "variants": 15,
+      "known_weight_options": 15,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Night Moves",
+      "native_product_id": "6686592991267",
+      "variants": 10,
+      "known_weight_options": 10,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Lima Norte Washed - Peru",
+      "native_product_id": "1676473270307",
+      "variants": 10,
+      "known_weight_options": 10,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Black Apple Espresso",
+      "native_product_id": "10921818179",
+      "variants": 15,
+      "known_weight_options": 15,
+      "unknown_weight_options": 0,
+      "image_present": true
+    },
+    {
+      "name": "Black Bear Blend",
+      "native_product_id": "10194340483",
+      "variants": 15,
+      "known_weight_options": 15,
+      "unknown_weight_options": 0,
+      "image_present": true
+    }
+  ],
+  "new_hour_audit_not_before": "2026-10-08T22:58:10.293Z",
+  "new_hour_followup_owner": "Coordinating thread retimed the existing heartbeat to 2026-10-08 18:59 America/New_York; no new automation here.",
+  "catalog_cleanup_in_this_installation": false,
+  "lucienne_native_manufacturer_mapping_held": true,
+  "lucienne_roasted_status_inferred": false
+}
