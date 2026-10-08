@@ -2,6 +2,9 @@
 const {PGlite}=require('@electric-sql/pglite');
 const fs=require('node:fs');
 const path=require('node:path');
+// Catalog tests use a deterministic translation boundary, never a network model.
+const translationFixture=async bundle=>({aiCalls:0,data:{source_language:bundle.texts.some(t=>/[\p{Script=Hangul}\p{Script=Han}]/u.test(t.text))?'ko':'en',translations:bundle.texts.map(t=>({id:t.id,text:/[\p{Script=Hangul}\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Cyrillic}]/u.test(t.text)?'Translated text '+(t.text.match(/\d+(?:[.,]\d+)*/g)||[]).join(' '):t.text}))}});
+require('../src/gptClassifier').translateTexts=translationFixture;
 async function catalogDb({nativeWeightCompatibility=true}={}) {
   const db=new PGlite();
   await db.exec(fs.readFileSync(path.join(__dirname,'fixtures/catalogSchema.sql'),'utf8'));
@@ -30,4 +33,4 @@ function supabaseAdapter(pg) {
     }
   };
 }
-module.exports={catalogDb,supabaseAdapter};
+module.exports={catalogDb,supabaseAdapter,translationFixture};

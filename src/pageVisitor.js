@@ -159,13 +159,16 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
   try {
   if(coffee) {
     availability=detectProductAvailability({html:fetchResult.html,sourceProduct:fetchResult.sourceProduct,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl,shopifyProduct:shopifyJson?.success?shopifyJson.raw:null});
-    productId=await saveProduct(entityId,result.product,url,log,{availability,checkedAt:now});
+    productId=await saveProduct(entityId,result.product,url,log,{availability,checkedAt:now,onTranslationMetrics:translation=>{
+      metrics.aiCalls+=translation.aiCalls || 0;
+      if(translation.usage){metrics.usage ||= {};function add(to,from){for(const [key,value] of Object.entries(from)){if(typeof value==='number')to[key]=(to[key] || 0)+value;else if(value && typeof value==='object')add(to[key] ||= {},value);}}add(metrics.usage,translation.usage);}
+    }});
     if(!productId) return {visited:true,classified:true,error:'Product persistence skipped',...metrics};
     options.observed?.set(canonicalProductUrl(url),availability);
   }
   await saveKnownPage(entityId,url,coffee?'coffee':'irrelevant',{classification:classification.cache,classifiedAt:classification.cache._extraction.extracted_at,classifiedBy:classification.mode==='structured_product_only'?'structured-product-only-v1':classification.mode==='structured'?'structured-v1':MODEL,fetchedAt:now,statusCode:fetchResult.status,contentHash:classification.semanticHash,firstSeenAt:known?.first_seen_at,timesSeen:(known?.times_seen || 0)+1});
   return {visited:true,classified:true,isCoffee:Boolean(coffee),product:coffee?result.product:undefined,productId,availability,...metrics};
-  } catch(error) { return {visited:true,classified:true,error:error.message,...metrics}; }
+  } catch(error) { return {visited:true,classified:true,error:error.message,quotaExceeded:error.quotaExceeded,...metrics}; }
 }
 async function visitAndClassifyPage(entityId,url,accumulator,log,platform='unknown',options={}) {
   const fetchResult=await fetchPageContent(url,null,options);
