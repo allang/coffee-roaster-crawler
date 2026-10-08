@@ -76,7 +76,16 @@
       "production_writes": 0,
       "blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment.",
       "identity_evidence": "../catalog-repair-apply-result.json",
-      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending."
+      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "production_readback": {
+        "checked_at": "2026-10-08T14:16:37.505447+00:00",
+        "run_id": "8145b673-c408-4076-9197-412eac2d75de",
+        "status": "completed",
+        "coffees_found": 6,
+        "photos_present": 6,
+        "page_errors": 0,
+        "evidence": "../repaired-catalog-production-readback.json"
+      }
     },
     {
       "name": "Ceremony",
@@ -165,7 +174,16 @@
       "production_writes": 0,
       "blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection.",
       "identity_evidence": "../catalog-repair-apply-result.json",
-      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending."
+      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "production_readback": {
+        "checked_at": "2026-10-08T14:16:37.505447+00:00",
+        "run_id": "c5161667-b8e4-4b8f-b48f-154bc88d0ccd",
+        "status": "completed",
+        "coffees_found": 14,
+        "photos_present": 14,
+        "page_errors": 0,
+        "evidence": "../repaired-catalog-production-readback.json"
+      }
     },
     {
       "name": "Fathers",
