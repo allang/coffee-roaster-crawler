@@ -595,7 +595,7 @@
       "Blend"
     ],
     "strict_coffee_product_types": true,
-    "exclude_variant_title_pattern": "^Vac Sealed Pouch Option \\(per pouch\\)$",
+    "exclude_variant_title_pattern": "^(?:250gm )?Vac Sealed Pouch Option \\(per pouch\\)$",
     "reconcile_omissions": false,
     "inventory_authorizes_global_absence": false
   },

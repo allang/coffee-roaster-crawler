@@ -11,9 +11,18 @@
       "candidates": [],
       "status": "implemented_live_dry_run_passed",
       "evidence": "aery-live.json",
-      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "note": "Reviewed stable catalog identity is applied; the completed normal production crawl saved and read back 18 coffees and their photos with zero page errors.",
       "identity_evidence": "../catalog-repair-apply-result.json",
-      "coffee_products": 18
+      "coffee_products": 18,
+      "production_readback": {
+        "checked_at": "2026-10-08T14:16:37.505447+00:00",
+        "run_id": "52dbea24-08e5-4bae-bae5-47b816ba92f6",
+        "status": "completed",
+        "coffees_found": 18,
+        "photos_present": 18,
+        "page_errors": 0,
+        "evidence": "../repaired-catalog-production-readback.json"
+      }
     },
     {
       "name": "April",

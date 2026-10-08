@@ -2,10 +2,13 @@
 const {PGlite}=require('@electric-sql/pglite');
 const fs=require('node:fs');
 const path=require('node:path');
-async function catalogDb() {
+async function catalogDb({nativeWeightCompatibility=true}={}) {
   const db=new PGlite();
   await db.exec(fs.readFileSync(path.join(__dirname,'fixtures/catalogSchema.sql'),'utf8'));
-  for(const file of fs.readdirSync(path.join(__dirname,'../supabase/migrations')).sort()) await db.exec(fs.readFileSync(path.join(__dirname,'../supabase/migrations',file),'utf8'));
+  for(const file of fs.readdirSync(path.join(__dirname,'../supabase/migrations')).sort()) {
+    if(!nativeWeightCompatibility && file==='20261008155858_native_variant_weight_compat.sql')continue;
+    await db.exec(fs.readFileSync(path.join(__dirname,'../supabase/migrations',file),'utf8'));
+  }
   return db;
 }
 // Adapter only for production Supabase call contracts exercised in tests; no network/credentials.

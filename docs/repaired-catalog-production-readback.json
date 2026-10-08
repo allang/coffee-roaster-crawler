@@ -1,0 +1,119 @@
+{
+  "checked_at": "2026-10-08T14:16:37.505447+00:00",
+  "mode": "read-only-completed-normal-crawl-readback",
+  "production_writes": 0,
+  "rows": [
+    {
+      "name": "Aery",
+      "entity_id": "2dbf0bf9-9067-425a-aebc-a828a912e353",
+      "fresh_products": 18,
+      "with_photos": 18,
+      "latest_product_sighting": "2026-10-08T13:39:40.379+00:00",
+      "latest_run": [
+        {
+          "id": "52dbea24-08e5-4bae-bae5-47b816ba92f6",
+          "status": "completed",
+          "started_at": "2026-10-08T13:35:02.424+00:00",
+          "finished_at": "2026-10-08T13:39:42.918+00:00",
+          "coffees_found": 18,
+          "error": null,
+          "meta": {
+            "extraction": {
+              "errors": 0,
+              "aiCalls": 16,
+              "aiUsage": {
+                "cached_tokens": 1024,
+                "prompt_tokens": 18996,
+                "unreported_calls": 0,
+                "completion_tokens": 23443
+              },
+              "visited": 18,
+              "cacheHits": 2,
+              "irrelevant": 0,
+              "coffeeFound": 18,
+              "marketChecks": 18,
+              "structuredPages": 0,
+              "structuredProductOnlyPages": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Apiary",
+      "entity_id": "a95c27e7-d466-4553-a4d0-3c1297bea0fa",
+      "fresh_products": 6,
+      "with_photos": 6,
+      "latest_product_sighting": "2026-10-08T13:42:01.792+00:00",
+      "latest_run": [
+        {
+          "id": "8145b673-c408-4076-9197-412eac2d75de",
+          "status": "completed",
+          "started_at": "2026-10-08T13:39:43.478+00:00",
+          "finished_at": "2026-10-08T13:42:04.237+00:00",
+          "coffees_found": 6,
+          "error": null,
+          "meta": {
+            "extraction": {
+              "errors": 0,
+              "aiCalls": 6,
+              "aiUsage": {
+                "cached_tokens": 0,
+                "prompt_tokens": 10135,
+                "unreported_calls": 0,
+                "completion_tokens": 15146
+              },
+              "visited": 6,
+              "cacheHits": 0,
+              "irrelevant": 0,
+              "coffeeFound": 6,
+              "marketChecks": 6,
+              "structuredPages": 0,
+              "structuredProductOnlyPages": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Colorfull",
+      "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+      "fresh_products": 14,
+      "with_photos": 14,
+      "latest_product_sighting": "2026-10-08T13:54:52.468+00:00",
+      "latest_run": [
+        {
+          "id": "c5161667-b8e4-4b8f-b48f-154bc88d0ccd",
+          "status": "completed",
+          "started_at": "2026-10-08T13:53:29.455+00:00",
+          "finished_at": "2026-10-08T13:54:54.508+00:00",
+          "coffees_found": 14,
+          "error": null,
+          "meta": {
+            "extraction": {
+              "errors": 0,
+              "aiCalls": 2,
+              "aiUsage": {
+                "cached_tokens": 1792,
+                "prompt_tokens": 3714,
+                "unreported_calls": 0,
+                "completion_tokens": 6970
+              },
+              "visited": 14,
+              "cacheHits": 12,
+              "irrelevant": 0,
+              "coffeeFound": 14,
+              "marketChecks": 14,
+              "structuredPages": 0,
+              "structuredProductOnlyPages": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pending_names": [
+    "Passport"
+  ],
+  "runtime_install_verified": false
+}
