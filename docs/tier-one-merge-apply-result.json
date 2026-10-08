@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-10-08T18:48:30.087796+00:00",
+  "finished_at": "2026-10-08T18:48:58.355406+00:00",
+  "sql_sha256": "73b353a92759992e2ca4dbfe59d34f6790ff8ae8cefdf59c3649d54c890a5d4d",
+  "dry_run_passed": true,
+  "scheduler_pause_verified_at": "2026-10-08T18:47:27.900Z",
+  "result": [
+    {
+      "products": 884,
+      "canonical_entities": 6,
+      "duplicate_entities": 0,
+      "archived_product_copies": 261
+    }
+  ],
+  "schema_changes": 0
+}

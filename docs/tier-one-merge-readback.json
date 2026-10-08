@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-08T18:50:29.457027+00:00",
+  "repeat_application_changed_rows": 0,
+  "canonical_entities": 6,
+  "products_preserved": 884,
+  "variant_rows_preserved": 1688,
+  "existing_photo_links_preserved": 1163,
+  "photo_links_after": 1164,
+  "crawl_run_ids_preserved": 821,
+  "location_ids_preserved": 11,
+  "canonical_slugs": [
+    "dayglow-coffee",
+    "glitch",
+    "little-wolf",
+    "loveless-coffees",
+    "moonwake-coffee-roasters",
+    "push-pull"
+  ],
+  "schema_changes": 0
+}
