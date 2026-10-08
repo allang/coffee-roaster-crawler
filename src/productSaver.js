@@ -31,7 +31,7 @@ function sanitizeNullStrings(value) {
   return value;
 }
 async function findExistingProduct(db,entityId,sourceUrl,key) {
-  const {data:known,error}=await db.from('products').select('id,slug,source_url,source_key').eq('entity_id',entityId).eq('source_key',key).maybeSingle();
+  const {data:known,error}=await db.from('products').select('id,slug,source_url,source_key,metadata').eq('entity_id',entityId).eq('source_key',key).maybeSingle();
   if(error) throw error;
   if(known) return known;
   const matches=[];
@@ -63,38 +63,52 @@ function catalogPayload(entityId, product, sourceUrl, existing, availability, no
   const attrs=Object.fromEntries(Object.entries(normalized.attributes || {}).filter(([k,v])=>v!=null));
   const variants=normalized.variants.map(v=>{
     const native=v.source_id==null ? null : String(v.source_id);
-    const key=stableKey(native ? ['native',native] : ['label',v.title.normalize('NFKC').trim(),v.sku || null]);
+    const originalLabel=v.original_title || v.title;
+    const key=stableKey(native ? ['native',native] : ['label',originalLabel.normalize('NFKC').trim(),v.sku || null]);
     const evidence=availability?.variants?.find(e=>native!=null && String(e.source_id)===native);
     const state=availability?.state==='removed'?'removed':evidence?.state || v.availability;
-    return {id:stableUuid(id,key),source_key:key,merchant_variant_id:native,variant_name:v.title,weight_g:v.weight_g,
+    const legacy=(existing?.legacy_variants || []).filter(row=>row.source_key==null && row.variant_name===originalLabel && row.weight_g===v.weight_g);
+    if(legacy.length>1)throw Error('Ambiguous original-language variant adoption');
+    return {id:legacy[0]?.id || stableUuid(id,key),source_key:key,merchant_variant_id:native,variant_name:v.title,weight_g:v.weight_g,
       price_cents:parsePriceCents(v.money.amount),price_minor_units:v.money.minorUnits,price_amount:v.money.amount,currency:v.money.currency,currency_exponent:v.money.exponent,price_raw:String(v.money.raw ?? ''),
       availability_state:state,availability_evidence:evidence?.evidence || [{source:'extracted_variant',state}],availability_checked_at:now,
-      provenance:{source_url:normalized.source_url,merchant_variant_id:native,money_reason:v.money.reason}};
+      provenance:{source_url:normalized.source_url,merchant_variant_id:native,money_reason:v.money.reason,original_variant_name:originalLabel,original_language:attrs._translation?.source_language || null}};
   });
   if(new Set(variants.map(v=>v.source_key)).size!==variants.length) throw new Error('Duplicate source variant identity');
   const notes=normalized.tasting_notes;
   const processingEvidence={...normalized.processing.evidence,source_url:retrievalUrl(sourceUrl)};
   const productAvailability=availability ? {...availability,state:availability.state || (availability.isAvailable===true?'in_stock':availability.isAvailable===false?'sold_out':'unknown')} : {state:'unknown',isAvailable:null,reason:'not_checked',evidence:[]};
-  return { product:{id,entity_id:entityId,slug:existing?.slug || `${generateSlug(normalized.original_title)}-${sourceKey.slice(0,10)}`,source_url:retrievalUrl(sourceUrl),source_key:sourceKey,
-    adopted_source_url:existing?.source_url || null,original_title:normalized.original_title,display_title:normalized.display_title,name:normalized.original_title,
+  return { product:{id,entity_id:entityId,slug:existing?.slug || `${generateSlug(normalized.name)}-${sourceKey.slice(0,10)}`,source_url:retrievalUrl(sourceUrl),source_key:sourceKey,
+    adopted_source_url:existing?.source_url || null,original_title:normalized.original_title,display_title:normalized.display_title,name:normalized.name,
     description_html:normalized.description_html || null,description_raw:normalized.description_raw || null,
     metadata:{...attrs,is_coferment:normalized.processing.is_coferment,_normalization:{version:normalized.normalization_version,tasting_notes:notes,processing:processingEvidence,source_product_id:normalized.source_product_id || null,canonical_source_url:normalized.source_url}},
     availability_state:productAvailability.state,availability_reason:productAvailability.reason,availability_evidence:productAvailability.evidence || [],checked_at:now},
     variants,variants_complete:normalized.variants_complete===true,
     facts:{process:normalized.processing.process,process_methods:normalized.processing.process_methods,is_coferment:normalized.processing.is_coferment,coferment_ingredients:normalized.processing.coferment_ingredients,processing_evidence:processingEvidence,variety:attrs.varietal || null,roast_level:attrs.roast_darkness || null,decaf:typeof attrs.is_decaf==='boolean'?attrs.is_decaf:null,
-      elevation_m:/^\d+(?:\s*(?:m|masl))?$/i.test(String(attrs.altitude || ''))?parseInt(attrs.altitude):null,tasting_notes_raw:Array.isArray(notes.source)?notes.source.join(', '):typeof notes.source==='string'?notes.source:null} };
+      elevation_m:/^\d+(?:\s*(?:m|masl))?$/i.test(String(attrs.altitude || ''))?parseInt(attrs.altitude):null,tasting_notes_raw:originalTastingNotes(attrs,notes.source)} };
 }
+function originalTastingNotes(attrs,fallback){const value=attrs._translation?.original_attributes?.flavor_notes ?? fallback;return Array.isArray(value)?value.join(', '):typeof value==='string'?value:null;}
 async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   const logger=log || globalLogger, db=options.db || getSupabase();
   if(typeof productData?.name!=='string' || !productData.name.trim()) {logger.warn('ProductSaver','Product has no valid name, skipping',{sourceUrl});return null;}
   const canonical=canonicalProductUrl(sourceUrl), key=productSourceKey(entityId,productData,sourceUrl);
   const existing=await findExistingProduct(db,entityId,canonical,key);
-  const payload=catalogPayload(entityId,productData,sourceUrl,existing,options.availability,options.checkedAt || new Date().toISOString());
+  const translated=await require('./productTranslation').translateProductForSave(sanitizeNullStrings(productData),sourceUrl,{previous:existing?.metadata?._translation,request:options.translationRequest,onMetrics:options.onTranslationMetrics});
+  if(existing && translated.variants.some(v=>v.title!==v.original_title)){
+    const {data:rows,error:readError}=await db.from('product_variants').select('id,source_key,variant_name,weight_g').eq('product_id',existing.id);
+    if(readError)throw readError;existing.legacy_variants=rows || [];
+  }
+  const payload=catalogPayload(entityId,translated,sourceUrl,existing,options.availability,options.checkedAt || new Date().toISOString());
   const {data,error}=await saveCatalog(db,payload,logger);
   if(error) throw error; // Both supported savers are transactional; never delete/reinsert.
   const productId=data?.product_id;
   if(!productId) throw new Error('Catalog transaction returned no product ID');
   if(data.stale_observation_ignored)return productId;
+  const projection=Object.fromEntries(['description','short_description','nano_description','country_of_origin','origin_region'].filter(k=>typeof translated.attributes[k]==='string').map(k=>[k,translated.attributes[k]]));
+  if(Object.keys(projection).length){
+    const {error:projectionError}=await db.from('products').update(projection).eq('id',productId).eq('source_key',payload.product.source_key).eq('last_seen_at',payload.product.checked_at);
+    if(projectionError)throw Error('English display projection failed: '+projectionError.message);
+  }
   const image=productData.attributes?.product_image_url;
   if(image) {
     const assetId=await (options.downloadImage || downloadAndSaveImage)(productId,image,logger,{db,sourceUrl});
