@@ -1,0 +1,914 @@
+{
+  "checked_at_utc": "2026-10-08T03:55:17.811471+00:00",
+  "window_start_utc": "2026-09-08T03:55:17.811471+00:00",
+  "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
+  "catalog_roasters": 9152,
+  "tier_two_names": 36,
+  "product_rows_read": 3535,
+  "metric": "Unique coffee product IDs with last_seen_at OR availability_last_seen_at in the preceding 30 days; not only newly created coffees. Availability-only sightings included. No current-stock restriction.",
+  "rows": [
+    {
+      "name": ".txt",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "c4814d81-a3e7-4a8d-86c5-b0fac2146b84"
+      ],
+      "candidates": [
+        {
+          "id": "c4814d81-a3e7-4a8d-86c5-b0fac2146b84",
+          "slug": "txt-coffee-txtcoffee",
+          "name": "txt Coffee",
+          "website_url": "https://txtcoffee.kr",
+          "primary_location": null,
+          "coverage": {
+            "all_time_coffees": 12,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-22T09:36:00.492000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "c4814d81-a3e7-4a8d-86c5-b0fac2146b84",
+            "status": "completed",
+            "started_at": "2026-08-22T09:35:22.7+00:00",
+            "finished_at": "2026-08-22T09:36:00.432+00:00",
+            "coffees_found": 1,
+            "error": null,
+            "platform": "custom"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 12,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-22T09:36:00.492000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 12,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-22T09:36:00.492000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Apiary",
+      "mapping_status": "unmatched",
+      "identity_drift": [],
+      "target_ids": [],
+      "candidates": [],
+      "candidate_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Ceremony",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "a73b9e3e-6110-44b3-8ec2-38179748bdb3"
+      ],
+      "candidates": [
+        {
+          "id": "a73b9e3e-6110-44b3-8ec2-38179748bdb3",
+          "slug": "ceremony-coffee-roasters",
+          "name": "Ceremony Coffee Roasters",
+          "website_url": "https://ceremonycoffee.com/",
+          "primary_location": "Annapolis, MD, US",
+          "coverage": {
+            "all_time_coffees": 25,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-13T18:58:47.186000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "a73b9e3e-6110-44b3-8ec2-38179748bdb3",
+            "status": "completed",
+            "started_at": "2026-08-13T18:52:53.045+00:00",
+            "finished_at": "2026-08-13T18:58:47.102+00:00",
+            "coffees_found": 8,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 25,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-13T18:58:47.186000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 25,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-13T18:58:47.186000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Color",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "ba87eb89-0123-4514-a6aa-c34f93517785"
+      ],
+      "candidates": [
+        {
+          "id": "ba87eb89-0123-4514-a6aa-c34f93517785",
+          "slug": "color-roasters",
+          "name": "Color",
+          "website_url": "https://colorroasters.com/",
+          "primary_location": "717 Sylvan Lake Road, Eagle, CO 81631",
+          "coverage": {
+            "all_time_coffees": 103,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-22T14:29:17.041000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "ba87eb89-0123-4514-a6aa-c34f93517785",
+            "status": "completed",
+            "started_at": "2026-08-22T14:27:28.158+00:00",
+            "finished_at": "2026-08-22T14:29:16.988+00:00",
+            "coffees_found": 4,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 103,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-22T14:29:17.041000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 103,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-22T14:29:17.041000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Colorfull",
+      "mapping_status": "unmatched",
+      "identity_drift": [],
+      "target_ids": [],
+      "candidates": [],
+      "candidate_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Fathers",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "3085f41e-ba6e-45a7-a0db-0a4b44947c39"
+      ],
+      "candidates": [
+        {
+          "id": "3085f41e-ba6e-45a7-a0db-0a4b44947c39",
+          "slug": "fathers",
+          "name": "Fathers",
+          "website_url": "https://fathers.cz",
+          "primary_location": "Mitrovická 128/66, Ostrava 724 00",
+          "coverage": {
+            "all_time_coffees": 149,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-27T13:47:50.962000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "3085f41e-ba6e-45a7-a0db-0a4b44947c39",
+            "status": "completed",
+            "started_at": "2026-08-27T13:42:18.242+00:00",
+            "finished_at": "2026-08-27T13:47:50.912+00:00",
+            "coffees_found": 9,
+            "error": null,
+            "platform": "woocommerce"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 149,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-27T13:47:50.962000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 149,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-27T13:47:50.962000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Klatch",
+      "mapping_status": "ambiguous",
+      "identity_drift": [],
+      "target_ids": [],
+      "candidates": [
+        {
+          "id": "23bca0e3-978f-430c-a307-ec815a1a42ae",
+          "slug": "klatch-coffee-osm-osm-node-6199365605",
+          "name": "Klatch Coffee",
+          "website_url": "https://www.klatchcoffee.com/pages/rancho-cucamonga",
+          "primary_location": "Rancho Cucamonga, California, US",
+          "coverage": {
+            "all_time_coffees": 0,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": null,
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": null
+        },
+        {
+          "id": "7d74081f-e742-4158-ada6-c67dcd7430f9",
+          "slug": "klatch-coffee-osm-osm-node-12443497791",
+          "name": "Klatch Coffee",
+          "website_url": "https://www.klatchcoffee.com/",
+          "primary_location": null,
+          "coverage": {
+            "all_time_coffees": 45,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-11T11:30:05.943000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "7d74081f-e742-4158-ada6-c67dcd7430f9",
+            "status": "completed",
+            "started_at": "2026-08-11T11:27:07.943+00:00",
+            "finished_at": "2026-08-11T11:30:05.828+00:00",
+            "coffees_found": 5,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 45,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-11T11:30:05.943000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Koppi",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "674d177b-8a5b-4f71-9e6b-ebe6786a11fa"
+      ],
+      "candidates": [
+        {
+          "id": "674d177b-8a5b-4f71-9e6b-ebe6786a11fa",
+          "slug": "koppi",
+          "name": "Koppi",
+          "website_url": "https://www.koppi.se",
+          "primary_location": "Cindersgatan 8, 252 25 Helsingborg, Sweden",
+          "coverage": {
+            "all_time_coffees": 35,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-04T11:21:35.579000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "674d177b-8a5b-4f71-9e6b-ebe6786a11fa",
+            "status": "completed",
+            "started_at": "2026-08-04T11:21:26.393+00:00",
+            "finished_at": "2026-08-04T11:21:35.493+00:00",
+            "coffees_found": 0,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 35,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-04T11:21:35.579000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 35,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-04T11:21:35.579000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "La Cabra",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "629484c3-f41d-4be9-af1a-fd87918dd0bf"
+      ],
+      "candidates": [
+        {
+          "id": "629484c3-f41d-4be9-af1a-fd87918dd0bf",
+          "slug": "la-cabra",
+          "name": "La Cabra",
+          "website_url": "https://lacabra.com",
+          "primary_location": "Brooklyn, New York, United States",
+          "coverage": {
+            "all_time_coffees": 197,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-12T19:31:49.714000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "629484c3-f41d-4be9-af1a-fd87918dd0bf",
+            "status": "completed",
+            "started_at": "2026-08-12T19:21:36.583+00:00",
+            "finished_at": "2026-08-12T19:31:49.613+00:00",
+            "coffees_found": 13,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 197,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-12T19:31:49.714000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 197,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-12T19:31:49.714000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Modcup",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "7b7a8922-fa26-47bc-a387-49bbd8770d5e"
+      ],
+      "candidates": [
+        {
+          "id": "7b7a8922-fa26-47bc-a387-49bbd8770d5e",
+          "slug": "modcup-coffee",
+          "name": "Modcup Coffee",
+          "website_url": "https://www.modcup.com/",
+          "primary_location": "25 Senate Pl #3, Jersey City, NJ 07306",
+          "coverage": {
+            "all_time_coffees": 42,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-10T20:21:44.950000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "7b7a8922-fa26-47bc-a387-49bbd8770d5e",
+            "status": "completed",
+            "started_at": "2026-08-10T20:21:39.77+00:00",
+            "finished_at": "2026-08-10T20:21:44.855+00:00",
+            "coffees_found": 0,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 42,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-10T20:21:44.950000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 42,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-10T20:21:44.950000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Mother Tongue",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "17442c49-1626-4402-8d08-b692f7bed90c"
+      ],
+      "candidates": [
+        {
+          "id": "17442c49-1626-4402-8d08-b692f7bed90c",
+          "slug": "mother-tongue-coffee",
+          "name": "Mother Tongue Coffee",
+          "website_url": "https://mothertongue.coffee",
+          "primary_location": "Pulley Collaborative, 2451 Peralta St., Oakland, CA 94607",
+          "coverage": {
+            "all_time_coffees": 15,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-06T11:19:45.534000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "17442c49-1626-4402-8d08-b692f7bed90c",
+            "status": "completed",
+            "started_at": "2026-08-06T11:19:40.804+00:00",
+            "finished_at": "2026-08-06T11:19:45.426+00:00",
+            "coffees_found": 0,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 15,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-06T11:19:45.534000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 15,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-06T11:19:45.534000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Obscure Coffee Roasters",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9"
+      ],
+      "candidates": [
+        {
+          "id": "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9",
+          "slug": "obscure-coffee-roasters",
+          "name": "Obscure Coffee Roasters",
+          "website_url": "https://www.obscure.coffee",
+          "primary_location": null,
+          "coverage": {
+            "all_time_coffees": 0,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": null,
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9",
+            "status": "completed",
+            "started_at": "2026-09-12T05:48:34.018+00:00",
+            "finished_at": "2026-09-12T05:48:58.542+00:00",
+            "coffees_found": 0,
+            "error": null,
+            "platform": "custom"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Onyx",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "b765bee5-9622-4735-a948-7816736da3e5"
+      ],
+      "candidates": [
+        {
+          "id": "b765bee5-9622-4735-a948-7816736da3e5",
+          "slug": "onyx-coffee-lab",
+          "name": "Onyx Coffee Lab",
+          "website_url": "https://onyxcoffeelab.com",
+          "primary_location": "101 E Walnut St, Rogers, Arkansas 72756, United States",
+          "coverage": {
+            "all_time_coffees": 676,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-10T06:26:21.611000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "b765bee5-9622-4735-a948-7816736da3e5",
+            "status": "completed",
+            "started_at": "2026-08-10T02:58:23.253+00:00",
+            "finished_at": "2026-08-10T06:26:21.485+00:00",
+            "coffees_found": 414,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 676,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-10T06:26:21.611000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 676,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-10T06:26:21.611000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Onyx Tonics",
+      "mapping_status": "unmatched",
+      "identity_drift": [],
+      "target_ids": [],
+      "candidates": [],
+      "candidate_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Passport",
+      "mapping_status": "unmatched",
+      "identity_drift": [],
+      "target_ids": [],
+      "candidates": [],
+      "candidate_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "PERC",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "c9427dad-2a06-4f42-90eb-ebaa227dcba2"
+      ],
+      "candidates": [
+        {
+          "id": "c9427dad-2a06-4f42-90eb-ebaa227dcba2",
+          "slug": "perc-coffee",
+          "name": "PERC Coffee",
+          "website_url": "https://perccoffee.com",
+          "primary_location": "Savannah, Georgia, US",
+          "coverage": {
+            "all_time_coffees": 119,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-06T13:57:27.819000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "c9427dad-2a06-4f42-90eb-ebaa227dcba2",
+            "status": "completed",
+            "started_at": "2026-08-06T13:38:43.011+00:00",
+            "finished_at": "2026-08-06T13:57:27.761+00:00",
+            "coffees_found": 27,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 119,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-06T13:57:27.819000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 119,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-06T13:57:27.819000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Pilgrim",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "07704a04-9b9c-488e-a126-31d7258ed219"
+      ],
+      "candidates": [
+        {
+          "id": "07704a04-9b9c-488e-a126-31d7258ed219",
+          "slug": "pilgrim-roasters",
+          "name": "Pilgrim Roasters",
+          "website_url": "https://pilgrimroasters.com/",
+          "primary_location": "Philadelphia, Pennsylvania, US",
+          "coverage": {
+            "all_time_coffees": 0,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": null,
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": null
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Square Mile",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "298c93c5-cdeb-45b0-9407-8c02b470f0d8"
+      ],
+      "candidates": [
+        {
+          "id": "298c93c5-cdeb-45b0-9407-8c02b470f0d8",
+          "slug": "square-mile",
+          "name": "Square Mile",
+          "website_url": "https://shop.squaremilecoffee.com/",
+          "primary_location": "Walthamstow, London, United Kingdom",
+          "coverage": {
+            "all_time_coffees": 29,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-08-13T18:24:54.048000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "298c93c5-cdeb-45b0-9407-8c02b470f0d8",
+            "status": "completed",
+            "started_at": "2026-08-13T18:24:11.793+00:00",
+            "finished_at": "2026-08-13T18:24:53.984+00:00",
+            "coffees_found": 1,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 29,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-13T18:24:54.048000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 29,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-13T18:24:54.048000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Three Marks",
+      "mapping_status": "matched",
+      "identity_drift": [],
+      "target_ids": [
+        "917cac27-8a74-464a-8790-b6083bccde72"
+      ],
+      "candidates": [
+        {
+          "id": "917cac27-8a74-464a-8790-b6083bccde72",
+          "slug": "three-marks-coffee",
+          "name": "Three Marks Coffee",
+          "website_url": "https://threemarkscoffee.com",
+          "primary_location": "Moll de la Ronda, local 10, Barcelona 08930",
+          "coverage": {
+            "all_time_coffees": 95,
+            "seen_or_buyable_30d": 0,
+            "saved_last_seen_30d": 0,
+            "buyable_seen_30d": 0,
+            "currently_available_recent": 0,
+            "latest_sighting": "2026-06-30T10:37:04.981000+00:00",
+            "null_sighting_timestamps": 0
+          },
+          "latest_crawl": {
+            "entity_id": "917cac27-8a74-464a-8790-b6083bccde72",
+            "status": "running",
+            "started_at": "2026-07-12T21:42:58.329+00:00",
+            "finished_at": null,
+            "coffees_found": 0,
+            "error": null,
+            "platform": "shopify"
+          }
+        }
+      ],
+      "candidate_coverage": {
+        "all_time_coffees": 95,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-06-30T10:37:04.981000+00:00",
+        "null_sighting_timestamps": 0
+      },
+      "verified_coverage": {
+        "all_time_coffees": 95,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-06-30T10:37:04.981000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    }
+  ],
+  "production_writes": 0
+}

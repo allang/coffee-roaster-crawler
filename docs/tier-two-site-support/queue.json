@@ -1,0 +1,472 @@
+{
+  "source": "tier-two coffee coverage audit 2026-10-08T03:55Z",
+  "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
+  "scope_names": 19,
+  "rows": [
+    {
+      "name": ".txt",
+      "identity_status": "matched",
+      "entity_ids": [
+        "c4814d81-a3e7-4a8d-86c5-b0fac2146b84"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "c4814d81-a3e7-4a8d-86c5-b0fac2146b84",
+          "website_url": "https://txtcoffee.kr",
+          "name": "txt Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 12,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-22T09:36:00.492000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Apiary",
+      "identity_status": "unmatched",
+      "entity_ids": [],
+      "identity_drift": [],
+      "candidates": [],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Ceremony",
+      "identity_status": "matched",
+      "entity_ids": [
+        "a73b9e3e-6110-44b3-8ec2-38179748bdb3"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "a73b9e3e-6110-44b3-8ec2-38179748bdb3",
+          "website_url": "https://ceremonycoffee.com/",
+          "name": "Ceremony Coffee Roasters"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 25,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-13T18:58:47.186000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Color",
+      "identity_status": "matched",
+      "entity_ids": [
+        "ba87eb89-0123-4514-a6aa-c34f93517785"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "ba87eb89-0123-4514-a6aa-c34f93517785",
+          "website_url": "https://colorroasters.com/",
+          "name": "Color"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 103,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-22T14:29:17.041000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Colorfull",
+      "identity_status": "unmatched",
+      "entity_ids": [],
+      "identity_drift": [],
+      "candidates": [],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Fathers",
+      "identity_status": "matched",
+      "entity_ids": [
+        "3085f41e-ba6e-45a7-a0db-0a4b44947c39"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "3085f41e-ba6e-45a7-a0db-0a4b44947c39",
+          "website_url": "https://fathers.cz",
+          "name": "Fathers"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 149,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-27T13:47:50.962000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Klatch",
+      "identity_status": "ambiguous",
+      "entity_ids": [],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "23bca0e3-978f-430c-a307-ec815a1a42ae",
+          "website_url": "https://www.klatchcoffee.com/pages/rancho-cucamonga",
+          "name": "Klatch Coffee"
+        },
+        {
+          "entity_id": "7d74081f-e742-4158-ada6-c67dcd7430f9",
+          "website_url": "https://www.klatchcoffee.com/",
+          "name": "Klatch Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 45,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-11T11:30:05.943000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Koppi",
+      "identity_status": "matched",
+      "entity_ids": [
+        "674d177b-8a5b-4f71-9e6b-ebe6786a11fa"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "674d177b-8a5b-4f71-9e6b-ebe6786a11fa",
+          "website_url": "https://www.koppi.se",
+          "name": "Koppi"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 35,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-04T11:21:35.579000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "La Cabra",
+      "identity_status": "matched",
+      "entity_ids": [
+        "629484c3-f41d-4be9-af1a-fd87918dd0bf"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "629484c3-f41d-4be9-af1a-fd87918dd0bf",
+          "website_url": "https://lacabra.com",
+          "name": "La Cabra"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 197,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-12T19:31:49.714000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Modcup",
+      "identity_status": "matched",
+      "entity_ids": [
+        "7b7a8922-fa26-47bc-a387-49bbd8770d5e"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "7b7a8922-fa26-47bc-a387-49bbd8770d5e",
+          "website_url": "https://www.modcup.com/",
+          "name": "Modcup Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 42,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-10T20:21:44.950000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Mother Tongue",
+      "identity_status": "matched",
+      "entity_ids": [
+        "17442c49-1626-4402-8d08-b692f7bed90c"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "17442c49-1626-4402-8d08-b692f7bed90c",
+          "website_url": "https://mothertongue.coffee",
+          "name": "Mother Tongue Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 15,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-06T11:19:45.534000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Obscure Coffee Roasters",
+      "identity_status": "matched",
+      "entity_ids": [
+        "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9",
+          "website_url": "https://www.obscure.coffee",
+          "name": "Obscure Coffee Roasters"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Onyx",
+      "identity_status": "matched",
+      "entity_ids": [
+        "b765bee5-9622-4735-a948-7816736da3e5"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "b765bee5-9622-4735-a948-7816736da3e5",
+          "website_url": "https://onyxcoffeelab.com",
+          "name": "Onyx Coffee Lab"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 676,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-10T06:26:21.611000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Onyx Tonics",
+      "identity_status": "unmatched",
+      "entity_ids": [],
+      "identity_drift": [],
+      "candidates": [],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Passport",
+      "identity_status": "unmatched",
+      "entity_ids": [],
+      "identity_drift": [],
+      "candidates": [],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "PERC",
+      "identity_status": "matched",
+      "entity_ids": [
+        "c9427dad-2a06-4f42-90eb-ebaa227dcba2"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "c9427dad-2a06-4f42-90eb-ebaa227dcba2",
+          "website_url": "https://perccoffee.com",
+          "name": "PERC Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 119,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-06T13:57:27.819000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Pilgrim",
+      "identity_status": "matched",
+      "entity_ids": [
+        "07704a04-9b9c-488e-a126-31d7258ed219"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "07704a04-9b9c-488e-a126-31d7258ed219",
+          "website_url": "https://pilgrimroasters.com/",
+          "name": "Pilgrim Roasters"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 0,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": null,
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Square Mile",
+      "identity_status": "matched",
+      "entity_ids": [
+        "298c93c5-cdeb-45b0-9407-8c02b470f0d8"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "298c93c5-cdeb-45b0-9407-8c02b470f0d8",
+          "website_url": "https://shop.squaremilecoffee.com/",
+          "name": "Square Mile"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 29,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-08-13T18:24:54.048000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    },
+    {
+      "name": "Three Marks",
+      "identity_status": "matched",
+      "entity_ids": [
+        "917cac27-8a74-464a-8790-b6083bccde72"
+      ],
+      "identity_drift": [],
+      "candidates": [
+        {
+          "entity_id": "917cac27-8a74-464a-8790-b6083bccde72",
+          "website_url": "https://threemarkscoffee.com",
+          "name": "Three Marks Coffee"
+        }
+      ],
+      "status": "pending",
+      "evidence": null,
+      "coverage": {
+        "all_time_coffees": 95,
+        "seen_or_buyable_30d": 0,
+        "saved_last_seen_30d": 0,
+        "buyable_seen_30d": 0,
+        "currently_available_recent": 0,
+        "latest_sighting": "2026-06-30T10:37:04.981000+00:00",
+        "null_sighting_timestamps": 0
+      }
+    }
+  ]
+}
