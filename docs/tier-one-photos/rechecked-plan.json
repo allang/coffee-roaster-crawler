@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "mode": "read-only-photo-plan",
+  "checked_at": "2026-10-08T13:08:29.095Z",
+  "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
+  "products_read": 6345,
+  "scope": "all_verified_tier_one_coffees",
+  "production_writes": 0,
+  "counts": {
+    "ready": 8,
+    "held": 1
+  },
+  "entries": [
+    {
+      "product_id": "2c02e731-a25e-4baf-88aa-c65f7aeb2ae0",
+      "entity_id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+      "name": "La Curva Washed Castillo",
+      "source_url": "https://thoughtfulcoffee.co/products/la-curva-washed-castillo-villa-nueva",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://thoughtfulcoffee.co/cdn/shop/files/la_curva_washed_castillo-color.jpg?v=1779883687&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://thoughtfulcoffee.co/products/la-curva-washed-castillo-villa-nueva",
+        "product_name": "La Curva Washed Castillo"
+      },
+      "content_hash": "166680aa89f361d4b887c68d17c68a32",
+      "content_type": "image/webp",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 23162,
+      "roaster": "thoughtful coffee nyc"
+    },
+    {
+      "product_id": "38ed5750-ea79-4e52-b104-6745b742bb48",
+      "entity_id": "5d02543f-ff9d-471b-af2b-cc6c8400e546",
+      "name": "Jairo Arcila Cherry",
+      "source_url": "https://monogramcoffee.com/en-us/products/jairo-arcila-cherry",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://monogramcoffee.com/cdn/shop/files/monogram-coffee-jairo-arcila-colombia-washed-cherry-co-fermented-castillo-filter.webp?v=1785945903&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://monogramcoffee.com/en-us/products/jairo-arcila-cherry",
+        "product_name": "Jairo Arcila Cherry"
+      },
+      "content_hash": "d75e2419a18d50e349e879c87b138527",
+      "content_type": "image/webp",
+      "width": 1920,
+      "height": 1920,
+      "bytes": 61038,
+      "roaster": "Monogram Coffee"
+    },
+    {
+      "product_id": "52b1e78d-926c-4657-968a-c7ea3ce90d2a",
+      "entity_id": "3b828088-2fd5-407c-a756-35cb464588ce",
+      "name": "El Salvador FES Bourbon 120N",
+      "source_url": "https://friedhats.com/products/el-salvador-fes-120n-copy",
+      "prior_image_url": null,
+      "status": "held",
+      "reason": "HTTP 404",
+      "http_status": 404,
+      "roaster": "Friedhats"
+    },
+    {
+      "product_id": "791f85d7-464b-4f43-bf52-8f062aa7ae68",
+      "entity_id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+      "name": "Mystery Coffee League x Thoughtful - ?????",
+      "source_url": "https://thoughtfulcoffee.co/products/mystery-coffee-league-x-thoughtful",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://thoughtfulcoffee.co/cdn/shop/files/mcl_shopify.jpg?v=1785149342&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://thoughtfulcoffee.co/products/mystery-coffee-league-x-thoughtful",
+        "product_name": "Mystery Coffee League x Thoughtful - ?????"
+      },
+      "content_hash": "fdc09512361d4768afbeb23eacc57ab0",
+      "content_type": "image/webp",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 19630,
+      "roaster": "thoughtful coffee nyc"
+    },
+    {
+      "product_id": "b25efc1a-c2d3-4adf-be51-f5f34da9d085",
+      "entity_id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+      "name": "Finca Anaya - Advanced Washed Typica Mejorado",
+      "source_url": "https://thoughtfulcoffee.co/products/finca-anaya-advanced-washed-typica-mejorado",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://thoughtfulcoffee.co/cdn/shop/files/anaya-adv-washed-typica-mejorado-shopify.jpg?v=1785292641&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://thoughtfulcoffee.co/products/finca-anaya-advanced-washed-typica-mejorado",
+        "product_name": "Finca Anaya - Advanced Washed Typica Mejorado"
+      },
+      "content_hash": "f1984e32f80514d558d716317a11e61c",
+      "content_type": "image/webp",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 26594,
+      "roaster": "thoughtful coffee nyc"
+    },
+    {
+      "product_id": "c3c402ef-3cc0-4b9f-b0a7-b921ecb0fda5",
+      "entity_id": "5d02543f-ff9d-471b-af2b-cc6c8400e546",
+      "name": "Daterra Pearl Espresso",
+      "source_url": "https://monogramcoffee.com/en-us/products/daterra-pearl-espresso",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://monogramcoffee.com/cdn/shop/files/pearl-cc-02.webp?v=1789071433&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://monogramcoffee.com/en-us/products/daterra-pearl-espresso",
+        "product_name": "Daterra Pearl Espresso"
+      },
+      "content_hash": "dbcb20d504348a13566968c5bb1c0844",
+      "content_type": "image/webp",
+      "width": 1920,
+      "height": 1921,
+      "bytes": 91608,
+      "roaster": "Monogram Coffee"
+    },
+    {
+      "product_id": "d06963a4-c21a-4646-bd1d-04117e1445fe",
+      "entity_id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+      "name": "Finca El Jardin Short-Fermentation Washed Chiroso Lot 2",
+      "source_url": "https://thoughtfulcoffee.co/products/finca-el-jardin-short-fermentation-washed-chiroso-lot-2",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://thoughtfulcoffee.co/cdn/shop/files/finca-loca-roca-washed-chiroso-shopify_f6879f4e-3f5a-4c83-9f71-f3de52656839.jpg?v=1785325437&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://thoughtfulcoffee.co/products/finca-el-jardin-short-fermentation-washed-chiroso-lot-2",
+        "product_name": "Finca El Jardin Short-Fermentation Washed Chiroso Lot 2"
+      },
+      "content_hash": "dc74ee79b79eb9195432dc30757c0579",
+      "content_type": "image/webp",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 31850,
+      "roaster": "thoughtful coffee nyc"
+    },
+    {
+      "product_id": "d41d284e-93ea-4902-807f-98921616c891",
+      "entity_id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+      "name": "Autumn Amber - Low Temperature Natural Catimor & Typica",
+      "source_url": "https://thoughtfulcoffee.co/products/autumn-amber-low-temperature-natural-catimor-typica",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://thoughtfulcoffee.co/cdn/shop/files/autumn-amber-typica.jpg?v=1773141172&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://thoughtfulcoffee.co/products/autumn-amber-low-temperature-natural-catimor-typica",
+        "product_name": "Autumn Amber Low Temperature Natural Catimor & Typica"
+      },
+      "content_hash": "02766574f67fb81eb9c095667d56bf06",
+      "content_type": "image/webp",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 19240,
+      "roaster": "thoughtful coffee nyc"
+    },
+    {
+      "product_id": "e7f22c11-4b27-4ecb-84d0-750d50a7a417",
+      "entity_id": "5d02543f-ff9d-471b-af2b-cc6c8400e546",
+      "name": "Takesi Peaberry Gesha",
+      "source_url": "https://monogramcoffee.com/en-us/products/takesi-gesha-peaberry",
+      "prior_image_url": null,
+      "status": "ready",
+      "image_url": "https://monogramcoffee.com/cdn/shop/files/monogram-coffee-takesi-peaberry-gesha-bolivia-washed-filter.webp?v=1784755912&width=1920",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://monogramcoffee.com/en-us/products/takesi-gesha-peaberry",
+        "product_name": "Takesi Peaberry Gesha"
+      },
+      "content_hash": "62bb746a53ef2a2e0ce83b9e59fa4c21",
+      "content_type": "image/webp",
+      "width": 1501,
+      "height": 1800,
+      "bytes": 84996,
+      "roaster": "Monogram Coffee"
+    }
+  ]
+}

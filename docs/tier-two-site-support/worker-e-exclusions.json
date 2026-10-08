@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-10-08T04:24:19.876Z",
+  "mode": "merchant-get-only-dry-run",
+  "approved_scope": "Brewing coffee: whole-bean/ground, instant, drip bags, coffee-only sets and Cometeer. RTD bottles/cans and mixed tea/coffee ready-to-drink groups are excluded.",
+  "evidence": [
+    {
+      "name": "Onyx",
+      "source_url": "https://onyxcoffeelab.com/products/cafe-expressions.json",
+      "reason": "Ready-to-drink product group mixes coffee drinks and tea-only chai/matcha variants; outside established brewing-coffee scope.",
+      "products": [
+        {
+          "id": "7480451432546",
+          "handle": "cafe-expressions",
+          "title": "Cafe Expressions",
+          "product_type": "RTD",
+          "description": "",
+          "variants": [
+            {
+              "id": "42608223256674",
+              "title": "Mixr Pack (6)"
+            },
+            {
+              "id": "42608223289442",
+              "title": "Chai Latte (12)"
+            },
+            {
+              "id": "42619548106850",
+              "title": "Matcha Latte (12)"
+            },
+            {
+              "id": "42619548139618",
+              "title": "Onyx Delight (12)"
+            },
+            {
+              "id": "42608223322210",
+              "title": "Salted Mocha (12)"
+            },
+            {
+              "id": "42619548074082",
+              "title": "Ube Vanilla (12)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Onyx",
+      "source_url": "https://onyxcoffeelab.com/products/red-box-set-1.json",
+      "reason": "Mixed whole-bean coffee and MiiR drinkware set; outside coffee-only retail inventory.",
+      "products": [
+        {
+          "id": "7462950862946",
+          "handle": "red-box-set-1",
+          "title": "RED Box Set",
+          "product_type": "",
+          "description": "Onyx is proud to partner with (RED) in the shared belief that everyday things can and should do powerful good. Together, we’re launching a seasonal (ONYX)ᴿᴱᴰ coffee – an East Africa whole bean offering – alongside limited-edition merchandise, with a clear goal: to raise awareness and funds in the fight against AIDS and other health injustices that continue to affect communities worldwide. This Box Set Includes: 8oz (ONYX)ᴿᴱᴰ Collaborative Whole Bean Coffee Offering Limited-Edition (ONYX)ᴿᴱᴰ Miir 12oz Flip Traveler",
+          "variants": [
+            {
+              "id": "42333580525666",
+              "title": "Default Title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Passport",
+      "source_url": "https://passportcoffee.com.au/collections/cold-brew-coffee/products.json?limit=50&page=1",
+      "reason": "Pickup-only bottled/canned cold-brew beverages; outside established brewing-coffee scope.",
+      "products": [
+        {
+          "id": "6709165621409",
+          "handle": "cold-brew-departure-blend-concentrate-2l",
+          "title": "Cold Brew - Departure Blend Concentrate 2L (PICK UP ONLY)",
+          "product_type": "Cold Brew",
+          "description": "This item is Pick Up Only. Ask for a stockist near you if Roastery Pick Up isn't an option. Must be kept refrigerated. Our cold brew concentrate is made using our Departure Blend, brewed using cold filtered water, then filtered to remove particles and sediment. Tasting notes of smooth chocolate, strawberry, peach and lychee. Served with milk or milk alternative. Blending ratio 1:3. Can be consumed black, blended with water at ratio 1:1.5 Best Before - 16weeks unopened/4 weeks opened",
+          "variants": [
+            {
+              "id": "39823912861857",
+              "title": "Default Title"
+            }
+          ]
+        },
+        {
+          "id": "6709182890145",
+          "handle": "cold-brew-ethiopian-tabe-burka-filter-2l-ready-to-drink",
+          "title": "Cold Brew - Single Origin Filter 2L (Ready to drink) (PICK UP ONLY)",
+          "product_type": "Cold Brew",
+          "description": "This item is Pick Up Only. Ask for a stockist near you if Roastery Pick Up isn't an option. Must be kept refrigerated. Our Single Origin Filter RTD is brewed using cold filtered water, then filtered to remove particles and sediment. Tasting notes: Clean and silky with notes of strawberries & cream, white nectarine, key lime, tropical fruit and florals. Enjoy on ice. 12 Serves. Best Before - 16weeks unopened/4 weeks opened",
+          "variants": [
+            {
+              "id": "39823982264481",
+              "title": "Default Title"
+            }
+          ]
+        },
+        {
+          "id": "7039563497633",
+          "handle": "cold-brew-ethiopian-tabe-burka-filter-rtd-can",
+          "title": "Cold Brew Can-  Single Origin Filter RTD Can (PICK UP ONLY)",
+          "product_type": "",
+          "description": "This item is Pick Up Only. Must be kept refrigerated. Our Single Origin Filter RTD is brewed using cold filtered water, then filtered to remove particles and sediment. Tasting notes: Clean and silky with notes of strawberries & cream, white nectarine, key lime, tropical fruit and florals. Enjoy on ice. Best Before - 16weeks unopened/4 weeks opened",
+          "variants": [
+            {
+              "id": "40999174602913",
+              "title": "330ml Can"
+            },
+            {
+              "id": "40999174635681",
+              "title": "4 pack x 330ml Can"
+            },
+            {
+              "id": "40999174668449",
+              "title": "16 slab x 330ml Can"
+            }
+          ]
+        },
+        {
+          "id": "4699619655819",
+          "handle": "toddy-cold-brew-coffee-maker",
+          "title": "Toddy Cold Brew Coffee Maker",
+          "product_type": "equipment",
+          "description": "The Toddy Cold Brew System is designed to make coffee concentrate which can be served hot or ice cold. The traditional hot brewing method creates a higher level of acidity in coffee, which can be difficult for coffee connoisseurs who have a sensitive stomach. In 1964 Todd Simpson, a chemical engineering graduate, developed and patented this cold brewing system. It uses regular coffee beans and yields a superior tasting cup of steaming hot coffee; acidity levels are reduced by an amazing 67% compared to traditional hot brew methods. The coffee that is produced is bold, yet super smooth. The Toddy Cold Brew System is also great for brewing tea which can be served hot, or as iced tea.",
+          "variants": [
+            {
+              "id": "33003298750603",
+              "title": "Default Title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Square Mile",
+      "source_url": "https://shop.squaremilecoffee.com/products/muthuthi-ini-sample.json",
+      "reason": "Complimentary checkout-only sample conditional on another purchase; no independent retail offer.",
+      "products": [
+        {
+          "id": "16112339681662",
+          "handle": "muthuthi-ini-sample",
+          "title": "Muthuthi-ini Sample",
+          "product_type": "Sample",
+          "description": "Spend £30 to add a complimentary sample at checkout *maximum 1 sample per order",
+          "variants": [
+            {
+              "id": "58143585075582",
+              "title": "Default Title"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/cafe-expressions.json",
+      "status": 200,
+      "at": "2026-10-08T04:24:18.884Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://onyxcoffeelab.com/products/red-box-set-1.json",
+      "status": 200,
+      "at": "2026-10-08T04:24:19.077Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/cold-brew-coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:24:19.596Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/products/muthuthi-ini-sample.json",
+      "status": 200,
+      "at": "2026-10-08T04:24:19.874Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0
+}

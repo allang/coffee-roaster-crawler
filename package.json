@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test test/*.test.js src/*.test.cjs",
-    "test:historical": "node --test test/*.test.js src/*.test.cjs src/myCoffeeExplorerImport/*.test.js src/myCoffeeExplorerImport/*.test.cjs"
+    "test:historical": "node --test test/*.test.js src/*.test.cjs src/myCoffeeExplorerImport/*.test.js src/myCoffeeExplorerImport/*.test.cjs",
+    "site:inspect": "node src/siteSupport/cli.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "openai": "^6.15.0",
     "p-limit": "^7.2.0",
     "p-retry": "^7.1.1",
+    "sharp": "0.35.5",
     "tough-cookie": "^6.0.0",
     "xml2js": "^0.6.2",
     "zod": "^4.2.1",

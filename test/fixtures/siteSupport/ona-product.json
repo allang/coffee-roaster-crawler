@@ -1,0 +1,140 @@
+{
+  "url": "https://onacoffee.com.au/products/raspberry-candy",
+  "analytics": {
+    "currency": "AUD",
+    "product": {
+      "id": 6775047028927,
+      "handle": "raspberry-candy",
+      "variants": [
+        {
+          "id": 40126205624511,
+          "price": 2400
+        },
+        {
+          "id": 40126205657279,
+          "price": 9500
+        }
+      ]
+    }
+  },
+  "product": {
+    "id": 6775047028927,
+    "title": "Raspberry Candy",
+    "handle": "raspberry-candy",
+    "body_html": "<div class=\"product-content\">\n<meta charset=\"utf-8\">\n<p>Discover <strong>Raspberry Candy by ONA Coffee</strong>—our most popular, fruit-forward espresso blend with vibrant berry notes and creamy white chocolate sweetness. Designed to shine in <a href=\"https://onacoffee.com.au/collections/milk-based\">milk-based</a> drinks, Raspberry Candy is a playful yet refined coffee experience that has become a favourite for baristas and home brewers alike.</p>\n</div>",
+    "product_type": "Coffee",
+    "vendor": "ONA Coffee",
+    "tags": "all-coffee, Brew Method.Espresso, Brew Method.Moka Pot, Coffee Type.Espresso, Coffee Type.Milk, Origin.East Africa, priority, subscription, Taste Notes.Berries, Taste Notes.Chocolate",
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0464/4824/6934/files/Raspberry-Candy_fe2a7355-15f3-474c-b3a2-43956e9a48dc.png?v=1730240374"
+      }
+    ],
+    "variants": [
+      {
+        "id": 40126205624511,
+        "title": "200g",
+        "price": "24.00",
+        "sku": "COFORC200g",
+        "grams": 200,
+        "weight": 0.2,
+        "weight_unit": "kg"
+      },
+      {
+        "id": 40126205657279,
+        "title": "1kg",
+        "price": "95.00",
+        "sku": "COFORC1kg",
+        "grams": 1000,
+        "weight": 1,
+        "weight_unit": "kg"
+      }
+    ]
+  },
+  "ajax": {
+    "id": 6775047028927,
+    "variants": [
+      {
+        "id": 40126205624511,
+        "available": true
+      },
+      {
+        "id": 40126205657279,
+        "available": true
+      }
+    ]
+  },
+  "schema": {
+    "@context": "http://schema.org/",
+    "@id": "/products/raspberry-candy#product",
+    "@type": "ProductGroup",
+    "brand": {
+      "@type": "Brand",
+      "name": "ONA Coffee"
+    },
+    "category": "Coffee",
+    "description": "\n\nDiscover Raspberry Candy by ONA Coffee—our most popular, fruit-forward espresso blend with vibrant berry notes and creamy white chocolate sweetness. Designed to shine in milk-based drinks, Raspberry Candy is a playful yet refined coffee experience that has become a favourite for baristas and home brewers alike.\n",
+    "hasVariant": [
+      {
+        "@id": "/products/raspberry-candy?variant=40126205624511#variant",
+        "@type": "Product",
+        "image": "https://onacoffee.com.au/cdn/shop/files/Raspberry-Candy_fe2a7355-15f3-474c-b3a2-43956e9a48dc.png?v=1730240374&width=1920",
+        "name": "Raspberry Candy - 200g",
+        "offers": {
+          "@id": "/products/raspberry-candy?variant=40126205624511#offer",
+          "@type": "Offer",
+          "availability": "http://schema.org/InStock",
+          "price": "24.00",
+          "priceCurrency": "AUD",
+          "url": "https://onacoffee.com.au/products/raspberry-candy?variant=40126205624511"
+        },
+        "sku": "COFORC200g"
+      },
+      {
+        "@id": "/products/raspberry-candy?variant=40126205657279#variant",
+        "@type": "Product",
+        "image": "https://onacoffee.com.au/cdn/shop/files/Raspberry-Candy_fe2a7355-15f3-474c-b3a2-43956e9a48dc.png?v=1730240374&width=1920",
+        "name": "Raspberry Candy - 1kg",
+        "offers": {
+          "@id": "/products/raspberry-candy?variant=40126205657279#offer",
+          "@type": "Offer",
+          "availability": "http://schema.org/InStock",
+          "price": "95.00",
+          "priceCurrency": "AUD",
+          "url": "https://onacoffee.com.au/products/raspberry-candy?variant=40126205657279"
+        },
+        "sku": "COFORC1kg"
+      }
+    ],
+    "name": "Raspberry Candy",
+    "productGroupID": "6775047028927",
+    "url": "https://onacoffee.com.au/products/raspberry-candy",
+    "productID": "6775047028927",
+    "image": "https://onacoffee.com.au/cdn/shop/files/Raspberry-Candy_fe2a7355-15f3-474c-b3a2-43956e9a48dc.png?v=1730240374&width=1920",
+    "offers": [
+      {
+        "@id": "/products/raspberry-candy?variant=40126205624511#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "24.00",
+        "priceCurrency": "AUD",
+        "url": "https://onacoffee.com.au/products/raspberry-candy?variant=40126205624511",
+        "sku": "COFORC200g",
+        "name": "Raspberry Candy - 200g",
+        "_net_weight_g": null
+      },
+      {
+        "@id": "/products/raspberry-candy?variant=40126205657279#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "95.00",
+        "priceCurrency": "AUD",
+        "url": "https://onacoffee.com.au/products/raspberry-candy?variant=40126205657279",
+        "sku": "COFORC1kg",
+        "name": "Raspberry Candy - 1kg",
+        "_net_weight_g": null
+      }
+    ],
+    "_market_source": "product_group_exact_variant_offers"
+  }
+}

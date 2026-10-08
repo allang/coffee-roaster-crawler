@@ -1,0 +1,268 @@
+[
+  {
+    "url": "https://september.coffee/en-us/products/basha-bekele-ethiopia",
+    "html": "<h1>Basha Bekele - Ethiopia</h1><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"productID\":6941896933474,\"offers\":[{\"@type\":\"Offer\",\"name\":\"Filter\",\"availability\":\"https://schema.org/OutOfStock\",\"price\":22.5,\"priceCurrency\":\"USD\",\"priceValidUntil\":\"2026-10-18\",\"url\":\"/en-us/products/basha-bekele-ethiopia?variant=40567362224226\"},{\"@type\":\"Offer\",\"name\":\"Espresso\",\"availability\":\"https://schema.org/OutOfStock\",\"price\":22.5,\"priceCurrency\":\"USD\",\"priceValidUntil\":\"2026-10-18\",\"url\":\"/en-us/products/basha-bekele-ethiopia?variant=40567362256994\"}],\"brand\":{\"@type\":\"Brand\",\"name\":\"September Coffee\"},\"name\":\"Basha Bekele - Ethiopia\",\"description\":\"Process: Natural Impressions: \\nFilter - Stonefruit, Tropical, Pineapple Juice, Juicy\\nEspresso - Cherry Pie, Berry, Caramel\\n\\nRegion: Bombe\\n\\nCountry: Ethiopia\\n\\n\\nAltitude: 2210 MASL\\n\\nVariety: Jarc 74158\\n\\n\\nImporter: Crop to Cup\\n250g This may be one of our favourite natural Ethiopian coffees in some time. If you enjoy juicy, fruity and sweet natural coffees that are also clean and bright... stop scrolling. \\n\\nBasha is a farmer and mill manager in Sidama, Ethiopia. He primarily grows an heirloom variety registered as 74158, known locally as “Walega”, and also works with neighboring farmers to collect cherries grown as high as 2,300 meters above sea level. As is typical in this region, his coffees are all dry processed or \\\"natural\\\".  We cupped this one alongside several other fantastic coffees, but there was no doubt: this is something special. \\n\\nWe've decided to offer Basha in both an Espresso and Filter offering. Our Filter offering is juicy, bright and stone fruit forward with a sparkling acidity. Our espresso offers more berry attributes with a nice cherry sweetness. While we say most of our coffees can work for both methods we love this coffee so much we thought we'd offer it two ways.\\n \\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nPrice Transparency:\\n\\nFOB - $10.45/KG\\nFOT - $15.03/KG\\n\\n\\n\\n\\n\\n\\n\\n\\n\",\"category\":\"\",\"url\":\"/en-us/products/basha-bekele-ethiopia\",\"sku\":\"\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"https://september.coffee/cdn/shop/files/Basha.png?v=1702611167&width=1024\",\"image\":\"https://september.coffee/cdn/shop/files/Basha.png?v=1702611167&width=1024\",\"name\":\"\",\"width\":\"1024\",\"height\":\"1024\"}}</script>",
+    "product": {
+      "id": 6941896933474,
+      "title": "Basha Bekele - Ethiopia",
+      "handle": "basha-bekele-ethiopia",
+      "body_html": "<meta charset=\"UTF-8\"><strong>Process:</strong><span> </span>Natural <br><strong>Impressions:</strong><span> </span>\n<div title=\"Page 1\" class=\"page\"><span><strong>Filter</strong> - Stonefruit, Tropical, Pineapple Juice, Juicy</span></div>\n<div title=\"Page 1\" class=\"page\"><span><strong>Espresso</strong> - Cherry Pie, Berry, Caramel</span></div>\n<div title=\"Page 1\" class=\"page\">\n<strong>Region: </strong>Bombe</div>\n<div title=\"Page 1\" class=\"page\">\n<strong>Country:</strong><span> Ethiopia</span>\n</div>\n<div title=\"Page 1\" class=\"page\">\n<strong>Altitude:</strong> 2210 MASL</div>\n<div title=\"Page 1\" class=\"page\">\n<strong>Variety:</strong><span> Jarc 74158</span>\n</div>\n<div title=\"Page 1\" class=\"page\">\n<strong>Importer:</strong> Crop to Cup</div>\n<p><strong>250g</strong><span style=\"font-size: 0.875rem;\"> </span><img style=\"font-size: 0.875rem;\" src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/showerfilter_965f7642-28ef-4161-8834-db020d222c02_240x240.png?v=1680647213\" alt=\"\" width=\"140\" height=\"70\">This may be one of our favourite natural Ethiopian coffees in some time. If you enjoy juicy, fruity and sweet natural coffees that are also clean and bright... stop scrolling. </p>\n<meta charset=\"UTF-8\">\n<p><span>Basha is a farmer and mill manager in Sidama, Ethiopia. He primarily grows an heirloom variety registered as 74158, known locally as “Walega”, and also works with neighboring farmers to collect cherries grown as high as 2,300 meters above sea level. As is typical in this region, his coffees are all dry processed or \"natural\".  We cupped this one alongside several other fantastic coffees, but there was no doubt: this is something special. </span></p>\n<div class=\"page\" title=\"Page 1\">\n<div class=\"layoutArea\"><span>We've decided to offer Basha in both an Espresso and Filter offering. Our Filter offering is juicy, bright and stone fruit forward with a sparkling acidity. Our espresso offers more berry attributes with a nice cherry sweetness. While we say most of our coffees can work for both methods we love this coffee so much we thought we'd offer it two ways.</span></div>\n<div class=\"layoutArea\"><span> </span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"><span></span></div>\n<div class=\"layoutArea\"></div>\n<strong>Price Transparency:</strong>\n</div>\n<div class=\"page\" title=\"Page 1\">FOB - $10.45/KG</div>\n<div class=\"page\" title=\"Page 1\">FOT - $15.03/KG\n<div class=\"column\"></div>\n</div>\n<div title=\"Page 1\" class=\"page\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\"></div>\n</div>\n</div>\n</div>",
+      "product_type": "",
+      "options": [
+        {
+          "id": 8876159139938,
+          "product_id": 6941896933474,
+          "name": "Style",
+          "position": 1,
+          "values": [
+            "Filter",
+            "Espresso"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 40567362224226,
+          "product_id": 6941896933474,
+          "title": "Filter",
+          "price": "22.50",
+          "sku": "",
+          "position": 1,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Filter",
+          "option2": null,
+          "option3": null,
+          "created_at": "2023-11-15T17:41:48-05:00",
+          "updated_at": "2026-10-08T00:30:18-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 250,
+          "image_id": null,
+          "weight": 250,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 40567362256994,
+          "product_id": 6941896933474,
+          "title": "Espresso",
+          "price": "22.50",
+          "sku": "",
+          "position": 2,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Espresso",
+          "option2": null,
+          "option3": null,
+          "created_at": "2023-11-15T17:41:48-05:00",
+          "updated_at": "2026-10-08T00:30:18-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 250,
+          "image_id": null,
+          "weight": 250,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 29855225020514,
+          "product_id": 6941896933474,
+          "position": 1,
+          "created_at": "2023-12-14T22:32:44-05:00",
+          "updated_at": "2023-12-14T22:32:47-05:00",
+          "alt": null,
+          "width": 4772,
+          "height": 4771,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/Basha.png?v=1702611167",
+          "variant_ids": []
+        },
+        {
+          "id": 29774578843746,
+          "product_id": 6941896933474,
+          "position": 2,
+          "created_at": "2023-11-15T17:46:11-05:00",
+          "updated_at": "2023-12-14T22:32:47-05:00",
+          "alt": null,
+          "width": 3024,
+          "height": 4032,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/IMG_0860.jpg?v=1702611167",
+          "variant_ids": []
+        },
+        {
+          "id": 29774578778210,
+          "product_id": 6941896933474,
+          "position": 3,
+          "created_at": "2023-11-15T17:46:04-05:00",
+          "updated_at": "2023-12-14T22:32:47-05:00",
+          "alt": null,
+          "width": 4080,
+          "height": 3072,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/PXL_20221208_053828399.jpg?v=1702611167",
+          "variant_ids": []
+        }
+      ]
+    },
+    "ajax": {
+      "id": 6941896933474,
+      "variants": [
+        {
+          "id": 40567362224226,
+          "available": false
+        },
+        {
+          "id": 40567362256994,
+          "available": false
+        }
+      ]
+    },
+    "expected_weight": 250
+  },
+  {
+    "url": "https://september.coffee/en-us/products/danche-ethiopia-hydro-honey-extra-light",
+    "html": "<h1>Danche - Ethiopia Hydro Honey (Extra-Light)</h1><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"productID\":7113538601058,\"offers\":[{\"@type\":\"Offer\",\"name\":\"April 28th\",\"availability\":\"https://schema.org/OutOfStock\",\"price\":26.5,\"priceCurrency\":\"USD\",\"priceValidUntil\":\"2026-10-18\",\"url\":\"/en-us/products/danche-ethiopia-hydro-honey-extra-light?variant=41093374738530\"},{\"@type\":\"Offer\",\"name\":\"May 1\",\"availability\":\"https://schema.org/OutOfStock\",\"price\":26.5,\"priceCurrency\":\"USD\",\"priceValidUntil\":\"2026-10-18\",\"url\":\"/en-us/products/danche-ethiopia-hydro-honey-extra-light?variant=41093374771298\"}],\"brand\":{\"@type\":\"Brand\",\"name\":\"September Coffee\"},\"name\":\"Danche - Ethiopia Hydro Honey (Extra-Light)\",\"description\":\"\\n\\n\\n\\n\\nImpressions: Citrus, Stonefruit, Grapefruit, Juicy\\n\\nProcess: Hydro Honey Wet Mill: Danche\\n\\n\\nVariety: Dega &amp; WolishoAltitude: 1950-2200 MASLRegion: YirgacheffeCountry: Ethiopia\\n\\n\\nHarvest: December 2023/January 2024\\nRoast: Extra Light\\n200G\\n\\n\\n\\n\\nIn the cup we get a juicy profile of purple fruits like blackberries, stonefruits like peach and apricot, a bright grapefruit acidity and delicate florals. This coffee big yet delicate, with a complexity that has us infatuated. It has a long finish of lemon candy and grapefruit. Fresh crop Ethiopia is here, and we're honoured to be one of the first to share it with you. \\n\\n\\n\\n\\nWhat is Hydro Honey? It is a newer hybrid process where after picking and sorting the coffee cherries, they dry for 48 hours on shaded drying beds, similar to a traditional natural process, but for a shorter timeframe. Once this is finished they place the cherries in a tank filled with water for a 48-hour fermentation process (24 hours aerobic and 24 hours anaerobic). After the 48-hour fermentation period, cherries are pulped and placed on shaded drying beds for approximately 25 days, similar to a honey process. Hydro Honey can also be seen as a hybrid between a Natural and Honey, where a special preparation is carried out between initial drying and honey drying. \\n\\n\\n\\n\\nLocated in the Gedeo zone of the Gedeb district, Danche is one of the finest coffee producing areas within the famous Gedeb Woreda. Known for its dense layered semi forest vegetation structure encompassing banana trees as well as shade grown coffee trees, Danche is a great example of best coffee growing acro ecology. SNAP Specialty Coffee built their new wet mill in 2019 in a small hamlet called Chelbesa with in the Danche Village with the hope of reaching out to purchasing exclusively red cherries from the nearby farmers in Danche Village. Their ambition became a reality after completion of the project. The fermentation tanks of the wet mill were built by ceramic which will help bring clarity in the coffee that they process as well as help fasten the fermentation through heat inside the ceramic.\\n\\n\\n\\n\\n\\n\\nPrice Transparency:\\nWe Paid Apex - $33.80 USD/KG\\n\\nRoasting Costs - $39.87 USD/KG\\n\\n\\n\\n\\n\",\"category\":\"Coffee\",\"url\":\"/en-us/products/danche-ethiopia-hydro-honey-extra-light\",\"sku\":\"\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"https://september.coffee/cdn/shop/files/DancheHydroHoney2_3de06305-8565-4a04-bca2-dfdd0d750072.png?v=1714746014&width=1024\",\"image\":\"https://september.coffee/cdn/shop/files/DancheHydroHoney2_3de06305-8565-4a04-bca2-dfdd0d750072.png?v=1714746014&width=1024\",\"name\":\"\",\"width\":\"1024\",\"height\":\"1024\"}}</script>",
+    "product": {
+      "id": 7113538601058,
+      "title": "Danche - Ethiopia Hydro Honey (Extra-Light)",
+      "handle": "danche-ethiopia-hydro-honey-extra-light",
+      "body_html": "<div class=\"page\" title=\"Page 1\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<div class=\"layoutArea\">\n<strong style=\"font-size: 0.875rem;\"><strong data-mce-fragment=\"1\">Impressions:</strong></strong> Citrus, Stonefruit, Grapefruit, Juicy</div>\n<div class=\"layoutArea\">\n<strong style=\"font-size: 0.875rem;\">Process:</strong><span style=\"font-size: 0.875rem;\"> Hydro Honey </span><br><strong>Wet Mill:</strong><span> Danche</span>\n</div>\n<div class=\"layoutArea\">\n<strong>Variety:</strong><span> Dega &amp; Wolisho</span><br><strong>Altitude:</strong> 1950-2200 MASL<br><strong>Region:</strong> Yirgacheffe<br><strong>Country:</strong><span> Ethiopia</span><br>\n</div>\n<div class=\"layoutArea\">\n<strong>Harvest: </strong>December 2023/January 2024</div>\n<div class=\"layoutArea\"><span><strong>Roast: </strong>Extra<strong> </strong>Light</span></div>\n<p class=\"layoutArea\"><strong>200G</strong></p>\n<div class=\"page\" title=\"Page 1\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>In the cup we get a juicy profile of purple fruits like blackberries, stonefruits like peach and apricot, a bright grapefruit acidity and delicate florals. This coffee big yet delicate, with a complexity that has us infatuated. It has a long finish of lemon candy and grapefruit. Fresh crop Ethiopia is here, and we're honoured to be one of the first to share it with you. </p>\n<div class=\"page\" title=\"Page 2\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><span>What is Hydro Honey? It is a newer hybrid process where after picking and sorting the coffee cherries, they dry for 48 hours on shaded drying beds, similar to a traditional natural process, but for a shorter timeframe. Once this is finished they place the cherries in a tank filled with water for a 48-hour fermentation process (24 hours aerobic and 24 hours anaerobic). After the 48-hour fermentation period, cherries are pulped and placed on shaded drying beds for approximately 25 days, similar to a honey process. Hydro Honey can also be seen as a hybrid between a Natural and Honey, where a special preparation is carried out between initial drying and honey drying. </span></p>\n</div>\n</div>\n</div>\n</div>\n<p><span>Located in the Gedeo zone of the Gedeb district, Danche is one of the finest coffee producing areas within the famous Gedeb Woreda. Known for its dense layered semi forest vegetation structure encompassing banana trees as well as shade grown coffee trees, Danche is a great example of best coffee growing acro ecology. SNAP Specialty Coffee built their new wet mill in 2019 in a small hamlet called Chelbesa with in the Danche Village with the hope of reaching out to purchasing exclusively red cherries from the nearby farmers in Danche Village. Their ambition became a reality after completion of the project. The fermentation tanks of the wet mill were built by ceramic which will help bring clarity in the coffee that they process as well as help fasten the fermentation through heat inside the ceramic.</span></p>\n</div>\n</div>\n</div>\n</div>\n<div class=\"layoutArea\">\n<div class=\"layoutArea\">\n<p><strong style=\"font-size: 0.875rem;\">Price Transparency:</strong></p>\n<span style=\"font-size: 0.875rem;\">We Paid Apex - $<span>33.80 </span>USD/KG</span>\n</div>\n<div class=\"layoutArea\"><span style=\"font-size: 0.875rem;\">Roasting Costs - $39.87 USD/KG</span></div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+      "product_type": "Coffee",
+      "options": [
+        {
+          "id": 9078621175906,
+          "product_id": 7113538601058,
+          "name": "Roasted",
+          "position": 1,
+          "values": [
+            "April 28th",
+            "May 1"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 41093374738530,
+          "product_id": 7113538601058,
+          "title": "April 28th",
+          "price": "26.50",
+          "sku": "",
+          "position": 2,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "April 28th",
+          "option2": null,
+          "option3": null,
+          "created_at": "2024-05-03T19:04:33-04:00",
+          "updated_at": "2026-10-08T00:30:00-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 200,
+          "image_id": null,
+          "weight": 200,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 41093374771298,
+          "product_id": 7113538601058,
+          "title": "May 1",
+          "price": "26.50",
+          "sku": "",
+          "position": 3,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "May 1",
+          "option2": null,
+          "option3": null,
+          "created_at": "2024-05-03T19:04:33-04:00",
+          "updated_at": "2026-10-08T00:30:00-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 200,
+          "image_id": null,
+          "weight": 200,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 30429293183074,
+          "product_id": 7113538601058,
+          "position": 1,
+          "created_at": "2024-05-03T10:20:14-04:00",
+          "updated_at": "2024-05-03T10:20:14-04:00",
+          "alt": null,
+          "width": 4742,
+          "height": 4742,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/DancheHydroHoney2_3de06305-8565-4a04-bca2-dfdd0d750072.png?v=1714746014",
+          "variant_ids": []
+        },
+        {
+          "id": 30429293215842,
+          "product_id": 7113538601058,
+          "position": 2,
+          "created_at": "2024-05-03T10:20:14-04:00",
+          "updated_at": "2024-05-03T10:20:14-04:00",
+          "alt": null,
+          "width": 1411,
+          "height": 1411,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/snap-coffee-01_jpg_de89c30c-4cbb-44de-b5c9-67fe547b6738.webp?v=1714746014",
+          "variant_ids": []
+        }
+      ]
+    },
+    "ajax": {
+      "id": 7113538601058,
+      "variants": [
+        {
+          "id": 41093374738530,
+          "available": false
+        },
+        {
+          "id": 41093374771298,
+          "available": false
+        }
+      ]
+    },
+    "expected_weight": 200
+  }
+]

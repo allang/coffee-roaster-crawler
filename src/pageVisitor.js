@@ -5,14 +5,14 @@ const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage } = require('./knownPages');
 const { extractPage } = require('./extraction');
 const { canonicalProductUrl } = require('./catalogNormalization');
-const { saveProduct } = require('./productSaver');
+const { saveProduct,findExistingProduct,productSourceKey } = require('./productSaver');
 const { config } = require('./config');
 const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
 const { fetchHtml, jitteredSleep } = require('./httpClient');
-const { detectProductAvailability } = require('./availability');
+const { detectProductAvailability,updateProductAvailability } = require('./availability');
 
-async function fetchPageContent(url, referer = null) {
-  const result = await fetchHtml(url, { 
+async function fetchPageContent(url, referer = null, options = {}) {
+  const result = await (options.fetchHtml || fetchHtml)(url, {
     timeout: 15000,
     referer,
   });
@@ -58,10 +58,25 @@ async function fetchPageContent(url, referer = null) {
     const maxClassificationChars = Number(process.env.CLASSIFIER_MAX_CHARS || 15000);
     const truncatedContent = fullContent.substring(0, maxClassificationChars);
 
+    let sourceProduct=null;
+    const soft404=detectProductAvailability({html:result.data,status:result.status,sourceUrl:url,finalUrl:result.finalUrl}).reason==='product_soft_404';
+    if(!soft404 && options.siteProfile?.adapter==='square'){sourceProduct=await require('./siteSupport/square').fetchSquareProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='subbly'){sourceProduct=await require('./siteSupport/subbly').fetchSubblyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='nuxt_shopify'){sourceProduct=await require('./siteSupport/nuxtShopify').fetchNuxtShopifyProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='imweb'){sourceProduct=await require('./siteSupport/imweb').fetchImwebProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='txt_imweb' && /^\/(?:shop_view|coffeesubscriptions)\/?$/.test(new URL(result.finalUrl || url).pathname) && new URL(result.finalUrl || url).searchParams.has('idx')){sourceProduct=require('./siteSupport/txt').txtProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='woocommerce' && require('./siteSupport/woocommerce').productPathMatches(result.finalUrl || url,options.siteProfile)){sourceProduct=await require('./siteSupport/woocommerce').fetchWooProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='hydrogen' && /^\/products\/[^/]+\/?$/.test(new URL(result.finalUrl || url).pathname)){sourceProduct=require('./siteSupport/hydrogen').hydrogenProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='wix' && new URL(result.finalUrl || url).pathname.startsWith(options.siteProfile.product_path)){sourceProduct=require('./siteSupport/wix').wixProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='cafe24' && options.siteProfile.cafe24_native_single_items && require('./catalogNormalization').canonicalProductUrl(result.finalUrl || url).includes('/product/detail.html?product_no=')){sourceProduct=await require('./siteSupport/cafe24').fetchCafe24Product(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='fathers'){sourceProduct=require('./siteSupport/fathers').fathersProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='woocommerce_store'){sourceProduct=await require('./siteSupport/woocommerce').fetchWooProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='squarespace'){sourceProduct=await require('./siteSupport/squarespace').fetchSquarespaceProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     return {
       success: true,
+      sourceProduct,
       title,
-      content: truncatedContent,
+      content: sourceProduct?sourceProduct.name+"\n"+sourceProduct.description:truncatedContent,
       fullLength: contentLength,
       html: result.data,
       status: result.status,
@@ -88,6 +103,16 @@ function isClearlyNonCoffeeProduct(product) {
 
 async function processFetchedPage(entityId, url, fetchResult, log, platform='unknown', options={}) {
   const known=options.knownPage;
+  const pageAvailability=fetchResult.success?detectProductAvailability({html:fetchResult.html,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl}):null;
+  if(pageAvailability?.reason==='product_soft_404') {
+    // An unavailable page cannot refresh product sightings or publish cached API
+    // stock. Update only the existing product's availability, if identified.
+    const source=canonicalProductUrl(url),db=require('./supabase').getSupabase();
+    const existing=await findExistingProduct(db,entityId,source,productSourceKey(entityId,null,source));
+    if(existing)await updateProductAvailability(existing.id,pageAvailability,null,log);
+    options.observed?.set(source,pageAvailability);
+    return {visited:true,classified:false,isCoffee:false,availability:pageAvailability,aiCalls:0,unavailable:true};
+  }
   if (!fetchResult.success) {
     if ([404,410].includes(fetchResult.status) && known?.status==='coffee' && known.classification?.product) {
       const availability=detectProductAvailability({status:fetchResult.status,sourceUrl:url});
@@ -98,27 +123,32 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
     return {visited:true,classified:false,error:fetchResult.error,aiCalls:0};
   }
   let shopifyJson=null;
-  if(platform==='shopify' && isShopifyProductUrl(url)) shopifyJson=await fetchShopifyProductJson(url,log);
+  if((platform==='shopify' || options.siteProfile?.adapter==='shopify') && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
+  if(options.siteProfile?.adapter==='shopify' && !require('./shopifyProduct').verifiedShopifyVariantScope(shopifyJson,url))return {visited:true,classified:false,error:'Registered Shopify source incomplete: '+(shopifyJson?.error || 'incomplete SKU set'),aiCalls:0};
   const classification=await extractPage({page:{...fetchResult,url},shopifyJson,cache:known?.classification,classify:classifyPage,model:MODEL});
   const metrics={aiCalls:classification.aiCalls || 0,usage:classification.usage,mode:classification.mode};
   if(classification.error) return {visited:true,classified:false,error:classification.error,quotaExceeded:classification.quotaExceeded,...metrics};
   const result=classification.data;
   const now=new Date().toISOString();
   const coffee=result.is_coffee_page===true && result.product && !isClearlyNonCoffeeProduct(result.product);
+  if(coffee && shopifyJson?.data?.reviewedAccessorySubset) {
+    const normalized=require('./catalogNormalization').normalizeProduct(result.product,url),nativeIds=shopifyJson.data.variants.map(v=>v.id);
+    if(normalized.variants_complete!==false || normalized.variants.length!==nativeIds.length || normalized.variants.some(v=>!nativeIds.includes(String(v.source_id)) || v.money.minorUnits==null || !v.money.currency || !['in_stock','sold_out'].includes(v.availability)))return {visited:true,classified:true,error:'Reviewed accessory subset lacks exact current coffee SKU money or stock',...metrics};
+  }
   let productId, availability;
   try {
   if(coffee) {
-    availability=detectProductAvailability({html:fetchResult.html,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl,shopifyProduct:shopifyJson?.success?shopifyJson.raw:null});
+    availability=detectProductAvailability({html:fetchResult.html,sourceProduct:fetchResult.sourceProduct,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl,shopifyProduct:shopifyJson?.success?shopifyJson.raw:null});
     productId=await saveProduct(entityId,result.product,url,log,{availability,checkedAt:now});
     if(!productId) return {visited:true,classified:true,error:'Product persistence skipped',...metrics};
     options.observed?.set(canonicalProductUrl(url),availability);
   }
-  await saveKnownPage(entityId,url,coffee?'coffee':'irrelevant',{classification:classification.cache,classifiedAt:classification.cache._extraction.extracted_at,classifiedBy:classification.mode==='structured'?'structured-v1':MODEL,fetchedAt:now,statusCode:fetchResult.status,contentHash:classification.semanticHash,firstSeenAt:known?.first_seen_at,timesSeen:(known?.times_seen || 0)+1});
+  await saveKnownPage(entityId,url,coffee?'coffee':'irrelevant',{classification:classification.cache,classifiedAt:classification.cache._extraction.extracted_at,classifiedBy:classification.mode==='structured_product_only'?'structured-product-only-v1':classification.mode==='structured'?'structured-v1':MODEL,fetchedAt:now,statusCode:fetchResult.status,contentHash:classification.semanticHash,firstSeenAt:known?.first_seen_at,timesSeen:(known?.times_seen || 0)+1});
   return {visited:true,classified:true,isCoffee:Boolean(coffee),product:coffee?result.product:undefined,productId,availability,...metrics};
   } catch(error) { return {visited:true,classified:true,error:error.message,...metrics}; }
 }
 async function visitAndClassifyPage(entityId,url,accumulator,log,platform='unknown',options={}) {
-  const fetchResult=await fetchPageContent(url);
+  const fetchResult=await fetchPageContent(url,null,options);
   accumulator.markVisited(url);
   try { return await processFetchedPage(entityId,url,fetchResult,log,platform,options); }
   catch(error) { log.error('Visitor','Page processing failed',{url,error:error.message});return {visited:true,error:error.message}; }
@@ -126,7 +156,8 @@ async function visitAndClassifyPage(entityId,url,accumulator,log,platform='unkno
 function addExtractionMetrics(results,result) {
   results.aiCalls += result.aiCalls || 0;
   results.cacheHits += result.mode==='cache'?1:0;
-  results.structuredPages += result.mode==='structured'?1:0;
+  results.structuredPages += ['structured','structured_product_only'].includes(result.mode)?1:0;
+  results.structuredProductOnlyPages += result.mode==='structured_product_only'?1:0;
   results.marketChecks += result.availability?1:0;
   if(result.usage) {
     results.aiUsage.prompt_tokens += result.usage.prompt_tokens || 0;
@@ -135,7 +166,7 @@ function addExtractionMetrics(results,result) {
     results.aiUsage.unreported_calls += Math.max(0,(result.aiCalls || 0)-1);
   } else if(result.aiCalls) results.aiUsage.unreported_calls += result.aiCalls;
 }
-function extractionMetrics() { return {aiCalls:0,cacheHits:0,structuredPages:0,marketChecks:0,aiUsage:{prompt_tokens:0,completion_tokens:0,cached_tokens:0,unreported_calls:0}}; }
+function extractionMetrics() { return {aiCalls:0,cacheHits:0,structuredPages:0,structuredProductOnlyPages:0,marketChecks:0,aiUsage:{prompt_tokens:0,completion_tokens:0,cached_tokens:0,unreported_calls:0}}; }
 
 async function visitAllPages(entityId, urls, accumulator, log = null, platform = 'unknown', options={}) {
   const logger = log || globalLogger;

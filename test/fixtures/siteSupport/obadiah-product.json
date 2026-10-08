@@ -1,0 +1,125 @@
+{
+  "url": "https://obadiahcoffee.com/products/tinamit-honey",
+  "analytics": {
+    "currency": "USD",
+    "product": {
+      "id": 16347664679299,
+      "handle": "tinamit-honey",
+      "variants": [
+        {
+          "id": 62694516687235,
+          "price": 2493
+        },
+        {
+          "id": 62694516720003,
+          "price": 4178
+        },
+        {
+          "id": 62694516752771,
+          "price": 7816
+        }
+      ]
+    }
+  },
+  "product": {
+    "id": 16347664679299,
+    "title": "Tinamit Honey",
+    "handle": "tinamit-honey",
+    "body_html": "<p class=\"p1\"><meta charset=\"UTF-8\"><span>Exploring two expressions from Tinamit Coop, grown on the idyllic shores of Lake Atitlán: blackberry, cacao, and toffee.</span></p>",
+    "product_type": "Coffee",
+    "vendor": "Obadiah Coffee",
+    "tags": "Latest Releases, Seasonal",
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0460/3507/5226/files/Tinamit_Honey.png?v=1790240504"
+      }
+    ],
+    "variants": [
+      {
+        "id": 62694516687235,
+        "title": "250g",
+        "price": "24.93",
+        "sku": "THG-250G",
+        "grams": 250,
+        "weight": 0.25,
+        "weight_unit": "kg"
+      },
+      {
+        "id": 62694516720003,
+        "title": "500g",
+        "price": "41.78",
+        "sku": "THG-500G",
+        "grams": 500,
+        "weight": 0.5,
+        "weight_unit": "kg"
+      },
+      {
+        "id": 62694516752771,
+        "title": "1kg",
+        "price": "78.16",
+        "sku": "THG-1KG",
+        "grams": 1000,
+        "weight": 1,
+        "weight_unit": "kg"
+      }
+    ]
+  },
+  "ajax": {
+    "id": 16347664679299,
+    "variants": [
+      {
+        "id": 62694516687235,
+        "available": true
+      },
+      {
+        "id": 62694516720003,
+        "available": true
+      },
+      {
+        "id": 62694516752771,
+        "available": true
+      }
+    ]
+  },
+  "schema": {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "Tinamit Honey",
+    "url": "https://obadiahcoffee.com/products/tinamit-honey",
+    "image": [
+      "https://obadiahcoffee.com/cdn/shop/files/Tinamit_Honey.png?v=1790240504&width=1920"
+    ],
+    "description": "Exploring two expressions from Tinamit Coop, grown on the idyllic shores of Lake Atitlán: blackberry, cacao, and toffee.",
+    "sku": "THG-250G",
+    "brand": {
+      "@type": "Brand",
+      "name": "Obadiah Coffee"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "sku": "THG-250G",
+        "availability": "http://schema.org/InStock",
+        "price": 24.93,
+        "priceCurrency": "USD",
+        "url": "https://obadiahcoffee.com/products/tinamit-honey?variant=62694516687235"
+      },
+      {
+        "@type": "Offer",
+        "sku": "THG-500G",
+        "availability": "http://schema.org/InStock",
+        "price": 41.78,
+        "priceCurrency": "USD",
+        "url": "https://obadiahcoffee.com/products/tinamit-honey?variant=62694516720003"
+      },
+      {
+        "@type": "Offer",
+        "sku": "THG-1KG",
+        "availability": "http://schema.org/InStock",
+        "price": 78.16,
+        "priceCurrency": "USD",
+        "url": "https://obadiahcoffee.com/products/tinamit-honey?variant=62694516752771"
+      }
+    ]
+  }
+}

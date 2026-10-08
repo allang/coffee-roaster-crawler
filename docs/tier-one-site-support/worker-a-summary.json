@@ -1,0 +1,196 @@
+{
+  "checked_at": "2026-10-08T04:40:53.434Z",
+  "branch": "codex/tier-one-roasters-a",
+  "base_commit": "c70ae60",
+  "results": [
+    {
+      "name": "Hydrangea",
+      "evidence": "hydrangea-live.json",
+      "checked_at": "2026-10-08T03:41:02.971Z",
+      "products": 32,
+      "wholly_sold_out": 6,
+      "variants": 70,
+      "sold_out_variants": 13,
+      "currencies": [
+        "USD"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 0,
+      "merchant_gets": 102
+    },
+    {
+      "name": "ILSE",
+      "evidence": "ilse-live.json",
+      "checked_at": "2026-10-08T03:43:15.608Z",
+      "products": 9,
+      "wholly_sold_out": 0,
+      "variants": 27,
+      "sold_out_variants": 1,
+      "currencies": [
+        "USD"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 0,
+      "merchant_gets": 30
+    },
+    {
+      "name": "Leaves",
+      "evidence": "leaves-live.json",
+      "checked_at": "2026-10-08T03:46:55.777Z",
+      "products": 11,
+      "wholly_sold_out": 0,
+      "variants": 28,
+      "sold_out_variants": 0,
+      "currencies": [
+        "JPY"
+      ],
+      "missing_descriptions": 4,
+      "missing_images": 0,
+      "unproven_net_weights": 1,
+      "merchant_gets": 24
+    },
+    {
+      "name": "Loquat",
+      "evidence": "loquat-live.json",
+      "checked_at": "2026-10-08T03:51:51.693Z",
+      "products": 25,
+      "wholly_sold_out": 9,
+      "variants": 36,
+      "sold_out_variants": 16,
+      "currencies": [
+        "USD"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 0,
+      "merchant_gets": 83
+    },
+    {
+      "name": "Luminous",
+      "evidence": "luminous-live.json",
+      "checked_at": "2026-10-08T03:54:55.500Z",
+      "products": 21,
+      "wholly_sold_out": 2,
+      "variants": 38,
+      "sold_out_variants": 5,
+      "currencies": [
+        "USD"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 35,
+      "merchant_gets": 67
+    },
+    {
+      "name": "Momos",
+      "evidence": "momos-kr-live.json",
+      "checked_at": "2026-10-08T04:40:22.462Z",
+      "products": 62,
+      "wholly_sold_out": 14,
+      "variants": 379,
+      "sold_out_variants": 86,
+      "currencies": [
+        "KRW"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 106,
+      "merchant_gets": 139
+    },
+    {
+      "name": "Monogram",
+      "evidence": "monogram-live.json",
+      "checked_at": "2026-10-08T03:58:40.503Z",
+      "products": 38,
+      "wholly_sold_out": 0,
+      "variants": 106,
+      "sold_out_variants": 0,
+      "currencies": [
+        "USD"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 0,
+      "merchant_gets": 116
+    },
+    {
+      "name": "Namusairo",
+      "evidence": "namusairo-live.json",
+      "checked_at": "2026-10-08T04:04:03.446Z",
+      "products": 54,
+      "wholly_sold_out": 4,
+      "variants": 267,
+      "sold_out_variants": 25,
+      "currencies": [
+        "KRW"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 43,
+      "merchant_gets": 57
+    },
+    {
+      "name": "Obadiah",
+      "evidence": "obadiah-live.json",
+      "checked_at": "2026-10-08T04:11:39.579Z",
+      "products": 70,
+      "wholly_sold_out": 57,
+      "variants": 188,
+      "sold_out_variants": 155,
+      "currencies": [
+        "USD"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 14,
+      "merchant_gets": 213
+    },
+    {
+      "name": "ONA",
+      "evidence": "ona-live.json",
+      "checked_at": "2026-10-08T04:35:24.001Z",
+      "products": 36,
+      "wholly_sold_out": 6,
+      "variants": 55,
+      "sold_out_variants": 13,
+      "currencies": [
+        "AUD"
+      ],
+      "missing_descriptions": 0,
+      "missing_images": 0,
+      "unproven_net_weights": 19,
+      "merchant_gets": 118
+    }
+  ],
+  "totals": {
+    "products": 358,
+    "variants": 1194,
+    "wholly_sold_out": 98,
+    "sold_out_variants": 314,
+    "missing_descriptions": 4,
+    "missing_images": 0,
+    "unproven_net_weights": 218,
+    "merchant_gets": 949
+  },
+  "test_runtime": "Node.js v22.19.0",
+  "tests": {
+    "total": 247,
+    "passed": 247,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "production_writes": 0,
+  "ai_calls_live_verification": 0,
+  "prohibited_requests": 0,
+  "market_limitation": {
+    "name": "Momos international",
+    "evidence": "momos-live.json",
+    "reason": "CERT_HAS_EXPIRED",
+    "domestic_scope": "KR",
+    "reconcile_omissions": false
+  },
+  "integration_owner": "Coordinating chat handles crawler.js guarded bootstrap, network/reconciliation integration; no crawler.js edits in this worker."
+}

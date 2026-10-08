@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "mode": "photo-repair-result",
+  "checked_at": "2026-10-08T13:10:27.032Z",
+  "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
+  "products_read": 0,
+  "scope": "all_verified_tier_one_coffees",
+  "counts": {
+    "repaired": 8
+  },
+  "entries": [
+    {
+      "product_id": "2c02e731-a25e-4baf-88aa-c65f7aeb2ae0",
+      "status": "repaired",
+      "media_asset_id": "ef96fc0b-492c-4c16-a927-5024faa5c03e"
+    },
+    {
+      "product_id": "38ed5750-ea79-4e52-b104-6745b742bb48",
+      "status": "repaired",
+      "media_asset_id": "8f6515b4-93e9-4eaf-9274-821279798a4e"
+    },
+    {
+      "product_id": "791f85d7-464b-4f43-bf52-8f062aa7ae68",
+      "status": "repaired",
+      "media_asset_id": "d9a5c9f2-cf43-4c15-9889-50f301e3b69e"
+    },
+    {
+      "product_id": "b25efc1a-c2d3-4adf-be51-f5f34da9d085",
+      "status": "repaired",
+      "media_asset_id": "f8834cd7-363a-413c-939d-6256c01c1d2b"
+    },
+    {
+      "product_id": "c3c402ef-3cc0-4b9f-b0a7-b921ecb0fda5",
+      "status": "repaired",
+      "media_asset_id": "6e8f7d1b-2384-45fa-891a-9ad254b9f06c"
+    },
+    {
+      "product_id": "d06963a4-c21a-4646-bd1d-04117e1445fe",
+      "status": "repaired",
+      "media_asset_id": "68f776db-9586-4dea-be06-84f8cdf5e078"
+    },
+    {
+      "product_id": "d41d284e-93ea-4902-807f-98921616c891",
+      "status": "repaired",
+      "media_asset_id": "66315f90-7bce-4ae0-b7fc-f9c6ab0e69f1"
+    },
+    {
+      "product_id": "e7f22c11-4b27-4ecb-84d0-750d50a7a417",
+      "status": "repaired",
+      "media_asset_id": "58fe1cc0-e6be-4b18-87ab-8a7f2d10279f"
+    }
+  ]
+}

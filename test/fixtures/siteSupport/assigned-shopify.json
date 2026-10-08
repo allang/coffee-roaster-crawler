@@ -1,0 +1,1287 @@
+[
+  {
+    "name": "Round Hill",
+    "url": "https://roundhillroastery.com/products/circles",
+    "html": "<h1>Circles</h1><script type=\"application/ld+json\">{\"@context\":\"http://schema.org/\",\"@type\":\"Product\",\"name\":\"Circles\",\"url\":\"https://roundhillroastery.com/products/circles\",\"description\":\"This beautiful Yellow Bourbon lot brings together coffees from 4 neighbouring farms: Fazenda Trapiá, Passeio, Lagoa, and Carmo. Located high in the mountains of the renowned Mantiqueira de Minas region, these producers share a commitment to quality and sustainable farming practices, creating a clean and sweet coffee with a classic Brazilian profile.\",\"sku\":\"CESPWB250\",\"brand\":{\"@type\":\"Brand\",\"name\":\"Round Hill Roastery\"},\"offers\":[{\"@type\":\"Offer\",\"sku\":\"CESPWB250\",\"availability\":\"http://schema.org/InStock\",\"price\":11,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=40365145817201\"},{\"@type\":\"Offer\",\"sku\":\"CESPWB1\",\"availability\":\"http://schema.org/InStock\",\"price\":39,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=40365145849969\"},{\"@type\":\"Offer\",\"sku\":\"CESPFP250\",\"availability\":\"http://schema.org/InStock\",\"price\":11,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=40365145882737\"},{\"@type\":\"Offer\",\"sku\":\"CESPE250\",\"availability\":\"http://schema.org/InStock\",\"price\":11,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=40365145915505\"},{\"@type\":\"Offer\",\"sku\":\"CESPST250\",\"availability\":\"http://schema.org/InStock\",\"price\":11,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=40365145948273\"},{\"@type\":\"Offer\",\"sku\":\"CESPFP1\",\"availability\":\"http://schema.org/InStock\",\"price\":39,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=54277097914753\"},{\"@type\":\"Offer\",\"sku\":\"CESPGE1\",\"availability\":\"http://schema.org/InStock\",\"price\":39,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=54277097947521\"},{\"@type\":\"Offer\",\"sku\":\"CESPST1\",\"availability\":\"http://schema.org/InStock\",\"price\":39,\"priceCurrency\":\"GBP\",\"url\":\"https://roundhillroastery.com/products/circles?variant=54277097980289\"}]}</script><script>window.ShopifyAnalytics.meta.currency = \"GBP\"; var meta = {\"product\":{\"id\":6917896863857,\"gid\":\"gid://shopify/Product/6917896863857\",\"vendor\":\"Round Hill Roastery\",\"type\":\"Coffee\",\"handle\":\"circles\",\"variants\":[{\"id\":40365145817201,\"price\":1100,\"name\":\"Circles - Espresso / Whole Bean / 250g\",\"public_title\":\"Espresso / Whole Bean / 250g\",\"sku\":\"CESPWB250\"},{\"id\":40365145849969,\"price\":3900,\"name\":\"Circles - Espresso / Whole Bean / 1kg\",\"public_title\":\"Espresso / Whole Bean / 1kg\",\"sku\":\"CESPWB1\"},{\"id\":40365145882737,\"price\":1100,\"name\":\"Circles - Espresso / Ground for French Press / 250g\",\"public_title\":\"Espresso / Ground for French Press / 250g\",\"sku\":\"CESPFP250\"},{\"id\":40365145915505,\"price\":1100,\"name\":\"Circles - Espresso / Ground for Espresso / 250g\",\"public_title\":\"Espresso / Ground for Espresso / 250g\",\"sku\":\"CESPE250\"},{\"id\":40365145948273,\"price\":1100,\"name\":\"Circles - Espresso / Ground for Stovetop / 250g\",\"public_title\":\"Espresso / Ground for Stovetop / 250g\",\"sku\":\"CESPST250\"},{\"id\":54277097914753,\"price\":3900,\"name\":\"Circles - Espresso / Ground for French Press / 1kg\",\"public_title\":\"Espresso / Ground for French Press / 1kg\",\"sku\":\"CESPFP1\"},{\"id\":54277097947521,\"price\":3900,\"name\":\"Circles - Espresso / Ground for Espresso / 1kg\",\"public_title\":\"Espresso / Ground for Espresso / 1kg\",\"sku\":\"CESPGE1\"},{\"id\":54277097980289,\"price\":3900,\"name\":\"Circles - Espresso / Ground for Stovetop / 1kg\",\"public_title\":\"Espresso / Ground for Stovetop / 1kg\",\"sku\":\"CESPST1\"}],\"remote\":false}};</script>",
+    "product": {
+      "id": 6917896863857,
+      "title": "Circles",
+      "handle": "circles",
+      "body_html": "<h2>This beautiful Yellow Bourbon lot brings together coffees from 4 neighbouring farms: Fazenda Trapiá, Passeio, Lagoa, and Carmo. Located high in the mountains of the renowned Mantiqueira de Minas region, these producers share a commitment to quality and sustainable farming practices, creating a clean and sweet coffee with a classic Brazilian profile.</h2>",
+      "product_type": "Coffee",
+      "vendor": "Round Hill Roastery",
+      "tags": "",
+      "variants": [
+        {
+          "id": 40365145817201,
+          "product_id": 6917896863857,
+          "title": "Espresso / Whole Bean / 250g",
+          "price": "11.00",
+          "sku": "CESPWB250",
+          "position": 1,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Whole Bean",
+          "option3": "250g",
+          "created_at": "2023-11-02T15:13:10+00:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 275,
+          "image_id": 30886022119537,
+          "weight": 275,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 40365145849969,
+          "product_id": 6917896863857,
+          "title": "Espresso / Whole Bean / 1kg",
+          "price": "39.00",
+          "sku": "CESPWB1",
+          "position": 2,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Whole Bean",
+          "option3": "1kg",
+          "created_at": "2023-11-02T15:13:10+00:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 1035,
+          "image_id": 30885044584561,
+          "weight": 1035,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 40365145882737,
+          "product_id": 6917896863857,
+          "title": "Espresso / Ground for French Press / 250g",
+          "price": "11.00",
+          "sku": "CESPFP250",
+          "position": 3,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Ground for French Press",
+          "option3": "250g",
+          "created_at": "2023-11-02T15:13:10+00:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 275,
+          "image_id": 30886022119537,
+          "weight": 275,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 40365145915505,
+          "product_id": 6917896863857,
+          "title": "Espresso / Ground for Espresso / 250g",
+          "price": "11.00",
+          "sku": "CESPE250",
+          "position": 4,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Ground for Espresso",
+          "option3": "250g",
+          "created_at": "2023-11-02T15:13:10+00:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 275,
+          "image_id": 30886022119537,
+          "weight": 275,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 40365145948273,
+          "product_id": 6917896863857,
+          "title": "Espresso / Ground for Stovetop / 250g",
+          "price": "11.00",
+          "sku": "CESPST250",
+          "position": 5,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Ground for Stovetop",
+          "option3": "250g",
+          "created_at": "2023-11-02T15:13:10+00:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 275,
+          "image_id": 30886022119537,
+          "weight": 275,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 54277097914753,
+          "product_id": 6917896863857,
+          "title": "Espresso / Ground for French Press / 1kg",
+          "price": "39.00",
+          "sku": "CESPFP1",
+          "position": 6,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Ground for French Press",
+          "option3": "1kg",
+          "created_at": "2025-05-01T08:22:11+01:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 1035,
+          "image_id": 30885044584561,
+          "weight": 1035,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 54277097947521,
+          "product_id": 6917896863857,
+          "title": "Espresso / Ground for Espresso / 1kg",
+          "price": "39.00",
+          "sku": "CESPGE1",
+          "position": 7,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Ground for Espresso",
+          "option3": "1kg",
+          "created_at": "2025-05-01T08:22:27+01:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 1035,
+          "image_id": 30885044584561,
+          "weight": 1035,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 54277097980289,
+          "product_id": 6917896863857,
+          "title": "Espresso / Ground for Stovetop / 1kg",
+          "price": "39.00",
+          "sku": "CESPST1",
+          "position": 8,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Espresso",
+          "option2": "Ground for Stovetop",
+          "option3": "1kg",
+          "created_at": "2025-05-01T08:22:51+01:00",
+          "updated_at": "2026-10-08T04:41:22+01:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 1035,
+          "image_id": 30885044584561,
+          "weight": 1035,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 30886022119537,
+          "product_id": 6917896863857,
+          "position": 1,
+          "created_at": "2023-11-03T14:27:39+00:00",
+          "updated_at": "2023-11-03T14:27:41+00:00",
+          "alt": null,
+          "width": 2000,
+          "height": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/1756/3979/files/Round-Hill-Roastery-250g-Circels-Brazil.jpg?v=1699021661",
+          "variant_ids": [
+            40365145817201,
+            40365145882737,
+            40365145915505,
+            40365145948273
+          ]
+        },
+        {
+          "id": 30885044584561,
+          "product_id": 6917896863857,
+          "position": 2,
+          "created_at": "2023-11-02T15:13:56+00:00",
+          "updated_at": "2023-11-03T14:27:41+00:00",
+          "alt": null,
+          "width": 2000,
+          "height": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/1756/3979/files/Round-Hill-Roastery-1kg-Circles-Brazil.jpg?v=1699021661",
+          "variant_ids": [
+            40365145849969,
+            54277097914753,
+            54277097947521,
+            54277097980289
+          ]
+        }
+      ]
+    },
+    "ajax": {
+      "id": 6917896863857,
+      "variants": [
+        {
+          "id": 40365145817201,
+          "available": true
+        },
+        {
+          "id": 40365145849969,
+          "available": true
+        },
+        {
+          "id": 40365145882737,
+          "available": true
+        },
+        {
+          "id": 40365145915505,
+          "available": true
+        },
+        {
+          "id": 40365145948273,
+          "available": true
+        },
+        {
+          "id": 54277097914753,
+          "available": true
+        },
+        {
+          "id": 54277097947521,
+          "available": true
+        },
+        {
+          "id": 54277097980289,
+          "available": true
+        }
+      ]
+    },
+    "expected": [
+      {
+        "id": "40365145817201",
+        "currency": "GBP",
+        "minor": 1100,
+        "state": "in_stock",
+        "weight": 250
+      },
+      {
+        "id": "40365145849969",
+        "currency": "GBP",
+        "minor": 3900,
+        "state": "in_stock",
+        "weight": 1000
+      },
+      {
+        "id": "40365145882737",
+        "currency": "GBP",
+        "minor": 1100,
+        "state": "in_stock",
+        "weight": 250
+      },
+      {
+        "id": "40365145915505",
+        "currency": "GBP",
+        "minor": 1100,
+        "state": "in_stock",
+        "weight": 250
+      },
+      {
+        "id": "40365145948273",
+        "currency": "GBP",
+        "minor": 1100,
+        "state": "in_stock",
+        "weight": 250
+      },
+      {
+        "id": "54277097914753",
+        "currency": "GBP",
+        "minor": 3900,
+        "state": "in_stock",
+        "weight": 1000
+      },
+      {
+        "id": "54277097947521",
+        "currency": "GBP",
+        "minor": 3900,
+        "state": "in_stock",
+        "weight": 1000
+      },
+      {
+        "id": "54277097980289",
+        "currency": "GBP",
+        "minor": 3900,
+        "state": "in_stock",
+        "weight": 1000
+      }
+    ]
+  },
+  {
+    "name": "Prodigal",
+    "url": "https://getprodigal.com/products/jorge-rojas-lot-10",
+    "html": "<h1>Jorge Rojas Lot #10</h1><script type=\"application/ld+json\">{\"@context\":\"http://schema.org/\",\"@type\":\"Product\",\"name\":\"Jorge Rojas Lot #10\",\"url\":\"https://getprodigal.com/products/jorge-rojas-lot-10\",\"image\":[\"https://getprodigal.com/cdn/shop/files/WEBJorgeWChirosoLot10.jpg?v=1791404288&width=1920\"],\"description\":\"Menu superstar Jorge Rojas brings us another gem with this just-landed chiroso. This one is a bit more \\\"out there\\\" and a fun, fruit punch delight. We love the big blackberry and mandarin orange flavors and its ripe, saturated quality. It's a bit process-forward but we love it.\\nJorge grew this chiroso at Finca El Jardín in Tolima, one of his four farms. This coffee was floated to remove defects and then pulped immediately. It then fermented without water for just 16 hours. Then it was fully washed and moved to marquesinas to dry, with regular rotation of the coffee to ensure even drying. \\nAs a reaction to the increasing complexity around novel processing techniques, Jorge has opted for a more traditional method with this coffee. Our friends at Desarrolladores de Cafe expertly milled this coffee and then we rushed it to Prodigal to preserve quality. \\nProcess: Washed\\nRegion: Tolima, Colombia\\nVariety: Chiroso\\nMake sure to check that the roast date you've selected is what you're looking for — if there is an \\\"upcoming roast\\\" for this coffee, the upcoming roast date is listed under the tasting notes at the top of this product page.\\nPlease read our shipping info page!\",\"sku\":\"zSept24_JorgeChiroso_250\",\"brand\":{\"@type\":\"Brand\",\"name\":\"Prodigal Coffee\"},\"offers\":[{\"@type\":\"Offer\",\"sku\":\"zSept24_JorgeChiroso_250\",\"availability\":\"http://schema.org/InStock\",\"price\":30,\"priceCurrency\":\"USD\",\"url\":\"https://getprodigal.com/products/jorge-rojas-lot-10?variant=50970721779951\"},{\"@type\":\"Offer\",\"sku\":\"oct12_JorgeChiroso_250\",\"availability\":\"http://schema.org/InStock\",\"price\":30,\"priceCurrency\":\"USD\",\"url\":\"https://getprodigal.com/products/jorge-rojas-lot-10?variant=50970721845487\"},{\"@type\":\"Offer\",\"sku\":\"oct12_JorgeChiroso_KG1\",\"availability\":\"http://schema.org/InStock\",\"price\":110,\"priceCurrency\":\"USD\",\"url\":\"https://getprodigal.com/products/jorge-rojas-lot-10?variant=50970721878255\"},{\"@type\":\"Offer\",\"sku\":\"oct12_JorgeChiroso_KG2.5\",\"availability\":\"http://schema.org/InStock\",\"price\":250,\"priceCurrency\":\"USD\",\"url\":\"https://getprodigal.com/products/jorge-rojas-lot-10?variant=50970721911023\"}]}</script><script>window.ShopifyAnalytics.meta.currency = \"USD\"; var meta = {\"product\":{\"id\":9664965771503,\"gid\":\"gid://shopify/Product/9664965771503\",\"vendor\":\"Prodigal Coffee\",\"type\":\"Roasted Coffee\",\"handle\":\"jorge-rojas-lot-10\",\"variants\":[{\"id\":50970721779951,\"price\":3000,\"name\":\"Jorge Rojas Lot #10 - 250 grams / September 24\",\"public_title\":\"250 grams / September 24\",\"sku\":\"zSept24_JorgeChiroso_250\"},{\"id\":50970721845487,\"price\":3000,\"name\":\"Jorge Rojas Lot #10 - 250 grams / Upcoming Roast\",\"public_title\":\"250 grams / Upcoming Roast\",\"sku\":\"oct12_JorgeChiroso_250\"},{\"id\":50970721878255,\"price\":11000,\"name\":\"Jorge Rojas Lot #10 - 1 kilogram / Upcoming Roast\",\"public_title\":\"1 kilogram / Upcoming Roast\",\"sku\":\"oct12_JorgeChiroso_KG1\"},{\"id\":50970721911023,\"price\":25000,\"name\":\"Jorge Rojas Lot #10 - 2.5 kilograms / Upcoming Roast\",\"public_title\":\"2.5 kilograms / Upcoming Roast\",\"sku\":\"oct12_JorgeChiroso_KG2.5\"}],\"remote\":false}};</script>",
+    "product": {
+      "id": 9664965771503,
+      "title": "Jorge Rojas Lot #10",
+      "handle": "jorge-rojas-lot-10",
+      "body_html": "<p>Menu superstar Jorge Rojas brings us another gem with this just-landed chiroso. This one is a bit more \"out there\" and a fun, fruit punch delight. We love the big blackberry and mandarin orange flavors and its ripe, saturated quality. It's a bit process-forward but we love it.</p>\n<p>Jorge grew this chiroso at Finca El Jardín in Tolima, one of his four farms. This coffee was floated to remove defects and then pulped immediately. It then fermented without water for just 16 hours. Then it was fully washed and moved to marquesinas to dry, with regular rotation of the coffee to ensure even drying. </p>\n<p>As a reaction to the increasing complexity around novel processing techniques, Jorge has opted for a more traditional method with this coffee. Our friends at Desarrolladores de Cafe expertly milled this coffee and then we rushed it to Prodigal to preserve quality. </p>\n<p>Process: Washed</p>\n<p>Region: Tolima, Colombia</p>\n<p>Variety: Chiroso</p>\n<p><strong><em>Make sure to check that the roast date you've selected is what you're looking for </em></strong><em>— if there is an</em><strong><em> </em></strong><em>\"upcoming roast\" for this coffee, the upcoming roast date is listed under the tasting notes at the top of this product page.</em></p>\n<p><em><a href=\"https://getprodigal.com/pages/shipping-information\"><strong>Please read our shipping info page!</strong></a></em></p>",
+      "product_type": "Roasted Coffee",
+      "vendor": "Prodigal Coffee",
+      "tags": "featured, filter, main, roasted",
+      "variants": [
+        {
+          "id": 50970721779951,
+          "product_id": 9664965771503,
+          "title": "250 grams / September 24",
+          "price": "30.00",
+          "sku": "zSept24_JorgeChiroso_250",
+          "position": 1,
+          "compare_at_price": "0.00",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "250 grams",
+          "option2": "September 24",
+          "option3": null,
+          "created_at": "2026-10-07T11:40:57-06:00",
+          "updated_at": "2026-10-07T21:41:23-06:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 285,
+          "image_id": null,
+          "weight": 285,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "USD",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 50970721845487,
+          "product_id": 9664965771503,
+          "title": "250 grams / Upcoming Roast",
+          "price": "30.00",
+          "sku": "oct12_JorgeChiroso_250",
+          "position": 2,
+          "compare_at_price": "0.00",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "250 grams",
+          "option2": "Upcoming Roast",
+          "option3": null,
+          "created_at": "2026-10-07T11:40:57-06:00",
+          "updated_at": "2026-10-07T21:41:23-06:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 285,
+          "image_id": null,
+          "weight": 285,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "USD",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 50970721878255,
+          "product_id": 9664965771503,
+          "title": "1 kilogram / Upcoming Roast",
+          "price": "110.00",
+          "sku": "oct12_JorgeChiroso_KG1",
+          "position": 3,
+          "compare_at_price": "0.00",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "1 kilogram",
+          "option2": "Upcoming Roast",
+          "option3": null,
+          "created_at": "2026-10-07T11:40:57-06:00",
+          "updated_at": "2026-10-07T21:41:23-06:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 1150,
+          "image_id": null,
+          "weight": 1150,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "USD",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 50970721911023,
+          "product_id": 9664965771503,
+          "title": "2.5 kilograms / Upcoming Roast",
+          "price": "250.00",
+          "sku": "oct12_JorgeChiroso_KG2.5",
+          "position": 4,
+          "compare_at_price": "0.00",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "2.5 kilograms",
+          "option2": "Upcoming Roast",
+          "option3": null,
+          "created_at": "2026-10-07T11:40:57-06:00",
+          "updated_at": "2026-10-07T21:41:23-06:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 2700,
+          "image_id": null,
+          "weight": 2700,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "USD",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 49823142838511,
+          "product_id": 9664965771503,
+          "position": 1,
+          "created_at": "2026-10-07T14:18:07-06:00",
+          "updated_at": "2026-10-07T14:18:08-06:00",
+          "alt": null,
+          "width": 3322,
+          "height": 3322,
+          "src": "https://cdn.shopify.com/s/files/1/0648/2604/8751/files/WEBJorgeWChirosoLot10.jpg?v=1791404288",
+          "variant_ids": []
+        },
+        {
+          "id": 49823418155247,
+          "product_id": 9664965771503,
+          "position": 2,
+          "created_at": "2026-10-07T14:28:25-06:00",
+          "updated_at": "2026-10-07T14:28:28-06:00",
+          "alt": null,
+          "width": 6000,
+          "height": 4000,
+          "src": "https://cdn.shopify.com/s/files/1/0648/2604/8751/files/DSF9468_f1d314ac-f6ba-45a5-94ad-60e2b7668172.jpg?v=1791404908",
+          "variant_ids": []
+        },
+        {
+          "id": 49823418843375,
+          "product_id": 9664965771503,
+          "position": 3,
+          "created_at": "2026-10-07T14:28:32-06:00",
+          "updated_at": "2026-10-07T14:28:35-06:00",
+          "alt": null,
+          "width": 2975,
+          "height": 3169,
+          "src": "https://cdn.shopify.com/s/files/1/0648/2604/8751/files/B25AC53F-955D-4C79-AFF0-B1197C0E4D8F.jpg?v=1791404915",
+          "variant_ids": []
+        },
+        {
+          "id": 49823429886191,
+          "product_id": 9664965771503,
+          "position": 4,
+          "created_at": "2026-10-07T14:30:38-06:00",
+          "updated_at": "2026-10-07T14:30:43-06:00",
+          "alt": null,
+          "width": 2016,
+          "height": 1134,
+          "src": "https://cdn.shopify.com/s/files/1/0648/2604/8751/files/IMG_2133.png?v=1791405043",
+          "variant_ids": []
+        }
+      ]
+    },
+    "ajax": {
+      "id": 9664965771503,
+      "variants": [
+        {
+          "id": 50970721779951,
+          "available": true
+        },
+        {
+          "id": 50970721845487,
+          "available": true
+        },
+        {
+          "id": 50970721878255,
+          "available": true
+        },
+        {
+          "id": 50970721911023,
+          "available": true
+        }
+      ]
+    },
+    "expected": [
+      {
+        "id": "50970721779951",
+        "currency": "USD",
+        "minor": 3000,
+        "state": "in_stock",
+        "weight": 250
+      },
+      {
+        "id": "50970721845487",
+        "currency": "USD",
+        "minor": 3000,
+        "state": "in_stock",
+        "weight": 250
+      },
+      {
+        "id": "50970721878255",
+        "currency": "USD",
+        "minor": 11000,
+        "state": "in_stock",
+        "weight": 1000
+      },
+      {
+        "id": "50970721911023",
+        "currency": "USD",
+        "minor": 25000,
+        "state": "in_stock",
+        "weight": 2500
+      }
+    ]
+  },
+  {
+    "name": "September",
+    "url": "https://september.coffee/en-us/products/el-paraiso-zeo-colombia-2026",
+    "finalUrl": "https://september.coffee/en-us/products/el-paraiso-zeo-colombia-2026",
+    "html": "<h1>El Paraiso Zeo - Zeo Geisha</h1><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"productID\":7806222041186,\"offers\":[{\"@type\":\"Offer\",\"name\":\"Default Title\",\"availability\":\"https://schema.org/InStock\",\"price\":43.5,\"priceCurrency\":\"USD\",\"priceValidUntil\":\"2026-10-17\",\"sku\":\"ELP-ZEO\",\"url\":\"/en-us/products/el-paraiso-zeo-colombia-2026?variant=43350505521250\"}],\"brand\":{\"@type\":\"Brand\",\"name\":\"September Coffee\"},\"name\":\"El Paraiso Zeo - Zeo Geisha\",\"description\":\"\",\"category\":\"Coffee\",\"url\":\"/en-us/products/el-paraiso-zeo-colombia-2026\",\"sku\":\"ELP-ZEO\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"https://september.coffee/cdn/shop/files/A201453B-5F12-4926-9E4B-099E0B71C9E0.png?v=1789758037&width=1024\",\"image\":\"https://september.coffee/cdn/shop/files/A201453B-5F12-4926-9E4B-099E0B71C9E0.png?v=1789758037&width=1024\",\"name\":\"\",\"width\":\"1024\",\"height\":\"1024\"}}</script><script>window.ShopifyAnalytics.meta.currency = \"USD\"; var meta = {\"product\":{\"id\":7806222041186,\"gid\":\"gid://shopify/Product/7806222041186\",\"vendor\":\"September Coffee\",\"type\":\"Coffee\",\"handle\":\"el-paraiso-zeo-colombia-2026\",\"variants\":[{\"id\":43350505521250,\"price\":4350,\"name\":\"El Paraiso Zeo - Zeo Geisha\",\"public_title\":null,\"sku\":\"ELP-ZEO\"}],\"remote\":false}};</script><div class=\"product-info-new\">\n\t<ul class=\"parameter-list\"><li><span class=\"par-name\">Variety</span>: Geisha</li><li><span class=\"par-name\">Country</span>: Colombia</li><li><span class=\"par-name\">Region</span>: Cauca</li><li><span class=\"par-name\">Process</span>: Zeolite Natural</li><li><span class=\"par-name\">Altitude</span>: 1930 MASL</li><li><span class=\"par-name\">Harvest</span>: Summer 2026</li><li><span class=\"par-name\">Producer</span>: Alex Bermudez</li><li><span class=\"par-name\">Farm</span>: Finca El Paraiso</li><li><span class=\"par-name\">Roast Level</span>: Light</li></ul><div class=\"product-info-block\">\n\t\t<h2><img src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/tasting-icon2.png?v=1718139220\" alt=\"tasting icon\" class=\"product-icon tasting\">In the cup</h2>\n\t\t<p>We taste sweet starburst, juicy yellow plum, and lime juice. This coffee has an incredibly creamy and mouth coating body with a sweet yet clean finish. This coffee is complex and well balanced. </p>\n\t</div><div class=\"clean-meter-wrapper\"><div class=\"clean-meter\">\n\t\t<span class=\"meter-attribute eq1\">Clean</span>\n\t\t<img src=\"//september.coffee/cdn/shop/files/rating2.png?v=1718154252\">\n\t\t<span class=\"meter-attribute eq2\">Funky</span>\n\t</div><div class=\"clean-meter\">\n\t\t<span class=\"meter-attribute\">Terroir</span>\n\t\t<img src=\"//september.coffee/cdn/shop/files/rating-2-5.png?v=1718204057\">\n\t\t<span class=\"meter-attribute exp\">Experimental</span>\n\t</div></div><div class=\"product-info-block\">\n\t\t<h2><img src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/producer-icon.png?v=1715039258\" alt=\"producer icon\" class=\"product-icon\">About The Producer</h2>\n\t\t<p>Alex, one of the owners of Finca El Paraiso, is a mastermind of coffee processing. He employs bio reactors and a meticulous selection of microorganisms to precisely control every aspect of the fermentation process, including temperature, pH, sugar content, and microbial load. This level of precision results in a coffee that is unparalleled in its complexity and flavour profile.</p>\n\t</div><div class=\"product-info-block\">\n\t\t<h2><img src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/process-icon.png?v=1715039258\" alt=\"process icon\" class=\"product-icon\">Processing</h2>\n\t\t<p>The ZEO process begins with the careful selection of the best coffee cherries, harvested at their optimal point of ripeness. This meticulous selection is crucial to avoid spoilage and damage, ensuring that only the highest quality fruits are used in the drying process. After harvesting, the coffee cherries are immediately taken to an ozone disinfection tank. This step effectively removes impurities and unwanted microbiological loads from the fruit. Ozone is a powerful disinfectant that leaves no chemical residues, making it ideal for preserving the coffee's quality. The disinfected cherries are then transferred to an ultra-freezer that rapidly lowers the temperature to -40°C within 4 hours. This quick freezing process is essential for preserving the cellular structure and aromatic compounds of the coffee cherry, preventing the formation of large ice crystals that could damage the fruit's integrity. The frozen cherries are then moved to a drying chamber, where they are subjected to negative pressures. The sublimation process (where water transitions directly from a solid to a vapor state without passing through liquid) is aided by zeolites, microporous minerals that act as molecular sieves. The zeolites selectively remove water molecules while retaining many of the aromatic precursors present in the coffee cherry, which are crucial for developing a rich sensory profile.</p>\n\t</div><div class=\"product-info-block\">\n\t\t<h2><img src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/variety-icon.png?v=1715039259\" alt=\"variety icon\" class=\"product-icon\">Variety</h2>\n\t\t<p>This variety was originally collected from coffee forests in Ethiopia in the 1930s. From there, it was sent to the Lyamungu research station in Tanzania and then brought to Centro Agronómico Tropical de Investigación y Enseñanza (CATIE) in Central America in 1953. It was distributed throughout Panama via CATIE in the 1960s after it had been recognized for tolerance to coffee leaf rust. However, the plant's branches were brittle and not favored by farmers so it was not widely planted. The coffee came to prominence in 2004 when the Peterson family of Boquete, Panama, entered it into the \"Best of Panama\" competition and auction. It received exceptionally high marks and broke the then-record for green coffee auction prices, selling for over $20/pound. There is significant confusion about the Geisha variety because there are multiple genetically distinct plant types that have been referred to as Geisha, many of which share similar geographic origins in Ethiopia. Recent genetic diversity analyses conducted by World Coffee Research confirm that Panamanian Geisha descendent from T2722 is distinct and uniform. It is associated with extremely high cup quality when the plants are managed well at high altitude, and is known for its delicate floral, jasmine, and peach-like aromas.</p>\n\t</div><div class=\"product-info-block\"><h2><img src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/transparency-icon.png?v=1715039258\" alt=\"transparency icon\" class=\"product-icon\">Transparency</h2><div class=\"tsp-grid\"><div class=\"tsp-item\">\n\t\t\t\t<div class=\"tsp-name\">\n\t\t\t\t\t<img src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/direct-icon.png?v=1719320133\" alt=\"handshake icon\"> <span>Direct</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"tsp-meta\">\n\t\t\t\t\t<span>$88 USD/Kg</span>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"tsp-item\">\n\t\t\t\t<div class=\"tsp-name\">\n\t\t\t\t\t<img src=\"https://cdn.shopify.com/s/files/1/0564/8557/6802/files/roasted-icon.png?v=1719273227\" alt=\"roasting coffee icon\"> <span>Roasted Costs</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"tsp-meta\">\n\t\t\t\t\t<span>$116.20 USD/Kg</span>\n\t\t\t\t</div>\n\t\t\t</div></div>\n\t</div>\n\n</div><div class=\"product-form__custom-liquid\"><div class=\"right-side-info\"><p class=\"short-desc\">This is yet another incredible lot from Finca El Paraiso and a revisit to the facinating Zeo processing. In the cup we get a juicy profile of stonefruits, jasmine and bright citrus like lime. We also taste starburst candies, yellow plums, and lime juice. This coffee is very limited. </p><p class=\"quantity\">125g</p></div></div>",
+    "product": {
+      "id": 7806222041186,
+      "title": "El Paraiso Zeo - Zeo Geisha",
+      "handle": "el-paraiso-zeo-colombia-2026",
+      "body_html": "",
+      "product_type": "Coffee",
+      "vendor": "September Coffee",
+      "tags": "",
+      "variants": [
+        {
+          "id": 43350505521250,
+          "product_id": 7806222041186,
+          "title": "Default Title",
+          "price": "43.50",
+          "sku": "ELP-ZEO",
+          "position": 1,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2026-09-18T13:20:19-04:00",
+          "updated_at": "2026-10-07T23:59:42-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 125,
+          "image_id": null,
+          "weight": 125,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 35728405921890,
+          "product_id": 7806222041186,
+          "position": 1,
+          "created_at": "2026-09-18T15:00:35-04:00",
+          "updated_at": "2026-09-18T15:00:37-04:00",
+          "alt": null,
+          "width": 1660,
+          "height": 1660,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/A201453B-5F12-4926-9E4B-099E0B71C9E0.png?v=1789758037",
+          "variant_ids": []
+        },
+        {
+          "id": 32137011200098,
+          "product_id": 7806222041186,
+          "position": 2,
+          "created_at": "2025-04-02T14:19:29-04:00",
+          "updated_at": "2025-04-04T12:52:30-04:00",
+          "alt": null,
+          "width": 1200,
+          "height": 675,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/IMG-0344.webp?v=1743785550",
+          "variant_ids": []
+        },
+        {
+          "id": 32137011232866,
+          "product_id": 7806222041186,
+          "position": 3,
+          "created_at": "2025-04-02T14:19:29-04:00",
+          "updated_at": "2025-04-04T12:52:30-04:00",
+          "alt": null,
+          "width": 1200,
+          "height": 1600,
+          "src": "https://cdn.shopify.com/s/files/1/0564/8557/6802/files/IMG-0345.webp?v=1743785550",
+          "variant_ids": []
+        }
+      ]
+    },
+    "ajax": {
+      "id": 7806222041186,
+      "variants": [
+        {
+          "id": 43350505521250,
+          "available": true
+        }
+      ]
+    },
+    "expected": [
+      {
+        "id": "43350505521250",
+        "currency": "USD",
+        "minor": 4350,
+        "state": "in_stock",
+        "weight": 125
+      }
+    ]
+  },
+  {
+    "name": "SEY",
+    "url": "https://www.seycoffee.com/products/2026-yana-milena-quintero-lote-1-colombia",
+    "finalUrl": "https://www.seycoffee.com/products/2026-yana-milena-quintero-lote-1-colombia",
+    "html": "<h1></h1><script>window.ShopifyAnalytics.meta.currency = \"USD\"; var meta = {\"product\":{\"id\":15414619439358,\"gid\":\"gid://shopify/Product/15414619439358\",\"vendor\":\"SEY COFFEE\",\"type\":\"Coffees\",\"handle\":\"2026-yana-milena-quintero-lote-1-colombia\",\"variants\":[{\"id\":67679411765502,\"price\":2575,\"name\":\"2026 Yana Milena Quintero; Lote 1 - Colombia - 250g\",\"public_title\":\"250g\",\"sku\":null}],\"remote\":false}};</script>",
+    "product": {
+      "id": 15414619439358,
+      "title": "2026 Yana Milena Quintero; Lote 1 - Colombia",
+      "handle": "2026-yana-milena-quintero-lote-1-colombia",
+      "body_html": "<p><meta charset=\"utf-8\"><meta charset=\"utf-8\"><span data-sheets-root=\"1\">This is a new selection continuing our exploration of Santa María, Huila. Yana has a stunning Pink Bourbon garden, and we are pleased to be working with her coffee for the first time. In the cup we find rose hips, tangerine, and mulberry.</span><br></p>",
+      "product_type": "Coffees",
+      "vendor": "SEY COFFEE",
+      "tags": "",
+      "variants": [
+        {
+          "id": 67679411765502,
+          "product_id": 15414619439358,
+          "title": "250g",
+          "price": "25.75",
+          "sku": null,
+          "position": 1,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "250g",
+          "option2": null,
+          "option3": null,
+          "created_at": "2026-10-07T18:48:15-04:00",
+          "updated_at": "2026-10-08T00:31:36-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 318,
+          "image_id": null,
+          "weight": 0.7,
+          "weight_unit": "lb",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 55392909721854,
+          "product_id": 15414619439358,
+          "position": 1,
+          "created_at": "2026-10-07T18:48:34-04:00",
+          "updated_at": "2026-10-07T18:48:35-04:00",
+          "alt": null,
+          "width": 1000,
+          "height": 1000,
+          "src": "https://cdn.shopify.com/s/files/1/0002/6352/0281/files/2026YanaMilenaQuintero_Lote1-Colombia.png?v=1791413315",
+          "variant_ids": []
+        }
+      ],
+      "options": [
+        {
+          "id": 17881490817278,
+          "product_id": 15414619439358,
+          "name": "Size",
+          "position": 1,
+          "values": [
+            "250g"
+          ]
+        }
+      ]
+    },
+    "ajax": {
+      "id": 15414619439358,
+      "variants": [
+        {
+          "id": 67679411765502,
+          "available": true
+        }
+      ]
+    },
+    "expected": [
+      {
+        "id": "67679411765502",
+        "currency": "USD",
+        "minor": 2575,
+        "state": "in_stock",
+        "weight": 250
+      }
+    ]
+  },
+  {
+    "name": "Shoebox",
+    "url": "https://shoebox.coffee/products/ethiopia-shoondhisa-natural",
+    "finalUrl": "https://shoebox.coffee/products/ethiopia-shoondhisa-natural",
+    "html": "<h1>Ethiopia Shoondhisa Natural</h1><script type=\"application/ld+json\">{\"@context\":\"http://schema.org/\",\"@id\":\"/products/ethiopia-shoondhisa-natural#product\",\"@type\":\"ProductGroup\",\"brand\":{\"@type\":\"Brand\",\"name\":\"Shoebox Coffee\"},\"category\":\"Coffee Beans & Ground Coffee\",\"description\":\"Region: Shakiso, Ethiopia\\n\\nProducers: 35 smallholder farmers delivering cherry to Suke drying station, operated by Sookoo Coffee\\n\\nVarietal: Landrace(most varietals in Ethiopia are JARC selections like 74158 or 74112, when we do not know exactly which ones, we will list \\\"landrace\\\")\\n\\nProcess: Natural\\n\\n\\n\\n\\n\\n\\nTasting notes: Candied peach, pineapple juice, white tea\\n\\n\\nProducer info and cup notes: \\n\\nThis lot comes from Sookoo Coffee, owned and operated by Ture Waji. Founded in 2018, Sookoo Coffee originally processed all its coffee at a drying station in Suke Quto, but has now grown to include 3 stations in total, adding on Sawana in Shakiso and Wessi station in the village of Tima. This naturally processed lot, titled \\\"Shoondhisa\\\" comes from 35 smallholder farmers surrounding Sookoo's drying station in Suke. On average, each farmer tends to roughly 300 coffee trees, dispersed throughout forested farm lands. All of this hardwork resulted in a beautifully clean, dynamic and interesting cup profile with a well structured candied peach and pineapple vibe while hot. As it cools, orange zest, subtle warming spices like clove or cardamom, and a lovely white tea body all coalesce into a quintessential \\\"clean nat\\\" flavor profile. \\n\\nSource: Osito\",\"hasVariant\":[{\"@id\":\"/products/ethiopia-shoondhisa-natural?variant=56361058566436#variant\",\"@type\":\"Product\",\"image\":\"https://shoebox.coffee/cdn/shop/files/Shoondhisa-shopify_af9e2d3c-7873-4f73-840c-d9826d8ac56a.png?v=1789919555&width=1920\",\"name\":\"Ethiopia Shoondhisa Natural - BC-25 - 125g\",\"offers\":{\"@id\":\"/products/ethiopia-shoondhisa-natural?variant=56361058566436#offer\",\"@type\":\"Offer\",\"availability\":\"http://schema.org/OutOfStock\",\"price\":\"20.00\",\"priceCurrency\":\"USD\",\"url\":\"https://shoebox.coffee/products/ethiopia-shoondhisa-natural?variant=56361058566436\"}}],\"name\":\"Ethiopia Shoondhisa Natural\",\"productGroupID\":\"10825601810724\",\"url\":\"https://shoebox.coffee/products/ethiopia-shoondhisa-natural\"}</script><script>window.ShopifyAnalytics.meta.currency = \"USD\"; var meta = {\"product\":{\"id\":10825601810724,\"gid\":\"gid://shopify/Product/10825601810724\",\"vendor\":\"Shoebox Coffee\",\"type\":\"\",\"handle\":\"ethiopia-shoondhisa-natural\",\"variants\":[{\"id\":56361058566436,\"price\":2000,\"name\":\"Ethiopia Shoondhisa Natural - BC-25 - 125g\",\"public_title\":\"BC-25 - 125g\",\"sku\":null}],\"remote\":false}};</script>",
+    "product": {
+      "id": 10825601810724,
+      "title": "Ethiopia Shoondhisa Natural",
+      "handle": "ethiopia-shoondhisa-natural",
+      "body_html": "<div dir=\"auto\">Region: Shakiso, Ethiopia</div>\n<div dir=\"auto\"><br></div>\n<div dir=\"auto\">Producers: 35 smallholder farmers delivering cherry to Suke drying station, operated by Sookoo Coffee</div>\n<div dir=\"auto\"><br></div>\n<div dir=\"auto\">Varietal: Landrace(most varietals in Ethiopia are JARC selections like 74158 or 74112, when we do not know exactly which ones, we will list \"landrace\")</div>\n<div dir=\"auto\"><br></div>\n<div dir=\"auto\">Process: Natural</div>\n<div dir=\"auto\">\n<span></span><br>\n</div>\n<div dir=\"auto\">\n<span></span><br>\n</div>\n<div dir=\"auto\">Tasting notes: Candied peach, pineapple juice, white tea</div>\n<div dir=\"auto\"></div>\n<div dir=\"auto\"></div>\n<div dir=\"auto\">Producer info and cup notes: </div>\n<div dir=\"auto\"><br></div>\n<div dir=\"auto\">This lot comes from Sookoo Coffee, owned and operated by Ture Waji. Founded in 2018, Sookoo Coffee originally processed all its coffee at a drying station in Suke Quto, but has now grown to include 3 stations in total, adding on Sawana in Shakiso and Wessi station in the village of Tima. This naturally processed lot, titled \"Shoondhisa\" comes from 35 smallholder farmers surrounding Sookoo's drying station in Suke. On average, each farmer tends to roughly 300 coffee trees, dispersed throughout forested farm lands. All of this hardwork resulted in a beautifully clean, dynamic and interesting cup profile with a well structured candied peach and pineapple vibe while hot. As it cools, orange zest, subtle warming spices like clove or cardamom, and a lovely white tea body all coalesce into a quintessential \"clean nat\" flavor profile. </div>\n<div dir=\"auto\"></div>\n<div dir=\"auto\">Source: Osito</div>",
+      "product_type": "",
+      "vendor": "Shoebox Coffee",
+      "tags": "",
+      "variants": [
+        {
+          "id": 56361058566436,
+          "product_id": 10825601810724,
+          "title": "BC-25 - 125g",
+          "price": "20.00",
+          "sku": null,
+          "position": 1,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "BC-25 - 125g",
+          "option2": null,
+          "option3": null,
+          "created_at": "2026-09-20T10:50:33-05:00",
+          "updated_at": "2026-10-07T23:56:15-05:00",
+          "taxable": true,
+          "barcode": null,
+          "grams": 125,
+          "image_id": null,
+          "weight": 125,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "USD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 57621920317732,
+          "product_id": 10825601810724,
+          "position": 1,
+          "created_at": "2026-09-20T10:52:34-05:00",
+          "updated_at": "2026-09-20T10:52:35-05:00",
+          "alt": null,
+          "width": 999,
+          "height": 1200,
+          "src": "https://cdn.shopify.com/s/files/1/0917/5220/2532/files/Shoondhisa-shopify_af9e2d3c-7873-4f73-840c-d9826d8ac56a.png?v=1789919555",
+          "variant_ids": []
+        }
+      ],
+      "options": [
+        {
+          "id": 13291178819876,
+          "product_id": 10825601810724,
+          "name": "Roast Style",
+          "position": 1,
+          "values": [
+            "BC-25 - 125g"
+          ]
+        }
+      ]
+    },
+    "ajax": {
+      "id": 10825601810724,
+      "variants": [
+        {
+          "id": 56361058566436,
+          "available": false
+        }
+      ]
+    },
+    "expected": [
+      {
+        "id": "56361058566436",
+        "currency": "USD",
+        "minor": 2000,
+        "state": "sold_out",
+        "weight": 125
+      }
+    ]
+  },
+  {
+    "name": "Subtext",
+    "url": "https://www.subtext.coffee/products/mexico-rogelio-santiz-washed-pink-bourbon",
+    "finalUrl": "https://www.subtext.coffee/products/mexico-rogelio-santiz-washed-pink-bourbon",
+    "html": "<h1> </h1><script>window.ShopifyAnalytics.meta.currency = \"CAD\"; var meta = {\"product\":{\"id\":9582901166293,\"gid\":\"gid://shopify/Product/9582901166293\",\"vendor\":\"Subtext Coffee Roasters\",\"type\":\"Coffee\",\"handle\":\"mexico-rogelio-santiz-washed-pink-bourbon\",\"variants\":[{\"id\":54861115228373,\"price\":3300,\"name\":\"Rogelio Santiz, Mexico Washed Pink Bourbon - 250g\",\"public_title\":\"250g\",\"sku\":\"R-MRS-250G\"},{\"id\":54861115261141,\"price\":6500,\"name\":\"Rogelio Santiz, Mexico Washed Pink Bourbon - 500g\",\"public_title\":\"500g\",\"sku\":\"R-MRS-500G\"},{\"id\":54861118374101,\"price\":10050,\"name\":\"Rogelio Santiz, Mexico Washed Pink Bourbon - 1kg\",\"public_title\":\"1kg\",\"sku\":\"R-MRS-1KG\"}],\"remote\":false}};</script>",
+    "product": {
+      "id": 9582901166293,
+      "title": "Rogelio Santiz, Mexico Washed Pink Bourbon",
+      "handle": "mexico-rogelio-santiz-washed-pink-bourbon",
+      "body_html": "<p><span data-sheets-userformat='{\"2\":769,\"3\":{\"1\":0},\"11\":4,\"12\":0}' data-sheets-value='{\"1\":2,\"2\":\"Order by Monday 12pm EST for Wednesday local delivery/shipment or Wednesday 12pm EST for Saturday local delivery/ shipment.\"}'>Order by Sunday 11:59 pm EST for Wednesday shipment or Tuesday 11:59 pm EST for Friday shipment.</span></p>",
+      "product_type": "Coffee",
+      "vendor": "Subtext Coffee Roasters",
+      "tags": "Filter Beans, Reserve Beans",
+      "variants": [
+        {
+          "id": 54861115228373,
+          "product_id": 9582901166293,
+          "title": "250g",
+          "price": "33.00",
+          "sku": "R-MRS-250G",
+          "position": 1,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "250g",
+          "option2": null,
+          "option3": null,
+          "created_at": "2026-09-08T09:59:20-04:00",
+          "updated_at": "2026-10-08T01:10:32-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 250,
+          "image_id": null,
+          "weight": 250,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "CAD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 54861115261141,
+          "product_id": 9582901166293,
+          "title": "500g",
+          "price": "65.00",
+          "sku": "R-MRS-500G",
+          "position": 2,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "500g",
+          "option2": null,
+          "option3": null,
+          "created_at": "2026-09-08T09:59:20-04:00",
+          "updated_at": "2026-10-08T01:10:32-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 500,
+          "image_id": null,
+          "weight": 500,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "CAD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 54861118374101,
+          "product_id": 9582901166293,
+          "title": "1kg",
+          "price": "100.50",
+          "sku": "R-MRS-1KG",
+          "position": 3,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "1kg",
+          "option2": null,
+          "option3": null,
+          "created_at": "2026-09-08T10:00:30-04:00",
+          "updated_at": "2026-10-08T01:10:32-04:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 250,
+          "image_id": null,
+          "weight": 250,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "CAD",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 52851011322069,
+          "product_id": 9582901166293,
+          "position": 1,
+          "created_at": "2026-09-08T09:59:51-04:00",
+          "updated_at": "2026-09-08T09:59:52-04:00",
+          "alt": null,
+          "width": 884,
+          "height": 884,
+          "src": "https://cdn.shopify.com/s/files/1/0267/9953/8273/files/RogelioSantiz.png?v=1788875992",
+          "variant_ids": []
+        }
+      ],
+      "options": [
+        {
+          "id": 12182905782485,
+          "product_id": 9582901166293,
+          "name": "Size",
+          "position": 1,
+          "values": [
+            "250g",
+            "500g",
+            "1kg"
+          ]
+        }
+      ]
+    },
+    "ajax": {
+      "id": 9582901166293,
+      "variants": [
+        {
+          "id": 54861115228373,
+          "available": false
+        },
+        {
+          "id": 54861115261141,
+          "available": false
+        },
+        {
+          "id": 54861118374101,
+          "available": false
+        }
+      ]
+    },
+    "expected": [
+      {
+        "id": "54861115228373",
+        "currency": "CAD",
+        "minor": 3300,
+        "state": "sold_out",
+        "weight": 250
+      },
+      {
+        "id": "54861115261141",
+        "currency": "CAD",
+        "minor": 6500,
+        "state": "sold_out",
+        "weight": 500
+      },
+      {
+        "id": "54861118374101",
+        "currency": "CAD",
+        "minor": 10050,
+        "state": "sold_out",
+        "weight": 1000
+      }
+    ]
+  },
+  {
+    "name": "Sweven",
+    "url": "https://swevencoffee.co.uk/products/los-rodriguez-geisha-apex",
+    "finalUrl": "https://swevencoffee.co.uk/products/los-rodriguez-geisha-apex",
+    "html": "<h1>\n            Los Rodriguez – Geisha Apex\n          </h1><script type=\"application/ld+json\">{\"@context\":\"http://schema.org/\",\"@id\":\"/products/los-rodriguez-geisha-apex#product\",\"@type\":\"ProductGroup\",\"brand\":{\"@type\":\"Brand\",\"name\":\"Sweven Coffee\"},\"category\":\"Coffee\",\"description\":\"\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nCaranavi, Bolivia – Coco Natural Geisha Apex\\nAn exceptional, competition-level Bolivian Geisha from the Apex collection, cultivated and processed by the Rodriguez family using their innovative Coco Natural drying process.\\n\\n\\n\\n\\nWhat to expect in the cup\\n\\n\\n\\nWhite Peach · Bergamot · Jasmine\\nSweet, elegantly creamy and complex, with layered stone-fruit acidity, delicate floral-citrus character, and a lingering jasmine finish.\\n\\n\\n\\n\\n\\n\\n\\n\\n\",\"hasVariant\":[{\"@id\":\"/products/los-rodriguez-geisha-apex?variant=57762520334720#variant\",\"@type\":\"Product\",\"image\":\"https://swevencoffee.co.uk/cdn/shop/files/LosRodriguezGeisha_0f46c785-59f9-41d1-8794-8f55c9727a91.jpg?v=1784801136&width=1920\",\"name\":\"Los Rodriguez – Geisha Apex - 3.5oz / 100g / Filter\",\"offers\":{\"@id\":\"/products/los-rodriguez-geisha-apex?variant=57762520334720#offer\",\"@type\":\"Offer\",\"availability\":\"http://schema.org/OutOfStock\",\"price\":\"18.00\",\"priceCurrency\":\"GBP\",\"url\":\"https://swevencoffee.co.uk/products/los-rodriguez-geisha-apex?variant=57762520334720\"}},{\"@id\":\"/products/los-rodriguez-geisha-apex?variant=57762520367488#variant\",\"@type\":\"Product\",\"image\":\"https://swevencoffee.co.uk/cdn/shop/files/LosRodriguezGeisha_0f46c785-59f9-41d1-8794-8f55c9727a91.jpg?v=1784801136&width=1920\",\"name\":\"Los Rodriguez – Geisha Apex - 7oz / 200g / Filter\",\"offers\":{\"@id\":\"/products/los-rodriguez-geisha-apex?variant=57762520367488#offer\",\"@type\":\"Offer\",\"availability\":\"http://schema.org/OutOfStock\",\"price\":\"35.00\",\"priceCurrency\":\"GBP\",\"url\":\"https://swevencoffee.co.uk/products/los-rodriguez-geisha-apex?variant=57762520367488\"}},{\"@id\":\"/products/los-rodriguez-geisha-apex?variant=57762520400256#variant\",\"@type\":\"Product\",\"image\":\"https://swevencoffee.co.uk/cdn/shop/files/LosRodriguezGeisha_0f46c785-59f9-41d1-8794-8f55c9727a91.jpg?v=1784801136&width=1920\",\"name\":\"Los Rodriguez – Geisha Apex - 17.5oz / 500g / Filter\",\"offers\":{\"@id\":\"/products/los-rodriguez-geisha-apex?variant=57762520400256#offer\",\"@type\":\"Offer\",\"availability\":\"http://schema.org/OutOfStock\",\"price\":\"85.00\",\"priceCurrency\":\"GBP\",\"url\":\"https://swevencoffee.co.uk/products/los-rodriguez-geisha-apex?variant=57762520400256\"}}],\"name\":\"Los Rodriguez – Geisha Apex\",\"productGroupID\":\"15661671743872\",\"url\":\"https://swevencoffee.co.uk/products/los-rodriguez-geisha-apex\"}</script><script>window.ShopifyAnalytics.meta.currency = \"GBP\"; var meta = {\"product\":{\"id\":15661671743872,\"gid\":\"gid://shopify/Product/15661671743872\",\"vendor\":\"Sweven Coffee\",\"type\":\"coffee\",\"handle\":\"los-rodriguez-geisha-apex\",\"variants\":[{\"id\":57762520334720,\"price\":1800,\"name\":\"Los Rodriguez – Geisha Apex - 3.5oz / 100g / Filter\",\"public_title\":\"3.5oz / 100g / Filter\",\"sku\":null},{\"id\":57762520367488,\"price\":3500,\"name\":\"Los Rodriguez – Geisha Apex - 7oz / 200g / Filter\",\"public_title\":\"7oz / 200g / Filter\",\"sku\":null},{\"id\":57762520400256,\"price\":8500,\"name\":\"Los Rodriguez – Geisha Apex - 17.5oz / 500g / Filter\",\"public_title\":\"17.5oz / 500g / Filter\",\"sku\":null}],\"remote\":false}};</script>",
+    "product": {
+      "id": 15661671743872,
+      "title": "Los Rodriguez – Geisha Apex",
+      "handle": "los-rodriguez-geisha-apex",
+      "body_html": "<div class=\"elementor-element elementor-element-409d34c elementor-widget elementor-widget-woocommerce-product-content\">\n<div class=\"elementor-widget-container\">\n<div class=\"elementor-element elementor-element-409d34c elementor-widget elementor-widget-woocommerce-product-content\">\n<div class=\"elementor-widget-container\">\n<div class=\"elementor-element elementor-element-409d34c elementor-widget elementor-widget-woocommerce-product-content\">\n<div class=\"elementor-widget-container\">\n<div class=\"elementor-element elementor-element-409d34c elementor-widget elementor-widget-woocommerce-product-content\">\n<div class=\"elementor-widget-container\">\n<div class=\"elementor-element elementor-element-409d34c elementor-widget elementor-widget-woocommerce-product-content\">\n<div class=\"elementor-widget-container\">\n<p><strong>Caranavi, Bolivia – Coco Natural Geisha Apex</strong></p>\n<p><em>An exceptional, competition-level Bolivian Geisha from the Apex collection, cultivated and processed by the Rodriguez family using their innovative Coco Natural drying process.</em></p>\n</div>\n</div>\n<div class=\"elementor-element elementor-element-7d3278e elementor-widget elementor-widget-heading\">\n<div class=\"elementor-widget-container\">\n<h4 class=\"elementor-heading-title elementor-size-default\">What to expect in the cup</h4>\n</div>\n</div>\n<div class=\"elementor-element elementor-element-73d00ab elementor-widget elementor-widget-text-editor\">\n<div class=\"elementor-widget-container\">White Peach · Bergamot · Jasmine</div>\n<div class=\"elementor-widget-container\">Sweet, elegantly creamy and complex, with layered stone-fruit acidity, delicate floral-citrus character, and a lingering jasmine finish.</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+      "product_type": "coffee",
+      "vendor": "Sweven Coffee",
+      "tags": "Limited Release, Rare & Exclusive",
+      "variants": [
+        {
+          "id": 57762520334720,
+          "product_id": 15661671743872,
+          "title": "3.5oz / 100g / Filter",
+          "price": "18.00",
+          "sku": null,
+          "position": 1,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "3.5oz / 100g",
+          "option2": "Filter",
+          "option3": null,
+          "created_at": "2026-03-30T07:47:10+01:00",
+          "updated_at": "2026-10-08T06:14:46+01:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 150,
+          "image_id": null,
+          "weight": 150,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 57762520367488,
+          "product_id": 15661671743872,
+          "title": "7oz / 200g / Filter",
+          "price": "35.00",
+          "sku": null,
+          "position": 2,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "7oz / 200g",
+          "option2": "Filter",
+          "option3": null,
+          "created_at": "2026-03-30T07:47:10+01:00",
+          "updated_at": "2026-10-08T06:14:46+01:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 250,
+          "image_id": null,
+          "weight": 250,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        },
+        {
+          "id": 57762520400256,
+          "product_id": 15661671743872,
+          "title": "17.5oz / 500g / Filter",
+          "price": "85.00",
+          "sku": null,
+          "position": 3,
+          "compare_at_price": "",
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "17.5oz / 500g",
+          "option2": "Filter",
+          "option3": null,
+          "created_at": "2026-03-30T07:47:10+01:00",
+          "updated_at": "2026-10-08T06:14:46+01:00",
+          "taxable": false,
+          "barcode": null,
+          "grams": 535,
+          "image_id": null,
+          "weight": 535,
+          "weight_unit": "g",
+          "requires_shipping": true,
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          },
+          "price_currency": "GBP",
+          "compare_at_price_currency": "",
+          "quantity_price_breaks": []
+        }
+      ],
+      "images": [
+        {
+          "id": 85995907973504,
+          "product_id": 15661671743872,
+          "position": 1,
+          "created_at": "2026-07-23T11:05:32+01:00",
+          "updated_at": "2026-07-23T11:05:36+01:00",
+          "alt": null,
+          "width": 3438,
+          "height": 3437,
+          "src": "https://cdn.shopify.com/s/files/1/0976/7157/7984/files/LosRodriguezGeisha_0f46c785-59f9-41d1-8794-8f55c9727a91.jpg?v=1784801136",
+          "variant_ids": []
+        }
+      ],
+      "options": [
+        {
+          "id": 18151003357568,
+          "product_id": 15661671743872,
+          "name": "Weight",
+          "position": 1,
+          "values": [
+            "3.5oz / 100g",
+            "7oz / 200g",
+            "17.5oz / 500g"
+          ]
+        },
+        {
+          "id": 18151003390336,
+          "product_id": 15661671743872,
+          "name": "Roasted for",
+          "position": 2,
+          "values": [
+            "Filter"
+          ]
+        }
+      ]
+    },
+    "ajax": {
+      "id": 15661671743872,
+      "variants": [
+        {
+          "id": 57762520334720,
+          "available": false
+        },
+        {
+          "id": 57762520367488,
+          "available": false
+        },
+        {
+          "id": 57762520400256,
+          "available": false
+        }
+      ]
+    },
+    "expected": [
+      {
+        "id": "57762520334720",
+        "currency": "GBP",
+        "minor": 1800,
+        "state": "sold_out",
+        "weight": 100
+      },
+      {
+        "id": "57762520367488",
+        "currency": "GBP",
+        "minor": 3500,
+        "state": "sold_out",
+        "weight": 200
+      },
+      {
+        "id": "57762520400256",
+        "currency": "GBP",
+        "minor": 8500,
+        "state": "sold_out",
+        "weight": 500
+      }
+    ]
+  }
+]

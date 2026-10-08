@@ -12,6 +12,20 @@ const METHOD_RULES=[
  ['lactic_fermentation',/\b(?:lactic|lactico|lactica|lactique)\b/],
  ['thermal_shock',/\bthermal shock\b/],
 ];
+// A processing label can explicitly deny a method. Keep its original wording,
+// but require a positive occurrence before adding a searchable method.
+const NEGATION=String.raw`\b(?:not|no|non|without|never|sin|nicht)`;
+const METHOD_WORDS=METHOD_RULES.map(([,pattern])=>'(?:'+pattern.source+')').join('|');
+const DIRECT_NEGATION=new RegExp(NEGATION+String.raw`(?:[ -]+(?:actually|necessarily|really|ever|fully|been)){0,2}[ -]*$`);
+const JOINED_NEGATION=new RegExp(NEGATION+String.raw`[ -]+(?:`+METHOD_WORDS+String.raw`)(?:\s*(?:and|or|y|und|/)\s*(?:`+METHOD_WORDS+String.raw`))*\s*(?:and|or|y|und|/)\s*$`);
+function positiveMethod(text,pattern) {
+ for(const match of text.matchAll(new RegExp(pattern.source,pattern.flags.includes('g')?pattern.flags:pattern.flags+'g'))) {
+  const lead=text.slice(0,match.index).split(/[,;.!?()]|\b(?:but|however|yet|sondern|pero)\b/).at(-1);
+  if(DIRECT_NEGATION.test(lead)||JOINED_NEGATION.test(lead)||/\b(?:instead of|rather than)\s*$/.test(lead))continue;
+  return true;
+ }
+ return false;
+}
 const fold=value=>String(value||'').normalize('NFKD').replace(/\p{M}/gu,'').replace(/[\u2010-\u2015]/g,'-').toLowerCase();
 const clean=value=>typeof value==='string'&&value.trim()&&!/^(?:null|unknown|n\/a)$/i.test(value.trim())?value.replace(/\s+/g,' ').trim():null;
 const PROCESS_LABEL=/^(?:coffee\s+)?(?:process(?:ing)?(?:\s+method)?|processing_method|proceso|procesamiento|aufbereitung|verarbeitung|methode de traitement)\s*:?$/i;
@@ -46,8 +60,8 @@ function processingForProduct(product,{sourceText,sourceAttributes,source='produ
  const productTitle=title??product.name??'';
  // Distinctive fermentation wording can be explicit in the original product title;
  // generic natural/honey tasting adjectives are not process evidence.
- if(!processRaw){const match=productTitle.match(/\b(?:anaerobic|carbonic maceration|thermal shock)\b/i);if(match)processRaw=match[0];}
- const methods=processRaw&&!/\b(?:maybe|possibly|unknown|uncertain)\b|\?/i.test(processRaw)?METHOD_RULES.filter(([,r])=>r.test(fold(processRaw))).map(([name])=>name):[];
+ if(!processRaw){const match=productTitle.match(/\b(?:anaerobic|carbonic maceration|thermal shock)\b/i);if(match&&positiveMethod(fold(productTitle),new RegExp(match[0],'i')))processRaw=match[0];}
+ const methods=processRaw&&!/\b(?:maybe|possibly|unknown|uncertain)\b|\?/i.test(processRaw)?METHOD_RULES.filter(([,r])=>positiveMethod(fold(processRaw),r)).map(([name])=>name):[];
  const coPattern=/\b(?:co|ko)[\s\u2010-\u2015-]?ferment\w*/i;
  const claims=[...(processRaw?[{text:processRaw,source:'process_field'}]:[]),{text:productTitle,source:'product_title'},...lines.flatMap(line=>line.match(/[^.!?]+[.!?]?/g)||[line]).filter(line=>coPattern.test(fold(line))).map(text=>({text,source}))];
  let positive=false,negative=false;const disclosures=[];

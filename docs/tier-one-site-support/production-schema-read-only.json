@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-08T03:42:25.633472+00:00",
+  "mode": "production-schema-read-only",
+  "tables": {
+    "products": {
+      "missing_columns": []
+    },
+    "product_variants": {
+      "missing_columns": []
+    },
+    "coffee_facts": {
+      "missing_columns": [
+        "process_methods",
+        "is_coferment",
+        "coferment_ingredients",
+        "processing_evidence"
+      ]
+    }
+  },
+  "functions": {
+    "save_catalog_product_v1": true,
+    "save_catalog_product_v2": false,
+    "update_catalog_availability_v1": true
+  },
+  "production_writes": 0
+}

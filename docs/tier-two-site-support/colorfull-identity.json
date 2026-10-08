@@ -1,0 +1,216 @@
+{
+  "evidence": [
+    {
+      "url": "https://colorfullcoffee.com/",
+      "title": "American ExpressApple PayDiners ClubDiscoverGoogle PayMastercardPayPalShop PayVisa",
+      "text": " Sorry, your browser doesn't support embedded videos. Drink More Colorfully New coffees... finally <img class=\"absolute left-0 top-0 bottom-0 right-0 object-contain w-full h-full\" src=\"//colorfullcoffee.com/cdn/shop/files/Quality_87_2048x2048.svg?v=1681458924\" alt=\"\" style=\"object-position: 50.0% 50.0%;\"> <img class=\"absolute left-0 top-0 bottom-0 right-0 object-contain w-full h-full\" src=\"//colorfullcoffee.com/cdn/shop/files/Quality_88_2048x2048.svg?v=1681458958\" alt=\"\" style=\"object-position: 50.0% 50.0%;\"> <img class=\"absolute left-0 top-0 bottom-0 right-0 object-contain w-full h-full\" src=\"//colorfullcoffee.com/cdn/shop/files/Quality_89_2048x2048.svg?v=1681459043\" alt=\"\" style=\"object-position: 50.0% 50.0%;\"> <img class=\"absolute left-0 top-0 bottom-0 right-0 object-contain w-full h-full\" src=\"//colorfullcoffee.com/cdn/shop/files/Quality_90_2048x2048.svg?v=1681459100\" alt=\"\" style=\"object-position: 50.0% 50.0%;\"> #shopify-section-template--16178066194600__2c9438b9-5e30-4105-9268-9f7a8fd1db11 .relative {padding-right: 1%; padding-left: 1%;} NEW ARRIVALS The Pink Honey - Blend <div class=\"absolute top-0 left-0 w-full h-full\"> <img class=\" \" src=\"//colorfullcoffee.com/cdn/shop/files/pinkhony_1_1_2048x2048.jpg?v=1790685286\" alt=\"The Pink Honey - Blend\"> </div> The Pink Honey - Blend from $18.00 BLUEBERRY BOMB! PIE 2.0 <div class=\"absolute top-0 left-0 w-full h-full\"> <img class=\" \" src=\"//colorfullcoffee.com/cdn/shop/files/bulueberry_bomb_pie_2048x2048.jpg?v=1761593670\" alt=\"BLUEBERRY BOMB! PIE 2.0\"> </div> BLUEBERRY BOMB! PIE 2.0 from $21.00 More than the sum of their parts We believe blends have been relegated to poor quality, espresso-only options. While the initial plan was to sell single-origin options, we just couldn’t find what we were looking for in those 173 samples, so we decided to try and build the types of coffees we love through blending instead of waiting to find them through endless sampling. About us #shopify-section-template--16178066194600__87e24044-f6f3-4e9b-bd3b-faa918c2afa3 div {padding-top: 0; padding-bottom: 0; border: none;} Get involved in the Colorfull Coffee Community We started our own discord because we saw a need for a safe and open coffee community where coffee-lovers can share and discuss their brewing tips and tricks with other coffee geeks. Join us for some fun coffee-talks! Join our Discord "
+    },
+    {
+      "url": "https://colorfullcoffee.com/collections.json",
+      "data": {
+        "collections": [
+          {
+            "id": 297818456232,
+            "title": "Blends",
+            "handle": "blends",
+            "description": "",
+            "published_at": "2023-03-17T06:03:07-04:00",
+            "updated_at": "2026-10-07T07:10:13-04:00",
+            "image": null,
+            "products_count": 16
+          },
+          {
+            "id": 335323037864,
+            "title": "Decaf",
+            "handle": "decafs",
+            "description": "<p>Our personal pride and joy, this a collection for all the caffeines sensitive among us. We recommend 2 weeks of resting time for optimal flavour.</p>",
+            "published_at": "2025-10-27T10:44:17-04:00",
+            "updated_at": "2026-10-07T07:10:13-04:00",
+            "image": null,
+            "products_count": 8
+          },
+          {
+            "id": 343936794792,
+            "title": "Edwin Noreña Co-Ferment Trio",
+            "handle": "edwin-norena-co-ferment-trio",
+            "description": "",
+            "published_at": "2026-04-10T07:14:53-04:00",
+            "updated_at": "2026-10-07T07:10:13-04:00",
+            "image": null,
+            "products_count": 3
+          },
+          {
+            "id": 335320678568,
+            "title": "Espresso",
+            "handle": "espresso-coffee",
+            "description": "<p>Some of our more well-rounded and balanced coffees. For the most part, these coffees are roasted a touch more developped than our filter, and we recommend 2 weeks of resting time for optimal flavour.</p>",
+            "published_at": "2025-10-27T09:43:00-04:00",
+            "updated_at": "2026-10-07T07:10:13-04:00",
+            "image": null,
+            "products_count": 5
+          },
+          {
+            "id": 335320645800,
+            "title": "Filter",
+            "handle": "filter-coffee",
+            "description": "<p>Our lightest roast coffee, expect a myriade of varieties, processes, and flavours. For the most part, we recommend 3-4 weeks resting time for optimal flavour.</p>",
+            "published_at": "2025-10-27T09:42:40-04:00",
+            "updated_at": "2026-10-07T07:10:13-04:00",
+            "image": null,
+            "products_count": 11
+          },
+          {
+            "id": 203772854440,
+            "title": "Home page",
+            "handle": "frontpage",
+            "description": null,
+            "published_at": "2020-06-26T11:04:25-04:00",
+            "updated_at": "2026-10-07T07:10:13-04:00",
+            "image": null,
+            "products_count": 2
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://colorfullcoffee.com/products.json?limit=250&page=1",
+      "data": [
+        {
+          "id": 10320494788776,
+          "title": "The Pink Honey - Blend",
+          "handle": "the-pink-honey-blend",
+          "product_type": "Blend"
+        },
+        {
+          "id": 9586905284776,
+          "title": "Cinnamon Toast - Decaf",
+          "handle": "cinnamon-toast-decaf",
+          "product_type": "decaf"
+        },
+        {
+          "id": 9586905088168,
+          "title": "Strawberries & Cream - Espresso",
+          "handle": "strawberries-cream-espresso",
+          "product_type": "Blend"
+        },
+        {
+          "id": 9568123093160,
+          "title": "Baklava Popsicle - Decaf Blend",
+          "handle": "baklava-popsicle-decaf",
+          "product_type": "Blend"
+        },
+        {
+          "id": 9171903348904,
+          "title": "BLUEBERRY BOMB! PIE 2.0",
+          "handle": "blueberry-bomb-pie",
+          "product_type": ""
+        },
+        {
+          "id": 9506412363944,
+          "title": "Guava Java - Decaf",
+          "handle": "guava-java-decaf",
+          "product_type": ""
+        },
+        {
+          "id": 9506400567464,
+          "title": "Guava Java - Single Origin",
+          "handle": "guava-java-single-origin",
+          "product_type": ""
+        },
+        {
+          "id": 9171622854824,
+          "title": "STRAWBERRY COULIS - ESPRESSO",
+          "handle": "strawberry-coulis-espresso",
+          "product_type": ""
+        },
+        {
+          "id": 8762994720936,
+          "title": "VANILLA MARSHMALLOW",
+          "handle": "java-geisha",
+          "product_type": "Blend"
+        },
+        {
+          "id": 9373278175400,
+          "title": "TARTE-TATIN - BLEND",
+          "handle": "tarte-tatin-blend",
+          "product_type": "Blend"
+        },
+        {
+          "id": 9373281845416,
+          "title": "SAKURA - BLEND",
+          "handle": "sakura-blend",
+          "product_type": "Blend"
+        },
+        {
+          "id": 9228396167336,
+          "title": "BLACK FOREST - DECAF",
+          "handle": "black-forest-decaf",
+          "product_type": ""
+        },
+        {
+          "id": 8944027271336,
+          "title": "CHOCOLATE WAFER - ESPRESSO",
+          "handle": "chocolate-wafer-espresso",
+          "product_type": "Blend"
+        },
+        {
+          "id": 8762985349288,
+          "title": "ORANGE MARMALADE SHORTBREAD - DECAF",
+          "handle": "orange-cake",
+          "product_type": "Blend"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/",
+      "status": 200,
+      "at": "2026-10-08T04:00:53.157Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/collections.json",
+      "status": 200,
+      "at": "2026-10-08T04:00:53.550Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/products.json?limit=250&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:00:54.060Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/pages/about",
+      "status": 200,
+      "at": "2026-10-08T04:13:57.784Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/",
+      "status": 200,
+      "at": "2026-10-08T04:13:58.305Z"
+    }
+  ],
+  "production_writes": 0,
+  "prohibited_requests": 0,
+  "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+  "identity_status": "matched",
+  "catalog_evidence": {
+    "source": "Coordinator fresh read-only search across all entities",
+    "name": "Colorfull Coffee",
+    "website_url": "https://colorfullcoffee.com",
+    "location": "Canadian Roasting Society; 3780 Saint-Patrick St., Montreal, Quebec H4E 1A2",
+    "entity_roles": [],
+    "production_write": false
+  },
+  "official_verification": {
+    "about_url": "https://colorfullcoffee.com/pages/about",
+    "merchant_name": "Colorfull Coffee Co. / Colorfull Coffee Corp",
+    "declared_business": "Official About page expressly identifies a coffee roasting company.",
+    "domain_matches_existing_entity": true
+  },
+  "selection_blocker": "Entity exists with no roaster role; parent must review classification. No duplicate entity or role write."
+}

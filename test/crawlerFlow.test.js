@@ -18,7 +18,7 @@ function modules(db,state) {
       if(name==='./imageDownloader')return{downloadAndSaveImage:async()=>null};
       if(name==='./httpClient')return{fetchHtml:async()=>({success:true,data:state.html,status:200,finalUrl:url}),jitteredSleep:async()=>{}};
       if(name==='./shopifyProduct')return{...nativeRequire(name),fetchShopifyProductJson:async()=>({success:true,raw:state.native,data:parseShopifyProduct(state.native)})};
-      if(name.startsWith('./') && !name.endsWith('.cjs'))return load(nativeRequire.resolve(name));
+      if(name.startsWith('./') && !name.endsWith('.cjs') && !name.endsWith('.json'))return load(nativeRequire.resolve(name));
       return nativeRequire(name);
     }
     vm.runInThisContext(`(function(require,module,exports){${fs.readFileSync(file,'utf8')}\n})`,{filename:file})(requireMock,module,module.exports);return module.exports;
@@ -58,4 +58,26 @@ test('stock-only transaction emits invalidation and removal reaches every varian
     assert.equal((await pg.query('select is_available from products')).rows[0].is_available,false);
     const e=(await pg.query('select * from catalog_change_events order by id desc')).rows[0];assert.equal(e.content_changed,false);assert.equal(e.market_changed,true);
   } finally{await pg.close();}
+});
+test('merchant soft 404 overrides cached native stock without refreshing product sightings or changing identity/content',async()=>{
+  const pg=await catalogDb();try{
+    await pg.query('insert into entities(id) values($1)',[owner]);const state=fixture(),m=modules(supabaseAdapter(pg),state),acc=new m.accumulator(owner,'Fixture',log);
+    acc.addUrl(url);await m.visitor.visitAllPages(owner,[{url}],acc,log,'shopify');
+    const before=(await pg.query('select id,slug,last_seen_at,name,metadata,description_raw from products')).rows[0];
+    state.html='<main><h1>Page not found</h1><p>Sorry, we could not find this page.</p></main>';state.native.variants[0].available=true;
+    const result=await m.visitor.visitAllPages(owner,[{url}],acc,log,'shopify');assert.equal(result.errors,0);assert.equal(result.coffeeFound,0);assert.equal(state.aiCalls,1);
+    const after=(await pg.query('select id,slug,last_seen_at,name,metadata,description_raw from products')).rows[0];assert.deepEqual(after,before);
+    assert.equal((await pg.query('select availability_state from products')).rows[0].availability_state,'removed');
+    assert((await pg.query('select availability_state from product_variants')).rows.every(v=>v.availability_state==='removed'));
+  }finally{await pg.close();}
+});
+test('omitted-product reconciliation keeps guarded page reads and lets a primary soft 404 override cached Shopify stock',async()=>{
+  const pg=await catalogDb();try{
+    await pg.query('insert into entities(id) values($1)',[owner]);const state=fixture(),m=modules(supabaseAdapter(pg),state),acc=new m.accumulator(owner,'Fixture',log);
+    acc.addUrl(url);await m.visitor.visitAllPages(owner,[{url}],acc,log,'shopify');
+    const requests=[];
+    const result=await m.availability.reconcileRoasterAvailability({entityId:owner,surfaceUrls:['https://shop.test/products/new'],platform:'shopify',log,
+      fetchPage:async value=>{requests.push(value);return {success:true,html:'<main><h1>Page not found</h1></main>',status:200,finalUrl:value};},fetchJson:async()=>{throw Error('Cached native JSON must not override removal');}});
+    assert.deepEqual(requests,[url]);assert.equal(result.removed,1);assert.equal((await pg.query('select availability_state from products')).rows[0].availability_state,'removed');
+  }finally{await pg.close();}
 });

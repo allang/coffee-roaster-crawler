@@ -1,0 +1,204 @@
+{
+  "checked_at": "2026-10-08T09:54:45.879823+00:00",
+  "mode": "completion-and-blocker-audit",
+  "full_site_scope": 60,
+  "registered_prepared_sites": 54,
+  "goal_completed": false,
+  "production_writes": 0,
+  "runtime_or_deployment_changed": false,
+  "tested_source_commit": "a0dc2d16c3791b03d0d5dc4735b0baefa10b6cc6",
+  "crawler_tests_passed": 353,
+  "ci_at_tested_source": "both checks SUCCESS",
+  "all_worker_sessions_archived": true,
+  "catalog_blocker_readback": {
+    "checked_at": "2026-10-08T09:43:00.666518+00:00",
+    "catalog_readback": {
+      "Aery": [],
+      "Apiary": [],
+      "Passport": [],
+      "Colorfull": [
+        {
+          "id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+          "name": "Colorfull Coffee",
+          "slug": "colorfull-coffee",
+          "website_url": "https://colorfullcoffee.com",
+          "entity_roles": []
+        }
+      ]
+    },
+    "production_writes": 0
+  },
+  "txt_current_http_readback": {
+    "checked_at": "2026-10-08T09:43:02.740Z",
+    "rows": [
+      {
+        "url": "https://smartstore.naver.com/txtcoffee",
+        "status": 429,
+        "success": false,
+        "error": "HTTP 429",
+        "final_url": "https://smartstore.naver.com/txtcoffee",
+        "body_sha256": null
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+        "status": 200,
+        "success": true,
+        "final_url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+        "body_sha256": "63adb38d1571135a43adc8a351be645bdb46e4211f1272823911577f9dca8cd9"
+      }
+    ],
+    "requests": [
+      {
+        "method": "GET",
+        "url": "https://smartstore.naver.com/txtcoffee",
+        "status": 429,
+        "at": "2026-10-08T09:43:00.975Z"
+      },
+      {
+        "method": "GET",
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+        "status": 200,
+        "at": "2026-10-08T09:43:01.923Z"
+      }
+    ],
+    "production_writes": 0,
+    "prohibited_requests": 0
+  },
+  "txt_current_option_readback": {
+    "checked_at": "2026-10-08T09:47:10.507Z",
+    "product_id": 207,
+    "product_code": "s20260717b4233092c4221",
+    "edited_at": 1787129219,
+    "is_soldout": true,
+    "results": [
+      {
+        "kind": "initial",
+        "rows": [
+          {
+            "label": "Filter",
+            "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607170105af2781a52', 'Filter',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })"
+          },
+          {
+            "label": "Espresso",
+            "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607171622da333b5ed', 'Espresso',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })"
+          },
+          {
+            "label": "Select Type first.",
+            "selector": "return false;"
+          }
+        ]
+      },
+      {
+        "kind": "dependent",
+        "selected": "Filter",
+        "rows": [
+          {
+            "label": "Filter",
+            "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607170105af2781a52', 'Filter',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })"
+          },
+          {
+            "label": "Espresso",
+            "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607171622da333b5ed', 'Espresso',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })"
+          },
+          {
+            "label": "150g $10.00 (Out of stock)",
+            "selector": "return false;"
+          },
+          {
+            "label": "400g $18.00 (Out of stock)",
+            "selector": "return false;"
+          },
+          {
+            "label": "850g $34.00 (Out of stock)",
+            "selector": "return false;"
+          }
+        ]
+      },
+      {
+        "kind": "dependent",
+        "selected": "Espresso",
+        "rows": [
+          {
+            "label": "Filter",
+            "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607170105af2781a52', 'Filter',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })"
+          },
+          {
+            "label": "Espresso",
+            "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607171622da333b5ed', 'Espresso',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })"
+          },
+          {
+            "label": "150g $10.00 (Out of stock)",
+            "selector": "return false;"
+          },
+          {
+            "label": "400g $18.00 (Out of stock)",
+            "selector": "return false;"
+          },
+          {
+            "label": "850g $34.00 (Out of stock)",
+            "selector": "return false;"
+          }
+        ]
+      }
+    ],
+    "requests": [
+      {
+        "method": "POST",
+        "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+        "status": 200,
+        "body": {
+          "type": "prod",
+          "prod_idx": "207",
+          "__": "1787129219"
+        },
+        "at": "2026-10-08T09:47:08.869Z",
+        "purpose": "public_product_options"
+      },
+      {
+        "method": "POST",
+        "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+        "status": 200,
+        "body": {
+          "type": "prod",
+          "prod_idx": "207",
+          "__": "1787129219",
+          "selected_require_options[0][value_type]": "SELECT",
+          "selected_require_options[0][option_code]": "O202607171591bd85be394",
+          "selected_require_options[0][value_code]": "O202607170105af2781a52"
+        },
+        "at": "2026-10-08T09:47:09.671Z",
+        "purpose": "public_product_options"
+      },
+      {
+        "method": "POST",
+        "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+        "status": 200,
+        "body": {
+          "type": "prod",
+          "prod_idx": "207",
+          "__": "1787129219",
+          "selected_require_options[0][value_type]": "SELECT",
+          "selected_require_options[0][option_code]": "O202607171591bd85be394",
+          "selected_require_options[0][value_code]": "O202607171622da333b5ed"
+        },
+        "at": "2026-10-08T09:47:10.504Z",
+        "purpose": "public_product_options"
+      }
+    ],
+    "production_writes": 0,
+    "prohibited_requests": 0
+  },
+  "onyx_tonics": "Current official homepage and public sitemap show a multi-roaster cafe, no priced online bean catalog; existing entity is cafe-only with no website. Intended entry clarification is pending.",
+  "pending_human_decisions": [
+    "Aery new verified catalog entry",
+    "Apiary and Passport new verified entries plus Colorfull roaster classification",
+    "Apply the verified photo-only repair",
+    "Confirm the intended Onyx Tonics entry"
+  ],
+  "external_data_needed": [
+    "Published exact .txt size/value and combination IDs with complete retail scope, or authoritative merchant export; accessible Korean inventory is separately needed for domestic scope."
+  ],
+  "deployment_gate": "User explicitly requires all tier-one and missing tier-two roaster products resolved before Mac mini update. This condition is not met.",
+  "recurrence_audit": "The same catalog-write authorization and .txt public-data barriers remained in the preceding two goal continuations and are revalidated here. Safe source preparation is complete for the available data; no current live worker/process is waiting to finish.",
+  "historical_note": "This blocker audit predates the user instruction to unblock yourself. See docs/crawler-unblocking-progress.json for subsequent changes."
+}

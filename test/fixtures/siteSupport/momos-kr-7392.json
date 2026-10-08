@@ -1,0 +1,179 @@
+{
+  "url": "https://momos.co.kr/shop_view?idx=7392",
+  "store": {
+    "@type": "OnlineStore",
+    "name": "모모스커피",
+    "url": "https://momos.co.kr",
+    "hasShippingService": {
+      "@type": "ShippingService",
+      "name": "배송 템플릿 A",
+      "fulfillmentType": "FulfillmentTypeDelivery",
+      "shippingConditions": [
+        {
+          "@type": "ShippingConditions",
+          "shippingOrigin": {
+            "@type": "DefinedRegion",
+            "addressCountry": "KR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "KR"
+          },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 2500,
+            "currency": "KRW"
+          },
+          "freeShippingThreshold": {
+            "@type": "MonetaryAmount",
+            "value": 40000,
+            "currency": "KRW"
+          }
+        }
+      ]
+    }
+  },
+  "primary": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "스페셜티 커피믹스 50개입",
+    "image": [
+      "https://cdn.imweb.me/thumbnail/20260828/ba826c0ff21f438b.png",
+      "https://cdn.imweb.me/thumbnail/20260902/7f4bc35e52534d87.png"
+    ],
+    "description": "본질을 향한 탐구 끝에 선보이는 스페셜티 커피믹스상품 정보고시식품유형커피제조원 및 판매원제조원: 자연그대로(주) / 경기 양주시 백석읍 부흥로 956번길 55판매원: 모모스커피 / 부산광역시 영도구... ",
+    "brand": {
+      "@type": "Brand",
+      "name": "자체브랜드"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 34000,
+      "priceCurrency": "KRW",
+      "url": "https://momos.co.kr/shop_view/?idx=7392",
+      "availability": "http://schema.org/InStock"
+    }
+  },
+  "native": {
+    "idx": 7392,
+    "site_code": "S2026022396690869a4918",
+    "code": "s202608284fda4a3ac4c1c",
+    "name": "스페셜티 커피믹스 50개입",
+    "price": 34000,
+    "price_none": false,
+    "options": [
+      {
+        "site_code": "S2026022396690869a4918",
+        "prod_code": "s202608284fda4a3ac4c1c",
+        "type": "default",
+        "code": "O20260828b3b824a58bcb7",
+        "name": "쇼핑백 여부",
+        "value_list": {
+          "O2026082801b95349900be": "추가 안함",
+          "O2026082893106603f0982": "쇼핑백 추가"
+        },
+        "is_require": true
+      },
+      {
+        "site_code": "S2026022396690869a4918",
+        "prod_code": "s202608284fda4a3ac4c1c",
+        "type": "default",
+        "code": "O20260828c66b2b817185e",
+        "name": "스페셜티 커피믹스 컵",
+        "value_list": {
+          "O20260828bfa31b3ed51dd": "추가 안함",
+          "O202608280f2c577bc384a": "스페셜티 커피믹스 컵"
+        },
+        "is_require": true
+      }
+    ],
+    "options_detail": [
+      {
+        "code": "od2026082868e15d3432e64",
+        "prod_code": "s202608284fda4a3ac4c1c",
+        "option_code_list": [
+          "O20260828b3b824a58bcb7",
+          "O20260828c66b2b817185e"
+        ],
+        "value_code_list": [
+          "O2026082801b95349900be",
+          "O20260828bfa31b3ed51dd"
+        ],
+        "stock_sku": "STI0007",
+        "price": 34000,
+        "stock": 9886,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260828937683d276300",
+        "prod_code": "s202608284fda4a3ac4c1c",
+        "option_code_list": [
+          "O20260828b3b824a58bcb7",
+          "O20260828c66b2b817185e"
+        ],
+        "value_code_list": [
+          "O2026082801b95349900be",
+          "O202608280f2c577bc384a"
+        ],
+        "stock_sku": "P0000ECU000E",
+        "price": 42000,
+        "stock": 9994,
+        "status": "SALE"
+      },
+      {
+        "code": "od20260828ca1fd1d3f67f0",
+        "prod_code": "s202608284fda4a3ac4c1c",
+        "option_code_list": [
+          "O20260828b3b824a58bcb7",
+          "O20260828c66b2b817185e"
+        ],
+        "value_code_list": [
+          "O2026082893106603f0982",
+          "O20260828bfa31b3ed51dd"
+        ],
+        "stock_sku": "STI0007A",
+        "price": 34100,
+        "stock": 9999,
+        "status": "SOLDOUT"
+      },
+      {
+        "code": "od2026082865b89b7de93cd",
+        "prod_code": "s202608284fda4a3ac4c1c",
+        "option_code_list": [
+          "O20260828b3b824a58bcb7",
+          "O20260828c66b2b817185e"
+        ],
+        "value_code_list": [
+          "O2026082893106603f0982",
+          "O202608280f2c577bc384a"
+        ],
+        "stock_sku": "P0000ECU000G",
+        "price": 42100,
+        "stock": 9999,
+        "status": "SOLDOUT"
+      }
+    ],
+    "prod_status": "sale",
+    "prod_soldout_status": "sale",
+    "deliv_data": [
+      {
+        "parcel": true
+      }
+    ],
+    "stock_use": true,
+    "stock_unlimit": false,
+    "stock_no_option": 0,
+    "simple_content": "<div class=\"tms-product-info\"><table style=\"width: 100%;\"><tbody><tr><td style=\"width: 100.0000%;\"><p>본질을 향한 탐구 끝에 선보이는 스페셜티 커피믹스</p></td></tr></tbody></table></div><div class=\"tms-product-tab tms-product-tab-desc active\"><h3 style=\"margin-top: 32px;\">상품 정보고시</h3><table style=\"width: 100%;\"><tbody><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>식품유형</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>커피</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>제조원 및 판매원</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>제조원: 자연그대로(주) / 경기 양주시 백석읍 부흥로 956번길 55<br>판매원: 모모스커피 / 부산광역시 영도구 봉래나루로 160</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>제조일자</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>제품 별도 표기</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>소비기한</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>제조일로부터 2년</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>내용량</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>50개입 / 500 g (10 g x 50 ea)</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>원재료명 및 함량</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>설탕, 식물성크림[물엿, 식물성경화유지{코코넛오일(외국산:인도네시아, 필리핀, 말레이시아 등)}, 제이인산칼륨, 카제인나트륨, 이산화규소], {커피12 % 커피원두100 %(브라질50 %, 콜롬비아50 %)} 우유함유</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>제품명</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>스페셜티 커피믹스 50개입</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>원산지</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>상세페이지 별도 표기</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>규격</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>140 x 206 x 94.3 (mm)&nbsp;</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>반품 및 교환</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>구입처 및 제조원</p></td></tr><tr><td style=\"width: 13.1356%; vertical-align: top;\"><p>고객 상담 전화</p></td><td style=\"width: 86.7103%; vertical-align: top;\"><p>051-512-7036</p></td></tr></tbody></table></div>",
+    "deleted": false,
+    "prod_type": "normal",
+    "use_pre_sale": false,
+    "use_period_discount": false,
+    "preSaleInfo": {
+      "enabled": false,
+      "startsAt": null,
+      "endsAt": null,
+      "isUpcoming": false,
+      "evaluatedAt": "2026-10-08T13:27:59+09:00"
+    }
+  }
+}

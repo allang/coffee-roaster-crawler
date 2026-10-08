@@ -1,0 +1,49 @@
+{
+  "id": 17349,
+  "name": "Finca Soledad Sydra Wave Washed",
+  "parent": 0,
+  "type": "simple",
+  "permalink": "https://xliiicoffee.com/en/product/finca-soledad-sydra-wave-washed-100gr/",
+  "categories": [
+    {
+      "id": 2507,
+      "name": "Wholesale",
+      "slug": "wholesale",
+      "link": "https://xliiicoffee.com/en/product-category/wholesale/"
+    }
+  ],
+  "prices": {
+    "price": "1000000",
+    "regular_price": "1000000",
+    "sale_price": "1000000",
+    "price_range": null,
+    "currency_code": "VND",
+    "currency_symbol": "VNĐ",
+    "currency_minor_unit": 0,
+    "currency_decimal_separator": ".",
+    "currency_thousand_separator": ".",
+    "currency_prefix": "",
+    "currency_suffix": " VNĐ"
+  },
+  "description": "<p>&nbsp;</p>\n<div id=\"mttContainer\" class=\"bootstrapiso notranslate\" style=\"transform: translate(876px, 126px)\" title=\"\" data-original-title=\"\"> </div>\n<div id=\"mttContainer\" class=\"bootstrapiso notranslate\" style=\"transform: translate(419px, 7px)\" title=\"\" data-original-title=\"\"> </div>",
+  "short_description": "<p style=\"text-align: justify\">Finca Soledad Sydra Wave Washed highlights the fertility of the Imbabura terroir, delivering an elegant cup through sustainable practices that emphasize the variety&#8217;s crisp acidity and delicate aromatics.</p>\n<div id=\"mttContainer\" class=\"bootstrapiso notranslate\" style=\"transform: translate(35px, 67px)\" title=\"\" data-original-title=\"\"> </div>\n<div id=\"mttContainer\" class=\"bootstrapiso notranslate\" style=\"transform: translate(708px, 10px)\" title=\"\" data-original-title=\"\"> </div>",
+  "images": [
+    {
+      "id": 17363,
+      "src": "https://xliiicoffee.com/wp-content/uploads/2026/09/202610020159-Finca-Soledad-Sydra-Wave-Washed-NC-2.webp",
+      "thumbnail": "https://xliiicoffee.com/wp-content/uploads/2026/09/202610020159-Finca-Soledad-Sydra-Wave-Washed-NC-2.webp",
+      "srcset": "",
+      "sizes": "(max-width: 1920px) 100vw, 1920px",
+      "thumbnail_srcset": "",
+      "thumbnail_sizes": "(max-width: 300px) 100vw, 300px",
+      "name": "Finca Soledad Sydra Wave Washed NC (2)",
+      "alt": "Finca Soledad Sydra Wave Washed NC 100gr"
+    }
+  ],
+  "attributes": [],
+  "variations": [],
+  "is_in_stock": true,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "weight": ""
+}

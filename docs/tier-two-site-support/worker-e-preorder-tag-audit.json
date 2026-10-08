@@ -1,0 +1,161 @@
+{
+  "checked_at": "2026-10-08T04:48:13.813Z",
+  "mode": "merchant-get-only-dry-run",
+  "evidence": [
+    {
+      "name": "Apiary",
+      "checked_coffee_products": 6,
+      "explicit_preorders": []
+    },
+    {
+      "name": "Colorfull",
+      "checked_coffee_products": 14,
+      "explicit_preorders": []
+    },
+    {
+      "name": "Klatch",
+      "checked_coffee_products": 43,
+      "explicit_preorders": []
+    },
+    {
+      "name": "Passport",
+      "checked_coffee_products": 255,
+      "explicit_preorders": []
+    },
+    {
+      "name": "Pilgrim",
+      "checked_coffee_products": 7,
+      "explicit_preorders": []
+    },
+    {
+      "name": "Square Mile",
+      "checked_coffee_products": 11,
+      "explicit_preorders": []
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/collections/frontpage/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:48:05.829Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://apiary.coffee/collections/frontpage/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:48:06.205Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/collections/all/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:48:06.594Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://colorfullcoffee.com/collections/all/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:48:06.857Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.klatchcoffee.com/collections/all-coffees/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:48:07.195Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.klatchcoffee.com/collections/all-coffees/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:48:07.525Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:48:08.236Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:48:08.595Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=3",
+      "status": 200,
+      "at": "2026-10-08T04:48:09.070Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=4",
+      "status": 200,
+      "at": "2026-10-08T04:48:09.618Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=5",
+      "status": 200,
+      "at": "2026-10-08T04:48:10.141Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=6",
+      "status": 200,
+      "at": "2026-10-08T04:48:10.651Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=7",
+      "status": 200,
+      "at": "2026-10-08T04:48:11.039Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/collections/all/products.json?limit=50&page=8",
+      "status": 200,
+      "at": "2026-10-08T04:48:11.422Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://pilgrimroasters.com/collections/whole-bean-coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:48:11.802Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://pilgrimroasters.com/collections/whole-bean-coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:48:12.132Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://pilgrimroasters.com/collections/roger-urena-collection/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:48:12.646Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://pilgrimroasters.com/collections/roger-urena-collection/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:48:13.136Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/collections/coffee/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T04:48:13.411Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.squaremilecoffee.com/collections/coffee/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T04:48:13.812Z"
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0
+}

@@ -1,0 +1,143 @@
+{
+  "validated_at": "2026-10-08T04:48:53.378Z",
+  "baseline_commit": "4eb448276ead8792afc157337d896e2bd5ec462c",
+  "branch": "codex/tier-two-roasters-d",
+  "test_command": "node --test test/*.test.js src/*.test.cjs",
+  "tests": {
+    "passed": 243,
+    "failed": 0,
+    "skipped": 0
+  },
+  "live": [
+    {
+      "name": "Ceremony",
+      "checked_at": "2026-10-08T04:40:35.135Z",
+      "coffee_products": 18,
+      "native_variants": 66,
+      "in_stock_products": 16,
+      "sold_out_products": 2,
+      "unknown_weights": 24,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 58
+    },
+    {
+      "name": "Color",
+      "checked_at": "2026-10-08T04:41:20.641Z",
+      "coffee_products": 29,
+      "native_variants": 620,
+      "in_stock_products": 29,
+      "sold_out_products": 0,
+      "unknown_weights": 4,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 91
+    },
+    {
+      "name": "Fathers",
+      "checked_at": "2026-10-08T04:41:57.662Z",
+      "coffee_products": 42,
+      "native_variants": 107,
+      "in_stock_products": 42,
+      "sold_out_products": 0,
+      "unknown_weights": 8,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 43
+    },
+    {
+      "name": "Koppi",
+      "checked_at": "2026-10-08T04:42:11.114Z",
+      "coffee_products": 7,
+      "native_variants": 14,
+      "in_stock_products": 7,
+      "sold_out_products": 0,
+      "unknown_weights": 0,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 27
+    },
+    {
+      "name": "La Cabra",
+      "checked_at": "2026-10-08T04:42:39.733Z",
+      "coffee_products": 15,
+      "native_variants": 25,
+      "in_stock_products": 13,
+      "sold_out_products": 2,
+      "unknown_weights": 10,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 56
+    },
+    {
+      "name": "Modcup",
+      "checked_at": "2026-10-08T04:43:05.902Z",
+      "coffee_products": 16,
+      "native_variants": 39,
+      "in_stock_products": 16,
+      "sold_out_products": 0,
+      "unknown_weights": 0,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 52
+    },
+    {
+      "name": "Mother Tongue",
+      "checked_at": "2026-10-08T04:43:21.275Z",
+      "coffee_products": 9,
+      "native_variants": 108,
+      "in_stock_products": 9,
+      "sold_out_products": 0,
+      "unknown_weights": 0,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 31
+    },
+    {
+      "name": "PERC",
+      "checked_at": "2026-10-08T04:46:37.544Z",
+      "coffee_products": 122,
+      "native_variants": 594,
+      "in_stock_products": 30,
+      "sold_out_products": 92,
+      "unknown_weights": 29,
+      "missing_descriptions": [
+        "Brazil Instant Packet"
+      ],
+      "missing_images": [],
+      "requests": 376
+    },
+    {
+      "name": "Three Marks",
+      "checked_at": "2026-10-08T04:47:03.046Z",
+      "coffee_products": 15,
+      "native_variants": 78,
+      "in_stock_products": 12,
+      "sold_out_products": 3,
+      "unknown_weights": 7,
+      "missing_descriptions": [],
+      "missing_images": [],
+      "requests": 51
+    }
+  ],
+  "total_coffee_products": 273,
+  "total_native_variants": 1651,
+  "assertions": [
+    "Complete inventory discovery and every URL yielded an exact coffee product",
+    "Every observed variant has a merchant ID, paired integer price and currency, and known stock",
+    "Every observed product has a native product ID",
+    "All nine supported inventories used guarded GET requests",
+    "Only assigned queue rows changed",
+    "No production writes, AI calls, or prohibited requests"
+  ],
+  "txt": {
+    "status": "blocked",
+    "english_coffees": 7,
+    "domestic_status": 429,
+    "native_size_value_ids_missing": true,
+    "authorized_public_option_reads": true
+  },
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0
+}

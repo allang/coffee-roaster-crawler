@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-10-08T08:08:54.835Z",
+  "production_writes": 0,
+  "products_rechecked": 2,
+  "native_adapter": "subbly_primary_variants_reviewed_formatter",
+  "new_photo_source": "Primary native product image absent from generic product schema.",
+  "reviewed_alias": {
+    "product_id": "703017ac-05e5-405d-9c7e-abf2d1bad67c",
+    "native_product_id": "419412",
+    "source_url": "https://www.hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural",
+    "final_url": "https://hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural",
+    "stored_title": "Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural",
+    "current_title": "CGLE Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural",
+    "official_primary_description_sha256": "cdd9920db586a97c1b3579818fabead3037ca53f3b5011acc5af4265cfd0dc28",
+    "matching_facts": {
+      "harvest": "2025",
+      "producer": "Rigoberto and Luis Eduardo Herrera",
+      "varietal": "Geisha",
+      "country": "Colombia"
+    },
+    "scope": "Only this exact product/owner/source/title tuple and native product ID; no broad title rule."
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural",
+      "status": 301,
+      "at": "2026-10-08T08:08:53.564Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural",
+      "status": 200,
+      "at": "2026-10-08T08:08:54.066Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://hatchcrafted.com/_next/static/chunks/1c2d9mkz_9smt.js",
+      "status": 200,
+      "at": "2026-10-08T08:08:54.807Z"
+    }
+  ],
+  "photos_verified": [
+    {
+      "product_id": "0acd81e4-5bfc-4dc0-88b9-767ed6f051c2",
+      "entity_id": "973e6bc5-2f7c-4213-ba81-27fa025ce64d",
+      "source_url": "https://www.hatchcrafted.com/shop/racing-into-the-night-2026",
+      "name": "Racing Into The Night",
+      "image_url": "https://cdn.filestackcontent.com/security=p:eyJleHBpcnkiOjE3OTE3NjY3OTl9,s:08667e83ca5d7c4166188a725a461542cad4e48f5c7eb10ecc268fed775f6ff2/resize=w:1000,h:1000,fit:max/output=format:png/quality=v:70/WO9BrljASCspMEP2j4YQ",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://hatchcrafted.com/shop/racing-into-the-night-2026",
+        "product_name": "Racing Into The Night"
+      },
+      "content_hash": "4b3ca73e80a4144f59e0453892ed8d5f",
+      "content_type": "image/png",
+      "width": 749,
+      "height": 1000,
+      "bytes": 245976
+    },
+    {
+      "product_id": "703017ac-05e5-405d-9c7e-abf2d1bad67c",
+      "entity_id": "973e6bc5-2f7c-4213-ba81-27fa025ce64d",
+      "source_url": "https://www.hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural",
+      "name": "Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural",
+      "image_url": "https://cdn.filestackcontent.com/security=p:eyJleHBpcnkiOjE3OTE3NjY3OTl9,s:08667e83ca5d7c4166188a725a461542cad4e48f5c7eb10ecc268fed775f6ff2/resize=w:1000,h:1000,fit:max/output=format:png/quality=v:70/g572KCpETHyVvwo1OGc7",
+      "image_evidence": {
+        "source": "adapter_primary_product",
+        "product_url": "https://hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural",
+        "product_name": "CGLE Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural",
+        "reviewed_title_alias": "Reviewed producer-prefix addition for this exact record. The current primary native product retains the canonical source URL and coffee title, adds CGLE, and explicitly agrees with the saved 2025 harvest, Herrera producers, Colombian origin and Geisha variety. Native product ID 419412 is required; no general producer-prefix normalization."
+      },
+      "content_hash": "7f71759779eb5ada353f6a1352ec2149",
+      "content_type": "image/png",
+      "width": 749,
+      "height": 1000,
+      "bytes": 236094
+    }
+  ],
+  "photo_bytes_verified_at": "2026-10-08T08:12:04.270Z"
+}

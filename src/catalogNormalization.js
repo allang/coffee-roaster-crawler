@@ -111,6 +111,14 @@ function canonicalProductUrl(sourceUrl) {
   for (const key of [...url.searchParams.keys()]) if (/^(?:utm_.+|fbclid|gclid|variant)$/.test(key)) url.searchParams.delete(key);
   url.searchParams.sort();
   url.hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+  const profile=require('./siteSupport/profiles.json').find(p=>p.hosts.includes(url.hostname));
+  if(profile?.canonical_product_path && url.pathname.startsWith(profile.product_path))url.pathname=profile.canonical_product_path+url.pathname.slice(profile.product_path.length);
+  if(profile?.adapter==='cafe24') {
+    const id=url.searchParams.get('product_no') || url.pathname.match(/^\/product\/[^/]+\/([1-9]\d+)\//)?.[1];
+    if(id){url.pathname='/product/detail.html';url.search='';url.searchParams.set('product_no',id);}
+  }
+  if(profile?.adapter==='woocommerce')for(const key of [...url.searchParams.keys()])if(/^attribute_.+|^variation_id$/.test(key))url.searchParams.delete(key);
+  for(const key of profile?.variant_option_query_keys || [])url.searchParams.delete(key);
   url.pathname = url.pathname.replace(/\/+$/, '') || '/';
   return url.href;
 }
@@ -128,7 +136,8 @@ function normalizeProduct(product, sourceUrl) {
   if (!variants.length && product.default_price != null) variants.push({ title: 'default', price: product.default_price });
   const normalized = variants.map(v => ({
     ...v, source_id: v.source_id ?? v.id ?? null, title: v.title || 'default',
-    weight_g: v.weight_g ?? parseWeightGrams(v.title),
+    // Explicitly unproven net mass must survive normalization and later saves.
+    weight_g: v.weight_g===null?null:v.weight_g ?? parseWeightGrams(v.title),
     money: parseMoney(v.price, { currency: Object.hasOwn(v,'currency') ? v.currency : product.variant_price_currency, locale: v.locale || product.price_locale }),
     availability: v.available === true ? 'in_stock' : v.available === false ? 'sold_out' : v.availability || 'unknown',
   }));

@@ -30,7 +30,8 @@ test('partial structured data falls back to AI without losing full coffee attrib
   Object.assign(attributes,{process:'Anaerobic Natural',process_methods:['natural','anaerobic'],is_coferment:null,coferment_ingredients:[]});
   const r=await extractPage({page:p,classify:async()=>({data:{is_coffee_page:true,product:{name:'Original',attributes}},usage:{prompt_tokens:50,completion_tokens:10},aiCalls:1}),model,now});
   assert.equal(r.mode,'ai');assert.equal(r.aiCalls,1);assert.equal(r.usage.prompt_tokens,50);
-  for(const k of ATTRIBUTES.filter(k=>k!=='description')) assert.deepEqual(r.data.product.attributes[k],attributes[k]);
+  for(const k of ATTRIBUTES.filter(k=>!['description','product_image_url'].includes(k))) assert.deepEqual(r.data.product.attributes[k],attributes[k]);
+  assert.equal(r.data.product.attributes.product_image_url,undefined); // model-only images are unverified
   assert.equal(r.data.product.name,'COFFEE');assert.equal(r.data.product.variants[0].currency,'EUR');
 });
 test('native Shopify data preserves exact IDs/stock/weights and never defaults currency',async()=>{

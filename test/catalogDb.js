@@ -10,7 +10,7 @@ async function catalogDb() {
 }
 // Adapter only for production Supabase call contracts exercised in tests; no network/credentials.
 function supabaseAdapter(pg) {
-  return {async rpc(name,args){try{const {rows}=await pg.query(`select ${name}($1::jsonb) as result`,[JSON.stringify(args.payload)]);return {data:rows[0].result,error:null};}catch(error){return {data:null,error};}},
+  return {async rpc(name,args){try{const observation=Object.hasOwn(args,'product_id');const {rows}=await pg.query(observation?`select ${name}($1::uuid,$2::jsonb) as result`:`select ${name}($1::jsonb) as result`,observation?[args.product_id,JSON.stringify(args.observation)]:[JSON.stringify(args.payload)]);return {data:rows[0].result,error:null};}catch(error){return {data:null,error};}},
     from(table) {
       if(!/^[a-z_]+$/.test(table)) throw Error('Invalid test table');
       let fields='*',filters=[],params=[],limit='',order='',mutation=null,body,conflict;
