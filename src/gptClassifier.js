@@ -6,6 +6,9 @@ const MODEL = process.env.OPENAI_MODEL || "gpt-5-mini";
 const MAX_RETRIES = 5;
 const INITIAL_BACKOFF_MS = 1000;
 const MAX_OUTPUT_TOKENS = Number(process.env.OPENAI_MAX_OUTPUT_TOKENS || 2000);
+// One recovery request can grow the configured allowance without overriding a
+// larger explicit allowance or escalating an already exhausted recovery.
+const RECOVERY_OUTPUT_TOKENS = Math.max(MAX_OUTPUT_TOKENS, Math.min(MAX_OUTPUT_TOKENS * 4, 8000));
 const REQUEST_TIMEOUT_MS = Number(process.env.OPENAI_REQUEST_TIMEOUT_MS || 180000);
 
 let openai;
@@ -39,6 +42,37 @@ function delay(ms) {
 function jitteredDelay(baseMs, jitterMs) {
   const jitter = Math.floor(Math.random() * jitterMs * 2) - jitterMs;
   return Math.max(100, baseMs + jitter);
+}
+
+function sanitizedFinishReason(value) {
+  return ['stop', 'length', 'content_filter', 'tool_calls', 'function_call'].includes(value) ? value : null;
+}
+
+function sanitizedUsage(value) {
+  if (!value || typeof value !== 'object') return null;
+  const usage = {};
+  const copyTokens = (source, target, keys) => {
+    for (const key of keys) {
+      if (Number.isSafeInteger(source?.[key]) && source[key] >= 0) target[key] = source[key];
+    }
+  };
+  copyTokens(value, usage, ['prompt_tokens', 'completion_tokens', 'total_tokens']);
+  for (const [detail, keys] of [
+    ['prompt_tokens_details', ['cached_tokens', 'audio_tokens']],
+    ['completion_tokens_details', ['reasoning_tokens', 'audio_tokens', 'accepted_prediction_tokens', 'rejected_prediction_tokens']],
+  ]) {
+    const tokens = {};
+    copyTokens(value[detail], tokens, keys);
+    if (Object.keys(tokens).length) usage[detail] = tokens;
+  }
+  return Object.keys(usage).length ? usage : null;
+}
+
+function addUsage(target, source) {
+  for (const [key, value] of Object.entries(source)) {
+    if (typeof value === 'number') target[key] = (target[key] || 0) + value;
+    else addUsage(target[key] ||= {}, value);
+  }
 }
 
 function buildPrompt(content) {
@@ -117,9 +151,17 @@ async function classifyPage(pageContent, url) {
 
   const prompt = buildPrompt(pageContent);
   let backoffMs = INITIAL_BACKOFF_MS;
-  let aiCalls=0, usage=null;
+  let aiCalls = 0, usage = null, reportedCalls = 0;
+  let transientRetries = 0, outputLimitRetries = 0, outputTokens = MAX_OUTPUT_TOKENS;
+  let finishReason = null;
+  const diagnostics = () => ({
+    aiCalls,
+    usage: usage ? { ...usage, reported_calls: reportedCalls, unreported_calls: aiCalls - reportedCalls } : null,
+    finishReason,
+    outputLimitRetries,
+  });
 
-  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+  while (true) {
     try {
       const request = {
         model: MODEL,
@@ -127,32 +169,59 @@ async function classifyPage(pageContent, url) {
       };
 
       if (MODEL.startsWith('gpt-5')) {
-        request.max_completion_tokens = MAX_OUTPUT_TOKENS;
+        request.max_completion_tokens = outputTokens;
       } else {
         request.temperature = 0.1;
-        request.max_tokens = MAX_OUTPUT_TOKENS;
+        request.max_tokens = outputTokens;
       }
 
+      const client = getOpenAI();
       aiCalls++;
-      const response = await getOpenAI().chat.completions.create(request);
-      usage = response.usage || null;
+      const response = await client.chat.completions.create(request);
+      const responseUsage = sanitizedUsage(response.usage);
+      if (responseUsage) {
+        reportedCalls++;
+        addUsage(usage ||= {}, responseUsage);
+      }
+      const choice = response.choices?.[0];
+      const message = choice?.message;
+      finishReason = sanitizedFinishReason(choice?.finish_reason);
+      logger.debug("GPT", "Classification response received", { url, finishReason, maxOutputTokens: outputTokens, usage: responseUsage });
 
-      const text = response.choices[0]?.message?.content?.trim();
+      if (message?.refusal) return { error: "Refusal response from GPT", ...diagnostics() };
+      if (finishReason === 'content_filter') return { error: "Filtered response from GPT", ...diagnostics() };
+      if (message?.tool_calls?.length || message?.function_call) return { error: "Unexpected tool call from GPT", ...diagnostics() };
+
+      // Even syntactically complete JSON is not a complete classification when
+      // the API says generation stopped at its output limit.
+      if (finishReason === 'length') {
+        if (!outputLimitRetries && RECOVERY_OUTPUT_TOKENS > outputTokens) {
+          outputLimitRetries++;
+          outputTokens = RECOVERY_OUTPUT_TOKENS;
+          logger.warn("GPT", "Classification hit output token limit; retrying once with a larger allowance", {
+            url, finishReason, maxOutputTokens: outputTokens, usage: responseUsage,
+          });
+          continue;
+        }
+        return { error: "GPT response exceeded output token limit", ...diagnostics() };
+      }
+
+      const text = message?.content?.trim();
 
       if (!text) {
-        return { error: "Empty response from GPT", aiCalls, usage };
+        return { error: "Empty response from GPT", ...diagnostics() };
       }
 
       const jsonMatch = text.match(/\{[\s\S]*\}/);
       if (!jsonMatch) {
-        return { error: "No JSON found in response", rawResponse: text, aiCalls, usage };
+        return { error: "No JSON found in response", rawResponse: text, ...diagnostics() };
       }
 
       const parsed = JSON.parse(jsonMatch[0]);
-      return { success: true, data: parsed, aiCalls, usage };
+      return { success: true, data: parsed, ...diagnostics() };
     } catch (error) {
       if (error instanceof SyntaxError) {
-        return { error: "Failed to parse JSON response", details: error.message, aiCalls, usage };
+        return { error: "Failed to parse JSON response", details: error.message, ...diagnostics() };
       }
 
       const status = error.status || error.statusCode || 0;
@@ -172,16 +241,18 @@ async function classifyPage(pageContent, url) {
         lowerMessage.includes('insufficient_quota');
       const isRateLimited = status === 429 || lowerMessage.includes('rate') || lowerMessage.includes('429');
       const isServerError = status >= 500;
+      const isAuthenticationError = status === 401 || status === 403;
 
       if (isQuotaExceeded) {
         quotaExhausted = true;
         logger.error("GPT", "Classification stopped: OpenAI quota exceeded", { url });
-        return { error: message, quotaExceeded: true, aiCalls, usage };
+        return { error: message, quotaExceeded: true, ...diagnostics() };
       }
 
-      if ((isRateLimited || isServerError || isTimeout) && attempt < MAX_RETRIES) {
+      if (!isAuthenticationError && (isRateLimited || isServerError || isTimeout) && transientRetries < MAX_RETRIES) {
+        transientRetries++;
         const waitTime = jitteredDelay(backoffMs, Math.floor(backoffMs * 0.3));
-        logger.warn("GPT", `Transient classification error, retrying in ${waitTime}ms (attempt ${attempt + 1}/${MAX_RETRIES})`, {
+        logger.warn("GPT", `Transient classification error, retrying in ${waitTime}ms (attempt ${transientRetries}/${MAX_RETRIES})`, {
           url,
           error: message,
         });
@@ -191,11 +262,9 @@ async function classifyPage(pageContent, url) {
       }
 
       logger.error("GPT", "Classification failed", { url, error: error.message });
-      return { error: error.message, aiCalls, usage };
+      return { error: error.message, ...diagnostics() };
     }
   }
-
-  return { error: "Max retries exceeded", aiCalls, usage };
 }
 
 module.exports = {

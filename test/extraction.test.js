@@ -164,3 +164,11 @@ test('current product attributes outside a short schema description supplement e
  const r=await extractPage({page:p,classify:async()=>({data:{is_coffee_page:true,product:{name:'Coffee',attributes:{process:null}}}}),model,now});
  assert.equal(r.data.product.attributes.process,'Anaerobic Natural');assert.deepEqual(r.data.product.attributes.process_methods,['natural','anaerobic']);
 });
+
+test('reported retry usage includes both attempts without marking reported calls unknown',()=>{
+ const {extractionMetrics,addExtractionMetrics}=require('../src/pageVisitor');const metrics=extractionMetrics();
+ addExtractionMetrics(metrics,{mode:'ai',aiCalls:2,usage:{reported_calls:2,prompt_tokens:120,completion_tokens:2500,prompt_tokens_details:{cached_tokens:80},completion_tokens_details:{reasoning_tokens:2000}}});
+ assert.equal(metrics.aiCalls,2);assert.equal(metrics.aiUsage.prompt_tokens,120);assert.equal(metrics.aiUsage.completion_tokens,2500);assert.equal(metrics.aiUsage.reasoning_tokens,2000);assert.equal(metrics.aiUsage.cached_tokens,80);assert.equal(metrics.aiUsage.unreported_calls,0);
+ addExtractionMetrics(metrics,{mode:'ai',aiCalls:3,usage:{reported_calls:2,prompt_tokens:50,completion_tokens:100}});
+ assert.equal(metrics.aiCalls,5);assert.equal(metrics.aiUsage.unreported_calls,1);
+});

@@ -163,10 +163,12 @@ function addExtractionMetrics(results,result) {
     results.aiUsage.prompt_tokens += result.usage.prompt_tokens || 0;
     results.aiUsage.completion_tokens += result.usage.completion_tokens || 0;
     results.aiUsage.cached_tokens += result.usage.prompt_tokens_details?.cached_tokens || 0;
-    results.aiUsage.unreported_calls += Math.max(0,(result.aiCalls || 0)-1);
+    results.aiUsage.reasoning_tokens += result.usage.completion_tokens_details?.reasoning_tokens || 0;
+    const reported=Number.isInteger(result.usage.reported_calls)?Math.max(0,Math.min(result.aiCalls || 0,result.usage.reported_calls)):1;
+    results.aiUsage.unreported_calls += Math.max(0,(result.aiCalls || 0)-reported);
   } else if(result.aiCalls) results.aiUsage.unreported_calls += result.aiCalls;
 }
-function extractionMetrics() { return {aiCalls:0,cacheHits:0,structuredPages:0,structuredProductOnlyPages:0,marketChecks:0,aiUsage:{prompt_tokens:0,completion_tokens:0,cached_tokens:0,unreported_calls:0}}; }
+function extractionMetrics() { return {aiCalls:0,cacheHits:0,structuredPages:0,structuredProductOnlyPages:0,marketChecks:0,aiUsage:{prompt_tokens:0,completion_tokens:0,cached_tokens:0,reasoning_tokens:0,unreported_calls:0}}; }
 
 async function visitAllPages(entityId, urls, accumulator, log = null, platform = 'unknown', options={}) {
   const logger = log || globalLogger;
