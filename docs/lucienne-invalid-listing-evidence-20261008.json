@@ -1,0 +1,177 @@
+{
+  "checked_at": "2026-10-08T21:45:57.474Z",
+  "pages": [
+    {
+      "id": "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5",
+      "url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Costa Rica \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "22db6043-5cc5-5826-9847-d388dc7db71c",
+      "url": "https://www.lucienne.coffee/shop/origin/papua-new-guinea",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Papua New Guinea \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "568e0bef-25dc-5f49-8456-05980c8f47b8",
+      "url": "https://www.lucienne.coffee/home",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "78675df8-b2bf-55eb-8208-bf970436c19c",
+      "url": "https://www.lucienne.coffee/shop/origin/tanzania",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Tanzania \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "7881e94b-ddc8-5cab-81fb-039e91698d9b",
+      "url": "https://www.lucienne.coffee/shop/origin/honduras",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Honduras \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "8588e0e8-ca4c-4ccb-9258-24a444dc4c9c",
+      "url": "https://lucienne.coffee/shop/origin/myanmar",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Myanmar \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "c7b18af1-b201-5b55-bc23-424d309855f8",
+      "url": "https://www.lucienne.coffee/shop/merch",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Merch \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "cc2031ca-cad8-4e20-9c67-d052f2df5bb9",
+      "url": "https://lucienne.coffee/shop/roaster/thoughtful",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Thoughtful \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    },
+    {
+      "id": "ed547f99-14a0-4d3f-bbd4-213709578e1b",
+      "url": "https://lucienne.coffee/shop/roaster/peculiar",
+      "success": true,
+      "status": 200,
+      "reason": "catalog_listing_without_primary_product",
+      "title": "Peculiar \u2014 The Bean Shop \u2014 PLAY DEAD. DRINK COFFEE."
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+      "status": 200,
+      "at": "2026-10-08T21:45:51.659Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/origin/papua-new-guinea",
+      "status": 200,
+      "at": "2026-10-08T21:45:52.162Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/home",
+      "status": 200,
+      "at": "2026-10-08T21:45:52.667Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/origin/tanzania",
+      "status": 200,
+      "at": "2026-10-08T21:45:53.174Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/origin/honduras",
+      "status": 200,
+      "at": "2026-10-08T21:45:53.679Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://lucienne.coffee/shop/origin/myanmar",
+      "status": 301,
+      "at": "2026-10-08T21:45:54.206Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/origin/myanmar",
+      "status": 200,
+      "at": "2026-10-08T21:45:54.709Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/merch",
+      "status": 200,
+      "at": "2026-10-08T21:45:55.213Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://lucienne.coffee/shop/roaster/thoughtful",
+      "status": 301,
+      "at": "2026-10-08T21:45:55.719Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/roaster/thoughtful",
+      "status": 200,
+      "at": "2026-10-08T21:45:56.223Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://lucienne.coffee/shop/roaster/peculiar",
+      "status": 301,
+      "at": "2026-10-08T21:45:56.728Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/roaster/peculiar",
+      "status": 200,
+      "at": "2026-10-08T21:45:57.233Z",
+      "attempt": 2,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "models": 0
+}

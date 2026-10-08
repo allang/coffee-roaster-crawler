@@ -1,0 +1,23 @@
+{
+  "dry_run": [
+    {
+      "changed": 9,
+      "plan_id": "lucienne-invalid-listings-20261008",
+      "target_count": 9
+    }
+  ],
+  "repeat_in_rolled_back_transaction": [
+    {
+      "changed": 9,
+      "plan_id": "lucienne-invalid-listings-20261008",
+      "target_count": 9
+    },
+    {
+      "changed": 0,
+      "plan_id": "lucienne-invalid-listings-20261008",
+      "target_count": 9
+    }
+  ],
+  "all_product_and_eight_child_table_fingerprints_unchanged_after_rollback": true,
+  "production_commits": 0
+}

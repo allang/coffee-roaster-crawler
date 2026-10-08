@@ -1,0 +1,2805 @@
+{
+  "version": 1,
+  "mode": "guarded-public-native-get-only",
+  "started_at": "2026-10-08T21:45:57.675Z",
+  "source_commit": "c42ca29",
+  "held_profile": {
+    "name": "Lucienne (held retail-guest scope)",
+    "entity_ids": [
+      "4f292bcd-6af3-42e3-9760-f7eb81e12dc5"
+    ],
+    "hosts": [
+      "www.lucienne.coffee",
+      "lucienne.coffee"
+    ],
+    "adapter": "squarespace",
+    "squarespace_website_id": "631790fa8555dd2b858adf76",
+    "squarespace_collection_id": "684a1d051f62bc6ea50e1522",
+    "coffee_category_id": "684a204eb7ad9e539ec6e524",
+    "listing_path": "/shop",
+    "inventory_authorizes_global_absence": false,
+    "reconcile_omissions": false
+  },
+  "max_new_gets": 20,
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop?format=json",
+      "at": "2026-10-08T21:45:57.683Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop",
+      "at": "2026-10-08T21:45:58.191Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop?format=json&offset=63",
+      "at": "2026-10-08T21:45:58.695Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop?format=json&offset=212",
+      "at": "2026-10-08T21:45:59.202Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/roaster/lucienne?format=json",
+      "at": "2026-10-08T21:45:59.707Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+      "at": "2026-10-08T21:46:00.212Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica",
+      "at": "2026-10-08T21:46:00.718Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica?format=json",
+      "at": "2026-10-08T21:46:01.225Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast",
+      "at": "2026-10-08T21:46:01.729Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast?format=json",
+      "at": "2026-10-08T21:46:02.847Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11",
+      "at": "2026-10-08T21:46:03.350Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11?format=json",
+      "at": "2026-10-08T21:46:03.875Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gacha-coffee",
+      "at": "2026-10-08T21:46:04.381Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gacha-coffee?format=json",
+      "at": "2026-10-08T21:46:04.884Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/828e2c55-b572-42a0-9162-842eaa9c5661/A008CR-XX+Thumbnail+v1.png",
+      "at": "2026-10-08T21:46:05.198Z",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f781d7d9-c929-4fdf-b53e-a021cea4ce85/G090BR-XX+Thumbnail+v1.png",
+      "at": "2026-10-08T21:46:05.407Z",
+      "status": 200
+    }
+  ],
+  "reader_requests": [
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop?format=json",
+      "status": 200,
+      "at": "2026-10-08T21:45:57.683Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop",
+      "status": 200,
+      "at": "2026-10-08T21:45:58.191Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop?format=json&offset=63",
+      "status": 200,
+      "at": "2026-10-08T21:45:58.695Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop?format=json&offset=212",
+      "status": 200,
+      "at": "2026-10-08T21:45:59.202Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/roaster/lucienne?format=json",
+      "status": 200,
+      "at": "2026-10-08T21:45:59.707Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+      "status": 200,
+      "at": "2026-10-08T21:46:00.212Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica",
+      "status": 200,
+      "at": "2026-10-08T21:46:00.718Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica?format=json",
+      "status": 200,
+      "at": "2026-10-08T21:46:01.225Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast",
+      "status": 200,
+      "at": "2026-10-08T21:46:01.729Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast?format=json",
+      "status": 200,
+      "at": "2026-10-08T21:46:02.847Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11",
+      "status": 200,
+      "at": "2026-10-08T21:46:03.350Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11?format=json",
+      "status": 200,
+      "at": "2026-10-08T21:46:03.875Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gacha-coffee",
+      "status": 200,
+      "at": "2026-10-08T21:46:04.381Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop/p/gacha-coffee?format=json",
+      "status": 200,
+      "at": "2026-10-08T21:46:04.884Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "errors": [],
+  "product_examples": [
+    {
+      "guest_roaster": "Apollon's Gold",
+      "url": "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica",
+      "id": "6aa221533ab8b555d0a9e8f3",
+      "title": "La Lia \"Pie San\" Yellow Honey Yellow Typica",
+      "html_sha256": "d30171a5e4d24c702a7709eed4bf92c0f5587bc67ad22133d2c34660c635875e",
+      "native_json_requests": [
+        {
+          "method": "GET",
+          "url": "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica?format=json",
+          "status": 200,
+          "at": "2026-10-08T21:46:01.225Z",
+          "attempt": 1,
+          "retry": 0
+        }
+      ],
+      "primary_article_heading_and_native_identity_match": true,
+      "native_price_stock_identity_verified": true,
+      "variants": [
+        {
+          "id": "4491a68b-b2c9-4d5f-a9ea-65f3a40e0ab3",
+          "title": "100g",
+          "price": "19.00",
+          "currency": "USD",
+          "stock": "https://schema.org/InStock",
+          "weight_g": 100
+        }
+      ],
+      "primary_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/828e2c55-b572-42a0-9162-842eaa9c5661/A008CR-XX+Thumbnail+v1.png",
+      "native_description_present": true,
+      "primary_image_gallery_and_native_match": true,
+      "semantic_attribute_contract_complete": false
+    },
+    {
+      "guest_roaster": "Glitch",
+      "url": "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast",
+      "id": "6a545193fb742f7c1c54dcca",
+      "title": "Minas Gerais Natural Espresso Roast",
+      "html_sha256": "632a386d19a32a5f36196932bf5b2ae930f0af89a8a52b5cac118bca25ec1c2d",
+      "native_json_requests": [
+        {
+          "method": "GET",
+          "url": "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast?format=json",
+          "status": 200,
+          "at": "2026-10-08T21:46:02.847Z",
+          "attempt": 1,
+          "retry": 0
+        }
+      ],
+      "primary_article_heading_and_native_identity_match": true,
+      "native_price_stock_identity_verified": true,
+      "variants": [
+        {
+          "id": "f7588a04-0261-47ff-b292-d4742e30a62f",
+          "title": "100g",
+          "price": "11.00",
+          "currency": "USD",
+          "stock": "https://schema.org/InStock",
+          "weight_g": 100
+        }
+      ],
+      "primary_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f781d7d9-c929-4fdf-b53e-a021cea4ce85/G090BR-XX+Thumbnail+v1.png",
+      "native_description_present": true,
+      "primary_image_gallery_and_native_match": true,
+      "semantic_attribute_contract_complete": false
+    },
+    {
+      "guest_roaster": "Raw Sugar Roast",
+      "url": "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11",
+      "id": "6a544132fc240d51442a3a22",
+      "title": "Gachika Kiambu Washed SL28, Batian, & Ruiru 11",
+      "html_sha256": "745af0f679f6feb9612076949672105325a4d9b81024c55b9230e1e1088b6d2d",
+      "native_json_requests": [
+        {
+          "method": "GET",
+          "url": "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11?format=json",
+          "status": 200,
+          "at": "2026-10-08T21:46:03.875Z",
+          "attempt": 1,
+          "retry": 0
+        }
+      ],
+      "primary_article_heading_and_native_identity_match": true,
+      "native_price_stock_identity_verified": true,
+      "variants": [
+        {
+          "id": "57314166-2194-4395-a76d-f28f83acad1a",
+          "title": "100g",
+          "price": "18.00",
+          "currency": "USD",
+          "stock": "https://schema.org/InStock",
+          "weight_g": 100
+        }
+      ],
+      "primary_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/6ff413ee-c782-4b6f-bdf7-de911c71a646/S021KE+Thumbnail+v1.png",
+      "native_description_present": true,
+      "primary_image_gallery_and_native_match": true,
+      "semantic_attribute_contract_complete": false
+    }
+  ],
+  "image_examples": [
+    {
+      "product_id": "6aa221533ab8b555d0a9e8f3",
+      "url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/828e2c55-b572-42a0-9162-842eaa9c5661/A008CR-XX+Thumbnail+v1.png",
+      "final_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/828e2c55-b572-42a0-9162-842eaa9c5661/A008CR-XX+Thumbnail+v1.png",
+      "bytes": 213898,
+      "sha256": "fd46b62fba3489d3be503931f4436dd1d04cfe79cd230ecf2df45b5248b59705",
+      "format": {
+        "contentType": "image/webp",
+        "extension": ".webp",
+        "width": 2500,
+        "height": 2500
+      }
+    },
+    {
+      "product_id": "6a545193fb742f7c1c54dcca",
+      "url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f781d7d9-c929-4fdf-b53e-a021cea4ce85/G090BR-XX+Thumbnail+v1.png",
+      "final_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f781d7d9-c929-4fdf-b53e-a021cea4ce85/G090BR-XX+Thumbnail+v1.png",
+      "bytes": 204558,
+      "sha256": "53a1fba68eafdbab6bc604cd39f22ce5241b53697c2c7721380cf0ae90530b8c",
+      "format": {
+        "contentType": "image/webp",
+        "extension": ".webp",
+        "width": 2500,
+        "height": 2500
+      }
+    }
+  ],
+  "native_listing": {
+    "url": "https://www.lucienne.coffee/shop?format=json",
+    "sha256": "401a16e49607bca6c6647c46093db09d9022ddb8fbc308fc4c78b21f4328fcbf",
+    "website_id": "631790fa8555dd2b858adf76",
+    "collection_id": "684a1d051f62bc6ea50e1522",
+    "declared_items": 212,
+    "configured_page_size": 999,
+    "returned_published_items": 63,
+    "pagination": null,
+    "own_lucienne_coffees": 0,
+    "guest_source_coffees": 56,
+    "taxonomy": [
+      {
+        "id": "684a27711ef4b52dec06c3e0",
+        "name": "Exotic",
+        "path": "Exotic",
+        "url": "/shop/exotic"
+      },
+      {
+        "id": "684a276ccc6de75b44df47a9",
+        "name": "New",
+        "path": "New",
+        "url": "/shop/new"
+      },
+      {
+        "id": "684a203ccc6de75b44df414b",
+        "name": "Equipment",
+        "path": "Equipment",
+        "url": "/shop/equipment"
+      },
+      {
+        "id": "684a203fb91f060aa5227036",
+        "name": "Merch",
+        "path": "Merch",
+        "url": "/shop/merch"
+      },
+      {
+        "id": "684b6fef2427cd1f49ac8a70",
+        "name": "Gift Cards",
+        "path": "Gift Cards",
+        "url": "/shop/gift-cards"
+      },
+      {
+        "id": "684a204eb7ad9e539ec6e524",
+        "name": "Roaster",
+        "path": "Roaster",
+        "url": "/shop/roaster"
+      },
+      {
+        "id": "6aa2145da0f7f2199548ccf3",
+        "name": "Apollon's Gold",
+        "path": "Roaster / Apollon's Gold",
+        "url": "/shop/roaster/apollons-gold"
+      },
+      {
+        "id": "6ab465c3ae14e00b87ad04b7",
+        "name": "Caf\u00e9 de L\u2019Ambre",
+        "path": "Roaster / Caf\u00e9 de L\u2019Ambre",
+        "url": "/shop/roaster/caf-de-lambre"
+      },
+      {
+        "id": "684a208bb91f060aa5227085",
+        "name": "Glitch",
+        "path": "Roaster / Glitch",
+        "url": "/shop/roaster/glitch"
+      },
+      {
+        "id": "684a20a0b7ad9e539ec6e574",
+        "name": "Hatou",
+        "path": "Roaster / Hatou",
+        "url": "/shop/roaster/hatou"
+      },
+      {
+        "id": "684a208fb91f060aa522708b",
+        "name": "Ignis",
+        "path": "Roaster / Ignis",
+        "url": "/shop/roaster/ignis"
+      },
+      {
+        "id": "684a209c1ef4b52dec06be36",
+        "name": "Lilo",
+        "path": "Roaster / Lilo",
+        "url": "/shop/roaster/lilo"
+      },
+      {
+        "id": "684a2097b7ad9e539ec6e566",
+        "name": "Lucienne",
+        "path": "Roaster / Lucienne",
+        "url": "/shop/roaster/lucienne"
+      },
+      {
+        "id": "684a2099b91f060aa5227095",
+        "name": "Obscure",
+        "path": "Roaster / Obscure",
+        "url": "/shop/roaster/obscure"
+      },
+      {
+        "id": "684a2094cc6de75b44df419f",
+        "name": "Peculiar",
+        "path": "Roaster / Peculiar",
+        "url": "/shop/roaster/peculiar"
+      },
+      {
+        "id": "6893ddbb33167255891d21b1",
+        "name": "Raw Sugar Roast",
+        "path": "Roaster / Raw Sugar Roast",
+        "url": "/shop/roaster/raw-sugar-roast"
+      },
+      {
+        "id": "684a208ecc6de75b44df4196",
+        "name": "Red Poison",
+        "path": "Roaster / Red Poison",
+        "url": "/shop/roaster/red-poison"
+      },
+      {
+        "id": "684a2092b7ad9e539ec6e560",
+        "name": "Thoughtful",
+        "path": "Roaster / Thoughtful",
+        "url": "/shop/roaster/thoughtful"
+      },
+      {
+        "id": "6abdc24a9e32836411fcfa21",
+        "name": "Walnuts",
+        "path": "Roaster / Walnuts",
+        "url": "/shop/roaster/walnuts"
+      },
+      {
+        "id": "684a204cb91f060aa5227045",
+        "name": "Origin",
+        "path": "Origin",
+        "url": "/shop/origin"
+      },
+      {
+        "id": "684a20e91ef4b52dec06be7b",
+        "name": "Blend",
+        "path": "Origin / Blend",
+        "url": "/shop/origin/blend"
+      },
+      {
+        "id": "684a20e2b91f060aa52270da",
+        "name": "Bolivia",
+        "path": "Origin / Bolivia",
+        "url": "/shop/origin/bolivia"
+      },
+      {
+        "id": "684a20f4b91f060aa52270ea",
+        "name": "Brazil",
+        "path": "Origin / Brazil",
+        "url": "/shop/origin/brazil"
+      },
+      {
+        "id": "6abdcbcdb3e6a6177ee547e5",
+        "name": "Burundi",
+        "path": "Origin / Burundi",
+        "url": "/shop/origin/burundi"
+      },
+      {
+        "id": "684b60e92427cd1f49ac7ee3",
+        "name": "China",
+        "path": "Origin / China",
+        "url": "/shop/origin/china"
+      },
+      {
+        "id": "684a2064cc6de75b44df416b",
+        "name": "Colombia",
+        "path": "Origin / Colombia",
+        "url": "/shop/origin/colombia"
+      },
+      {
+        "id": "684a20dbb7ad9e539ec6e59f",
+        "name": "Costa Rica",
+        "path": "Origin / Costa Rica",
+        "url": "/shop/origin/costa-rica"
+      },
+      {
+        "id": "684a20e3cc6de75b44df4205",
+        "name": "Ecuador",
+        "path": "Origin / Ecuador",
+        "url": "/shop/origin/ecuador"
+      },
+      {
+        "id": "684a20deb7ad9e539ec6e5a3",
+        "name": "Ethiopia",
+        "path": "Origin / Ethiopia",
+        "url": "/shop/origin/ethiopia"
+      },
+      {
+        "id": "684a20e6b91f060aa52270e1",
+        "name": "Guatemala",
+        "path": "Origin / Guatemala",
+        "url": "/shop/origin/guatemala"
+      },
+      {
+        "id": "684b62261ef4b52dec07a364",
+        "name": "Honduras",
+        "path": "Origin / Honduras",
+        "url": "/shop/origin/honduras"
+      },
+      {
+        "id": "689278a218bdd572a347df32",
+        "name": "Kenya",
+        "path": "Origin / Kenya",
+        "url": "/shop/origin/kenya"
+      },
+      {
+        "id": "69b1b3170cbe6a4eb9e4780f",
+        "name": "Myanmar",
+        "path": "Origin / Myanmar",
+        "url": "/shop/origin/myanmar"
+      },
+      {
+        "id": "684a20f21ef4b52dec06be89",
+        "name": "Nicaragua",
+        "path": "Origin / Nicaragua",
+        "url": "/shop/origin/nicaragua"
+      },
+      {
+        "id": "684a20ddcc6de75b44df41fe",
+        "name": "Panama",
+        "path": "Origin / Panama",
+        "url": "/shop/origin/panama"
+      },
+      {
+        "id": "6ab4670a44aea31d23e03823",
+        "name": "Papua New Guinea",
+        "path": "Origin / Papua New Guinea",
+        "url": "/shop/origin/papua-new-guinea"
+      },
+      {
+        "id": "684a20d9b7ad9e539ec6e59c",
+        "name": "Peru",
+        "path": "Origin / Peru",
+        "url": "/shop/origin/peru"
+      },
+      {
+        "id": "6a022fb8cfa3e81e12dd4c9e",
+        "name": "Rwanda",
+        "path": "Origin / Rwanda",
+        "url": "/shop/origin/rwanda"
+      },
+      {
+        "id": "6876a34d6588572799f5dfbc",
+        "name": "Tanzania",
+        "path": "Origin / Tanzania",
+        "url": "/shop/origin/tanzania"
+      },
+      {
+        "id": "6a173c75f4da5b007c3a2684",
+        "name": "Venezuela",
+        "path": "Origin / Venezuela",
+        "url": "/shop/origin/venezuela"
+      },
+      {
+        "id": "6a064d032cda070a669bfe64",
+        "name": "Yemen",
+        "path": "Origin / Yemen",
+        "url": "/shop/origin/yemen"
+      },
+      {
+        "id": "684a2180b91f060aa522714f",
+        "name": "Processing",
+        "path": "Processing",
+        "url": "/shop/processing"
+      },
+      {
+        "id": "684a2184b91f060aa5227159",
+        "name": "Traditional",
+        "path": "Processing / Traditional",
+        "url": "/shop/processing/traditional"
+      },
+      {
+        "id": "684a218acc6de75b44df428d",
+        "name": "Experimental / Modern",
+        "path": "Processing / Experimental / Modern",
+        "url": "/shop/processing/experimental-modern"
+      },
+      {
+        "id": "6a5434e76ddc031108ec6082",
+        "name": "Decaf",
+        "path": "Processing / Decaf",
+        "url": "/shop/processing/decaf"
+      },
+      {
+        "id": "684a215bb91f060aa5227130",
+        "name": "Roast Level",
+        "path": "Roast Level",
+        "url": "/shop/roast-level"
+      },
+      {
+        "id": "684a215eb91f060aa5227135",
+        "name": "Light",
+        "path": "Roast Level / Light",
+        "url": "/shop/roast-level/light"
+      },
+      {
+        "id": "684a215fb7ad9e539ec6e603",
+        "name": "Medium",
+        "path": "Roast Level / Medium",
+        "url": "/shop/roast-level/medium"
+      },
+      {
+        "id": "684a2160b7ad9e539ec6e605",
+        "name": "Dark",
+        "path": "Roast Level / Dark",
+        "url": "/shop/roast-level/dark"
+      },
+      {
+        "id": "6abde0faa2d4212789ce861e",
+        "name": "Espresso",
+        "path": "Espresso",
+        "url": "/shop/espresso"
+      }
+    ]
+  },
+  "native_catalog": [
+    {
+      "id": "6aa221533ab8b555d0a9e8f3",
+      "title": "La Lia \"Pie San\" Yellow Honey Yellow Typica",
+      "url": "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "4491a68b-b2c9-4d5f-a9ea-65f3a40e0ab3",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "19.00"
+          },
+          "money_minor_units": 1900,
+          "money_currency": "USD",
+          "paired_integer_price": 1900,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 1,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/828e2c55-b572-42a0-9162-842eaa9c5661/A008CR-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa21ff64caf0f4425c8d4d8",
+      "title": "Kianyangi Murue Co-op Washed SL28 & SL34",
+      "url": "https://www.lucienne.coffee/shop/p/kianyangi-murue-co-op-washed-sl28-sl34",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "6a5dbc73-9044-4fb4-8a18-b3a2fb7bb13e",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "16.00"
+          },
+          "money_minor_units": 1600,
+          "money_currency": "USD",
+          "paired_integer_price": 1600,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 10,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/dccf3890-b409-4b3c-ad5d-319eb2f63ff4/A007KE-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa21ea1e6cf83753aec6e59",
+      "title": "El Morito \"La Mandarina\" Washed Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/el-morito-la-mandarina-washed-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "93fa7af5-017c-4805-8aaf-4b922f18a5e2",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "33.00"
+          },
+          "money_minor_units": 3300,
+          "money_currency": "USD",
+          "paired_integer_price": 3300,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/db45c5ed-1d86-431d-ba58-6e002381c5ef/A006PE-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa21d0b47d3a90dd8099fe4",
+      "title": "El Morito Washed Marhell",
+      "url": "https://www.lucienne.coffee/shop/p/el-morito-washed-marhell",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "3e5c3330-90ae-4548-9ec8-90eb085e8a16",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "33.00"
+          },
+          "money_minor_units": 3300,
+          "money_currency": "USD",
+          "paired_integer_price": 3300,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f66efd11-11b3-4cda-ad6b-3d6d9f7b52f0/A005PE-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa219c8c3189b43fc99048f",
+      "title": "Anasora Anaerobic Natural 74110 & 74112",
+      "url": "https://www.lucienne.coffee/shop/p/anasora-anaerobic-natural-74110-74112",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "f6633655-bf26-4e65-965b-95132703a5bc",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "17.00"
+          },
+          "money_minor_units": 1700,
+          "money_currency": "USD",
+          "paired_integer_price": 1700,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/e6db2e8e-b8c1-4e04-8025-2457fe516b06/A004ET-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa21847dfc802573af8082c",
+      "title": "Las Margaritas Washed CGLE17",
+      "url": "https://www.lucienne.coffee/shop/p/las-margaritas-washed-cgle17",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "7433ab45-33c9-4f0b-8918-f22cfe9f75ec",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "39.00"
+          },
+          "money_minor_units": 3900,
+          "money_currency": "USD",
+          "paired_integer_price": 3900,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/5a088a65-4d0c-489e-a21e-95a37dbf1dbc/A003CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa21588876cc3274e94fd83",
+      "title": "Kotowa Estate \"Duncan\" Natural ETH47",
+      "url": "https://www.lucienne.coffee/shop/p/kotowa-estate-duncan-natural-eth47",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "20c2a69a-7721-492c-9da8-5e8d55f8e380",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "35.00"
+          },
+          "money_minor_units": 3500,
+          "money_currency": "USD",
+          "paired_integer_price": 3500,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 4,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/70700873-0b88-4e3e-8eae-0ca51f22fd6f/A002PA-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa2134647d3a90dd807645d",
+      "title": "Kotowa Estate \"Las Brujas\" Natural Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/kotowa-estate-las-brujas-natural-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "6aa2145da0f7f2199548ccf3",
+          "name": "Apollon's Gold",
+          "path": "Roaster / Apollon's Gold",
+          "url": "/shop/roaster/apollons-gold"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "8d96f4ac-e222-44cf-a2bb-4ca822a9eaf3",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "65.00"
+          },
+          "money_minor_units": 6500,
+          "money_currency": "USD",
+          "paired_integer_price": 6500,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 5,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/7d76b9df-6e5e-4095-a08b-1fc6b8c52f66/A001PA-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa20f3148e95c2c73b75712",
+      "title": "Mulugeta Muntasha Washed 74158",
+      "url": "https://www.lucienne.coffee/shop/p/mulugeta-muntasha-washed-74158",
+      "guest_roaster_categories": [
+        {
+          "id": "684a20a0b7ad9e539ec6e574",
+          "name": "Hatou",
+          "path": "Roaster / Hatou",
+          "url": "/shop/roaster/hatou"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "d6fc1187-4cb9-4378-b2f5-7e32063e7d09",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "21.00"
+          },
+          "money_minor_units": 2100,
+          "money_currency": "USD",
+          "paired_integer_price": 2100,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 10,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/2337d4cd-57e8-4929-b5e5-2346c1ad87a6/H022ET-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa20db990bd660b3ae41ac3",
+      "title": "Campo Hermoso Peach Mosto Co-ferment Castillo",
+      "url": "https://www.lucienne.coffee/shop/p/campo-hermoso-peach-mosto-co-ferment-castillo",
+      "guest_roaster_categories": [
+        {
+          "id": "684a20a0b7ad9e539ec6e574",
+          "name": "Hatou",
+          "path": "Roaster / Hatou",
+          "url": "/shop/roaster/hatou"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "040ccc09-e3b3-47b2-a6bc-d038f5ec2e19",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "25.00"
+          },
+          "money_minor_units": 2500,
+          "money_currency": "USD",
+          "paired_integer_price": 2500,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 6,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f93b06b1-4931-40e3-8efe-f24615f5bf25/H021CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa20cce47d3a90dd8059a63",
+      "title": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "url": "https://www.lucienne.coffee/shop/p/el-encanto-yeasted-thermal-shock-x2-ferment-washed-chiroso",
+      "guest_roaster_categories": [
+        {
+          "id": "684a20a0b7ad9e539ec6e574",
+          "name": "Hatou",
+          "path": "Roaster / Hatou",
+          "url": "/shop/roaster/hatou"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "d91ff88e-8d71-44de-af5d-df0262a8d43b",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "27.00"
+          },
+          "money_minor_units": 2700,
+          "money_currency": "USD",
+          "paired_integer_price": 2700,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 17,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/616ce932-7bd0-4b46-8513-0074b6b3be0d/H020CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa209b5beb9db0a776f4307",
+      "title": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Orange Bourbon",
+      "url": "https://www.lucienne.coffee/shop/p/el-encanto-yeasted-thermal-shock-x2-ferment-washed-orange-bourbon",
+      "guest_roaster_categories": [
+        {
+          "id": "684a20a0b7ad9e539ec6e574",
+          "name": "Hatou",
+          "path": "Roaster / Hatou",
+          "url": "/shop/roaster/hatou"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "0edd0285-891a-4dd9-9cb2-cf11df043d6a",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "26.00"
+          },
+          "money_minor_units": 2600,
+          "money_currency": "USD",
+          "paired_integer_price": 2600,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 18,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/14a7f8e2-b153-4b2f-a034-d3204047cc3e/H019CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a5449ee4dd4fa138d7917ce",
+      "title": "Tomomichi Morifuji Floral Method \"Purple Perfume\" 8th Anniversary Limited Blend",
+      "url": "https://www.lucienne.coffee/shop/p/tomomichi-morifuji-floral-method-purple-perfume-8th-anniversary-limited-blend",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208ecc6de75b44df4196",
+          "name": "Red Poison",
+          "path": "Roaster / Red Poison",
+          "url": "/shop/roaster/red-poison"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "0927dce9-c5f5-4e2e-8356-512dbc4612c3",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "42.00"
+          },
+          "money_minor_units": 4200,
+          "money_currency": "USD",
+          "paired_integer_price": 4200,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/b4e98a7d-0ce2-47a6-a62c-dc612360a2a0/R009JP-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a5446d5c4cd254942550aca",
+      "title": "\"RUMJAM\" Deep Ripe Blend",
+      "url": "https://www.lucienne.coffee/shop/p/rumjam-deep-ripe-blend",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208ecc6de75b44df4196",
+          "name": "Red Poison",
+          "path": "Roaster / Red Poison",
+          "url": "/shop/roaster/red-poison"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "481f6df0-b7bc-415a-8206-feecbb43e57f",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "22.00"
+          },
+          "money_minor_units": 2200,
+          "money_currency": "USD",
+          "paired_integer_price": 2200,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/b0ec7a42-436d-4a55-8d14-f0b737d08e34/R003JP-XX-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "69b1b69c612cb606b9217304",
+      "title": "\"PINK POISON\" Romantic Blend",
+      "url": "https://www.lucienne.coffee/shop/p/pink-poison-romantic-blend",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208ecc6de75b44df4196",
+          "name": "Red Poison",
+          "path": "Roaster / Red Poison",
+          "url": "/shop/roaster/red-poison"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "d23fa1d6-d2a0-48c8-886c-9aa996d837a9",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "25.00"
+          },
+          "money_minor_units": 2500,
+          "money_currency": "USD",
+          "paired_integer_price": 2500,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/be86e0b4-5c2c-43cc-b9bf-35b66de731af/R006JP-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a5430b256d94c18a50be1e3",
+      "title": "El Bebedero Anaerobic Washed Maragogype",
+      "url": "https://www.lucienne.coffee/shop/p/el-bebedero-anaerobic-washed-maragogype",
+      "guest_roaster_categories": [
+        {
+          "id": "684a2099b91f060aa5227095",
+          "name": "Obscure",
+          "path": "Roaster / Obscure",
+          "url": "/shop/roaster/obscure"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "c24e4c4d-989b-45ef-bba8-4e1f5631f120",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "22.00"
+          },
+          "money_minor_units": 2200,
+          "money_currency": "USD",
+          "paired_integer_price": 2200,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 2,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/19c3c319-537d-4b0b-be87-ce185a1f2c49/O002PE+thumbnail.png",
+      "description_present": true
+    },
+    {
+      "id": "6a5438880222384cd3a06619",
+      "title": "El Placer Red Fruit Co-ferment EA Decaf Caturra",
+      "url": "https://www.lucienne.coffee/shop/p/el-placer-red-fruit-co-ferment-ea-decaf-caturra",
+      "guest_roaster_categories": [
+        {
+          "id": "684a2099b91f060aa5227095",
+          "name": "Obscure",
+          "path": "Roaster / Obscure",
+          "url": "/shop/roaster/obscure"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "867e20be-8c03-4786-8249-42680ec44851",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "24.00"
+          },
+          "money_minor_units": 2400,
+          "money_currency": "USD",
+          "paired_integer_price": 2400,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 25,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/48c74d93-df4b-4ff7-b54f-a29e3c091961/O003CO+thumbnail.png",
+      "description_present": true
+    },
+    {
+      "id": "6a542d5f3368543575c1fc71",
+      "title": "Pe\u00f1as Blancas \"Lilo Coffee Kissa\" Natural Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/peas-blancas-lilo-coffee-kissa-natural-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "684a209c1ef4b52dec06be36",
+          "name": "Lilo",
+          "path": "Roaster / Lilo",
+          "url": "/shop/roaster/lilo"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "3dd5a8c8-2b0f-4796-a1bd-e721153fba51",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "40.00"
+          },
+          "money_minor_units": 4000,
+          "money_currency": "USD",
+          "paired_integer_price": 4000,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/79d1b3b9-42cd-4470-a7cf-39238dc44161/L026CO+thumbnail.png",
+      "description_present": true
+    },
+    {
+      "id": "6a542723c4cd2549424b781c",
+      "title": "Silinga Nigusse Gemeda Natural Dark 74110",
+      "url": "https://www.lucienne.coffee/shop/p/silinga-nigusse-gemeda-natural-dark-74110",
+      "guest_roaster_categories": [
+        {
+          "id": "684a209c1ef4b52dec06be36",
+          "name": "Lilo",
+          "path": "Roaster / Lilo",
+          "url": "/shop/roaster/lilo"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "ed9fb15d-df83-4d18-8849-6621fb007be1",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "19.00"
+          },
+          "money_minor_units": 1900,
+          "money_currency": "USD",
+          "paired_integer_price": 1900,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/4122baa9-ed47-49e3-92f1-ee819f054396/L023ET+thumbnail.png",
+      "description_present": true
+    },
+    {
+      "id": "6a541e6c7825930f699f01e3",
+      "title": "Kangocho \"Lilo Coffee Kissa\" Natural Dark SL28, SL34, Ruiru 11, & Batian",
+      "url": "https://www.lucienne.coffee/shop/p/kangocho-lilo-coffee-kissa-natural-dark-sl28-sl34-ruiru-11-batian",
+      "guest_roaster_categories": [
+        {
+          "id": "684a209c1ef4b52dec06be36",
+          "name": "Lilo",
+          "path": "Roaster / Lilo",
+          "url": "/shop/roaster/lilo"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "51971dac-f2e5-4d44-bb84-989e758071f4",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "23.00"
+          },
+          "money_minor_units": 2300,
+          "money_currency": "USD",
+          "paired_integer_price": 2300,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 2,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/60105c51-5dfb-4688-b445-a771d938365d/L021KE+thumbnail.png",
+      "description_present": true
+    },
+    {
+      "id": "6a544132fc240d51442a3a22",
+      "title": "Gachika Kiambu Washed SL28, Batian, & Ruiru 11",
+      "url": "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11",
+      "guest_roaster_categories": [
+        {
+          "id": "6893ddbb33167255891d21b1",
+          "name": "Raw Sugar Roast",
+          "path": "Roaster / Raw Sugar Roast",
+          "url": "/shop/roaster/raw-sugar-roast"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "57314166-2194-4395-a76d-f28f83acad1a",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "18.00"
+          },
+          "money_minor_units": 1800,
+          "money_currency": "USD",
+          "paired_integer_price": 1800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 12,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/6ff413ee-c782-4b6f-bdf7-de911c71a646/S021KE+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2dea3102cc420dc29d3401",
+      "title": "El Diviso Anaerobic Washed Pink Bourbon",
+      "url": "https://www.lucienne.coffee/shop/p/el-diviso-anaerobic-washed-pink-bourbon",
+      "guest_roaster_categories": [
+        {
+          "id": "6893ddbb33167255891d21b1",
+          "name": "Raw Sugar Roast",
+          "path": "Roaster / Raw Sugar Roast",
+          "url": "/shop/roaster/raw-sugar-roast"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "c1824157-b56f-4b29-a49f-97ad6b93aba4",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 6,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/a14f0142-8260-4cd8-b507-c1dec6ba9306/S017CO+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2de92ee05dbb48204064ca",
+      "title": "El Diviso Anaerobic Natural Ombligon",
+      "url": "https://www.lucienne.coffee/shop/p/el-diviso-anaerobic-natural-ombligon",
+      "guest_roaster_categories": [
+        {
+          "id": "6893ddbb33167255891d21b1",
+          "name": "Raw Sugar Roast",
+          "path": "Roaster / Raw Sugar Roast",
+          "url": "/shop/roaster/raw-sugar-roast"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "b74b2549-8b31-4ed3-897a-98ca203dd81a",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "27.00"
+          },
+          "money_minor_units": 2700,
+          "money_currency": "USD",
+          "paired_integer_price": 2700,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 9,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/320511b8-5bc6-4bcb-a7ac-2b2f4f991778/S016CO+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2deb04fff36f1c368e1c68",
+      "title": "Chelchele Washed Heirloom",
+      "url": "https://www.lucienne.coffee/shop/p/chelchele-washed-heirloom",
+      "guest_roaster_categories": [
+        {
+          "id": "6893ddbb33167255891d21b1",
+          "name": "Raw Sugar Roast",
+          "path": "Roaster / Raw Sugar Roast",
+          "url": "/shop/roaster/raw-sugar-roast"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "633493c6-8357-4efe-9132-2c8a134e4347",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "18.00"
+          },
+          "money_minor_units": 1800,
+          "money_currency": "USD",
+          "paired_integer_price": 1800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 15,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f2756697-f8c2-41b3-adb9-b700a0198d65/S019ET+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2deab80ab0eb12faba2704",
+      "title": "Perla Del Otun Natural Sudan Rume",
+      "url": "https://www.lucienne.coffee/shop/p/perla-del-otun-natural-sudan-rume",
+      "guest_roaster_categories": [
+        {
+          "id": "6893ddbb33167255891d21b1",
+          "name": "Raw Sugar Roast",
+          "path": "Roaster / Raw Sugar Roast",
+          "url": "/shop/roaster/raw-sugar-roast"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "a7a62c30-23cc-41cb-8175-f103b81cf1fc",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/9e3efa00-9a23-4128-bf8e-50469c5e4e90/S018CO+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2deb4f06b1704710c8bcb1",
+      "title": "Tabe Burka Natural Heirloom",
+      "url": "https://www.lucienne.coffee/shop/p/tabe-burka-natural-heirloom",
+      "guest_roaster_categories": [
+        {
+          "id": "6893ddbb33167255891d21b1",
+          "name": "Raw Sugar Roast",
+          "path": "Roaster / Raw Sugar Roast",
+          "url": "/shop/roaster/raw-sugar-roast"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "f6fbadca-4d04-49bc-b7ca-d4d1d19ba25e",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "18.00"
+          },
+          "money_minor_units": 1800,
+          "money_currency": "USD",
+          "paired_integer_price": 1800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 10,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/c1a54a18-349a-41fb-8d38-997905559264/S020ET+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a545193fb742f7c1c54dcca",
+      "title": "Minas Gerais Natural Espresso Roast",
+      "url": "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "f7588a04-0261-47ff-b292-d4742e30a62f",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "11.00"
+          },
+          "money_minor_units": 1100,
+          "money_currency": "USD",
+          "paired_integer_price": 1100,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 57,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f781d7d9-c929-4fdf-b53e-a021cea4ce85/G090BR-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a545309084860694788dea9",
+      "title": "Koke Natural Heirloom Espresso Roast",
+      "url": "https://www.lucienne.coffee/shop/p/koke-natural-heirloom-espresso-roast",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "48e85386-4c66-4bc0-90a8-daa2681d7387",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "15.00"
+          },
+          "money_minor_units": 1500,
+          "money_currency": "USD",
+          "paired_integer_price": 1500,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 19,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/d2de08b6-fe74-4d73-a3b2-06f13eb6e292/G091ET-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "667db1b5687af43a7a575703",
+      "title": "Risaralda Milan Nitro Caturra (2026)",
+      "url": "https://www.lucienne.coffee/shop/p/risaralda-milan-nitro-caturra",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "9f3ac10d-bdf7-4527-8dee-92242cc407d1",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 10,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/e8e4ffc8-2dcd-46dd-a482-fc445218f45f/Thumbnail+v2.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa203c317f24f719b47de1b",
+      "title": "Halo Hartume Carbonic Maceration Heirloom",
+      "url": "https://www.lucienne.coffee/shop/p/halo-hartume-carbonic-maceration-heirloom",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "c2b6e6a5-ba7f-4676-9b77-6a55eba17d10",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "14.00"
+          },
+          "money_minor_units": 1400,
+          "money_currency": "USD",
+          "paired_integer_price": 1400,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 16,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/e64a8152-cb7b-4d64-b1d4-a51fabc8542f/G015ET-XX+Thumbnail+v2.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2de822e2cbc068b3532a55",
+      "title": "Garmas Washed Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/garmas-washed-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "ed6daf13-ca67-4859-94da-bf15d03ea259",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "31.00"
+          },
+          "money_minor_units": 3100,
+          "money_currency": "USD",
+          "paired_integer_price": 3100,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 12,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/482f6cd5-6f02-4536-ab98-2f0e2f4e35f2/G088PE-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa1ff741148c771ff01b7dc",
+      "title": "Elida Estate Natural Catuai",
+      "url": "https://www.lucienne.coffee/shop/p/elida-estate-natural-catuai",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "a59adecf-09c0-4c02-a616-05fd6a8e54cb",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "32.00"
+          },
+          "money_minor_units": 3200,
+          "money_currency": "USD",
+          "paired_integer_price": 3200,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 14,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/408dfc9f-a0ff-4c69-81dc-5cf4c127196f/G105PA-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "66f4caf90f516c1bc14c42a8",
+      "title": "Yuan Yi Yuan Honey-Yeast Catimor",
+      "url": "https://www.lucienne.coffee/shop/p/yuan-yi-yuan-honey-yeast-catimor",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "d9850f4c-20dc-47f6-99fa-b61320003ba4",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "23.00"
+          },
+          "money_minor_units": 2300,
+          "money_currency": "USD",
+          "paired_integer_price": 2300,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 36,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/910da92e-2f23-4f1c-8848-a079416dfb57/G0001Ch-XX+Thumbnail+v2.png",
+      "description_present": true
+    },
+    {
+      "id": "69fa3460a1e82b3feedd921e",
+      "title": "Risaralda Milan \"Agi Culturing\" Caturra (2026)",
+      "url": "https://www.lucienne.coffee/shop/p/risaralda-milan-agi-culturing",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "c7f66f8c-6b32-47b1-a678-789413f8019d",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 3,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/55c46827-b168-40d5-bc50-483f17cf55dd/Thumbnail+v2.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa1fc6a06c66e1f45ac927a",
+      "title": "La Esmeralda \"Guabo\" Natural Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/la-esmeralda-guabo-natural-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "b14d51b9-df1f-415d-b519-8a62335787c6",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "140.00"
+          },
+          "money_minor_units": 14000,
+          "money_currency": "USD",
+          "paired_integer_price": 14000,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 9,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/33d41780-0a5e-4397-8ffc-0305310f53e5/G104PA-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa1fab6beb9db0a776a806e",
+      "title": "Caf\u00e9 De Eleta \"SG3526\" (K&R) Washed Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/caf-de-eleta-sg3526-kr-washed-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "36f2efd8-7992-4910-963a-01d4207e2034",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "60.00"
+          },
+          "money_minor_units": 6000,
+          "money_currency": "USD",
+          "paired_integer_price": 6000,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 16,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/f87d037d-70df-4f9b-a0fc-d08e26a16eab/G103PA-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a545a9170bbc541a85b5f00",
+      "title": "Santuario Gold Washed Yellow & Red Bourbon",
+      "url": "https://www.lucienne.coffee/shop/p/santuario-gold-washed-yellow-red-bourbon",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "df20bffe-e2ee-445a-bb55-f2ae1a2e6cb5",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "23.00"
+          },
+          "money_minor_units": 2300,
+          "money_currency": "USD",
+          "paired_integer_price": 2300,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 26,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/43403736-1954-4159-a3c1-6e760ca6ee07/G096CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa1f65d876cc3274e8c3521",
+      "title": "Gesha Village \"Narsha\" (Glitch Lot) Honey Geisha 1931",
+      "url": "https://www.lucienne.coffee/shop/p/gesha-village-narsha-glitch-lot-honey-geisha-1931",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "a97a217f-34c7-4b6b-ae5f-17cb74a7ab67",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "84.00"
+          },
+          "money_minor_units": 8400,
+          "money_currency": "USD",
+          "paired_integer_price": 8400,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 17,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/91d54db6-3f90-47bc-8d8e-1879d6279e2a/G101ET-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa1f8c35b0a1b67df27c0b9",
+      "title": "Finca Bernardina Extended Ferment Natural Pacamara",
+      "url": "https://www.lucienne.coffee/shop/p/finca-bernardina-extended-ferment-natural-pacamara",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "94af1b67-06a2-4427-8efe-872adec2a0be",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 17,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/ef90ab1b-8578-41c6-975a-8b54571ea50c/G102PA-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2de8adb23b28123b487dc0",
+      "title": "Kiangai Washed SL28 & SL34",
+      "url": "https://www.lucienne.coffee/shop/p/kiangai-washed-sl28-sl34",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "59d35b17-ad64-4663-b7de-279fe51029f8",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "17.00"
+          },
+          "money_minor_units": 1700,
+          "money_currency": "USD",
+          "paired_integer_price": 1700,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 22,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/2060df37-3e6a-409b-a861-57076a378790/G089KE-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6aa201c9271c241cef53bb14",
+      "title": "El Caminito Honey Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/el-caminito-honey-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "f1519a8d-f9de-444f-8e8f-61dd02efdf71",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "29.00"
+          },
+          "money_minor_units": 2900,
+          "money_currency": "USD",
+          "paired_integer_price": 2900,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 14,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/489792ce-2cf0-473d-8e88-e656e5e544ba/G106HN-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a73dc1c6b95a5464ee7ae67",
+      "title": "El Caminito 48h Anaerobic Washed Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/el-caminito-anaerobic-washed-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "d6dedfc5-dc31-408c-8597-e8f322fa85a6",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "30.00"
+          },
+          "money_minor_units": 3000,
+          "money_currency": "USD",
+          "paired_integer_price": 3000,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 5,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/a4227d3f-c362-4292-9a4f-94c8d771821f/G099HN-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a73dd747d94be33280f8b6f",
+      "title": "La Negrita Wine Yeast Nitro Natural Red Geisha",
+      "url": "https://www.lucienne.coffee/shop/p/la-negrita-wine-yeast-nitro-natural-red-geisha",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "d7d1e654-3192-4a56-9db5-6894b6a287f8",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "68.00"
+          },
+          "money_minor_units": 6800,
+          "money_currency": "USD",
+          "paired_integer_price": 6800,
+          "money_matches": true,
+          "stock": "sold_out",
+          "qty_in_stock": 0,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/4bffcbdc-b240-4de4-95f1-6b2edb5336c5/G100CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a73d9deda37b83ac40b1524",
+      "title": "Granja Paraiso 92 Thermal Shock Anaerobic Beer+Koji Pink Bourbon",
+      "url": "https://www.lucienne.coffee/shop/p/granja-paraiso-92-thermal-shock-anaerobic-beerkoji-pink-bourbon",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "f595f5af-6bcc-41e7-9c6e-70c58d150cd4",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "30.00"
+          },
+          "money_minor_units": 3000,
+          "money_currency": "USD",
+          "paired_integer_price": 3000,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 11,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/fb129b47-42a7-4b49-8cbc-edf86399fc8a/G098CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6745787ecb9edb60fd7b6fbd",
+      "title": "El Diviso \"Floral Symphony\" Natural Ombligon",
+      "url": "https://www.lucienne.coffee/shop/p/el-diviso-floral-symphony-ombligon",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "746dbb6f-b7c3-482b-9969-aed5b65eec2a",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 23,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/bc3e7600-4717-4803-926b-5aa8336a7ff4/G021CO-XX+Thumbnail+v2.png",
+      "description_present": true
+    },
+    {
+      "id": "683debba30e5ab3b7662eafc",
+      "title": "Risaralda Milan \"NG Culturing\" Caturra & Castillo",
+      "url": "https://www.lucienne.coffee/shop/p/risaralda-milan-ng-culturing",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "c0db187a-d2dd-4916-96bb-a5a361ec4184",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "26.00"
+          },
+          "money_minor_units": 2600,
+          "money_currency": "USD",
+          "paired_integer_price": 2600,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 19,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/c3180bac-1f4f-4e0a-9b5e-60bcad9b1c5a/G032CO-XX+Thumbnail+v2.png",
+      "description_present": true
+    },
+    {
+      "id": "68c86a7198e5987b6e7cfb25",
+      "title": "Risaralda Milan \"Logan Culturing\" Caturra & Castillo",
+      "url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "bdc243e8-e54a-4400-a1d0-6a1406c584bb",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 21,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/4cad137c-19e7-47ef-8495-70f81ce6b523/G044CO-XX+Thumbnail+v1-01.png",
+      "description_present": true
+    },
+    {
+      "id": "6a545c11b344bf693510baa8",
+      "title": "Los Manantiales Anaerobic Natural Kenya",
+      "url": "https://www.lucienne.coffee/shop/p/los-manantiales-anaerobic-natural-kenya",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "9d5df47e-1b07-4c57-aaba-f0b94f6ef57c",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 12,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/c004bbc6-7441-409c-b475-2ceed98a48c1/G097CR-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a5458c4c371b432a58eed6e",
+      "title": "Campo Hermoso Enigma Black Honey Sudan Rume",
+      "url": "https://www.lucienne.coffee/shop/p/campo-hermoso-enigma-black-honey-sudan-rume",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "e191f3e9-998b-43b1-9a04-8a7aa1c62ec1",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "40.00"
+          },
+          "money_minor_units": 4000,
+          "money_currency": "USD",
+          "paired_integer_price": 4000,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 15,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/fc96aa93-657d-46c9-89f7-e3b8daa38f44/G095CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "69cd70ab131ab069e72fdcdd",
+      "title": "Koke Natural Heirloom",
+      "url": "https://www.lucienne.coffee/shop/p/koke-natural-heirloom",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "a7721971-43d6-4cf3-aa1e-e2c0f04883fb",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "15.00"
+          },
+          "money_minor_units": 1500,
+          "money_currency": "USD",
+          "paired_integer_price": 1500,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 34,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/7fedc93f-1596-4b9a-bff0-08671eb9bd9c/G075ET-XX+-+thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a5455b131513a7c6e7047c3",
+      "title": "Banko Gotiti Fully Washed Kurume, Dega, & Wolisho",
+      "url": "https://www.lucienne.coffee/shop/p/banko-gotiti-fully-washed-kurume-dega-wolisho",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "a202ad47-56d4-451e-a8bf-d5516442e607",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "16.00"
+          },
+          "money_minor_units": 1600,
+          "money_currency": "USD",
+          "paired_integer_price": 1600,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 13,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/549cc979-015f-4ca8-8506-f02481dca855/G093ET-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a5453eefb742f7c1c554720",
+      "title": "El Vergel Natural Anaerobic Caturra & Castillo",
+      "url": "https://www.lucienne.coffee/shop/p/el-vergel-natural-anaerobic-caturra-castillo",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "0b2db186-3b2a-46ca-8f9c-6362fab9952f",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 8,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/137f7687-4fdc-49c5-9d03-ab530c8e96a5/G092CO-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6a2de5c04b60020366dcbe38",
+      "title": "Lat Pan Pin Passion Anaerobic Washed Catuai",
+      "url": "https://www.lucienne.coffee/shop/p/lat-pan-pin-passion-anaerobic-washed-catuai",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "e3d272e3-c2c2-4f56-b114-d971d8beb06d",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "20.00"
+          },
+          "money_minor_units": 2000,
+          "money_currency": "USD",
+          "paired_integer_price": 2000,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 21,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/0817cc3e-ca27-4e75-aa9d-e9569bd1b812/G084MM-XX+Thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "6939ef450af1183a9ea38ee2",
+      "title": "El Paraiso Red Plum",
+      "url": "https://www.lucienne.coffee/shop/p/el-paraiso-red-plum",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "732e5f2f-6ae2-46de-8864-ac9d5d8f57ec",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "28.00"
+          },
+          "money_minor_units": 2800,
+          "money_currency": "USD",
+          "paired_integer_price": 2800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 12,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/c241f296-d419-4d2f-ba91-b779480e4a70/G056CO+-+thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "69cd6c50752aba1ec25d295c",
+      "title": "Nigusse Gemeda Washed 75148",
+      "url": "https://www.lucienne.coffee/shop/p/nigusse-gemeda-washed-75148",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "6a426680-dcfc-49f7-9120-21edbd3b7c9f",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "18.00"
+          },
+          "money_minor_units": 1800,
+          "money_currency": "USD",
+          "paired_integer_price": 1800,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 12,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/336634b2-7410-4bcd-9af4-d12325c6f5a9/G071ET-XX+-+thumbnail+v1.png",
+      "description_present": true
+    },
+    {
+      "id": "69cd73e96cf8f03df75d1cb6",
+      "title": "Elto Hamasho 96h Honey Anaerobic 74158",
+      "url": "https://www.lucienne.coffee/shop/p/elto-hamasho-96h-honey-anaerobic-74158",
+      "guest_roaster_categories": [
+        {
+          "id": "684a208bb91f060aa5227085",
+          "name": "Glitch",
+          "path": "Roaster / Glitch",
+          "url": "/shop/roaster/glitch"
+        }
+      ],
+      "native_variants": [
+        {
+          "id": "7ffb51aa-ef76-4f38-995c-0f14718bf773",
+          "attributes": {
+            "Size": "100g"
+          },
+          "selected_price": {
+            "currency": "USD",
+            "value": "27.00"
+          },
+          "money_minor_units": 2700,
+          "money_currency": "USD",
+          "paired_integer_price": 2700,
+          "money_matches": true,
+          "stock": "in_stock",
+          "qty_in_stock": 7,
+          "unlimited": false
+        }
+      ],
+      "native_image_url": "https://images.squarespace-cdn.com/content/v1/631790fa8555dd2b858adf76/23c7a436-9f6b-4ebc-b0f6-82e2dfbfc9ed/G077ET-XX+-+thumbnail+v1.png",
+      "description_present": true
+    }
+  ],
+  "native_catalog_totals": {
+    "coffees": 56,
+    "variants": 56,
+    "currencies": [
+      "USD"
+    ],
+    "invalid_paired_money": 0,
+    "unknown_native_stock": 0,
+    "missing_native_images": 0
+  },
+  "published_storefront": {
+    "url": "https://www.lucienne.coffee/shop",
+    "sha256": "859ba4ce89b1345ca1c0c400f186cf8b2d561ba511328ea93f292f6ed8094244",
+    "canonical": "https://www.lucienne.coffee/shop",
+    "product_list_roots": 1,
+    "collection_context": {
+      "id": "684a1d051f62bc6ea50e1522",
+      "websiteId": "631790fa8555dd2b858adf76",
+      "title": "All Products",
+      "fullUrl": "/shop"
+    },
+    "frontend_items": 63,
+    "rendered_cards": 63,
+    "frontend_has_more": false,
+    "frontend_pagination": null,
+    "native_frontend_rendered_ids_match": true
+  },
+  "existing_adapter_discovery": {
+    "supported": true,
+    "urls": [
+      "https://www.lucienne.coffee/shop/p/la-lia-pie-san-yellow-honey-yellow-typica",
+      "https://www.lucienne.coffee/shop/p/kianyangi-murue-co-op-washed-sl28-sl34",
+      "https://www.lucienne.coffee/shop/p/el-morito-la-mandarina-washed-geisha",
+      "https://www.lucienne.coffee/shop/p/el-morito-washed-marhell",
+      "https://www.lucienne.coffee/shop/p/anasora-anaerobic-natural-74110-74112",
+      "https://www.lucienne.coffee/shop/p/las-margaritas-washed-cgle17",
+      "https://www.lucienne.coffee/shop/p/kotowa-estate-duncan-natural-eth47",
+      "https://www.lucienne.coffee/shop/p/kotowa-estate-las-brujas-natural-geisha",
+      "https://www.lucienne.coffee/shop/p/mulugeta-muntasha-washed-74158",
+      "https://www.lucienne.coffee/shop/p/campo-hermoso-peach-mosto-co-ferment-castillo",
+      "https://www.lucienne.coffee/shop/p/el-encanto-yeasted-thermal-shock-x2-ferment-washed-chiroso",
+      "https://www.lucienne.coffee/shop/p/el-encanto-yeasted-thermal-shock-x2-ferment-washed-orange-bourbon",
+      "https://www.lucienne.coffee/shop/p/tomomichi-morifuji-floral-method-purple-perfume-8th-anniversary-limited-blend",
+      "https://www.lucienne.coffee/shop/p/rumjam-deep-ripe-blend",
+      "https://www.lucienne.coffee/shop/p/pink-poison-romantic-blend",
+      "https://www.lucienne.coffee/shop/p/el-bebedero-anaerobic-washed-maragogype",
+      "https://www.lucienne.coffee/shop/p/el-placer-red-fruit-co-ferment-ea-decaf-caturra",
+      "https://www.lucienne.coffee/shop/p/peas-blancas-lilo-coffee-kissa-natural-geisha",
+      "https://www.lucienne.coffee/shop/p/silinga-nigusse-gemeda-natural-dark-74110",
+      "https://www.lucienne.coffee/shop/p/kangocho-lilo-coffee-kissa-natural-dark-sl28-sl34-ruiru-11-batian",
+      "https://www.lucienne.coffee/shop/p/gachika-kiambu-washed-sl28-batian-ruiru-11",
+      "https://www.lucienne.coffee/shop/p/el-diviso-anaerobic-washed-pink-bourbon",
+      "https://www.lucienne.coffee/shop/p/el-diviso-anaerobic-natural-ombligon",
+      "https://www.lucienne.coffee/shop/p/chelchele-washed-heirloom",
+      "https://www.lucienne.coffee/shop/p/perla-del-otun-natural-sudan-rume",
+      "https://www.lucienne.coffee/shop/p/tabe-burka-natural-heirloom",
+      "https://www.lucienne.coffee/shop/p/minas-gerais-natural-espresso-roast",
+      "https://www.lucienne.coffee/shop/p/koke-natural-heirloom-espresso-roast",
+      "https://www.lucienne.coffee/shop/p/risaralda-milan-nitro-caturra",
+      "https://www.lucienne.coffee/shop/p/halo-hartume-carbonic-maceration-heirloom",
+      "https://www.lucienne.coffee/shop/p/garmas-washed-geisha",
+      "https://www.lucienne.coffee/shop/p/elida-estate-natural-catuai",
+      "https://www.lucienne.coffee/shop/p/yuan-yi-yuan-honey-yeast-catimor",
+      "https://www.lucienne.coffee/shop/p/risaralda-milan-agi-culturing",
+      "https://www.lucienne.coffee/shop/p/la-esmeralda-guabo-natural-geisha",
+      "https://www.lucienne.coffee/shop/p/caf-de-eleta-sg3526-kr-washed-geisha",
+      "https://www.lucienne.coffee/shop/p/santuario-gold-washed-yellow-red-bourbon",
+      "https://www.lucienne.coffee/shop/p/gesha-village-narsha-glitch-lot-honey-geisha-1931",
+      "https://www.lucienne.coffee/shop/p/finca-bernardina-extended-ferment-natural-pacamara",
+      "https://www.lucienne.coffee/shop/p/kiangai-washed-sl28-sl34",
+      "https://www.lucienne.coffee/shop/p/el-caminito-honey-geisha",
+      "https://www.lucienne.coffee/shop/p/el-caminito-anaerobic-washed-geisha",
+      "https://www.lucienne.coffee/shop/p/la-negrita-wine-yeast-nitro-natural-red-geisha",
+      "https://www.lucienne.coffee/shop/p/granja-paraiso-92-thermal-shock-anaerobic-beerkoji-pink-bourbon",
+      "https://www.lucienne.coffee/shop/p/el-diviso-floral-symphony-ombligon",
+      "https://www.lucienne.coffee/shop/p/risaralda-milan-ng-culturing",
+      "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+      "https://www.lucienne.coffee/shop/p/los-manantiales-anaerobic-natural-kenya",
+      "https://www.lucienne.coffee/shop/p/campo-hermoso-enigma-black-honey-sudan-rume",
+      "https://www.lucienne.coffee/shop/p/koke-natural-heirloom",
+      "https://www.lucienne.coffee/shop/p/banko-gotiti-fully-washed-kurume-dega-wolisho",
+      "https://www.lucienne.coffee/shop/p/el-vergel-natural-anaerobic-caturra-castillo",
+      "https://www.lucienne.coffee/shop/p/lat-pan-pin-passion-anaerobic-washed-catuai",
+      "https://www.lucienne.coffee/shop/p/el-paraiso-red-plum",
+      "https://www.lucienne.coffee/shop/p/nigusse-gemeda-washed-75148",
+      "https://www.lucienne.coffee/shop/p/elto-hamasho-96h-honey-anaerobic-74158"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "https://www.lucienne.coffee/shop?format=json",
+        "reported_items": 212,
+        "returned_items": 63,
+        "coffee_items": 56,
+        "pagination_present": false
+      },
+      {
+        "listing": "https://www.lucienne.coffee/shop",
+        "published_items": 63,
+        "configured_page_size": 999,
+        "native_frontend_and_rendered_identities_match": true,
+        "inventory_scope": "published_storefront"
+      }
+    ],
+    "inventory_authorizes_global_absence": false
+  },
+  "pagination_probes": [
+    {
+      "url": "https://www.lucienne.coffee/shop?format=json&offset=63",
+      "returned_items": 22,
+      "reported_items": 212,
+      "pagination": {
+        "pageSize": 200,
+        "prevPage": true,
+        "prevPageOffset": 62,
+        "prevPageUrl": "/shop?offset=62&reversePaginate=true"
+      },
+      "new_ids_outside_initial_published_set": [],
+      "sha256": "eaa18121d305db0c2ed6f9daf46fe68495ed266c2b2acd966a6b74ec78e5ec71"
+    },
+    {
+      "url": "https://www.lucienne.coffee/shop?format=json&offset=212",
+      "returned_items": 0,
+      "reported_items": 212,
+      "pagination": {
+        "pageSize": 200
+      },
+      "new_ids_outside_initial_published_set": [],
+      "sha256": "b79593f39fa2b33dcac522583b25701f22f40709df61a139645abcd3547ea44f"
+    }
+  ],
+  "own_category_probe": {
+    "url": "https://www.lucienne.coffee/shop/roaster/lucienne?format=json",
+    "returned_items": 0,
+    "coffees_in_lucienne_category": [],
+    "pagination": null
+  },
+  "costa_rica_listing": {
+    "url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+    "canonical": "https://www.lucienne.coffee/shop",
+    "product_list_roots": 1,
+    "primary_product_articles": 0,
+    "jsonld_types": [
+      "WebSite"
+    ],
+    "sha256": "44a16406362447e788a994092a73e23b7793dbe0bfcb93810ac7d68f870c88fa"
+  },
+  "gacha_hold": {
+    "id": "6a8023fb110d906f3247a555",
+    "title": "GACHA COFFEE (Bargain Bags)",
+    "url": "https://www.lucienne.coffee/shop/p/gacha-coffee",
+    "category_paths": [
+      "New",
+      "Merch"
+    ],
+    "native_variants": [
+      {
+        "id": "4a3ad265-6f77-4a1a-b793-97e4b11f962e",
+        "attributes": {
+          "Size": "100g"
+        },
+        "selected_price": {
+          "currency": "USD",
+          "value": "5.00"
+        },
+        "money_minor_units": 500,
+        "money_currency": "USD",
+        "paired_integer_price": 500,
+        "money_matches": true,
+        "stock": "in_stock",
+        "qty_in_stock": 4,
+        "unlimited": false
+      }
+    ],
+    "primary_article_and_heading_match": true,
+    "excluded_by_roaster_category_profile": true,
+    "manufacturer_ownership": "unknown/mixed; explicit review hold",
+    "merchant_description_note": "Merchant describes a random previously frozen Lucienne coffee bag; no exact lot or manufacturer mapping is established by the Merch/New category.",
+    "description_sha256": "d63c028fc0b1f89df17d0ee1cd3eeb2f736e26a565b3a8f8800d87e30901ba6b",
+    "description_excerpt": "You will receive one random 100g bag of (previously) frozen Lucienne coffee."
+  },
+  "finished_at": "2026-10-08T21:46:05.536Z",
+  "passed": true,
+  "snapshot_consistency": "Bounded sequential public observations, not an atomic inventory/market snapshot",
+  "profile_registration_status": "Held recommendation only; not written to shared profile registry",
+  "manufacturer_ownership_status": "Explicit review hold: guest-source taxonomy does not establish Lucienne as manufacturer; Gacha taxonomy and random-bag description are ambiguous",
+  "prior_bootstrap_requests": [
+    {
+      "url": "https://www.lucienne.coffee/shop?format=json",
+      "method": "GET",
+      "status": 200,
+      "at": "2026-10-08T21:39:49.207Z",
+      "scope": "initial native catalog bootstrap"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.lucienne.coffee/shop?format=json",
+      "at": "2026-10-08T21:45:24.386Z",
+      "status": 200
+    }
+  ],
+  "public_gets_total_this_investigation": 18,
+  "source_adapter_sha256": "297a445320e8f2b48ecba9a7961daaa415ae1d3562a91899f5713f0139277cc9",
+  "provided_merch_listing_evidence": {
+    "path": "/tmp/ec-lucienne-merch.html",
+    "sha256": "ab6b1cdbb655fdd6b95cf8b59e2d4e100deb5c2bcc74eec53dd7861a089399bb",
+    "canonical": "https://www.lucienne.coffee/shop",
+    "native_website_id": "631790fa8555dd2b858adf76",
+    "native_collection_id": "684a1d051f62bc6ea50e1522",
+    "primary_product_schema": false,
+    "jsonld_types": [
+      "WebSite"
+    ],
+    "product_list_cards": 4,
+    "scope": "Previously supplied HTML; no additional GET performed for this evidence"
+  }
+}
