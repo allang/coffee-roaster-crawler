@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T19:58:22.020Z",
+  "checked_at": "2026-10-08T20:13:22.652Z",
   "installation": {
     "checked_at": "2026-10-08T19:52:34.417Z",
     "installed_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
@@ -100,9 +100,36 @@
     "logged_errors": [],
     "migration_applied": false,
     "passport_restarted": false,
-    "full_passport_gate_passed": false,
-    "limit": "Installation startup/checkpoint evidence; dated prior Loveless proof is in its own report. Full new Passport and whole-tier coverage remain pending.",
-    "installed_runtime_verified": true
+    "full_passport_gate_passed": true,
+    "limit": "Verified installation, one full Passport coffee-product run/readback and resumed normal checkpoint. Eight accessory subsets stay incomplete; whole-tier coverage and matched speedup remain unverified.",
+    "installed_runtime_verified": true,
+    "current_scheduler_state": "running",
+    "normal_persistence_after_guard_resume": {
+      "checked_at": "2026-10-08T20:13:22.652Z",
+      "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+      "scheduler_node_pid": 59674,
+      "successful_save_events_since_install": 15,
+      "product": {
+        "id": "8bd57a13-00d4-4209-a7aa-bd8935b828e9",
+        "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+        "source_url": "https://www.loveluminous.coffee/products/colombia-ea-decaf-lychee-peach",
+        "last_seen_at": "2026-10-08T20:12:55.187+00:00",
+        "is_active": true
+      },
+      "known_pages": [
+        {
+          "id": "381be664-5c9d-4d17-a201-75220bb47efc",
+          "url": "https://www.loveluminous.coffee/products/colombia-ea-decaf-lychee-peach",
+          "status": "coffee",
+          "last_fetched_at": "2026-10-08T20:12:55.187+00:00"
+        }
+      ],
+      "persisted_after_install": true,
+      "persisted_after_guard_resume": true,
+      "known_checkpoint_after_guard_resume": true,
+      "guard_resumed_at": "2026-10-08T20:09:39.715Z"
+    },
+    "fresh_normal_passport_run_completed": true
   },
   "passport": {
     "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
@@ -117,7 +144,7 @@
       "max_roaster_jobs": 2
     },
     "session_id": 18288,
-    "status": "running",
+    "status": "completed",
     "fresh_preflight": {
       "checked_at": "2026-10-08T19:54:04.220Z",
       "products": 255,
@@ -178,11 +205,161 @@
       "reconcile_omissions": false,
       "inventory_authorizes_global_absence": false
     },
-    "full_catalog_readback_passed": false,
-    "terminal_metrics_finalized": false
+    "full_catalog_readback_passed": true,
+    "terminal_metrics_finalized": true,
+    "finished_at": "2026-10-08T20:09:38.233Z",
+    "terminal_visitor": {
+      "visited": 255,
+      "coffeeFound": 255,
+      "irrelevant": 0,
+      "errors": 0,
+      "aiCalls": 6,
+      "cacheHits": 249,
+      "structuredPages": 0,
+      "structuredProductOnlyPages": 0,
+      "marketChecks": 255,
+      "aiUsage": {
+        "prompt_tokens": 10039,
+        "completion_tokens": 19482,
+        "cached_tokens": 0,
+        "reasoning_tokens": 14464,
+        "unreported_calls": 0
+      }
+    },
+    "validation": {
+      "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+      "checked_at": "2026-10-08T20:10:54.280Z",
+      "passed": true,
+      "scope": "one full normal latest-source Passport crawl and fresh readback; eight explicitly incomplete accessory subsets; global omissions disabled; no whole-tier inventory claim",
+      "owners": [
+        {
+          "entity_id": "c978d995-9310-4c54-945b-5211ccdddf7a",
+          "name": "Passport Specialty Coffee",
+          "success": true,
+          "started_at": "2026-10-08T19:56:36.640Z",
+          "finished_at": "2026-10-08T20:09:38.233Z",
+          "run_id": "29d25480-cdac-4759-a63d-f5d3afad7cb1",
+          "status": "completed",
+          "metrics": {
+            "visited": 255,
+            "coffeeFound": 255,
+            "irrelevant": 0,
+            "errors": 0,
+            "aiCalls": 6,
+            "cacheHits": 249,
+            "structuredPages": 0,
+            "structuredProductOnlyPages": 0,
+            "marketChecks": 255,
+            "aiUsage": {
+              "prompt_tokens": 10039,
+              "completion_tokens": 19482,
+              "cached_tokens": 0,
+              "reasoning_tokens": 14464,
+              "unreported_calls": 0
+            }
+          },
+          "saved_products": 255,
+          "new_products": 6,
+          "exact_native_variants": 528,
+          "total_catalog_products": 255,
+          "total_catalog_variants": 528
+        }
+      ],
+      "incomplete_accessory_subsets": 8,
+      "omission_reconciliation_attempts": 0,
+      "saved_products": 255,
+      "public_images_verified": 169,
+      "public_image_bytes": 81070834,
+      "prohibited_requests": 0,
+      "request_summary": {
+        "catalog": 1569,
+        "merchant": 796,
+        "model": 6
+      },
+      "runtime": {
+        "head": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+        "working_tree_clean": true,
+        "env_unchanged": true,
+        "plist_unchanged": true,
+        "launcher_unchanged": true,
+        "lock_pid": 59662,
+        "scheduler_node_pid": 59674,
+        "scheduler_state": "S",
+        "scheduler_resumed_at": "2026-10-08T20:09:39.715Z"
+      },
+      "failures": []
+    },
+    "controller": {
+      "checked_at": "2026-10-08T20:06:19.740Z",
+      "controller_pid": 60564,
+      "controller_session_id": 18288,
+      "observer_pid": 60576,
+      "scheduler_pid": 59674,
+      "scheduler_lock_pid": 59662,
+      "scheduler_state_during_verification": "T",
+      "controller_source_sha256": "42aaf6787bd28520bf70f1b5e86135395c640dec585364c77fb316176016d00f",
+      "actual_exit_and_error_handlers_tested": true,
+      "tests": [
+        {
+          "mode": "exit_zero",
+          "passed": true,
+          "suspended_state": "T",
+          "resumed_state": "S",
+          "controller_exit_code": 0
+        },
+        {
+          "mode": "exit_nonzero",
+          "passed": true,
+          "suspended_state": "T",
+          "resumed_state": "S",
+          "controller_exit_code": 1
+        },
+        {
+          "mode": "spawn_error",
+          "passed": true,
+          "suspended_state": "T",
+          "resumed_state": "S",
+          "controller_exit_code": 1
+        }
+      ],
+      "probe_scope": "Exact controller handlers executed against separately spawned owned idle Node processes. Zero/nonzero child exit and child spawn errors all SIGCONT resumed the same probe PID. No production signals or catalog/model calls by these probes.",
+      "limitation": "Protection covers observer exit and spawn failure; no claim of surviving a SIGKILL of both controller and observer.",
+      "passed": true,
+      "actual_exit_code": 0,
+      "actual_same_pid_resumed": true,
+      "actual_resumed_at": "2026-10-08T20:09:39.715Z",
+      "verification_suspension_seconds": 784.887,
+      "normal_scheduler_persistence_after_resume": {
+        "checked_at": "2026-10-08T20:13:22.652Z",
+        "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+        "scheduler_node_pid": 59674,
+        "successful_save_events_since_install": 15,
+        "product": {
+          "id": "8bd57a13-00d4-4209-a7aa-bd8935b828e9",
+          "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+          "source_url": "https://www.loveluminous.coffee/products/colombia-ea-decaf-lychee-peach",
+          "last_seen_at": "2026-10-08T20:12:55.187+00:00",
+          "is_active": true
+        },
+        "known_pages": [
+          {
+            "id": "381be664-5c9d-4d17-a201-75220bb47efc",
+            "url": "https://www.loveluminous.coffee/products/colombia-ea-decaf-lychee-peach",
+            "status": "coffee",
+            "last_fetched_at": "2026-10-08T20:12:55.187+00:00"
+          }
+        ],
+        "persisted_after_install": true,
+        "persisted_after_guard_resume": true,
+        "known_checkpoint_after_guard_resume": true,
+        "guard_resumed_at": "2026-10-08T20:09:39.715Z"
+      }
+    },
+    "final_report": "MAC_MINI_PASSPORT_COOLDOWN_RUN_20261008.md"
   },
   "issue_start": "https://github.com/allang/coffee-roaster-crawler/issues/1#issuecomment-6067942316",
   "deployment": false,
   "migration_applied": false,
-  "purchases": 0
+  "purchases": 0,
+  "start_receipt_recorded_at": "2026-10-08T19:58:22.020Z"
 }
