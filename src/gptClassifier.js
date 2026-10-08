@@ -129,7 +129,7 @@ Rules:
 - Some values will not be found on the page. Mark them as null instead of using a blank string.
 - For "short_description", summarize the roaster's description. Limit the description to 400 chars.
 - For "nano_description", limit the description to 100 chars.
-- Some pages will not be in english. Preserve original names and attribute wording; do not translate the source product title.
+- Some pages will not be in English. Extract original names and attribute wording unchanged; a separate translation gate supplies English display text before saving and retains these source originals.
 - YOU MAY NOT guess about the attributes.
 - Your output must be pure JSON because it will be parsed by a computer.
 - The image being saved should be of the product. Prefer the image with the coffee name in the image asset path that is the largest image available. It must be the product image, not the roaster logo or other images.
