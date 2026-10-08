@@ -2,6 +2,13 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — verified duplicate-owner source installed; scheduler resumed
+
+- After coordinating-thread confirmation of guarded six-owner merge/readback/zero-change repeat and merged PR #8, installed exact main **`ff26496077ec348fc162dcb2e74ea1ccb7b477c5`** via fast-forward in the original clean checkout. Preserved Git refs/bundle and private environment/plist/launcher/caches; dependency manifests and launcher unchanged. No merge DML or schema migration here.
+- Installed suite **456 total / 455 pass / zero fail / one explicit native-PostgreSQL unavailable skip**, equivalent PGlite pass, **11.050694s**. All 59 profiles preserved; ledger 524 assignments/65 canonical tier-one IDs; six retired IDs absent from catalog/ledger/profiles. Read-only Loveless check passed all four historical URL-fallback adoptions plus exact native-product adoption, with HTML/json/js200, unchanged catalog readback and zero writes/model calls.
+- Resumed original scheduler **19:02:34.401 UTC / 3:02:34 PM Eastern**, Node startup34.615; pause **945.539s**. Launcher/lock54930, sole Node54939, original cwd, one worker and5,400s interval verified. Actual tier1 starts57 eligible; H+S run115ff53d-4e51-494a-9b83-312da3a5f564 active. Product08d0fc20-b669-545d-ad7b-bbc50399f5e0 plus known page persisted19:03:18.467; no dated startup severity error. Manta interruption stays failed with operator reason. [Report](docs/MAC_MINI_DUPLICATE_MERGE_UPDATE_20261008.md)/[receipt](docs/mac-mini-duplicate-merge-update-20261008.json).
+- Passport failed terminal receipt unchanged; no failed-process rerun, variant-index/typed-processing migration, reset, hosted deployment, purchase or extra automation. Startup/checkpoint/adoption proof does not certify full merchant/tier coverage or a speedup. All34 linked review surfaces checked before this milestone; no new finding. Main merged normally into this documentation branch, preserving prior report history. Exact documentation SHA/CI and post-push review follow in issue #1.
+
 ## 2026-10-08 — scheduler paused for tested six-owner duplicate merge
 
 - Coordinating thread supplied the human-requested concrete six-owner plan and successful rolled-back production dry-run: Loveless, Dayglow, Glitch, Little Wolf, Moonwake and Push X Pull, preserving product/variant/price/weight/stock/photo/fact/location/run history. It owns applying guarded DML and the fresh readback; no merge or schema application performed here.
