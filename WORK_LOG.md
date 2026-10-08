@@ -2,6 +2,12 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — scheduler paused for tested six-owner duplicate merge
+
+- Coordinating thread supplied the human-requested concrete six-owner plan and successful rolled-back production dry-run: Loveless, Dayglow, Glitch, Little Wolf, Moonwake and Push X Pull, preserving product/variant/price/weight/stock/photo/fact/location/run history. It owns applying guarded DML and the fresh readback; no merge or schema application performed here.
+- Paused the original scheduler **18:46:48.862 UTC / 2:46:48 PM Eastern**, main `0a1cefb760b6d90e4dbde885fcf79a1d8da44438`, at a confirmed persisted product plus known-page checkpoint, both observed **18:46:45.995 UTC**. Exact launcher/lock **43736** and Node **43745** exited; lock removed and LaunchAgent unloaded. Byte-identical environment/plist, original 5,400-second schedule, source and private logs/configuration preserved. Only interrupted Manta Ray run `a0377f99-0374-4888-94f2-57e03689c3c2` was guarded from running to failed with actual operator-pause reason; saved records/checkpoints retained. No false completion or historical run rewrite.
+- Passport had already exited failed naturally; its terminal receipt remains byte-identical. [Pause receipt](docs/mac-mini-duplicate-merge-pause-20261008.json) and [issue handoff](https://github.com/allang/coffee-roaster-crawler/issues/1#issuecomment-6066768539). Remain **paused** until the coordinating thread confirms catalog readback and provides tested merged-source SHA; install/verify that code before bootstrap. No automatic resume, variant-index migration, new duplicate-owner crawl, reset, model override, deployment, purchase or extra automation. Reviewed all 31 linked review surfaces before this milestone; no new actionable finding. Exact documentation SHA and checks follow in issue #1.
+
 ## 2026-10-08 — full normal Passport recovery failed; successful subset verified
 
 - Read-only preflight at **18:03:01.667–18:03:04.679 UTC** checked all **213 retained products / 435 retained variants** against the corrected **255-coffee / 528-SKU** inventory and simulated actual v1 native/legacy variant adoption under the old global unique-weight guard: zero conflicts. Retained 212 known pages and all historical failed rows; no schema application.
