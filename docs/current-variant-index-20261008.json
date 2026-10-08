@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-08T15:57:26.189857+00:00",
+  "project": "gtlipifdfyugiwpxvuse",
+  "method": "Read-only pg_indexes / pg_index / pg_constraint SELECT in the existing authenticated Supabase browser",
+  "query_url": "https://supabase.com/dashboard/project/gtlipifdfyugiwpxvuse/sql/2a1a31bc-02e7-4f13-97f2-943e18fddec1",
+  "database_mutations": 0,
+  "indexes": [
+    {"indexname":"product_variants_pkey","definition":"CREATE UNIQUE INDEX product_variants_pkey ON public.product_variants USING btree (id)","indisready":true,"indisvalid":true,"indisunique":true},
+    {"indexname":"product_variants_product_idx","definition":"CREATE INDEX product_variants_product_idx ON public.product_variants USING btree (product_id)","indisready":true,"indisvalid":true,"indisunique":false},
+    {"indexname":"product_variants_weight_idx","definition":"CREATE INDEX product_variants_weight_idx ON public.product_variants USING btree (weight_g)","indisready":true,"indisvalid":true,"indisunique":false},
+    {"indexname":"product_variants_unique_weight_per_product","definition":"CREATE UNIQUE INDEX product_variants_unique_weight_per_product ON public.product_variants USING btree (product_id, weight_g) WHERE (weight_g IS NOT NULL)","indisready":true,"indisvalid":true,"indisunique":true},
+    {"indexname":"variants_source_key_unique","definition":"CREATE UNIQUE INDEX variants_source_key_unique ON public.product_variants USING btree (product_id, source_key) WHERE (source_key IS NOT NULL)","indisready":true,"indisvalid":true,"indisunique":true}
+  ],
+  "constraints": [
+    {"name":"product_variants_avail_check","type":"c","definition":"CHECK ((availability = ANY (ARRAY['in_stock'::text, 'out_of_stock'::text, 'unknown'::text])))"},
+    {"name":"product_variants_availability_state_check","type":"c","definition":"CHECK ((availability_state = ANY (ARRAY['in_stock'::text, 'sold_out'::text, 'unknown'::text, 'removed'::text])))"},
+    {"name":"product_variants_currency_check","type":"c","definition":"CHECK (((currency IS NULL) OR ((length(currency) >= 3) AND (length(currency) <= 10))))"},
+    {"name":"product_variants_currency_exponent_check","type":"c","definition":"CHECK (((currency_exponent >= 0) AND (currency_exponent <= 3)))"},
+    {"name":"product_variants_pkey","type":"p","definition":"PRIMARY KEY (id)"},
+    {"name":"product_variants_price_amount_check","type":"c","definition":"CHECK ((price_amount >= (0)::numeric))"},
+    {"name":"product_variants_price_minor_units_check","type":"c","definition":"CHECK ((price_minor_units >= 0))"},
+    {"name":"product_variants_product_id_fkey","type":"f","definition":"FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE"}
+  ]
+}
