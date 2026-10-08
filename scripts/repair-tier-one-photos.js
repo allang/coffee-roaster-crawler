@@ -20,12 +20,26 @@ function merchantReader(entity) {
   const profile=profiles.find(p=>p.entity_ids.includes(entity.id));
   return createReader({hosts:[...new Set([host,'www.'+host,...profile?.hosts || []])]});
 }
+function merchantPhotoReader(entity,{fetchHtml}={}) {
+  const read=fetchHtml || merchantReader(entity).fetchHtml;
+  const profile=require('../src/siteSupport/discovery').profileFor(entity);
+  return async url=>{
+    const page=await read(url);
+    if(!page.success || profile?.adapter!=='subbly')return page;
+    try {
+      // The reviewed parser binds the native image to the primary product's
+      // URL, title, ID and storefront contract; script/thumbnail guesses do not.
+      const sourceProduct=await require('../src/siteSupport/subbly').fetchSubblyProduct(page.data,page.finalUrl || url,profile,read);
+      return {...page,sourceProduct};
+    }catch(error){return {...page,success:false,error:'Native product photo verification failed: '+error.message};}
+  };
+}
 async function main(args=process.argv.slice(2)) {
   const [mode,file,resultFile]=args;
   if(!['plan','apply'].includes(mode) || !file || mode==='apply' && !resultFile)throw Error('Usage: repair-tier-one-photos.js plan PLAN.json [--recent] | apply PLAN.json RESULT.json');
   const db=getSupabase(),entities=await allRows(db,'entities','id,name,website_url',[...owners.keys()]),byId=new Map(entities.map(e=>[e.id,e]));
   const readers=new Map();
-  function dependencies(owner){if(!owners.has(owner) || !byId.get(owner)?.website_url)throw Error('Unverified tier one owner or missing official website');if(!readers.has(owner))readers.set(owner,merchantReader(byId.get(owner)));return {db,fetchPage:readers.get(owner).fetchHtml,fetchImage:fetchSourceImage};}
+  function dependencies(owner){if(!owners.has(owner) || !byId.get(owner)?.website_url)throw Error('Unverified tier one owner or missing official website');if(!readers.has(owner))readers.set(owner,merchantPhotoReader(byId.get(owner)));return {db,fetchPage:readers.get(owner),fetchImage:fetchSourceImage};}
   let entries=[],productsRead=0;
   if(mode==='plan') {
     const products=await allRows(db,'products','id,entity_id,name,source_url,original_image_url,product_type,is_active,is_available,last_seen_at,availability_last_seen_at,product_media(media_assets(url))',[...owners.keys()]);productsRead=products.length;
@@ -51,4 +65,4 @@ async function main(args=process.argv.slice(2)) {
   if(counts.failed)process.exitCode=1;
 }
 if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1;});
-module.exports={main,merchantReader};
+module.exports={main,merchantReader,merchantPhotoReader};

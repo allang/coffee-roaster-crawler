@@ -35,6 +35,21 @@ test('fresh photos override invented classification even without structured pric
  const absent=await extractPage({page:{url,html:'<p>Coffee</p>',content:'Coffee'},model:'fixture',classify:async()=>({data:{is_coffee_page:true,product:{name:'Ethiopia',attributes:{product_image_url:image}}}})});
  assert.equal(absent.data.product.attributes.product_image_url,undefined);
 });
+test('photo repair reads a captured Subbly primary image absent from schema and rejects invalid native product evidence',async()=>{
+ const f=require('./fixtures/siteSupport/hatch-subbly.json'),profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='Hatch');
+ const {merchantPhotoReader}=require('../scripts/repair-tier-one-photos'),source='https://hatchcrafted.com/shop/starlight';
+ const flight=p=>'<script>self.__next_f.push('+JSON.stringify([1,'10:'+JSON.stringify({product:p})+'\n'])+')</script>';
+ const page=f.primary+'<script src="'+profile.formatter_path+'"></script>'+flight(f.product);
+ const entity={id:profile.entity_ids[0],website_url:'https://hatchcrafted.com'},product={id:'existing-product',entity_id:entity.id,name:'Starlight',source_url:source};
+ const reader=html=>merchantPhotoReader(entity,{fetchHtml:async requested=>({success:true,status:200,finalUrl:requested,data:new URL(requested).pathname===profile.formatter_path?f.formatter:html})});
+ assert.equal(primaryProductImage({html:page,url:source}).url,null);
+ const result=await inspectPhoto(product,{fetchPage:reader(page),fetchImage:async()=>({success:true,data:png})});
+ assert.equal(result.status,'ready');assert.equal(result.image_url,f.product.images[0].url);assert.equal(result.image_evidence.source,'adapter_primary_product');assert.equal(result.width,2);
+ for(const bad of [page+flight(f.product),page.replace('Starlight</h1>','Another</h1>'),page.replace('CA$25.00','CA$99.00')]){
+  const held=await inspectPhoto(product,{fetchPage:reader(bad),fetchImage:async()=>{throw Error('Unverified native photo must not be fetched');}});
+  assert.equal(held.status,'held');assert.match(held.reason,/Native product photo verification failed/);
+ }
+});
 test('image verification accepts real image bytes and blocks HTML and prohibited paths before requesting',async()=>{
  assert.equal(imageFormat(png).contentType,'image/png');assert.equal(imageFormat(Buffer.from('<html>Not an image</html>')),null);
  const response=await fetchSourceImage('https://shop.test/terms/photo.png');assert.equal(response.success,false);assert.match(response.error,/Prohibited/);
@@ -54,6 +69,11 @@ test('image verification accepts real image bytes and blocks HTML and prohibited
  const aliasDependencies={fetchPage:async()=>({success:true,data:aliasPage,finalUrl:alias.source_url}),fetchImage:async()=>({success:true,data:png})};
  assert.equal((await inspectPhoto(aliasProduct,aliasDependencies)).status,'ready');
  assert.equal((await inspectPhoto({...aliasProduct,entity_id:'different-owner'},aliasDependencies)).status,'held');
+ const hatchAlias=require('../data/coffee-photo-title-aliases.json').find(a=>a.native_product_id),hatchProduct={id:hatchAlias.product_id,entity_id:hatchAlias.entity_id,name:hatchAlias.stored_title,source_url:hatchAlias.source_url};
+ const native=id=>({success:true,data:'<main><h1>'+hatchAlias.current_title+'</h1></main>',finalUrl:hatchAlias.source_url,sourceProduct:{'@type':'Product',url:hatchAlias.source_url,productID:id,name:hatchAlias.current_title,image}});
+ assert.equal((await inspectPhoto(hatchProduct,{fetchPage:async()=>native(hatchAlias.native_product_id),fetchImage:async()=>({success:true,data:png})})).status,'ready');
+ const changedNative=await inspectPhoto(hatchProduct,{fetchPage:async()=>native('another-product'),fetchImage:async()=>{throw Error('A title alias cannot accept a different native product ID');}});
+ assert.equal(changedNative.status,'held');assert.equal(changedNative.reason,'current_product_title_requires_review');
 });
 test('catalog save stores a real photo, repairs existing records idempotently and preserves a present photo',async()=>{
  const pg=await catalogDb();try {

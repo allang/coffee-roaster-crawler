@@ -6,5 +6,14 @@
     "stored_title": "Roaster Surprise - We will choose your coffee!!",
     "current_title": "Roaster's Surprise - We choose your coffee!",
     "reason": "Reviewed grammar-only title change on the same merchant product URL; no lot, variety, decaf or processing change."
+  },
+  {
+    "product_id": "703017ac-05e5-405d-9c7e-abf2d1bad67c",
+    "entity_id": "973e6bc5-2f7c-4213-ba81-27fa025ce64d",
+    "source_url": "https://www.hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural",
+    "stored_title": "Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural",
+    "current_title": "CGLE Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural",
+    "native_product_id": "419412",
+    "reason": "Reviewed producer-prefix addition for this exact record. The current primary native product retains the canonical source URL and coffee title, adds CGLE, and explicitly agrees with the saved 2025 harvest, Herrera producers, Colombian origin and Geisha variety. Native product ID 419412 is required; no general producer-prefix normalization."
   }
 ]

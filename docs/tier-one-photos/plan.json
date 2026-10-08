@@ -1,14 +1,14 @@
 {
   "version": 1,
   "mode": "read-only-photo-plan",
-  "checked_at": "2026-10-08T07:09:07.043Z",
+  "checked_at": "2026-10-08T08:12:04.270Z",
   "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
   "products_read": 6345,
   "scope": "all_verified_tier_one_coffees",
   "production_writes": 0,
   "counts": {
-    "held": 223,
-    "ready": 229
+    "held": 221,
+    "ready": 231
   },
   "entries": [
     {"product_id":"003bbfef-88d2-4499-881d-2cfb842b7665","entity_id":"a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6","name":"Gisheke","source_url":"https://xliiicoffee.com/product/gisheke-21132","prior_image_url":null,"status":"held","reason":"current_product_title_requires_review","current_name":"Gisheke #21132","image_url":"https://xliiicoffee.com/wp-content/uploads/2023/07/202308030643-gisheke.webp","roaster":"XLIII Coffee"},
@@ -24,7 +24,7 @@
     {"product_id":"08aa034f-135b-42cb-a6f6-57e6c8d8086a","entity_id":"a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6","name":"Neja Fadil Coffee","source_url":"https://xliiicoffee.com/journal/ca-phe-neja-fadil-cong-huong-thanh-qua-cua-cong-dong-vung-tobitu-tuta","prior_image_url":null,"status":"held","reason":"primary_product_photo_missing","roaster":"XLIII Coffee"},
     {"product_id":"099430f9-beee-41c6-bc3e-9b5dc975427a","entity_id":"962401c8-ef7b-4044-9894-b03590b5445b","name":"Costa Rica - Cordillera del Fuego A16 - Anaerobic Honey","source_url":"https://en.thepickychemist.com/product-page/costa-rica-cordillera-del-fuego-anaerobic-honey-250g","prior_image_url":null,"status":"ready","image_url":"https://static.wixstatic.com/media/d61d15_525df45773b64dc5a4996bbfbcd019bb~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg","image_evidence":{"source":"product_jsonld","product_url":"https://en.thepickychemist.com/product-page/costa-rica-cordillera-del-fuego-anaerobic-honey-250g","product_name":"Costa Rica - Cordillera del Fuego A16 - Anaerobic Honey - 250g"},"content_hash":"161cd26bcb4479f9a81b70fab8451c2e","content_type":"image/jpeg","width":500,"height":500,"bytes":155595,"roaster":"The Picky Chemist"},
     {"product_id":"099cf0e3-8556-43a2-8f59-092ae729d7bc","entity_id":"51dd9f88-a88e-4a2b-911f-2b85348dcbc7","name":"Elida [Falda GN0503]","source_url":"https://tanat.coffee/boutique/elida-falda-gn0503","status":"held","reason":"HTTP 404","http_status":404,"roaster":"TANAT COFFEE"},
-    {"product_id":"0acd81e4-5bfc-4dc0-88b9-767ed6f051c2","entity_id":"973e6bc5-2f7c-4213-ba81-27fa025ce64d","name":"Racing Into The Night","source_url":"https://www.hatchcrafted.com/shop/racing-into-the-night-2026","prior_image_url":null,"status":"held","reason":"primary_product_photo_missing","roaster":"Hatch Specialty Coffee"},
+    {"product_id":"0acd81e4-5bfc-4dc0-88b9-767ed6f051c2","entity_id":"973e6bc5-2f7c-4213-ba81-27fa025ce64d","name":"Racing Into The Night","source_url":"https://www.hatchcrafted.com/shop/racing-into-the-night-2026","prior_image_url":null,"status":"ready","image_url":"https://cdn.filestackcontent.com/security=p:eyJleHBpcnkiOjE3OTE3NjY3OTl9,s:08667e83ca5d7c4166188a725a461542cad4e48f5c7eb10ecc268fed775f6ff2/resize=w:1000,h:1000,fit:max/output=format:png/quality=v:70/WO9BrljASCspMEP2j4YQ","image_evidence":{"source":"adapter_primary_product","product_url":"https://hatchcrafted.com/shop/racing-into-the-night-2026","product_name":"Racing Into The Night"},"content_hash":"4b3ca73e80a4144f59e0453892ed8d5f","content_type":"image/png","width":749,"height":1000,"bytes":245976,"roaster":"Hatch Specialty Coffee"},
     {"product_id":"0b7b0f2b-deaf-496e-a325-78fb3c1dc54a","entity_id":"38a0f59c-a226-4ba7-96ee-b130dd583f66","name":"SUB Roaster's Choice Espresso | Light Roast","source_url":"https://mantaraycoffee.com.au/products/roasters-choice-espresso","prior_image_url":null,"status":"ready","image_url":"https://mantaraycoffee.com.au/cdn/shop/files/566.jpg?v=1781421783&width=1920","image_evidence":{"source":"adapter_primary_product","product_url":"https://mantaraycoffee.com.au/products/roasters-choice-espresso","product_name":"SUB Roaster's Choice Espresso | Light Roast"},"content_hash":"b7febd109e2fc67065fce1cb935ff516","content_type":"image/webp","width":1920,"height":2716,"bytes":135564,"roaster":"Mantaray"},
     {"product_id":"0c43066a-d22e-409e-8f5d-dd63db828632","entity_id":"962401c8-ef7b-4044-9894-b03590b5445b","name":"Ethiopia - Samii Benti Halo - Washed","source_url":"https://en.thepickychemist.com/product-page/ethiopia-samii-benti-halo-washed-250g","prior_image_url":null,"status":"ready","image_url":"https://static.wixstatic.com/media/d61d15_6038f4b5065447318e023a24b6accfef~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg","image_evidence":{"source":"product_jsonld","product_url":"https://en.thepickychemist.com/product-page/ethiopia-samii-benti-halo-washed-250g","product_name":"Ethiopia - Samii Benti Halo - Washed - 250g"},"content_hash":"f5d7f0aaf1f4f868574a815b86f8ed6f","content_type":"image/jpeg","width":500,"height":500,"bytes":95252,"roaster":"The Picky Chemist"},
     {"product_id":"0c492998-43b2-4797-b84c-500a246fe08b","entity_id":"969c3cc5-dbc5-4a3f-b6ba-8c39e32af680","name":"El Diamante Advanced Process Pink Bourbon","source_url":"https://thoughtfulcoffee.co/products/2good2go","prior_image_url":null,"status":"held","reason":"primary_product_photo_missing","roaster":"thoughtful coffee nyc"},
@@ -199,7 +199,7 @@
     {"product_id":"6e02a9a4-5661-47a8-80cd-f45f7652ad82","entity_id":"a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6","name":"Abdurahman Ababulgu Coffee #02274","source_url":"https://xliiicoffee.com/journal/ca-phe-abdurahman-ababulgu-02274","prior_image_url":null,"status":"held","reason":"primary_product_photo_missing","roaster":"XLIII Coffee"},
     {"product_id":"6e88e0ce-de53-4b17-b6ee-76f1f8aaa4d4","entity_id":"a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6","name":"RARE Sukkot Racemosa","source_url":"https://xliiicoffee.com/product/sukkot-racemosa","prior_image_url":null,"status":"held","reason":"current_product_title_requires_review","current_name":"Sukkot Racemosa 2025","image_url":"https://xliiicoffee.com/wp-content/uploads/2025/08/202508220310-Sukkot-Racemosa.webp","roaster":"XLIII Coffee"},
     {"product_id":"6f1d85ed-8465-4ed9-bc4a-44c5cae1bdf5","entity_id":"68e59fbb-f973-4030-8c63-be593797f193","name":"Los Pirineos Pacamara Espresso - Honey Process","source_url":"https://timwendelboe.no/en-no/products/los-pirineos-pacamara-espresso-honey-process","prior_image_url":null,"status":"held","reason":"product_redirect_requires_identity_review","final_url":"https://timwendelboe.no/","roaster":"Tim Wendelboe"},
-    {"product_id":"703017ac-05e5-405d-9c7e-abf2d1bad67c","entity_id":"973e6bc5-2f7c-4213-ba81-27fa025ce64d","name":"Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural","source_url":"https://www.hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural","prior_image_url":null,"status":"held","reason":"primary_product_photo_missing","roaster":"Hatch Specialty Coffee"},
+    {"product_id":"703017ac-05e5-405d-9c7e-abf2d1bad67c","entity_id":"973e6bc5-2f7c-4213-ba81-27fa025ce64d","name":"Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural","source_url":"https://www.hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural","prior_image_url":null,"status":"ready","image_url":"https://cdn.filestackcontent.com/security=p:eyJleHBpcnkiOjE3OTE3NjY3OTl9,s:08667e83ca5d7c4166188a725a461542cad4e48f5c7eb10ecc268fed775f6ff2/resize=w:1000,h:1000,fit:max/output=format:png/quality=v:70/g572KCpETHyVvwo1OGc7","image_evidence":{"source":"adapter_primary_product","product_url":"https://hatchcrafted.com/shop/cerro-azul-patascoy-hill-geisha-natural","product_name":"CGLE Cerro Azul “Patascoy Hill” Geisha Anaerobic Natural","reviewed_title_alias":"Reviewed producer-prefix addition for this exact record. The current primary native product retains the canonical source URL and coffee title, adds CGLE, and explicitly agrees with the saved 2025 harvest, Herrera producers, Colombian origin and Geisha variety. Native product ID 419412 is required; no general producer-prefix normalization."},"content_hash":"7f71759779eb5ada353f6a1352ec2149","content_type":"image/png","width":749,"height":1000,"bytes":236094,"roaster":"Hatch Specialty Coffee"},
     {"product_id":"711ff247-3604-48fa-aa4a-803e7526dab9","entity_id":"962401c8-ef7b-4044-9894-b03590b5445b","name":"Panama Geisha - Savage Coffees tasting set","source_url":"https://en.thepickychemist.com/product-page/panama-geisha-savage-coffees-tasting-set-6-40g","prior_image_url":null,"status":"held","reason":"current_product_title_requires_review","current_name":"Panama Geisha - Savage Coffees tasting set (6 * 40g)","image_url":"https://static.wixstatic.com/media/d61d15_4f281effa7b341e5967cfcf1e5601c5f~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg","roaster":"The Picky Chemist"},
     {"product_id":"71bb7ca9-e3b9-4532-bcf2-3a8bfe84d24c","entity_id":"a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6","name":"Specialty Coffee Box 7 Kenissa","source_url":"https://xliiicoffee.com/product/kenissa","prior_image_url":null,"status":"held","reason":"current_product_title_requires_review","current_name":"Kenissa","image_url":"https://xliiicoffee.com/wp-content/uploads/2024/06/202406100332-Kenissa-Specialty-Coffee.webp","roaster":"XLIII Coffee"},
     {"product_id":"73569c92-6a1d-44b2-99b1-2dd115a0d504","entity_id":"a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6","name":"Layo Teraga Coffee #0014","source_url":"https://xliiicoffee.com/en/journal/the-flavor-of-layo-teraga-coffee-0014","prior_image_url":null,"status":"held","reason":"primary_product_photo_missing","roaster":"XLIII Coffee"},
@@ -483,6 +483,18 @@
         "held": 4
       },
       "scope": "newly_verified_tier_one_owners"
+    },
+    {
+      "checked_at": "2026-10-08T08:12:04.270Z",
+      "rechecked_existing_entries": 2,
+      "product_ids": [
+        "0acd81e4-5bfc-4dc0-88b9-767ed6f051c2",
+        "703017ac-05e5-405d-9c7e-abf2d1bad67c"
+      ],
+      "counts": {
+        "ready": 2
+      },
+      "scope": "Hatch native primary images and one exact producer-prefix identity review"
     }
   ]
 }

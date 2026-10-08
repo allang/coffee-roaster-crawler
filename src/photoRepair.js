@@ -23,10 +23,10 @@ async function inspectPhoto(product,{fetchPage,fetchImage}) {
   if(!page.success)return {...base,status:'held',reason:page.error || 'product_fetch_failed',http_status:page.status};
   if(!sameImageProduct(page.finalUrl || product.source_url,product.source_url))return {...base,status:'held',reason:'product_redirect_requires_identity_review',final_url:page.finalUrl};
   const finalUrl=page.finalUrl || product.source_url;
-  const sourceProduct=require('./productEvidence').structuredProduct(page.data,finalUrl);
+  const sourceProduct=page.sourceProduct || require('./productEvidence').structuredProduct(page.data,finalUrl);
   const image=primaryProductImage({html:page.data,url:finalUrl,sourceProduct});
   if(!image.url)return {...base,status:'held',reason:image.reason};
-  const alias=require('../data/coffee-photo-title-aliases.json').find(a=>a.product_id===product.id && a.entity_id===product.entity_id && a.source_url===product.source_url && a.stored_title===product.name && a.current_title===image.evidence.product_name);
+  const alias=require('../data/coffee-photo-title-aliases.json').find(a=>a.product_id===product.id && a.entity_id===product.entity_id && a.source_url===product.source_url && a.stored_title===product.name && a.current_title===image.evidence.product_name && (!a.native_product_id || String(sourceProduct?.productID || '')===a.native_product_id));
   if(!compatibleTitle(product.name,image.evidence.product_name,product.roaster) && !alias)return {...base,status:'held',reason:'current_product_title_requires_review',current_name:image.evidence.product_name,image_url:image.url};
   if(alias)image.evidence.reviewed_title_alias=alias.reason;
   const result=await fetchImage(image.url,{referer:page.finalUrl || product.source_url});
