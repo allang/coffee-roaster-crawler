@@ -41,7 +41,9 @@ function buildTranslationSql(plan,snapshots,{commit=false}={}){
  sql.push('create temporary table translation_media_before on commit drop as select to_jsonb(m) as value from public.product_media m where product_id in(select (before->>\'id\')::uuid from translation_products);');
  for(const table of Object.keys(columns)){
   const key=table==='coffee_facts'?'product_id':'id',tmp='translation_'+table;
-  const set=columns[table].map(c=>`${c}=d.${c}`).join(',');
+  // Descriptions and origins are generated from metadata in the live schema.
+  const writable=table==='products'?['name','display_title','original_title','metadata']:columns[table];
+  const set=writable.map(c=>`${c}=d.${c}`).join(',');
   const parent=table==='products'?'id':'product_id';
   sql.push(`with changed as(update public.${table} r set ${set} from ${tmp} t cross join lateral jsonb_populate_record(null::public.${table},t.desired) d where r.${key}=d.${key} and to_jsonb(r)-'updated_at' is distinct from t.desired-'updated_at' returning r.${parent} as product_id), marked as(insert into translation_changes select distinct product_id from changed on conflict do nothing) insert into translation_counts select '${table}',count(*)::integer from changed;`);
   sql.push(`do $$ begin if exists(select 1 from public.${table} r join ${tmp} t on r.${key}=(t.before->>'${key}')::uuid where to_jsonb(r)-'updated_at' is distinct from t.desired-'updated_at') then raise exception 'Translation readback mismatch: ${table}'; end if; end $$;`);
