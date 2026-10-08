@@ -16,7 +16,7 @@ function compatibleTitle(saved,current,roaster='') {
 }
 function hasPhoto(product) {return (product.product_media || []).some(m=>[m.media_assets].flat().some(a=>a?.url));}
 async function inspectPhoto(product,{fetchPage,fetchImage}) {
-  const base={product_id:product.id,entity_id:product.entity_id,name:product.name,source_url:product.source_url};
+  const base={product_id:product.id,entity_id:product.entity_id,name:product.name,source_url:product.source_url,prior_image_url:product.original_image_url || null};
   if(hasPhoto(product))return {...base,status:'already_has_photo'};
   if(!product.source_url)return {...base,status:'held',reason:'product_source_url_missing'};
   const page=await fetchPage(product.source_url);
@@ -33,11 +33,12 @@ async function inspectPhoto(product,{fetchPage,fetchImage}) {
 }
 async function applyPhoto(entry,{db,fetchPage,fetchImage,log}) {
   if(entry.status!=='ready')throw Error('Only verified ready photos can be applied');
+  if(!Object.hasOwn(entry,'prior_image_url'))throw Error('Photo plan must include the reviewed prior source image URL');
   const {data:current,error}=await db.from('products').select('id,entity_id,name,source_url,original_image_url,product_media(media_assets(url))').eq('id',entry.product_id).single();
   if(error)throw error;
   if(!current || current.entity_id!==entry.entity_id || current.source_url!==entry.source_url)throw Error('Product identity changed since photo preview');
   if(hasPhoto(current)) {
-    if(!current.original_image_url) {
+    if(current.original_image_url!==entry.image_url && (!current.original_image_url || current.original_image_url===entry.prior_image_url)) {
       const {data:assets,error:assetError}=await db.from('media_assets').select('id').eq('content_hash',entry.content_hash);
       if(assetError)throw assetError;
       const {data:links,error:linkError}=await db.from('product_media').select('media_asset_id').eq('product_id',entry.product_id);

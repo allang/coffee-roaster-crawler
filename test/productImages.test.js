@@ -75,6 +75,13 @@ test('catalog save stores a real photo, repairs existing records idempotently an
   await assert.rejects(()=>applyPhoto(entry,{db:finalStepFailDb,fetchPage,fetchImage,log}),/final URL write failed/);
   assert.equal((await applyPhoto(entry,{db:repairDb,fetchPage,fetchImage,log})).status,'source_url_repaired');
   assert.equal((await pg.query('select original_image_url from products where id=$1',[id])).rows[0].original_image_url,image);
+  await pg.query('delete from product_media where product_id=$1',[id]);await pg.query("update products set original_image_url='https://images.test/old-broken.png' where id=$1",[id]);
+  const staleUrlEntry={...entry,prior_image_url:'https://images.test/old-broken.png'};
+  await assert.rejects(()=>applyPhoto(staleUrlEntry,{db:finalStepFailDb,fetchPage,fetchImage,log}),/final URL write failed/);
+  assert.equal((await applyPhoto(staleUrlEntry,{db:repairDb,fetchPage,fetchImage,log})).status,'source_url_repaired');
+  await pg.query("update products set original_image_url='https://images.test/concurrent-valid.png' where id=$1",[id]);
+  assert.equal((await applyPhoto(staleUrlEntry,{db:repairDb,fetchPage,fetchImage,log})).status,'already_has_photo');
+  assert.equal((await pg.query('select original_image_url from products where id=$1',[id])).rows[0].original_image_url,'https://images.test/concurrent-valid.png');
   await assert.rejects(()=>applyPhoto({...entry,entity_id:'other-owner'},{db:repairDb,fetchPage,fetchImage,log}),/identity changed/);
   const invalid=await downloadAndSaveImage(id,'https://images.test/error.png',log,{db,fetchImage:async()=>({success:true,data:Buffer.from('<html>error</html>'),headers:{'content-type':'image/png'}})});assert.equal(invalid,null);
  } finally {await pg.close();}

@@ -28,7 +28,7 @@ async function main(args=process.argv.slice(2)) {
   function dependencies(owner){if(!owners.has(owner) || !byId.get(owner)?.website_url)throw Error('Unverified tier one owner or missing official website');if(!readers.has(owner))readers.set(owner,merchantReader(byId.get(owner)));return {db,fetchPage:readers.get(owner).fetchHtml,fetchImage:fetchSourceImage};}
   let entries=[],productsRead=0;
   if(mode==='plan') {
-    const products=await allRows(db,'products','id,entity_id,name,source_url,product_type,is_active,is_available,last_seen_at,availability_last_seen_at,product_media(media_assets(url))',[...owners.keys()]);productsRead=products.length;
+    const products=await allRows(db,'products','id,entity_id,name,source_url,original_image_url,product_type,is_active,is_available,last_seen_at,availability_last_seen_at,product_media(media_assets(url))',[...owners.keys()]);productsRead=products.length;
     const cutoff=Date.now()-30*86400_000;
     const reviewIndex=args.indexOf('--review-plan');
     const prior=reviewIndex>=0?JSON.parse(fs.readFileSync(args[reviewIndex+1],'utf8')):null;
