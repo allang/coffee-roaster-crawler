@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-08T21:13:43.420423+00:00",
+  "applied": [
+    {
+      "changed": 13,
+      "plan_id": "airship-invalid-source-20261008",
+      "target_count": 13
+    }
+  ],
+  "repeat_dry_run": [
+    {
+      "changed": 0,
+      "plan_id": "airship-invalid-source-20261008",
+      "target_count": 13
+    }
+  ],
+  "all_28_product_ids_retained": true,
+  "all_15_real_product_records_unchanged": true,
+  "all_8_child_table_counts_and_hashes_preserved": true,
+  "child_tables": {
+    "coffee_facts": {
+      "count": 13,
+      "fingerprint": "6ea9369639be7329b629b6d6acfef395"
+    },
+    "product_media": {
+      "count": 3,
+      "fingerprint": "3a502907acc8ca1bd40a886f9d69abe6"
+    },
+    "product_variants": {
+      "count": 6,
+      "fingerprint": "72720f5f9ce89637e12c11b9364d7ba1"
+    },
+    "purchase_intents": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "product_flavor_tags": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "agent_recommendations": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "catalog_change_events": {
+      "count": 13,
+      "fingerprint": "570b3aa43cc1eb52c71b8701d808af91"
+    },
+    "product_flavor_claims": {
+      "count": 0,
+      "fingerprint": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  },
+  "changed_fields": {
+    "08dcd938-5006-547b-a286-ca893e2950fe": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "0dbb9261-b54f-59f6-9bba-e00aef1fc23f": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "21a00181-15a5-513f-8553-ff74d0f0ce56": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "56ba8488-b458-4783-a217-67b48c830f13": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "72f01ab0-01f1-5935-870f-6a50d9a83336": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "791b99b3-c4e2-5369-b9ea-7d42414d5a7e": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "7a987ed3-5eb4-43e2-81e4-19c71b9754ff": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "7d505c67-aaa3-5baa-b2e4-3df8054046ab": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "a364a0f7-b71d-5f2a-bb96-2a515f168e85": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "a46535f2-de89-5d9d-b3d1-edff403350d3": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "c1af5782-b3ac-575c-a656-7f9eaafb9a8e": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "c2ef57e1-f40f-55d3-b107-1ff4ab782dbc": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ],
+    "f65bcd8c-37ac-586f-8051-64502f349684": [
+      "is_active",
+      "updated_at",
+      "metadata"
+    ]
+  },
+  "schema_changes": 0
+}

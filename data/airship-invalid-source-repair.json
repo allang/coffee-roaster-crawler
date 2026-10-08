@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "plan_id": "airship-invalid-source-20261008",
+  "entity_id": "8528a70e-2033-4fc5-b5c6-1c5f73c0a989",
+  "checked_at": "2026-10-08T21:10:06.468Z",
+  "records": [
+    {
+      "id": "08dcd938-5006-547b-a286-ca893e2950fe",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/medium-roast",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "d7f7cb132621ef4d543a2b2952835bce"
+    },
+    {
+      "id": "0dbb9261-b54f-59f6-9bba-e00aef1fc23f",
+      "name": "El Zapote Pacamara Washed - Guatemala",
+      "source_url": "https://www.airshipcoffee.com/shop-by/sweet-balanced",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "ad491407e62be2f9bf70cd2cbee2c4f8"
+    },
+    {
+      "id": "21a00181-15a5-513f-8553-ff74d0f0ce56",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/dark-roasty-revival",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "8ae4aaf825434e390b944faf00e99e63"
+    },
+    {
+      "id": "56ba8488-b458-4783-a217-67b48c830f13",
+      "name": "Sweet & Balanced - Revival",
+      "source_url": "https://www.airshipcoffee.com/collections/sweet-balanced-revival",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "8f2079af6bb64cf8b0df18bdb4484c8b"
+    },
+    {
+      "id": "72f01ab0-01f1-5935-870f-6a50d9a83336",
+      "name": "Night Moves",
+      "source_url": "https://www.airshipcoffee.com/shop-by/dark-and-roasty",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "be9f02f1bfd6747782e1b03344d1a4fb"
+    },
+    {
+      "id": "791b99b3-c4e2-5369-b9ea-7d42414d5a7e",
+      "name": "Lake Toba Caldera - Sumatra",
+      "source_url": "https://www.airshipcoffee.com/shop-by/herbs-and-spice",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "cbafb3f908e82010187bbb8d88fc965b"
+    },
+    {
+      "id": "7a987ed3-5eb4-43e2-81e4-19c71b9754ff",
+      "name": "Espresso Series 1",
+      "source_url": "https://www.airshipcoffee.com/products/espresso-series-1",
+      "reason": "equipment_is_not_coffee",
+      "before_fingerprint": "6316abc6b9b6ccd66792f1a4f6b02326"
+    },
+    {
+      "id": "7d505c67-aaa3-5baa-b2e4-3df8054046ab",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/dark-roast",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "0ff0c8ae51e9c14fe485a55a6cf400e9"
+    },
+    {
+      "id": "a364a0f7-b71d-5f2a-bb96-2a515f168e85",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/coffee",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "a979537b0bbfcbbf1ee40dc2dad2aae8"
+    },
+    {
+      "id": "a46535f2-de89-5d9d-b3d1-edff403350d3",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/light-roast",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "0ba3bc668a4c57d424526734567e4541"
+    },
+    {
+      "id": "c1af5782-b3ac-575c-a656-7f9eaafb9a8e",
+      "name": "Finca Valentina Natural - Honduras",
+      "source_url": "https://www.airshipcoffee.com/shop-by/fruity-floral",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "60f9a5828670c3c0058617ae14c91cd3"
+    },
+    {
+      "id": "c2ef57e1-f40f-55d3-b107-1ff4ab782dbc",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/medium-dark-roast",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "fde61818946eb64504eb0fb9ae8150e5"
+    },
+    {
+      "id": "f65bcd8c-37ac-586f-8051-64502f349684",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/natural-coffees",
+      "reason": "headless_listing_without_product_identity",
+      "before_fingerprint": "8718754ac598dcd6d5e675a8aad462f1"
+    }
+  ],
+  "fields_changed": [
+    "is_active",
+    "metadata._source_repair"
+  ],
+  "preserve": "All products and every linked child row are retained. No product or variant deletion, known weight changes, photos, prices, slugs, availability, or schema changes."
+}

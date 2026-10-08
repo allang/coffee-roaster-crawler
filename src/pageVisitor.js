@@ -32,6 +32,13 @@ async function fetchPageContent(url, referer = null, options = {}) {
   try {
     const $ = cheerio.load(result.data);
 
+    // Shopyflow's static Webflow shell includes a hidden cart with fake titles,
+    // prices and images. It is not evidence for the page's primary product.
+    const hasShopyflowCart = $('[sf-cart-popup]').length > 0 && $('script[data-shop-id]').length > 0;
+    $('[sf-cart-popup]').remove();
+    const evidenceHtml = $.html();
+    const storefrontShell = hasShopyflowCart && !require('./productEvidence').structuredProduct(evidenceHtml,result.finalUrl || url);
+
     $('script, style, nav, footer, header, noscript, iframe').remove();
 
     const title = $('title').text().trim();
@@ -79,10 +86,11 @@ async function fetchPageContent(url, referer = null, options = {}) {
     return {
       success: true,
       sourceProduct,
+      nonProductReason: storefrontShell ? 'headless_storefront_shell_without_product_identity' : null,
       title,
       content: sourceProduct?sourceProduct.name+"\n"+sourceProduct.description:truncatedContent,
       fullLength: contentLength,
-      html: result.data,
+      html: evidenceHtml,
       status: result.status,
       finalUrl: result.finalUrl || url,
     };
@@ -106,6 +114,7 @@ function isClearlyNonCoffeeProduct(product) {
 }
 
 async function processFetchedPage(entityId, url, fetchResult, log, platform='unknown', options={}) {
+  if(fetchResult.success && fetchResult.nonProductReason)return {visited:true,classified:false,isCoffee:false,aiCalls:0,reason:fetchResult.nonProductReason};
   const known=options.knownPage;
   const pageAvailability=fetchResult.success?detectProductAvailability({html:fetchResult.html,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl}):null;
   if(pageAvailability?.reason==='product_soft_404') {
@@ -128,7 +137,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
   }
   let shopifyJson=null;
   if((platform==='shopify' || options.siteProfile?.adapter==='shopify') && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
-  if(options.siteProfile?.adapter==='shopify' && !require('./shopifyProduct').verifiedShopifyVariantScope(shopifyJson,url))return {visited:true,classified:false,error:'Registered Shopify source incomplete: '+(shopifyJson?.error || 'incomplete SKU set'),aiCalls:0};
+  if(options.siteProfile?.adapter==='shopify' && !require('./shopifyProduct').verifiedShopifyVariantScope(shopifyJson,url))return {visited:true,classified:false,error:'Registered Shopify source incomplete: '+(shopifyJson?.error || 'incomplete SKU set'),status:shopifyJson?.status,sourceStage:shopifyJson?.sourceStage,retryStopped:shopifyJson?.retryStopped,cooldown:shopifyJson?.cooldown,merchantCooldownExceeded:shopifyJson?.merchantCooldownExceeded,cooldownRecovery:shopifyJson?.cooldownRecovery,aiCalls:0};
   const classification=await extractPage({page:{...fetchResult,url},shopifyJson,cache:known?.classification,classify:classifyPage,model:MODEL});
   const metrics={aiCalls:classification.aiCalls || 0,usage:classification.usage,mode:classification.mode};
   if(classification.error) return {visited:true,classified:false,error:classification.error,quotaExceeded:classification.quotaExceeded,...metrics};
@@ -208,7 +217,7 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
         results.errors++;
         const blocked=options.getMerchantCooldownFailure?.();
         if(blocked)Object.assign(result,{merchantCooldownExceeded:true,cooldown:blocked.cooldown,cooldownRecovery:blocked.cooldownRecovery,retryStopped:blocked.retryStopped});
-        logger.error('Visitor','Page returned an error',{url,error:result.error,status:result.status,retryStopped:result.retryStopped,cooldown:result.cooldown,cooldownRecovery:result.cooldownRecovery});
+        logger.error('Visitor','Page returned an error',{url,error:result.error,status:result.status,sourceStage:result.sourceStage,retryStopped:result.retryStopped,cooldown:result.cooldown,cooldownRecovery:result.cooldownRecovery});
         if(result.merchantCooldownExceeded) {
           stopForMerchant=true;
           logger.warn('Visitor','Stopping merchant inventory after bounded cooldown recovery; remaining pages stay unverified');

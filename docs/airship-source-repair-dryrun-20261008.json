@@ -1,0 +1,23 @@
+{
+  "dry_run": [
+    {
+      "changed": 13,
+      "plan_id": "airship-invalid-source-20261008",
+      "target_count": 13
+    }
+  ],
+  "repeat_in_rolled_back_transaction": [
+    {
+      "changed": 13,
+      "plan_id": "airship-invalid-source-20261008",
+      "target_count": 13
+    },
+    {
+      "changed": 0,
+      "plan_id": "airship-invalid-source-20261008",
+      "target_count": 13
+    }
+  ],
+  "all_product_rows_and_eight_child_tables_unchanged_after_rollback": true,
+  "production_commits": 0
+}

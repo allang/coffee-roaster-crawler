@@ -1,0 +1,2969 @@
+{
+  "name": "Airship",
+  "checked_at": "2026-10-08T21:19:05.499Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "8528a70e-2033-4fc5-b5c6-1c5f73c0a989"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://airshipcoffee.myshopify.com/products/instabuff",
+      "https://airshipcoffee.myshopify.com/products/roasterschoice",
+      "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series",
+      "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras",
+      "https://airshipcoffee.myshopify.com/products/pacamarawashed",
+      "https://airshipcoffee.myshopify.com/products/buffalo-blend",
+      "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf",
+      "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera",
+      "https://airshipcoffee.myshopify.com/products/ethiopia-kochere",
+      "https://airshipcoffee.myshopify.com/products/night-moves",
+      "https://airshipcoffee.myshopify.com/products/peru-lima-norte",
+      "https://airshipcoffee.myshopify.com/products/black-apple-espresso",
+      "https://airshipcoffee.myshopify.com/products/black-bear-blend"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/products.json",
+        "page": 1,
+        "products": 44,
+        "coffeeProducts": 8
+      },
+      {
+        "listing": "/products.json",
+        "page": 2,
+        "products": 37,
+        "coffeeProducts": 5
+      }
+    ],
+    "market": null,
+    "inventory_authorizes_global_absence": false
+  },
+  "products": [
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff",
+      "title": "InstaBuff",
+      "source_product_id": "7293530374179",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "44014599012387",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/roasterschoice",
+      "title": "Roaster's Choice",
+      "source_product_id": "7282620235811",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43952092151843",
+          "title": "250G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "15.00",
+            "amount": "15.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092184611",
+          "title": "250G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "15.00",
+            "amount": "15.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092217379",
+          "title": "250G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "15.00",
+            "amount": "15.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092250147",
+          "title": "250G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "15.00",
+            "amount": "15.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092282915",
+          "title": "250G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "15.00",
+            "amount": "15.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092315683",
+          "title": "750G / Whole Bean",
+          "weight_g": 750,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092348451",
+          "title": "750G / Drip/Pour Over",
+          "weight_g": 750,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092381219",
+          "title": "750G / French Press",
+          "weight_g": 750,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092413987",
+          "title": "750G / Chemex",
+          "weight_g": 750,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092446755",
+          "title": "750G / Percolator",
+          "weight_g": 750,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092479523",
+          "title": "2KG / Whole Bean",
+          "weight_g": 2000,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092512291",
+          "title": "2KG / Drip/Pour Over",
+          "weight_g": 2000,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092545059",
+          "title": "2KG / French Press",
+          "weight_g": 2000,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092577827",
+          "title": "2KG / Chemex",
+          "weight_g": 2000,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43952092610595",
+          "title": "2KG / Percolator",
+          "weight_g": 2000,
+          "money": {
+            "raw": "105.00",
+            "amount": "105.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 10500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series",
+      "title": "The Grape Vine Blend - Airship Harvest Series",
+      "source_product_id": "7185339940899",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "41855895830563",
+          "title": "250 G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855895863331",
+          "title": "250 G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855895896099",
+          "title": "250 G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855895928867",
+          "title": "250 G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855895961635",
+          "title": "250 G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855895994403",
+          "title": "2 KG / Whole Bean",
+          "weight_g": 2000,
+          "money": {
+            "raw": "130.00",
+            "amount": "130.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855896027171",
+          "title": "2 KG / Drip/Pour Over",
+          "weight_g": 2000,
+          "money": {
+            "raw": "130.00",
+            "amount": "130.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855896059939",
+          "title": "2 KG / Chemex",
+          "weight_g": 2000,
+          "money": {
+            "raw": "130.00",
+            "amount": "130.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855896092707",
+          "title": "2 KG / French Press",
+          "weight_g": 2000,
+          "money": {
+            "raw": "130.00",
+            "amount": "130.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41855896125475",
+          "title": "2 KG / Percolator",
+          "weight_g": 2000,
+          "money": {
+            "raw": "130.00",
+            "amount": "130.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 13000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [
+            {
+              "source": "product_description",
+              "quote": " The coffee undergoes honey processing before a five day anaerobic co-fermentation that gives it the pop of juicy grape.",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras",
+      "title": "Finca Valentina Natural - Honduras",
+      "source_product_id": "7265718698019",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43637394407459",
+          "title": "250 G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394440227",
+          "title": "250 G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394472995",
+          "title": "250 G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394505763",
+          "title": "250 G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394374691",
+          "title": "250 G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394571299",
+          "title": "2 KILO / Whole Bean",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394604067",
+          "title": "2 KILO / Drip/Pour Over",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394636835",
+          "title": "2 KILO / Chemex",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394669603",
+          "title": "2 KILO / French Press",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43637394538531",
+          "title": "2 KILO / Percolator",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed",
+      "title": "El Zapote Pacamara Washed - Guatemala",
+      "source_product_id": "7174735331363",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "41494981607459",
+          "title": "250 G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981640227",
+          "title": "250 G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981672995",
+          "title": "250 G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981705763",
+          "title": "250 G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981574691",
+          "title": "250 G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "18.00",
+            "amount": "18.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981771299",
+          "title": "2 KILO / Whole Bean",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981804067",
+          "title": "2 KILO / Drip/Pour Over",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981836835",
+          "title": "2 KILO / Chemex",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981869603",
+          "title": "2 KILO / French Press",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "41494981738531",
+          "title": "2 KILO / Percolator",
+          "weight_g": null,
+          "money": {
+            "raw": "84.00",
+            "amount": "84.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend",
+      "title": "Buffalo Blend",
+      "source_product_id": "10194352323",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "38147750403",
+          "title": "Whole Bean / 250 G",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42447866560547",
+          "title": "Whole Bean / 750 G",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "43484464643",
+          "title": "Whole Bean / 2 KG",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612164131",
+          "title": "Percolator / 250 G",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42447866593315",
+          "title": "Percolator / 750 G",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612295203",
+          "title": "Percolator / 2 KG",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612196899",
+          "title": "Chemex / 250 G",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42447866626083",
+          "title": "Chemex / 750 G",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612327971",
+          "title": "Chemex / 2 KG",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612229667",
+          "title": "Drip/Pour Over / 250 G",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42447866658851",
+          "title": "Drip/Pour Over / 750 G",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612360739",
+          "title": "Drip/Pour Over / 2 KG",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612262435",
+          "title": "French Press / 250 G",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42447866691619",
+          "title": "French Press / 750 G",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867612393507",
+          "title": "French Press / 2 KG",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf",
+      "title": "Sugar Cane Decaf - Colombia",
+      "source_product_id": "9592863939",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "40867602268195",
+          "title": "250 G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "34853123779",
+          "title": "250 G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867602300963",
+          "title": "250 G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867602333731",
+          "title": "250 G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867602366499",
+          "title": "250 G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867602399267",
+          "title": "2 KG / Whole Bean",
+          "weight_g": 2000,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867602432035",
+          "title": "2 KG / Chemex",
+          "weight_g": 2000,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867602464803",
+          "title": "2 KG / French Press",
+          "weight_g": 2000,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867602497571",
+          "title": "2 KG / Drip/Pour Over",
+          "weight_g": 2000,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40880600973347",
+          "title": "2 KG / Percolator",
+          "weight_g": 2000,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Decaffeinated",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Decaffeinated"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera",
+      "title": "Lake Toba Caldera - Sumatra",
+      "source_product_id": "6962766479395",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "40365004128291",
+          "title": "250G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616686115",
+          "title": "250G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616718883",
+          "title": "250G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616751651",
+          "title": "250G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616784419",
+          "title": "250G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40365004161059",
+          "title": "2 kilo / Whole Bean",
+          "weight_g": null,
+          "money": {
+            "raw": "75.00",
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616817187",
+          "title": "2 kilo / Drip/Pour Over",
+          "weight_g": null,
+          "money": {
+            "raw": "75.00",
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616849955",
+          "title": "2 kilo / French Press",
+          "weight_g": null,
+          "money": {
+            "raw": "75.00",
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616882723",
+          "title": "2 kilo / Chemex",
+          "weight_g": null,
+          "money": {
+            "raw": "75.00",
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616915491",
+          "title": "2 kilo / Percolator",
+          "weight_g": null,
+          "money": {
+            "raw": "75.00",
+            "amount": "75.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Wet Hulled",
+        "process_methods": [
+          "wet_hulled"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Wet Hulled"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere",
+      "title": "Kochere Natural - Ethiopia",
+      "source_product_id": "1377104265251",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "12391433994275",
+          "title": "250G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "14.00",
+            "amount": "14.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616096291",
+          "title": "250G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "14.00",
+            "amount": "14.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616129059",
+          "title": "250G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "14.00",
+            "amount": "14.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616161827",
+          "title": "250G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "14.00",
+            "amount": "14.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616194595",
+          "title": "250G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "14.00",
+            "amount": "14.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451767164963",
+          "title": "750G / Whole Bean",
+          "weight_g": 750,
+          "money": {
+            "raw": "31.00",
+            "amount": "31.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451767197731",
+          "title": "750G / Drip/Pour Over",
+          "weight_g": 750,
+          "money": {
+            "raw": "31.00",
+            "amount": "31.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451767230499",
+          "title": "750G / French Press",
+          "weight_g": 750,
+          "money": {
+            "raw": "31.00",
+            "amount": "31.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451767263267",
+          "title": "750G / Chemex",
+          "weight_g": 750,
+          "money": {
+            "raw": "31.00",
+            "amount": "31.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451767296035",
+          "title": "750G / Percolator",
+          "weight_g": 750,
+          "money": {
+            "raw": "31.00",
+            "amount": "31.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "12391434027043",
+          "title": "2KG / Whole Bean",
+          "weight_g": 2000,
+          "money": {
+            "raw": "90.00",
+            "amount": "90.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616227363",
+          "title": "2KG / Drip/Pour Over",
+          "weight_g": 2000,
+          "money": {
+            "raw": "90.00",
+            "amount": "90.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616260131",
+          "title": "2KG / French Press",
+          "weight_g": 2000,
+          "money": {
+            "raw": "90.00",
+            "amount": "90.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616292899",
+          "title": "2KG / Chemex",
+          "weight_g": 2000,
+          "money": {
+            "raw": "90.00",
+            "amount": "90.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867616325667",
+          "title": "2KG / Percolator",
+          "weight_g": 2000,
+          "money": {
+            "raw": "90.00",
+            "amount": "90.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/night-moves",
+      "title": "Night Moves",
+      "source_product_id": "6686592991267",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "39679896649763",
+          "title": "250G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613212707",
+          "title": "250G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613245475",
+          "title": "250G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613278243",
+          "title": "250G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613311011",
+          "title": "250G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "39679896682531",
+          "title": "2 kilo / Whole Bean",
+          "weight_g": null,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613343779",
+          "title": "2 kilo / Drip/Pour Over",
+          "weight_g": null,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613376547",
+          "title": "2 kilo / French Press",
+          "weight_g": null,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613409315",
+          "title": "2 kilo / Chemex",
+          "weight_g": null,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867613442083",
+          "title": "2 kilo / Percolator",
+          "weight_g": null,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte",
+      "title": "Lima Norte Washed - Peru",
+      "source_product_id": "1676473270307",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "14449754210339",
+          "title": "250G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "11.00",
+            "amount": "11.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615178787",
+          "title": "250G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "11.00",
+            "amount": "11.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615211555",
+          "title": "250G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "11.00",
+            "amount": "11.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615244323",
+          "title": "250G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "11.00",
+            "amount": "11.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615277091",
+          "title": "250G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "11.00",
+            "amount": "11.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "14449754243107",
+          "title": "2 KILO / Whole Bean",
+          "weight_g": null,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615309859",
+          "title": "2 KILO / Drip/Pour Over",
+          "weight_g": null,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615342627",
+          "title": "2 KILO / French Press",
+          "weight_g": null,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615375395",
+          "title": "2 KILO / Chemex",
+          "weight_g": null,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867615408163",
+          "title": "2 KILO / Percolator",
+          "weight_g": null,
+          "money": {
+            "raw": "67.00",
+            "amount": "67.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso",
+      "title": "Black Apple Espresso",
+      "source_product_id": "10921818179",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "45248589955",
+          "title": "250G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614064675",
+          "title": "250G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614097443",
+          "title": "250G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614130211",
+          "title": "250G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614162979",
+          "title": "250G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "13.00",
+            "amount": "13.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451770998819",
+          "title": "750G / Whole Bean",
+          "weight_g": 750,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771031587",
+          "title": "750G / Drip/Pour Over",
+          "weight_g": 750,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771064355",
+          "title": "750G / French Press",
+          "weight_g": 750,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771097123",
+          "title": "750G / Chemex",
+          "weight_g": 750,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771129891",
+          "title": "750G / Percolator",
+          "weight_g": 750,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "45248590019",
+          "title": "2KG / Whole Bean",
+          "weight_g": 2000,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614195747",
+          "title": "2KG / Drip/Pour Over",
+          "weight_g": 2000,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614228515",
+          "title": "2KG / French Press",
+          "weight_g": 2000,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614261283",
+          "title": "2KG / Chemex",
+          "weight_g": 2000,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867614294051",
+          "title": "2KG / Percolator",
+          "weight_g": 2000,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend",
+      "title": "Black Bear Blend",
+      "source_product_id": "10194340483",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "38147690179",
+          "title": "250G / Whole Bean",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611082787",
+          "title": "250G / Percolator",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611115555",
+          "title": "250G / Chemex",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611148323",
+          "title": "250G / French Press",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611181091",
+          "title": "250G / Drip/Pour Over",
+          "weight_g": 250,
+          "money": {
+            "raw": "12.00",
+            "amount": "12.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771293731",
+          "title": "750G / Whole Bean",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771326499",
+          "title": "750G / Percolator",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771359267",
+          "title": "750G / Chemex",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771392035",
+          "title": "750G / French Press",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "42451771424803",
+          "title": "750G / Drip/Pour Over",
+          "weight_g": 750,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "45248098691",
+          "title": "2KG / Whole Bean",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611213859",
+          "title": "2KG / Percolator",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611246627",
+          "title": "2KG / Chemex",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611279395",
+          "title": "2KG / French Press",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        },
+        {
+          "id": "40867611312163",
+          "title": "2KG / Drip/Pour Over",
+          "weight_g": 2000,
+          "money": {
+            "raw": "62.00",
+            "amount": "62.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "shopify_exact_variant_analytics"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-08T21:18:44.375Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-08T21:18:44.881Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products.json?limit=50&page=3",
+      "status": 200,
+      "at": "2026-10-08T21:18:45.386Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff",
+      "status": 200,
+      "at": "2026-10-08T21:18:45.890Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:46.395Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:46.899Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/roasterschoice",
+      "status": 200,
+      "at": "2026-10-08T21:18:47.405Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/roasterschoice.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:47.910Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/roasterschoice.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:48.416Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series",
+      "status": 200,
+      "at": "2026-10-08T21:18:48.921Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:49.425Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:49.928Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras",
+      "status": 200,
+      "at": "2026-10-08T21:18:50.432Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:50.936Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:51.438Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed",
+      "status": 200,
+      "at": "2026-10-08T21:18:51.942Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:52.643Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:53.148Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend",
+      "status": 200,
+      "at": "2026-10-08T21:18:53.651Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:54.155Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:54.660Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf",
+      "status": 200,
+      "at": "2026-10-08T21:18:55.165Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:55.669Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:56.173Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera",
+      "status": 200,
+      "at": "2026-10-08T21:18:56.678Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:57.181Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:57.685Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere",
+      "status": 200,
+      "at": "2026-10-08T21:18:58.189Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere.json",
+      "status": 200,
+      "at": "2026-10-08T21:18:58.693Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere.js",
+      "status": 200,
+      "at": "2026-10-08T21:18:59.197Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/night-moves",
+      "status": 200,
+      "at": "2026-10-08T21:18:59.701Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/night-moves.json",
+      "status": 200,
+      "at": "2026-10-08T21:19:00.247Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/night-moves.js",
+      "status": 200,
+      "at": "2026-10-08T21:19:00.754Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte",
+      "status": 200,
+      "at": "2026-10-08T21:19:01.259Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte.json",
+      "status": 200,
+      "at": "2026-10-08T21:19:01.763Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte.js",
+      "status": 200,
+      "at": "2026-10-08T21:19:02.269Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso",
+      "status": 200,
+      "at": "2026-10-08T21:19:02.775Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso.json",
+      "status": 200,
+      "at": "2026-10-08T21:19:03.280Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso.js",
+      "status": 200,
+      "at": "2026-10-08T21:19:03.789Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend",
+      "status": 200,
+      "at": "2026-10-08T21:19:04.293Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend.json",
+      "status": 200,
+      "at": "2026-10-08T21:19:04.797Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend.js",
+      "status": 200,
+      "at": "2026-10-08T21:19:05.301Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true,
+  "scope_note": "Retail Coffee type plus exact one-time roasterschoice and instabuff handles from the official declared Shopify store. Hidden/wholesale types and Espresso Series 1 equipment excluded. Instabuff net weight unknown. No global absence reconciliation. Production same-weight index remains unapproved."
+}

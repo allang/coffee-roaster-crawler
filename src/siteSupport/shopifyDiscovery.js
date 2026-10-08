@@ -11,7 +11,7 @@ function retailCoffee(product,profile) {
   // Exclude subscription products by their title/type, not a second sales channel.
   if(excluded.test(type+' '+title) || /\bwholesale[-_\s]+only\b/i.test(tags) || !type.trim() && /\bwholesale\b/i.test(tags))return false;
   if(profile.coffee_content_pattern && !new RegExp(profile.coffee_content_pattern,'i').test(product.body_html || ''))return false;
-  if(profile.strict_coffee_product_types)return profile.coffee_product_types?.includes(type)===true;
+  if(profile.strict_coffee_product_types)return profile.coffee_product_types?.includes(type)===true || profile.coffee_handles?.includes(product.handle)===true;
   return profile.coffee_product_types?.includes(type) || profile.coffee_handles?.includes(product.handle) || /\b(?:coffee|espresso|roasted beans|instant)\b/i.test(type);
 }
 async function discoverShopifyProducts(roaster,profile,fetchHtml) {

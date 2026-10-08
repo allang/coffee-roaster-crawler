@@ -1,0 +1,153 @@
+{
+  "checked_at": "2026-10-08T21:20:26.652Z",
+  "scope": "Separate fresh GET-only recheck of exact normal-run failure URLs; does not reconstruct historical wire failures or relabel their run.",
+  "products": [
+    {
+      "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026",
+      "name": "Jorge Rojas - Colombia Washed Geisha (2026)",
+      "native_product_id": "7761786011746",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43186077270114",
+          "weight_g": 125,
+          "money": {
+            "raw": 29,
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "errors": [],
+      "image_bound": true
+    },
+    {
+      "url": "https://september.coffee/en-us/products/golden-hour",
+      "name": "Golden Hour",
+      "native_product_id": "7724924895330",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43018412720226",
+          "weight_g": 200,
+          "money": {
+            "raw": 28,
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "errors": [],
+      "image_bound": true
+    },
+    {
+      "url": "https://september.coffee/en-us/products/rung-eto-kii-aa",
+      "name": "Kii AA - Kenya Washed SL-28, SL-34, Baitan, Ruiru",
+      "native_product_id": "7806220206178",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43350501359714",
+          "weight_g": 250,
+          "money": {
+            "raw": 25,
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock"
+        }
+      ],
+      "errors": [],
+      "image_bound": true
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026",
+      "status": 200,
+      "at": "2026-10-08T21:20:22.383Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026.json",
+      "status": 200,
+      "at": "2026-10-08T21:20:22.887Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026.js",
+      "status": 200,
+      "at": "2026-10-08T21:20:23.390Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/golden-hour",
+      "status": 200,
+      "at": "2026-10-08T21:20:23.894Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/golden-hour.json",
+      "status": 200,
+      "at": "2026-10-08T21:20:24.398Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/golden-hour.js",
+      "status": 200,
+      "at": "2026-10-08T21:20:24.903Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/rung-eto-kii-aa",
+      "status": 200,
+      "at": "2026-10-08T21:20:25.407Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/rung-eto-kii-aa.json",
+      "status": 200,
+      "at": "2026-10-08T21:20:25.911Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://september.coffee/en-us/products/rung-eto-kii-aa.js",
+      "status": 200,
+      "at": "2026-10-08T21:20:26.414Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "ai_calls": 0,
+  "production_writes": 0,
+  "merchant_mutations": 0,
+  "prohibited_requests": 0
+}
