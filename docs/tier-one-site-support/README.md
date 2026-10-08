@@ -1,5 +1,7 @@
 # Tier-one crawler site support
 
+Current October 8 status: the reviewed roster contains 65 tier-one names and 70 stable IDs, with 59 registered merchant profiles across the 60 requested gap names. Onyx Tonics is the verified cafe exclusion. Aery, Apiary and Colorfull have completed normal production readbacks. The Mac mini was verified on main `28de9b5` after the requested restart; its separate Passport run subsequently failed with 62 page errors and 193 successful saves. [Recovery changes](../PASSPORT_CRAWL_RECOVERY.md) and the [native weight compatibility migration](../NATIVE_VARIANT_WEIGHT_COMPATIBILITY.md) are tested and prepared; production schema application, retry and final health verification remain pending. Earlier implementation-stage deployment statements below are historical.
+
 Scope: the 35 verified tier-one coverage gaps and six unresolved names from the October 7, 2026 catalog audit. `queue.json` retains all 41 names. Work proceeds one merchant at a time; unresolved identities are not merged or created.
 
 The isolated review branch is based on the current `codex/issue-1-crawler` source (`ed84444`), including existing refresh, native market, processing and catalog transaction fixes. The older local main checkout is preserved with its unrelated dirty files. The Mac mini SSH endpoint refused connection during this task; no production install, migration or restart has occurred. The reviewed catalog and photo repairs were subsequently applied after the user requested unblocking; receipts record the actual writes.

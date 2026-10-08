@@ -9,9 +9,49 @@ const {productAvailability}=require('../src/productEvidence');
 const {catalogDb}=require('./catalogDb');
 const f=require('./fixtures/siteSupport/passport-product.json');
 const profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='Passport');
+const weightedAccessory=require('./fixtures/siteSupport/passport-weighted-accessory-product.json');
 const quiet=new Proxy({},{get:()=>()=>{}});
 const html='<h1>'+f.product.title+'</h1><script>window.ShopifyAnalytics.meta.currency = '+JSON.stringify(f.analytics_currency)+'; var meta = '+JSON.stringify({product:f.analytics_product})+';</script>';
 const nativeFor=(product=f.product,ajax=f.ajax)=>fetchShopifyProductJson(f.url,quiet,{fetchJson:async url=>({success:true,data:url.endsWith('.js')?ajax:{product}})});
+
+test('captured weight-prefixed packaging add-on cannot become the cheaper 250g coffee SKU',async()=>{
+  const w=weightedAccessory,native=await fetchShopifyProductJson(w.url,quiet,{fetchJson:async url=>({success:true,data:url.endsWith('.js')?w.ajax:{product:w.product}})});
+  assert.equal(verifiedShopifyVariantScope(native,w.url),true);
+  const proof=native.data.reviewedAccessorySubset;
+  assert.deepEqual(proof.excluded_variants,[{id:'46621928095905',title:'250gm Vac Sealed Pouch Option (per pouch)'}]);
+  assert.deepEqual(proof.original_variant_ids,w.product.variants.map(v=>String(v.id)));
+  const p=normalizeProduct(structuredExtraction({html:w.html,url:w.url},native).product,w.url);
+  assert.equal(p.variants_complete,false);
+  assert.deepEqual(p.variants.map(v=>v.source_id),['46537133424801','44906648764577','44906648797345']);
+  assert.deepEqual(p.variants.map(v=>v.weight_g),[125,250,1000]);
+  assert.deepEqual(p.variants.map(v=>v.money.minorUnits),[3600,6000,21800]);
+  assert(p.variants.every(v=>v.money.currency==='AUD'&&v.availability==='in_stock'));
+  const pattern=new RegExp(profile.exclude_variant_title_pattern,'i');
+  for(const title of ['250gm Vac Sealed Coffee','125gm Vac Sealed Pouch Option (per pouch)','250gm Coffee Pouch Option','Vac Sealed Pouch Option (per pouch) / Coffee'])assert.equal(pattern.test(title),false);
+  const missing=structuredClone(w.ajax);missing.variants.pop();
+  const invalid=await fetchShopifyProductJson(w.url,quiet,{fetchJson:async url=>({success:true,data:url.endsWith('.js')?missing:{product:w.product}})});
+  assert.equal(verifiedShopifyVariantScope(invalid,w.url),false);
+});
+
+test('the corrected Passport SKU set saves repeatedly under the actual legacy unique-weight index',async()=>{
+  const pg=await catalogDb({nativeWeightCompatibility:false});
+  try{
+    await pg.query('create unique index product_variants_unique_weight_per_product on product_variants(product_id,weight_g) where weight_g is not null');
+    const w=weightedAccessory,native=await fetchShopifyProductJson(w.url,quiet,{fetchJson:async url=>({success:true,data:url.endsWith('.js')?w.ajax:{product:w.product}})});
+    const product=structuredExtraction({html:w.html,url:w.url},native).product,owner=profile.entity_ids[0];
+    await pg.query('insert into entities(id) values($1)',[owner]);
+    const payload=catalogPayload(owner,product,w.url,null,productAvailability({shopifyProduct:native.raw,sourceUrl:w.url}),'2026-10-08T16:00:00Z');
+    assert.equal(payload.variants_complete,false);
+    await pg.query('select save_catalog_product_v1($1::jsonb)',[JSON.stringify(payload)]);
+    const first=(await pg.query('select id,merchant_variant_id,weight_g,price_minor_units from product_variants order by weight_g')).rows;
+    payload.product.checked_at='2026-10-08T16:01:00Z';
+    await pg.query('select save_catalog_product_v1($1::jsonb)',[JSON.stringify(payload)]);
+    assert.deepEqual((await pg.query('select id,merchant_variant_id,weight_g,price_minor_units from product_variants order by weight_g')).rows,first);
+    assert.deepEqual(first.map(v=>v.weight_g),[125,250,1000]);
+    assert.deepEqual(first.map(v=>v.price_minor_units),[3600,6000,21800]);
+    assert(!first.some(v=>v.merchant_variant_id==='46621928095905'));
+  }finally{await pg.close();}
+});
 
 test('reviewed accessory subset proves the entire original native set while withholding omission authority',async()=>{
   const native=await nativeFor(),proof=native.data.reviewedAccessorySubset;

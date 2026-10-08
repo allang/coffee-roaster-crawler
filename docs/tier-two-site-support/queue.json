@@ -74,9 +74,8 @@
       "verified_variants": 6,
       "prohibited_requests": 0,
       "production_writes": 0,
-      "blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment.",
       "identity_evidence": "../catalog-repair-apply-result.json",
-      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "note": "Reviewed stable catalog identity is applied; the completed normal production crawl saved and read back 6 coffees and their photos with zero page errors.",
       "production_readback": {
         "checked_at": "2026-10-08T14:16:37.505447+00:00",
         "run_id": "8145b673-c408-4076-9197-412eac2d75de",
@@ -85,7 +84,8 @@
         "photos_present": 6,
         "page_errors": 0,
         "evidence": "../repaired-catalog-production-readback.json"
-      }
+      },
+      "prior_identity_blocker": "Reviewed tier-two audit has no entity ID; merchant-only inspection, no automatic DB assignment."
     },
     {
       "name": "Ceremony",
@@ -172,9 +172,8 @@
       "verified_variants": 27,
       "prohibited_requests": 0,
       "production_writes": 0,
-      "blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection.",
       "identity_evidence": "../catalog-repair-apply-result.json",
-      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "note": "Reviewed stable catalog identity is applied; the completed normal production crawl saved and read back 14 coffees and their photos with zero page errors.",
       "production_readback": {
         "checked_at": "2026-10-08T14:16:37.505447+00:00",
         "run_id": "c5161667-b8e4-4b8f-b48f-154bc88d0ccd",
@@ -183,7 +182,8 @@
         "photos_present": 14,
         "page_errors": 0,
         "evidence": "../repaired-catalog-production-readback.json"
-      }
+      },
+      "prior_identity_blocker": "Existing exact-name/domain entity verified by coordinator read-only catalog search; entity_roles is empty. Roaster-role classification is still required before normal crawler selection."
     },
     {
       "name": "Fathers",
@@ -477,12 +477,20 @@
         "null_sighting_timestamps": 0
       },
       "identity_evidence": "../catalog-repair-apply-result.json",
-      "blocker": "Pinned tier source places Passport in Brisbane; official merchant verified. Reviewed coverage audit still supplies no database entity ID.",
       "verified_coffee_products": 255,
-      "verified_variants": 529,
+      "verified_variants": 528,
       "prohibited_requests": 0,
       "production_writes": 0,
-      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending."
+      "note": "Native source support is reviewed for 255 coffees and 528 coffee SKUs across documented observation windows. The normal run failed with 53 HTTP429, 8 HTTP503 and one packaging SKU conflict; successful records are preserved. Recovery source and a legacy weight-index compatibility migration are prepared and tested; production retry/readback remain pending.",
+      "prior_identity_blocker": "Pinned tier source places Passport in Brisbane; official merchant verified. Reviewed coverage audit still supplies no database entity ID.",
+      "production_verification": {
+        "run_id": "1d573313-4d89-4283-b1de-6df52a7d2135",
+        "status": "failed",
+        "successful_saves": 193,
+        "page_errors": 62,
+        "finished_at": "2026-10-08T15:42:41.324Z",
+        "evidence": "../PASSPORT_CRAWL_RECOVERY.md"
+      }
     },
     {
       "name": "PERC",

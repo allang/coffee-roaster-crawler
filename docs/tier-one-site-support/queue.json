@@ -11,7 +11,7 @@
       "candidates": [],
       "status": "implemented_live_dry_run_passed",
       "evidence": "aery-live.json",
-      "note": "Reviewed catalog identity applied and read back; native profile registered to the returned actual database ID. Merchant inventory is verified; production crawl is pending.",
+      "note": "Reviewed stable catalog identity is applied; the completed normal production crawl saved and read back 18 coffees and their photos with zero page errors.",
       "identity_evidence": "../catalog-repair-apply-result.json",
       "coffee_products": 18,
       "production_readback": {

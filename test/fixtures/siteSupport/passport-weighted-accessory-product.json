@@ -1,0 +1,423 @@
+{
+  "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+  "checked_at": "2026-10-08T15:59:46.183Z",
+  "product": {
+    "id": 8223558533281,
+    "title": "Colombia Penas Blancas Geisha Natural FILTER",
+    "body_html": "<p><strong>Origin :<span> </span></strong>Colombia<br><strong>Region:</strong><span>  Acevedo, Huila<br></span><strong>Altitude:</strong><span> 1750</span><br><strong>Producer:</strong><span> Penas Blancas<br></span><strong>Variety:</strong><span> Geisha<br></span><strong>Process:</strong><span> Mosto Natural Thermal Shock</span></p>\n<p><span><strong>Tasting notes: </strong>Smooth and complex with notes of orange sherbet, strawberry jam, purple grape, kiwifruit and florals.</span><span></span></p>\n<p><span>Hailing from the renowned coffee-growing region of Acevedo, Huila, Colombia, the Peñas Blancas Natural is a truly exceptional offering. Grown at an altitude of 1750 meters above sea level, this coffee thrives in the ideal microclimate, with temperatures ranging between 17 and 24°C, contributing to its remarkable quality.</span></p>\n<p><span>The natural processing of the Peñas Blancas Natural begins with the careful harvesting of cherries, each with a Brix level above 22, signifying optimal sugar content. Upon arrival at the processing station, the cherries are treated with a thermal shock at 55°C for 30 minutes. This step disinfects the cherries and eliminates impurities while maintaining their integrity. </span></p>\n<p><span>Following the thermal shock, the cherries undergo a 48-hour oxidation process with the recirculation of \"mosto,\" which enhances their flavours.</span></p>\n<p><span><br>The next phase involves placing the cherries in plastic bags with an inner liner for an additional 36 hours, allowing controlled fermentation to take place. </span></p>\n<p><span>The cherries are then subjected to a two-day solar drying period, followed by 36 hours of mechanical drying to ensure consistency. The drying process is completed when the beans reach a moisture content of less than 11.5%, ensuring stability and longevity in storage</span></p>\n<!---->",
+    "vendor": "Passport Specialty Coffee",
+    "product_type": "Coffee",
+    "created_at": "2025-04-18T16:07:07+10:00",
+    "handle": "colombia-penas-blancas-geisha-natural-filter",
+    "updated_at": "2026-10-09T01:59:44+10:00",
+    "published_at": "2026-06-29T07:15:19+10:00",
+    "template_suffix": "",
+    "published_scope": "web",
+    "tags": "aeropress, best specialty coffee, brisbane coffee, brisbane specialty coffee, coffee, coffee roaster, colombia, Controlled Fermentation, ferment, fermented coffee, Filter coffee, floral, fruity, geisha, limited edition, mossto, mosto, natural process, Passport Coffee, Passport Specialty Coffee, pourover, roaster, single origin, single origin filter, specialty coffee, thermal shock, v60",
+    "variants": [
+      {
+        "id": 46537133424801,
+        "product_id": 8223558533281,
+        "title": "125gm",
+        "price": "36.00",
+        "sku": null,
+        "position": 1,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "125gm",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-06-13T16:09:00+10:00",
+        "updated_at": "2026-10-09T01:59:44+10:00",
+        "taxable": false,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      },
+      {
+        "id": 44906648764577,
+        "product_id": 8223558533281,
+        "title": "250gm",
+        "price": "60.00",
+        "sku": null,
+        "position": 2,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "250gm",
+        "option2": null,
+        "option3": null,
+        "created_at": "2025-04-18T16:07:07+10:00",
+        "updated_at": "2026-10-09T01:59:44+10:00",
+        "taxable": false,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      },
+      {
+        "id": 44906648797345,
+        "product_id": 8223558533281,
+        "title": "1KG",
+        "price": "218.00",
+        "sku": null,
+        "position": 3,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "1KG",
+        "option2": null,
+        "option3": null,
+        "created_at": "2025-04-18T16:07:07+10:00",
+        "updated_at": "2026-10-09T01:59:44+10:00",
+        "taxable": false,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": true,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      },
+      {
+        "id": 46621928095905,
+        "product_id": 8223558533281,
+        "title": "250gm Vac Sealed Pouch Option (per pouch)",
+        "price": "3.00",
+        "sku": null,
+        "position": 4,
+        "compare_at_price": "",
+        "fulfillment_service": "manual",
+        "inventory_management": "shopify",
+        "option1": "250gm Vac Sealed Pouch Option (per pouch)",
+        "option2": null,
+        "option3": null,
+        "created_at": "2026-06-29T15:17:31+10:00",
+        "updated_at": "2026-10-09T01:59:44+10:00",
+        "taxable": true,
+        "barcode": null,
+        "grams": 0,
+        "image_id": null,
+        "weight": 0,
+        "weight_unit": "kg",
+        "requires_shipping": false,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "price_currency": "AUD",
+        "compare_at_price_currency": "",
+        "quantity_price_breaks": []
+      }
+    ],
+    "options": [
+      {
+        "id": 10440772386977,
+        "product_id": 8223558533281,
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "125gm",
+          "250gm",
+          "1KG",
+          "250gm Vac Sealed Pouch Option (per pouch)"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": 41270626549921,
+        "product_id": 8223558533281,
+        "position": 1,
+        "created_at": "2025-04-18T16:05:12+10:00",
+        "updated_at": "2025-04-18T16:05:15+10:00",
+        "alt": null,
+        "width": 2184,
+        "height": 1490,
+        "src": "https://cdn.shopify.com/s/files/1/0199/7399/6644/files/COLPenasBlancasGeishaNatural.png?v=1744956315",
+        "variant_ids": []
+      }
+    ],
+    "image": {
+      "id": 41270626549921,
+      "product_id": 8223558533281,
+      "position": 1,
+      "created_at": "2025-04-18T16:05:12+10:00",
+      "updated_at": "2025-04-18T16:05:15+10:00",
+      "alt": null,
+      "width": 2184,
+      "height": 1490,
+      "src": "https://cdn.shopify.com/s/files/1/0199/7399/6644/files/COLPenasBlancasGeishaNatural.png?v=1744956315",
+      "variant_ids": []
+    }
+  },
+  "ajax": {
+    "id": 8223558533281,
+    "title": "Colombia Penas Blancas Geisha Natural FILTER",
+    "handle": "colombia-penas-blancas-geisha-natural-filter",
+    "description": "<p><strong>Origin :<span> </span></strong>Colombia<br><strong>Region:</strong><span>  Acevedo, Huila<br></span><strong>Altitude:</strong><span> 1750</span><br><strong>Producer:</strong><span> Penas Blancas<br></span><strong>Variety:</strong><span> Geisha<br></span><strong>Process:</strong><span> Mosto Natural Thermal Shock</span></p>\n<p><span><strong>Tasting notes: </strong>Smooth and complex with notes of orange sherbet, strawberry jam, purple grape, kiwifruit and florals.</span><span></span></p>\n<p><span>Hailing from the renowned coffee-growing region of Acevedo, Huila, Colombia, the Peñas Blancas Natural is a truly exceptional offering. Grown at an altitude of 1750 meters above sea level, this coffee thrives in the ideal microclimate, with temperatures ranging between 17 and 24°C, contributing to its remarkable quality.</span></p>\n<p><span>The natural processing of the Peñas Blancas Natural begins with the careful harvesting of cherries, each with a Brix level above 22, signifying optimal sugar content. Upon arrival at the processing station, the cherries are treated with a thermal shock at 55°C for 30 minutes. This step disinfects the cherries and eliminates impurities while maintaining their integrity. </span></p>\n<p><span>Following the thermal shock, the cherries undergo a 48-hour oxidation process with the recirculation of \"mosto,\" which enhances their flavours.</span></p>\n<p><span><br>The next phase involves placing the cherries in plastic bags with an inner liner for an additional 36 hours, allowing controlled fermentation to take place. </span></p>\n<p><span>The cherries are then subjected to a two-day solar drying period, followed by 36 hours of mechanical drying to ensure consistency. The drying process is completed when the beans reach a moisture content of less than 11.5%, ensuring stability and longevity in storage</span></p>\n<!---->",
+    "published_at": "2026-06-29T07:15:19+10:00",
+    "created_at": "2025-04-18T16:07:07+10:00",
+    "vendor": "Passport Specialty Coffee",
+    "type": "Coffee",
+    "tags": [
+      "aeropress",
+      "best specialty coffee",
+      "brisbane coffee",
+      "brisbane specialty coffee",
+      "coffee",
+      "coffee roaster",
+      "colombia",
+      "Controlled Fermentation",
+      "ferment",
+      "fermented coffee",
+      "Filter coffee",
+      "floral",
+      "fruity",
+      "geisha",
+      "limited edition",
+      "mossto",
+      "mosto",
+      "natural process",
+      "Passport Coffee",
+      "Passport Specialty Coffee",
+      "pourover",
+      "roaster",
+      "single origin",
+      "single origin filter",
+      "specialty coffee",
+      "thermal shock",
+      "v60"
+    ],
+    "price": 300,
+    "price_min": 300,
+    "price_max": 21800,
+    "available": true,
+    "price_varies": true,
+    "compare_at_price": null,
+    "compare_at_price_min": 0,
+    "compare_at_price_max": 0,
+    "compare_at_price_varies": false,
+    "variants": [
+      {
+        "id": 46537133424801,
+        "title": "125gm",
+        "option1": "125gm",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": false,
+        "featured_image": null,
+        "available": true,
+        "name": "Colombia Penas Blancas Geisha Natural FILTER - 125gm",
+        "public_title": "125gm",
+        "options": [
+          "125gm"
+        ],
+        "price": 3600,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 44906648764577,
+        "title": "250gm",
+        "option1": "250gm",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": false,
+        "featured_image": null,
+        "available": true,
+        "name": "Colombia Penas Blancas Geisha Natural FILTER - 250gm",
+        "public_title": "250gm",
+        "options": [
+          "250gm"
+        ],
+        "price": 6000,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 44906648797345,
+        "title": "1KG",
+        "option1": "1KG",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": false,
+        "featured_image": null,
+        "available": true,
+        "name": "Colombia Penas Blancas Geisha Natural FILTER - 1KG",
+        "public_title": "1KG",
+        "options": [
+          "1KG"
+        ],
+        "price": 21800,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      },
+      {
+        "id": 46621928095905,
+        "title": "250gm Vac Sealed Pouch Option (per pouch)",
+        "option1": "250gm Vac Sealed Pouch Option (per pouch)",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": false,
+        "taxable": true,
+        "featured_image": null,
+        "available": false,
+        "name": "Colombia Penas Blancas Geisha Natural FILTER - 250gm Vac Sealed Pouch Option (per pouch)",
+        "public_title": "250gm Vac Sealed Pouch Option (per pouch)",
+        "options": [
+          "250gm Vac Sealed Pouch Option (per pouch)"
+        ],
+        "price": 300,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": null,
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": []
+      }
+    ],
+    "images": [
+      "//cdn.shopify.com/s/files/1/0199/7399/6644/files/COLPenasBlancasGeishaNatural.png?v=1744956315"
+    ],
+    "featured_image": "//cdn.shopify.com/s/files/1/0199/7399/6644/files/COLPenasBlancasGeishaNatural.png?v=1744956315",
+    "options": [
+      {
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "125gm",
+          "250gm",
+          "1KG",
+          "250gm Vac Sealed Pouch Option (per pouch)"
+        ]
+      }
+    ],
+    "url": "/products/colombia-penas-blancas-geisha-natural-filter",
+    "media": [
+      {
+        "alt": null,
+        "id": 34437808259233,
+        "position": 1,
+        "preview_image": {
+          "aspect_ratio": 1.466,
+          "height": 1490,
+          "width": 2184,
+          "src": "https://cdn.shopify.com/s/files/1/0199/7399/6644/files/COLPenasBlancasGeishaNatural.png?v=1744956315"
+        },
+        "aspect_ratio": 1.466,
+        "height": 1490,
+        "media_type": "image",
+        "src": "https://cdn.shopify.com/s/files/1/0199/7399/6644/files/COLPenasBlancasGeishaNatural.png?v=1744956315",
+        "width": 2184
+      }
+    ],
+    "requires_selling_plan": false,
+    "selling_plan_groups": []
+  },
+  "html": "<link rel=\"canonical\" href=\"https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter\">\n<meta property=\"og:title\" content=\"Colombia Penas Blancas Geisha Natural FILTER\">\n<meta property=\"og:image\" content=\"http://passportcoffee.com.au/cdn/shop/files/COLPenasBlancasGeishaNatural_1024x1024.png?v=1744956315\">\n<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\\/(\\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\\/(\\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\\/(\\d+).*Safari\\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = \"//passportcoffee.com.au/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js\";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script>\n<script>(function(){var wpmLoader=function(){\"use strict\";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||\"string\"!=typeof e)return;for(var t=0,i=e.split(\";\");t<i.length;t++){var n=i[t],r=n.indexOf(\"=\");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if(\"_shopify_s\"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{\"undefined\"!=typeof console&&\"function\"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return\"string\"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return\"navigate\";case 1:return\"reload\";case 2:return\"back_forward\";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return\"awaiting-consent\"===n||\"initialized\"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&\"true\"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\\/(1{2}[4-9]|1[2-9]\\d|[2-9]\\d{2}|\\d{4,})\\.\\d+(\\.\\d+|)|Firefox\\/(1{2}[4-9]|1[2-9]\\d|[2-9]\\d{2}|\\d{4,})\\.\\d+(\\.\\d+|)|Chrom(ium|e)\\/(9{2}|\\d{3,})\\.\\d+(\\.\\d+|)|(Maci|X1{2}).+ Version\\/(15\\.\\d+|(1[6-9]|[2-9]\\d|\\d{3,})\\.\\d+)([,.]\\d+|)( \\(\\w+\\)|)( Mobile\\/\\w+|) Safari\\/|Chrome.+OPR\\/(9{2}|\\d{3,})\\.\\d+\\.\\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\\d+|(1[6-9]|[2-9]\\d|\\d{3,})[._]\\d+)([._]\\d+|)|Android:?[ /-](14[89]|1[5-9]\\d|[2-9]\\d{2}|\\d{4,})(\\.\\d+|)(\\.\\d+|)|Android.+Firefox\\/(15\\d|1[6-9]\\d|[2-9]\\d{2}|\\d{4,})\\.\\d+(\\.\\d+|)|Android.+Chrom(ium|e)\\/(14[89]|1[5-9]\\d|[2-9]\\d{2}|\\d{4,})\\.\\d+(\\.\\d+|)|SamsungBrowser\\/([2-9]\\d|\\d{3,})\\.\\d+/,legacy:/Edge?\\/(1[6-9]|[2-9]\\d|\\d{3,})\\.\\d+(\\.\\d+|)|Firefox\\/(5[4-9]|[6-9]\\d|\\d{3,})\\.\\d+(\\.\\d+|)|Chrom(ium|e)\\/(5[1-9]|[6-9]\\d|\\d{3,})\\.\\d+(\\.\\d+|)([\\d.]+$|.*Safari\\/(?![\\d.]+ Edge\\/[\\d.]+$))|(Maci|X1{2}).+ Version\\/(10\\.\\d+|(1[1-9]|[2-9]\\d|\\d{3,})\\.\\d+)([,.]\\d+|)( \\(\\w+\\)|)( Mobile\\/\\w+|) Safari\\/|Chrome.+OPR\\/(3[89]|[4-9]\\d|\\d{3,})\\.\\d+\\.\\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\\d+|(1[1-9]|[2-9]\\d|\\d{3,})[._]\\d+)([._]\\d+|)|Android:?[ /-](14[89]|1[5-9]\\d|[2-9]\\d{2}|\\d{4,})(\\.\\d+|)(\\.\\d+|)|Mobile Safari.+OPR\\/([89]\\d|\\d{3,})\\.\\d+\\.\\d+|Android.+Firefox\\/(15\\d|1[6-9]\\d|[2-9]\\d{2}|\\d{4,})\\.\\d+(\\.\\d+|)|Android.+Chrom(ium|e)\\/(14[89]|1[5-9]\\d|[2-9]\\d{2}|\\d{4,})\\.\\d+(\\.\\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\\.([5-9]|\\d{2,})|(1[6-9]|[2-9]\\d|\\d{3,})\\.\\d+)\\.\\d+|SamsungBrowser\\/(5\\.\\d+|([6-9]|\\d{2,})\\.\\d+)|Android.+MQ{2}Browser\\/(14(\\.(9|\\d{2,})|)|(1[5-9]|[2-9]\\d|\\d{3,})(\\.\\d+|))(\\.\\d+|)|K[Aa][Ii]OS\\/(3\\.\\d+|([4-9]|\\d{2,})\\.\\d+)(\\.\\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?\"bot\":y.match(v)?\"modern\":y.match(h)?\"legacy\":y.match(t)?\"bot\":\"unknown\"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,\"navigation\")[0];if(!d)return{requestId:n,navigationType:o(a)};var s=\"type\"in d?r(d.type,64):void 0,u=\"serverTiming\"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return\"requestID\"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:\"web_pixels_manager_load/3.3\",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if(\"function\"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf(\"iPhone; CPU iPhone OS 12_\")&&-1===w.indexOf(\"iPad; CPU OS 12_\")&&-1===w.indexOf(\"iPod touch; CPU iPhone OS 12_\")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{\"function\"==typeof window.fetch&&window.fetch(d,{method:\"POST\",headers:{\"Content-Type\":\"text/plain\"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open(\"POST\",d,!0),_.setRequestHeader(\"Content-Type\",\"text/plain\"),_.send(m)}catch(e){n(\"[Web Pixels Manager] Got an unhandled error while logging to Monorail.\")}}else n(\"[Web Pixels Manager] No Monorail endpoint provided, skipping logging.\")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:\"setup-skipped\",errorMsg:\"replay queue already initialized.\"});else{var b,_;w.emit({status:\"setup-started\"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark(\"wpm:start\")}catch(e){}var k,C=\"modern\"===g?\"modern\":\"legacy\",E=(null!=l?l:{modern:\"\",legacy:\"\"})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,\"/wpm\",\"/b\",k.hashVersion,\"modern\"===k.buildTarget?\"m\":\"l\",\".js\"].join(\"\"),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener(\"pagehide\",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:\"loading\",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if(\"function\"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&\"function\"!=typeof n&&Object(n)===n&&\"publish\"in i&&\"function\"==typeof i.publish&&\"publishCustomEvent\"in i&&\"function\"==typeof i.publishCustomEvent&&\"visitor\"in i&&\"function\"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B(\"manager_api_unavailable\",void 0===e?void 0:Q(e))}function x(){B(\"script_load_failed\",\"\".concat(I,\" has failed to load\"))}function B(e,t){T||(T=!0,q(),w.emit({status:\"failed\",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:\"pagehide-while-loading\",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener(\"pagehide\",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement(\"script\"),l=document.querySelector(\"head\"),c=document.querySelector(\"body\");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin=\"anonymous\"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener(\"load\",r),o&&u.addEventListener(\"error\",o),l)l.appendChild(u);else{if(!c)throw new Error(\"Did not find a head or body element to append the script\");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,\"string\"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:\"\"),scriptDataAttributes:c})}function D(e){B(\"script_append_failed\",Q(e))}function Q(e){return e instanceof Error?e.message:\"Unknown error\"}}}();wpmLoader({shopId: 19973996644,storefrontBaseUrl: \"https://passportcoffee.com.au\",extensionsBaseUrl: \"https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager\",monorailEndpoint: \"https://passportcoffee.com.au/.well-known/shopify/monorail/unstable/produce_batch\",surface: \"storefront-renderer\",enabledBetaFlags: [\"4c64608a\",\"16072cab\",\"8450a54b\"],webPixelsConfigList: [{\"id\":\"513867937\",\"configuration\":\"{\\\"config\\\":\\\"{\\\\\\\"pixel_id\\\\\\\":\\\\\\\"G-Y31JJK7DHR\\\\\\\",\\\\\\\"google_tag_ids\\\\\\\":[\\\\\\\"G-Y31JJK7DHR\\\\\\\",\\\\\\\"GT-P826JDD\\\\\\\"],\\\\\\\"target_country\\\\\\\":\\\\\\\"AU\\\\\\\",\\\\\\\"gtag_events\\\\\\\":[{\\\\\\\"type\\\\\\\":\\\\\\\"search\\\\\\\",\\\\\\\"action_label\\\\\\\":\\\\\\\"G-Y31JJK7DHR\\\\\\\"},{\\\\\\\"type\\\\\\\":\\\\\\\"begin_checkout\\\\\\\",\\\\\\\"action_label\\\\\\\":\\\\\\\"G-Y31JJK7DHR\\\\\\\"},{\\\\\\\"type\\\\\\\":\\\\\\\"view_item\\\\\\\",\\\\\\\"action_label\\\\\\\":[\\\\\\\"G-Y31JJK7DHR\\\\\\\",\\\\\\\"MC-G98VRH7VBG\\\\\\\"]},{\\\\\\\"type\\\\\\\":\\\\\\\"purchase\\\\\\\",\\\\\\\"action_label\\\\\\\":[\\\\\\\"G-Y31JJK7DHR\\\\\\\",\\\\\\\"MC-G98VRH7VBG\\\\\\\"]},{\\\\\\\"type\\\\\\\":\\\\\\\"page_view\\\\\\\",\\\\\\\"action_label\\\\\\\":[\\\\\\\"G-Y31JJK7DHR\\\\\\\",\\\\\\\"MC-G98VRH7VBG\\\\\\\"]},{\\\\\\\"type\\\\\\\":\\\\\\\"add_payment_info\\\\\\\",\\\\\\\"action_label\\\\\\\":\\\\\\\"G-Y31JJK7DHR\\\\\\\"},{\\\\\\\"type\\\\\\\":\\\\\\\"add_to_cart\\\\\\\",\\\\\\\"action_label\\\\\\\":\\\\\\\"G-Y31JJK7DHR\\\\\\\"}],\\\\\\\"enable_monitoring_mode\\\\\\\":false}\\\"}\",\"eventPayloadVersion\":\"v1\",\"runtimeContext\":\"OPEN\",\"scriptVersion\":\"a3321ca85cf5aaf6b57585fcd8d67b3a\",\"type\":\"APP\",\"apiClientId\":1780363,\"privacyPurposes\":[],\"dataSharingAdjustments\":{\"protectedCustomerApprovalScopes\":[\"read_customer_address\",\"read_customer_email\",\"read_customer_name\",\"read_customer_personal_data\",\"read_customer_phone\"],\"dataSharingControls\":[\"share_all_events\"]},\"dataSharingState\":\"optimized\",\"enabledFlags\":[\"9a3ed68a\"]},{\"id\":\"211288225\",\"configuration\":\"{\\\"pixel_id\\\":\\\"633119810811868\\\",\\\"pixel_type\\\":\\\"facebook_pixel\\\",\\\"metaapp_system_user_token\\\":\\\"-\\\"}\",\"eventPayloadVersion\":\"v1\",\"runtimeContext\":\"OPEN\",\"scriptVersion\":\"bd2f978c17a94bbb8a74d43de2165dc5\",\"type\":\"APP\",\"apiClientId\":2329312,\"privacyPurposes\":[\"ANALYTICS\",\"MARKETING\",\"SALE_OF_DATA\"],\"dataSharingAdjustments\":{\"protectedCustomerApprovalScopes\":[\"read_customer_address\",\"read_customer_email\",\"read_customer_name\",\"read_customer_personal_data\",\"read_customer_phone\"],\"dataSharingControls\":[\"share_all_events\"]},\"dataSharingState\":\"optimized\",\"enabledFlags\":[\"9a3ed68a\"]},{\"id\":\"shopify-app-pixel\",\"configuration\":\"{}\",\"eventPayloadVersion\":\"v1\",\"runtimeContext\":\"STRICT\",\"scriptVersion\":\"0530\",\"apiClientId\":\"shopify-pixel\",\"type\":\"APP\",\"privacyPurposes\":[\"ANALYTICS\",\"MARKETING\"]},{\"id\":\"shopify-custom-pixel\",\"eventPayloadVersion\":\"v1\",\"runtimeContext\":\"LAX\",\"scriptVersion\":\"0530\",\"apiClientId\":\"shopify-pixel\",\"type\":\"CUSTOM\",\"privacyPurposes\":[\"ANALYTICS\",\"MARKETING\"]}],isMerchantRequest: false,initData: {\"shop\":{\"name\":\"Passport Specialty Coffee Roaster\",\"paymentSettings\":{\"currencyCode\":\"AUD\"},\"myshopifyDomain\":\"passport-specialty-coffee.myshopify.com\",\"countryCode\":\"AU\",\"storefrontUrl\":\"https:\\/\\/passportcoffee.com.au\"},\"customer\":null,\"cart\":null,\"checkout\":null,\"productVariants\":[{\"price\":{\"amount\":36.0,\"currencyCode\":\"AUD\"},\"product\":{\"title\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"vendor\":\"Passport Specialty Coffee\",\"id\":\"8223558533281\",\"untranslatedTitle\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"url\":\"\\/products\\/colombia-penas-blancas-geisha-natural-filter\",\"type\":\"Coffee\"},\"id\":\"46537133424801\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"sku\":null,\"title\":\"125gm\",\"untranslatedTitle\":\"125gm\"},{\"price\":{\"amount\":60.0,\"currencyCode\":\"AUD\"},\"product\":{\"title\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"vendor\":\"Passport Specialty Coffee\",\"id\":\"8223558533281\",\"untranslatedTitle\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"url\":\"\\/products\\/colombia-penas-blancas-geisha-natural-filter\",\"type\":\"Coffee\"},\"id\":\"44906648764577\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"sku\":null,\"title\":\"250gm\",\"untranslatedTitle\":\"250gm\"},{\"price\":{\"amount\":218.0,\"currencyCode\":\"AUD\"},\"product\":{\"title\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"vendor\":\"Passport Specialty Coffee\",\"id\":\"8223558533281\",\"untranslatedTitle\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"url\":\"\\/products\\/colombia-penas-blancas-geisha-natural-filter\",\"type\":\"Coffee\"},\"id\":\"44906648797345\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"sku\":null,\"title\":\"1KG\",\"untranslatedTitle\":\"1KG\"},{\"price\":{\"amount\":3.0,\"currencyCode\":\"AUD\"},\"product\":{\"title\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"vendor\":\"Passport Specialty Coffee\",\"id\":\"8223558533281\",\"untranslatedTitle\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"url\":\"\\/products\\/colombia-penas-blancas-geisha-natural-filter\",\"type\":\"Coffee\"},\"id\":\"46621928095905\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"sku\":null,\"title\":\"250gm Vac Sealed Pouch Option (per pouch)\",\"untranslatedTitle\":\"250gm Vac Sealed Pouch Option (per pouch)\"}],\"products\":[{\"id\":\"8223558533281\",\"handle\":\"colombia-penas-blancas-geisha-natural-filter\",\"isCollective\":null,\"title\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"type\":\"Coffee\",\"untranslatedTitle\":\"Colombia Penas Blancas Geisha Natural FILTER\",\"url\":\"\\/products\\/colombia-penas-blancas-geisha-natural-filter\",\"vendor\":\"Passport Specialty Coffee\",\"remoteShopId\":null,\"variants\":[{\"id\":\"46537133424801\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"price\":{\"amount\":36.0,\"currencyCode\":\"AUD\"},\"sku\":null,\"title\":\"125gm\",\"untranslatedTitle\":\"125gm\"},{\"id\":\"44906648764577\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"price\":{\"amount\":60.0,\"currencyCode\":\"AUD\"},\"sku\":null,\"title\":\"250gm\",\"untranslatedTitle\":\"250gm\"},{\"id\":\"44906648797345\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"price\":{\"amount\":218.0,\"currencyCode\":\"AUD\"},\"sku\":null,\"title\":\"1KG\",\"untranslatedTitle\":\"1KG\"},{\"id\":\"46621928095905\",\"image\":{\"src\":\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\"},\"price\":{\"amount\":3.0,\"currencyCode\":\"AUD\"},\"sku\":null,\"title\":\"250gm Vac Sealed Pouch Option (per pouch)\",\"untranslatedTitle\":\"250gm Vac Sealed Pouch Option (per pouch)\"}]}],\"purchasingCompany\":null},},\"https://passportcoffee.com.au/cdn\",\"7ec887c8w14f9f074p854094e1m1370c602\",{\"modern\":\"\",\"legacy\":\"\"},{\"trekkieShim\":true,\"agentContext\":true,\"apiClientId\":\"580111\",\"facebookCapiEnabled\":\"true\",\"themeId\":\"131959160993\",\"themePublished\":\"true\",\"eventMetadataId\":\"2bcbb407-9435-4b35-95b8-b6315b35b6ee\",\"pageType\":\"product\",\"resourceId\":\"8223558533281\",\"shopId\":\"19973996644\",\"storefrontBaseUrl\":\"https:\\/\\/passportcoffee.com.au\",\"extensionBaseUrl\":\"https:\\/\\/extensions.shopifycdn.com\\/cdn\\/shopifycloud\\/web-pixels-manager\",\"surface\":\"storefront-renderer\",\"enabledBetaFlags\":\"[\\\"4c64608a\\\", \\\"16072cab\\\", \\\"8450a54b\\\"]\",\"isMerchantRequest\":\"false\",\"hashVersion\":\"7ec887c8w14f9f074p854094e1m1370c602\",\"publish\":\"custom\",\"events\":\"[[\\\"page_viewed\\\",{}],[\\\"product_viewed\\\",{\\\"productVariant\\\":{\\\"price\\\":{\\\"amount\\\":36.0,\\\"currencyCode\\\":\\\"AUD\\\"},\\\"product\\\":{\\\"title\\\":\\\"Colombia Penas Blancas Geisha Natural FILTER\\\",\\\"vendor\\\":\\\"Passport Specialty Coffee\\\",\\\"id\\\":\\\"8223558533281\\\",\\\"untranslatedTitle\\\":\\\"Colombia Penas Blancas Geisha Natural FILTER\\\",\\\"url\\\":\\\"\\/products\\/colombia-penas-blancas-geisha-natural-filter\\\",\\\"type\\\":\\\"Coffee\\\"},\\\"id\\\":\\\"46537133424801\\\",\\\"image\\\":{\\\"src\\\":\\\"\\/\\/passportcoffee.com.au\\/cdn\\/shop\\/files\\/COLPenasBlancasGeishaNatural.png?v=1744956315\\\"},\\\"sku\\\":null,\\\"title\\\":\\\"125gm\\\",\\\"untranslatedTitle\\\":\\\"125gm\\\"}}]]\"});})();</script>\n<script>\n  window.ShopifyAnalytics = window.ShopifyAnalytics || {};\n  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};\n  window.ShopifyAnalytics.meta.currency = 'AUD';\n  var meta = {\"product\":{\"id\":8223558533281,\"gid\":\"gid:\\/\\/shopify\\/Product\\/8223558533281\",\"vendor\":\"Passport Specialty Coffee\",\"type\":\"Coffee\",\"handle\":\"colombia-penas-blancas-geisha-natural-filter\",\"variants\":[{\"id\":46537133424801,\"price\":3600,\"name\":\"Colombia Penas Blancas Geisha Natural FILTER - 125gm\",\"public_title\":\"125gm\",\"sku\":null},{\"id\":44906648764577,\"price\":6000,\"name\":\"Colombia Penas Blancas Geisha Natural FILTER - 250gm\",\"public_title\":\"250gm\",\"sku\":null},{\"id\":44906648797345,\"price\":21800,\"name\":\"Colombia Penas Blancas Geisha Natural FILTER - 1KG\",\"public_title\":\"1KG\",\"sku\":null},{\"id\":46621928095905,\"price\":300,\"name\":\"Colombia Penas Blancas Geisha Natural FILTER - 250gm Vac Sealed Pouch Option (per pouch)\",\"public_title\":\"250gm Vac Sealed Pouch Option (per pouch)\",\"sku\":null}],\"remote\":false},\"page\":{\"pageType\":\"product\",\"resourceType\":\"product\",\"resourceId\":8223558533281,\"requestId\":\"44f302df-6441-46ce-a796-3d39b584ba90-1791475182\"}};\n  for (var attr in meta) {\n    window.ShopifyAnalytics.meta[attr] = meta[attr];\n  }\n</script>\n<script class=\"analytics\">\n  (function () {\n    var customDocumentWrite = function(content) {\n      var jquery = null;\n\n      if (window.jQuery) {\n        jquery = window.jQuery;\n      } else if (window.Checkout && window.Checkout.$) {\n        jquery = window.Checkout.$;\n      }\n\n      if (jquery) {\n        jquery('body').append(content);\n      }\n    };\n\n    var hasLoggedConversion = function(token) {\n      if (token) {\n        return document.cookie.indexOf('loggedConversion=' + token) !== -1;\n      }\n      return false;\n    }\n\n    var setCookieIfConversion = function(token) {\n      if (token) {\n        var twoMonthsFromNow = new Date(Date.now());\n        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);\n\n        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;\n      }\n    }\n\n    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];\n    window.ShopifyAnalytics.lib.trekkie = window.trekkie;\n    if (trekkie.integrations) {\n      return;\n    }\n    trekkie.methods = [\n      'identify',\n      'page',\n      'ready',\n      'track',\n      'trackForm',\n      'trackLink'\n    ];\n    trekkie.factory = function(method) {\n      return function() {\n        var args = Array.prototype.slice.call(arguments);\n        args.unshift(method);\n        trekkie.push(args);\n        if (method == 'track' || method == 'page') {\n          var pageUrl;\n          try {\n            pageUrl = window.location.href;\n          } catch (e) {}\n          var pageReferrer;\n          try {\n            pageReferrer = document.referrer;\n          } catch (e) {}\n          try {\n            if (window.__TREKKIE_SHIM_QUEUE == null) {\n              window.__TREKKIE_SHIM_QUEUE = [];\n            }\n            window.__TREKKIE_SHIM_QUEUE.push({\n              from: 'trekkie-stub',\n              method: method,\n              args: args.slice(1),\n              pageContext: {\n                url: pageUrl,\n                referrer: pageReferrer\n              }\n            });\n          } catch (e) {\n            // no-op\n          }\n        }\n        return trekkie;\n      };\n    };\n    for (var i = 0; i < trekkie.methods.length; i++) {\n      var key = trekkie.methods[i];\n      trekkie[key] = trekkie.factory(key);\n    }\n    trekkie.load = function(config) {\n      trekkie.config = config || {};\n      trekkie.config.initialDocumentCookie = document.cookie;\n      var first = document.getElementsByTagName('script')[0];\nvar script = document.createElement('script');\nscript.type = 'text/javascript';\nscript.onerror = function(e) {\n  var scriptFallback = document.createElement('script');\n  scriptFallback.type = 'text/javascript';\n  scriptFallback.onerror = function(error) {\n          var Monorail = {\n      produce: function produce(monorailDomain, schemaId, payload) {\n        var currentMs = new Date().getTime();\n        var event = {\n          schema_id: schemaId,\n          payload: payload,\n          metadata: {\n            event_created_at_ms: currentMs,\n            event_sent_at_ms: currentMs\n          }\n        };\n        return Monorail.sendRequest(\"https://\" + monorailDomain + \"/v1/produce\", JSON.stringify(event));\n      },\n      sendRequest: function sendRequest(endpointUrl, payload) {\n        // Try the sendBeacon API\n        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {\n          var blobData = new window.Blob([payload], {\n            type: 'text/plain'\n          });\n\n          if (window.navigator.sendBeacon(endpointUrl, blobData)) {\n            return true;\n          } // sendBeacon was not successful\n\n        } // XHR beacon\n\n        var xhr = new XMLHttpRequest();\n\n        try {\n          xhr.open('POST', endpointUrl);\n          xhr.setRequestHeader('Content-Type', 'text/plain');\n          xhr.send(payload);\n        } catch (e) {\n          console.log(e);\n        }\n\n        return false;\n      },\n      isIos12: function isIos12() {\n        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;\n      }\n    };\n    Monorail.produce('monorail-edge.shopifysvc.com',\n      'trekkie_storefront_load_errors/1.1',\n      {shop_id: 19973996644,\n      theme_id: 131959160993,\n      app_name: \"storefront\",\n      context_url: window.location.href,\n      source_url: \"//passportcoffee.com.au/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js\"});\n\n  };\n  scriptFallback.async = true;\n  scriptFallback.src = '//passportcoffee.com.au/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';\n  first.parentNode.insertBefore(scriptFallback, first);\n};\nscript.async = true;\nscript.src = '//passportcoffee.com.au/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';\nfirst.parentNode.insertBefore(script, first);\n\n    };\n    trekkie.load(\n      {\"Trekkie\":{\"appName\":\"storefront\",\"development\":false,\"defaultAttributes\":{\"shopId\":19973996644,\"isMerchantRequest\":null,\"themeId\":131959160993,\"themeCityHash\":\"6970450237579506611\",\"contentLanguage\":\"en\",\"currency\":\"AUD\",\"eventMetadataId\":\"2bcbb407-9435-4b35-95b8-b6315b35b6ee\"},\"isServerSideCookieWritingEnabled\":true,\"monorailRegion\":\"shop_domain\",\"enabledBetaFlags\":[\"764d78cb\",\"8450a54b\",\"4c64608a\"]},\"Session Attribution\":{},\"S2S\":{\"facebookCapiEnabled\":true,\"source\":\"trekkie-storefront-renderer\",\"apiClientId\":580111}}\n    );\n\n    var loaded = false;\n    trekkie.ready(function() {\n      if (loaded) return;\n      loaded = true;\n\n      window.ShopifyAnalytics.lib = window.trekkie;\n\n      var originalDocumentWrite = document.write;\n      document.write = customDocumentWrite;\n      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};\n      document.write = originalDocumentWrite;\n\n      var match = window.location.pathname.match(/checkouts\\/(.+)\\/(thank_you|post_purchase)/)\n      var token = match? match[1]: undefined;\n      if (!hasLoggedConversion(token)) {\n        setCookieIfConversion(token);\n        window.ShopifyAnalytics.lib.track(\"Viewed Product\",{\"currency\":\"AUD\",\"variantId\":46537133424801,\"productId\":8223558533281,\"productGid\":\"gid:\\/\\/shopify\\/Product\\/8223558533281\",\"name\":\"Colombia Penas Blancas Geisha Natural FILTER - 125gm\",\"price\":\"36.00\",\"sku\":null,\"brand\":\"Passport Specialty Coffee\",\"variant\":\"125gm\",\"category\":\"Coffee\",\"nonInteraction\":true,\"remote\":false,\"available\":true},undefined,undefined,{\"shopifyEmitted\":true});\n      }\n    });\n\n    window.ShopifyAnalytics.lib.page(null,{\"pageType\":\"product\",\"resourceType\":\"product\",\"resourceId\":8223558533281,\"requestId\":\"44f302df-6441-46ce-a796-3d39b584ba90-1791475182\",\"shopifyEmitted\":true});\n\n    var eventsListenerScript = document.createElement('script');\n    eventsListenerScript.async = true;\n    eventsListenerScript.src = \"//passportcoffee.com.au/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js\";\n    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);\n})();</script>\n<h1 class=\"product-name entry-title\">Colombia Penas Blancas Geisha Natural FILTER</h1>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\",\"@type\": \"BreadcrumbList\",\"itemListElement\": [{\"@type\": \"ListItem\",\"position\": 1,\"name\": \"Home\",\"item\": \"https://passportcoffee.com.au\"},{\"@type\": \"ListItem\",\"position\": 2,\"name\": \"Single Origin Coffee\",\"item\": \"https://passportcoffee.com.au/collections/single-origin-coffee\"},{\"@type\": \"ListItem\",\"position\": 3,\"name\": \"Colombia Penas Blancas Geisha Natural FILTER\",\"item\": \"https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter\"}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\",\"@id\": \"https:\\/\\/passportcoffee.com.au\\/products\\/colombia-penas-blancas-geisha-natural-filter#product\",\"@type\": \"Product\",\"brand\": {\"@type\": \"Brand\",\"name\": \"Passport Specialty Coffee\"},\"description\": \"Origin : ColombiaRegion:  Acevedo, HuilaAltitude: 1750Producer: Penas BlancasVariety: GeishaProcess: Mosto Natural Thermal Shock\\nTasting notes: Smooth and complex with notes of orange sherbet, strawberry jam, purple grape, kiwifruit and florals.\\nHailing from the renowned coffee-growing region of Acevedo, Huila, Colombia, the Peñas Blancas Natural is a truly exceptional offering. Grown at an altitude of 1750 meters above sea level, this coffee thrives in the ideal microclimate, with temperatures ranging between 17 and 24°C, contributing to its remarkable quality.\\nThe natural processing of the Peñas Blancas Natural begins with the careful harvesting of cherries, each with a Brix level above 22, signifying optimal sugar content. Upon arrival at the processing station, the cherries are treated with a thermal shock at 55°C for 30 minutes. This step disinfects the cherries and eliminates impurities while maintaining their integrity. \\nFollowing the thermal shock, the cherries undergo a 48-hour oxidation process with the recirculation of \\\"mosto,\\\" which enhances their flavours.\\nThe next phase involves placing the cherries in plastic bags with an inner liner for an additional 36 hours, allowing controlled fermentation to take place. \\nThe cherries are then subjected to a two-day solar drying period, followed by 36 hours of mechanical drying to ensure consistency. The drying process is completed when the beans reach a moisture content of less than 11.5%, ensuring stability and longevity in storage\\n\",\"url\": \"https:\\/\\/passportcoffee.com.au\\/products\\/colombia-penas-blancas-geisha-natural-filter\",\"name\": \"Colombia Penas Blancas Geisha Natural FILTER\",\"image\": \"https://passportcoffee.com.au/cdn/shop/files/COLPenasBlancasGeishaNatural_grande.png?v=1744956315\",\"itemCondition\": \"http://schema.org/NewCondition\",\"offers\": [{\"@type\": \"Offer\",\"price\": \"36.0\",\"priceCurrency\": \"AUD\",\"priceValidUntil\": \"2026-06-29 07:15:19 +1000\",\"itemCondition\": \"http://schema.org/NewCondition\",\"url\": \"https:\\/\\/passportcoffee.com.au\\/products\\/colombia-penas-blancas-geisha-natural-filter?variant=46537133424801\",\"image\": \"https://passportcoffee.com.au/cdn/shop/files/COLPenasBlancasGeishaNatural_grande.png?v=1744956315\",\"sku\": null,\"mpn\": \"\",\"availability\": \"https://schema.org/InStock\"},{\"@type\": \"Offer\",\"price\": \"60.0\",\"priceCurrency\": \"AUD\",\"priceValidUntil\": \"2026-06-29 07:15:19 +1000\",\"itemCondition\": \"http://schema.org/NewCondition\",\"url\": \"https:\\/\\/passportcoffee.com.au\\/products\\/colombia-penas-blancas-geisha-natural-filter?variant=44906648764577\",\"image\": \"https://passportcoffee.com.au/cdn/shop/files/COLPenasBlancasGeishaNatural_grande.png?v=1744956315\",\"sku\": null,\"mpn\": \"\",\"availability\": \"https://schema.org/InStock\"},{\"@type\": \"Offer\",\"price\": \"218.0\",\"priceCurrency\": \"AUD\",\"priceValidUntil\": \"2026-06-29 07:15:19 +1000\",\"itemCondition\": \"http://schema.org/NewCondition\",\"url\": \"https:\\/\\/passportcoffee.com.au\\/products\\/colombia-penas-blancas-geisha-natural-filter?variant=44906648797345\",\"image\": \"https://passportcoffee.com.au/cdn/shop/files/COLPenasBlancasGeishaNatural_grande.png?v=1744956315\",\"sku\": null,\"mpn\": \"\",\"availability\": \"https://schema.org/InStock\"},{\"@type\": \"Offer\",\"price\": \"3.0\",\"priceCurrency\": \"AUD\",\"priceValidUntil\": \"2026-06-29 07:15:19 +1000\",\"itemCondition\": \"http://schema.org/NewCondition\",\"url\": \"https:\\/\\/passportcoffee.com.au\\/products\\/colombia-penas-blancas-geisha-natural-filter?variant=46621928095905\",\"image\": \"https://passportcoffee.com.au/cdn/shop/files/COLPenasBlancasGeishaNatural_grande.png?v=1744956315\",\"sku\": null,\"mpn\": \"\",\"availability\": \"https://schema.org/OutOfStock\"}]}</script>",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+      "status": 200,
+      "at": "2026-10-08T15:59:42.000Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.json",
+      "status": 200,
+      "at": "2026-10-08T15:59:44.006Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.js",
+      "status": 200,
+      "at": "2026-10-08T15:59:46.010Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "source_html_sha256": "56948425a82b2de5a815981974d6693ed96a6339f1eda85fa1ff68df595b5806",
+  "html_capture_projection": "Captured primary canonical, heading, Open Graph metadata, JSON-LD and Shopify analytics script blocks; unrelated layout and scripts omitted."
+}

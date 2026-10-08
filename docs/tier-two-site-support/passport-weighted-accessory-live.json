@@ -1,0 +1,110 @@
+{
+  "mode": "merchant-get-only-weighted-accessory-subset-verification",
+  "checked_at": "2026-10-08T15:59:46.183Z",
+  "product": {
+    "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+    "name": "Colombia Penas Blancas Geisha Natural FILTER",
+    "source_product_id": "8223558533281",
+    "state": "in_stock",
+    "variants_complete": false,
+    "native_variant_scope": {
+      "version": "shopify-reviewed-accessory-subset-v1",
+      "profile_name": "Passport",
+      "pattern": "^(?:250gm )?Vac Sealed Pouch Option \\(per pouch\\)$",
+      "product_id": "8223558533281",
+      "original_variant_ids": [
+        "46537133424801",
+        "44906648764577",
+        "44906648797345",
+        "46621928095905"
+      ],
+      "retained_variant_ids": [
+        "46537133424801",
+        "44906648764577",
+        "44906648797345"
+      ],
+      "excluded_variants": [
+        {
+          "id": "46621928095905",
+          "title": "250gm Vac Sealed Pouch Option (per pouch)"
+        }
+      ]
+    },
+    "variants": [
+      {
+        "id": "46537133424801",
+        "title": "125gm",
+        "weight_g": 125,
+        "money": {
+          "raw": "36.0",
+          "amount": "36.00",
+          "currency": "AUD",
+          "exponent": 2,
+          "minorUnits": 3600,
+          "reason": null
+        },
+        "state": "in_stock"
+      },
+      {
+        "id": "44906648764577",
+        "title": "250gm",
+        "weight_g": 250,
+        "money": {
+          "raw": "60.0",
+          "amount": "60.00",
+          "currency": "AUD",
+          "exponent": 2,
+          "minorUnits": 6000,
+          "reason": null
+        },
+        "state": "in_stock"
+      },
+      {
+        "id": "44906648797345",
+        "title": "1KG",
+        "weight_g": 1000,
+        "money": {
+          "raw": "218.0",
+          "amount": "218.00",
+          "currency": "AUD",
+          "exponent": 2,
+          "minorUnits": 21800,
+          "reason": null
+        },
+        "state": "in_stock"
+      }
+    ],
+    "native_variant_checked_at": "2026-10-08T15:59:46.183Z"
+  },
+  "fixture": "../../test/fixtures/siteSupport/passport-weighted-accessory-product.json",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+      "status": 200,
+      "at": "2026-10-08T15:59:42.000Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.json",
+      "status": 200,
+      "at": "2026-10-08T15:59:44.006Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.js",
+      "status": 200,
+      "at": "2026-10-08T15:59:46.010Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}
