@@ -32,6 +32,7 @@ async function paged(url,fetchHtml) {
   }throw Error('Square pagination limit');
 }
 async function discoverSquareProducts(roaster,profile,fetchHtml) {
+  if(profile.public_catalog_inventory===true)return require('./squareInventory').discoverPublicSquareInventory(roaster,profile,fetchHtml);
   try {
     const home=await fetchHtml(roaster.website_url);if(!home.success)throw Error('Square homepage unavailable');context(home.data,profile);
     const urls=new Set(),evidence=[];

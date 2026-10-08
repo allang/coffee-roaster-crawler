@@ -1,0 +1,404 @@
+{
+  "profile": {
+    "name": "Obscure Coffee Roasters",
+    "entity_ids": [
+      "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9"
+    ],
+    "hosts": [
+      "www.obscure.coffee",
+      "obscure.coffee",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": [
+        "/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products",
+        "/app/store/api/v28/editor/users/144235705/sites/548590792698639093/categories"
+      ]
+    },
+    "adapter": "square",
+    "square_owner_id": "144235705",
+    "square_site_id": "548590792698639093",
+    "square_merchant_id": "MLBNPWAMGBDSD",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "ECYHW4NO4B2UAMZCHDHGWWMV",
+      "OGQYIRO4AD6ROQIE2EC25RNO",
+      "Z3AQOJNJKNUM3KP6RNG2HBWG"
+    ],
+    "coffee_categories": [
+      {
+        "id": "ECYHW4NO4B2UAMZCHDHGWWMV",
+        "name": "Blends",
+        "site_category_id": "3",
+        "parent": ""
+      },
+      {
+        "id": "OGQYIRO4AD6ROQIE2EC25RNO",
+        "name": "Collabs",
+        "site_category_id": "4",
+        "parent": "ECYHW4NO4B2UAMZCHDHGWWMV"
+      },
+      {
+        "id": "Z3AQOJNJKNUM3KP6RNG2HBWG",
+        "name": "Single Origin",
+        "site_category_id": "2",
+        "parent": ""
+      }
+    ],
+    "public_catalog_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "coffee_collection_verified": true
+  },
+  "context": "<script>window.__BOOTSTRAP_STATE__ = {\"siteData\":{\"site\":{\"properties\":{\"classicSiteID\":\"548590792698639093\"}},\"user\":{\"id\":144235705}},\"storeInfo\":{\"merchant_id\":\"MLBNPWAMGBDSD\",\"currency\":\"USD\"}};</script>",
+  "catalog": {
+    "data": [
+      {
+        "id": "5SAKYFYMFKYDPRXKJXY4SYYK",
+        "site_product_id": "120",
+        "name": "Coffee Discovery Subscription (Local Pick-up Only)",
+        "owner_id": "144235705",
+        "merchant_id": "MLBNPWAMGBDSD",
+        "visibility": "visible",
+        "only_subscribable": true,
+        "categoryIds": [],
+        "absolute_site_link": "https://www.obscure.coffee/product/roasters-choice-sub/120"
+      },
+      {
+        "id": "KN5S5WN2KI2T6UJBA3637XWF",
+        "site_product_id": "46",
+        "name": "Coffee Discovery Subscription",
+        "owner_id": "144235705",
+        "merchant_id": "MLBNPWAMGBDSD",
+        "visibility": "visible",
+        "only_subscribable": true,
+        "categoryIds": [],
+        "absolute_site_link": "https://www.obscure.coffee/product/roasters-choice-sub/46"
+      }
+    ],
+    "meta": {
+      "pagination": {
+        "total": 2,
+        "count": 2,
+        "per_page": 100,
+        "current_page": 1,
+        "total_pages": 1,
+        "links": []
+      }
+    }
+  },
+  "categories": {
+    "data": [
+      {
+        "id": "ECYHW4NO4B2UAMZCHDHGWWMV",
+        "site_category_id": "3",
+        "name": "Blends",
+        "parent": "",
+        "published": true,
+        "product_count": {
+          "total": 3,
+          "visible": 3
+        },
+        "product_counts": {
+          "direct": 3,
+          "visible": 3,
+          "full_category_subtree": 3
+        },
+        "preferred_order_product_ids": [
+          "12",
+          "UT2ZX3CQ2TNYOM4MKRDN6JOZ",
+          "OK5PPACCT3VV7NFPLDSA5PT4"
+        ]
+      },
+      {
+        "id": "OGQYIRO4AD6ROQIE2EC25RNO",
+        "site_category_id": "4",
+        "name": "Collabs",
+        "parent": "ECYHW4NO4B2UAMZCHDHGWWMV",
+        "published": true,
+        "product_count": {
+          "total": 1,
+          "visible": 1
+        },
+        "product_counts": {
+          "direct": 1,
+          "visible": 1,
+          "full_category_subtree": 1
+        },
+        "preferred_order_product_ids": [
+          "12"
+        ]
+      },
+      {
+        "id": "Z3AQOJNJKNUM3KP6RNG2HBWG",
+        "site_category_id": "2",
+        "name": "Single Origin",
+        "parent": "",
+        "published": true,
+        "product_count": {
+          "total": 30,
+          "visible": 30
+        },
+        "product_counts": {
+          "direct": 30,
+          "visible": 30,
+          "full_category_subtree": 30
+        },
+        "preferred_order_product_ids": [
+          "116",
+          "93",
+          "92",
+          "91",
+          "75",
+          "58",
+          "56",
+          "55",
+          "25",
+          "24",
+          "22",
+          "102",
+          "137",
+          "142",
+          "194",
+          "MPR55HA46EGIRGHCDXHHFW3D",
+          "QRTSNOJ4MNSQYKBXQMKPIKFA",
+          "3FDUPNUBRPBEBS4IK6ZCAJQK",
+          "VTKH2RAYNQCPGCD26F37QPS6",
+          "WNQVTNIPNSHWX7AM4A2TS2T7",
+          "CSYO6ETYPK5NN37BUAGAMCDX",
+          "GLPHV4BEKL3AZ4OFQN6BGWHI",
+          "5VG3IDGV7NAZEYOFV4FBBFSZ",
+          "VVOXMD5KAJWCWKNQZJQR7FOZ",
+          "WYVZANV6FDPHIK5EP47BNXVJ",
+          "X3V5K5Q5UF5NYZYLOBVFGF3M",
+          "QDGWSV52SIPGQJU7QHHSODJ4",
+          "CKLIFFGZN4AXDUBZR32RMOG7",
+          "5T3CROTHZQFSA3ZEUILG3Z7B",
+          "F6SOOU5TYOSLNNLSGBPRNIJO"
+        ]
+      }
+    ],
+    "meta": {
+      "pagination": {
+        "total": 3,
+        "count": 3,
+        "per_page": 15,
+        "current_page": 1,
+        "total_pages": 1,
+        "links": []
+      }
+    }
+  },
+  "result": {
+    "supported": true,
+    "urls": [],
+    "complete": true,
+    "inventory_authorizes_global_absence": false,
+    "inventory_scope": "published_one_time_retail_coffee",
+    "empty_inventory_proof": {
+      "kind": "square_subscription_only_public_inventory",
+      "owner_id": "144235705",
+      "site_id": "548590792698639093",
+      "merchant_id": "MLBNPWAMGBDSD",
+      "published_subscriptions": [
+        {
+          "id": "5SAKYFYMFKYDPRXKJXY4SYYK",
+          "site_product_id": "120"
+        },
+        {
+          "id": "KN5S5WN2KI2T6UJBA3637XWF",
+          "site_product_id": "46"
+        }
+      ],
+      "categories": [
+        {
+          "id": "ECYHW4NO4B2UAMZCHDHGWWMV",
+          "coffee_items": 0,
+          "reference_ids": [
+            "12",
+            "UT2ZX3CQ2TNYOM4MKRDN6JOZ",
+            "OK5PPACCT3VV7NFPLDSA5PT4"
+          ]
+        },
+        {
+          "id": "OGQYIRO4AD6ROQIE2EC25RNO",
+          "coffee_items": 0,
+          "reference_ids": [
+            "12"
+          ]
+        },
+        {
+          "id": "Z3AQOJNJKNUM3KP6RNG2HBWG",
+          "coffee_items": 0,
+          "reference_ids": [
+            "116",
+            "93",
+            "92",
+            "91",
+            "75",
+            "58",
+            "56",
+            "55",
+            "25",
+            "24",
+            "22",
+            "102",
+            "137",
+            "142",
+            "194",
+            "MPR55HA46EGIRGHCDXHHFW3D",
+            "QRTSNOJ4MNSQYKBXQMKPIKFA",
+            "3FDUPNUBRPBEBS4IK6ZCAJQK",
+            "VTKH2RAYNQCPGCD26F37QPS6",
+            "WNQVTNIPNSHWX7AM4A2TS2T7",
+            "CSYO6ETYPK5NN37BUAGAMCDX",
+            "GLPHV4BEKL3AZ4OFQN6BGWHI",
+            "5VG3IDGV7NAZEYOFV4FBBFSZ",
+            "VVOXMD5KAJWCWKNQZJQR7FOZ",
+            "WYVZANV6FDPHIK5EP47BNXVJ",
+            "X3V5K5Q5UF5NYZYLOBVFGF3M",
+            "QDGWSV52SIPGQJU7QHHSODJ4",
+            "CKLIFFGZN4AXDUBZR32RMOG7",
+            "5T3CROTHZQFSA3ZEUILG3Z7B",
+            "F6SOOU5TYOSLNNLSGBPRNIJO"
+          ]
+        }
+      ],
+      "reference_checks": [
+        {
+          "id": "12",
+          "status": 404
+        },
+        {
+          "id": "UT2ZX3CQ2TNYOM4MKRDN6JOZ",
+          "status": 404
+        },
+        {
+          "id": "OK5PPACCT3VV7NFPLDSA5PT4",
+          "status": 404
+        },
+        {
+          "id": "116",
+          "status": 404
+        },
+        {
+          "id": "93",
+          "status": 404
+        },
+        {
+          "id": "92",
+          "status": 404
+        },
+        {
+          "id": "91",
+          "status": 404
+        },
+        {
+          "id": "75",
+          "status": 404
+        },
+        {
+          "id": "58",
+          "status": 404
+        },
+        {
+          "id": "56",
+          "status": 404
+        },
+        {
+          "id": "55",
+          "status": 404
+        },
+        {
+          "id": "25",
+          "status": 404
+        },
+        {
+          "id": "24",
+          "status": 404
+        },
+        {
+          "id": "22",
+          "status": 404
+        },
+        {
+          "id": "102",
+          "status": 404
+        },
+        {
+          "id": "137",
+          "status": 404
+        },
+        {
+          "id": "142",
+          "status": 404
+        },
+        {
+          "id": "194",
+          "status": 404
+        },
+        {
+          "id": "MPR55HA46EGIRGHCDXHHFW3D",
+          "status": 404
+        },
+        {
+          "id": "QRTSNOJ4MNSQYKBXQMKPIKFA",
+          "status": 404
+        },
+        {
+          "id": "3FDUPNUBRPBEBS4IK6ZCAJQK",
+          "status": 404
+        },
+        {
+          "id": "VTKH2RAYNQCPGCD26F37QPS6",
+          "status": 404
+        },
+        {
+          "id": "WNQVTNIPNSHWX7AM4A2TS2T7",
+          "status": 404
+        },
+        {
+          "id": "CSYO6ETYPK5NN37BUAGAMCDX",
+          "status": 404
+        },
+        {
+          "id": "GLPHV4BEKL3AZ4OFQN6BGWHI",
+          "status": 404
+        },
+        {
+          "id": "5VG3IDGV7NAZEYOFV4FBBFSZ",
+          "status": 404
+        },
+        {
+          "id": "VVOXMD5KAJWCWKNQZJQR7FOZ",
+          "status": 404
+        },
+        {
+          "id": "WYVZANV6FDPHIK5EP47BNXVJ",
+          "status": 404
+        },
+        {
+          "id": "X3V5K5Q5UF5NYZYLOBVFGF3M",
+          "status": 404
+        },
+        {
+          "id": "QDGWSV52SIPGQJU7QHHSODJ4",
+          "status": 404
+        },
+        {
+          "id": "CKLIFFGZN4AXDUBZR32RMOG7",
+          "status": 404
+        },
+        {
+          "id": "5T3CROTHZQFSA3ZEUILG3Z7B",
+          "status": 404
+        },
+        {
+          "id": "F6SOOU5TYOSLNNLSGBPRNIJO",
+          "status": 404
+        }
+      ]
+    }
+  },
+  "capture_checked_at": "2026-10-08T08:58:54.705Z"
+}

@@ -1185,5 +1185,56 @@
     "listing_path": "/shop",
     "inventory_authorizes_global_absence": false,
     "coffee_collection_verified": true
+  },
+  {
+    "name": "Obscure Coffee Roasters",
+    "entity_ids": [
+      "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9"
+    ],
+    "hosts": [
+      "www.obscure.coffee",
+      "obscure.coffee",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": [
+        "/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products",
+        "/app/store/api/v28/editor/users/144235705/sites/548590792698639093/categories"
+      ]
+    },
+    "adapter": "square",
+    "square_owner_id": "144235705",
+    "square_site_id": "548590792698639093",
+    "square_merchant_id": "MLBNPWAMGBDSD",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "ECYHW4NO4B2UAMZCHDHGWWMV",
+      "OGQYIRO4AD6ROQIE2EC25RNO",
+      "Z3AQOJNJKNUM3KP6RNG2HBWG"
+    ],
+    "coffee_categories": [
+      {
+        "id": "ECYHW4NO4B2UAMZCHDHGWWMV",
+        "name": "Blends",
+        "site_category_id": "3",
+        "parent": ""
+      },
+      {
+        "id": "OGQYIRO4AD6ROQIE2EC25RNO",
+        "name": "Collabs",
+        "site_category_id": "4",
+        "parent": "ECYHW4NO4B2UAMZCHDHGWWMV"
+      },
+      {
+        "id": "Z3AQOJNJKNUM3KP6RNG2HBWG",
+        "name": "Single Origin",
+        "site_category_id": "2",
+        "parent": ""
+      }
+    ],
+    "public_catalog_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "coffee_collection_verified": true
   }
 ]

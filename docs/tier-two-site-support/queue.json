@@ -351,8 +351,8 @@
           "name": "Obscure Coffee Roasters"
         }
       ],
-      "status": "blocked_merchant_inventory",
-      "evidence": "obscure-blocker.json",
+      "status": "implemented_verified_no_one_time_inventory",
+      "evidence": "obscure-live.json",
       "coverage": {
         "all_time_coffees": 0,
         "seen_or_buyable_30d": 0,
@@ -362,7 +362,10 @@
         "latest_sighting": null,
         "null_sighting_timestamps": 0
       },
-      "blocker": "Public catalog exposes only two subscriptions; Single Origin, Blends and Collabs categories each report zero products. Empty reconciliation disabled."
+      "blocker": null,
+      "verified_coffee_products": 0,
+      "verified_variants": 0,
+      "note": "Native public catalog contains exactly two required subscriptions. Every advertised category is exhausted; all 33 metadata product references return 404. Registered discovery accepts this explicit published-inventory proof without generic crawling, inferred prices or omission reconciliation. New one-time coffees are discovered normally; source disagreement fails the run."
     },
     {
       "name": "Onyx",

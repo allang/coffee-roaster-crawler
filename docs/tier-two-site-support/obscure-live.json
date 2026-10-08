@@ -1,0 +1,386 @@
+{
+  "name": "Obscure Coffee Roasters",
+  "checked_at": "2026-10-08T09:14:46.186Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "ac3ab5f1-ca53-4a82-8125-ee6aefc930d9"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products",
+        "catalog_items": 2,
+        "published_items": 2,
+        "excluded_subscriptions": 2,
+        "coffee_items": 0,
+        "fulfillment_filter_applied": false
+      },
+      {
+        "id": "ECYHW4NO4B2UAMZCHDHGWWMV",
+        "name": "Blends",
+        "returned_items": 0,
+        "coffee_items": 0,
+        "metadata_visible_items": 3,
+        "reference_ids": [
+          "12",
+          "UT2ZX3CQ2TNYOM4MKRDN6JOZ",
+          "OK5PPACCT3VV7NFPLDSA5PT4"
+        ]
+      },
+      {
+        "id": "OGQYIRO4AD6ROQIE2EC25RNO",
+        "name": "Collabs",
+        "returned_items": 0,
+        "coffee_items": 0,
+        "metadata_visible_items": 1,
+        "reference_ids": [
+          "12"
+        ]
+      },
+      {
+        "id": "Z3AQOJNJKNUM3KP6RNG2HBWG",
+        "name": "Single Origin",
+        "returned_items": 0,
+        "coffee_items": 0,
+        "metadata_visible_items": 30,
+        "reference_ids": [
+          "116",
+          "93",
+          "92",
+          "91",
+          "75",
+          "58",
+          "56",
+          "55",
+          "25",
+          "24",
+          "22",
+          "102",
+          "137",
+          "142",
+          "194",
+          "MPR55HA46EGIRGHCDXHHFW3D",
+          "QRTSNOJ4MNSQYKBXQMKPIKFA",
+          "3FDUPNUBRPBEBS4IK6ZCAJQK",
+          "VTKH2RAYNQCPGCD26F37QPS6",
+          "WNQVTNIPNSHWX7AM4A2TS2T7",
+          "CSYO6ETYPK5NN37BUAGAMCDX",
+          "GLPHV4BEKL3AZ4OFQN6BGWHI",
+          "5VG3IDGV7NAZEYOFV4FBBFSZ",
+          "VVOXMD5KAJWCWKNQZJQR7FOZ",
+          "WYVZANV6FDPHIK5EP47BNXVJ",
+          "X3V5K5Q5UF5NYZYLOBVFGF3M",
+          "QDGWSV52SIPGQJU7QHHSODJ4",
+          "CKLIFFGZN4AXDUBZR32RMOG7",
+          "5T3CROTHZQFSA3ZEUILG3Z7B",
+          "F6SOOU5TYOSLNNLSGBPRNIJO"
+        ]
+      },
+      {
+        "declared_reference_count": 33,
+        "reference_checks": [
+          {
+            "id": "12",
+            "status": 404
+          },
+          {
+            "id": "UT2ZX3CQ2TNYOM4MKRDN6JOZ",
+            "status": 404
+          },
+          {
+            "id": "OK5PPACCT3VV7NFPLDSA5PT4",
+            "status": 404
+          },
+          {
+            "id": "116",
+            "status": 404
+          },
+          {
+            "id": "93",
+            "status": 404
+          },
+          {
+            "id": "92",
+            "status": 404
+          },
+          {
+            "id": "91",
+            "status": 404
+          },
+          {
+            "id": "75",
+            "status": 404
+          },
+          {
+            "id": "58",
+            "status": 404
+          },
+          {
+            "id": "56",
+            "status": 404
+          },
+          {
+            "id": "55",
+            "status": 404
+          },
+          {
+            "id": "25",
+            "status": 404
+          },
+          {
+            "id": "24",
+            "status": 404
+          },
+          {
+            "id": "22",
+            "status": 404
+          },
+          {
+            "id": "102",
+            "status": 404
+          },
+          {
+            "id": "137",
+            "status": 404
+          },
+          {
+            "id": "142",
+            "status": 404
+          },
+          {
+            "id": "194",
+            "status": 404
+          },
+          {
+            "id": "MPR55HA46EGIRGHCDXHHFW3D",
+            "status": 404
+          },
+          {
+            "id": "QRTSNOJ4MNSQYKBXQMKPIKFA",
+            "status": 404
+          },
+          {
+            "id": "3FDUPNUBRPBEBS4IK6ZCAJQK",
+            "status": 404
+          },
+          {
+            "id": "VTKH2RAYNQCPGCD26F37QPS6",
+            "status": 404
+          },
+          {
+            "id": "WNQVTNIPNSHWX7AM4A2TS2T7",
+            "status": 404
+          },
+          {
+            "id": "CSYO6ETYPK5NN37BUAGAMCDX",
+            "status": 404
+          },
+          {
+            "id": "GLPHV4BEKL3AZ4OFQN6BGWHI",
+            "status": 404
+          },
+          {
+            "id": "5VG3IDGV7NAZEYOFV4FBBFSZ",
+            "status": 404
+          },
+          {
+            "id": "VVOXMD5KAJWCWKNQZJQR7FOZ",
+            "status": 404
+          },
+          {
+            "id": "WYVZANV6FDPHIK5EP47BNXVJ",
+            "status": 404
+          },
+          {
+            "id": "X3V5K5Q5UF5NYZYLOBVFGF3M",
+            "status": 404
+          },
+          {
+            "id": "QDGWSV52SIPGQJU7QHHSODJ4",
+            "status": 404
+          },
+          {
+            "id": "CKLIFFGZN4AXDUBZR32RMOG7",
+            "status": 404
+          },
+          {
+            "id": "5T3CROTHZQFSA3ZEUILG3Z7B",
+            "status": 404
+          },
+          {
+            "id": "F6SOOU5TYOSLNNLSGBPRNIJO",
+            "status": 404
+          }
+        ]
+      }
+    ],
+    "inventory_authorizes_global_absence": false,
+    "inventory_scope": "published_one_time_retail_coffee",
+    "empty_inventory_proof": {
+      "kind": "square_subscription_only_public_inventory",
+      "owner_id": "144235705",
+      "site_id": "548590792698639093",
+      "merchant_id": "MLBNPWAMGBDSD",
+      "published_subscriptions": [
+        {
+          "id": "5SAKYFYMFKYDPRXKJXY4SYYK",
+          "site_product_id": "120"
+        },
+        {
+          "id": "KN5S5WN2KI2T6UJBA3637XWF",
+          "site_product_id": "46"
+        }
+      ],
+      "categories": [
+        {
+          "id": "ECYHW4NO4B2UAMZCHDHGWWMV",
+          "name": "Blends",
+          "returned_items": 0,
+          "coffee_items": 0,
+          "metadata_visible_items": 3,
+          "reference_ids": [
+            "12",
+            "UT2ZX3CQ2TNYOM4MKRDN6JOZ",
+            "OK5PPACCT3VV7NFPLDSA5PT4"
+          ]
+        },
+        {
+          "id": "OGQYIRO4AD6ROQIE2EC25RNO",
+          "name": "Collabs",
+          "returned_items": 0,
+          "coffee_items": 0,
+          "metadata_visible_items": 1,
+          "reference_ids": [
+            "12"
+          ]
+        },
+        {
+          "id": "Z3AQOJNJKNUM3KP6RNG2HBWG",
+          "name": "Single Origin",
+          "returned_items": 0,
+          "coffee_items": 0,
+          "metadata_visible_items": 30,
+          "reference_ids": [
+            "116",
+            "93",
+            "92",
+            "91",
+            "75",
+            "58",
+            "56",
+            "55",
+            "25",
+            "24",
+            "22",
+            "102",
+            "137",
+            "142",
+            "194",
+            "MPR55HA46EGIRGHCDXHHFW3D",
+            "QRTSNOJ4MNSQYKBXQMKPIKFA",
+            "3FDUPNUBRPBEBS4IK6ZCAJQK",
+            "VTKH2RAYNQCPGCD26F37QPS6",
+            "WNQVTNIPNSHWX7AM4A2TS2T7",
+            "CSYO6ETYPK5NN37BUAGAMCDX",
+            "GLPHV4BEKL3AZ4OFQN6BGWHI",
+            "5VG3IDGV7NAZEYOFV4FBBFSZ",
+            "VVOXMD5KAJWCWKNQZJQR7FOZ",
+            "WYVZANV6FDPHIK5EP47BNXVJ",
+            "X3V5K5Q5UF5NYZYLOBVFGF3M",
+            "QDGWSV52SIPGQJU7QHHSODJ4",
+            "CKLIFFGZN4AXDUBZR32RMOG7",
+            "5T3CROTHZQFSA3ZEUILG3Z7B",
+            "F6SOOU5TYOSLNNLSGBPRNIJO"
+          ]
+        }
+      ],
+      "reference_checks": [
+        {"id":"12","status":404},
+        {"id":"UT2ZX3CQ2TNYOM4MKRDN6JOZ","status":404},
+        {"id":"OK5PPACCT3VV7NFPLDSA5PT4","status":404},
+        {"id":"116","status":404},
+        {"id":"93","status":404},
+        {"id":"92","status":404},
+        {"id":"91","status":404},
+        {"id":"75","status":404},
+        {"id":"58","status":404},
+        {"id":"56","status":404},
+        {"id":"55","status":404},
+        {"id":"25","status":404},
+        {"id":"24","status":404},
+        {"id":"22","status":404},
+        {"id":"102","status":404},
+        {"id":"137","status":404},
+        {"id":"142","status":404},
+        {"id":"194","status":404},
+        {"id":"MPR55HA46EGIRGHCDXHHFW3D","status":404},
+        {"id":"QRTSNOJ4MNSQYKBXQMKPIKFA","status":404},
+        {"id":"3FDUPNUBRPBEBS4IK6ZCAJQK","status":404},
+        {"id":"VTKH2RAYNQCPGCD26F37QPS6","status":404},
+        {"id":"WNQVTNIPNSHWX7AM4A2TS2T7","status":404},
+        {"id":"CSYO6ETYPK5NN37BUAGAMCDX","status":404},
+        {"id":"GLPHV4BEKL3AZ4OFQN6BGWHI","status":404},
+        {"id":"5VG3IDGV7NAZEYOFV4FBBFSZ","status":404},
+        {"id":"VVOXMD5KAJWCWKNQZJQR7FOZ","status":404},
+        {"id":"WYVZANV6FDPHIK5EP47BNXVJ","status":404},
+        {"id":"X3V5K5Q5UF5NYZYLOBVFGF3M","status":404},
+        {"id":"QDGWSV52SIPGQJU7QHHSODJ4","status":404},
+        {"id":"CKLIFFGZN4AXDUBZR32RMOG7","status":404},
+        {"id":"5T3CROTHZQFSA3ZEUILG3Z7B","status":404},
+        {"id":"F6SOOU5TYOSLNNLSGBPRNIJO","status":404}
+      ]
+    }
+  },
+  "products": [],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {"method":"GET","url":"https://www.obscure.coffee/","status":200,"at":"2026-10-08T09:14:26.922Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/categories?page=1&per_page=100","status":200,"at":"2026-10-08T09:14:27.424Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?include=images%2Cmedia_files%2Cdiscounts&page=1&per_page=100","status":200,"at":"2026-10-08T09:14:27.926Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=ECYHW4NO4B2UAMZCHDHGWWMV&include=images%2Cmedia_files%2Cdiscounts&page=1&per_page=100","status":200,"at":"2026-10-08T09:14:28.429Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=OGQYIRO4AD6ROQIE2EC25RNO&include=images%2Cmedia_files%2Cdiscounts&page=1&per_page=100","status":200,"at":"2026-10-08T09:14:28.930Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products?categories%5B%5D=Z3AQOJNJKNUM3KP6RNG2HBWG&include=images%2Cmedia_files%2Cdiscounts&page=1&per_page=100","status":200,"at":"2026-10-08T09:14:29.432Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/12?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:29.934Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/UT2ZX3CQ2TNYOM4MKRDN6JOZ?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:30.437Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/OK5PPACCT3VV7NFPLDSA5PT4?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:30.940Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/116?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:31.441Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/93?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:31.942Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/92?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:32.444Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/91?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:32.945Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/75?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:33.446Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/58?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:33.948Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/56?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:34.450Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/55?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:34.952Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/25?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:35.452Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/24?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:35.954Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/22?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:36.456Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/102?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:36.958Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/137?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:37.459Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/142?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:37.962Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/194?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:38.464Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/MPR55HA46EGIRGHCDXHHFW3D?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:38.965Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/QRTSNOJ4MNSQYKBXQMKPIKFA?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:39.467Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/3FDUPNUBRPBEBS4IK6ZCAJQK?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:39.970Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/VTKH2RAYNQCPGCD26F37QPS6?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:40.472Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/WNQVTNIPNSHWX7AM4A2TS2T7?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:40.975Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/CSYO6ETYPK5NN37BUAGAMCDX?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:41.478Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/GLPHV4BEKL3AZ4OFQN6BGWHI?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:41.980Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/5VG3IDGV7NAZEYOFV4FBBFSZ?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:42.481Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/VVOXMD5KAJWCWKNQZJQR7FOZ?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:42.983Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/WYVZANV6FDPHIK5EP47BNXVJ?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:43.485Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/X3V5K5Q5UF5NYZYLOBVFGF3M?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:43.987Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/QDGWSV52SIPGQJU7QHHSODJ4?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:44.488Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/CKLIFFGZN4AXDUBZR32RMOG7?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:44.989Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/5T3CROTHZQFSA3ZEUILG3Z7B?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:45.491Z"},
+    {"method":"GET","url":"https://cdn5.editmysite.com/app/store/api/v28/editor/users/144235705/sites/548590792698639093/products/F6SOOU5TYOSLNNLSGBPRNIJO?include=images,options,category,fulfillment","status":404,"at":"2026-10-08T09:14:45.993Z"}
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true
+}

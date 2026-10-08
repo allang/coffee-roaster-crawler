@@ -46,7 +46,8 @@ async function main() {
     console.log('PASS '+product.name+' ('+priced.length+' priced variants, '+availability.state+')');
     }catch(error){errors.push({url,error:error.message});}
   }
-  const report={name:profile.name,checked_at:new Date().toISOString(),mode:'merchant-get-only-dry-run',entity_ids:profile.entity_ids,identity_blocker:profile.identity_blocker || null,discovery,products,unavailable_products:unavailableProducts,errors,requests:reader.requests,production_writes:0,ai_calls:0,prohibited_requests:0,passed:discovery.complete===true && products.length>0 && !errors.length};
+  const verifiedEmpty=require('./squareInventory').verifiedEmptyInventory(profile,discovery);
+  const report={name:profile.name,checked_at:new Date().toISOString(),mode:'merchant-get-only-dry-run',entity_ids:profile.entity_ids,identity_blocker:profile.identity_blocker || null,discovery,products,unavailable_products:unavailableProducts,errors,requests:reader.requests,production_writes:0,ai_calls:0,prohibited_requests:0,passed:discovery.complete===true && (products.length>0 || verifiedEmpty) && !errors.length};
   if(output)fs.writeFileSync(output,JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify({name:profile.name,coffee_products:products.length,errors:errors.length,passed:report.passed,production_writes:0}));
   if(!report.passed)process.exitCode=1;

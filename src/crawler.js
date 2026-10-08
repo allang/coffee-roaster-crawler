@@ -12,6 +12,7 @@ const globalLogger = require('./logger');
 const { createScopedLogger } = require('./logger');
 const { reconcileRoasterAvailability } = require('./availability');
 const { discoverSiteProducts, profileFor } = require('./siteSupport/discovery');
+const { verifiedEmptyInventory } = require('./siteSupport/squareInventory');
 const { createReader,allowed } = require('./siteSupport/network');
 const {crawlTierPhases}=require('./crawlTierPlan');
 
@@ -113,7 +114,14 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const siteDiscovery=await discoverSiteProducts(siteProfile?{...roaster,website_url:effectiveWebsiteUrl}:roaster,siteReader || {fetchHtml:require('./httpClient').fetchHtml});
   const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
   for(const url of siteDiscovery.urls)accumulator.addUrl(url,'site-support');
-  if(siteDiscovery.error || siteDiscovery.supported && (!siteDiscovery.complete || !siteDiscovery.urls.length))throw new Error('Supported merchant discovery failed: '+(siteDiscovery.error || 'Incomplete or empty reviewed coffee inventory'));
+  const verifiedEmpty=verifiedEmptyInventory(siteProfile,siteDiscovery);
+  if(siteDiscovery.error || siteDiscovery.supported && (!siteDiscovery.complete || !siteDiscovery.urls.length && !verifiedEmpty))throw new Error('Supported merchant discovery failed: '+(siteDiscovery.error || 'Incomplete or empty reviewed coffee inventory'));
+  if(verifiedEmpty) {
+    const stats=accumulator.getStats(),visitResults={visited:0,coffeeFound:0,irrelevant:0,errors:0,aiCalls:0,verifiedEmptyInventory:true,inventoryScope:siteDiscovery.inventory_scope};
+    await completeCrawlRun(crawlRun.id,{pagesDiscovered:0,pagesVisited:0,pagesSentToGpt:0,coffeesFound:0,metrics:visitResults});
+    log.info('Crawl','Verified subscription-only public inventory; no one-time coffees and no omission reconciliation');
+    return {success:true,roasterId:roaster.id,roasterName:roaster.name,platform:platformInfo,sitemapUrl:null,stats,visitResults,inventoryEvidence:siteDiscovery.empty_inventory_proof};
+  }
 
   // Registered inventories are already reviewed and complete. Do not fall back
   // to broad sitemaps/BFS or an unguarded reader for these merchants.
@@ -238,6 +246,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
       });
     }
 
+    if(siteDiscovery.supported && visitResults.errors>0)throw new Error('Registered merchant product verification failed: '+visitResults.errors+' page error(s)');
     const stats = accumulator.getStats();
     await completeCrawlRun(crawlRun.id, {
       pagesDiscovered: stats.total || 0,

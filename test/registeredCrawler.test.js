@@ -20,6 +20,7 @@ function crawler(state) {
     './bfsCrawler':{bfsCrawl:async()=>{state.bfs++;throw Error('BFS should not run');}},'./config':{config:{crawler:{requestDelayMs:0}}},'./logger':{createScopedLogger:()=>log},
     './availability':{reconcileRoasterAvailability:async options=>{state.reconciled++;state.reconcileOptions=options;await options.fetchPage(url);}},
     './siteSupport/discovery':{profileFor:()=>state.profile || {name:'Reviewed Merchant'},discoverSiteProducts:async roaster=>{state.discoveryRoaster=roaster;return state.discovery;}},'./siteSupport/network':{createReader:()=>reader,allowed:require('../src/siteSupport/network').allowed},'./crawlTierPlan':require('../src/crawlTierPlan'),
+    './siteSupport/squareInventory':require('../src/siteSupport/squareInventory'),
   };
   const module={exports:{}},file=path.join(__dirname,'../src/crawler.js');
   vm.runInThisContext('(function(require,module,exports){'+fs.readFileSync(file,'utf8')+'\n})',{filename:file})(name=>{if(!(name in mocks))throw Error('Unexpected dependency: '+name);return mocks[name];},module,module.exports);
@@ -38,7 +39,18 @@ test('incomplete or empty reviewed inventory fails without falling back or recon
   }
 });
 test('registered page failures prevent availability reconciliation',async()=>{
-  const s=state();s.pageErrors=1;await crawler(s).crawl(roaster,[]);assert.equal(s.reconciled,0);
+  const s=state();s.pageErrors=1;await assert.rejects(crawler(s).crawl(roaster,[]),/Registered merchant product verification failed/);assert.equal(s.reconciled,0);assert.equal(s.completed,0);assert.equal(s.failed,1);
+});
+test('verified subscription-only public inventory completes zero coffees without generic crawling or catalog reconciliation',async()=>{
+ const {profile,result}=require('./fixtures/siteSupport/obscure-square.json');
+ const s=state();s.profile=profile;s.discovery=result;
+ const run=await crawler(s).crawl({...roaster,id:profile.entity_ids[0],website_url:'https://www.obscure.coffee'},[]);
+ assert.equal(run.success,true);assert.equal(run.visitResults.coffeeFound,0);assert.equal(run.visitResults.aiCalls,0);assert.equal(run.visitResults.verifiedEmptyInventory,true);
+ assert.equal(s.visits,0);assert.equal(s.bfs,0);assert.equal(s.sitemaps,0);assert.equal(s.reconciled,0);assert.equal(s.failed,0);assert.equal(s.completed,1);
+ for(const mutate of [r=>delete r.empty_inventory_proof,r=>r.complete=false,r=>r.empty_inventory_proof.reference_checks.pop(),r=>r.empty_inventory_proof.reference_checks[0].status=503]){
+  const other=state();other.profile=profile;other.discovery=structuredClone(result);mutate(other.discovery);
+  await assert.rejects(crawler(other).crawl(roaster,[]),/Incomplete or empty/);assert.equal(other.completed,0);assert.equal(other.reconciled,0);assert.equal(other.bfs,0);
+ }
 });
 test('reviewed alternate market bootstrap stays guarded and does not reconcile a different unavailable market',async()=>{
   for(const field of ['reconcile_omissions','inventory_authorizes_global_absence']){
