@@ -14,7 +14,8 @@ function inspectionErrors(product,availability) {
   if(!product.source_product_id)errors.push('Exact product identity missing');
   if(!product.variants.length || product.variants.some(v=>!v.source_id) || new Set(product.variants.map(v=>String(v.source_id))).size!==product.variants.length)errors.push('Exact unique variant identities missing');
   if(product.variants.some(v=>v.money.minorUnits==null || !v.money.currency))errors.push('Exact paired price and currency missing for a variant');
-  if(availability.state==='unknown' || product.variants.some(v=>v.availability==='unknown'))errors.push('Exact stock evidence missing');
+  const explicitPreorders=new Set((availability.variants || []).filter(v=>v.state==='unknown' && v.evidence?.some(e=>['shopify_product_preorder_tag','primary_product_preorder_control'].includes(e.source) && String(e.variant_id)===String(v.source_id) && String(e.product_id)===String(product.source_product_id))).map(v=>String(v.source_id)));
+  if(availability.state==='unknown' && !explicitPreorders.size || product.variants.some(v=>v.availability==='unknown' && !explicitPreorders.has(String(v.source_id))))errors.push('Exact stock evidence missing');
   return errors;
 }
 async function main() {

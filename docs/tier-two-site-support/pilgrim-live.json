@@ -3,599 +3,77 @@
   "checked_at": "2026-10-08T04:07:51.769Z",
   "mode": "merchant-get-only-dry-run",
   "entity_ids": [
-    "07704a04-9b9c-488e-a126-31d7258ed219"
-  ],
+  "07704a04-9b9c-488e-a126-31d7258ed219"
+],
   "identity_blocker": null,
   "discovery": {
-    "supported": true,
-    "urls": [
-      "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry",
-      "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab",
-      "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy",
-      "https://pilgrimroasters.com/products/goro-muda-natural",
-      "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara",
-      "https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica",
-      "https://pilgrimroasters.com/products/roger-urena"
-    ],
-    "complete": true,
-    "evidence": [
-      {
-        "listing": "/collections/whole-bean-coffee/products.json",
-        "page": 1,
-        "products": 7,
-        "coffeeProducts": 7
-      },
-      {
-        "listing": "/collections/roger-urena-collection/products.json",
-        "page": 1,
-        "products": 1,
-        "coffeeProducts": 1
-      }
-    ]
-  },
-  "products": [
-    {
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry",
-      "title": "Florence & Jessica Marigi's SL28 Peaberry 🇰🇪",
-      "source_product_id": "7607372054599",
-      "state": "in_stock",
-      "variants": [
-        {
-          "id": "42978618081351",
-          "title": "10oz",
-          "weight_g": 283,
-          "money": {
-            "raw": "25.00",
-            "amount": "25.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 2500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "42978618114119",
-          "title": "1kg",
-          "weight_g": 1000,
-          "money": {
-            "raw": "75.00",
-            "amount": "75.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 7500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "42978618146887",
-          "title": "5lb",
-          "weight_g": 2268,
-          "money": {
-            "raw": "160.00",
-            "amount": "160.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 16000,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        }
-      ],
-      "processing": {
-        "version": "processing-v1",
-        "process": null,
-        "process_methods": [],
-        "is_coferment": null,
-        "coferment_ingredients": [],
-        "evidence": {
-          "version": "processing-v1",
-          "process": null,
-          "coferment": [],
-          "coferment_conflict": false,
-          "ingredients": []
-        }
-      },
-      "description_present": true,
-      "image_present": true
-    },
-    {
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab",
-      "title": "Florence & Jessica Marigi's SL28 AB 🇰🇪",
-      "source_product_id": "7607368974407",
-      "state": "in_stock",
-      "variants": [
-        {
-          "id": "42978620670023",
-          "title": "10 oz",
-          "weight_g": 283,
-          "money": {
-            "raw": "25.00",
-            "amount": "25.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 2500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "42978620702791",
-          "title": "1 kg",
-          "weight_g": 1000,
-          "money": {
-            "raw": "75.00",
-            "amount": "75.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 7500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "42978620735559",
-          "title": "5 lb",
-          "weight_g": 2268,
-          "money": {
-            "raw": "160.00",
-            "amount": "160.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 16000,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        }
-      ],
-      "processing": {
-        "version": "processing-v1",
-        "process": null,
-        "process_methods": [],
-        "is_coferment": null,
-        "coferment_ingredients": [],
-        "evidence": {
-          "version": "processing-v1",
-          "process": null,
-          "coferment": [],
-          "coferment_conflict": false,
-          "ingredients": []
-        }
-      },
-      "description_present": true,
-      "image_present": true
-    },
-    {
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy",
-      "title": "Ángel Arturo Paz's Geisha",
-      "source_product_id": "7332827758663",
-      "state": "in_stock",
-      "variants": [
-        {
-          "id": "42154004971591",
-          "title": "10 oz",
-          "weight_g": 283,
-          "money": {
-            "raw": "35.00",
-            "amount": "35.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 3500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "42154005004359",
-          "title": "1 kg",
-          "weight_g": 1000,
-          "money": {
-            "raw": "100.00",
-            "amount": "100.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 10000,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        }
-      ],
-      "processing": {
-        "version": "processing-v1",
-        "process": null,
-        "process_methods": [],
-        "is_coferment": null,
-        "coferment_ingredients": [],
-        "evidence": {
-          "version": "processing-v1",
-          "process": null,
-          "coferment": [],
-          "coferment_conflict": false,
-          "ingredients": []
-        }
-      },
-      "description_present": true,
-      "image_present": true
-    },
-    {
-      "url": "https://pilgrimroasters.com/products/goro-muda-natural",
-      "title": "Goro Muda Natural",
-      "source_product_id": "7332189077575",
-      "state": "in_stock",
-      "variants": [
-        {
-          "id": "42153487695943",
-          "title": "10 oz",
-          "weight_g": 283,
-          "money": {
-            "raw": "24.00",
-            "amount": "24.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 2400,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "42153487728711",
-          "title": "1 kg",
-          "weight_g": 1000,
-          "money": {
-            "raw": "75.00",
-            "amount": "75.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 7500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        }
-      ],
-      "processing": {
-        "version": "processing-v1",
-        "process": null,
-        "process_methods": [],
-        "is_coferment": null,
-        "coferment_ingredients": [],
-        "evidence": {
-          "version": "processing-v1",
-          "process": null,
-          "coferment": [],
-          "coferment_conflict": false,
-          "ingredients": []
-        }
-      },
-      "description_present": true,
-      "image_present": true
-    },
-    {
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara",
-      "title": "Ángel Arturo Paz's Pacamara",
-      "source_product_id": "7239759167559",
-      "state": "in_stock",
-      "variants": [
-        {
-          "id": "41784629493831",
-          "title": "Default Title",
-          "weight_g": null,
-          "money": {
-            "raw": "25.00",
-            "amount": "25.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 2500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        }
-      ],
-      "processing": {
-        "version": "processing-v1",
-        "process": null,
-        "process_methods": [],
-        "is_coferment": null,
-        "coferment_ingredients": [],
-        "evidence": {
-          "version": "processing-v1",
-          "process": null,
-          "coferment": [],
-          "coferment_conflict": false,
-          "ingredients": []
-        }
-      },
-      "description_present": true,
-      "image_present": true
-    },
-    {
-      "url": "https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica",
-      "title": "Ángel Castro Garcia's Typica",
-      "source_product_id": "7123265945671",
-      "state": "in_stock",
-      "variants": [
-        {
-          "id": "41178524188743",
-          "title": "10 oz",
-          "weight_g": 283,
-          "money": {
-            "raw": "25.00",
-            "amount": "25.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 2500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "41178524221511",
-          "title": "5 lb",
-          "weight_g": 2268,
-          "money": {
-            "raw": "160.00",
-            "amount": "160.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 16000,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        }
-      ],
-      "processing": {
-        "version": "processing-v1",
-        "process": null,
-        "process_methods": [],
-        "is_coferment": null,
-        "coferment_ingredients": [],
-        "evidence": {
-          "version": "processing-v1",
-          "process": null,
-          "coferment": [],
-          "coferment_conflict": false,
-          "ingredients": []
-        }
-      },
-      "description_present": true,
-      "image_present": true
-    },
-    {
-      "url": "https://pilgrimroasters.com/products/roger-urena",
-      "title": "Roger Ureña's Catuai",
-      "source_product_id": "6649911640135",
-      "state": "in_stock",
-      "variants": [
-        {
-          "id": "41249855930439",
-          "title": "10 oz",
-          "weight_g": 283,
-          "money": {
-            "raw": "25.00",
-            "amount": "25.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 2500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "41249855963207",
-          "title": "5 lb",
-          "weight_g": 2268,
-          "money": {
-            "raw": "160.00",
-            "amount": "160.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 16000,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        },
-        {
-          "id": "42132657832007",
-          "title": "1 kg",
-          "weight_g": 1000,
-          "money": {
-            "raw": "75.00",
-            "amount": "75.00",
-            "currency": "USD",
-            "exponent": 2,
-            "minorUnits": 7500,
-            "reason": null
-          },
-          "state": "in_stock",
-          "price_source": "jsonld_exact_variant_offer"
-        }
-      ],
-      "processing": {
-        "version": "processing-v1",
-        "process": null,
-        "process_methods": [],
-        "is_coferment": null,
-        "coferment_ingredients": [],
-        "evidence": {
-          "version": "processing-v1",
-          "process": null,
-          "coferment": [],
-          "coferment_conflict": false,
-          "ingredients": []
-        }
-      },
-      "description_present": true,
-      "image_present": true
-    }
+  "supported": true,
+  "urls": [
+    "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry",
+    "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab",
+    "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy",
+    "https://pilgrimroasters.com/products/goro-muda-natural",
+    "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara",
+    "https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica",
+    "https://pilgrimroasters.com/products/roger-urena"
   ],
-  "unavailable_products": [],
-  "errors": [],
-  "requests": [
+  "complete": true,
+  "evidence": [
     {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/collections/whole-bean-coffee/products.json?limit=50&page=1",
-      "status": 200,
-      "at": "2026-10-08T04:07:39.847Z"
+      "listing": "/collections/whole-bean-coffee/products.json",
+      "page": 1,
+      "products": 7,
+      "coffeeProducts": 7
     },
     {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/collections/whole-bean-coffee/products.json?limit=50&page=2",
-      "status": 200,
-      "at": "2026-10-08T04:07:40.141Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/collections/roger-urena-collection/products.json?limit=50&page=1",
-      "status": 200,
-      "at": "2026-10-08T04:07:40.658Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/collections/roger-urena-collection/products.json?limit=50&page=2",
-      "status": 200,
-      "at": "2026-10-08T04:07:41.167Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry",
-      "status": 200,
-      "at": "2026-10-08T04:07:41.705Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry.json",
-      "status": 200,
-      "at": "2026-10-08T04:07:42.182Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry.js",
-      "status": 200,
-      "at": "2026-10-08T04:07:42.651Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab",
-      "status": 200,
-      "at": "2026-10-08T04:07:43.231Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab.json",
-      "status": 200,
-      "at": "2026-10-08T04:07:43.680Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab.js",
-      "status": 200,
-      "at": "2026-10-08T04:07:44.172Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy",
-      "status": 200,
-      "at": "2026-10-08T04:07:44.714Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy.json",
-      "status": 200,
-      "at": "2026-10-08T04:07:45.163Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy.js",
-      "status": 200,
-      "at": "2026-10-08T04:07:45.722Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/goro-muda-natural",
-      "status": 200,
-      "at": "2026-10-08T04:07:46.294Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/goro-muda-natural.json",
-      "status": 200,
-      "at": "2026-10-08T04:07:46.735Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/goro-muda-natural.js",
-      "status": 200,
-      "at": "2026-10-08T04:07:47.258Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara",
-      "status": 200,
-      "at": "2026-10-08T04:07:47.729Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara.json",
-      "status": 200,
-      "at": "2026-10-08T04:07:48.257Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara.js",
-      "status": 200,
-      "at": "2026-10-08T04:07:48.682Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica",
-      "status": 200,
-      "at": "2026-10-08T04:07:49.244Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica.json",
-      "status": 200,
-      "at": "2026-10-08T04:07:49.721Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica.js",
-      "status": 200,
-      "at": "2026-10-08T04:07:50.248Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/roger-urena",
-      "status": 200,
-      "at": "2026-10-08T04:07:50.796Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/roger-urena.json",
-      "status": 200,
-      "at": "2026-10-08T04:07:51.294Z"
-    },
-    {
-      "method": "GET",
-      "url": "https://pilgrimroasters.com/products/roger-urena.js",
-      "status": 200,
-      "at": "2026-10-08T04:07:51.703Z"
+      "listing": "/collections/roger-urena-collection/products.json",
+      "page": 1,
+      "products": 1,
+      "coffeeProducts": 1
     }
+  ]
+},
+  "products": [
+    {"url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry","title":"Florence & Jessica Marigi's SL28 Peaberry 🇰🇪","source_product_id":"7607372054599","state":"in_stock","variants":[{"id":"42978618081351","title":"10oz","weight_g":283,"money":{"raw":"25.00","amount":"25.00","currency":"USD","exponent":2,"minorUnits":2500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"42978618114119","title":"1kg","weight_g":1000,"money":{"raw":"75.00","amount":"75.00","currency":"USD","exponent":2,"minorUnits":7500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"42978618146887","title":"5lb","weight_g":2268,"money":{"raw":"160.00","amount":"160.00","currency":"USD","exponent":2,"minorUnits":16000,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab","title":"Florence & Jessica Marigi's SL28 AB 🇰🇪","source_product_id":"7607368974407","state":"in_stock","variants":[{"id":"42978620670023","title":"10 oz","weight_g":283,"money":{"raw":"25.00","amount":"25.00","currency":"USD","exponent":2,"minorUnits":2500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"42978620702791","title":"1 kg","weight_g":1000,"money":{"raw":"75.00","amount":"75.00","currency":"USD","exponent":2,"minorUnits":7500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"42978620735559","title":"5 lb","weight_g":2268,"money":{"raw":"160.00","amount":"160.00","currency":"USD","exponent":2,"minorUnits":16000,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy","title":"Ángel Arturo Paz's Geisha","source_product_id":"7332827758663","state":"in_stock","variants":[{"id":"42154004971591","title":"10 oz","weight_g":283,"money":{"raw":"35.00","amount":"35.00","currency":"USD","exponent":2,"minorUnits":3500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"42154005004359","title":"1 kg","weight_g":1000,"money":{"raw":"100.00","amount":"100.00","currency":"USD","exponent":2,"minorUnits":10000,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://pilgrimroasters.com/products/goro-muda-natural","title":"Goro Muda Natural","source_product_id":"7332189077575","state":"in_stock","variants":[{"id":"42153487695943","title":"10 oz","weight_g":283,"money":{"raw":"24.00","amount":"24.00","currency":"USD","exponent":2,"minorUnits":2400,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"42153487728711","title":"1 kg","weight_g":1000,"money":{"raw":"75.00","amount":"75.00","currency":"USD","exponent":2,"minorUnits":7500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara","title":"Ángel Arturo Paz's Pacamara","source_product_id":"7239759167559","state":"in_stock","variants":[{"id":"41784629493831","title":"Default Title","weight_g":null,"money":{"raw":"25.00","amount":"25.00","currency":"USD","exponent":2,"minorUnits":2500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica","title":"Ángel Castro Garcia's Typica","source_product_id":"7123265945671","state":"in_stock","variants":[{"id":"41178524188743","title":"10 oz","weight_g":283,"money":{"raw":"25.00","amount":"25.00","currency":"USD","exponent":2,"minorUnits":2500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"41178524221511","title":"5 lb","weight_g":2268,"money":{"raw":"160.00","amount":"160.00","currency":"USD","exponent":2,"minorUnits":16000,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true},
+    {"url":"https://pilgrimroasters.com/products/roger-urena","title":"Roger Ureña's Catuai","source_product_id":"6649911640135","state":"in_stock","variants":[{"id":"41249855930439","title":"10 oz","weight_g":283,"money":{"raw":"25.00","amount":"25.00","currency":"USD","exponent":2,"minorUnits":2500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"41249855963207","title":"5 lb","weight_g":2268,"money":{"raw":"160.00","amount":"160.00","currency":"USD","exponent":2,"minorUnits":16000,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"},{"id":"42132657832007","title":"1 kg","weight_g":1000,"money":{"raw":"75.00","amount":"75.00","currency":"USD","exponent":2,"minorUnits":7500,"reason":null},"state":"in_stock","price_source":"jsonld_exact_variant_offer"}],"processing":{"version":"processing-v1","process":null,"process_methods":[],"is_coferment":null,"coferment_ingredients":[],"evidence":{"version":"processing-v1","process":null,"coferment":[],"coferment_conflict":false,"ingredients":[]}},"description_present":true,"image_present":true}
+  ],
+  "unavailable_products": [
+
+  ],
+  "errors": [
+
+  ],
+  "requests": [
+    {"method":"GET","url":"https://pilgrimroasters.com/collections/whole-bean-coffee/products.json?limit=50&page=1","status":200,"at":"2026-10-08T04:07:39.847Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/collections/whole-bean-coffee/products.json?limit=50&page=2","status":200,"at":"2026-10-08T04:07:40.141Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/collections/roger-urena-collection/products.json?limit=50&page=1","status":200,"at":"2026-10-08T04:07:40.658Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/collections/roger-urena-collection/products.json?limit=50&page=2","status":200,"at":"2026-10-08T04:07:41.167Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry","status":200,"at":"2026-10-08T04:07:41.705Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry.json","status":200,"at":"2026-10-08T04:07:42.182Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-peaberry.js","status":200,"at":"2026-10-08T04:07:42.651Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab","status":200,"at":"2026-10-08T04:07:43.231Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab.json","status":200,"at":"2026-10-08T04:07:43.680Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/florence-jessica-marigis-sl28-ab.js","status":200,"at":"2026-10-08T04:07:44.172Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy","status":200,"at":"2026-10-08T04:07:44.714Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy.json","status":200,"at":"2026-10-08T04:07:45.163Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara-copy.js","status":200,"at":"2026-10-08T04:07:45.722Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/goro-muda-natural","status":200,"at":"2026-10-08T04:07:46.294Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/goro-muda-natural.json","status":200,"at":"2026-10-08T04:07:46.735Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/goro-muda-natural.js","status":200,"at":"2026-10-08T04:07:47.258Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara","status":200,"at":"2026-10-08T04:07:47.729Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara.json","status":200,"at":"2026-10-08T04:07:48.257Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/angel-arturo-pazs-pacamara.js","status":200,"at":"2026-10-08T04:07:48.682Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica","status":200,"at":"2026-10-08T04:07:49.244Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica.json","status":200,"at":"2026-10-08T04:07:49.721Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/mexico-angel-castro-garcias-typica.js","status":200,"at":"2026-10-08T04:07:50.248Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/roger-urena","status":200,"at":"2026-10-08T04:07:50.796Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/roger-urena.json","status":200,"at":"2026-10-08T04:07:51.294Z"},
+    {"method":"GET","url":"https://pilgrimroasters.com/products/roger-urena.js","status":200,"at":"2026-10-08T04:07:51.703Z"}
   ],
   "production_writes": 0,
   "ai_calls": 0,

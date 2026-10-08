@@ -103,3 +103,10 @@ test('captured Onyx explicit native preorder tag overrides sellability; a shippi
   assert.equal(productAvailability({sourceUrl:f.url,shopifyProduct:ordinary}).state,'in_stock');
   assert.equal(productAvailability({sourceUrl:f.url,shopifyProduct:{...ordinary,tags:['Not a preorder','preorder-ship-date:2099-01-01']}}).state,'in_stock');
 });
+
+test('inspection preserves explicitly proven preorder uncertainty without accepting unrelated unknown stock',()=>{
+ const {inspectionErrors}=require('../src/siteSupport/cli'),product={source_product_id:'77',variants:[{source_id:'88',money:{currency:'USD',minorUnits:18900},availability:'unknown'}]};
+ const observation={state:'unknown',variants:[{source_id:'88',state:'unknown',evidence:[{source:'primary_product_preorder_control',product_id:'77',variant_id:'88'}]}]};
+ assert.deepEqual(inspectionErrors(product,observation),[]);
+ for(const changed of [{...observation,variants:[]},{...observation,variants:[{...observation.variants[0],evidence:[{source:'primary_product_preorder_control',product_id:'different',variant_id:'88'}]}]}])assert.match(inspectionErrors(product,changed).join(' '),/stock evidence/);
+});
