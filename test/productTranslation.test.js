@@ -13,6 +13,8 @@ test('number validation separates adjacent pack counts but retains thousands and
  assert.doesNotThrow(()=>check('1,000g / 1.5kg','1000g / 1.5kg'));
  assert.throws(()=>check('10g×50, 12g×50','10g×50,12g×40'),/numeric facts/);
  assert.throws(()=>check('1,000g / 1.5kg','100g / 1.6kg'),/numeric facts/);
+ assert.throws(()=>check('12.5g','125g'),/numeric facts/);
+ assert.throws(()=>check('125g','12.5g'),/numeric facts/);
 });
 test('English display text retains original schema fields, original tasting notes, native identity and market facts',async()=>{
  const p=await translateProductForSave(input,url,{request});assert.equal(input.name,'부산 커피 200g');assert.equal(p.name,'Busan Coffee 200g');
