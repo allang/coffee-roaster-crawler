@@ -14,7 +14,7 @@ function modules(db,state) {
       if(name==='./supabase')return{getSupabase:()=>db};
       if(name==='./logger')return log;
       if(name==='./config')return{config:{crawler:{requestDelayMs:0,maxBfsPages:20}}};
-      if(name==='./gptClassifier')return{MODEL:'fixture-model',classifyPage:async()=>{state.aiCalls++;return{aiCalls:1,usage:{prompt_tokens:50,completion_tokens:10},data:{is_coffee_page:true,product:state.extracted}};}};
+      if(name==='./gptClassifier')return{translateTexts:require('./catalogDb').translationFixture,MODEL:'fixture-model',classifyPage:async()=>{state.aiCalls++;return{aiCalls:1,usage:{prompt_tokens:50,completion_tokens:10},data:{is_coffee_page:true,product:state.extracted}};}};
       if(name==='./imageDownloader')return{downloadAndSaveImage:async()=>null};
       if(name==='./httpClient')return{fetchHtml:async()=>{state.fetchCalls=(state.fetchCalls||0)+1;return state.fetchResult||{success:true,data:state.html,status:200,finalUrl:url};},jitteredSleep:async()=>{}};
       if(name==='./shopifyProduct')return{...nativeRequire(name),fetchShopifyProductJson:async()=>({success:true,raw:state.native,data:parseShopifyProduct(state.native)})};

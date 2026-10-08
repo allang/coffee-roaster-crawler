@@ -4,7 +4,7 @@ create table entities(id uuid primary key);
 create table products (
   id uuid primary key default gen_random_uuid(),entity_id uuid not null references entities(id),slug text not null,name text not null,
   product_type text not null default 'coffee',source_url text,is_active boolean not null default true,first_seen_at timestamptz,last_seen_at timestamptz,
-  metadata jsonb,description_html text,description_raw text,description text,short_description text,nano_description text,original_image_url text,
+  metadata jsonb,description_html text,description_raw text,description text,short_description text,nano_description text,original_image_url text,country_of_origin text,origin_region text,
   is_available boolean not null default true,availability_reason text,availability_checked_at timestamptz,availability_last_seen_at timestamptz,
   created_at timestamptz default now(),updated_at timestamptz default now(),unique(entity_id,slug));
 create table product_variants (
