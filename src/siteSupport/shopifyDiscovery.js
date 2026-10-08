@@ -17,7 +17,7 @@ function retailCoffee(product,profile) {
 async function discoverShopifyProducts(roaster,profile,fetchHtml) {
   const urls=new Set(),evidence=[];let anyProducts=false;
   for(const path of profile.listing_paths) {
-    const seen=new Set();let exhausted=false;
+    const seen=new Set(),ids=new Set();let exhausted=false;
     for(let page=1;page<=40;page++) {
       const url=new URL(path,profile.listing_origin || roaster.website_url);url.search=new URLSearchParams({limit:'50',page:String(page)}).toString();
       const response=await fetchHtml(url.href);
@@ -27,9 +27,10 @@ async function discoverShopifyProducts(roaster,profile,fetchHtml) {
       if(!products.length){exhausted=true;break;}
       anyProducts=true;
       const fingerprint=products.map(p=>p.id).join(',');if(seen.has(fingerprint))return {supported:true,urls:[...urls],complete:false,error:'Shopify collection page repeated',evidence};seen.add(fingerprint);
+      for(const product of products){const id=String(product.id ?? '');if(!/^[1-9]\d*$/.test(id) || ids.has(id))return {supported:true,urls:[...urls],complete:false,error:'Shopify collection identity missing or repeated',evidence};ids.add(id);}
       const listingProfile={...profile,coffee_product_types:profile.coffee_product_types_by_listing?.[path] ?? profile.coffee_product_types};
       const coffees=products.filter(p=>retailCoffee(p,listingProfile));
-      for(const p of coffees){if(!/^[a-z0-9][a-z0-9-]*$/i.test(p.handle))return {supported:true,urls:[],complete:false,error:'Invalid Shopify handle',evidence};urls.add(new URL((profile.product_path || '/products/')+p.handle,roaster.website_url).href);}
+      for(const p of coffees){if(!/^[a-z0-9][a-z0-9_-]*$/i.test(p.handle))return {supported:true,urls:[],complete:false,error:'Invalid Shopify handle',evidence};urls.add(new URL((profile.product_path || '/products/')+p.handle,roaster.website_url).href);}
       evidence.push({listing:path,page,products:products.length,coffeeProducts:coffees.length});
       // Explicit empty final page avoids treating a merchant's lower response cap
       // as proof of exhaustion. Fail closed if a cursor/page limit is reached.
@@ -44,6 +45,6 @@ async function discoverShopifyProducts(roaster,profile,fetchHtml) {
     if(!product || product.id==null || '/products/'+product.handle!==url.pathname || !retailCoffee(product,profile))return {supported:true,urls:[...urls],complete:false,error:'Featured coffee identity unavailable',evidence};
     urls.add(url.href);evidence.push({listing:path,products:1,coffeeProducts:1});anyProducts=true;
   }
-  return {supported:true,urls:[...urls],complete:anyProducts && urls.size>0,evidence};
+  return {supported:true,urls:[...urls],complete:anyProducts && urls.size>0,evidence,market:profile.market || null,inventory_authorizes_global_absence:profile.inventory_authorizes_global_absence!==false};
 }
 module.exports={retailCoffee,discoverShopifyProducts,excluded};

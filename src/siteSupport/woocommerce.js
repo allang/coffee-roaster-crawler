@@ -17,6 +17,7 @@ async function readJson(url,fetchHtml) {
   try{return {...response,value:JSON.parse(response.data)};}catch{throw Error('Invalid WooCommerce JSON');}
 }
 async function discoverWooProducts(roaster,profile,fetchHtml) {
+  if(profile.adapter==='woocommerce_store')return require('./woocommerceSimple').discoverWooProducts(roaster,profile,fetchHtml);
   const urls=new Set(),evidence=[];let pages=null,total=null,observed=0;const ids=new Set();
   try {
     for(let page=1;page<=40;page++) {
@@ -49,6 +50,7 @@ function offer(variant,identity,title,url) {
     _stock_evidence:{merchant_in_stock:variant.is_in_stock,merchant_purchasable:variant.is_purchasable,merchant_backorder:variant.is_on_backorder}};
 }
 async function fetchWooProduct(html,url,profile,fetchHtml) {
+  if(profile.adapter==='woocommerce_store')return require('./woocommerceSimple').fetchWooProduct(html,url,profile,fetchHtml);
   const $=cheerio.load(html),bodyIds=($('body').attr('class') || '').match(/(?:^|\s)postid-(\d+)(?=\s|$)/g) || [];
   const ids=new Set(bodyIds.map(x=>x.trim().slice(7)));
   if(ids.size!==1)throw Error('WooCommerce primary product ID missing/ambiguous');
@@ -84,4 +86,4 @@ async function fetchWooProduct(html,url,profile,fetchHtml) {
   return {'@type':'Product',url:product.permalink,productID:String(product.id),name:cheerio.load(product.name).text(),description,image:product.images?.[0]?.src,category:'coffee',offers,
     additionalProperty:(product.attributes || []).filter(a=>!a.has_variations).map(a=>({name:a.name,value:(a.terms || []).map(t=>t.name).join(', ')})),_variants_complete:true,_market_source:'woocommerce_store_exact_variant'};
 }
-module.exports={discoverWooProducts,fetchWooProduct,productPathMatches};
+module.exports={discoverWooProducts,fetchWooProduct,productPathMatches,readJson:require('./woocommerceSimple').readJson,decimalPrice:require('./woocommerceSimple').decimalPrice};

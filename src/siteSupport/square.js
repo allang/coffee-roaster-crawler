@@ -11,7 +11,7 @@ function bootstrap(html) {
 }
 function context(html,profile) {
   const state=bootstrap(html),currency=state?.storeInfo?.currency;
-  if(String(state?.siteData?.site?.properties?.classicSiteID)!==profile.square_site_id || String(state?.siteData?.user?.id)!==profile.square_owner_id || !/^[A-Z]{3}$/.test(currency || ''))throw Error('Square merchant context mismatch');
+  if(String(state?.siteData?.site?.properties?.classicSiteID)!==profile.square_site_id || String(state?.siteData?.user?.id)!==profile.square_owner_id || !/^[A-Z]{3}$/.test(currency || '') || typeof state?.storeInfo?.merchant_id!=='string' || !state.storeInfo.merchant_id)throw Error('Square merchant context mismatch');
   return {currency,merchant_id:state.storeInfo.merchant_id};
 }
 function apiBase(profile) {return profile.catalog_origin+'/app/store/api/v28/editor/users/'+profile.square_owner_id+'/sites/'+profile.square_site_id;}
@@ -27,6 +27,7 @@ async function paged(url,fetchHtml) {
     if(!Array.isArray(result.data) || !Number.isInteger(pagination?.total_pages) || pagination.current_page!==page || !Number.isInteger(pagination.total))throw Error('Invalid Square pagination');
     if(total!==null && total!==pagination.total)throw Error('Square inventory changed during pagination');total=pagination.total;
     rows.push(...result.data);
+    if(rows.some(row=>typeof row?.id!=='string' || !row.id) || new Set(rows.map(row=>row.id)).size!==rows.length)throw Error('Repeated or missing Square catalog identity');
     if(page>=pagination.total_pages){if(rows.length!==total)throw Error('Truncated Square catalog');return rows;}
   }throw Error('Square pagination limit');
 }
@@ -40,7 +41,7 @@ async function discoverSquareProducts(roaster,profile,fetchHtml) {
       const items=await paged(url.href,fetchHtml);
       for(const item of items) {
         if(item.owner_id!==profile.square_owner_id || !item.categoryIds?.includes(category))throw Error('Square product belongs to a different merchant/category');
-        if(item.visibility!=='visible' || item.only_subscribable || require('./shopifyDiscovery').excluded.test(item.name))continue;
+        if(item.visibility!=='visible' || item.only_subscribable || profile.exclude_product_ids?.includes(item.id) || require('./shopifyDiscovery').excluded.test(item.name))continue;
         const link=new URL(item.absolute_site_link);
         if(!profile.hosts.includes(link.hostname) || !/^\/product\/[^/]+\/[a-z0-9]+\/?$/i.test(link.pathname))throw Error('Square source URL mismatch');
         urls.add(link.href);
@@ -57,13 +58,16 @@ async function fetchSquareProduct(html,sourceUrl,profile,fetchHtml) {
   if(!product || product.owner_id!==profile.square_owner_id || product.merchant_id!==merchant.merchant_id || String(product.site_product_id)!==id || canonicalProductUrl(product.absolute_site_link)!==canonicalProductUrl(sourceUrl))throw Error('Square primary product mismatch');
   const skus=await paged(apiBase(profile)+'/products/'+id+'/skus?include=image,product&cache-version=2026-03-25',fetchHtml);
   if(!skus.length || new Set(skus.map(s=>s.id)).size!==skus.length || skus.some(s=>s.product_square_id!==product.id || String(s.site_product_id)!==id || s.owner_id!==profile.square_owner_id))throw Error('Square exact variant mismatch');
-  const offers=skus.map(s=>{
+  const coffeeSkus=skus.filter(s=>!profile.exclude_sku_ids?.includes(s.id));
+  if(!coffeeSkus.length)throw Error('No coffee SKUs remain');
+  const netWeight=require('./netWeight').descriptionNetWeight(product.short_description);
+  const offers=coffeeSkus.map(s=>{
     const knownSoldOut=s.sold_out===true;
     const buyable=s.sold_out===false && s.sellable===true && s.fulfillable===true && s.fulfillment?.methods?.shipping===true && product.preordering?.shipping===false;
     const size=require('../shopifyProduct').labelWeight(s.name),hasSize=/\d\s*(?:g|kg|oz|lbs?)\b/i.test(s.name || '');
-    const netWeight=size ?? (hasSize?null:require('./netWeight').explicitNetWeight(product.short_description,product.name));
+    const netWeight=size ?? (hasSize?null:require('./netWeight').explicitNetWeight(product.short_description,product.name) ?? require('./netWeight').descriptionNetWeight(product.short_description));
     return {'@type':'Offer','@id':s.id,name:s.name,sku:s.id,_merchant_sku:s.sku || null,_net_weight_g:netWeight,url:sourceUrl,price:s.price?.current,priceCurrency:merchant.currency,availability:knownSoldOut?'https://schema.org/OutOfStock':buyable?'https://schema.org/InStock':null};
   });
-  return {'@type':'Product',url:sourceUrl,productID:product.id,name:product.name,description:product.short_description || '',category:product.category?.data?.name || '',image:product.images?.data?.[0]?.absolute_url || product.thumbnail?.data?.absolute_url,offers,_variants_complete:true,_market_source:'square_public_catalog_skus'};
+  return {'@type':'Product',url:sourceUrl,productID:product.id,name:product.name,description:product.short_description || '',category:product.category?.data?.name || '',image:product.images?.data?.[0]?.absolute_url || product.thumbnail?.data?.absolute_url,offers,_variants_complete:coffeeSkus.length===skus.length,_market_source:'square_public_catalog_skus'};
 }
 module.exports={bootstrap,context,apiBase,paged,discoverSquareProducts,fetchSquareProduct};

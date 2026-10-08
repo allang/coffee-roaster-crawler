@@ -948,5 +948,240 @@
       "Suggested for Filter,"
     ],
     "adapter": "shopify"
+  },
+  {
+    "name": "Prodigal",
+    "entity_ids": [
+      "a1a8a40f-c7e1-40f3-a8e5-5cdfbf169f7b"
+    ],
+    "hosts": [
+      "getprodigal.com",
+      "www.getprodigal.com"
+    ],
+    "listing_paths": [
+      "/collections/roasted-coffee/products.json",
+      "/collections/sold-out/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "Round Hill",
+    "entity_ids": [
+      "0cc38dcc-655c-4a7d-b956-f27a3165b310"
+    ],
+    "hosts": [
+      "roundhillroastery.com",
+      "www.roundhillroastery.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json"
+    ],
+    "adapter": "shopify"
+  },
+  {
+    "name": "S&W Craft Roasting",
+    "entity_ids": [
+      "0a56b341-2fff-4c4f-af41-347b3e8425f5"
+    ],
+    "hosts": [
+      "www.swroasting.coffee",
+      "swroasting.coffee",
+      "cdn5.editmysite.com"
+    ],
+    "host_path_prefixes": {
+      "cdn5.editmysite.com": "/app/store/api/v28/editor/users/144301722/sites/609617072503030687/products"
+    },
+    "adapter": "square",
+    "square_owner_id": "144301722",
+    "square_site_id": "609617072503030687",
+    "catalog_origin": "https://cdn5.editmysite.com",
+    "coffee_category_ids": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "exclude_product_ids": [
+      "KUMZXGORXJB7TWGJU7MY5AV2",
+      "NVDMPMLDAK6BZ7QEDI6MBAJL"
+    ],
+    "coffee_collection_verified": true,
+    "exclude_sku_ids": [
+      "TMWZVP4I4JTPWQPNZKDOKZIB"
+    ]
+  },
+  {
+    "name": "September",
+    "entity_ids": [
+      "8b9eb5a0-b53e-4ca1-94fc-86a854f26659"
+    ],
+    "hosts": [
+      "september.coffee",
+      "www.september.coffee"
+    ],
+    "listing_paths": [
+      "/en-us/collections/coffee/products.json",
+      "/en-us/collections/garage-sale/products.json",
+      "/en-us/collections/archived/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "exclude_product_ids": [
+      "6851952803938"
+    ],
+    "adapter": "shopify",
+    "primary_fields": {
+      "description_selector": ".product-info-new",
+      "net_weight_selector": ".product-form__custom-liquid .right-side-info .quantity",
+      "native_description_net_weight": true,
+      "fixed_weight_style_values": [
+        "Filter",
+        "Espresso"
+      ],
+      "fixed_weight_option_names": [
+        "Roasted"
+      ]
+    },
+    "product_path": "/en-us/products/",
+    "canonical_product_path": "/products/",
+    "market": "US",
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "SEY",
+    "entity_ids": [
+      "0abbc586-467e-4bfe-b431-248941145733"
+    ],
+    "hosts": [
+      "www.seycoffee.com",
+      "seycoffee.com"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/archived-coffees/products.json"
+    ],
+    "coffee_product_types": [
+      "Coffees"
+    ],
+    "adapter": "shopify",
+    "primary_fields": {
+      "identity_source": "exact_native_analytics",
+      "description_selectors": [
+        ".coffee_keyInfo_shortBlurb",
+        ".coffee_technicalDetails",
+        ".coffee_longBlurb"
+      ],
+      "only_when_native_description_empty": true
+    }
+  },
+  {
+    "name": "Shoebox",
+    "entity_ids": [
+      "82b540d1-53c7-48ed-916c-dc3e662addc1"
+    ],
+    "hosts": [
+      "shoebox.coffee",
+      "www.shoebox.coffee"
+    ],
+    "listing_paths": [
+      "/collections/coffee/products.json",
+      "/collections/archive/products.json",
+      "/collections/garage-sale/products.json"
+    ],
+    "coffee_product_types": [
+      ""
+    ],
+    "adapter": "shopify",
+    "variant_size_prefix": "BC",
+    "exclude_product_ids": [
+      "10062862811428"
+    ],
+    "variant_price_suffix": true,
+    "fixed_retail_bag_label": true,
+    "variant_size_patterns": [
+      "^Drum - (.+)$",
+      "^Loring s15 - OTL (.+)$"
+    ]
+  },
+  {
+    "name": "Substance",
+    "entity_ids": [
+      "c9cc734b-ffbf-44ae-b682-c056f3635922"
+    ],
+    "hosts": [
+      "www.substancecafe.com",
+      "substancecafe.com"
+    ],
+    "adapter": "woocommerce_store",
+    "store_api_path": "/wp-json/wc/store/v1/products",
+    "coffee_category_ids": [
+      "19"
+    ],
+    "coffee_collection_verified": true
+  },
+  {
+    "name": "Subtext",
+    "entity_ids": [
+      "f3f3a834-d7e4-4804-890c-4bdff564e498"
+    ],
+    "hosts": [
+      "www.subtext.coffee",
+      "subtext.coffee"
+    ],
+    "listing_paths": [
+      "/collections/filter-coffee-beans/products.json",
+      "/collections/espresso-coffee-beans/products.json",
+      "/collections/reserve-coffee-beans/products.json",
+      "/collections/rested-coffee/products.json",
+      "/collections/rested-coffee-1/products.json",
+      "/collections/discountable-filter/products.json",
+      "/collections/discountable-espresso/products.json",
+      "/collections/discountable-reserve/products.json",
+      "/collections/archive/products.json"
+    ],
+    "adapter": "shopify",
+    "bundle_net_weight_product_ids": [
+      "8906952179925"
+    ]
+  },
+  {
+    "name": "Sweven",
+    "entity_ids": [
+      "405de73b-b707-46bb-a0e2-dbeb3218f542"
+    ],
+    "hosts": [
+      "swevencoffee.co.uk",
+      "www.swevencoffee.co.uk"
+    ],
+    "listing_paths": [
+      "/collections/frontpage/products.json",
+      "/collections/microlot/products.json",
+      "/collections/coffee/products.json"
+    ],
+    "adapter": "shopify",
+    "exclude_product_ids": [
+      "15691259642240"
+    ],
+    "variant_size_patterns": [
+      "^(.+) / (?:Filter|Espresso)$"
+    ]
+  },
+  {
+    "name": "Taith",
+    "entity_ids": [
+      "5d931414-8d9a-43e7-ba25-e3269884cde8"
+    ],
+    "hosts": [
+      "taithcoffee.com",
+      "www.taithcoffee.com"
+    ],
+    "adapter": "squarespace",
+    "squarespace_website_id": "62b053a90054ab18d94673b6",
+    "squarespace_collection_id": "62b05b82973de96d399c5e83",
+    "coffee_category_id": "62b09e2d187fc259cb29224d",
+    "listing_path": "/shop",
+    "inventory_authorizes_global_absence": false,
+    "coffee_collection_verified": true
   }
 ]

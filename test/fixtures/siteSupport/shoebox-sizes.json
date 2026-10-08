@@ -1,0 +1,386 @@
+[
+  {
+    "url": "https://shoebox.coffee/products/retail-bags125g-garage-sale-drop-10-4",
+    "product": {
+      "id": 15366907035940,
+      "title": "Retail Bags(125g) - Garage Sale Drop 10/4",
+      "handle": "retail-bags125g-garage-sale-drop-10-4",
+      "options": [
+        {
+          "id": 17823937462564,
+          "product_id": 15366907035940,
+          "name": "Garage Sale 10/4 Retail bags(125g)",
+          "position": 1,
+          "values": [
+            "9/17 Ethiopia Tadese Teko Washed",
+            "9/17 Kenya Gatuya Washed",
+            "9/17 Guatemala Victoriana Caturra Washed",
+            "9/3 Guatemala Fredy Orantes Gesha Natural",
+            "9/9 Guatemala Victoriana Caturra Washed",
+            "9/17 Colombia Julian Calderon PB Washed",
+            "8/20 Kenya Kiangundo Washed",
+            "9/17 Ecuador Finca Cruz Loma Washed",
+            "8/27 Guatemala Victoriana Caturra Washed",
+            "9/9 House Shoes 250g",
+            "8/21 House Shoes 250g",
+            "8/20 Kenya Mugaya Washed",
+            "9/3 Kenya Gachatha Washed",
+            "9/17 Kenya Kamwangi Washed",
+            "9/17 Ethiopia Getachew Washed",
+            "9/9 Ethiopia Getachew Washed",
+            "9/9 Kenya Ichuga Washed",
+            "8/20 Kenya Ichuga Washed",
+            "9/9 Guatemala Fredy Orantes Gesha Natural",
+            "9/8 Ethiopia Mulish Washed",
+            "9/24 Ethiopia Mulish Washed",
+            "9/24 Ethiopia Shoondhisa Natural"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 67624403435812,
+          "title": "9/17 Ethiopia Tadese Teko Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411332900,
+          "title": "9/17 Kenya Gatuya Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411365668,
+          "title": "9/17 Guatemala Victoriana Caturra Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411398436,
+          "title": "9/3 Guatemala Fredy Orantes Gesha Natural",
+          "grams": 125
+        },
+        {
+          "id": 67624411431204,
+          "title": "9/9 Guatemala Victoriana Caturra Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411463972,
+          "title": "9/17 Colombia Julian Calderon PB Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411496740,
+          "title": "8/20 Kenya Kiangundo Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411529508,
+          "title": "9/17 Ecuador Finca Cruz Loma Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411562276,
+          "title": "8/27 Guatemala Victoriana Caturra Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411595044,
+          "title": "9/9 House Shoes 250g",
+          "grams": 125
+        },
+        {
+          "id": 67624411627812,
+          "title": "8/21 House Shoes 250g",
+          "grams": 125
+        },
+        {
+          "id": 67624411660580,
+          "title": "8/20 Kenya Mugaya Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411693348,
+          "title": "9/3 Kenya Gachatha Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411726116,
+          "title": "9/17 Kenya Kamwangi Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411758884,
+          "title": "9/17 Ethiopia Getachew Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411791652,
+          "title": "9/9 Ethiopia Getachew Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411824420,
+          "title": "9/9 Kenya Ichuga Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411857188,
+          "title": "8/20 Kenya Ichuga Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411889956,
+          "title": "9/9 Guatemala Fredy Orantes Gesha Natural",
+          "grams": 125
+        },
+        {
+          "id": 67624411922724,
+          "title": "9/8 Ethiopia Mulish Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411955492,
+          "title": "9/24 Ethiopia Mulish Washed",
+          "grams": 125
+        },
+        {
+          "id": 67624411988260,
+          "title": "9/24 Ethiopia Shoondhisa Natural",
+          "grams": 125
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://shoebox.coffee/products/garage-sale",
+    "product": {
+      "id": 10212580819236,
+      "title": "Slack Bags - Garage Sale Drop 10/4",
+      "handle": "garage-sale",
+      "options": [
+        {
+          "id": 12568112988452,
+          "product_id": 10212580819236,
+          "name": "Slack Bags",
+          "position": 1,
+          "values": [
+            "9/17 Ethiopia Ashenafi Black Honey 900g - $30",
+            "9/9 Kenya Ichuga Washed 400g - $18",
+            "9/11 Ethiopia Getachew Zeleke Washed 600g - $20",
+            "8/27 Ecuador Finca Cruz Loma Washed 200g - $15",
+            "9/17 Ecuador Finca Cruz Loma Washed 400g - $18",
+            "9/17 Kenya Gatuya Washed - 350g - $15",
+            "9/17 Ethiopia Tadese Teko Washed 200g - $12",
+            "9/8 Ethiopia Ashenafi Black Honey 250g - $15",
+            "7/30 Panama Bambito Estate RB Natural 200g - $15",
+            "8/5 Ethiopia Jigesa Washed 150g - $12",
+            "8/13 Ethiopia Jigesa Washed 125g - $12",
+            "8/6 Ethiopia Tadese Teko Washed 140g - $12",
+            "9/8 Ethiopia Mulish Washed 180g - $12",
+            "9/17 Ethiopia Tadese Teko Washed 200g - $15",
+            "9/17 Guatemala Victoriana Caturra Washed 250g - $ 15"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 56004120183076,
+          "title": "9/17 Ethiopia Ashenafi Black Honey 900g - $30",
+          "grams": 125
+        },
+        {
+          "id": 67624399536420,
+          "title": "9/9 Kenya Ichuga Washed 400g - $18",
+          "grams": 125
+        },
+        {
+          "id": 67624399569188,
+          "title": "9/11 Ethiopia Getachew Zeleke Washed 600g - $20",
+          "grams": 125
+        },
+        {
+          "id": 67624399601956,
+          "title": "8/27 Ecuador Finca Cruz Loma Washed 200g - $15",
+          "grams": 125
+        },
+        {
+          "id": 67624399634724,
+          "title": "9/17 Ecuador Finca Cruz Loma Washed 400g - $18",
+          "grams": 125
+        },
+        {
+          "id": 67624399667492,
+          "title": "9/17 Kenya Gatuya Washed - 350g - $15",
+          "grams": 125
+        },
+        {
+          "id": 67624399700260,
+          "title": "9/17 Ethiopia Tadese Teko Washed 200g - $12",
+          "grams": 125
+        },
+        {
+          "id": 67624399733028,
+          "title": "9/8 Ethiopia Ashenafi Black Honey 250g - $15",
+          "grams": 125
+        },
+        {
+          "id": 67624399765796,
+          "title": "7/30 Panama Bambito Estate RB Natural 200g - $15",
+          "grams": 125
+        },
+        {
+          "id": 67624399798564,
+          "title": "8/5 Ethiopia Jigesa Washed 150g - $12",
+          "grams": 125
+        },
+        {
+          "id": 67624399831332,
+          "title": "8/13 Ethiopia Jigesa Washed 125g - $12",
+          "grams": 125
+        },
+        {
+          "id": 67624399864100,
+          "title": "8/6 Ethiopia Tadese Teko Washed 140g - $12",
+          "grams": 125
+        },
+        {
+          "id": 67624399896868,
+          "title": "9/8 Ethiopia Mulish Washed 180g - $12",
+          "grams": 125
+        },
+        {
+          "id": 67624399929636,
+          "title": "9/17 Ethiopia Tadese Teko Washed 200g - $15",
+          "grams": 125
+        },
+        {
+          "id": 67624399962404,
+          "title": "9/17 Guatemala Victoriana Caturra Washed 250g - $ 15",
+          "grams": 125
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://shoebox.coffee/products/house-shoes-omni-light-blend",
+    "product": {
+      "id": 10382931329316,
+      "title": "House Shoes Omni-light blend",
+      "handle": "house-shoes-omni-light-blend",
+      "options": [
+        {
+          "id": 12779975180580,
+          "product_id": 10382931329316,
+          "name": "Roast Style",
+          "position": 1,
+          "values": [
+            "BC-25 - 250g(roast date 8/21)",
+            "BC-25 - 1kg(roast date 8/21)"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 52438511157540,
+          "title": "BC-25 - 250g(roast date 8/21)",
+          "grams": 125
+        },
+        {
+          "id": 54477396607268,
+          "title": "BC-25 - 1kg(roast date 8/21)",
+          "grams": 125
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://shoebox.coffee/products/panama-hachi-kohaku-caturra-washed",
+    "product": {
+      "id": 10235902853412,
+      "title": "Panama Hachi Kōhaku Caturra Washed",
+      "handle": "panama-hachi-kohaku-caturra-washed",
+      "options": [
+        {
+          "id": 12596128874788,
+          "product_id": 10235902853412,
+          "name": "Roast Style",
+          "position": 1,
+          "values": [
+            "Drum - 125g",
+            "OTL 10/30"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 51265254064420,
+          "title": "Drum - 125g",
+          "grams": 125
+        },
+        {
+          "id": 51304840626468,
+          "title": "OTL 10/30",
+          "grams": 125
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://shoebox.coffee/products/colombia-el-obraje-gesha-washed",
+    "product": {
+      "id": 10342071435556,
+      "title": "Colombia El Obraje Gesha Washed",
+      "handle": "colombia-el-obraje-gesha-washed",
+      "options": [
+        {
+          "id": 12731210498340,
+          "product_id": 10342071435556,
+          "name": "Roast Style",
+          "position": 1,
+          "values": [
+            "BC-3.5 - 125g"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 51995787493668,
+          "title": "BC-3.5 - 125g",
+          "grams": 125
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://shoebox.coffee/products/panama-bambito-estate-red-bourbon-natural",
+    "product": {
+      "id": 10516344766756,
+      "title": "Panama Bambito Estate Red Bourbon Natural",
+      "handle": "panama-bambito-estate-red-bourbon-natural",
+      "options": [
+        {
+          "id": 12957815800100,
+          "product_id": 10516344766756,
+          "name": "Roast Style",
+          "position": 1,
+          "values": [
+            "BC-25 - 125g",
+            "Loring s15 - OTL 125g"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": 55208705917220,
+          "title": "BC-25 - 125g",
+          "grams": 125
+        },
+        {
+          "id": 55239030472996,
+          "title": "Loring s15 - OTL 125g",
+          "grams": 125
+        }
+      ]
+    }
+  }
+]

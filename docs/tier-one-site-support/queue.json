@@ -468,8 +468,9 @@
           "name": "Prodigal"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "prodigal-live.json",
+      "coffee_products": 22
     },
     {
       "name": "Round Hill",
@@ -484,8 +485,9 @@
           "name": "Round Hill"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "round-hill-live.json",
+      "coffee_products": 13
     },
     {
       "name": "S&W Craft Roasting",
@@ -500,8 +502,10 @@
           "name": "S&W Craft Roasting"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "sw-live.json",
+      "coffee_products": 153,
+      "note": "All four public coffee categories including archives. Exact tip, cascara item and cascara sample SKU excluded; remaining sample SKU subset does not retire omitted variants."
     },
     {
       "name": "September",
@@ -516,8 +520,10 @@
           "name": "September Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_with_documented_market_blocker",
+      "evidence": "september-live.json",
+      "coffee_products": 386,
+      "note": "Complete US-market current/archive inventory. One surviving Canadian cache product (La Muralla #2) lacks a primary page, description and proven current price/currency; report documents the blocker. US inventory never authorizes global absence reconciliation. Explicit bag sizes only; ambiguous historical weights remain null."
     },
     {
       "name": "SEY",
@@ -532,8 +538,10 @@
           "name": "Sey"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "sey-live.json",
+      "coffee_products": 866,
+      "note": "Six current coffees and full public archive; overlapping collection identities deduplicated. Exact USD SKU offers and stock; archived sold-out records retained."
     },
     {
       "name": "Shoebox",
@@ -548,8 +556,10 @@
           "name": "shoebox.coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "shoebox-live.json",
+      "coffee_products": 137,
+      "note": "Current/archive inventory deduplicated and seasoning beans excluded by exact ID. All137 coffees explicitly sold out. Explicit batch/drum, garage-sale and roast-date bag labels only; unlabelled OTL variants retain unset weight."
     },
     {
       "name": "Substance",
@@ -564,8 +574,10 @@
           "name": "Substance Cafe"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "substance-live.json",
+      "coffee_products": 50,
+      "note": "Public WooCommerce coffee category19 includes10 in-stock and40 sold-out simple products. Product ID and page wrapper bind exact EUR minor amounts and stock; short-description net contents used independently of shipping weight. Books and filters excluded by category."
     },
     {
       "name": "Subtext",
@@ -580,8 +592,10 @@
           "name": "Subtext Coffee Roasters"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "subtext-live.json",
+      "coffee_products": 19,
+      "note": "Filter, espresso, reserve, both rested and discountable collections are paginated/deduplicated; public archive collection is empty. Exact CAD SKU price/stock and explicit bag-size labels. Seasonal Sample Box explicit 4 × 80g coffee bags establishes 320g net coffee; shipping and water-sachet weight are ignored."
     },
     {
       "name": "Sweven",
@@ -596,8 +610,10 @@
           "name": "Sweven "
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_live_dry_run_passed",
+      "evidence": "sweven-live.json",
+      "coffee_products": 9,
+      "note": "Frontpage, microlot and rare coffee collections are deduplicated. Magazine and subscriptions excluded. Exact GBP offers and compatible imperial/metric bag labels; filter/espresso SKU identities and sold-out stock preserved."
     },
     {
       "name": "Taith",
@@ -612,8 +628,10 @@
           "name": "Taith Coffee"
         }
       ],
-      "status": "pending",
-      "evidence": null
+      "status": "implemented_with_documented_catalog_blocker",
+      "evidence": "taith-live.json",
+      "coffee_products": 33,
+      "note": "Verified visible subset: 33 coffees / 64 exact native GBP SKUs, including sold-out stock. Squarespace public JSON declares 187 collection items but returns 49 without a usable next-page cursor. Inventory remains incomplete; normal discovery fails closed and global absence reconciliation is disabled."
     },
     {
       "name": "Tanat",

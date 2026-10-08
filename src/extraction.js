@@ -12,7 +12,8 @@ function stripHtml(html) { const $ = cheerio.load(html || ''); return $.text().r
 
 function structuredExtraction(page, shopifyJson) {
   const schema = page.sourceProduct || structuredProduct(page.html, page.finalUrl || page.url);
-  const native = shopifyJson?.success ? shopifyJson.data : null;
+  let native = shopifyJson?.success ? shopifyJson.data : null;
+  if(native){let host;try{host=new URL(page.finalUrl || page.url).hostname;}catch{}const profile=require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(host));native=require('./siteSupport/shopifyPageFields').shopifyPageFields(page.html,native,schema,profile);}
   const image=primaryProductImage({html:page.html,url:page.finalUrl || page.url,sourceProduct:schema,native});
   const name = native?.title || schema?.name;
   if (!name) return { product:null, complete:false, semantic:null,image };

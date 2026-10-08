@@ -69,6 +69,8 @@ async function fetchPageContent(url, referer = null, options = {}) {
     if(!soft404 && options.siteProfile?.adapter==='wix' && new URL(result.finalUrl || url).pathname.startsWith(options.siteProfile.product_path)){sourceProduct=require('./siteSupport/wix').wixProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='cafe24' && options.siteProfile.cafe24_native_single_items && require('./catalogNormalization').canonicalProductUrl(result.finalUrl || url).includes('/product/detail.html?product_no=')){sourceProduct=await require('./siteSupport/cafe24').fetchCafe24Product(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='fathers'){sourceProduct=require('./siteSupport/fathers').fathersProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='woocommerce_store'){sourceProduct=await require('./siteSupport/woocommerce').fetchWooProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='squarespace'){sourceProduct=await require('./siteSupport/squarespace').fetchSquarespaceProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     return {
       success: true,
       sourceProduct,
@@ -120,7 +122,8 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
     return {visited:true,classified:false,error:fetchResult.error,aiCalls:0};
   }
   let shopifyJson=null;
-  if(platform==='shopify' && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
+  if((platform==='shopify' || options.siteProfile?.adapter==='shopify') && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
+  if(options.siteProfile?.adapter==='shopify' && (!shopifyJson?.success || !shopifyJson.data.variantsComplete))return {visited:true,classified:false,error:'Registered Shopify source incomplete: '+(shopifyJson?.error || 'incomplete SKU set'),aiCalls:0};
   const classification=await extractPage({page:{...fetchResult,url},shopifyJson,cache:known?.classification,classify:classifyPage,model:MODEL});
   const metrics={aiCalls:classification.aiCalls || 0,usage:classification.usage,mode:classification.mode};
   if(classification.error) return {visited:true,classified:false,error:classification.error,quotaExceeded:classification.quotaExceeded,...metrics};

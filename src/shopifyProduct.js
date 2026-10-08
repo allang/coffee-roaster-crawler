@@ -15,8 +15,8 @@ function labelWeight(value) {
     const total=parseWeightGrams(packaged[1]+packaged[2]),perPouch=parseWeightGrams(packaged[4]+packaged[5]),count=Number(packaged[3]);
     return total && perPouch && count>0 && count<=1000 && total===count*perPouch?total:null;
   }
-  const dual=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\(\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\)\s*$/i);
-  const reverse=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\(\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\)\s*$/i);
+  const dual=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\(\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\)\s*$/i) || String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\/\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*$/i);
+  const reverse=String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\(\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*\)\s*$/i) || String(value || '').match(/^\s*(\d+(?:\.\d+)?)\s*(g|kg)\s*\/\s*(\d+(?:\.\d+)?)\s*(oz|lbs?)\s*$/i);
   if(!dual && !reverse)return null;
   const imperial=parseWeightGrams(dual?dual[1]+dual[2]:reverse[3]+reverse[4]),metric=parseWeightGrams(dual?dual[3]+dual[4]:reverse[1]+reverse[2]);
   return imperial && metric && Math.abs(imperial-metric)<=Math.max(2,metric*0.02)?metric:null;
@@ -120,8 +120,9 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
 
   let product = result.data.product;
   const registeredProfile=require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname)),registered=Boolean(registeredProfile);
-  const handle=decodeURIComponent(new URL(url).pathname.match(/\/products\/([^/]+)\/?$/)?.[1] || '');
-  if(registered && (product.handle!==handle || !/^[1-9]\d*$/.test(String(product.id || ''))))return {success:false,error:'Exact registered Shopify product identity mismatch'};
+  const handle=decodeURIComponent(new URL(url).pathname.replace(/\/$/,'').split('/').at(-1));
+  const identity=v=>typeof v==='number'?Number.isSafeInteger(v)&&v>0:typeof v==='string'&&/^[1-9]\d*$/.test(v);
+  if(registered && (product.handle!==handle || !identity(product.id) || !Array.isArray(product.variants) || !product.variants.length || product.variants.some(v=>!identity(v.id)) || new Set(product.variants.map(v=>String(v.id))).size!==product.variants.length))return {success:false,error:'Shopify primary product/variant identity mismatch'};
   // Public product.json may omit sellability. Ajax supplies exact-ID stock flags;
   // its presentment-currency price integers are deliberately not merged here.
   const ajaxUrl=new URL(jsonUrl);ajaxUrl.pathname=ajaxUrl.pathname.replace(/\.json$/,'.js');
@@ -150,13 +151,13 @@ function mergeShopifyStock(product,ajax) {
     return stock && typeof stock.available==='boolean' ? {...v,available:stock.available,_availability_source:'shopify_ajax_product_js'} : {...v};
   });
   const pricedIds=new Set(variants.map(v=>String(v.id)));
-  const complete=Boolean(matched && ajax.variants.length<250 && ajax.variants.length===variants.length && ajax.variants.every(v=>pricedIds.has(String(v.id))));
+  const complete=Boolean(matched && ajax.variants.length<250 && ajax.variants.length===variants.length && new Set(ajax.variants.map(v=>String(v.id))).size===ajax.variants.length && ajax.variants.every(v=>pricedIds.has(String(v.id))));
   return {...product,variants,_variants_complete:complete};
 }
 
 function registeredWeightOptions(url,product) {
   const profile=lookupRegisteredProfile(url);
-  return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle),descriptionWeightPrefixes:profile?.description_net_weight_prefixes || []};
+  return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle),descriptionWeightPrefixes:profile?.description_net_weight_prefixes || [],variantSizePrefix:profile?.variant_size_prefix,variantSizePatterns:profile?.variant_size_patterns,variantPriceSuffix:profile?.variant_price_suffix,fixedRetailBagLabel:profile?.fixed_retail_bag_label,bundleNetWeightProductIds:profile?.bundle_net_weight_product_ids};
 }
 function lookupRegisteredProfile(url) {return require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname));}
 function explicitCoffeeWeight(html) {
@@ -167,7 +168,18 @@ function explicitCoffeeWeight(html) {
   });
   return weights.length===1?weights[0]:null;
 }
-function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=false,singleVariantDescriptionWeight=false,descriptionWeightPrefixes=[]}={}) {
+function parseShopifyProduct(product,{netWeightUnproven=false,singleVariantDescriptionWeight=false,descriptionWeightPrefixes=[],preferLabelWeight=false,variantSizePrefix=null,variantSizePatterns=[],variantPriceSuffix=false,fixedRetailBagLabel=false,bundleNetWeightProductIds=[]}={}) {
+  const bag=fixedRetailBagLabel?String(product.title || '').match(/^Retail Bags\((\d+(?:\.\d+)?g)\) - Garage Sale Drop (\d+\/\d+)$/):null,option=product.options?.length===1?product.options[0]:null;
+  const fixedWeight=bag && String(option?.product_id)===String(product.id) && option.name==='Garage Sale '+bag[2]+' Retail bags('+bag[1]+')' && Array.isArray(option.values) && product.variants.every(v=>option.values.includes(v.title))?labelWeight(bag[1]):null;
+  const bundleWeight=product.variants?.length===1 && bundleNetWeightProductIds?.includes(String(product.id))?require('./siteSupport/netWeight').coffeeBundleWeight(product.body_html):null;
+  const variantWeight=title=>{
+    const cleaned=variantPriceSuffix?String(title || '').replace(/\s+-\s+\$\s*\d+(?:\.\d+)?$/,'').replace(/\s+-\s+(?=\d+(?:\.\d+)?\s*(?:g|kg|oz|lbs?)$)/i,' '):title;
+    const direct=labelWeight(cleaned);if(direct!=null)return direct;
+    const patterns=[...(Array.isArray(variantSizePatterns)?variantSizePatterns:[])];
+    if(typeof variantSizePrefix==='string' && /^[A-Z]+$/.test(variantSizePrefix))patterns.push('^'+variantSizePrefix+'-[0-9]+(?:\\.[0-9]+)?\\s+[-–—]\\s+(.+)$');
+    for(const pattern of patterns){const suffix=String(title || '').match(new RegExp(pattern))?.[1],weight=suffix?require('./siteSupport/shopifyPageFields').sizeLabel(suffix):null;if(weight!=null)return weight;}
+    return null;
+  };
   const variants = (product.variants || []).map(v => ({
     id: v.id == null ? null : String(v.id),
     title: v.title,
@@ -180,7 +192,7 @@ function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=
     availabilitySource:v._availability_source || 'shopify_product_json',
     compareAtPrice: v.compare_at_price,
     currency: product.currency || null,
-    weightGrams: netWeightUnproven?null:preferLabelWeight?(nativeNetWeight(product,v) ?? titleNetWeight(product) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title,descriptionWeightPrefixes) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
+    weightGrams: netWeightUnproven?null:preferLabelWeight?(variantWeight(v.title) ?? fixedWeight ?? bundleWeight ?? nativeNetWeight(product,v) ?? titleNetWeight(product) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title,descriptionWeightPrefixes) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
     shippingWeightGrams:v.grams ?? null,
   }));
 
@@ -204,6 +216,7 @@ function parseShopifyProduct(product,{preferLabelWeight=false,netWeightUnproven=
     productType: product.product_type,
     tags: Array.isArray(product.tags) ? product.tags : product.tags ? product.tags.split(/,\s*/) : [],
     variants,
+    options:(product.options || []).filter(o=>String(o.product_id)===String(product.id)).map(o=>({name:o.name,values:o.values})),
     images,
     mainImage,
     createdAt: product.created_at,
