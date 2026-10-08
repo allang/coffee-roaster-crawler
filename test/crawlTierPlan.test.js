@@ -6,8 +6,11 @@ function deferred(){let resolve;const promise=new Promise(r=>{resolve=r;});retur
 test('all manual tiers precede unassigned/invalid tiers; Preface is in the verified tier-one ledger',()=>{
   const phases=buildCrawlPhases([row('remaining',null),row('nine',9),row('one',1),row('two',2),row('invalid',5),row('four',4),row('three',3)]);
   assert.deepEqual(phases.map(p=>p.tier),[1,2,3,4,9,null]);assert.deepEqual(phases.at(-1).roasters.map(r=>r.id),['remaining','invalid']);
-  assert.equal(fallbackTier('fee5aaa2-09c2-4bde-949d-16471a91793c'),1);assert.equal(fallbackTier('11a426df-0146-4a5c-a123-ef7725c13926'),null);assert.equal(fallbackTier('not-listed'),null);
-  assert.equal(manifest.assignments.length,509);assert.equal(manifest.source_commit,'2c8733cdc6aa1abd866b4df5df766f75b6f855f5');
+  assert.equal(fallbackTier('fee5aaa2-09c2-4bde-949d-16471a91793c'),1);assert.equal(fallbackTier('11a426df-0146-4a5c-a123-ef7725c13926'),1);assert.equal(fallbackTier('not-listed'),null);
+  assert.equal(fallbackTier('2442b266-fb8c-43f6-a7e5-589c6bf94bc5'),null); // Wisconsin Luna is a different brand
+  assert.equal(fallbackTier('4e4926f4-fdab-4e69-b28a-0f067b2b6720'),null); // German Passenger is a different brand
+  assert.equal(manifest.entity_counts['1'],69);
+  assert.equal(manifest.assignments.length,523);assert.equal(manifest.source_commit,'2c8733cdc6aa1abd866b4df5df766f75b6f855f5');
 });
 test('parallel work stays within a tier until its final crawl finishes',async()=>{
   const limit=(await import('p-limit')).default(2),blocked=deferred(),started=deferred(),events=[];

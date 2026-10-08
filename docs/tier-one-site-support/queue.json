@@ -101,8 +101,10 @@
     },
     {
       "name": "DAK Coffee Roasters",
-      "identity_status": "ambiguous",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "11a426df-0146-4a5c-a123-ef7725c13926"
+      ],
       "candidates": [
         {
           "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
@@ -110,10 +112,12 @@
           "name": "Dak"
         }
       ],
-      "status": "merchant_verified_identity_unresolved",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "dak-live.json",
       "coffee_products": 23,
-      "note": "Verified candidate entity/domain supported. Original ambiguous audit identity is preserved; no tier import or identity merge performed. Exact native Store API variant EUR context."
+      "note": "DAK is the unique exact dakcoffeeroasters.com roaster; the short catalog name Dak required manual review. Official about page confirms Amsterdam, Netherlands. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
     },
     {
       "name": "Flower Child",
@@ -289,8 +293,11 @@
     },
     {
       "name": "Loveless",
-      "identity_status": "ambiguous",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "281aa870-2867-465c-9594-d7764c9273f6",
+        "d85c4ca3-b86e-43b6-8822-aaef6472126a"
+      ],
       "candidates": [
         {
           "entity_id": "281aa870-2867-465c-9594-d7764c9273f6",
@@ -303,10 +310,12 @@
           "name": "Loveless Coffees"
         }
       ],
-      "status": "merchant_verified_identity_unresolved",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "loveless-live.json",
       "coffee_products": 12,
-      "note": "Two catalog IDs share the verified official domain. Both are eligible for the same merchant parser; duplicate identity selection/merging is unresolved. Three retail coffees explicitly sold out; five wholesale-only products and gift card excluded."
+      "note": "Official Loveless Coffees store confirms 86 Central Ave, Brooklyn. Both existing roaster-role records share that official brand/domain; no entity merge. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_same_brand_multiple_entities",
+      "identity_evidence": "tier-one-identity-review.json"
     },
     {
       "name": "Luminous",
@@ -327,8 +336,10 @@
     },
     {
       "name": "Luna",
-      "identity_status": "ambiguous",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "e30e68df-7843-408b-8df0-2ae01df471d9"
+      ],
       "candidates": [
         {
           "entity_id": "2442b266-fb8c-43f6-a7e5-589c6bf94bc5",
@@ -341,10 +352,12 @@
           "name": "Luna Coffee"
         }
       ],
-      "status": "merchant_verified_identity_unresolved",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "luna-live.json",
       "coffee_products": 6,
-      "note": "enjoylunacoffee.com candidate supported with exact native offers; lunacafe.com is a distinct merchant. Original ambiguous mapping preserved. Three current coffees explicitly sold out."
+      "note": "Source CSV specifies Canada; the mention ledger explicitly says Luna Canada. The enjoylunacoffee.com entity is in Maple Ridge, BC; lunacafe.com in Wisconsin is a different brand and excluded. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
     },
     {
       "name": "Momos",
@@ -436,8 +449,10 @@
     },
     {
       "name": "Passenger",
-      "identity_status": "ambiguous",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "7557d44c-5584-42cf-a644-aafe9720bd16"
+      ],
       "candidates": [
         {
           "entity_id": "4e4926f4-fdab-4e69-b28a-0f067b2b6720",
@@ -450,10 +465,12 @@
           "name": "Passenger"
         }
       ],
-      "status": "merchant_verified_identity_unresolved",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "passenger-live.json",
       "coffee_products": 24,
-      "note": "US candidate drinkpassenger.com supported through complete Hydrogen cursor inventory and exact USD variant offers. German Passenger is distinct. Ambiguous audit mapping preserved. Two Divino Niño variants are explicit backorders."
+      "note": "Source CSV specifies United States and the mention ledger explicitly names Lancaster, Pennsylvania. Official drinkpassenger.com locations confirm Lancaster; the German passenger-coffee.de brand is excluded. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
     },
     {
       "name": "Prodigal",
@@ -653,8 +670,10 @@
     },
     {
       "name": "Tandem",
-      "identity_status": "ambiguous",
-      "entity_ids": [],
+      "identity_status": "matched",
+      "entity_ids": [
+        "86089fc8-6ecc-4620-ac4c-b570990d1c22"
+      ],
       "candidates": [
         {
           "entity_id": "86089fc8-6ecc-4620-ac4c-b570990d1c22",
@@ -667,10 +686,12 @@
           "name": "Tandem"
         }
       ],
-      "status": "merchant_verified_identity_unresolved",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "tandem-live.json",
       "coffee_products": 18,
-      "note": "Maine candidate verified: 18 retail coffees including Cup of Excellence, instant coffee, and samplers. Original ambiguous audit identity preserved; tandemcc.com redirects outside verified hosts and was not followed."
+      "note": "Mention S22 names Kambarare; the exact official tandemcoffee.com Kambarare product and official Portland roastery establish the intended Maine brand. tandemcc.com in South Carolina is a different business and excluded. Existing merchant inventory evidence retained; no entity merge or production tier write.",
+      "identity_resolution": "verified_single_brand_identity",
+      "identity_evidence": "tier-one-identity-review.json"
     },
     {
       "name": "The Picky Chemist",

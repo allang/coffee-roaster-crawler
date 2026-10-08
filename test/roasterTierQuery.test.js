@@ -13,8 +13,8 @@ function roastersModule({entities=[],missingTier=false,error=null,states=[],stat
   },module,module.exports);return {...module.exports,calls,stateCalls};
 }
 test('missing tier column falls back only to the reviewed stable IDs',async()=>{
-  const m=roastersModule({missingTier:true,entities:[{id:'fee5aaa2-09c2-4bde-949d-16471a91793c',name:'Preface Coffee'},{id:'11a426df-0146-4a5c-a123-ef7725c13926',name:'Dak'},{id:'outside',name:'New roaster'}]});
-  const rows=await m.getRoasterEntities();assert.deepEqual(rows.map(r=>r.roaster_tier),[1,null,null]);assert(rows.every(r=>r.crawl_tier_source==='reviewed_mapping'));assert.equal(m.calls.length,2);
+  const m=roastersModule({missingTier:true,entities:[{id:'fee5aaa2-09c2-4bde-949d-16471a91793c',name:'Preface Coffee'},{id:'11a426df-0146-4a5c-a123-ef7725c13926',name:'Dak'},{id:'2442b266-fb8c-43f6-a7e5-589c6bf94bc5',name:'Luna Coffee Roasters'},{id:'outside',name:'New roaster'}]});
+  const rows=await m.getRoasterEntities();assert.deepEqual(rows.map(r=>r.roaster_tier),[1,1,null,null]);assert(rows.every(r=>r.crawl_tier_source==='reviewed_mapping'));assert.equal(m.calls.length,2);
 });
 test('database assignments, including null and tier nine, override the fallback manifest',async()=>{
   const m=roastersModule({entities:[{id:'fee5aaa2-09c2-4bde-949d-16471a91793c',roaster_tier:9},{id:'8f69eeb4-2d62-4aea-8024-d2855b01e593',roaster_tier:null}]});
