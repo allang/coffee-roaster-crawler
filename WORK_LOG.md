@@ -2,6 +2,14 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — English-before-save source installed; normal save and Momos preservation verified
+
+- Original clean checkout fast-forwarded to **9a09cea406be36c39932f72e2faa7270c4e9b8b1**, with generated display columns respected. Resume **23:14:19.207 UTC /7:14:19.207 PM Eastern**, startup19.469; sole Node **84045**, launcher/lock **84036**, one worker/page, unchanged5400s/private configuration/cache. Stop-to-resume **2.648s**, separate checkpoint hold **184.843s**.
+- Manhattan interrupted at returned Silvio Roberto catalog/photo+known-page writes; run **d5acb08c** stays failed/incomplete/operator_source_update, four save events/no omissions. All80 returned owner products/children and385 known pages preserved through installation; Git bundle and private files retained. Installed **8/8 focused tests**, zero fail/skip,2.170427s; actual generated schema fixtures, full source485/root CI pass. No migrations or unrelated setting change.
+- Normal Black & White **Ushirika - Washed** product **a19ef868**, known **726d0f17**, seen23:15:42.130/saved53.360, exact new run5320c0a3/log/PID/source binding; metadata English-before-save-v1/source en/target en/original title+attrs/rawHTML/text retained. Read-only proof/no extra paid probe/crawl. Initial observer SELECT omittedsource_url; corrected binding retained with dated original. No whole-tier/error-free/market-certification claim.
+- Root committed reviewed Momos31/129/two fact rows/31content events/zero market changes and zero-change repeat. Independent23:18:58 read confirms25ko/6en,31products129variants, preserved all selected immutable source/ID/market fields and returned media/rawnotes. This observer executed no Momos DML. Preparation40requests28130input132852output includes9recoveries/118560reasoning;24prior responses reused. [Rollout report](docs/MAC_MINI_TRANSLATION_INSTALL_20261008.md)/[receipt](docs/mac-mini-translation-install-20261008.json). Canceled heartbeat stays paused; no new scans/deployments/purchases/migrations/monitors. Exact publication SHA, CI and pre/post review recorded in issue1/PR6.
+
+
 ## 2026-10-08 — Momos English review plan prepared, not applied
 
 - Exact candidate **d5362fe6f7859e955b7f0f3546c82bd8543742e2** prepared **31 products /129 variants /31 facts**, including **25 Korean title pairs**, from the private frozen snapshot. All translation gates passed. Eight focused translation/SQL tests and both candidate CI checks pass.
