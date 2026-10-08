@@ -645,10 +645,10 @@
           "name": "Taith Coffee"
         }
       ],
-      "status": "implemented_with_documented_catalog_blocker",
+      "status": "implemented_live_dry_run_passed",
       "evidence": "taith-live.json",
       "coffee_products": 33,
-      "note": "Verified visible subset: 33 coffees / 64 exact native GBP SKUs, including sold-out stock. Squarespace public JSON declares 187 collection items but returns 49 without a usable next-page cursor. Inventory remains incomplete; normal discovery fails closed and global absence reconciliation is disabled."
+      "note": "Complete published customer inventory verified: 49 public products / 33 coffees / 64 exact native GBP SKUs. Native JSON, published frontend records, rendered IDs and sitemap agree; configured pageSize 999 covers declared itemCount 187. All coffee descriptions and primary-gallery image sources verified. A stale Magma thumbnail is replaced by the current native/gallery image. Global absence reconciliation remains disabled."
     },
     {
       "name": "Tanat",

@@ -1,0 +1,1073 @@
+{
+  "url": "https://taithcoffee.com/shop",
+  "listing": {
+    "website": {
+      "id": "62b053a90054ab18d94673b6"
+    },
+    "collection": {
+      "id": "62b05b82973de96d399c5e83",
+      "itemCount": 187,
+      "pageSize": 999
+    },
+    "nestedCategories": {
+      "categories": [
+        {
+          "id": "62b09e2d187fc259cb29224d",
+          "fullUrl": "/shop/coffee",
+          "fullSlug": "/coffee",
+          "shortSlug": "coffee",
+          "displayName": "Coffee",
+          "description": "",
+          "children": [
+            {
+              "id": "67d454ca9a20977cc608952f",
+              "fullUrl": "/shop/coffee/origin",
+              "fullSlug": "/coffee/origin",
+              "shortSlug": "origin",
+              "displayName": "Origin",
+              "description": "",
+              "children": [
+                {
+                  "id": "6ac4c4babdcf616077340f1c",
+                  "fullUrl": "/shop/coffee/origin/hondur",
+                  "fullSlug": "/coffee/origin/hondur",
+                  "shortSlug": "hondur",
+                  "displayName": "honduras",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "6a803aeeff809d595ff1875d",
+                  "fullUrl": "/shop/coffee/origin/indonesia",
+                  "fullSlug": "/coffee/origin/indonesia",
+                  "shortSlug": "indonesia",
+                  "displayName": "Indonesia",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "6a803257452f993158f02496",
+                  "fullUrl": "/shop/coffee/origin/guatemala",
+                  "fullSlug": "/coffee/origin/guatemala",
+                  "shortSlug": "guatemala",
+                  "displayName": "Guatemala",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "691f686434b75339dd4d348f",
+                  "fullUrl": "/shop/coffee/origin/uganda",
+                  "fullSlug": "/coffee/origin/uganda",
+                  "shortSlug": "uganda",
+                  "displayName": "Uganda",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "68e379aa1afa60613d1b83cf",
+                  "fullUrl": "/shop/coffee/origin/india",
+                  "fullSlug": "/coffee/origin/india",
+                  "shortSlug": "india",
+                  "displayName": "India",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "68c0075abb187f4ec7c6e957",
+                  "fullUrl": "/shop/coffee/origin/yemen",
+                  "fullSlug": "/coffee/origin/yemen",
+                  "shortSlug": "yemen",
+                  "displayName": "Yemen",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "685bf6432eea6715dcba3771",
+                  "fullUrl": "/shop/coffee/origin/burundi",
+                  "fullSlug": "/coffee/origin/burundi",
+                  "shortSlug": "burundi",
+                  "displayName": "Burundi",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "685183da0a63794fee8e9f85",
+                  "fullUrl": "/shop/coffee/origin/tanzania",
+                  "fullSlug": "/coffee/origin/tanzania",
+                  "shortSlug": "tanzania",
+                  "displayName": "Tanzania",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67fd6874f3195006a25f4f5b",
+                  "fullUrl": "/shop/coffee/origin/china",
+                  "fullSlug": "/coffee/origin/china",
+                  "shortSlug": "china",
+                  "displayName": "china",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "682b29342c1c894833e71140",
+                  "fullUrl": "/shop/coffee/origin/peru",
+                  "fullSlug": "/coffee/origin/peru",
+                  "shortSlug": "peru",
+                  "displayName": "Peru",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d45c3932dd7a4c710aed71",
+                  "fullUrl": "/shop/coffee/origin/ecuador",
+                  "fullSlug": "/coffee/origin/ecuador",
+                  "shortSlug": "ecuador",
+                  "displayName": "Ecuador",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d4599bb8f32226f0bc32e9",
+                  "fullUrl": "/shop/coffee/origin/rwanda",
+                  "fullSlug": "/coffee/origin/rwanda",
+                  "shortSlug": "rwanda",
+                  "displayName": "Rwanda",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d4598ab8f32226f0bc32cc",
+                  "fullUrl": "/shop/coffee/origin/panama",
+                  "fullSlug": "/coffee/origin/panama",
+                  "shortSlug": "panama",
+                  "displayName": "Panama",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d45985ab754663f48c9e18",
+                  "fullUrl": "/shop/coffee/origin/brazil",
+                  "fullSlug": "/coffee/origin/brazil",
+                  "shortSlug": "brazil",
+                  "displayName": "Brazil",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d4596d32dd7a4c710aea0a",
+                  "fullUrl": "/shop/coffee/origin/costa-rica",
+                  "fullSlug": "/coffee/origin/costa-rica",
+                  "shortSlug": "costa-rica",
+                  "displayName": "Costa Rica",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d45967b8f32226f0bc329a",
+                  "fullUrl": "/shop/coffee/origin/sumatra",
+                  "fullSlug": "/coffee/origin/sumatra",
+                  "shortSlug": "sumatra",
+                  "displayName": "Sumatra",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d45961b8f32226f0bc3295",
+                  "fullUrl": "/shop/coffee/origin/ethiopia",
+                  "fullSlug": "/coffee/origin/ethiopia",
+                  "shortSlug": "ethiopia",
+                  "displayName": "Ethiopia",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d4595c32dd7a4c710ae9f6",
+                  "fullUrl": "/shop/coffee/origin/colombia",
+                  "fullSlug": "/coffee/origin/colombia",
+                  "shortSlug": "colombia",
+                  "displayName": "Colombia",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d45955b8f32226f0bc3288",
+                  "fullUrl": "/shop/coffee/origin/kenya",
+                  "fullSlug": "/coffee/origin/kenya",
+                  "shortSlug": "kenya",
+                  "displayName": "Kenya",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                }
+              ],
+              "active": false
+            },
+            {
+              "id": "67d454bcb8f32226f0bc2d43",
+              "fullUrl": "/shop/coffee/process",
+              "fullSlug": "/coffee/process",
+              "shortSlug": "process",
+              "displayName": "Process",
+              "description": "",
+              "children": [
+                {
+                  "id": "67d45b459a20977cc6089cac",
+                  "fullUrl": "/shop/coffee/process/decaf",
+                  "fullSlug": "/coffee/process/decaf",
+                  "shortSlug": "decaf",
+                  "displayName": "Decaf",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d45a369a20977cc6089b8a",
+                  "fullUrl": "/shop/coffee/process/honey",
+                  "fullSlug": "/coffee/process/honey",
+                  "shortSlug": "honey",
+                  "displayName": "Honey",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d459089a20977cc6089a23",
+                  "fullUrl": "/shop/coffee/process/culturing",
+                  "fullSlug": "/coffee/process/culturing",
+                  "shortSlug": "culturing",
+                  "displayName": "Culturing",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d4590332dd7a4c710ae9a2",
+                  "fullUrl": "/shop/coffee/process/advanced-process",
+                  "fullSlug": "/coffee/process/advanced-process",
+                  "shortSlug": "advanced-process",
+                  "displayName": "Advanced Process",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d454aaab754663f48c98c5",
+                  "fullUrl": "/shop/coffee/process/natural",
+                  "fullSlug": "/coffee/process/natural",
+                  "shortSlug": "natural",
+                  "displayName": "Natural",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                },
+                {
+                  "id": "67d454b132dd7a4c710ae4c0",
+                  "fullUrl": "/shop/coffee/process/washed",
+                  "fullSlug": "/coffee/process/washed",
+                  "shortSlug": "washed",
+                  "displayName": "Washed",
+                  "description": "",
+                  "children": [],
+                  "active": false
+                }
+              ],
+              "active": false
+            }
+          ],
+          "active": false
+        }
+      ]
+    },
+    "items": [
+      {
+        "id": "6ac4c23402acf35de8622f87",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4598ab8f32226f0bc32cc",
+          "67d45a369a20977cc6089b8a"
+        ],
+        "title": "Finca Lerida • Honey Waterfall • SL-34 • Panama",
+        "fullUrl": "/shop/p/wilderlazo-natural-geisha-colombia-972kn-4ep8s-nz6cz",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6ac4c14f2b55044c9b1f5f98",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "Long Miles Farm Ninga Hill Farm • Natural • Red Bourbon  • Burundi",
+        "fullUrl": "/shop/p/wilderlazo-natural-geisha-colombia-972kn-4ep8s-jd8xj",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6ac4bcb78b49c27cb785ff3d",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "CGLE La Esperanza • Natural • Java  • Colombia",
+        "fullUrl": "/shop/p/wilderlazo-natural-geisha-colombia-972kn-xmghn",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6ac4bb18774804459d2ec67f",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "6ac4c4babdcf616077340f1c",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Cup of Excellence El Mango • Washed • SL-28 • Honduras",
+        "fullUrl": "/shop/p/cup-of-excellence-el-mango-washed-sl-28-honduras",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6ac4b9db51a2154d0ca832e2",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4595c32dd7a4c710ae9f6",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "El Paraiso • Washed Lacto Fermentation • Papayo  • Colombia",
+        "fullUrl": "/shop/p/wilderlazo-natural-geisha-colombia-972kn-26tdn",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6ac4af1f6cb960734790f7a5",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "Duwancho • Natural • 74110/741112  • Ethiopia",
+        "fullUrl": "/shop/p/wilderlazo-natural-geisha-colombia-972kn-s6kdj",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6aa8e79d0a333b59e8b6ff9e",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4595c32dd7a4c710ae9f6",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Edinson Argote • Washed Yeast Inoculation • Sidra  • Colombia",
+        "fullUrl": "/shop/p/edinson-argote-washed-yeast-inoculation-sidra-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6aa82bae196ee9163f8b1341",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4598ab8f32226f0bc32cc",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Bambito • Washed • Caturra Catuai  • Panama",
+        "fullUrl": "/shop/p/bambito-washed-caturra-catuai-panama",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6aa82a43a398fd610d9811b8",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "CGLE Potosi • Natural • Mandela  • Colombia",
+        "fullUrl": "/shop/p/cgle-potosi-natural-mandela-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6aa8288a4306e760fbca463c",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4595c32dd7a4c710ae9f6",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "El Oasis • Washed • Geisha  • Colombia",
+        "fullUrl": "/shop/p/el-oasis-washed-geisha-colombiabia-972kn-6jzbn",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a95db6bff487d0e326a01d6",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d45a369a20977cc6089b8a",
+          "67d45961b8f32226f0bc3295"
+        ],
+        "title": "Gesha Village 26/E-04 • Anaerobic Honey • Illubabor Forest • Ethiopia",
+        "fullUrl": "/shop/p/gesha-village-26/e-04-anaerobic-honey-illubabor-forest-ethiopia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a95da1c8c597e656d1e43d2",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4595c32dd7a4c710ae9f6",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Chorro Alto • Washed + Thermal Shock • Caturra Chiroso • Colombia",
+        "fullUrl": "/shop/p/wilderlazo-natural-geisha-colombia-972kn-b3f3b",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a95d8a725524b4a702895b6",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d45985ab754663f48c9e18"
+        ],
+        "title": "Aracaçau • Natural Aerobic Fermentation • Arara • Brazil",
+        "fullUrl": "/shop/p/aracaau-natural-aerobic-fermentation-arara-brazil",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a803b7eb451c742c29fb403",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "Quebraditas • Natural • SL-28  • Colombia",
+        "fullUrl": "/shop/p/quebraditas-natural-sl-28-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a8030b8110d906f324979a8",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "6a803257452f993158f02496",
+          "67d45a369a20977cc6089b8a"
+        ],
+        "title": "Finca Gascon • Black Honey • Caturra • Guatemala",
+        "fullUrl": "/shop/p/finca-gascon-black-honey-caturra-guatemala",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a802df6b264104f03b3814e",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4598ab8f32226f0bc32cc",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Corpachi • Washed • ET47 • Panama 200g",
+        "fullUrl": "/shop/p/corpachi-washed-et47-panama",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a77262867351664a16dbf30",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d45a369a20977cc6089b8a",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "Sebastian Ramirez • Black Honey • Wush Wush  • Colombia",
+        "fullUrl": "/shop/p/el-placer-black-honey-wush-wush-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a7468d879a0244329326417",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4598ab8f32226f0bc32cc",
+          "67d45a369a20977cc6089b8a"
+        ],
+        "title": "Magma • Honey • Geisha  • Panama 100g",
+        "fullUrl": "/shop/p/magma-honey-geisha-panama-100g",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a5d1f5ff1765c60b4910bf6",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "685bf6432eea6715dcba3771",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Long Miles Auction •  Ninga Hill • Yeast Fermentation Fully Washed • Red Bourbon • Burundi",
+        "fullUrl": "/shop/p/ninga-hill-yeast-fermentation-fully-washed-red-bourbon-burundi",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a5d163d359c865eb3b9c7d6",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "68e379aa1afa60613d1b83cf",
+          "67d454aaab754663f48c98c5"
+        ],
+        "title": "Gems of Araku 1st Place •  Transforming Young Lives • Natural • Selection 9  • India",
+        "fullUrl": "/shop/p/gems-of-araku-transforming-young-lives-natural-selection-9-india",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a4e6b7a81fd5911be85d2c4",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "Las Margaritas • Natural • Geisha  • Colombia 100g",
+        "fullUrl": "/shop/p/las-margaritas-natural-geisha-colombia-100g",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a43defacd14a751b864301e",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4595c32dd7a4c710ae9f6",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Las Margaritas • Washed • Geisha  • Colombia 100g",
+        "fullUrl": "/shop/p/las-margaritas-washed-geisha-colombia-100g",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a3f9326dd06b257a53da081",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4598ab8f32226f0bc32cc",
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "Blackmoon Chiroso Anaerobic Natural Panama 100g",
+        "fullUrl": "/shop/p/blackmoon-chiroso-anaerobic-natural-panama-100g",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a3f9102fdf9fa6a91b5be8a",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "El Paraiso • Zeo Process • Geisha • Colombia 100g",
+        "fullUrl": "/shop/p/el-paraiso-zeo-process-geisha-colombia-100g",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a3579d91e132d56b354e86c",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4595c32dd7a4c710ae9f6",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Lychee Peach • Washed Yeast Fermentation (yellow Fruits) • Castillo • Colombia",
+        "fullUrl": "/shop/p/lychee-peach-washed-yeast-fermentation-yellow-fruits-castillo-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a3578a0915b2b584be0a6ff",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "682b29342c1c894833e71140",
+          "67d45a369a20977cc6089b8a"
+        ],
+        "title": "Mi Reyna • Honey • Geisha • Peru",
+        "fullUrl": "/shop/p/mi-reyna-honey-geisha-peru",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a357001bbaef61d5bb35cb9",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4598ab8f32226f0bc32cc",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Barú Black Mountain • Washed • Geisha • Panama 100g",
+        "fullUrl": "/shop/p/bar-black-mountain-anaerobic-natural-chiroso-panama-100g",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "69f9e6fe776b770dcbbeb4a2",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d454aaab754663f48c98c5",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "Wilder Lazo • Natural • Geisha • Colombia",
+        "fullUrl": "/shop/p/wilder-lazo-natural-geisha-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6a32cc302df28c276bfd9625",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b05b82973de96d399c5e90"
+        ],
+        "title": "Taith Reserve 100g - Monthly",
+        "fullUrl": "/shop/p/taith-reserve-100gs-monthly",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": true
+        }
+      },
+      {
+        "id": "6a185654e42b913f38ed0b7f",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d4590332dd7a4c710ae9a2",
+          "67d4595c32dd7a4c710ae9f6",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Henry Bonilla • Advanced Washed Co-Ferment • Pink Bourbon • Colombia",
+        "fullUrl": "/shop/p/henry-bonilla-advanced-washed-co-ferment-pink-bourbon-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "69f9e58c056142580c959ded",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "685183da0a63794fee8e9f85",
+          "67d454b132dd7a4c710ae4c0"
+        ],
+        "title": "Ngila Estate • Washed • Geisha • Tanzania",
+        "fullUrl": "/shop/p/ngila-estate-washed-geisha-tanzania",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6964e8dbed60e810be96dc3d",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "6a803257452f993158f02496",
+          "67d454aaab754663f48c98c5"
+        ],
+        "title": "Santa Irene • Natural • Geisha • Guatemala",
+        "fullUrl": "/shop/p/santa-irene-natural-geisha-guatemala",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "68f7eccbf72e156750ab9eb6",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09e2d187fc259cb29224d"
+        ],
+        "title": "Bekele Yutute • Anaerobic Natural  • Local Landraces • Ethiopia",
+        "fullUrl": "/shop/p/bekele-yutute-anaerobic-natural-local-landraces-ethiopia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6820a352623510610e70a0aa",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "67d45b459a20977cc6089cac",
+          "67d4595c32dd7a4c710ae9f6"
+        ],
+        "title": "De La Tierra Washed Decaf • Washed Decaf  • Castillo • Colombia",
+        "fullUrl": "/shop/p/de-la-tierra-washed-decaf-washed-decaf-castillo-colombia",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6813484a4bbb2150bba35a20",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09db0e3b7012db5f073e8"
+        ],
+        "title": "Dandelions by Thea Lenarduzzi",
+        "fullUrl": "/shop/p/dandelions-by-thea-lenarduzzi",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "68134c0500209541303c87cc",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09db0e3b7012db5f073e8"
+        ],
+        "title": "the cemetery of the untold stories by Julia Alvarez",
+        "fullUrl": "/shop/p/the-cemetery-of-the-untold-stories-by-julia-alvarez",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "6756fb658da7d078c9f41e83",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09c202bf64c78d1002285"
+        ],
+        "title": "Fellow Aiden Precision Coffee Maker",
+        "fullUrl": "/shop/p/aiden-precision-coffee-maker",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "68134cd700209541303c8845",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09db0e3b7012db5f073e8"
+        ],
+        "title": "A perfect cemetery by Federico Falco",
+        "fullUrl": "/shop/p/a-perfect-cemetery-by-federico-falco",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "65d5b043c6e98031460add16",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09c202bf64c78d1002285"
+        ],
+        "title": "Sibarist Espresso Filters pack",
+        "fullUrl": "/shop/p/pndml5r7guk72ho8p64jgdj7we631r",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "68134a938099fc548e78be83",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09db0e3b7012db5f073e8"
+        ],
+        "title": "Time of the Flies by Claudia Pineiro",
+        "fullUrl": "/shop/p/time-of-the-flies-by-claudia-pineiro",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "65c9281909e4b37cfc135c8c",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09c202bf64c78d1002285"
+        ],
+        "title": "Sibarist B3 Specialty Medium Coffee Filters",
+        "fullUrl": "/shop/p/bwierzhk6xe13lcxyzo5ia647rnbq7",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "65c4ebde09e4b37cfc1108ef",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09c202bf64c78d1002285"
+        ],
+        "title": "Sibarist Booster",
+        "fullUrl": "/shop/p/q6zfafe8o29miy8ts93eqdus05guhx",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "68135c778099fc548e78cf11",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b05b82973de96d399c5e90"
+        ],
+        "title": "Deceit by Yuri Felsen",
+        "fullUrl": "/shop/p/deceit-by-yuri-felsen",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "655b8f8730827b393c22c674",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b05b82973de96d399c5e90"
+        ],
+        "title": "Gift Voucher! (ONLINE USE ONLY)",
+        "fullUrl": "/shop/p/giftvoucher",
+        "structuredContent": {
+          "productType": 4,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "642401f172a94026f783a5b2",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09c202bf64c78d1002285"
+        ],
+        "title": "Felicita Square-S Pour Over Kettle",
+        "fullUrl": "/shop/p/felicita-square-s-pour-over-kettle",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "68134a3100209541303c868f",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b05b82973de96d399c5e90"
+        ],
+        "title": "Elena Knows by Claudia Pineiro",
+        "fullUrl": "/shop/p/elena-knows-by-claudia-pineiro",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "681346c68099fc548e78bc48",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "62b09db0e3b7012db5f073e8"
+        ],
+        "title": "Minor Details by Adania Shibli",
+        "fullUrl": "/shop/p/minor-details-by-adania-shibli",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "648091eafc8ced3227cc5f6c",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "65dc9f8f1bf1e64be7025e1b",
+          "65dc9f298003e06bdb349e0d"
+        ],
+        "title": "WALID RAAD - I Long To Meet The Masses Once Again",
+        "fullUrl": "/shop/p/walid-raad-i-long-to-meet-the-masses-once-again",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      },
+      {
+        "id": "646e0a9302a94266da79bcec",
+        "collectionId": "62b05b82973de96d399c5e83",
+        "recordType": 11,
+        "workflowState": 1,
+        "categoryIds": [
+          "65dc9f8f1bf1e64be7025e1b"
+        ],
+        "title": "BENJAMIN WURSTER - Leafy House Plants",
+        "fullUrl": "/shop/p/benjamin-wurster-leafy-house-plants",
+        "structuredContent": {
+          "productType": 1,
+          "isSubscribable": false
+        }
+      }
+    ]
+  },
+  "html": "<div data-controller=\"ProductList\" data-context=\"{&quot;collectionId&quot;:&quot;62b05b82973de96d399c5e83&quot;,&quot;collectionContext&quot;:{&quot;id&quot;:&quot;62b05b82973de96d399c5e83&quot;,&quot;websiteId&quot;:&quot;62b053a90054ab18d94673b6&quot;,&quot;title&quot;:&quot;Taith Marketplace&quot;,&quot;fullUrl&quot;:&quot;/shop&quot;},&quot;items&quot;:[{&quot;id&quot;:&quot;6ac4c23402acf35de8622f87&quot;,&quot;title&quot;:&quot;Finca Lerida • Honey Waterfall • SL-34 • Panama&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/wilderlazo-natural-geisha-colombia-972kn-4ep8s-nz6cz&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6ac4c14f2b55044c9b1f5f98&quot;,&quot;title&quot;:&quot;Long Miles Farm Ninga Hill Farm • Natural • Red Bourbon  • Burundi&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/wilderlazo-natural-geisha-colombia-972kn-4ep8s-jd8xj&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6ac4bcb78b49c27cb785ff3d&quot;,&quot;title&quot;:&quot;CGLE La Esperanza • Natural • Java  • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/wilderlazo-natural-geisha-colombia-972kn-xmghn&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6ac4bb18774804459d2ec67f&quot;,&quot;title&quot;:&quot;Cup of Excellence El Mango • Washed • SL-28 • Honduras&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/cup-of-excellence-el-mango-washed-sl-28-honduras&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6ac4b9db51a2154d0ca832e2&quot;,&quot;title&quot;:&quot;El Paraiso • Washed Lacto Fermentation • Papayo  • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/wilderlazo-natural-geisha-colombia-972kn-26tdn&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6ac4af1f6cb960734790f7a5&quot;,&quot;title&quot;:&quot;Duwancho • Natural • 74110/741112  • Ethiopia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/wilderlazo-natural-geisha-colombia-972kn-s6kdj&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6aa8e79d0a333b59e8b6ff9e&quot;,&quot;title&quot;:&quot;Edinson Argote • Washed Yeast Inoculation • Sidra  • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/edinson-argote-washed-yeast-inoculation-sidra-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6aa82bae196ee9163f8b1341&quot;,&quot;title&quot;:&quot;Bambito • Washed • Caturra Catuai  • Panama&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/bambito-washed-caturra-catuai-panama&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6aa82a43a398fd610d9811b8&quot;,&quot;title&quot;:&quot;CGLE Potosi • Natural • Mandela  • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/cgle-potosi-natural-mandela-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6aa8288a4306e760fbca463c&quot;,&quot;title&quot;:&quot;El Oasis • Washed • Geisha  • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/el-oasis-washed-geisha-colombiabia-972kn-6jzbn&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a95db6bff487d0e326a01d6&quot;,&quot;title&quot;:&quot;Gesha Village 26/E-04 • Anaerobic Honey • Illubabor Forest • Ethiopia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/gesha-village-26/e-04-anaerobic-honey-illubabor-forest-ethiopia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a95da1c8c597e656d1e43d2&quot;,&quot;title&quot;:&quot;Chorro Alto • Washed + Thermal Shock • Caturra Chiroso • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/wilderlazo-natural-geisha-colombia-972kn-b3f3b&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a95d8a725524b4a702895b6&quot;,&quot;title&quot;:&quot;Aracaçau • Natural Aerobic Fermentation • Arara • Brazil&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/aracaau-natural-aerobic-fermentation-arara-brazil&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a803b7eb451c742c29fb403&quot;,&quot;title&quot;:&quot;Quebraditas • Natural • SL-28  • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/quebraditas-natural-sl-28-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a8030b8110d906f324979a8&quot;,&quot;title&quot;:&quot;Finca Gascon • Black Honey • Caturra • Guatemala&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/finca-gascon-black-honey-caturra-guatemala&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a802df6b264104f03b3814e&quot;,&quot;title&quot;:&quot;Corpachi • Washed • ET47 • Panama 200g&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/corpachi-washed-et47-panama&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a77262867351664a16dbf30&quot;,&quot;title&quot;:&quot;Sebastian Ramirez • Black Honey • Wush Wush  • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/el-placer-black-honey-wush-wush-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a7468d879a0244329326417&quot;,&quot;title&quot;:&quot;Magma • Honey • Geisha  • Panama 100g&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/magma-honey-geisha-panama-100g&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a5d1f5ff1765c60b4910bf6&quot;,&quot;title&quot;:&quot;Long Miles Auction •  Ninga Hill • Yeast Fermentation Fully Washed • Red Bourbon • Burundi&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/ninga-hill-yeast-fermentation-fully-washed-red-bourbon-burundi&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a5d163d359c865eb3b9c7d6&quot;,&quot;title&quot;:&quot;Gems of Araku 1st Place •  Transforming Young Lives • Natural • Selection 9  • India&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/gems-of-araku-transforming-young-lives-natural-selection-9-india&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a4e6b7a81fd5911be85d2c4&quot;,&quot;title&quot;:&quot;Las Margaritas • Natural • Geisha  • Colombia 100g&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/las-margaritas-natural-geisha-colombia-100g&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a43defacd14a751b864301e&quot;,&quot;title&quot;:&quot;Las Margaritas • Washed • Geisha  • Colombia 100g&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/las-margaritas-washed-geisha-colombia-100g&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a3f9326dd06b257a53da081&quot;,&quot;title&quot;:&quot;Blackmoon Chiroso Anaerobic Natural Panama 100g&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/blackmoon-chiroso-anaerobic-natural-panama-100g&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a3f9102fdf9fa6a91b5be8a&quot;,&quot;title&quot;:&quot;El Paraiso • Zeo Process • Geisha • Colombia 100g&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/el-paraiso-zeo-process-geisha-colombia-100g&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a3579d91e132d56b354e86c&quot;,&quot;title&quot;:&quot;Lychee Peach • Washed Yeast Fermentation (yellow Fruits) • Castillo • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/lychee-peach-washed-yeast-fermentation-yellow-fruits-castillo-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a3578a0915b2b584be0a6ff&quot;,&quot;title&quot;:&quot;Mi Reyna • Honey • Geisha • Peru&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/mi-reyna-honey-geisha-peru&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a357001bbaef61d5bb35cb9&quot;,&quot;title&quot;:&quot;Barú Black Mountain • Washed • Geisha • Panama 100g&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/bar-black-mountain-anaerobic-natural-chiroso-panama-100g&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;69f9e6fe776b770dcbbeb4a2&quot;,&quot;title&quot;:&quot;Wilder Lazo • Natural • Geisha • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/wilder-lazo-natural-geisha-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a32cc302df28c276bfd9625&quot;,&quot;title&quot;:&quot;Taith Reserve 100g - Monthly&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/taith-reserve-100gs-monthly&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6a185654e42b913f38ed0b7f&quot;,&quot;title&quot;:&quot;Henry Bonilla • Advanced Washed Co-Ferment • Pink Bourbon • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/henry-bonilla-advanced-washed-co-ferment-pink-bourbon-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;69f9e58c056142580c959ded&quot;,&quot;title&quot;:&quot;Ngila Estate • Washed • Geisha • Tanzania&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/ngila-estate-washed-geisha-tanzania&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6964e8dbed60e810be96dc3d&quot;,&quot;title&quot;:&quot;Santa Irene • Natural • Geisha • Guatemala&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/santa-irene-natural-geisha-guatemala&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;68f7eccbf72e156750ab9eb6&quot;,&quot;title&quot;:&quot;Bekele Yutute • Anaerobic Natural  • Local Landraces • Ethiopia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/bekele-yutute-anaerobic-natural-local-landraces-ethiopia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6820a352623510610e70a0aa&quot;,&quot;title&quot;:&quot;De La Tierra Washed Decaf • Washed Decaf  • Castillo • Colombia&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/de-la-tierra-washed-decaf-washed-decaf-castillo-colombia&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6813484a4bbb2150bba35a20&quot;,&quot;title&quot;:&quot;Dandelions by Thea Lenarduzzi&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/dandelions-by-thea-lenarduzzi&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;68134c0500209541303c87cc&quot;,&quot;title&quot;:&quot;the cemetery of the untold stories by Julia Alvarez&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/the-cemetery-of-the-untold-stories-by-julia-alvarez&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;6756fb658da7d078c9f41e83&quot;,&quot;title&quot;:&quot;Fellow Aiden Precision Coffee Maker&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/aiden-precision-coffee-maker&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;68134cd700209541303c8845&quot;,&quot;title&quot;:&quot;A perfect cemetery by Federico Falco&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/a-perfect-cemetery-by-federico-falco&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;65d5b043c6e98031460add16&quot;,&quot;title&quot;:&quot;Sibarist Espresso Filters pack&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/pndml5r7guk72ho8p64jgdj7we631r&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;68134a938099fc548e78be83&quot;,&quot;title&quot;:&quot;Time of the Flies by Claudia Pineiro&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/time-of-the-flies-by-claudia-pineiro&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;65c9281909e4b37cfc135c8c&quot;,&quot;title&quot;:&quot;Sibarist B3 Specialty Medium Coffee Filters&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/bwierzhk6xe13lcxyzo5ia647rnbq7&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;65c4ebde09e4b37cfc1108ef&quot;,&quot;title&quot;:&quot;Sibarist Booster&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/q6zfafe8o29miy8ts93eqdus05guhx&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;68135c778099fc548e78cf11&quot;,&quot;title&quot;:&quot;Deceit by Yuri Felsen&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/deceit-by-yuri-felsen&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;655b8f8730827b393c22c674&quot;,&quot;title&quot;:&quot;Gift Voucher! (ONLINE USE ONLY)&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/giftvoucher&quot;,&quot;productType&quot;:4},{&quot;id&quot;:&quot;642401f172a94026f783a5b2&quot;,&quot;title&quot;:&quot;Felicita Square-S Pour Over Kettle&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/felicita-square-s-pour-over-kettle&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;68134a3100209541303c868f&quot;,&quot;title&quot;:&quot;Elena Knows by Claudia Pineiro&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/elena-knows-by-claudia-pineiro&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;681346c68099fc548e78bc48&quot;,&quot;title&quot;:&quot;Minor Details by Adania Shibli&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/minor-details-by-adania-shibli&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;648091eafc8ced3227cc5f6c&quot;,&quot;title&quot;:&quot;WALID RAAD - I Long To Meet The Masses Once Again&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/walid-raad-i-long-to-meet-the-masses-once-again&quot;,&quot;productType&quot;:1},{&quot;id&quot;:&quot;646e0a9302a94266da79bcec&quot;,&quot;title&quot;:&quot;BENJAMIN WURSTER - Leafy House Plants&quot;,&quot;published&quot;:true,&quot;fullUrl&quot;:&quot;/shop/p/benjamin-wurster-leafy-house-plants&quot;,&quot;productType&quot;:1}]}\"><div class=\"product-list-item\" data-product-id=\"6ac4c23402acf35de8622f87\"><a class=\"product-list-item-link\" href=\"/shop/p/wilderlazo-natural-geisha-colombia-972kn-4ep8s-nz6cz\"></a></div><div class=\"product-list-item\" data-product-id=\"6ac4c14f2b55044c9b1f5f98\"><a class=\"product-list-item-link\" href=\"/shop/p/wilderlazo-natural-geisha-colombia-972kn-4ep8s-jd8xj\"></a></div><div class=\"product-list-item\" data-product-id=\"6ac4bcb78b49c27cb785ff3d\"><a class=\"product-list-item-link\" href=\"/shop/p/wilderlazo-natural-geisha-colombia-972kn-xmghn\"></a></div><div class=\"product-list-item\" data-product-id=\"6ac4bb18774804459d2ec67f\"><a class=\"product-list-item-link\" href=\"/shop/p/cup-of-excellence-el-mango-washed-sl-28-honduras\"></a></div><div class=\"product-list-item\" data-product-id=\"6ac4b9db51a2154d0ca832e2\"><a class=\"product-list-item-link\" href=\"/shop/p/wilderlazo-natural-geisha-colombia-972kn-26tdn\"></a></div><div class=\"product-list-item\" data-product-id=\"6ac4af1f6cb960734790f7a5\"><a class=\"product-list-item-link\" href=\"/shop/p/wilderlazo-natural-geisha-colombia-972kn-s6kdj\"></a></div><div class=\"product-list-item\" data-product-id=\"6aa8e79d0a333b59e8b6ff9e\"><a class=\"product-list-item-link\" href=\"/shop/p/edinson-argote-washed-yeast-inoculation-sidra-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"6aa82bae196ee9163f8b1341\"><a class=\"product-list-item-link\" href=\"/shop/p/bambito-washed-caturra-catuai-panama\"></a></div><div class=\"product-list-item\" data-product-id=\"6aa82a43a398fd610d9811b8\"><a class=\"product-list-item-link\" href=\"/shop/p/cgle-potosi-natural-mandela-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"6aa8288a4306e760fbca463c\"><a class=\"product-list-item-link\" href=\"/shop/p/el-oasis-washed-geisha-colombiabia-972kn-6jzbn\"></a></div><div class=\"product-list-item\" data-product-id=\"6a95db6bff487d0e326a01d6\"><a class=\"product-list-item-link\" href=\"/shop/p/gesha-village-26/e-04-anaerobic-honey-illubabor-forest-ethiopia\"></a></div><div class=\"product-list-item\" data-product-id=\"6a95da1c8c597e656d1e43d2\"><a class=\"product-list-item-link\" href=\"/shop/p/wilderlazo-natural-geisha-colombia-972kn-b3f3b\"></a></div><div class=\"product-list-item\" data-product-id=\"6a95d8a725524b4a702895b6\"><a class=\"product-list-item-link\" href=\"/shop/p/aracaau-natural-aerobic-fermentation-arara-brazil\"></a></div><div class=\"product-list-item\" data-product-id=\"6a803b7eb451c742c29fb403\"><a class=\"product-list-item-link\" href=\"/shop/p/quebraditas-natural-sl-28-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"6a8030b8110d906f324979a8\"><a class=\"product-list-item-link\" href=\"/shop/p/finca-gascon-black-honey-caturra-guatemala\"></a></div><div class=\"product-list-item\" data-product-id=\"6a802df6b264104f03b3814e\"><a class=\"product-list-item-link\" href=\"/shop/p/corpachi-washed-et47-panama\"></a></div><div class=\"product-list-item\" data-product-id=\"6a77262867351664a16dbf30\"><a class=\"product-list-item-link\" href=\"/shop/p/el-placer-black-honey-wush-wush-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"6a7468d879a0244329326417\"><a class=\"product-list-item-link\" href=\"/shop/p/magma-honey-geisha-panama-100g\"></a></div><div class=\"product-list-item\" data-product-id=\"6a5d1f5ff1765c60b4910bf6\"><a class=\"product-list-item-link\" href=\"/shop/p/ninga-hill-yeast-fermentation-fully-washed-red-bourbon-burundi\"></a></div><div class=\"product-list-item\" data-product-id=\"6a5d163d359c865eb3b9c7d6\"><a class=\"product-list-item-link\" href=\"/shop/p/gems-of-araku-transforming-young-lives-natural-selection-9-india\"></a></div><div class=\"product-list-item\" data-product-id=\"6a4e6b7a81fd5911be85d2c4\"><a class=\"product-list-item-link\" href=\"/shop/p/las-margaritas-natural-geisha-colombia-100g\"></a></div><div class=\"product-list-item\" data-product-id=\"6a43defacd14a751b864301e\"><a class=\"product-list-item-link\" href=\"/shop/p/las-margaritas-washed-geisha-colombia-100g\"></a></div><div class=\"product-list-item\" data-product-id=\"6a3f9326dd06b257a53da081\"><a class=\"product-list-item-link\" href=\"/shop/p/blackmoon-chiroso-anaerobic-natural-panama-100g\"></a></div><div class=\"product-list-item\" data-product-id=\"6a3f9102fdf9fa6a91b5be8a\"><a class=\"product-list-item-link\" href=\"/shop/p/el-paraiso-zeo-process-geisha-colombia-100g\"></a></div><div class=\"product-list-item\" data-product-id=\"6a3579d91e132d56b354e86c\"><a class=\"product-list-item-link\" href=\"/shop/p/lychee-peach-washed-yeast-fermentation-yellow-fruits-castillo-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"6a3578a0915b2b584be0a6ff\"><a class=\"product-list-item-link\" href=\"/shop/p/mi-reyna-honey-geisha-peru\"></a></div><div class=\"product-list-item\" data-product-id=\"6a357001bbaef61d5bb35cb9\"><a class=\"product-list-item-link\" href=\"/shop/p/bar-black-mountain-anaerobic-natural-chiroso-panama-100g\"></a></div><div class=\"product-list-item\" data-product-id=\"69f9e6fe776b770dcbbeb4a2\"><a class=\"product-list-item-link\" href=\"/shop/p/wilder-lazo-natural-geisha-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"6a32cc302df28c276bfd9625\"><a class=\"product-list-item-link\" href=\"/shop/p/taith-reserve-100gs-monthly\"></a></div><div class=\"product-list-item\" data-product-id=\"6a185654e42b913f38ed0b7f\"><a class=\"product-list-item-link\" href=\"/shop/p/henry-bonilla-advanced-washed-co-ferment-pink-bourbon-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"69f9e58c056142580c959ded\"><a class=\"product-list-item-link\" href=\"/shop/p/ngila-estate-washed-geisha-tanzania\"></a></div><div class=\"product-list-item\" data-product-id=\"6964e8dbed60e810be96dc3d\"><a class=\"product-list-item-link\" href=\"/shop/p/santa-irene-natural-geisha-guatemala\"></a></div><div class=\"product-list-item\" data-product-id=\"68f7eccbf72e156750ab9eb6\"><a class=\"product-list-item-link\" href=\"/shop/p/bekele-yutute-anaerobic-natural-local-landraces-ethiopia\"></a></div><div class=\"product-list-item\" data-product-id=\"6820a352623510610e70a0aa\"><a class=\"product-list-item-link\" href=\"/shop/p/de-la-tierra-washed-decaf-washed-decaf-castillo-colombia\"></a></div><div class=\"product-list-item\" data-product-id=\"6813484a4bbb2150bba35a20\"><a class=\"product-list-item-link\" href=\"/shop/p/dandelions-by-thea-lenarduzzi\"></a></div><div class=\"product-list-item\" data-product-id=\"68134c0500209541303c87cc\"><a class=\"product-list-item-link\" href=\"/shop/p/the-cemetery-of-the-untold-stories-by-julia-alvarez\"></a></div><div class=\"product-list-item\" data-product-id=\"6756fb658da7d078c9f41e83\"><a class=\"product-list-item-link\" href=\"/shop/p/aiden-precision-coffee-maker\"></a></div><div class=\"product-list-item\" data-product-id=\"68134cd700209541303c8845\"><a class=\"product-list-item-link\" href=\"/shop/p/a-perfect-cemetery-by-federico-falco\"></a></div><div class=\"product-list-item\" data-product-id=\"65d5b043c6e98031460add16\"><a class=\"product-list-item-link\" href=\"/shop/p/pndml5r7guk72ho8p64jgdj7we631r\"></a></div><div class=\"product-list-item\" data-product-id=\"68134a938099fc548e78be83\"><a class=\"product-list-item-link\" href=\"/shop/p/time-of-the-flies-by-claudia-pineiro\"></a></div><div class=\"product-list-item\" data-product-id=\"65c9281909e4b37cfc135c8c\"><a class=\"product-list-item-link\" href=\"/shop/p/bwierzhk6xe13lcxyzo5ia647rnbq7\"></a></div><div class=\"product-list-item\" data-product-id=\"65c4ebde09e4b37cfc1108ef\"><a class=\"product-list-item-link\" href=\"/shop/p/q6zfafe8o29miy8ts93eqdus05guhx\"></a></div><div class=\"product-list-item\" data-product-id=\"68135c778099fc548e78cf11\"><a class=\"product-list-item-link\" href=\"/shop/p/deceit-by-yuri-felsen\"></a></div><div class=\"product-list-item\" data-product-id=\"655b8f8730827b393c22c674\"><a class=\"product-list-item-link\" href=\"/shop/p/giftvoucher\"></a></div><div class=\"product-list-item\" data-product-id=\"642401f172a94026f783a5b2\"><a class=\"product-list-item-link\" href=\"/shop/p/felicita-square-s-pour-over-kettle\"></a></div><div class=\"product-list-item\" data-product-id=\"68134a3100209541303c868f\"><a class=\"product-list-item-link\" href=\"/shop/p/elena-knows-by-claudia-pineiro\"></a></div><div class=\"product-list-item\" data-product-id=\"681346c68099fc548e78bc48\"><a class=\"product-list-item-link\" href=\"/shop/p/minor-details-by-adania-shibli\"></a></div><div class=\"product-list-item\" data-product-id=\"648091eafc8ced3227cc5f6c\"><a class=\"product-list-item-link\" href=\"/shop/p/walid-raad-i-long-to-meet-the-masses-once-again\"></a></div><div class=\"product-list-item\" data-product-id=\"646e0a9302a94266da79bcec\"><a class=\"product-list-item-link\" href=\"/shop/p/benjamin-wurster-leafy-house-plants\"></a></div></div>"
+}

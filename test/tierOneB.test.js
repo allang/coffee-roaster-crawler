@@ -266,7 +266,7 @@ test('Squarespace product evidence requires merchant, canonical page, taxonomy a
  for(const html of [f.html+f.html,f.html.replace(f.data.item.id,'aaaaaaaaaaaaaaaaaaaaaaaa'),f.html.replace(f.data.item.title,'Different coffee')])await assert.rejects(fetchSquarespaceProduct(html,f.url,profile,async()=>({success:true,data:JSON.stringify(f.data)})),/page identity/);
  await assert.rejects(fetchSquarespaceProduct(f.html,f.url,profile,async()=>({success:true,data:JSON.stringify(f.data),finalUrl:'https://another-owner.example/shop'})),/owner/);
 });
-test('Taith discovery documents the public count mismatch and never treats the visible subset as a complete inventory',async()=>{
+test('Taith discovery keeps an unproven count mismatch incomplete and rejects repeated or pending inventory pages',async()=>{
  const f=require('./fixtures/siteSupport/taith-squarespace.json'),profile=profiles.find(p=>p.name==='Taith'),{discoverSquarespaceProducts}=require('../src/siteSupport/squarespace');
  const read=data=>async()=>({success:true,data:JSON.stringify(data)}),roaster={website_url:'https://taithcoffee.com'};
  const result=await discoverSquarespaceProducts(roaster,profile,read(f.listing));assert.equal(result.complete,false);assert.equal(result.urls.length,33);assert.match(result.error,/49 returned \/ 187 declared/);assert.equal(result.inventory_authorizes_global_absence,false);
@@ -274,13 +274,31 @@ test('Taith discovery documents the public count mismatch and never treats the v
  const complete=structuredClone(f.listing);complete.collection.itemCount=complete.items.length;
  assert.equal((await discoverSquarespaceProducts(roaster,profile,read(complete))).complete,true);
  complete.pagination={nextPage:true};assert.equal((await discoverSquarespaceProducts(roaster,profile,read(complete))).complete,false);
- complete.items.push({...complete.items[0]});const repeated=await discoverSquarespaceProducts(roaster,profile,read(complete));assert.equal(repeated.complete,false);assert.match(repeated.error,/identity repeated/);
+ complete.items.push({...complete.items[0]});complete.collection.itemCount=complete.items.length;const repeated=await discoverSquarespaceProducts(roaster,profile,read(complete));assert.equal(repeated.complete,false);assert.match(repeated.error,/identity repeated/);
 });
 test('normal Squarespace page processing uses native variant evidence and stops on a public-source failure',async()=>{
  const f=require('./fixtures/siteSupport/taith-squarespace.json'),profile=profiles.find(p=>p.name==='Taith'),{fetchPageContent}=require('../src/pageVisitor');
  const read=async u=>({success:true,data:u===f.url?f.html:JSON.stringify(f.data),status:200,finalUrl:u});
  const page=await fetchPageContent(f.url,null,{siteProfile:profile,fetchHtml:read});assert.equal(page.success,true);assert.equal(page.sourceProduct.productID,f.data.item.id);assert.equal(page.sourceProduct._variants_complete,true);
  const failed=await fetchPageContent(f.url,null,{siteProfile:profile,fetchHtml:async u=>u===f.url?read(u):{success:false,error:'HTTP 503'}});assert.equal(failed.success,false);assert.match(failed.error,/503/);
+});
+test('Taith primary gallery uses current native item images instead of a stale thumbnail or recommendations',async()=>{
+ const f=require('./fixtures/siteSupport/taith-squarespace.json'),profile=profiles.find(p=>p.name==='Taith'),{fetchSquarespaceProduct}=require('../src/siteSupport/squarespace'),data=structuredClone(f.data),current=data.item.assetUrl;
+ data.item.items=[{assetUrl:current}];data.item.assetUrl=current.replace(/\/[^/]+$/,'/stale-thumbnail.jpg');
+ const html=f.html.replace('</article>','<img class="product-gallery-slides-item-image" data-src="'+current+'"><aside class="recommendations"><img class="product-gallery-slides-item-image" data-src="https://other.example/another-coffee.jpg"></aside></article>');
+ const read=async()=>({success:true,data:JSON.stringify(data)});assert.equal((await fetchSquarespaceProduct(html,f.url,profile,read)).image,current);
+ const mismatched=html.replace(current,'https://other.example/foreign.jpg');await assert.rejects(fetchSquarespaceProduct(mismatched,f.url,profile,read),/primary image/);
+ const foreign=structuredClone(data);foreign.item.items[0].assetUrl='https://other.example/foreign.jpg';await assert.rejects(fetchSquarespaceProduct(f.html,f.url,profile,async()=>({success:true,data:JSON.stringify(foreign)})),/image owner/);
+});
+test('captured Taith published customer inventory requires an uncapped page and exact native, frontend and rendered identities',async()=>{
+ const f=require('./fixtures/siteSupport/taith-storefront.json'),profile=profiles.find(p=>p.name==='Taith'),{discoverSquarespaceProducts}=require('../src/siteSupport/squarespace'),roaster={website_url:f.url};
+ const read=(listing=f.listing,html=f.html)=>async u=>({success:true,data:new URL(u).searchParams.get('format')==='json'?JSON.stringify(listing):html,status:200,finalUrl:u});
+ const result=await discoverSquarespaceProducts(roaster,profile,read());assert.equal(result.complete,true);assert.equal(result.urls.length,33);assert.equal(result.inventory_authorizes_global_absence,false);assert.deepEqual(result.evidence.at(-1),{listing:f.url,published_items:49,configured_page_size:999,native_frontend_and_rendered_identities_match:true,inventory_scope:'published_storefront'});
+ for(const change of [d=>d.collection.pageSize=40,d=>delete d.collection.pageSize,d=>d.pagination={nextPage:true},d=>d.pagination={pageSize:20},d=>d.items[0].workflowState=3,d=>d.collection.itemCount=48]){const listing=structuredClone(f.listing);change(listing);assert.equal((await discoverSquarespaceProducts(roaster,profile,read(listing))).complete,false);}
+ const cheerio=require('cheerio');
+ for(const change of [c=>c.collectionContext.websiteId='other-owner',c=>c.collectionId='other-collection',c=>c.collectionContext.fullUrl='/another-shop',c=>c.items[0].published=false,c=>c.items[0].title='Another product',c=>c.items[0].fullUrl='/shop/p/another-product',c=>c.items.pop(),c=>c.items[0]=c.items[1],c=>c.hasMore=true]){const $=cheerio.load(f.html),root=$('[data-controller="ProductList"]'),context=JSON.parse(root.attr('data-context'));change(context);root.attr('data-context',JSON.stringify(context));assert.equal((await discoverSquarespaceProducts(roaster,profile,read(f.listing,$.html()))).complete,false);}
+ for(const change of [$=>$('.product-list-item').first().remove(),$=>$('.product-list-item').first().attr('data-product-id',$('.product-list-item').last().attr('data-product-id')),$=>$('.product-list-item-link').first().attr('href','/shop/p/another-product'),$=>$('[data-controller="ProductList"]').after($('[data-controller="ProductList"]').clone())]){const $=cheerio.load(f.html);change($);assert.equal((await discoverSquarespaceProducts(roaster,profile,read(f.listing,$.html()))).complete,false);}
+ const failed=await discoverSquarespaceProducts(roaster,profile,async u=>new URL(u).search?read()(u):{success:false,error:'HTTP 503'});assert.equal(failed.complete,false);assert.match(failed.error,/503/);
 });
 test('WooCommerce and Squarespace sources adopt existing product IDs and slugs with idempotent exact variant saves',async()=>{
  const {catalogDb,supabaseAdapter}=require('./catalogDb'),{catalogPayload,findExistingProduct,productSourceKey}=require('../src/productSaver'),{canonicalProductUrl}=require('../src/catalogNormalization');
