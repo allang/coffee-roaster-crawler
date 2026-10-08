@@ -1,0 +1,1140 @@
+{
+  "checked_at": "2026-10-08T07:43:07.353Z",
+  "name": ".txt",
+  "status": "blocked",
+  "mode": "public-read-only-follow-up",
+  "parent_compatibility_commit": "a2449c63d7795d2692cf5ab0069b61e9ac1dbb54",
+  "merchant_identity": {
+    "primary_registration": [
+      "288-07-00706"
+    ],
+    "english_registration": [
+      "288-07-00706"
+    ],
+    "matching_owner": true,
+    "official_domestic_link": true,
+    "official_english_link_host": true
+  },
+  "domestic": {
+    "url": "https://smartstore.naver.com/txtcoffee",
+    "status": 429,
+    "error": "HTTP 429",
+    "inventory_complete": false,
+    "access_controls_bypassed": false
+  },
+  "english": {
+    "url": "https://txtcoffeeen.imweb.me/",
+    "scope": "Product links published on the official English homepage",
+    "published_product_links": 9,
+    "coffee_products": 7,
+    "excluded": [
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=190",
+        "title": ".txt Pencil",
+        "product_code": "s201809305bb0c5bb629c1",
+        "reason": "Non-coffee stationery"
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=191",
+        "title": ".txt Memo Pad",
+        "product_code": "s201809305bb0da446aa56",
+        "reason": "Non-coffee stationery"
+      }
+    ],
+    "coffees": [
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+        "index": 207,
+        "product_code": "s20260717b4233092c4221",
+        "site_code": "S201809265bab93e020b92",
+        "unit_code": "u2025091568c79f6d083ba",
+        "title": "Melting Blend",
+        "base_price": 10,
+        "currency": "USD",
+        "required_options": 2,
+        "edited_at": 1787129219,
+        "is_soldout": true,
+        "schema_stock": "http://schema.org/OutOfStock",
+        "description_present": true,
+        "image_present": true,
+        "initial": {
+          "response_fields": [
+            "max_member_quantity",
+            "max_prod_quantity",
+            "maximum_purchase_quantity_type",
+            "msg",
+            "option_html",
+            "optional_limit",
+            "optional_limit_type",
+            "options_hash",
+            "prod_name",
+            "prod_price"
+          ],
+          "active_unit_price": 10,
+          "active_unit_currency": "USD",
+          "other_unit_prices_not_used": 1,
+          "unused_unit_prices": [
+            {
+              "unit_code": "u201809265bab93e02c7bd",
+              "amount": 13000,
+              "currency": null,
+              "used_for_prices": false
+            }
+          ],
+          "dimensions": [
+            {
+              "label": "Type *",
+              "native_option_id": "O202607171591bd85be394"
+            },
+            {
+              "label": "Net weight *",
+              "native_option_id": "O20260717d35ec16c82353"
+            }
+          ],
+          "groups": [
+            "Type *",
+            "Net weight *"
+          ],
+          "rows": [
+            {
+              "label": "Filter",
+              "blocked": true,
+              "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607170105af2781a52', 'Filter',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+              "native_option_id": "O202607171591bd85be394",
+              "native_value_id": "O202607170105af2781a52"
+            },
+            {
+              "label": "Espresso",
+              "blocked": true,
+              "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607171622da333b5ed', 'Espresso',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+              "native_option_id": "O202607171591bd85be394",
+              "native_value_id": "O202607171622da333b5ed"
+            }
+          ],
+          "native_combination_ids": [],
+          "option_hash": {
+            "type": "string",
+            "length": 40
+          },
+          "complete_priced_variant_identity": false
+        },
+        "dependent": [
+          {
+            "selected_label": "Filter",
+            "selected": {
+              "option_id": "O202607171591bd85be394",
+              "value_id": "O202607170105af2781a52"
+            },
+            "response_fields": [
+              "max_member_quantity",
+              "max_prod_quantity",
+              "maximum_purchase_quantity_type",
+              "msg",
+              "option_html",
+              "optional_limit",
+              "optional_limit_type",
+              "options_hash",
+              "prod_name",
+              "prod_price"
+            ],
+            "active_unit_price": 10,
+            "active_unit_currency": "USD",
+            "other_unit_prices_not_used": 1,
+            "unused_unit_prices": [
+              {
+                "unit_code": "u201809265bab93e02c7bd",
+                "amount": 13000,
+                "currency": null,
+                "used_for_prices": false
+              }
+            ],
+            "dimensions": [
+              {
+                "label": "Type *",
+                "native_option_id": "O202607171591bd85be394"
+              },
+              {
+                "label": "Net weight *",
+                "native_option_id": "O20260717d35ec16c82353"
+              }
+            ],
+            "groups": [
+              "Type *",
+              "Net weight *"
+            ],
+            "rows": [
+              {
+                "label": "Filter",
+                "blocked": true,
+                "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607170105af2781a52', 'Filter',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+                "native_option_id": "O202607171591bd85be394",
+                "native_value_id": "O202607170105af2781a52"
+              },
+              {
+                "label": "Espresso",
+                "blocked": true,
+                "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607171622da333b5ed', 'Espresso',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+                "native_option_id": "O202607171591bd85be394",
+                "native_value_id": "O202607171622da333b5ed"
+              },
+              {
+                "label": "150g $10.00 (Out of stock)",
+                "blocked": true,
+                "selector": "return false;",
+                "native_option_id": null,
+                "native_value_id": null
+              },
+              {
+                "label": "400g $18.00 (Out of stock)",
+                "blocked": true,
+                "selector": "return false;",
+                "native_option_id": null,
+                "native_value_id": null
+              },
+              {
+                "label": "850g $34.00 (Out of stock)",
+                "blocked": true,
+                "selector": "return false;",
+                "native_option_id": null,
+                "native_value_id": null
+              }
+            ],
+            "native_combination_ids": [],
+            "option_hash": {
+              "type": "string",
+              "length": 40
+            },
+            "complete_priced_variant_identity": false
+          },
+          {
+            "selected_label": "Espresso",
+            "selected": {
+              "option_id": "O202607171591bd85be394",
+              "value_id": "O202607171622da333b5ed"
+            },
+            "response_fields": [
+              "max_member_quantity",
+              "max_prod_quantity",
+              "maximum_purchase_quantity_type",
+              "msg",
+              "option_html",
+              "optional_limit",
+              "optional_limit_type",
+              "options_hash",
+              "prod_name",
+              "prod_price"
+            ],
+            "active_unit_price": 10,
+            "active_unit_currency": "USD",
+            "other_unit_prices_not_used": 1,
+            "unused_unit_prices": [
+              {
+                "unit_code": "u201809265bab93e02c7bd",
+                "amount": 13000,
+                "currency": null,
+                "used_for_prices": false
+              }
+            ],
+            "dimensions": [
+              {
+                "label": "Type *",
+                "native_option_id": "O202607171591bd85be394"
+              },
+              {
+                "label": "Net weight *",
+                "native_option_id": "O20260717d35ec16c82353"
+              }
+            ],
+            "groups": [
+              "Type *",
+              "Net weight *"
+            ],
+            "rows": [
+              {
+                "label": "Filter",
+                "blocked": true,
+                "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607170105af2781a52', 'Filter',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+                "native_option_id": "O202607171591bd85be394",
+                "native_value_id": "O202607170105af2781a52"
+              },
+              {
+                "label": "Espresso",
+                "blocked": true,
+                "selector": "SITE_SHOP_DETAIL.selectRequireOption('prod', 207,'O202607171591bd85be394', 'O202607171622da333b5ed', 'Espresso',function(){ SITE_SHOP_DETAIL.updateSelectedOptions('prod'); })",
+                "native_option_id": "O202607171591bd85be394",
+                "native_value_id": "O202607171622da333b5ed"
+              },
+              {
+                "label": "150g $10.00 (Out of stock)",
+                "blocked": true,
+                "selector": "return false;",
+                "native_option_id": null,
+                "native_value_id": null
+              },
+              {
+                "label": "400g $18.00 (Out of stock)",
+                "blocked": true,
+                "selector": "return false;",
+                "native_option_id": null,
+                "native_value_id": null
+              },
+              {
+                "label": "850g $34.00 (Out of stock)",
+                "blocked": true,
+                "selector": "return false;",
+                "native_option_id": null,
+                "native_value_id": null
+              }
+            ],
+            "native_combination_ids": [],
+            "option_hash": {
+              "type": "string",
+              "length": 40
+            },
+            "complete_priced_variant_identity": false
+          }
+        ],
+        "exact_complete_native_variants_verified": false
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=182",
+        "index": 182,
+        "product_code": "s201809285bade00dec890",
+        "site_code": "S201809265bab93e020b92",
+        "unit_code": "u2025091568c79f6d083ba",
+        "title": "Ethiopia Arbegona",
+        "base_price": 12,
+        "currency": "USD",
+        "required_options": 1,
+        "edited_at": 1779859309,
+        "is_soldout": true,
+        "schema_stock": "http://schema.org/OutOfStock",
+        "description_present": true,
+        "image_present": true,
+        "initial": {
+          "response_fields": [
+            "max_member_quantity",
+            "max_prod_quantity",
+            "maximum_purchase_quantity_type",
+            "msg",
+            "option_html",
+            "optional_limit",
+            "optional_limit_type",
+            "options_hash",
+            "prod_name",
+            "prod_price"
+          ],
+          "active_unit_price": 12,
+          "active_unit_currency": "USD",
+          "other_unit_prices_not_used": 1,
+          "unused_unit_prices": [
+            {
+              "unit_code": "u201809265bab93e02c7bd",
+              "amount": 15000,
+              "currency": null,
+              "used_for_prices": false
+            }
+          ],
+          "dimensions": [
+            {
+              "label": "용량 *",
+              "native_option_id": "O202003215e7592431d61b"
+            }
+          ],
+          "groups": [
+            "용량 *"
+          ],
+          "rows": [
+            {
+              "label": "150g $12.00 (Out of stock)",
+              "blocked": true,
+              "selector": null,
+              "native_option_id": null,
+              "native_value_id": null
+            }
+          ],
+          "native_combination_ids": [],
+          "option_hash": {
+            "type": "string",
+            "length": 40
+          },
+          "complete_priced_variant_identity": false
+        },
+        "dependent": [],
+        "exact_complete_native_variants_verified": false
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=180",
+        "index": 180,
+        "product_code": "s201809275bacc98d5f798",
+        "site_code": "S201809265bab93e020b92",
+        "unit_code": "u2025091568c79f6d083ba",
+        "title": "Ethiopia Karamo Bura AH",
+        "base_price": 20,
+        "currency": "USD",
+        "required_options": 1,
+        "edited_at": 1787129190,
+        "is_soldout": true,
+        "schema_stock": "http://schema.org/OutOfStock",
+        "description_present": true,
+        "image_present": true,
+        "initial": {
+          "response_fields": [
+            "max_member_quantity",
+            "max_prod_quantity",
+            "maximum_purchase_quantity_type",
+            "msg",
+            "option_html",
+            "optional_limit",
+            "optional_limit_type",
+            "options_hash",
+            "prod_name",
+            "prod_price"
+          ],
+          "active_unit_price": 20,
+          "active_unit_currency": "USD",
+          "other_unit_prices_not_used": 1,
+          "unused_unit_prices": [
+            {
+              "unit_code": "u201809265bab93e02c7bd",
+              "amount": 22000,
+              "currency": null,
+              "used_for_prices": false
+            }
+          ],
+          "dimensions": [
+            {
+              "label": "용량 *",
+              "native_option_id": "O201809275bacc8627302b"
+            }
+          ],
+          "groups": [
+            "용량 *"
+          ],
+          "rows": [
+            {
+              "label": "150g $20.00 (Out of stock)",
+              "blocked": true,
+              "selector": "return false;",
+              "native_option_id": null,
+              "native_value_id": null
+            }
+          ],
+          "native_combination_ids": [],
+          "option_hash": {
+            "type": "string",
+            "length": 40
+          },
+          "complete_priced_variant_identity": false
+        },
+        "dependent": [],
+        "exact_complete_native_variants_verified": false
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=184",
+        "index": 184,
+        "product_code": "s201809285bade2f766ea8",
+        "site_code": "S201809265bab93e020b92",
+        "unit_code": "u2025091568c79f6d083ba",
+        "title": "Colombia El Obraje Geisha",
+        "base_price": 20,
+        "currency": "USD",
+        "required_options": 1,
+        "edited_at": 1785134876,
+        "is_soldout": true,
+        "schema_stock": "http://schema.org/OutOfStock",
+        "description_present": true,
+        "image_present": true,
+        "initial": {
+          "response_fields": [
+            "max_member_quantity",
+            "max_prod_quantity",
+            "maximum_purchase_quantity_type",
+            "msg",
+            "option_html",
+            "optional_limit",
+            "optional_limit_type",
+            "options_hash",
+            "prod_name",
+            "prod_price"
+          ],
+          "active_unit_price": 20,
+          "active_unit_currency": "USD",
+          "other_unit_prices_not_used": 1,
+          "unused_unit_prices": [
+            {
+              "unit_code": "u201809265bab93e02c7bd",
+              "amount": 24000,
+              "currency": null,
+              "used_for_prices": false
+            }
+          ],
+          "dimensions": [
+            {
+              "label": "용량 *",
+              "native_option_id": "O202003215e759282169c0"
+            }
+          ],
+          "groups": [
+            "용량 *"
+          ],
+          "rows": [
+            {
+              "label": "105g $20.00 (Out of stock)",
+              "blocked": true,
+              "selector": null,
+              "native_option_id": null,
+              "native_value_id": null
+            }
+          ],
+          "native_combination_ids": [],
+          "option_hash": {
+            "type": "string",
+            "length": 40
+          },
+          "complete_priced_variant_identity": false
+        },
+        "dependent": [],
+        "exact_complete_native_variants_verified": false
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=183",
+        "index": 183,
+        "product_code": "s201809285bade24d832f7",
+        "site_code": "S201809265bab93e020b92",
+        "unit_code": "u2025091568c79f6d083ba",
+        "title": "Panama Chevas Fresa Geisha YN",
+        "base_price": 26,
+        "currency": "USD",
+        "required_options": 1,
+        "edited_at": 1785134880,
+        "is_soldout": true,
+        "schema_stock": "http://schema.org/OutOfStock",
+        "description_present": true,
+        "image_present": true,
+        "initial": {
+          "response_fields": [
+            "max_member_quantity",
+            "max_prod_quantity",
+            "maximum_purchase_quantity_type",
+            "msg",
+            "option_html",
+            "optional_limit",
+            "optional_limit_type",
+            "options_hash",
+            "prod_name",
+            "prod_price"
+          ],
+          "active_unit_price": 26,
+          "active_unit_currency": "USD",
+          "other_unit_prices_not_used": 1,
+          "unused_unit_prices": [
+            {
+              "unit_code": "u201809265bab93e02c7bd",
+              "amount": 35000,
+              "currency": null,
+              "used_for_prices": false
+            }
+          ],
+          "dimensions": [
+            {
+              "label": "용량 *",
+              "native_option_id": "O201809275bacc8627302b"
+            }
+          ],
+          "groups": [
+            "용량 *"
+          ],
+          "rows": [
+            {
+              "label": "60g $26.00 (Out of stock)",
+              "blocked": true,
+              "selector": "return false;",
+              "native_option_id": null,
+              "native_value_id": null
+            }
+          ],
+          "native_combination_ids": [],
+          "option_hash": {
+            "type": "string",
+            "length": 40
+          },
+          "complete_priced_variant_identity": false
+        },
+        "dependent": [],
+        "exact_complete_native_variants_verified": false
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=181",
+        "index": 181,
+        "product_code": "s201809285baddf165dcf8",
+        "site_code": "S201809265bab93e020b92",
+        "unit_code": "u2025091568c79f6d083ba",
+        "title": "Panama Adaura Lorayne Geisha HW",
+        "base_price": 26,
+        "currency": "USD",
+        "required_options": 1,
+        "edited_at": 1786085680,
+        "is_soldout": true,
+        "schema_stock": "http://schema.org/OutOfStock",
+        "description_present": true,
+        "image_present": true,
+        "initial": {
+          "response_fields": [
+            "max_member_quantity",
+            "max_prod_quantity",
+            "maximum_purchase_quantity_type",
+            "msg",
+            "option_html",
+            "optional_limit",
+            "optional_limit_type",
+            "options_hash",
+            "prod_name",
+            "prod_price"
+          ],
+          "active_unit_price": 26,
+          "active_unit_currency": "USD",
+          "other_unit_prices_not_used": 1,
+          "unused_unit_prices": [
+            {
+              "unit_code": "u201809265bab93e02c7bd",
+              "amount": 35000,
+              "currency": null,
+              "used_for_prices": false
+            }
+          ],
+          "dimensions": [
+            {
+              "label": "용량 *",
+              "native_option_id": "O201809275bacc8627302b"
+            }
+          ],
+          "groups": [
+            "용량 *"
+          ],
+          "rows": [
+            {
+              "label": "60g $26.00 (Out of stock)",
+              "blocked": true,
+              "selector": "return false;",
+              "native_option_id": null,
+              "native_value_id": null
+            }
+          ],
+          "native_combination_ids": [],
+          "option_hash": {
+            "type": "string",
+            "length": 40
+          },
+          "complete_priced_variant_identity": false
+        },
+        "dependent": [],
+        "exact_complete_native_variants_verified": false
+      },
+      {
+        "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=202",
+        "index": 202,
+        "product_code": "s20250210cd2290c6f82db",
+        "site_code": "S201809265bab93e020b92",
+        "unit_code": "u2025091568c79f6d083ba",
+        "title": "Drip Bags 15g x 6 (Melting Blend)",
+        "base_price": 12,
+        "currency": "USD",
+        "required_options": 1,
+        "edited_at": 1787129224,
+        "is_soldout": true,
+        "schema_stock": "http://schema.org/OutOfStock",
+        "description_present": true,
+        "image_present": true,
+        "initial": {
+          "response_fields": [
+            "max_member_quantity",
+            "max_prod_quantity",
+            "maximum_purchase_quantity_type",
+            "msg",
+            "option_html",
+            "optional_limit",
+            "optional_limit_type",
+            "options_hash",
+            "prod_name",
+            "prod_price"
+          ],
+          "active_unit_price": 12,
+          "active_unit_currency": "USD",
+          "other_unit_prices_not_used": 1,
+          "unused_unit_prices": [
+            {
+              "unit_code": "u201809265bab93e02c7bd",
+              "amount": 15000,
+              "currency": null,
+              "used_for_prices": false
+            }
+          ],
+          "dimensions": [
+            {
+              "label": "용량 *",
+              "native_option_id": "O202003215e7592431d61b"
+            }
+          ],
+          "groups": [
+            "용량 *"
+          ],
+          "rows": [
+            {
+              "label": "1박스(6개입) $12.00 (Out of stock)",
+              "blocked": true,
+              "selector": null,
+              "native_option_id": null,
+              "native_value_id": null
+            }
+          ],
+          "native_combination_ids": [],
+          "option_hash": {
+            "type": "string",
+            "length": 40
+          },
+          "complete_priced_variant_identity": false
+        },
+        "dependent": [],
+        "exact_complete_native_variants_verified": false
+      }
+    ],
+    "inventory_authorizes_global_absence": false,
+    "korean_inventory_equivalence_verified": false,
+    "complete_native_variants_verified": false
+  },
+  "javascript_evidence": [
+    {
+      "url": "https://txtcoffeeen.imweb.me/js/site_shop/site_shop.js?1791369969",
+      "sha256": "ce65951897db709482acfc3d573f4303638cc0abb28646ea05e56175cfaa4d90",
+      "public_option_lookup_published": true,
+      "native_oms_product_path_published": false,
+      "merchant_scripts_executed": false
+    }
+  ],
+  "errors": [],
+  "blockers": [
+    "Official Korean inventory is unavailable to the guarded public reader; no complete domestic scope is established.",
+    "Published English option responses omit native value IDs for sold-out size rows and expose no native priced combination IDs. An opaque option hash does not supply those identities."
+  ],
+  "next_required_external_input": [
+    "A merchant-published public option matrix or export for the English storefront with stable product and variant/combination IDs, dimension option/value IDs, paired prices/currencies, stock and a complete published listing scope.",
+    "Accessible official Korean public inventory or an authoritative merchant feed/export identifying the domestic market; English data cannot establish domestic completeness or absence."
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://txtcoffee.kr/",
+      "status": 200,
+      "at": "2026-10-08T07:42:49.532Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://smartstore.naver.com/txtcoffee",
+      "status": 429,
+      "at": "2026-10-08T07:42:50.795Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/",
+      "status": 200,
+      "at": "2026-10-08T07:42:51.465Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/js/site_shop/site_shop.js?1791369969",
+      "status": 200,
+      "at": "2026-10-08T07:42:52.626Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=207",
+      "status": 200,
+      "at": "2026-10-08T07:42:53.128Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:42:53.857Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "207",
+        "__": "1787129219"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:42:54.359Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "207",
+        "__": "1787129219",
+        "selected_require_options[0][value_type]": "SELECT",
+        "selected_require_options[0][option_code]": "O202607171591bd85be394",
+        "selected_require_options[0][value_code]": "O202607170105af2781a52"
+      }
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:42:54.862Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "207",
+        "__": "1787129219",
+        "selected_require_options[0][value_type]": "SELECT",
+        "selected_require_options[0][option_code]": "O202607171591bd85be394",
+        "selected_require_options[0][value_code]": "O202607171622da333b5ed"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=182",
+      "status": 200,
+      "at": "2026-10-08T07:42:55.365Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:42:56.561Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "182",
+        "__": "1779859309"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=180",
+      "status": 200,
+      "at": "2026-10-08T07:42:57.063Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:42:58.204Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "180",
+        "__": "1787129190"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=184",
+      "status": 200,
+      "at": "2026-10-08T07:42:58.707Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:42:59.580Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "184",
+        "__": "1785134876"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=183",
+      "status": 200,
+      "at": "2026-10-08T07:43:00.082Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:43:01.218Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "183",
+        "__": "1785134880"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=181",
+      "status": 200,
+      "at": "2026-10-08T07:43:01.720Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:43:02.507Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "181",
+        "__": "1786085680"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=202",
+      "status": 200,
+      "at": "2026-10-08T07:43:03.009Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://txtcoffeeen.imweb.me/shop/load_option.cm",
+      "status": 200,
+      "at": "2026-10-08T07:43:04.372Z",
+      "purpose": "public_product_options",
+      "body": {
+        "type": "prod",
+        "prod_idx": "202",
+        "__": "1787129224"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=190",
+      "status": 200,
+      "at": "2026-10-08T07:43:04.925Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://txtcoffeeen.imweb.me/shop_view/?idx=191",
+      "status": 200,
+      "at": "2026-10-08T07:43:06.176Z"
+    }
+  ],
+  "production_writes": 0,
+  "cart_order_customer_actions": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "runtime_profile_registered": false,
+  "reconcile_omissions": false,
+  "validation": {
+    "evidence_assertions_passed": true,
+    "english_product_ids_checked": 7,
+    "scoped_public_requests": 22,
+    "public_option_posts": 9,
+    "normal_runtime_source_changes": 0,
+    "inspection_only": true
+  },
+  "missing_native_value_identity": [
+    {
+      "product_index": 207,
+      "product_code": "s20260717b4233092c4221",
+      "dimensions": [
+        {
+          "label": "Type *",
+          "native_option_id": "O202607171591bd85be394"
+        },
+        {
+          "label": "Net weight *",
+          "native_option_id": "O20260717d35ec16c82353"
+        }
+      ],
+      "known_parent_choices": [
+        {
+          "option_id": "O202607171591bd85be394",
+          "value_id": "O202607170105af2781a52",
+          "label": "Filter"
+        },
+        {
+          "option_id": "O202607171591bd85be394",
+          "value_id": "O202607171622da333b5ed",
+          "label": "Espresso"
+        }
+      ],
+      "missing_values": [
+        {
+          "parent_choice": "Filter",
+          "rows": [
+            {
+              "published_label": "150g $10.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            },
+            {
+              "published_label": "400g $18.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            },
+            {
+              "published_label": "850g $34.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        },
+        {
+          "parent_choice": "Espresso",
+          "rows": [
+            {
+              "published_label": "150g $10.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            },
+            {
+              "published_label": "400g $18.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            },
+            {
+              "published_label": "850g $34.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_index": 182,
+      "product_code": "s201809285bade00dec890",
+      "dimensions": [
+        {
+          "label": "용량 *",
+          "native_option_id": "O202003215e7592431d61b"
+        }
+      ],
+      "known_parent_choices": [],
+      "missing_values": [
+        {
+          "parent_choice": null,
+          "rows": [
+            {
+              "published_label": "150g $12.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_index": 180,
+      "product_code": "s201809275bacc98d5f798",
+      "dimensions": [
+        {
+          "label": "용량 *",
+          "native_option_id": "O201809275bacc8627302b"
+        }
+      ],
+      "known_parent_choices": [],
+      "missing_values": [
+        {
+          "parent_choice": null,
+          "rows": [
+            {
+              "published_label": "150g $20.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_index": 184,
+      "product_code": "s201809285bade2f766ea8",
+      "dimensions": [
+        {
+          "label": "용량 *",
+          "native_option_id": "O202003215e759282169c0"
+        }
+      ],
+      "known_parent_choices": [],
+      "missing_values": [
+        {
+          "parent_choice": null,
+          "rows": [
+            {
+              "published_label": "105g $20.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_index": 183,
+      "product_code": "s201809285bade24d832f7",
+      "dimensions": [
+        {
+          "label": "용량 *",
+          "native_option_id": "O201809275bacc8627302b"
+        }
+      ],
+      "known_parent_choices": [],
+      "missing_values": [
+        {
+          "parent_choice": null,
+          "rows": [
+            {
+              "published_label": "60g $26.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_index": 181,
+      "product_code": "s201809285baddf165dcf8",
+      "dimensions": [
+        {
+          "label": "용량 *",
+          "native_option_id": "O201809275bacc8627302b"
+        }
+      ],
+      "known_parent_choices": [],
+      "missing_values": [
+        {
+          "parent_choice": null,
+          "rows": [
+            {
+              "published_label": "60g $26.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_index": 202,
+      "product_code": "s20250210cd2290c6f82db",
+      "dimensions": [
+        {
+          "label": "용량 *",
+          "native_option_id": "O202003215e7592431d61b"
+        }
+      ],
+      "known_parent_choices": [],
+      "missing_values": [
+        {
+          "parent_choice": null,
+          "rows": [
+            {
+              "published_label": "1박스(6개입) $12.00 (Out of stock)",
+              "native_value_id": null,
+              "native_priced_combination_id": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -18,7 +18,7 @@
         }
       ],
       "status": "blocked",
-      "evidence": "txt-blocked-live.json",
+      "evidence": "txt-followup-live.json",
       "coverage": {
         "all_time_coffees": 12,
         "seen_or_buyable_30d": 0,
@@ -29,10 +29,23 @@
         "null_sighting_timestamps": 0
       },
       "blockers": [
-        "Official Korean Naver retail inventory still returns HTTP 429.",
-        "English public option reads succeed, but sold-out dependent weight values omit native value identifiers (onclick return false). Exact priced variant identities cannot be reconstructed from anonymous size/price labels without invention.",
-        "Official English link and matching business registration establish merchant identity, not English/Korean inventory or product identity equivalence."
-      ]
+        "Fresh official Korean Naver read returns HTTP 429; complete domestic retail inventory is unavailable.",
+        "All seven published English coffees are sold out. Product codes and English USD base prices are verified, but size value IDs and exact priced native combinations are omitted from public option responses.",
+        "English active unit u2025091568c79f6d083ba is paired to USD by primary offers and native price-map entries; other unit prices remain unpaired and unused. No English/Korean inventory equivalence or global absence authority is established.",
+        "External input required: public native option/value and priced combination IDs with complete retail scope, or an authoritative merchant export; accessible official Korean inventory is separately required for domestic completeness."
+      ],
+      "followup_checked_at": "2026-10-08T07:43:07.353Z",
+      "verified_english_product_codes": [
+        "s20260717b4233092c4221",
+        "s201809285bade00dec890",
+        "s201809275bacc98d5f798",
+        "s201809285bade2f766ea8",
+        "s201809285bade24d832f7",
+        "s201809285baddf165dcf8",
+        "s20250210cd2290c6f82db"
+      ],
+      "english_native_variants_verified": false,
+      "domestic_inventory_complete": false
     },
     {
       "name": "Apiary",
