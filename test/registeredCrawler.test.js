@@ -19,7 +19,7 @@ function crawler(state) {
     './crawlRuns':{waitForCrawlAdmission:async()=>{},createCrawlRun:async()=>({id:'run'}),completeCrawlRun:async()=>{state.completed++;},failCrawlRun:async()=>{state.failed++;}},
     './bfsCrawler':{bfsCrawl:async()=>{state.bfs++;throw Error('BFS should not run');}},'./config':{config:{crawler:{requestDelayMs:0}}},'./logger':{createScopedLogger:()=>log},
     './availability':{reconcileRoasterAvailability:async options=>{state.reconciled++;state.reconcileOptions=options;await options.fetchPage(url);}},
-    './siteSupport/discovery':{profileFor:()=>({name:'Reviewed Merchant'}),discoverSiteProducts:async()=>state.discovery},'./siteSupport/network':{createReader:()=>reader},
+    './siteSupport/discovery':{profileFor:()=>({name:'Reviewed Merchant'}),discoverSiteProducts:async()=>state.discovery},'./siteSupport/network':{createReader:()=>reader},'./crawlTierPlan':require('../src/crawlTierPlan'),
   };
   const module={exports:{}},file=path.join(__dirname,'../src/crawler.js');
   vm.runInThisContext('(function(require,module,exports){'+fs.readFileSync(file,'utf8')+'\n})',{filename:file})(name=>{if(!(name in mocks))throw Error('Unexpected dependency: '+name);return mocks[name];},module,module.exports);
