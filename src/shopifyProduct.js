@@ -111,7 +111,7 @@ async function fetchShopifyProductJson(url, log = null, options={}) {
 
   if (!result.success) {
     logger.warn('ShopifyJSON', `Failed to fetch: ${jsonUrl}`, { error: result.error });
-    return { success: false, error: result.error };
+    return { ...result, success: false, error: result.error };
   }
 
   if (!result.data || !result.data.product) {

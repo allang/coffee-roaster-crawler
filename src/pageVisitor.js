@@ -22,6 +22,10 @@ async function fetchPageContent(url, referer = null, options = {}) {
       success: false,
       error: result.error,
       status: result.status,
+      retryStopped: result.retryStopped,
+      cooldown: result.cooldown,
+      merchantCooldownExceeded: result.merchantCooldownExceeded,
+      cooldownRecovery: result.cooldownRecovery,
     };
   }
 
@@ -120,7 +124,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
       options.observed?.set(canonicalProductUrl(url),availability);
       return {visited:true,classified:false,isCoffee:true,productId,availability,aiCalls:0};
     }
-    return {visited:true,classified:false,error:fetchResult.error,aiCalls:0};
+    return {visited:true,classified:false,error:fetchResult.error,status:fetchResult.status,retryStopped:fetchResult.retryStopped,cooldown:fetchResult.cooldown,merchantCooldownExceeded:fetchResult.merchantCooldownExceeded,cooldownRecovery:fetchResult.cooldownRecovery,aiCalls:0};
   }
   let shopifyJson=null;
   if((platform==='shopify' || options.siteProfile?.adapter==='shopify') && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
@@ -185,9 +189,10 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
     : 1;
   let nextIndex = 0;
   let stopForQuota = false;
+  let stopForMerchant = false;
 
   async function worker() {
-    while (!stopForQuota) {
+    while (!stopForQuota && !stopForMerchant) {
       const entryIndex = nextIndex++;
       if (entryIndex >= urls.length) {
         return;
@@ -201,6 +206,13 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
 
       if (result.error) {
         results.errors++;
+        const blocked=options.getMerchantCooldownFailure?.();
+        if(blocked)Object.assign(result,{merchantCooldownExceeded:true,cooldown:blocked.cooldown,cooldownRecovery:blocked.cooldownRecovery,retryStopped:blocked.retryStopped});
+        logger.error('Visitor','Page returned an error',{url,error:result.error,status:result.status,retryStopped:result.retryStopped,cooldown:result.cooldown,cooldownRecovery:result.cooldownRecovery});
+        if(result.merchantCooldownExceeded) {
+          stopForMerchant=true;
+          logger.warn('Visitor','Stopping merchant inventory after bounded cooldown recovery; remaining pages stay unverified');
+        }
         if (result.quotaExceeded) {
           stopForQuota = true;
           logger.error('Visitor', 'Stopping page classification because OpenAI quota is exhausted');
@@ -211,7 +223,7 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
         results.irrelevant++;
       }
 
-      if (!stopForQuota) {
+      if (!stopForQuota && !stopForMerchant) {
         await jitteredSleep(config.crawler.requestDelayMs);
       }
     }
@@ -219,6 +231,8 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
 
   const workerCount = Math.min(pageConcurrency, Math.max(1, urls.length));
   await Promise.all(Array.from({ length: workerCount }, () => worker()));
+
+  if(stopForMerchant) {results.deferredPages=Math.max(0,urls.length-results.visited);results.inventoryComplete=false;results.merchantCooldownExceeded=true;}
 
   return results;
 }

@@ -2,6 +2,13 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — reviewed cooldown source installed; full normal Passport run started
+
+- Exact main **99721e64fe8440e7cc3c68054c412fef5230c8a2** installed clean by local fast-forward; all existing Git/configuration/caches/catalog history preserved. Local **468 total/467 pass/zero fail/one explicit unavailable native PostgreSQL skip**, PGlite pass,11.060s. Scheduler resumed19:49:15.923/startup16.123 UTC,59.434s installation pause, launcher/lock59662/Node59674, one worker/original5400s schedule. Only NOMADd104e958-f346-436c-b1b8-bdfc35de7fd9 marked failed with real operator pause reason and retained checkpoint.
+- Fresh complete native collection preflight19:54:04: **255 coffees/528 coffeeSKUs/8 accessory subsets**, unchanged reviewed identity scope, all retained249products/516variants tested against actual v1 adoption/OLD globalweight guard, **zero conflicts/no known weight nulling**, exact owner/roaster role/no activePassport. Fresh SQL SELECT19:53:11 proves old globalweight and source-key unique indexes valid/ready; noDDL.
+- Started full NORMAL Passport at19:56:36.640 UTC, exact997 clean source, PID60576/session18288/run29d25480-cdac-4759-a63d-f5d3afad7cb1, fresh full255 discovery. Passive observer captures real retry headers, reader failures/waits/spacing/deferred/usage/saves; normal settings/onepage unchanged. Both omission guards false and eight incomplete subsets retained. Full terminal metrics/readback/performance conclusions pending.
+- Duplicate-admission guard found FAILED rows do not exclude Passport and the scheduler queue is already loaded. Temporarily SIGSTOP exactNode59674 preserving process/lock/in-flight Luminous row; controller SIGCONT resumes same worker on observer exit. No environment/plist/source/timer/cooldown/run-row edit; separate from59.434s installation pause. Preserve all failed receipts. [Report](docs/MAC_MINI_COOLDOWN_UPDATE_20261008.md), [receipt](docs/mac-mini-cooldown-update-20261008.json), [issue start](https://github.com/allang/coffee-roaster-crawler/issues/1#issuecomment-6067942316). All37 review surfaces checked; no new finding. No hosted deployment, migration, purchase or extra automation.
+
 ## 2026-10-08 — next Passport observer prepared; no activation
 
 - Audited actual C7 evidence: its final merchant wire record is503 at18:26:46.114 UTC, with no later merchant fetch. No historical headers, actual reader ledger or157 individual returned errors were retained. The separate18:32:07 diagnostic records503/Retry-After123 plus retryAfterMs/retryDelayMs123000 and diagnostic retry_limit; this is not C7's historical header. [Factual observation shape](docs/passport-c7-observation-shape-20261008.json).

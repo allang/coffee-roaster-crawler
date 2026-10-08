@@ -31,6 +31,8 @@ function installReaderObservation(network,{state,onChange=()=>{},redact=value=>v
       }catch(error){request.error=redact(error.message);throw error;}
     }});
     entry.requests=reader.requests;
+    entry.cooldown_events=reader.cooldownEvents||[];
+    entry.returned_errors=reader.returnedErrors||[];
     const fetchHtml=reader.fetchHtml;let journaledRequests=0;
     reader.fetchHtml=async(...args)=>{
       const observation={read_id:state.reader_results.length+1,reader_id:entry.reader_id,requested_url:String(args[0]),started_at:now(),result:null};state.reader_results.push(observation);

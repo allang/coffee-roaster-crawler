@@ -218,6 +218,28 @@ test('a complete regional September inventory does not reconcile global absence'
   assert.equal(reconciliations,authorize?1:0);
  }
 });
+test('deferred registered inventory never completes or reconciles absence, even if the error counter is zero',async()=>{
+ const fs=require('node:fs'),vm=require('node:vm'),{createRequire}=require('node:module'),path=require('node:path');
+ const file=path.join(__dirname,'../src/crawler.js'),nativeRequire=createRequire(file),url='https://september.coffee/en-us/products/coffee';
+ for(const errors of [0,1]) {
+  let completed=0,reconciled=0,failed=0,resuming=false;
+  const log=new Proxy({},{get:()=>()=>{}}),profile={...profiles.find(p=>p.name==='September'),inventory_authorizes_global_absence:true},noop=async()=>{};
+  const mock={
+   './supabase':{getSupabase:()=>{throw Error('No DB write allowed');}},'./logger':new Proxy({createScopedLogger:()=>log},{get:(t,k)=>t[k]||(()=>{})}),
+   './httpClient':{jitteredSleep:noop},'./config':{config:{crawler:{requestDelayMs:0}}},
+   './blacklist':{filterUrlsWithBlacklist:urls=>({passed:urls,blacklisted:[]})},
+   './knownPages':{getKnownPagesForEntity:async()=>new Map(),saveBlacklistedPages:noop},
+   './pageVisitor':{visitAllPages:async()=>({visited:1,coffeeFound:0,errors,deferredPages:1,inventoryComplete:false})},
+   './crawlRuns':{waitForCrawlAdmission:noop,createCrawlRun:async()=>({id:'deferred-run'}),completeCrawlRun:async()=>{completed++;},failCrawlRun:async()=>{failed++;}},
+   './availability':{reconcileRoasterAvailability:async()=>{reconciled++;}},
+   './siteSupport/discovery':{profileFor:()=>profile,discoverSiteProducts:async()=>({supported:true,complete:true,urls:[url]})},
+   './siteSupport/network':{createReader:(p,options)=>{resuming=options.resumeCooldowns;return{fetchHtml:async()=>({success:true,data:'Shopify',finalUrl:'https://september.coffee'})};}}
+  },module={exports:{}};
+  vm.runInThisContext('(function(require,module,exports){'+fs.readFileSync(file,'utf8')+'\n})',{filename:file})(name=>Object.hasOwn(mock,name)?mock[name]:nativeRequire(name),module,module.exports);
+  await assert.rejects(module.exports.crawlRoaster({id:profile.entity_ids[0],name:'September',website_url:'https://september.coffee'},[]),/deferred after merchant cooldown/);
+  assert.equal(resuming,true);assert.equal(completed,0);assert.equal(reconciled,0);assert.equal(failed,1);
+ }
+});
 test('registered Shopify endpoint rejects another primary handle and duplicate or unsafe native identities',async()=>{
  const f=require('./fixtures/siteSupport/assigned-shopify.json').find(f=>f.name==='Prodigal'),{fetchShopifyProductJson}=require('../src/shopifyProduct'),log=new Proxy({},{get:()=>()=>{}});
  for(const change of [p=>p.handle='other-coffee',p=>p.variants.push({...p.variants[0]}),p=>p.id=Number.MAX_SAFE_INTEGER+1]){
