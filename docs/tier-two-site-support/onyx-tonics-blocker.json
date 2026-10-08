@@ -30,5 +30,65 @@
     "location": "Burlington VT",
     "website_url": null,
     "role": "cafe only"
-  }
+  },
+  "fresh_checked_at": "2026-10-08T09:37:52.428Z",
+  "fresh_homepage_sha256": "0a744c184a2f58b5024e5e1358dafb7437e90d53d5afbf8f25642196e2265aac",
+  "fresh_catalog_readback": {
+    "id": "9106cd47-0112-4ee6-834b-fac38fe97374",
+    "name": "Onyx Tonics",
+    "slug": "onyx-tonics-osm-osm-node-6915495598",
+    "website_url": null,
+    "primary_location": "Burlington, VT, US",
+    "entity_roles": [
+      {
+        "role": "cafe"
+      }
+    ]
+  },
+  "fresh_sitemap": {
+    "checked_at": "2026-10-08T09:51:46.008Z",
+    "sitemap": {
+      "status": 200,
+      "urls": [
+        "https://www.onyxtonics.com/about",
+        "https://www.onyxtonics.com/contact",
+        "https://www.onyxtonics.com/press"
+      ],
+      "body_sha256": "e1152535ee7a65b6eb478d919bbabbf79f1553206e1c4d760487052f1722ad76"
+    },
+    "requests": [
+      {
+        "method": "GET",
+        "url": "https://www.onyxtonics.com/sitemap.xml",
+        "status": 200,
+        "at": "2026-10-08T09:51:45.995Z"
+      }
+    ],
+    "production_writes": 0,
+    "prohibited_requests": 0
+  },
+  "fresh_official_roaster_links": [
+    {
+      "url": "https://www.brandywinecoffeeroasters.com"
+    },
+    {
+      "url": "https://www.broadsheetcoffee.com"
+    },
+    {
+      "url": "https://onyxcoffeelab.com"
+    },
+    {
+      "url": "https://littlewolf.coffee"
+    },
+    {
+      "url": "https://vividcoffee.com"
+    },
+    {
+      "url": "https://www.tandemcoffee.com"
+    },
+    {
+      "url": "https://www.briocoffeeworks.com"
+    }
+  ],
+  "intended_source_clarification": "Asked the user whether the intended tier-two entry is this Burlington cafe or a different roaster; no reply or source substitution."
 }
