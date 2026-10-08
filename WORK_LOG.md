@@ -2,6 +2,12 @@
 
 Authoritative scope: https://github.com/allang/coffee-roaster-crawler/issues/1
 
+## 2026-10-08 — single full-hour runtime health follow-up
+
+- Read-only audit at **17:57:29.429 UTC / 1:57:29 PM Eastern**, **3,822.469 seconds** after latest resume. Installed and freshly queried remote main remain `0a1cefb760b6d90e4dbde885fcf79a1d8da44438`; original checkout clean, launcher/lock 43736 owns one Node 43745, original cwd/config/plist and 90-minute schedule preserved. Current phase tier 1; logs updated 15.783 seconds before audit. No pause, restart, schema change, extra maintenance worker or automation.
+- Thankfully completed **12 visited / 7 coffees / 5 irrelevant / 0 errors**, database error null. Moonwake run `76e725a4-1895-4a7a-8d13-21beb5edf9ff` remains running with **118 successful-save log events / 118 fresh product sightings**, latest 17:57:12.958 UTC. Zero failed runs or severity-error entries since resume; active visitor's final counts/errors remain unfinalized and cannot be certified. Separated 11 optional JSON404 warnings, 272 HTTP404 warning entries over 17 removed known-product paths, three token-limit retries and three existing compatibility fallbacks. Logged Thankfully reconciliation: 17 removed / 1 unknown / 7 reused observations.
+- [Dated sanitized receipt](docs/mac-mini-one-hour-health-20261008.json) and [updated report](docs/MAC_MINI_RECOVERY_UPDATE_20261008.md). Read all 31 issue/PR review surfaces before milestone: no new finding. Documentation/receipt consistency checks pass; source remains unchanged from the verified 451-pass/one-explicit-skip installation. Compatibility approval remains separate in the coordinating thread; full Passport and whole-tier inventories remain unverified. Exact documentation SHA, PR and post-push checks follow in issue #1.
+
 ## 2026-10-08 — retained database logs resolve all eleven prior save failures
 
 - Read-only Postgres log inspection and product/source-ID binding at **17:10:05.511 UTC** identified all **six Hydrangea + five Taith** preceding page failures as **SQLSTATE 23505** from `save_catalog_product_v1`, citing the global `product_variants_unique_weight_per_product` index. Exact UTC times, product IDs, known weights and source URLs are in [the eleven-event receipt](docs/mac-mini-preceding-save-failures-20261008.json). Existing catalog owners or exact deterministic reviewed native identities bind every event; failed new-product transactions remain rolled back.

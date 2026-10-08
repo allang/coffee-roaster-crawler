@@ -2,6 +2,21 @@
 
 Merged main **`0a1cefb760b6d90e4dbde885fcf79a1d8da44438`** is installed and running in the original Mac Mini checkout. This includes [reviewed recovery PR #7](https://github.com/allang/coffee-roaster-crawler/pull/7), source `181ca65cd4a0da6ff1c3a5e5b953bbd0afcc0b2b`: bounded merchant HTTP 429/502/503/504 GET recovery and the precise weight-prefixed Passport pouch exclusion. The **prepared production index compatibility migration remains unapplied**. Latest-source full Passport revalidation and full live tier completion are not certified.
 
+## Follow-up after a full hour
+
+The single requested runtime audit at **17:57:29.429 UTC / 1:57:29 PM Eastern** occurred **3,822.469 seconds** after the latest resume request: one hour, three minutes and 42 seconds. Installed SHA/tree still match the reviewed recovery main; a fresh remote main lookup returned the same `0a1cefb760b6d90e4dbde885fcf79a1d8da44438`. The original checkout remains clean. LaunchAgent/lock **43736** owns exactly one Node **43745** in the original cwd; private configuration and plist remain byte-identical and the **5,400-second** schedule is unchanged. Logs were updated **15.783 seconds** before the audit. Actual current phase remains **tier 1**, initially 66 eligible roasters; no subsequent tier transition was observed.
+
+| Scheduler-owned run since resume | Actual result at audit |
+|---|---|
+| Thankfully `e1b0dd0e-c21b-4b70-9057-434870a9f662` | Completed 16:57:46.076 UTC; **12 visited / 7 coffees / 5 irrelevant / 0 errors**; database error null; seven fresh product sightings |
+| Moonwake `76e725a4-1895-4a7a-8d13-21beb5edf9ff` | Running since 17:01:03.831 UTC; **118 successful-save log events and 118 fresh product sightings**, latest 17:57:12.958 UTC; database error null; terminal counters unfinalized |
+
+No failed scheduler run, severity-error/fatal entry or completed visitor page error was recorded since this resume. The active ordinary visitor does not print every returned page error, so this does **not** certify Moonwake's eventual zero-error outcome. Fresh product timestamps establish ongoing catalog writes; they do not prove complete inventories, SKU accuracy, source provenance, prices, origins or public images.
+
+Warning classes remain separate: **11 optional Shopify JSON 404 warnings** on Thankfully, **272 HTTP 404 warning entries across 17 distinct previously known product paths**, three token-limit retry warnings on Moonwake, and three expected schema-compatibility fallback notices. The logged Thankfully availability reconciliation checked 18 records, recorded **17 removed / 1 unknown**, and reused seven current observations; those missing-page probes are separate from its completed visitor's zero page/save errors. Tier ordering uses the reviewed stable-ID manifest while the optional database tier/control fields are absent; normalized processing/co-ferment/source evidence remains in product metadata while the v2 processing RPC is unavailable. No other native JSON warning was observed. The [sanitized dated receipt](mac-mini-one-hour-health-20261008.json) includes exact run IDs, timestamps, counters and warning categories; complete raw logs remain private.
+
+This audit was read-only and left the worker running. It created no automation, restarted no process, and neither queried nor changed schema. The coordinating thread's index-migration approval remained separately pending; the runtime result does not resolve the proven historical unique-weight save blocker or certify the full latest-source Passport gate. No matched performance improvement is inferred from these different roasters and unfinished work.
+
 ## Installed runtime and verification
 
 | Observation | Actual result |
