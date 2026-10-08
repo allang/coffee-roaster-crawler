@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-10-08T04:02:36.198Z",
+  "checked_at": "2026-10-08T06:20:21.772Z",
   "mode": "read-only-crawl-order-preview",
   "source_commit": "2c8733cdc6aa1abd866b4df5df766f75b6f855f5",
   "total_roasters": 9152,
-  "eligible_roasters": 8451,
+  "eligible_roasters": 8473,
   "production_writes": 0,
   "phases": [
     {
       "tier": 1,
       "label": "Tier 1",
-      "count": 55
+      "count": 67
     },
     {
       "tier": 2,
@@ -19,7 +19,7 @@
     {
       "tier": 3,
       "label": "Tier 3",
-      "count": 406
+      "count": 408
     },
     {
       "tier": 9,
@@ -29,7 +29,357 @@
     {
       "tier": null,
       "label": "Remaining roasters",
-      "count": 7954
+      "count": 7962
+    }
+  ],
+  "tier_one_roasters": [
+    {
+      "id": "01896836-e6ff-498e-b78c-e17d0d127e42",
+      "name": "Black & White Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "058d58c7-c655-40fe-a651-02b8f0593a89",
+      "name": "Obadiah",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "0a56b341-2fff-4c4f-af41-347b3e8425f5",
+      "name": "S&W Craft Roasting",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "0abbc586-467e-4bfe-b431-248941145733",
+      "name": "Sey",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "0cc38dcc-655c-4a7d-b956-f27a3165b310",
+      "name": "Round Hill",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "11a426df-0146-4a5c-a123-ef7725c13926",
+      "name": "Dak",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "11c63e61-c185-4fea-a049-127af7daafbf",
+      "name": "ONA Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+      "name": "Luminous Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "183c5ec9-7c7c-470d-b098-c2b616ad013b",
+      "name": "PUSH X PULL",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "18db48af-6c9c-4449-9d66-535c5260e2b5",
+      "name": "Leaves Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "281aa870-2867-465c-9594-d7764c9273f6",
+      "name": "Loveless Coffees",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "33768274-dc08-4e98-9afd-61a20cd07d88",
+      "name": "Frukt",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "38371d64-3a44-47f7-a4e8-89ef83968d1e",
+      "name": "Moonwake Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "38a0f59c-a226-4ba7-96ee-b130dd583f66",
+      "name": "Mantaray",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "39a6bb46-ad09-41ee-84e5-54320d2263d7",
+      "name": "Coffee Collective",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "3a71024e-eb30-4778-927b-580e3bc3b62e",
+      "name": "April",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "3b828088-2fd5-407c-a756-35cb464588ce",
+      "name": "Friedhats",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "405de73b-b707-46bb-a0e2-dbeb3218f542",
+      "name": "Sweven ",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "4a9b314c-d48f-44b1-a9d6-59f70fd38cb4",
+      "name": "Dayglow Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "name": "Lucienne Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "51dd9f88-a88e-4a2b-911f-2b85348dcbc7",
+      "name": "TANAT COFFEE",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "name": " Hydrangea Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "5690d1b7-4082-43d6-8032-d3a92618e8f9",
+      "name": "Flower Child",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "5d02543f-ff9d-471b-af2b-cc6c8400e546",
+      "name": "Monogram Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "5d931414-8d9a-43e7-ba25-e3269884cde8",
+      "name": "Taith Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "602c3d3e-a765-476f-bcd8-219519a8234f",
+      "name": "Fritz",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "68e59fbb-f973-4030-8c63-be593797f193",
+      "name": "Tim Wendelboe",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+      "name": "Loquat Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "729613eb-d1b7-41b4-bfef-77aead64698c",
+      "name": "Manhattan Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "72e15fce-ddea-48c5-9632-31d9220f1c19",
+      "name": "Rogue Wave Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "7557d44c-5584-42cf-a644-aafe9720bd16",
+      "name": "Passenger",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "77a7fc6f-5153-4d71-a0e8-d00c51a052e6",
+      "name": "Dayglow",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "7b9bba3a-d037-46b8-a27f-7849ba5f181f",
+      "name": "Thankfully Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "7c6bdbd5-e667-406b-aadf-97e408c4fe6b",
+      "name": "Little Wolf Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "82b540d1-53c7-48ed-916c-dc3e662addc1",
+      "name": "shoebox.coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "8528a70e-2033-4fc5-b5c6-1c5f73c0a989",
+      "name": "Airship Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "86089fc8-6ecc-4620-ac4c-b570990d1c22",
+      "name": "Tandem Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "name": "September Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "8f69eeb4-2d62-4aea-8024-d2855b01e593",
+      "name": "Ilse",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "962401c8-ef7b-4044-9894-b03590b5445b",
+      "name": "The Picky Chemist",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "969c3cc5-dbc5-4a3f-b6ba-8c39e32af680",
+      "name": "thoughtful coffee nyc",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "973e6bc5-2f7c-4213-ba81-27fa025ce64d",
+      "name": "Hatch Specialty Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "9b08c3d9-f580-41ae-a394-0cd3225bb3c0",
+      "name": "Botz Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "9cb13308-0d7a-4d02-a558-9bda11f5dd97",
+      "name": "Coffee Project",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "a14847cc-f6d0-4708-9aae-6d2d11c886f1",
+      "name": "Brandywine Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "a1a8a40f-c7e1-40f3-a8e5-5cdfbf169f7b",
+      "name": "Prodigal",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "a6264352-c4a9-4cfb-a396-3c9a633d8c9e",
+      "name": "A Matter of Concrete",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "a7e7bd1b-b777-40a7-a2b8-ff06fd83f4a6",
+      "name": "XLIII Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "a8e3852e-d8d6-4b35-a16b-fbc47b991b99",
+      "name": "Prolog Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "b116fcb1-933b-4ac5-b57c-4dae7580da22",
+      "name": "Little Wolf",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "b29ede0b-83ee-418f-88be-b88dfd8fb1a4",
+      "name": "Regalia Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "c2941ba0-1481-4b69-b800-0d911f2797c3",
+      "name": "Momos Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "c8e9e273-1095-424c-91b7-c7cea464f630",
+      "name": "Datura",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "c9cc734b-ffbf-44ae-b682-c056f3635922",
+      "name": "Substance Cafe",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "cbabf44d-1bfa-4212-a0f0-858c55019b91",
+      "name": "Namusairo",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "cc209e02-48dd-4437-92c4-ed20ac5da114",
+      "name": "Offshoot Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "cc4c7ebd-bd58-4d95-bb48-4ca7d3bd4e03",
+      "name": "Calendar Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "d85c4ca3-b86e-43b6-8822-aaef6472126a",
+      "name": "Loveless Coffees",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "da072aaf-038c-4761-bd7e-a22f2383ebc8",
+      "name": "Gout and Co",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "dcffb77d-4492-4e5b-860f-c78e3540402d",
+      "name": "GLITCH Coffee & Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "de60aa27-68b8-48d3-a661-12804baae9ce",
+      "name": "Nomad Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "e00c05fa-623e-4284-adfc-420e81dd472c",
+      "name": "H&S Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "e30e68df-7843-408b-8df0-2ae01df471d9",
+      "name": "Luna Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "eb4511d8-b2b2-4ea7-a4e0-bb2c3b7f9380",
+      "name": "Maru Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "f3f3a834-d7e4-4804-890c-4bdff564e498",
+      "name": "Subtext Coffee Roasters",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "fdd4179f-6a57-496c-b26c-deb354b0580f",
+      "name": "Exposure Therapy Coffee",
+      "tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "fee5aaa2-09c2-4bde-949d-16471a91793c",
+      "name": "Preface Coffee",
+      "tier_source": "reviewed_mapping"
+    }
+  ],
+  "reviewed_tier_one_ids": 69,
+  "currently_ineligible_reviewed_tier_one": [
+    {
+      "entity_id": "21fd9a7b-5d94-46a3-9db2-bd27d8803432",
+      "tier": 1,
+      "name": "Moonwake Coffee Roasters"
+    },
+    {
+      "entity_id": "5421c825-7e29-427b-a0b7-8a7dce98029a",
+      "tier": 1,
+      "name": "Glitch"
     }
   ],
   "preface_in_tier_one": true
