@@ -47,6 +47,8 @@ test('image verification accepts real image bytes and blocks HTML and prohibited
  const truncated=Buffer.concat([png.subarray(0,8),Buffer.alloc(4)]);
  assert.equal(await validateImage(truncated),null);assert.equal((await validateImage(png)).width,2);
  const corrupt=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:html}),fetchImage:async()=>({success:true,data:truncated})});assert.equal(corrupt.reason,'invalid_image_body');
+ const namedPage='<main><h1>Ethiopia</h1></main>'+schema({'@type':'Product',name:'Ethiopia',image,offers:{price:'18',priceCurrency:'EUR'}});
+ const named=await inspectPhoto({id:'p',name:'Ethiopia',source_url:url},{fetchPage:async()=>({success:true,data:namedPage,finalUrl:url}),fetchImage:async()=>({success:true,data:png})});assert.equal(named.status,'ready');
 });
 test('catalog save stores a real photo, repairs existing records idempotently and preserves a present photo',async()=>{
  const pg=await catalogDb();try {

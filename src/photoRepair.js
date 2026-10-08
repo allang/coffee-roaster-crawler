@@ -22,7 +22,9 @@ async function inspectPhoto(product,{fetchPage,fetchImage}) {
   const page=await fetchPage(product.source_url);
   if(!page.success)return {...base,status:'held',reason:page.error || 'product_fetch_failed',http_status:page.status};
   if(!sameImageProduct(page.finalUrl || product.source_url,product.source_url))return {...base,status:'held',reason:'product_redirect_requires_identity_review',final_url:page.finalUrl};
-  const image=primaryProductImage({html:page.data,url:page.finalUrl || product.source_url});
+  const finalUrl=page.finalUrl || product.source_url;
+  const sourceProduct=require('./productEvidence').structuredProduct(page.data,finalUrl);
+  const image=primaryProductImage({html:page.data,url:finalUrl,sourceProduct});
   if(!image.url)return {...base,status:'held',reason:image.reason};
   if(!compatibleTitle(product.name,image.evidence.product_name,product.roaster))return {...base,status:'held',reason:'current_product_title_requires_review',current_name:image.evidence.product_name,image_url:image.url};
   const result=await fetchImage(image.url,{referer:page.finalUrl || product.source_url});
