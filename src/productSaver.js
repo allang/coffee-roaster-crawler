@@ -104,11 +104,8 @@ async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   const productId=data?.product_id;
   if(!productId) throw new Error('Catalog transaction returned no product ID');
   if(data.stale_observation_ignored)return productId;
-  const projection=Object.fromEntries(['description','short_description','nano_description','country_of_origin','origin_region'].filter(k=>typeof translated.attributes[k]==='string').map(k=>[k,translated.attributes[k]]));
-  if(Object.keys(projection).length){
-    const {error:projectionError}=await db.from('products').update(projection).eq('id',productId).eq('source_key',payload.product.source_key).eq('last_seen_at',payload.product.checked_at);
-    if(projectionError)throw Error('English display projection failed: '+projectionError.message);
-  }
+  // The live schema generates description, summaries and origin columns from
+  // metadata in the same catalog transaction; never update them directly.
   const image=productData.attributes?.product_image_url;
   if(image) {
     const assetId=await (options.downloadImage || downloadAndSaveImage)(productId,image,logger,{db,sourceUrl});
