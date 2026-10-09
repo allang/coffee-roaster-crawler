@@ -34,9 +34,21 @@ test('all manual tiers precede unassigned/invalid tiers; Preface is in the verif
   assert.equal(fallbackTier('fee5aaa2-09c2-4bde-949d-16471a91793c'),1);assert.equal(fallbackTier('11a426df-0146-4a5c-a123-ef7725c13926'),1);assert.equal(fallbackTier('not-listed'),null);
   assert.equal(fallbackTier('2442b266-fb8c-43f6-a7e5-589c6bf94bc5'),null); // Wisconsin Luna is a different brand
   assert.equal(fallbackTier('4e4926f4-fdab-4e69-b28a-0f067b2b6720'),null); // German Passenger is a different brand
-  assert.equal(manifest.entity_counts['1'],65);assert.equal(manifest.entity_counts['2'],32);
+  assert.equal(manifest.entity_counts['1'],65);assert.equal(manifest.entity_counts['2'],42);
   assert.equal(fallbackTier('7d74081f-e742-4158-ada6-c67dcd7430f9'),2);assert.equal(fallbackTier('23bca0e3-978f-430c-a307-ec815a1a42ae'),2);
-  assert.equal(manifest.assignments.length,524);assert.equal(manifest.source_commit,'2c8733cdc6aa1abd866b4df5df766f75b6f855f5');
+  assert.equal(manifest.assignments.length,537);assert.equal(manifest.source_commit,'971505f3cfe3841716ee7e297ab0d43d27bca3b4');
+});
+test('newly curated roasters join tier two and Hawaiian tier three before the remaining phase',()=>{
+  const curated=require('../data/reddit-roaster-tier-update.json').assignments;
+  const roasters=curated.map(t=>row(t.id,fallbackTier(t.id)));
+  roasters.push(row('still-unassigned',fallbackTier('still-unassigned')));
+  const phases=buildCrawlPhases(roasters);
+  assert.deepEqual(phases.map(p=>p.tier),[2,3,null]);
+  assert.equal(phases[0].roasters.length,10);assert.equal(phases[1].roasters.length,3);
+  for(const t of curated)assert.equal(fallbackTier(t.id),t.tier,t.source_name);
+  assert.equal(fallbackTier('5a41d863-2195-426e-b2e6-89b89b5abf9d'),3); // Big Island
+  assert.equal(fallbackTier('b12cfff6-9de8-4652-b6a1-f25240bff9c2'),3); // Paradise
+  assert.equal(fallbackTier('27d5ee2d-6b3d-4f78-87e7-864fba9fb64a'),null); // UK Origin is a separate identity
 });
 test('parallel work stays within a tier until its final crawl finishes',async()=>{
   const limit=(await import('p-limit')).default(2),blocked=deferred(),started=deferred(),events=[];
