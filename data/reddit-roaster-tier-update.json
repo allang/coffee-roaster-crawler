@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "date": "2026-10-09",
+  "source_url": "https://www.reddit.com/r/pourover/comments/1x1eq9w/these_are_the_roasters_ive_seen/",
+  "authorization": "Move all of these to tier 2. Any hawaiian roasters to tier 3.",
+  "scope": "The twelve confirmed untiered roasters from the Reddit index, plus explicit Maui Origin tier-three identity. Existing mentioned Hawaiian Big Island and Paradise remain tier three. Previously tiered non-Hawaiian roasters are preserved.",
+  "provenance": "manual:reddit-roaster-tiers:2026-10-09",
+  "assignments": [
+    {
+      "id": "c274c1f2-4bee-415e-accf-75e6b32735c0",
+      "name": "Brass Horn Coffee Roasters",
+      "slug": "brass-horn-coffee-roasters-osm-osm-node-11457517993",
+      "website_url": "http://brasshorncoffee.com/",
+      "name_slug": "brass-horn-coffee-roasters",
+      "is_new": false,
+      "source_name": "Brass Horn Coffee Roasters",
+      "tier": 2,
+      "country": "United States",
+      "region": "TN",
+      "aliases": [
+        "Brasshorn",
+        "Brass Horn"
+      ],
+      "original_website": null,
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "6422b3e5-cd9f-4746-b31f-95c387b37862",
+      "name": "Chad Lou's Coffee",
+      "slug": "chad-lou-s-coffee",
+      "website_url": "https://www.chadlouscoffeeroasters.com/",
+      "name_slug": "chad-lou-s-coffee",
+      "is_new": false,
+      "source_name": "ChadLou's Coffee Roasters",
+      "tier": 3,
+      "country": "United States",
+      "region": "HI",
+      "aliases": [
+        "ChhaLou’s",
+        "Chad Lou's Coffee"
+      ],
+      "original_website": "https://www.chadlouscoffeeroasters.com/",
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "93156d51-3ecc-4c37-b365-85d05206ab3b",
+      "name": "Dessert Oasis Coffee Roasters",
+      "slug": "dessert-oasis-coffee-roasters-osm-osm-node-12631128401",
+      "website_url": "https://docr.coffee/",
+      "name_slug": "dessert-oasis-coffee-roasters",
+      "is_new": false,
+      "source_name": "Dessert Oasis Coffee Roasters",
+      "tier": 2,
+      "country": "United States",
+      "region": "MI",
+      "aliases": [
+        "Dessert Oasis"
+      ],
+      "original_website": null,
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "bc3d6b3d-a519-4213-b3b3-92962dcb4c84",
+      "name": "FRINJ Coffee",
+      "slug": "frinj-coffee",
+      "website_url": "https://frinjcoffee.com",
+      "name_slug": "frinj-coffee",
+      "is_new": false,
+      "source_name": "FRINJ Coffee",
+      "tier": 2,
+      "country": "United States",
+      "region": "",
+      "aliases": [
+        "FRINJ"
+      ],
+      "original_website": null,
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "1fe02f21-2dbe-46bb-91aa-bcc92a3f4cfa",
+      "name": "Four Letter Word",
+      "slug": "four-letter-word-osm-osm-node-5916842248",
+      "website_url": "https://www.4lwcoffee.com/",
+      "name_slug": "four-letter-word",
+      "is_new": false,
+      "source_name": "Four Letter Word Coffee",
+      "tier": 2,
+      "country": "United States",
+      "region": "",
+      "aliases": [
+        "Four Letter Word",
+        "4 Letter Word"
+      ],
+      "original_website": null,
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "80472eb4-c5b4-414a-9254-b65255ebeb23",
+      "name": "Gaslight Coffee Roasters",
+      "slug": "gaslight-coffee-roasters",
+      "website_url": "https://gaslightcoffee.com/",
+      "name_slug": "gaslight-coffee-roasters",
+      "is_new": false,
+      "source_name": "Gaslight Coffee Roasters",
+      "tier": 2,
+      "country": "United States",
+      "region": "",
+      "aliases": [
+        "Gaslight"
+      ],
+      "original_website": null,
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "61523cae-b07f-52e1-95f9-b3fe91d8c457",
+      "name": "Namvar Estates",
+      "slug": "namvar-estates",
+      "name_slug": "namvar-estates",
+      "website_url": "https://namvarestates.com/",
+      "is_new": true,
+      "source_name": "Hawaiian GOAT Coffee",
+      "tier": 3,
+      "country": "United States",
+      "region": "HI",
+      "aliases": [
+        "Hawaiian Goat"
+      ],
+      "original_website": "https://hawaiiangoatcoffee.com/",
+      "evidence": "hawaiiangoatcoffee.com redirects to namvarestates.com, whose official homepage explicitly confirms the rebrand from Hawaiian Goat Coffee."
+    },
+    {
+      "id": "552166f3-cf11-5a16-b940-72b61887ab78",
+      "name": "Isotope Coffee",
+      "slug": "isotope-coffee",
+      "name_slug": "isotope-coffee",
+      "website_url": "https://isotope.coffee/",
+      "is_new": true,
+      "source_name": "Isotope Coffee",
+      "tier": 2,
+      "country": "United States",
+      "region": "",
+      "aliases": [
+        "Isotope",
+        "isotope_coffee"
+      ],
+      "original_website": "https://isotope.coffee/",
+      "evidence": "Official website confirms micro-roaster identity."
+    },
+    {
+      "id": "1e100d75-978d-4688-81e2-32d680f16ab2",
+      "name": "Milk & Honey Coffee Co",
+      "slug": "milk-honey-coffee-co-osm-osm-node-10312996582",
+      "website_url": "https://milkhoney.coffee/",
+      "name_slug": "milk-honey-coffee-co",
+      "is_new": false,
+      "source_name": "Milk & Honey Coffee Co",
+      "tier": 2,
+      "country": "United States",
+      "region": "NC",
+      "aliases": [
+        "Milk and honey"
+      ],
+      "original_website": "https://milkhoney.coffee/",
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "58677608-79d7-4c46-a20d-25aa2203300f",
+      "name": "Origin Coffee Roasters",
+      "slug": "origin-coffee-roasters",
+      "website_url": "https://origincoffeemaui.com/",
+      "name_slug": "origin-coffee-roasters",
+      "is_new": false,
+      "source_name": "Origin Coffee Roasters (Maui)",
+      "tier": 3,
+      "country": "United States",
+      "region": "HI",
+      "aliases": [
+        "Ogrin Coffee Roasters"
+      ],
+      "original_website": "https://origincoffeemaui.com/",
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "ff1cd21b-5be6-4fa2-9c60-994ea968cb26",
+      "name": "Pastime Coffee",
+      "slug": "pastime-coffee",
+      "website_url": "https://pastime.coffee/",
+      "name_slug": "pastime-coffee",
+      "is_new": false,
+      "source_name": "Pastime Coffee",
+      "tier": 2,
+      "country": "United States",
+      "region": "OR",
+      "aliases": [
+        "Past Time",
+        "Pastime"
+      ],
+      "original_website": "https://pastime.coffee/",
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "897dea41-e128-405e-a230-1ba7840881a6",
+      "name": "Pure Intentions Coffee",
+      "slug": "pure-intentions-coffee",
+      "website_url": "https://pureintentionscoffee.com/",
+      "name_slug": "pure-intentions-coffee",
+      "is_new": false,
+      "source_name": "Pure Intentions Coffee",
+      "tier": 2,
+      "country": "United States",
+      "region": "NC",
+      "aliases": [
+        "Pure Intentions"
+      ],
+      "original_website": null,
+      "evidence": "Existing unique roaster ID and verified official website."
+    },
+    {
+      "id": "bed88829-c4d5-4cc9-8d42-c4905e2bf431",
+      "name": "Rosso Coffee Roasters",
+      "slug": "rosso-coffee-roasters",
+      "website_url": "https://www.rossocoffeeroasters.com/en-us",
+      "name_slug": "rosso-coffee-roasters",
+      "is_new": false,
+      "source_name": "Rosso Coffee Roasters",
+      "tier": 2,
+      "country": "Canada",
+      "region": "",
+      "aliases": [
+        "Rosso"
+      ],
+      "original_website": null,
+      "evidence": "Existing unique roaster ID and verified official website."
+    }
+  ],
+  "unresolved_labels": [
+    "Ipswich",
+    "Good Roasters"
+  ],
+  "preserved_generic_origin_namesake": true
+}
