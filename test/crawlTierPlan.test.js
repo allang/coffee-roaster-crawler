@@ -1,8 +1,33 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict');
 const {buildCrawlPhases,crawlTierPhases,fallbackTier,manifest}=require('../src/crawlTierPlan');
+const { getCrawlConcurrency } = require('../src/crawlConcurrency');
 const row=(id,tier)=>({id,name:id,roaster_tier:tier});
 function deferred(){let resolve;const promise=new Promise(r=>{resolve=r;});return {promise,resolve};}
+test('four roasters overlap, the next queued roaster uses a free slot, and the next tier waits',async()=>{
+  const limit=(await import('p-limit')).default(getCrawlConcurrency({}).roasters);
+  const gates=Array.from({length:5},deferred),fourStarted=deferred(),fifthStarted=deferred();
+  const starts=[],ends=[];let active=0,maximumActive=0;
+  const running=crawlTierPhases([...Array.from({length:5},(_,i)=>row('one-'+i,1)),row('two',2)],{limit,crawl:async r=>{
+    starts.push(r.id);active++;maximumActive=Math.max(maximumActive,active);
+    if(starts.length===4)fourStarted.resolve();
+    if(r.id==='one-4')fifthStarted.resolve();
+    if(r.roaster_tier===1)await gates[Number(r.id.slice(4))].promise;
+    active--;ends.push(r.id);return {success:r.id!=='one-1'};
+  }});
+  try {
+    await fourStarted.promise;
+    assert.equal(active,4);assert.deepEqual(starts,['one-0','one-1','one-2','one-3']);
+    gates[1].resolve();await fifthStarted.promise;
+    assert.equal(active,4);assert(!starts.includes('two'));
+  } finally {
+    gates.forEach(g=>g.resolve());
+  }
+  const result=await running;
+  assert.equal(maximumActive,4);assert.equal(starts.length,6);
+  assert(ends.indexOf('two')>ends.indexOf('one-0'));
+  assert.equal(result.phases[0].successful,4);assert.equal(result.phases[0].failed,1);
+});
 test('all manual tiers precede unassigned/invalid tiers; Preface is in the verified tier-one ledger',()=>{
   const phases=buildCrawlPhases([row('remaining',null),row('nine',9),row('one',1),row('two',2),row('invalid',5),row('four',4),row('three',3)]);
   assert.deepEqual(phases.map(p=>p.tier),[1,2,3,4,9,null]);assert.deepEqual(phases.at(-1).roasters.map(r=>r.id),['remaining','invalid']);

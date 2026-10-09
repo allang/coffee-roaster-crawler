@@ -1,3 +1,5 @@
+const { getCrawlConcurrency } = require('./crawlConcurrency');
+
 const config = {
   supabase: {
     url: process.env.NEXT_PUBLIC_SUPABASE_URL,
@@ -24,6 +26,7 @@ function validateConfig() {
   if (missing.length > 0) {
     throw new Error(`Missing required environment variables: ${missing.join(', ')}`);
   }
+  getCrawlConcurrency();
 }
 
 module.exports = { config, validateConfig };

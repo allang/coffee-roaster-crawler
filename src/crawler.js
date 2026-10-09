@@ -15,8 +15,7 @@ const { discoverSiteProducts, profileFor } = require('./siteSupport/discovery');
 const { verifiedEmptyInventory } = require('./siteSupport/squareInventory');
 const { createReader,allowed } = require('./siteSupport/network');
 const {crawlTierPhases}=require('./crawlTierPlan');
-
-const PARALLEL_ROASTERS = Number(process.env.PARALLEL_ROASTERS || 1);
+const { getCrawlConcurrency } = require('./crawlConcurrency');
 
 async function detectPlatform(websiteUrl, log, options = {}) {
   log.info('Platform', `Detecting platform for: ${websiteUrl}`);
@@ -216,7 +215,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   log.info('KnownPages', `Found ${knownUrls.size} known pages for this roaster`);
 
   const unvisitedAll = accumulator.getUnvisitedUrls();
-  const supportedUrls=new Set(siteDiscovery.urls);
+  const supportedUrls=new Set(siteDiscovery.urls.map(url=>accumulator.normalizeUrl(url)));
   const eligibleUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status!=='skip' && (!supportedUrls.size || supportedUrls.has(entry.url)));
   const newUrls=eligibleUrls;
   const skippedUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status==='skip');
@@ -294,6 +293,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
 }
 
 async function runCrawler() {
+  const concurrency = getCrawlConcurrency();
   const { getRoasterEntities, filterRoastersForCrawling } = require('./roasters');
 
   globalLogger.header('Coffee Roaster Crawler Starting');
@@ -319,8 +319,13 @@ async function runCrawler() {
   }
 
   const pLimit = (await import('p-limit')).default;
-  const limit = pLimit(PARALLEL_ROASTERS);
-  globalLogger.info('Crawler', `Running ${PARALLEL_ROASTERS} roasters in parallel`);
+  const limit = pLimit(concurrency.roasters);
+  globalLogger.info('Crawler', `Running ${concurrency.roasters} roasters in parallel`);
+  globalLogger.info('Crawler', 'Concurrency', {
+    roasterWorkers: concurrency.roasters,
+    pageWorkersPerRoaster: concurrency.pagesPerRoaster,
+    maximumPageWorkers: concurrency.roasters * concurrency.pagesPerRoaster,
+  });
 
   async function crawlWithRetryTracking(roaster) {
     try {

@@ -3,6 +3,7 @@ const globalLogger = require('./logger');
 
 const { classifyPage, MODEL } = require('./gptClassifier');
 const { saveKnownPage } = require('./knownPages');
+const { getCrawlConcurrency } = require('./crawlConcurrency');
 const { extractPage } = require('./extraction');
 const { canonicalProductUrl } = require('./catalogNormalization');
 const { saveProduct,findExistingProduct,productSourceKey } = require('./productSaver');
@@ -202,10 +203,7 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
     errors: 0,
     ...extractionMetrics(),
   };
-  const configuredPageConcurrency = Number(process.env.CRAWLER_PAGE_CONCURRENCY || 1);
-  const pageConcurrency = Number.isFinite(configuredPageConcurrency)
-    ? Math.max(1, Math.floor(configuredPageConcurrency))
-    : 1;
+  const { pagesPerRoaster: pageConcurrency } = getCrawlConcurrency();
   let nextIndex = 0;
   let stopForQuota = false;
   let stopForMerchant = false;

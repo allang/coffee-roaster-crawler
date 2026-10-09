@@ -16,7 +16,7 @@ function modules(db,state) {
       if(name==='./config')return{config:{crawler:{requestDelayMs:0,maxBfsPages:20}}};
       if(name==='./gptClassifier')return{translateTexts:require('./catalogDb').translationFixture,MODEL:'fixture-model',classifyPage:async()=>{state.aiCalls++;return{aiCalls:1,usage:{prompt_tokens:50,completion_tokens:10},data:{is_coffee_page:true,product:state.extracted}};}};
       if(name==='./imageDownloader')return{downloadAndSaveImage:async()=>null};
-      if(name==='./httpClient')return{fetchHtml:async()=>{state.fetchCalls=(state.fetchCalls||0)+1;return state.fetchResult||{success:true,data:state.html,status:200,finalUrl:url};},jitteredSleep:async()=>{}};
+      if(name==='./httpClient')return{fetchHtml:async value=>{state.fetchCalls=(state.fetchCalls||0)+1;await state.fetchHook?.(value);return state.fetchResult||{success:true,data:state.html,status:200,finalUrl:url};},jitteredSleep:async()=>{}};
       if(name==='./shopifyProduct')return{...nativeRequire(name),fetchShopifyProductJson:async()=>({success:true,raw:state.native,data:parseShopifyProduct(state.native)})};
       if(name.startsWith('./') && !name.endsWith('.cjs') && !name.endsWith('.json'))return load(nativeRequire.resolve(name));
       return nativeRequire(name);
@@ -30,6 +30,25 @@ function fixture() {
   const native={id:123,title:'ETHIOPIA — BANKO',currency:'EUR',product_type:'Coffee',body_html:'<p>Coffee beans from Banko</p>',variants:[{id:1,title:'250g / whole bean',price:'12.00',grams:250,available:true},{id:2,title:'250g / espresso',price:'12.00',grams:250,available:false}]};
   return {aiCalls:0,html:'<main><h1>ETHIOPIA — BANKO</h1><p>Coffee beans from Banko</p></main>',native,extracted:{name:'ETHIOPIA — BANKO',attributes:attrs}};
 }
+test('one page worker keeps merchant reads sequential while separate roasters may overlap',async()=>{
+  const pg=await catalogDb();let release,started;
+  const blocked=new Promise(r=>{release=r;}),firstRead=new Promise(r=>{started=r;});
+  const previous=process.env.CRAWLER_PAGE_CONCURRENCY;process.env.CRAWLER_PAGE_CONCURRENCY='1';
+  try {
+    await pg.query('insert into entities(id) values($1)',[owner]);
+    const state=fixture(),requests=[];
+    state.fetchHook=async value=>{requests.push(value);if(requests.length===1){started();await blocked;}};
+    const m=modules(supabaseAdapter(pg),state),acc=new m.accumulator(owner,'Fixture',log),urls=[url,url+'-second'];
+    urls.forEach(value=>acc.addUrl(value));
+    const running=m.visitor.visitAllPages(owner,urls,acc,log,'shopify');
+    await firstRead;assert.deepEqual(requests,[url]);release();
+    const result=await running;
+    assert.deepEqual(requests,urls);assert.equal(result.visited,2);assert.equal(result.errors,0);
+  } finally {
+    release();if(previous===undefined)delete process.env.CRAWLER_PAGE_CONCURRENCY;else process.env.CRAWLER_PAGE_CONCURRENCY=previous;
+    await pg.close();
+  }
+});
 test('exhausted merchant cooldown stops unvisited pages and logs the exact returned cause without classifying',async()=>{
   const state=fixture();state.fetchResult={success:false,status:503,error:'HTTP 503',retryStopped:'retry_after_limit',merchantCooldownExceeded:true,cooldown:{host:'shop.test',retryAfterMs:200000,remainingMs:200000},cooldownRecovery:{waitedMs:200000,resumptions:1,stopped:'total_wait_limit'}};
   const db={from(){throw Error('No database write during failed reads');}},m=modules(db,state),acc=new m.accumulator(owner,'Fixture',log),errors=[];

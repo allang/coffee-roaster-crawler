@@ -1,5 +1,7 @@
 # Coffee roaster crawler
 
+The current concurrency defaults are **four roasters with one page worker each**. Explicit private environment values override defaults. See [concurrency configuration and safe installation](docs/CRAWL_CONCURRENCY.md) for settings, verification, tier ordering and remaining limitations.
+
 Preserved Mac Mini crawler plus Every Coffee catalog improvements. Authoritative checklist: https://github.com/allang/coffee-roaster-crawler/issues/1. Review branch: `codex/issue-1-crawler`; PR: https://github.com/allang/coffee-roaster-crawler/pull/2. A separately authorized local rollout installed source `30748a20ac66f90d3f121b7298b65631fede6e49` and the catalog-refresh migration. Later cache/security and processing/co-ferment corrections are prepared here and remain uninstalled. The saver prefers the processing v2 RPC and safely uses the existing transactional v1 RPC when v2 is absent; processing details remain in metadata until typed fields are installed.
 
 For offline verification on Node.js 22+: `npm ci --ignore-scripts`, then `npm test`. Tests include real local Postgres/PLpgSQL via PGlite, simulated HTTP/classifier flows, structured extraction, caching, stable identity, stock evidence, currency precision, notes, rollback and image reuse. No production credentials are needed. `node scripts/compare-fixtures.cjs` compares deterministic failure fixtures with the full-history preserved baseline. Evidence-bound historical tests remain separately available with `npm run test:historical` and require local artifacts.

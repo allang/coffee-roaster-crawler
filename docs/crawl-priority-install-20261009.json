@@ -1,0 +1,91 @@
+{
+  "checked_at": "2026-10-09T04:01:31.613Z",
+  "old_source_sha": "a77a9c5892dd283ed9bef4b82c7c78a3a13a5c54",
+  "installed_source_sha": "8e9915615598d48505995631cb5056566554faaa",
+  "old_worker_exited": true,
+  "old_worker_exit_code": 0,
+  "old_lock_removed_before_source_change": true,
+  "new_worker_pid": 15247,
+  "launcher_lock_pid": 15238,
+  "source_clean": true,
+  "environment_launcher_plist_unchanged": true,
+  "concurrency": {
+    "roasterWorkers": 4,
+    "pageWorkersPerRoaster": 1,
+    "maximumPageWorkers": 4
+  },
+  "interval_seconds": 5400,
+  "worker_started_at": "2026-10-09T04:00:35.303Z",
+  "first_started_roasters": [
+    "Subtext Coffee Roasters",
+    "Flower Child",
+    "Round Hill",
+    "Sweven"
+  ],
+  "new_runs": [
+    {
+      "id": "3d80e451-a2ca-46a7-8940-ffd2511ac229",
+      "entity_id": "405de73b-b707-46bb-a0e2-dbeb3218f542",
+      "status": "running",
+      "started_at": "2026-10-09T04:00:53.842+00:00",
+      "roaster_name": "Sweven "
+    },
+    {
+      "id": "3efc18ca-7925-4709-bad6-1ccde33e63d7",
+      "entity_id": "5690d1b7-4082-43d6-8032-d3a92618e8f9",
+      "status": "running",
+      "started_at": "2026-10-09T04:00:52.968+00:00",
+      "roaster_name": "Flower Child"
+    },
+    {
+      "id": "d0b47bde-22be-48da-bdce-26215857babf",
+      "entity_id": "f3f3a834-d7e4-4804-890c-4bdff564e498",
+      "status": "running",
+      "started_at": "2026-10-09T04:00:53.047+00:00",
+      "roaster_name": "Subtext Coffee Roasters"
+    },
+    {
+      "id": "f182ca11-9447-4f99-9522-54947284fd83",
+      "entity_id": "0cc38dcc-655c-4a7d-b956-f27a3165b310",
+      "status": "running",
+      "started_at": "2026-10-09T04:00:52.917+00:00",
+      "roaster_name": "Round Hill"
+    }
+  ],
+  "interrupted_runs": [
+    {
+      "id": "6543919d-3563-484d-b65d-5199a08e60b4",
+      "entity_id": "38a0f59c-a226-4ba7-96ee-b130dd583f66",
+      "status": "failed",
+      "successful_save_log_events": 61
+    },
+    {
+      "id": "6aa9fd6b-a953-455b-af78-61ee398a8924",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "status": "failed",
+      "successful_save_log_events": 92
+    },
+    {
+      "id": "9f6ffbfd-d81b-4234-afda-fdad606bd384",
+      "entity_id": "4a9b314c-d48f-44b1-a9d6-59f70fd38cb4",
+      "status": "failed",
+      "successful_save_log_events": 47
+    },
+    {
+      "id": "d93ae9b5-5edc-4be1-8e27-87ffd201897a",
+      "entity_id": "eb4511d8-b2b2-4ea7-a4e0-bb2c3b7f9380",
+      "status": "failed",
+      "successful_save_log_events": 5
+    }
+  ],
+  "installed_focused_tests": {
+    "total": 21,
+    "pass": 21,
+    "fail": 0,
+    "skip": 0
+  },
+  "inventory_complete": false,
+  "omission_reconciliation": false,
+  "scheduled_checks_created": 0,
+  "maintenance_note": "The recoverable page-admission gate left promises pending; the old worker exited normally when no I/O remained. The inspector lost its context before it could verify all four in-memory checkpoints. No all-four checkpoint preservation claim is made. After user requested immediate halt/restart, confirmed old process/lock absent, fast-forwarded source and started existing LaunchAgent. No product/cache writes were performed by maintenance; only four old run-status records marked incomplete."
+}
