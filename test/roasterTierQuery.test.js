@@ -2,14 +2,14 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 function roastersModule({entities=[],missingTier=false,error=null,states=[],stateError=null,recent=[]}={}) {
   const calls=[],stateCalls=[],log=new Proxy({},{get:()=>()=>{}}),db={from(table){
-    let fields='';const q={select(value){fields=value;return q;},eq(){return q;},order(key,options){assert.equal(key,'id');assert.equal(options.ascending,true);return q;},
-      async range(a,b){calls.push({fields,a,b});return {data:error?null:missingTier && fields.includes('roaster_tier')?null:entities.slice(a,b+1),error:error || (missingTier && fields.includes('roaster_tier')?{code:'42703',message:'column entities.roaster_tier does not exist'}:null)};},
+    let fields='';const ordering=[],limits=[],q={select(value){fields=value;return q;},eq(){return q;},order(key,options){ordering.push({key,options});return q;},limit(count,options){limits.push({count,options});return q;},
+      async range(a,b){assert.deepEqual(ordering,[{key:'id',options:{ascending:true}},{key:'created_at',options:{referencedTable:'latest_crawl',ascending:false}}]);assert.deepEqual(limits,[{count:1,options:{referencedTable:'latest_crawl'}}]);assert(fields.includes('latest_crawl:crawl_runs(created_at)'));calls.push({fields,a,b});return {data:error?null:missingTier && fields.includes('roaster_tier')?null:entities.slice(a,b+1).map(r=>({latest_crawl:[],...r})),error:error || (missingTier && fields.includes('roaster_tier')?{code:'42703',message:'column entities.roaster_tier does not exist'}:null)};},
       async in(key,ids){assert.equal(table,'entity_crawl_state');assert.equal(key,'entity_id');stateCalls.push(ids);return {data:states.filter(s=>ids.includes(s.entity_id)),error:stateError};},
     };return q;
   }};
   const file=path.join(__dirname,'../src/roasters.js'),module={exports:{}};
   vm.runInThisContext('(function(require,module,exports){'+fs.readFileSync(file,'utf8')+'\n})',{filename:file})(name=>{
-    if(name==='./supabase')return {getSupabase:()=>db};if(name==='./crawlRuns')return {getRecentCrawlRuns:async()=>recent};if(name==='./logger')return log;if(name==='./crawlTierPlan')return require('../src/crawlTierPlan');throw Error('Unexpected dependency');
+    if(name==='./supabase')return {getSupabase:()=>db};if(name==='./crawlRuns')return {getRecentCrawlRuns:async()=>recent};if(name==='./logger')return log;if(name==='./crawlTierPlan')return require('../src/crawlTierPlan');if(name==='./crawlPriority')return require('../src/crawlPriority');throw Error('Unexpected dependency');
   },module,module.exports);return {...module.exports,calls,stateCalls};
 }
 test('missing tier column falls back only to the reviewed stable IDs',async()=>{
@@ -39,4 +39,20 @@ test('an explicitly absent optional control table preserves the deployed cooldow
   const m=roastersModule({stateError:{code:'PGRST205',message:"Could not find the table 'public.entity_crawl_state' in the schema cache"},recent:[{entity_id:'recent'}]});
   const eligible=await m.filterRoastersForCrawling([{id:'recent',website_url:'https://merchant.test'},{id:'one',website_url:'https://merchant.test'},{id:'missing',website_url:null}]);
   assert.deepEqual(eligible.map(r=>r.id),['one']);assert.equal(m.stateCalls.length,1);
+});
+test('latest attempt includes failed history and orders untouched, oldest, then recent attempts',async()=>{
+  const m=roastersModule({entities:[
+    {id:'recent-failure',website_url:'https://merchant.test',latest_crawl:[{created_at:'2026-10-09T03:23:50Z'}]},
+    {id:'untouched-b',website_url:'https://merchant.test'},
+    {id:'old',website_url:'https://merchant.test',latest_crawl:[{created_at:'2026-08-01T00:00:00Z'}]},
+    {id:'untouched-a',website_url:'https://merchant.test'},
+  ]});
+  const rows=await m.getRoasterEntities(),eligible=await m.filterRoastersForCrawling(rows);
+  assert.deepEqual(eligible.map(r=>r.id),['untouched-a','untouched-b','old','recent-failure']);
+  assert.equal(eligible.at(-1).last_crawl_attempt_at,'2026-10-09T03:23:50Z');
+});
+test('unknown or malformed attempt history fails instead of labeling a roaster untouched',async()=>{
+  for(const latest_crawl of [null,[{created_at:null}],[{created_at:'invalid'}],[{created_at:'2026-10-09T00:00:00Z'},{created_at:'2026-10-08T00:00:00Z'}]]) {
+    const m=roastersModule({entities:[{id:'one',latest_crawl}]});await assert.rejects(m.getRoasterEntities(),/Invalid latest crawl history/);
+  }
 });

@@ -2,6 +2,7 @@ const { getSupabase } = require('./supabase');
 const { getRecentCrawlRuns } = require('./crawlRuns');
 const logger = require('./logger');
 const {fallbackTier,manifest}=require('./crawlTierPlan');
+const {prioritizeRoasters}=require('./crawlPriority');
 
 function hasOfficialWebsite(roaster) {
   return Boolean(roaster?.website_url && String(roaster.website_url).trim());
@@ -33,10 +34,13 @@ async function getRoasterEntities() {
         name,
         website_url,
         ${databaseTiers?'roaster_tier,':''}
+        latest_crawl:crawl_runs(created_at),
         entity_roles!inner (role)
       `)
       .eq('entity_roles.role', 'roaster')
       .order('id',{ascending:true})
+      .order('created_at',{referencedTable:'latest_crawl',ascending:false})
+      .limit(1,{referencedTable:'latest_crawl'})
       .range(offset, offset + pageSize - 1);
 
     if (error) {
@@ -49,7 +53,10 @@ async function getRoasterEntities() {
       throw error;
     }
 
-    allRoasters.push(...roasters.map(roaster=>({...roaster,roaster_tier:databaseTiers?roaster.roaster_tier:fallbackTier(roaster.id),crawl_tier_source:databaseTiers?'database':'reviewed_mapping'})));
+    allRoasters.push(...roasters.map(({latest_crawl,...roaster})=>{
+      if(!Array.isArray(latest_crawl) || latest_crawl.length>1 || (latest_crawl.length && !Number.isFinite(Date.parse(latest_crawl[0]?.created_at))))throw Error('Invalid latest crawl history for roaster '+roaster.id);
+      return {...roaster,last_crawl_attempt_at:latest_crawl[0]?.created_at ?? null,roaster_tier:databaseTiers?roaster.roaster_tier:fallbackTier(roaster.id),crawl_tier_source:databaseTiers?'database':'reviewed_mapping'};
+    }));
     
     if (roasters.length < pageSize) {
       break;
@@ -113,14 +120,9 @@ async function filterRoastersForCrawling(roasters) {
     return !recentlyRunEntityIds.has(roaster.id);
   });
 
-  for (let i = eligible.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [eligible[i], eligible[j]] = [eligible[j], eligible[i]];
-  }
-
-  logger.success('Filter', `${eligible.length}/${roasters.length} roasters eligible; randomized within tier phases`);
-
-  return eligible;
+  const ordered=prioritizeRoasters(eligible);
+  logger.success('Filter', `${ordered.length}/${roasters.length} roasters eligible; never attempted first, then oldest last attempt within tier phases`);
+  return ordered;
 }
 
 module.exports = {
