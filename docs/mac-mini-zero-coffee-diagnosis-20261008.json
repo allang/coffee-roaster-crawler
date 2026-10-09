@@ -1,0 +1,94 @@
+{
+  "database_checked_at": "2026-10-09T02:39:37.889Z",
+  "page_history_checked_at": "2026-10-09T02:40:09.953Z",
+  "source_sha": "9a09cea406be36c39932f72e2faa7270c4e9b8b1",
+  "latest_runs": [
+    {
+      "entity_id": "9cb13308-0d7a-4d02-a558-9bda11f5dd97",
+      "run": {
+        "id": "7ca52762-542b-47bc-b39c-7b84361fae6e",
+        "entity_id": "9cb13308-0d7a-4d02-a558-9bda11f5dd97",
+        "status": "completed",
+        "started_at": "2026-10-05T07:26:00.001+00:00",
+        "finished_at": "2026-10-05T07:27:11.785+00:00",
+        "platform": "custom",
+        "pages_discovered": 155,
+        "pages_visited": 18,
+        "pages_sent_to_gpt": 18,
+        "coffees_found": 0,
+        "error": null,
+        "meta": {},
+        "created_at": "2026-10-05T07:26:00.039729+00:00"
+      }
+    },
+    {
+      "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
+      "run": {
+        "id": "c0f8baa3-b851-4aab-818c-55efc9dc597b",
+        "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
+        "status": "completed",
+        "started_at": "2026-10-08T16:07:15.869+00:00",
+        "finished_at": "2026-10-08T16:07:18.518+00:00",
+        "platform": "woocommerce",
+        "pages_discovered": 25,
+        "pages_visited": 0,
+        "pages_sent_to_gpt": 0,
+        "coffees_found": 0,
+        "error": null,
+        "meta": {
+          "extraction": {
+            "errors": 0,
+            "visited": 0,
+            "irrelevant": 0,
+            "coffeeFound": 0
+          }
+        },
+        "created_at": "2026-10-08T16:07:15.940883+00:00"
+      }
+    }
+  ],
+  "offline_reproduction": {
+    "checked_at": "2026-10-09T02:41:57.818Z",
+    "results": [
+      {
+        "name": "Dak",
+        "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
+        "native_evidence_at": "2026-10-08T04:33:06.243Z",
+        "source_sha": "9a09cea406be36c39932f72e2faa7270c4e9b8b1",
+        "actual_installed_selector": {
+          "discovered": 23,
+          "eligible": 0,
+          "skipped": 0
+        },
+        "normalized_membership_comparison": 23,
+        "example": {
+          "native_url": "https://www.dakcoffeeroasters.com/product/caramello/",
+          "accumulator_url": "https://www.dakcoffeeroasters.com/product/caramello"
+        },
+        "scope": "Offline actual installed selection code on existing merchant GET-only evidence and read-only page-history snapshot; no network, paid call, source change or catalog write."
+      },
+      {
+        "name": "Coffee Project",
+        "entity_id": "9cb13308-0d7a-4d02-a558-9bda11f5dd97",
+        "native_evidence_at": "2026-10-08T02:40:53.889Z",
+        "source_sha": "9a09cea406be36c39932f72e2faa7270c4e9b8b1",
+        "actual_installed_selector": {
+          "discovered": 24,
+          "eligible": 21,
+          "skipped": 3
+        },
+        "normalized_membership_comparison": 21,
+        "example": {
+          "native_url": "https://coffeeprojectnyshop.square.site/product/decaf-colombia/209",
+          "accumulator_url": "https://coffeeprojectnyshop.square.site/product/decaf-colombia/209"
+        },
+        "scope": "Offline actual installed selection code on existing merchant GET-only evidence and read-only page-history snapshot; no network, paid call, source change or catalog write."
+      }
+    ]
+  },
+  "findings": {
+    "Dak": "Installed URL accumulator removes trailing slash; crawler eligibleUrls compares normalized entries with unnormalized native discovery set. Latest real run discovered25/visited0/completed. Actual installed selector replay on prior verified native23-product evidence chooses0, while normalized membership chooses23. Completed zero-result run causes a24-hour cooldown. Source fix and a successful real save remain pending.",
+    "Coffee Project": "Latest production run October5 visited18/classified18/found0, before Square adapter installation. Stored325 page rows comprise173 irrelevant/is_product=false and152 explicit blacklist skips. October8 GET-only native inspection found24 coffees, but it wrote no catalog rows. No production run with the installed native adapter has occurred. Actual installed selector replay chooses21 of24; three existing blacklist records still exclude reviewed coffee URLs."
+  },
+  "scope": "Read-only diagnosis and offline reproduction. No new merchant/model request, source installation, crawler restart, migration, catalog/known-page mutation or future check."
+}
