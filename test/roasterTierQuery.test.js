@@ -20,6 +20,13 @@ test('database assignments, including null and tier nine, override the fallback 
   const m=roastersModule({entities:[{id:'fee5aaa2-09c2-4bde-949d-16471a91793c',roaster_tier:9},{id:'8f69eeb4-2d62-4aea-8024-d2855b01e593',roaster_tier:null}]});
   const rows=await m.getRoasterEntities();assert.deepEqual(rows.map(r=>r.roaster_tier),[9,null]);assert(rows.every(r=>r.crawl_tier_source==='database'));assert.equal(m.calls.length,1);
 });
+test('deployed schema fallback assigns the curated existing and new records by ID',async()=>{
+  const curated=require('../data/reddit-roaster-tier-update.json').assignments;
+  const m=roastersModule({missingTier:true,entities:curated.map(t=>({id:t.id,name:t.name,website_url:t.website_url}))});
+  const rows=await m.getRoasterEntities();
+  assert.deepEqual(rows.map(r=>r.roaster_tier),curated.map(t=>t.tier));
+  assert(rows.every(r=>r.crawl_tier_source==='reviewed_mapping'));
+});
 test('permissions or unrelated query errors do not silently select fallback tiers',async()=>{
   const error={code:'42501',message:'permission denied for entities'},m=roastersModule({error});await assert.rejects(m.getRoasterEntities(),e=>e===error);assert.equal(m.calls.length,1);
 });
