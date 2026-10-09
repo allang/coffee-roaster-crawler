@@ -1,0 +1,83 @@
+{
+  "runtime": {
+    "checked_at": "2026-10-09T02:32:18.837Z",
+    "restart_requested_at": "2026-10-09T02:32:18.566Z",
+    "stopped_at": "2026-10-09T02:32:18.392Z",
+    "source_sha": "9a09cea406be36c39932f72e2faa7270c4e9b8b1",
+    "worker": {
+      "pid": 96717,
+      "parent_pid": 96708,
+      "state": "S",
+      "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+    },
+    "launcher_lock_pid": 96708,
+    "launch_agent_state": "running",
+    "interval_seconds": 5400,
+    "source_env_launcher_plist_unchanged": true,
+    "old_worker_exited": true,
+    "saved_checkpoint": "0e2620e4-f286-5f16-8d29-0d5eff2f66f9",
+    "interrupted_run_id": "c765f4e2-97a7-4cd3-bc00-3b7a69f0ffd1",
+    "interrupted_run_status": "failed",
+    "inventory_complete": false,
+    "omission_reconciliation": false,
+    "worker_started_at": "2026-10-09T02:32:18.913Z",
+    "log_path": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler/logs/crawler-2026-10-08.log",
+    "scheduled_codex_checks_created": 0,
+    "followup_checked_at": "2026-10-09T02:35:29.635Z",
+    "verified_worker_count": 1,
+    "post_restart_runs": [
+      {
+        "id": "e21a418f-734c-4a90-a0ae-c07c4e09f0cc",
+        "entity_id": "69c2bf90-4751-41d1-a454-16c1d87ffd11",
+        "status": "running",
+        "started_at": "2026-10-09T02:32:37.343+00:00",
+        "finished_at": null,
+        "created_at": "2026-10-09T02:32:37.374299+00:00"
+      }
+    ],
+    "post_restart_save_log_events": 0,
+    "post_restart_returned_page_errors": 3,
+    "known_native_weight_constraint_errors": 3,
+    "review_checked_at": "2026-10-09T02:34:46.736409Z",
+    "review_surfaces": 52,
+    "new_external_review_findings": 0,
+    "scope": "Manual restart on unchanged installed code; no eligibility reset or new scheduled check. Counts are an interim log snapshot, not completed-run totals."
+  },
+  "tier_one_coverage": {
+    "capture_started_at": "2026-10-09T02:36:19.506Z",
+    "capture_finished_at": "2026-10-09T02:36:22.169Z",
+    "tier_source": "installed reviewed stable-ID mapping (database tier field absent)",
+    "tier_one_roasters": 65,
+    "coffee_products": 6930,
+    "zero_coffee_roaster_count": 2,
+    "zero_active_coffee_roaster_count": 2,
+    "zero_coffee_roasters": [
+      {
+        "id": "9cb13308-0d7a-4d02-a558-9bda11f5dd97",
+        "name": "Coffee Project",
+        "website_url": "https://coffeeprojectnyshop.square.site",
+        "entity_roles": [
+          {
+            "role": "roaster"
+          }
+        ],
+        "coffee_count": 0,
+        "active_coffee_count": 0
+      },
+      {
+        "id": "11a426df-0146-4a5c-a123-ef7725c13926",
+        "name": "Dak",
+        "website_url": "https://www.dakcoffeeroasters.com/",
+        "entity_roles": [
+          {
+            "role": "roaster"
+          }
+        ],
+        "coffee_count": 0,
+        "active_coffee_count": 0
+      }
+    ],
+    "zero_active_only_roasters": [],
+    "definition": "Existing entities with role roaster in current installed tier 1; zero products of product_type coffee, including active and inactive. Sequential read-only live snapshot; not a completed crawl or proof of source accuracy."
+  }
+}
