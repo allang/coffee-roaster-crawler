@@ -1,0 +1,114 @@
+{
+  "checked_at": "2026-10-09T03:23:33.126Z",
+  "old_source_sha": "9a09cea406be36c39932f72e2faa7270c4e9b8b1",
+  "installed_source_sha": "a77a9c5892dd283ed9bef4b82c7c78a3a13a5c54",
+  "stopped_at": "2026-10-09T03:23:29.170Z",
+  "restart_requested_at": "2026-10-09T03:23:32.825Z",
+  "old_worker_exited": true,
+  "old_worker_pid": 96717,
+  "new_worker": {
+    "pid": 8350,
+    "parent_pid": 8341,
+    "state": "S",
+    "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+  },
+  "launcher_lock_pid": 8341,
+  "launch_agent_running": true,
+  "interval_seconds": 5400,
+  "roaster_workers": 4,
+  "page_workers_per_roaster": 1,
+  "maximum_page_workers": 4,
+  "environment_other_lines_preserved": true,
+  "launcher_plist_unchanged": true,
+  "checkpoint_data_unchanged_before_resume": true,
+  "checkpoint_product_id": "fe3b0c53-ae04-4daa-8f57-1bc3f44444c7",
+  "interrupted_run_id": "af5f4c42-8432-4b9e-9368-e3919e0c63c8",
+  "interrupted_run_status": "failed",
+  "inventory_complete": false,
+  "omission_reconciliation": false,
+  "installed_focused_tests": {
+    "tests": 25,
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0
+  },
+  "log_path": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler/logs/crawler-2026-10-08.log",
+  "scheduled_checks_created": 0,
+  "verified_at": "2026-10-09T03:27:43.110Z",
+  "worker_started_at": "2026-10-09T03:23:33.061Z",
+  "verified_node_worker_count": 1,
+  "verified_concurrency": {
+    "roasterWorkers": 4,
+    "pageWorkersPerRoaster": 1,
+    "maximumPageWorkers": 4
+  },
+  "peak_overlapping_new_crawl_runs": 4,
+  "new_runs": [
+    {
+      "id": "5e030118-1a2e-4150-800d-52014d6e84e7",
+      "entity_id": "5d931414-8d9a-43e7-ba25-e3269884cde8",
+      "status": "running",
+      "started_at": "2026-10-09T03:23:50.78+00:00",
+      "finished_at": null,
+      "error": null,
+      "coffees_found": 0,
+      "pages_visited": 0,
+      "roaster_name": "Taith Coffee"
+    },
+    {
+      "id": "6543919d-3563-484d-b65d-5199a08e60b4",
+      "entity_id": "38a0f59c-a226-4ba7-96ee-b130dd583f66",
+      "status": "running",
+      "started_at": "2026-10-09T03:23:50.855+00:00",
+      "finished_at": null,
+      "error": null,
+      "coffees_found": 0,
+      "pages_visited": 0,
+      "roaster_name": "Mantaray"
+    },
+    {
+      "id": "c35a6816-3ecf-4e19-926c-25d13c1592a1",
+      "entity_id": "18db48af-6c9c-4449-9d66-535c5260e2b5",
+      "status": "failed",
+      "started_at": "2026-10-09T03:23:51.259+00:00",
+      "finished_at": "2026-10-09T03:26:42.818+00:00",
+      "error": "Registered merchant product verification failed: 4 page error(s)",
+      "coffees_found": 0,
+      "pages_visited": 0,
+      "roaster_name": "Leaves Coffee"
+    },
+    {
+      "id": "a0594d17-479e-4e47-aa97-c38d31f82b76",
+      "entity_id": "72e15fce-ddea-48c5-9632-31d9220f1c19",
+      "status": "running",
+      "started_at": "2026-10-09T03:23:51.361+00:00",
+      "finished_at": null,
+      "error": null,
+      "coffees_found": 0,
+      "pages_visited": 0,
+      "roaster_name": "Rogue Wave Coffee"
+    },
+    {
+      "id": "6aa9fd6b-a953-455b-af78-61ee398a8924",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "status": "running",
+      "started_at": "2026-10-09T03:26:43.592+00:00",
+      "finished_at": null,
+      "error": null,
+      "coffees_found": 0,
+      "pages_visited": 0,
+      "roaster_name": "September Coffee"
+    }
+  ],
+  "first_started_roasters": [
+    "Mantaray",
+    "Leaves Coffee",
+    "Rogue Wave Coffee",
+    "Taith Coffee"
+  ],
+  "saved_catalog_events_since_restart": 41,
+  "distinct_saved_product_ids_since_restart": 41,
+  "returned_page_errors_since_restart": 4,
+  "variant_weight_constraint_errors_since_restart": 4,
+  "scope": "Verified startup, effective4/1 limits and four actual overlapping crawl intervals under a single Node/launcher. Interim counters are not completed-pass totals or a measured throughput speedup."
+}
