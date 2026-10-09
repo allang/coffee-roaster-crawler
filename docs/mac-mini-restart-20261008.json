@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-08T15:42:59.206Z",
+  "installed_sha": "28de9b55a1c039a5b3581a9595357d0fe4cf1095",
+  "resume_requested_at": "2026-10-08T15:41:48.177Z",
+  "started_at": "2026-10-08T15:41:48.552Z",
+  "old_launcher_pid": 35205,
+  "old_node_pid": 35215,
+  "launch_agent_state": "running",
+  "launch_agent_pid": 36917,
+  "lock_pid": 36917,
+  "node_pids": [
+    36926
+  ],
+  "node_cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+  "schedule_seconds": 5400,
+  "configured_roaster_workers": 1,
+  "first_phase": {
+    "tier": 1,
+    "roasters": 69
+  },
+  "first_owner": {
+    "id": "535be893-1831-4443-b5e3-c79c09080eb2",
+    "reviewed_tier": 1
+  },
+  "new_crawl_run": {
+    "id": "090e6f80-37a8-4fb7-a647-f66eaa256d57",
+    "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+    "status": "running",
+    "started_at": "2026-10-08T15:42:06.811+00:00"
+  },
+  "logged_errors": 0,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "working_tree_clean": true,
+  "isolated_passport_untouched": true,
+  "interrupted_run_id": "ff67ad5b-646b-47a8-bb60-ce3fc399d283",
+  "interrupted_run_marked_failed": true,
+  "source_already_latest_before_restart": true,
+  "previous_installed_tests": {
+    "pass": 406,
+    "fail": 0,
+    "skipped": 0,
+    "seconds": 9.234374458,
+    "source_unchanged": true
+  },
+  "passed": true
+}

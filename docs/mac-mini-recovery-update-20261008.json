@@ -1,0 +1,160 @@
+{
+  "checked_at": "2026-10-08T16:55:07.745Z",
+  "installed_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+  "installed_tree": "1c3af8dd71d28a6720178c9a51093ff141178a15",
+  "old_sha": "28de9b55a1c039a5b3581a9595357d0fe4cf1095",
+  "resume_requested_at": "2026-10-08T16:53:46.960Z",
+  "pause_seconds": 34.296,
+  "started_at": "2026-10-08T16:53:47.157Z",
+  "launch_agent_state": "running",
+  "launch_agent_pid": 43736,
+  "lock_pid": 43736,
+  "node_pids": [
+    43745
+  ],
+  "schedule_seconds": 5400,
+  "configured_roaster_workers": 1,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "working_tree_clean": true,
+  "first_phase": {
+    "tier": 1,
+    "roasters": 66
+  },
+  "first_owner": {
+    "id": "7b9bba3a-d037-46b8-a27f-7849ba5f181f",
+    "reviewed_tier": 1
+  },
+  "latest_run": {
+    "id": "e1b0dd0e-c21b-4b70-9057-434870a9f662",
+    "entity_id": "7b9bba3a-d037-46b8-a27f-7849ba5f181f",
+    "status": "running",
+    "started_at": "2026-10-08T16:54:08.691+00:00",
+    "finished_at": null,
+    "error": null
+  },
+  "logged_errors": [],
+  "network_warnings": [
+    "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/new-product.json {\"error\":\"Request failed with status code 404\"}",
+    "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/three-bags-per-month-roasters-choice.json {\"error\":\"Request failed with status code 404\"}",
+    "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/5lb-bag-per-month-roasters-choice.json {\"error\":\"Request failed with status code 404\"}",
+    "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/chelbesa-g1.json {\"error\":\"Request failed with status code 404\"}",
+    "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/finca-soledad-mejorado-wave-washed.json {\"error\":\"Request failed with status code 404\"}"
+  ],
+  "tests": {
+    "total": 452,
+    "pass": 451,
+    "fail": 0,
+    "skipped": 1,
+    "seconds": 12.153779833,
+    "skip_reason": "Native PostgreSQL unavailable on Mac; equivalent PGlite contract passed; reviewed branch separately passed 452/452 including native 17.11"
+  },
+  "interrupted_run_id": "6a39edb0-85db-4677-8136-fd321d4db048",
+  "interrupted_run_marked_failed": true,
+  "migration_applied": false,
+  "full_passport_revalidation_complete": false,
+  "health_limit": "Fresh startup and actual running-row proof only; production index compatibility and full latest-source product/run verification remain separate.",
+  "node_cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+  "installed_runtime_verified": true,
+  "hourly_update_heartbeat": "Removed after successful requested code installation; existing coordinating health review is separate.",
+  "source_pr": "https://github.com/allang/coffee-roaster-crawler/pull/7",
+  "source_pr_head": "181ca65cd4a0da6ff1c3a5e5b953bbd0afcc0b2b",
+  "isolated_tests": {
+    "total": 452,
+    "pass": 451,
+    "fail": 0,
+    "skipped": 1,
+    "seconds": 10.711600666
+  },
+  "previous_hour_health": {
+    "checked_at": "2026-10-08T16:52:33.840Z",
+    "resumed_at": "2026-10-08T15:41:48.177Z",
+    "seconds_since_resume": 4245.663,
+    "actual_runs": [
+      {
+        "id": "090e6f80-37a8-4fb7-a647-f66eaa256d57",
+        "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+        "status": "failed",
+        "started_at": "2026-10-08T15:42:06.811+00:00",
+        "finished_at": "2026-10-08T15:54:10.252+00:00",
+        "error": "Registered merchant product verification failed: 6 page error(s)",
+        "pages_visited": 0,
+        "coffees_found": 0
+      },
+      {
+        "id": "37b2b4a2-9825-4e58-a3d1-5b700be6acfa",
+        "entity_id": "281aa870-2867-465c-9594-d7764c9273f6",
+        "status": "completed",
+        "started_at": "2026-10-08T16:07:19.133+00:00",
+        "finished_at": "2026-10-08T16:13:09.895+00:00",
+        "error": null,
+        "pages_visited": 12,
+        "coffees_found": 12
+      },
+      {
+        "id": "6233ab44-b1d1-4700-9c8e-c9e00793b9d8",
+        "entity_id": "5d931414-8d9a-43e7-ba25-e3269884cde8",
+        "status": "failed",
+        "started_at": "2026-10-08T15:54:10.469+00:00",
+        "finished_at": "2026-10-08T16:07:11.597+00:00",
+        "error": "Registered merchant product verification failed: 5 page error(s)",
+        "pages_visited": 0,
+        "coffees_found": 0
+      },
+      {
+        "id": "6a39edb0-85db-4677-8136-fd321d4db048",
+        "entity_id": "82b540d1-53c7-48ed-916c-dc3e662addc1",
+        "status": "running",
+        "started_at": "2026-10-08T16:46:49.226+00:00",
+        "finished_at": null,
+        "error": null,
+        "pages_visited": 0,
+        "coffees_found": 0
+      },
+      {
+        "id": "854a10c5-e03a-4420-90ec-6c52ff6baa0d",
+        "entity_id": "058d58c7-c655-40fe-a651-02b8f0593a89",
+        "status": "completed",
+        "started_at": "2026-10-08T16:13:10.346+00:00",
+        "finished_at": "2026-10-08T16:46:39.949+00:00",
+        "error": null,
+        "pages_visited": 68,
+        "coffees_found": 68
+      },
+      {
+        "id": "c0f8baa3-b851-4aab-818c-55efc9dc597b",
+        "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
+        "status": "completed",
+        "started_at": "2026-10-08T16:07:15.869+00:00",
+        "finished_at": "2026-10-08T16:07:18.518+00:00",
+        "error": null,
+        "pages_visited": 0,
+        "coffees_found": 0
+      }
+    ],
+    "visitor_completions": [
+      "hydrangea-coffee-roasters\t\t\t\tSUCCESS [Crawl] Page visiting complete {\"visited\":28,\"coffeeFound\":22,\"irrelevant\":0,\"errors\":6}",
+      "taith-coffee\t\t\t\tSUCCESS [Crawl] Page visiting complete {\"visited\":31,\"coffeeFound\":26,\"irrelevant\":0,\"errors\":5}",
+      "loveless-coffees\t\t\t\tSUCCESS [Crawl] Page visiting complete {\"visited\":12,\"coffeeFound\":12,\"irrelevant\":0,\"errors\":0}",
+      "obadiah\t\t\t\tSUCCESS [Crawl] Page visiting complete {\"visited\":68,\"coffeeFound\":68,\"irrelevant\":0,\"errors\":0}"
+    ],
+    "logged_errors": [
+      "WARN [CrawlRuns] Marked crawl run as failed: 090e6f80-37a8-4fb7-a647-f66eaa256d57",
+      "ERROR [Crawler] Failed to crawl  Hydrangea Coffee Roasters {\"error\":\"Registered merchant product verification failed: 6 page error(s)\"}",
+      "WARN [CrawlRuns] Marked crawl run as failed: 6233ab44-b1d1-4700-9c8e-c9e00793b9d8",
+      "ERROR [Crawler] Failed to crawl Taith Coffee {\"error\":\"Registered merchant product verification failed: 5 page error(s)\"}"
+    ],
+    "limit": "Individual returned page-error causes are not emitted; failed-run database counters are not finalized. These are the previous source and restart, not post-recovery results."
+  },
+  "schema_preflight_file": "native-variant-weight-production-preflight-20261008.json",
+  "source_dependencies_unchanged": true,
+  "previous_failure_cause_resolution": {
+    "checked_at": "2026-10-08T17:10:05.511Z",
+    "source_file": "mac-mini-preceding-save-failures-20261008.json",
+    "hydrangea_23505_weight_conflicts": 6,
+    "taith_23505_weight_conflicts": 5,
+    "all_eleven_owners_bound": true,
+    "not_optional_json404_warnings": true,
+    "migration_applied": false
+  }
+}

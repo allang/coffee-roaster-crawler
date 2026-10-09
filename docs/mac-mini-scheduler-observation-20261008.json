@@ -1,0 +1,215 @@
+{
+  "checked_at": "2026-10-08T15:59:41.188Z",
+  "log_snapshot_at": "2026-10-08T15:59:01.020Z",
+  "resume_requested_at": "2026-10-08T15:41:48.177Z",
+  "installed_sha": "28de9b55a1c039a5b3581a9595357d0fe4cf1095",
+  "lock_pid": 36917,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "log_errors": [
+    "hydrangea-coffee-roasters\t\t\t\tSUCCESS [Crawl] Page visiting complete {\"visited\":28,\"coffeeFound\":22,\"irrelevant\":0,\"errors\":6}",
+    "WARN [CrawlRuns] Marked crawl run as failed: 090e6f80-37a8-4fb7-a647-f66eaa256d57",
+    "ERROR [Crawler] Failed to crawl  Hydrangea Coffee Roasters {\"error\":\"Registered merchant product verification failed: 6 page error(s)\"}"
+  ],
+  "runs": [
+    {
+      "id": "090e6f80-37a8-4fb7-a647-f66eaa256d57",
+      "entity_id": "535be893-1831-4443-b5e3-c79c09080eb2",
+      "status": "failed",
+      "started_at": "2026-10-08T15:42:06.811+00:00",
+      "finished_at": "2026-10-08T15:54:10.252+00:00",
+      "error": "Registered merchant product verification failed: 6 page error(s)"
+    },
+    {
+      "id": "6233ab44-b1d1-4700-9c8e-c9e00793b9d8",
+      "entity_id": "5d931414-8d9a-43e7-ba25-e3269884cde8",
+      "status": "running",
+      "started_at": "2026-10-08T15:54:10.469+00:00",
+      "finished_at": null,
+      "error": null
+    }
+  ],
+  "hydrangea_fresh_successful_products": 22,
+  "hydrangea_terminal_counts": {
+    "visited": 28,
+    "coffee_found": 22,
+    "errors": 6,
+    "evidence": "terminal regular-crawler log"
+  },
+  "cause_limit": "Normal visitor logs only the aggregate failure, so exact per-page causes for the six current Hydrangea errors are unavailable. Duplicate known-weight source variants plus the current global unique index establish compatibility risk; they do not attribute every current error.",
+  "one_hour_review_not_yet_due": true,
+  "hydrangea_historical_reviewed_products": 32,
+  "hydrangea_historical_products_without_fresh_success": [
+    {
+      "source_product_id": "8359307510082",
+      "url": "https://hydrangea.coffee/products/salma-bermudez",
+      "name": "Gesha - Salma Bermudez - Finca El Paraiso",
+      "duplicate_known_weight": false,
+      "variants": [
+        {
+          "id": "45267291570498",
+          "title": "4oz (114g)",
+          "weight_g": 114
+        },
+        {
+          "id": "45267291537730",
+          "title": "8oz (227g)",
+          "weight_g": 227
+        },
+        {
+          "id": "49578072015170",
+          "title": "2lbs (907g)",
+          "weight_g": 907
+        }
+      ]
+    },
+    {
+      "source_product_id": "8096100155714",
+      "url": "https://hydrangea.coffee/products/finca-potosi-xo",
+      "name": "San Juan - XO Natural - Finca Potosi, Cafe Granja La Esperanza",
+      "duplicate_known_weight": false,
+      "variants": [
+        {
+          "id": "44371443253570",
+          "title": "4oz (114g)",
+          "weight_g": 114
+        },
+        {
+          "id": "50157837943106",
+          "title": "8oz (227g)",
+          "weight_g": 227
+        },
+        {
+          "id": "50584885199170",
+          "title": "2lbs (907g)",
+          "weight_g": 907
+        }
+      ]
+    },
+    {
+      "source_product_id": "10281858007362",
+      "url": "https://hydrangea.coffee/products/rested-gesha-salma-bermudez-finca-el-paraiso",
+      "name": "[Rested] Gesha - Salma Bermudez - Finca El Paraiso",
+      "duplicate_known_weight": true,
+      "variants": [
+        {
+          "id": "56084974043458",
+          "title": "4oz (114g) - 9/27",
+          "weight_g": 114
+        },
+        {
+          "id": "56129663697218",
+          "title": "4oz (114g) - 10/4",
+          "weight_g": 114
+        }
+      ]
+    },
+    {
+      "source_product_id": "10300303900994",
+      "url": "https://hydrangea.coffee/products/castillo-lychee-finca-el-paraiso-copy",
+      "name": "[Rested] Castillo - Lychee - Finca El Paraiso",
+      "duplicate_known_weight": true,
+      "variants": [
+        {
+          "id": "54847937904962",
+          "title": "8oz (227g) - 9/27",
+          "weight_g": 227
+        },
+        {
+          "id": "67647623201090",
+          "title": "8oz (227g) - 10/4",
+          "weight_g": 227
+        }
+      ]
+    },
+    {
+      "source_product_id": "10456529928514",
+      "url": "https://hydrangea.coffee/products/pink-bourbon-washed-finca-el-pedregal-copy",
+      "name": "[Rested] Pink Bourbon - Washed - Finca El Pedregal",
+      "duplicate_known_weight": false,
+      "variants": [
+        {
+          "id": "56169731555650",
+          "title": "8oz (227g) - 10/4",
+          "weight_g": 227
+        }
+      ]
+    },
+    {
+      "source_product_id": "10470734168386",
+      "url": "https://hydrangea.coffee/products/rested-caturra-semi-washed-finca-el-sendero",
+      "name": "[Rested] Caturra - Semi Washed - Finca El Sendero",
+      "duplicate_known_weight": true,
+      "variants": [
+        {
+          "id": "56085067366722",
+          "title": "8oz (227g) - 9/27",
+          "weight_g": 227
+        },
+        {
+          "id": "56226628337986",
+          "title": "8oz (227g) - 10/4",
+          "weight_g": 227
+        }
+      ]
+    },
+    {
+      "source_product_id": "10335795085634",
+      "url": "https://hydrangea.coffee/products/rested-pink-bourbon-peach-finca-el-paraiso-1",
+      "name": "[Rested] Pink Bourbon - Peach - Finca El Paraiso",
+      "duplicate_known_weight": false,
+      "variants": [
+        {
+          "id": "53465921061186",
+          "title": "8oz (227g) - 10/4",
+          "weight_g": 227
+        }
+      ]
+    },
+    {
+      "source_product_id": "10528838222146",
+      "url": "https://hydrangea.coffee/products/rested-sl34-sl28-ruiru-11-batian-washed-karinga-ab",
+      "name": "[Rested] SL34, SL28, Ruiru 11, Batian - Washed - Karinga AB",
+      "duplicate_known_weight": true,
+      "variants": [
+        {
+          "id": "56169853616450",
+          "title": "8oz (227g) - 9/27",
+          "weight_g": 227
+        },
+        {
+          "id": "67647596986690",
+          "title": "8oz (227g) - 10/4",
+          "weight_g": 227
+        }
+      ]
+    },
+    {
+      "source_product_id": "10456529338690",
+      "url": "https://hydrangea.coffee/products/rested-castillo-lulo-washed-finca-santa-monica",
+      "name": "[Rested] Castillo - Lulo Washed - Finca Santa Monica",
+      "duplicate_known_weight": false,
+      "variants": [
+        {
+          "id": "67595486069058",
+          "title": "8oz (227g) - 10/4",
+          "weight_g": 227
+        }
+      ]
+    },
+    {
+      "source_product_id": "10300296364354",
+      "url": "https://hydrangea.coffee/products/san-juan-xo-natural-finca-potosi-copy",
+      "name": "[Rested] San Juan - XO Natural - Finca Potosi",
+      "duplicate_known_weight": false,
+      "variants": [
+        {
+          "id": "52945764090178",
+          "title": "8oz (227g) -10/4",
+          "weight_g": 227
+        }
+      ]
+    }
+  ],
+  "historical_inventory_limit": "Historical Hydrangea receipt has 32 products; the actual normal run visited 28. Its ten historical products without a fresh save cannot be equated to the six current page errors; four of the ten have duplicate known weights in the historical primary native receipt."
+}

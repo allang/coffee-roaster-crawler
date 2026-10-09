@@ -1,0 +1,166 @@
+{
+  "activation": {
+    "checked_at": "2026-10-08T15:31:00.485Z",
+    "installed_sha": "28de9b55a1c039a5b3581a9595357d0fe4cf1095",
+    "installed_tree": "2d157172b100eb94ce8f92d7696d5f71cfa500a0",
+    "installation_verified_at": "2026-10-08T15:29:36.836Z",
+    "resume_requested_at": "2026-10-08T15:29:36.836Z",
+    "pause_started_at": "2026-10-08T15:28:28.239Z",
+    "paused_at": "2026-10-08T15:28:28.748Z",
+    "pause_seconds": 68.597,
+    "original_head": "d676de561005c90ecf96af123d20068374e6af88",
+    "interrupted_scheduler_run": "5342638b-154d-400b-aec1-170506bf784a",
+    "interrupted_scheduler_run_marked_failed": true,
+    "tests": {
+      "passed": 406,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 9.234374458
+    },
+    "launch_agent": "com.openclaw.coffee-roaster-crawler",
+    "launch_agent_state": "running",
+    "launch_agent_pid": 35205,
+    "schedule_seconds": 5400,
+    "lock_pid": 35205,
+    "node_pids": [
+      35215
+    ],
+    "configured_roaster_workers": 1,
+    "configured_model": "gpt-5-mini",
+    "configured_initial_output_tokens": 4000,
+    "configured_classifier_max_chars": 6000,
+    "env_unchanged": true,
+    "plist_unchanged": true,
+    "working_tree_clean": true,
+    "started_at": "2026-10-08T15:29:37.046Z",
+    "first_phase": {
+      "tier": 1,
+      "roasters": 69
+    },
+    "first_roaster": {
+      "entity_id": "0abbc586-467e-4bfe-b431-248941145733",
+      "reviewed_fallback_tier": 1
+    },
+    "startup_error_count": 0,
+    "tier_fallback_observed": true,
+    "isolated_passport_left_running": true,
+    "followup": "The delegating thread will schedule a separate check one hour after verified resume; no duplicate automation created.",
+    "limits": "Startup smoke only; Passport full readback, full live tier transitions and full catalog cleanup are pending.",
+    "runtime_verified": true,
+    "node_cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+  },
+  "completed_three_product_readbacks": {
+    "checked_at": "2026-10-08T14:16:32.773Z",
+    "passed": true,
+    "coffees": 38,
+    "native_variants": 51,
+    "public_images": 42,
+    "public_image_bytes": 10229120,
+    "owners": [
+      {
+        "entity_id": "2dbf0bf9-9067-425a-aebc-a828a912e353",
+        "name": "Aery Coffee",
+        "success": true,
+        "started_at": "2026-10-08T13:35:01.557Z",
+        "finished_at": "2026-10-08T13:39:43.029Z",
+        "run_id": "52dbea24-08e5-4bae-bae5-47b816ba92f6",
+        "status": "completed",
+        "metrics": {
+          "visited": 18,
+          "coffeeFound": 18,
+          "irrelevant": 0,
+          "errors": 0,
+          "aiCalls": 16,
+          "cacheHits": 2,
+          "structuredPages": 0,
+          "structuredProductOnlyPages": 0,
+          "marketChecks": 18,
+          "aiUsage": {
+            "prompt_tokens": 18996,
+            "completion_tokens": 23443,
+            "cached_tokens": 1024,
+            "unreported_calls": 0
+          }
+        },
+        "saved_products": 18,
+        "new_products": 18,
+        "exact_native_variants": 18,
+        "total_catalog_products": 18,
+        "total_catalog_variants": 18
+      },
+      {
+        "entity_id": "a95c27e7-d466-4553-a4d0-3c1297bea0fa",
+        "name": "Apiary Coffee Co.",
+        "success": true,
+        "started_at": "2026-10-08T13:39:43.036Z",
+        "finished_at": "2026-10-08T13:42:04.400Z",
+        "run_id": "8145b673-c408-4076-9197-412eac2d75de",
+        "status": "completed",
+        "metrics": {
+          "visited": 6,
+          "coffeeFound": 6,
+          "irrelevant": 0,
+          "errors": 0,
+          "aiCalls": 6,
+          "cacheHits": 0,
+          "structuredPages": 0,
+          "structuredProductOnlyPages": 0,
+          "marketChecks": 6,
+          "aiUsage": {
+            "prompt_tokens": 10135,
+            "completion_tokens": 15146,
+            "cached_tokens": 0,
+            "unreported_calls": 0
+          }
+        },
+        "saved_products": 6,
+        "new_products": 6,
+        "exact_native_variants": 6,
+        "total_catalog_products": 6,
+        "total_catalog_variants": 6
+      },
+      {
+        "entity_id": "f4635ada-5e28-4376-9b38-a1256113d34d",
+        "name": "Colorfull Coffee",
+        "success": true,
+        "started_at": "2026-10-08T13:53:29.074Z",
+        "finished_at": "2026-10-08T13:55:03.063Z",
+        "run_id": "c5161667-b8e4-4b8f-b48f-154bc88d0ccd",
+        "status": "completed",
+        "metrics": {
+          "visited": 14,
+          "coffeeFound": 14,
+          "irrelevant": 0,
+          "errors": 0,
+          "aiCalls": 2,
+          "cacheHits": 12,
+          "structuredPages": 0,
+          "structuredProductOnlyPages": 0,
+          "marketChecks": 14,
+          "aiUsage": {
+            "prompt_tokens": 3714,
+            "completion_tokens": 6970,
+            "cached_tokens": 1792,
+            "unreported_calls": 0
+          }
+        },
+        "saved_products": 14,
+        "new_products": 8,
+        "exact_native_variants": 27,
+        "total_catalog_products": 24,
+        "total_catalog_variants": 41
+      }
+    ]
+  },
+  "passport_checkpoint": {
+    "checked_at": "2026-10-08T15:31:41.937Z",
+    "execution_source_sha": "003a60c775832a0e938a752129141eda5f01f15f",
+    "saved": 174,
+    "expected": 255,
+    "completed": false,
+    "full_readback_pending": true
+  },
+  "authorization": "Fresh instruction to install latest now and let the scheduler run; final Passport completion gate waived for the update, isolated progress preserved",
+  "one_hour_followup_due_utc": "2026-10-08T16:29:36.836Z",
+  "duplicate_automation_created": false
+}

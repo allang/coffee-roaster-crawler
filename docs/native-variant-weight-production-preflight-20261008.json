@@ -1,0 +1,70 @@
+{
+  "project": "gtlipifdfyugiwpxvuse",
+  "database": "postgres",
+  "checked_at": "2026-10-08T16:50:40.886542+00:00",
+  "current_user": "postgres",
+  "server_version": "17.6",
+  "method": "Read-only pg_get_indexdef / pg_index / pg_constraint and information_schema SELECT in existing authenticated SQL tab",
+  "query_url": "https://supabase.com/dashboard/project/gtlipifdfyugiwpxvuse/sql/2a1a31bc-02e7-4f13-97f2-943e18fddec1",
+  "database_mutations": 0,
+  "indexes": [
+    {
+      "name": "product_variants_unique_weight_per_product",
+      "owner": "postgres",
+      "table": "product_variants",
+      "schema": "public",
+      "definition": "CREATE UNIQUE INDEX product_variants_unique_weight_per_product ON public.product_variants USING btree (product_id, weight_g) WHERE (weight_g IS NOT NULL)",
+      "indisready": true,
+      "indisvalid": true,
+      "indisunique": true,
+      "table_owner": "postgres",
+      "constraint_owners": []
+    },
+    {
+      "name": "variants_source_key_unique",
+      "owner": "postgres",
+      "table": "product_variants",
+      "schema": "public",
+      "definition": "CREATE UNIQUE INDEX variants_source_key_unique ON public.product_variants USING btree (product_id, source_key) WHERE (source_key IS NOT NULL)",
+      "indisready": true,
+      "indisvalid": true,
+      "indisunique": true,
+      "table_owner": "postgres",
+      "constraint_owners": []
+    }
+  ],
+  "fields": [
+    {
+      "name": "product_id",
+      "type": "uuid",
+      "nullable": "NO"
+    },
+    {
+      "name": "weight_g",
+      "type": "integer",
+      "nullable": "YES"
+    },
+    {
+      "name": "source_key",
+      "type": "text",
+      "nullable": "YES"
+    },
+    {
+      "name": "merchant_variant_id",
+      "type": "text",
+      "nullable": "YES"
+    }
+  ],
+  "pooler": {
+    "method": "Session pooler from authenticated project Connect panel",
+    "host": "aws-1-us-east-2.pooler.supabase.com",
+    "port": 5432,
+    "database": "postgres",
+    "user": "postgres.gtlipifdfyugiwpxvuse",
+    "ipv4_supported": true,
+    "tcp_connect_succeeded_from_mac": true,
+    "password_read": false,
+    "authentication_attempted": false
+  },
+  "migration_applied": false
+}
