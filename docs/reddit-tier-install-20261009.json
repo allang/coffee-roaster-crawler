@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-10-09T20:35:52.116Z",
+  "old_source_sha": "8e9915615598d48505995631cb5056566554faaa",
+  "installed_source_sha": "a569c75d8e9fcfe92a9303da1a0f917d2edaec2a",
+  "merged_main_sha": "12a10bed8f7d494f3c5a430e48274d917356d1af",
+  "old_worker_pid": 15247,
+  "new_worker": {
+    "pid": 71859,
+    "parent_pid": 71850,
+    "state": "S"
+  },
+  "launcher_lock_pid": 71850,
+  "all_active_page_pipelines_at_returned_boundary": true,
+  "active_pipeline_count_before_stop": 1,
+  "idle_slots_before_stop": 3,
+  "no_pending_tier_admissions": true,
+  "stopped_at": "2026-10-09T20:35:51.352Z",
+  "restart_requested_at": "2026-10-09T20:35:51.854Z",
+  "environment_launcher_plist_unchanged": true,
+  "checkpoint_rows_preserved_before_resume": true,
+  "checkpoint_result": {
+    "productId": "74bc315c-4387-507a-ad17-02182550a6e4",
+    "isCoffee": true,
+    "error": null,
+    "classified": true
+  },
+  "interrupted_run_id": "f85eee08-08f6-42a1-b6c0-a78ba7dc4a9a",
+  "interrupted_run_status": "failed",
+  "inventory_complete": false,
+  "omission_reconciliation": false,
+  "manifest_ids": 537,
+  "tier_counts": {
+    "1": 65,
+    "2": 42,
+    "3": 421,
+    "4": 0,
+    "9": 9
+  },
+  "roaster_workers": 4,
+  "page_workers_per_roaster": 1,
+  "priority_policy": "never_attempted_then_oldest_last_attempt_within_tiers_and_remaining",
+  "interval_seconds": 5400,
+  "installed_focused_tests": {
+    "total": 23,
+    "pass": 23,
+    "fail": 0,
+    "skip": 0
+  },
+  "scheduled_checks_created": 0,
+  "verified_at": "2026-10-09T20:36:47.716Z",
+  "worker_started_at": "2026-10-09T20:35:52.197Z",
+  "launch_agent_running": true,
+  "verified_node_worker_count": 1,
+  "verified_concurrency": {
+    "roasterWorkers": 4,
+    "pageWorkersPerRoaster": 1,
+    "maximumPageWorkers": 4
+  },
+  "priority_log_verified": true,
+  "peak_overlapping_new_runs": 4,
+  "verified_curated_roasters": [
+    {
+      "id": "c274c1f2-4bee-415e-accf-75e6b32735c0",
+      "name": "Brass Horn Coffee Roasters",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "6422b3e5-cd9f-4746-b31f-95c387b37862",
+      "name": "Chad Lou's Coffee",
+      "tier": 3,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "93156d51-3ecc-4c37-b365-85d05206ab3b",
+      "name": "Dessert Oasis Coffee Roasters",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "bc3d6b3d-a519-4213-b3b3-92962dcb4c84",
+      "name": "FRINJ Coffee",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "1fe02f21-2dbe-46bb-91aa-bcc92a3f4cfa",
+      "name": "Four Letter Word",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "80472eb4-c5b4-414a-9254-b65255ebeb23",
+      "name": "Gaslight Coffee Roasters",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "61523cae-b07f-52e1-95f9-b3fe91d8c457",
+      "name": "Namvar Estates",
+      "tier": 3,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "552166f3-cf11-5a16-b940-72b61887ab78",
+      "name": "Isotope Coffee",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "1e100d75-978d-4688-81e2-32d680f16ab2",
+      "name": "Milk & Honey Coffee Co",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "58677608-79d7-4c46-a20d-25aa2203300f",
+      "name": "Origin Coffee Roasters",
+      "tier": 3,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "ff1cd21b-5be6-4fa2-9c60-994ea968cb26",
+      "name": "Pastime Coffee",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "897dea41-e128-405e-a230-1ba7840881a6",
+      "name": "Pure Intentions Coffee",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    },
+    {
+      "id": "bed88829-c4d5-4cc9-8d42-c4905e2bf431",
+      "name": "Rosso Coffee Roasters",
+      "tier": 2,
+      "crawl_tier_source": "reviewed_mapping"
+    }
+  ],
+  "verified_catalog_roaster_count": 9152,
+  "first_started_roasters": [
+    "Aery Coffee",
+    "Dak",
+    "Loveless Coffees",
+    "Obadiah"
+  ],
+  "new_runs": [
+    {
+      "id": "d2458b62-0337-4b00-b46d-218a711ae6d6",
+      "entity_id": "058d58c7-c655-40fe-a651-02b8f0593a89",
+      "status": "running",
+      "started_at": "2026-10-09T20:36:18.116+00:00",
+      "finished_at": null,
+      "roaster_name": "Obadiah"
+    },
+    {
+      "id": "3ac0703e-e915-41da-ab8a-1b06e56b5a24",
+      "entity_id": "d85c4ca3-b86e-43b6-8822-aaef6472126a",
+      "status": "running",
+      "started_at": "2026-10-09T20:36:18.183+00:00",
+      "finished_at": null,
+      "roaster_name": "Loveless Coffees"
+    },
+    {
+      "id": "5b2aaaaa-c8ed-4758-8c1e-5d35666d5fa2",
+      "entity_id": "2dbf0bf9-9067-425a-aebc-a828a912e353",
+      "status": "running",
+      "started_at": "2026-10-09T20:36:19.094+00:00",
+      "finished_at": null,
+      "roaster_name": "Aery Coffee"
+    },
+    {
+      "id": "4728fcf7-f4f2-4867-bd80-77551c1720ef",
+      "entity_id": "11a426df-0146-4a5c-a123-ef7725c13926",
+      "status": "running",
+      "started_at": "2026-10-09T20:36:20.987+00:00",
+      "finished_at": null,
+      "roaster_name": "Dak"
+    }
+  ],
+  "saved_catalog_events_since_restart": 6
+}
