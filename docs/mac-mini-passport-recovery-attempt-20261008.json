@@ -1,0 +1,242 @@
+{
+  "checked_at": "2026-10-08T18:32:02.130Z",
+  "source_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+  "run_id": "c7f38e4d-99b3-4c1b-841c-0dd3f307d1e0",
+  "status": "failed",
+  "started_at": "2026-10-08T18:03:39.022Z",
+  "finished_at": "2026-10-08T18:28:09.382Z",
+  "elapsed_seconds": 1470.36,
+  "terminal_visitor": {
+    "visited": 255,
+    "coffeeFound": 98,
+    "irrelevant": 0,
+    "errors": 157
+  },
+  "save_attempts": 98,
+  "successful_saves": 98,
+  "save_failures": 0,
+  "extraction_modes": {
+    "cache": 61,
+    "ai": 37
+  },
+  "model_responses": 40,
+  "model_finish_reasons": {
+    "stop": 37,
+    "length": 3
+  },
+  "model_usage": {
+    "input_tokens": 68385,
+    "output_tokens": 135492,
+    "cached_input_tokens": 5120,
+    "reasoning_tokens": 101600,
+    "unreported": 0
+  },
+  "model_failed_responses": 0,
+  "observed_transient_merchant_responses": {
+    "429": 14,
+    "503": 1
+  },
+  "last_merchant_failure": {
+    "at": "2026-10-08T18:26:46.114Z",
+    "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+    "status": 503,
+    "historical_retry_after_known": false,
+    "no_later_merchant_fetch_in_run": true
+  },
+  "cause_inference": "All remaining errors are consistent with shared host cooldown blocking dispatch after the last primary 503; individual returned page errors and the historical Retry-After were not retained, so blanket exact attribution is unproved.",
+  "current_diagnostic": {
+    "checked_at": "2026-10-08T18:32:07.441Z",
+    "mode": "single-guarded-primary-get-diagnostic-no-ai-or-catalog-writes",
+    "observations": [
+      {
+        "at": "2026-10-08T18:32:07.440Z",
+        "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+        "status": 503,
+        "retry_after": "123",
+        "server_date": "Thu, 08 Oct 2026 18:32:07 GMT",
+        "content_type": "application/json"
+      }
+    ],
+    "result": {
+      "success": false,
+      "status": 503,
+      "error": "HTTP 503",
+      "retryStopped": "retry_limit"
+    },
+    "reader_requests": [
+      {
+        "method": "GET",
+        "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+        "status": 503,
+        "at": "2026-10-08T18:32:07.274Z",
+        "attempt": 1,
+        "retry": 0,
+        "retryDelayMs": 123000,
+        "retryAfterMs": 123000,
+        "retryStopped": "retry_limit"
+      }
+    ],
+    "historical_retry_after_recorded": false,
+    "historical_157_individual_errors_recorded": false
+  },
+  "subsequent_diagnostic": {
+    "checked_at": "2026-10-08T18:34:01.017Z",
+    "mode": "single-primary-get-and-following-guarded-read-cooldown-reproduction",
+    "responses": [
+      {
+        "at": "2026-10-08T18:34:00.357Z",
+        "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+        "status": 200,
+        "retry_after": null
+      },
+      {
+        "at": "2026-10-08T18:34:01.013Z",
+        "url": "https://passportcoffee.com.au/products/2023-ekka-filter-festival-flight-set",
+        "status": 200,
+        "retry_after": null
+      }
+    ],
+    "primary": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "retryStopped": null,
+      "attempts": 1,
+      "retries": 0
+    },
+    "next": {
+      "success": true,
+      "status": 200,
+      "error": null,
+      "retryStopped": null,
+      "attempts": 1,
+      "retries": 0
+    },
+    "reader_requests": [
+      {
+        "method": "GET",
+        "url": "https://passportcoffee.com.au/products/colombia-wilton-benitez-red-bourbon-ea-locaf-espresso",
+        "status": 200,
+        "at": "2026-10-08T18:33:59.409Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://passportcoffee.com.au/products/2023-ekka-filter-festival-flight-set",
+        "status": 200,
+        "at": "2026-10-08T18:34:00.375Z",
+        "attempt": 1,
+        "retry": 0
+      }
+    ],
+    "merchant_fetches": 2,
+    "ai_calls": 0,
+    "catalog_writes": 0,
+    "historical_retry_after_known": false,
+    "historical_individual_page_errors_known": false
+  },
+  "offline_replay": {
+    "retry_after_seconds": 123,
+    "primary_retry_stopped": "retry_after_limit",
+    "subsequent_read_error": "Merchant cooldown exceeds read time budget",
+    "actual_network_requests": 0,
+    "historical_157_causes_proved": false
+  },
+  "preflight": {
+    "checked_at": "2026-10-08T18:03:01.667Z",
+    "existing_products": 213,
+    "existing_variants": 435,
+    "known_pages": 212,
+    "legacy_collision_count": 0
+  },
+  "successful_subset_readback": {
+    "source_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+    "checked_at": "2026-10-08T18:32:02.130Z",
+    "subset_passed": true,
+    "full_run_passed": false,
+    "scope": "fresh readback of the 98 successful saves from a failed full normal 255-product run; not complete inventory; eight incomplete accessory subsets and global omission guards retained",
+    "owners": [
+      {
+        "entity_id": "c978d995-9310-4c54-945b-5211ccdddf7a",
+        "name": "Passport Specialty Coffee",
+        "started_at": "2026-10-08T18:03:39.301Z",
+        "finished_at": "2026-10-08T18:28:07.790Z",
+        "run_id": "c7f38e4d-99b3-4c1b-841c-0dd3f307d1e0",
+        "status": "failed",
+        "saved_products": 98,
+        "new_products": 36,
+        "exact_native_variants": 216,
+        "total_catalog_products": 249,
+        "total_catalog_variants": 516
+      }
+    ],
+    "saved_products": 98,
+    "public_images_verified": 65,
+    "public_image_bytes": 34280210,
+    "prohibited_requests": 0,
+    "request_summary": {
+      "catalog": 807,
+      "merchant": 347,
+      "model": 40
+    },
+    "runtime": {
+      "head": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+      "working_tree_clean": true,
+      "env_unchanged": true,
+      "plist_unchanged": true,
+      "lock_pid": 43736,
+      "scheduler_node_alive": true
+    },
+    "failures": []
+  },
+  "weighted_pouch_normal_save": {
+    "checked_at": "2026-10-08T18:26:58.223Z",
+    "source_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+    "run_id": "c7f38e4d-99b3-4c1b-841c-0dd3f307d1e0",
+    "id": "1bba62e7-0bf8-58da-9676-f72eabbff8d8",
+    "error": null,
+    "observed_at": "2026-10-08T18:26:28.612Z",
+    "variants_complete": false,
+    "coffee_skus": [
+      {
+        "native_id": "46537133424801",
+        "title": "125gm",
+        "weight_g": 125,
+        "amount": "36.00",
+        "currency": "AUD",
+        "minor_units": 3600,
+        "stock": "in_stock"
+      },
+      {
+        "native_id": "44906648764577",
+        "title": "250gm",
+        "weight_g": 250,
+        "amount": "60.00",
+        "currency": "AUD",
+        "minor_units": 6000,
+        "stock": "in_stock"
+      },
+      {
+        "native_id": "44906648797345",
+        "title": "1KG",
+        "weight_g": 1000,
+        "amount": "218.00",
+        "currency": "AUD",
+        "minor_units": 21800,
+        "stock": "in_stock"
+      }
+    ],
+    "incomplete_subsets_observed": 8
+  },
+  "incomplete_accessory_subsets": 8,
+  "variants_complete": false,
+  "reconcile_omissions": false,
+  "inventory_authorizes_global_absence": false,
+  "full_gate_passed": false,
+  "matched_performance_comparison": false,
+  "billing_invoice_known": false,
+  "migration_applied_by_this_run": false,
+  "scheduler_restarted_by_this_run": false,
+  "extra_automation_created": false
+}

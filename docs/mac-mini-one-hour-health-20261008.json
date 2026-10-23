@@ -1,0 +1,191 @@
+{
+  "checked_at": "2026-10-08T17:57:29.429Z",
+  "readback_finished_at": "2026-10-08T17:57:29.835Z",
+  "resume_requested_at": "2026-10-08T16:53:46.960Z",
+  "elapsed_seconds": 3822.469,
+  "started_at": "2026-10-08T16:53:47.157Z",
+  "installed_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+  "installed_tree": "1c3af8dd71d28a6720178c9a51093ff141178a15",
+  "remote_main_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+  "working_tree_clean": true,
+  "launch_agent_state": "running",
+  "launch_agent_pid": 43736,
+  "lock_pid": 43736,
+  "node_pid": 43745,
+  "node_cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+  "scheduler_owned_node_count": 1,
+  "crawler_nodes_in_original_checkout": [
+    {
+      "pid": 43745,
+      "parent_pid": 43736,
+      "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+    }
+  ],
+  "schedule_seconds": 5400,
+  "configured_roaster_workers": 1,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "current_phase": {
+    "tier": 1,
+    "roasters": 66
+  },
+  "phase_transitions": [
+    {
+      "tier": 1,
+      "roasters": 66
+    }
+  ],
+  "current_owner": {
+    "id": "38371d64-3a44-47f7-a4e8-89ef83968d1e",
+    "website": "https://moonwakecoffeeroasters.com/"
+  },
+  "log_snapshot_bytes": 126823,
+  "log_modified_at": "2026-10-08T17:57:13.646Z",
+  "log_age_seconds": 15.783078857421875,
+  "log_bytes_added_during_readback": 0,
+  "runs": [
+    {
+      "id": "e1b0dd0e-c21b-4b70-9057-434870a9f662",
+      "entity_id": "7b9bba3a-d037-46b8-a27f-7849ba5f181f",
+      "website": "https://www.thankfullycoffee.com",
+      "saved_product_events": 7,
+      "terminal_visitor": {
+        "visited": 12,
+        "coffeeFound": 7,
+        "irrelevant": 5,
+        "errors": 0
+      },
+      "name": "Thankfully Coffee",
+      "reviewed_tier": 1,
+      "status": "completed",
+      "started_at": "2026-10-08T16:54:08.691+00:00",
+      "finished_at": "2026-10-08T16:57:46.076+00:00",
+      "error": null,
+      "database_counters": {
+        "pages_discovered": 15,
+        "pages_visited": 12,
+        "pages_sent_to_gpt": 12,
+        "coffees_found": 7
+      },
+      "finalized_extraction": {
+        "visited": 12,
+        "coffeeFound": 7,
+        "irrelevant": 5,
+        "errors": 0,
+        "aiCalls": 12
+      },
+      "fresh_product_sightings": 7,
+      "latest_product_sighting": "2026-10-08T16:57:38.548+00:00"
+    },
+    {
+      "id": "76e725a4-1895-4a7a-8d13-21beb5edf9ff",
+      "entity_id": "38371d64-3a44-47f7-a4e8-89ef83968d1e",
+      "website": "https://moonwakecoffeeroasters.com/",
+      "saved_product_events": 118,
+      "terminal_visitor": null,
+      "name": "Moonwake Coffee Roasters",
+      "reviewed_tier": 1,
+      "status": "running",
+      "started_at": "2026-10-08T17:01:03.831+00:00",
+      "finished_at": null,
+      "error": null,
+      "database_counters": {
+        "pages_discovered": 0,
+        "pages_visited": 0,
+        "pages_sent_to_gpt": 0,
+        "coffees_found": 0
+      },
+      "finalized_extraction": null,
+      "fresh_product_sightings": 118,
+      "latest_product_sighting": "2026-10-08T17:57:12.958+00:00"
+    }
+  ],
+  "terminal_page_errors": 0,
+  "failed_runs": 0,
+  "severity_error_or_failed_run_entries": [],
+  "optional_native_json_404_warnings": {
+    "count": 11,
+    "entries": [
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/new-product.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/three-bags-per-month-roasters-choice.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/5lb-bag-per-month-roasters-choice.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/chelbesa-g1.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/finca-soledad-mejorado-wave-washed.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/fincas-del-putushio-mejorado.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/gloria-cecilia-chiroso-new-harvest.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/guatemala-san-agustin-espresso.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/kotowa-farms-gesha.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/marlon-bolanos-gesha.json {\"error\":\"Request failed with status code 404\"}",
+      "thankfully-coffee\t\tWARN [ShopifyJSON] Failed to fetch: https://thankfullycoffee.com/products/kenya-kamagogo-aa.json {\"error\":\"Request failed with status code 404\"}"
+    ]
+  },
+  "other_native_json_warnings": [],
+  "current_run_unfinalized": true,
+  "migration_applied_by_this_audit": false,
+  "database_read_only": true,
+  "worker_restarted_by_this_audit": false,
+  "automation_created": false,
+  "full_passport_revalidation_complete": false,
+  "full_tier_inventory_verified": false,
+  "limitations": [
+    "Active run counts are progress only; database terminal counters remain unfinalized.",
+    "Ordinary visitor does not log every returned page error; the active run cannot yet be certified error-free.",
+    "Fresh product timestamps establish ongoing catalog writes, not complete inventory, SKU, origin, price or image verification.",
+    "No schema inspection or migration was performed by this runtime health check."
+  ],
+  "runtime_healthy": true,
+  "warning_summary": {
+    "optional_native_json_404": 11,
+    "other_native_json": 0,
+    "other_warn_entries": 278,
+    "by_component": {
+      "Roasters": 1,
+      "Filter": 1,
+      "ProductSaver": 1,
+      "HTTP": 272,
+      "GPT": 3
+    },
+    "known_product_http404_probes": {
+      "warning_entries": 272,
+      "distinct_paths": 17,
+      "all_http_status_404": true,
+      "paths": [
+        "/products/ethiopia-danche",
+        "/products/mexico-santiago-lachiguiri",
+        "/products/peru-nueva-alianza",
+        "/products/el-aguacate-gesha-washed",
+        "/products/burundi-mutana-hill",
+        "/products/kenya-mutitu-aa",
+        "/products/peru-estrellas-espresso",
+        "/products/hugo-gonzales-washed-gesha",
+        "/products/ecuador-felipe-luzon-mejorado",
+        "/products/peru-el-roble-yellow-caturra",
+        "/products/edinea-sartori-catucai-785",
+        "/products/ecuador-la-papaya-mejorado",
+        "/products/javier-cantillo-copa-de-oro-gesha",
+        "/products/colombia-jose-martinez",
+        "/products/el-aguacate-gesha-natural",
+        "/products/kenya-kathima-ab",
+        "/products/colombia-erick-bravo"
+      ],
+      "availability_reconciliation": [
+        {
+          "checked": 18,
+          "available": 0,
+          "unavailable": 0,
+          "unknown": 1,
+          "removed": 17,
+          "reused": 7,
+          "schemaReady": true
+        }
+      ]
+    },
+    "compatibility_fallbacks": [
+      "WARN [Roasters] Database tier field is not installed; using reviewed stable-ID crawl ordering {\"sourceCommit\":\"2c8733cdc6aa1abd866b4df5df766f75b6f855f5\"}",
+      "WARN [Filter] Optional crawl-control table is not installed; retaining cooldown and website rules",
+      "thankfully-coffee\t\tWARN [ProductSaver] Processing v2 RPC is unavailable; normalized methods, co-ferment and source evidence are retained in product metadata"
+    ],
+    "token_limit_retry_warnings": 3
+  },
+  "schema_compatibility_status": "Prepared index migration remains a separately pending approval in the coordinating thread; schema was not inspected or changed by this audit."
+}

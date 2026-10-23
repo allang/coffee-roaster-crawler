@@ -1,0 +1,49 @@
+{
+  "pause_requested_at": "2026-10-08T18:46:02.723Z",
+  "pause_started_at": "2026-10-08T18:46:48.605Z",
+  "paused_at": "2026-10-08T18:46:48.862Z",
+  "source_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+  "working_tree_clean": true,
+  "old_launcher_pid": 43736,
+  "old_node_pid": 43745,
+  "launcher_alive": false,
+  "node_alive": false,
+  "lock_exists": false,
+  "launch_agent_unloaded": true,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "schedule_seconds": 5400,
+  "boundary": {
+    "kind": "persisted_product_and_known_page_checkpoint",
+    "checked_at": "2026-10-08T18:46:48.604Z",
+    "product_id": "b23a8e15-5654-498f-bd00-0e0be308d121",
+    "entity_id": "38a0f59c-a226-4ba7-96ee-b130dd583f66",
+    "product_seen_at": "2026-10-08T18:46:45.995+00:00",
+    "known_page_id": "8fa4d0ff-77ca-42f2-ba83-8c64d206f075",
+    "known_page_fetched_at": "2026-10-08T18:46:45.995+00:00"
+  },
+  "current_run_before_pause": {
+    "id": "a0377f99-0374-4888-94f2-57e03689c3c2",
+    "entity_id": "38a0f59c-a226-4ba7-96ee-b130dd583f66",
+    "status": "running",
+    "started_at": "2026-10-08T18:32:38.915+00:00",
+    "finished_at": null,
+    "error": null
+  },
+  "current_run_after_pause": {
+    "id": "a0377f99-0374-4888-94f2-57e03689c3c2",
+    "entity_id": "38a0f59c-a226-4ba7-96ee-b130dd583f66",
+    "status": "failed",
+    "started_at": "2026-10-08T18:32:38.915+00:00",
+    "finished_at": "2026-10-08T18:46:48.862+00:00",
+    "error": "Operator pause at confirmed persisted-page boundary for human-requested guarded six-owner duplicate merge; saved records/checkpoints retained; awaiting tested merged-source SHA before resume; no schema migration applied"
+  },
+  "operator_interrupted_run_marked_failed": true,
+  "passport_receipt_unchanged": true,
+  "passport_process_49636_alive": false,
+  "migration_applied": false,
+  "catalog_merge_performed": false,
+  "resumed": false,
+  "resume_gate": "Remain paused until coordinating thread confirms catalog readback and supplies tested merged-source SHA",
+  "paused": true
+}

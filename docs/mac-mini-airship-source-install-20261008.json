@@ -1,0 +1,881 @@
+{
+  "checked_at": "2026-10-08T21:33:00.291Z",
+  "installed_sha": "c42ca29d484d10047810a2bd52175bf5df0ef330",
+  "source_tree": "9ffad5d485176cec2b19c77f0190292e3ec600b2",
+  "worker_source_sha": "c42ca29d484d10047810a2bd52175bf5df0ef330",
+  "resume_requested_at": "2026-10-08T21:32:21.100Z",
+  "started_at": "2026-10-08T21:32:21.308Z",
+  "paused_at": "2026-10-08T21:30:17.290Z",
+  "pause_seconds": 123.81,
+  "launch_agent_state": "running",
+  "launch_agent_pid": 72242,
+  "lock_pid": 72242,
+  "crawler_nodes_in_original_checkout": [
+    {
+      "pid": 72253,
+      "parent_pid": 72242,
+      "state": "R",
+      "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler"
+    }
+  ],
+  "schedule_seconds": 5400,
+  "roaster_workers": 1,
+  "page_workers": 1,
+  "working_tree_clean": true,
+  "env_unchanged": true,
+  "plist_unchanged": true,
+  "launcher_unchanged": true,
+  "failed_passport_receipt_unchanged": true,
+  "phase": {
+    "tier": 1,
+    "roasters": 53
+  },
+  "current_owner": {
+    "id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+    "website": "https://lucienne.coffee"
+  },
+  "current_run": {
+    "id": "cd4bf39b-41ee-444d-8dc8-3ee34ce34b0c",
+    "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+    "status": "running",
+    "started_at": "2026-10-08T21:32:41.195+00:00",
+    "finished_at": null,
+    "error": null,
+    "meta": {}
+  },
+  "fresh_product": {
+    "id": "568e0bef-25dc-5f49-8456-05980c8f47b8",
+    "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+    "name": "Apollon’s Gold",
+    "source_url": "https://www.lucienne.coffee/home",
+    "last_seen_at": "2026-10-08T21:32:55.309+00:00",
+    "updated_at": "2026-10-08T21:32:55.918141+00:00"
+  },
+  "fresh_known_page": {
+    "id": "2a050a06-2650-4213-a7b8-7302f5827a32",
+    "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+    "url": "https://www.lucienne.coffee/home",
+    "status": "coffee",
+    "last_fetched_at": "2026-10-08T21:32:55.309+00:00",
+    "last_status_code": 200,
+    "last_seen_at": "2026-10-08T21:32:56.039+00:00"
+  },
+  "fresh_save_log_events": 1,
+  "actual_returned_errors": [],
+  "interrupted_run": {
+    "id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+    "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+    "status": "failed",
+    "started_at": "2026-10-08T20:53:53.15+00:00",
+    "finished_at": "2026-10-08T21:30:17.29+00:00",
+    "error": "operator_source_update: controlled reload at fully persisted coffee/known-page checkpoint to install reviewed main c42ca29d484d10047810a2bd52175bf5df0ef330; September inventory remains incomplete, saved records preserved, omission reconciliation not performed; no migration applied",
+    "meta": {
+      "operator_source_update": {
+        "target_sha": "c42ca29d484d10047810a2bd52175bf5df0ef330",
+        "checkpoint_url": "https://september.coffee/en-us/products/jose-jijon-2026",
+        "inventory_complete": false,
+        "checkpoint_product_id": "97d54949-9a15-5219-9c6a-82f176673e97",
+        "checkpoint_confirmed_at": "2026-10-08T21:30:17.170Z",
+        "omission_reconciliation": false,
+        "successful_save_log_events": 73
+      }
+    }
+  },
+  "tests": {
+    "total": 474,
+    "pass": 473,
+    "fail": 0,
+    "skipped": 1,
+    "seconds": 11.332309209
+  },
+  "installed_get_only_airship": {
+    "products": 13,
+    "native_variants": 146,
+    "errors": 0,
+    "wire_requests": 42,
+    "production_writes": 0,
+    "ai_calls": 0,
+    "images_bound": 13,
+    "exact_legacy_adoptions": 13,
+    "cart_guard_test_passed": true
+  },
+  "preserved": {
+    "profiles_before": 59,
+    "profiles_after": 60,
+    "ledger_total": 524,
+    "tier_one": 65,
+    "september_products": 473,
+    "september_known_pages": 6207,
+    "airship_identity_unchanged": true,
+    "env": true,
+    "plist": true,
+    "launcher": true,
+    "failed_passport_receipt": true,
+    "all_product_variant_fact_photo_row_values_unchanged": true,
+    "known_page_row_values_unchanged": true
+  },
+  "actions": {
+    "migrations": 0,
+    "settings_changes": 0,
+    "purchases": 0,
+    "omission_reconciliation": 0,
+    "real_source_update": 1
+  },
+  "installed_runtime_verified": true,
+  "fresh_persisted_checkpoint": true,
+  "checkpoint_before_stop": {
+    "confirmed_at": "2026-10-08T21:30:17.170Z",
+    "kind": "debugger_pause_after_successful_catalog_photo_and_known_page_await",
+    "frame": {
+      "function": "processFetchedPage",
+      "line": 151,
+      "file": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler/src/pageVisitor.js"
+    },
+    "product": {
+      "id": "97d54949-9a15-5219-9c6a-82f176673e97",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "name": "Jose Jijon - Washed Mejorado (2026)",
+      "source_url": "https://september.coffee/en-us/products/jose-jijon-2026",
+      "last_seen_at": "2026-10-08T21:30:10.681+00:00",
+      "updated_at": "2026-10-08T21:30:14.214207+00:00"
+    },
+    "known_page": {
+      "id": "b9be3343-defa-4fa7-864c-9ac5ac89fd61",
+      "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+      "url": "https://september.coffee/en-us/products/jose-jijon-2026",
+      "status": "coffee",
+      "last_fetched_at": "2026-10-08T21:30:10.681+00:00",
+      "last_status_code": 200,
+      "last_seen_at": "2026-10-08T21:30:14.232+00:00"
+    },
+    "one_page_worker": true,
+    "catalog_transaction_returned": true,
+    "known_page_write_returned": true,
+    "next_page_not_admitted": true,
+    "successful_save_log_events": 73,
+    "actual_returned_errors": [
+      {
+        "url": "https://september.coffee/en-us/products/jorge-rojas-colombia-washed-geisha-2026",
+        "error": "Registered Shopify source incomplete: HTTP 500"
+      },
+      {
+        "url": "https://september.coffee/en-us/products/golden-hour",
+        "error": "Registered Shopify source incomplete: incomplete SKU set"
+      },
+      {
+        "url": "https://september.coffee/en-us/products/rung-eto-kii-aa",
+        "error": "Registered Shopify source incomplete: incomplete SKU set"
+      },
+      {
+        "url": "https://september.coffee/en-us/products/wilton-benitez-colombia-decaf",
+        "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\""
+      },
+      {
+        "url": "https://september.coffee/en-us/products/david-flores-peru-washed-sidra",
+        "error": "Multiple legacy products share source identity; review before adoption"
+      }
+    ]
+  },
+  "airship_inspection_checked_at": "2026-10-08T21:32:12.323Z",
+  "airship_products": [
+    {
+      "title": "InstaBuff",
+      "native_product_id": "7293530374179",
+      "url": "https://airshipcoffee.myshopify.com/products/instabuff",
+      "variants": 1,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 1,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Roaster's Choice",
+      "native_product_id": "7282620235811",
+      "url": "https://airshipcoffee.myshopify.com/products/roasterschoice",
+      "variants": 15,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 0,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "The Grape Vine Blend - Airship Harvest Series",
+      "native_product_id": "7185339940899",
+      "url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series",
+      "variants": 10,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 0,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Finca Valentina Natural - Honduras",
+      "native_product_id": "7265718698019",
+      "url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras",
+      "variants": 10,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 5,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "El Zapote Pacamara Washed - Guatemala",
+      "native_product_id": "7174735331363",
+      "url": "https://airshipcoffee.myshopify.com/products/pacamarawashed",
+      "variants": 10,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 5,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Buffalo Blend",
+      "native_product_id": "10194352323",
+      "url": "https://airshipcoffee.myshopify.com/products/buffalo-blend",
+      "variants": 15,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 0,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Sugar Cane Decaf - Colombia",
+      "native_product_id": "9592863939",
+      "url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf",
+      "variants": 10,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 0,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Lake Toba Caldera - Sumatra",
+      "native_product_id": "6962766479395",
+      "url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera",
+      "variants": 10,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 5,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Kochere Natural - Ethiopia",
+      "native_product_id": "1377104265251",
+      "url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere",
+      "variants": 15,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 0,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Night Moves",
+      "native_product_id": "6686592991267",
+      "url": "https://airshipcoffee.myshopify.com/products/night-moves",
+      "variants": 10,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 5,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Lima Norte Washed - Peru",
+      "native_product_id": "1676473270307",
+      "url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte",
+      "variants": 10,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 5,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Black Apple Espresso",
+      "native_product_id": "10921818179",
+      "url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso",
+      "variants": 15,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 0,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    },
+    {
+      "title": "Black Bear Blend",
+      "native_product_id": "10194340483",
+      "url": "https://airshipcoffee.myshopify.com/products/black-bear-blend",
+      "variants": 15,
+      "variants_complete": true,
+      "currencies": [
+        "USD"
+      ],
+      "native_options_with_unknown_net_weight": 0,
+      "stock_states": [
+        "in_stock"
+      ],
+      "primary_image_present": true
+    }
+  ],
+  "exact_legacy_url_adoptions": [
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/instabuff",
+      "canonical_url": "https://airshipcoffee.com/products/instabuff",
+      "native_product_id": "7293530374179",
+      "existing_id": "4d157cdf-bdf3-5e40-ba58-15c03a67a7db",
+      "existing_slug": "instabuff-85d5ced709",
+      "existing_source_url": "https://www.airshipcoffee.com/products/instabuff",
+      "before_matching_id": "4d157cdf-bdf3-5e40-ba58-15c03a67a7db",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/roasterschoice",
+      "canonical_url": "https://airshipcoffee.com/products/roasterschoice",
+      "native_product_id": "7282620235811",
+      "existing_id": "9f4294bf-291a-4875-8b33-efb06fe8b7a2",
+      "existing_slug": "product-title",
+      "existing_source_url": "https://www.airshipcoffee.com/products/roasterschoice",
+      "before_matching_id": "9f4294bf-291a-4875-8b33-efb06fe8b7a2",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/the-grape-vine-airship-harvest-series",
+      "canonical_url": "https://airshipcoffee.com/products/the-grape-vine-airship-harvest-series",
+      "native_product_id": "7185339940899",
+      "existing_id": "9747ab9b-9234-49b0-863e-d3dda7d1049d",
+      "existing_slug": "the-grape-vine-blend-airship-harvest-series",
+      "existing_source_url": "https://www.airshipcoffee.com/products/the-grape-vine-airship-harvest-series",
+      "before_matching_id": "9747ab9b-9234-49b0-863e-d3dda7d1049d",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/finca-valentina-natural-honduras",
+      "canonical_url": "https://airshipcoffee.com/products/finca-valentina-natural-honduras",
+      "native_product_id": "7265718698019",
+      "existing_id": "16feacce-067e-4d4e-adf4-de489357ebca",
+      "existing_slug": "finca-valentina-natural-honduras",
+      "existing_source_url": "https://www.airshipcoffee.com/products/finca-valentina-natural-honduras",
+      "before_matching_id": "16feacce-067e-4d4e-adf4-de489357ebca",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/pacamarawashed",
+      "canonical_url": "https://airshipcoffee.com/products/pacamarawashed",
+      "native_product_id": "7174735331363",
+      "existing_id": "e312edf0-6349-49e4-84d7-5cbf245ed2bc",
+      "existing_slug": "el-zapote-pacamara-washed-guatemala",
+      "existing_source_url": "https://www.airshipcoffee.com/products/pacamarawashed",
+      "before_matching_id": "e312edf0-6349-49e4-84d7-5cbf245ed2bc",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/buffalo-blend",
+      "canonical_url": "https://airshipcoffee.com/products/buffalo-blend",
+      "native_product_id": "10194352323",
+      "existing_id": "5f6731ac-cad8-467d-a07b-c5963b84d2b8",
+      "existing_slug": "buffalo-blend",
+      "existing_source_url": "https://www.airshipcoffee.com/products/buffalo-blend",
+      "before_matching_id": "5f6731ac-cad8-467d-a07b-c5963b84d2b8",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/colombia-sugar-cane-decaf",
+      "canonical_url": "https://airshipcoffee.com/products/colombia-sugar-cane-decaf",
+      "native_product_id": "9592863939",
+      "existing_id": "97ccd0d1-0dde-4e41-a82e-9846635fa6a0",
+      "existing_slug": "sugar-cane-decaf-colombia",
+      "existing_source_url": "https://www.airshipcoffee.com/products/colombia-sugar-cane-decaf",
+      "before_matching_id": "97ccd0d1-0dde-4e41-a82e-9846635fa6a0",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/sumatra-lake-toba-caldera",
+      "canonical_url": "https://airshipcoffee.com/products/sumatra-lake-toba-caldera",
+      "native_product_id": "6962766479395",
+      "existing_id": "61c2b28e-8f11-42e9-8dfa-976c7d17a330",
+      "existing_slug": "lake-toba-caldera-sumatra",
+      "existing_source_url": "https://www.airshipcoffee.com/products/sumatra-lake-toba-caldera",
+      "before_matching_id": "61c2b28e-8f11-42e9-8dfa-976c7d17a330",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/ethiopia-kochere",
+      "canonical_url": "https://airshipcoffee.com/products/ethiopia-kochere",
+      "native_product_id": "1377104265251",
+      "existing_id": "0899637d-0ffc-4080-9dd6-d9000f1c1fe7",
+      "existing_slug": "kochere-natural-ethiopia",
+      "existing_source_url": "https://www.airshipcoffee.com/products/ethiopia-kochere",
+      "before_matching_id": "0899637d-0ffc-4080-9dd6-d9000f1c1fe7",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/night-moves",
+      "canonical_url": "https://airshipcoffee.com/products/night-moves",
+      "native_product_id": "6686592991267",
+      "existing_id": "c5ced251-12ee-4d05-8d77-2e2900c55a85",
+      "existing_slug": "night-moves",
+      "existing_source_url": "https://www.airshipcoffee.com/products/night-moves",
+      "before_matching_id": "c5ced251-12ee-4d05-8d77-2e2900c55a85",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/peru-lima-norte",
+      "canonical_url": "https://airshipcoffee.com/products/peru-lima-norte",
+      "native_product_id": "1676473270307",
+      "existing_id": "1496d064-5918-4cbf-8f32-15763a9a5254",
+      "existing_slug": "lima-norte-washed-peru",
+      "existing_source_url": "https://www.airshipcoffee.com/products/peru-lima-norte",
+      "before_matching_id": "1496d064-5918-4cbf-8f32-15763a9a5254",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/black-apple-espresso",
+      "canonical_url": "https://airshipcoffee.com/products/black-apple-espresso",
+      "native_product_id": "10921818179",
+      "existing_id": "4abc30ec-5ab6-404a-ab6e-d9d89a4df02e",
+      "existing_slug": "black-apple-espresso",
+      "existing_source_url": "https://www.airshipcoffee.com/products/black-apple-espresso",
+      "before_matching_id": "4abc30ec-5ab6-404a-ab6e-d9d89a4df02e",
+      "preserved": true
+    },
+    {
+      "native_url": "https://airshipcoffee.myshopify.com/products/black-bear-blend",
+      "canonical_url": "https://airshipcoffee.com/products/black-bear-blend",
+      "native_product_id": "10194340483",
+      "existing_id": "3aa082cb-6429-4906-808f-e7d259624b5c",
+      "existing_slug": "black-bear-blend",
+      "existing_source_url": "https://www.airshipcoffee.com/products/black-bear-blend",
+      "before_matching_id": "3aa082cb-6429-4906-808f-e7d259624b5c",
+      "preserved": true
+    }
+  ],
+  "schema_migrations_applied": false,
+  "native_weight_compatibility_approved": false,
+  "whole_catalog_validity_proved": false,
+  "fresh_checkpoint_product_validity_proved": false,
+  "fresh_checkpoint_limitation": "First resumed save is Lucienne /home named Apollon’s Gold with zero variants; this proves persistence and checkpoint freshness but does not independently certify a primary coffee identity or price/stock. No additional repair was applied.",
+  "weight_normalization_followup": {
+    "total_native_options": 146,
+    "known_weight_options": 120,
+    "unknown_weight_options": 26,
+    "explicit_2_kilo_options_not_normalized": 25,
+    "unlabelled_instant_option": 1,
+    "explicit_2_kilo_options": [
+      {
+        "native_product_id": "7265718698019",
+        "product_title": "Finca Valentina Natural - Honduras",
+        "native_variant_id": "43637394571299",
+        "variant_title": "2 KILO / Whole Bean",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7265718698019",
+        "product_title": "Finca Valentina Natural - Honduras",
+        "native_variant_id": "43637394604067",
+        "variant_title": "2 KILO / Drip/Pour Over",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7265718698019",
+        "product_title": "Finca Valentina Natural - Honduras",
+        "native_variant_id": "43637394636835",
+        "variant_title": "2 KILO / Chemex",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7265718698019",
+        "product_title": "Finca Valentina Natural - Honduras",
+        "native_variant_id": "43637394669603",
+        "variant_title": "2 KILO / French Press",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7265718698019",
+        "product_title": "Finca Valentina Natural - Honduras",
+        "native_variant_id": "43637394538531",
+        "variant_title": "2 KILO / Percolator",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7174735331363",
+        "product_title": "El Zapote Pacamara Washed - Guatemala",
+        "native_variant_id": "41494981771299",
+        "variant_title": "2 KILO / Whole Bean",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7174735331363",
+        "product_title": "El Zapote Pacamara Washed - Guatemala",
+        "native_variant_id": "41494981804067",
+        "variant_title": "2 KILO / Drip/Pour Over",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7174735331363",
+        "product_title": "El Zapote Pacamara Washed - Guatemala",
+        "native_variant_id": "41494981836835",
+        "variant_title": "2 KILO / Chemex",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7174735331363",
+        "product_title": "El Zapote Pacamara Washed - Guatemala",
+        "native_variant_id": "41494981869603",
+        "variant_title": "2 KILO / French Press",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "7174735331363",
+        "product_title": "El Zapote Pacamara Washed - Guatemala",
+        "native_variant_id": "41494981738531",
+        "variant_title": "2 KILO / Percolator",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6962766479395",
+        "product_title": "Lake Toba Caldera - Sumatra",
+        "native_variant_id": "40365004161059",
+        "variant_title": "2 kilo / Whole Bean",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6962766479395",
+        "product_title": "Lake Toba Caldera - Sumatra",
+        "native_variant_id": "40867616817187",
+        "variant_title": "2 kilo / Drip/Pour Over",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6962766479395",
+        "product_title": "Lake Toba Caldera - Sumatra",
+        "native_variant_id": "40867616849955",
+        "variant_title": "2 kilo / French Press",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6962766479395",
+        "product_title": "Lake Toba Caldera - Sumatra",
+        "native_variant_id": "40867616882723",
+        "variant_title": "2 kilo / Chemex",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6962766479395",
+        "product_title": "Lake Toba Caldera - Sumatra",
+        "native_variant_id": "40867616915491",
+        "variant_title": "2 kilo / Percolator",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6686592991267",
+        "product_title": "Night Moves",
+        "native_variant_id": "39679896682531",
+        "variant_title": "2 kilo / Whole Bean",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6686592991267",
+        "product_title": "Night Moves",
+        "native_variant_id": "40867613343779",
+        "variant_title": "2 kilo / Drip/Pour Over",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6686592991267",
+        "product_title": "Night Moves",
+        "native_variant_id": "40867613376547",
+        "variant_title": "2 kilo / French Press",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6686592991267",
+        "product_title": "Night Moves",
+        "native_variant_id": "40867613409315",
+        "variant_title": "2 kilo / Chemex",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "6686592991267",
+        "product_title": "Night Moves",
+        "native_variant_id": "40867613442083",
+        "variant_title": "2 kilo / Percolator",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "1676473270307",
+        "product_title": "Lima Norte Washed - Peru",
+        "native_variant_id": "14449754243107",
+        "variant_title": "2 KILO / Whole Bean",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "1676473270307",
+        "product_title": "Lima Norte Washed - Peru",
+        "native_variant_id": "40867615309859",
+        "variant_title": "2 KILO / Drip/Pour Over",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "1676473270307",
+        "product_title": "Lima Norte Washed - Peru",
+        "native_variant_id": "40867615342627",
+        "variant_title": "2 KILO / French Press",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "1676473270307",
+        "product_title": "Lima Norte Washed - Peru",
+        "native_variant_id": "40867615375395",
+        "variant_title": "2 KILO / Chemex",
+        "weight_g": null
+      },
+      {
+        "native_product_id": "1676473270307",
+        "product_title": "Lima Norte Washed - Peru",
+        "native_variant_id": "40867615408163",
+        "variant_title": "2 KILO / Percolator",
+        "weight_g": null
+      }
+    ],
+    "status": "Source titles/options retained; parser gap reported without guessing shipping weights or altering production rows."
+  },
+  "fresh_unverified_listing_saves": [
+    {
+      "id": "7881e94b-ddc8-5cab-81fb-039e91698d9b",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/origin/honduras",
+      "last_seen_at": "2026-10-08T21:35:44.451+00:00",
+      "updated_at": "2026-10-08T21:35:44.832785+00:00",
+      "variants": 1
+    },
+    {
+      "id": "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+      "last_seen_at": "2026-10-08T21:34:56.358+00:00",
+      "updated_at": "2026-10-08T21:34:56.763247+00:00",
+      "variants": 1
+    },
+    {
+      "id": "c7b18af1-b201-5b55-bc23-424d309855f8",
+      "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+      "source_url": "https://www.lucienne.coffee/shop/merch",
+      "last_seen_at": "2026-10-08T21:33:41.754+00:00",
+      "updated_at": "2026-10-08T21:33:42.157323+00:00",
+      "variants": 1
+    },
+    {
+      "id": "568e0bef-25dc-5f49-8456-05980c8f47b8",
+      "name": "Apollon’s Gold",
+      "source_url": "https://www.lucienne.coffee/home",
+      "last_seen_at": "2026-10-08T21:32:55.309+00:00",
+      "updated_at": "2026-10-08T21:32:55.918141+00:00",
+      "variants": 0
+    }
+  ],
+  "lucienne_exact_worker_attribution": {
+    "checked_at": "2026-10-08T21:37:24.001Z",
+    "source_sha": "c42ca29d484d10047810a2bd52175bf5df0ef330",
+    "run": {
+      "id": "cd4bf39b-41ee-444d-8dc8-3ee34ce34b0c",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "status": "running",
+      "started_at": "2026-10-08T21:32:41.195+00:00",
+      "finished_at": null,
+      "error": null
+    },
+    "lock_pid": 72242,
+    "process": "72242     1 S    /bin/bash /Users/allan/.openclaw/workspace/coffee-roaster-crawler/run-crawler.sh\n72253 72242 S    /opt/homebrew/opt/node@22/bin/node index.js",
+    "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+    "log_path": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler/logs/crawler-2026-10-08.log",
+    "post_restart_log_offset": 711753,
+    "owner_header": "lucienne-coffee\t\t\tINFO [Crawl] Roaster details {\"id\":\"4f292bcd-6af3-42e3-9760-f7eb81e12dc5\",\"website\":\"https://lucienne.coffee\"}",
+    "worker_log_product_ids": [
+      "568e0bef-25dc-5f49-8456-05980c8f47b8",
+      "c7b18af1-b201-5b55-bc23-424d309855f8",
+      "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5",
+      "7881e94b-ddc8-5cab-81fb-039e91698d9b",
+      "22db6043-5cc5-5826-9847-d388dc7db71c",
+      "78675df8-b2bf-55eb-8208-bf970436c19c"
+    ],
+    "returned_database_rows": [
+      {
+        "id": "09c2d0c9-f7fa-59ab-a594-4eda0ada40d5",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+        "source_url": "https://www.lucienne.coffee/shop/origin/costa-rica",
+        "last_seen_at": "2026-10-08T21:34:56.358+00:00",
+        "updated_at": "2026-10-08T21:34:56.763247+00:00",
+        "created_at": "2026-10-08T21:34:56.763247+00:00"
+      },
+      {
+        "id": "22db6043-5cc5-5826-9847-d388dc7db71c",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+        "source_url": "https://www.lucienne.coffee/shop/origin/papua-new-guinea",
+        "last_seen_at": "2026-10-08T21:36:34.697+00:00",
+        "updated_at": "2026-10-08T21:36:35.119622+00:00",
+        "created_at": "2026-10-08T21:36:35.119622+00:00"
+      },
+      {
+        "id": "568e0bef-25dc-5f49-8456-05980c8f47b8",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "Apollon’s Gold",
+        "source_url": "https://www.lucienne.coffee/home",
+        "last_seen_at": "2026-10-08T21:32:55.309+00:00",
+        "updated_at": "2026-10-08T21:32:55.918141+00:00",
+        "created_at": "2026-10-08T21:32:55.918141+00:00"
+      },
+      {
+        "id": "78675df8-b2bf-55eb-8208-bf970436c19c",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+        "source_url": "https://www.lucienne.coffee/shop/origin/tanzania",
+        "last_seen_at": "2026-10-08T21:37:10.371+00:00",
+        "updated_at": "2026-10-08T21:37:10.723379+00:00",
+        "created_at": "2026-10-08T21:37:10.723379+00:00"
+      },
+      {
+        "id": "7881e94b-ddc8-5cab-81fb-039e91698d9b",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+        "source_url": "https://www.lucienne.coffee/shop/origin/honduras",
+        "last_seen_at": "2026-10-08T21:35:44.451+00:00",
+        "updated_at": "2026-10-08T21:35:44.832785+00:00",
+        "created_at": "2026-10-08T21:35:44.832785+00:00"
+      },
+      {
+        "id": "c7b18af1-b201-5b55-bc23-424d309855f8",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "El Encanto Yeasted Thermal Shock x2 Ferment Washed Chiroso",
+        "source_url": "https://www.lucienne.coffee/shop/merch",
+        "last_seen_at": "2026-10-08T21:33:41.754+00:00",
+        "updated_at": "2026-10-08T21:33:42.157323+00:00",
+        "created_at": "2026-10-08T21:33:42.157323+00:00"
+      }
+    ],
+    "evidence": "IDs occur in exact Lucienne run segment in original scheduler launcher log after the new source restart; DB IDs/entity/timestamps agree. This is worker attribution, not primary-product validity.",
+    "source_integrity_proved": false,
+    "actions": {
+      "mutations": 0,
+      "restarts": 0,
+      "settings": 0,
+      "migrations": 0
+    }
+  },
+  "subsequent_operator_hold": {
+    "held_at": "2026-10-08T21:42:44.798Z",
+    "source_sha": "c42ca29d484d10047810a2bd52175bf5df0ef330",
+    "node_pid": 72253,
+    "launcher_lock_pid": 72242,
+    "state": "T",
+    "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+    "current_run": {
+      "id": "cd4bf39b-41ee-444d-8dc8-3ee34ce34b0c",
+      "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+      "status": "running",
+      "started_at": "2026-10-08T21:32:41.195+00:00",
+      "finished_at": null,
+      "error": null
+    },
+    "checkpoint": {
+      "function": "processFetchedPage",
+      "line": 160,
+      "catalog_transaction_returned": true,
+      "known_page_write_returned": true,
+      "next_page_not_admitted": true,
+      "product": {
+        "id": "beb964eb-f92f-44b9-901f-e31b93f30889",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "name": "Lucienne x Glitch | Risaralda Milan \"Logan\" — PLAY DEAD. DRINK COFFEE.",
+        "source_url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+        "last_seen_at": "2026-10-08T21:42:43.124+00:00",
+        "updated_at": "2026-10-08T21:42:44.586552+00:00"
+      },
+      "known_page": {
+        "id": "a7bed7a7-1161-48c0-9863-7834eaffe7a6",
+        "entity_id": "4f292bcd-6af3-42e3-9760-f7eb81e12dc5",
+        "url": "https://www.lucienne.coffee/shop/p/risaralda-milan-logan",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T21:42:43.124+00:00",
+        "last_status_code": 200,
+        "last_seen_at": "2026-10-08T21:42:44.605+00:00"
+      }
+    },
+    "confirmed_scope": "Stop further confirmed Lucienne homepage/category contamination pending tested Squarespace guard and explicit KILO normalization correction; preserve exact process and all records.",
+    "actual_successful_save_log_events": 11,
+    "env_unchanged": true,
+    "plist_unchanged": true,
+    "launcher_unchanged": true,
+    "failed_passport_receipt_unchanged": true,
+    "process_settings_lock_preserved": true,
+    "debugger_paused_before_SIGSTOP": true,
+    "temporary_loopback_inspector_active_until_old_process_reload": true,
+    "run_row_changed": false,
+    "production_writes": 0,
+    "migrations": 0,
+    "settings_changes": 0,
+    "catalog_cleanup": 0,
+    "purchases": 0,
+    "watchdog_stall_timeout_seconds": 2700,
+    "existing_hour_followup": "Coordinating thread scheduled6:33Eastern after21:32resume; retime only after confirmed correction resume."
+  },
+  "latest_runtime_state": "same installed c42ca29 worker held in OS state T after fully returned product/known-page checkpoint pending confirmed listing guard and KILO parser correction"
+}

@@ -1,0 +1,1399 @@
+{
+  "checked_at": "2026-10-08T15:52:02.127Z",
+  "source_sha": "003a60c775832a0e938a752129141eda5f01f15f",
+  "run_id": "1d573313-4d89-4283-b1de-6df52a7d2135",
+  "owner_id": "c978d995-9310-4c54-945b-5211ccdddf7a",
+  "status": "failed",
+  "started_at": "2026-10-08T14:03:03.236+00:00",
+  "finished_at": "2026-10-08T15:42:41.324+00:00",
+  "elapsed_seconds": 5978.088,
+  "terminal_error": "Registered merchant product verification failed: 62 page error(s)",
+  "actual_normal_visitor_counts": {
+    "visited": 255,
+    "coffee_found": 193,
+    "irrelevant": 0,
+    "page_errors": 62,
+    "evidence": "terminal Page visiting complete log and successful-save receipt; failed database run counters were never finalized"
+  },
+  "save_attempts": 194,
+  "successful_saves": 193,
+  "exact_saved_native_variants": 387,
+  "failure_groups": {
+    "HTTP_429": 53,
+    "HTTP_503": 8,
+    "database_unique_weight": 1
+  },
+  "first_failure": {
+    "url": "https://passportcoffee.com.au/products/burundi-nemba-48hr-oro-yeast-filter",
+    "page_index": 18,
+    "cause": "HTTP_429",
+    "first_failure_at": "2026-10-08T14:03:50.232Z",
+    "save_error": null,
+    "requests": [
+      {
+        "at": "2026-10-08T14:03:49.730Z",
+        "url": "https://passportcoffee.com.au/products/burundi-nemba-48hr-oro-yeast-filter",
+        "status": 200,
+        "error": null
+      },
+      {
+        "at": "2026-10-08T14:03:50.232Z",
+        "url": "https://passportcoffee.com.au/products/burundi-nemba-48hr-oro-yeast-filter.json",
+        "status": 429,
+        "error": null
+      }
+    ]
+  },
+  "unresolved_pages": [
+    {
+      "url": "https://passportcoffee.com.au/products/burundi-nemba-48hr-oro-yeast-filter",
+      "page_index": 18,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:50.232Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:49.730Z",
+          "url": "https://passportcoffee.com.au/products/burundi-nemba-48hr-oro-yeast-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:03:50.232Z",
+          "url": "https://passportcoffee.com.au/products/burundi-nemba-48hr-oro-yeast-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/copy-of-burundi-nemba-ora-yeast-natural-lot-1-espresso",
+      "page_index": 19,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:50.734Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:50.734Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-burundi-nemba-ora-yeast-natural-lot-1-espresso",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/copy-of-burundi-nemba-cima-yeast-fermentation-filter",
+      "page_index": 20,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:51.432Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:51.432Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-burundi-nemba-cima-yeast-fermentation-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/burundi-nemba-ora-yeast-natural-lot-1-espresso",
+      "page_index": 21,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:51.933Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:51.933Z",
+          "url": "https://passportcoffee.com.au/products/burundi-nemba-ora-yeast-natural-lot-1-espresso",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/burundi-nemba-ora-yeast-natural-lot-1-filter",
+      "page_index": 22,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:52.618Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:52.618Z",
+          "url": "https://passportcoffee.com.au/products/burundi-nemba-ora-yeast-natural-lot-1-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/copy-of-burundi-nemba-ora-yeast-natural-lot-2-espresso",
+      "page_index": 23,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:53.120Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:53.120Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-burundi-nemba-ora-yeast-natural-lot-2-espresso",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/burundi-nemba-ora-yeast-natural-lot-2-filter",
+      "page_index": 24,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:53.790Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:53.790Z",
+          "url": "https://passportcoffee.com.au/products/burundi-nemba-ora-yeast-natural-lot-2-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/burundi-ngogomo-espresso",
+      "page_index": 25,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:54.547Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:54.547Z",
+          "url": "https://passportcoffee.com.au/products/burundi-ngogomo-espresso",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/burundi-ngogomo-filter",
+      "page_index": 26,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:55.133Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:55.133Z",
+          "url": "https://passportcoffee.com.au/products/burundi-ngogomo-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/burundi-rimiro-natural-filter",
+      "page_index": 27,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:55.899Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:55.899Z",
+          "url": "https://passportcoffee.com.au/products/burundi-rimiro-natural-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-alta-gracia-geisha-natural-espresso",
+      "page_index": 28,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:56.472Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:56.472Z",
+          "url": "https://passportcoffee.com.au/products/colombia-alta-gracia-geisha-natural-espresso",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-patio-bonito-aji-bourbon-thermal-shock-anaerobic-washed-espresso-copy",
+      "page_index": 29,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:57.187Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:57.187Z",
+          "url": "https://passportcoffee.com.au/products/colombia-patio-bonito-aji-bourbon-thermal-shock-anaerobic-washed-espresso-copy",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-cherry-madness-espresso",
+      "page_index": 30,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:57.838Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:57.838Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-cherry-madness-espresso",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-cherry-madness-filter",
+      "page_index": 31,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:58.620Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:58.620Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-cherry-madness-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/copy-of-colombia-campo-hermoso-black-honey-cm-sidra-filter",
+      "page_index": 32,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:59.424Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:59.424Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-campo-hermoso-black-honey-cm-sidra-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-black-honey-mossto-lactic-gesha-filter",
+      "page_index": 33,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:03:59.926Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:03:59.926Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-black-honey-mossto-lactic-gesha-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-natural-mossto-recirculated-pink-bourbon-filter",
+      "page_index": 34,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:00.704Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:00.704Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-natural-mossto-recirculated-pink-bourbon-filter",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-honey-fermented-chiroso-filter",
+      "page_index": 35,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:01.875Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:01.373Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-honey-fermented-chiroso-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:01.875Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-honey-fermented-chiroso-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-paseo-rocket-flower-espresso-copy",
+      "page_index": 36,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:02.972Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:02.471Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-paseo-rocket-flower-espresso-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:02.972Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-paseo-rocket-flower-espresso-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-white-honey-mossto-lactic-geisha-filter",
+      "page_index": 37,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:04.516Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:03.512Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-white-honey-mossto-lactic-geisha-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:04.014Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-white-honey-mossto-lactic-geisha-filter.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:04.516Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-white-honey-mossto-lactic-geisha-filter.js",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-espresso",
+      "page_index": 38,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:05.520Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:05.018Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:05.520Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-espresso.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-wush-wush-filter",
+      "page_index": 39,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:06.601Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:06.099Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-wush-wush-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:06.601Z",
+          "url": "https://passportcoffee.com.au/products/colombia-campo-hermoso-wush-wush-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-carambolo-washed-espresso-copy",
+      "page_index": 40,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:07.810Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:07.308Z",
+          "url": "https://passportcoffee.com.au/products/colombia-carambolo-washed-espresso-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:07.810Z",
+          "url": "https://passportcoffee.com.au/products/colombia-carambolo-washed-espresso-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-pink-bourbon-washed-filter-copy",
+      "page_index": 41,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:08.815Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:08.312Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-pink-bourbon-washed-filter-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:08.815Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-pink-bourbon-washed-filter-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-colombia-la-cerez-bourbon-anaerobic-natural-filter",
+      "page_index": 42,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:09.923Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:09.421Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-cerez-bourbon-anaerobic-natural-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:09.923Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-cerez-bourbon-anaerobic-natural-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-colombia-la-cerez-bourbon-anaerobic-natural-espresso",
+      "page_index": 43,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:11.655Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:10.651Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-cerez-bourbon-anaerobic-natural-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:11.153Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-cerez-bourbon-anaerobic-natural-espresso.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:11.655Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-cerez-bourbon-anaerobic-natural-espresso.js",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/copy-of-colombia-colombia-la-miel-pink-bourbon-double-anaerobic-natural-espresso",
+      "page_index": 44,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:12.678Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:12.177Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-colombia-la-miel-pink-bourbon-double-anaerobic-natural-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:12.678Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-colombia-la-miel-pink-bourbon-double-anaerobic-natural-espresso.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-colombia-la-miel-pink-bourbon-anaerobic-natural-filter",
+      "page_index": 45,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:13.682Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:13.180Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-miel-pink-bourbon-anaerobic-natural-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:13.682Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-miel-pink-bourbon-anaerobic-natural-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/copy-of-colombia-colombia-la-nature-triple-anaerobic-natural-espresso",
+      "page_index": 46,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:14.687Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:14.184Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-colombia-la-nature-triple-anaerobic-natural-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:14.687Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-colombia-la-nature-triple-anaerobic-natural-espresso.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-colombia-la-nature-triple-anaerobic-natural-filter",
+      "page_index": 47,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:15.692Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:15.190Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-nature-triple-anaerobic-natural-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:15.692Z",
+          "url": "https://passportcoffee.com.au/products/colombia-colombia-la-nature-triple-anaerobic-natural-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-vergel-anaerobic-natural-ea-decaf-espresso-copy",
+      "page_index": 48,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:16.855Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:16.194Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-anaerobic-natural-ea-decaf-espresso-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:16.855Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-anaerobic-natural-ea-decaf-espresso-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-diviso-ombligon-decaf",
+      "page_index": 49,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:17.860Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:17.358Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-ombligon-decaf",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:17.860Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-ombligon-decaf.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-diviso-sidra-thermal-shock-anaerobic-washed-filter-copy",
+      "page_index": 50,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:18.863Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:18.361Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-sidra-thermal-shock-anaerobic-washed-filter-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:18.863Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-sidra-thermal-shock-anaerobic-washed-filter-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-diviso-sidra-anaerobic-natural-filter",
+      "page_index": 51,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:20.541Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:19.538Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-sidra-anaerobic-natural-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:20.040Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-sidra-anaerobic-natural-filter.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:20.541Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-sidra-anaerobic-natural-filter.js",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-resinas-pink-borbon-creation-espresso-copy-1",
+      "page_index": 52,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:21.699Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:21.197Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-resinas-pink-borbon-creation-espresso-copy-1",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:21.699Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-resinas-pink-borbon-creation-espresso-copy-1.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-diviso-washed-anaerobic-copy",
+      "page_index": 53,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:22.795Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:22.293Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-washed-anaerobic-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:22.795Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-diviso-washed-anaerobic-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-jardin-gesha-ducuara-filter-copy",
+      "page_index": 54,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:23.798Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:23.296Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-jardin-gesha-ducuara-filter-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:23.798Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-jardin-gesha-ducuara-filter-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-pink-bourbon-anaerobic-swp-decaf-espresso-copy",
+      "page_index": 55,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:24.907Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:24.405Z",
+          "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-pink-bourbon-anaerobic-swp-decaf-espresso-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:24.907Z",
+          "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-pink-bourbon-anaerobic-swp-decaf-espresso-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-paseo-rocket-flower-espresso",
+      "page_index": 56,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:26.449Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:25.445Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-paseo-rocket-flower-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:25.947Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-paseo-rocket-flower-espresso.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:26.449Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-paseo-rocket-flower-espresso.js",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-e",
+      "page_index": 57,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:27.536Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:27.034Z",
+          "url": "https://passportcoffee.com.au/products/colombia-e",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:27.536Z",
+          "url": "https://passportcoffee.com.au/products/colombia-e.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-cm-natural-espresso",
+      "page_index": 58,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:28.540Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:28.038Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-cm-natural-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:28.540Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-cm-natural-espresso.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-cm-natural-filter",
+      "page_index": 59,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:29.576Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:29.073Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-cm-natural-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:29.576Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-cm-natural-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-vergel-magnum-sidra-espresso",
+      "page_index": 60,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:30.579Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:30.076Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-magnum-sidra-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:30.579Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-magnum-sidra-espresso.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-vergel-magnum-sidra-filter",
+      "page_index": 61,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:31.611Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:31.110Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-magnum-sidra-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:31.611Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-magnum-sidra-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-vergel-anaerobic-natural-ea-decaf-espresso",
+      "page_index": 62,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:32.614Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:32.113Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-anaerobic-natural-ea-decaf-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:32.614Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-anaerobic-natural-ea-decaf-espresso.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-marcella-filter-copy",
+      "page_index": 63,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:33.723Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:33.223Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-marcella-filter-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:33.723Z",
+          "url": "https://passportcoffee.com.au/products/colombia-el-vergel-gesha-marcella-filter-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-jardines-del-eden-espresso",
+      "page_index": 64,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:34.940Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:34.438Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-jardines-del-eden-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:34.940Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-jardines-del-eden-espresso.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-jardines-del-eden-filter",
+      "page_index": 65,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:36.528Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:35.525Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-jardines-del-eden-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:36.026Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-jardines-del-eden-filter.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:36.528Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-jardines-del-eden-filter.js",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-chiroso-controlled-fermentation-thermal-shock-filter-copy",
+      "page_index": 66,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:37.685Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:37.184Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-chiroso-controlled-fermentation-thermal-shock-filter-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:37.685Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-chiroso-controlled-fermentation-thermal-shock-filter-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-sidra-bourbon-filter-copy",
+      "page_index": 67,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:38.910Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:38.408Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-sidra-bourbon-filter-copy",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:38.910Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-sidra-bourbon-filter-copy.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-ombligon-anaerobic-thermal-filter",
+      "page_index": 68,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:39.952Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:39.448Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-ombligon-anaerobic-thermal-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:39.952Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-ombligon-anaerobic-thermal-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/copy-of-colombia-finca-las-flores-pink-bourbon-washed-espreso",
+      "page_index": 69,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:41.770Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:40.670Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-finca-las-flores-pink-bourbon-washed-espreso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:41.268Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-finca-las-flores-pink-bourbon-washed-espreso.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:41.770Z",
+          "url": "https://passportcoffee.com.au/products/copy-of-colombia-finca-las-flores-pink-bourbon-washed-espreso.js",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-pink-bourbon-washed-filter",
+      "page_index": 70,
+      "cause": "HTTP_429",
+      "first_failure_at": "2026-10-08T14:04:42.915Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:04:42.330Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-pink-bourbon-washed-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:04:42.915Z",
+          "url": "https://passportcoffee.com.au/products/colombia-finca-las-flores-pink-bourbon-washed-filter.json",
+          "status": 429,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-las-moras-natural-filter",
+      "page_index": 88,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T14:14:04.761Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:14:04.761Z",
+          "url": "https://passportcoffee.com.au/products/colombia-las-moras-natural-filter",
+          "status": 503,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-patio-bonito-aji-bourbon-thermal-shock-anaerobic-washed-espresso",
+      "page_index": 89,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T14:14:05.279Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T14:14:05.279Z",
+          "url": "https://passportcoffee.com.au/products/colombia-patio-bonito-aji-bourbon-thermal-shock-anaerobic-washed-espresso",
+          "status": 503,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+      "page_index": 91,
+      "cause": "database_unique_weight",
+      "first_failure_at": "2026-10-08T14:14:57.775Z",
+      "save_error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\"",
+      "requests": [
+        {
+          "at": "2026-10-08T14:14:33.357Z",
+          "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:14:33.859Z",
+          "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T14:14:34.362Z",
+          "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.js",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/panama-hartmann-pacamara-winey-filter",
+      "page_index": 230,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T15:31:42.721Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T15:31:42.721Z",
+          "url": "https://passportcoffee.com.au/products/panama-hartmann-pacamara-winey-filter",
+          "status": 503,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/peru-el-eucalypto-washed-bourbon-espresso",
+      "page_index": 231,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T15:31:43.233Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T15:31:43.233Z",
+          "url": "https://passportcoffee.com.au/products/peru-el-eucalypto-washed-bourbon-espresso",
+          "status": 503,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/png-baroida-filter",
+      "page_index": 234,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T15:32:39.457Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T15:32:38.453Z",
+          "url": "https://passportcoffee.com.au/products/png-baroida-filter",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T15:32:38.955Z",
+          "url": "https://passportcoffee.com.au/products/png-baroida-filter.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T15:32:39.457Z",
+          "url": "https://passportcoffee.com.au/products/png-baroida-filter.js",
+          "status": 503,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/png-tairora-espresso",
+      "page_index": 235,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T15:32:41.025Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T15:32:40.022Z",
+          "url": "https://passportcoffee.com.au/products/png-tairora-espresso",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T15:32:40.523Z",
+          "url": "https://passportcoffee.com.au/products/png-tairora-espresso.json",
+          "status": 200,
+          "error": null
+        },
+        {
+          "at": "2026-10-08T15:32:41.025Z",
+          "url": "https://passportcoffee.com.au/products/png-tairora-espresso.js",
+          "status": 503,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/png-tairora-filter",
+      "page_index": 236,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T15:32:41.680Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T15:32:41.680Z",
+          "url": "https://passportcoffee.com.au/products/png-tairora-filter",
+          "status": 503,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/rwanda-kanyege-espresso",
+      "page_index": 237,
+      "cause": "HTTP_503",
+      "first_failure_at": "2026-10-08T15:32:42.195Z",
+      "save_error": null,
+      "requests": [
+        {
+          "at": "2026-10-08T15:32:42.195Z",
+          "url": "https://passportcoffee.com.au/products/rwanda-kanyege-espresso",
+          "status": 503,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "model_calls": 191,
+  "model_finish_reasons": {
+    "stop": 177,
+    "length": 14
+  },
+  "model_usage": {
+    "prompt_tokens": 342939,
+    "completion_tokens": 619219,
+    "cached_tokens": 26880,
+    "reasoning_tokens": 450944,
+    "unreported_calls": 0
+  },
+  "model_list_price_estimate": 1.31812475,
+  "credential_stop": false,
+  "failed_save": {
+    "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+    "source_product_id": "8223558533281",
+    "error": "duplicate key value violates unique constraint \"product_variants_unique_weight_per_product\"",
+    "variants": [
+      {
+        "source_id": "46537133424801",
+        "title": "125gm",
+        "weight_g": 125,
+        "money": {
+          "raw": "36.0",
+          "amount": "36.00",
+          "currency": "AUD",
+          "exponent": 2,
+          "minorUnits": 3600,
+          "reason": null
+        },
+        "availability": "in_stock"
+      },
+      {
+        "source_id": "44906648764577",
+        "title": "250gm",
+        "weight_g": 250,
+        "money": {
+          "raw": "60.0",
+          "amount": "60.00",
+          "currency": "AUD",
+          "exponent": 2,
+          "minorUnits": 6000,
+          "reason": null
+        },
+        "availability": "in_stock"
+      },
+      {
+        "source_id": "44906648797345",
+        "title": "1KG",
+        "weight_g": 1000,
+        "money": {
+          "raw": "218.0",
+          "amount": "218.00",
+          "currency": "AUD",
+          "exponent": 2,
+          "minorUnits": 21800,
+          "reason": null
+        },
+        "availability": "in_stock"
+      },
+      {
+        "source_id": "46621928095905",
+        "title": "250gm Vac Sealed Pouch Option (per pouch)",
+        "weight_g": 250,
+        "money": {
+          "raw": "3.0",
+          "amount": "3.00",
+          "currency": "AUD",
+          "exponent": 2,
+          "minorUnits": 300,
+          "reason": null
+        },
+        "availability": "sold_out"
+      }
+    ]
+  },
+  "catalog_snapshot_totals": {
+    "products": 213,
+    "variants": 435,
+    "photos": 213
+  },
+  "full_255_product_gate_passed": false,
+  "successful_subset_readback": {
+    "checked_at": "2026-10-08T15:52:45.237Z",
+    "scope": "193 successfully saved Passport products from terminal failed run; full 255-product gate remains failed",
+    "subset_readback_passed": true,
+    "full_255_product_gate_passed": false,
+    "saved_products": 193,
+    "native_variants": 387,
+    "public_images_verified": 133,
+    "public_image_bytes": 61082019,
+    "failures": []
+  },
+  "accessory_cause": {
+    "profile_pattern": "^Vac Sealed Pouch Option \\(per pouch\\)$",
+    "observed_title": "250gm Vac Sealed Pouch Option (per pouch)",
+    "native_variant_scope": null,
+    "observed_variants_complete": true,
+    "explanation": "Existing anchored accessory pattern does not match the added 250gm prefix. All four variants were treated as complete coffee inventory; the pouch conflicts with the real 250gm coffee under the existing weight uniqueness constraint."
+  },
+  "running_progress_counter_limit": "Prior progress snapshots enumerated extractPage errors only and omitted failed HTML/native fetches occurring before extraction. Zero in that list was not zero total page errors.",
+  "verified_source_gate": {
+    "reviewed_products": 255,
+    "reviewed_coffee_variants": 529,
+    "passed": false,
+    "reason": "193 successful saves / 62 terminal errors. Failed runs and cross-attempt rows are not completed normal-run coverage."
+  },
+  "fresh_addon_source_evidence": {
+    "path": "passport-prefixed-addon-live-20261008.json",
+    "checked_at": "2026-10-08T15:55:02.879Z",
+    "merchant_statuses": [
+      200,
+      200,
+      200
+    ],
+    "complete_original_native_ids_and_stock": true,
+    "model_calls": 0,
+    "database_writes": 0
+  },
+  "baseline_inventory_correction": {
+    "previous_reviewed_variant_total": 529,
+    "known_accessory_variant_included_in_previous_total": "46621928095905",
+    "corrected_expected_coffee_variant_total": 528,
+    "requires_fresh_complete_normal_run": true
+  }
+}

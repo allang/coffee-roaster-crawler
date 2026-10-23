@@ -1,0 +1,254 @@
+{
+  "checked_at": "2026-10-08T20:10:54.280Z",
+  "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+  "run_id": "29d25480-cdac-4759-a63d-f5d3afad7cb1",
+  "run_status": "completed",
+  "started_at": "2026-10-08T19:56:36.640Z",
+  "finished_at": "2026-10-08T20:09:38.233Z",
+  "elapsed_seconds": 781.593,
+  "process": {
+    "pid": 60576,
+    "cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+    "scheduler_lock_pid": 59662,
+    "scheduler_node_pid": 59674,
+    "max_roaster_jobs": 2
+  },
+  "preflight": {
+    "checked_at": "2026-10-08T19:54:04.220Z",
+    "existing_catalog_products": 249,
+    "existing_catalog_variants": 516,
+    "known_pages": 249,
+    "collision_count": 0,
+    "database_read_only": true
+  },
+  "controller": {
+    "checked_at": "2026-10-08T20:06:19.740Z",
+    "controller_pid": 60564,
+    "controller_session_id": 18288,
+    "observer_pid": 60576,
+    "scheduler_pid": 59674,
+    "scheduler_lock_pid": 59662,
+    "scheduler_state_during_verification": "T",
+    "controller_source_sha256": "42aaf6787bd28520bf70f1b5e86135395c640dec585364c77fb316176016d00f",
+    "actual_exit_and_error_handlers_tested": true,
+    "tests": [
+      {
+        "mode": "exit_zero",
+        "passed": true,
+        "suspended_state": "T",
+        "resumed_state": "S",
+        "controller_exit_code": 0
+      },
+      {
+        "mode": "exit_nonzero",
+        "passed": true,
+        "suspended_state": "T",
+        "resumed_state": "S",
+        "controller_exit_code": 1
+      },
+      {
+        "mode": "spawn_error",
+        "passed": true,
+        "suspended_state": "T",
+        "resumed_state": "S",
+        "controller_exit_code": 1
+      }
+    ],
+    "probe_scope": "Exact controller handlers executed against separately spawned owned idle Node processes. Zero/nonzero child exit and child spawn errors all SIGCONT resumed the same probe PID. No production signals or catalog/model calls by these probes.",
+    "limitation": "Protection covers observer exit and spawn failure; no claim of surviving a SIGKILL of both controller and observer.",
+    "passed": true,
+    "actual_exit_code": 0,
+    "actual_same_pid_resumed": true,
+    "actual_resumed_at": "2026-10-08T20:09:39.715Z",
+    "verification_suspension_seconds": 784.887,
+    "normal_scheduler_persistence_after_resume": {
+      "checked_at": "2026-10-08T20:13:22.652Z",
+      "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+      "scheduler_node_pid": 59674,
+      "successful_save_events_since_install": 15,
+      "product": {
+        "id": "8bd57a13-00d4-4209-a7aa-bd8935b828e9",
+        "entity_id": "16d40b29-b263-4d7a-a6a4-0b339325fc30",
+        "source_url": "https://www.loveluminous.coffee/products/colombia-ea-decaf-lychee-peach",
+        "last_seen_at": "2026-10-08T20:12:55.187+00:00",
+        "is_active": true
+      },
+      "known_pages": [
+        {
+          "id": "381be664-5c9d-4d17-a201-75220bb47efc",
+          "url": "https://www.loveluminous.coffee/products/colombia-ea-decaf-lychee-peach",
+          "status": "coffee",
+          "last_fetched_at": "2026-10-08T20:12:55.187+00:00"
+        }
+      ],
+      "persisted_after_install": true,
+      "persisted_after_guard_resume": true,
+      "known_checkpoint_after_guard_resume": true,
+      "guard_resumed_at": "2026-10-08T20:09:39.715Z"
+    }
+  },
+  "terminal_visitor": {
+    "visited": 255,
+    "coffeeFound": 255,
+    "irrelevant": 0,
+    "errors": 0,
+    "aiCalls": 6,
+    "cacheHits": 249,
+    "structuredPages": 0,
+    "structuredProductOnlyPages": 0,
+    "marketChecks": 255,
+    "aiUsage": {
+      "prompt_tokens": 10039,
+      "completion_tokens": 19482,
+      "cached_tokens": 0,
+      "reasoning_tokens": 14464,
+      "unreported_calls": 0
+    }
+  },
+  "normal_run_succeeded": true,
+  "full_catalog_readback_passed": true,
+  "reader_returned_errors": 0,
+  "reader_attempts": 790,
+  "cooldown_events": [],
+  "cooldown_waited_ms": 0,
+  "long_cooldown_path_exercised": false,
+  "omission_reconciliation_attempts": 0,
+  "model_and_output_settings_changed": false,
+  "save_attempts": 255,
+  "successful_saves": 255,
+  "save_failures": 0,
+  "verification": {
+    "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+    "checked_at": "2026-10-08T20:10:54.280Z",
+    "passed": true,
+    "scope": "one full normal latest-source Passport crawl and fresh readback; eight explicitly incomplete accessory subsets; global omissions disabled; no whole-tier inventory claim",
+    "owners": [
+      {
+        "entity_id": "c978d995-9310-4c54-945b-5211ccdddf7a",
+        "name": "Passport Specialty Coffee",
+        "success": true,
+        "started_at": "2026-10-08T19:56:36.640Z",
+        "finished_at": "2026-10-08T20:09:38.233Z",
+        "run_id": "29d25480-cdac-4759-a63d-f5d3afad7cb1",
+        "status": "completed",
+        "metrics": {
+          "visited": 255,
+          "coffeeFound": 255,
+          "irrelevant": 0,
+          "errors": 0,
+          "aiCalls": 6,
+          "cacheHits": 249,
+          "structuredPages": 0,
+          "structuredProductOnlyPages": 0,
+          "marketChecks": 255,
+          "aiUsage": {
+            "prompt_tokens": 10039,
+            "completion_tokens": 19482,
+            "cached_tokens": 0,
+            "reasoning_tokens": 14464,
+            "unreported_calls": 0
+          }
+        },
+        "saved_products": 255,
+        "new_products": 6,
+        "exact_native_variants": 528,
+        "total_catalog_products": 255,
+        "total_catalog_variants": 528
+      }
+    ],
+    "incomplete_accessory_subsets": 8,
+    "omission_reconciliation_attempts": 0,
+    "saved_products": 255,
+    "public_images_verified": 169,
+    "public_image_bytes": 81070834,
+    "prohibited_requests": 0,
+    "request_summary": {
+      "catalog": 1569,
+      "merchant": 796,
+      "model": 6
+    },
+    "runtime": {
+      "head": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+      "working_tree_clean": true,
+      "env_unchanged": true,
+      "plist_unchanged": true,
+      "launcher_unchanged": true,
+      "lock_pid": 59662,
+      "scheduler_node_pid": 59674,
+      "scheduler_state": "S",
+      "scheduler_resumed_at": "2026-10-08T20:09:39.715Z"
+    },
+    "failures": []
+  },
+  "extraction_modes": {
+    "cache": 249,
+    "ai": 6
+  },
+  "transient_merchant_responses": {
+    "429": 16
+  },
+  "transient_merchant_urls": 16,
+  "model_responses": 6,
+  "model_failed_responses": 0,
+  "model_finish_reasons": {
+    "stop": 6
+  },
+  "model_usage": {
+    "input_tokens": 10039,
+    "cached_input_tokens": 0,
+    "output_tokens": 19482,
+    "reasoning_tokens": 14464,
+    "unreported_responses": 0
+  },
+  "accessory_subset_count": 8,
+  "accessory_subsets_variants_complete": false,
+  "reconcile_omissions": false,
+  "inventory_authorizes_global_absence": false,
+  "migration_applied_by_this_run": false,
+  "matched_performance_comparison": false,
+  "invoice_cost_known": false,
+  "full_tier_inventory_verified": false,
+  "limits": [
+    "Successful full Passport run covers the current 255 reviewed coffee products and 528 coffee SKUs; eight accessory-bearing coffee subsets remain explicitly incomplete.",
+    "This retry retained prior successful classifications, product rows and media caches; elapsed time is not a matched code-only performance comparison.",
+    "No independent real-world origin/processing truth, full catalog accuracy, whole-tier completion, invoice amount or global inventory omission authority is inferred."
+  ],
+  "measured_processing": {
+    "methods": {
+      "washed": 68,
+      "natural": 158,
+      "honey": 15,
+      "anaerobic": 63,
+      "thermal_shock": 21,
+      "carbonic_maceration": 8,
+      "lactic_fermentation": 6
+    },
+    "coferment": {
+      "disclosed_yes": 0,
+      "disclosed_no": 0,
+      "unknown": 255
+    }
+  },
+  "preceding_failed_attempt": {
+    "source_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+    "run_id": "c7f38e4d-99b3-4c1b-841c-0dd3f307d1e0",
+    "elapsed_seconds": 1470.36,
+    "saved_coffees": 98,
+    "page_errors": 157,
+    "model_responses": 40,
+    "model_usage": {
+      "input": 68385,
+      "cached_input": 5120,
+      "output": 135492
+    },
+    "full_gate_passed": false
+  },
+  "short_retry_evidence": {
+    "responses_429": 16,
+    "raw_retry_after_present": 0,
+    "retry_delay_ms_each": 2000,
+    "declared_total_retry_delay_ms": 32000,
+    "reader_wire_attempts": 790,
+    "wire_responses_200": 774
+  }
+}

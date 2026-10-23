@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-10-08T15:55:02.879Z",
+  "source_sha": "655384ebbc288d65e015dadb6aa7ad484894f4d4",
+  "source_tree": "8411c5ec7d3b023f5c4fa0c215491e09517595c2",
+  "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+  "product_id": "8223558533281",
+  "title": "Colombia Penas Blancas Geisha Natural FILTER",
+  "request_evidence": [
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+      "status": 200,
+      "at": "2026-10-08T15:55:01.515Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.json",
+      "status": 200,
+      "at": "2026-10-08T15:55:02.017Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.js",
+      "status": 200,
+      "at": "2026-10-08T15:55:02.519Z"
+    }
+  ],
+  "responses": [
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+      "status": 200,
+      "final_url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter",
+      "bytes": 140586,
+      "sha256": "fb01a9432a5347cdc1c8c952aaaf11bb795278edcab6809ac5646c3b5352e1eb"
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.json",
+      "status": 200,
+      "final_url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.json",
+      "bytes": 6488,
+      "sha256": "2f93daf9a344351ce4c9311b6cfc676a3ab99da1a55630c98017a9518cbd8ad6"
+    },
+    {
+      "url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.js",
+      "status": 200,
+      "final_url": "https://passportcoffee.com.au/products/colombia-penas-blancas-geisha-natural-filter.js",
+      "bytes": 6589,
+      "sha256": "5379e296a99551e2caba40469fbd575bce1cfa3cbda500004912dd2e2c4b972f"
+    }
+  ],
+  "complete_original_json_ajax_ids_verified": true,
+  "variants": [
+    {
+      "source_id": "46537133424801",
+      "title": "125gm",
+      "weight_g": 125,
+      "money": {
+        "raw": "36.0",
+        "amount": "36.00",
+        "currency": "AUD",
+        "exponent": 2,
+        "minorUnits": 3600,
+        "reason": null
+      },
+      "availability": "in_stock",
+      "native_available": true,
+      "is_exact_pouch_accessory": false
+    },
+    {
+      "source_id": "44906648764577",
+      "title": "250gm",
+      "weight_g": 250,
+      "money": {
+        "raw": "60.0",
+        "amount": "60.00",
+        "currency": "AUD",
+        "exponent": 2,
+        "minorUnits": 6000,
+        "reason": null
+      },
+      "availability": "in_stock",
+      "native_available": true,
+      "is_exact_pouch_accessory": false
+    },
+    {
+      "source_id": "44906648797345",
+      "title": "1KG",
+      "weight_g": 1000,
+      "money": {
+        "raw": "218.0",
+        "amount": "218.00",
+        "currency": "AUD",
+        "exponent": 2,
+        "minorUnits": 21800,
+        "reason": null
+      },
+      "availability": "in_stock",
+      "native_available": true,
+      "is_exact_pouch_accessory": false
+    },
+    {
+      "source_id": "46621928095905",
+      "title": "250gm Vac Sealed Pouch Option (per pouch)",
+      "weight_g": 250,
+      "money": {
+        "raw": "3.0",
+        "amount": "3.00",
+        "currency": "AUD",
+        "exponent": 2,
+        "minorUnits": 300,
+        "reason": null
+      },
+      "availability": "sold_out",
+      "native_available": false,
+      "is_exact_pouch_accessory": true
+    }
+  ],
+  "retained_coffee_variant_ids": [
+    "46537133424801",
+    "44906648764577",
+    "44906648797345"
+  ],
+  "excluded_accessory_variant_ids": [
+    "46621928095905"
+  ],
+  "current_unpatched_variants_complete": true,
+  "current_unpatched_subset_proof": null,
+  "merchant_read_only": true,
+  "database_writes": 0,
+  "model_calls": 0,
+  "baseline_reviewed_total_variants": 529,
+  "baseline_reviewed_total_includes_prefixed_accessory": true,
+  "corrected_expected_coffee_variants_from_captured_baseline": 528,
+  "corrected_inventory_requires_fresh_complete_normal_run": true
+}

@@ -1,0 +1,225 @@
+{
+  "runtime": {
+    "checked_at": "2026-10-08T19:04:23.538Z",
+    "installed_sha": "ff26496077ec348fc162dcb2e74ea1ccb7b477c5",
+    "installed_tree": "3c76f83449f377292c0b51e0d14a253ed2beeba6",
+    "old_sha": "0a1cefb760b6d90e4dbde885fcf79a1d8da44438",
+    "paused_at": "2026-10-08T18:46:48.862Z",
+    "resume_requested_at": "2026-10-08T19:02:34.401Z",
+    "pause_seconds": 945.539,
+    "started_at": "2026-10-08T19:02:34.615Z",
+    "launch_agent_state": "running",
+    "launch_agent_pid": 54930,
+    "lock_pid": 54930,
+    "node_pids": [
+      54939
+    ],
+    "node_cwd": "/Users/allan/.openclaw/workspace/coffee-roaster-crawler",
+    "schedule_seconds": 5400,
+    "configured_roaster_workers": 1,
+    "working_tree_clean": true,
+    "env_unchanged": true,
+    "plist_unchanged": true,
+    "launcher_unchanged": true,
+    "passport_receipt_unchanged": true,
+    "ledger_total": 524,
+    "ledger_tier_one": 65,
+    "profiles_preserved": true,
+    "obsolete_owner_rows": 0,
+    "canonical_owners": [
+      {
+        "id": "21fd9a7b-5d94-46a3-9db2-bd27d8803432",
+        "name": "Moonwake Coffee Roasters",
+        "slug": "moonwake-coffee-roasters",
+        "website_url": "https://moonwakecoffeeroasters.com"
+      },
+      {
+        "id": "4a9b314c-d48f-44b1-a9d6-59f70fd38cb4",
+        "name": "Dayglow Coffee",
+        "slug": "dayglow-coffee",
+        "website_url": "https://dayglow.coffee/"
+      },
+      {
+        "id": "5421c825-7e29-427b-a0b7-8a7dce98029a",
+        "name": "Glitch",
+        "slug": "glitch",
+        "website_url": "https://shop.glitchcoffee.com/en"
+      },
+      {
+        "id": "b116fcb1-933b-4ac5-b57c-4dae7580da22",
+        "name": "Little Wolf",
+        "slug": "little-wolf",
+        "website_url": "https://littlewolf.coffee"
+      },
+      {
+        "id": "c80ad86e-bd39-4b0a-be8c-b421dc574c4a",
+        "name": "Push Pull",
+        "slug": "push-pull",
+        "website_url": "https://pushxpullcoffee.com"
+      },
+      {
+        "id": "d85c4ca3-b86e-43b6-8822-aaef6472126a",
+        "name": "Loveless Coffees",
+        "slug": "loveless-coffees",
+        "website_url": "https://lovelesscoffees.coffee"
+      }
+    ],
+    "first_phase": {
+      "tier": 1,
+      "roasters": 57
+    },
+    "first_owner": {
+      "id": "e00c05fa-623e-4284-adfc-420e81dd472c",
+      "reviewed_tier": 1
+    },
+    "latest_run": {
+      "id": "115ff53d-4e51-494a-9b83-312da3a5f564",
+      "entity_id": "e00c05fa-623e-4284-adfc-420e81dd472c",
+      "status": "running",
+      "started_at": "2026-10-08T19:02:56.36+00:00",
+      "finished_at": null,
+      "error": null
+    },
+    "interrupted_run": {
+      "id": "a0377f99-0374-4888-94f2-57e03689c3c2",
+      "entity_id": "38a0f59c-a226-4ba7-96ee-b130dd583f66",
+      "status": "failed",
+      "started_at": "2026-10-08T18:32:38.915+00:00",
+      "finished_at": "2026-10-08T18:46:48.862+00:00",
+      "error": "Operator pause at confirmed persisted-page boundary for human-requested guarded six-owner duplicate merge; saved records/checkpoints retained; awaiting tested merged-source SHA before resume; no schema migration applied"
+    },
+    "tests": {
+      "total": 456,
+      "pass": 455,
+      "fail": 0,
+      "skipped": 1,
+      "seconds": 11.050694083,
+      "skip_reason": "Native PostgreSQL unavailable on Mac; PGlite contract passed; root reported 456 local tests passing"
+    },
+    "logged_errors": [],
+    "migration_applied": false,
+    "passport_restarted": false,
+    "full_passport_gate_passed": false,
+    "limit": "Fresh startup proof and read-only Loveless adoption; no full new owner run or whole-tier coverage claim.",
+    "installed_runtime_verified": true
+  },
+  "loveless_readonly": {
+    "checked_at": "2026-10-08T19:02:19.481Z",
+    "source_sha": "ff26496077ec348fc162dcb2e74ea1ccb7b477c5",
+    "mode": "get-and-catalog-read-only",
+    "owner": {
+      "id": "d85c4ca3-b86e-43b6-8822-aaef6472126a",
+      "name": "Loveless Coffees",
+      "slug": "loveless-coffees",
+      "website_url": "https://lovelesscoffees.coffee"
+    },
+    "profile": {
+      "name": "Loveless",
+      "adapter": "shopify",
+      "entity_ids": [
+        "d85c4ca3-b86e-43b6-8822-aaef6472126a"
+      ],
+      "hosts": [
+        "lovelesscoffees.coffee",
+        "www.lovelesscoffees.coffee"
+      ]
+    },
+    "retired_owner_absent": true,
+    "retained_product_ids": 40,
+    "current_listings": 36,
+    "inactive_history": 4,
+    "adoptions": [
+      {
+        "historical_product_id": "035c5347-1ec1-4af8-a9f2-0cb624c885ec",
+        "canonical_product_id": "db0fcdc0-d38f-5514-b543-615c4298b648",
+        "source_url": "https://lovelesscoffees.coffee/products/kamavindi-select-washed-field-blend-embu-kenya",
+        "canonical_slug": "kamavindi-select-washed-field-blend-embu-kenya-d1da98b908",
+        "fallback_adoption_passed": true
+      },
+      {
+        "historical_product_id": "05f77574-ab80-46f7-84d0-cf5b0c73a057",
+        "canonical_product_id": "b7e7cb7e-38e7-5c84-b34c-d059c8c58448",
+        "source_url": "https://lovelesscoffees.coffee/products/yessica-parra-natural-gesha-pitalito-colombia",
+        "canonical_slug": "yessica-parra-natural-gesha-pitalito-colombia-ba80dc6b2b",
+        "fallback_adoption_passed": true
+      },
+      {
+        "historical_product_id": "bf752fc4-d52f-4389-8ee3-1c14f4bc8d5d",
+        "canonical_product_id": "153e4dcd-3248-562e-b8c5-88c4ae2c98c6",
+        "source_url": "https://lovelesscoffees.coffee/products/tokuma-decaf-agaro-ethiopia",
+        "canonical_slug": "pink-guava-moon-e-a-decaf-huila-colombia-373d2d8c57",
+        "fallback_adoption_passed": true
+      },
+      {
+        "historical_product_id": "dbeb3756-86f1-4829-a871-7b5b1c1b1624",
+        "canonical_product_id": "9bb9ec01-8de9-509d-92e2-add4b4651518",
+        "source_url": "https://lovelesscoffees.coffee/products/caramel-chimera-drip-blend",
+        "canonical_slug": "caramel-chimera-drip-blend-f807feb9db",
+        "fallback_adoption_passed": true
+      }
+    ],
+    "sample": {
+      "url": "https://lovelesscoffees.coffee/products/kamavindi-select-washed-field-blend-embu-kenya",
+      "canonical_product_id": "db0fcdc0-d38f-5514-b543-615c4298b648",
+      "native_product_id": "9173057765531",
+      "current_merchant_title": "Kamavindi Select - Washed Field Blend - Embu, Kenya",
+      "current_native_variants": 4,
+      "primary_get_status": 200,
+      "native_adoption_passed": true
+    },
+    "requests": [
+      {
+        "method": "GET",
+        "url": "https://lovelesscoffees.coffee/products/kamavindi-select-washed-field-blend-embu-kenya",
+        "status": 200,
+        "at": "2026-10-08T19:02:18.080Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://lovelesscoffees.coffee/products/kamavindi-select-washed-field-blend-embu-kenya.json",
+        "status": 200,
+        "at": "2026-10-08T19:02:18.584Z",
+        "attempt": 1,
+        "retry": 0
+      },
+      {
+        "method": "GET",
+        "url": "https://lovelesscoffees.coffee/products/kamavindi-select-washed-field-blend-embu-kenya.js",
+        "status": 200,
+        "at": "2026-10-08T19:02:19.090Z",
+        "attempt": 1,
+        "retry": 0
+      }
+    ],
+    "readback_unchanged": true,
+    "production_writes": 0,
+    "model_calls": 0,
+    "passport_restarted": false,
+    "passed": true
+  },
+  "ongoing_writes": {
+    "checked_at": "2026-10-08T19:03:39.970Z",
+    "source_sha": "ff26496077ec348fc162dcb2e74ea1ccb7b477c5",
+    "successful_save_events": 1,
+    "product": {
+      "id": "08d0fc20-b669-545d-ad7b-bbc50399f5e0",
+      "entity_id": "e00c05fa-623e-4284-adfc-420e81dd472c",
+      "source_url": "https://hscoffeeroasters.com/products/burundi-mikuba-8",
+      "last_seen_at": "2026-10-08T19:03:18.467+00:00",
+      "is_active": true
+    },
+    "known_pages": [
+      {
+        "id": "4a9c53f4-6ed3-4f91-81d5-238bfe1f7c16",
+        "url": "https://hscoffeeroasters.com/products/burundi-mikuba-8",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T19:03:18.467+00:00"
+      }
+    ],
+    "persisted_write_verified": true,
+    "known_page_checkpoint_verified": true,
+    "limit": "One dated normal-scheduler persistence checkpoint; complete merchant and tier counts are not yet certified."
+  }
+}

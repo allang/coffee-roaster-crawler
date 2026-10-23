@@ -1,0 +1,320 @@
+{
+  "checked_at": "2026-10-08T20:56:10.685Z",
+  "source_sha": "99721e64fe8440e7cc3c68054c412fef5230c8a2",
+  "owner_id": "8528a70e-2033-4fc5-b5c6-1c5f73c0a989",
+  "run": {
+    "id": "7886ad66-2602-4ae1-988d-a8c0e277caaa",
+    "entity_id": "8528a70e-2033-4fc5-b5c6-1c5f73c0a989",
+    "status": "completed",
+    "started_at": "2026-10-08T20:38:00.887+00:00",
+    "finished_at": "2026-10-08T20:50:09.286+00:00",
+    "platform": "shopify",
+    "pages_discovered": 46,
+    "pages_visited": 47,
+    "pages_sent_to_gpt": 47,
+    "coffees_found": 26,
+    "error": null,
+    "meta": {
+      "extraction": {
+        "errors": 0,
+        "aiCalls": 47,
+        "aiUsage": {
+          "cached_tokens": 0,
+          "prompt_tokens": 90443,
+          "reasoning_tokens": 57472,
+          "unreported_calls": 0,
+          "completion_tokens": 67078
+        },
+        "visited": 47,
+        "cacheHits": 0,
+        "irrelevant": 21,
+        "blacklisted": 32,
+        "coffeeFound": 26,
+        "marketChecks": 26,
+        "quotaExceeded": false,
+        "queueRemaining": 0,
+        "linksDiscovered": 46,
+        "structuredPages": 0,
+        "inventoryComplete": true,
+        "structuredProductOnlyPages": 0
+      }
+    },
+    "created_at": "2026-10-08T20:38:00.925611+00:00"
+  },
+  "literal_active_placeholder_count": 7,
+  "placeholders": [
+    {
+      "id": "08dcd938-5006-547b-a286-ca893e2950fe",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/medium-roast",
+      "is_active": true,
+      "created_at": "2026-10-08T20:43:59.274946+00:00",
+      "last_seen_at": "2026-10-08T20:43:59.01+00:00",
+      "source_product_id": null,
+      "availability_state": "unknown",
+      "availability_evidence": [],
+      "description_raw": null,
+      "description_html": null,
+      "original_image_url": null,
+      "variants": [],
+      "checkpoint": {
+        "id": "99aa6719-80b5-4118-a6a3-f88c926c8bb9",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T20:43:59.01+00:00",
+        "last_status_code": 200,
+        "classification_product": "Product Title",
+        "is_coffee_page": true,
+        "mode": "ai",
+        "extracted_at": "2026-10-08T20:43:46.540Z",
+        "source_product_id": null,
+        "default_price": null,
+        "variant_prices": []
+      }
+    },
+    {
+      "id": "21a00181-15a5-513f-8553-ff74d0f0ce56",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/dark-roasty-revival",
+      "is_active": true,
+      "created_at": "2026-10-08T20:42:41.378296+00:00",
+      "last_seen_at": "2026-10-08T20:42:41.084+00:00",
+      "source_product_id": null,
+      "availability_state": "unknown",
+      "availability_evidence": [],
+      "description_raw": null,
+      "description_html": null,
+      "original_image_url": null,
+      "variants": [
+        {
+          "id": "3cde1226-a83d-5a19-9d1c-24a63e0eec41",
+          "merchant_variant_id": null,
+          "weight_g": null,
+          "price_amount": 0,
+          "currency": null,
+          "availability_state": "unknown"
+        }
+      ],
+      "checkpoint": {
+        "id": "2998d2ff-37ea-4d76-9154-439dd389381a",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T20:42:41.084+00:00",
+        "last_status_code": 200,
+        "classification_product": "Product Title",
+        "is_coffee_page": true,
+        "mode": "ai",
+        "extracted_at": "2026-10-08T20:42:29.475Z",
+        "source_product_id": null,
+        "default_price": "$0",
+        "variant_prices": []
+      }
+    },
+    {
+      "id": "7d505c67-aaa3-5baa-b2e4-3df8054046ab",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/dark-roast",
+      "is_active": true,
+      "created_at": "2026-10-08T20:42:55.75918+00:00",
+      "last_seen_at": "2026-10-08T20:42:55.49+00:00",
+      "source_product_id": null,
+      "availability_state": "unknown",
+      "availability_evidence": [],
+      "description_raw": null,
+      "description_html": null,
+      "original_image_url": null,
+      "variants": [],
+      "checkpoint": {
+        "id": "ab972a34-8141-4a2f-b0e5-cfffbfdf87a3",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T20:42:55.49+00:00",
+        "last_status_code": 200,
+        "classification_product": "Product Title",
+        "is_coffee_page": true,
+        "mode": "ai",
+        "extracted_at": "2026-10-08T20:42:42.112Z",
+        "source_product_id": null,
+        "default_price": null,
+        "variant_prices": []
+      }
+    },
+    {
+      "id": "a364a0f7-b71d-5f2a-bb96-2a515f168e85",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/coffee",
+      "is_active": true,
+      "created_at": "2026-10-08T20:41:11.444134+00:00",
+      "last_seen_at": "2026-10-08T20:41:11.167+00:00",
+      "source_product_id": null,
+      "availability_state": "unknown",
+      "availability_evidence": [],
+      "description_raw": null,
+      "description_html": null,
+      "original_image_url": null,
+      "variants": [],
+      "checkpoint": {
+        "id": "f90bc8a2-c42a-495a-9b36-d7340b40e549",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T20:41:11.167+00:00",
+        "last_status_code": 200,
+        "classification_product": "Product Title",
+        "is_coffee_page": true,
+        "mode": "ai",
+        "extracted_at": "2026-10-08T20:40:55.744Z",
+        "source_product_id": null,
+        "default_price": null,
+        "variant_prices": []
+      }
+    },
+    {
+      "id": "a46535f2-de89-5d9d-b3d1-edff403350d3",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/light-roast",
+      "is_active": true,
+      "created_at": "2026-10-08T20:49:38.698617+00:00",
+      "last_seen_at": "2026-10-08T20:49:38.427+00:00",
+      "source_product_id": null,
+      "availability_state": "unknown",
+      "availability_evidence": [],
+      "description_raw": null,
+      "description_html": null,
+      "original_image_url": null,
+      "variants": [],
+      "checkpoint": {
+        "id": "bb0dd180-279e-496a-9a2a-59554c1ec8fb",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T20:49:38.427+00:00",
+        "last_status_code": 200,
+        "classification_product": "Product Title",
+        "is_coffee_page": true,
+        "mode": "ai",
+        "extracted_at": "2026-10-08T20:49:19.340Z",
+        "source_product_id": null,
+        "default_price": null,
+        "variant_prices": []
+      }
+    },
+    {
+      "id": "c2ef57e1-f40f-55d3-b107-1ff4ab782dbc",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/medium-dark-roast",
+      "is_active": true,
+      "created_at": "2026-10-08T20:41:56.045862+00:00",
+      "last_seen_at": "2026-10-08T20:41:55.749+00:00",
+      "source_product_id": null,
+      "availability_state": "unknown",
+      "availability_evidence": [],
+      "description_raw": null,
+      "description_html": null,
+      "original_image_url": null,
+      "variants": [],
+      "checkpoint": {
+        "id": "dd809a7d-2bdd-41cb-9a78-978071c67cb3",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T20:41:55.749+00:00",
+        "last_status_code": 200,
+        "classification_product": "Product Title",
+        "is_coffee_page": true,
+        "mode": "ai",
+        "extracted_at": "2026-10-08T20:41:42.877Z",
+        "source_product_id": null,
+        "default_price": null,
+        "variant_prices": []
+      }
+    },
+    {
+      "id": "f65bcd8c-37ac-586f-8051-64502f349684",
+      "name": "Product Title",
+      "source_url": "https://www.airshipcoffee.com/collections/natural-coffees",
+      "is_active": true,
+      "created_at": "2026-10-08T20:44:42.803448+00:00",
+      "last_seen_at": "2026-10-08T20:44:42.525+00:00",
+      "source_product_id": null,
+      "availability_state": "unknown",
+      "availability_evidence": [],
+      "description_raw": null,
+      "description_html": null,
+      "original_image_url": null,
+      "variants": [],
+      "checkpoint": {
+        "id": "52b71a7a-9372-453a-b458-7e7f0f20b530",
+        "status": "coffee",
+        "last_fetched_at": "2026-10-08T20:44:42.525+00:00",
+        "last_status_code": 200,
+        "classification_product": "Product Title",
+        "is_coffee_page": true,
+        "mode": "ai",
+        "extracted_at": "2026-10-08T20:44:30.922Z",
+        "source_product_id": null,
+        "default_price": null,
+        "variant_prices": []
+      }
+    }
+  ],
+  "fresh_source": {
+    "checked_at": "2026-10-08T20:55:35.101Z",
+    "requested_url": "https://www.airshipcoffee.com/collections/light-roast",
+    "final_url": "https://www.airshipcoffee.com/collections/light-roast",
+    "status": 200,
+    "title": "Airship",
+    "h1": [
+      "Light Roast"
+    ],
+    "canonical": null,
+    "ogtype": null,
+    "jsonld_count": 0,
+    "product_links": [],
+    "placeholder_occurrences": 1,
+    "placeholder_heading_context": "",
+    "reader_requests": [
+      {
+        "method": "GET",
+        "url": "https://www.airshipcoffee.com/collections/light-roast",
+        "status": 200,
+        "at": "2026-10-08T20:55:34.987Z",
+        "attempt": 1,
+        "retry": 0
+      }
+    ],
+    "returned_errors": [],
+    "cooldown_events": [],
+    "model_calls": 0,
+    "catalog_mutations": 0,
+    "merchant_mutations": 0,
+    "placeholder_elements": [
+      {
+        "tag": "div",
+        "class": "cart-item-title",
+        "context": "Product TitleOption 1 / Option 2 / Option 3Product NoteSubscription Plan InfoProduct Discount (-$0)COUPON1 (-$0)"
+      }
+    ],
+    "template_text_is_not_primary_heading": true
+  },
+  "current_process": "59662     1 S    /bin/bash /Users/allan/.openclaw/workspace/coffee-roaster-crawler/run-crawler.sh\n59674 59662 S    /opt/homebrew/opt/node@22/bin/node index.js",
+  "current_run": {
+    "id": "c7e438da-5231-44d0-ac78-2b8d96e6f46d",
+    "entity_id": "8b9eb5a0-b53e-4ca1-94fc-86a854f26659",
+    "status": "running",
+    "started_at": "2026-10-08T20:53:53.15+00:00",
+    "finished_at": null,
+    "error": null
+  },
+  "pause_required_now": false,
+  "pause_reason": "Airship already completed20:50:09.286 and worker progressed through Hydrangea to September; no continuing Airship imports observed",
+  "source_integrity_issue": true,
+  "weight_constraint_issue": false,
+  "investigation_actions": {
+    "models": 0,
+    "catalog_mutations": 0,
+    "schema_changes": 0,
+    "settings_changes": 0,
+    "restarts": 0,
+    "signals": 0,
+    "run_relabeling": 0
+  },
+  "repair_status": "Coordinating thread preparing deterministic placeholder/source guard and scoped data repair; no application in this investigation",
+  "limits": [
+    "Completed/zero-error Airship run is pipeline completion, not catalog validity.",
+    "Fresh one-page diagnostic does not establish full native merchant inventory, price or stock.",
+    "Other shop-by and collection pages imported under real product names require source review; they are not automatically included in the seven literal-placeholder set.",
+    "No product or known-page row was deleted, changed or marked inactive."
+  ]
+}
