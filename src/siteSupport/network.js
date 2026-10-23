@@ -1,5 +1,6 @@
 'use strict';
 const dns=require('node:dns/promises');
+const budget=require('../crawlBudget');
 const {publicAddress}=require('../myCoffeeExplorerImport/product-only-network.cjs');
 function allowed(value,hosts) {
   const url=new URL(value);let path=url.pathname;
@@ -56,12 +57,12 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
         const state=cooldowns.get(url.hostname),spacing=Math.max(delayMs,hostDelays.get(url.hostname)||0),pause=Math.max(0,(last===null?0:last+spacing)-nowImpl(),(state?.nextAt || 0)-nowImpl());
         if(remaining()<=0)return failure('Merchant read time budget exhausted',{retryStopped:'time_limit'});
         if(pause>=remaining())return failure('Merchant cooldown exceeds read time budget',{retryStopped:'time_limit'});
-        if(pause>0)await sleepImpl(pause);
+        if(pause>0)await (budget.signal()?budget.wait(pause):sleepImpl(pause));
         // A cooldown can outlive this read. Recheck all destination and DNS
         // guards after waiting, immediately before each actual GET.
         url=destination(url.href);
         if(remaining()<=0)return failure('Merchant read time budget exhausted',{retryStopped:'time_limit'});
-        const signal=AbortSignal.timeout(Math.min(timeoutMs,Math.max(1,Math.floor(remaining()))));
+        const signal=budget.combinedSignal(null,Math.min(timeoutMs,Math.max(1,Math.floor(remaining()))));
         const addresses=await abortable(()=>lookupImpl(url.hostname,{all:true}),signal);
         if(!addresses.length || addresses.some(a=>!publicAddress(a.address)))throw Error('Nonpublic DNS address');
         url=destination(url.href);
@@ -123,7 +124,7 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
         const spacing=Math.min(5000,Math.max(2000,(hostDelays.get(response.cooldown.host)||1000)*2));
         hostDelays.set(response.cooldown.host,spacing);
         cooldownEvents.push({url:response.finalUrl,host:response.cooldown.host,waitMs:wait,resumeAt:response.cooldown.nextAt,status:response.cooldown.status,retryAfterMs:response.cooldown.retryAfterMs,requestSpacingMs:spacing});
-        await sleepImpl(wait);
+        await (budget.signal()?budget.wait(wait):sleepImpl(wait));
         // A new bounded read revalidates the URL, DNS and every redirect. Host
         // cooldown is retained; no request is sent before the merchant deadline.
         response=await read(initial,options,nowImpl());

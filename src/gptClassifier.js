@@ -1,6 +1,7 @@
 const OpenAI = require("openai");
 const crypto = require("crypto");
 const logger = require("./logger");
+const budget=require('./crawlBudget');
 
 const MODEL = process.env.OPENAI_MODEL || "gpt-5-mini";
 const policy=require('./aiRequestPolicy').aiRequestPolicy(MODEL,process.env);
@@ -39,6 +40,7 @@ function getOpenAIConfigSummary() {
 }
 
 function delay(ms) {
+  if(budget.signal())return budget.wait(ms);
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -167,6 +169,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
 
   while (true) {
     try {
+      budget.check();
       const request = {
         model: MODEL,
         messages: [...(systemPrompt ? [{role:"system",content:systemPrompt}] : []),{ role: "user", content: prompt }],
@@ -183,7 +186,8 @@ async function requestJson(prompt, url, systemPrompt = null) {
 
       const client = getOpenAI();
       aiCalls++;
-      const response = await client.chat.completions.create(request);
+      logger.info('AIRequest','Sending model request',{url,operation,attempt:aiCalls});
+      const response = await client.chat.completions.create(request,{signal:budget.signal()});
       const responseUsage = sanitizedUsage(response.usage);
       if (responseUsage) {
         reportedCalls++;
@@ -226,6 +230,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
       const parsed = JSON.parse(jsonMatch[0]);
       return { success: true, data: parsed, ...diagnostics() };
     } catch (error) {
+      if(budget.expired())return {error:'Crawl time budget exhausted during AI request',budgetExceeded:true,...diagnostics()};
       if (error instanceof SyntaxError) {
         return { error: "Failed to parse JSON response", details: error.message, ...diagnostics() };
       }

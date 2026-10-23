@@ -20,14 +20,15 @@ function buildCrawlPhases(roasters) {
 }
 // A phase barrier includes its bounded unreachable-site retry. Concurrency is
 // allowed within a tier; the next tier cannot overlap unfinished earlier work.
-async function crawlTierPhases(roasters,{crawl,limit,onPhaseStart=()=>{},onPhaseComplete=()=>{},onRetry=()=>{}}) {
+async function crawlTierPhases(roasters,{crawl,limit,onPhaseStart=()=>{},onPhaseComplete=()=>{},onRetry=()=>{},shouldStop=()=>false}) {
   const results=[],phases=[];let retriedSites=0;
   for(const phase of buildCrawlPhases(roasters)){
+    if(shouldStop())break;
     await onPhaseStart(phase);
     const first=await Promise.all(phase.roasters.map(roaster=>limit(()=>crawl(roaster)))),retry=[];
     const phaseResults=[];
     first.forEach((result,index)=>{if(result.retryable)retry.push(phase.roasters[index]);else phaseResults.push(result);});
-    if(retry.length){
+    if(retry.length && !shouldStop()){
       retriedSites+=retry.length;await onRetry({...phase,retryCount:retry.length});
       const second=await Promise.all(retry.map(roaster=>limit(()=>crawl(roaster))));
       phaseResults.push(...second.map(result=>result.retryable?{...result,success:false,error:'Website unreachable after retry'}:result));

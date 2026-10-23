@@ -15,6 +15,9 @@ function displayAsciiArt(filename) {
 }
 
 async function main() {
+  const maximum=require('./src/crawlBudget').limits().batchMs;
+  const hardStop=setTimeout(()=>{logger.error('Main','Hard batch time limit reached; terminating without claiming completion');process.exit(124);},maximum);
+  hardStop.unref();
   displayAsciiArt('start.txt');
   logger.header('Coffee Roaster Crawler');
   logger.info('Main', 'Initializing...');
@@ -35,9 +38,10 @@ async function main() {
 
     const result = await runCrawler();
     
-    logger.header('Crawler Finished');
-    logger.success('Main', 'Crawl completed', {
+    logger.header(result.incomplete?'Crawl Batch Time Limit Reached':'Crawler Finished');
+    logger[result.incomplete?'warn':'success']('Main',result.incomplete?'Batch stopped; unfinished roasters remain deferred':'Crawl completed', {
       roastersCrawled: result.roastersCrawled,
+      roastersDeferred:result.roastersDeferred || 0,
       timestamp: new Date().toISOString(),
     });
 
@@ -58,6 +62,7 @@ async function main() {
     });
     process.exit(1);
   }
+  clearTimeout(hardStop);
 }
 
 main();

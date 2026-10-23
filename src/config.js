@@ -27,6 +27,7 @@ function validateConfig() {
     throw new Error(`Missing required environment variables: ${missing.join(', ')}`);
   }
   getCrawlConcurrency();
+  require('./crawlBudget').limits();
 }
 
 module.exports = { config, validateConfig };

@@ -1,8 +1,10 @@
 const { getSupabase } = require('./supabase');
 const logger = require('./logger');
 const { createCooldown, createOwnerProbe } = require('./crawlRunCooldown');
+const budget=require('./crawlBudget');
 
 const cooldown = createCooldown({
+  sleep:ms=>budget.wait(ms),
   probe: createOwnerProbe({ getConfig: () => require('./config').config.supabase }),
   onEvent: event => logger.warn('CrawlRunCooldown', event.kind, event),
 });
@@ -65,7 +67,7 @@ async function completeCrawlRun(crawlRunId, stats) {
   return { id: crawlRunId };
 }
 
-async function failCrawlRun(crawlRunId, errorMessage) {
+async function failCrawlRun(crawlRunId, errorMessage, metrics) {
   const supabase = getSupabase();
 
   const { error } = await supabase
@@ -74,6 +76,7 @@ async function failCrawlRun(crawlRunId, errorMessage) {
       status: 'failed',
       finished_at: new Date().toISOString(),
       error: errorMessage,
+      ...(metrics?{pages_visited:metrics.visited || 0,pages_sent_to_gpt:metrics.aiCalls || 0,coffees_found:metrics.coffeeFound || 0,meta:{extraction:{...metrics,inventoryComplete:false}}}:{}),
     })
     .eq('id', crawlRunId);
 

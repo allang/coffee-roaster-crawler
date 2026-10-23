@@ -23,13 +23,13 @@ async function validateImage(buffer) {
   }catch{return null;}
 }
 async function fetchSourceImage(value,{referer,timeout=30000,maxBytes=20*1024*1024}={}) {
-  let url;const signal=AbortSignal.timeout(timeout);
+  let url;const signal=require('./crawlBudget').combinedSignal(null,timeout);
   try {
     url=new URL(value);
     for(let hop=0;hop<5;hop++) {
       // Apply the legal/account boundary before every fetch, including redirects.
       allowed(url.href,[url.hostname]);
-      const addresses=await dns.lookup(url.hostname,{all:true});
+      const addresses=await require('./crawlBudget').observe(dns.lookup(url.hostname,{all:true}));
       if(!addresses.length || addresses.some(a=>!publicAddress(a.address)))throw Error('Nonpublic image destination');
       const response=await fetch(url,{redirect:'manual',signal,headers:{'user-agent':'EveryCoffeeCrawler/1.0 (+https://every.coffee)',accept:'image/avif,image/webp,image/png,image/jpeg,image/gif',...(referer?{referer}:{})}});
       if(response.status>=300 && response.status<400){await response.body?.cancel();url=new URL(response.headers.get('location'),url);continue;}

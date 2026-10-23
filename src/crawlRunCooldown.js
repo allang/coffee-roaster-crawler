@@ -64,7 +64,7 @@ function createCooldown({ probe, now = Date.now, sleep = ms => new Promise(r => 
           }
         })().finally(() => { inFlight = null; });
       }
-      await inFlight;
+      await require('./crawlBudget').observe(inFlight);
     }
   }
   return { recordCreateFailure, waitForAdmission, state: () => ({ blocked, until, failures, generation, ownerId, probeInFlight: Boolean(inFlight) }) };

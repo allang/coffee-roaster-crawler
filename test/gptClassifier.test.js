@@ -29,17 +29,18 @@ function classifier(steps, environment = {}, { constructorError } = {}) {
     constructor(options) {
       constructors.push(options);
       if (constructorError) throw constructorError;
-      this.chat = { completions: { create: async request => {
+      this.chat = { completions: { create: async (request,options) => {
         requests.push(structuredClone(request));
         const step = steps[requests.length - 1];
         if (step instanceof Error) throw step;
         if (!step) throw new Error('Unexpected fake SDK call');
+        if(typeof step==='function')return step(options);
         return structuredClone(step);
       } } };
     }
   }
   const nativeRequire = createRequire(sourceFile);
-  const logger = Object.fromEntries(['debug', 'warn', 'error'].map(level => [level, (...args) => logs.push({ level, args })]));
+  const logger = Object.fromEntries(['debug', 'info', 'warn', 'error'].map(level => [level, (...args) => logs.push({ level, args })]));
   const requireMock = name => name === 'openai' ? FakeOpenAI : name === './logger' ? logger : nativeRequire(name);
   const fakeProcess = { env: { OPENAI_API_KEY: 'offline-fixture-key', ...environment } };
   const fakeTimeout = (callback, milliseconds) => { delays.push(milliseconds); callback(); };
@@ -322,4 +323,10 @@ test('explicit reasoning and timeout remain configurable and other models get no
 test('permanent request errors containing rate or timeout words do not incur paid retries',async()=>{
  const fixture=classifier([apiError(400,'Invalid parameter: separate timeout rate policy'),response(complete)]);
  const result=await fixture.classifyPage(content,url);assert.equal(result.aiCalls,1);assert.equal(fixture.requests.length,1);assert.equal(fixture.delays.length,0);
+});
+test('merchant deadline cancels a model request, retains its call count and prevents a retry',async t=>{
+ const budget=require('../src/crawlBudget'),alive=setInterval(()=>{},10);t.after(()=>clearInterval(alive));
+ const fixture=classifier([options=>new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(options.signal.reason),{once:true}))]);
+ const result=await budget.withBudget('roaster',80,()=>fixture.classifyPage(content,url));
+ assert.equal(result.budgetExceeded,true);assert.equal(result.aiCalls,1);assert.equal(fixture.requests.length,1);assert.equal(fixture.delays.length,0);
 });

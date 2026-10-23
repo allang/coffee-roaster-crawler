@@ -10,6 +10,8 @@ const { config } = require('./config');
 const { fetchHtml, jitteredSleep } = require('./httpClient');
 const { detectProductAvailability } = require('./availability');
 const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
+const budget=require('./crawlBudget');
+const {urlRoute,pageOrder}=require('./aiPageRouting');
 
 const GPT_DELAY_MS = 500;
 
@@ -115,16 +117,18 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
 
   let lastUrl = null;
 
-  while (queue.length > 0 && results.visited < MAX_PAGES) {
+  while (queue.length > 0 && results.visited < MAX_PAGES && !budget.expired()) {
     const url = queue.shift();
     
     if (visited.has(url) || knownPages.get(url)?.status==='skip') continue;
     visited.add(url);
     accumulator.markVisited(url);
+    const route=urlRoute(url);if(route.skip && knownPages.get(url)?.status!=='coffee'){addExtractionMetrics(results,{aiCalls:0,aiSkipped:true,pageCategory:route.category});continue;}
 
     await jitteredSleep(config.crawler.requestDelayMs);
 
-    const fetchResult = await fetchPageAndLinks(url, lastUrl, { useUrlFallback: url === startUrl });
+    let fetchResult;
+    try{fetchResult=await fetchPageAndLinks(url,lastUrl,{useUrlFallback:url===startUrl});}catch(error){if(budget.expired())break;throw error;}
     if (fetchResult.finalUrl && fetchResult.finalUrl !== url) {
       logger.info('BFS', 'Using fetched canonical URL', { original: url, finalUrl: fetchResult.finalUrl });
     }
@@ -164,6 +168,7 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
         results.linksDiscovered++;
       }
     }
+    queue.sort(pageOrder(knownPages));
 
     let result;
     try { result=await processFetchedPage(entityId,url,fetchResult,logger,platform,{...options,knownPage:knownPages.get(url)}); }
@@ -195,7 +200,9 @@ async function bfsCrawl(entityId, startUrl, blacklistTerms, accumulator, log = n
   });
 
   results.queueRemaining = queue.length;
+  results.budgetExceeded=budget.expired();
   results.inventoryComplete =
+    !results.budgetExceeded &&
     queue.length === 0 &&
     results.errors === 0 &&
     results.quotaExceeded === false &&

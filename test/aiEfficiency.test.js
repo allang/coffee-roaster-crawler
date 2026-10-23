@@ -75,3 +75,13 @@ test('hard removals use cached identity only to update existing stock, with no m
   }
  }finally{await pg.close();}
 });
+test('translation usage is counted separately without mutating the persisted extraction usage',async()=>{
+ const pg=await catalogDb();try{
+  await pg.query('insert into entities(id) values($1)',[owner]);
+  const state=fixture();state.extractionUsage={prompt_tokens:11,reported_calls:1};state.translationUsage={prompt_tokens:22,reported_calls:1};
+  const module=visitor(supabaseAdapter(pg),state),result=await module.visitAllPages(owner,[url],{markVisited(){}},log,'shopify');
+  assert.equal(result.errors,0);assert.equal(result.extractionCalls,1);assert.equal(result.translationCalls,1);assert.equal(result.aiUsage.prompt_tokens,33);
+  const stored=(await pg.query('select classification from known_pages')).rows[0].classification;
+  assert.equal(stored._extraction.usage.prompt_tokens,11);assert.equal(stored._extraction.usage.reported_calls,1);
+ }finally{await pg.close();}
+});

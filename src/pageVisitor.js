@@ -11,6 +11,8 @@ const { config } = require('./config');
 const { isShopifyProductUrl, fetchShopifyProductJson, mergeGptAndJsonData } = require('./shopifyProduct');
 const { fetchHtml, jitteredSleep } = require('./httpClient');
 const { detectProductAvailability,updateProductAvailability } = require('./availability');
+const {urlRoute,pageRoute}=require('./aiPageRouting');
+const budget=require('./crawlBudget');
 
 async function fetchPageContent(url, referer = null, options = {}) {
   const result = await (options.fetchHtml || fetchHtml)(url, {
@@ -122,7 +124,9 @@ function isClearlyNonCoffeeProduct(product) {
 }
 
 async function processFetchedPage(entityId, url, fetchResult, log, platform='unknown', options={}) {
-  if(fetchResult.success && fetchResult.nonProductReason)return {visited:true,classified:false,isCoffee:false,aiCalls:0,reason:fetchResult.nonProductReason};
+  budget.check();
+  const skipped=category=>({visited:true,classified:false,isCoffee:false,aiCalls:0,pageCategory:category,aiSkipped:true,reason:category});
+  if(fetchResult.success && fetchResult.nonProductReason)return {...skipped(fetchResult.nonProductReason.includes('listing')?'listing':'storefront_shell'),reason:fetchResult.nonProductReason};
   const known=options.knownPage;
   const pageAvailability=fetchResult.success?detectProductAvailability({html:fetchResult.html,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl}):null;
   if(pageAvailability?.reason==='product_soft_404') {
@@ -147,11 +151,16 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
     }
     return {visited:true,classified:false,error:fetchResult.error,status:fetchResult.status,retryStopped:fetchResult.retryStopped,cooldown:fetchResult.cooldown,merchantCooldownExceeded:fetchResult.merchantCooldownExceeded,cooldownRecovery:fetchResult.cooldownRecovery,aiCalls:0};
   }
+  const early=urlRoute(url);
+  if(early.skip && known?.status!=='coffee')return skipped(early.category);
   let shopifyJson=null;
   if((platform==='shopify' || options.siteProfile?.adapter==='shopify') && isShopifyProductUrl(url) && options.siteProfile?.adapter!=='nuxt_shopify') shopifyJson=await fetchShopifyProductJson(url,log,{fetchJson:options.fetchJson});
   if(options.siteProfile?.adapter==='shopify' && !require('./shopifyProduct').verifiedShopifyVariantScope(shopifyJson,url))return {visited:true,classified:false,error:'Registered Shopify source incomplete: '+(shopifyJson?.error || 'incomplete SKU set'),status:shopifyJson?.status,sourceStage:shopifyJson?.sourceStage,retryStopped:shopifyJson?.retryStopped,cooldown:shopifyJson?.cooldown,merchantCooldownExceeded:shopifyJson?.merchantCooldownExceeded,cooldownRecovery:shopifyJson?.cooldownRecovery,aiCalls:0};
+  const route=pageRoute({url:fetchResult.finalUrl || url,html:fetchResult.html,sourceProduct:fetchResult.sourceProduct,native:shopifyJson?.success?shopifyJson.data:null});
+  if(route.skip)return skipped(route.category);
   const classification=await extractPage({page:{...fetchResult,url},shopifyJson,cache:known?.classification,classify:classifyPage,model:MODEL});
-  const metrics={aiCalls:classification.aiCalls || 0,usage:classification.usage,mode:classification.mode};
+  const metrics={aiCalls:classification.aiCalls || 0,extractionCalls:classification.aiCalls || 0,translationCalls:0,pageCategory:route.category,usage:classification.usage?structuredClone(classification.usage):null,mode:classification.mode};
+  (log || globalLogger).info('AIRouting','Product candidate extraction result',{url,category:route.category,mode:classification.mode,aiCalls:metrics.aiCalls});
   if(classification.error) return {visited:true,classified:false,error:classification.error,quotaExceeded:classification.quotaExceeded,...metrics};
   const result=classification.data;
   const now=new Date().toISOString();
@@ -175,6 +184,7 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
       classification.cache._prepared_translation=prepared;await persistExtraction();
     },onTranslationMetrics:translation=>{
       metrics.aiCalls+=translation.aiCalls || 0;
+      metrics.translationCalls+=translation.aiCalls || 0;
       if(translation.usage){metrics.usage ||= {};function add(to,from){for(const [key,value] of Object.entries(from)){if(typeof value==='number')to[key]=(to[key] || 0)+value;else if(value && typeof value==='object')add(to[key] ||= {},value);}}add(metrics.usage,translation.usage);}
     }});
     if(!productId) return {visited:true,classified:true,error:'Product persistence skipped',...metrics};
@@ -185,6 +195,8 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
   } catch(error) { return {visited:true,classified:true,error:error.message,quotaExceeded:error.quotaExceeded,...metrics}; }
 }
 async function visitAndClassifyPage(entityId,url,accumulator,log,platform='unknown',options={}) {
+  budget.check();const route=urlRoute(url);
+  if(route.skip && options.knownPage?.status!=='coffee'){accumulator.markVisited(url);return {visited:true,classified:false,isCoffee:false,aiCalls:0,pageCategory:route.category,aiSkipped:true,reason:route.category};}
   const fetchResult=await fetchPageContent(url,null,options);
   accumulator.markVisited(url);
   try { return await processFetchedPage(entityId,url,fetchResult,log,platform,options); }
@@ -196,6 +208,10 @@ function addExtractionMetrics(results,result) {
   results.structuredPages += ['structured','structured_product_only'].includes(result.mode)?1:0;
   results.structuredProductOnlyPages += result.mode==='structured_product_only'?1:0;
   results.marketChecks += result.availability?1:0;
+  results.extractionCalls=(results.extractionCalls || 0)+(result.extractionCalls || 0);
+  results.translationCalls=(results.translationCalls || 0)+(result.translationCalls || 0);
+  if(result.pageCategory){results.pageCategories ||= {};results.pageCategories[result.pageCategory]=(results.pageCategories[result.pageCategory] || 0)+1;results.aiCallsByCategory ||= {};results.aiCallsByCategory[result.pageCategory]=(results.aiCallsByCategory[result.pageCategory] || 0)+(result.aiCalls || 0);}
+  if(result.aiSkipped){results.aiSkipped=(results.aiSkipped || 0)+1;}
   if(result.usage) {
     results.aiUsage.prompt_tokens += result.usage.prompt_tokens || 0;
     results.aiUsage.completion_tokens += result.usage.completion_tokens || 0;
@@ -222,7 +238,7 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
   let stopForMerchant = false;
 
   async function worker() {
-    while (!stopForQuota && !stopForMerchant) {
+    while (!stopForQuota && !stopForMerchant && !budget.expired()) {
       const entryIndex = nextIndex++;
       if (entryIndex >= urls.length) {
         return;
@@ -230,7 +246,9 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
 
       const entry = urls[entryIndex];
       const url = typeof entry === 'object' ? entry.url : entry;
-      const result = await visitAndClassifyPage(entityId, url, accumulator, logger, platform, {...options,knownPage:options.knownPages?.get(url)});
+      let result;
+      try{result=await visitAndClassifyPage(entityId,url,accumulator,logger,platform,{...options,knownPage:options.knownPages?.get(url)});}
+      catch(error){if(budget.expired())break;throw error;}
       results.visited++;
       addExtractionMetrics(results,result);
 
@@ -262,7 +280,7 @@ async function visitAllPages(entityId, urls, accumulator, log = null, platform =
   const workerCount = Math.min(pageConcurrency, Math.max(1, urls.length));
   await Promise.all(Array.from({ length: workerCount }, () => worker()));
 
-  if(stopForMerchant) {results.deferredPages=Math.max(0,urls.length-results.visited);results.inventoryComplete=false;results.merchantCooldownExceeded=true;}
+  if(stopForMerchant || budget.expired()) {results.deferredPages=Math.max(0,urls.length-results.visited);results.inventoryComplete=false;results.merchantCooldownExceeded=stopForMerchant;results.budgetExceeded=budget.expired();}
 
   return results;
 }

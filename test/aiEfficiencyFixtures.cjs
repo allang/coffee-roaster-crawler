@@ -16,7 +16,7 @@ function visitor(db,state,sourceRoot=path.join(__dirname,'../src')) {
   const mocked=name=>{
    if(name==='./supabase')return {getSupabase:()=>db};if(name==='./logger')return log;
    if(name==='./config')return {config:{crawler:{requestDelayMs:0}}};
-   if(name==='./gptClassifier')return {MODEL:model,classifyPage:async content=>{state.aiCalls++;state.inputs.push(content);return {aiCalls:1,data:{is_coffee_page:true,product:state.extracted}};},translateTexts:async bundle=>{state.translationCalls++;return {...await translationFixture(bundle),aiCalls:1};}};
+   if(name==='./gptClassifier')return {MODEL:model,classifyPage:async content=>{state.aiCalls++;state.inputs.push(content);return {aiCalls:1,usage:state.extractionUsage,data:{is_coffee_page:true,product:state.extracted}};},translateTexts:async bundle=>{state.translationCalls++;return {...await translationFixture(bundle),aiCalls:1,usage:state.translationUsage};}};
    if(name==='./imageDownloader')return {downloadAndSaveImage:async()=>null};
    if(name==='./httpClient')return {fetchHtml:async()=>({success:true,data:state.html,status:200,finalUrl:url}),jitteredSleep:async()=>{}};
    if(name==='./shopifyProduct')return {...real(name),fetchShopifyProductJson:async()=>({success:true,raw:state.native,data:parseShopifyProduct(state.native)})};

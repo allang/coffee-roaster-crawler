@@ -1,5 +1,6 @@
 const axios = require('axios');
 const { HttpsProxyAgent } = require('https-proxy-agent');
+const budget=require('./crawlBudget');
 
 const CHROME_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
@@ -23,6 +24,7 @@ async function initProxyPool() {
     
     while (true) {
       const response = await axios.get(`${WEBSHARE_API_BASE}/proxy/list/`, {
+        signal:budget.signal(),
         headers: { 'Authorization': `Token ${apiKey}` },
         params: { page, page_size: pageSize, mode: 'direct' },
         timeout: 10000,
@@ -236,6 +238,7 @@ function jitteredDelay(baseMs, jitterMs = null) {
 }
 
 async function delay(ms) {
+  if(budget.signal())return budget.wait(ms);
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -303,6 +306,7 @@ async function fetchWithBackoff(url, options = {}) {
     }
 
     for (let attempt = 0; attempt <= maxRetries; attempt++) {
+      budget.check();requestConfig.signal=budget.signal();
       const throttleDelayMs = await paceHost(
         candidateUrl,
         candidateIndex > 0 || attempt > 0,
@@ -321,6 +325,7 @@ async function fetchWithBackoff(url, options = {}) {
           attemptedUrls,
         };
       } catch (error) {
+        budget.check();
         lastError = error;
         const status = error.response?.status || 0;
         const message = error.message || 'Unknown error';
@@ -388,6 +393,7 @@ async function fetchWithBackoff(url, options = {}) {
       const maxProxyAttempts = Math.max(1, Math.floor(proxyAttempts));
 
       for (let proxyAttempt = 0; proxyAttempt < maxProxyAttempts; proxyAttempt++) {
+        budget.check();
         const proxyAgent = getNextProxyAgent();
         if (!proxyAgent) break;
 
@@ -399,6 +405,7 @@ async function fetchWithBackoff(url, options = {}) {
         }
 
         const requestConfig = {
+          signal:budget.signal(),
           timeout: options.timeout || 30000,
           responseType: options.responseType || 'text',
           maxRedirects: 10,
@@ -430,6 +437,7 @@ async function fetchWithBackoff(url, options = {}) {
             attemptedUrls,
           };
         } catch (proxyError) {
+          budget.check();
           lastError = proxyError;
           const status = proxyError.response?.status || 0;
           const message = proxyError.message || 'Unknown error';
