@@ -53,7 +53,7 @@ npm test
 node scripts/benchmark-ai-efficiency.cjs a569c75d8e9fcfe92a9303da1a0f917d2edaec2a /tmp/ai-efficiency-replay.json
 ```
 
-Full supported suite: **513 total / 512 pass / 0 fail / 1 optional native PostgreSQL skip**, 13.491 seconds. PGlite transactional contracts pass. Tests ran with production/model credentials removed; no dependencies were added.
+Full supported suite: **515 total / 514 pass / 0 fail / 1 optional native PostgreSQL skip**, 14.519 seconds. PGlite transactional contracts pass. Tests ran with production/model credentials removed; no dependencies were added. HTTP tests initialize a fixture proxy pool and verify long direct/proxy cooldowns stop subsequent requests and short cooldowns are respected before proxy fallback/retries.
 
 These percentages describe the two fixtures, not expected fleet savings. They cannot convert the 14-hour crawl into a defensible new duration. No live output-quality comparison, billed dollar saving or production speedup is claimed. Avoiding all 530 recoveries would be an upper-bound opportunity of 530 requests for this observed attempt, not a measured or promised result.
 

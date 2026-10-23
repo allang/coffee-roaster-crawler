@@ -280,6 +280,12 @@ async function fetchWithBackoff(url, options = {}) {
   const attemptedUrls = [];
   let lastError;
   let switchToProxyFallback = false;
+  function deferForCooldown(candidateUrl,status,message,retryAfterMs) {
+    if(logger)logger.warn('HTTP','Deferring merchant after Retry-After exceeded the wait budget',{status,retryAfterMs,maxBackoffMs});
+    return {success:false,error:message,status,attemptedUrls,retryStopped:'retry_after_limit',merchantCooldownExceeded:true,
+      cooldown:{host:new URL(candidateUrl).hostname,retryAfterMs,remainingMs:retryAfterMs},
+      cooldownRecovery:{waitedMs:0,resumptions:0,stopped:'retry_after_limit'}};
+  }
   
   for (let candidateIndex = 0; candidateIndex < candidateUrls.length; candidateIndex++) {
     const candidateUrl = candidateUrls[candidateIndex];
@@ -342,11 +348,10 @@ async function fetchWithBackoff(url, options = {}) {
         if(isRetryableStatus(status) && retryAfterMs>maxBackoffMs){
           // Respect a long server cooldown by yielding the merchant, rather
           // than sleeping a worker for hours or bypassing it via another URL/IP.
-          if(logger)logger.warn('HTTP','Deferring merchant after Retry-After exceeded the wait budget',{status,retryAfterMs,maxBackoffMs});
-          return {success:false,error:message,status,attemptedUrls,retryStopped:'retry_after_limit',merchantCooldownExceeded:true,
-            cooldown:{host:new URL(candidateUrl).hostname,retryAfterMs,remainingMs:retryAfterMs},
-            cooldownRecovery:{waitedMs:0,resumptions:0,stopped:'retry_after_limit'}};
+          return deferForCooldown(candidateUrl,status,message,retryAfterMs);
         }
+        const hasNextRequest=attempt<maxRetries || candidateIndex+1<candidateUrls.length || (useProxyFallback && hasProxies());
+        if(isRetryableStatus(status) && retryAfterMs>0 && hasNextRequest)await delay(retryAfterMs);
         if (status === 429 && useProxyFallback && hasProxies()) {
           switchToProxyFallback = true;
           if (logger) {
@@ -364,7 +369,7 @@ async function fetchWithBackoff(url, options = {}) {
           if (logger) {
             logger.info('HTTP', `Backing off for ${jitteredWaitTime}ms before retry`);
           }
-          await delay(jitteredWaitTime);
+          if(retryAfterMs==null)await delay(jitteredWaitTime);
           backoffMs *= 2;
         } else {
           break;
@@ -449,6 +454,11 @@ async function fetchWithBackoff(url, options = {}) {
               failureCategory,
             });
           }
+
+          const retryAfterMs=parseRetryAfter(proxyError.response?.headers || {});
+          if(isRetryableStatus(status) && retryAfterMs>maxBackoffMs)return deferForCooldown(candidateUrl,status,message,retryAfterMs);
+          const hasNextRequest=proxyAttempt+1<maxProxyAttempts || candidateIndex+1<candidateUrls.length;
+          if(isRetryableStatus(status) && retryAfterMs>0 && hasNextRequest)await delay(retryAfterMs);
 
           if (!isRetryableStatus(status)) {
             break;
