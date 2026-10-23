@@ -62,7 +62,6 @@ async function main() {
     });
     process.exit(1);
   }
-  clearTimeout(hardStop);
 }
 
 main();
