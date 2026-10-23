@@ -338,6 +338,15 @@ async function fetchWithBackoff(url, options = {}) {
           });
         }
 
+        const retryAfterMs = parseRetryAfter(error.response?.headers || {});
+        if(isRetryableStatus(status) && retryAfterMs>maxBackoffMs){
+          // Respect a long server cooldown by yielding the merchant, rather
+          // than sleeping a worker for hours or bypassing it via another URL/IP.
+          if(logger)logger.warn('HTTP','Deferring merchant after Retry-After exceeded the wait budget',{status,retryAfterMs,maxBackoffMs});
+          return {success:false,error:message,status,attemptedUrls,retryStopped:'retry_after_limit',merchantCooldownExceeded:true,
+            cooldown:{host:new URL(candidateUrl).hostname,retryAfterMs,remainingMs:retryAfterMs},
+            cooldownRecovery:{waitedMs:0,resumptions:0,stopped:'retry_after_limit'}};
+        }
         if (status === 429 && useProxyFallback && hasProxies()) {
           switchToProxyFallback = true;
           if (logger) {
@@ -349,9 +358,8 @@ async function fetchWithBackoff(url, options = {}) {
         const shouldRetry = isRetryableStatus(status);
 
         if (shouldRetry && attempt < maxRetries) {
-          const retryAfterMs = parseRetryAfter(error.response?.headers || {});
-          const baseWaitTime = retryAfterMs || Math.min(backoffMs, maxBackoffMs);
-          const jitteredWaitTime = jitteredDelay(baseWaitTime, Math.floor(baseWaitTime * 0.3));
+          const baseWaitTime = retryAfterMs ?? Math.min(backoffMs, maxBackoffMs);
+          const jitteredWaitTime = retryAfterMs!=null ? retryAfterMs : Math.min(maxBackoffMs,jitteredDelay(baseWaitTime, Math.floor(baseWaitTime * 0.3)));
 
           if (logger) {
             logger.info('HTTP', `Backing off for ${jitteredWaitTime}ms before retry`);

@@ -137,9 +137,13 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
   if (!fetchResult.success) {
     if ([404,410].includes(fetchResult.status) && known?.status==='coffee' && known.classification?.product) {
       const availability=detectProductAvailability({status:fetchResult.status,sourceUrl:url});
-      const productId=await saveProduct(entityId,known.classification.product,url,log,{availability});
+      const source=canonicalProductUrl(url),db=require('./supabase').getSupabase();
+      const existing=await findExistingProduct(db,entityId,source,productSourceKey(entityId,null,source));
+      // A cached extraction can precede a failed first catalog save. A removal
+      // must never create that product or retranslate/rewrite old content.
+      if(existing)await updateProductAvailability(existing.id,availability,null,log);
       options.observed?.set(canonicalProductUrl(url),availability);
-      return {visited:true,classified:false,isCoffee:true,productId,availability,aiCalls:0};
+      return {visited:true,classified:false,isCoffee:false,availability,aiCalls:0,unavailable:true};
     }
     return {visited:true,classified:false,error:fetchResult.error,status:fetchResult.status,retryStopped:fetchResult.retryStopped,cooldown:fetchResult.cooldown,merchantCooldownExceeded:fetchResult.merchantCooldownExceeded,cooldownRecovery:fetchResult.cooldownRecovery,aiCalls:0};
   }
@@ -157,17 +161,26 @@ async function processFetchedPage(entityId, url, fetchResult, log, platform='unk
     if(normalized.variants_complete!==false || normalized.variants.length!==nativeIds.length || normalized.variants.some(v=>!nativeIds.includes(String(v.source_id)) || v.money.minorUnits==null || !v.money.currency || !['in_stock','sold_out'].includes(v.availability)))return {visited:true,classified:true,error:'Reviewed accessory subset lacks exact current coffee SKU money or stock',...metrics};
   }
   let productId, availability;
+  const pageOptions=()=>({classification:classification.cache,classifiedAt:classification.cache._extraction.extracted_at,classifiedBy:classification.mode==='structured_product_only'?'structured-product-only-v1':classification.mode==='structured'?'structured-v1':MODEL,fetchedAt:now,statusCode:fetchResult.status,contentHash:classification.semanticHash,firstSeenAt:known?.first_seen_at,timesSeen:(known?.times_seen || 0)+1});
+  let cacheSaved=false;
+  async function persistExtraction(){await saveKnownPage(entityId,url,coffee?'coffee':'irrelevant',pageOptions());cacheSaved=true;}
   try {
   if(coffee) {
+    // A catalog write or translation failure must not discard paid, validated
+    // semantic extraction. This row classifies a page; it does not publish stock
+    // or claim that a catalog transaction or complete inventory succeeded.
+    if(classification.mode!=='cache')await persistExtraction();
     availability=detectProductAvailability({html:fetchResult.html,sourceProduct:fetchResult.sourceProduct,status:fetchResult.status,sourceUrl:url,finalUrl:fetchResult.finalUrl,shopifyProduct:shopifyJson?.success?shopifyJson.raw:null});
-    productId=await saveProduct(entityId,result.product,url,log,{availability,checkedAt:now,onTranslationMetrics:translation=>{
+    productId=await saveProduct(entityId,result.product,url,log,{availability,checkedAt:now,preparedTranslation:known?.classification?._prepared_translation,onTranslationPrepared:async prepared=>{
+      classification.cache._prepared_translation=prepared;await persistExtraction();
+    },onTranslationMetrics:translation=>{
       metrics.aiCalls+=translation.aiCalls || 0;
       if(translation.usage){metrics.usage ||= {};function add(to,from){for(const [key,value] of Object.entries(from)){if(typeof value==='number')to[key]=(to[key] || 0)+value;else if(value && typeof value==='object')add(to[key] ||= {},value);}}add(metrics.usage,translation.usage);}
     }});
     if(!productId) return {visited:true,classified:true,error:'Product persistence skipped',...metrics};
     options.observed?.set(canonicalProductUrl(url),availability);
   }
-  await saveKnownPage(entityId,url,coffee?'coffee':'irrelevant',{classification:classification.cache,classifiedAt:classification.cache._extraction.extracted_at,classifiedBy:classification.mode==='structured_product_only'?'structured-product-only-v1':classification.mode==='structured'?'structured-v1':MODEL,fetchedAt:now,statusCode:fetchResult.status,contentHash:classification.semanticHash,firstSeenAt:known?.first_seen_at,timesSeen:(known?.times_seen || 0)+1});
+  if(!cacheSaved)await persistExtraction();
   return {visited:true,classified:true,isCoffee:Boolean(coffee),product:coffee?result.product:undefined,productId,availability,...metrics};
   } catch(error) { return {visited:true,classified:true,error:error.message,quotaExceeded:error.quotaExceeded,...metrics}; }
 }

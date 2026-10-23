@@ -79,7 +79,7 @@ test('empty output-limit response retries the same model once and accounts for b
   assert.deepEqual(instance.requests[1].messages, instance.requests[0].messages);
   assert.equal(instance.requests[0].temperature, undefined);
   assert.equal(instance.requests[0].response_format, undefined);
-  assert.deepEqual(instance.constructors, [{ apiKey: 'offline-fixture-key', timeout: 180000, maxRetries: 0 }]);
+  assert.deepEqual(instance.constructors, [{ apiKey: 'offline-fixture-key', timeout: 90000, maxRetries: 0 }]);
   assert.equal(instance.delays.length, 0);
   assert.equal(instance.logs.filter(entry => entry.level === 'warn').length, 1);
 });
@@ -255,7 +255,7 @@ for (const failure of [apiError(429, 'Rate limited'), apiError(503, 'Service una
 }
 
 test('recovery allowance is never escalated again during five bounded transient retries', async () => {
-  const instance = classifier([response('', 'length', firstUsage), ...Array.from({ length: 6 }, () => apiError(503, 'Service unavailable')), response(complete)]);
+  const instance = classifier([response('', 'length', firstUsage), ...Array.from({ length: 6 }, () => apiError(503, 'Service unavailable')), response(complete)],{OPENAI_MAX_TRANSIENT_RETRIES:'5'});
   const result = await instance.classifyPage(content, url);
   assert.equal(result.error, 'Service unavailable');
   assert.equal(result.aiCalls, 7);
@@ -267,7 +267,7 @@ test('recovery allowance is never escalated again during five bounded transient 
 });
 
 test('ordinary transient retries still stop at six total requests', async () => {
-  const instance = classifier([...Array.from({ length: 6 }, () => apiError(429, 'Rate limited')), response(complete)]);
+  const instance = classifier([...Array.from({ length: 6 }, () => apiError(429, 'Rate limited')), response(complete)],{OPENAI_MAX_TRANSIENT_RETRIES:'5'});
   const result = await instance.classifyPage(content, url);
   assert.equal(result.error, 'Rate limited');
   assert.equal(result.aiCalls, 6);
@@ -305,4 +305,21 @@ test('a filtered parseable JSON response cannot become a completed classificatio
  const fixture=classifier([response(complete,'content_filter')]);
  const result=await fixture.classifyPage(content,url);
  assert.equal(result.error,'Filtered response from GPT');assert.equal(fixture.requests.length,1);assert.equal(result.outputLimitRetries,0);
+});
+
+test('default policy sends low reasoning on the existing model and stops after one transient retry',async()=>{
+ const fixture=classifier([apiError(503,'Service unavailable'),apiError(503,'Service unavailable'),response(complete)]);
+ const result=await fixture.classifyPage(content,url);
+ assert.equal(result.aiCalls,2);assert.equal(fixture.requests.length,2);assert.equal(fixture.delays.length,1);
+ assert.equal(fixture.constructors[0].timeout,90000);
+ assert(fixture.requests.every(r=>r.model==='gpt-5-mini' && r.reasoning_effort==='low'));
+});
+test('explicit reasoning and timeout remain configurable and other models get no unsupported effort parameter',async()=>{
+ const fixture=classifier([response(complete)],{OPENAI_REASONING_EFFORT:'medium',OPENAI_REQUEST_TIMEOUT_MS:'12345'});
+ await fixture.classifyPage(content,url);assert.equal(fixture.requests[0].reasoning_effort,'medium');assert.equal(fixture.constructors[0].timeout,12345);
+ const other=classifier([response(complete)],{OPENAI_MODEL:'fixture-model'});await other.classifyPage(content,url);assert.equal(other.requests[0].reasoning_effort,undefined);
+});
+test('permanent request errors containing rate or timeout words do not incur paid retries',async()=>{
+ const fixture=classifier([apiError(400,'Invalid parameter: separate timeout rate policy'),response(complete)]);
+ const result=await fixture.classifyPage(content,url);assert.equal(result.aiCalls,1);assert.equal(fixture.requests.length,1);assert.equal(fixture.delays.length,0);
 });

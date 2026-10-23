@@ -93,7 +93,7 @@ async function saveProduct(entityId,productData,sourceUrl,log=null,options={}) {
   if(typeof productData?.name!=='string' || !productData.name.trim()) {logger.warn('ProductSaver','Product has no valid name, skipping',{sourceUrl});return null;}
   const canonical=canonicalProductUrl(sourceUrl), key=productSourceKey(entityId,productData,sourceUrl);
   const existing=await findExistingProduct(db,entityId,canonical,key);
-  const translated=await require('./productTranslation').translateProductForSave(sanitizeNullStrings(productData),sourceUrl,{previous:existing?.metadata?._translation,request:options.translationRequest,onMetrics:options.onTranslationMetrics});
+  const translated=await require('./productTranslation').translateProductForSave(sanitizeNullStrings(productData),sourceUrl,{previous:existing?.metadata?._translation,prepared:options.preparedTranslation,request:options.translationRequest,onMetrics:options.onTranslationMetrics,onPrepared:options.onTranslationPrepared});
   if(existing && translated.variants.some(v=>v.title!==v.original_title)){
     const {data:rows,error:readError}=await db.from('product_variants').select('id,source_key,variant_name,weight_g').eq('product_id',existing.id);
     if(readError)throw readError;existing.legacy_variants=rows || [];

@@ -29,6 +29,15 @@ test('translation cache is reused on price and stock changes and invalidated on 
  const second=await translateProductForSave(changed,url,{previous:first.attributes._translation,request:r});assert.equal(calls,1);assert.equal(second.variants[0].price,'19000');assert.equal(second.variants[0].available,true);
  changed.attributes.short_description='Changed English summary 200g';await translateProductForSave(changed,url,{previous:first.attributes._translation,request:r});assert.equal(calls,2);
 });
+test('validated prepared translations survive catalog failures but never bypass source or numeric validation',async()=>{
+ let prepared,calls=0;const r=async bundle=>{calls++;return request(bundle);};
+ await translateProductForSave(input,url,{request:r,onPrepared:value=>{prepared=value;}});
+ const changed=structuredClone(input);changed.variants[0].price='20000';
+ await translateProductForSave(changed,url,{prepared,request:r});assert.equal(calls,1);
+ const bad=structuredClone(prepared);bad.translations[0].text='Busan Coffee 250g';
+ await assert.rejects(translateProductForSave(changed,url,{prepared:bad,request:r}),/numeric facts/);
+ changed.name='부산 커피 300g';await assert.rejects(translateProductForSave(changed,url,{prepared,request:async()=>({error:'Offline model unavailable',aiCalls:1})}),/Offline model/);
+});
 test('wrong/missing fields, untranslated script and changed numeric quantities fail before any catalog write',async()=>{
  const pg=await catalogDb();try{await pg.query('insert into entities(id) values($1)',[owner]);
  for(const mutate of [r=>r.data.translations.pop(),r=>r.data.translations[0].text='부산 커피 200g',r=>r.data.translations[0].text='Busan Coffee 250g',r=>r.error='Provider refused',r=>r.data.translations[0].id='extra']){

@@ -4,7 +4,8 @@ const { stableKey } = require('./catalogNormalization');
 const { structuredProduct, sameProduct, offerVariantId, primaryShopifyPreorders } = require('./productEvidence');
 const {processingForProduct,scopedDescription}=require('./coffeeProcessing');
 const {primaryProductImage}=require('./productImages');
-const EXTRACTION_VERSION = 'extract-v2-processing';
+const {bodyText,productTitle,classificationContent}=require('./productSemanticContent');
+const EXTRACTION_VERSION = 'extract-v3-product-scope';
 const CACHE_TTL_MS = 7 * 86400_000;
 const ATTRIBUTES = ['origin_type','country_of_origin','origin_region','is_decaf','varietal','process','process_methods','is_coferment','coferment_ingredients','flavor_notes','grind_size_offered','altitude','brew_as','roast_darkness','producer','description','short_description','nano_description','harvest_date','product_image_url'];
 const PROPERTY_ALIASES = { origin:'country_of_origin', country:'country_of_origin', region:'origin_region', variety:'varietal', processing:'process', processing_method:'process', coffee_processing:'process', proceso:'process', aufbereitung:'process', co_ferment:'is_coferment', co_fermentation:'is_coferment', coferment:'is_coferment', processing_methods:'process_methods', tasting_notes:'flavor_notes', roast_level:'roast_darkness', elevation:'altitude', decaf:'is_decaf' };
@@ -55,14 +56,20 @@ function structuredExtraction(page, shopifyJson) {
   // Partial structured data still contributes trustworthy prices/variants and falls back for descriptions/facts.
   const complete = coffee && ATTRIBUTES.filter(k=>k!=='product_image_url').every(k => Object.hasOwn(attributes,k));
   // Structured price/stock changes do not invalidate semantic extraction; description/fact changes do.
-  const semantic = { name,descriptionHtml,attributes,nativeTags:native?.tags || [],productType:native?.productType || schema?.category || null };
+  const semantic = { name,descriptionHtml,attributes,nativeTags:native?.tags || [],productType:native?.productType || schema?.category || null,
+    variantLabels:variants.filter(v=>v.source_id || v.title!=='default' || v.weight_g!=null || v.sku).map(v=>({source_id:v.source_id,title:v.title,weight_g:v.weight_g,sku:v.sku})) };
   return { product, complete, semantic, coffee,image };
 }
 
 function semanticHash(page, structured) {
+  return stableKey(structured.semantic,structured.product?null:productTitle(page,structured),bodyText(page));
+}
+function legacySemanticHash(page, structured) {
   const $ = cheerio.load(page.html || '');
   $('script,style,nav,footer,header,noscript,iframe,form#product-form,form[data-primary-product], [itemprop="price"], [itemprop="availability"], .price, .stock').remove();
-  return stableKey(structured.semantic,$('title').text(),$('body').text().replace(/\s+/g,' ').trim());
+  const semantic=structured.semantic?{...structured.semantic}:null;
+  if(semantic)delete semantic.variantLabels;
+  return stableKey(semantic,$('title').text(),$('body').text().replace(/\s+/g,' ').trim());
 }
 function mergeSourceProduct(extracted, structured) {
   // Photos always come from fresh primary-product evidence. Neither a model nor
@@ -103,8 +110,13 @@ async function extractPage({ page, shopifyJson, cache, classify, model, now = Da
   // HTML price/stock changes intentionally do not invalidate semanticHash. A
   // coffee cache is safe only when live variants replace its market fields.
   const canReuseCache = cache?.is_coffee_page!==true || hasCurrentVariants || structured.product?._product_only===true;
-  if (canReuseCache && prior?.version===EXTRACTION_VERSION && prior.model===model && prior.semantic_hash===hash && age>=0 && age<CACHE_TTL_MS && validClassification(cache)) {
+  const exactCurrent=prior?.version===EXTRACTION_VERSION && prior.semantic_hash===hash;
+  // Upgrade only a byte-equivalent legacy semantic observation. Changed old
+  // hashes cannot establish that a difference was merely recommendation noise.
+  const exactLegacy=prior?.version==='extract-v2-processing' && prior.semantic_hash===legacySemanticHash(page,structured);
+  if (canReuseCache && (exactCurrent || exactLegacy) && prior.model===model && age>=0 && age<CACHE_TTL_MS && validClassification(cache)) {
     data = { ...cache }; delete data._extraction; mode='cache';
+    if(exactLegacy)delete data._prepared_translation;
   } else if (structured.complete && hasCurrentVariants) {
     data = { is_product:true,is_coffee_page:true,product:structured.product }; mode='structured';
   } else if(structured.coffee && structured.product?._product_only===true) {
@@ -112,11 +124,11 @@ async function extractPage({ page, shopifyJson, cache, classify, model, now = Da
     // unpublished coffee facts unset; save only the proved product/offer/photo.
     data = {is_product:true,is_coffee_page:true,product:structured.product};mode='structured_product_only';
   } else {
-    const response = await classify(page.content, page.url);
+    const response = await classify(classificationContent(page,structured), page.url);
     aiCalls = response.aiCalls ?? (response.skipped ? 0 : 1);
     if (response.error) return { ...response, mode:'ai', aiCalls, semanticHash:hash };
     if (!validClassification(response.data)) return { error:'Invalid extraction classification',mode:'ai',aiCalls,semanticHash:hash,usage:response.usage };
-    data = response.data; usage=response.usage || null; mode='ai';
+    data = {...response.data};delete data._prepared_translation;usage=response.usage || null; mode='ai';
   }
   if (data.product) {
     const product=mergeSourceProduct(data.product,structured);
@@ -131,4 +143,4 @@ async function extractPage({ page, shopifyJson, cache, classify, model, now = Da
   return { data,mode,aiCalls,usage,semanticHash:hash,cache:{ ...data,_extraction:extraction },structured };
 }
 
-module.exports = { ATTRIBUTES, EXTRACTION_VERSION, CACHE_TTL_MS, structuredExtraction, semanticHash, mergeSourceProduct, extractPage, validClassification };
+module.exports = { ATTRIBUTES, EXTRACTION_VERSION, CACHE_TTL_MS, structuredExtraction, semanticHash, legacySemanticHash, mergeSourceProduct, extractPage, validClassification };
