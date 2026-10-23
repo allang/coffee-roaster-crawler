@@ -73,3 +73,8 @@ test('repeated unreachable results are bounded and reported before the remaining
   const calls=[],result=await crawlTierPhases([row('rest',null),row('down',1)],{limit:fn=>fn(),crawl:async r=>{calls.push(r.id);return r.id==='down'?{success:false,retryable:true}:{success:true};}});
   assert.deepEqual(calls,['down','down','rest']);assert.equal(result.phases[0].failed,1);assert.equal(result.retriedSites,1);assert.equal(result.results[0].error,'Website unreachable after retry');
 });
+test('batch expiry prevents retries and admission to later tiers',async()=>{
+ let stopped=false;const calls=[];
+ const result=await crawlTierPhases([row('one',1),row('two',2)],{limit:fn=>fn(),shouldStop:()=>stopped,crawl:async r=>{calls.push(r.id);stopped=true;return {success:false,retryable:true};}});
+ assert.deepEqual(calls,['one']);assert.equal(result.retriedSites,0);assert.equal(result.phases.length,1);
+});

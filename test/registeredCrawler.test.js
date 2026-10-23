@@ -7,14 +7,15 @@ function crawler(state) {
     './supabase':{},'./sitemap':{discoverSitemapUrl:async()=>{state.sitemaps++;throw Error('Generic sitemap should not run');}},
     './httpClient':{jitteredSleep:async()=>{}},'./urlAccumulator':require('../src/urlAccumulator'),'./blacklist':{},
     './knownPages':{getKnownPagesForEntity:async()=>state.knownPages || new Map(),saveBlacklistedPages:async()=>{}},
-    './pageVisitor':{visitAllPages:async(...args)=>{state.visits++;state.visitedUrls=args[1].map(r=>r.url);state.visitOptions=args[5];return {visited:args[1].length,coffeeFound:args[1].length,errors:state.pageErrors || 0};},fetchPageContent:async(value,_,options)=>{state.checkOptions=options;return options.fetchHtml(value);}},
-    './crawlRuns':{waitForCrawlAdmission:async()=>{},createCrawlRun:async()=>{state.created++;return {id:'run'};},completeCrawlRun:async(_,metrics)=>{state.completed++;state.metrics=metrics;},failCrawlRun:async()=>{state.failed++;}},
+    './pageVisitor':{visitAllPages:async(...args)=>{state.visits++;state.visitedUrls=args[1].map(r=>r.url);state.visitOptions=args[5];await state.visitHook?.();return {visited:args[1].length,coffeeFound:args[1].length,errors:state.pageErrors || 0};},fetchPageContent:async(value,_,options)=>{state.checkOptions=options;return options.fetchHtml(value);}},
+    './crawlRuns':{waitForCrawlAdmission:async()=>{},createCrawlRun:async()=>{state.created++;return {id:'run'};},completeCrawlRun:async(_,metrics)=>{state.completed++;state.metrics=metrics;},failCrawlRun:async(_,error,metrics)=>{state.failed++;state.failedMetrics=metrics;}},
     './bfsCrawler':{bfsCrawl:async()=>{state.bfs++;throw Error('BFS should not run');}},'./config':{config:{crawler:{requestDelayMs:0}}},'./logger':{createScopedLogger:()=>log},
     './availability':{reconcileRoasterAvailability:async options=>{state.reconciled++;state.reconcileOptions=options;await options.fetchPage(url);}},
     './siteSupport/discovery':{profileFor:()=>state.profile || {name:'Reviewed Merchant'},discoverSiteProducts:async roaster=>{state.discoveryRoaster=roaster;return state.discovery;}},'./siteSupport/network':{createReader:()=>reader,allowed:require('../src/siteSupport/network').allowed},'./crawlTierPlan':require('../src/crawlTierPlan'),
     './siteSupport/squareInventory':require('../src/siteSupport/squareInventory'),
     './siteSupport/txt':require('../src/siteSupport/txt'),
     './crawlConcurrency':require('../src/crawlConcurrency'),
+    './crawlBudget':require('../src/crawlBudget'),'./aiPageRouting':require('../src/aiPageRouting'),
   };
   const module={exports:{}},file=path.join(__dirname,'../src/crawler.js');
   vm.runInThisContext('(function(require,module,exports){'+fs.readFileSync(file,'utf8')+'\n})',{filename:file})(name=>{if(!(name in mocks))throw Error('Unexpected dependency: '+name);return mocks[name];},module,module.exports);
@@ -49,6 +50,12 @@ test('incomplete or empty reviewed inventory fails without falling back or recon
 });
 test('registered page failures prevent availability reconciliation',async()=>{
   const s=state();s.pageErrors=1;await assert.rejects(crawler(s).crawl(roaster,[]),/Registered merchant product verification failed/);assert.equal(s.reconciled,0);assert.equal(s.completed,0);assert.equal(s.failed,1);
+});
+test('expired merchant attempt fails with partial metrics instead of completing or reconciling absent products',async t=>{
+ const budget=require('../src/crawlBudget'),alive=setInterval(()=>{},10);t.after(()=>clearInterval(alive));
+ const s=state();s.visitHook=()=>new Promise(resolve=>setTimeout(resolve,120));
+ await assert.rejects(budget.withBudget('batch',80,()=>crawler(s).crawl(roaster,[])),e=>e.code==='CRAWL_BUDGET_EXCEEDED');
+ assert.equal(s.completed,0);assert.equal(s.reconciled,0);assert.equal(s.failed,1);assert.equal(s.failedMetrics.inventoryComplete,false);assert.equal(s.failedMetrics.budgetExceeded,true);assert.equal(s.failedMetrics.visited,1);
 });
 test('verified subscription-only public inventory completes zero coffees without generic crawling or catalog reconciliation',async()=>{
  const {profile,result}=require('./fixtures/siteSupport/obscure-square.json');

@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-23T05:20:04.071Z",
+  "scope": "Nontransactional read-only classified page records since current batch start; latest row per URL; failed saves absent in installed source; not all model requests",
+  "merchants": 11,
+  "records": 1860,
+  "outcomes": {
+    "coffee": {
+      "records": 1630,
+      "recorded_model_requests_with_usage": 3391,
+      "records_missing_request_count": 0
+    },
+    "not_coffee": {
+      "records": 81,
+      "recorded_model_requests_with_usage": 81,
+      "records_missing_request_count": 0
+    },
+    "not_product": {
+      "records": 149,
+      "recorded_model_requests_with_usage": 149,
+      "records_missing_request_count": 0
+    }
+  },
+  "url_evidence_only": {
+    "product_candidate/coffee": 1547,
+    "product_candidate/not_coffee": 75,
+    "listing/not_product": 126,
+    "listing/not_coffee": 6,
+    "non_html_asset/not_product": 6,
+    "homepage/not_product": 5,
+    "listing/coffee": 10,
+    "ambiguous_product_candidate/coffee": 72,
+    "ambiguous_product_candidate/not_product": 12,
+    "homepage/coffee": 1
+  },
+  "native_examples": [
+    {
+      "handle": "logo-ornament",
+      "product_type": "Mugs"
+    },
+    {
+      "handle": "little-wolf-mug",
+      "product_type": "Mugs"
+    },
+    {
+      "handle": "little-wolf-baseball-hat",
+      "product_type": "Accessories"
+    }
+  ]
+}

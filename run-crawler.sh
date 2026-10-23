@@ -22,6 +22,7 @@ printf '%s\n' $$ > "$LOCK_DIR/pid"
 
 NODE_PID=""
 WATCHDOG_PID=""
+HARD_RUNTIME_SECONDS=3600
 
 cleanup() {
   if [ -n "$WATCHDOG_PID" ]; then
@@ -40,25 +41,31 @@ terminate() {
 watch_for_stall() {
   local watched_pid="$1"
   local watched_log="$2"
+  local started_at="$3"
+  local grace=$((HARD_RUNTIME_SECONDS / 10))
+  [ "$grace" -le 10 ] || grace=10
 
   while kill -0 "$watched_pid" 2>/dev/null; do
-    sleep "$WATCHDOG_CHECK_SECONDS"
+    local remaining=$((started_at + HARD_RUNTIME_SECONDS - grace - $(date +%s)))
+    local pause="$WATCHDOG_CHECK_SECONDS"
+    [ "$remaining" -ge "$pause" ] || pause="$remaining"
+    [ "$pause" -le 0 ] || sleep "$pause"
     kill -0 "$watched_pid" 2>/dev/null || return 0
 
     local now
     local last_activity
     now="$(date +%s)"
-    last_activity="$(stat -f %m "$watched_log")"
+    if [[ "$OSTYPE" == darwin* ]]; then last_activity="$(stat -f %m "$watched_log")"; else last_activity="$(stat -c %Y "$watched_log")"; fi
 
-    if [ $((now - last_activity)) -ge "$STALL_TIMEOUT_SECONDS" ]; then
-      printf '%s crawler watchdog: no log activity for %s seconds; terminating pid %s\n' \
+    if [ $((now - started_at)) -ge $((HARD_RUNTIME_SECONDS - grace)) ] || [ $((now - last_activity)) -ge "$STALL_TIMEOUT_SECONDS" ]; then
+      printf '%s crawler watchdog: runtime/stall limit reached (runtime limit %s seconds); terminating pid %s\n' \
         "$(date '+%Y-%m-%dT%H:%M:%S%z')" \
-        "$STALL_TIMEOUT_SECONDS" \
+        "$HARD_RUNTIME_SECONDS" \
         "$watched_pid" | tee -a "$watched_log" >&2
 
       kill -TERM "$watched_pid" 2>/dev/null || return 0
       local attempts=0
-      while kill -0 "$watched_pid" 2>/dev/null && [ "$attempts" -lt 30 ]; do
+      while kill -0 "$watched_pid" 2>/dev/null && [ "$attempts" -lt "$grace" ] && [ "$(date +%s)" -lt $((started_at + HARD_RUNTIME_SECONDS)) ]; do
         sleep 1
         attempts=$((attempts + 1))
       done
@@ -77,13 +84,19 @@ cd "$ROOT"
 set -a
 . "$ROOT/.env"
 set +a
+RUNTIME_MS="${CRAWLER_BATCH_TIMEOUT_MS:-3600000}"
+if ! [[ "$RUNTIME_MS" =~ ^[0-9]+$ ]] || [ "$RUNTIME_MS" -lt 1000 ] || [ "$RUNTIME_MS" -gt 3600000 ]; then
+  echo 'Invalid CRAWLER_BATCH_TIMEOUT_MS (allowed 1000..3600000)' >&2
+  exit 1
+fi
+HARD_RUNTIME_SECONDS=$((RUNTIME_MS / 1000))
 NODE_BIN="$(command -v node)"
 LOG_FILE="$LOG_DIR/crawler-$(date +%Y-%m-%d).log"
 touch "$LOG_FILE"
 
 "$NODE_BIN" index.js > >(tee -a "$LOG_FILE") 2>&1 &
 NODE_PID="$!"
-watch_for_stall "$NODE_PID" "$LOG_FILE" &
+watch_for_stall "$NODE_PID" "$LOG_FILE" "$(date +%s)" &
 WATCHDOG_PID="$!"
 
 set +e

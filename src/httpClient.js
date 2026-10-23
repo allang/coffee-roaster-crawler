@@ -1,5 +1,6 @@
 const axios = require('axios');
 const { HttpsProxyAgent } = require('https-proxy-agent');
+const budget=require('./crawlBudget');
 
 const CHROME_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
@@ -23,6 +24,7 @@ async function initProxyPool() {
     
     while (true) {
       const response = await axios.get(`${WEBSHARE_API_BASE}/proxy/list/`, {
+        signal:budget.signal(),
         headers: { 'Authorization': `Token ${apiKey}` },
         params: { page, page_size: pageSize, mode: 'direct' },
         timeout: 10000,
@@ -236,6 +238,7 @@ function jitteredDelay(baseMs, jitterMs = null) {
 }
 
 async function delay(ms) {
+  if(budget.signal())return budget.wait(ms);
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -280,6 +283,12 @@ async function fetchWithBackoff(url, options = {}) {
   const attemptedUrls = [];
   let lastError;
   let switchToProxyFallback = false;
+  function deferForCooldown(candidateUrl,status,message,retryAfterMs) {
+    if(logger)logger.warn('HTTP','Deferring merchant after Retry-After exceeded the wait budget',{status,retryAfterMs,maxBackoffMs});
+    return {success:false,error:message,status,attemptedUrls,retryStopped:'retry_after_limit',merchantCooldownExceeded:true,
+      cooldown:{host:new URL(candidateUrl).hostname,retryAfterMs,remainingMs:retryAfterMs},
+      cooldownRecovery:{waitedMs:0,resumptions:0,stopped:'retry_after_limit'}};
+  }
   
   for (let candidateIndex = 0; candidateIndex < candidateUrls.length; candidateIndex++) {
     const candidateUrl = candidateUrls[candidateIndex];
@@ -297,6 +306,7 @@ async function fetchWithBackoff(url, options = {}) {
     }
 
     for (let attempt = 0; attempt <= maxRetries; attempt++) {
+      budget.check();requestConfig.signal=budget.signal();
       const throttleDelayMs = await paceHost(
         candidateUrl,
         candidateIndex > 0 || attempt > 0,
@@ -315,6 +325,7 @@ async function fetchWithBackoff(url, options = {}) {
           attemptedUrls,
         };
       } catch (error) {
+        budget.check();
         lastError = error;
         const status = error.response?.status || 0;
         const message = error.message || 'Unknown error';
@@ -338,6 +349,14 @@ async function fetchWithBackoff(url, options = {}) {
           });
         }
 
+        const retryAfterMs = parseRetryAfter(error.response?.headers || {});
+        if(isRetryableStatus(status) && retryAfterMs>maxBackoffMs){
+          // Respect a long server cooldown by yielding the merchant, rather
+          // than sleeping a worker for hours or bypassing it via another URL/IP.
+          return deferForCooldown(candidateUrl,status,message,retryAfterMs);
+        }
+        const hasNextRequest=attempt<maxRetries || candidateIndex+1<candidateUrls.length || (useProxyFallback && hasProxies());
+        if(isRetryableStatus(status) && retryAfterMs>0 && hasNextRequest)await delay(retryAfterMs);
         if (status === 429 && useProxyFallback && hasProxies()) {
           switchToProxyFallback = true;
           if (logger) {
@@ -349,14 +368,13 @@ async function fetchWithBackoff(url, options = {}) {
         const shouldRetry = isRetryableStatus(status);
 
         if (shouldRetry && attempt < maxRetries) {
-          const retryAfterMs = parseRetryAfter(error.response?.headers || {});
-          const baseWaitTime = retryAfterMs || Math.min(backoffMs, maxBackoffMs);
-          const jitteredWaitTime = jitteredDelay(baseWaitTime, Math.floor(baseWaitTime * 0.3));
+          const baseWaitTime = retryAfterMs ?? Math.min(backoffMs, maxBackoffMs);
+          const jitteredWaitTime = retryAfterMs!=null ? retryAfterMs : Math.min(maxBackoffMs,jitteredDelay(baseWaitTime, Math.floor(baseWaitTime * 0.3)));
 
           if (logger) {
             logger.info('HTTP', `Backing off for ${jitteredWaitTime}ms before retry`);
           }
-          await delay(jitteredWaitTime);
+          if(retryAfterMs==null)await delay(jitteredWaitTime);
           backoffMs *= 2;
         } else {
           break;
@@ -375,6 +393,7 @@ async function fetchWithBackoff(url, options = {}) {
       const maxProxyAttempts = Math.max(1, Math.floor(proxyAttempts));
 
       for (let proxyAttempt = 0; proxyAttempt < maxProxyAttempts; proxyAttempt++) {
+        budget.check();
         const proxyAgent = getNextProxyAgent();
         if (!proxyAgent) break;
 
@@ -386,6 +405,7 @@ async function fetchWithBackoff(url, options = {}) {
         }
 
         const requestConfig = {
+          signal:budget.signal(),
           timeout: options.timeout || 30000,
           responseType: options.responseType || 'text',
           maxRedirects: 10,
@@ -417,6 +437,7 @@ async function fetchWithBackoff(url, options = {}) {
             attemptedUrls,
           };
         } catch (proxyError) {
+          budget.check();
           lastError = proxyError;
           const status = proxyError.response?.status || 0;
           const message = proxyError.message || 'Unknown error';
@@ -441,6 +462,11 @@ async function fetchWithBackoff(url, options = {}) {
               failureCategory,
             });
           }
+
+          const retryAfterMs=parseRetryAfter(proxyError.response?.headers || {});
+          if(isRetryableStatus(status) && retryAfterMs>maxBackoffMs)return deferForCooldown(candidateUrl,status,message,retryAfterMs);
+          const hasNextRequest=proxyAttempt+1<maxProxyAttempts || candidateIndex+1<candidateUrls.length;
+          if(isRetryableStatus(status) && retryAfterMs>0 && hasNextRequest)await delay(retryAfterMs);
 
           if (!isRetryableStatus(status)) {
             break;

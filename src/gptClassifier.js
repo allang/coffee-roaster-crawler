@@ -1,15 +1,17 @@
 const OpenAI = require("openai");
 const crypto = require("crypto");
 const logger = require("./logger");
+const budget=require('./crawlBudget');
 
 const MODEL = process.env.OPENAI_MODEL || "gpt-5-mini";
-const MAX_RETRIES = 5;
+const policy=require('./aiRequestPolicy').aiRequestPolicy(MODEL,process.env);
+const MAX_RETRIES = policy.maxTransientRetries;
 const INITIAL_BACKOFF_MS = 1000;
 const MAX_OUTPUT_TOKENS = Number(process.env.OPENAI_MAX_OUTPUT_TOKENS || 2000);
 // One recovery request can grow the configured allowance without overriding a
 // larger explicit allowance or escalating an already exhausted recovery.
 const RECOVERY_OUTPUT_TOKENS = Math.max(MAX_OUTPUT_TOKENS, Math.min(MAX_OUTPUT_TOKENS * 4, 8000));
-const REQUEST_TIMEOUT_MS = Number(process.env.OPENAI_REQUEST_TIMEOUT_MS || 180000);
+const REQUEST_TIMEOUT_MS = policy.requestTimeoutMs;
 
 let openai;
 function getOpenAI() { return openai ||= new OpenAI({
@@ -30,12 +32,15 @@ function getOpenAIConfigSummary() {
     model: MODEL,
     maxOutputTokens: MAX_OUTPUT_TOKENS,
     requestTimeoutMs: REQUEST_TIMEOUT_MS,
+    reasoningEffort:policy.reasoningEffort,
+    maxTransientRetries:MAX_RETRIES,
     keySet: !!process.env.OPENAI_API_KEY,
     keyFingerprint: fingerprint(process.env.OPENAI_API_KEY),
   };
 }
 
 function delay(ms) {
+  if(budget.signal())return budget.wait(ms);
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -141,6 +146,7 @@ Extracted JSON data:`;
 }
 
 async function requestJson(prompt, url, systemPrompt = null) {
+  const operation=systemPrompt?'translation':'extraction';
   if (quotaExhausted) {
     return {
       error: "OpenAI quota exceeded earlier in this process",
@@ -154,6 +160,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
   let transientRetries = 0, outputLimitRetries = 0, outputTokens = MAX_OUTPUT_TOKENS;
   let finishReason = null;
   const diagnostics = () => ({
+    operation,
     aiCalls,
     usage: usage ? { ...usage, reported_calls: reportedCalls, unreported_calls: aiCalls - reportedCalls } : null,
     finishReason,
@@ -162,6 +169,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
 
   while (true) {
     try {
+      budget.check();
       const request = {
         model: MODEL,
         messages: [...(systemPrompt ? [{role:"system",content:systemPrompt}] : []),{ role: "user", content: prompt }],
@@ -170,6 +178,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
 
       if (MODEL.startsWith('gpt-5')) {
         request.max_completion_tokens = outputTokens;
+        if(policy.reasoningEffort)request.reasoning_effort=policy.reasoningEffort;
       } else {
         request.temperature = 0.1;
         request.max_tokens = outputTokens;
@@ -177,7 +186,8 @@ async function requestJson(prompt, url, systemPrompt = null) {
 
       const client = getOpenAI();
       aiCalls++;
-      const response = await client.chat.completions.create(request);
+      logger.info('AIRequest','Sending model request',{url,operation,attempt:aiCalls});
+      const response = await client.chat.completions.create(request,{signal:budget.signal()});
       const responseUsage = sanitizedUsage(response.usage);
       if (responseUsage) {
         reportedCalls++;
@@ -186,7 +196,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
       const choice = response.choices?.[0];
       const message = choice?.message;
       finishReason = sanitizedFinishReason(choice?.finish_reason);
-      logger.debug("GPT", "Classification response received", { url, finishReason, maxOutputTokens: outputTokens, usage: responseUsage });
+      logger.debug("GPT", "Classification response received", { operation,url, finishReason, maxOutputTokens: outputTokens, usage: responseUsage });
 
       if (message?.refusal) return { error: "Refusal response from GPT", ...diagnostics() };
       if (finishReason === 'content_filter') return { error: "Filtered response from GPT", ...diagnostics() };
@@ -199,7 +209,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
           outputLimitRetries++;
           outputTokens = RECOVERY_OUTPUT_TOKENS;
           logger.warn("GPT", "Classification hit output token limit; retrying once with a larger allowance", {
-            url, finishReason, maxOutputTokens: outputTokens, usage: responseUsage,
+            operation,url, finishReason, maxOutputTokens: outputTokens, usage: responseUsage,
           });
           continue;
         }
@@ -220,6 +230,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
       const parsed = JSON.parse(jsonMatch[0]);
       return { success: true, data: parsed, ...diagnostics() };
     } catch (error) {
+      if(budget.expired())return {error:'Crawl time budget exhausted during AI request',budgetExceeded:true,...diagnostics()};
       if (error instanceof SyntaxError) {
         return { error: "Failed to parse JSON response", details: error.message, ...diagnostics() };
       }
@@ -239,7 +250,7 @@ async function requestJson(prompt, url, systemPrompt = null) {
         errorType === 'insufficient_quota' ||
         lowerMessage.includes('exceeded your current quota') ||
         lowerMessage.includes('insufficient_quota');
-      const isRateLimited = status === 429 || lowerMessage.includes('rate') || lowerMessage.includes('429');
+      const isRateLimited = status === 429 || errorCode==='rate_limit_exceeded' || (!status && /\brate limit(?:ed|ing)?\b/.test(lowerMessage));
       const isServerError = status >= 500;
       const isAuthenticationError = status === 401 || status === 403;
 
@@ -249,10 +260,11 @@ async function requestJson(prompt, url, systemPrompt = null) {
         return { error: message, quotaExceeded: true, ...diagnostics() };
       }
 
-      if (!isAuthenticationError && (isRateLimited || isServerError || isTimeout) && transientRetries < MAX_RETRIES) {
+      if (!isAuthenticationError && (isRateLimited || isServerError || (!status && isTimeout) || status===408) && transientRetries < MAX_RETRIES) {
         transientRetries++;
         const waitTime = jitteredDelay(backoffMs, Math.floor(backoffMs * 0.3));
         logger.warn("GPT", `Transient classification error, retrying in ${waitTime}ms (attempt ${transientRetries}/${MAX_RETRIES})`, {
+          operation,
           url,
           error: message,
         });

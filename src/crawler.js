@@ -16,6 +16,8 @@ const { verifiedEmptyInventory } = require('./siteSupport/squareInventory');
 const { createReader,allowed } = require('./siteSupport/network');
 const {crawlTierPhases}=require('./crawlTierPlan');
 const { getCrawlConcurrency } = require('./crawlConcurrency');
+const budget=require('./crawlBudget');
+const {pageOrder}=require('./aiPageRouting');
 
 async function detectPlatform(websiteUrl, log, options = {}) {
   log.info('Platform', `Detecting platform for: ${websiteUrl}`);
@@ -69,7 +71,12 @@ function ensureHttps(url) {
 }
 
 async function crawlRoaster(roaster, blacklistTerms) {
+  return budget.withBudget('roaster',budget.limits().roasterMs,()=>crawlRoasterWork(roaster,blacklistTerms));
+}
+async function crawlRoasterWork(roaster,blacklistTerms) {
+  budget.check();
   await waitForCrawlAdmission();
+  budget.check();
   const roasterSlug = generateSlug(roaster.name);
   const log = createScopedLogger(roasterSlug);
   
@@ -93,6 +100,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const entryUrl=siteProfile?.bootstrap_url?allowed(siteProfile.bootstrap_url,siteProfile.hosts).href:websiteUrl;
   if(entryUrl!==websiteUrl)log.info('Platform','Using reviewed merchant market entry point',{website:websiteUrl,entry:entryUrl});
   const platformInfo = await detectPlatform(entryUrl, log,siteReader || {});
+  budget.check();
 
   if (platformInfo.confidence === 0) {
     log.warn('Crawl', 'Website unreachable, will retry later');
@@ -105,6 +113,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   }
 
   const crawlRun = await createCrawlRun(roaster.id, platformInfo.platform);
+  let progress=null;
   log.info('Crawl', 'Platform detection complete', platformInfo);
 
   try {
@@ -176,6 +185,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
     );
     
     const stats = accumulator.getStats();
+    progress={...bfsResults};budget.check();
     await completeCrawlRun(crawlRun.id, {
       pagesDiscovered: bfsResults.linksDiscovered || 0,
       pagesVisited: bfsResults.visited || 0,
@@ -217,7 +227,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
   const unvisitedAll = accumulator.getUnvisitedUrls();
   const supportedUrls=new Set(siteDiscovery.urls.map(url=>accumulator.normalizeUrl(url)));
   const eligibleUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status!=='skip' && (!supportedUrls.size || supportedUrls.has(entry.url)));
-  const newUrls=eligibleUrls;
+  const newUrls=eligibleUrls.sort(pageOrder(knownUrls));
   const skippedUrls=unvisitedAll.filter(entry=>knownUrls.get(entry.url)?.status==='skip');
 
   if (skippedUrls.length > 0) {
@@ -238,6 +248,7 @@ async function crawlRoaster(roaster, blacklistTerms) {
     if (newUrls.length > 0) {
       log.header('Visiting Pages & GPT Classification');
       visitResults = await visitAllPages(roaster.id, newUrls, accumulator, log, platformInfo.platform, {knownPages:knownUrls,observed,...siteFetchOptions});
+      progress=visitResults;
       
       log.success('Crawl', 'Page visiting complete', {
         visited: visitResults.visited,
@@ -247,7 +258,9 @@ async function crawlRoaster(roaster, blacklistTerms) {
       });
     }
 
+    budget.check();
     if(siteDiscovery.supported && (visitResults.errors>0 || visitResults.deferredPages>0))throw new Error('Registered merchant product verification failed: '+visitResults.errors+' page error(s)'+(visitResults.deferredPages?'; '+visitResults.deferredPages+' page(s) deferred after merchant cooldown':''));
+    if(visitResults.budgetExceeded || visitResults.deferredPages>0)throw new Error('Merchant inventory incomplete: pages deferred');
     if(partialScope)visitResults={...visitResults,partialInventory:true,inventoryComplete:false,inventoryScope:siteDiscovery.inventory_scope,omissionReconciliation:false};
     const stats = accumulator.getStats();
     await completeCrawlRun(crawlRun.id, {
@@ -287,12 +300,16 @@ async function crawlRoaster(roaster, blacklistTerms) {
       visitResults,
     };
   } catch (error) {
-    await failCrawlRun(crawlRun.id, error.message);
+    if(budget.expired())progress={...(progress || {}),budgetExceeded:true,inventoryComplete:false};
+    await budget.finalize(()=>failCrawlRun(crawlRun.id,error.message,progress));
     throw error;
   }
 }
 
 async function runCrawler() {
+  return budget.withBudget('batch',budget.limits().batchMs,runCrawlerWork);
+}
+async function runCrawlerWork() {
   const concurrency = getCrawlConcurrency();
   const { getRoasterEntities, filterRoastersForCrawling } = require('./roasters');
 
@@ -328,6 +345,7 @@ async function runCrawler() {
   });
 
   async function crawlWithRetryTracking(roaster) {
+    if(budget.expired())return {success:false,deferred:true,roasterName:roaster.name,error:'Batch time budget exhausted'};
     try {
       const result = await crawlRoaster(roaster, blacklistTerms);
       if (result.retryable) {
@@ -342,6 +360,7 @@ async function runCrawler() {
 
   const {results:allResults,phases,retriedSites}=await crawlTierPhases(eligibleRoasters,{
     crawl:crawlWithRetryTracking,limit,
+    shouldStop:budget.expired,
     onPhaseStart:phase=>{globalLogger.header(`Crawling ${phase.label}`);globalLogger.info('TierOrder','Phase started',{tier:phase.tier,roasters:phase.roasters.length});},
     onRetry:phase=>globalLogger.info('Retry',`${phase.retryCount} unreachable sites to retry before finishing ${phase.label}`),
     onPhaseComplete:summary=>globalLogger.info('TierOrder','Phase finished',summary),
@@ -351,11 +370,13 @@ async function runCrawler() {
   
   const successful = allResults.filter(r => r.success);
   const failed = allResults.filter(r => !r.success);
+  const deferred=eligibleRoasters.length-allResults.filter(r=>!r.deferred).length;
 
   globalLogger.info('Summary', 'Overall Results', {
     totalRoasters: eligibleRoasters.length,
     successful: successful.length,
     failed: failed.length,
+    deferred,
     retriedSites,
     phases,
   });
@@ -373,7 +394,7 @@ async function runCrawler() {
     globalLogger.error('Summary', `${result.roasterName}: ${result.error}`);
   }
 
-  return { success: true, roastersCrawled: successful.length, results: allResults, phases };
+  return { success: !budget.expired(),incomplete:budget.expired(),roastersDeferred:deferred,roastersCrawled: successful.length, results: allResults, phases };
 }
 
 module.exports = {

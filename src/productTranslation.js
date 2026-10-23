@@ -23,14 +23,18 @@ function validate(data,texts){
  for(const field of texts){const value=values.get(field.id);if(value==null || foreignScript.test(value) || JSON.stringify(numericTokens(field.text))!==JSON.stringify(numericTokens(value)))throw Error('Translation must retain numeric facts and return English: '+field.id);}
  return values;
 }
-async function translateProductForSave(product,url,{previous=null,request,onMetrics}={}){
+async function translateProductForSave(product,url,{previous=null,prepared=null,request,onMetrics,onPrepared}={}){
  const bundle=sourceBundle(product,url),p=bundle.product;
  let result;
- if(previous?.version===VERSION && previous.source_hash===bundle.hash)result={data:{source_language:previous.source_language,translations:previous.translations},aiCalls:0,cacheHit:true};
+ const cached=[previous,prepared].find(value=>value?.version===VERSION && value.source_hash===bundle.hash);
+ if(cached)result={data:{source_language:cached.source_language,translations:cached.translations},aiCalls:0,cacheHit:true};
  else result=await (request || require('./gptClassifier').translateTexts)({target_language:'en',texts:bundle.texts.map(({id,text})=>({id,text}))},url);
  onMetrics?.(result);
  if(result.error){const error=Error('Translation failed before catalog save: '+result.error);error.quotaExceeded=result.quotaExceeded;throw error;}
  const values=validate(result.data,bundle.texts);
+ // Persist only a validated, exact-source translation. The caller can retain
+ // it independently of a later catalog transaction failure.
+ await onPrepared?.({version:VERSION,source_hash:bundle.hash,source_language:result.data.source_language,translations:bundle.texts.map(({id})=>({id,text:values.get(id)}))});
  const originalAttributes=structuredClone(product.attributes || {});
  delete originalAttributes._translation;
  for(const field of bundle.texts){let target=p;for(const key of field.path.slice(0,-1))target=target[key];target[field.path.at(-1)]=values.get(field.id);}
