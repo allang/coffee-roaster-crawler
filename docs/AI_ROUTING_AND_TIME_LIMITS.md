@@ -1,6 +1,8 @@
 # Product-page routing and 60/10-minute limits
 
-The user selected **60 minutes per scheduled batch and 10 minutes per roaster**. These are ceilings: configuration may shorten them, but cannot disable or raise them. Four roasters still run concurrently, one page at a time per roaster. The existing 90-minute launch interval is unchanged.
+The user selected **60 minutes per scheduled batch and 10 minutes per roaster**. These are ceilings: configuration may shorten them, but cannot disable or raise them. Four roasters still run concurrently, one page at a time per roaster. The later authorized local installation changed the Mac's launch interval from 90 minutes to **60 minutes**.
+
+Installed source `85cc2d8f191a9adb627dd908bdb94d34aa4be23c` restarted at **2026-10-23 01:45:41 EDT / 05:45:41 UTC**. Both saved and loaded LaunchAgent intervals were verified as 3,600 seconds. The original four pipelines were parked at safe page boundaries; returned catalog/cache checkpoints were preserved. [Installation receipt](hourly-crawler-install-20261023.json). Installed full suite: 531 total / 530 pass / zero fail / one optional native PostgreSQL skip. This is runtime/configuration verification, not a full-batch performance benchmark.
 
 ## What was actually sent
 
