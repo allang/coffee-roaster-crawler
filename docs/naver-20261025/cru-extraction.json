@@ -1,0 +1,825 @@
+{
+  "name": "CRU Coffee Hakuraku",
+  "checked_at": "2026-10-25T09:35:11.781Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "347d864b-9fae-4bdf-9eaa-03aef4777bc5"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://crucoffee.square.site/product/hama-roast-150g/1",
+      "https://crucoffee.square.site/product/-/16",
+      "https://crucoffee.square.site/product/cordillera-del-fuego-costa-rica-150g/5SI4ENOMN3KMI2G5NJLNANW4",
+      "https://crucoffee.square.site/product/decaf-ethiopia-150g/6",
+      "https://crucoffee.square.site/product/finca-chico-washed-guatemala-150g/DPJD2SEHFB3MER2VB5GNUU7D",
+      "https://crucoffee.square.site/product/banko-chelchele-ethiopia-washed-150g/E7XIRASYNTWHRFOL4EZHQQSY",
+      "https://crucoffee.square.site/product/finca-los-chorros-washed-colombia-150g/GTN3K3X6MB3BKBN2HFFWICVG",
+      "https://crucoffee.square.site/product/dark-roast-peru-150g/HB4NYDRA3JUK3RFJIFP4O2ZE",
+      "https://crucoffee.square.site/product/gersi-ethiopia-natural-150g/P5TRCLECB4AUT5HW6YGZYDPJ",
+      "https://crucoffee.square.site/product/finca-milan-colombia-curturing-lot-ng-100g/SW5P67YG2ES6IMZTULVBCTO7",
+      "https://crucoffee.square.site/product/el-paraiso-red-plum-colombia-thermal-shock-washed-100g/YKRYPI32ZJSPNIANKXXBNMWA"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "category": "V7DRPX5TEY5PUZ5KY44BGE5D",
+        "products": 11
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://crucoffee.square.site/product/hama-roast-150g/1",
+      "title": "HAMA ROAST 150g",
+      "source_product_id": "IO5FOTIRJBTS3LEYYLMG5ZXL",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "XYSIEE3SQ3VD4JYE5EGTIACV",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2000,
+            "amount": "2000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/-/16",
+      "title": "おすすめのコーヒー豆 ３袋",
+      "source_product_id": "YVFMOOYKALPBMWH7QWNVB3K7",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "EADIH6D35KBY2SSVNPEFPWT6",
+          "title": "定価",
+          "weight_g": null,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/cordillera-del-fuego-costa-rica-150g/5SI4ENOMN3KMI2G5NJLNANW4",
+      "title": "Cordillera del Fuego Costa Rica 150g",
+      "source_product_id": "5SI4ENOMN3KMI2G5NJLNANW4",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "FMESQNVHCUPGJBP6GP7G2BYM",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/decaf-ethiopia-150g/6",
+      "title": "Decaf Ethiopia 150g",
+      "source_product_id": "SNMBVDV2OWPKTCXPCHCIADKU",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "MWXQZ6DM6J7SO4DYQ7QFAKA6",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2200,
+            "amount": "2200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/finca-chico-washed-guatemala-150g/DPJD2SEHFB3MER2VB5GNUU7D",
+      "title": "Finca Chico Washed Guatemala 150g",
+      "source_product_id": "DPJD2SEHFB3MER2VB5GNUU7D",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "ZPKN6TJ4DQI2SKQVL6GZKIAF",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2000,
+            "amount": "2000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/banko-chelchele-ethiopia-washed-150g/E7XIRASYNTWHRFOL4EZHQQSY",
+      "title": "Banko Chelchele Ethiopia Washed 150g",
+      "source_product_id": "E7XIRASYNTWHRFOL4EZHQQSY",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "26KD6XQRKN3PBORJY7XTWHVH",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2200,
+            "amount": "2200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/finca-los-chorros-washed-colombia-150g/GTN3K3X6MB3BKBN2HFFWICVG",
+      "title": "Finca Los Chorros Washed Colombia 150g",
+      "source_product_id": "GTN3K3X6MB3BKBN2HFFWICVG",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "WTWV4R5J5JXNGQHQH4GYQZS5",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2000,
+            "amount": "2000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/dark-roast-peru-150g/HB4NYDRA3JUK3RFJIFP4O2ZE",
+      "title": "DARK ROAST Peru 150g",
+      "source_product_id": "HB4NYDRA3JUK3RFJIFP4O2ZE",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "TZZQORVF72OKVA355VIZU42C",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2200,
+            "amount": "2200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/gersi-ethiopia-natural-150g/P5TRCLECB4AUT5HW6YGZYDPJ",
+      "title": "Gersi Ethiopia Natural 150g",
+      "source_product_id": "P5TRCLECB4AUT5HW6YGZYDPJ",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "ZTXFDPXGF3QBATCUOKHPG7W3",
+          "title": "通常",
+          "weight_g": 150,
+          "money": {
+            "raw": 2200,
+            "amount": "2200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/finca-milan-colombia-curturing-lot-ng-100g/SW5P67YG2ES6IMZTULVBCTO7",
+      "title": "Finca Milan Colombia Curturing Lot NG 100g",
+      "source_product_id": "SW5P67YG2ES6IMZTULVBCTO7",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "MY4PQT5HH7HBOK7NGU3AJ3CM",
+          "title": "通常",
+          "weight_g": 100,
+          "money": {
+            "raw": 2200,
+            "amount": "2200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://crucoffee.square.site/product/el-paraiso-red-plum-colombia-thermal-shock-washed-100g/YKRYPI32ZJSPNIANKXXBNMWA",
+      "title": "El Paraiso Red Plum Colombia Thermal Shock washed 100g",
+      "source_product_id": "YKRYPI32ZJSPNIANKXXBNMWA",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "YW2YGTVP4NJJFZPHVJAPWXMC",
+          "title": "通常",
+          "weight_g": 100,
+          "money": {
+            "raw": 2200,
+            "amount": "2200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock"
+          },
+          "price_source": "square_public_catalog_skus"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Thermal Shock",
+        "process_methods": [
+          "thermal_shock"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Thermal Shock"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/",
+      "status": 200,
+      "at": "2026-10-25T09:34:52.440Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products?categories%5B%5D=V7DRPX5TEY5PUZ5KY44BGE5D&include=images%2Cmedia_files%2Cdiscounts&excluded_fulfillment=dine_in&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:34:53.446Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/hama-roast-150g/1",
+      "status": 200,
+      "at": "2026-10-25T09:34:53.959Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/1?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:34:54.462Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/1/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:34:54.967Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/-/16",
+      "status": 200,
+      "at": "2026-10-25T09:34:55.524Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/16?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:34:56.073Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/16/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:34:56.576Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/cordillera-del-fuego-costa-rica-150g/5SI4ENOMN3KMI2G5NJLNANW4",
+      "status": 200,
+      "at": "2026-10-25T09:34:57.081Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/5SI4ENOMN3KMI2G5NJLNANW4?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:34:57.792Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/5SI4ENOMN3KMI2G5NJLNANW4/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:34:58.298Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/decaf-ethiopia-150g/6",
+      "status": 200,
+      "at": "2026-10-25T09:34:58.802Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/6?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:34:59.359Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/6/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:34:59.865Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/finca-chico-washed-guatemala-150g/DPJD2SEHFB3MER2VB5GNUU7D",
+      "status": 200,
+      "at": "2026-10-25T09:35:00.370Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/DPJD2SEHFB3MER2VB5GNUU7D?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:35:00.958Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/DPJD2SEHFB3MER2VB5GNUU7D/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:35:01.464Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/banko-chelchele-ethiopia-washed-150g/E7XIRASYNTWHRFOL4EZHQQSY",
+      "status": 200,
+      "at": "2026-10-25T09:35:01.968Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/E7XIRASYNTWHRFOL4EZHQQSY?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:35:02.843Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/E7XIRASYNTWHRFOL4EZHQQSY/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:35:03.347Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/finca-los-chorros-washed-colombia-150g/GTN3K3X6MB3BKBN2HFFWICVG",
+      "status": 200,
+      "at": "2026-10-25T09:35:03.927Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/GTN3K3X6MB3BKBN2HFFWICVG?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:35:04.627Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/GTN3K3X6MB3BKBN2HFFWICVG/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:35:05.129Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/dark-roast-peru-150g/HB4NYDRA3JUK3RFJIFP4O2ZE",
+      "status": 200,
+      "at": "2026-10-25T09:35:05.636Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/HB4NYDRA3JUK3RFJIFP4O2ZE?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:35:06.346Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/HB4NYDRA3JUK3RFJIFP4O2ZE/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:35:06.849Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/gersi-ethiopia-natural-150g/P5TRCLECB4AUT5HW6YGZYDPJ",
+      "status": 200,
+      "at": "2026-10-25T09:35:07.355Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/P5TRCLECB4AUT5HW6YGZYDPJ?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:35:07.940Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/P5TRCLECB4AUT5HW6YGZYDPJ/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:35:08.444Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/finca-milan-colombia-curturing-lot-ng-100g/SW5P67YG2ES6IMZTULVBCTO7",
+      "status": 200,
+      "at": "2026-10-25T09:35:08.950Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/SW5P67YG2ES6IMZTULVBCTO7?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:35:09.540Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/SW5P67YG2ES6IMZTULVBCTO7/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:35:10.044Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://crucoffee.square.site/product/el-paraiso-red-plum-colombia-thermal-shock-washed-100g/YKRYPI32ZJSPNIANKXXBNMWA",
+      "status": 200,
+      "at": "2026-10-25T09:35:10.547Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/YKRYPI32ZJSPNIANKXXBNMWA?include=images,options,category,fulfillment&cache-version=2026-03-25",
+      "status": 200,
+      "at": "2026-10-25T09:35:11.051Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn5.editmysite.com/app/store/api/v28/editor/users/148949914/sites/946721046382839888/products/YKRYPI32ZJSPNIANKXXBNMWA/skus?include=image%2Cproduct&cache-version=2026-03-25&page=1&per_page=100",
+      "status": 200,
+      "at": "2026-10-25T09:35:11.583Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true
+}

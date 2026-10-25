@@ -1,0 +1,243 @@
+{
+  "checked_at": "2026-10-25T09:53:01.265Z",
+  "mode": "read-only-post-essentia-cru-extraction",
+  "owner_count": 21,
+  "owners": [
+    {
+      "id": "1cae79b1-c610-4484-b67c-420c984b2f7a",
+      "name": "Zuku Cafe",
+      "website_url": "https://zukucafe.com/",
+      "created_at": "2026-10-25T07:08:17.146972+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "262010ee-f3a8-4ca9-9f49-c3ae3b369a72",
+      "name": "Ariowl Coffee",
+      "website_url": "https://ariowlcoffee.com/",
+      "created_at": "2026-10-25T07:06:41.473601+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "31ebaf16-7beb-4b1f-b6ba-3d316d3f4e62",
+      "name": "珈琲アウラ",
+      "website_url": "https://auracoffee.stores.jp/",
+      "created_at": "2026-10-25T07:09:31.779404+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "33f05bef-1553-484b-8604-4972704afa45",
+      "name": "Single Origin espresso & roast",
+      "website_url": "https://shopee.tw/single_origin_espresso_roast",
+      "created_at": "2026-10-25T06:52:18.862111+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "347d864b-9fae-4bdf-9eaa-03aef4777bc5",
+      "name": "CRU Coffee Hakuraku",
+      "website_url": "https://crucoffee.square.site/",
+      "created_at": "2026-10-25T07:01:12.187975+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "3a8462cf-2ac9-4970-8ae2-a78d0a4265ca",
+      "name": "5F Coffee Lab",
+      "website_url": "https://www.ehirix.com/",
+      "created_at": "2026-10-25T07:00:15.514623+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "47b26677-4dde-446a-99c3-6d6adbb6867c",
+      "name": "COFFEE ROASTERY 101",
+      "website_url": "https://shop.roastery101.com/",
+      "created_at": "2026-10-25T07:10:36.554274+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "499e57b1-2c67-5b34-928f-9b7de559f87d",
+      "name": "Brewing Ceremony",
+      "website_url": "https://smartstore.naver.com/brewingceremony",
+      "created_at": "2026-10-25T06:52:22.145862+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "50c59e18-865f-4e1f-99e7-1682132ca2eb",
+      "name": "HOKURO ROASTERY",
+      "website_url": "https://hokurocoffe.base.shop/",
+      "created_at": "2026-10-25T07:13:42.944853+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "570c04dd-ff7a-479e-9c4a-b160118648e3",
+      "name": "Reshock Coffee",
+      "website_url": "https://www.reshockcoffee.com/",
+      "created_at": "2026-10-25T07:11:01.808628+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "5a645693-e81f-4c2e-95b7-0b2b5e559d99",
+      "name": "KIELO COFFEE",
+      "website_url": "https://kielocoffee.jp/collections/kielo-coffee",
+      "created_at": "2026-10-25T07:12:05.196486+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "66468861-a6f3-497f-a43e-8f56cfc44565",
+      "name": "Kingkongdrip Roastery",
+      "website_url": "https://smartstore.naver.com/kingkongdrip",
+      "created_at": "2026-10-25T06:56:07.050924+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "68b94ad4-dba5-5674-a471-7cb5d70fde0d",
+      "name": "Toyosaki Coffee Factory",
+      "website_url": "https://www.toyosakicoffeefactory.com/shop",
+      "created_at": "2026-10-25T08:29:19.70206+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "84cf4258-29ac-5fa8-bde5-2a138240b185",
+      "name": "Regolith Coffee",
+      "website_url": "https://regolith-coffee.com/",
+      "created_at": "2026-10-25T08:29:20.358703+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "9d723869-f652-49f3-a69c-92740948fd77",
+      "name": "Specialty Coffee 蒼",
+      "website_url": "https://lit.link/sohcoffee",
+      "created_at": "2026-10-25T07:05:24.376822+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "a3ed7572-b082-4ac1-ab88-c7d9826654f6",
+      "name": "New Wave Coffee Roasters",
+      "website_url": "https://newwavecoffeeroasters.com/",
+      "created_at": "2026-10-25T06:51:39.223905+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "a4bae1ff-f400-45e0-896f-2863cd3a51cb",
+      "name": "OTC COFFEE",
+      "website_url": "https://otc-coffee.com/",
+      "created_at": "2026-10-25T07:04:35.706893+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "ca9a6fff-1d2d-4e3f-83d4-e29ec8f966f7",
+      "name": "Nano's Coffee",
+      "website_url": "https://nanoroaster.handcrafted.jp/",
+      "created_at": "2026-10-25T07:07:19.168514+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "d84de3de-7669-4abe-81bb-8e7c8ae22aa3",
+      "name": "Coffee Roastery Nakaji",
+      "website_url": "https://coffee-nakaji.com/",
+      "created_at": "2026-10-25T07:07:52.092487+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "e1115ccc-6b89-4ac0-ba7d-70a0e38b4094",
+      "name": "Essentia Factory",
+      "website_url": "https://essentiafactory.com/",
+      "created_at": "2026-10-25T06:59:42.810427+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "e88c2f6b-1601-4af7-af08-f884b6935783",
+      "name": "X coffee GINZA",
+      "website_url": "https://kielocoffee.jp/collections/about-us-collection",
+      "created_at": "2026-10-25T07:11:37.936777+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    }
+  ],
+  "product_count": 0,
+  "products": [],
+  "source_gets": 2,
+  "production_writes": 0,
+  "ai_calls": 0
+}

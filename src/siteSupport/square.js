@@ -62,11 +62,13 @@ async function fetchSquareProduct(html,sourceUrl,profile,fetchHtml) {
   const coffeeSkus=skus.filter(s=>!profile.exclude_sku_ids?.includes(s.id));
   if(!coffeeSkus.length)throw Error('No coffee SKUs remain');
   const netWeight=require('./netWeight').descriptionNetWeight(product.short_description);
+  const titleWeight=profile.square_single_sku_title_weight===true && skus.length===1?require('../shopifyProduct').titleNetWeight({title:product.name,variants:skus}):null;
   const offers=coffeeSkus.map(s=>{
     const knownSoldOut=s.sold_out===true;
     const buyable=s.sold_out===false && s.sellable===true && s.fulfillable===true && s.fulfillment?.methods?.shipping===true && product.preordering?.shipping===false;
     const size=require('../shopifyProduct').labelWeight(s.name),hasSize=/\d\s*(?:g|kg|oz|lbs?)\b/i.test(s.name || '');
-    const netWeight=size ?? (hasSize?null:require('./netWeight').explicitNetWeight(product.short_description,product.name) ?? require('./netWeight').descriptionNetWeight(product.short_description));
+    if(size!=null && titleWeight!=null && size!==titleWeight)throw Error('Square SKU/title net weights disagree');
+    const netWeight=size ?? (hasSize?null:titleWeight ?? require('./netWeight').explicitNetWeight(product.short_description,product.name) ?? require('./netWeight').descriptionNetWeight(product.short_description));
     return {'@type':'Offer','@id':s.id,name:s.name,sku:s.id,_merchant_sku:s.sku || null,_net_weight_g:netWeight,url:sourceUrl,price:s.price?.current,priceCurrency:merchant.currency,availability:knownSoldOut?'https://schema.org/OutOfStock':buyable?'https://schema.org/InStock':null};
   });
   return {'@type':'Product',url:sourceUrl,productID:product.id,name:product.name,description:product.short_description || '',category:product.category?.data?.name || '',image:product.images?.data?.[0]?.absolute_url || product.thumbnail?.data?.absolute_url,offers,_variants_complete:coffeeSkus.length===skus.length,_market_source:'square_public_catalog_skus'};

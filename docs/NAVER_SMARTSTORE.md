@@ -206,8 +206,13 @@ Regolith and Toyosaki subsequently pass live GET-only inspection for another
 subscriptions, equipment and unreviewed kits; Toyosaki uses complete published
 Wix data and primary net-content labels, without inventing customization SKUs.
 
-The total is 171 source-verified products, not 171 newly saved coffees. Latest
+CRU's Square catalog and Essentia's six-page Cafe24 bean category subsequently
+add 95 source-verified products / 896 native variants. Essentia preserves all
+885 enumerated SKUs, known net weights and 23 sold-out products; no native
+combinations are invented and the existing Cafe24 path stays unchanged.
+
+The total is 266 source-verified products, not 266 newly saved coffees. Latest
 readback still shows zero catalog products for these 21 owners. The full suite
-now passes 575 tests. No scheduled-source rollout, schema change or further
+now passes 588 tests. No scheduled-source rollout, schema change or further
 model/production crawl was performed. The new separate Instagram session is
 waiting for its own access approval and has not been treated as terminal.

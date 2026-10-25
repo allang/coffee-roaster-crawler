@@ -24,6 +24,16 @@ async function discoverDomProducts(roaster,profile,fetchHtml) {
         if(profile.require_pagination && (!Number.isInteger(current) || current<1))throw Error('Merchant listing pagination missing');
         const later=$('.xans-product-normalpaging ol a').toArray().map(e=>({text:Number($(e).text()),href:$(e).attr('href')})).find(e=>e.text===current+1);
         next=later?.href?new URL(later.href.replace(/&amp;/g,'&'),base).href:null;
+        if(profile.pagination_next_selector) {
+          const controls=$(profile.pagination_next_selector);
+          if(controls.length!==1)throw Error('Merchant next-page control missing/ambiguous');
+          const href=controls.attr('href');
+          if(href && href!=='#none') {
+            const following=new URL(href.replace(/&amp;/g,'&'),base),category=new URL(path,roaster.website_url);
+            if(following.origin!==base.origin || following.pathname!==base.pathname || following.searchParams.get('cate_no')!==category.searchParams.get('cate_no') || Number(following.searchParams.get('page'))!==current+1 || following.hash || next && following.href!==next)throw Error('Merchant next-page identity mismatch');
+            next=following.href;
+          }else if(next)throw Error('Merchant paging controls disagree');
+        }
       }
     }
     if(!urls.size)throw Error('No merchant coffee links found');

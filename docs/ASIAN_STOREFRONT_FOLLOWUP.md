@@ -1,7 +1,7 @@
 # Asian Storefront Follow-up
 
 October 25, 2026. This checkpoint adds two independently checked roasters and
-five scoped storefront profiles, including the OTC reader. It does not install code over the Mac mini's
+seven scoped storefront profiles, including the OTC reader. It does not install code over the Mac mini's
 scheduled checkout, apply a migration or retry the exhausted API account.
 
 ## New Index Entries
@@ -118,6 +118,51 @@ merchant's descriptive prose. Tests cover owner scoping, real pagination,
 subscription/equipment exclusion, native identities, money, stock, net contents,
 customization handling and the already-working Wix path.
 
+## CRU And Essentia
+
+| Merchant | Coffee products | Exact native variants | Observed currency |
+| --- | ---: | ---: | --- |
+| CRU Coffee Hakuraku | 11 | 11 | JPY |
+| Essentia Factory | 84 | 885 | KRW |
+
+Both pass actual GET-only inspection. CRU uses the existing Square reader with
+its exact site, owner and coffee category. The primary SKU price is retained
+even when the product's aggregate minimum is lower: HAMA ROAST's current native
+SKU is JPY 2,000, not the aggregate JPY 1,500. The reviewed title-weight fallback
+applies only to a single native SKU. The three-bag assortment declares a
+360-400g range, so its exact weight remains unknown. Stale category counts and
+historical references do not turn eleven current public products into 61.
+
+Essentia's bean category spans six pages, despite a five-number paging window.
+Its opt-in next-control verification follows page six and rejects missing,
+contradictory, foreign or wrong-category paging controls. The 85 category
+listings include one business-consultation product, which is excluded. Green
+beans, equipment and other categories are not traversed.
+
+The separate opt-in Cafe24 reader parses native JSON as data, never executing
+merchant scripts. It binds primary product ID, native product-code context,
+rendered name, paired KRW price, primary photo and purchase controls. Every
+native SKU must agree with the published option choices, absolute amount and
+base-price delta. Separate size/grind selectors, combined selectors keyed by
+native SKU, fixed single items and two real 180-SKU bundles are covered without
+inventing combinations. Missing or duplicate matrix entries fail closed.
+
+All 885 SKU weights are retained from reviewed size/content evidence, including
+400g/1,000g two-bag packs and explicitly counted coffee assortments. Shipping
+mass is not substituted. Twenty-three products are sold out. Untracked zero
+or missing quantities remain distinct from tracked stock; missing tracked
+quantity and contradictory stock controls are errors, not assumed availability.
+Primary description images are preserved for later semantic extraction, but
+this inspection makes no model or image-analysis calls. Within one reader,
+short-lived category proof is shared; each product's native price/stock remains
+fresh. Existing Cafe24 single-item behavior remains unchanged.
+
+Captured projected fixtures cover eleven representative Essentia products and
+all six paging states, plus CRU's public catalog/SKU evidence. CLI regression
+coverage also checks that the existing Squarespace fetch callback is preserved.
+The real inspections made 102 Essentia and 35 CRU GET requests, with zero
+prohibited requests, model calls or production writes.
+
 ## Remaining Gates
 
 All new public inspections used zero model calls and zero catalog writes.
@@ -127,10 +172,10 @@ Distinct same-weight Shopify SKUs also need the separately authorized schema
 change. Naver's specific security-check confirmation is still pending.
 
 Reshock is Shopline: its `/products.json` returns HTML, so it is not registered
-as Shopify. Total source-verified extraction is now 171 products across ten
-sites, with 546 exact native variants plus 54 product-only offers. The fresh
-09:25:09 UTC catalog readback still finds zero products across the 21 owners.
-The full regression suite passes 575 tests; none of those tests proves a
+as Shopify. Total source-verified extraction is now 266 products across twelve
+sites, with 1,442 exact native variants plus 54 product-only offers. The fresh
+09:53:01 UTC catalog readback still finds zero products across the 21 owners.
+The full regression suite passes 588 tests; none of those tests proves a
 completed production crawl.
 
 The completed Mac validation session is now archived. Discovery session

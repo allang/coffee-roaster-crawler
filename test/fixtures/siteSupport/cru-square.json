@@ -1,0 +1,481 @@
+{
+  "note": "Projected public Square responses; merchant prose and unrelated page data removed. Native owner/site/merchant identity, catalog rows, SKU, prices, stock and primary photo retained.",
+  "checked_at": "2026-10-25T09:32:13.174Z",
+  "bootstrap": {
+    "siteData": {
+      "site": {
+        "properties": {
+          "classicSiteID": "946721046382839888"
+        }
+      },
+      "user": {
+        "id": 148949914
+      }
+    },
+    "storeInfo": {
+      "currency": "JPY",
+      "merchant_id": "MLJ42D0BRCV11"
+    }
+  },
+  "products": [
+    {
+      "id": "IO5FOTIRJBTS3LEYYLMG5ZXL",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "1",
+      "name": "HAMA ROAST 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/hama-roast-150g/1"
+    },
+    {
+      "id": "YVFMOOYKALPBMWH7QWNVB3K7",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "16",
+      "name": "おすすめのコーヒー豆 ３袋",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/-/16"
+    },
+    {
+      "id": "5SI4ENOMN3KMI2G5NJLNANW4",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "5SI4ENOMN3KMI2G5NJLNANW4",
+      "name": "Cordillera del Fuego Costa Rica 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/cordillera-del-fuego-costa-rica-150g/5SI4ENOMN3KMI2G5NJLNANW4"
+    },
+    {
+      "id": "SNMBVDV2OWPKTCXPCHCIADKU",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "6",
+      "name": "Decaf Ethiopia 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/decaf-ethiopia-150g/6"
+    },
+    {
+      "id": "DPJD2SEHFB3MER2VB5GNUU7D",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "DPJD2SEHFB3MER2VB5GNUU7D",
+      "name": "Finca Chico Washed Guatemala 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/finca-chico-washed-guatemala-150g/DPJD2SEHFB3MER2VB5GNUU7D"
+    },
+    {
+      "id": "E7XIRASYNTWHRFOL4EZHQQSY",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "E7XIRASYNTWHRFOL4EZHQQSY",
+      "name": "Banko Chelchele Ethiopia Washed 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/banko-chelchele-ethiopia-washed-150g/E7XIRASYNTWHRFOL4EZHQQSY"
+    },
+    {
+      "id": "GTN3K3X6MB3BKBN2HFFWICVG",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "GTN3K3X6MB3BKBN2HFFWICVG",
+      "name": "Finca Los Chorros Washed Colombia 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/finca-los-chorros-washed-colombia-150g/GTN3K3X6MB3BKBN2HFFWICVG"
+    },
+    {
+      "id": "HB4NYDRA3JUK3RFJIFP4O2ZE",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "HB4NYDRA3JUK3RFJIFP4O2ZE",
+      "name": "DARK ROAST Peru 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/dark-roast-peru-150g/HB4NYDRA3JUK3RFJIFP4O2ZE"
+    },
+    {
+      "id": "P5TRCLECB4AUT5HW6YGZYDPJ",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "P5TRCLECB4AUT5HW6YGZYDPJ",
+      "name": "Gersi Ethiopia Natural 150g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/gersi-ethiopia-natural-150g/P5TRCLECB4AUT5HW6YGZYDPJ"
+    },
+    {
+      "id": "SW5P67YG2ES6IMZTULVBCTO7",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "SW5P67YG2ES6IMZTULVBCTO7",
+      "name": "Finca Milan Colombia Curturing Lot NG 100g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/finca-milan-colombia-curturing-lot-ng-100g/SW5P67YG2ES6IMZTULVBCTO7"
+    },
+    {
+      "id": "YKRYPI32ZJSPNIANKXXBNMWA",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_product_id": "YKRYPI32ZJSPNIANKXXBNMWA",
+      "name": "El Paraiso Red Plum Colombia Thermal Shock washed 100g",
+      "visibility": "visible",
+      "only_subscribable": false,
+      "categoryIds": [
+        "V7DRPX5TEY5PUZ5KY44BGE5D"
+      ],
+      "absolute_site_link": "https://crucoffee.square.site/product/el-paraiso-red-plum-colombia-thermal-shock-washed-100g/YKRYPI32ZJSPNIANKXXBNMWA"
+    }
+  ],
+  "product": {
+    "id": "IO5FOTIRJBTS3LEYYLMG5ZXL",
+    "owner_id": "148949914",
+    "merchant_id": "MLJ42D0BRCV11",
+    "site_id": "946721046382839888",
+    "channel_id": "CH_tg3EJTagdsqQW1yJFEIRJpbwWwhh08muyAtfYRlQuYC",
+    "site_product_id": "1",
+    "square_id": "IO5FOTIRJBTS3LEYYLMG5ZXL",
+    "visibility": "visible",
+    "visibility_tl": "Visible",
+    "name": "HAMA ROAST 150g",
+    "short_description": "<p>Merchant descriptive prose omitted.</p>",
+    "popularity_score": 0.34,
+    "cross_sell_product_ids": [
+      "NDDAFWXHQSJGIKWG5HNWFQPC",
+      "ZTPHU5YJBVVS3CE4IUO56CMQ"
+    ],
+    "variation_type": "3",
+    "product_type": "physical",
+    "product_type_details": [],
+    "taxable": null,
+    "required_feature_to_sell": null,
+    "min_prep_time": null,
+    "min_prep_time_duration_iso8601": null,
+    "advanced_notice_duration": null,
+    "measurement_unit_abbreviation": null,
+    "measurement_unit_precision": null,
+    "has_multiple_measurement_units": false,
+    "is_alcoholic": false,
+    "per_order_max": 0,
+    "allow_order_item_quantities": false,
+    "badges": {
+      "out_of_stock": false,
+      "low_stock": false,
+      "on_sale": false
+    },
+    "only_subscribable": false,
+    "fulfillable": true,
+    "site_link": "product/hama-roast-150g/1",
+    "absolute_site_link": "https://crucoffee.square.site/product/hama-roast-150g/1",
+    "permalink": null,
+    "seo_product_image_id": "QQODXDAIK5YWSYXVMMRKZPOM",
+    "seo_page_description": null,
+    "seo_page_title": null,
+    "og_title": null,
+    "og_description": null,
+    "avg_rating": null,
+    "avg_rating_all": null,
+    "inventory": {
+      "total": 0,
+      "all_variations_sold_out": false,
+      "marked_sold_out_at_all_existing_locations": false,
+      "marked_sold_out_skus_count": 0,
+      "all_inventory_total": 0,
+      "lowest": null,
+      "enabled": false,
+      "some_variations_sold_out": false,
+      "has_location_not_tracking": true
+    },
+    "price": {
+      "regular_high_with_subscriptions": 2000,
+      "regular_low_formatted_with_modifiers": "￥1,500",
+      "high_with_modifiers": 2000,
+      "low_formatted_with_subscriptions": "￥1,500",
+      "regular_high_formatted": "￥2,000",
+      "high_with_subscriptions": 2000,
+      "high_formatted_with_subscriptions": "￥2,000",
+      "low_formatted": "￥1,500",
+      "low_with_subscriptions_subunits": 1500,
+      "regular_high_formatted_with_subscriptions": "￥2,000",
+      "high_with_subscriptions_subunits": 2000,
+      "low_with_modifiers_subunits": 1500,
+      "high": 2000,
+      "low_with_modifiers": 1500,
+      "regular_low_with_subscriptions_subunits": 1500,
+      "regular_low_formatted": "￥1,500",
+      "low": 1500,
+      "regular_high_with_subscriptions_subunits": 2000,
+      "low_subunits": 1500,
+      "regular_high_with_modifiers": 2000,
+      "regular_low_with_subscriptions": 1500,
+      "regular_high_with_modifiers_subunits": 2000,
+      "low_formatted_with_modifiers": "￥1,500",
+      "regular_low_with_modifiers_subunits": 1500,
+      "low_with_subscriptions": 1500,
+      "high_with_modifiers_subunits": 2000,
+      "high_formatted": "￥2,000",
+      "regular_low": 1500,
+      "high_formatted_with_modifiers": "￥2,000",
+      "regular_low_subunits": 1500,
+      "regular_high_subunits": 2000,
+      "regular_low_with_modifiers": 1500,
+      "high_subunits": 2000,
+      "regular_high": 2000,
+      "regular_high_formatted_with_modifiers": "￥2,000",
+      "regular_low_formatted_with_subscriptions": "￥1,500"
+    },
+    "on_sale": false,
+    "combo_type_details": {
+      "slots": []
+    },
+    "updated_date": "2026-10-10T10:05:25+00:00",
+    "created_date": "2024-03-12T03:51:52+00:00",
+    "indexed_date": "2026-10-10T10:05:52+00:00",
+    "preordering": {
+      "pickup": false,
+      "delivery": false,
+      "shipping": false,
+      "dine_in": false,
+      "manual": false,
+      "download": false
+    },
+    "fulfillment_availability": {
+      "pickup": [],
+      "delivery": [],
+      "shipping": [],
+      "dine_in": [],
+      "manual": []
+    },
+    "thumbnail": {
+      "data": {
+        "owner_id": "148949914",
+        "site_id": "946721046382839888",
+        "id": "QQODXDAIK5YWSYXVMMRKZPOM",
+        "site_product_image_id": "QQODXDAIK5YWSYXVMMRKZPOM",
+        "url": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg",
+        "absolute_url": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg",
+        "urls": {
+          "80": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=80",
+          "160": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=160",
+          "320": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=320",
+          "640": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=640",
+          "1280": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=1280",
+          "2560": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=2560"
+        },
+        "absolute_urls": {
+          "80": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=80",
+          "160": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=160",
+          "320": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=320",
+          "640": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=640",
+          "1280": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=1280",
+          "2560": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=2560"
+        },
+        "height": 2560,
+        "width": 2560,
+        "format": "jpeg",
+        "created_at": "2025-11-05T05:00:36.636Z",
+        "updated_at": "2025-11-05T05:00:36.59Z"
+      }
+    },
+    "placeholder_image": {
+      "data": {
+        "placeholder": true,
+        "url": "/images/commerce/store-app/app/universal_product_placeholder.png",
+        "absolute_url": "cdn3.editmysite.com/images/commerce/store-app/app/universal_product_placeholder.png"
+      }
+    },
+    "categoryIds": [
+      "V7DRPX5TEY5PUZ5KY44BGE5D"
+    ],
+    "options": {
+      "data": []
+    },
+    "images": {
+      "data": [
+        {
+          "owner_id": "148949914",
+          "site_id": "946721046382839888",
+          "id": "QQODXDAIK5YWSYXVMMRKZPOM",
+          "site_product_image_id": "QQODXDAIK5YWSYXVMMRKZPOM",
+          "url": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg",
+          "absolute_url": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg",
+          "urls": {
+            "80": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=80",
+            "160": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=160",
+            "320": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=320",
+            "640": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=640",
+            "1280": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=1280",
+            "2560": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=2560"
+          },
+          "absolute_urls": {
+            "80": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=80",
+            "160": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=160",
+            "320": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=320",
+            "640": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=640",
+            "1280": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=1280",
+            "2560": "https://148949914.cdn6.editmysite.com/uploads/1/4/8/9/148949914/QQODXDAIK5YWSYXVMMRKZPOM.jpeg?width=2560"
+          },
+          "height": 2560,
+          "width": 2560,
+          "format": "jpeg",
+          "created_at": "2025-11-05T05:00:36.636Z",
+          "updated_at": "2025-11-05T05:00:36.59Z"
+        }
+      ]
+    },
+    "category": {
+      "data": {
+        "id": "V7DRPX5TEY5PUZ5KY44BGE5D",
+        "site_category_id": "V7DRPX5TEY5PUZ5KY44BGE5D",
+        "name": "Coffee beans   ",
+        "root_parent_category_id": "V7DRPX5TEY5PUZ5KY44BGE5D",
+        "seo_page_description": "",
+        "seo_page_title": "",
+        "site_link": "shop/coffee-beans/V7DRPX5TEY5PUZ5KY44BGE5D",
+        "permalink": "",
+        "og_title": null,
+        "og_description": null,
+        "published": true,
+        "unpublished_ancestor": null,
+        "parent": "",
+        "is_custom_times": false,
+        "depth": 0,
+        "product_counts": {
+          "direct": 61,
+          "visible": 61,
+          "full_category_subtree": 61
+        },
+        "updated_date": "2025-10-11T06:20:09+00:00",
+        "category_type": "REGULAR_CATEGORY",
+        "hide_from_parent": false,
+        "page_layout": "no-header",
+        "show_sub_categories": true,
+        "product_count": {
+          "total": 61,
+          "visible": 61
+        },
+        "children": [],
+        "ancestors": []
+      }
+    },
+    "fulfillment": {
+      "methods": {
+        "shipping": true,
+        "pickup": false,
+        "delivery": false,
+        "dine_in": false,
+        "manual": false,
+        "download": false
+      },
+      "methods_at_any_location": {
+        "shipping": true,
+        "pickup": false,
+        "delivery": false,
+        "dine_in": false,
+        "manual": false,
+        "download": false
+      }
+    }
+  },
+  "skus": [
+    {
+      "id": "XYSIEE3SQ3VD4JYE5EGTIACV",
+      "owner_id": "148949914",
+      "merchant_id": "MLJ42D0BRCV11",
+      "site_id": "946721046382839888",
+      "channel_id": "CH_tg3EJTagdsqQW1yJFEIRJpbwWwhh08muyAtfYRlQuYC",
+      "site_product_id": "1",
+      "site_product_sku_id": "XYSIEE3SQ3VD4JYE5EGTIACV",
+      "product_square_id": "IO5FOTIRJBTS3LEYYLMG5ZXL",
+      "square_id": "XYSIEE3SQ3VD4JYE5EGTIACV",
+      "name": "通常",
+      "sku": null,
+      "product_type": "physical",
+      "price": {
+        "current": 2000,
+        "current_formatted": "￥2,000",
+        "current_subunits": 2000,
+        "high": 2000,
+        "high_formatted": "￥2,000",
+        "high_subunits": 2000,
+        "regular": 2000,
+        "regular_formatted": "￥2,000",
+        "regular_subunits": 2000,
+        "sale": null,
+        "sale_formatted": "",
+        "sale_subunits": 0
+      },
+      "fulfillment": {
+        "methods": {
+          "shipping": true,
+          "pickup": false,
+          "delivery": false,
+          "dine_in": false,
+          "manual": false,
+          "download": false
+        },
+        "methods_at_any_location": {
+          "shipping": true,
+          "pickup": false,
+          "delivery": false,
+          "dine_in": false,
+          "manual": false,
+          "download": false
+        }
+      },
+      "fulfillable": true,
+      "display_order": 0,
+      "measurement_unit_abbreviation": null,
+      "measurement_unit_precision": null,
+      "has_buyer_controlled_price": false,
+      "inventory_tracking_enabled": false,
+      "sold_out": false,
+      "inventory": 0,
+      "total_inventory": 0,
+      "option_choices": {
+        "data": []
+      },
+      "image": null,
+      "images": [],
+      "stockable": true,
+      "sellable": true,
+      "created_date": "2024-03-12T03:51:52.521Z",
+      "updated_date": "2026-09-10T02:42:15.144Z"
+    }
+  ]
+}
