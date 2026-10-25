@@ -1358,6 +1358,42 @@
     "inventory_authorizes_global_absence": false
   },
   {
+    "name": "Regolith Coffee",
+    "entity_ids": ["84cf4258-29ac-5fa8-bde5-2a138240b185"],
+    "hosts": ["regolith-coffee.com", "www.regolith-coffee.com"],
+    "adapter": "shopify",
+    "bootstrap_url": "https://regolith-coffee.com/",
+    "listing_paths": ["/products.json"],
+    "coffee_product_types": ["コーヒー豆"],
+    "coffee_handles": ["自家焙煎ドリップバックコーヒー-mild-roast-blend-1", "自家焙煎ドリップバックコーヒー-mild-roast-blend", "fullcity-roast-blend", "fullcity-roast-blend-5pcs", "自家焙煎ドリップバックコーヒー-fullcity-roast-blend-10個セット", "自家焙煎ドリップバックコーヒー-mild-roast-blend-10個セット"],
+    "strict_coffee_product_types": true,
+    "coffee_collection_verified": true,
+    "allow_unicode_handles": true,
+    "exclude_name_pattern": "定期便|定期商品|まとめて購入|器具|マグ|ミル|ドリッパー|タンブラー|生豆|キャニスター",
+    "title_net_weight_rule": {
+      "pattern": "\\(([0-9]+(?:\\.[0-9]+)?\\s*(?:g|kg))\\)\\s*$",
+      "option_names": ["挽き方", "種類"]
+    },
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "Toyosaki Coffee Factory",
+    "entity_ids": ["68b94ad4-dba5-5674-a471-7cb5d70fde0d"],
+    "hosts": ["www.toyosakicoffeefactory.com", "toyosakicoffeefactory.com"],
+    "adapter": "wix",
+    "bootstrap_url": "https://www.toyosakicoffeefactory.com/shop",
+    "listing_paths": ["/shop?page=2"],
+    "product_path": "/product-page/",
+    "wix_listing_key": "initialData_default_TPASection_k91hv9yv_page=2",
+    "wix_coffee_category_id": "1f816fb0-426c-4db5-b99a-c9c49c8265f6",
+    "wix_net_weight_info": {"title": "商品情報", "prefix": "内容量:"},
+    "wix_reviewed_product_ids": ["3879a6ce-e254-4aa3-b080-fcb4c1b0bf3a", "2c712281-64be-47bc-bc99-fa5cba12add0", "be9f26f5-0a90-4afc-b0f7-42155da37dda", "bb578199-e9b0-489e-98d8-e80ca0702c52", "32e53e82-1f59-ee8e-b14c-005fab2cde08", "df19c1f7-07d8-a265-42f8-e8dfa824cc6e", "5cf7bb54-3dca-2bb2-a62d-1a4b25d305e4", "e9933b75-0b4d-7b8c-66ba-71b01b8f09a1", "140e1701-d2b8-f317-8e9c-386c6c1bd5ca", "97856795-9aae-094d-1a5d-2df00ce15d22", "fc9ed7d9-6b8c-97ee-3afe-a852fbb1708f", "9cd9b4b1-5084-76c2-6807-b798780726dc", "fc9f2640-11cf-b1b0-eb99-6d1a1c464e7b", "c7c66e95-15cd-49b3-33a8-e295a4dd4f81", "4ba68b68-cec1-c364-d209-3be63fd561c5", "972937bf-8ee2-0e1f-b456-84aa1528503d", "97e4a2e4-5202-3571-f021-b826e4b3355b", "f0359dd5-5310-b0aa-a4c5-e8af50260578", "6c86fc30-51b8-0e52-681a-196ee6b4d5f9", "78a1d18c-ec67-a942-b7ce-609466ec7d06", "12260eb9-c7cd-110a-3258-e71d40d1da33", "e87556c0-2161-949e-996c-bfd0b301dca4"],
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "coffee_collection_verified": true
+  },
+  {
     "name": "Nano's Coffee",
     "entity_ids": ["ca9a6fff-1d2d-4e3f-83d4-e29ec8f966f7"],
     "hosts": ["nanoroaster.handcrafted.jp"],

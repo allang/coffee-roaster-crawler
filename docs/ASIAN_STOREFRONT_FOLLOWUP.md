@@ -1,7 +1,7 @@
 # Asian Storefront Follow-up
 
 October 25, 2026. This checkpoint adds two independently checked roasters and
-three scoped storefront profiles, including the OTC reader. It does not install code over the Mac mini's
+five scoped storefront profiles, including the OTC reader. It does not install code over the Mac mini's
 scheduled checkout, apply a migration or retry the exhausted API account.
 
 ## New Index Entries
@@ -82,6 +82,42 @@ these are not reported as a wholly successful merchant ingest. No cart action
 was taken. The projected fixtures omit merchant descriptive prose and unrelated
 Flight records while preserving the observed identities and evidence fields.
 
+## Regolith And Toyosaki
+
+| Merchant | Coffee products | Exact native variants | Observed currency |
+| --- | ---: | ---: | --- |
+| Regolith Coffee | 27 | 111 | JPY |
+| Toyosaki Coffee Factory | 22 | 22 | JPY |
+
+Both pass live GET-only inspection with exact native identities, paired JPY
+prices, explicit current stock and primary product photos. These 49 products
+have not been ingested into production.
+
+Regolith's public catalog exhausts after two populated pages (50 and 44
+products) and an empty third page. The reviewed scope retains 21 one-time bean
+products and six individually reviewed drip-bag handles. Thirty-four
+subscription-related bean products, equipment, mixed cold-brew kits and
+unreviewed gift products remain excluded. The 100g bag title applies only
+while the native options retain their reviewed Japanese grind contract.
+The six drip-bag offers retain unknown total net mass; their shipping grams
+are not used as coffee weight.
+
+Toyosaki's initial shop data contains only 20 of 22 products. Its own public
+`/shop?page=2` link exposes all 22, with the same total and stable UUIDs.
+The profile requires that complete category and an explicit reviewed product-ID
+scope. Future unreviewed IDs are logged separately, not automatically treated
+as coffee. Each product exposes one exact native SKU; grind, wrapping and
+choose-your-coffee customizations do not create synthetic SKU combinations.
+Net coffee weight comes only from the primary Japanese contents label, not
+shipping fields or old URL slugs. For example, two legacy 200g slugs now have
+150g published contents; the 15- and 50-drip-bag assortments explicitly declare
+130g and 434g totals. Missing or ambiguous contents evidence fails closed.
+
+Captured projected fixtures preserve these contracts without retaining the
+merchant's descriptive prose. Tests cover owner scoping, real pagination,
+subscription/equipment exclusion, native identities, money, stock, net contents,
+customization handling and the already-working Wix path.
+
 ## Remaining Gates
 
 All new public inspections used zero model calls and zero catalog writes.
@@ -91,9 +127,11 @@ Distinct same-weight Shopify SKUs also need the separately authorized schema
 change. Naver's specific security-check confirmation is still pending.
 
 Reshock is Shopline: its `/products.json` returns HTML, so it is not registered
-as Shopify. Toyosaki's Wix shop and Regolith's Shopify catalog are reachable,
-but their full product pipelines still need validation. The full regression
-suite passes 568 tests; none of those tests proves a completed production crawl.
+as Shopify. Total source-verified extraction is now 171 products across ten
+sites, with 546 exact native variants plus 54 product-only offers. The fresh
+09:25:09 UTC catalog readback still finds zero products across the 21 owners.
+The full regression suite passes 575 tests; none of those tests proves a
+completed production crawl.
 
 The completed Mac validation session is now archived. Discovery session
 `01a1721c-8db9-77e0-b390-33b080a8a0dd` is still waiting for its access approval;

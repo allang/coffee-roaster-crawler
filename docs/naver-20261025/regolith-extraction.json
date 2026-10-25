@@ -1,0 +1,3147 @@
+{
+  "name": "Regolith Coffee",
+  "checked_at": "2026-10-25T09:21:18.884Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "84cf4258-29ac-5fa8-bde5-2a138240b185"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://regolith-coffee.com/products/yemen-nassar-rashid-al-khoulani-mokha-natural-dark-roast-100g",
+      "https://regolith-coffee.com/products/guatemala-antonio-gonzales-catuai-anaerobic-natural-primavera-coffee-100g",
+      "https://regolith-coffee.com/products/bolivia-los-rodriguez-geisha-agricafe-100g",
+      "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-1",
+      "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend",
+      "https://regolith-coffee.com/products/fullcity-roast-blend",
+      "https://regolith-coffee.com/products/fullcity-roast-blend-5pcs",
+      "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-fullcity-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "https://regolith-coffee.com/products/honduras-cafesmo-medium-100g",
+      "https://regolith-coffee.com/products/tanzania-acacia-hills-mediumroast-100g",
+      "https://regolith-coffee.com/products/tanzania-acacia-hills-light-roast-100g",
+      "https://regolith-coffee.com/products/colombia-el-paraiso-lychee-100g",
+      "https://regolith-coffee.com/products/papua-new-guinea-sigri-farm",
+      "https://regolith-coffee.com/products/bolivia-agricafe-2021-22-100g-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC",
+      "https://regolith-coffee.com/products/kenya-ab-top-kiambu",
+      "https://regolith-coffee.com/products/ethiopia-guji-buku-blessed",
+      "https://regolith-coffee.com/products/brazil-honey-san-francisco-1",
+      "https://regolith-coffee.com/products/mild-blend",
+      "https://regolith-coffee.com/products/colombia-narrino-excelso-special",
+      "https://regolith-coffee.com/products/colombia-narrino-microlot-bibiana-mena-2019-20100g%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC",
+      "https://regolith-coffee.com/products/el-salvador-cafenor-2020-21",
+      "https://regolith-coffee.com/products/sumatra-mandheling",
+      "https://regolith-coffee.com/products/2019-french-blend",
+      "https://regolith-coffee.com/products/guatemala-shb-genuine-antigua-jasmine",
+      "https://regolith-coffee.com/products/ethiopia-yirgacheffe-g1-natural",
+      "https://regolith-coffee.com/products/fullcity-blend"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/products.json",
+        "page": 1,
+        "products": 50,
+        "coffeeProducts": 12
+      },
+      {
+        "listing": "/products.json",
+        "page": 2,
+        "products": 44,
+        "coffeeProducts": 15
+      }
+    ],
+    "market": null,
+    "inventory_authorizes_global_absence": false
+  },
+  "products": [
+    {
+      "url": "https://regolith-coffee.com/products/yemen-nassar-rashid-al-khoulani-mokha-natural-dark-roast-100g",
+      "title": "Yemen Nassar Rashid Al Khoulani (Mokha Natural) Dark Roast (100g)",
+      "source_product_id": "8765929685164",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47220091551916",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1944,
+            "amount": "1944",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1944,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47220091584684",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1944,
+            "amount": "1944",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1944,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47220091617452",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1944,
+            "amount": "1944",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1944,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47220091650220",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1944,
+            "amount": "1944",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1944,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47220091682988",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1944,
+            "amount": "1944",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1944,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/guatemala-antonio-gonzales-catuai-anaerobic-natural-primavera-coffee-100g",
+      "title": "Guatemala Antonio Gonzales (Catuai Anaerobic Natural) Primavera Coffee (100g)",
+      "source_product_id": "8765852614828",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47219980763308",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219980796076",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219980828844",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219980861612",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219980894380",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/bolivia-los-rodriguez-geisha-agricafe-100g",
+      "title": "Bolivia Los Rodriguez (Geisha) Agricafe (100g)",
+      "source_product_id": "8765842260140",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47219970343084",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 2592,
+            "amount": "2592",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2592,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219970375852",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 2592,
+            "amount": "2592",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2592,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219970408620",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 2592,
+            "amount": "2592",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2592,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219970441388",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 2592,
+            "amount": "2592",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2592,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47219970474156",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 2592,
+            "amount": "2592",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2592,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-1",
+      "title": "自家焙煎ドリップバックコーヒー Mild roast Blend 5個セット",
+      "source_product_id": "4614829047882",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32168606466122",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 1080,
+            "amount": "1080",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1080,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend",
+      "title": "自家焙煎ドリップバックコーヒー Mild roast Blend",
+      "source_product_id": "4614827540554",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32168599945290",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 216,
+            "amount": "216",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 216,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend",
+      "title": "自家焙煎ドリップバックコーヒー Fullcity roast Blend",
+      "source_product_id": "4572575563850",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009621667914",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 216,
+            "amount": "216",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 216,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend-5pcs",
+      "title": "自家焙煎ドリップバックコーヒー Fullcity roast Blend 5個セット",
+      "source_product_id": "4572571893834",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009600467018",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 1080,
+            "amount": "1080",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1080,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-fullcity-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "title": "自家焙煎ドリップバックコーヒー Fullcity roast Blend 10個セット",
+      "source_product_id": "8015694299308",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43685016830124",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 2180,
+            "amount": "2180",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2180,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "title": "自家焙煎ドリップバックコーヒー Mild roast Blend 10個セット",
+      "source_product_id": "8016272687276",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43686408028332",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 2160,
+            "amount": "2160",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2160,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/honduras-cafesmo-medium-100g",
+      "title": "Honduras CAFESMO (Medium) (100g)",
+      "source_product_id": "8336404283564",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "44772818682028",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44772818714796",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44772818747564",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44772818780332",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44772818813100",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-mediumroast-100g",
+      "title": "Tanzania Acacia Hills Medium Dark Roast (100g)",
+      "source_product_id": "8269875970220",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "44522225926316",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522225959084",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522225991852",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522226024620",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522226057388",
+          "title": "極細挽き/エスプレッソ等",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-light-roast-100g",
+      "title": "Tanzania Acacia Hills Light Roast (100g)",
+      "source_product_id": "8269867581612",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "44522209509548",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522209542316",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522209575084",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522209607852",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "44522209640620",
+          "title": "極細挽き/エスプレッソ等",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/colombia-el-paraiso-lychee-100g",
+      "title": "Colombia El Paraiso - Lychee (100g)",
+      "source_product_id": "7728656744620",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "42840881627308",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42840881660076",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42840881692844",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42840881725612",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42840881758380",
+          "title": "極細挽き/エスプレッソ等",
+          "weight_g": 100,
+          "money": {
+            "raw": 1620,
+            "amount": "1620",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1620,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/papua-new-guinea-sigri-farm",
+      "title": "Papua New Guinea Alpha Coffee (100g)",
+      "source_product_id": "4572585623626",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009665085514",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009665118282",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009665151050",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009665183818",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009665216586",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/bolivia-agricafe-2021-22-100g-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC",
+      "title": "Guatemala El Cerro Farm Yeast Anaerobic (Medium) (100g)",
+      "source_product_id": "7639680254124",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "42603754684588",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42603754717356",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42603754750124",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42603754782892",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42603754815660",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/kenya-ab-top-kiambu",
+      "title": "Kenya Rockbern (100g)",
+      "source_product_id": "4572579299402",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009644474442",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009644507210",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009644539978",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009644572746",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009644605514",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/ethiopia-guji-buku-blessed",
+      "title": "Ethiopia Oromia Washed Dark Roast (100g)",
+      "source_product_id": "4676148297802",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32325437096010",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32325480022090",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32325482807370",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32325486116938",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32325487099978",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/brazil-honey-san-francisco-1",
+      "title": "Brazil Fazenda Chapadão (100g)",
+      "source_product_id": "4572857696330",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32011618811978",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011618844746",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011618877514",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011618910282",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011618943050",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/mild-blend",
+      "title": "Mild Blend 2025 (100g)",
+      "source_product_id": "4572592341066",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009706012746",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009706045514",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009706078282",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009706111050",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009706143818",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/colombia-narrino-excelso-special",
+      "title": "Colombia Cafe Pitaya (100g)",
+      "source_product_id": "4572616327242",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32016408707146",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32016408739914",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32016408772682",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32016408805450",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32016408838218",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/colombia-narrino-microlot-bibiana-mena-2019-20100g%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC",
+      "title": "Rwanda Muzo CWS (100g)",
+      "source_product_id": "7178183245996",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "41194186047660",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "41194186080428",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "41194186113196",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "41194186178732",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "41194186211500",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/el-salvador-cafenor-2020-21",
+      "title": "El Salvador 12 of small producers (100g)",
+      "source_product_id": "7058293096620",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "40788888092844",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "40788888125612",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "40788888158380",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "40788888191148",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "40788888223916",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/sumatra-mandheling",
+      "title": "Indonesia Java Frinsa Estate (100g)",
+      "source_product_id": "4572830040138",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32011422597194",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011422662730",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011422728266",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011422826570",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32011422892106",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/2019-french-blend",
+      "title": "French Blend 2025 (100g)",
+      "source_product_id": "4572626190410",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009934405706",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009934438474",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009934471242",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009934504010",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009934536778",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/guatemala-shb-genuine-antigua-jasmine",
+      "title": "Guatemala El Cerro Farm (100g)",
+      "source_product_id": "4572619407434",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009889710154",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009889742922",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009889775690",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009889808458",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009889841226",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/ethiopia-yirgacheffe-g1-natural",
+      "title": "Ethiopia Shakiso Natural (100g)",
+      "source_product_id": "4572597649482",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009747300426",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009747333194",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009747365962",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009747398730",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009747431498",
+          "title": "極細挽き/エスプレッソ等",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://regolith-coffee.com/products/fullcity-blend",
+      "title": "Full City Blend 2025 (100g)",
+      "source_product_id": "4572589293642",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32009691824202",
+          "title": "豆/オススメです！",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009691856970",
+          "title": "中挽き/ペーパードリップ・珈琲メーカー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009691889738",
+          "title": "細挽き/サイフォン・アイスコーヒー等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009691922506",
+          "title": "粗挽き/フレンチプレス・ネルドリップ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "32009691955274",
+          "title": "極細挽き/エスプレッソ等に",
+          "weight_g": 100,
+          "money": {
+            "raw": 1242,
+            "amount": "1242",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1242,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-25T09:20:36.723Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-25T09:20:37.229Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products.json?limit=50&page=3",
+      "status": 200,
+      "at": "2026-10-25T09:20:37.756Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/yemen-nassar-rashid-al-khoulani-mokha-natural-dark-roast-100g",
+      "status": 200,
+      "at": "2026-10-25T09:20:38.265Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/yemen-nassar-rashid-al-khoulani-mokha-natural-dark-roast-100g.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:38.769Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/yemen-nassar-rashid-al-khoulani-mokha-natural-dark-roast-100g.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:39.274Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/guatemala-antonio-gonzales-catuai-anaerobic-natural-primavera-coffee-100g",
+      "status": 200,
+      "at": "2026-10-25T09:20:39.778Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/guatemala-antonio-gonzales-catuai-anaerobic-natural-primavera-coffee-100g.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:40.283Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/guatemala-antonio-gonzales-catuai-anaerobic-natural-primavera-coffee-100g.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:40.787Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/bolivia-los-rodriguez-geisha-agricafe-100g",
+      "status": 200,
+      "at": "2026-10-25T09:20:41.292Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/bolivia-los-rodriguez-geisha-agricafe-100g.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:41.798Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/bolivia-los-rodriguez-geisha-agricafe-100g.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:42.302Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-1",
+      "status": 200,
+      "at": "2026-10-25T09:20:42.806Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-1.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:43.310Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-1.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:43.814Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend",
+      "status": 200,
+      "at": "2026-10-25T09:20:44.318Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:44.824Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:45.330Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend",
+      "status": 200,
+      "at": "2026-10-25T09:20:45.834Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:46.339Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:46.844Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend-5pcs",
+      "status": 200,
+      "at": "2026-10-25T09:20:47.348Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend-5pcs.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:47.850Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-roast-blend-5pcs.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:48.354Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-fullcity-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "status": 200,
+      "at": "2026-10-25T09:20:48.858Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-fullcity-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:49.361Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-fullcity-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:49.866Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "status": 200,
+      "at": "2026-10-25T09:20:50.369Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:50.874Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/%E8%87%AA%E5%AE%B6%E7%84%99%E7%85%8E%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%AF%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-mild-roast-blend-10%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:51.380Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/honduras-cafesmo-medium-100g",
+      "status": 200,
+      "at": "2026-10-25T09:20:51.883Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/honduras-cafesmo-medium-100g.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:52.387Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/honduras-cafesmo-medium-100g.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:52.891Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-mediumroast-100g",
+      "status": 200,
+      "at": "2026-10-25T09:20:53.397Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-mediumroast-100g.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:53.901Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-mediumroast-100g.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:54.407Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-light-roast-100g",
+      "status": 200,
+      "at": "2026-10-25T09:20:54.912Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-light-roast-100g.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:55.416Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/tanzania-acacia-hills-light-roast-100g.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:55.923Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-el-paraiso-lychee-100g",
+      "status": 200,
+      "at": "2026-10-25T09:20:56.427Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-el-paraiso-lychee-100g.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:56.931Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-el-paraiso-lychee-100g.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:57.433Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/papua-new-guinea-sigri-farm",
+      "status": 200,
+      "at": "2026-10-25T09:20:57.936Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/papua-new-guinea-sigri-farm.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:58.483Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/papua-new-guinea-sigri-farm.js",
+      "status": 200,
+      "at": "2026-10-25T09:20:58.988Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/bolivia-agricafe-2021-22-100g-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC",
+      "status": 200,
+      "at": "2026-10-25T09:20:59.491Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/bolivia-agricafe-2021-22-100g-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC.json",
+      "status": 200,
+      "at": "2026-10-25T09:20:59.996Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/bolivia-agricafe-2021-22-100g-%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:00.500Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/kenya-ab-top-kiambu",
+      "status": 200,
+      "at": "2026-10-25T09:21:01.004Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/kenya-ab-top-kiambu.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:01.506Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/kenya-ab-top-kiambu.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:02.009Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/ethiopia-guji-buku-blessed",
+      "status": 200,
+      "at": "2026-10-25T09:21:02.512Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/ethiopia-guji-buku-blessed.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:03.016Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/ethiopia-guji-buku-blessed.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:03.518Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/brazil-honey-san-francisco-1",
+      "status": 200,
+      "at": "2026-10-25T09:21:04.022Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/brazil-honey-san-francisco-1.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:04.525Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/brazil-honey-san-francisco-1.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:05.037Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/mild-blend",
+      "status": 200,
+      "at": "2026-10-25T09:21:05.540Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/mild-blend.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:06.045Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/mild-blend.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:06.549Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-narrino-excelso-special",
+      "status": 200,
+      "at": "2026-10-25T09:21:07.052Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-narrino-excelso-special.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:07.557Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-narrino-excelso-special.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:08.063Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-narrino-microlot-bibiana-mena-2019-20100g%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC",
+      "status": 200,
+      "at": "2026-10-25T09:21:08.566Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-narrino-microlot-bibiana-mena-2019-20100g%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:09.070Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/colombia-narrino-microlot-bibiana-mena-2019-20100g%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:09.575Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/el-salvador-cafenor-2020-21",
+      "status": 200,
+      "at": "2026-10-25T09:21:10.079Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/el-salvador-cafenor-2020-21.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:10.584Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/el-salvador-cafenor-2020-21.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:11.088Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/sumatra-mandheling",
+      "status": 200,
+      "at": "2026-10-25T09:21:11.592Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/sumatra-mandheling.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:12.098Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/sumatra-mandheling.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:12.602Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/2019-french-blend",
+      "status": 200,
+      "at": "2026-10-25T09:21:13.106Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/2019-french-blend.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:13.611Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/2019-french-blend.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:14.115Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/guatemala-shb-genuine-antigua-jasmine",
+      "status": 200,
+      "at": "2026-10-25T09:21:14.618Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/guatemala-shb-genuine-antigua-jasmine.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:15.122Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/guatemala-shb-genuine-antigua-jasmine.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:15.626Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/ethiopia-yirgacheffe-g1-natural",
+      "status": 200,
+      "at": "2026-10-25T09:21:16.133Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/ethiopia-yirgacheffe-g1-natural.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:16.638Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/ethiopia-yirgacheffe-g1-natural.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:17.144Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-blend",
+      "status": 200,
+      "at": "2026-10-25T09:21:17.648Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-blend.json",
+      "status": 200,
+      "at": "2026-10-25T09:21:18.152Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://regolith-coffee.com/products/fullcity-blend.js",
+      "status": 200,
+      "at": "2026-10-25T09:21:18.656Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true
+}

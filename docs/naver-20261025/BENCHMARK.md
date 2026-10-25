@@ -8,7 +8,9 @@ successfully saved coffee are reported separately.
 The independent source-catalog baseline at 07:55:03 UTC found zero products
 across the initial 19 owners. Toyosaki and Regolith were subsequently added
 with insert-only identity checks and readback. The expanded 08:57:26 UTC
-readback confirms 21 roaster owners and zero coffee products. Live merchant
+readback confirms 21 roaster owners and zero coffee products. A further
+09:25:09 UTC readback after Regolith/Toyosaki extraction confirms the same.
+Live merchant
 GET-only inspection verifies the following:
 
 | Merchant | Coffee products extracted | Native variants verified | Production products before | After actual crawl | Current blocker |
@@ -21,12 +23,14 @@ GET-only inspection verifies the following:
 | Ariowl Coffee | 23 | 84 | 0 | Not attempted | API-credit and distinct same-weight SKU save gates remain |
 | COFFEE ROASTERY 101 | 13 | 61 | 0 | Not attempted | Same gates; subscriptions/equipment excluded, source bag weights retained |
 | OTC COFFEE | 6 verified, 2 held | Product-only; SKU inventory incomplete | 0 | Not attempted | Both DECAF sizes have conflicting stock evidence; merchant inspection correctly remains failed |
+| Regolith Coffee | 27 | 111 | 0 | Not attempted | API-credit and distinct same-weight SKU save gates remain; only reviewed one-time coffee scope included |
+| Toyosaki Coffee Factory | 22 | 22 | 0 | Not attempted | Source inspection passes; actual production pipeline awaits API credits and separate runtime validation |
 | Brewing Ceremony | 0 | Not observed | 0 | 0 | Public HTTP 429; Safari security CAPTCHA not completed |
 
-Measured extraction: **122 products from eight sites**, including 413 exact native
-Shopify variants, 48 BASE product-only offers and six OTC product-only offers.
+Measured extraction: **171 products from ten sites**, including 524 exact native
+Shopify variants, 22 exact Wix variants, 48 BASE product-only offers and six OTC product-only offers.
 OTC retains two page errors and is not counted as a wholly successful merchant.
-This is not a 122-coffee
+This is not a 171-coffee
 ingestion gain. Newly saved products from the real attempts: **0**. Newly
 successful complete merchant ingests: **0**. The 21 index additions remain a
 separate, verified outcome.
@@ -79,13 +83,14 @@ These remain discovery/reachability results, not successful ingestion claims:
 | Coffee Aura | Official STORES shop returns HTTP 403 |
 | Reshock Coffee | Shopline, not Shopify; its products.json route returns HTML; dedicated native extraction still needed |
 | Essentia Factory | Cafe24 homepage reachable; reviewed coffee category and exact options still needed |
-| Toyosaki Coffee Factory | Own roasting verified; official Wix shop reachable; full product extraction still needed |
-| Regolith Coffee | Own roasting verified; official Shopify catalog reachable; full product extraction still needed |
 
 The additional GET-only results, exact source scopes, own-roasting evidence,
 deduplication and stock holds are documented in
 [the follow-up](../ASIAN_STOREFRONT_FOLLOWUP.md). Its runtime is not activated in
-the scheduled Mac checkout. Latest full regression result: 568 passed tests.
+the scheduled Mac checkout. Latest full regression result: 575 passed tests.
+`post-new-store-readback.json` records the fresh 21-owner/zero-product source
+readback. Each merchant's `*-extraction.json` records actual GET requests,
+product and variant counts, errors and zero production writes/model calls.
 
 ## Next Gates
 

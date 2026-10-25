@@ -201,8 +201,13 @@ provides six verified one-time house-capsule offers, while both DECAF sizes
 remain held for contradictory stock. Its imported brands and coffee machine
 are outside this explicitly partial house-coffee scope.
 
-The total is 122 source-verified products, not 122 newly saved coffees. Latest
+Regolith and Toyosaki subsequently pass live GET-only inspection for another
+49 products / 133 exact native variants. Regolith's scope excludes
+subscriptions, equipment and unreviewed kits; Toyosaki uses complete published
+Wix data and primary net-content labels, without inventing customization SKUs.
+
+The total is 171 source-verified products, not 171 newly saved coffees. Latest
 readback still shows zero catalog products for these 21 owners. The full suite
-now passes 568 tests. No scheduled-source rollout, schema change or further
+now passes 575 tests. No scheduled-source rollout, schema change or further
 model/production crawl was performed. The new separate Instagram session is
 waiting for its own access approval and has not been treated as terminal.

@@ -1,0 +1,1301 @@
+{
+  "name": "Toyosaki Coffee Factory",
+  "checked_at": "2026-10-25T09:21:43.009Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "68b94ad4-dba5-5674-a471-7cb5d70fde0d"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%82%B1%E3%83%8B%E3%82%A2-150g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%83%A2%E3%82%AB%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81-150g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%83%A2%E3%82%AB%E3%83%9E%E3%82%BF%E3%83%AA-150g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%83%9E%E3%83%B3%E3%83%87%E3%83%AA%E3%83%B3-%E4%B8%AD%E6%B7%B1%E7%85%8E%E3%82%8A-150g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E7%B4%8415%E6%9D%AF-%E7%A7%8B%E3%81%AE%E3%83%96%E3%83%AC%E3%83%B3%E3%83%892026-150g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-%E5%90%84150g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E9%80%81%E6%96%99%E8%BE%BC-%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B03%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2-15%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B03%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2-50%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B93%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-300%EF%BD%87-100g-3%E8%A2%8B",
+      "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%EF%BC%95%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-500%EF%BD%87-100g-5%E8%A2%8B-%E3%81%AE%E8%A4%87%E8%A3%BD",
+      "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B98%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-800g-100g-8%E8%A2%8B",
+      "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%A1%E3%82%85%E3%82%89%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-mild",
+      "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%A1%E3%82%85-%E3%81%B0-%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-strong",
+      "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%98%E3%82%87-%E3%81%A8-%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-rich",
+      "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%82%B9%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88-%E5%90%84200g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B024%E5%80%8B-%E3%82%AE%E3%83%95%E3%83%88",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%82%AE%E3%83%95%E3%83%88-18%E5%80%8B%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B0%E3%82%BB%E3%83%83%E3%83%88-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9",
+      "https://www.toyosakicoffeefactory.com/product-page/%E5%86%AC%E3%81%AE%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-200g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%81%A8%E3%82%88%E3%81%95%E3%81%8D%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-200g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E7%99%BD-%E9%BB%92",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-%E9%BB%92-kuru-150g",
+      "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-%E7%99%BD-shiru-150g"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "https://www.toyosakicoffeefactory.com/shop?page=2",
+        "category_id": "1f816fb0-426c-4db5-b99a-c9c49c8265f6",
+        "category_name": "All Products",
+        "products": 22,
+        "total": 22,
+        "reviewed_scope": true,
+        "excluded_unreviewed_products": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%B1%E3%83%8B%E3%82%A2-150g",
+      "title": "ケニア 150g",
+      "source_product_id": "3879a6ce-e254-4aa3-b080-fcb4c1b0bf3a",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "cf531093-af8a-4e26-854e-897a97427e4c",
+          "title": "ケニア 150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "980",
+            "amount": "980",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 980,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%A2%E3%82%AB%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81-150g",
+      "title": "モカフレンチ 150g",
+      "source_product_id": "2c712281-64be-47bc-bc99-fa5cba12add0",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "81e55cda-00ee-48d5-8353-2a9c96c20bde",
+          "title": "モカフレンチ 150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "750",
+            "amount": "750",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 750,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%A2%E3%82%AB%E3%83%9E%E3%82%BF%E3%83%AA-150g",
+      "title": "モカマタリ 150g",
+      "source_product_id": "be9f26f5-0a90-4afc-b0f7-42155da37dda",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "72b5acd1-c52f-41c4-ac54-8006d23c42d3",
+          "title": "モカマタリ 150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "1020",
+            "amount": "1020",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1020,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%9E%E3%83%B3%E3%83%87%E3%83%AA%E3%83%B3-%E4%B8%AD%E6%B7%B1%E7%85%8E%E3%82%8A-150g",
+      "title": "マンデリン 中深煎り 150g",
+      "source_product_id": "bb578199-e9b0-489e-98d8-e80ca0702c52",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "82dad95f-a5c7-4ab8-add2-45f3741df872",
+          "title": "マンデリン 中深煎り 150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "830",
+            "amount": "830",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 830,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%B4%8415%E6%9D%AF-%E7%A7%8B%E3%81%AE%E3%83%96%E3%83%AC%E3%83%B3%E3%83%892026-150g",
+      "title": "《約15杯》秋のブレンド2026　150g",
+      "source_product_id": "32e53e82-1f59-ee8e-b14c-005fab2cde08",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "9ed3db44-af98-42ed-88b4-7352166c4815",
+          "title": "《約15杯》秋のブレンド2026　150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "890",
+            "amount": "890",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 890,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-%E5%90%84150g",
+      "title": "琉球珊瑚珈琲3種飲み比べセット450ｇ（各150g）",
+      "source_product_id": "df19c1f7-07d8-a265-42f8-e8dfa824cc6e",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "17e0e48e-3303-462e-9b60-679d08091bf6",
+          "title": "琉球珊瑚珈琲3種飲み比べセット450ｇ（各150g）",
+          "weight_g": 450,
+          "money": {
+            "raw": "3000",
+            "amount": "3000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%80%81%E6%96%99%E8%BE%BC-%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B03%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2-15%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "title": "《15杯分》ドリップバッグ3種飲み比べ  琉球珊瑚珈琲 15個セット",
+      "source_product_id": "5cf7bb54-3dca-2bb2-a62d-1a4b25d305e4",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "7a878b62-b40a-4380-af50-3ca6bd59f6d9",
+          "title": "《15杯分》ドリップバッグ3種飲み比べ  琉球珊瑚珈琲 15個セット",
+          "weight_g": 130,
+          "money": {
+            "raw": "2200",
+            "amount": "2200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B03%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2-50%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "title": "ドリップバッグ3種飲み比べ 琉球珊瑚珈琲 50個セット",
+      "source_product_id": "e9933b75-0b4d-7b8c-66ba-71b01b8f09a1",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "950afe1b-0fd8-46a2-b600-affb1b2c02cc",
+          "title": "ドリップバッグ3種飲み比べ 琉球珊瑚珈琲 50個セット",
+          "weight_g": 434,
+          "money": {
+            "raw": "6480",
+            "amount": "6480",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 6480,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B93%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-300%EF%BD%87-100g-3%E8%A2%8B",
+      "title": "選べる飲み比べ3点セット　300ｇ(100g×3袋)",
+      "source_product_id": "140e1701-d2b8-f317-8e9c-386c6c1bd5ca",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "fa6a54c1-4461-465d-ac05-403c4a545314",
+          "title": "選べる飲み比べ3点セット　300ｇ(100g×3袋)",
+          "weight_g": 300,
+          "money": {
+            "raw": "1730",
+            "amount": "1730",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1730,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%EF%BC%95%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-500%EF%BD%87-100g-5%E8%A2%8B-%E3%81%AE%E8%A4%87%E8%A3%BD",
+      "title": "選べる飲み比べ５点セット　500ｇ(100g×5袋)",
+      "source_product_id": "97856795-9aae-094d-1a5d-2df00ce15d22",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "29345c3f-1896-4f1f-bb29-489d0a37e126",
+          "title": "選べる飲み比べ５点セット　500ｇ(100g×5袋)",
+          "weight_g": 500,
+          "money": {
+            "raw": "2880",
+            "amount": "2880",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2880,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B98%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-800g-100g-8%E8%A2%8B",
+      "title": "選べる飲み比べ8点セット　800g（100g×8袋）",
+      "source_product_id": "fc9ed7d9-6b8c-97ee-3afe-a852fbb1708f",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "4edb6c58-7852-4484-bc3c-63b9c651dfd2",
+          "title": "選べる飲み比べ8点セット　800g（100g×8袋）",
+          "weight_g": 800,
+          "money": {
+            "raw": "4608",
+            "amount": "4608",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4608,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%A1%E3%82%85%E3%82%89%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-mild",
+      "title": "琉球珊瑚珈琲ーちゅらブレンド（Mild）150g",
+      "source_product_id": "9cd9b4b1-5084-76c2-6807-b798780726dc",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "30f8cbdf-1587-41be-8cfd-e46b5575e16e",
+          "title": "琉球珊瑚珈琲ーちゅらブレンド（Mild）150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "920",
+            "amount": "920",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 920,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%A1%E3%82%85-%E3%81%B0-%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-strong",
+      "title": "琉球珊瑚珈琲ーちゅ〜ば〜ブレンド（Strong）150g",
+      "source_product_id": "fc9f2640-11cf-b1b0-eb99-6d1a1c464e7b",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "78e20486-314a-481f-a908-27346e1f67aa",
+          "title": "琉球珊瑚珈琲ーちゅ〜ば〜ブレンド（Strong）150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "920",
+            "amount": "920",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 920,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%98%E3%82%87-%E3%81%A8-%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-rich",
+      "title": "琉球珊瑚珈琲ーじょ〜と〜ブレンド（Rich）150g",
+      "source_product_id": "c7c66e95-15cd-49b3-33a8-e295a4dd4f81",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "ced15b06-d08d-4c5f-b612-0043fcc131f0",
+          "title": "琉球珊瑚珈琲ーじょ〜と〜ブレンド（Rich）150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "1200",
+            "amount": "1200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%82%B9%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88-%E5%90%84200g",
+      "title": "【ギフト】琉球珊瑚珈琲飲み比べセット　600ｇ（各200ｇ×3袋）",
+      "source_product_id": "4ba68b68-cec1-c364-d209-3be63fd561c5",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "32f32a54-47b5-42db-a96e-bc2990683748",
+          "title": "【ギフト】琉球珊瑚珈琲飲み比べセット　600ｇ（各200ｇ×3袋）",
+          "weight_g": 600,
+          "money": {
+            "raw": "3900",
+            "amount": "3900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B024%E5%80%8B-%E3%82%AE%E3%83%95%E3%83%88",
+      "title": "【ギフト】24個ドリップバッグセット３種類×各８枚 琉球珊瑚珈琲",
+      "source_product_id": "972937bf-8ee2-0e1f-b456-84aa1528503d",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "9f8749c1-f9c7-4fe4-876b-b86691abba7d",
+          "title": "【ギフト】24個ドリップバッグセット３種類×各８枚 琉球珊瑚珈琲",
+          "weight_g": 208,
+          "money": {
+            "raw": "3520",
+            "amount": "3520",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3520,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%AE%E3%83%95%E3%83%88-18%E5%80%8B%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B0%E3%82%BB%E3%83%83%E3%83%88-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9",
+      "title": "18個ドリップバッグセット 琉球珊瑚珈琲3種飲み比べ 3種×各６個",
+      "source_product_id": "97e4a2e4-5202-3571-f021-b826e4b3355b",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "5c475b03-280d-4921-99a4-1f6953c65622",
+          "title": "18個ドリップバッグセット 琉球珊瑚珈琲3種飲み比べ 3種×各６個",
+          "weight_g": 156,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E5%86%AC%E3%81%AE%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-200g",
+      "title": "まえじまブレンド　150g",
+      "source_product_id": "f0359dd5-5310-b0aa-a4c5-e8af50260578",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "8d531f66-43f5-425b-a22c-b2b31595ccfc",
+          "title": "まえじまブレンド　150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "830",
+            "amount": "830",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 830,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%81%A8%E3%82%88%E3%81%95%E3%81%8D%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-200g",
+      "title": "とよさきブレンド　150g",
+      "source_product_id": "6c86fc30-51b8-0e52-681a-196ee6b4d5f9",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "10471f5a-25ee-4071-a61c-a0081f909c7d",
+          "title": "とよさきブレンド　150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "770",
+            "amount": "770",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 770,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E7%99%BD-%E9%BB%92",
+      "title": "アイスブレンド飲み比べセット【白 Shiru / 黒 Kuru】300g（各150g）",
+      "source_product_id": "78a1d18c-ec67-a942-b7ce-609466ec7d06",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6c579935-06ba-4118-bd51-b9b9e982db7b",
+          "title": "アイスブレンド飲み比べセット【白 Shiru / 黒 Kuru】300g（各150g）",
+          "weight_g": 300,
+          "money": {
+            "raw": "1540",
+            "amount": "1540",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1540,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-%E9%BB%92-kuru-150g",
+      "title": "アイスブレンド【黒 Kuru】150g",
+      "source_product_id": "12260eb9-c7cd-110a-3258-e71d40d1da33",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "fe912e09-a707-45cc-9b72-5c92c2259072",
+          "title": "アイスブレンド【黒 Kuru】150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "770",
+            "amount": "770",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 770,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-%E7%99%BD-shiru-150g",
+      "title": "アイスブレンド【白 Shiru 】150g",
+      "source_product_id": "e87556c0-2161-949e-996c-bfd0b301dca4",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "b42c9885-0f6b-4e6c-98b5-082ffe182deb",
+          "title": "アイスブレンド【白 Shiru 】150g",
+          "weight_g": 150,
+          "money": {
+            "raw": "770",
+            "amount": "770",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 770,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/shop?page=2",
+      "status": 200,
+      "at": "2026-10-25T09:21:31.611Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%B1%E3%83%8B%E3%82%A2-150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:32.115Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%A2%E3%82%AB%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81-150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:32.620Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%A2%E3%82%AB%E3%83%9E%E3%82%BF%E3%83%AA-150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:33.124Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%9E%E3%83%B3%E3%83%87%E3%83%AA%E3%83%B3-%E4%B8%AD%E6%B7%B1%E7%85%8E%E3%82%8A-150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:33.627Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%B4%8415%E6%9D%AF-%E7%A7%8B%E3%81%AE%E3%83%96%E3%83%AC%E3%83%B3%E3%83%892026-150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:34.132Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-%E5%90%84150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:34.635Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%80%81%E6%96%99%E8%BE%BC-%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B03%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2-15%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "status": 200,
+      "at": "2026-10-25T09:21:35.140Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B03%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2-50%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88",
+      "status": 200,
+      "at": "2026-10-25T09:21:35.645Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B93%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-300%EF%BD%87-100g-3%E8%A2%8B",
+      "status": 200,
+      "at": "2026-10-25T09:21:36.149Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%EF%BC%95%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-500%EF%BD%87-100g-5%E8%A2%8B-%E3%81%AE%E8%A4%87%E8%A3%BD",
+      "status": 200,
+      "at": "2026-10-25T09:21:36.653Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E9%81%B8%E3%81%B9%E3%82%8B%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B98%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88-800g-100g-8%E8%A2%8B",
+      "status": 200,
+      "at": "2026-10-25T09:21:37.158Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%A1%E3%82%85%E3%82%89%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-mild",
+      "status": 200,
+      "at": "2026-10-25T09:21:37.661Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%A1%E3%82%85-%E3%81%B0-%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-strong",
+      "status": 200,
+      "at": "2026-10-25T09:21:38.165Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%BC%E3%81%98%E3%82%87-%E3%81%A8-%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-rich",
+      "status": 200,
+      "at": "2026-10-25T09:21:38.669Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%82%B9%E3%82%AE%E3%83%95%E3%83%88%E3%82%BB%E3%83%83%E3%83%88-%E5%90%84200g",
+      "status": 200,
+      "at": "2026-10-25T09:21:39.174Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B2%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B024%E5%80%8B-%E3%82%AE%E3%83%95%E3%83%88",
+      "status": 200,
+      "at": "2026-10-25T09:21:39.678Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%AE%E3%83%95%E3%83%88-18%E5%80%8B%E3%83%89%E3%83%AA%E3%83%83%E3%83%97%E3%83%90%E3%83%83%E3%82%B0%E3%82%BB%E3%83%83%E3%83%88-%E7%90%89%E7%90%83%E7%8F%8A%E7%91%9A%E7%8F%88%E7%90%B23%E7%A8%AE%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9",
+      "status": 200,
+      "at": "2026-10-25T09:21:40.181Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E5%86%AC%E3%81%AE%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-200g",
+      "status": 200,
+      "at": "2026-10-25T09:21:40.685Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%81%A8%E3%82%88%E3%81%95%E3%81%8D%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-200g",
+      "status": 200,
+      "at": "2026-10-25T09:21:41.187Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E7%99%BD-%E9%BB%92",
+      "status": 200,
+      "at": "2026-10-25T09:21:41.691Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-%E9%BB%92-kuru-150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:42.195Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.toyosakicoffeefactory.com/product-page/%E3%82%A2%E3%82%A4%E3%82%B9%E3%83%96%E3%83%AC%E3%83%B3%E3%83%89-%E7%99%BD-shiru-150g",
+      "status": 200,
+      "at": "2026-10-25T09:21:42.699Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true
+}
