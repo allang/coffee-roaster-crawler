@@ -1,0 +1,369 @@
+{
+  "checked_at": "2026-10-25T11:09:11.379Z",
+  "source_capture_checked_at": "2026-10-25T11:03:04.720Z",
+  "source_capture_sha256": "91782de22e992bef3535e04f2d456b2994336449cceb18b4eff5191bd1ba13c2",
+  "mode": "browser-capture-evidence-inspection-not-crawler-ingest",
+  "entity_id": "31ebaf16-7beb-4b1f-b6ba-3d316d3f4e62",
+  "merchant_id": "67a992c0f3d6dd02082d2e88",
+  "category": "https://auracoffee.stores.jp/?category_id=67fa483ec823279e7f4db66b",
+  "products": [
+    {
+      "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+      "source_product_id": "67a9967b7ae10400da93f5da",
+      "title": "アウラブレンド",
+      "checked_at": "2026-10-25T11:02:21.714Z",
+      "variants": [
+        {
+          "id": "68e1ebaf3284dc8e21628f79",
+          "title": "サンプル 20g",
+          "price": "200",
+          "currency": "JPY",
+          "minor_units": 200,
+          "weight_g": 20,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "67a9967b7ae10400da93f5db",
+          "title": "100g",
+          "price": "950",
+          "currency": "JPY",
+          "minor_units": 950,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6811115685f634f9b3cc5eb0",
+          "title": "200g",
+          "price": "1650",
+          "currency": "JPY",
+          "minor_units": 1650,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6852013760a81b02527ebc30",
+          "title": "500g",
+          "price": "3970",
+          "currency": "JPY",
+          "minor_units": 3970,
+          "weight_g": 500,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6837b678fe1d6b9396396cee",
+          "title": "1kg",
+          "price": "6550",
+          "currency": "JPY",
+          "minor_units": 6550,
+          "weight_g": 1000,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "69c92849b2c71d6767957558",
+          "title": "2.5kg",
+          "price": "15000",
+          "currency": "JPY",
+          "minor_units": 15000,
+          "weight_g": 2500,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6837b677fe1d6b9396396cec",
+          "title": "粉100g",
+          "price": "950",
+          "currency": "JPY",
+          "minor_units": 950,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6837b678fe1d6b9396396ced",
+          "title": "粉200g",
+          "price": "1650",
+          "currency": "JPY",
+          "minor_units": 1650,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        }
+      ]
+    },
+    {
+      "url": "https://auracoffee.stores.jp/items/6811a5ef6270d00054369af0",
+      "source_product_id": "6811a5ef6270d00054369af0",
+      "title": "チアパス カフェインレス",
+      "checked_at": "2026-10-25T11:02:31.572Z",
+      "variants": [
+        {
+          "id": "68e21283ba8c3d37c05faf12",
+          "title": "サンプル 20g",
+          "price": "200",
+          "currency": "JPY",
+          "minor_units": 200,
+          "weight_g": 20,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6811a5ef6270d00054369af1",
+          "title": "100g",
+          "price": "1220",
+          "currency": "JPY",
+          "minor_units": 1220,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6811a5ef6270d00054369af2",
+          "title": "200g",
+          "price": "2120",
+          "currency": "JPY",
+          "minor_units": 2120,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "68520267d9c7d03a62809bf3",
+          "title": "500g",
+          "price": "5160",
+          "currency": "JPY",
+          "minor_units": 5160,
+          "weight_g": 500,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6851f29860a81b00487eba10",
+          "title": "1kg",
+          "price": "8538",
+          "currency": "JPY",
+          "minor_units": 8538,
+          "weight_g": 1000,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6851f2ed60a81b12937eba1e",
+          "title": "粉100ｇ",
+          "price": "1220",
+          "currency": "JPY",
+          "minor_units": 1220,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        },
+        {
+          "id": "6851f2ed60a81b12937eba1f",
+          "title": "粉200g",
+          "price": "2120",
+          "currency": "JPY",
+          "minor_units": 2120,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9999
+        }
+      ]
+    },
+    {
+      "url": "https://auracoffee.stores.jp/items/69aa891c827c0262a0446036",
+      "source_product_id": "69aa891c827c0262a0446036",
+      "title": "マンデリン ポルン アルフィナー",
+      "checked_at": "2026-10-25T11:02:37.954Z",
+      "variants": [
+        {
+          "id": "69aa891d827c0262a0446037",
+          "title": "サンプル 20g",
+          "price": "200",
+          "currency": "JPY",
+          "minor_units": 200,
+          "weight_g": 20,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 7
+        },
+        {
+          "id": "69aa891d827c0262a0446038",
+          "title": "100g",
+          "price": "1190",
+          "currency": "JPY",
+          "minor_units": 1190,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 6
+        },
+        {
+          "id": "69aa891d827c0262a0446039",
+          "title": "200g",
+          "price": "2090",
+          "currency": "JPY",
+          "minor_units": 2090,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 7
+        },
+        {
+          "id": "69aa891d827c0262a044603a",
+          "title": "500g",
+          "price": "5070",
+          "currency": "JPY",
+          "minor_units": 5070,
+          "weight_g": 500,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 10
+        },
+        {
+          "id": "69aa891d827c0262a044603b",
+          "title": "1kg",
+          "price": "8380",
+          "currency": "JPY",
+          "minor_units": 8380,
+          "weight_g": 1000,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 3
+        },
+        {
+          "id": "69aa891d827c0262a044603c",
+          "title": "粉100g",
+          "price": "1190",
+          "currency": "JPY",
+          "minor_units": 1190,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 10
+        },
+        {
+          "id": "69aa891d827c0262a044603d",
+          "title": "粉200g",
+          "price": "2090",
+          "currency": "JPY",
+          "minor_units": 2090,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 5
+        }
+      ]
+    },
+    {
+      "url": "https://auracoffee.stores.jp/items/6ab1d3dd72b6d5e689ed3e84",
+      "source_product_id": "6ab1d3dd72b6d5e689ed3e84",
+      "title": "ニグセ・ゲメダ チャルチョ ナチュラル",
+      "checked_at": "2026-10-25T11:02:45.495Z",
+      "variants": [
+        {
+          "id": "6ab1d3dd72b6d5e689ed3e85",
+          "title": "サンプル 20g",
+          "price": "200",
+          "currency": "JPY",
+          "minor_units": 200,
+          "weight_g": 20,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 7
+        },
+        {
+          "id": "6ab1d3dd72b6d5e689ed3e86",
+          "title": "100g",
+          "price": "2050",
+          "currency": "JPY",
+          "minor_units": 2050,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 19
+        },
+        {
+          "id": "6ab1d3dd72b6d5e689ed3e87",
+          "title": "200g",
+          "price": "3640",
+          "currency": "JPY",
+          "minor_units": 3640,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 9
+        },
+        {
+          "id": "6ab1d3dd72b6d5e689ed3e88",
+          "title": "500g",
+          "price": "8950",
+          "currency": "JPY",
+          "minor_units": 8950,
+          "weight_g": 500,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 10
+        },
+        {
+          "id": "6ab1d3dd72b6d5e689ed3e89",
+          "title": "1kg",
+          "price": "14850",
+          "currency": "JPY",
+          "minor_units": 14850,
+          "weight_g": 1000,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 4
+        },
+        {
+          "id": "6ab1d3dd72b6d5e689ed3e8a",
+          "title": "粉100g",
+          "price": "2050",
+          "currency": "JPY",
+          "minor_units": 2050,
+          "weight_g": 100,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 10
+        },
+        {
+          "id": "6ab1d3dd72b6d5e689ed3e8b",
+          "title": "粉200g",
+          "price": "3640",
+          "currency": "JPY",
+          "minor_units": 3640,
+          "weight_g": 200,
+          "state": "in_stock",
+          "stock_evidence": "same-native-SKU enabled primary purchase control",
+          "quantity_disclosed": 5
+        }
+      ]
+    }
+  ],
+  "product_count": 4,
+  "native_variant_count": 29,
+  "automated_http_supported": false,
+  "production_ingest_verified": false,
+  "inventory_authorizes_global_absence": false,
+  "production_writes": 0,
+  "ai_calls": 0
+}

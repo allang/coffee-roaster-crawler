@@ -269,8 +269,16 @@ as Shopify. Total source-verified extraction is now 348 products across fifteen
 sites, with 1,614 exact native variants plus 85 product-only offers. OTC and
 Reshock retain explicit error holds, not whole-merchant passing claims. The fresh
 10:43:07 UTC catalog readback still finds zero products across the 21 owners.
-The full regression suite passes 614 tests; none of those tests proves a
+The full regression suite passes 621 tests; none of those tests proves a
 completed production crawl.
+
+The later [public-access recheck](naver-20261025/PUBLIC_ACCESS_RECHECK.md)
+captures four current Aura products with 29 native options in the normal
+anonymous browser. Its HTTP and isolated-browser routes remain blocked, so
+neither an automated Aura profile nor a browser dependency is shipped or
+counted as a working fix. Single Origin's Shopee page explicitly requires
+sign-in. 5F's reachable equipment homepage still needs a verified coffee retail
+destination. The 11:07:50 UTC readback again confirms 21 owners and zero products.
 
 The completed Mac validation session is now archived. Discovery session
 `01a1721c-8db9-77e0-b390-33b080a8a0dd` is still waiting for its access approval;

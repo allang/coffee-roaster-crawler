@@ -1,0 +1,138 @@
+{
+  "checked_at": "2026-10-25T11:07:49.526Z",
+  "mode": "remaining-public-access-route-audit",
+  "aura": {
+    "target": "https://auracoffee.stores.jp/",
+    "http_and_isolated_browser_attempts": [
+      {
+        "mode": "standard_http",
+        "checked_at": "2026-10-25T10:50:31.300Z",
+        "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+        "status": 403,
+        "success": false,
+        "error": "HTTP 403"
+      },
+      {
+        "mode": "identified_html_headers",
+        "checked_at": "2026-10-25T10:53:30.133Z",
+        "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+        "status": 403,
+        "success": false,
+        "error": "HTTP 403"
+      },
+      {
+        "mode": "isolated_browser_default",
+        "checked_at": "2026-10-25T10:57:17.210Z",
+        "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+        "status": 403,
+        "success": false,
+        "error": "Browser HTTP 403; redirects are not followed",
+        "requests": [
+          {
+            "method": "GET",
+            "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+            "status": 403,
+            "transport": "chromium_document",
+            "at": "2026-10-25T10:57:16.898Z"
+          }
+        ],
+        "blocked_requests": []
+      },
+      {
+        "mode": "isolated_browser_identified",
+        "checked_at": "2026-10-25T11:00:11.374Z",
+        "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+        "status": 403,
+        "success": false,
+        "error": "Browser HTTP 403; redirects are not followed",
+        "requests": [
+          {
+            "method": "GET",
+            "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+            "status": 403,
+            "transport": "chromium_document",
+            "at": "2026-10-25T11:00:11.135Z"
+          }
+        ],
+        "blocked_requests": []
+      }
+    ],
+    "normal_browser": {
+      "mode": "anonymous-in-app-browser",
+      "product_count": 4,
+      "native_options": 29,
+      "category": "https://auracoffee.stores.jp/?category_id=67fa483ec823279e7f4db66b",
+      "evidence": "aura-browser-source-evidence.json",
+      "automated_http_supported": false,
+      "production_ingest_verified": false
+    },
+    "experimental_browser_transport_shipped": false,
+    "dependency_changes_shipped": false
+  },
+  "single_origin": {
+    "target": "https://shopee.tw/single_origin_espresso_roast",
+    "mode": "anonymous-in-app-browser",
+    "final_path": "https://shopee.tw/verify/traffic/error",
+    "is_logged_in": false,
+    "visible_heading": "請登入",
+    "visible_reason": "看起來您尚未登入。請登入以繼續，或返回首頁。",
+    "classification": "login_required",
+    "product_data_captured": false,
+    "login_attempted": false
+  },
+  "five_f": {
+    "checked_at": "2026-10-25T11:05:39.626Z",
+    "url": "https://www.ehirix.com/",
+    "success": true,
+    "status": 200,
+    "source": {
+      "title": "EHIRIX",
+      "links": [
+        {
+          "text": "Explore HX",
+          "url": "https://www.ehirix.com/#hx"
+        },
+        {
+          "text": "Contact EHIRIX",
+          "url": "https://www.ehirix.com/#contact"
+        }
+      ],
+      "roastery_finding": "Official equipment homepage identifies 5F Coffee Lab as the production roastery behind EHIRIX; no retail coffee destination was found among the observed homepage links."
+    },
+    "requests": [
+      {
+        "method": "GET",
+        "url": "https://www.ehirix.com/",
+        "status": 200,
+        "at": "2026-10-25T11:05:38.544Z",
+        "attempt": 1,
+        "retry": 0
+      }
+    ],
+    "production_writes": 0,
+    "ai_calls": 0,
+    "classification": "working_equipment_homepage_not_verified_retail_coffee_catalog",
+    "retail_destination_still_needed": true
+  },
+  "naver": {
+    "target": "https://smartstore.naver.com/brewingceremony",
+    "official_supplier_evidence": "https://coffeemeup.kr/1665",
+    "public_search_queries": [
+      "site:smartstore.naver.com/brewingceremony/products",
+      "\"브루잉세레모니\" 원두 구매 온라인",
+      "\"brewingceremony\" 원두 스마트스토어"
+    ],
+    "usable_product_urls_discovered": 0,
+    "search_is_not_complete_inventory_proof": true,
+    "security_challenge_completed": false
+  },
+  "mac_mini": {
+    "target": "allan@10.0.0.232",
+    "ssh_result": "connection_timed_out",
+    "runtime_state": "not_revalidated",
+    "production_source_changed": false,
+    "scheduler_changed": false
+  },
+  "production_writes": 0,
+  "ai_calls": 0
+}

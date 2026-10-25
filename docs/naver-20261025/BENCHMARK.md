@@ -84,14 +84,14 @@ These remain discovery/reachability results, not successful ingestion claims:
 | --- | --- |
 | Kingkongdrip | Naver HTTP 429; product data unavailable |
 | New Wave Coffee Roasters | Official homepage works and links its Naver store; real retail catalog access unvalidated |
-| Single Origin espresso & roast | Dead old domain replaced with current official Shopee shop; catalog extraction unvalidated |
+| Single Origin espresso & roast | Official Shopee shop now verified to redirect the anonymous browser to sign-in; automated catalog extraction remains unvalidated |
 | 5F Coffee Lab | Official equipment-oriented homepage reachable; coffee retail destination still needed |
-| Coffee Aura | Official STORES shop returns HTTP 403 |
+| Coffee Aura | Normal browser exposes 4 coffees / 29 native options; HTTP and isolated browser probes return 403; no automated access fix shipped |
 
 The additional GET-only results, exact source scopes, own-roasting evidence,
 deduplication and stock holds are documented in
 [the follow-up](../ASIAN_STOREFRONT_FOLLOWUP.md). Its runtime is not activated in
-the scheduled Mac checkout. Latest full regression result: 614 passed tests.
+the scheduled Mac checkout. Latest full regression result: 621 passed tests.
 `post-new-store-readback.json` records the fresh 21-owner/zero-product source
 readback. `post-essentia-cru-readback.json` confirms that result again at
 09:53:01 UTC. Each merchant's `*-extraction.json` records actual GET requests,
@@ -104,6 +104,12 @@ offers and two held pages. Its overall `passed` remains false.
 `post-reshock-readback.json` confirms the 21-owner/zero-product result at
 10:43:07 UTC. Earlier Shopline source-discovery-only evidence is retained as
 a dated observation, not a passing extraction result.
+
+The [public access recheck](PUBLIC_ACCESS_RECHECK.md) records Aura's normal-browser
+source evidence, Single Origin's sign-in gate, 5F's equipment-only observed
+homepage links and the unsuccessful direct Naver-product search. These are not
+new automated extraction passes. The fresh 11:07:50 UTC readback in
+`post-access-recheck-readback.json` still finds 21 owners and zero products.
 
 ## Next Gates
 

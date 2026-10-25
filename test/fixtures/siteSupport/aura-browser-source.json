@@ -1,0 +1,664 @@
+{
+  "checked_at": "2026-10-25T11:03:04.720Z",
+  "mode": "public-browser-dom-capture-not-cli-ingestion",
+  "category": {
+    "heading": [
+      "",
+      "CATEGORY 珈琲豆"
+    ],
+    "links": [
+      {
+        "text": "{\n      \"@context\": \"http://schema.org\",\n      \"@type\": \"ImageObject\",\n      \"contentUrl\": \"https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/production/67a992c0f3d6dd02082d2e88/d0634c1e-3d62-46ed-824e-8b223659e2d2/fit=cover,w=460,h=460\",\n      \"name\": \"ニグセ・ゲメダ チャルチョ ナチュラル\"\n    }\n   ニグセ・ゲメダ チャルチョ ナチュラル \n                            ¥200 〜 ¥14,850\n                            \n                    new",
+        "url": "https://auracoffee.stores.jp/items/6ab1d3dd72b6d5e689ed3e84"
+      },
+      {
+        "text": "{\n      \"@context\": \"http://schema.org\",\n      \"@type\": \"ImageObject\",\n      \"contentUrl\": \"https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/67a992c0f3d6dd02082d2e88/af2f8396ed52acf3288f.jpeg/fit=cover,w=460,h=460\",\n      \"name\": \"マンデリン ポルン アルフィナー\"\n    }\n   マンデリン ポルン アルフィナー \n                            ¥200 〜 ¥8,380",
+        "url": "https://auracoffee.stores.jp/items/69aa891c827c0262a0446036"
+      },
+      {
+        "text": "{\n      \"@context\": \"http://schema.org\",\n      \"@type\": \"ImageObject\",\n      \"contentUrl\": \"https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/67a992c0f3d6dd02082d2e88/a74874951293887c2048.png/fit=cover,w=460,h=460\",\n      \"name\": \"アウラブレンド\"\n    }\n   アウラブレンド \n                            ¥200 〜 ¥15,000",
+        "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da"
+      },
+      {
+        "text": "{\n      \"@context\": \"http://schema.org\",\n      \"@type\": \"ImageObject\",\n      \"contentUrl\": \"https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/67a992c0f3d6dd02082d2e88/2d35403cf419876c1c25.png/fit=cover,w=460,h=460\",\n      \"name\": \"チアパス カフェインレス\"\n    }\n   チアパス カフェインレス \n                            ¥200 〜 ¥8,538",
+        "url": "https://auracoffee.stores.jp/items/6811a5ef6270d00054369af0"
+      }
+    ],
+    "pagination": [],
+    "url": "https://auracoffee.stores.jp/?category_id=67fa483ec823279e7f4db66b"
+  },
+  "products": [
+    {
+      "checked_at": "2026-10-25T11:02:21.714Z",
+      "mode": "anonymous-in-app-browser-dom-projection",
+      "merchant_ids": [
+        "67a992c0f3d6dd02082d2e88"
+      ],
+      "native_init": "          detailCtrl.itemId='67a9967b7ae10400da93f5da';\n          detailCtrl.itemName='アウラブレンド';\n          detailCtrl.isDigit=false;\n          detailCtrl.isSubscription=false;\n          detailCtrl.isTicket=false;\n          detailCtrl.isLoggedIn=false;\n          detailCtrl.addItemBrowsingHistory([{\"id\":\"68e1ebaf3284dc8e21628f79\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"67a9967b7ae10400da93f5db\",\"name\":\"100g\",\"salesPrice\":950,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6811115685f634f9b3cc5eb0\",\"name\":\"200g\",\"salesPrice\":1650,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6852013760a81b02527ebc30\",\"name\":\"500g\",\"salesPrice\":3970,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6837b678fe1d6b9396396cee\",\"name\":\"1kg\",\"salesPrice\":6550,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"69c92849b2c71d6767957558\",\"name\":\"2.5kg\",\"salesPrice\":15000,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6837b677fe1d6b9396396cec\",\"name\":\"粉100g\",\"salesPrice\":950,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6837b678fe1d6b9396396ced\",\"name\":\"粉200g\",\"salesPrice\":1650,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}]);",
+      "product_id": "67a9967b7ae10400da93f5da",
+      "rows": [
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"68e1ebaf3284dc8e21628f79\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥200",
+          "title": "サンプル 20g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"67a9967b7ae10400da93f5db\",\"name\":\"100g\",\"salesPrice\":950,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥950",
+          "title": "100g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6811115685f634f9b3cc5eb0\",\"name\":\"200g\",\"salesPrice\":1650,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥1,650",
+          "title": "200g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6852013760a81b02527ebc30\",\"name\":\"500g\",\"salesPrice\":3970,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥3,970",
+          "title": "500g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6837b678fe1d6b9396396cee\",\"name\":\"1kg\",\"salesPrice\":6550,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥6,550",
+          "title": "1kg"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69c92849b2c71d6767957558\",\"name\":\"2.5kg\",\"salesPrice\":15000,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥15,000",
+          "title": "2.5kg"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6837b677fe1d6b9396396cec\",\"name\":\"粉100g\",\"salesPrice\":950,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥950",
+          "title": "粉100g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6837b678fe1d6b9396396ced\",\"name\":\"粉200g\",\"salesPrice\":1650,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥1,650",
+          "title": "粉200g"
+        }
+      ],
+      "schemas": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "brand": {
+              "@type": "Brand",
+              "name": "珈琲アウラ"
+            },
+            "description": "お試し用に30gのサンプルもご用意しています。",
+            "image": [
+              "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/67a992c0f3d6dd02082d2e88/a74874951293887c2048.png/original"
+            ],
+            "mpn": "67a9967b7ae10400da93f5da",
+            "name": "アウラブレンド",
+            "offers": {
+              "@type": "AggregateOffer",
+              "availability": "https://schema.org/InStock",
+              "highPrice": 15000,
+              "lowPrice": 200,
+              "offerCount": 8,
+              "priceCurrency": "JPY",
+              "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da"
+            },
+            "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp",
+                "name": "HOME",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/?category_id=67fa483ec823279e7f4db66b",
+                "name": "珈琲豆",
+                "position": 2
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da",
+                "name": "アウラブレンド",
+                "position": 3
+              }
+            ]
+          }
+        ]
+      ],
+      "title": "アウラブレンド",
+      "url": "https://auracoffee.stores.jp/items/67a9967b7ae10400da93f5da"
+    },
+    {
+      "checked_at": "2026-10-25T11:02:31.572Z",
+      "mode": "anonymous-in-app-browser-dom-projection",
+      "merchant_ids": [
+        "67a992c0f3d6dd02082d2e88"
+      ],
+      "native_init": "          detailCtrl.itemId='6811a5ef6270d00054369af0';\n          detailCtrl.itemName='チアパス カフェインレス';\n          detailCtrl.isDigit=false;\n          detailCtrl.isSubscription=false;\n          detailCtrl.isTicket=false;\n          detailCtrl.isLoggedIn=false;\n          detailCtrl.addItemBrowsingHistory([{\"id\":\"68e21283ba8c3d37c05faf12\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6811a5ef6270d00054369af1\",\"name\":\"100g\",\"salesPrice\":1220,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6811a5ef6270d00054369af2\",\"name\":\"200g\",\"salesPrice\":2120,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"68520267d9c7d03a62809bf3\",\"name\":\"500g\",\"salesPrice\":5160,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6851f29860a81b00487eba10\",\"name\":\"1kg\",\"salesPrice\":8538,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6851f2ed60a81b12937eba1e\",\"name\":\"粉100ｇ\",\"salesPrice\":1220,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false},{\"id\":\"6851f2ed60a81b12937eba1f\",\"name\":\"粉200g\",\"salesPrice\":2120,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}]);",
+      "product_id": "6811a5ef6270d00054369af0",
+      "rows": [
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"68e21283ba8c3d37c05faf12\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥200",
+          "title": "サンプル 20g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6811a5ef6270d00054369af1\",\"name\":\"100g\",\"salesPrice\":1220,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥1,220",
+          "title": "100g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6811a5ef6270d00054369af2\",\"name\":\"200g\",\"salesPrice\":2120,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥2,120",
+          "title": "200g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"68520267d9c7d03a62809bf3\",\"name\":\"500g\",\"salesPrice\":5160,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥5,160",
+          "title": "500g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6851f29860a81b00487eba10\",\"name\":\"1kg\",\"salesPrice\":8538,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥8,538",
+          "title": "1kg"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6851f2ed60a81b12937eba1e\",\"name\":\"粉100ｇ\",\"salesPrice\":1220,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥1,220",
+          "title": "粉100ｇ"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6851f2ed60a81b12937eba1f\",\"name\":\"粉200g\",\"salesPrice\":2120,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9999,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥2,120",
+          "title": "粉200g"
+        }
+      ],
+      "schemas": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "brand": {
+              "@type": "Brand",
+              "name": "珈琲アウラ"
+            },
+            "description": "お試し用に30gのサンプルもご用意しています。",
+            "image": [
+              "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/67a992c0f3d6dd02082d2e88/2d35403cf419876c1c25.png/original"
+            ],
+            "mpn": "6811a5ef6270d00054369af0",
+            "name": "チアパス カフェインレス",
+            "offers": {
+              "@type": "AggregateOffer",
+              "availability": "https://schema.org/InStock",
+              "highPrice": 8538,
+              "lowPrice": 200,
+              "offerCount": 7,
+              "priceCurrency": "JPY",
+              "url": "https://auracoffee.stores.jp/items/6811a5ef6270d00054369af0"
+            },
+            "url": "https://auracoffee.stores.jp/items/6811a5ef6270d00054369af0"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp",
+                "name": "HOME",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/?category_id=67fa483ec823279e7f4db66b",
+                "name": "珈琲豆",
+                "position": 2
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/?category_id=67fa4855a1be0ee4b7a898bf",
+                "name": "中深煎り",
+                "position": 3
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/items/6811a5ef6270d00054369af0",
+                "name": "チアパス カフェインレス",
+                "position": 4
+              }
+            ]
+          }
+        ]
+      ],
+      "title": "チアパス カフェインレス",
+      "url": "https://auracoffee.stores.jp/items/6811a5ef6270d00054369af0"
+    },
+    {
+      "checked_at": "2026-10-25T11:02:37.954Z",
+      "mode": "anonymous-in-app-browser-dom-projection",
+      "merchant_ids": [
+        "67a992c0f3d6dd02082d2e88"
+      ],
+      "native_init": "          detailCtrl.itemId='69aa891c827c0262a0446036';\n          detailCtrl.itemName='マンデリン ポルン アルフィナー';\n          detailCtrl.isDigit=false;\n          detailCtrl.isSubscription=false;\n          detailCtrl.isTicket=false;\n          detailCtrl.isLoggedIn=false;\n          detailCtrl.addItemBrowsingHistory([{\"id\":\"69aa891d827c0262a0446037\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":7,\"restockRequestDisabled\":false},{\"id\":\"69aa891d827c0262a0446038\",\"name\":\"100g\",\"salesPrice\":1190,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":6,\"restockRequestDisabled\":false},{\"id\":\"69aa891d827c0262a0446039\",\"name\":\"200g\",\"salesPrice\":2090,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":7,\"restockRequestDisabled\":false},{\"id\":\"69aa891d827c0262a044603a\",\"name\":\"500g\",\"salesPrice\":5070,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false},{\"id\":\"69aa891d827c0262a044603b\",\"name\":\"1kg\",\"salesPrice\":8380,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":3,\"restockRequestDisabled\":false},{\"id\":\"69aa891d827c0262a044603c\",\"name\":\"粉100g\",\"salesPrice\":1190,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false},{\"id\":\"69aa891d827c0262a044603d\",\"name\":\"粉200g\",\"salesPrice\":2090,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":5,\"restockRequestDisabled\":false}]);",
+      "product_id": "69aa891c827c0262a0446036",
+      "rows": [
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69aa891d827c0262a0446037\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":7,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥200",
+          "title": "サンプル 20g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69aa891d827c0262a0446038\",\"name\":\"100g\",\"salesPrice\":1190,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":6,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥1,190",
+          "title": "100g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69aa891d827c0262a0446039\",\"name\":\"200g\",\"salesPrice\":2090,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":7,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥2,090",
+          "title": "200g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69aa891d827c0262a044603a\",\"name\":\"500g\",\"salesPrice\":5070,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥5,070",
+          "title": "500g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69aa891d827c0262a044603b\",\"name\":\"1kg\",\"salesPrice\":8380,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":3,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥8,380",
+          "title": "1kg"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69aa891d827c0262a044603c\",\"name\":\"粉100g\",\"salesPrice\":1190,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥1,190",
+          "title": "粉100g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"69aa891d827c0262a044603d\",\"name\":\"粉200g\",\"salesPrice\":2090,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":5,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥2,090",
+          "title": "粉200g"
+        }
+      ],
+      "schemas": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "brand": {
+              "@type": "Brand",
+              "name": "珈琲アウラ"
+            },
+            "image": [
+              "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/67a992c0f3d6dd02082d2e88/af2f8396ed52acf3288f.jpeg/original"
+            ],
+            "mpn": "69aa891c827c0262a0446036",
+            "name": "マンデリン ポルン アルフィナー",
+            "offers": {
+              "@type": "AggregateOffer",
+              "availability": "https://schema.org/InStock",
+              "highPrice": 8380,
+              "lowPrice": 200,
+              "offerCount": 7,
+              "priceCurrency": "JPY",
+              "url": "https://auracoffee.stores.jp/items/69aa891c827c0262a0446036"
+            },
+            "url": "https://auracoffee.stores.jp/items/69aa891c827c0262a0446036"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp",
+                "name": "HOME",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/?category_id=67fa483ec823279e7f4db66b",
+                "name": "珈琲豆",
+                "position": 2
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/?category_id=67fa48490f090ccc623e356c",
+                "name": "深煎り",
+                "position": 3
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/items/69aa891c827c0262a0446036",
+                "name": "マンデリン ポルン アルフィナー",
+                "position": 4
+              }
+            ]
+          }
+        ]
+      ],
+      "title": "マンデリン ポルン アルフィナー",
+      "url": "https://auracoffee.stores.jp/items/69aa891c827c0262a0446036"
+    },
+    {
+      "checked_at": "2026-10-25T11:02:45.495Z",
+      "mode": "anonymous-in-app-browser-dom-projection",
+      "merchant_ids": [
+        "67a992c0f3d6dd02082d2e88"
+      ],
+      "native_init": "          detailCtrl.itemId='6ab1d3dd72b6d5e689ed3e84';\n          detailCtrl.itemName='ニグセ・ゲメダ チャルチョ ナチュラル';\n          detailCtrl.isDigit=false;\n          detailCtrl.isSubscription=false;\n          detailCtrl.isTicket=false;\n          detailCtrl.isLoggedIn=false;\n          detailCtrl.addItemBrowsingHistory([{\"id\":\"6ab1d3dd72b6d5e689ed3e85\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":7,\"restockRequestDisabled\":false},{\"id\":\"6ab1d3dd72b6d5e689ed3e86\",\"name\":\"100g\",\"salesPrice\":2050,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":19,\"restockRequestDisabled\":false},{\"id\":\"6ab1d3dd72b6d5e689ed3e87\",\"name\":\"200g\",\"salesPrice\":3640,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9,\"restockRequestDisabled\":false},{\"id\":\"6ab1d3dd72b6d5e689ed3e88\",\"name\":\"500g\",\"salesPrice\":8950,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false},{\"id\":\"6ab1d3dd72b6d5e689ed3e89\",\"name\":\"1kg\",\"salesPrice\":14850,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":4,\"restockRequestDisabled\":false},{\"id\":\"6ab1d3dd72b6d5e689ed3e8a\",\"name\":\"粉100g\",\"salesPrice\":2050,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false},{\"id\":\"6ab1d3dd72b6d5e689ed3e8b\",\"name\":\"粉200g\",\"salesPrice\":3640,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":5,\"restockRequestDisabled\":false}]);",
+      "product_id": "6ab1d3dd72b6d5e689ed3e84",
+      "rows": [
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6ab1d3dd72b6d5e689ed3e85\",\"name\":\"サンプル 20g\",\"salesPrice\":200,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":7,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥200",
+          "title": "サンプル 20g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6ab1d3dd72b6d5e689ed3e86\",\"name\":\"100g\",\"salesPrice\":2050,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":19,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥2,050",
+          "title": "100g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6ab1d3dd72b6d5e689ed3e87\",\"name\":\"200g\",\"salesPrice\":3640,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":9,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥3,640",
+          "title": "200g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6ab1d3dd72b6d5e689ed3e88\",\"name\":\"500g\",\"salesPrice\":8950,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥8,950",
+          "title": "500g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6ab1d3dd72b6d5e689ed3e89\",\"name\":\"1kg\",\"salesPrice\":14850,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":4,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥14,850",
+          "title": "1kg"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6ab1d3dd72b6d5e689ed3e8a\",\"name\":\"粉100g\",\"salesPrice\":2050,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":10,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥2,050",
+          "title": "粉100g"
+        },
+        {
+          "buttons": [
+            {
+              "aria_disabled": null,
+              "binding": "detailCtrl.addCart({\"id\":\"6ab1d3dd72b6d5e689ed3e8b\",\"name\":\"粉200g\",\"salesPrice\":3640,\"originalPrice\":null,\"discountRate\":0,\"discountType\":\"rate\",\"discountAmount\":0,\"quantity\":5,\"restockRequestDisabled\":false}, undefined)",
+              "disabled": null,
+              "text": "カートに入れる"
+            }
+          ],
+          "prices": "¥3,640",
+          "title": "粉200g"
+        }
+      ],
+      "schemas": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "brand": {
+              "@type": "Brand",
+              "name": "珈琲アウラ"
+            },
+            "image": [
+              "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/production/67a992c0f3d6dd02082d2e88/d0634c1e-3d62-46ed-824e-8b223659e2d2/original",
+              "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/production/67a992c0f3d6dd02082d2e88/e91aa091-9707-4771-9631-e67f9b67b9f5/original",
+              "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/production/67a992c0f3d6dd02082d2e88/a2ff7952-8997-436f-a8b7-698e68ebce28/original",
+              "https://imagedelivery.net/QondspN4HIUvB_R16-ddAQ/production/67a992c0f3d6dd02082d2e88/bc08f515-a824-4496-84f8-9600fed61d2e/original"
+            ],
+            "mpn": "6ab1d3dd72b6d5e689ed3e84",
+            "name": "ニグセ・ゲメダ チャルチョ ナチュラル",
+            "offers": {
+              "@type": "AggregateOffer",
+              "availability": "https://schema.org/InStock",
+              "highPrice": 14850,
+              "lowPrice": 200,
+              "offerCount": 7,
+              "priceCurrency": "JPY",
+              "url": "https://auracoffee.stores.jp/items/6ab1d3dd72b6d5e689ed3e84"
+            },
+            "url": "https://auracoffee.stores.jp/items/6ab1d3dd72b6d5e689ed3e84"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp",
+                "name": "HOME",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/?category_id=67fa483ec823279e7f4db66b",
+                "name": "珈琲豆",
+                "position": 2
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/?category_id=67fa4875c8232795204db6a8",
+                "name": "浅煎り",
+                "position": 3
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://auracoffee.stores.jp/items/6ab1d3dd72b6d5e689ed3e84",
+                "name": "ニグセ・ゲメダ チャルチョ ナチュラル",
+                "position": 4
+              }
+            ]
+          }
+        ]
+      ],
+      "title": "ニグセ・ゲメダ チャルチョ ナチュラル",
+      "url": "https://auracoffee.stores.jp/items/6ab1d3dd72b6d5e689ed3e84"
+    }
+  ],
+  "automated_http_supported": false,
+  "production_writes": 0,
+  "explicit_cart_or_account_actions": 0,
+  "source_capture_sha256": "91782de22e992bef3535e04f2d456b2994336449cceb18b4eff5191bd1ba13c2",
+  "projection": "Public native product declarations, primary schema, exact rendered purchase rows and coffee-category links. Account/session tokens, policy HTML and unrelated scripts omitted. Long descriptions omitted; one short sample-size discrepancy retained."
+}
