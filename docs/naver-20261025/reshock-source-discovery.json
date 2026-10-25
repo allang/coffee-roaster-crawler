@@ -1,0 +1,127 @@
+{
+  "checked_at": "2026-10-25T10:02:58.666Z",
+  "mode": "source-discovery-only-not-an-extraction-pass",
+  "source_url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-natural",
+  "merchant_id": "61668b6d0baa26002e7228ef",
+  "source_product_id": "6a50e5909fc87a1753a6868b",
+  "primary_title": "【卓武山咖啡農場】藝伎｜日曬",
+  "jsonld_sku": "6a50e5909fc87a1753a6868b",
+  "jsonld_offer": {
+    "@type": "Offer",
+    "price": 950,
+    "priceCurrency": "TWD",
+    "availability": "http://schema.org/InStock"
+  },
+  "published_status": "active",
+  "retail_status": "draft",
+  "unlimited_quantity": true,
+  "quantity": 0,
+  "sold_out": false,
+  "field_titles": [
+    {
+      "key": "custom",
+      "name_translations": {
+        "zh-hant": "款式"
+      },
+      "index": 0,
+      "selectorEnabled": false
+    }
+  ],
+  "variant_options": [
+    {
+      "key": "6a50e5909fc87a1753a68689",
+      "media_id": "",
+      "index": 0,
+      "name_translations": {
+        "zh-hant": "100g"
+      },
+      "type": "custom",
+      "media": null
+    },
+    {
+      "key": "6a50e5909fc87a1753a6868a",
+      "media_id": "",
+      "index": 0,
+      "name_translations": {
+        "zh-hant": "半磅"
+      },
+      "type": "custom",
+      "media": null
+    }
+  ],
+  "observed_variations": [
+    {
+      "key": "6a50e590399d980008874247",
+      "price": {
+        "cents": 950,
+        "currency_symbol": "NT$",
+        "currency_iso": "TWD",
+        "label": "NT$950",
+        "dollars": 950
+      },
+      "price_sale": {
+        "cents": 0,
+        "currency_symbol": "NT$",
+        "currency_iso": "TWD",
+        "label": "",
+        "dollars": 0
+      },
+      "fields": [
+        {
+          "name_translations": {
+            "zh-hant": "100g",
+            "en": ""
+          },
+          "name": "100g"
+        }
+      ],
+      "variant_option_ids": [
+        "6a50e5909fc87a1753a68689"
+      ],
+      "quantity": 0,
+      "stock_id": "6a50e5919fc87a1753a6868f"
+    },
+    {
+      "key": "6a50e590399d980008874248",
+      "price": {
+        "cents": 2150,
+        "currency_symbol": "NT$",
+        "currency_iso": "TWD",
+        "label": "NT$2,150",
+        "dollars": 2150
+      },
+      "price_sale": {
+        "cents": 0,
+        "currency_symbol": "NT$",
+        "currency_iso": "TWD",
+        "label": "",
+        "dollars": 0
+      },
+      "fields": [
+        {
+          "name_translations": {
+            "zh-hant": "半磅",
+            "en": ""
+          },
+          "name": "半磅"
+        }
+      ],
+      "variant_option_ids": [
+        "6a50e5909fc87a1753a6868a"
+      ],
+      "quantity": 0,
+      "stock_id": "6a50e5919fc87a1753a68690"
+    }
+  ],
+  "implementation_status": "Shopline adapter not implemented; excluded from passing benchmark counts",
+  "next_checks": [
+    "Use anonymous app.value product JSON as data without executing merchant scripts",
+    "Enumerate all reviewed retail-coffee category pages; exclude green beans, tea, equipment, coupon and custom-order products",
+    "Bind each native variation key and option ID; do not invent IDs for products without selectable SKU records",
+    "Verify native currency unit scale: TWD native dollars and cents can match because merchant subunit_to_unit is 1",
+    "Use current one-time sale prices, not membership prices, and retain native stock/preorder/availability-window evidence",
+    "Do not use shipping weight as net coffee mass; review Chinese size labels and bundle contents"
+  ],
+  "production_writes": 0,
+  "ai_calls": 0
+}

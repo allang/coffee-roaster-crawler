@@ -30,6 +30,7 @@ function document(html, url, profile) {
   return $;
 }
 async function discoverBaseProducts(roaster, profile, fetchHtml) {
+  if(profile.base_classic_template===true)return require('./baseClassic').discoverClassicProducts(roaster,profile,fetchHtml);
   const urls = new Set(), evidence = [];
   try {
     if (!identityMatches(roaster.website_url, profile)) throw Error('BASE index identity mismatch');
@@ -69,6 +70,7 @@ function partialScopeAllowed(profile, discovery) {
   } catch { return false; }
 }
 function baseProduct(html, url, profile) {
+  if(profile.base_classic_template===true)return require('./baseClassic').classicProduct(html,url,profile);
   const target = owned(url, profile, true), $ = document(html, url, profile), forms = $('form.cot-itemOrder-form');
   if (forms.length !== 1) throw Error('BASE primary order form missing/ambiguous');
   const form = forms.first();

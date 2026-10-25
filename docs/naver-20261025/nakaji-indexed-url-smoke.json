@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-25T10:22:13.280Z",
+  "mode": "merchant-get-only-indexed-url-fallback-smoke",
+  "indexed_roaster": {
+    "id": "d84de3de-7669-4abe-81bb-8e7c8ae22aa3",
+    "website_url": "https://coffee-nakaji.com/"
+  },
+  "bootstrap_url": "https://shop.coffee-nakaji.com/",
+  "discovered_product_count": 22,
+  "primary_source_product_id": "base:coffeenakaji:163107129",
+  "source_url": "https://shop.coffee-nakaji.com/items/163107129",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/categories/2151210",
+      "status": 200,
+      "at": "2026-10-25T10:22:09.985Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/163107129",
+      "status": 200,
+      "at": "2026-10-25T10:22:11.950Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "index_url_unchanged": true,
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0
+}

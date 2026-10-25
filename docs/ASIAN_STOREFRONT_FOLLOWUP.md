@@ -1,7 +1,7 @@
 # Asian Storefront Follow-up
 
 October 25, 2026. This checkpoint adds two independently checked roasters and
-seven scoped storefront profiles, including the OTC reader. It does not install code over the Mac mini's
+nine scoped storefront profiles, including the OTC reader. It does not install code over the Mac mini's
 scheduled checkout, apply a migration or retry the exhausted API account.
 
 ## New Index Entries
@@ -163,6 +163,68 @@ coverage also checks that the existing Squarespace fetch callback is preserved.
 The real inspections made 102 Essentia and 35 CRU GET requests, with zero
 prohibited requests, model calls or production writes.
 
+## Zuku And Nakaji
+
+| Merchant | Coffee products | Native SKU coverage | Observed currency |
+| --- | ---: | --- | --- |
+| Zuku Cafe | 19 | 102 exact native variants | JPY |
+| Coffee Roastery Nakaji | 22 | Product-only base offers; selectable SKU identities incomplete | JPY |
+
+Zuku's complete public Wix shop contains 23 products. The reviewed coffee
+scope excludes stickers, a cup, a tote bag and a mixed equipment starter kit.
+Japanese size labels retain 100g/200g native options. Explicit contents prove
+the 165g cold-brew pack and 200g four-coffee assortment. Thirty-three drip-pack
+variants/offers have no proven gram amount; pack counts and shipping fields
+are not turned into invented coffee weights. One coffee product is sold out.
+One-time prices are retained, not the cheaper subscription prices. When plans
+exist, the opt-in profile requires the native one-time purchase option too.
+
+The same copied Wix product UUID occurs at Zuku and Toyosaki, with different
+coffee names and stores. Exact owner/profile checks and entity-scoped catalog
+source keys keep them separate; tests explicitly cover that collision.
+
+Nakaji's [official shop biography](https://shop.coffee-nakaji.com/about)
+identifies its own roasting and links its main site. The index still retains
+the previously failing `https://coffee-nakaji.com/`; the exact-owner profile
+uses `https://shop.coffee-nakaji.com/` as its verified retail fallback. A real
+indexed-URL smoke test discovers 22 products and reads the first primary offer
+without requesting or modifying that stored main-domain URL.
+
+Its older BASE theme does not expose the newer JSON-LD/form structure. The
+opt-in classic reader binds canonical URL, native product/shop form IDs,
+rendered coffee name, paired JPY metadata, same-product published price data
+and the primary enabled/disabled purchase control. Duplicate identical
+metadata is allowed; conflicting amounts, foreign product IDs and mismatched
+stock controls fail closed. Tracking scripts and forms are never executed.
+The optional product choices are not fabricated into native SKU rows. Known
+title net weights remain on the base-offer metadata. One offer is sold out.
+
+Only the 22 reviewed bean/powder listings are admitted. Workshops, green beans,
+merchandise and unreviewed IDs are excluded. The separately inspected drip-bag
+category currently showed no product cards. Hidden categories/options are not
+claimed complete, and omission reconciliation stays off. The CLI reports
+`partial_support_verified: true`, not a fully complete merchant inventory.
+The newer BASE path remains unchanged. Both source runs use zero model calls
+and production writes; the fresh source readback confirms the index URL stayed
+unchanged and all 21 added owners still have zero products.
+
+## Reshock Native Data
+
+Reshock is not yet supported or counted as an extraction pass. Its public
+Shopline product page does publish a native `app.value('product', JSON.parse(...))`
+object containing real variation keys, option IDs, prices and stock flags.
+The captured sample has two native size variants. The bean category has two
+pages and includes a custom-order listing that is not ordinary retail coffee.
+
+`naver-20261025/reshock-source-discovery.json` records the concrete next adapter
+inputs without storing merchant/customer configuration or executing scripts.
+Important checks include merchant/URL binding, complete coffee-category
+enumeration, membership versus one-time prices, timed sales, Chinese size
+labels and native currency scale. The sample's TWD `dollars` and `cents` values
+match; blindly dividing by 100 would be wrong. Zero quantity with explicit
+unlimited inventory is not proof of sold-out stock. No Shopline support is
+claimed from these observations alone.
+
 ## Remaining Gates
 
 All new public inspections used zero model calls and zero catalog writes.
@@ -172,10 +234,10 @@ Distinct same-weight Shopify SKUs also need the separately authorized schema
 change. Naver's specific security-check confirmation is still pending.
 
 Reshock is Shopline: its `/products.json` returns HTML, so it is not registered
-as Shopify. Total source-verified extraction is now 266 products across twelve
-sites, with 1,442 exact native variants plus 54 product-only offers. The fresh
-09:53:01 UTC catalog readback still finds zero products across the 21 owners.
-The full regression suite passes 588 tests; none of those tests proves a
+as Shopify. Total source-verified extraction is now 307 products across fourteen
+sites, with 1,544 exact native variants plus 76 product-only offers. The fresh
+10:21:12 UTC catalog readback still finds zero products across the 21 owners.
+The full regression suite passes 600 tests; none of those tests proves a
 completed production crawl.
 
 The completed Mac validation session is now archived. Discovery session

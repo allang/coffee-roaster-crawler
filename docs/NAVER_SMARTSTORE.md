@@ -211,8 +211,13 @@ add 95 source-verified products / 896 native variants. Essentia preserves all
 885 enumerated SKUs, known net weights and 23 sold-out products; no native
 combinations are invented and the existing Cafe24 path stays unchanged.
 
-The total is 266 source-verified products, not 266 newly saved coffees. Latest
+Zuku's complete Wix coffee scope adds 19 products / 102 native one-time SKUs.
+Nakaji's verified classic BASE shop fallback adds 22 product-level offers,
+without changing its indexed main-domain URL or inventing option SKUs.
+Reshock's native Shopline data has been located but is not an implemented pass.
+
+The total is 307 source-verified products, not 307 newly saved coffees. Latest
 readback still shows zero catalog products for these 21 owners. The full suite
-now passes 588 tests. No scheduled-source rollout, schema change or further
+now passes 600 tests. No scheduled-source rollout, schema change or further
 model/production crawl was performed. The new separate Instagram session is
 waiting for its own access approval and has not been treated as terminal.

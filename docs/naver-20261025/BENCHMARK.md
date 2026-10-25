@@ -9,7 +9,7 @@ The independent source-catalog baseline at 07:55:03 UTC found zero products
 across the initial 19 owners. Toyosaki and Regolith were subsequently added
 with insert-only identity checks and readback. The expanded 08:57:26 UTC
 readback confirms 21 roaster owners and zero coffee products. A further
-09:53:01 UTC readback after Essentia/CRU extraction confirms the same.
+10:21:12 UTC readback after Zuku/Nakaji extraction confirms the same.
 Live merchant
 GET-only inspection verifies the following:
 
@@ -27,13 +27,15 @@ GET-only inspection verifies the following:
 | Toyosaki Coffee Factory | 22 | 22 | 0 | Not attempted | Source inspection passes; actual production pipeline awaits API credits and separate runtime validation |
 | CRU Coffee Hakuraku | 11 | 11 | 0 | Not attempted | Source inspection passes; actual production pipeline awaits API credits and separate runtime validation |
 | Essentia Factory | 84 | 885 | 0 | Not attempted | Source inspection passes, including 23 sold-out products; API-credit and distinct same-weight SKU save gates remain |
+| Zuku Cafe | 19 | 102 | 0 | Not attempted | One-time source inspection passes; merchandise excluded; API-credit and same-weight SKU save gates remain |
+| Coffee Roastery Nakaji | 22 | Incomplete; product-only base offers | 0 | Not attempted | Verified classic BASE fallback works without changing the indexed URL; hidden inventory/native SKU sets remain incomplete; API-credit gate remains |
 | Brewing Ceremony | 0 | Not observed | 0 | 0 | Public HTTP 429; Safari security CAPTCHA not completed |
 
-Measured extraction: **266 products from twelve sites**, including 524 exact native
-Shopify variants, 22 Wix variants, 11 Square variants, 885 Cafe24 variants,
-48 BASE product-only offers and six OTC product-only offers.
+Measured extraction: **307 products from fourteen sites**, including 524 exact native
+Shopify variants, 124 Wix variants, 11 Square variants, 885 Cafe24 variants,
+70 BASE product-only offers and six OTC product-only offers.
 OTC retains two page errors and is not counted as a wholly successful merchant.
-This is not a 266-coffee
+This is not a 307-coffee
 ingestion gain. Newly saved products from the real attempts: **0**. Newly
 successful complete merchant ingests: **0**. The 21 index additions remain a
 separate, verified outcome.
@@ -80,19 +82,21 @@ These remain discovery/reachability results, not successful ingestion claims:
 | New Wave Coffee Roasters | Official homepage works and links its Naver store; real retail catalog access unvalidated |
 | Single Origin espresso & roast | Dead old domain replaced with current official Shopee shop; catalog extraction unvalidated |
 | 5F Coffee Lab | Official equipment-oriented homepage reachable; coffee retail destination still needed |
-| Coffee Roastery Nakaji | Direct DNS failure; current accessible destination still needed |
-| Zuku Cafe | Homepage reachable; coffee shop/product discovery still needed |
 | Coffee Aura | Official STORES shop returns HTTP 403 |
-| Reshock Coffee | Shopline, not Shopify; its products.json route returns HTML; dedicated native extraction still needed |
+| Reshock Coffee | Shopline native variation data is available in public product HTML; adapter, complete retail scope and money/stock validation remain unimplemented |
 
 The additional GET-only results, exact source scopes, own-roasting evidence,
 deduplication and stock holds are documented in
 [the follow-up](../ASIAN_STOREFRONT_FOLLOWUP.md). Its runtime is not activated in
-the scheduled Mac checkout. Latest full regression result: 588 passed tests.
+the scheduled Mac checkout. Latest full regression result: 600 passed tests.
 `post-new-store-readback.json` records the fresh 21-owner/zero-product source
 readback. `post-essentia-cru-readback.json` confirms that result again at
 09:53:01 UTC. Each merchant's `*-extraction.json` records actual GET requests,
 product and variant counts, errors and zero production writes/model calls.
+`post-zuku-nakaji-readback.json` confirms the 21-owner/zero-product result again
+at 10:21:12 UTC. `nakaji-indexed-url-smoke.json` proves the live fallback from
+the unchanged indexed URL. Shopline source-discovery evidence is not included
+in the passing extraction totals.
 
 ## Next Gates
 

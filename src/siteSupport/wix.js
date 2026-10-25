@@ -49,6 +49,17 @@ function labelledContents(product,profile) {
   if(weight==null)throw Error('Wix primary net contents invalid');
   return weight;
 }
+function reviewedContents(product,profile) {
+  const rule=profile.wix_contents_rules?.find(r=>r.product_id===product.id);
+  if(!rule)return null;
+  if((product.options || []).some(o=>!rule.option_names.includes(o.title)))throw Error('Wix reviewed contents option contract changed');
+  const info=rule.info_title?product.additionalInfo?.filter(i=>i.title===rule.info_title):null;
+  if(rule.info_title && info?.length!==1)throw Error('Wix reviewed contents section missing/ambiguous');
+  const text=(rule.info_title?descriptionText(info[0].description):product.name).normalize('NFKC'),matches=[...text.matchAll(new RegExp(rule.pattern,'g'))];
+  const count=matches.length===1?Number(matches[0].groups?.count):null,weight=matches.length===1?parseWeightGrams(matches[0].groups?.weight):null;
+  if(!Number.isInteger(count) || count<1 || count>100 || !weight)throw Error('Wix reviewed contents missing/ambiguous');
+  return count*weight;
+}
 function wixProduct(html,url,profile) {
   const parsed=new URL(url),handle=decodeURIComponent(parsed.pathname.slice(profile.product_path.length)),store=storeData(html);
   const records=Object.entries(store).filter(([key,value])=>key.startsWith('productPage_') && value?.catalog?.product);
@@ -56,15 +67,19 @@ function wixProduct(html,url,profile) {
   const product=records[0][1].catalog.product;
   if(!profile.hosts.includes(parsed.hostname) || !parsed.pathname.startsWith(profile.product_path) || product.urlPart!==handle || !uuid(product.id) || product.isVisible!==true || product.productType!=='physical' || !product.categoryIds?.includes(profile.wix_coffee_category_id) || profile.wix_reviewed_product_ids && !profile.wix_reviewed_product_ids.includes(product.id))throw Error('Wix primary current coffee mismatch');
   if(!/^[A-Z]{3}$/.test(product.currency || '') || !Array.isArray(product.productItems) || !product.productItems.length || typeof product.isManageProductItems!=='boolean')throw Error('Wix exact variants/currency missing');
+  if(profile.wix_require_one_time_purchase) {
+    const plans=product.subscriptionPlans,oneTime=plans?.oneTimePurchase;
+    if(!Array.isArray(plans?.list) || plans.list.length && (!oneTime || Object.keys(oneTime).join(',')!=='index' || oneTime.index!==null && (!Number.isSafeInteger(oneTime.index) || oneTime.index<0)))throw Error('Wix one-time purchase offer missing');
+  }
   const selections=new Map(),netSizes=new Map();
-  for(const option of product.options || [])for(const selection of option.selections || []){if(!Number.isInteger(selection.id) || selections.has(selection.id) || typeof selection.value!=='string')throw Error('Wix option identity ambiguous');selections.set(selection.id,selection.value);if(/^(?:poids|weight|size)$/i.test(option.title || ''))netSizes.set(selection.id,parseWeightGrams(selection.value));}
-  const contentsWeight=labelledContents(product,profile),ids=new Set(),offers=[];
+  for(const option of product.options || [])for(const selection of option.selections || []){if(!Number.isInteger(selection.id) || selections.has(selection.id) || typeof selection.value!=='string')throw Error('Wix option identity ambiguous');selections.set(selection.id,selection.value);if(/^(?:poids|weight|size)$/i.test(option.title || '') || profile.wix_weight_option_names?.includes(option.title))netSizes.set(selection.id,parseWeightGrams(selection.value));}
+  const contentsWeight=reviewedContents(product,profile) ?? labelledContents(product,profile),ids=new Set(),offers=[];
   for(const variant of product.productItems){
     if(!uuid(variant.id) || ids.has(variant.id) || typeof variant.price!=='number' || !Number.isFinite(variant.price) || variant.price<0 || variant.automaticDiscount || !Array.isArray(variant.optionsSelections) || variant.optionsSelections.some(id=>!selections.has(id)))throw Error('Wix exact variant identity/price mismatch');ids.add(variant.id);
     const status=variant.inventory?.status,preOrder=variant.availableForPreOrder===true;
     if(!['in_stock','out_of_stock'].includes(status) || typeof variant.availableForPreOrder!=='boolean')throw Error('Wix exact variant stock missing');
     const sizes=variant.optionsSelections.map(id=>netSizes.get(id)).filter(v=>v!=null),explicitTitleSize=product.name?.match(/(?:^| - )((?:\d+(?:[.,]\d+)?)\s*(?:g|kg))\s*$/i)?.[1];
-    const netWeight=sizes.length===1?sizes[0]:!product.isManageProductItems && !sizes.length?contentsWeight ?? parseWeightGrams(explicitTitleSize):null;
+    const netWeight=sizes.length===1?sizes[0]:!sizes.length?contentsWeight ?? (!product.isManageProductItems?parseWeightGrams(explicitTitleSize):null):null;
     offers.push({'@type':'Offer','@id':variant.id,url:parsed.href,name:variant.optionsSelections.map(id=>selections.get(id)).join(' / ') || product.name,price:String(variant.price),priceCurrency:product.currency,availability:status==='in_stock'?'https://schema.org/InStock':preOrder?'https://schema.org/PreOrder':'https://schema.org/OutOfStock',_net_weight_g:netWeight,_stock_evidence:{merchant_status:status,available_for_preorder:preOrder,quantity:variant.inventory?.quantity ?? null}});
   }
   if(product.isManageProductItems===false && (offers.length!==1 || product.productItems[0].optionsSelections.length))throw Error('Wix unmanaged variant ambiguity');

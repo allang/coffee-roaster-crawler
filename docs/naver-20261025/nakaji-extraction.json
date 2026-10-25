@@ -1,0 +1,1480 @@
+{
+  "name": "Coffee Roastery Nakaji",
+  "checked_at": "2026-10-25T10:12:54.007Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "d84de3de-7669-4abe-81bb-8e7c8ae22aa3"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://shop.coffee-nakaji.com/items/163107129",
+      "https://shop.coffee-nakaji.com/items/154545821",
+      "https://shop.coffee-nakaji.com/items/154545711",
+      "https://shop.coffee-nakaji.com/items/153355745",
+      "https://shop.coffee-nakaji.com/items/96812278",
+      "https://shop.coffee-nakaji.com/items/96812310",
+      "https://shop.coffee-nakaji.com/items/86947874",
+      "https://shop.coffee-nakaji.com/items/92524353",
+      "https://shop.coffee-nakaji.com/items/64446837",
+      "https://shop.coffee-nakaji.com/items/96683957",
+      "https://shop.coffee-nakaji.com/items/96683987",
+      "https://shop.coffee-nakaji.com/items/64446844",
+      "https://shop.coffee-nakaji.com/items/96683242",
+      "https://shop.coffee-nakaji.com/items/96683289",
+      "https://shop.coffee-nakaji.com/items/84751016",
+      "https://shop.coffee-nakaji.com/items/84751047",
+      "https://shop.coffee-nakaji.com/items/96683818",
+      "https://shop.coffee-nakaji.com/items/25944678",
+      "https://shop.coffee-nakaji.com/items/25827557",
+      "https://shop.coffee-nakaji.com/items/96684913",
+      "https://shop.coffee-nakaji.com/items/31547437",
+      "https://shop.coffee-nakaji.com/items/31547443"
+    ],
+    "complete": false,
+    "observed_scope_complete": true,
+    "inventory_complete": false,
+    "inventory_scope": "base_published_one_time_cards",
+    "market_scope": "JPY_public_offer",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "evidence": [
+      {
+        "listing": "https://shop.coffee-nakaji.com/categories/2151210",
+        "product_urls": [
+          "https://shop.coffee-nakaji.com/items/163107129",
+          "https://shop.coffee-nakaji.com/items/154545821",
+          "https://shop.coffee-nakaji.com/items/154545711",
+          "https://shop.coffee-nakaji.com/items/153355745",
+          "https://shop.coffee-nakaji.com/items/96812278",
+          "https://shop.coffee-nakaji.com/items/96812310",
+          "https://shop.coffee-nakaji.com/items/86947874",
+          "https://shop.coffee-nakaji.com/items/92524353",
+          "https://shop.coffee-nakaji.com/items/64446837",
+          "https://shop.coffee-nakaji.com/items/96683957",
+          "https://shop.coffee-nakaji.com/items/96683987",
+          "https://shop.coffee-nakaji.com/items/64446844",
+          "https://shop.coffee-nakaji.com/items/96683242",
+          "https://shop.coffee-nakaji.com/items/96683289",
+          "https://shop.coffee-nakaji.com/items/84751016",
+          "https://shop.coffee-nakaji.com/items/84751047",
+          "https://shop.coffee-nakaji.com/items/96683818",
+          "https://shop.coffee-nakaji.com/items/25944678",
+          "https://shop.coffee-nakaji.com/items/25827557",
+          "https://shop.coffee-nakaji.com/items/96684913",
+          "https://shop.coffee-nakaji.com/items/31547437",
+          "https://shop.coffee-nakaji.com/items/31547443"
+        ],
+        "excluded": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://shop.coffee-nakaji.com/items/163107129",
+      "title": "エチオピア　アルベゴナCWS ナチュラル（中浅煎り）[コーヒー豆:80g]",
+      "source_product_id": "base:coffeenakaji:163107129",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/163107129",
+        "source_product_id": "base:coffeenakaji:163107129",
+        "price": "1000",
+        "currency": "JPY",
+        "minor_units": 1000,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 80,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "163107129",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/154545821",
+      "title": "エチオピア　アルベゴナCWS ナチュラル（中浅煎り）[コーヒー豆:200g]",
+      "source_product_id": "base:coffeenakaji:154545821",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/154545821",
+        "source_product_id": "base:coffeenakaji:154545821",
+        "price": "2600",
+        "currency": "JPY",
+        "minor_units": 2600,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "154545821",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/154545711",
+      "title": "エチオピア　アルベゴナCWS　 ナチュラル（中浅煎り）[コーヒー豆:100g]",
+      "source_product_id": "base:coffeenakaji:154545711",
+      "state": "sold_out",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/154545711",
+        "source_product_id": "base:coffeenakaji:154545711",
+        "price": "1400",
+        "currency": "JPY",
+        "minor_units": 1400,
+        "availability": "https://schema.org/OutOfStock",
+        "state": "sold_out",
+        "variant_identity_complete": false,
+        "net_weight_g": 100,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "154545711",
+          "shop_id": "coffeenakaji",
+          "text": "Sold out",
+          "disabled": true
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/153355745",
+      "title": "コスタリカ　バラブランカ農園　ホワイト（中煎り）[コーヒー豆:200g]",
+      "source_product_id": "base:coffeenakaji:153355745",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/153355745",
+        "source_product_id": "base:coffeenakaji:153355745",
+        "price": "2400",
+        "currency": "JPY",
+        "minor_units": 2400,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "153355745",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96812278",
+      "title": "浅間ブレンド　中深煎り [コーヒー豆:500g] チョコ、ナッツ系",
+      "source_product_id": "base:coffeenakaji:96812278",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96812278",
+        "source_product_id": "base:coffeenakaji:96812278",
+        "price": "3240",
+        "currency": "JPY",
+        "minor_units": 3240,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 500,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96812278",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96812310",
+      "title": "浅間ブレンド　中深煎り [コーヒー粉:500g] チョコ、ナッツ系",
+      "source_product_id": "base:coffeenakaji:96812310",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96812310",
+        "source_product_id": "base:coffeenakaji:96812310",
+        "price": "3240",
+        "currency": "JPY",
+        "minor_units": 3240,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 500,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96812310",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/86947874",
+      "title": "【毎日のコーヒー】　コロンビア　washed （深煎り） [コーヒー豆:200g]",
+      "source_product_id": "base:coffeenakaji:86947874",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/86947874",
+        "source_product_id": "base:coffeenakaji:86947874",
+        "price": "1512",
+        "currency": "JPY",
+        "minor_units": 1512,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "86947874",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/92524353",
+      "title": "【毎日のコーヒー】　コロンビア　washed （深煎り） [コーヒー粉:200g]",
+      "source_product_id": "base:coffeenakaji:92524353",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/92524353",
+        "source_product_id": "base:coffeenakaji:92524353",
+        "price": "1512",
+        "currency": "JPY",
+        "minor_units": 1512,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "92524353",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/64446837",
+      "title": "カフェインレスコーヒー[コーヒー豆:200g] チョコレート系 NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:64446837",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/64446837",
+        "source_product_id": "base:coffeenakaji:64446837",
+        "price": "2484",
+        "currency": "JPY",
+        "minor_units": 2484,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "64446837",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96683957",
+      "title": "カフェインレスコーヒー[コーヒー豆:100g] チョコレート系 NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:96683957",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96683957",
+        "source_product_id": "base:coffeenakaji:96683957",
+        "price": "1350",
+        "currency": "JPY",
+        "minor_units": 1350,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 100,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96683957",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96683987",
+      "title": "カフェインレスコーヒー[コーヒー粉:100g] チョコレート系 NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:96683987",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96683987",
+        "source_product_id": "base:coffeenakaji:96683987",
+        "price": "1350",
+        "currency": "JPY",
+        "minor_units": 1350,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 100,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96683987",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/64446844",
+      "title": "カフェインレスコーヒー[コーヒー粉:200g] チョコレート系 NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:64446844",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/64446844",
+        "source_product_id": "base:coffeenakaji:64446844",
+        "price": "2484",
+        "currency": "JPY",
+        "minor_units": 2484,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "64446844",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96683242",
+      "title": "浅間ブレンド　中深煎り [コーヒー豆:100g] チョコ、ナッツ系",
+      "source_product_id": "base:coffeenakaji:96683242",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96683242",
+        "source_product_id": "base:coffeenakaji:96683242",
+        "price": "918",
+        "currency": "JPY",
+        "minor_units": 918,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 100,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96683242",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96683289",
+      "title": "浅間ブレンド　中深煎り [コーヒー粉:100g] チョコ、ナッツ系",
+      "source_product_id": "base:coffeenakaji:96683289",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96683289",
+        "source_product_id": "base:coffeenakaji:96683289",
+        "price": "918",
+        "currency": "JPY",
+        "minor_units": 918,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 100,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96683289",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/84751016",
+      "title": "浅間ブレンド　中深煎り [コーヒー豆:200g] チョコ、ナッツ系",
+      "source_product_id": "base:coffeenakaji:84751016",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/84751016",
+        "source_product_id": "base:coffeenakaji:84751016",
+        "price": "1728",
+        "currency": "JPY",
+        "minor_units": 1728,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "84751016",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/84751047",
+      "title": "浅間ブレンド　中深煎り [コーヒー粉:200g] チョコ、ナッツ系",
+      "source_product_id": "base:coffeenakaji:84751047",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/84751047",
+        "source_product_id": "base:coffeenakaji:84751047",
+        "price": "1728",
+        "currency": "JPY",
+        "minor_units": 1728,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "84751047",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96683818",
+      "title": "ミスターの一杯 [コーヒー豆:100g] グッドバランステイスト NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:96683818",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96683818",
+        "source_product_id": "base:coffeenakaji:96683818",
+        "price": "1188",
+        "currency": "JPY",
+        "minor_units": 1188,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 100,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96683818",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/25944678",
+      "title": "ミスターの一杯 [コーヒー粉:100g] グッドバランステイスト NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:25944678",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/25944678",
+        "source_product_id": "base:coffeenakaji:25944678",
+        "price": "1188",
+        "currency": "JPY",
+        "minor_units": 1188,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 100,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "25944678",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/25827557",
+      "title": "ミスターの一杯 [コーヒー豆:200g] グッドバランステイスト NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:25827557",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/25827557",
+        "source_product_id": "base:coffeenakaji:25827557",
+        "price": "2160",
+        "currency": "JPY",
+        "minor_units": 2160,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "25827557",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/96684913",
+      "title": "ミスターの一杯 [コーヒー粉:200g] グッドバランステイスト NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:96684913",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/96684913",
+        "source_product_id": "base:coffeenakaji:96684913",
+        "price": "2160",
+        "currency": "JPY",
+        "minor_units": 2160,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 200,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "96684913",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/31547437",
+      "title": "ミスターの一杯 [コーヒー豆:500g] グッドバランステイスト NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:31547437",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/31547437",
+        "source_product_id": "base:coffeenakaji:31547437",
+        "price": "4500",
+        "currency": "JPY",
+        "minor_units": 4500,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 500,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "31547437",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    },
+    {
+      "url": "https://shop.coffee-nakaji.com/items/31547443",
+      "title": "ミスターの一杯 [コーヒー粉:500g] グッドバランステイスト NAKAJIオリジナル",
+      "source_product_id": "base:coffeenakaji:31547443",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://shop.coffee-nakaji.com/items/31547443",
+        "source_product_id": "base:coffeenakaji:31547443",
+        "price": "4500",
+        "currency": "JPY",
+        "minor_units": 4500,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "net_weight_g": 500,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "31547443",
+          "shop_id": "coffeenakaji",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": null
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true,
+        "template": "classic"
+      }
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/categories/2151210",
+      "status": 200,
+      "at": "2026-10-25T10:12:28.204Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/163107129",
+      "status": 200,
+      "at": "2026-10-25T10:12:30.098Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/154545821",
+      "status": 200,
+      "at": "2026-10-25T10:12:31.540Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/154545711",
+      "status": 200,
+      "at": "2026-10-25T10:12:32.722Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/153355745",
+      "status": 200,
+      "at": "2026-10-25T10:12:33.643Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96812278",
+      "status": 200,
+      "at": "2026-10-25T10:12:34.731Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96812310",
+      "status": 200,
+      "at": "2026-10-25T10:12:35.924Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/86947874",
+      "status": 200,
+      "at": "2026-10-25T10:12:36.982Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/92524353",
+      "status": 200,
+      "at": "2026-10-25T10:12:37.947Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/64446837",
+      "status": 200,
+      "at": "2026-10-25T10:12:39.267Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96683957",
+      "status": 200,
+      "at": "2026-10-25T10:12:40.403Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96683987",
+      "status": 200,
+      "at": "2026-10-25T10:12:41.512Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/64446844",
+      "status": 200,
+      "at": "2026-10-25T10:12:42.446Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96683242",
+      "status": 200,
+      "at": "2026-10-25T10:12:43.504Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96683289",
+      "status": 200,
+      "at": "2026-10-25T10:12:44.485Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/84751016",
+      "status": 200,
+      "at": "2026-10-25T10:12:45.541Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/84751047",
+      "status": 200,
+      "at": "2026-10-25T10:12:46.661Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96683818",
+      "status": 200,
+      "at": "2026-10-25T10:12:47.733Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/25944678",
+      "status": 200,
+      "at": "2026-10-25T10:12:48.786Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/25827557",
+      "status": 200,
+      "at": "2026-10-25T10:12:49.785Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/96684913",
+      "status": 200,
+      "at": "2026-10-25T10:12:50.976Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/31547437",
+      "status": 200,
+      "at": "2026-10-25T10:12:51.933Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.coffee-nakaji.com/items/31547443",
+      "status": 200,
+      "at": "2026-10-25T10:12:52.893Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": false,
+  "partial_support_verified": true,
+  "inventory_complete": false,
+  "variants_complete": false
+}

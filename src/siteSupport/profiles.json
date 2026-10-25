@@ -1449,6 +1449,42 @@
     "inventory_authorizes_global_absence": false
   },
   {
+    "name": "Coffee Roastery Nakaji",
+    "entity_ids": ["d84de3de-7669-4abe-81bb-8e7c8ae22aa3"],
+    "hosts": ["shop.coffee-nakaji.com", "coffee-nakaji.com", "www.coffee-nakaji.com"],
+    "adapter": "base",
+    "base_classic_template": true,
+    "base_shop_id": "coffeenakaji",
+    "bootstrap_url": "https://shop.coffee-nakaji.com/",
+    "identity_urls": ["https://coffee-nakaji.com/", "https://www.coffee-nakaji.com/"],
+    "listing_paths": ["/categories/2151210"],
+    "allow_partial_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "base_reviewed_product_ids": ["163107129", "154545821", "154545711", "153355745", "96812278", "96812310", "86947874", "92524353", "64446837", "96683957", "96683987", "64446844", "96683242", "96683289", "84751016", "84751047", "96683818", "25944678", "25827557", "96684913", "31547437", "31547443"]
+  },
+  {
+    "name": "Zuku Cafe",
+    "entity_ids": ["1cae79b1-c610-4484-b67c-420c984b2f7a"],
+    "hosts": ["www.zukucafe.com", "zukucafe.com"],
+    "adapter": "wix",
+    "bootstrap_url": "https://www.zukucafe.com/shop",
+    "listing_paths": ["/shop?page=2"],
+    "product_path": "/product-page/",
+    "wix_listing_key": "initialData_default_TPASection_m2lxay48_page=2",
+    "wix_coffee_category_id": "28ec38ba-fd31-a67d-134c-1f6dc7969db5",
+    "wix_reviewed_product_ids": ["baf514cb-8707-dffd-7dcc-52f01ac3a8da", "b0b6a172-d44e-9ef8-699c-f66988b695f0", "86d50041-809f-5a8b-6610-4b8cc7258c60", "2fff6467-dd98-ab16-396e-401f1593158f", "8b6c6ab4-58f1-a15c-adee-d3bd373dd890", "d3715020-9ae2-a2df-3019-bf79a957bd02", "b93600fc-d366-bad6-a68f-523210b66adc", "a759419e-0888-d01b-f925-513091562505", "9da9ce20-9fc9-421f-ada4-2ebfdaccef4b", "b0878265-807d-b50f-8dff-667ac71e137d", "54070760-cdbe-a073-895e-24c3cbd6c6c4", "1a6f6cf6-71c4-764f-5560-829656a959af", "eb0fb7b6-2acc-0cd5-83ce-c827817d1696", "32a5ea12-eba9-5cab-2bc9-0e06c6da7296", "2658d32a-a599-310f-48d8-4d17b700ce92", "df19c1f7-07d8-a265-42f8-e8dfa824cc6e", "d99d3cc8-bc75-ec47-6c72-f713016f98f3", "3fb6a3c8-988b-8755-04bd-5c59ae0b18ea", "6b6778b4-c626-c00d-972c-b138d85e3f07"],
+    "wix_weight_option_names": ["サイズ"],
+    "wix_require_one_time_purchase": true,
+    "wix_contents_rules": [
+      {"product_id": "8b6c6ab4-58f1-a15c-adee-d3bd373dd890", "option_names": [], "pattern": "\\((?<weight>[0-9]+g)×(?<count>[0-9]+)個\\)"},
+      {"product_id": "b0878265-807d-b50f-8dff-667ac71e137d", "option_names": ["グラインド"], "info_title": "商品情報", "pattern": "(?<count>[0-9]+)種のレギュラーメニューが(?<weight>[0-9]+g)ずつ"}
+    ],
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "coffee_collection_verified": true
+  },
+  {
     "name": "HOKURO ROASTERY",
     "entity_ids": ["50c59e18-865f-4e1f-99e7-1682132ca2eb"],
     "hosts": ["hokurocoffe.base.shop"],

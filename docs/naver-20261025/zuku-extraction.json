@@ -1,0 +1,2890 @@
+{
+  "name": "Zuku Cafe",
+  "checked_at": "2026-10-25T10:17:58.439Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "1cae79b1-c610-4484-b67c-420c984b2f7a"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://www.zukucafe.com/product-page/india-biodynamic-drippack",
+      "https://www.zukucafe.com/product-page/india-biodynamic-100g-200g",
+      "https://www.zukucafe.com/product-page/indonesia-mandheling-drippack",
+      "https://www.zukucafe.com/product-page/indonesia-mandheling-100g-200g",
+      "https://www.zukucafe.com/product-page/%E3%82%A8%E3%83%81%E3%82%AA%E3%83%94%E3%82%A2-g1-%E6%B0%B4%E5%87%BA%E3%81%97-%E3%83%91%E3%83%83%E3%82%AF",
+      "https://www.zukucafe.com/product-page/ethiopia-g1-100g-200g",
+      "https://www.zukucafe.com/product-page/ethiopia-g1-drippack",
+      "https://www.zukucafe.com/product-page/komoro-blend-drippack",
+      "https://www.zukucafe.com/product-page/komoro-brend-100g-200g",
+      "https://www.zukucafe.com/product-page/%E3%81%9A%E3%81%8F%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-%E8%B1%86%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%E3%82%BB%E3%83%83%E3%83%88",
+      "https://www.zukucafe.com/product-page/%E3%81%9A%E3%81%8F%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%E3%82%BB%E3%83%83%E3%83%88",
+      "https://www.zukucafe.com/product-page/nicaragua-drippack",
+      "https://www.zukucafe.com/product-page/mexico-drippack",
+      "https://www.zukucafe.com/product-page/brazil-drippack",
+      "https://www.zukucafe.com/product-page/guatemala-drip-pack",
+      "https://www.zukucafe.com/product-page/gutemala-100g-200g",
+      "https://www.zukucafe.com/product-page/brazil-100g-200g",
+      "https://www.zukucafe.com/product-page/mexico-100g-200g",
+      "https://www.zukucafe.com/product-page/nicaragua-100g-200g"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "https://www.zukucafe.com/shop?page=2",
+        "category_id": "28ec38ba-fd31-a67d-134c-1f6dc7969db5",
+        "category_name": "全ての商品",
+        "products": 23,
+        "total": 23,
+        "reviewed_scope": true,
+        "excluded_unreviewed_products": [
+          {
+            "id": "b523eb65-f64a-8940-332b-4edfe6348b4c",
+            "name": "オリジナル ステッカー 3種"
+          },
+          {
+            "id": "ea9473a1-a8b7-26f5-2588-e57b4815fcb5",
+            "name": "オリジナル KeepCup（リユーザブルカップ）"
+          },
+          {
+            "id": "541cffea-0425-0ba6-fd85-c9ded3851a8a",
+            "name": "ハンドドリップ スターターセット"
+          },
+          {
+            "id": "e6638e97-b4d1-a86f-dc29-b4575c9dbc79",
+            "name": "オリジナルトートバッグ"
+          }
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://www.zukucafe.com/product-page/india-biodynamic-drippack",
+      "title": "インド - バイオダイナミック ドリップパック",
+      "source_product_id": "baf514cb-8707-dffd-7dcc-52f01ac3a8da",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "9d738837-a8ce-4deb-81e2-f9596c85b97a",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "729911f4-82e5-4080-9c1e-cb54958475c0",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "3700",
+            "amount": "3700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "26925170-1c08-414c-b533-898dd7d7a3e8",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "7300",
+            "amount": "7300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 7300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "96f58175-1aa3-4ac9-b33b-704eac2d8226",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "10900",
+            "amount": "10900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 10900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/india-biodynamic-100g-200g",
+      "title": "インド - バイオダイナミック（100g・200g）",
+      "source_product_id": "b0b6a172-d44e-9ef8-699c-f66988b695f0",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "a13596d8-69ff-4304-956f-2cc79716d234",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1800",
+            "amount": "1800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "11defeda-8f8c-4f8a-9faa-fcd5d747e0c2",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "c474a890-ff9e-4512-ad49-6098bee30db9",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "43bfa9a5-7480-4628-a111-2d6a33ecdbf2",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "05d0e822-ec40-472d-9150-41b5d475cb3b",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "3500",
+            "amount": "3500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "7bc45c70-f9e1-414c-8190-6a63d4736ce2",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "da444d75-507c-49f0-9aa5-b315ef47d011",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "227a4ebd-d4af-458f-9bb8-113a30847d0e",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/indonesia-mandheling-drippack",
+      "title": "インドネシア ドリップパック",
+      "source_product_id": "86d50041-809f-5a8b-6610-4b8cc7258c60",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "f9eefccf-29b0-4137-9b23-c67fe48c8613",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "fbf13e44-1360-4b07-8664-2ef273e09b8a",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "3700",
+            "amount": "3700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "55290fb2-29b9-4034-b0a2-50f2d4a065fd",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "7300",
+            "amount": "7300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 7300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "8a4998a4-caba-45a9-9302-d6223991ef47",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "10900",
+            "amount": "10900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 10900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/indonesia-mandheling-100g-200g",
+      "title": "インドネシア マンデリン（100g・200g）",
+      "source_product_id": "2fff6467-dd98-ab16-396e-401f1593158f",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "d8031df6-718d-489c-b478-beb874c6567c",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1800",
+            "amount": "1800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "4b8f40fd-7bb1-46f0-a9f4-a4500e2a7a06",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "e77a5e0f-6ffb-46b4-b4ea-bef409ac786f",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "9dd2791c-ed46-4bd5-ab22-0d934bcf8a9d",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "530c6e88-2eac-4900-94c1-911d8675c1fc",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "3500",
+            "amount": "3500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "82bd3cb8-bf9d-42eb-8cda-4397ae202bf6",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "fae741fe-ece5-4c7e-88cf-dcc049f9694b",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "4d387745-2317-40c4-ba2d-9370af18bef4",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "stock_evidence": {
+            "availability": "https://schema.org/OutOfStock",
+            "merchant_status": "out_of_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/%E3%82%A8%E3%83%81%E3%82%AA%E3%83%94%E3%82%A2-g1-%E6%B0%B4%E5%87%BA%E3%81%97-%E3%83%91%E3%83%83%E3%82%AF",
+      "title": "エチオピア - G1〈水出し〉 パック（55g×3個）",
+      "source_product_id": "8b6c6ab4-58f1-a15c-adee-d3bd373dd890",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "01a59db4-a53c-4cc6-a3a0-a95a4ee06c38",
+          "title": "エチオピア - G1〈水出し〉 パック（55g×3個）",
+          "weight_g": 165,
+          "money": {
+            "raw": "3000",
+            "amount": "3000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/ethiopia-g1-100g-200g",
+      "title": "エチオピア - G1（100g・200g）",
+      "source_product_id": "d3715020-9ae2-a2df-3019-bf79a957bd02",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "562f6a03-518f-4a0a-862b-65fd2ef94eda",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1800",
+            "amount": "1800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "edf63fae-62e4-43c5-888e-f2cb3ec367e2",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "64c18b0a-cd77-4845-be51-c9f6f4239950",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "47536d75-e15e-48d3-b8b5-dcaf8e984da1",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "446e9532-a454-4b90-a881-f3a85c45428a",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "3500",
+            "amount": "3500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "01d9bd09-0c7c-4fd1-acbb-377ddea9f72c",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "94a03957-2f3e-4eec-98f6-d6a39e9d3025",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "239613b1-4c21-4215-b376-19ece96123d7",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3600",
+            "amount": "3600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/ethiopia-g1-drippack",
+      "title": "エチオピア - G1 ドリップパック",
+      "source_product_id": "b93600fc-d366-bad6-a68f-523210b66adc",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "01001483-d4c2-442e-89b3-eb983d26b6bb",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1900",
+            "amount": "1900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "a6467108-614d-4f90-befb-e27c8e0a172b",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "3700",
+            "amount": "3700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "2ff73da4-b424-4a8a-b766-ea977327b471",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "7300",
+            "amount": "7300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 7300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "38d88259-7134-4edc-b96b-5f92904f38c8",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "10900",
+            "amount": "10900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 10900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/komoro-blend-drippack",
+      "title": "小諸ブレンド  ドリップパック",
+      "source_product_id": "a759419e-0888-d01b-f925-513091562505",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "40007e18-bc7c-4adc-84b0-cffb0bd02f5e",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1800",
+            "amount": "1800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "0154fea3-e178-4aaa-b7a9-0901a9e739bb",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "3500",
+            "amount": "3500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "64a36d22-551b-4cef-a993-f75333838b80",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "6900",
+            "amount": "6900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 6900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "6cf3d6e1-5862-47ac-89e1-c4c3ad2be29e",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "10300",
+            "amount": "10300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 10300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/komoro-brend-100g-200g",
+      "title": "小諸ブレンド(100g・200g)",
+      "source_product_id": "9da9ce20-9fc9-421f-ada4-2ebfdaccef4b",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "13f50a90-7eea-44d4-8e6c-920822ea0dea",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1700",
+            "amount": "1700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "cccf8314-38bb-439e-945c-f34c8c0e01e3",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1800",
+            "amount": "1800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "dbfadb1c-ae3c-4550-be7f-867959505ce4",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1800",
+            "amount": "1800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "db790c1e-1972-442c-860d-4e8aeda6bd10",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1800",
+            "amount": "1800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "93adf19b-a154-417c-97fe-e28ef1d268b9",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "3200",
+            "amount": "3200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "eece5662-da33-43f2-ad70-902501978281",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3300",
+            "amount": "3300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "7231f615-6d24-4c93-ace7-9267896bb08c",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "3300",
+            "amount": "3300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "a6380b2c-dff2-498e-a4e2-86a1cca4e444",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "3300",
+            "amount": "3300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/%E3%81%9A%E3%81%8F%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-%E8%B1%86%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%E3%82%BB%E3%83%83%E3%83%88",
+      "title": "コーヒー豆 バラエティセット",
+      "source_product_id": "b0878265-807d-b50f-8dff-667ac71e137d",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "9c308ff2-6b95-4855-af04-44da2dd68f7c",
+          "title": "エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2800",
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "9e31a7e1-0855-4645-ab99-7ae285d7f4d7",
+          "title": "ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2800",
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "aba03c60-47ea-4c09-a835-2b25d309d807",
+          "title": "フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "2800",
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "c027b55d-9f11-4411-bc4c-5a0df4262cd6",
+          "title": "豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/%E3%81%9A%E3%81%8F%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%E3%82%BB%E3%83%83%E3%83%88",
+      "title": "スタンダード4種 ドリップパック飲み比べセット",
+      "source_product_id": "54070760-cdbe-a073-895e-24c3cbd6c6c4",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "7d713d8d-a703-4527-a01d-a3a6e5cf5473",
+          "title": "スタンダード4種 ドリップパック飲み比べセット",
+          "weight_g": null,
+          "money": {
+            "raw": "1300",
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/nicaragua-drippack",
+      "title": "ニカラグア  ドリップパック",
+      "source_product_id": "1a6f6cf6-71c4-764f-5560-829656a959af",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "afa4ff1d-dbff-47dc-b38b-dc9b7259ac7f",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "24836dc3-d635-409f-bea9-37cbc071a00c",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "2900",
+            "amount": "2900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "d550fae2-dee7-4f31-9ab8-ec584cad267e",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "5700",
+            "amount": "5700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "9759ead0-edce-4975-8081-3ce4835e26cb",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "8500",
+            "amount": "8500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/mexico-drippack",
+      "title": "メキシコ  ドリップパック",
+      "source_product_id": "eb0fb7b6-2acc-0cd5-83ce-c827817d1696",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "ab866e71-ded1-4846-9284-86635011b636",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "2a178d55-73fa-49d7-9358-316290fb9f49",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "2900",
+            "amount": "2900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "92c3fc5a-ff12-43a4-aad3-a2aece10de5d",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "5700",
+            "amount": "5700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "e5ddbda3-449a-4ce9-a701-9ad02c268acd",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "8500",
+            "amount": "8500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/brazil-drippack",
+      "title": "ブラジル  ドリップパック",
+      "source_product_id": "32a5ea12-eba9-5cab-2bc9-0e06c6da7296",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "27f23cb8-3a4b-481a-bc8a-48a714ca688b",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "b9cf88e9-72de-4dbe-93d1-bddfedb022d2",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "2900",
+            "amount": "2900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "359ec65d-3064-4977-b846-2367999c9264",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "5700",
+            "amount": "5700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "145dc61d-fac5-47dd-9649-2d6098320147",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "8500",
+            "amount": "8500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/guatemala-drip-pack",
+      "title": "グアテマラ  ドリップパック",
+      "source_product_id": "2658d32a-a599-310f-48d8-4d17b700ce92",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "d014ac67-813f-4514-a111-b34c07e7adca",
+          "title": "５",
+          "weight_g": null,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "b03b2e91-cdce-483f-a9f4-c39186ab6ac9",
+          "title": "10",
+          "weight_g": null,
+          "money": {
+            "raw": "2900",
+            "amount": "2900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "28e95a9d-a98c-4699-9a6a-a269f836f6eb",
+          "title": "20",
+          "weight_g": null,
+          "money": {
+            "raw": "5700",
+            "amount": "5700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "5c1050a1-86c0-4291-8986-872fec480d1f",
+          "title": "30",
+          "weight_g": null,
+          "money": {
+            "raw": "8500",
+            "amount": "8500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/gutemala-100g-200g",
+      "title": "グアテマラ（100g・200g）",
+      "source_product_id": "df19c1f7-07d8-a265-42f8-e8dfa824cc6e",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "288ae5a1-9993-486e-95ea-a0159035c464",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1400",
+            "amount": "1400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "a70e9255-155a-4cca-a87d-0cd1357340f2",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "20ea077a-9e59-4c92-b0b7-8b6ff826e441",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "850a25f3-5dad-4927-b350-7e70337d3daf",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "9ca98a19-2a0b-4aec-9e9f-411ad202ee20",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "2600",
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "ce88fd85-444e-4c10-bafd-8176fe6c099f",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "12596f09-dd28-48f3-bd11-95cc78faf9f9",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "37f97017-b1fd-4db8-8f35-bc714b83cbdd",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/brazil-100g-200g",
+      "title": "ブラジル (100g・200g)",
+      "source_product_id": "d99d3cc8-bc75-ec47-6c72-f713016f98f3",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "3417eeec-5452-4294-8364-b9c1d727668a",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1400",
+            "amount": "1400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "c6a3ac15-b860-4a30-b643-fe24f5e951f2",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "a8c15f70-b548-4307-b651-f5a0714da640",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "654b47c5-3e56-4956-ba0f-c76792bb0c73",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "0e695427-5322-4d00-9834-295484bbc6a0",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "2600",
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "9ead74b0-40cd-4e12-bba6-1dfb7ff5b2f9",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "9b82fd7d-50b3-418e-bf6c-588b630c5eb4",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "c057c54b-2dcf-4f96-9701-8c37cd5113c3",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/mexico-100g-200g",
+      "title": "メキシコ（100g・200g）",
+      "source_product_id": "3fb6a3c8-988b-8755-04bd-5c59ae0b18ea",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "1c2a0f2f-1599-4d25-be54-71506fa58e9f",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1400",
+            "amount": "1400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "79c0d153-c88c-4091-9668-1a481b4531f8",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "e48d8359-5d52-41b9-acee-f3bd00b757a2",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "d13105c2-90c8-4165-a0d9-95ccfdf24208",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "69f5b16f-e525-4b37-bd37-f4ac8bf0d3b8",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "2600",
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "4048d5fb-4191-4bba-b625-608f9c522bbe",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "418d0298-ebca-48a7-9285-5e1df0726fdc",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "1271a1bb-07a0-4910-b41c-f432080722cd",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://www.zukucafe.com/product-page/nicaragua-100g-200g",
+      "title": "ニカラグア（100g・200g）",
+      "source_product_id": "6b6778b4-c626-c00d-972c-b138d85e3f07",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "2f6c53a9-af00-43a8-99cd-507aca55e294",
+          "title": "100g / 豆",
+          "weight_g": 100,
+          "money": {
+            "raw": "1400",
+            "amount": "1400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "a6481c09-3b98-4c3b-8dfa-9dc330509d39",
+          "title": "100g / フレンチプレス",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "d59ed197-0488-4bb8-88c8-9c26cae419c5",
+          "title": "100g / ドリップ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "5e0beca0-ec96-4ca6-946c-2627ebb43216",
+          "title": "100g / エスプレッソ",
+          "weight_g": 100,
+          "money": {
+            "raw": "1500",
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "b169c0ed-48b9-4f14-b27c-e695bbdbf28f",
+          "title": "200g / 豆",
+          "weight_g": 200,
+          "money": {
+            "raw": "2600",
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "78b2c68e-932f-435f-aec4-fff10e50c130",
+          "title": "200g / フレンチプレス",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "ce6b1f26-2054-4eb7-8d51-6c685a028f19",
+          "title": "200g / ドリップ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        },
+        {
+          "id": "fafed578-414b-4c8d-8733-a5bd9586c058",
+          "title": "200g / エスプレッソ",
+          "weight_g": 200,
+          "money": {
+            "raw": "2700",
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "merchant_status": "in_stock",
+            "available_for_preorder": false,
+            "quantity": 0
+          },
+          "price_source": "wix_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/shop?page=2",
+      "status": 200,
+      "at": "2026-10-25T10:17:46.080Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/india-biodynamic-drippack",
+      "status": 200,
+      "at": "2026-10-25T10:17:46.586Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/india-biodynamic-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:47.091Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/indonesia-mandheling-drippack",
+      "status": 200,
+      "at": "2026-10-25T10:17:47.719Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/indonesia-mandheling-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:48.609Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/%E3%82%A8%E3%83%81%E3%82%AA%E3%83%94%E3%82%A2-g1-%E6%B0%B4%E5%87%BA%E3%81%97-%E3%83%91%E3%83%83%E3%82%AF",
+      "status": 200,
+      "at": "2026-10-25T10:17:49.398Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/ethiopia-g1-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:50.117Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/ethiopia-g1-drippack",
+      "status": 200,
+      "at": "2026-10-25T10:17:50.985Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/komoro-blend-drippack",
+      "status": 200,
+      "at": "2026-10-25T10:17:51.896Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/komoro-brend-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:52.741Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/%E3%81%9A%E3%81%8F%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-%E8%B1%86%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%E3%82%BB%E3%83%83%E3%83%88",
+      "status": 200,
+      "at": "2026-10-25T10:17:53.459Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/%E3%81%9A%E3%81%8F%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E9%A3%B2%E3%81%BF%E6%AF%94%E3%81%B9%E3%82%BB%E3%83%83%E3%83%88",
+      "status": 200,
+      "at": "2026-10-25T10:17:54.034Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/nicaragua-drippack",
+      "status": 200,
+      "at": "2026-10-25T10:17:54.538Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/mexico-drippack",
+      "status": 200,
+      "at": "2026-10-25T10:17:55.042Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/brazil-drippack",
+      "status": 200,
+      "at": "2026-10-25T10:17:55.548Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/guatemala-drip-pack",
+      "status": 200,
+      "at": "2026-10-25T10:17:56.052Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/gutemala-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:56.556Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/brazil-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:57.060Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/mexico-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:57.565Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zukucafe.com/product-page/nicaragua-100g-200g",
+      "status": 200,
+      "at": "2026-10-25T10:17:58.069Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true
+}
