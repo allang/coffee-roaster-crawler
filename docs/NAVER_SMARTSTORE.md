@@ -168,7 +168,7 @@ stock is explicit, and product IDs do not overlap. Four bundle/drip-pack weights
 remain unknown. Japanese subscriptions are explicitly excluded from the
 one-time coffee scope. No product was saved to production by those inspections.
 
-The expanded full suite passes **542 tests**. The current production weight
+At that checkpoint, the expanded full suite passed **542 tests**. The production weight
 index was independently inspected through Safari and still rejects distinct
 same-weight SKUs. See [the reviewable save-gate plan](naver-20261025/VARIANT_SAVE_GATE.md)
 for the exact preflight, already tested migration, preservation guarantees and
@@ -178,8 +178,8 @@ required approval before applying this global schema change.
 
 Exact-owner public inspection now verifies Nano's Coffee (10), HOKURO (15) and
 Specialty Coffee Soh (23): 48 product-only JPY offers, with incomplete native
-size/grind identities and no omission reconciliation. The full suite now passes
-552 tests. An actual isolated Mac mini crawl of all three owners failed on
+size/grind identities and no omission reconciliation. That checkpoint's full
+suite passed 552 tests. An actual isolated Mac mini crawl of all three owners failed on
 OpenAI API credit exhaustion during translation and saved zero coffees.
 Read-only parent catalog verification confirms the failed runs and zero new
 product rows. This does not prove a successful ingestion rollout.
@@ -188,5 +188,21 @@ See [the measured benchmark](naver-20261025/BENCHMARK.md) and
 [the BASE evidence contract](ASIAN_BASE_STOREFRONTS.md). The scheduled crawler
 remains on its existing source; neither the pending global index migration nor
 the Naver CAPTCHA has been performed. Finished Instagram discovery sessions
-remain archived; the completed remote validation session is awaiting archive
-confirmation because that host's archive-control request failed.
+remain archived; a later archive request for the completed remote validation
+session succeeded as well.
+
+## Further Asian Storefronts
+
+The [next source-validation checkpoint](ASIAN_STOREFRONT_FOLLOWUP.md) adds
+Toyosaki Coffee Factory and Regolith Coffee after independent primary-source
+and catalog checks, for 21 net roaster additions. Ariowl and Roastery101 add
+36 exact native coffee extractions / 145 variants. OTC's headless public data
+provides six verified one-time house-capsule offers, while both DECAF sizes
+remain held for contradictory stock. Its imported brands and coffee machine
+are outside this explicitly partial house-coffee scope.
+
+The total is 122 source-verified products, not 122 newly saved coffees. Latest
+readback still shows zero catalog products for these 21 owners. The full suite
+now passes 568 tests. No scheduled-source rollout, schema change or further
+model/production crawl was performed. The new separate Instagram session is
+waiting for its own access approval and has not been treated as terminal.

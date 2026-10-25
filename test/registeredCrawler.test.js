@@ -16,6 +16,7 @@ function crawler(state) {
     './siteSupport/txt':require('../src/siteSupport/txt'),
     './siteSupport/naver':require('../src/siteSupport/naver'),
     './siteSupport/base':require('../src/siteSupport/base'),
+    './siteSupport/otc':require('../src/siteSupport/otc'),
     './crawlConcurrency':require('../src/crawlConcurrency'),
     './crawlBudget':require('../src/crawlBudget'),'./aiPageRouting':require('../src/aiPageRouting'),
   };
@@ -116,4 +117,11 @@ test('registered BASE cards are visited without sitemap or global omission recon
  const s=state();s.profile=profile;s.discovery=discovery;
  const result=await crawler(s).crawl({id:profile.entity_ids[0],name:profile.name,website_url:profile.bootstrap_url},[]);
  assert.equal(result.success,true);assert.equal(s.metrics.metrics.partialInventory,true);assert.equal(s.metrics.metrics.inventoryComplete,false);assert.equal(s.reconciled,0);assert.equal(s.sitemaps,0);assert.equal(s.bfs,0);assert.equal(s.visitedUrls.length,15);
+});
+test('OTC partial discovery retains held products and any page error prevents reconciliation',async()=>{
+ const profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='OTC COFFEE'),otc=require('../src/siteSupport/otc'),listing=require('./fixtures/siteSupport/otc-public.json').pages.find(p=>p.url.endsWith('/shop'));
+ const discovery=await otc.discoverOtcProducts({website_url:profile.bootstrap_url},profile,async value=>({success:true,data:listing.html,finalUrl:value}));
+ const s=state();s.profile=profile;s.discovery=discovery;s.pageErrors=1;
+ await assert.rejects(crawler(s).crawl({id:profile.entity_ids[0],name:profile.name,website_url:'https://otc-coffee.com/'},[]),/Registered merchant product verification failed/);
+ assert.equal(s.visitedUrls.length,8);assert(s.visitedUrls.includes('https://otc-coffee.com/jp/shop/items/7831883382845'));assert.equal(s.reconciled,0);assert.equal(s.sitemaps,0);assert.equal(s.bfs,0);assert.equal(s.failed,1);
 });

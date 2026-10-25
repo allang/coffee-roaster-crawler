@@ -1,0 +1,513 @@
+{
+  "name": "OTC COFFEE",
+  "checked_at": "2026-10-25T08:52:25.554Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "a4bae1ff-f400-45e0-896f-2863cd3a51cb"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://otc-coffee.com/jp/shop/items/7831890296893",
+      "https://otc-coffee.com/jp/shop/items/7831888953405",
+      "https://otc-coffee.com/jp/shop/items/7831883481149",
+      "https://otc-coffee.com/jp/shop/items/7831883382845",
+      "https://otc-coffee.com/jp/shop/items/7805540401213",
+      "https://otc-coffee.com/jp/shop/items/7805540171837",
+      "https://otc-coffee.com/jp/shop/items/7805539876925",
+      "https://otc-coffee.com/jp/shop/items/7805539647549"
+    ],
+    "complete": false,
+    "observed_scope_complete": true,
+    "inventory_complete": false,
+    "inventory_scope": "otc_public_japanese_house_capsules",
+    "market_scope": "JP",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "evidence": [
+      {
+        "listing": "https://otc-coffee.com/jp/shop",
+        "product_urls": [
+          "https://otc-coffee.com/jp/shop/items/7831890296893",
+          "https://otc-coffee.com/jp/shop/items/7831888953405",
+          "https://otc-coffee.com/jp/shop/items/7831883481149",
+          "https://otc-coffee.com/jp/shop/items/7831883382845",
+          "https://otc-coffee.com/jp/shop/items/7805540401213",
+          "https://otc-coffee.com/jp/shop/items/7805540171837",
+          "https://otc-coffee.com/jp/shop/items/7805539876925",
+          "https://otc-coffee.com/jp/shop/items/7805539647549"
+        ],
+        "excluded": [
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/8034548318269",
+            "title": "B² (B SQUARED) ORIGINAL COFFEE CAPSULE",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/8009588277309",
+            "title": "\"mind business\" by dj desu",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7974468780093",
+            "title": "ACID COFFEE CAPSULE TURBO SHOT!!",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7905611186237",
+            "title": "OTC ZERO",
+            "reason": "coffee_machine"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7832273518653",
+            "title": "Colonna Coffee Foundation Espresso 10カプセル",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7832273551421",
+            "title": "Colonna Coffee Foundation Lungo 10カプセル",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7832273977405",
+            "title": "Colonna Coffee Discovery Lungo 10カプセル",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7832274370621",
+            "title": "Colonna Coffee Rare Espresso 10カプセル",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7832274665533",
+            "title": "Colonna Coffee Gesha Lungo 10カプセル",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7832275058749",
+            "title": "Colonna Coffee Limited Release Rare Espresso 10カプセル",
+            "reason": "different_brand_or_unreviewed_product"
+          },
+          {
+            "url": "https://otc-coffee.com/jp/shop/items/7832275091517",
+            "title": "Colonna Coffee Limited Release Rare Lungo 10カプセル",
+            "reason": "different_brand_or_unreviewed_product"
+          }
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7831890296893",
+      "title": "OTC SPECIAL 10カプセル",
+      "source_product_id": "otc_public_product:7831890296893",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "otc_next_primary_product_offer",
+        "source_url": "https://otc-coffee.com/jp/shop/items/7831890296893",
+        "source_product_id": "otc_public_product:7831890296893",
+        "price": "2400",
+        "currency": "JPY",
+        "minor_units": 2400,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "observed_variant_id": "gid://shopify/ProductVariant/43069166944317",
+        "stock_control": {
+          "source": "otc_primary_purchase_control",
+          "product_id": "7831890296893",
+          "enabled": true
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": "イースト アナエロビック サーモショック ナチュラル",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "イースト アナエロビック サーモショック ナチュラル"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "otc_japanese_public_one_time_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7831888953405",
+      "title": "OTC DAILY 10カプセル",
+      "source_product_id": "otc_public_product:7831888953405",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "otc_next_primary_product_offer",
+        "source_url": "https://otc-coffee.com/jp/shop/items/7831888953405",
+        "source_product_id": "otc_public_product:7831888953405",
+        "price": "1800",
+        "currency": "JPY",
+        "minor_units": 1800,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "observed_variant_id": "gid://shopify/ProductVariant/43069162553405",
+        "stock_control": {
+          "source": "otc_primary_purchase_control",
+          "product_id": "7831888953405",
+          "enabled": true
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": "ウォッシュド",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "ウォッシュド"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "otc_japanese_public_one_time_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7831883481149",
+      "title": "OTC GESHA 10カプセル",
+      "source_product_id": "otc_public_product:7831883481149",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "otc_next_primary_product_offer",
+        "source_url": "https://otc-coffee.com/jp/shop/items/7831883481149",
+        "source_product_id": "otc_public_product:7831883481149",
+        "price": "3500",
+        "currency": "JPY",
+        "minor_units": 3500,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "observed_variant_id": "gid://shopify/ProductVariant/43069141254205",
+        "stock_control": {
+          "source": "otc_primary_purchase_control",
+          "product_id": "7831883481149",
+          "enabled": true
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": "ウォッシュド",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "ウォッシュド"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "otc_japanese_public_one_time_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7805540171837",
+      "title": "OTC GESHA 30カプセル",
+      "source_product_id": "otc_public_product:7805540171837",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "otc_next_primary_product_offer",
+        "source_url": "https://otc-coffee.com/jp/shop/items/7805540171837",
+        "source_product_id": "otc_public_product:7805540171837",
+        "price": "9000",
+        "currency": "JPY",
+        "minor_units": 9000,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "observed_variant_id": "gid://shopify/ProductVariant/42986975658045",
+        "stock_control": {
+          "source": "otc_primary_purchase_control",
+          "product_id": "7805540171837",
+          "enabled": true
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": "ウォッシュド",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "ウォッシュド"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "otc_japanese_public_one_time_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7805539876925",
+      "title": "OTC DAILY 30カプセル",
+      "source_product_id": "otc_public_product:7805539876925",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "otc_next_primary_product_offer",
+        "source_url": "https://otc-coffee.com/jp/shop/items/7805539876925",
+        "source_product_id": "otc_public_product:7805539876925",
+        "price": "4800",
+        "currency": "JPY",
+        "minor_units": 4800,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "observed_variant_id": "gid://shopify/ProductVariant/42986974740541",
+        "stock_control": {
+          "source": "otc_primary_purchase_control",
+          "product_id": "7805539876925",
+          "enabled": true
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": "ウォッシュド",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "ウォッシュド"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "otc_japanese_public_one_time_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7805539647549",
+      "title": "OTC SPECIAL 30カプセル",
+      "source_product_id": "otc_public_product:7805539647549",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "otc_next_primary_product_offer",
+        "source_url": "https://otc-coffee.com/jp/shop/items/7805539647549",
+        "source_product_id": "otc_public_product:7805539647549",
+        "price": "6300",
+        "currency": "JPY",
+        "minor_units": 6300,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "observed_variant_id": "gid://shopify/ProductVariant/42986974085181",
+        "stock_control": {
+          "source": "otc_primary_purchase_control",
+          "product_id": "7805539647549",
+          "enabled": true
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": "ケブラディータス",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "ケブラディータス"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "otc_japanese_public_one_time_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false
+      }
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7831883382845",
+      "error": "otc_conflicting_stock_evidence: enabled primary purchase control contradicts OutOfStock JSON-LD"
+    },
+    {
+      "url": "https://otc-coffee.com/jp/shop/items/7805540401213",
+      "error": "otc_conflicting_stock_evidence: enabled primary purchase control contradicts OutOfStock JSON-LD"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop",
+      "status": 200,
+      "at": "2026-10-25T08:52:21.415Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7831890296893",
+      "status": 200,
+      "at": "2026-10-25T08:52:21.920Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7831888953405",
+      "status": 200,
+      "at": "2026-10-25T08:52:22.424Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7831883481149",
+      "status": 200,
+      "at": "2026-10-25T08:52:22.929Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7831883382845",
+      "status": 200,
+      "at": "2026-10-25T08:52:23.433Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7805540401213",
+      "status": 200,
+      "at": "2026-10-25T08:52:23.938Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7805540171837",
+      "status": 200,
+      "at": "2026-10-25T08:52:24.442Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7805539876925",
+      "status": 200,
+      "at": "2026-10-25T08:52:24.947Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://otc-coffee.com/jp/shop/items/7805539647549",
+      "status": 200,
+      "at": "2026-10-25T08:52:25.452Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": false,
+  "partial_support_verified": false,
+  "inventory_complete": false,
+  "variants_complete": false
+}

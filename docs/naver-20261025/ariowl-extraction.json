@@ -1,0 +1,2510 @@
+{
+  "name": "Ariowl Coffee",
+  "checked_at": "2026-10-25T08:26:29.416Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "262010ee-f3a8-4ca9-9f49-c3ae3b369a72"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://ariowlcoffee.com/products/panama-adaura-geisha-classic-natural",
+      "https://ariowlcoffee.com/products/guatemala-finca-el-injerto-catuai-washed",
+      "https://ariowlcoffee.com/products/colombia-villa-pastora-orange-bourbon",
+      "https://ariowlcoffee.com/products/brazil-guariroba-floral",
+      "https://ariowlcoffee.com/products/%F0%9F%8E%89-happy-mix-scaj-2026-special-edition",
+      "https://ariowlcoffee.com/products/colombia-el-origen-azahar",
+      "https://ariowlcoffee.com/products/colombia-milan-nitro-washed",
+      "https://ariowlcoffee.com/products/brazil-guariroba-fruity-natural",
+      "https://ariowlcoffee.com/products/brazil-guariroba-chocolate-natural",
+      "https://ariowlcoffee.com/products/nicaragua-las-delicias-natural",
+      "https://ariowlcoffee.com/products/indonesia-mandheling",
+      "https://ariowlcoffee.com/products/kenya-ngurueri-washed-alternative",
+      "https://ariowlcoffee.com/products/kenya-ngurueri-washed",
+      "https://ariowlcoffee.com/products/ethiopia-bonga-washed",
+      "https://ariowlcoffee.com/products/colombia-nacimiento-wushwush-semi-washed",
+      "https://ariowlcoffee.com/products/colombia-la-primavera-papayo-natural",
+      "https://ariowlcoffee.com/products/colombia-hello-judges-peach-culturing",
+      "https://ariowlcoffee.com/products/coffee-brew-packs-melon-peach-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%E3%82%BF%E3%82%A4%E3%83%97",
+      "https://ariowlcoffee.com/products/cold-brew-packs",
+      "https://ariowlcoffee.com/products/colombia-el-oasis-geisha-natural-%E6%B5%85%E7%85%8E%E3%82%8A",
+      "https://ariowlcoffee.com/products/ariowl-coffee-selection-premium",
+      "https://ariowlcoffee.com/products/2026%E5%B9%B4-%E7%A6%8F%E8%A2%8B-standard-beans-selection-%E3%82%B3%E3%83%94%E3%83%BC-1",
+      "https://ariowlcoffee.com/products/drip-bag-single-origin"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/products.json",
+        "page": 1,
+        "products": 24,
+        "coffeeProducts": 23
+      }
+    ],
+    "market": null,
+    "inventory_authorizes_global_absence": false
+  },
+  "products": [
+    {
+      "url": "https://ariowlcoffee.com/products/panama-adaura-geisha-classic-natural",
+      "title": "🇵🇦Panama / Adaura Geisha Classic Natural",
+      "source_product_id": "15416498389305",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67823805366585",
+          "title": "15g / 豆のまま(推奨)",
+          "weight_g": 15,
+          "money": {
+            "raw": 2000,
+            "amount": "2000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/guatemala-finca-el-injerto-catuai-washed",
+      "title": "🇬🇹Guatemala / Finca El Injerto Catuai Washed",
+      "source_product_id": "15416497668409",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67823802712377",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2000,
+            "amount": "2000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/colombia-villa-pastora-orange-bourbon",
+      "title": "🇨🇴Colombia / Villa Pastora Orange Bourbon",
+      "source_product_id": "15416496193849",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67823798092089",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-floral",
+      "title": "🇧🇷Brazil / Guariroba Floral",
+      "source_product_id": "15416490656057",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67823790063929",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1500,
+            "amount": "1500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/%F0%9F%8E%89-happy-mix-scaj-2026-special-edition",
+      "title": "🎉 Happy Mix !! SCAJ 2026 Special Edition",
+      "source_product_id": "15416478761273",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67823771648313",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 3000,
+            "amount": "3000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/colombia-el-origen-azahar",
+      "title": "🇨🇴Colombia / El Origen Azahar",
+      "source_product_id": "10319737094457",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54371504128313",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54371504161081",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54371504193849",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54371504226617",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/colombia-milan-nitro-washed",
+      "title": "🇨🇴Colombia / Risaralde Milan Nitro Washed",
+      "source_product_id": "9820474376505",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "50566180274489",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 3000,
+            "amount": "3000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50566180340025",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 3000,
+            "amount": "3000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50566700564793",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5900,
+            "amount": "5900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50566700597561",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5900,
+            "amount": "5900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-fruity-natural",
+      "title": "🇧🇷Brazil / Guariroba Fruity Natural 浅煎り",
+      "source_product_id": "10295101948217",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275768844601",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2000,
+            "amount": "2000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275768877369",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2000,
+            "amount": "2000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275768910137",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 3900,
+            "amount": "3900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275768942905",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 3900,
+            "amount": "3900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-chocolate-natural",
+      "title": "🇧🇷Brazil / Guariroba Chocolate Natural 中煎り",
+      "source_product_id": "10295097491769",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275753476409",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1100,
+            "amount": "1100",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275753509177",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1100,
+            "amount": "1100",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275753541945",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2100,
+            "amount": "2100",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275753574713",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2100,
+            "amount": "2100",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/nicaragua-las-delicias-natural",
+      "title": "🇳🇮Nicaragua / Las Delicias Natural 中煎り",
+      "source_product_id": "10295095099705",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275725459769",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1200,
+            "amount": "1200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275725492537",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1200,
+            "amount": "1200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275725525305",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2300,
+            "amount": "2300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275725558073",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2300,
+            "amount": "2300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/indonesia-mandheling",
+      "title": "🇮🇩Indonesia / Mandheling 深煎り",
+      "source_product_id": "10295083991353",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275691872569",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275691905337",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275691938105",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275691970873",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed-alternative",
+      "title": "🇰🇪Kenya / Ngurueri Washed Alternative 中深煎り",
+      "source_product_id": "10295081828665",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275682730297",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275682763065",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275682795833",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275682828601",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed",
+      "title": "🇰🇪Kenya / Ngurueri Washed 浅煎り",
+      "source_product_id": "10295080354105",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275666936121",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275666968889",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275667001657",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275667034425",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/ethiopia-bonga-washed",
+      "title": "🇪🇹Ethiopia / Bonga Washed 浅煎り",
+      "source_product_id": "10295079108921",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275650552121",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275650584889",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275650617657",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275650650425",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/colombia-nacimiento-wushwush-semi-washed",
+      "title": "🇨🇴Colombia / Nacimiento WushWush Semi-Washed 浅煎り",
+      "source_product_id": "10295077339449",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275624829241",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275624862009",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275624894777",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 4700,
+            "amount": "4700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275624927545",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 4700,
+            "amount": "4700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/colombia-la-primavera-papayo-natural",
+      "title": "🇨🇴Colombia / La Primavera Papayo Natural 浅煎り",
+      "source_product_id": "10295076585785",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275616276793",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275616309561",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275616342329",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 4700,
+            "amount": "4700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275616375097",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 4700,
+            "amount": "4700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/colombia-hello-judges-peach-culturing",
+      "title": "🇨🇴Colombia / Hello Judges Peach Culturing 浅煎り",
+      "source_product_id": "10295074718009",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "54275610378553",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275610411321",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275610444089",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "54275610476857",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/coffee-brew-packs-melon-peach-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%E3%82%BF%E3%82%A4%E3%83%97",
+      "title": "Coffee Brew Packs \"Melon & Peach\" / コーヒーパックタイプ",
+      "source_product_id": "10258866503993",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "53663142347065",
+          "title": "1袋 / 5パック入 (8g*5パック) / Melon & Peach 夏の2種セット",
+          "weight_g": null,
+          "money": {
+            "raw": 2500,
+            "amount": "2500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53663132647737",
+          "title": "1袋 / 5パック入 (8g*5パック) / 中煎り Original / Peach",
+          "weight_g": null,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "53663142379833",
+          "title": "1袋 / 5パック入 (8g*5パック) / 中煎り Original / Melon",
+          "weight_g": null,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/cold-brew-packs",
+      "title": "Cold Brew Packs / 水出しコーヒーパック",
+      "source_product_id": "9876112310585",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "50772115882297",
+          "title": "1袋 / 4pack入り(25g*4pack) / 浅煎り: ICED MIX / Light Roast",
+          "weight_g": null,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50772115915065",
+          "title": "1袋 / 4pack入り(25g*4pack) / 深煎り: ICED MIX / Dark Roast",
+          "weight_g": null,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50772188528953",
+          "title": "1袋 / 4pack入り(25g*4pack) / カフェインレス : Mexico Chiapas Decaf",
+          "weight_g": null,
+          "money": {
+            "raw": 1300,
+            "amount": "1300",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1300,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50772188561721",
+          "title": "大容量 / 20pack入り(25g*20pack)【送料無料】 / 浅煎り: ICED MIX / Light Roast",
+          "weight_g": null,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50772188594489",
+          "title": "大容量 / 20pack入り(25g*20pack)【送料無料】 / 深煎り: ICED MIX / Dark Roast",
+          "weight_g": null,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50772188627257",
+          "title": "大容量 / 20pack入り(25g*20pack)【送料無料】 / カフェインレス : Mexico Chiapas Decaf",
+          "weight_g": null,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/colombia-el-oasis-geisha-natural-%E6%B5%85%E7%85%8E%E3%82%8A",
+      "title": "🇨🇴Colombia / El Oasis Geisha Natural 浅煎り",
+      "source_product_id": "10133627961657",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "51989070479673",
+          "title": "100g / 豆のまま(推奨)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51989070512441",
+          "title": "100g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51989070545209",
+          "title": "200g / 豆のまま(推奨)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51989070577977",
+          "title": "200g / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 200,
+          "money": {
+            "raw": 5500,
+            "amount": "5500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/ariowl-coffee-selection-premium",
+      "title": "Ariowl Coffee Selection / Premium",
+      "source_product_id": "10111426068793",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "51920831021369",
+          "title": "50g 3種類入り[150g] / 豆のまま(推奨)",
+          "weight_g": 150,
+          "money": {
+            "raw": 3500,
+            "amount": "3500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920831054137",
+          "title": "50g 3種類入り[150g] / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 150,
+          "money": {
+            "raw": 3500,
+            "amount": "3500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920831086905",
+          "title": "50g 3種類入り[150g] / 粗挽き(フレンチプレス挽き)",
+          "weight_g": 150,
+          "money": {
+            "raw": 3500,
+            "amount": "3500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920831119673",
+          "title": "100g 3種類入り[300g] / 豆のまま(推奨)",
+          "weight_g": 300,
+          "money": {
+            "raw": 6900,
+            "amount": "6900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 6900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920831152441",
+          "title": "100g 3種類入り[300g] / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 300,
+          "money": {
+            "raw": 6900,
+            "amount": "6900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 6900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920831185209",
+          "title": "100g 3種類入り[300g] / 粗挽き(フレンチプレス挽き)",
+          "weight_g": 300,
+          "money": {
+            "raw": 6900,
+            "amount": "6900",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 6900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/2026%E5%B9%B4-%E7%A6%8F%E8%A2%8B-standard-beans-selection-%E3%82%B3%E3%83%94%E3%83%BC-1",
+      "title": "Ariowl Coffee Selection / Standard",
+      "source_product_id": "10111401034041",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "51920813457721",
+          "title": "50g 3種類入り[150g] / 豆のまま(推奨)",
+          "weight_g": 150,
+          "money": {
+            "raw": 2100,
+            "amount": "2100",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920813490489",
+          "title": "50g 3種類入り[150g] / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 150,
+          "money": {
+            "raw": 2100,
+            "amount": "2100",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920813523257",
+          "title": "50g 3種類入り[150g] / 粗挽き(フレンチプレス挽き)",
+          "weight_g": 150,
+          "money": {
+            "raw": 2100,
+            "amount": "2100",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920766828857",
+          "title": "100g 3種類入り[300g] / 豆のまま(推奨)",
+          "weight_g": 300,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920766861625",
+          "title": "100g 3種類入り[300g] / 中挽き(ペーパーフィルター挽き)",
+          "weight_g": 300,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "51920813424953",
+          "title": "100g 3種類入り[300g] / 粗挽き(フレンチプレス挽き)",
+          "weight_g": 300,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://ariowlcoffee.com/products/drip-bag-single-origin",
+      "title": "【 DripBag 】Single Origin 各種",
+      "source_product_id": "9884067692857",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "50803312623929",
+          "title": "5個セット / エチオピア ウォッシュド 浅煎り",
+          "weight_g": null,
+          "money": {
+            "raw": 1550,
+            "amount": "1550",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1550,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50803417022777",
+          "title": "5個セット / ブラジル ナチュラル 中煎り",
+          "weight_g": null,
+          "money": {
+            "raw": 1550,
+            "amount": "1550",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1550,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50803417055545",
+          "title": "5個セット / インドネシア ウォッシュド 深煎り",
+          "weight_g": null,
+          "money": {
+            "raw": 1550,
+            "amount": "1550",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 1550,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50803312656697",
+          "title": "15個セット / エチオピア ウォッシュド 浅煎り",
+          "weight_g": null,
+          "money": {
+            "raw": 4500,
+            "amount": "4500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50803417088313",
+          "title": "15個セット / ブラジル ナチュラル 中煎り",
+          "weight_g": null,
+          "money": {
+            "raw": 4500,
+            "amount": "4500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50803417121081",
+          "title": "15個セット / インドネシア ウォッシュド 深煎り",
+          "weight_g": null,
+          "money": {
+            "raw": 4500,
+            "amount": "4500",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-25T08:25:53.994Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-25T08:25:54.499Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/panama-adaura-geisha-classic-natural",
+      "status": 200,
+      "at": "2026-10-25T08:25:55.004Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/panama-adaura-geisha-classic-natural.json",
+      "status": 200,
+      "at": "2026-10-25T08:25:55.510Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/panama-adaura-geisha-classic-natural.js",
+      "status": 200,
+      "at": "2026-10-25T08:25:56.024Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/guatemala-finca-el-injerto-catuai-washed",
+      "status": 200,
+      "at": "2026-10-25T08:25:56.528Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/guatemala-finca-el-injerto-catuai-washed.json",
+      "status": 200,
+      "at": "2026-10-25T08:25:57.032Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/guatemala-finca-el-injerto-catuai-washed.js",
+      "status": 200,
+      "at": "2026-10-25T08:25:57.536Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-villa-pastora-orange-bourbon",
+      "status": 200,
+      "at": "2026-10-25T08:25:58.040Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-villa-pastora-orange-bourbon.json",
+      "status": 200,
+      "at": "2026-10-25T08:25:58.544Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-villa-pastora-orange-bourbon.js",
+      "status": 200,
+      "at": "2026-10-25T08:25:59.048Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-floral",
+      "status": 200,
+      "at": "2026-10-25T08:25:59.553Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-floral.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:00.059Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-floral.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:00.566Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/%F0%9F%8E%89-happy-mix-scaj-2026-special-edition",
+      "status": 200,
+      "at": "2026-10-25T08:26:01.070Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/%F0%9F%8E%89-happy-mix-scaj-2026-special-edition.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:01.575Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/%F0%9F%8E%89-happy-mix-scaj-2026-special-edition.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:02.080Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-el-origen-azahar",
+      "status": 200,
+      "at": "2026-10-25T08:26:02.581Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-el-origen-azahar.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:03.085Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-el-origen-azahar.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:03.591Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-milan-nitro-washed",
+      "status": 200,
+      "at": "2026-10-25T08:26:04.097Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-milan-nitro-washed.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:04.600Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-milan-nitro-washed.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:05.105Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-fruity-natural",
+      "status": 200,
+      "at": "2026-10-25T08:26:05.609Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-fruity-natural.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:06.113Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-fruity-natural.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:06.618Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-chocolate-natural",
+      "status": 200,
+      "at": "2026-10-25T08:26:07.122Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-chocolate-natural.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:07.627Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/brazil-guariroba-chocolate-natural.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:08.130Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/nicaragua-las-delicias-natural",
+      "status": 200,
+      "at": "2026-10-25T08:26:08.634Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/nicaragua-las-delicias-natural.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:09.137Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/nicaragua-las-delicias-natural.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:09.642Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/indonesia-mandheling",
+      "status": 200,
+      "at": "2026-10-25T08:26:10.146Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/indonesia-mandheling.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:10.649Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/indonesia-mandheling.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:11.152Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed-alternative",
+      "status": 200,
+      "at": "2026-10-25T08:26:11.656Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed-alternative.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:12.162Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed-alternative.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:12.667Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed",
+      "status": 200,
+      "at": "2026-10-25T08:26:13.171Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:13.676Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/kenya-ngurueri-washed.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:14.180Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/ethiopia-bonga-washed",
+      "status": 200,
+      "at": "2026-10-25T08:26:14.684Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/ethiopia-bonga-washed.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:15.191Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/ethiopia-bonga-washed.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:15.696Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-nacimiento-wushwush-semi-washed",
+      "status": 200,
+      "at": "2026-10-25T08:26:16.200Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-nacimiento-wushwush-semi-washed.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:16.702Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-nacimiento-wushwush-semi-washed.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:17.205Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-la-primavera-papayo-natural",
+      "status": 200,
+      "at": "2026-10-25T08:26:17.708Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-la-primavera-papayo-natural.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:18.212Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-la-primavera-papayo-natural.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:18.714Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-hello-judges-peach-culturing",
+      "status": 200,
+      "at": "2026-10-25T08:26:19.217Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-hello-judges-peach-culturing.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:19.719Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-hello-judges-peach-culturing.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:20.224Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/coffee-brew-packs-melon-peach-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%E3%82%BF%E3%82%A4%E3%83%97",
+      "status": 200,
+      "at": "2026-10-25T08:26:20.732Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/coffee-brew-packs-melon-peach-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%E3%82%BF%E3%82%A4%E3%83%97.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:21.237Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/coffee-brew-packs-melon-peach-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%E3%82%BF%E3%82%A4%E3%83%97.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:21.741Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/cold-brew-packs",
+      "status": 200,
+      "at": "2026-10-25T08:26:22.244Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/cold-brew-packs.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:22.747Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/cold-brew-packs.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:23.252Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-el-oasis-geisha-natural-%E6%B5%85%E7%85%8E%E3%82%8A",
+      "status": 200,
+      "at": "2026-10-25T08:26:23.754Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-el-oasis-geisha-natural-%E6%B5%85%E7%85%8E%E3%82%8A.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:24.258Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/colombia-el-oasis-geisha-natural-%E6%B5%85%E7%85%8E%E3%82%8A.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:24.761Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/ariowl-coffee-selection-premium",
+      "status": 200,
+      "at": "2026-10-25T08:26:25.265Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/ariowl-coffee-selection-premium.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:25.769Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/ariowl-coffee-selection-premium.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:26.273Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/2026%E5%B9%B4-%E7%A6%8F%E8%A2%8B-standard-beans-selection-%E3%82%B3%E3%83%94%E3%83%BC-1",
+      "status": 200,
+      "at": "2026-10-25T08:26:26.778Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/2026%E5%B9%B4-%E7%A6%8F%E8%A2%8B-standard-beans-selection-%E3%82%B3%E3%83%94%E3%83%BC-1.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:27.282Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/2026%E5%B9%B4-%E7%A6%8F%E8%A2%8B-standard-beans-selection-%E3%82%B3%E3%83%94%E3%83%BC-1.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:27.786Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/drip-bag-single-origin",
+      "status": 200,
+      "at": "2026-10-25T08:26:28.291Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/drip-bag-single-origin.json",
+      "status": 200,
+      "at": "2026-10-25T08:26:28.795Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://ariowlcoffee.com/products/drip-bag-single-origin.js",
+      "status": 200,
+      "at": "2026-10-25T08:26:29.298Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true
+}

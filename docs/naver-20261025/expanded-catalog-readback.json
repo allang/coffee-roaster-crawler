@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-25T08:57:26.254Z",
+  "mode": "read-only-post-source-validation-catalog-check",
+  "owner_count": 21,
+  "product_count": 0,
+  "products": [],
+  "new_entities": [
+    {
+      "id": "68b94ad4-dba5-5674-a471-7cb5d70fde0d",
+      "name": "Toyosaki Coffee Factory",
+      "website_url": "https://www.toyosakicoffeefactory.com/shop",
+      "created_at": "2026-10-25T08:29:19.70206+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    },
+    {
+      "id": "84cf4258-29ac-5fa8-bde5-2a138240b185",
+      "name": "Regolith Coffee",
+      "website_url": "https://regolith-coffee.com/",
+      "created_at": "2026-10-25T08:29:20.358703+00:00",
+      "entity_roles": [
+        {
+          "role": "roaster"
+        }
+      ]
+    }
+  ]
+}

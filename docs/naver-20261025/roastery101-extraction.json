@@ -1,0 +1,1660 @@
+{
+  "name": "COFFEE ROASTERY 101",
+  "checked_at": "2026-10-25T08:22:45.690Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "47b26677-4dde-446a-99c3-6d6adbb6867c"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://shop.roastery101.com/products/mexico-el-triunfo-decaf-mountain-water-200g",
+      "https://shop.roastery101.com/products/fourth-wave-blend-original-vol-1-100g",
+      "https://shop.roastery101.com/products/2week-drip-bag-fourth-wave-blend-14%E5%80%8B%E5%85%A5%E3%82%8A-%E9%80%81%E6%96%99%E7%84%A1%E6%96%99",
+      "https://shop.roastery101.com/products/colombia-quindio-mazatlan-infused-anaerobic-honey-strawberry-100g",
+      "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-rose-100g",
+      "https://shop.roastery101.com/products/kenya-nyeri-karindundu-washed-200g",
+      "https://shop.roastery101.com/products/peru-cup-of-excellence-24-100g",
+      "https://shop.roastery101.com/products/papua-new-guinea-kainantu-baroida-washed-200g",
+      "https://shop.roastery101.com/products/ethiopia-yirgacheffe-chelchele-natural-200g",
+      "https://shop.roastery101.com/products/classic-love-101-original-japanese-sake-after-infused-100g",
+      "https://shop.roastery101.com/products/guatemala-antigua-filadelfia-washed-200g",
+      "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-100g",
+      "https://shop.roastery101.com/products/brazil-sao-paulo-mojiana-cachoeira-no-2-pulped-natural-200g"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/products.json",
+        "page": 1,
+        "products": 22,
+        "coffeeProducts": 13
+      }
+    ],
+    "market": null,
+    "inventory_authorizes_global_absence": false
+  },
+  "products": [
+    {
+      "url": "https://shop.roastery101.com/products/mexico-el-triunfo-decaf-mountain-water-200g",
+      "title": "【Mexico】El Triunfo Decaf Mountain Water 【200g】",
+      "source_product_id": "7649964327156",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "42708366917876",
+          "title": "City roast / 豆のまま",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42708366950644",
+          "title": "City roast / 中挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42708366983412",
+          "title": "City roast / 中細挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42708367016180",
+          "title": "City roast / 中粗挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "42708367048948",
+          "title": "City roast / 粗挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/fourth-wave-blend-original-vol-1-100g",
+      "title": "Fourth Wave Blend Original-Vol.1【100g】",
+      "source_product_id": "9529522553076",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48787769753844",
+          "title": "Medium（浅煎り） / Whole beans（豆のまま）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2700,
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48787769786612",
+          "title": "Medium（浅煎り） / Medium fine（中細挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2700,
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48787769819380",
+          "title": "Medium（浅煎り） / Medium（中挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2700,
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48787769852148",
+          "title": "Medium（浅煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2700,
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48787769884916",
+          "title": "Medium（浅煎り） / Coarse（粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2700,
+            "amount": "2700",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/2week-drip-bag-fourth-wave-blend-14%E5%80%8B%E5%85%A5%E3%82%8A-%E9%80%81%E6%96%99%E7%84%A1%E6%96%99",
+      "title": "【2WEEK DRIP BAG】Fourth Wave Blend（14個入り）送料無料",
+      "source_product_id": "9503709004020",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48558269923572",
+          "title": "Default Title",
+          "weight_g": null,
+          "money": {
+            "raw": 4200,
+            "amount": "4200",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/colombia-quindio-mazatlan-infused-anaerobic-honey-strawberry-100g",
+      "title": "【Colombia】Quindio Mazatlan Infused Anaerobic Honey / strawberry【100g】",
+      "source_product_id": "9481381118196",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48361755050228",
+          "title": "Medium（浅煎り） / Whole beans（豆のまま）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48361755082996",
+          "title": "Medium（浅煎り） / Medium fine（中細挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48361755115764",
+          "title": "Medium（浅煎り） / Medium（中挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48361755148532",
+          "title": "Medium（浅煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48361755181300",
+          "title": "Medium（浅煎り） / Coarse（粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-rose-100g",
+      "title": "【Colombia】Cauca El Paraiso Double Anaerobic Washed / rose【100g】",
+      "source_product_id": "9475706519796",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48328223654132",
+          "title": "Medium（浅煎り） / Whole beans（豆のまま）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328223686900",
+          "title": "Medium（浅煎り） / Medium fine（中細挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328223719668",
+          "title": "Medium（浅煎り） / Medium（中挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328223752436",
+          "title": "Medium（浅煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328223785204",
+          "title": "Medium（浅煎り） / Coarse（粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/kenya-nyeri-karindundu-washed-200g",
+      "title": "【Kenya】Nyeri Karindundu Washed 【200g】",
+      "source_product_id": "9475682337012",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48328145928436",
+          "title": "City（中深煎り） / Whole beans（豆のまま）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328145961204",
+          "title": "City（中深煎り） / Medium fine（中細挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328145993972",
+          "title": "City（中深煎り） / Medium（中挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328146026740",
+          "title": "City（中深煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48328146059508",
+          "title": "City（中深煎り） / Coarse（粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2600,
+            "amount": "2600",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/peru-cup-of-excellence-24-100g",
+      "title": "【Peru】Cup of Excellence #24【100g】",
+      "source_product_id": "9467900330228",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48289129005300",
+          "title": "Medium（浅煎り） / Whole beans（豆のまま）",
+          "weight_g": 100,
+          "money": {
+            "raw": 3400,
+            "amount": "3400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48289129038068",
+          "title": "Medium（浅煎り） / Medium fine（中細挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 3400,
+            "amount": "3400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48289129070836",
+          "title": "Medium（浅煎り） / Medium（中挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 3400,
+            "amount": "3400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48289129103604",
+          "title": "Medium（浅煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 3400,
+            "amount": "3400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48289129136372",
+          "title": "Medium（浅煎り） / Coarse（粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 3400,
+            "amount": "3400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 3400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/papua-new-guinea-kainantu-baroida-washed-200g",
+      "title": "【Papua New Guinea】Kainantu Baroida Washed 【200g】",
+      "source_product_id": "9432314675444",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48042783244532",
+          "title": "High（中煎り） / Whole beans（豆のまま）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48042783277300",
+          "title": "High（中煎り） / Medium fine（中細挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48042783310068",
+          "title": "High（中煎り） / Medium（中挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48042783342836",
+          "title": "High（中煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48042783375604",
+          "title": "High（中煎り） / Coarse（粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/ethiopia-yirgacheffe-chelchele-natural-200g",
+      "title": "【Ethiopia】Yirgacheffe Chelchele Natural 【200g】",
+      "source_product_id": "9429285011700",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48036609818868",
+          "title": "Light（浅煎り） / Whole beans（豆のまま）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48036609851636",
+          "title": "Light（浅煎り） / Medium fine（中細挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48036609884404",
+          "title": "Light（浅煎り） / Medium（中挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48036609917172",
+          "title": "Light（浅煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48036609949940",
+          "title": "Light（浅煎り） / Coarse（粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/classic-love-101-original-japanese-sake-after-infused-100g",
+      "title": "【Classic Love 101】Original Japanese SAKE After Infused【100g】（次回2027年1月末発送予定）",
+      "source_product_id": "9356354715892",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47765874049268",
+          "title": "Medium-High（中浅煎り） / Whole beans（豆のまま）",
+          "weight_g": 100,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47765874082036",
+          "title": "Medium-High（中浅煎り） / Medium fine（中細挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47765874114804",
+          "title": "Medium-High（中浅煎り） / Medium（中挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47765874147572",
+          "title": "Medium-High（中浅煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47765874180340",
+          "title": "Medium-High（中浅煎り） / Coarse（粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 4000,
+            "amount": "4000",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 4000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/guatemala-antigua-filadelfia-washed-200g",
+      "title": "【Guatemala】Antigua Filadelfia Washed【200g】",
+      "source_product_id": "9184739098868",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47104036733172",
+          "title": "High（中煎り） / Whole beans（豆のまま）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47104036765940",
+          "title": "High（中煎り） / Medium fine（中細挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47104036798708",
+          "title": "High（中煎り） / Medium（中挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47104036831476",
+          "title": "High（中煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47104036864244",
+          "title": "High（中煎り） / Coarse（粗挽き）",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-100g",
+      "title": "【Colombia】Cauca El Paraiso Double Anaerobic Washed / peach【100g】",
+      "source_product_id": "9143310156020",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "46941085958388",
+          "title": "Medium（浅煎り） / Whole beans（豆のまま）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "46941085991156",
+          "title": "Medium（浅煎り） / Medium fine（中細挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "46941086023924",
+          "title": "Medium（浅煎り） / Medium（中挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "46941086056692",
+          "title": "Medium（浅煎り） / Medium coarse（中粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "46941086089460",
+          "title": "Medium（浅煎り） / Coarse（粗挽き）",
+          "weight_g": 100,
+          "money": {
+            "raw": 2800,
+            "amount": "2800",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://shop.roastery101.com/products/brazil-sao-paulo-mojiana-cachoeira-no-2-pulped-natural-200g",
+      "title": "【Brazil】Sao Paulo Mojiana Cachoeira  No.2 Pulped Natural 【200g】",
+      "source_product_id": "7980287820020",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "43617412153588",
+          "title": "City roast / 豆のまま",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "43617412186356",
+          "title": "City roast / 中挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "43617412219124",
+          "title": "City roast / 中細挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "43617412251892",
+          "title": "City roast / 中粗挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "43617412284660",
+          "title": "City roast / 粗挽き",
+          "weight_g": 200,
+          "money": {
+            "raw": 2400,
+            "amount": "2400",
+            "currency": "JPY",
+            "exponent": 0,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-25T08:22:25.328Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-25T08:22:25.832Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/mexico-el-triunfo-decaf-mountain-water-200g",
+      "status": 200,
+      "at": "2026-10-25T08:22:26.335Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/mexico-el-triunfo-decaf-mountain-water-200g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:26.839Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/mexico-el-triunfo-decaf-mountain-water-200g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:27.347Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/fourth-wave-blend-original-vol-1-100g",
+      "status": 200,
+      "at": "2026-10-25T08:22:27.849Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/fourth-wave-blend-original-vol-1-100g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:28.353Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/fourth-wave-blend-original-vol-1-100g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:28.859Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/2week-drip-bag-fourth-wave-blend-14%E5%80%8B%E5%85%A5%E3%82%8A-%E9%80%81%E6%96%99%E7%84%A1%E6%96%99",
+      "status": 200,
+      "at": "2026-10-25T08:22:29.364Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/2week-drip-bag-fourth-wave-blend-14%E5%80%8B%E5%85%A5%E3%82%8A-%E9%80%81%E6%96%99%E7%84%A1%E6%96%99.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:29.869Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/2week-drip-bag-fourth-wave-blend-14%E5%80%8B%E5%85%A5%E3%82%8A-%E9%80%81%E6%96%99%E7%84%A1%E6%96%99.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:30.372Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-quindio-mazatlan-infused-anaerobic-honey-strawberry-100g",
+      "status": 200,
+      "at": "2026-10-25T08:22:30.878Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-quindio-mazatlan-infused-anaerobic-honey-strawberry-100g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:31.381Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-quindio-mazatlan-infused-anaerobic-honey-strawberry-100g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:31.886Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-rose-100g",
+      "status": 200,
+      "at": "2026-10-25T08:22:32.392Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-rose-100g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:32.896Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-rose-100g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:33.399Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/kenya-nyeri-karindundu-washed-200g",
+      "status": 200,
+      "at": "2026-10-25T08:22:33.904Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/kenya-nyeri-karindundu-washed-200g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:34.417Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/kenya-nyeri-karindundu-washed-200g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:34.921Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/peru-cup-of-excellence-24-100g",
+      "status": 200,
+      "at": "2026-10-25T08:22:35.426Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/peru-cup-of-excellence-24-100g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:35.931Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/peru-cup-of-excellence-24-100g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:36.435Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/papua-new-guinea-kainantu-baroida-washed-200g",
+      "status": 200,
+      "at": "2026-10-25T08:22:36.940Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/papua-new-guinea-kainantu-baroida-washed-200g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:37.443Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/papua-new-guinea-kainantu-baroida-washed-200g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:37.947Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/ethiopia-yirgacheffe-chelchele-natural-200g",
+      "status": 200,
+      "at": "2026-10-25T08:22:38.452Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/ethiopia-yirgacheffe-chelchele-natural-200g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:38.956Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/ethiopia-yirgacheffe-chelchele-natural-200g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:39.463Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/classic-love-101-original-japanese-sake-after-infused-100g",
+      "status": 200,
+      "at": "2026-10-25T08:22:39.968Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/classic-love-101-original-japanese-sake-after-infused-100g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:40.472Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/classic-love-101-original-japanese-sake-after-infused-100g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:40.977Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/guatemala-antigua-filadelfia-washed-200g",
+      "status": 200,
+      "at": "2026-10-25T08:22:41.479Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/guatemala-antigua-filadelfia-washed-200g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:41.984Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/guatemala-antigua-filadelfia-washed-200g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:42.488Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-100g",
+      "status": 200,
+      "at": "2026-10-25T08:22:43.000Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-100g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:43.506Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/colombia-cauca-el-paraiso-double-anaerobic-washed-100g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:44.012Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/brazil-sao-paulo-mojiana-cachoeira-no-2-pulped-natural-200g",
+      "status": 200,
+      "at": "2026-10-25T08:22:44.515Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/brazil-sao-paulo-mojiana-cachoeira-no-2-pulped-natural-200g.json",
+      "status": 200,
+      "at": "2026-10-25T08:22:45.017Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://shop.roastery101.com/products/brazil-sao-paulo-mojiana-cachoeira-no-2-pulped-natural-200g.js",
+      "status": 200,
+      "at": "2026-10-25T08:22:45.523Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true
+}

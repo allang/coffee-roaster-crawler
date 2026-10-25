@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-25T08:57:26.443Z",
+  "before": {
+    "id": "4b2a3349-2f9f-4fa6-af8d-ec7cca5c9823",
+    "name": "Ueshima Coffee Company",
+    "website_url": "https://www.ueshimacoffeecompany.com",
+    "entity_roles": [
+      {
+        "role": "roaster"
+      }
+    ]
+  },
+  "after": {
+    "id": "4b2a3349-2f9f-4fa6-af8d-ec7cca5c9823",
+    "name": "Ueshima Coffee Company",
+    "website_url": "https://www.ueshimacoffeecompany.com",
+    "entity_roles": [
+      {
+        "role": "roaster"
+      }
+    ]
+  },
+  "captured_fields_unchanged": true,
+  "scope": "Exact entity identity and role fields captured before this import"
+}

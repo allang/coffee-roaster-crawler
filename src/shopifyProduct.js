@@ -45,6 +45,15 @@ function nativeNetWeight(product,variant) {
   return labelWeight(variant.title) ?? (product.variants.length===1?labelWeight(product.title):null);
 }
 
+function reviewedTitleNetWeight(product,rule) {
+  if(!rule?.pattern || !Array.isArray(rule.option_names) || !product.options?.length || !product.variants?.length)return null;
+  // A reviewed bag title applies to every SKU only while all native options
+  // remain the reviewed roast/grind choices, never a newly introduced size.
+  if(product.options.some(o=>!rule.option_names.includes(o.name) || !Number.isInteger(o.position) || !o.values?.length || o.values.some(v=>labelWeight(v)!=null) || product.variants.some(v=>!o.values.includes(v['option'+o.position]))))return null;
+  const matches=[...String(product.title || '').matchAll(new RegExp(rule.pattern,'gi'))];
+  return matches.length===1?labelWeight(matches[0][1]):null;
+}
+
 function exactAnalyticsMarket(html,native) {
   const $=cheerio.load(html || ''),candidates=[];
   $('script:not([src])').each((_,element)=>{
@@ -167,7 +176,7 @@ function mergeShopifyStock(product,ajax) {
 
 function registeredWeightOptions(url,product) {
   const profile=lookupRegisteredProfile(url);
-  return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle),descriptionWeightPrefixes:profile?.description_net_weight_prefixes || [],variantSizePrefix:profile?.variant_size_prefix,variantSizePatterns:profile?.variant_size_patterns,variantPriceSuffix:profile?.variant_price_suffix,fixedRetailBagLabel:profile?.fixed_retail_bag_label,bundleNetWeightProductIds:profile?.bundle_net_weight_product_ids};
+  return {preferLabelWeight:Boolean(profile),singleVariantDescriptionWeight:profile?.single_variant_description_weight===true,netWeightUnproven:profile?.ambiguous_net_weight_handles?.includes(product?.handle),descriptionWeightPrefixes:profile?.description_net_weight_prefixes || [],variantSizePrefix:profile?.variant_size_prefix,variantSizePatterns:profile?.variant_size_patterns,variantPriceSuffix:profile?.variant_price_suffix,fixedRetailBagLabel:profile?.fixed_retail_bag_label,bundleNetWeightProductIds:profile?.bundle_net_weight_product_ids,titleNetWeightRule:profile?.title_net_weight_rule};
 }
 function lookupRegisteredProfile(url) {return require('./siteSupport/profiles.json').find(p=>p.adapter==='shopify' && p.hosts.includes(new URL(url).hostname));}
 function verifiedShopifyVariantScope(result,url) {
@@ -190,10 +199,11 @@ function explicitCoffeeWeight(html) {
   });
   return weights.length===1?weights[0]:null;
 }
-function parseShopifyProduct(product,{netWeightUnproven=false,singleVariantDescriptionWeight=false,descriptionWeightPrefixes=[],preferLabelWeight=false,variantSizePrefix=null,variantSizePatterns=[],variantPriceSuffix=false,fixedRetailBagLabel=false,bundleNetWeightProductIds=[]}={}) {
+function parseShopifyProduct(product,{netWeightUnproven=false,singleVariantDescriptionWeight=false,descriptionWeightPrefixes=[],preferLabelWeight=false,variantSizePrefix=null,variantSizePatterns=[],variantPriceSuffix=false,fixedRetailBagLabel=false,bundleNetWeightProductIds=[],titleNetWeightRule=null}={}) {
   const bag=fixedRetailBagLabel?String(product.title || '').match(/^Retail Bags\((\d+(?:\.\d+)?g)\) - Garage Sale Drop (\d+\/\d+)$/):null,option=product.options?.length===1?product.options[0]:null;
   const fixedWeight=bag && String(option?.product_id)===String(product.id) && option.name==='Garage Sale '+bag[2]+' Retail bags('+bag[1]+')' && Array.isArray(option.values) && product.variants.every(v=>option.values.includes(v.title))?labelWeight(bag[1]):null;
   const bundleWeight=product.variants?.length===1 && bundleNetWeightProductIds?.includes(String(product.id))?require('./siteSupport/netWeight').coffeeBundleWeight(product.body_html):null;
+  const reviewedTitleWeight=reviewedTitleNetWeight(product,titleNetWeightRule);
   const variantWeight=title=>{
     const cleaned=variantPriceSuffix?String(title || '').replace(/\s+-\s+\$\s*\d+(?:\.\d+)?$/,'').replace(/\s+-\s+(?=\d+(?:\.\d+)?\s*(?:g|kg|oz|lbs?)$)/i,' '):title;
     const direct=labelWeight(cleaned);if(direct!=null)return direct;
@@ -214,7 +224,7 @@ function parseShopifyProduct(product,{netWeightUnproven=false,singleVariantDescr
     availabilitySource:v._availability_source || 'shopify_product_json',
     compareAtPrice: v.compare_at_price,
     currency: product.currency || null,
-    weightGrams: netWeightUnproven?null:preferLabelWeight?(variantWeight(v.title) ?? fixedWeight ?? bundleWeight ?? nativeNetWeight(product,v) ?? titleNetWeight(product) ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title,descriptionWeightPrefixes) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
+    weightGrams: netWeightUnproven?null:preferLabelWeight?(variantWeight(v.title) ?? fixedWeight ?? bundleWeight ?? nativeNetWeight(product,v) ?? titleNetWeight(product) ?? reviewedTitleWeight ?? (product.variants.length===1?labelWeight(product.title) ?? require('./siteSupport/netWeight').explicitNetWeight(product.body_html,product.title,descriptionWeightPrefixes) ?? (singleVariantDescriptionWeight?explicitCoffeeWeight(product.body_html):null):null)):(v.grams ?? (v.weight_unit === 'g' ? v.weight : v.weight_unit === 'kg' ? Math.round(v.weight * 1000) : null)),
     shippingWeightGrams:v.grams ?? null,
   }));
 

@@ -1311,6 +1311,53 @@
     "coffee_collection_verified": true
   },
   {
+    "name": "OTC COFFEE",
+    "entity_ids": ["a4bae1ff-f400-45e0-896f-2863cd3a51cb"],
+    "hosts": ["otc-coffee.com"],
+    "adapter": "otc_next",
+    "bootstrap_url": "https://otc-coffee.com/jp",
+    "listing_paths": ["/jp/shop"],
+    "allow_partial_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "Ariowl Coffee",
+    "entity_ids": ["262010ee-f3a8-4ca9-9f49-c3ae3b369a72"],
+    "hosts": ["ariowlcoffee.com", "www.ariowlcoffee.com"],
+    "adapter": "shopify",
+    "bootstrap_url": "https://ariowlcoffee.com/",
+    "listing_paths": ["/products.json"],
+    "coffee_product_types": [""],
+    "strict_coffee_product_types": true,
+    "coffee_collection_verified": true,
+    "allow_unicode_handles": true,
+    "reviewed_symbol_handles": ["🎉-happy-mix-scaj-2026-special-edition"],
+    "ambiguous_net_weight_handles": ["coffee-brew-packs-melon-peach-コーヒーパックタイプ", "cold-brew-packs"],
+    "exclude_name_pattern": "定期便|器具|マグ|ミル|ドリッパー|タンブラー|生豆|はちみつ|キャニスター",
+    "variant_size_patterns": ["^([0-9]+(?:\\.[0-9]+)?\\s*(?:g|kg)) / .+$", "^[0-9]+g 3種類入り\\[([0-9]+g)\\] / .+$"],
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "COFFEE ROASTERY 101",
+    "entity_ids": ["47b26677-4dde-446a-99c3-6d6adbb6867c"],
+    "hosts": ["shop.roastery101.com"],
+    "adapter": "shopify",
+    "bootstrap_url": "https://shop.roastery101.com/",
+    "listing_paths": ["/products.json"],
+    "coffee_product_types": ["コーヒー豆", "ドリップバッグ"],
+    "strict_coffee_product_types": true,
+    "coffee_collection_verified": true,
+    "allow_unicode_handles": true,
+    "title_net_weight_rule": {
+      "pattern": "【([0-9]+(?:\\.[0-9]+)?\\s*(?:g|kg))】",
+      "option_names": ["焙煎度", "メッシュ", "Roast Level（焙煎度）", "Grind size", "Title"]
+    },
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
     "name": "Nano's Coffee",
     "entity_ids": ["ca9a6fff-1d2d-4e3f-83d4-e29ec8f966f7"],
     "hosts": ["nanoroaster.handcrafted.jp"],

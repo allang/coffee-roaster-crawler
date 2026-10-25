@@ -1,12 +1,15 @@
 # Asian Storefront Benchmark
 
-October 25, 2026. This benchmark covers the 19 net verified additions from the
+October 25, 2026. This benchmark covers the 21 net verified additions from the
 current Brewing Ceremony / Instagram discovery work, not a rerun of the older
 2,379-URL stockist-import audit. An index addition, an extracted product and a
 successfully saved coffee are reported separately.
 
 The independent source-catalog baseline at 07:55:03 UTC found zero products
-across all 19 owners. Live merchant GET-only inspection verifies the following:
+across the initial 19 owners. Toyosaki and Regolith were subsequently added
+with insert-only identity checks and readback. The expanded 08:57:26 UTC
+readback confirms 21 roaster owners and zero coffee products. Live merchant
+GET-only inspection verifies the following:
 
 | Merchant | Coffee products extracted | Native variants verified | Production products before | After actual crawl | Current blocker |
 | --- | ---: | ---: | ---: | ---: | --- |
@@ -15,12 +18,17 @@ across all 19 owners. Live merchant GET-only inspection verifies the following:
 | Specialty Coffee Soh | 23 | Not complete; product-only base offers | 0 | 0 | Shared process quota guard stopped translation |
 | KIELO COFFEE | 15 | 121 | 0 | Not attempted | Existing weight-only unique index conflicts with distinct grind SKUs; migration approval pending |
 | X coffee GINZA | 17 | 147 | 0 | Not attempted | Same weight-index save gate; migration approval pending |
+| Ariowl Coffee | 23 | 84 | 0 | Not attempted | API-credit and distinct same-weight SKU save gates remain |
+| COFFEE ROASTERY 101 | 13 | 61 | 0 | Not attempted | Same gates; subscriptions/equipment excluded, source bag weights retained |
+| OTC COFFEE | 6 verified, 2 held | Product-only; SKU inventory incomplete | 0 | Not attempted | Both DECAF sizes have conflicting stock evidence; merchant inspection correctly remains failed |
 | Brewing Ceremony | 0 | Not observed | 0 | 0 | Public HTTP 429; Safari security CAPTCHA not completed |
 
-Measured extraction: **80 products from five sites**, including 268 exact native
-Shopify variants and 48 BASE product-only offers. This is not an 80-coffee
+Measured extraction: **122 products from eight sites**, including 413 exact native
+Shopify variants, 48 BASE product-only offers and six OTC product-only offers.
+OTC retains two page errors and is not counted as a wholly successful merchant.
+This is not a 122-coffee
 ingestion gain. Newly saved products from the real attempts: **0**. Newly
-successful complete merchant ingests: **0**. The 19 index additions remain a
+successful complete merchant ingests: **0**. The 21 index additions remain a
 separate, verified outcome.
 
 ## Actual BASE Runtime
@@ -66,14 +74,18 @@ These remain discovery/reachability results, not successful ingestion claims:
 | Single Origin espresso & roast | Dead old domain replaced with current official Shopee shop; catalog extraction unvalidated |
 | CRU Coffee Hakuraku | Square homepage reachable; exact product discovery still needed |
 | 5F Coffee Lab | Official equipment-oriented homepage reachable; coffee retail destination still needed |
-| OTC COFFEE | Shopify homepage reachable; native coffee catalog inspection still needed |
-| Ariowl | Shopify homepage reachable; native coffee catalog inspection still needed |
 | Coffee Roastery Nakaji | Direct DNS failure; current accessible destination still needed |
 | Zuku Cafe | Homepage reachable; coffee shop/product discovery still needed |
 | Coffee Aura | Official STORES shop returns HTTP 403 |
-| COFFEE ROASTERY101 | Shopify homepage reachable; native coffee catalog inspection still needed |
-| Reshock Coffee | Shopify homepage reachable; native coffee catalog inspection still needed |
+| Reshock Coffee | Shopline, not Shopify; its products.json route returns HTML; dedicated native extraction still needed |
 | Essentia Factory | Cafe24 homepage reachable; reviewed coffee category and exact options still needed |
+| Toyosaki Coffee Factory | Own roasting verified; official Wix shop reachable; full product extraction still needed |
+| Regolith Coffee | Own roasting verified; official Shopify catalog reachable; full product extraction still needed |
+
+The additional GET-only results, exact source scopes, own-roasting evidence,
+deduplication and stock holds are documented in
+[the follow-up](../ASIAN_STOREFRONT_FOLLOWUP.md). Its runtime is not activated in
+the scheduled Mac checkout. Latest full regression result: 568 passed tests.
 
 ## Next Gates
 

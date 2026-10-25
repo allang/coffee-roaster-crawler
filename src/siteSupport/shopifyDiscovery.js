@@ -1,7 +1,9 @@
 'use strict';
 const excluded=/\b(?:(?:e[-\s]?)?gift\s*(?:cards?|vouchers?|certificates?)|subscription|wholesale|equipment|brewer|paper\s*filter|grinder|cup(?!\s+of\s+excellence)|mug|thermos|trousers?|shirts?|hoodie|hat|cap|book|cascara|green coffee)\b/i;
 function validHandle(handle,profile) {
-  return typeof handle==='string' && (profile.allow_unicode_handles===true ? /^[\p{L}\p{N}][\p{L}\p{M}\p{N}_-]*$/u : /^[a-z0-9][a-z0-9_-]*$/i).test(handle);
+  if(typeof handle!=='string')return false;
+  if(profile.allow_unicode_handles!==true)return /^[a-z0-9][a-z0-9_-]*$/i.test(handle);
+  return /^[\p{L}\p{N}][\p{L}\p{M}\p{N}_-]*$/u.test(handle) || profile.reviewed_symbol_handles?.includes(handle)===true && /^[\p{L}\p{N}\p{Extended_Pictographic}][\p{L}\p{M}\p{N}\p{Extended_Pictographic}_-]*$/u.test(handle);
 }
 function retailCoffee(product,profile) {
   if(profile.exclude_product_ids?.includes(String(product.id)))return false;

@@ -119,7 +119,14 @@ function productOnlyOffer(product,sourceUrl) {
       base=Boolean(target && product.productID==='base:'+profile.base_shop_id+':'+target.product && control?.source==='base_primary_purchase_control' && control.product_id===target.product && control.shop_id===profile.base_shop_id && (offer.state==='sold_out'?control.disabled===true:control.disabled===false));
     } catch {}
   }
-  if(product?._product_only!==true || !(txt || naver || base) || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.variant_identity_complete!==false)return null;
+  let otc=false;
+  if(product?._market_source==='otc_next_primary_product_offer' && offer?.currency==='JPY') {
+    try {
+      const profile=require('./siteSupport/profiles.json').find(p=>p.adapter==='otc_next'),target=profile && require('./siteSupport/otc').owned(sourceUrl,profile,true);
+      otc=Boolean(target && product.productID==='otc_public_product:'+target.product && /^gid:\/\/shopify\/ProductVariant\/[1-9]\d*$/.test(offer.observed_variant_id || '') && offer.state==='in_stock' && offer.stock_control?.source==='otc_primary_purchase_control' && offer.stock_control.product_id===target.product && offer.stock_control.enabled===true);
+    } catch {}
+  }
+  if(product?._product_only!==true || !(txt || naver || base || otc) || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.variant_identity_complete!==false)return null;
   const money=require('./catalogNormalization').parseMoney(offer.price,{currency:offer.currency});
   return money.minorUnits!=null && money.minorUnits===offer.minor_units && schemaAvailability(offer.availability)===offer.state && ['in_stock','sold_out'].includes(offer.state)?offer:null;
 }

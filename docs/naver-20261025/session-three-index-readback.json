@@ -1,0 +1,159 @@
+{
+  "checked_at": "2026-10-25T08:37:26.826Z",
+  "mode": "apply",
+  "discovery_thread": "01a1721c-8db9-77e0-b390-33b080a8a0dd",
+  "hop_path": [
+    "brewingceremony",
+    "prior verified graph frontier: toyosakicoffeefactory",
+    "regolith_coffee"
+  ],
+  "targets": [
+    {
+      "entity": {
+        "id": "68b94ad4-dba5-5674-a471-7cb5d70fde0d",
+        "name": "Toyosaki Coffee Factory",
+        "slug": "toyosaki-coffee-factory",
+        "name_slug": "toyosaki-coffee-factory",
+        "website_url": "https://www.toyosakicoffeefactory.com/shop",
+        "primary_location": "Tomigusuku, Okinawa, Japan",
+        "contact": {
+          "socials": [
+            "https://www.instagram.com/toyosakicoffeefactory/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.toyosakicoffeefactory.com/blank",
+          "quote": "自家焙煎珈琲豆",
+          "finding": "Official factory/shop page states own-roasted coffee beans and identifies the Japanese operator, Okinawa Ueshima Coffee."
+        }
+      ],
+      "identity_review": "An existing Ueshima Coffee Company entity uses another published brand and merchant domain. It is preserved, not merged or overwritten. Toyosaki has its own named Japanese factory/shop identity.",
+      "before": [
+        {
+          "id": "68b94ad4-dba5-5674-a471-7cb5d70fde0d",
+          "name": "Toyosaki Coffee Factory",
+          "website_url": "https://www.toyosakicoffeefactory.com/shop",
+          "contact": {
+            "socials": [
+              "https://www.instagram.com/toyosakicoffeefactory/"
+            ]
+          }
+        }
+      ],
+      "writes": [],
+      "after": {
+        "entities": [
+          {
+            "id": "68b94ad4-dba5-5674-a471-7cb5d70fde0d",
+            "name": "Toyosaki Coffee Factory",
+            "website_url": "https://www.toyosakicoffeefactory.com/shop",
+            "primary_location": "Tomigusuku, Okinawa, Japan",
+            "contact": {
+              "socials": [
+                "https://www.instagram.com/toyosakicoffeefactory/"
+              ]
+            }
+          }
+        ],
+        "roles": [
+          {
+            "entity_id": "68b94ad4-dba5-5674-a471-7cb5d70fde0d",
+            "role": "roaster",
+            "role_metadata": {
+              "verification": {
+                "sources": [
+                  {
+                    "url": "https://www.toyosakicoffeefactory.com/blank",
+                    "quote": "自家焙煎珈琲豆",
+                    "finding": "Official factory/shop page states own-roasted coffee beans and identifies the Japanese operator, Okinawa Ueshima Coffee."
+                  }
+                ],
+                "checked_at": "2026-10-25T08:29:19.130Z",
+                "identity_review": "An existing Ueshima Coffee Company entity uses another published brand and merchant domain. It is preserved, not merged or overwritten. Toyosaki has its own named Japanese factory/shop identity.",
+                "discovery_thread": "01a1721c-8db9-77e0-b390-33b080a8a0dd"
+              }
+            },
+            "created_at": "2026-10-25T08:29:19.886756+00:00"
+          }
+        ]
+      },
+      "status": "verified"
+    },
+    {
+      "entity": {
+        "id": "84cf4258-29ac-5fa8-bde5-2a138240b185",
+        "name": "Regolith Coffee",
+        "slug": "regolith-coffee",
+        "name_slug": "regolith-coffee",
+        "website_url": "https://regolith-coffee.com/",
+        "primary_location": "Oita, Oita, Japan",
+        "contact": {
+          "socials": [
+            "https://www.instagram.com/regolith_coffee/"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "url": "https://regolith-coffee.jp/",
+          "quote": "自分たちで焙煎し、販売し、卸す。",
+          "finding": "Official brand site describes its own roasting, gives the Oita roastery address and links its regolith-coffee.com retail store."
+        }
+      ],
+      "identity_review": "Official .jp brand, .com store and seminar alias were checked together against all source entities, including non-roaster roles.",
+      "before": [
+        {
+          "id": "84cf4258-29ac-5fa8-bde5-2a138240b185",
+          "name": "Regolith Coffee",
+          "website_url": "https://regolith-coffee.com/",
+          "contact": {
+            "socials": [
+              "https://www.instagram.com/regolith_coffee/"
+            ]
+          }
+        }
+      ],
+      "writes": [],
+      "after": {
+        "entities": [
+          {
+            "id": "84cf4258-29ac-5fa8-bde5-2a138240b185",
+            "name": "Regolith Coffee",
+            "website_url": "https://regolith-coffee.com/",
+            "primary_location": "Oita, Oita, Japan",
+            "contact": {
+              "socials": [
+                "https://www.instagram.com/regolith_coffee/"
+              ]
+            }
+          }
+        ],
+        "roles": [
+          {
+            "entity_id": "84cf4258-29ac-5fa8-bde5-2a138240b185",
+            "role": "roaster",
+            "role_metadata": {
+              "verification": {
+                "sources": [
+                  {
+                    "url": "https://regolith-coffee.jp/",
+                    "quote": "自分たちで焙煎し、販売し、卸す。",
+                    "finding": "Official brand site describes its own roasting, gives the Oita roastery address and links its regolith-coffee.com retail store."
+                  }
+                ],
+                "checked_at": "2026-10-25T08:29:19.130Z",
+                "identity_review": "Official .jp brand, .com store and seminar alias were checked together against all source entities, including non-roaster roles.",
+                "discovery_thread": "01a1721c-8db9-77e0-b390-33b080a8a0dd"
+              }
+            },
+            "created_at": "2026-10-25T08:29:20.464037+00:00"
+          }
+        ]
+      },
+      "status": "verified"
+    }
+  ],
+  "finished_at": "2026-10-25T08:37:28.459Z"
+}
