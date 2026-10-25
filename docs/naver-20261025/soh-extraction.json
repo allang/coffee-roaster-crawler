@@ -1,0 +1,1504 @@
+{
+  "name": "Specialty Coffee Soh",
+  "checked_at": "2026-10-25T07:49:51.401Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "9d723869-f652-49f3-a69c-92740948fd77"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://sohcoffee.thebase.in/items/142549615",
+      "https://sohcoffee.thebase.in/items/162013671",
+      "https://sohcoffee.thebase.in/items/139786929",
+      "https://sohcoffee.thebase.in/items/158127445",
+      "https://sohcoffee.thebase.in/items/137044390",
+      "https://sohcoffee.thebase.in/items/119728845",
+      "https://sohcoffee.thebase.in/items/119260091",
+      "https://sohcoffee.thebase.in/items/144104587",
+      "https://sohcoffee.thebase.in/items/119573474",
+      "https://sohcoffee.thebase.in/items/137135343",
+      "https://sohcoffee.thebase.in/items/155908590",
+      "https://sohcoffee.thebase.in/items/155908179",
+      "https://sohcoffee.thebase.in/items/148542316",
+      "https://sohcoffee.thebase.in/items/119774202",
+      "https://sohcoffee.thebase.in/items/133578742",
+      "https://sohcoffee.thebase.in/items/119545961",
+      "https://sohcoffee.thebase.in/items/130332071",
+      "https://sohcoffee.thebase.in/items/157474944",
+      "https://sohcoffee.thebase.in/items/160402524",
+      "https://sohcoffee.thebase.in/items/144908429",
+      "https://sohcoffee.thebase.in/items/156594081",
+      "https://sohcoffee.thebase.in/items/105409105",
+      "https://sohcoffee.thebase.in/items/38212613"
+    ],
+    "complete": false,
+    "observed_scope_complete": true,
+    "inventory_complete": false,
+    "inventory_scope": "base_published_one_time_cards",
+    "market_scope": "JPY_public_offer",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "evidence": [
+      {
+        "listing": "https://sohcoffee.thebase.in/",
+        "product_urls": [
+          "https://sohcoffee.thebase.in/items/142549615",
+          "https://sohcoffee.thebase.in/items/162013671",
+          "https://sohcoffee.thebase.in/items/139786929",
+          "https://sohcoffee.thebase.in/items/158127445",
+          "https://sohcoffee.thebase.in/items/137044390",
+          "https://sohcoffee.thebase.in/items/119728845",
+          "https://sohcoffee.thebase.in/items/119260091",
+          "https://sohcoffee.thebase.in/items/144104587",
+          "https://sohcoffee.thebase.in/items/119573474",
+          "https://sohcoffee.thebase.in/items/137135343",
+          "https://sohcoffee.thebase.in/items/155908590",
+          "https://sohcoffee.thebase.in/items/155908179",
+          "https://sohcoffee.thebase.in/items/148542316",
+          "https://sohcoffee.thebase.in/items/119774202",
+          "https://sohcoffee.thebase.in/items/133578742",
+          "https://sohcoffee.thebase.in/items/119545961",
+          "https://sohcoffee.thebase.in/items/130332071",
+          "https://sohcoffee.thebase.in/items/157474944",
+          "https://sohcoffee.thebase.in/items/160402524",
+          "https://sohcoffee.thebase.in/items/144908429",
+          "https://sohcoffee.thebase.in/items/156594081",
+          "https://sohcoffee.thebase.in/items/105409105",
+          "https://sohcoffee.thebase.in/items/38212613"
+        ],
+        "excluded": [
+          {
+            "url": "https://sohcoffee.thebase.in/items/71098064",
+            "title": "コ―ヒー サブスク  サービス  月１回発送 ”沼のほとり” ＜SUBSCRICTION SERVICE＞By the coffee abyss"
+          }
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://sohcoffee.thebase.in/items/142549615",
+      "title": "[初めての方におすすめ] コーヒー豆３種セット　3beans set",
+      "source_product_id": "base:sohcoffee:142549615",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/142549615",
+        "source_product_id": "base:sohcoffee:142549615",
+        "price": "1980",
+        "currency": "JPY",
+        "minor_units": 1980,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "142549615",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/162013671",
+      "title": "グアテマラ サンタロサ サンタアナ農園 ディラ・アルゲ ナチュラル 浅煎り",
+      "source_product_id": "base:sohcoffee:162013671",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/162013671",
+        "source_product_id": "base:sohcoffee:162013671",
+        "price": "3062",
+        "currency": "JPY",
+        "minor_units": 3062,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "162013671",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/139786929",
+      "title": "コスタリカ COE2025 エクスペリメンタル #4 ドン・ホエル農園  サン・ロケ・ケ二ヤ　浅煎り　COSTA RICA COE2025 DON JOEL",
+      "source_product_id": "base:sohcoffee:139786929",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/139786929",
+        "source_product_id": "base:sohcoffee:139786929",
+        "price": "1645",
+        "currency": "JPY",
+        "minor_units": 1645,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "139786929",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/158127445",
+      "title": "BLEND コハク",
+      "source_product_id": "base:sohcoffee:158127445",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/158127445",
+        "source_product_id": "base:sohcoffee:158127445",
+        "price": "1112",
+        "currency": "JPY",
+        "minor_units": 1112,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "158127445",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/137044390",
+      "title": "BLEND 蒼天  PURA VIDA AZUL",
+      "source_product_id": "base:sohcoffee:137044390",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/137044390",
+        "source_product_id": "base:sohcoffee:137044390",
+        "price": "1007",
+        "currency": "JPY",
+        "minor_units": 1007,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "137044390",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/119728845",
+      "title": "BLEND JIN",
+      "source_product_id": "base:sohcoffee:119728845",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/119728845",
+        "source_product_id": "base:sohcoffee:119728845",
+        "price": "1225",
+        "currency": "JPY",
+        "minor_units": 1225,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "119728845",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/119260091",
+      "title": "BLEND しみじみ  SIMIJIMI",
+      "source_product_id": "base:sohcoffee:119260091",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/119260091",
+        "source_product_id": "base:sohcoffee:119260091",
+        "price": "885",
+        "currency": "JPY",
+        "minor_units": 885,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "119260091",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/144104587",
+      "title": "雲南 孟連（メンリャン）ジンシャン農園 カチモール アナエロビックナチュラル オークバレル 中深煎り YUNLAN MENLIAN",
+      "source_product_id": "base:sohcoffee:144104587",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/144104587",
+        "source_product_id": "base:sohcoffee:144104587",
+        "price": "1872",
+        "currency": "JPY",
+        "minor_units": 1872,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "144104587",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/119573474",
+      "title": "デカフェ 浅煎り エチオピア シダモ MWP G-2 ETHIOPIA DECAF SHIDAMO",
+      "source_product_id": "base:sohcoffee:119573474",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/119573474",
+        "source_product_id": "base:sohcoffee:119573474",
+        "price": "1247",
+        "currency": "JPY",
+        "minor_units": 1247,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "119573474",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/137135343",
+      "title": "デカフェ  深煎り エチオピア シダモ MWP G-2  ETHIOPIA DECAF SHIDAMO",
+      "source_product_id": "base:sohcoffee:137135343",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/137135343",
+        "source_product_id": "base:sohcoffee:137135343",
+        "price": "1247",
+        "currency": "JPY",
+        "minor_units": 1247,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "137135343",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/155908590",
+      "title": "ホンジュラス サンタ・バルバラ ジェネシス パライネマ ナチュラル 浅煎り  HONDURAS GENESIS NATURAL",
+      "source_product_id": "base:sohcoffee:155908590",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/155908590",
+        "source_product_id": "base:sohcoffee:155908590",
+        "price": "1497",
+        "currency": "JPY",
+        "minor_units": 1497,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "155908590",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/155908179",
+      "title": "ホンジュラス サンタ・バルバラ ラス・フローレス パカス ウォッシュド　浅煎り　HONDURAS LAS FLORES WASHED",
+      "source_product_id": "base:sohcoffee:155908179",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/155908179",
+        "source_product_id": "base:sohcoffee:155908179",
+        "price": "1271",
+        "currency": "JPY",
+        "minor_units": 1271,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "155908179",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/148542316",
+      "title": "ニカラグア エル・ポルベニール ジャバニカ アナエロビック ナチュラル 浅煎り NICARAGUA NUEVA SEGOVIA EL PORVENIR HIGHLAND",
+      "source_product_id": "base:sohcoffee:148542316",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/148542316",
+        "source_product_id": "base:sohcoffee:148542316",
+        "price": "1361",
+        "currency": "JPY",
+        "minor_units": 1361,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "148542316",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/119774202",
+      "title": "エチオピア グジ グラチェWS 在来種 ナチュラル G-1 浅煎り   ETHIOPIA GUJI G-1",
+      "source_product_id": "base:sohcoffee:119774202",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/119774202",
+        "source_product_id": "base:sohcoffee:119774202",
+        "price": "1044",
+        "currency": "JPY",
+        "minor_units": 1044,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "119774202",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/133578742",
+      "title": "エチオピア イルガチェフェ ウォルカ ウォッシュド  在来種  G-1  浅煎り ETHIOPIA YIRGACHEFFE WORKA",
+      "source_product_id": "base:sohcoffee:133578742",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/133578742",
+        "source_product_id": "base:sohcoffee:133578742",
+        "price": "1066",
+        "currency": "JPY",
+        "minor_units": 1066,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "133578742",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/119545961",
+      "title": "コスタリカ タラス サンタロサ１９００ マチョ カツアイ ホワイトハニー 浅煎り COSTA RICA SANTAROSA1900 MACHO",
+      "source_product_id": "base:sohcoffee:119545961",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/119545961",
+        "source_product_id": "base:sohcoffee:119545961",
+        "price": "1021",
+        "currency": "JPY",
+        "minor_units": 1021,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "119545961",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/130332071",
+      "title": "コスタリカ タラス モンテコペイ キズナ農園　カツアイ　ホワイトハニー　中浅煎り  COSTA RICA  MONTE COPEY  KIZUNA",
+      "source_product_id": "base:sohcoffee:130332071",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/130332071",
+        "source_product_id": "base:sohcoffee:130332071",
+        "price": "1134",
+        "currency": "JPY",
+        "minor_units": 1134,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "130332071",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/157474944",
+      "title": "コスタリカ タラス グラニートス・デ・アルトゥラ・デル・オルティス 1800 カトゥアイ ホワイトハニー　中煎り COSTA RICA GRANITOS ORTIZ1800",
+      "source_product_id": "base:sohcoffee:157474944",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/157474944",
+        "source_product_id": "base:sohcoffee:157474944",
+        "price": "1021",
+        "currency": "JPY",
+        "minor_units": 1021,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "157474944",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/160402524",
+      "title": "ニカラグア マタガルパ リモンシージョ ジャバニカ パルプドナチュラル 中煎り  NICARAGUA  LIMONCILLO JAVANICA",
+      "source_product_id": "base:sohcoffee:160402524",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/160402524",
+        "source_product_id": "base:sohcoffee:160402524",
+        "price": "1009",
+        "currency": "JPY",
+        "minor_units": 1009,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "160402524",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/144908429",
+      "title": "グアテマラ ラカノア農園 ムンドノーボ ウォッシュド 中深煎り GUATEMALA SANTAROSA LA CANOA MUNDONOVO WASHED",
+      "source_product_id": "base:sohcoffee:144908429",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/144908429",
+        "source_product_id": "base:sohcoffee:144908429",
+        "price": "1123",
+        "currency": "JPY",
+        "minor_units": 1123,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "144908429",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/156594081",
+      "title": "グアテマラ ウエウエテナンゴ エル・インヘルト トラディショナル ウォッシュド　中煎り",
+      "source_product_id": "base:sohcoffee:156594081",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/156594081",
+        "source_product_id": "base:sohcoffee:156594081",
+        "price": "1350",
+        "currency": "JPY",
+        "minor_units": 1350,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "156594081",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/105409105",
+      "title": "コスタリカ タラス カンデリージャ カトューラ ハニー  中深煎り Costa Rica Tarras La Candelilla Caturra honey",
+      "source_product_id": "base:sohcoffee:105409105",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/105409105",
+        "source_product_id": "base:sohcoffee:105409105",
+        "price": "1112",
+        "currency": "JPY",
+        "minor_units": 1112,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "105409105",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://sohcoffee.thebase.in/items/38212613",
+      "title": "コロンビア ウィラ ビジャ ファティマ  ティピカ  ウォッシュド 中深煎り Colombia Huila Villa Fatima",
+      "source_product_id": "base:sohcoffee:38212613",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://sohcoffee.thebase.in/items/38212613",
+        "source_product_id": "base:sohcoffee:38212613",
+        "price": "1043",
+        "currency": "JPY",
+        "minor_units": 1043,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "38212613",
+          "shop_id": "sohcoffee",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/",
+      "status": 200,
+      "at": "2026-10-25T07:49:10.779Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/142549615",
+      "status": 200,
+      "at": "2026-10-25T07:49:12.930Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/162013671",
+      "status": 200,
+      "at": "2026-10-25T07:49:14.746Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/139786929",
+      "status": 200,
+      "at": "2026-10-25T07:49:16.326Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/158127445",
+      "status": 200,
+      "at": "2026-10-25T07:49:17.947Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/137044390",
+      "status": 200,
+      "at": "2026-10-25T07:49:19.612Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/119728845",
+      "status": 200,
+      "at": "2026-10-25T07:49:21.218Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/119260091",
+      "status": 200,
+      "at": "2026-10-25T07:49:22.770Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/144104587",
+      "status": 200,
+      "at": "2026-10-25T07:49:24.281Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/119573474",
+      "status": 200,
+      "at": "2026-10-25T07:49:25.820Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/137135343",
+      "status": 200,
+      "at": "2026-10-25T07:49:27.503Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/155908590",
+      "status": 200,
+      "at": "2026-10-25T07:49:29.255Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/155908179",
+      "status": 200,
+      "at": "2026-10-25T07:49:30.860Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/148542316",
+      "status": 200,
+      "at": "2026-10-25T07:49:32.627Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/119774202",
+      "status": 200,
+      "at": "2026-10-25T07:49:34.338Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/133578742",
+      "status": 200,
+      "at": "2026-10-25T07:49:35.973Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/119545961",
+      "status": 200,
+      "at": "2026-10-25T07:49:37.827Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/130332071",
+      "status": 200,
+      "at": "2026-10-25T07:49:39.560Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/157474944",
+      "status": 200,
+      "at": "2026-10-25T07:49:41.058Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/160402524",
+      "status": 200,
+      "at": "2026-10-25T07:49:42.754Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/144908429",
+      "status": 200,
+      "at": "2026-10-25T07:49:44.431Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/156594081",
+      "status": 200,
+      "at": "2026-10-25T07:49:46.267Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/105409105",
+      "status": 200,
+      "at": "2026-10-25T07:49:47.933Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://sohcoffee.thebase.in/items/38212613",
+      "status": 200,
+      "at": "2026-10-25T07:49:49.837Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": false,
+  "partial_support_verified": true,
+  "inventory_complete": false,
+  "variants_complete": false
+}

@@ -1311,6 +1311,43 @@
     "coffee_collection_verified": true
   },
   {
+    "name": "Nano's Coffee",
+    "entity_ids": ["ca9a6fff-1d2d-4e3f-83d4-e29ec8f966f7"],
+    "hosts": ["nanoroaster.handcrafted.jp"],
+    "adapter": "base",
+    "base_shop_id": "nanoroaster-handcrafted-jp",
+    "bootstrap_url": "https://nanoroaster.handcrafted.jp/",
+    "listing_paths": ["/categories/3667386"],
+    "allow_partial_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "HOKURO ROASTERY",
+    "entity_ids": ["50c59e18-865f-4e1f-99e7-1682132ca2eb"],
+    "hosts": ["hokurocoffe.base.shop"],
+    "adapter": "base",
+    "base_shop_id": "hokurocoffe-base-shop",
+    "bootstrap_url": "https://hokurocoffe.base.shop/",
+    "listing_paths": ["/"],
+    "allow_partial_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
+    "name": "Specialty Coffee Soh",
+    "entity_ids": ["9d723869-f652-49f3-a69c-92740948fd77"],
+    "hosts": ["sohcoffee.thebase.in", "lit.link"],
+    "identity_urls": ["https://lit.link/sohcoffee"],
+    "adapter": "base",
+    "base_shop_id": "sohcoffee",
+    "bootstrap_url": "https://sohcoffee.thebase.in/",
+    "listing_paths": ["/"],
+    "allow_partial_inventory": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
     "name": ".txt",
     "entity_ids": [
       "c4814d81-a3e7-4a8d-86c5-b0fac2146b84"

@@ -1,0 +1,1004 @@
+{
+  "name": "HOKURO ROASTERY",
+  "checked_at": "2026-10-25T07:48:36.486Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "50c59e18-865f-4e1f-99e7-1682132ca2eb"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://hokurocoffe.base.shop/items/134051491",
+      "https://hokurocoffe.base.shop/items/152479642",
+      "https://hokurocoffe.base.shop/items/127575600",
+      "https://hokurocoffe.base.shop/items/130406976",
+      "https://hokurocoffe.base.shop/items/130409316",
+      "https://hokurocoffe.base.shop/items/129438068",
+      "https://hokurocoffe.base.shop/items/138286687",
+      "https://hokurocoffe.base.shop/items/156019886",
+      "https://hokurocoffe.base.shop/items/119199579",
+      "https://hokurocoffe.base.shop/items/119199727",
+      "https://hokurocoffe.base.shop/items/138378005",
+      "https://hokurocoffe.base.shop/items/126806880",
+      "https://hokurocoffe.base.shop/items/127014111",
+      "https://hokurocoffe.base.shop/items/135998669",
+      "https://hokurocoffe.base.shop/items/144386253"
+    ],
+    "complete": false,
+    "observed_scope_complete": true,
+    "inventory_complete": false,
+    "inventory_scope": "base_published_one_time_cards",
+    "market_scope": "JPY_public_offer",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "evidence": [
+      {
+        "listing": "https://hokurocoffe.base.shop/",
+        "product_urls": [
+          "https://hokurocoffe.base.shop/items/134051491",
+          "https://hokurocoffe.base.shop/items/152479642",
+          "https://hokurocoffe.base.shop/items/127575600",
+          "https://hokurocoffe.base.shop/items/130406976",
+          "https://hokurocoffe.base.shop/items/130409316",
+          "https://hokurocoffe.base.shop/items/129438068",
+          "https://hokurocoffe.base.shop/items/138286687",
+          "https://hokurocoffe.base.shop/items/156019886",
+          "https://hokurocoffe.base.shop/items/119199579",
+          "https://hokurocoffe.base.shop/items/119199727",
+          "https://hokurocoffe.base.shop/items/138378005",
+          "https://hokurocoffe.base.shop/items/126806880",
+          "https://hokurocoffe.base.shop/items/127014111",
+          "https://hokurocoffe.base.shop/items/135998669",
+          "https://hokurocoffe.base.shop/items/144386253"
+        ],
+        "excluded": [
+          {
+            "url": "https://hokurocoffe.base.shop/items/154153739",
+            "title": "サプライズ定期便｜毎月届く豆が変化"
+          },
+          {
+            "url": "https://hokurocoffe.base.shop/items/135725006",
+            "title": "定番ブレンド定期便"
+          }
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://hokurocoffe.base.shop/items/134051491",
+      "title": "飲み比べセット 6種類 各36g【販売期間10/9〜10/12】",
+      "source_product_id": "base:hokurocoffe-base-shop:134051491",
+      "state": "sold_out",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/134051491",
+        "source_product_id": "base:hokurocoffe-base-shop:134051491",
+        "price": "2500",
+        "currency": "JPY",
+        "minor_units": 2500,
+        "availability": "https://schema.org/OutOfStock",
+        "state": "sold_out",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "134051491",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Sold out",
+          "disabled": true
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/152479642",
+      "title": "ワンコインコーヒー豆 50g",
+      "source_product_id": "base:hokurocoffe-base-shop:152479642",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/152479642",
+        "source_product_id": "base:hokurocoffe-base-shop:152479642",
+        "price": "500",
+        "currency": "JPY",
+        "minor_units": 500,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "152479642",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/127575600",
+      "title": "フルーティライト ブレンド【浅煎り】 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:127575600",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/127575600",
+        "source_product_id": "base:hokurocoffe-base-shop:127575600",
+        "price": "850",
+        "currency": "JPY",
+        "minor_units": 850,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "127575600",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/130406976",
+      "title": "ワイニーミディアム ブレンド【中煎り】 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:130406976",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/130406976",
+        "source_product_id": "base:hokurocoffe-base-shop:130406976",
+        "price": "850",
+        "currency": "JPY",
+        "minor_units": 850,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "130406976",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/130409316",
+      "title": "カカオダーク ブレンド【深煎り】 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:130409316",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/130409316",
+        "source_product_id": "base:hokurocoffe-base-shop:130409316",
+        "price": "850",
+        "currency": "JPY",
+        "minor_units": 850,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "130409316",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/129438068",
+      "title": "グアテマラ グラニート・デ・オロ農園【Cup of Excellence2025入賞】36g～240g",
+      "source_product_id": "base:hokurocoffe-base-shop:129438068",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/129438068",
+        "source_product_id": "base:hokurocoffe-base-shop:129438068",
+        "price": "800",
+        "currency": "JPY",
+        "minor_units": 800,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "129438068",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/138286687",
+      "title": "インドネシア バリ ブルームーン スマトラ式 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:138286687",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/138286687",
+        "source_product_id": "base:hokurocoffe-base-shop:138286687",
+        "price": "950",
+        "currency": "JPY",
+        "minor_units": 950,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "138286687",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/156019886",
+      "title": "ルワンダ シェンダジュル ナチュラル 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:156019886",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/156019886",
+        "source_product_id": "base:hokurocoffe-base-shop:156019886",
+        "price": "950",
+        "currency": "JPY",
+        "minor_units": 950,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "156019886",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/119199579",
+      "title": "エチオピア イルガチェフェ コチャレ ナチュラル 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:119199579",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/119199579",
+        "source_product_id": "base:hokurocoffe-base-shop:119199579",
+        "price": "950",
+        "currency": "JPY",
+        "minor_units": 950,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "119199579",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/119199727",
+      "title": "ホンジュラス テパンアグレ農園 アナエロビック 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:119199727",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/119199727",
+        "source_product_id": "base:hokurocoffe-base-shop:119199727",
+        "price": "950",
+        "currency": "JPY",
+        "minor_units": 950,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "119199727",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/138378005",
+      "title": "【カフェインレス】エチオピア グジ シャキッソ (中深煎り) 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:138378005",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/138378005",
+        "source_product_id": "base:hokurocoffe-base-shop:138378005",
+        "price": "950",
+        "currency": "JPY",
+        "minor_units": 950,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "138378005",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/126806880",
+      "title": "ブラジル イリシニア カペベ ナチュラル 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:126806880",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/126806880",
+        "source_product_id": "base:hokurocoffe-base-shop:126806880",
+        "price": "750",
+        "currency": "JPY",
+        "minor_units": 750,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "126806880",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/127014111",
+      "title": "エチオピア イルガチェフェG4 ナチュラル 120g~720g",
+      "source_product_id": "base:hokurocoffe-base-shop:127014111",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/127014111",
+        "source_product_id": "base:hokurocoffe-base-shop:127014111",
+        "price": "750",
+        "currency": "JPY",
+        "minor_units": 750,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "127014111",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/135998669",
+      "title": "オーダーメイドブレンド 100g",
+      "source_product_id": "base:hokurocoffe-base-shop:135998669",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/135998669",
+        "source_product_id": "base:hokurocoffe-base-shop:135998669",
+        "price": "950",
+        "currency": "JPY",
+        "minor_units": 950,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "135998669",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/144386253",
+      "title": "ドリップバッグ 8フレーバー",
+      "source_product_id": "base:hokurocoffe-base-shop:144386253",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://hokurocoffe.base.shop/items/144386253",
+        "source_product_id": "base:hokurocoffe-base-shop:144386253",
+        "price": "2000",
+        "currency": "JPY",
+        "minor_units": 2000,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "144386253",
+          "shop_id": "hokurocoffe-base-shop",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/",
+      "status": 200,
+      "at": "2026-10-25T07:48:17.674Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/134051491",
+      "status": 200,
+      "at": "2026-10-25T07:48:19.551Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/152479642",
+      "status": 200,
+      "at": "2026-10-25T07:48:20.918Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/127575600",
+      "status": 200,
+      "at": "2026-10-25T07:48:22.216Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/130406976",
+      "status": 200,
+      "at": "2026-10-25T07:48:23.255Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/130409316",
+      "status": 200,
+      "at": "2026-10-25T07:48:24.306Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/129438068",
+      "status": 200,
+      "at": "2026-10-25T07:48:25.394Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/138286687",
+      "status": 200,
+      "at": "2026-10-25T07:48:26.406Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/156019886",
+      "status": 200,
+      "at": "2026-10-25T07:48:27.612Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/119199579",
+      "status": 200,
+      "at": "2026-10-25T07:48:28.869Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/119199727",
+      "status": 200,
+      "at": "2026-10-25T07:48:30.069Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/138378005",
+      "status": 200,
+      "at": "2026-10-25T07:48:31.189Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/126806880",
+      "status": 200,
+      "at": "2026-10-25T07:48:32.170Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/127014111",
+      "status": 200,
+      "at": "2026-10-25T07:48:33.217Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/135998669",
+      "status": 200,
+      "at": "2026-10-25T07:48:34.341Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://hokurocoffe.base.shop/items/144386253",
+      "status": 200,
+      "at": "2026-10-25T07:48:35.386Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": false,
+  "partial_support_verified": true,
+  "inventory_complete": false,
+  "variants_complete": false
+}

@@ -1,0 +1,685 @@
+{
+  "name": "Nano's Coffee",
+  "checked_at": "2026-10-25T07:50:30.381Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "ca9a6fff-1d2d-4e3f-83d4-e29ec8f966f7"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://nanoroaster.handcrafted.jp/items/40022565",
+      "https://nanoroaster.handcrafted.jp/items/11217345",
+      "https://nanoroaster.handcrafted.jp/items/53001315",
+      "https://nanoroaster.handcrafted.jp/items/84469876",
+      "https://nanoroaster.handcrafted.jp/items/11693556",
+      "https://nanoroaster.handcrafted.jp/items/98303423",
+      "https://nanoroaster.handcrafted.jp/items/156460829",
+      "https://nanoroaster.handcrafted.jp/items/115868102",
+      "https://nanoroaster.handcrafted.jp/items/117635458",
+      "https://nanoroaster.handcrafted.jp/items/89615094"
+    ],
+    "complete": false,
+    "observed_scope_complete": true,
+    "inventory_complete": false,
+    "inventory_scope": "base_published_one_time_cards",
+    "market_scope": "JPY_public_offer",
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false,
+    "evidence": [
+      {
+        "listing": "https://nanoroaster.handcrafted.jp/categories/3667386",
+        "product_urls": [
+          "https://nanoroaster.handcrafted.jp/items/40022565",
+          "https://nanoroaster.handcrafted.jp/items/11217345",
+          "https://nanoroaster.handcrafted.jp/items/53001315",
+          "https://nanoroaster.handcrafted.jp/items/84469876",
+          "https://nanoroaster.handcrafted.jp/items/11693556",
+          "https://nanoroaster.handcrafted.jp/items/98303423",
+          "https://nanoroaster.handcrafted.jp/items/156460829",
+          "https://nanoroaster.handcrafted.jp/items/115868102",
+          "https://nanoroaster.handcrafted.jp/items/117635458",
+          "https://nanoroaster.handcrafted.jp/items/89615094"
+        ],
+        "excluded": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/40022565",
+      "title": "ゲイシャ100g\"ゲシャビレッジ農園\"ナチュラル　■Ethiopia Gesha Village Natural 100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:40022565",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/40022565",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:40022565",
+        "price": "1580",
+        "currency": "JPY",
+        "minor_units": 1580,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "40022565",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/11217345",
+      "title": "”アリーチャ”100g エチオピアイルガチェフG1ナチュラル ■Ethiopia Yirgacheffe G1 Natural – Aricha 100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:11217345",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/11217345",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:11217345",
+        "price": "980",
+        "currency": "JPY",
+        "minor_units": 980,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "11217345",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/53001315",
+      "title": "\"コンガ'100gイルガチェフェG1ウォッシュド■Ethiopia Yirgacheffe Konga Washed G1  100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:53001315",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/53001315",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:53001315",
+        "price": "980",
+        "currency": "JPY",
+        "minor_units": 980,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "53001315",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/84469876",
+      "title": "ゲデブ\"バンコ・ゴチチ''G1ウオッシュド100g　■Ethiopia Gedeb BankoGothithi  Washed G1  100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:84469876",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/84469876",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:84469876",
+        "price": "1100",
+        "currency": "JPY",
+        "minor_units": 1100,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "84469876",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/11693556",
+      "title": "”Berry fun Berry ”100gナノオリジナルブレンド ■Original Brend”Berry Fun Berry\" 100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:11693556",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/11693556",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:11693556",
+        "price": "980",
+        "currency": "JPY",
+        "minor_units": 980,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "11693556",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/98303423",
+      "title": "デカフェ\"シダモ\"100g ■Ethiopia Saidamo\"Decaf\"  Washed  100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:98303423",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/98303423",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:98303423",
+        "price": "1200",
+        "currency": "JPY",
+        "minor_units": 1200,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "98303423",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/156460829",
+      "title": "ゲデブ・チェルチェレ “ハニーファンキー” 100g　■Ethiopia Gedeb Chelchele  HoneyFunky 100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:156460829",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/156460829",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:156460829",
+        "price": "1500",
+        "currency": "JPY",
+        "minor_units": 1500,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "156460829",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/115868102",
+      "title": "カーボニックマセレーション”ベンチマジ・ゲシャ”１００ｇ ■Ethiopia Gesha CarbonicMaceration 100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:115868102",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/115868102",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:115868102",
+        "price": "1600",
+        "currency": "JPY",
+        "minor_units": 1600,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "115868102",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/117635458",
+      "title": "シダマ”ゴワチョ”アナエロビックナチュラル100ｇ■Ethiopia Sidama\"Gowacho\"Anaerobic 100g",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:117635458",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/117635458",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:117635458",
+        "price": "1600",
+        "currency": "JPY",
+        "minor_units": 1600,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "117635458",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "extracted_process_field",
+            "quote": "Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/89615094",
+      "title": "お買い得！ゲイシャコーヒーセット”ゲシャビレッジ農園ゲイシャ100g＋おすすめ3種各種100ｇ”計400ｇ入り",
+      "source_product_id": "base:nanoroaster-handcrafted-jp:89615094",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "base_primary_product_offer",
+        "source_url": "https://nanoroaster.handcrafted.jp/items/89615094",
+        "source_product_id": "base:nanoroaster-handcrafted-jp:89615094",
+        "price": "4900",
+        "currency": "JPY",
+        "minor_units": 4900,
+        "availability": "https://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "base_primary_purchase_control",
+          "product_id": "89615094",
+          "shop_id": "nanoroaster-handcrafted-jp",
+          "text": "Add to cart",
+          "disabled": false
+        },
+        "schema_availability": "http://schema.org/InStock"
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "base_public_primary_offer",
+        "currency": "JPY",
+        "inventory_complete": false,
+        "variant_identity_complete": false,
+        "base_price_only": true
+      }
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/categories/3667386",
+      "status": 200,
+      "at": "2026-10-25T07:50:16.267Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/40022565",
+      "status": 200,
+      "at": "2026-10-25T07:50:18.422Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/11217345",
+      "status": 200,
+      "at": "2026-10-25T07:50:19.731Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/53001315",
+      "status": 200,
+      "at": "2026-10-25T07:50:20.754Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/84469876",
+      "status": 200,
+      "at": "2026-10-25T07:50:21.822Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/11693556",
+      "status": 200,
+      "at": "2026-10-25T07:50:23.035Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/98303423",
+      "status": 200,
+      "at": "2026-10-25T07:50:24.255Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/156460829",
+      "status": 200,
+      "at": "2026-10-25T07:50:25.291Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/115868102",
+      "status": 200,
+      "at": "2026-10-25T07:50:26.662Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/117635458",
+      "status": 200,
+      "at": "2026-10-25T07:50:27.846Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://nanoroaster.handcrafted.jp/items/89615094",
+      "status": 200,
+      "at": "2026-10-25T07:50:29.254Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": false,
+  "partial_support_verified": true,
+  "inventory_complete": false,
+  "variants_complete": false
+}

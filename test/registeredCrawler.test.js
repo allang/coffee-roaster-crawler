@@ -15,6 +15,7 @@ function crawler(state) {
     './siteSupport/squareInventory':require('../src/siteSupport/squareInventory'),
     './siteSupport/txt':require('../src/siteSupport/txt'),
     './siteSupport/naver':require('../src/siteSupport/naver'),
+    './siteSupport/base':require('../src/siteSupport/base'),
     './crawlConcurrency':require('../src/crawlConcurrency'),
     './crawlBudget':require('../src/crawlBudget'),'./aiPageRouting':require('../src/aiPageRouting'),
   };
@@ -108,4 +109,11 @@ test('observed Naver links run through the registered partial-inventory path wit
  const s=state();s.profile=profile;s.discovery=discovery;
  const result=await crawler(s).crawl({id:profile.entity_ids[0],name:profile.name,website_url:profile.bootstrap_url},[]);
  assert.equal(result.success,true);assert.equal(s.metrics.metrics.partialInventory,true);assert.equal(s.metrics.metrics.inventoryComplete,false);assert.equal(s.reconciled,0);assert.equal(s.sitemaps,0);assert.equal(s.bfs,0);assert.deepEqual(s.visitedUrls,[target]);
+});
+test('registered BASE cards are visited without sitemap or global omission reconciliation',async()=>{
+ const profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='HOKURO ROASTERY'),base=require('../src/siteSupport/base'),fixture=require('./fixtures/siteSupport/asian-base.json').pages.hokuro_listing;
+ const discovery=await base.discoverBaseProducts({website_url:profile.bootstrap_url},profile,async value=>({success:true,data:fixture.html,finalUrl:value}));
+ const s=state();s.profile=profile;s.discovery=discovery;
+ const result=await crawler(s).crawl({id:profile.entity_ids[0],name:profile.name,website_url:profile.bootstrap_url},[]);
+ assert.equal(result.success,true);assert.equal(s.metrics.metrics.partialInventory,true);assert.equal(s.metrics.metrics.inventoryComplete,false);assert.equal(s.reconciled,0);assert.equal(s.sitemaps,0);assert.equal(s.bfs,0);assert.equal(s.visitedUrls.length,15);
 });

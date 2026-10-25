@@ -111,7 +111,15 @@ function productOnlyOffer(product,sourceUrl) {
   if(product?._market_source==='naver_smartstore_primary_product_offer' && offer?.currency==='KRW') {
     try { const url=new URL(sourceUrl),match=url.pathname.match(/^\/([a-z0-9_-]+)\/products\/([1-9]\d*)\/?$/);naver=url.protocol==='https:' && ['smartstore.naver.com','m.smartstore.naver.com'].includes(url.hostname) && !url.username && !url.password && !url.port && Boolean(match) && product.productID==='naver_smartstore:'+match[1]+':'+match[2]; } catch {}
   }
-  if(product?._product_only!==true || !(txt || naver) || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.variant_identity_complete!==false)return null;
+  let base=false;
+  if(product?._market_source==='base_primary_product_offer' && offer?.currency==='JPY') {
+    try {
+      const url=new URL(sourceUrl),profile=require('./siteSupport/profiles.json').find(p=>p.adapter==='base' && new URL(p.bootstrap_url).origin===url.origin);
+      const target=profile && require('./siteSupport/base').owned(sourceUrl,profile,true),control=offer.stock_control;
+      base=Boolean(target && product.productID==='base:'+profile.base_shop_id+':'+target.product && control?.source==='base_primary_purchase_control' && control.product_id===target.product && control.shop_id===profile.base_shop_id && (offer.state==='sold_out'?control.disabled===true:control.disabled===false));
+    } catch {}
+  }
+  if(product?._product_only!==true || !(txt || naver || base) || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.variant_identity_complete!==false)return null;
   const money=require('./catalogNormalization').parseMoney(offer.price,{currency:offer.currency});
   return money.minorUnits!=null && money.minorUnits===offer.minor_units && schemaAvailability(offer.availability)===offer.state && ['in_stock','sold_out'].includes(offer.state)?offer:null;
 }
