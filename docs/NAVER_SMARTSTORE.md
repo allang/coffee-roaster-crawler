@@ -1,7 +1,8 @@
 # Naver Smartstore investigation
 
 Status: implementation prepared, live product ingestion remains blocked. This is
-not a verified Naver rollout and has not been installed on the Mac mini.
+not a verified Naver rollout and has not been activated in the Mac mini's
+scheduled checkout. An isolated BASE validation is described below.
 
 ## Verified identities
 
@@ -149,7 +150,8 @@ platform domain.
 KIELO COFFEE and X coffee are published sister brands. Their two official native
 collections expose 17 products each with no overlapping product IDs. Their new
 catalog rows are scoped to those separate collection URLs; brand-specific crawl
-registration and complete save validation remain to be done. The current
+registration and native extraction are now verified below, while complete save
+validation remains gated. The current
 homepage-only audit records reachability and candidate links, not successful
 product ingestion. Single Origin's obsolete domain was replaced with its
 verified official Shopee link. Coffee Roastery Nakaji still needs an accessible
@@ -171,3 +173,20 @@ index was independently inspected through Safari and still rejects distinct
 same-weight SKUs. See [the reviewable save-gate plan](naver-20261025/VARIANT_SAVE_GATE.md)
 for the exact preflight, already tested migration, preservation guarantees and
 required approval before applying this global schema change.
+
+## Follow-up: BASE Validation
+
+Exact-owner public inspection now verifies Nano's Coffee (10), HOKURO (15) and
+Specialty Coffee Soh (23): 48 product-only JPY offers, with incomplete native
+size/grind identities and no omission reconciliation. The full suite now passes
+552 tests. An actual isolated Mac mini crawl of all three owners failed on
+OpenAI API credit exhaustion during translation and saved zero coffees.
+Read-only parent catalog verification confirms the failed runs and zero new
+product rows. This does not prove a successful ingestion rollout.
+
+See [the measured benchmark](naver-20261025/BENCHMARK.md) and
+[the BASE evidence contract](ASIAN_BASE_STOREFRONTS.md). The scheduled crawler
+remains on its existing source; neither the pending global index migration nor
+the Naver CAPTCHA has been performed. Finished Instagram discovery sessions
+remain archived; the completed remote validation session is awaiting archive
+confirmation because that host's archive-control request failed.

@@ -42,3 +42,14 @@ those IDs and writes before/after product, offer, stock and photo evidence to
 `.state/naver/base-production-crawl.json`. An optional exact merchant name
 limits it further. It checks source project, owner URL and running merchant
 jobs before starting; it does not change the scheduler or any database index.
+
+## Actual Save Validation
+
+The isolated Mac mini production attempt discovered these same 48 URLs but
+saved zero coffees: the first translation request returned HTTP 429,
+`You have no credits remaining.` Later requests stopped at the process quota
+guard. No saver/photo/variant persistence is therefore claimed verified.
+All three crawl runs failed cleanly, and independent catalog readback confirms
+zero products. See [the before/after benchmark](naver-20261025/BENCHMARK.md).
+The live scheduled checkout, service, environment, schema and interval were
+unchanged. Its isolated validation checkout was removed after report retention.

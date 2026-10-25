@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-10-25T08:02:14.568Z",
+  "mode": "independent-read-only-production-check",
+  "runs": [
+    {
+      "id": "00ea6254-7342-474e-9272-12a47ec690d4",
+      "entity_id": "ca9a6fff-1d2d-4e3f-83d4-e29ec8f966f7",
+      "status": "failed",
+      "started_at": "2026-10-25T07:58:29.309+00:00",
+      "finished_at": "2026-10-25T07:58:34.067+00:00",
+      "coffees_found": 0,
+      "pages_visited": 1,
+      "error": "Registered merchant product verification failed: 1 page error(s)",
+      "meta": {
+        "extraction": {
+          "errors": 1,
+          "aiCalls": 1,
+          "aiUsage": {
+            "cached_tokens": 0,
+            "prompt_tokens": 0,
+            "reasoning_tokens": 0,
+            "unreported_calls": 1,
+            "completion_tokens": 0
+          },
+          "visited": 1,
+          "cacheHits": 0,
+          "irrelevant": 0,
+          "coffeeFound": 0,
+          "marketChecks": 0,
+          "pageCategories": {
+            "product_candidate": 1
+          },
+          "extractionCalls": 0,
+          "structuredPages": 1,
+          "translationCalls": 1,
+          "aiCallsByCategory": {
+            "product_candidate": 1
+          },
+          "inventoryComplete": false,
+          "structuredProductOnlyPages": 1
+        }
+      }
+    },
+    {
+      "id": "28e0952e-2ff2-4593-b45c-ca7b192ef5e1",
+      "entity_id": "50c59e18-865f-4e1f-99e7-1682132ca2eb",
+      "status": "failed",
+      "started_at": "2026-10-25T07:58:36.495+00:00",
+      "finished_at": "2026-10-25T07:58:39.09+00:00",
+      "coffees_found": 0,
+      "pages_visited": 1,
+      "error": "Registered merchant product verification failed: 1 page error(s)",
+      "meta": {
+        "extraction": {
+          "errors": 1,
+          "aiCalls": 0,
+          "aiUsage": {
+            "cached_tokens": 0,
+            "prompt_tokens": 0,
+            "reasoning_tokens": 0,
+            "unreported_calls": 0,
+            "completion_tokens": 0
+          },
+          "visited": 1,
+          "cacheHits": 0,
+          "irrelevant": 0,
+          "coffeeFound": 0,
+          "marketChecks": 0,
+          "pageCategories": {
+            "product_candidate": 1
+          },
+          "extractionCalls": 0,
+          "structuredPages": 1,
+          "translationCalls": 0,
+          "aiCallsByCategory": {
+            "product_candidate": 0
+          },
+          "inventoryComplete": false,
+          "structuredProductOnlyPages": 1
+        }
+      }
+    },
+    {
+      "id": "cd7e0735-998d-4931-9352-5adcc61d611a",
+      "entity_id": "9d723869-f652-49f3-a69c-92740948fd77",
+      "status": "failed",
+      "started_at": "2026-10-25T07:58:41.687+00:00",
+      "finished_at": "2026-10-25T07:58:44.935+00:00",
+      "coffees_found": 0,
+      "pages_visited": 1,
+      "error": "Registered merchant product verification failed: 1 page error(s)",
+      "meta": {
+        "extraction": {
+          "errors": 1,
+          "aiCalls": 0,
+          "aiUsage": {
+            "cached_tokens": 0,
+            "prompt_tokens": 0,
+            "reasoning_tokens": 0,
+            "unreported_calls": 0,
+            "completion_tokens": 0
+          },
+          "visited": 1,
+          "cacheHits": 0,
+          "irrelevant": 0,
+          "coffeeFound": 0,
+          "marketChecks": 0,
+          "pageCategories": {
+            "product_candidate": 1
+          },
+          "extractionCalls": 0,
+          "structuredPages": 1,
+          "translationCalls": 0,
+          "aiCallsByCategory": {
+            "product_candidate": 0
+          },
+          "inventoryComplete": false,
+          "structuredProductOnlyPages": 1
+        }
+      }
+    }
+  ],
+  "products": []
+}

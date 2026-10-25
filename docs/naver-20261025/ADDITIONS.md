@@ -33,3 +33,8 @@ Merchant-only extraction now verifies 80 products across five of these additions
 whose size/grind SKU identities remain incomplete. These are dry-run counts,
 not production ingestion gains. See ../ASIAN_BASE_STOREFRONTS.md and each
 merchant's committed extraction JSON for the exact measured scope.
+
+The subsequent isolated Mac mini BASE attempt saved zero products because the
+configured OpenAI account has no API credits. All three runs failed before
+catalog persistence. See [the actual before/after benchmark](BENCHMARK.md);
+the dry-run extraction totals above must not be counted as coffees ingested.

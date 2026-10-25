@@ -1,0 +1,124 @@
+{
+  "checked_at_utc": "2026-10-25T08:00:06.932191+00:00",
+  "status": "bounded_validation_complete_ingestion_blocked_by_openai_api_credit_exhaustion",
+  "source_commit": "0adc69837a64fe75cb5f50dfebf4b241e4249f4a",
+  "runtime_path": "/private/tmp/coffee-roaster-asian-base-validation-20261025",
+  "settings": {
+    "PARALLEL_ROASTERS": "1",
+    "CRAWLER_PAGE_CONCURRENCY": "1",
+    "CRAWLER_ROASTER_TIMEOUT_MS": "180000",
+    "CRAWLER_BATCH_TIMEOUT_MS": "600000"
+  },
+  "process_elapsed_seconds": 19.124811,
+  "helper_elapsed_seconds": 18.167,
+  "hard_timeout": false,
+  "exit_code": 1,
+  "merchants": [
+    {
+      "name": "Nano's Coffee",
+      "entity_id": "ca9a6fff-1d2d-4e3f-83d4-e29ec8f966f7",
+      "elapsed_seconds": 6.983,
+      "started_at": "2026-10-25T07:58:27.255Z",
+      "finished_at": "2026-10-25T07:58:34.238Z",
+      "success": false,
+      "error": "Registered merchant product verification failed: 1 page error(s)",
+      "before_product_count": 0,
+      "after_product_count": 0,
+      "added_product_ids": [],
+      "saved_product_offers": 0,
+      "photo_products": 0,
+      "variants": 0,
+      "run_ids": [
+        "00ea6254-7342-474e-9272-12a47ec690d4"
+      ],
+      "run_statuses": [
+        "failed"
+      ],
+      "pages_visited": 1,
+      "reported_ai_calls": 1
+    },
+    {
+      "name": "HOKURO ROASTERY",
+      "entity_id": "50c59e18-865f-4e1f-99e7-1682132ca2eb",
+      "elapsed_seconds": 4.848,
+      "started_at": "2026-10-25T07:58:34.401Z",
+      "finished_at": "2026-10-25T07:58:39.249Z",
+      "success": false,
+      "error": "Registered merchant product verification failed: 1 page error(s)",
+      "before_product_count": 0,
+      "after_product_count": 0,
+      "added_product_ids": [],
+      "saved_product_offers": 0,
+      "photo_products": 0,
+      "variants": 0,
+      "run_ids": [
+        "28e0952e-2ff2-4593-b45c-ca7b192ef5e1"
+      ],
+      "run_statuses": [
+        "failed"
+      ],
+      "pages_visited": 1,
+      "reported_ai_calls": 0
+    },
+    {
+      "name": "Specialty Coffee Soh",
+      "entity_id": "9d723869-f652-49f3-a69c-92740948fd77",
+      "elapsed_seconds": 5.711,
+      "started_at": "2026-10-25T07:58:39.428Z",
+      "finished_at": "2026-10-25T07:58:45.139Z",
+      "success": false,
+      "error": "Registered merchant product verification failed: 1 page error(s)",
+      "before_product_count": 0,
+      "after_product_count": 0,
+      "added_product_ids": [],
+      "saved_product_offers": 0,
+      "photo_products": 0,
+      "variants": 0,
+      "run_ids": [
+        "cd7e0735-998d-4931-9352-5adcc61d611a"
+      ],
+      "run_statuses": [
+        "failed"
+      ],
+      "pages_visited": 1,
+      "reported_ai_calls": 0
+    }
+  ],
+  "total_added_products": 0,
+  "catalog_save_log_events": 0,
+  "total_photo_products": 0,
+  "total_variants": 0,
+  "total_pages_visited": 3,
+  "total_reported_ai_calls": 1,
+  "failure_evidence": "First translation request returned HTTP 429: You have no credits remaining. Subsequent merchants were stopped by the process-local quota guard before further model calls.",
+  "omission_reconciliation": false,
+  "production_schema_changes": 0,
+  "scheduler_changes": 0,
+  "source_or_env_changes": 0,
+  "live_checkout_config_unchanged": true,
+  "syntax_checks_passed": 18,
+  "no_automatic_retry": true,
+  "read_from_completed_remote_thread": {
+    "thread_id": "01a171e0-cc62-7493-8f9a-efd51db08206",
+    "completed_at_unix": 1792915270
+  },
+  "exact_page_failures": [
+    {
+      "url": "https://sohcoffee.thebase.in/items/142549615",
+      "error": "Translation failed before catalog save: OpenAI quota exceeded earlier in this process"
+    },
+    {
+      "url": "https://nanoroaster.handcrafted.jp/items/40022565",
+      "error": "Translation failed before catalog save: 429 You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+    },
+    {
+      "url": "https://hokurocoffe.base.shop/items/134051491",
+      "error": "Translation failed before catalog save: OpenAI quota exceeded earlier in this process"
+    }
+  ],
+  "runtime_cleanup": {
+    "removed": true,
+    "evidence": "Completed remote validation removed only its detached checkout after preserving reports"
+  },
+  "preserved_on_mac_mini": "/Users/allan/Documents/workspace/everycoffee-preservation/asian-base-validation-20261025T0758Z"
+}
