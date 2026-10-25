@@ -97,6 +97,7 @@ async function fetchPageContent(url, referer = null, options = {}) {
     if(!soft404 && options.siteProfile?.adapter==='naver_smartstore'){sourceProduct=require('./siteSupport/naver').naverProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='base'){sourceProduct=require('./siteSupport/base').baseProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='otc_next'){sourceProduct=require('./siteSupport/otc').otcProduct(result.data,result.finalUrl || url,options.siteProfile);}
+    if(!soft404 && options.siteProfile?.adapter==='shopline'){sourceProduct=require('./siteSupport/shopline').shoplineProduct(result.data,result.finalUrl || url,options.siteProfile);}
     return {
       success: true,
       sourceProduct,

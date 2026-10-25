@@ -10,8 +10,8 @@ across the initial 19 owners. Toyosaki and Regolith were subsequently added
 with insert-only identity checks and readback. The expanded 08:57:26 UTC
 readback confirms 21 roaster owners and zero coffee products. A further
 10:21:12 UTC readback after Zuku/Nakaji extraction confirms the same.
-Live merchant
-GET-only inspection verifies the following:
+A 10:43:07 UTC readback after Reshock extraction again finds 21 owners and
+zero saved products. Live merchant GET-only inspection verifies the following:
 
 | Merchant | Coffee products extracted | Native variants verified | Production products before | After actual crawl | Current blocker |
 | --- | ---: | ---: | ---: | ---: | --- |
@@ -29,13 +29,17 @@ GET-only inspection verifies the following:
 | Essentia Factory | 84 | 885 | 0 | Not attempted | Source inspection passes, including 23 sold-out products; API-credit and distinct same-weight SKU save gates remain |
 | Zuku Cafe | 19 | 102 | 0 | Not attempted | One-time source inspection passes; merchandise excluded; API-credit and same-weight SKU save gates remain |
 | Coffee Roastery Nakaji | 22 | Incomplete; product-only base offers | 0 | Not attempted | Verified classic BASE fallback works without changing the indexed URL; hidden inventory/native SKU sets remain incomplete; API-credit gate remains |
+| Reshock Coffee | 41 verified, 2 held | 70 exact native variants plus 9 product-only offers | 0 | Not attempted | Expired collection offer and conflicting gift-box stock/price remain held; actual saves await API credit and runtime validation |
 | Brewing Ceremony | 0 | Not observed | 0 | 0 | Public HTTP 429; Safari security CAPTCHA not completed |
 
-Measured extraction: **307 products from fourteen sites**, including 524 exact native
+Measured extraction: **348 products from fifteen sites**, including 524 exact native
 Shopify variants, 124 Wix variants, 11 Square variants, 885 Cafe24 variants,
-70 BASE product-only offers and six OTC product-only offers.
-OTC retains two page errors and is not counted as a wholly successful merchant.
-This is not a 307-coffee
+70 Shopline variants, 70 BASE product-only offers, six OTC product-only offers
+and nine Shopline product-only offers. Total exact native variants: **1,614**;
+product-only offers: **85**. Reshock adds 41 source-extracted products to the
+previous 307-product checkpoint, not 41 saved coffees.
+OTC and Reshock each retain two page errors; neither is counted as a wholly
+successful merchant. This is not a 348-coffee
 ingestion gain. Newly saved products from the real attempts: **0**. Newly
 successful complete merchant ingests: **0**. The 21 index additions remain a
 separate, verified outcome.
@@ -83,20 +87,23 @@ These remain discovery/reachability results, not successful ingestion claims:
 | Single Origin espresso & roast | Dead old domain replaced with current official Shopee shop; catalog extraction unvalidated |
 | 5F Coffee Lab | Official equipment-oriented homepage reachable; coffee retail destination still needed |
 | Coffee Aura | Official STORES shop returns HTTP 403 |
-| Reshock Coffee | Shopline native variation data is available in public product HTML; adapter, complete retail scope and money/stock validation remain unimplemented |
 
 The additional GET-only results, exact source scopes, own-roasting evidence,
 deduplication and stock holds are documented in
 [the follow-up](../ASIAN_STOREFRONT_FOLLOWUP.md). Its runtime is not activated in
-the scheduled Mac checkout. Latest full regression result: 600 passed tests.
+the scheduled Mac checkout. Latest full regression result: 614 passed tests.
 `post-new-store-readback.json` records the fresh 21-owner/zero-product source
 readback. `post-essentia-cru-readback.json` confirms that result again at
 09:53:01 UTC. Each merchant's `*-extraction.json` records actual GET requests,
 product and variant counts, errors and zero production writes/model calls.
 `post-zuku-nakaji-readback.json` confirms the 21-owner/zero-product result again
 at 10:21:12 UTC. `nakaji-indexed-url-smoke.json` proves the live fallback from
-the unchanged indexed URL. Shopline source-discovery evidence is not included
-in the passing extraction totals.
+the unchanged indexed URL. `reshock-extraction.json` records the later real
+52-GET inspection: 41 verified products, 70 native variants, nine product-only
+offers and two held pages. Its overall `passed` remains false.
+`post-reshock-readback.json` confirms the 21-owner/zero-product result at
+10:43:07 UTC. Earlier Shopline source-discovery-only evidence is retained as
+a dated observation, not a passing extraction result.
 
 ## Next Gates
 

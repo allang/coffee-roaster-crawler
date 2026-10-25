@@ -1339,6 +1339,36 @@
     "inventory_authorizes_global_absence": false
   },
   {
+    "name": "Reshock Coffee",
+    "entity_ids": ["570c04dd-ff7a-479e-9c4a-b160118648e3"],
+    "hosts": ["www.reshockcoffee.com", "reshockcoffee.com"],
+    "adapter": "shopline",
+    "bootstrap_url": "https://www.reshockcoffee.com/",
+    "shopline_merchant_id": "61668b6d0baa26002e7228ef",
+    "shopline_reviewed_product_ids": [
+      "6a50e5909fc87a1753a6868b", "6a4aae5905887566338b1874", "6a1d98d63bbaea6b2811b4a1",
+      "6a1d9835452a6f88518b304f", "6a1d96a448545181a753726d", "6a1d959d256eb8d123531691",
+      "6a1d93ea179a6706929e7ba2", "6a1d920bfd79dc0018411c70", "699b316a868340690dbe1f22",
+      "699886d2ff54e98183999ce3", "69987f2a64daf74bfb2e7ffe", "69987ac08281744a3c10869f",
+      "696a0a7dbfc2b4877da180d5", "69329a59a9d38b000cd78ac5", "691b3fe297cd60000abbe6b8",
+      "6914a100503e050018039554", "6914a059d03aef00126ee37f", "691498bd492e0f0016a494fd",
+      "6914970c8fbf430010d6f7c2", "691494d2503e05000c03861d", "680fb78d152791000c86a983",
+      "680fb4054681230011363612", "680fad424b353800115d238a", "680fad06661ad9000fcf0479",
+      "66452b5f50e9d7001f8720e3", "6636a02f96dece00148f0826", "663699d8e6cb4600143e6bb2",
+      "634d1a86071a00002599d19c", "6204c7a2f9c71300286d62c9", "6270f1ebaac6fa000fea83d6",
+      "6a1da2d032593f9ead4377b6", "69f83f031c90edeaef14f6cd", "69a803dfd058640012cdf221",
+      "696a0292984a54eb6db079a3", "6167bd65adb8c300264ec11a", "6167bd000443410023ad789d",
+      "63b226d80c2da4000e77ae5a", "635e4a82f09281001c82d702", "6226c1a3a371490032fc428e",
+      "66787311f6199300166a14ab", "66411a62c85a0b00103f5be8", "6353791b5f01a1002822007d",
+      "69c548b032b34655df1b1bf8"
+    ],
+    "listing_paths": ["/categories/taiwan-alishan-coffee-beans", "/categories/alishan-filter-coffee", "/categories/alishan-coffee-filter-hanging-coffee-gift-box", "/categories/exclusive-co-branded-gift-box", "/categories/combination-area", "/categories/alishan-bottled-coffee", "/categories/alishan-infused-coffee", "/categories/alishan-filter-coffee-series"],
+    "exclude_name_pattern": "客訂|生豆|茶葉|茶包|折價券|購物金|禮券|咖啡壺|濾杯|手沖壺|研磨機|磨豆機|訂閱|課程",
+    "coffee_collection_verified": true,
+    "reconcile_omissions": false,
+    "inventory_authorizes_global_absence": false
+  },
+  {
     "name": "Essentia Factory",
     "entity_ids": ["e1115ccc-6b89-4ac0-ba7d-70a0e38b4094"],
     "hosts": ["essentiafactory.com"],

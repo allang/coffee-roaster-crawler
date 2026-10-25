@@ -208,22 +208,53 @@ The newer BASE path remains unchanged. Both source runs use zero model calls
 and production writes; the fresh source readback confirms the index URL stayed
 unchanged and all 21 added owners still have zero products.
 
-## Reshock Native Data
+## Reshock Shopline
 
-Reshock is not yet supported or counted as an extraction pass. Its public
-Shopline product page does publish a native `app.value('product', JSON.parse(...))`
-object containing real variation keys, option IDs, prices and stock flags.
-The captured sample has two native size variants. The bean category has two
-pages and includes a custom-order listing that is not ordinary retail coffee.
+The live public inspection verifies 41 products with 70 native variants and
+nine product-only offers. Eight reviewed category paths require nine pages,
+including the second bean page and an explicitly empty category. Only the
+43 reviewed coffee product IDs are admitted. Custom orders, tea/coffee blends,
+a kettle gift set and a mixed cracker gift set are outside the coffee-only
+scope. New unreviewed IDs require review; global omission reconciliation stays
+disabled. The two remaining product errors keep the overall inspection failed.
 
-`naver-20261025/reshock-source-discovery.json` records the concrete next adapter
-inputs without storing merchant/customer configuration or executing scripts.
-Important checks include merchant/URL binding, complete coffee-category
-enumeration, membership versus one-time prices, timed sales, Chinese size
-labels and native currency scale. The sample's TWD `dollars` and `cents` values
-match; blindly dividing by 100 would be wrong. Zero quantity with explicit
-unlimited inventory is not proof of sold-out stock. No Shopline support is
-claimed from these observations alone.
+The new Shopline adapter is registered only for Reshock's exact catalog owner
+and official hosts. It parses literal public JSON without running merchant,
+tracking or account code. Merchant ID, native product/link IDs, route, canonical,
+heading, schema SKU and the complete native option matrix must agree. Projected
+fixtures retain the actual 46 inspected products and nine category responses.
+
+Guest one-time SKU prices retain their paired TWD currency. The native merchant
+scale is one: `dollars: 950` / `cents: 950` means NT$950, not NT$9.50. Parent,
+member, subscription and optional add-on amounts are not substituted for SKU
+prices. Native sale prices are used only when valid and corroborated by the
+primary displayed offer. The schema minimum is a check, not every SKU's price.
+
+Explicit unlimited inventory can prove stock despite quantity zero. Finite
+inventory requires unmasked quantities and consistent native aggregate/schema
+stock. Shared stock, preorders, future/expired sale windows and contradictory
+stock remain held. Nine pages have real primary offers but no independent
+native SKU set; they remain product-only and cannot manufacture variants.
+Twenty-nine native 100g sizes retain net mass. Forty-one half-pound or pack-count
+variants have no unambiguous gram amount and remain unknown; shipping mass and
+bottled coffee volume are not relabeled as grams.
+
+Held pages:
+
+- `reshock-alishan-coffee-19-beans-collection%E2%81%A0-limited`: its native sale
+  window ended July 14, 2026 at 15:59 UTC, despite retained stock and schema
+  `InStock`. It is not currently purchasable evidence.
+- `chiayi-sign-best-2024-alishan-coffee-dripbag-giftbox`: both native SKUs have
+  zero finite quantity and schema says `OutOfStock`, but native `sold_out` is
+  false. Schema price NT$1,580 also differs from the NT$1,000 minimum of the two
+  native sale prices. The reader rejects this disagreement rather than guessing.
+
+`naver-20261025/reshock-extraction.json` records 52 actual public GETs, all HTTP
+200, zero model calls, zero prohibited requests and zero production writes.
+The report has `passed: false`; 41 accepted products do not erase its two errors.
+Earlier `reshock-source-discovery.json` is preserved as a source-only checkpoint.
+No source rollout, migration, scheduled restart or production product save was
+performed for this adapter.
 
 ## Remaining Gates
 
@@ -234,10 +265,11 @@ Distinct same-weight Shopify SKUs also need the separately authorized schema
 change. Naver's specific security-check confirmation is still pending.
 
 Reshock is Shopline: its `/products.json` returns HTML, so it is not registered
-as Shopify. Total source-verified extraction is now 307 products across fourteen
-sites, with 1,544 exact native variants plus 76 product-only offers. The fresh
-10:21:12 UTC catalog readback still finds zero products across the 21 owners.
-The full regression suite passes 600 tests; none of those tests proves a
+as Shopify. Total source-verified extraction is now 348 products across fifteen
+sites, with 1,614 exact native variants plus 85 product-only offers. OTC and
+Reshock retain explicit error holds, not whole-merchant passing claims. The fresh
+10:43:07 UTC catalog readback still finds zero products across the 21 owners.
+The full regression suite passes 614 tests; none of those tests proves a
 completed production crawl.
 
 The completed Mac validation session is now archived. Discovery session

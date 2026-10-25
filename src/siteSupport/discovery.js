@@ -29,6 +29,7 @@ async function discoverProfileProducts(roaster,profile,fetchHtml) {
   if(profile.adapter==='naver_smartstore')return require('./naver').discoverNaverProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='base')return require('./base').discoverBaseProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='otc_next')return require('./otc').discoverOtcProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='shopline')return require('./shopline').discoverShoplineProducts(roaster,profile,fetchHtml);
   const urls=new Set(),evidence=[];
   for(const path of profile.listing_paths) {
     const url=new URL(path,roaster.website_url).href,result=await fetchHtml(url);

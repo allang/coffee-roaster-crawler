@@ -126,7 +126,15 @@ function productOnlyOffer(product,sourceUrl) {
       otc=Boolean(target && product.productID==='otc_public_product:'+target.product && /^gid:\/\/shopify\/ProductVariant\/[1-9]\d*$/.test(offer.observed_variant_id || '') && offer.state==='in_stock' && offer.stock_control?.source==='otc_primary_purchase_control' && offer.stock_control.product_id===target.product && offer.stock_control.enabled===true);
     } catch {}
   }
-  if(product?._product_only!==true || !(txt || naver || base || otc) || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.variant_identity_complete!==false)return null;
+  let shopline=false;
+  if(product?._market_source==='shopline_primary_product_offer' && offer?.currency==='TWD') {
+    try {
+      const profile=require('./siteSupport/profiles.json').find(p=>p.adapter==='shopline' && p.hosts.includes(new URL(sourceUrl).hostname)),control=offer.stock_control;
+      const target=profile && require('./siteSupport/shopline').owned(sourceUrl,profile,true);
+      shopline=Boolean(target && control?.source==='shopline_native_product_stock' && control.merchant_id===profile.shopline_merchant_id && profile.shopline_reviewed_product_ids.includes(control.product_id) && product.productID==='shopline:'+control.merchant_id+':'+control.product_id && control.masked_quantity===false && Number.isSafeInteger(control.quantity) && control.quantity>=0 && typeof control.unlimited_quantity==='boolean' && typeof control.sold_out==='boolean' && control.sold_out===(offer.state==='sold_out') && (control.unlimited_quantity?offer.state==='in_stock':(control.quantity>0)===(offer.state==='in_stock')));
+    } catch {}
+  }
+  if(product?._product_only!==true || !(txt || naver || base || otc || shopline) || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.variant_identity_complete!==false)return null;
   const money=require('./catalogNormalization').parseMoney(offer.price,{currency:offer.currency});
   return money.minorUnits!=null && money.minorUnits===offer.minor_units && schemaAvailability(offer.availability)===offer.state && ['in_stock','sold_out'].includes(offer.state)?offer:null;
 }

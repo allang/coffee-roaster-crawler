@@ -42,7 +42,7 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
   maxCooldownResumptions=boundedNumber(maxCooldownResumptions,MAX_COOLDOWN_RESUMPTIONS,MAX_COOLDOWN_RESUMPTIONS);
   resumeCooldowns=resumeCooldowns===true;
   const requests=[],returnedErrors=[],cooldownEvents=[],cooldowns=new Map(),hostDelays=new Map();let last=null,queue=Promise.resolve(),cooldownWaitedMs=0,cooldownResumptions=0;
-  function destination(value){const url=allowed(value,profile.hosts);if(profile.adapter==='naver_smartstore')require('./naver').owned(value,profile);if(profile.adapter==='base')require('./base').owned(value,profile);if(profile.adapter==='otc_next')require('./otc').owned(value,profile);const prefix=profile.host_path_prefixes?.[url.hostname];if(prefix && ![prefix].flat().some(p=>url.pathname.startsWith(p)))throw Error('Unverified catalog path');return url;}
+  function destination(value){const url=allowed(value,profile.hosts);if(profile.adapter==='naver_smartstore')require('./naver').owned(value,profile);if(profile.adapter==='base')require('./base').owned(value,profile);if(profile.adapter==='otc_next')require('./otc').owned(value,profile);if(profile.adapter==='shopline')require('./shopline').owned(value,profile);const prefix=profile.host_path_prefixes?.[url.hostname];if(prefix && ![prefix].flat().some(p=>url.pathname.startsWith(p)))throw Error('Unverified catalog path');return url;}
   async function read(initial,options,started) {
     let url=initial,attempt=null,retries=0,hops=0,attempts=0;
     const remaining=()=>maxElapsedMs-(nowImpl()-started);

@@ -1,0 +1,4182 @@
+{
+  "name": "Reshock Coffee",
+  "checked_at": "2026-10-25T10:41:39.722Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "570c04dd-ff7a-479e-9c4a-b160118648e3"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-natural",
+      "https://www.reshockcoffee.com/products/reshock-alishan-coffee-19-beans-collection%E2%81%A0-limited",
+      "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-typica-washed",
+      "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-pulped-honey",
+      "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-thermal-shock-natural",
+      "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-yeast-natural",
+      "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Csl09%EF%BD%9Cnatural",
+      "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Ctypica%EF%BD%9Cwashed",
+      "https://www.reshockcoffee.com/products/reshock-blend-sunrise-coffee-beans",
+      "https://www.reshockcoffee.com/products/bai-xiang-coffee-estate-sl34-washed",
+      "https://www.reshockcoffee.com/products/amber-coffee-estate-typica-anaerobic-natural",
+      "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-typica-300h-honey",
+      "https://www.reshockcoffee.com/products/reshock-blend-secret-coffee-beans",
+      "https://www.reshockcoffee.com/products/yangui-coffee-estate-geisha-washed",
+      "https://www.reshockcoffee.com/products/jing-long-coffee-estate-sl34-anaerobic-honey",
+      "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-washed",
+      "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-honey",
+      "https://www.reshockcoffee.com/products/yipin-coffee-estate-sl34typica-natural",
+      "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-sl34-natural",
+      "https://www.reshockcoffee.com/products/tfu%E2%80%99-ya-coffee-estate-sl34-natural",
+      "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange--typica-anaerobic-natural",
+      "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-geisha-washed",
+      "https://www.reshockcoffee.com/products/koana-coffee-estate-sl34--natural",
+      "https://www.reshockcoffee.com/products/amber-coffee-estate-sl34-anaerobic-natural",
+      "https://www.reshockcoffee.com/products/taiwan-alishan-tfu%E2%80%99ya-coffee-estate-sl34-washed",
+      "https://www.reshockcoffee.com/products/taiwan-alishan-jing-long-coffee-estate-sl34-anaerobic-natural",
+      "https://www.reshockcoffee.com/products/reshock-blend-ideal-coffee-beans",
+      "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-natural",
+      "https://www.reshockcoffee.com/products/zou-zhou-yuansl34natural",
+      "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-washed",
+      "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+      "https://www.reshockcoffee.com/products/6-piece-filter-hanging-combination-exquisite-boxed-set",
+      "https://www.reshockcoffee.com/products/reshock-blend-sunrise-drip-bag-coffee",
+      "https://www.reshockcoffee.com/products/reshock-blend-secret-drip-bag-coffee",
+      "https://www.reshockcoffee.com/products/reshock-coffee-classic-giftbox-dripbag-taiwan-alishan",
+      "https://www.reshockcoffee.com/products/reshock-coffee-monarch",
+      "https://www.reshockcoffee.com/products/chiayi-sign-best-2024-alishan-coffee-dripbag-giftbox",
+      "https://www.reshockcoffee.com/products/5-piece-filter-hanging-combination-exquisite-boxed-set",
+      "https://www.reshockcoffee.com/products/selected-alishan-filter-coffee-12-into-20",
+      "https://www.reshockcoffee.com/products/reshock-blend-ideal-drip-bag-coffee",
+      "https://www.reshockcoffee.com/products/iced-drip-cold-brew-bottled-coffee",
+      "https://www.reshockcoffee.com/products/cold-brew-cold-brew-bottled-coffee",
+      "https://www.reshockcoffee.com/products/alishan-coffee-brew-bag"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "https://www.reshockcoffee.com/categories/taiwan-alishan-coffee-beans",
+        "page": 1,
+        "published_products": 24,
+        "coffee_products": [
+          {
+            "id": "6a50e5909fc87a1753a6868b",
+            "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-natural",
+            "title": "【卓武山咖啡農場】藝伎｜日曬"
+          },
+          {
+            "id": "6a4aae5905887566338b1874",
+            "url": "https://www.reshockcoffee.com/products/reshock-alishan-coffee-19-beans-collection%E2%81%A0-limited",
+            "title": "【里響咖啡】全系列阿里山咖啡豆完整收藏 (19款)⁠"
+          },
+          {
+            "id": "6a1d98d63bbaea6b2811b4a1",
+            "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-typica-washed",
+            "title": "【椿萱巫師咖啡莊園】Typica｜水洗"
+          },
+          {
+            "id": "6a1d9835452a6f88518b304f",
+            "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-pulped-honey",
+            "title": "【卓武山咖啡農場】 SL34｜果膠蜜處理"
+          },
+          {
+            "id": "6a1d96a448545181a753726d",
+            "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-thermal-shock-natural",
+            "title": "【卓武山咖啡農場】 SL34｜熱沖擊日曬（TSN）"
+          },
+          {
+            "id": "6a1d959d256eb8d123531691",
+            "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-yeast-natural",
+            "title": "【卓武山咖啡農場】 SL34｜酵母日曬（YN）"
+          },
+          {
+            "id": "6a1d93ea179a6706929e7ba2",
+            "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Csl09%EF%BD%9Cnatural",
+            "title": "【卓武山咖啡農場】SL09｜日曬"
+          },
+          {
+            "id": "6a1d920bfd79dc0018411c70",
+            "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Ctypica%EF%BD%9Cwashed",
+            "title": "【卓武山咖啡農場】Typica｜水洗"
+          },
+          {
+            "id": "699b316a868340690dbe1f22",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-coffee-beans",
+            "title": "【里響咖啡】獨家配方「日出」｜阿里山配方豆"
+          },
+          {
+            "id": "699886d2ff54e98183999ce3",
+            "url": "https://www.reshockcoffee.com/products/bai-xiang-coffee-estate-sl34-washed",
+            "title": "【柏香咖啡莊園】SL34｜水洗"
+          },
+          {
+            "id": "69987f2a64daf74bfb2e7ffe",
+            "url": "https://www.reshockcoffee.com/products/amber-coffee-estate-typica-anaerobic-natural",
+            "title": "【琥珀社咖啡莊園】SL34｜水洗"
+          },
+          {
+            "id": "69987ac08281744a3c10869f",
+            "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-typica-300h-honey",
+            "title": "【卓武山咖啡農場】 Typica｜300小時蜜處理（里響獨家批次）"
+          },
+          {
+            "id": "696a0a7dbfc2b4877da180d5",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-secret-coffee-beans",
+            "title": "【里響咖啡】獨家配方「秘密」｜阿里山配方豆"
+          },
+          {
+            "id": "69329a59a9d38b000cd78ac5",
+            "url": "https://www.reshockcoffee.com/products/yangui-coffee-estate-geisha-washed",
+            "title": "【雅慕伊咖啡莊園】藝伎｜水洗"
+          },
+          {
+            "id": "691b3fe297cd60000abbe6b8",
+            "url": "https://www.reshockcoffee.com/products/jing-long-coffee-estate-sl34-anaerobic-honey",
+            "title": "【璟隆咖啡莊園】 SL34｜厭氧蜜處理"
+          },
+          {
+            "id": "6914a100503e050018039554",
+            "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-washed",
+            "title": "【卓武山咖啡農場】藝伎｜水洗"
+          },
+          {
+            "id": "6914a059d03aef00126ee37f",
+            "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-honey",
+            "title": "【卓武山咖啡農場】藝伎｜蜜處理"
+          },
+          {
+            "id": "691498bd492e0f0016a494fd",
+            "url": "https://www.reshockcoffee.com/products/yipin-coffee-estate-sl34typica-natural",
+            "title": "【一品咖啡莊園】SL34+Typica｜日曬"
+          },
+          {
+            "id": "6914970c8fbf430010d6f7c2",
+            "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-sl34-natural",
+            "title": "【椿萱巫師咖啡莊園】SL34｜日曬"
+          },
+          {
+            "id": "691494d2503e05000c03861d",
+            "url": "https://www.reshockcoffee.com/products/tfu%E2%80%99-ya-coffee-estate-sl34-natural",
+            "title": "【他扶芽有機農園】SL34｜日曬"
+          },
+          {
+            "id": "680fb78d152791000c86a983",
+            "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange--typica-anaerobic-natural",
+            "title": "【卓武山咖啡農園】Typica｜貴腐日曬"
+          },
+          {
+            "id": "680fb4054681230011363612",
+            "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-geisha-washed",
+            "title": "【椿萱巫師咖啡莊園】藝伎｜水洗"
+          },
+          {
+            "id": "680fad424b353800115d238a",
+            "url": "https://www.reshockcoffee.com/products/koana-coffee-estate-sl34--natural",
+            "title": "【科子林咖啡莊園】SL34｜日曬 (甄選)"
+          }
+        ],
+        "excluded": [
+          {
+            "id": "691c92d13089a10018e5314a",
+            "url": "https://www.reshockcoffee.com/products/reshockcoffee-customerbooking",
+            "title": "客訂專區",
+            "reason": "outside_reviewed_coffee_only_scope"
+          }
+        ]
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/taiwan-alishan-coffee-beans?page=2&sort_by=&order_by=&limit=24",
+        "page": 2,
+        "published_products": 7,
+        "coffee_products": [
+          {
+            "id": "680fad06661ad9000fcf0479",
+            "url": "https://www.reshockcoffee.com/products/amber-coffee-estate-sl34-anaerobic-natural",
+            "title": "【琥珀社咖啡莊園】SL34｜厭氧日曬"
+          },
+          {
+            "id": "66452b5f50e9d7001f8720e3",
+            "url": "https://www.reshockcoffee.com/products/taiwan-alishan-tfu%E2%80%99ya-coffee-estate-sl34-washed",
+            "title": "【他扶芽有機農園】SL34｜水洗"
+          },
+          {
+            "id": "6636a02f96dece00148f0826",
+            "url": "https://www.reshockcoffee.com/products/taiwan-alishan-jing-long-coffee-estate-sl34-anaerobic-natural",
+            "title": "【璟隆咖啡莊園】 SL34｜厭氧日曬"
+          },
+          {
+            "id": "663699d8e6cb4600143e6bb2",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-ideal-coffee-beans",
+            "title": "【里響咖啡】獨家配方「理想」｜阿里山配方豆"
+          },
+          {
+            "id": "634d1a86071a00002599d19c",
+            "url": "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-natural",
+            "title": "【聯和成青葉咖啡莊園】 SL34｜日曬 (里響獨家批次)"
+          },
+          {
+            "id": "6204c7a2f9c71300286d62c9",
+            "url": "https://www.reshockcoffee.com/products/zou-zhou-yuansl34natural",
+            "title": "【鄒築園】SL34｜日曬（里響獨家批次）"
+          },
+          {
+            "id": "6270f1ebaac6fa000fea83d6",
+            "url": "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-washed",
+            "title": "【聯和成青葉咖啡莊園】SL34｜水洗"
+          }
+        ],
+        "excluded": []
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/alishan-filter-coffee",
+        "page": 1,
+        "published_products": 12,
+        "coffee_products": [
+          {
+            "id": "6a1da2d032593f9ead4377b6",
+            "url": "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+            "title": "御品阿里山•帝王咖啡時光"
+          },
+          {
+            "id": "69f83f031c90edeaef14f6cd",
+            "url": "https://www.reshockcoffee.com/products/6-piece-filter-hanging-combination-exquisite-boxed-set",
+            "title": "【配方獨享款】精選阿里山配方濾掛咖啡(6入)"
+          },
+          {
+            "id": "69a803dfd058640012cdf221",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-drip-bag-coffee",
+            "title": "【里響咖啡】獨家配方「日出」｜阿里山配方濾掛包"
+          },
+          {
+            "id": "696a0292984a54eb6db079a3",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-secret-drip-bag-coffee",
+            "title": "【里響咖啡】獨家配方「秘密」｜阿里山配方濾掛包"
+          },
+          {
+            "id": "6167bd65adb8c300264ec11a",
+            "url": "https://www.reshockcoffee.com/products/reshock-coffee-classic-giftbox-dripbag-taiwan-alishan",
+            "title": "【日出款】阿里山三大咖啡莊園濾掛禮盒"
+          },
+          {
+            "id": "6167bd000443410023ad789d",
+            "url": "https://www.reshockcoffee.com/products/reshock-coffee-monarch",
+            "title": "【尊爵款】阿里山三大咖啡莊園 藝伎濾掛禮盒"
+          },
+          {
+            "id": "63b226d80c2da4000e77ae5a",
+            "url": "https://www.reshockcoffee.com/products/chiayi-sign-best-2024-alishan-coffee-dripbag-giftbox",
+            "title": "【嘉義座】嚴選十二座阿里山咖啡莊園濾掛禮盒"
+          },
+          {
+            "id": "635e4a82f09281001c82d702",
+            "url": "https://www.reshockcoffee.com/products/5-piece-filter-hanging-combination-exquisite-boxed-set",
+            "title": "【獨享款】精選五款經典阿里山咖啡濾掛組"
+          },
+          {
+            "id": "6226c1a3a371490032fc428e",
+            "url": "https://www.reshockcoffee.com/products/selected-alishan-filter-coffee-12-into-20",
+            "title": "【超值大禮包】阿里山綜合濾掛咖啡組"
+          },
+          {
+            "id": "66787311f6199300166a14ab",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-ideal-drip-bag-coffee",
+            "title": "【里響咖啡】獨家配方「理想」｜阿里山配方濾掛包"
+          }
+        ],
+        "excluded": [
+          {
+            "id": "697f52abc8fa901fe01ac741",
+            "url": "https://www.reshockcoffee.com/products/tea-coffee-gift-collection",
+            "title": "【日出相映】阿里山烏龍茶咖啡禮盒",
+            "reason": "outside_reviewed_coffee_only_scope"
+          },
+          {
+            "id": "697f4f7a103c2bb33b1f3ad8",
+            "url": "https://www.reshockcoffee.com/products/alishan-dual-blend-tea-coffee",
+            "title": "【雙品】茶咖啡濾掛包",
+            "reason": "outside_reviewed_coffee_only_scope"
+          }
+        ]
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/alishan-coffee-filter-hanging-coffee-gift-box",
+        "page": 1,
+        "published_products": 5,
+        "coffee_products": [
+          {
+            "id": "6a1da2d032593f9ead4377b6",
+            "url": "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+            "title": "御品阿里山•帝王咖啡時光"
+          },
+          {
+            "id": "6167bd65adb8c300264ec11a",
+            "url": "https://www.reshockcoffee.com/products/reshock-coffee-classic-giftbox-dripbag-taiwan-alishan",
+            "title": "【日出款】阿里山三大咖啡莊園濾掛禮盒"
+          },
+          {
+            "id": "6167bd000443410023ad789d",
+            "url": "https://www.reshockcoffee.com/products/reshock-coffee-monarch",
+            "title": "【尊爵款】阿里山三大咖啡莊園 藝伎濾掛禮盒"
+          },
+          {
+            "id": "63b226d80c2da4000e77ae5a",
+            "url": "https://www.reshockcoffee.com/products/chiayi-sign-best-2024-alishan-coffee-dripbag-giftbox",
+            "title": "【嘉義座】嚴選十二座阿里山咖啡莊園濾掛禮盒"
+          }
+        ],
+        "excluded": [
+          {
+            "id": "697f52abc8fa901fe01ac741",
+            "url": "https://www.reshockcoffee.com/products/tea-coffee-gift-collection",
+            "title": "【日出相映】阿里山烏龍茶咖啡禮盒",
+            "reason": "outside_reviewed_coffee_only_scope"
+          }
+        ]
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/exclusive-co-branded-gift-box",
+        "page": 1,
+        "published_products": 3,
+        "coffee_products": [
+          {
+            "id": "6a1da2d032593f9ead4377b6",
+            "url": "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+            "title": "御品阿里山•帝王咖啡時光"
+          }
+        ],
+        "excluded": [
+          {
+            "id": "697f52abc8fa901fe01ac741",
+            "url": "https://www.reshockcoffee.com/products/tea-coffee-gift-collection",
+            "title": "【日出相映】阿里山烏龍茶咖啡禮盒",
+            "reason": "outside_reviewed_coffee_only_scope"
+          },
+          {
+            "id": "64f1618a91eb6800142df5c1",
+            "url": "https://www.reshockcoffee.com/products/tkfood-chiayi-espresso-romano-cracker-feat-reshock-alishan-coffee-gift-box",
+            "title": "【西檸花磚】里響咖啡 X 老楊方塊酥  聯名禮盒",
+            "reason": "outside_reviewed_coffee_only_scope"
+          }
+        ]
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/combination-area",
+        "page": 1,
+        "published_products": 0,
+        "coffee_products": [],
+        "excluded": []
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/alishan-bottled-coffee",
+        "page": 1,
+        "published_products": 2,
+        "coffee_products": [
+          {
+            "id": "66411a62c85a0b00103f5be8",
+            "url": "https://www.reshockcoffee.com/products/iced-drip-cold-brew-bottled-coffee",
+            "title": "【里響咖啡】冰滴咖啡"
+          },
+          {
+            "id": "6353791b5f01a1002822007d",
+            "url": "https://www.reshockcoffee.com/products/cold-brew-cold-brew-bottled-coffee",
+            "title": "【里響咖啡】冰釀冷萃咖啡"
+          }
+        ],
+        "excluded": []
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/alishan-infused-coffee",
+        "page": 1,
+        "published_products": 1,
+        "coffee_products": [
+          {
+            "id": "69c548b032b34655df1b1bf8",
+            "url": "https://www.reshockcoffee.com/products/alishan-coffee-brew-bag",
+            "title": "【里響獨家配方】浸泡包"
+          }
+        ],
+        "excluded": []
+      },
+      {
+        "listing": "https://www.reshockcoffee.com/categories/alishan-filter-coffee-series",
+        "page": 1,
+        "published_products": 9,
+        "coffee_products": [
+          {
+            "id": "6a1da2d032593f9ead4377b6",
+            "url": "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+            "title": "御品阿里山•帝王咖啡時光"
+          },
+          {
+            "id": "69f83f031c90edeaef14f6cd",
+            "url": "https://www.reshockcoffee.com/products/6-piece-filter-hanging-combination-exquisite-boxed-set",
+            "title": "【配方獨享款】精選阿里山配方濾掛咖啡(6入)"
+          },
+          {
+            "id": "69a803dfd058640012cdf221",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-drip-bag-coffee",
+            "title": "【里響咖啡】獨家配方「日出」｜阿里山配方濾掛包"
+          },
+          {
+            "id": "696a0292984a54eb6db079a3",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-secret-drip-bag-coffee",
+            "title": "【里響咖啡】獨家配方「秘密」｜阿里山配方濾掛包"
+          },
+          {
+            "id": "635e4a82f09281001c82d702",
+            "url": "https://www.reshockcoffee.com/products/5-piece-filter-hanging-combination-exquisite-boxed-set",
+            "title": "【獨享款】精選五款經典阿里山咖啡濾掛組"
+          },
+          {
+            "id": "6226c1a3a371490032fc428e",
+            "url": "https://www.reshockcoffee.com/products/selected-alishan-filter-coffee-12-into-20",
+            "title": "【超值大禮包】阿里山綜合濾掛咖啡組"
+          },
+          {
+            "id": "66787311f6199300166a14ab",
+            "url": "https://www.reshockcoffee.com/products/reshock-blend-ideal-drip-bag-coffee",
+            "title": "【里響咖啡】獨家配方「理想」｜阿里山配方濾掛包"
+          }
+        ],
+        "excluded": [
+          {
+            "id": "697f52abc8fa901fe01ac741",
+            "url": "https://www.reshockcoffee.com/products/tea-coffee-gift-collection",
+            "title": "【日出相映】阿里山烏龍茶咖啡禮盒",
+            "reason": "outside_reviewed_coffee_only_scope"
+          },
+          {
+            "id": "697f4f7a103c2bb33b1f3ad8",
+            "url": "https://www.reshockcoffee.com/products/alishan-dual-blend-tea-coffee",
+            "title": "【雙品】茶咖啡濾掛包",
+            "reason": "outside_reviewed_coffee_only_scope"
+          }
+        ]
+      }
+    ],
+    "inventory_scope": "reviewed_coffee_products_in_public_categories",
+    "inventory_authorizes_global_absence": false
+  },
+  "products": [
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-natural",
+      "title": "【卓武山咖啡農場】藝伎｜日曬",
+      "source_product_id": "6a50e5909fc87a1753a6868b",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a50e590399d980008874247",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "950.00",
+            "amount": "950.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 95000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a50e5909fc87a1753a6868b",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a50e590399d980008874248",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "2150.00",
+            "amount": "2150.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 215000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a50e5909fc87a1753a6868b",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-typica-washed",
+      "title": "【椿萱巫師咖啡莊園】Typica｜水洗",
+      "source_product_id": "6a1d98d63bbaea6b2811b4a1",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a1d98d639f9aa0010ebfdd3",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "600.00",
+            "amount": "600.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 60000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d98d63bbaea6b2811b4a1",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d98d639f9aa0010ebfdd4",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1360.00",
+            "amount": "1360.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 136000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d98d63bbaea6b2811b4a1",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-pulped-honey",
+      "title": "【卓武山咖啡農場】 SL34｜果膠蜜處理",
+      "source_product_id": "6a1d9835452a6f88518b304f",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a1d9835f735bd000883db20",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "750.00",
+            "amount": "750.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 75000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d9835452a6f88518b304f",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d9835f735bd000883db21",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1700.00",
+            "amount": "1700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 170000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d9835452a6f88518b304f",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-thermal-shock-natural",
+      "title": "【卓武山咖啡農場】 SL34｜熱沖擊日曬（TSN）",
+      "source_product_id": "6a1d96a448545181a753726d",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a1d96a42d8a0b0008c3aa56",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "800.00",
+            "amount": "800.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 80000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d96a448545181a753726d",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d96a42d8a0b0008c3aa57",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1810.00",
+            "amount": "1810.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 181000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d96a448545181a753726d",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-yeast-natural",
+      "title": "【卓武山咖啡農場】 SL34｜酵母日曬（YN）",
+      "source_product_id": "6a1d959d256eb8d123531691",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a1d959c86506e0016f37b01",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "800.00",
+            "amount": "800.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 80000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d959d256eb8d123531691",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d959c86506e0016f37b02",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1810.00",
+            "amount": "1810.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 181000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d959d256eb8d123531691",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Csl09%EF%BD%9Cnatural",
+      "title": "【卓武山咖啡農場】SL09｜日曬",
+      "source_product_id": "6a1d93ea179a6706929e7ba2",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a1d93ea2d8a0b000ec3aa2e",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "750.00",
+            "amount": "750.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 75000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d93ea179a6706929e7ba2",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d93ea2d8a0b000ec3aa2f",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1700.00",
+            "amount": "1700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 170000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d93ea179a6706929e7ba2",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Ctypica%EF%BD%9Cwashed",
+      "title": "【卓武山咖啡農場】Typica｜水洗",
+      "source_product_id": "6a1d920bfd79dc0018411c70",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a1d920bad188d000aec5994",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "600.00",
+            "amount": "600.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 60000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d920bfd79dc0018411c70",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d920bad188d000aec5995",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1360.00",
+            "amount": "1360.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 136000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6a1d920bfd79dc0018411c70",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-coffee-beans",
+      "title": "【里響咖啡】獨家配方「日出」｜阿里山配方豆",
+      "source_product_id": "699b316a868340690dbe1f22",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "699b316a38aed1000c1a2579",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "700.00",
+            "amount": "700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 70000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "699b316a868340690dbe1f22",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "699b316a38aed1000c1a257a",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1580.00",
+            "amount": "1580.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 158000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "699b316a868340690dbe1f22",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/bai-xiang-coffee-estate-sl34-washed",
+      "title": "【柏香咖啡莊園】SL34｜水洗",
+      "source_product_id": "699886d2ff54e98183999ce3",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "699886d2d311070008660ab7",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "600.00",
+            "amount": "600.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 60000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "699886d2ff54e98183999ce3",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "699886d2d311070008660ab8",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1350.00",
+            "amount": "1350.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 135000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "699886d2ff54e98183999ce3",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/amber-coffee-estate-typica-anaerobic-natural",
+      "title": "【琥珀社咖啡莊園】SL34｜水洗",
+      "source_product_id": "69987f2a64daf74bfb2e7ffe",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "69987f2a1f26f200146cf9ce",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "565.00",
+            "amount": "565.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 56500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69987f2a64daf74bfb2e7ffe",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "69987f2a1f26f200146cf9cf",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1280.00",
+            "amount": "1280.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 128000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69987f2a64daf74bfb2e7ffe",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-typica-300h-honey",
+      "title": "【卓武山咖啡農場】 Typica｜300小時蜜處理（里響獨家批次）",
+      "source_product_id": "69987ac08281744a3c10869f",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "69987ac0018c6f0011895d13",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "650.00",
+            "amount": "650.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 65000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69987ac08281744a3c10869f",
+            "unlimited_quantity": true,
+            "quantity": 42,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a2589db114ae9000ed9f6e6",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1475.00",
+            "amount": "1475.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 147500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69987ac08281744a3c10869f",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-secret-coffee-beans",
+      "title": "【里響咖啡】獨家配方「秘密」｜阿里山配方豆",
+      "source_product_id": "696a0a7dbfc2b4877da180d5",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "696a0a7dd7a65a001479c382",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "650.00",
+            "amount": "650.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 65000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "696a0a7dbfc2b4877da180d5",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6972443c7f04000015262ea9",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1475.00",
+            "amount": "1475.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 147500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "696a0a7dbfc2b4877da180d5",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/yangui-coffee-estate-geisha-washed",
+      "title": "【雅慕伊咖啡莊園】藝伎｜水洗",
+      "source_product_id": "69329a59a9d38b000cd78ac5",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "69329a596eb6d8000cfd6752",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "900.00",
+            "amount": "900.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 90000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69329a59a9d38b000cd78ac5",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "69329a596eb6d8000cfd6753",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "2040.00",
+            "amount": "2040.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 204000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69329a59a9d38b000cd78ac5",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/jing-long-coffee-estate-sl34-anaerobic-honey",
+      "title": "【璟隆咖啡莊園】 SL34｜厭氧蜜處理",
+      "source_product_id": "691b3fe297cd60000abbe6b8",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "691b3fe237d9fd0012d3adcb",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "650.00",
+            "amount": "650.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 65000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "691b3fe297cd60000abbe6b8",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6929aaaa59451f000a7a5325",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1475.00",
+            "amount": "1475.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 147500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "691b3fe297cd60000abbe6b8",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-washed",
+      "title": "【卓武山咖啡農場】藝伎｜水洗",
+      "source_product_id": "6914a100503e050018039554",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6914a100b5209400130baae8",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "900.00",
+            "amount": "900.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 90000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6914a100503e050018039554",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6929ad23ffee2c000c265ce4",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "2040.00",
+            "amount": "2040.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 204000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6914a100503e050018039554",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-honey",
+      "title": "【卓武山咖啡農場】藝伎｜蜜處理",
+      "source_product_id": "6914a059d03aef00126ee37f",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6914a0590a7f17000e06c4a4",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "950.00",
+            "amount": "950.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 95000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6914a059d03aef00126ee37f",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6929ad6f4f3dfd0010aed261",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "2150.00",
+            "amount": "2150.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 215000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6914a059d03aef00126ee37f",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/yipin-coffee-estate-sl34typica-natural",
+      "title": "【一品咖啡莊園】SL34+Typica｜日曬",
+      "source_product_id": "691498bd492e0f0016a494fd",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "691498bd353ca5001094bdc3",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "750.00",
+            "amount": "750.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 75000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "691498bd492e0f0016a494fd",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6929bdd787418a000ce69274",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1700.00",
+            "amount": "1700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 170000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "691498bd492e0f0016a494fd",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-sl34-natural",
+      "title": "【椿萱巫師咖啡莊園】SL34｜日曬",
+      "source_product_id": "6914970c8fbf430010d6f7c2",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6914970cf79e450011ad6f33",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "700.00",
+            "amount": "700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 70000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6914970c8fbf430010d6f7c2",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6929bd6abed7aa0008d089e8",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1580.00",
+            "amount": "1580.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 158000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6914970c8fbf430010d6f7c2",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/tfu%E2%80%99-ya-coffee-estate-sl34-natural",
+      "title": "【他扶芽有機農園】SL34｜日曬",
+      "source_product_id": "691494d2503e05000c03861d",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "691494d298269e0012b199d8",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "1300.00",
+            "amount": "1300.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 130000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "691494d2503e05000c03861d",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6929be6e4f3dfd29e7aed240",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "2950.00",
+            "amount": "2950.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 295000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "691494d2503e05000c03861d",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange--typica-anaerobic-natural",
+      "title": "【卓武山咖啡農園】Typica｜貴腐日曬",
+      "source_product_id": "680fb78d152791000c86a983",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6816ce6c9925fa000a13a77c",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "700.00",
+            "amount": "700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 70000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fb78d152791000c86a983",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6816ce6c9925fa000a13a77b",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1580.00",
+            "amount": "1580.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 158000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fb78d152791000c86a983",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-geisha-washed",
+      "title": "【椿萱巫師咖啡莊園】藝伎｜水洗",
+      "source_product_id": "680fb4054681230011363612",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "68129071724ca1000b2894fa",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "900.00",
+            "amount": "900.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 90000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fb4054681230011363612",
+            "unlimited_quantity": true,
+            "quantity": 18,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d892f9f03e6001002530d",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "2040.00",
+            "amount": "2040.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 204000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fb4054681230011363612",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/koana-coffee-estate-sl34--natural",
+      "title": "【科子林咖啡莊園】SL34｜日曬 (甄選)",
+      "source_product_id": "680fad424b353800115d238a",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "681225da7e60f4000e41b1e8",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "675.00",
+            "amount": "675.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 67500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fad424b353800115d238a",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "693269090e1239000ec24eca",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1530.00",
+            "amount": "1530.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 153000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fad424b353800115d238a",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/amber-coffee-estate-sl34-anaerobic-natural",
+      "title": "【琥珀社咖啡莊園】SL34｜厭氧日曬",
+      "source_product_id": "680fad06661ad9000fcf0479",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "681290d7c4b254000effb63a",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "655.00",
+            "amount": "655.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 65500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fad06661ad9000fcf0479",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a1d88b23f32ce1f6975c695",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1480.00",
+            "amount": "1480.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 148000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "680fad06661ad9000fcf0479",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/taiwan-alishan-tfu%E2%80%99ya-coffee-estate-sl34-washed",
+      "title": "【他扶芽有機農園】SL34｜水洗",
+      "source_product_id": "66452b5f50e9d7001f8720e3",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "66452b5f369d6000128ab3fb",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "600.00",
+            "amount": "600.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 60000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "66452b5f50e9d7001f8720e3",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "66452b5f369d6000128ab3fa",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1360.00",
+            "amount": "1360.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 136000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "66452b5f50e9d7001f8720e3",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/taiwan-alishan-jing-long-coffee-estate-sl34-anaerobic-natural",
+      "title": "【璟隆咖啡莊園】 SL34｜厭氧日曬",
+      "source_product_id": "6636a02f96dece00148f0826",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6636a02f05a4930012bc7bf7",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "680.00",
+            "amount": "680.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 68000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6636a02f96dece00148f0826",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6636a02f05a4930012bc7bf6",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1540.00",
+            "amount": "1540.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 154000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6636a02f96dece00148f0826",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-ideal-coffee-beans",
+      "title": "【里響咖啡】獨家配方「理想」｜阿里山配方豆",
+      "source_product_id": "663699d8e6cb4600143e6bb2",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6a017647a63a1a00165557d6",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "600.00",
+            "amount": "600.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 60000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "663699d8e6cb4600143e6bb2",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "663699d84dde06001ea5266b",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1360.00",
+            "amount": "1360.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 136000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "663699d8e6cb4600143e6bb2",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-natural",
+      "title": "【聯和成青葉咖啡莊園】 SL34｜日曬 (里響獨家批次)",
+      "source_product_id": "634d1a86071a00002599d19c",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "64dd99b47c472d000ef9f220",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "680.00",
+            "amount": "680.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 68000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "634d1a86071a00002599d19c",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "634d1a86543110000c0276d0",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1540.00",
+            "amount": "1540.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 154000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "634d1a86071a00002599d19c",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/zou-zhou-yuansl34natural",
+      "title": "【鄒築園】SL34｜日曬（里響獨家批次）",
+      "source_product_id": "6204c7a2f9c71300286d62c9",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "64dd9c284fea1f000d026d7e",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "700.00",
+            "amount": "700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 70000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6204c7a2f9c71300286d62c9",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6336695917352d0009048721",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1580.00",
+            "amount": "1580.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 158000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6204c7a2f9c71300286d62c9",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-washed",
+      "title": "【聯和成青葉咖啡莊園】SL34｜水洗",
+      "source_product_id": "6270f1ebaac6fa000fea83d6",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "64dd9bb12907fd00178a7ee5",
+          "title": "100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "565.00",
+            "amount": "565.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 56500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6270f1ebaac6fa000fea83d6",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6336686a208f046cf0a3477d",
+          "title": "半磅",
+          "weight_g": null,
+          "money": {
+            "raw": "1280.00",
+            "amount": "1280.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 128000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6270f1ebaac6fa000fea83d6",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+      "title": "御品阿里山•帝王咖啡時光",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:6a1da2d032593f9ead4377b6",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:6a1da2d032593f9ead4377b6",
+        "price": "1280.00",
+        "currency": "TWD",
+        "minor_units": 128000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "6a1da2d032593f9ead4377b6",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/6-piece-filter-hanging-combination-exquisite-boxed-set",
+      "title": "【配方獨享款】精選阿里山配方濾掛咖啡(6入)",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:69f83f031c90edeaef14f6cd",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/6-piece-filter-hanging-combination-exquisite-boxed-set",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:69f83f031c90edeaef14f6cd",
+        "price": "450.00",
+        "currency": "TWD",
+        "minor_units": 45000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "69f83f031c90edeaef14f6cd",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-drip-bag-coffee",
+      "title": "【里響咖啡】獨家配方「日出」｜阿里山配方濾掛包",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:69a803dfd058640012cdf221",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-drip-bag-coffee",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:69a803dfd058640012cdf221",
+        "price": "100.00",
+        "currency": "TWD",
+        "minor_units": 10000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "69a803dfd058640012cdf221",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-secret-drip-bag-coffee",
+      "title": "【里響咖啡】獨家配方「秘密」｜阿里山配方濾掛包",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:696a0292984a54eb6db079a3",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/reshock-blend-secret-drip-bag-coffee",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:696a0292984a54eb6db079a3",
+        "price": "65.00",
+        "currency": "TWD",
+        "minor_units": 6500,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "696a0292984a54eb6db079a3",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-coffee-classic-giftbox-dripbag-taiwan-alishan",
+      "title": "【日出款】阿里山三大咖啡莊園濾掛禮盒",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:6167bd65adb8c300264ec11a",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/reshock-coffee-classic-giftbox-dripbag-taiwan-alishan",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:6167bd65adb8c300264ec11a",
+        "price": "990.00",
+        "currency": "TWD",
+        "minor_units": 99000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "6167bd65adb8c300264ec11a",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-coffee-monarch",
+      "title": "【尊爵款】阿里山三大咖啡莊園 藝伎濾掛禮盒",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:6167bd000443410023ad789d",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/reshock-coffee-monarch",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:6167bd000443410023ad789d",
+        "price": "1090.00",
+        "currency": "TWD",
+        "minor_units": 109000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "6167bd000443410023ad789d",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/5-piece-filter-hanging-combination-exquisite-boxed-set",
+      "title": "【獨享款】精選五款經典阿里山咖啡濾掛組",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:635e4a82f09281001c82d702",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/5-piece-filter-hanging-combination-exquisite-boxed-set",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:635e4a82f09281001c82d702",
+        "price": "500.00",
+        "currency": "TWD",
+        "minor_units": 50000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "635e4a82f09281001c82d702",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/selected-alishan-filter-coffee-12-into-20",
+      "title": "【超值大禮包】阿里山綜合濾掛咖啡組",
+      "source_product_id": "6226c1a3a371490032fc428e",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "6226c1a3fbfabd58f293a386",
+          "title": "12入",
+          "weight_g": null,
+          "money": {
+            "raw": "960.00",
+            "amount": "960.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 96000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6226c1a3a371490032fc428e",
+            "unlimited_quantity": true,
+            "quantity": 8,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6226c1a3fbfabd58f293a387",
+          "title": "20入",
+          "weight_g": null,
+          "money": {
+            "raw": "1480.00",
+            "amount": "1480.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 148000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6226c1a3a371490032fc428e",
+            "unlimited_quantity": true,
+            "quantity": 8,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6278838a5db58d46fe617a0c",
+          "title": "28入",
+          "weight_g": null,
+          "money": {
+            "raw": "2000.00",
+            "amount": "2000.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 200000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "6226c1a3a371490032fc428e",
+            "unlimited_quantity": true,
+            "quantity": 4,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-ideal-drip-bag-coffee",
+      "title": "【里響咖啡】獨家配方「理想」｜阿里山配方濾掛包",
+      "source_product_id": "66787311f6199300166a14ab",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "667873118a4af166042fc2d9",
+          "title": "單包",
+          "weight_g": null,
+          "money": {
+            "raw": "60.00",
+            "amount": "60.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 6000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "66787311f6199300166a14ab",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "667873118a4af166042fc2da",
+          "title": "5入（盒裝）",
+          "weight_g": null,
+          "money": {
+            "raw": "300.00",
+            "amount": "300.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 30000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "66787311f6199300166a14ab",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "667873118a4af166042fc2db",
+          "title": "12入（袋裝）",
+          "weight_g": null,
+          "money": {
+            "raw": "700.00",
+            "amount": "700.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 70000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "66787311f6199300166a14ab",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "667873118a4af166042fc2dc",
+          "title": "20入（袋裝）",
+          "weight_g": null,
+          "money": {
+            "raw": "1160.00",
+            "amount": "1160.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 116000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "66787311f6199300166a14ab",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "667873118a4af166042fc2dd",
+          "title": "28入（袋裝）",
+          "weight_g": null,
+          "money": {
+            "raw": "1600.00",
+            "amount": "1600.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 160000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "66787311f6199300166a14ab",
+            "unlimited_quantity": true,
+            "quantity": 0,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/iced-drip-cold-brew-bottled-coffee",
+      "title": "【里響咖啡】冰滴咖啡",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:66411a62c85a0b00103f5be8",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/iced-drip-cold-brew-bottled-coffee",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:66411a62c85a0b00103f5be8",
+        "price": "280.00",
+        "currency": "TWD",
+        "minor_units": 28000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "66411a62c85a0b00103f5be8",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/cold-brew-cold-brew-bottled-coffee",
+      "title": "【里響咖啡】冰釀冷萃咖啡",
+      "source_product_id": "shopline:61668b6d0baa26002e7228ef:6353791b5f01a1002822007d",
+      "state": "in_stock",
+      "variants_complete": false,
+      "product_only": true,
+      "base_offer": {
+        "source": "shopline_primary_product_offer",
+        "source_url": "https://www.reshockcoffee.com/products/cold-brew-cold-brew-bottled-coffee",
+        "source_product_id": "shopline:61668b6d0baa26002e7228ef:6353791b5f01a1002822007d",
+        "price": "100.00",
+        "currency": "TWD",
+        "minor_units": 10000,
+        "availability": "http://schema.org/InStock",
+        "state": "in_stock",
+        "variant_identity_complete": false,
+        "stock_control": {
+          "source": "shopline_native_product_stock",
+          "merchant_id": "61668b6d0baa26002e7228ef",
+          "product_id": "6353791b5f01a1002822007d",
+          "unlimited_quantity": true,
+          "quantity": 0,
+          "sold_out": false,
+          "masked_quantity": false
+        }
+      },
+      "variants": [],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": false
+      }
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/alishan-coffee-brew-bag",
+      "title": "【里響獨家配方】浸泡包",
+      "source_product_id": "69c548b032b34655df1b1bf8",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "69c548b0d882b8000c84bf5b",
+          "title": "單包",
+          "weight_g": null,
+          "money": {
+            "raw": "60.00",
+            "amount": "60.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 6000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69c548b032b34655df1b1bf8",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "69c548b0d882b8000c84bf5c",
+          "title": "12入",
+          "weight_g": null,
+          "money": {
+            "raw": "720.00",
+            "amount": "720.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 72000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69c548b032b34655df1b1bf8",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "69c548b0d882b8000c84bf5d",
+          "title": "30入",
+          "weight_g": null,
+          "money": {
+            "raw": "1680.00",
+            "amount": "1680.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 168000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69c548b032b34655df1b1bf8",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        },
+        {
+          "id": "6a9264213af623001e8e252d",
+          "title": "5入",
+          "weight_g": null,
+          "money": {
+            "raw": "300.00",
+            "amount": "300.00",
+            "currency": "TWD",
+            "exponent": 2,
+            "minorUnits": 30000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "stock_evidence": {
+            "availability": "https://schema.org/InStock",
+            "source": "shopline_native_stock",
+            "merchant_id": "61668b6d0baa26002e7228ef",
+            "product_id": "69c548b032b34655df1b1bf8",
+            "unlimited_quantity": true,
+            "quantity": 1,
+            "sold_out": false,
+            "masked_quantity": false
+          },
+          "price_source": "shopline_primary_exact_variant"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true,
+      "market_context": {
+        "scope": "reshock_public_guest_one_time_offer",
+        "currency": "TWD",
+        "native_currency_scale": 1,
+        "variant_identity_complete": true
+      }
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [
+    {
+      "url": "https://www.reshockcoffee.com/products/reshock-alishan-coffee-19-beans-collection%E2%81%A0-limited",
+      "error": "shopline_offer_window_closed: current native sale window excludes this time"
+    },
+    {
+      "url": "https://www.reshockcoffee.com/products/chiayi-sign-best-2024-alishan-coffee-dripbag-giftbox",
+      "error": "Shopline native stock disagreement"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/taiwan-alishan-coffee-beans",
+      "status": 200,
+      "at": "2026-10-25T10:40:38.179Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/taiwan-alishan-coffee-beans?page=2&sort_by=&order_by=&limit=24",
+      "status": 200,
+      "at": "2026-10-25T10:40:40.076Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/alishan-filter-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:40:40.985Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/alishan-coffee-filter-hanging-coffee-gift-box",
+      "status": 200,
+      "at": "2026-10-25T10:40:42.012Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/exclusive-co-branded-gift-box",
+      "status": 200,
+      "at": "2026-10-25T10:40:43.434Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/combination-area",
+      "status": 200,
+      "at": "2026-10-25T10:40:44.746Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/alishan-bottled-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:40:45.251Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/alishan-infused-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:40:46.331Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/categories/alishan-filter-coffee-series",
+      "status": 200,
+      "at": "2026-10-25T10:40:47.668Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-natural",
+      "status": 200,
+      "at": "2026-10-25T10:40:48.672Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-alishan-coffee-19-beans-collection%E2%81%A0-limited",
+      "status": 200,
+      "at": "2026-10-25T10:40:49.807Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-typica-washed",
+      "status": 200,
+      "at": "2026-10-25T10:40:51.012Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-pulped-honey",
+      "status": 200,
+      "at": "2026-10-25T10:40:52.392Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-thermal-shock-natural",
+      "status": 200,
+      "at": "2026-10-25T10:40:53.479Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-sl34-yeast-natural",
+      "status": 200,
+      "at": "2026-10-25T10:40:54.702Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Csl09%EF%BD%9Cnatural",
+      "status": 200,
+      "at": "2026-10-25T10:40:55.502Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange%EF%BD%9Ctypica%EF%BD%9Cwashed",
+      "status": 200,
+      "at": "2026-10-25T10:40:56.362Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-coffee-beans",
+      "status": 200,
+      "at": "2026-10-25T10:40:57.457Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/bai-xiang-coffee-estate-sl34-washed",
+      "status": 200,
+      "at": "2026-10-25T10:40:58.724Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/amber-coffee-estate-typica-anaerobic-natural",
+      "status": 200,
+      "at": "2026-10-25T10:40:59.909Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuo-wu-mountain-cafe-grange-typica-300h-honey",
+      "status": 200,
+      "at": "2026-10-25T10:41:01.201Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-secret-coffee-beans",
+      "status": 200,
+      "at": "2026-10-25T10:41:02.257Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/yangui-coffee-estate-geisha-washed",
+      "status": 200,
+      "at": "2026-10-25T10:41:03.286Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/jing-long-coffee-estate-sl34-anaerobic-honey",
+      "status": 200,
+      "at": "2026-10-25T10:41:04.140Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-washed",
+      "status": 200,
+      "at": "2026-10-25T10:41:05.491Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange-geisha-honey",
+      "status": 200,
+      "at": "2026-10-25T10:41:06.544Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/yipin-coffee-estate-sl34typica-natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:07.832Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-sl34-natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:08.961Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/tfu%E2%80%99-ya-coffee-estate-sl34-natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:10.198Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuowu-mountain-cafe-grange--typica-anaerobic-natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:11.634Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zhuang-xuang-yoifo-coffee-estate-geisha-washed",
+      "status": 200,
+      "at": "2026-10-25T10:41:12.811Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/koana-coffee-estate-sl34--natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:14.176Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/amber-coffee-estate-sl34-anaerobic-natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:15.285Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/taiwan-alishan-tfu%E2%80%99ya-coffee-estate-sl34-washed",
+      "status": 200,
+      "at": "2026-10-25T10:41:16.697Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/taiwan-alishan-jing-long-coffee-estate-sl34-anaerobic-natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:17.711Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-ideal-coffee-beans",
+      "status": 200,
+      "at": "2026-10-25T10:41:18.856Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:20.163Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/zou-zhou-yuansl34natural",
+      "status": 200,
+      "at": "2026-10-25T10:41:21.449Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/ching-ye-coffee-estate-sl34-washed",
+      "status": 200,
+      "at": "2026-10-25T10:41:22.312Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/imperial-alishan-coffee-collection-1",
+      "status": 200,
+      "at": "2026-10-25T10:41:23.608Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/6-piece-filter-hanging-combination-exquisite-boxed-set",
+      "status": 200,
+      "at": "2026-10-25T10:41:24.878Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-sunrise-drip-bag-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:41:26.164Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-secret-drip-bag-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:41:27.503Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-coffee-classic-giftbox-dripbag-taiwan-alishan",
+      "status": 200,
+      "at": "2026-10-25T10:41:28.614Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-coffee-monarch",
+      "status": 200,
+      "at": "2026-10-25T10:41:29.863Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/chiayi-sign-best-2024-alishan-coffee-dripbag-giftbox",
+      "status": 200,
+      "at": "2026-10-25T10:41:31.172Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/5-piece-filter-hanging-combination-exquisite-boxed-set",
+      "status": 200,
+      "at": "2026-10-25T10:41:31.981Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/selected-alishan-filter-coffee-12-into-20",
+      "status": 200,
+      "at": "2026-10-25T10:41:33.122Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/reshock-blend-ideal-drip-bag-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:41:34.228Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/iced-drip-cold-brew-bottled-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:41:35.595Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/cold-brew-cold-brew-bottled-coffee",
+      "status": 200,
+      "at": "2026-10-25T10:41:36.932Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://www.reshockcoffee.com/products/alishan-coffee-brew-bag",
+      "status": 200,
+      "at": "2026-10-25T10:41:38.259Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": false,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": false
+}
