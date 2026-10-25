@@ -1,0 +1,252 @@
+{
+  "source": "Public Shopify native collections read during this investigation; product records projected without modifying their identities or labels.",
+  "collections": {
+    "kielo-coffee": [
+      {
+        "id": 8357526765755,
+        "title": "バリスタにおまかせセット",
+        "handle": "バリスタにおまかせセット",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8398035419323,
+        "title": "【 Colombia 】Lusitania Lime Geisha",
+        "handle": "colombia-lusitania-lime-geisha",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 15403767791803,
+        "title": "【 Ethiopia 】Tamiru Tadesse ALO Berry",
+        "handle": "ethiopia-tamiru-tadesse-alo-berry",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8529119445179,
+        "title": "【 Colombia 】 Los Patios Watermelon",
+        "handle": "colombia-los-patios-watermelon-2",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8357525881019,
+        "title": "【 Colombia 】 Juan Carlos Geisha Washed",
+        "handle": "colombia-juan-carlos-geisha-washed",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 15403756945595,
+        "title": "【 Ethiopia 】 Guji Hambela",
+        "handle": "ethiopia-guji-hambela",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8357526044859,
+        "title": "【 Ethiopia 】 Benti Nenka",
+        "handle": "ethiopia-benti-nenka",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 10314544971963,
+        "title": "【 Kenya 】 Gichuka Factory",
+        "handle": "kenya-gichuka-factory",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8389546606779,
+        "title": "【 Guatemala 】La Colina",
+        "handle": "guatemala-la-colina",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8357526601915,
+        "title": "Drip pack",
+        "handle": "drip-pack",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8385541996731,
+        "title": "コーヒー定期便 - 3種セット",
+        "handle": "kielo-coffee-定期便-3種セット",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8387359998139,
+        "title": "コーヒー定期便 - 2種セット",
+        "handle": "coffee-2",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8427657134267,
+        "title": "【 Colombia 】El Paraiso M3",
+        "handle": "colombia-el-paraiso-m3",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8494005977275,
+        "title": "【 Colombia 】 Finca Milan Toffee",
+        "handle": "colombia-finca-milan-toffee",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8529053122747,
+        "title": "【 Colombia 】Lacia Java",
+        "handle": "colombia-lacia-java",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8299759009979,
+        "title": "【 Ethiopia 】 Guji Shakiso",
+        "handle": "ethiopia-guji-shakiso",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8478752932027,
+        "title": "【 Brazil 】 Fazenda Caxambu",
+        "handle": "brazil-fazenda-caxambu",
+        "product_type": "",
+        "tags": []
+      }
+    ],
+    "about-us-collection": [
+      {
+        "id": 15418313179323,
+        "title": "【 Panama 】 Chevas Geisha #0015",
+        "handle": "colombia-sudus-la-molienda-コピー",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 10314538156219,
+        "title": "【 Panama 】JANSON  Geisha Hacsa Lot 26-121",
+        "handle": "panama-janson-geisha-hacsa-lot-26-121",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 15419859665083,
+        "title": "【 Colombia 】Aroma Nativo 214 PB EFM",
+        "handle": "colombia-aroma-nativo-214-pb-efm",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 10317411811515,
+        "title": "【 Colombia 】Las Marias Rio Dulce Geisha",
+        "handle": "colombia-las-marias-rio-dulce-geisha",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8349440409787,
+        "title": "【 Colombia 】 Granja Paraiso 92 Koji",
+        "handle": "colombia-granja-paraiso-92-koji",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8504237129915,
+        "title": "【 Colombia 】Finca Lusitania Wush Wush",
+        "handle": "colombia-finca-lusitania-wush-wush",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 10317411713211,
+        "title": "【 Colombia 】 SUDUS  La Molienda",
+        "handle": "colombia-sudus-la-molienda",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8529106960571,
+        "title": "【 Colombia 】 Finca Milan Cattura Nitro",
+        "handle": "colombia-finca-milan-cattura-nitro",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8364022431931,
+        "title": "【 Colombia 】La Roca Geisha",
+        "handle": "colombia-la-roca-geisha",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8389356617915,
+        "title": "【 Colombia 】 Jiraldo Arias Mamian PB",
+        "handle": "colombia-jiraldo-arias-mamian-pb",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8349102702779,
+        "title": "【 Colombia 】 CGLE Las Margaritas",
+        "handle": "colombia-cgle-las-margaritas",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8427659755707,
+        "title": "【 Peru 】El Morito Geisha",
+        "handle": "peru-el-morito-geisha",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8379167473851,
+        "title": "【 Colombia 】 Granja Praiso 92 Geisha",
+        "handle": "colombia-granja-paraiso-92-geisha",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8357525061819,
+        "title": "【 Honduras 】Santa Lucia Geisha",
+        "handle": "honduras-santa-lucia-geisha",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8357525749947,
+        "title": "【 Colombia 】 Mazatolan Peach",
+        "handle": "colombia-mazatolan-peach",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 8504235196603,
+        "title": "【 Panama 】Abbraccio Geisha by Altieri",
+        "handle": "panama-altieri-geisha",
+        "product_type": "",
+        "tags": []
+      },
+      {
+        "id": 15433481748667,
+        "title": "【 Colombia 】 Los Patios Geisha Peach",
+        "handle": "colombia-los-patios-geisha-peach",
+        "product_type": "",
+        "tags": []
+      }
+    ]
+  },
+  "source_files_written_at": {
+    "kielo-coffee": "2026-10-25T07:17:32.587Z",
+    "about-us-collection": "2026-10-25T07:17:33.158Z"
+  },
+  "fixture_prepared_at": "2026-10-25T07:33:27.556Z"
+}

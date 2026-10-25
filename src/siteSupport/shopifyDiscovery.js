@@ -1,5 +1,8 @@
 'use strict';
 const excluded=/\b(?:(?:e[-\s]?)?gift\s*(?:cards?|vouchers?|certificates?)|subscription|wholesale|equipment|brewer|paper\s*filter|grinder|cup(?!\s+of\s+excellence)|mug|thermos|trousers?|shirts?|hoodie|hat|cap|book|cascara|green coffee)\b/i;
+function validHandle(handle,profile) {
+  return typeof handle==='string' && (profile.allow_unicode_handles===true ? /^[\p{L}\p{N}][\p{L}\p{M}\p{N}_-]*$/u : /^[a-z0-9][a-z0-9_-]*$/i).test(handle);
+}
 function retailCoffee(product,profile) {
   if(profile.exclude_product_ids?.includes(String(product.id)))return false;
   const type=String(product.product_type || ''),title=String(product.title || '');
@@ -30,7 +33,7 @@ async function discoverShopifyProducts(roaster,profile,fetchHtml) {
       for(const product of products){const id=String(product.id ?? '');if(!/^[1-9]\d*$/.test(id) || ids.has(id))return {supported:true,urls:[...urls],complete:false,error:'Shopify collection identity missing or repeated',evidence};ids.add(id);}
       const listingProfile={...profile,coffee_product_types:profile.coffee_product_types_by_listing?.[path] ?? profile.coffee_product_types};
       const coffees=products.filter(p=>retailCoffee(p,listingProfile));
-      for(const p of coffees){if(!/^[a-z0-9][a-z0-9_-]*$/i.test(p.handle))return {supported:true,urls:[],complete:false,error:'Invalid Shopify handle',evidence};urls.add(new URL((profile.product_path || '/products/')+p.handle,roaster.website_url).href);}
+      for(const p of coffees){if(!validHandle(p.handle,profile))return {supported:true,urls:[],complete:false,error:'Invalid Shopify handle',evidence};urls.add(new URL((profile.product_path || '/products/')+p.handle,roaster.website_url).href);}
       evidence.push({listing:path,page,products:products.length,coffeeProducts:coffees.length});
       // Explicit empty final page avoids treating a merchant's lower response cap
       // as proof of exhaustion. Fail closed if a cursor/page limit is reached.
@@ -47,4 +50,4 @@ async function discoverShopifyProducts(roaster,profile,fetchHtml) {
   }
   return {supported:true,urls:[...urls],complete:anyProducts && urls.size>0,evidence,market:profile.market || null,inventory_authorizes_global_absence:profile.inventory_authorizes_global_absence!==false};
 }
-module.exports={retailCoffee,discoverShopifyProducts,excluded};
+module.exports={retailCoffee,discoverShopifyProducts,excluded,validHandle};

@@ -111,6 +111,9 @@ function canonicalProductUrl(sourceUrl) {
   for (const key of [...url.searchParams.keys()]) if (/^(?:utm_.+|fbclid|gclid|variant)$/.test(key)) url.searchParams.delete(key);
   url.searchParams.sort();
   url.hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+  if(['smartstore.naver.com','m.smartstore.naver.com'].includes(url.hostname) && /^\/[a-z0-9_-]+\/products\/[1-9]\d*\/?$/.test(url.pathname)) {
+    url.hostname='smartstore.naver.com';url.search='';
+  }
   const profile=require('./siteSupport/profiles.json').find(p=>p.hosts.includes(url.hostname));
   // Only explicitly reviewed merchant aliases share product URL identity.
   if(profile?.canonical_product_host && profile.hosts.includes(profile.canonical_product_host) && /^\/products\/[^/]+\/?$/.test(url.pathname))url.hostname=profile.canonical_product_host;

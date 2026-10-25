@@ -3,7 +3,7 @@ const profiles=require('./profiles.json');
 const {headlessCollectionPage,isCoffee}=require('./headlessShopify');
 function profileFor(roaster) {
   let host;try{host=new URL(roaster.website_url).hostname.toLowerCase();}catch{return null;}
-  return profiles.find(p=>p.entity_ids.includes(roaster.id) && p.hosts.includes(host)) || null;
+  return profiles.find(p=>p.entity_ids.includes(roaster.id) && p.hosts.includes(host) && (p.adapter!=='naver_smartstore' || p.identity_hosts?.includes(host) || new URL(roaster.website_url).pathname.split('/')[1]===p.naver_store)) || null;
 }
 async function discoverSiteProducts(roaster,{fetchHtml}={}) {
   const profile=profileFor(roaster);
@@ -26,6 +26,7 @@ async function discoverProfileProducts(roaster,profile,fetchHtml) {
   if(profile.adapter==='fathers')return require('./fathers').discoverFathersProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='woocommerce_store')return require('./woocommerce').discoverWooProducts(roaster,profile,fetchHtml);
   if(profile.adapter==='squarespace')return require('./squarespace').discoverSquarespaceProducts(roaster,profile,fetchHtml);
+  if(profile.adapter==='naver_smartstore')return require('./naver').discoverNaverProducts(roaster,profile,fetchHtml);
   const urls=new Set(),evidence=[];
   for(const path of profile.listing_paths) {
     const url=new URL(path,roaster.website_url).href,result=await fetchHtml(url);

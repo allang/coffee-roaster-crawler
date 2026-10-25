@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const url='https://merchant.test/products/coffee',roaster={id:'reviewed-owner',name:'Reviewed Merchant',website_url:'https://merchant.test'};
 function crawler(state) {
-  const log=new Proxy({},{get:()=>()=>{}}),reader={fetchHtml:async value=>{state.reads.push(value);return {success:true,status:200,data:'Shopify',finalUrl:value};}};
+  const log=new Proxy({},{get:()=>()=>{}}),reader={fetchHtml:async value=>{state.reads.push(value);return state.fetchFailure || {success:true,status:200,data:'Shopify',finalUrl:value};}};
   const mocks={
     './supabase':{},'./sitemap':{discoverSitemapUrl:async()=>{state.sitemaps++;throw Error('Generic sitemap should not run');}},
     './httpClient':{jitteredSleep:async()=>{}},'./urlAccumulator':require('../src/urlAccumulator'),'./blacklist':{},
@@ -14,6 +14,7 @@ function crawler(state) {
     './siteSupport/discovery':{profileFor:()=>state.profile || {name:'Reviewed Merchant'},discoverSiteProducts:async roaster=>{state.discoveryRoaster=roaster;return state.discovery;}},'./siteSupport/network':{createReader:()=>reader,allowed:require('../src/siteSupport/network').allowed},'./crawlTierPlan':require('../src/crawlTierPlan'),
     './siteSupport/squareInventory':require('../src/siteSupport/squareInventory'),
     './siteSupport/txt':require('../src/siteSupport/txt'),
+    './siteSupport/naver':require('../src/siteSupport/naver'),
     './crawlConcurrency':require('../src/crawlConcurrency'),
     './crawlBudget':require('../src/crawlBudget'),'./aiPageRouting':require('../src/aiPageRouting'),
   };
@@ -90,4 +91,21 @@ test('registered .txt scope visits proved public coffee cards with explicit part
    const other=state();other.profile=profile;other.discovery=structuredClone(discovery);mutate(other.discovery);await assert.rejects(crawler(other).crawl(roaster,[]),/Supported merchant discovery failed/);assert.equal(other.visits,0);assert.equal(other.reconciled,0);assert.equal(other.completed,0);
  }
  const errors=state();errors.profile=profile;errors.discovery=discovery;errors.pageErrors=1;await assert.rejects(crawler(errors).crawl(roaster,[]),/Registered merchant product verification failed/);assert.equal(errors.completed,0);assert.equal(errors.reconciled,0);
+});
+test('Naver access failures create a failed diagnostic run without discovering or changing inventory',async()=>{
+ const profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='Brewing Ceremony');
+ for(const failureCategory of ['naver_rate_limited','naver_login_required']) {
+  const s=state();s.profile=profile;s.fetchFailure={success:false,status:failureCategory==='naver_rate_limited'?429:302,failureCategory,error:failureCategory};
+  const result=await crawler(s).crawl({id:profile.entity_ids[0],name:profile.name,website_url:profile.bootstrap_url},[]);
+  assert.equal(result.success,false);assert.equal(s.created,1);assert.equal(s.failed,1);assert.equal(s.completed,0);assert.equal(s.failedMetrics.failureCategory,failureCategory);assert.equal(s.visits,0);assert.equal(s.reconciled,0);assert.equal(s.sitemaps,0);
+ }
+});
+test('observed Naver links run through the registered partial-inventory path without omission reconciliation',async()=>{
+ const profile=require('../src/siteSupport/profiles.json').find(p=>p.name==='Brewing Ceremony'),naver=require('../src/siteSupport/naver');
+ const target='https://smartstore.naver.com/brewingceremony/products/123',listing='https://smartstore.naver.com/brewingceremony/category/ALL';
+ const html='<link rel="canonical" href="'+listing+'"><main><a href="'+target+'">Coffee</a></main>';
+ const discovery=await naver.discoverNaverProducts({website_url:profile.bootstrap_url},profile,async value=>({success:true,data:html,finalUrl:value}));
+ const s=state();s.profile=profile;s.discovery=discovery;
+ const result=await crawler(s).crawl({id:profile.entity_ids[0],name:profile.name,website_url:profile.bootstrap_url},[]);
+ assert.equal(result.success,true);assert.equal(s.metrics.metrics.partialInventory,true);assert.equal(s.metrics.metrics.inventoryComplete,false);assert.equal(s.reconciled,0);assert.equal(s.sitemaps,0);assert.equal(s.bfs,0);assert.deepEqual(s.visitedUrls,[target]);
 });

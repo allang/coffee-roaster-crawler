@@ -30,7 +30,7 @@ async function detectPlatform(websiteUrl, log, options = {}) {
 
   if (!result.success) {
     log.warn('Platform', 'Could not fetch website for platform detection');
-    return { platform: 'unknown', confidence: 0 };
+    return { platform: 'unknown', confidence: 0, failureCategory:result.failureCategory, status:result.status, error:result.error };
   }
 
   const html = result.data.toLowerCase();
@@ -96,13 +96,17 @@ async function crawlRoasterWork(roaster,blacklistTerms) {
 
   const accumulator = new UrlAccumulator(roaster.id, roaster.name, log);
 
-  const siteProfile=profileFor(roaster),siteReader=siteProfile?createReader(siteProfile,{resumeCooldowns:true}):null;
+  const siteProfile=profileFor(roaster),siteReader=siteProfile?createReader(siteProfile,siteProfile.adapter==='naver_smartstore'?{maxRetries:0,resumeCooldowns:false}:{resumeCooldowns:true}):null;
   const entryUrl=siteProfile?.bootstrap_url?allowed(siteProfile.bootstrap_url,siteProfile.hosts).href:websiteUrl;
   if(entryUrl!==websiteUrl)log.info('Platform','Using reviewed merchant market entry point',{website:websiteUrl,entry:entryUrl});
   const platformInfo = await detectPlatform(entryUrl, log,siteReader || {});
   budget.check();
 
   if (platformInfo.confidence === 0) {
+    if(siteProfile?.adapter==='naver_smartstore') {
+      const failedRun=await createCrawlRun(roaster.id,'custom');
+      await failCrawlRun(failedRun.id,(platformInfo.failureCategory || 'naver_fetch_failed')+': '+(platformInfo.error || 'Website unreachable'),{inventoryComplete:false,failureCategory:platformInfo.failureCategory || 'naver_fetch_failed',httpStatus:platformInfo.status || null,visited:0,coffeeFound:0,aiCalls:0});
+    }
     log.warn('Crawl', 'Website unreachable, will retry later');
     return { success: false, error: 'Website unreachable', retryable: true, roasterName: roaster.name };
   }
@@ -123,9 +127,9 @@ async function crawlRoasterWork(roaster,blacklistTerms) {
   const siteFetchOptions=siteReader?{siteProfile,fetchHtml:siteReader.fetchHtml,getMerchantCooldownFailure:siteReader.getCooldownFailure,fetchJson:async url=>{const response=await siteReader.fetchHtml(url);if(!response.success)return response;try{return {...response,data:JSON.parse(response.data)};}catch{return {success:false,error:'Invalid merchant JSON'};}}}:{};
   for(const url of siteDiscovery.urls)accumulator.addUrl(url,'site-support');
   const verifiedEmpty=verifiedEmptyInventory(siteProfile,siteDiscovery);
-  const partialScope=require('./siteSupport/txt').partialScopeAllowed(siteProfile,siteDiscovery);
+  const partialScope=require('./siteSupport/txt').partialScopeAllowed(siteProfile,siteDiscovery) || siteProfile?.adapter==='naver_smartstore' && require('./siteSupport/naver').partialScopeAllowed(siteProfile,siteDiscovery);
   if(siteDiscovery.error || siteDiscovery.supported && (!siteDiscovery.complete && !partialScope || !siteDiscovery.urls.length && !verifiedEmpty))throw new Error('Supported merchant discovery failed: '+(siteDiscovery.error || 'Incomplete or empty reviewed coffee inventory'));
-  if(partialScope)log.info('Crawl','Reading the reviewed public English product scope; inventory and variants remain incomplete',{inventoryScope:siteDiscovery.inventory_scope,products:siteDiscovery.urls.length});
+  if(partialScope)log.info('Crawl','Reading the reviewed public product scope; inventory and variants remain incomplete',{inventoryScope:siteDiscovery.inventory_scope,products:siteDiscovery.urls.length});
   if(verifiedEmpty) {
     const stats=accumulator.getStats(),visitResults={visited:0,coffeeFound:0,irrelevant:0,errors:0,aiCalls:0,verifiedEmptyInventory:true,inventoryScope:siteDiscovery.inventory_scope};
     await completeCrawlRun(crawlRun.id,{pagesDiscovered:0,pagesVisited:0,pagesSentToGpt:0,coffeesFound:0,metrics:visitResults});

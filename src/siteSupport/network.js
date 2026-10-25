@@ -42,7 +42,7 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
   maxCooldownResumptions=boundedNumber(maxCooldownResumptions,MAX_COOLDOWN_RESUMPTIONS,MAX_COOLDOWN_RESUMPTIONS);
   resumeCooldowns=resumeCooldowns===true;
   const requests=[],returnedErrors=[],cooldownEvents=[],cooldowns=new Map(),hostDelays=new Map();let last=null,queue=Promise.resolve(),cooldownWaitedMs=0,cooldownResumptions=0;
-  function destination(value){const url=allowed(value,profile.hosts);const prefix=profile.host_path_prefixes?.[url.hostname];if(prefix && ![prefix].flat().some(p=>url.pathname.startsWith(p)))throw Error('Unverified catalog path');return url;}
+  function destination(value){const url=allowed(value,profile.hosts);if(profile.adapter==='naver_smartstore')require('./naver').owned(value,profile);const prefix=profile.host_path_prefixes?.[url.hostname];if(prefix && ![prefix].flat().some(p=>url.pathname.startsWith(p)))throw Error('Unverified catalog path');return url;}
   async function read(initial,options,started) {
     let url=initial,attempt=null,retries=0,hops=0,attempts=0;
     const remaining=()=>maxElapsedMs-(nowImpl()-started);
@@ -82,7 +82,7 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
         const result=await abortable(()=>fetchImpl(url,{method:'GET',redirect:'manual',headers,signal}),signal);
         attempt.status=result.status;
         if(remaining()<=0){await abortable(()=>result.body?.cancel(),signal);return failure('Merchant read time budget exhausted',{retryStopped:'time_limit'});}
-        if(result.status>=300 && result.status<400){await abortable(()=>result.body?.cancel(),signal);url=destination(new URL(result.headers.get('location'),url).href);hops++;continue;}
+        if(result.status>=300 && result.status<400){await abortable(()=>result.body?.cancel(),signal);const redirected=new URL(result.headers.get('location'),url);if(profile.adapter==='naver_smartstore' && redirected.hostname==='nid.naver.com')return failure('naver_login_required',{finalUrl:redirected.href,failureCategory:'naver_login_required'});url=destination(redirected.href);hops++;continue;}
         if(result.status!==200) {
           await abortable(()=>result.body?.cancel(),signal);
           if(!RETRY_STATUSES.has(result.status))return failure('HTTP '+result.status);
@@ -130,6 +130,7 @@ function createReader(profile,{delayMs=500,timeoutMs=15000,maxBytes=4*1024*1024,
         response=await read(initial,options,nowImpl());
       }
       if(resumed)response={...response,cooldownResumptions:resumed};
+      if(!response.success && profile.adapter==='naver_smartstore')response={...response,failureCategory:require('./naver').failureCategory(response)};
       if(!response.success)returnedErrors.push({url:initial.href,...response});
       return response;
     });

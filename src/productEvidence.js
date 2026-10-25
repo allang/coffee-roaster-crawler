@@ -106,7 +106,12 @@ function primaryShopifyPreorders(html,sourceUrl,native) {
 
 function productOnlyOffer(product,sourceUrl) {
   const offer=product?._product_offer;
-  if(product?._product_only!==true || product._market_source!=='txt_imweb_primary_product_offer' || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.currency!=='USD' || offer.variant_identity_complete!==false)return null;
+  const txt=product?._market_source==='txt_imweb_primary_product_offer' && offer?.currency==='USD';
+  let naver=false;
+  if(product?._market_source==='naver_smartstore_primary_product_offer' && offer?.currency==='KRW') {
+    try { const url=new URL(sourceUrl),match=url.pathname.match(/^\/([a-z0-9_-]+)\/products\/([1-9]\d*)\/?$/);naver=url.protocol==='https:' && ['smartstore.naver.com','m.smartstore.naver.com'].includes(url.hostname) && !url.username && !url.password && !url.port && Boolean(match) && product.productID==='naver_smartstore:'+match[1]+':'+match[2]; } catch {}
+  }
+  if(product?._product_only!==true || !(txt || naver) || product.offers?.length!==0 || !offer || offer.source!==product._market_source || offer.source_product_id!==product.productID || !sameProduct(offer.source_url,sourceUrl) || offer.variant_identity_complete!==false)return null;
   const money=require('./catalogNormalization').parseMoney(offer.price,{currency:offer.currency});
   return money.minorUnits!=null && money.minorUnits===offer.minor_units && schemaAvailability(offer.availability)===offer.state && ['in_stock','sold_out'].includes(offer.state)?offer:null;
 }

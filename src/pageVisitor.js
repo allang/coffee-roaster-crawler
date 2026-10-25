@@ -93,6 +93,7 @@ async function fetchPageContent(url, referer = null, options = {}) {
     if(!soft404 && options.siteProfile?.adapter==='fathers'){sourceProduct=require('./siteSupport/fathers').fathersProduct(result.data,result.finalUrl || url,options.siteProfile);}
     if(!soft404 && options.siteProfile?.adapter==='woocommerce_store'){sourceProduct=await require('./siteSupport/woocommerce').fetchWooProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
     if(!soft404 && options.siteProfile?.adapter==='squarespace'){sourceProduct=await require('./siteSupport/squarespace').fetchSquarespaceProduct(result.data,result.finalUrl || url,options.siteProfile,options.fetchHtml || fetchHtml);}
+    if(!soft404 && options.siteProfile?.adapter==='naver_smartstore'){sourceProduct=require('./siteSupport/naver').naverProduct(result.data,result.finalUrl || url,options.siteProfile);}
     return {
       success: true,
       sourceProduct,

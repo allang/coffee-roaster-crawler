@@ -1,0 +1,3377 @@
+{
+  "name": "X coffee GINZA",
+  "checked_at": "2026-10-25T07:26:58.200Z",
+  "mode": "merchant-get-only-dry-run",
+  "entity_ids": [
+    "e88c2f6b-1601-4af7-af08-f884b6935783"
+  ],
+  "identity_blocker": null,
+  "discovery": {
+    "supported": true,
+    "urls": [
+      "https://kielocoffee.jp/products/colombia-sudus-la-molienda-%E3%82%B3%E3%83%94%E3%83%BC",
+      "https://kielocoffee.jp/products/panama-janson-geisha-hacsa-lot-26-121",
+      "https://kielocoffee.jp/products/colombia-aroma-nativo-214-pb-efm",
+      "https://kielocoffee.jp/products/colombia-las-marias-rio-dulce-geisha",
+      "https://kielocoffee.jp/products/colombia-granja-paraiso-92-koji",
+      "https://kielocoffee.jp/products/colombia-finca-lusitania-wush-wush",
+      "https://kielocoffee.jp/products/colombia-sudus-la-molienda",
+      "https://kielocoffee.jp/products/colombia-finca-milan-cattura-nitro",
+      "https://kielocoffee.jp/products/colombia-la-roca-geisha",
+      "https://kielocoffee.jp/products/colombia-jiraldo-arias-mamian-pb",
+      "https://kielocoffee.jp/products/colombia-cgle-las-margaritas",
+      "https://kielocoffee.jp/products/peru-el-morito-geisha",
+      "https://kielocoffee.jp/products/colombia-granja-paraiso-92-geisha",
+      "https://kielocoffee.jp/products/honduras-santa-lucia-geisha",
+      "https://kielocoffee.jp/products/colombia-mazatolan-peach",
+      "https://kielocoffee.jp/products/panama-altieri-geisha",
+      "https://kielocoffee.jp/products/colombia-los-patios-geisha-peach"
+    ],
+    "complete": true,
+    "evidence": [
+      {
+        "listing": "/collections/about-us-collection/products.json",
+        "page": 1,
+        "products": 17,
+        "coffeeProducts": 17
+      }
+    ],
+    "market": null,
+    "inventory_authorizes_global_absence": false
+  },
+  "products": [
+    {
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda-%E3%82%B3%E3%83%94%E3%83%BC",
+      "title": "【 Panama 】 Chevas Geisha #0015",
+      "source_product_id": "15418313179323",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67668947239099",
+          "title": "豆のまま / 60g",
+          "weight_g": 60,
+          "money": {
+            "raw": "46.00",
+            "amount": "46.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67668947337403",
+          "title": "ペーパーフィルター用 / 60g",
+          "weight_g": 60,
+          "money": {
+            "raw": "46.00",
+            "amount": "46.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67668947435707",
+          "title": "エスプレッソ用 / 60g",
+          "weight_g": 60,
+          "money": {
+            "raw": "46.00",
+            "amount": "46.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Natural",
+        "process_methods": [
+          "natural"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Natural"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/panama-janson-geisha-hacsa-lot-26-121",
+      "title": "【 Panama 】JANSON  Geisha Hacsa Lot 26-121",
+      "source_product_id": "10314538156219",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "50516710031547",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710064315",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710097083",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "124.00",
+            "amount": "124.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710129851",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710162619",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710195387",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "124.00",
+            "amount": "124.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710228155",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710260923",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50516710293691",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "124.00",
+            "amount": "124.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12400,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": null,
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": null,
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-aroma-nativo-214-pb-efm",
+      "title": "【 Colombia 】Aroma Nativo 214 PB EFM",
+      "source_product_id": "15419859665083",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67681189494971",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "30.00",
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189527739",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "53.00",
+            "amount": "53.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189560507",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189593275",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "30.00",
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189626043",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "53.00",
+            "amount": "53.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189658811",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189691579",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "30.00",
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189724347",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "53.00",
+            "amount": "53.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67681189757115",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Honey Double Fermentation",
+        "process_methods": [
+          "honey"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Honey Double Fermentation"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-las-marias-rio-dulce-geisha",
+      "title": "【 Colombia 】Las Marias Rio Dulce Geisha",
+      "source_product_id": "10317411811515",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "50529398849723",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "30.00",
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398882491",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "53.00",
+            "amount": "53.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398915259",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398948027",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "30.00",
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398980795",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "53.00",
+            "amount": "53.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529399013563",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "111.00",
+            "amount": "111.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529399046331",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "30.00",
+            "amount": "30.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3000,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529399079099",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "53.00",
+            "amount": "53.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529399111867",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "111.00",
+            "amount": "111.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 11100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Double Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Double Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-koji",
+      "title": "【 Colombia 】 Granja Paraiso 92 Koji",
+      "source_product_id": "8349440409787",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47562897359035",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897391803",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "47.00",
+            "amount": "47.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897424571",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "85.00",
+            "amount": "85.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897457339",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897490107",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "47.00",
+            "amount": "47.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897522875",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "85.00",
+            "amount": "85.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897555643",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897588411",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "47.00",
+            "amount": "47.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4700,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562897621179",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "85.00",
+            "amount": "85.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 8500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Koji Process",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Koji Process"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-finca-lusitania-wush-wush",
+      "title": "【 Colombia 】Finca Lusitania Wush Wush",
+      "source_product_id": "8504237129915",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48219778056379",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778089147",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "45.00",
+            "amount": "45.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778121915",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778154683",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778187451",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "45.00",
+            "amount": "45.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778220219",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778252987",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778285755",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "45.00",
+            "amount": "45.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219778318523",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda",
+      "title": "【 Colombia 】 SUDUS  La Molienda",
+      "source_product_id": "10317411713211",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "50529398456507",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "23.00",
+            "amount": "23.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398489275",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "41.00",
+            "amount": "41.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398522043",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398554811",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "23.00",
+            "amount": "23.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398587579",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "41.00",
+            "amount": "41.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398620347",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398653115",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "23.00",
+            "amount": "23.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398685883",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "41.00",
+            "amount": "41.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "50529398718651",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "120h Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "120h Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-finca-milan-cattura-nitro",
+      "title": "【 Colombia 】 Finca Milan Cattura Nitro",
+      "source_product_id": "8529106960571",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48315629797563",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "23.00",
+            "amount": "23.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315629830331",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "41.00",
+            "amount": "41.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315629863099",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315629895867",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "23.00",
+            "amount": "23.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315629928635",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "41.00",
+            "amount": "41.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315629961403",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315629994171",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "23.00",
+            "amount": "23.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2300,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315630026939",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "41.00",
+            "amount": "41.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48315630059707",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Nitro Wash",
+        "process_methods": [],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Nitro Wash"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-la-roca-geisha",
+      "title": "【 Colombia 】La Roca Geisha",
+      "source_product_id": "8364022431931",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47616721158331",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "21.00",
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721191099",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "37.00",
+            "amount": "37.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721223867",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721256635",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "21.00",
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721289403",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "37.00",
+            "amount": "37.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721322171",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721354939",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "21.00",
+            "amount": "21.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2100,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721387707",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "37.00",
+            "amount": "37.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3700,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47616721420475",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Anaerobic Washed 48Hours",
+        "process_methods": [
+          "washed",
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Anaerobic Washed 48Hours"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-jiraldo-arias-mamian-pb",
+      "title": "【 Colombia 】 Jiraldo Arias Mamian PB",
+      "source_product_id": "8389356617915",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47725004914875",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "16.00",
+            "amount": "16.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725004947643",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725004980411",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "55.00",
+            "amount": "55.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725005013179",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "16.00",
+            "amount": "16.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725005045947",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725005078715",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "55.00",
+            "amount": "55.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725005111483",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "16.00",
+            "amount": "16.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 1600,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725005144251",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "29.00",
+            "amount": "29.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47725005177019",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "55.00",
+            "amount": "55.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 5500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-cgle-las-margaritas",
+      "title": "【 Colombia 】 CGLE Las Margaritas",
+      "source_product_id": "8349102702779",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47562515054779",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515087547",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "49.00",
+            "amount": "49.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515120315",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515153083",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515185851",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "49.00",
+            "amount": "49.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515218619",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515251387",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515284155",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "49.00",
+            "amount": "49.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47562515316923",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/peru-el-morito-geisha",
+      "title": "【 Peru 】El Morito Geisha",
+      "source_product_id": "8427659755707",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47881809756347",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881809789115",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "49.00",
+            "amount": "49.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881809821883",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881809854651",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881809887419",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "49.00",
+            "amount": "49.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881809920187",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881809952955",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "28.00",
+            "amount": "28.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881809985723",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "49.00",
+            "amount": "49.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47881810018491",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "92.00",
+            "amount": "92.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 9200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-geisha",
+      "title": "【 Colombia 】 Granja Praiso 92 Geisha",
+      "source_product_id": "8379167473851",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47669316387003",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "24.00",
+            "amount": "24.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316419771",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316452539",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316485307",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "24.00",
+            "amount": "24.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316518075",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316550843",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316583611",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "24.00",
+            "amount": "24.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316616379",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "42.00",
+            "amount": "42.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47669316649147",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Double Anaerobic",
+        "process_methods": [
+          "anaerobic"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Double Anaerobic"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/honduras-santa-lucia-geisha",
+      "title": "【 Honduras 】Santa Lucia Geisha",
+      "source_product_id": "8357525061819",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47578293239995",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293272763",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "39.00",
+            "amount": "39.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293305531",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293338299",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293371067",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "39.00",
+            "amount": "39.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293403835",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293436603",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293469371",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "39.00",
+            "amount": "39.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578293502139",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-mazatolan-peach",
+      "title": "【 Colombia 】 Mazatolan Peach",
+      "source_product_id": "8357525749947",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "47578297598139",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297630907",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "39.00",
+            "amount": "39.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297663675",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297696443",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297729211",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "39.00",
+            "amount": "39.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297761979",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297794747",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "22.00",
+            "amount": "22.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297827515",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "39.00",
+            "amount": "39.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3900,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "47578297860283",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "72.00",
+            "amount": "72.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7200,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Infused washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Infused washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/panama-altieri-geisha",
+      "title": "【 Panama 】Abbraccio Geisha by Altieri",
+      "source_product_id": "8504235196603",
+      "state": "sold_out",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "48219754496187",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754528955",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754561723",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "124.00",
+            "amount": "124.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754594491",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754627259",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754660027",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "124.00",
+            "amount": "124.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754692795",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "38.00",
+            "amount": "38.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 3800,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754725563",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "66.00",
+            "amount": "66.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 6600,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "48219754758331",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "124.00",
+            "amount": "124.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 12400,
+            "reason": null
+          },
+          "state": "sold_out",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Washed",
+        "process_methods": [
+          "washed"
+        ],
+        "is_coferment": null,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Washed"
+          },
+          "coferment": [],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    },
+    {
+      "url": "https://kielocoffee.jp/products/colombia-los-patios-geisha-peach",
+      "title": "【 Colombia 】 Los Patios Geisha Peach",
+      "source_product_id": "15433481748667",
+      "state": "in_stock",
+      "variants_complete": true,
+      "variants": [
+        {
+          "id": "67803273658555",
+          "title": "豆のまま / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273691323",
+          "title": "豆のまま / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "45.00",
+            "amount": "45.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273724091",
+          "title": "豆のまま / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273756859",
+          "title": "ペーパーフィルター用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273789627",
+          "title": "ペーパーフィルター用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "45.00",
+            "amount": "45.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273822395",
+          "title": "ペーパーフィルター用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273855163",
+          "title": "エスプレッソ用 / 100g",
+          "weight_g": 100,
+          "money": {
+            "raw": "25.00",
+            "amount": "25.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 2500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273887931",
+          "title": "エスプレッソ用 / 200g",
+          "weight_g": 200,
+          "money": {
+            "raw": "45.00",
+            "amount": "45.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 4500,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        },
+        {
+          "id": "67803273920699",
+          "title": "エスプレッソ用 / 400g",
+          "weight_g": 400,
+          "money": {
+            "raw": "79.00",
+            "amount": "79.00",
+            "currency": "USD",
+            "exponent": 2,
+            "minorUnits": 7900,
+            "reason": null
+          },
+          "state": "in_stock",
+          "price_source": "jsonld_exact_variant_offer"
+        }
+      ],
+      "processing": {
+        "version": "processing-v1",
+        "process": "Honey Peach Co-Fermentation",
+        "process_methods": [
+          "honey"
+        ],
+        "is_coferment": true,
+        "coferment_ingredients": [],
+        "evidence": {
+          "version": "processing-v1",
+          "process": {
+            "source": "product_description",
+            "quote": "Honey Peach Co-Fermentation"
+          },
+          "coferment": [
+            {
+              "source": "process_field",
+              "quote": "Honey Peach Co-Fermentation",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "このコーヒーはPeach Co-Fermentation Processで",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "推進しており、Co-Fermentationなどの革新的な技術や、",
+              "value": true
+            },
+            {
+              "source": "product_description",
+              "quote": "Process : Honey Peach Co-Fermentation",
+              "value": true
+            }
+          ],
+          "coferment_conflict": false,
+          "ingredients": []
+        }
+      },
+      "description_present": true,
+      "description_html_present": true,
+      "description_image_urls": [],
+      "image_present": true
+    }
+  ],
+  "unavailable_products": [],
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/collections/about-us-collection/products.json?limit=50&page=1",
+      "status": 200,
+      "at": "2026-10-25T07:26:22.887Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/collections/about-us-collection/products.json?limit=50&page=2",
+      "status": 200,
+      "at": "2026-10-25T07:26:23.391Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda-%E3%82%B3%E3%83%94%E3%83%BC",
+      "status": 302,
+      "at": "2026-10-25T07:26:23.894Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-sudus-la-molienda-%E3%82%B3%E3%83%94%E3%83%BC",
+      "status": 200,
+      "at": "2026-10-25T07:26:24.398Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda-%E3%82%B3%E3%83%94%E3%83%BC.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:24.953Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda-%E3%82%B3%E3%83%94%E3%83%BC.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:25.456Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/panama-janson-geisha-hacsa-lot-26-121",
+      "status": 302,
+      "at": "2026-10-25T07:26:25.960Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/panama-janson-geisha-hacsa-lot-26-121",
+      "status": 200,
+      "at": "2026-10-25T07:26:26.462Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/panama-janson-geisha-hacsa-lot-26-121.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:26.965Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/panama-janson-geisha-hacsa-lot-26-121.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:27.469Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-aroma-nativo-214-pb-efm",
+      "status": 302,
+      "at": "2026-10-25T07:26:27.973Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-aroma-nativo-214-pb-efm",
+      "status": 200,
+      "at": "2026-10-25T07:26:28.476Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-aroma-nativo-214-pb-efm.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:28.979Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-aroma-nativo-214-pb-efm.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:29.481Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-las-marias-rio-dulce-geisha",
+      "status": 302,
+      "at": "2026-10-25T07:26:29.983Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-las-marias-rio-dulce-geisha",
+      "status": 200,
+      "at": "2026-10-25T07:26:30.487Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-las-marias-rio-dulce-geisha.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:30.990Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-las-marias-rio-dulce-geisha.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:31.494Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-koji",
+      "status": 302,
+      "at": "2026-10-25T07:26:31.996Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-granja-paraiso-92-koji",
+      "status": 200,
+      "at": "2026-10-25T07:26:32.498Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-koji.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:33.000Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-koji.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:33.504Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-finca-lusitania-wush-wush",
+      "status": 302,
+      "at": "2026-10-25T07:26:34.008Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-finca-lusitania-wush-wush",
+      "status": 200,
+      "at": "2026-10-25T07:26:34.510Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-finca-lusitania-wush-wush.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:35.024Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-finca-lusitania-wush-wush.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:35.527Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda",
+      "status": 302,
+      "at": "2026-10-25T07:26:36.031Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-sudus-la-molienda",
+      "status": 200,
+      "at": "2026-10-25T07:26:36.533Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:37.308Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-sudus-la-molienda.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:37.811Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-finca-milan-cattura-nitro",
+      "status": 302,
+      "at": "2026-10-25T07:26:38.315Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-finca-milan-cattura-nitro",
+      "status": 200,
+      "at": "2026-10-25T07:26:38.818Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-finca-milan-cattura-nitro.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:39.320Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-finca-milan-cattura-nitro.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:39.824Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-la-roca-geisha",
+      "status": 302,
+      "at": "2026-10-25T07:26:40.327Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-la-roca-geisha",
+      "status": 200,
+      "at": "2026-10-25T07:26:40.830Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-la-roca-geisha.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:41.333Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-la-roca-geisha.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:41.838Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-jiraldo-arias-mamian-pb",
+      "status": 302,
+      "at": "2026-10-25T07:26:42.342Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-jiraldo-arias-mamian-pb",
+      "status": 200,
+      "at": "2026-10-25T07:26:42.845Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-jiraldo-arias-mamian-pb.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:43.348Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-jiraldo-arias-mamian-pb.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:43.850Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-cgle-las-margaritas",
+      "status": 302,
+      "at": "2026-10-25T07:26:44.354Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-cgle-las-margaritas",
+      "status": 200,
+      "at": "2026-10-25T07:26:44.859Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-cgle-las-margaritas.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:45.361Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-cgle-las-margaritas.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:45.865Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/peru-el-morito-geisha",
+      "status": 302,
+      "at": "2026-10-25T07:26:46.367Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/peru-el-morito-geisha",
+      "status": 200,
+      "at": "2026-10-25T07:26:46.870Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/peru-el-morito-geisha.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:47.373Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/peru-el-morito-geisha.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:47.877Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-geisha",
+      "status": 302,
+      "at": "2026-10-25T07:26:48.380Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-granja-paraiso-92-geisha",
+      "status": 200,
+      "at": "2026-10-25T07:26:48.884Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-geisha.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:49.387Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-granja-paraiso-92-geisha.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:49.892Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/honduras-santa-lucia-geisha",
+      "status": 302,
+      "at": "2026-10-25T07:26:50.396Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/honduras-santa-lucia-geisha",
+      "status": 200,
+      "at": "2026-10-25T07:26:50.900Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/honduras-santa-lucia-geisha.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:51.403Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/honduras-santa-lucia-geisha.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:51.905Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-mazatolan-peach",
+      "status": 302,
+      "at": "2026-10-25T07:26:52.408Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-mazatolan-peach",
+      "status": 200,
+      "at": "2026-10-25T07:26:52.911Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-mazatolan-peach.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:53.414Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-mazatolan-peach.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:53.917Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/panama-altieri-geisha",
+      "status": 302,
+      "at": "2026-10-25T07:26:54.421Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/panama-altieri-geisha",
+      "status": 200,
+      "at": "2026-10-25T07:26:54.925Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/panama-altieri-geisha.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:55.428Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/panama-altieri-geisha.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:55.930Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-los-patios-geisha-peach",
+      "status": 302,
+      "at": "2026-10-25T07:26:56.432Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/en-us/products/colombia-los-patios-geisha-peach",
+      "status": 200,
+      "at": "2026-10-25T07:26:56.936Z",
+      "attempt": 2,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-los-patios-geisha-peach.json",
+      "status": 200,
+      "at": "2026-10-25T07:26:57.439Z",
+      "attempt": 1,
+      "retry": 0
+    },
+    {
+      "method": "GET",
+      "url": "https://kielocoffee.jp/products/colombia-los-patios-geisha-peach.js",
+      "status": 200,
+      "at": "2026-10-25T07:26:57.945Z",
+      "attempt": 1,
+      "retry": 0
+    }
+  ],
+  "production_writes": 0,
+  "ai_calls": 0,
+  "prohibited_requests": 0,
+  "passed": true,
+  "partial_support_verified": false,
+  "inventory_complete": true,
+  "variants_complete": true
+}
